@@ -4,6 +4,8 @@ title: "USMNT March Window Recap"
 subtitle: "Two losses to Belgium and Portugal reveal how far the US still has to go"
 date: 2026-03-25
 categories: [usmnt]
+thumbnail: /assets/images/tillman-usmnt-portugal-2026.jpg
+hero_image: /assets/images/tillman-usmnt-portugal-2026.jpg
 ---
 
 The US men gathered in Atlanta for a pair of high-profile friendlies last week to close out the penultimate international window before this summer's World Cup. The opponents were the real deal, ninth-ranked Belgium and sixth-ranked Portugal, the reigning UEFA Nations League champions. The results were humbling. The US fell 5-2 to Belgium on Saturday before losing 2-0 to Portugal the following Tuesday, both at Mercedes-Benz Stadium.
