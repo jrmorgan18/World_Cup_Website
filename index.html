@@ -19,9 +19,9 @@ title: Home
     <div class="featured-image">
       <img src="{{ latest.thumbnail | relative_url }}" alt="{{ latest.title }}">
     </div>
-    {% elsif latest.flag %}
+    {% elsif latest.country_code %}
     <div class="featured-image featured-image-placeholder">
-      <span class="card-flag">{{ latest.flag }}</span>
+      <img class="card-flag" src="https://flagcdn.com/w640/{{ latest.country_code }}.png" alt="flag" loading="lazy">
     </div>
     {% else %}
     <div class="featured-image featured-image-placeholder">
@@ -86,9 +86,9 @@ title: Home
       <div class="card-image">
         <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" loading="lazy">
       </div>
-      {% elsif post.flag %}
+      {% elsif post.country_code %}
       <div class="card-image card-image-placeholder">
-        <span class="card-flag">{{ post.flag }}</span>
+        <img class="card-flag" src="https://flagcdn.com/w320/{{ post.country_code }}.png" alt="flag" loading="lazy">
       </div>
       {% else %}
       <div class="card-image card-image-placeholder">

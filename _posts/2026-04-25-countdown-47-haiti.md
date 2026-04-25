@@ -4,7 +4,7 @@ title: "#47 — Haiti"
 subtitle: "Les Grenadiers return to the World Cup for the first time since 1974"
 date: 2026-04-25
 categories: [countdown]
-flag: "🇭🇹"
+country_code: "ht"
 ---
 
 **Group:** C — Brazil, Morocco, Scotland, Haiti

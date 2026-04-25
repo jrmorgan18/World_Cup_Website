@@ -4,7 +4,7 @@ title: "#48 — Curaçao"
 subtitle: "The smallest nation ever to reach the World Cup makes history"
 date: 2026-04-24
 categories: [countdown]
-flag: "🇨🇼"
+country_code: "cw"
 ---
 
 **Group:** E
