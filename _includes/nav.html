@@ -1,0 +1,19 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a href="{{ '/' | relative_url }}" class="site-logo">
+      <span class="logo-icon">⚽</span>
+      <span class="logo-text">The World Cup Guide</span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a>
+      <a href="{{ '/categories/countdown' | relative_url }}" class="nav-link {% if page.category_slug == 'countdown' %}active{% endif %}">World Cup Countdown</a>
+      <a href="{{ '/categories/players' | relative_url }}" class="nav-link {% if page.category_slug == 'players' %}active{% endif %}">Players</a>
+      <a href="{{ '/categories/analysis' | relative_url }}" class="nav-link {% if page.category_slug == 'analysis' %}active{% endif %}">Analysis</a>
+      <a href="{{ '/categories/betting' | relative_url }}" class="nav-link {% if page.category_slug == 'betting' %}active{% endif %}">Betting</a>
+      <a href="{{ '/categories/usmnt' | relative_url }}" class="nav-link {% if page.category_slug == 'usmnt' %}active{% endif %}">USMNT</a>
+    </nav>
+  </div>
+</header>

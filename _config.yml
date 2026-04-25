@@ -1,0 +1,22 @@
+title: "The World Cup Guide"
+description: "Your essential guide to the 2026 FIFA World Cup — team profiles, player spotlights, analysis, and betting insights"
+url: "https://jrmorgan18.github.io"
+baseurl: "/World_Cup_Website"
+permalink: /:categories/:title/
+
+collections_dir: ""
+markdown: kramdown
+highlighter: rouge
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules

@@ -1,0 +1,102 @@
+---
+layout: default
+title: Home
+---
+<section class="hero">
+  <div class="hero-content">
+    <h1 class="hero-title">The World Cup Guide</h1>
+    <p class="hero-subtitle">Your essential guide to the 2026 FIFA World Cup</p>
+    <p class="hero-detail">Team profiles, player spotlights, tactical analysis, and betting insights — counting down to kickoff.</p>
+  </div>
+</section>
+
+{% assign latest = site.posts | first %}
+{% if latest %}
+<section class="featured-section">
+  <h2 class="section-heading">Latest Article</h2>
+  <a href="{{ latest.url | relative_url }}" class="featured-card">
+    {% if latest.thumbnail %}
+    <div class="featured-image">
+      <img src="{{ latest.thumbnail | relative_url }}" alt="{{ latest.title }}">
+    </div>
+    {% else %}
+    <div class="featured-image featured-image-placeholder">
+      <span class="card-icon">⚽</span>
+    </div>
+    {% endif %}
+    <div class="featured-body">
+      <div class="article-meta">
+        <span class="article-category">{{ latest.categories | first | replace: "-", " " | capitalize }}</span>
+        <time class="article-date">{{ latest.date | date: "%B %-d, %Y" }}</time>
+      </div>
+      <h3 class="featured-title">{{ latest.title }}</h3>
+      {% if latest.subtitle %}
+      <p class="featured-subtitle">{{ latest.subtitle }}</p>
+      {% endif %}
+      <p class="featured-excerpt">{{ latest.excerpt | strip_html | truncatewords: 40 }}</p>
+      <span class="read-more">Read article →</span>
+    </div>
+  </a>
+</section>
+{% endif %}
+
+<section class="categories-section">
+  <h2 class="section-heading">Explore</h2>
+  <div class="category-cards">
+    <a href="{{ '/categories/countdown' | relative_url }}" class="category-card">
+      <span class="category-card-icon">🏆</span>
+      <h3>World Cup Countdown</h3>
+      <p>48 teams profiled and ranked, counting down to #1</p>
+    </a>
+    <a href="{{ '/categories/players' | relative_url }}" class="category-card">
+      <span class="category-card-icon">⭐</span>
+      <h3>Players</h3>
+      <p>The stars and storylines to watch this summer</p>
+    </a>
+    <a href="{{ '/categories/analysis' | relative_url }}" class="category-card">
+      <span class="category-card-icon">📊</span>
+      <h3>Analysis</h3>
+      <p>Tactics, matchups, and deep dives</p>
+    </a>
+    <a href="{{ '/categories/betting' | relative_url }}" class="category-card">
+      <span class="category-card-icon">💰</span>
+      <h3>Betting</h3>
+      <p>Odds, value picks, and market analysis</p>
+    </a>
+    <a href="{{ '/categories/usmnt' | relative_url }}" class="category-card">
+      <span class="category-card-icon">🇺🇸</span>
+      <h3>USMNT</h3>
+      <p>Everything about the US Men's National Team</p>
+    </a>
+  </div>
+</section>
+
+{% assign recent_posts = site.posts | slice: 1, 6 %}
+{% if recent_posts.size > 0 %}
+<section class="recent-section">
+  <h2 class="section-heading">Recent Articles</h2>
+  <div class="article-grid">
+    {% for post in recent_posts %}
+    <a href="{{ post.url | relative_url }}" class="card">
+      {% if post.thumbnail %}
+      <div class="card-image">
+        <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" loading="lazy">
+      </div>
+      {% else %}
+      <div class="card-image card-image-placeholder">
+        <span class="card-icon">⚽</span>
+      </div>
+      {% endif %}
+      <div class="card-body">
+        <div class="article-meta">
+          <span class="article-category">{{ post.categories | first | replace: "-", " " | capitalize }}</span>
+          <time class="card-date">{{ post.date | date: "%B %-d, %Y" }}</time>
+        </div>
+        <h3 class="card-title">{{ post.title }}</h3>
+        <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

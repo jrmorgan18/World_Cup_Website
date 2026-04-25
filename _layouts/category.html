@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<div class="category-page">
+  <div class="category-header">
+    <h1 class="category-title">{{ page.title }}</h1>
+    {% if page.description %}
+    <p class="category-description">{{ page.description }}</p>
+    {% endif %}
+  </div>
+
+  {% if page.category_slug == 'usmnt' and page.show_roster_tool %}
+  <section class="usmnt-tool-section">
+    <h2>USMNT Roster Builder</h2>
+    <p>Build and share your ideal USMNT World Cup roster with our interactive tool.</p>
+    <a href="https://jrmorgan18.github.io/USMNT_Roster_Site/" class="btn btn-primary" target="_blank" rel="noopener">
+      Launch Roster Builder →
+    </a>
+  </section>
+  <hr class="section-divider">
+  {% endif %}
+
+  <div class="article-grid">
+    {% assign cat_posts = site.posts | where_exp: "post", "post.categories contains page.category_filter" %}
+    {% if cat_posts.size > 0 %}
+      {% for post in cat_posts %}
+      <a href="{{ post.url | relative_url }}" class="card">
+        {% if post.thumbnail %}
+        <div class="card-image">
+          <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" loading="lazy">
+        </div>
+        {% else %}
+        <div class="card-image card-image-placeholder">
+          <span class="card-icon">{{ page.placeholder_icon | default: "⚽" }}</span>
+        </div>
+        {% endif %}
+        <div class="card-body">
+          <time class="card-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+          <h3 class="card-title">{{ post.title }}</h3>
+          {% if post.excerpt %}
+          <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+          {% endif %}
+        </div>
+      </a>
+      {% endfor %}
+    {% else %}
+      <div class="empty-state">
+        <p>Articles coming soon — stay tuned!</p>
+      </div>
+    {% endif %}
+  </div>
+</div>
