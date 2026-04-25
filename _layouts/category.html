@@ -29,6 +29,10 @@ layout: default
         <div class="card-image">
           <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" loading="lazy">
         </div>
+        {% elsif post.flag %}
+        <div class="card-image card-image-placeholder">
+          <span class="card-flag">{{ post.flag }}</span>
+        </div>
         {% else %}
         <div class="card-image card-image-placeholder">
           <span class="card-icon">{{ page.placeholder_icon | default: "⚽" }}</span>

@@ -19,6 +19,10 @@ title: Home
     <div class="featured-image">
       <img src="{{ latest.thumbnail | relative_url }}" alt="{{ latest.title }}">
     </div>
+    {% elsif latest.flag %}
+    <div class="featured-image featured-image-placeholder">
+      <span class="card-flag">{{ latest.flag }}</span>
+    </div>
     {% else %}
     <div class="featured-image featured-image-placeholder">
       <span class="card-icon">⚽</span>
@@ -81,6 +85,10 @@ title: Home
       {% if post.thumbnail %}
       <div class="card-image">
         <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" loading="lazy">
+      </div>
+      {% elsif post.flag %}
+      <div class="card-image card-image-placeholder">
+        <span class="card-flag">{{ post.flag }}</span>
       </div>
       {% else %}
       <div class="card-image card-image-placeholder">

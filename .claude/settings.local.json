@@ -15,7 +15,8 @@
       "Bash(curl -s http://localhost:4000/)",
       "Bash(pkill -f \"jekyll serve\")",
       "Bash(gh auth:*)",
-      "Bash(git commit -m ':*)"
+      "Bash(git commit -m ':*)",
+      "Bash(git push:*)"
     ]
   }
 }

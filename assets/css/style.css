@@ -243,6 +243,12 @@ img { max-width: 100%; height: auto; display: block; }
   background: linear-gradient(135deg, var(--color-surface-raised), var(--color-surface));
 }
 
+.card-flag {
+  font-size: 5rem;
+  line-height: 1;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.4));
+}
+
 .featured-image-placeholder .card-icon {
   font-size: 4rem;
   opacity: 0.3;
