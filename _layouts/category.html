@@ -33,6 +33,10 @@ layout: default
         <div class="card-image card-image-placeholder">
           <img class="card-flag" src="https://flagcdn.com/w320/{{ post.country_code }}.png" alt="flag" loading="lazy">
         </div>
+        {% elsif page.placeholder_icon == "us_flag" %}
+        <div class="card-image card-image-placeholder">
+          <img class="card-flag" src="https://flagcdn.com/w320/us.png" alt="US flag" loading="lazy">
+        </div>
         {% else %}
         <div class="card-image card-image-placeholder">
           <span class="card-icon">{{ page.placeholder_icon | default: "⚽" }}</span>

@@ -321,6 +321,15 @@ img { max-width: 100%; height: auto; display: block; }
   margin-bottom: 12px;
 }
 
+.category-card-flag {
+  width: 48px;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  display: block;
+  margin: 0 auto 12px;
+}
+
 .category-card h3 {
   font-family: var(--font-display);
   font-size: 1rem;
