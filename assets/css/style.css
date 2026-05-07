@@ -526,6 +526,28 @@ img { max-width: 100%; height: auto; display: block; }
   margin: 32px 0;
 }
 
+.player-series-header {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  margin-bottom: 16px;
+}
+
+.player-series-header h2 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.player-series-header p {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
 /* ===== ARTICLE PAGE ===== */
 .article {
   max-width: 780px;
