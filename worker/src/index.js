@@ -69,21 +69,26 @@ const TOOLS = [
   },
 ];
 
-async function getCorpus(env, ctx) {
+async function getCorpus(env, ctx, { bypassCache = false } = {}) {
   const cache = caches.default;
   const cacheKey = new Request(env.CORPUS_URL, { method: "GET" });
-  let cached = await cache.match(cacheKey);
-  if (cached) return await cached.json();
+
+  if (bypassCache) {
+    await cache.delete(cacheKey);
+  } else {
+    const cached = await cache.match(cacheKey);
+    if (cached) return await cached.json();
+  }
 
   const res = await fetch(env.CORPUS_URL, {
     headers: { "user-agent": "world-cup-chat-worker" },
-    cf: { cacheTtl: 600, cacheEverything: true },
+    cf: { cacheTtl: 300, cacheEverything: true },
   });
   if (!res.ok) throw new Error(`Corpus fetch failed: ${res.status}`);
 
   const body = await res.text();
   const cachedRes = new Response(body, {
-    headers: { "content-type": "application/json", "cache-control": "public, max-age=600" },
+    headers: { "content-type": "application/json", "cache-control": "public, max-age=300" },
   });
   ctx.waitUntil(cache.put(cacheKey, cachedRes.clone()));
   return JSON.parse(body);
@@ -288,7 +293,7 @@ export default {
     if (!env.GEMINI_API_KEY) return json({ error: "Server missing GEMINI_API_KEY" }, 500, cors);
 
     try {
-      const corpus = await getCorpus(env, ctx);
+      const corpus = await getCorpus(env, ctx, { bypassCache: body.refresh === true });
       const systemText = SYSTEM_PROMPT_BASE + buildCorpusText(corpus);
       const { text: reply, finishReason, usage, toolsUsed } = await callGemini(
         env,
