@@ -6,7 +6,7 @@ permalink: /:categories/:title/
 
 # Chat widget — set this to the Cloudflare Worker URL after deploying worker/.
 # Leave blank or remove to hide the widget.
-# chat_worker_url: "https://world-cup-chat.your-subdomain.workers.dev"
+chat_worker_url: "https://world-cup-chat.jrmorgan16.workers.dev"
 
 collections_dir: ""
 markdown: kramdown
