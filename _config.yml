@@ -4,6 +4,10 @@ url: "https://jrmorgan18.github.io"
 baseurl: "/World_Cup_Website"
 permalink: /:categories/:title/
 
+# Chat widget — set this to the Cloudflare Worker URL after deploying worker/.
+# Leave blank or remove to hide the widget.
+# chat_worker_url: "https://world-cup-chat.your-subdomain.workers.dev"
+
 collections_dir: ""
 markdown: kramdown
 highlighter: rouge
