@@ -9,6 +9,7 @@ sitemap: false
     "description": {{ site.description | jsonify }},
     "url": {{ site.url | append: site.baseurl | jsonify }}
   },
+  "qualifying": {{ site.data.qualifying | jsonify }},
   "posts": [
     {%- assign sorted = site.posts | sort: "date" | reverse -%}
     {%- for post in sorted -%}
