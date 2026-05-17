@@ -85,7 +85,11 @@ async function callGemini(env, systemText, history, userMessage) {
     body: JSON.stringify({
       system_instruction: { parts: [{ text: systemText }] },
       contents,
-      generationConfig: { temperature: 0.4, maxOutputTokens: 800 },
+      generationConfig: {
+        temperature: 0.4,
+        maxOutputTokens: 2048,
+        thinkingConfig: { thinkingBudget: 0 },
+      },
     }),
   });
 
@@ -95,8 +99,10 @@ async function callGemini(env, systemText, history, userMessage) {
   }
   const data = await res.json();
   const text = data?.candidates?.[0]?.content?.parts?.map((p) => p.text).join("") || "";
-  if (!text) throw new Error("Empty response from Gemini");
-  return text;
+  const finishReason = data?.candidates?.[0]?.finishReason;
+  const usage = data?.usageMetadata;
+  if (!text) throw new Error(`Empty response from Gemini (finish=${finishReason}, usage=${JSON.stringify(usage)})`);
+  return { text, finishReason, usage };
 }
 
 export default {
@@ -122,8 +128,8 @@ export default {
     try {
       const corpus = await getCorpus(env, ctx);
       const systemText = SYSTEM_PROMPT + buildCorpusText(corpus);
-      const reply = await callGemini(env, systemText, history, message);
-      return json({ reply, generated_at: corpus.generated_at }, 200, cors);
+      const { text: reply, finishReason, usage } = await callGemini(env, systemText, history, message);
+      return json({ reply, generated_at: corpus.generated_at, finishReason, usage }, 200, cors);
     } catch (err) {
       return json({ error: String(err.message || err) }, 500, cors);
     }
