@@ -897,6 +897,8 @@ img { max-width: 100%; height: auto; display: block; }
   overflow: hidden;
 }
 
+.wcg-chat-panel[hidden] { display: none; }
+
 .wcg-chat-header {
   display: flex;
   align-items: flex-start;
