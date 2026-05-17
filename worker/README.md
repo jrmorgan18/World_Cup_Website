@@ -23,6 +23,12 @@ Cloudflare Worker that powers the on-site chat. It proxies user messages to Goog
    ```
    Paste the key when prompted.
 
+   **Optional — live stats**: to let the chat answer live league questions (current standings, top scorers, recent results), register a free key at https://www.football-data.org/client/register and add it:
+   ```
+   npx wrangler secret put FOOTBALL_DATA_API_KEY
+   ```
+   The Worker exposes the football-data.org tools to Gemini automatically when this secret is present. Without it, the chat falls back to corpus-only answers.
+
 5. **Deploy**:
    ```
    npx wrangler deploy
