@@ -2,7 +2,7 @@
 layout: post
 title: "USMNT 2026 World Cup Roster Prediction"
 subtitle: "Pochettino announces the 26 on May 26 — here's who I think makes it, and who I'd take instead"
-date: 2026-05-19
+date: 2026-05-19 20:00:00 -0500
 categories: [usmnt]
 thumbnail: /assets/images/usmnt-roster-prediction.jpg
 hero_image: /assets/images/usmnt-roster-prediction.jpg
