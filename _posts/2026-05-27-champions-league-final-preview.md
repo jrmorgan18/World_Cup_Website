@@ -16,6 +16,35 @@ The storylines are plentiful. Last season, PSG eliminated Arsenal at the semifin
 
 This final brings a fascinating clash in styles, with Arsenal's control, defensive structure, set-piece dominance and transition protection against PSG's pace, fluidity, aggressive pressing and relentless possession. It should entertain soccer purists and casual fans alike.
 
+<nav class="toc" markdown="0">
+  <div class="toc-title">In this article</div>
+  <ol>
+    <li><a href="#how-they-got-here">How They Got Here</a></li>
+    <li><a href="#what-to-watch-for">What to Watch For</a></li>
+    <li><a href="#my-prediction">My Prediction</a></li>
+    <li>
+      <a href="#tactical-preview">Tactical Preview</a>
+      <ul>
+        <li><a href="#psg-tactics">PSG Tactics</a></li>
+        <li><a href="#arsenal-tactics">Arsenal Tactics</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#key-tactical-matchups">Key Tactical Matchups</a>
+      <ul>
+        <li><a href="#the-press">The Press</a></li>
+        <li><a href="#the-midfield-battle">The Midfield Battle</a></li>
+        <li><a href="#the-drifting-wingers-problem">The Drifting Wingers Problem</a></li>
+        <li><a href="#the-false-9-question">The False 9 Question</a></li>
+        <li><a href="#saka-vs-mendes">Saka vs. Mendes</a></li>
+        <li><a href="#set-pieces">Set Pieces</a></li>
+        <li><a href="#transition-discipline">Transition Discipline</a></li>
+        <li><a href="#in-game-management">In-Game Management</a></li>
+      </ul>
+    </li>
+  </ol>
+</nav>
+
 ## How They Got Here
 
 Arsenal's path to Budapest has been historic. They became the first team ever to win all eight matches in the new Champions League league phase, securing a bye directly to the Round of 16. From there, they dispatched Bayer Leverkusen 3-1 on aggregate, edged Sporting CP 1-0 on aggregate in the quarterfinals, and overcame Diego Simeone's Atlético Madrid 2-1 on aggregate in the semis. A 1-1 draw in Madrid followed by Saka's 44th-minute winner in a 1-0 home leg has made the Gunners the first team in Champions League history to go 14 consecutive matches without defeat in a single campaign.
