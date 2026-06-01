@@ -2,10 +2,10 @@
 layout: post
 title: "European Soccer Season Review"
 subtitle: "PSG clinches back-to-back Champions League titles; Arsenal wins Premier League for first time in 22 years"
-date: 2026-06-01
+date: 2026-06-01 23:00:00 -0500
 categories: [analysis]
-thumbnail: /assets/images/psg-header.jpg
-hero_image: /assets/images/psg-header.jpg
+thumbnail: /assets/images/psg-celebration.jpg
+hero_image: /assets/images/psg-celebration.jpg
 ---
 
 <nav class="toc">
