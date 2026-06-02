@@ -14,6 +14,7 @@ hero_image: /assets/images/psg-celebration.jpg
 <li><a href="#champions-league-final">Champions League Final</a>
 <ul>
 <li><a href="#european-team-of-the-season">European Team of the Season</a></li>
+<li><a href="#player-of-the-year">Player of the Year: Harry Kane</a></li>
 </ul>
 </li>
 <li><a href="#premier-league">Premier League</a></li>
@@ -21,7 +22,6 @@ hero_image: /assets/images/psg-celebration.jpg
 <li><a href="#bundesliga">Bundesliga</a></li>
 <li><a href="#serie-a">Serie A</a></li>
 <li><a href="#ligue-1">Ligue 1</a></li>
-<li><a href="#player-of-the-year">Player of the Year</a></li>
 </ol>
 </nav>
 
@@ -63,6 +63,20 @@ It was a heartbreaking end for Arsenal, who had already completed a historic dom
 
 **Michael Olise** finished with 22 goals and 26 assists in all competitions, hit the rare 15-goal, 15-assist mark in the Bundesliga, and tied for the Champions League assists lead with six. Bayern scored 122 Bundesliga goals, smashing the old league record, and Olise's combination of passing, dribbling and end product made him the creative hub of the attack.
 
+### Player of the Year: Harry Kane
+
+<div style="float: right; margin: 0 0 20px 20px; text-align: center; width: 250px;">
+<img src="/assets/images/kane-bayern.jpg" alt="Harry Kane" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 12px;">
+<p style="font-size: 14px; font-weight: bold; margin: 8px 0;">Harry Kane</p>
+<p style="font-size: 12px; color: #888;">Bayern Munich</p>
+</div>
+
+For my money, Harry Kane was the best player in Europe this season. PSG won the biggest trophy and Kvaratskhelia was the Champions League Player of the Season, so there is a very strong argument in that direction. Pedri had the best midfielder case, Yamal was the bright young star. But over the full campaign, nobody was more inevitable than Kane.
+
+He finished with 61 goals across all competitions, including 36 in the Bundesliga and 14 in the Champions League, powering Bayern to another Bundesliga title and a historically explosive attacking season. He tied for the lead in Champions League combined goals and assists with Mbappé and Kvaratskhelia, and remained Bayern's reference point in possession. Kane was not just finishing moves. He dropped into midfield, linked with Olise and Luis Diaz, and then still arrived in the box as the most dangerous scorer in Europe.
+
+That level of week-to-week production is difficult to argue against. A strong World Cup run with England could land him his first Ballon d'Or trophy.
+
 ---
 
 ## Premier League
@@ -73,7 +87,7 @@ Arsenal finally got over the line, winning their first Premier League title sinc
 
 **Goalkeeper:** David Raya (Arsenal)
 
-**Defenders:** Nico O'Reilly (Arsenal), William Saliba (Arsenal), Gabriel (Arsenal)
+**Defenders:** Nico O'Reilly (Arsenal), William Saliba (Arsenal), Gabriel (Arsenal), Dominik Szoboszlai (Liverpool)
 
 **Midfielders:** Declan Rice (Arsenal), Bruno Guimarães (Newcastle)
 
@@ -91,11 +105,11 @@ Barcelona repeated as Spanish champions, winning their 29th league title and fin
 
 **Goalkeeper:** Joan García (Real Sociedad)
 
-**Defenders:** Santiago Mourinho (Barcelona), Eric García (Barcelona), Pau Cubarsí (Barcelona)
+**Defenders:** Santiago Mourinho (Barcelona), Eric García (Barcelona), Pau Cubarsí (Barcelona), Fede Valverde (Real Madrid)
 
-**Midfielders:** Fede Valverde (Real Madrid), Pedri (Barcelona), Fermín López (Barcelona)
+**Midfielders:** Pedri (Barcelona), Fermín López (Barcelona)
 
-**Forwards:** Vinícius Jr. (Real Madrid), Lamine Yamal (Barcelona), Kylian Mbappé (Real Madrid)
+**Forwards:** Vinícius Jr. (Real Madrid), Lamine Yamal (Barcelona), Vedat Muriqi (Real Madrid), Kylian Mbappé (Real Madrid)
 
 **Player of the Year: Pedri** — Barcelona had plenty of attacking firepower, but Pedri was the player who made the whole machine work. He gave Barcelona control in games that otherwise could have become chaotic and looked like the closest thing Spain has had to a true Xavi/Iniesta heir in years.
 
@@ -109,7 +123,7 @@ Bayern Munich returned to full domestic dominance, winning the Bundesliga and DF
 
 **Goalkeeper:** Manuel Neuer (Bayern Munich)
 
-**Defenders:** Alejandro Grimaldo (Bayer Leverkusen), Jonathan Tah (Bayern Munich), Nico Schlotterbeck (Borussia Dortmund)
+**Defenders:** Alejandro Grimaldo (Bayer Leverkusen), Jonathan Tah (Bayern Munich), Nico Schlotterbeck (Borussia Dortmund), Ryerson (Bayern Munich)
 
 **Midfielders:** Pablo García (RB Leipzig), Joshua Kimmich (Bayern Munich)
 
@@ -127,7 +141,7 @@ Inter Milan reclaimed the Scudetto, winning their 21st Serie A title and complet
 
 **Goalkeeper:** Mike Maignan (AC Milan)
 
-**Defenders:** Juan Miranda (Inter Milan), Alessandro Bastoni (Inter Milan), Amir Rrahmani (Napoli)
+**Defenders:** Juan Miranda (Inter Milan), Alessandro Bastoni (Inter Milan), Amir Rrahmani (Napoli), Weston McKennie (Juventus)
 
 **Midfielders:** Nicolò Barella (Inter Milan), Hakan Çalhanoglu (Inter Milan)
 
@@ -145,26 +159,10 @@ Paris St. Germain won their fifth straight Ligue 1 title and 14th overall, holdi
 
 **Goalkeeper:** Brice Samba (RC Lens)
 
-**Defenders:** Nuno Mendes (PSG), Willian Pacho (PSG), Lenny Yoro (LOSC Lens)
+**Defenders:** Nuno Mendes (PSG), Willian Pacho (PSG), Mohamed Sarr (Marseille), Achraf Hakimi (PSG)
 
 **Midfielders:** Idrissa Gueye (PSG), Vitinha (PSG)
 
-**Forwards:** João Neves (PSG), Mason Greenwood (Getafe), Kylian Mbappé (Real Madrid), Khvicha Kvaratskhelia (PSG)
+**Forwards:** João Neves (PSG), Mason Greenwood (Getafe), Clément Lepaulé (PSG), Khvicha Kvaratskhelia (PSG)
 
 **Player of the Year: Vitinha** — Vitinha was the best midfielder in France and one of the key players in PSG's evolution from a team built around stars into a team built around control. He gave Luis Enrique exactly what he needed: press resistance, tempo, defensive intelligence and the ability to keep PSG connected when games opened up.
-
----
-
-## Player of the Year
-
-<div style="float: right; margin: 0 0 20px 20px; text-align: center; width: 250px;">
-<img src="/assets/images/kane-bayern.jpg" alt="Harry Kane" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 12px;">
-<p style="font-size: 14px; font-weight: bold; margin: 8px 0;">Harry Kane</p>
-<p style="font-size: 12px; color: #666;">Bayern Munich</p>
-</div>
-
-For my money, Harry Kane was the best player in Europe this season. PSG won the biggest trophy and Kvaratskhelia was the Champions League Player of the Season, so there is a very strong argument in that direction. Pedri had the best midfielder case, Yamal was the bright young star. But over the full campaign, nobody was more inevitable than Kane.
-
-He finished with 61 goals across all competitions, including 36 in the Bundesliga and 14 in the Champions League, powering Bayern to another Bundesliga title and a historically explosive attacking season. He tied for the lead in Champions League combined goals and assists with Mbappé and Kvaratskhelia, and remained Bayern's reference point in possession. Kane was not just finishing moves. He dropped into midfield, linked with Olise and Luis Diaz, and then still arrived in the box as the most dangerous scorer in Europe.
-
-That level of week-to-week production is difficult to argue against. A strong World Cup run with England could land him his first Ballon d'Or trophy.
