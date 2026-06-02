@@ -33,66 +33,15 @@ It was a heartbreaking end for Arsenal, who had already completed a historic dom
 
 ### European Team of the Season
 
-<div class="team-xi">
-<div class="xi-row">
-<div class="xi-player gk">
-<div class="xi-name">David Raya</div>
-<div class="xi-club">Arsenal</div>
-<div class="xi-position">GK</div>
-</div>
-</div>
-<div class="xi-row">
-<div class="xi-player def">
-<div class="xi-name">Nuno Mendes</div>
-<div class="xi-club">PSG</div>
-<div class="xi-position">LB</div>
-</div>
-<div class="xi-player def">
-<div class="xi-name">Willian Pacho</div>
-<div class="xi-club">PSG</div>
-<div class="xi-position">CB</div>
-</div>
-<div class="xi-player def">
-<div class="xi-name">Gabriel</div>
-<div class="xi-club">Arsenal</div>
-<div class="xi-position">CB</div>
-</div>
-</div>
-<div class="xi-row">
-<div class="xi-player mid">
-<div class="xi-name">Vitinha</div>
-<div class="xi-club">PSG</div>
-<div class="xi-position">CM</div>
-</div>
-<div class="xi-player mid">
-<div class="xi-name">Pedri</div>
-<div class="xi-club">Barcelona</div>
-<div class="xi-position">CM</div>
-</div>
-<div class="xi-player mid">
-<div class="xi-name">Bruno Fernandes</div>
-<div class="xi-club">Man United</div>
-<div class="xi-position">CM</div>
-</div>
-</div>
-<div class="xi-row">
-<div class="xi-player att">
-<div class="xi-name">Lamine Yamal</div>
-<div class="xi-club">Barcelona</div>
-<div class="xi-position">LW</div>
-</div>
-<div class="xi-player att">
-<div class="xi-name">Khvicha Kvaratskhelia</div>
-<div class="xi-club">PSG</div>
-<div class="xi-position">ST</div>
-</div>
-<div class="xi-player att">
-<div class="xi-name">Michael Olise</div>
-<div class="xi-club">Bayern</div>
-<div class="xi-position">RW</div>
-</div>
-</div>
-</div>
+**Goalkeeper:** David Raya (Arsenal)
+
+**Defenders:** Nuno Mendes (PSG), Willian Pacho (PSG), Gabriel (Arsenal)
+
+**Midfielders:** Vitinha (PSG), Pedri (Barcelona), Bruno Fernandes (Manchester United)
+
+**Forwards:** Lamine Yamal (Barcelona), Khvicha Kvaratskhelia (PSG), Michael Olise (Bayern Munich)
+
+---
 
 **Raya** gets the nod after anchoring the best defense in England and backing it up with a standout Champions League run. He finished with 19 clean sheets in the Premier League and 9 in the Champions League, while winning the Premier League Golden Glove for the third straight season. Arsenal's defensive structure deserves plenty of credit, but Raya's command, shot stopping and calm distribution were essential to everything they did.
 
@@ -122,58 +71,13 @@ Arsenal finally got over the line, winning their first Premier League title sinc
 
 ### Premier League Best XI
 
-<div class="team-xi">
-<div class="xi-row">
-<div class="xi-player gk">
-<div class="xi-name">David Raya</div>
-<div class="xi-club">Arsenal</div>
-</div>
-</div>
-<div class="xi-row">
-<div class="xi-player def">
-<div class="xi-name">Nico O'Reilly</div>
-<div class="xi-club">Arsenal</div>
-</div>
-<div class="xi-player def">
-<div class="xi-name">William Saliba</div>
-<div class="xi-club">Arsenal</div>
-</div>
-<div class="xi-player def">
-<div class="xi-name">Gabriel</div>
-<div class="xi-club">Arsenal</div>
-</div>
-</div>
-<div class="xi-row">
-<div class="xi-player mid">
-<div class="xi-name">Declan Rice</div>
-<div class="xi-club">Arsenal</div>
-</div>
-<div class="xi-player mid">
-<div class="xi-name">Bruno Guimarães</div>
-<div class="xi-club">Newcastle</div>
-</div>
-</div>
-<div class="xi-row">
-<div class="xi-player att">
-<div class="xi-name">Rayan Cherki</div>
-<div class="xi-club">Liverpool</div>
-</div>
-<div class="xi-player att">
-<div class="xi-name">Bruno Fernandes</div>
-<div class="xi-club">Man United</div>
-</div>
-</div>
-<div class="xi-row">
-<div class="xi-player att">
-<div class="xi-name">Igor Thiago</div>
-<div class="xi-club">Aston Villa</div>
-</div>
-<div class="xi-player att">
-<div class="xi-name">Erling Haaland</div>
-<div class="xi-club">Man City</div>
-</div>
-</div>
-</div>
+**Goalkeeper:** David Raya (Arsenal)
+
+**Defenders:** Nico O'Reilly (Arsenal), William Saliba (Arsenal), Gabriel (Arsenal)
+
+**Midfielders:** Declan Rice (Arsenal), Bruno Guimarães (Newcastle)
+
+**Forwards:** Rayan Cherki (Liverpool), Bruno Fernandes (Manchester United), Igor Thiago (Aston Villa), Erling Haaland (Manchester City)
 
 **Player of the Year: Bruno Fernandes** — Fernandes was the best player in the league and the driving force behind Manchester United's return to the Champions League. He broke the Premier League single-season assist record with 21, scored 9 goals and led the league in chances created.
 
@@ -185,56 +89,13 @@ Barcelona repeated as Spanish champions, winning their 29th league title and fin
 
 ### La Liga Best XI
 
-<div class="team-xi">
-<div class="xi-row">
-<div class="xi-player gk">
-<div class="xi-name">Joan García</div>
-<div class="xi-club">Real Sociedad</div>
-</div>
-</div>
-<div class="xi-row">
-<div class="xi-player def">
-<div class="xi-name">Santiago Mourinho</div>
-<div class="xi-club">Barcelona</div>
-</div>
-<div class="xi-player def">
-<div class="xi-name">Eric García</div>
-<div class="xi-club">Barcelona</div>
-</div>
-<div class="xi-player def">
-<div class="xi-name">Pau Cubarsí</div>
-<div class="xi-club">Barcelona</div>
-</div>
-</div>
-<div class="xi-row">
-<div class="xi-player mid">
-<div class="xi-name">Fede Valverde</div>
-<div class="xi-club">Real Madrid</div>
-</div>
-<div class="xi-player mid">
-<div class="xi-name">Pedri</div>
-<div class="xi-club">Barcelona</div>
-</div>
-<div class="xi-player mid">
-<div class="xi-name">Fermín López</div>
-<div class="xi-club">Barcelona</div>
-</div>
-</div>
-<div class="xi-row">
-<div class="xi-player att">
-<div class="xi-name">Vinícius Jr.</div>
-<div class="xi-club">Real Madrid</div>
-</div>
-<div class="xi-player att">
-<div class="xi-name">Lamine Yamal</div>
-<div class="xi-club">Barcelona</div>
-</div>
-<div class="xi-player att">
-<div class="xi-name">Kylian Mbappé</div>
-<div class="xi-club">Real Madrid</div>
-</div>
-</div>
-</div>
+**Goalkeeper:** Joan García (Real Sociedad)
+
+**Defenders:** Santiago Mourinho (Barcelona), Eric García (Barcelona), Pau Cubarsí (Barcelona)
+
+**Midfielders:** Fede Valverde (Real Madrid), Pedri (Barcelona), Fermín López (Barcelona)
+
+**Forwards:** Vinícius Jr. (Real Madrid), Lamine Yamal (Barcelona), Kylian Mbappé (Real Madrid)
 
 **Player of the Year: Pedri** — Barcelona had plenty of attacking firepower, but Pedri was the player who made the whole machine work. He gave Barcelona control in games that otherwise could have become chaotic and looked like the closest thing Spain has had to a true Xavi/Iniesta heir in years.
 
@@ -246,57 +107,13 @@ Bayern Munich returned to full domestic dominance, winning the Bundesliga and DF
 
 ### Bundesliga Best XI
 
-<div class="team-xi">
-<div class="xi-row">
-<div class="xi-player gk">
-<div class="xi-name">Manuel Neuer</div>
-<div class="xi-club">Bayern Munich</div>
-</div>
-</div>
-<div class="xi-row">
-<div class="xi-player def">
-<div class="xi-name">Alejandro Grimaldo</div>
-<div class="xi-club">Bayer Leverkusen</div>
-</div>
-<div class="xi-player def">
-<div class="xi-name">Jonathan Tah</div>
-<div class="xi-club">Bayern Munich</div>
-</div>
-<div class="xi-player def">
-<div class="xi-name">Nico Schlotterbeck</div>
-<div class="xi-club">Borussia Dortmund</div>
-</div>
-</div>
-<div class="xi-row">
-<div class="xi-player mid">
-<div class="xi-name">Pablo García</div>
-<div class="xi-club">RB Leipzig</div>
-</div>
-<div class="xi-player mid">
-<div class="xi-name">Joshua Kimmich</div>
-<div class="xi-club">Bayern Munich</div>
-</div>
-</div>
-<div class="xi-row">
-<div class="xi-player att">
-<div class="xi-name">Serge Gnabry</div>
-<div class="xi-club">Bayern Munich</div>
-</div>
-<div class="xi-player att">
-<div class="xi-name">Luis Díaz</div>
-<div class="xi-club">Bayern Munich</div>
-</div>
-<div class="xi-row">
-<div class="xi-player att">
-<div class="xi-name">Michael Olise</div>
-<div class="xi-club">Bayern Munich</div>
-</div>
-<div class="xi-player att">
-<div class="xi-name">Harry Kane</div>
-<div class="xi-club">Bayern Munich</div>
-</div>
-</div>
-</div>
+**Goalkeeper:** Manuel Neuer (Bayern Munich)
+
+**Defenders:** Alejandro Grimaldo (Bayer Leverkusen), Jonathan Tah (Bayern Munich), Nico Schlotterbeck (Borussia Dortmund)
+
+**Midfielders:** Pablo García (RB Leipzig), Joshua Kimmich (Bayern Munich)
+
+**Forwards:** Serge Gnabry (Bayern Munich), Luis Díaz (Bayern Munich), Michael Olise (Bayern Munich), Harry Kane (Bayern Munich)
 
 **Player of the Year: Harry Kane** — Kane's Bundesliga season was ridiculous even before adding the cup and Champions League numbers. He was the focal point of a Bayern attack that broke the league scoring record and restored the club's domestic superiority.
 
@@ -308,57 +125,13 @@ Inter Milan reclaimed the Scudetto, winning their 21st Serie A title and complet
 
 ### Serie A Best XI
 
-<div class="team-xi">
-<div class="xi-row">
-<div class="xi-player gk">
-<div class="xi-name">Mike Maignan</div>
-<div class="xi-club">AC Milan</div>
-</div>
-</div>
-<div class="xi-row">
-<div class="xi-player def">
-<div class="xi-name">Juan Miranda</div>
-<div class="xi-club">Inter Milan</div>
-</div>
-<div class="xi-player def">
-<div class="xi-name">Alessandro Bastoni</div>
-<div class="xi-club">Inter Milan</div>
-</div>
-<div class="xi-player def">
-<div class="xi-name">Amir Rrahmani</div>
-<div class="xi-club">Napoli</div>
-</div>
-</div>
-<div class="xi-row">
-<div class="xi-player mid">
-<div class="xi-name">Nicolò Barella</div>
-<div class="xi-club">Inter Milan</div>
-</div>
-<div class="xi-player mid">
-<div class="xi-name">Hakan Çalhanoglu</div>
-<div class="xi-club">Inter Milan</div>
-</div>
-</div>
-<div class="xi-row">
-<div class="xi-player att">
-<div class="xi-name">Federico Dimarco</div>
-<div class="xi-club">Inter Milan</div>
-</div>
-<div class="xi-player att">
-<div class="xi-name">Nico Paz</div>
-<div class="xi-club">Como</div>
-</div>
-<div class="xi-row">
-<div class="xi-player att">
-<div class="xi-name">Kenan Yıldız</div>
-<div class="xi-club">Juventus</div>
-</div>
-<div class="xi-player att">
-<div class="xi-name">Lautaro Martínez</div>
-<div class="xi-club">Inter Milan</div>
-</div>
-</div>
-</div>
+**Goalkeeper:** Mike Maignan (AC Milan)
+
+**Defenders:** Juan Miranda (Inter Milan), Alessandro Bastoni (Inter Milan), Amir Rrahmani (Napoli)
+
+**Midfielders:** Nicolò Barella (Inter Milan), Hakan Çalhanoglu (Inter Milan)
+
+**Forwards:** Federico Dimarco (Inter Milan), Nico Paz (Como), Kenan Yıldız (Juventus), Lautaro Martínez (Inter Milan)
 
 **Player of the Year: Federico Dimarco** — Dimarco was the defining player of Inter's title season. He finished with 7 goals and 18 assists in all competitions, leading in big chances created by a wide margin, an enormous return for a wingback.
 
@@ -370,57 +143,13 @@ Paris St. Germain won their fifth straight Ligue 1 title and 14th overall, holdi
 
 ### Ligue 1 Best XI
 
-<div class="team-xi">
-<div class="xi-row">
-<div class="xi-player gk">
-<div class="xi-name">Brice Samba</div>
-<div class="xi-club">RC Lens</div>
-</div>
-</div>
-<div class="xi-row">
-<div class="xi-player def">
-<div class="xi-name">Nuno Mendes</div>
-<div class="xi-club">PSG</div>
-</div>
-<div class="xi-player def">
-<div class="xi-name">Willian Pacho</div>
-<div class="xi-club">PSG</div>
-</div>
-<div class="xi-player def">
-<div class="xi-name">Lenny Yoro</div>
-<div class="xi-club">LOSC Lens</div>
-</div>
-</div>
-<div class="xi-row">
-<div class="xi-player mid">
-<div class="xi-name">Idrissa Gueye</div>
-<div class="xi-club">PSG</div>
-</div>
-<div class="xi-player mid">
-<div class="xi-name">Vitinha</div>
-<div class="xi-club">PSG</div>
-</div>
-</div>
-<div class="xi-row">
-<div class="xi-player att">
-<div class="xi-name">João Neves</div>
-<div class="xi-club">PSG</div>
-</div>
-<div class="xi-player att">
-<div class="xi-name">Mason Greenwood</div>
-<div class="xi-club">Getafe</div>
-</div>
-<div class="xi-row">
-<div class="xi-player att">
-<div class="xi-name">Kylian Mbappé</div>
-<div class="xi-club">Real Madrid</div>
-</div>
-<div class="xi-player att">
-<div class="xi-name">Khvicha Kvaratskhelia</div>
-<div class="xi-club">PSG</div>
-</div>
-</div>
-</div>
+**Goalkeeper:** Brice Samba (RC Lens)
+
+**Defenders:** Nuno Mendes (PSG), Willian Pacho (PSG), Lenny Yoro (LOSC Lens)
+
+**Midfielders:** Idrissa Gueye (PSG), Vitinha (PSG)
+
+**Forwards:** João Neves (PSG), Mason Greenwood (Getafe), Kylian Mbappé (Real Madrid), Khvicha Kvaratskhelia (PSG)
 
 **Player of the Year: Vitinha** — Vitinha was the best midfielder in France and one of the key players in PSG's evolution from a team built around stars into a team built around control. He gave Luis Enrique exactly what he needed: press resistance, tempo, defensive intelligence and the ability to keep PSG connected when games opened up.
 
