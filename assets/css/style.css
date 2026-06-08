@@ -1344,6 +1344,38 @@ img { max-width: 100%; height: auto; display: block; }
 .view-btn:hover { color: var(--color-text); }
 .view-btn.active { background: var(--color-accent); color: #1a1205; font-weight: 600; }
 
+/* ---- Team search ---- */
+.team-search {
+  position: relative; display: flex; align-items: center; gap: 8px;
+  max-width: 460px; margin: 0 auto 18px;
+}
+.team-search-icon { position: absolute; left: 14px; font-size: 0.95rem; opacity: 0.6; pointer-events: none; }
+#team-search-input {
+  flex: 1; font-family: var(--font-body); font-size: 0.95rem; color: var(--color-text);
+  background: var(--color-surface); border: 1px solid var(--color-border);
+  border-radius: 999px; padding: 11px 16px 11px 40px; transition: border-color 0.15s;
+}
+#team-search-input::placeholder { color: var(--color-text-muted); }
+#team-search-input:focus { outline: none; border-color: var(--color-accent); }
+.team-clear {
+  font-family: var(--font-display); font-size: 0.82rem; letter-spacing: 0.03em; text-transform: uppercase;
+  color: var(--color-text-muted); background: var(--color-surface); border: 1px solid var(--color-border);
+  border-radius: 999px; padding: 9px 14px; cursor: pointer; white-space: nowrap; transition: all 0.15s;
+}
+.team-clear:hover { color: var(--color-text); border-color: var(--color-accent); }
+
+.team-sched-header {
+  display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+  background: var(--color-surface); border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-accent); border-radius: var(--radius-lg);
+  padding: 18px 20px; margin-bottom: 18px;
+}
+.tsh-flag { width: 64px; height: 46px; object-fit: cover; border-radius: 4px; border: 1px solid var(--color-border); }
+.tsh-info { min-width: 0; }
+.tsh-info h2 { font-family: var(--font-display); font-size: 1.6rem; line-height: 1.1; }
+.tsh-meta { font-size: 0.85rem; color: var(--color-text-muted); margin: 4px 0 10px; }
+.team-sched-header .mt-link { margin-top: 0; }
+
 .group-jump { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 28px; }
 .group-chip {
   display: inline-flex; align-items: center; justify-content: center;

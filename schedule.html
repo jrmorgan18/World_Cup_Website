@@ -9,9 +9,23 @@ permalink: /schedule/
     <p class="category-description">All 72 group-stage matches. Browse by group or by date, and tap any game for a quick head-to-head preview built from each team's capsule.</p>
   </div>
 
+  <div class="team-search">
+    <span class="team-search-icon" aria-hidden="true">🔍</span>
+    <input id="team-search-input" list="team-list" type="search" autocomplete="off"
+           placeholder="Search a team to see just their fixtures…" aria-label="Search for a team">
+    <datalist id="team-list"></datalist>
+    <button type="button" id="team-clear" class="team-clear" hidden>Clear ✕</button>
+  </div>
+
   <div class="view-toggle" role="tablist" aria-label="Schedule view">
     <button class="view-btn active" data-view="group" role="tab" aria-selected="true">By Group</button>
     <button class="view-btn" data-view="date" role="tab" aria-selected="false">By Date</button>
+  </div>
+
+  <!-- ===== TEAM SCHEDULE (search result) ===== -->
+  <div id="view-team" class="schedule-view" hidden>
+    <div class="team-sched-header" id="team-sched-header"></div>
+    <div class="match-list" id="team-sched-list"></div>
   </div>
 
   <!-- ===== BY GROUP ===== -->

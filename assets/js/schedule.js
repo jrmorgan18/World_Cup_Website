@@ -3,22 +3,104 @@
   var TEAMS = window.WC_TEAMS || {};
   var BASE = window.WC_BASE || "";
 
+  var groupView = document.getElementById("view-group");
+  var dateView = document.getElementById("view-date");
+  var teamView = document.getElementById("view-team");
+
   /* ---- View toggle ---- */
   var toggle = document.querySelector(".view-toggle");
   if (toggle) {
     toggle.addEventListener("click", function (e) {
       var btn = e.target.closest(".view-btn");
       if (!btn) return;
+      clearTeam();
       var view = btn.getAttribute("data-view");
       toggle.querySelectorAll(".view-btn").forEach(function (b) {
         var active = b === btn;
         b.classList.toggle("active", active);
         b.setAttribute("aria-selected", active ? "true" : "false");
       });
-      document.getElementById("view-group").hidden = view !== "group";
-      document.getElementById("view-date").hidden = view !== "date";
+      groupView.hidden = view !== "group";
+      dateView.hidden = view !== "date";
     });
   }
+
+  /* ---- Team search ---- */
+  var TEAM_NAMES = Object.keys(TEAMS).sort(function (a, b) { return a.localeCompare(b); });
+  var searchInput = document.getElementById("team-search-input");
+  var clearBtn = document.getElementById("team-clear");
+  var teamHeader = document.getElementById("team-sched-header");
+  var teamList = document.getElementById("team-sched-list");
+  var datalist = document.getElementById("team-list");
+  if (datalist) {
+    datalist.innerHTML = TEAM_NAMES.map(function (n) {
+      return '<option value="' + n.replace(/"/g, "&quot;") + '"></option>';
+    }).join("");
+  }
+
+  function resolveTeam(q) {
+    if (!q) return null;
+    q = q.trim().toLowerCase();
+    if (!q) return null;
+    var i, n;
+    for (i = 0; i < TEAM_NAMES.length; i++) if (TEAM_NAMES[i].toLowerCase() === q) return TEAM_NAMES[i];
+    for (i = 0; i < TEAM_NAMES.length; i++) if (TEAM_NAMES[i].toLowerCase().indexOf(q) === 0) return TEAM_NAMES[i];
+    for (i = 0; i < TEAM_NAMES.length; i++) if (TEAM_NAMES[i].toLowerCase().indexOf(q) !== -1) return TEAM_NAMES[i];
+    return null;
+  }
+
+  function showTeam(name) {
+    var t = TEAMS[name];
+    if (!t || !teamView) return;
+    var meta = ["Group " + esc(t.group)];
+    if (t.fifa_rank) meta.push("FIFA #" + esc(t.fifa_rank));
+    if (t.formation) meta.push(esc(t.formation));
+    if (t.style) meta.push(esc(t.style));
+    var hh = '<img class="tsh-flag" src="https://flagcdn.com/w160/' + esc(t.code) + '.png" alt="">';
+    hh += '<div class="tsh-info"><h2>' + esc(t.name) + "</h2>";
+    hh += '<p class="tsh-meta">' + meta.join(" &middot; ") + "</p>";
+    if (t.url) hh += '<a class="mt-link" href="' + esc(BASE + t.url) + '">Full capsule &rarr;</a>';
+    teamHeader.innerHTML = hh + "</div>";
+    teamList.innerHTML = "";
+    var n = 0;
+    groupView.querySelectorAll(".match-card").forEach(function (c) {
+      if (c.getAttribute("data-home") === name || c.getAttribute("data-away") === name) {
+        teamList.appendChild(c.cloneNode(true));
+        n++;
+      }
+    });
+    if (!n) teamList.innerHTML = '<p class="empty-state">No fixtures found.</p>';
+    groupView.hidden = true;
+    dateView.hidden = true;
+    teamView.hidden = false;
+    clearBtn.hidden = false;
+  }
+
+  function clearTeam() {
+    if (!teamView || teamView.hidden) return;
+    teamView.hidden = true;
+    clearBtn.hidden = true;
+    if (searchInput) searchInput.value = "";
+    var active = document.querySelector(".view-btn.active");
+    var v = active ? active.getAttribute("data-view") : "group";
+    groupView.hidden = v !== "group";
+    dateView.hidden = v !== "date";
+  }
+
+  function trySearch() {
+    var name = resolveTeam(searchInput.value);
+    if (name) { searchInput.value = name; showTeam(name); }
+  }
+  if (searchInput) {
+    searchInput.addEventListener("change", trySearch);
+    searchInput.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") { e.preventDefault(); trySearch(); }
+    });
+    searchInput.addEventListener("search", function () {
+      if (!searchInput.value) clearTeam();
+    });
+  }
+  if (clearBtn) clearBtn.addEventListener("click", clearTeam);
 
   /* ---- Modal ---- */
   var modal = document.getElementById("match-modal");
