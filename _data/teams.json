@@ -1413,9 +1413,9 @@
   "code": "gb-eng",
   "group": "L",
   "fifa_rank": "4",
-  "odds_cup": "13-2",
+  "odds_cup": "7-1",
   "best_finish": "Champions (1966)",
-  "blurb": "Loaded with attacking talent and chasing a first title since 1966.",
+  "blurb": "The most talented team in the field — and the one with the only ending left to chase: finally winning it",
   "players": [
    {
     "name": "Harry Kane",
@@ -1428,14 +1428,14 @@
     "club": "Real Madrid"
    },
    {
-    "name": "Bukayo Saka",
-    "pos": "Winger",
+    "name": "Declan Rice",
+    "pos": "Midfielder",
     "club": "Arsenal"
    }
   ],
   "name": "England",
-  "rank": null,
-  "url": null,
+  "rank": 3,
+  "url": "/countdown/countdown-3-england/",
   "formation": "4-2-3-1",
   "style": "Controlled, talent-driven"
  }
