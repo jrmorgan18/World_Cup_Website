@@ -4,6 +4,10 @@ url: "https://jrmorgan18.github.io"
 baseurl: "/World_Cup_Website"
 permalink: /:categories/:title/
 
+# Default image for social/link previews (Open Graph / Twitter cards)
+# when a page has no hero_image or thumbnail of its own.
+og_image: "/assets/images/og-default.jpg"
+
 # Chat widget — set this to the Cloudflare Worker URL after deploying worker/.
 # Leave blank or remove to hide the widget.
 chat_worker_url: "https://world-cup-chat.jrmorgan16.workers.dev"
