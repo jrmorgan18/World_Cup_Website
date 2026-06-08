@@ -38,14 +38,30 @@
     }).join("");
   }
 
+  var ALIASES = {
+    "usa": "United States", "us": "United States", "u.s.": "United States",
+    "u.s.a.": "United States", "united states of america": "United States", "america": "United States",
+    "holland": "Netherlands", "ned": "Netherlands",
+    "korea": "South Korea", "korea republic": "South Korea",
+    "turkey": "Türkiye", "turkiye": "Türkiye",
+    "czech republic": "Czechia", "czech": "Czechia",
+    "cote d'ivoire": "Ivory Coast", "cote divoire": "Ivory Coast", "côte d'ivoire": "Ivory Coast",
+    "cabo verde": "Cape Verde",
+    "congo": "DR Congo", "drc": "DR Congo", "congo dr": "DR Congo",
+    "bosnia": "Bosnia and Herzegovina"
+  };
+
   function resolveTeam(q) {
     if (!q) return null;
     q = q.trim().toLowerCase();
     if (!q) return null;
-    var i, n;
+    var i;
+    if (ALIASES[q] && TEAMS[ALIASES[q]]) return ALIASES[q];
     for (i = 0; i < TEAM_NAMES.length; i++) if (TEAM_NAMES[i].toLowerCase() === q) return TEAM_NAMES[i];
     for (i = 0; i < TEAM_NAMES.length; i++) if (TEAM_NAMES[i].toLowerCase().indexOf(q) === 0) return TEAM_NAMES[i];
     for (i = 0; i < TEAM_NAMES.length; i++) if (TEAM_NAMES[i].toLowerCase().indexOf(q) !== -1) return TEAM_NAMES[i];
+    var alias;
+    for (alias in ALIASES) if (alias.indexOf(q) === 0 && TEAMS[ALIASES[alias]]) return ALIASES[alias];
     return null;
   }
 
