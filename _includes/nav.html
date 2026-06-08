@@ -10,6 +10,7 @@
     <nav class="site-nav" id="site-nav">
       <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a>
       <a href="{{ '/categories/countdown' | relative_url }}" class="nav-link {% if page.category_slug == 'countdown' %}active{% endif %}">World Cup Countdown</a>
+      <a href="{{ '/schedule' | relative_url }}" class="nav-link {% if page.url == '/schedule/' %}active{% endif %}">Schedule</a>
       <a href="{{ '/categories/players' | relative_url }}" class="nav-link {% if page.category_slug == 'players' %}active{% endif %}">Players</a>
       <a href="{{ '/categories/analysis' | relative_url }}" class="nav-link {% if page.category_slug == 'analysis' %}active{% endif %}">Analysis</a>
       <a href="{{ '/categories/betting' | relative_url }}" class="nav-link {% if page.category_slug == 'betting' %}active{% endif %}">Betting</a>

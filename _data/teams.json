@@ -1,0 +1,1346 @@
+{
+ "Curaçao": {
+  "name": "Curaçao",
+  "rank": 48,
+  "code": "cw",
+  "group": "E",
+  "fifa_rank": "82",
+  "odds_cup": "1500-1",
+  "best_finish": "First appearance",
+  "blurb": "The smallest nation ever to reach the World Cup makes history",
+  "players": [
+   {
+    "name": "Leandro Bacuna",
+    "pos": "Midfielder",
+    "club": "Idgir FK"
+   },
+   {
+    "name": "Gervane Kastaneer",
+    "pos": "Forward",
+    "club": "Terengganu"
+   },
+   {
+    "name": "Tahith Chong",
+    "pos": "Midfield",
+    "club": "Sheffield United"
+   }
+  ],
+  "url": "/countdown/countdown-48-curacao/"
+ },
+ "Haiti": {
+  "name": "Haiti",
+  "rank": 47,
+  "code": "ht",
+  "group": "C",
+  "fifa_rank": "83",
+  "odds_cup": "1500-1",
+  "best_finish": "Group stage — 1974",
+  "blurb": "Les Grenadiers return to the World Cup for the first time since 1974",
+  "players": [
+   {
+    "name": "Jean-Ricner Bellegarde",
+    "pos": "Midfielder",
+    "club": "Wolverhampton Wanderers"
+   },
+   {
+    "name": "Duckens Nazon",
+    "pos": "Forward",
+    "club": "Esteghlal FC"
+   },
+   {
+    "name": "Hannes Delcroix",
+    "pos": "Center back",
+    "club": "Burnley"
+   }
+  ],
+  "url": "/countdown/countdown-47-haiti/"
+ },
+ "Cape Verde": {
+  "name": "Cape Verde",
+  "rank": 46,
+  "code": "cv",
+  "group": "H",
+  "fifa_rank": "69",
+  "odds_cup": "1000-1",
+  "best_finish": "First appearance",
+  "blurb": "The Blue Sharks make history as one of the smallest nations ever to reach the World Cup",
+  "players": [
+   {
+    "name": "Telmo Arcanjo",
+    "pos": "Right Winger",
+    "club": "Vitória Guimarães"
+   },
+   {
+    "name": "Dailon Livramento",
+    "pos": "Striker",
+    "club": "Casa Pia"
+   },
+   {
+    "name": "Willy Semedo",
+    "pos": "Left Winger",
+    "club": "Omonia Nicosia"
+   }
+  ],
+  "url": "/countdown/countdown-46-cape-verde/"
+ },
+ "New Zealand": {
+  "name": "New Zealand",
+  "rank": 45,
+  "code": "nz",
+  "group": "G",
+  "fifa_rank": "85",
+  "odds_cup": "1000-1",
+  "best_finish": "Group stage (1982, 2010)",
+  "blurb": "The All Whites return to the World Cup with Chris Wood leading the charge",
+  "players": [
+   {
+    "name": "Chris Wood",
+    "pos": "Striker",
+    "club": "Nottingham Forest"
+   },
+   {
+    "name": "Liberato Cacace",
+    "pos": "Left Back",
+    "club": "Wrexham"
+   },
+   {
+    "name": "Marko Stamenic",
+    "pos": "Midfielder",
+    "club": "Swansea City"
+   }
+  ],
+  "url": "/countdown/countdown-45-new-zealand/"
+ },
+ "Qatar": {
+  "name": "Qatar",
+  "rank": 44,
+  "code": "qa",
+  "group": "B",
+  "fifa_rank": "55",
+  "odds_cup": "1000-1",
+  "best_finish": "Group stage (2022)",
+  "blurb": "The 2022 hosts qualify on merit for the first time",
+  "players": [
+   {
+    "name": "Akram Afif",
+    "pos": "Left Winger",
+    "club": "Al-Sadd"
+   },
+   {
+    "name": "Almoez Ali",
+    "pos": "Striker",
+    "club": "Al-Duhail SC"
+   },
+   {
+    "name": "Boualem Khoukhi",
+    "pos": "Center Back",
+    "club": "Al-Sadd"
+   }
+  ],
+  "url": "/countdown/countdown-44-qatar/"
+ },
+ "Jordan": {
+  "name": "Jordan",
+  "rank": 43,
+  "code": "jo",
+  "group": "J",
+  "fifa_rank": "63",
+  "odds_cup": "1500-1",
+  "best_finish": "First appearance",
+  "blurb": "The 2023 Asian Cup runners-up reach their first World Cup",
+  "players": [
+   {
+    "name": "Mousa Tamari",
+    "pos": "Winger",
+    "club": "Rennes"
+   },
+   {
+    "name": "Yazan Al-Arab",
+    "pos": "Center Back",
+    "club": "FC Seoul"
+   },
+   {
+    "name": "Ali Olwan",
+    "pos": "Forward",
+    "club": "Al-Sailiya SC"
+   }
+  ],
+  "url": "/countdown/countdown-43-jordan/"
+ },
+ "Iraq": {
+  "name": "Iraq",
+  "rank": 42,
+  "code": "iq",
+  "group": "I",
+  "fifa_rank": "57",
+  "odds_cup": "1000-1",
+  "best_finish": "Group stage (1986)",
+  "blurb": "The Lions of Mesopotamia return to the World Cup for the first time since 1986",
+  "players": [
+   {
+    "name": "Aymen Hussein",
+    "pos": "Striker",
+    "club": "Al-Karma"
+   },
+   {
+    "name": "Ali Jasim",
+    "pos": "Winger",
+    "club": "Al-Najma"
+   },
+   {
+    "name": "Akam Hashem",
+    "pos": "Center Back",
+    "club": "Al Zawraa"
+   }
+  ],
+  "url": "/countdown/countdown-42-iraq/"
+ },
+ "South Africa": {
+  "name": "South Africa",
+  "rank": 41,
+  "code": "za",
+  "group": "A",
+  "fifa_rank": "60",
+  "odds_cup": "800-1",
+  "best_finish": "Group stage (1998, 2002, 2010)",
+  "blurb": "Bafana Bafana return to the World Cup for the first time since hosting in 2010",
+  "players": [
+   {
+    "name": "Lyle Foster",
+    "pos": "Striker",
+    "club": "Burnley"
+   },
+   {
+    "name": "Teboho Mokoena",
+    "pos": "Defensive Midfielder",
+    "club": "Mamelodi Sundowns"
+   },
+   {
+    "name": "Oswin Appollis",
+    "pos": "Winger",
+    "club": "Orlando Pirates"
+   }
+  ],
+  "url": "/countdown/countdown-41-south-africa/"
+ },
+ "Saudi Arabia": {
+  "name": "Saudi Arabia",
+  "rank": 40,
+  "code": "sa",
+  "group": "H",
+  "fifa_rank": "61",
+  "odds_cup": "1000-1",
+  "best_finish": "Round of 16 (1994)",
+  "blurb": "The Green Falcons return with tournament pedigree and tactical flexibility",
+  "players": [
+   {
+    "name": "Salem Al-Dawsari",
+    "pos": "Winger",
+    "club": "Al-Hilal"
+   },
+   {
+    "name": "Firas Al-Buraikan",
+    "pos": "Striker",
+    "club": "Al-Ahli"
+   },
+   {
+    "name": "Mohamed Kanno",
+    "pos": "Midfielder",
+    "club": "Al-Hilal"
+   }
+  ],
+  "url": "/countdown/countdown-40-saudi-arabia/"
+ },
+ "Uzbekistan": {
+  "name": "Uzbekistan",
+  "rank": 39,
+  "code": "uz",
+  "group": "K",
+  "fifa_rank": "50",
+  "odds_cup": "1500-1",
+  "best_finish": "First appearance",
+  "blurb": "Khusanov headlines an ambitious debutant with real quality",
+  "players": [
+   {
+    "name": "Abdukodir Khusanov",
+    "pos": "Center Back",
+    "club": "Manchester City"
+   },
+   {
+    "name": "Abbosbek Fayzullaev",
+    "pos": "Attacking Midfielder",
+    "club": "Başakşehir"
+   },
+   {
+    "name": "Eldor Shomurodov",
+    "pos": "Striker",
+    "club": "Başakşehir"
+   }
+  ],
+  "url": "/countdown/countdown-39-uzbekistan/"
+ },
+ "DR Congo": {
+  "name": "DR Congo",
+  "rank": 38,
+  "code": "cd",
+  "group": "K",
+  "fifa_rank": "46",
+  "odds_cup": "700-1",
+  "best_finish": "Group stage (1974 as Zaire)",
+  "blurb": "The Leopards claw their way to a first World Cup since 1974",
+  "players": [
+   {
+    "name": "Yoane Wissa",
+    "pos": "Forward",
+    "club": "Newcastle United"
+   },
+   {
+    "name": "Aaron Wan-Bissaka",
+    "pos": "Right Back",
+    "club": "West Ham United"
+   },
+   {
+    "name": "Chancel Mbemba",
+    "pos": "Center Back",
+    "club": "Lille"
+   }
+  ],
+  "url": "/countdown/countdown-38-dr-congo/"
+ },
+ "Tunisia": {
+  "name": "Tunisia",
+  "rank": 37,
+  "code": "tn",
+  "group": "F",
+  "fifa_rank": "44",
+  "odds_cup": "500-1",
+  "best_finish": "Group stage. Tunisia have reached the World Cup seven times but have never advanced to the knockout rounds.",
+  "blurb": "The Eagles of Carthage qualified without conceding a single goal",
+  "players": [
+   {
+    "name": "Hannibal",
+    "pos": "Attacking Midfielder",
+    "club": "Burnley"
+   },
+   {
+    "name": "Montassar Talbi",
+    "pos": "Center Back",
+    "club": "FC Lorient"
+   },
+   {
+    "name": "Mohamed Ali Ben Romdhane",
+    "pos": "Midfielder",
+    "club": "Al Ahly"
+   }
+  ],
+  "url": "/countdown/countdown-37-tunisia/"
+ },
+ "Bosnia and Herzegovina": {
+  "name": "Bosnia and Herzegovina",
+  "rank": 36,
+  "code": "ba",
+  "group": "B",
+  "fifa_rank": "65",
+  "odds_cup": "250-1",
+  "best_finish": "Group stage (2014)",
+  "blurb": "Džeko's late-career heroics power Bosnia to their second World Cup",
+  "players": [
+   {
+    "name": "Amar Dedić",
+    "pos": "Right Back",
+    "club": "Benfica"
+   },
+   {
+    "name": "Edin Džeko",
+    "pos": "Striker",
+    "club": "Schalke 04"
+   },
+   {
+    "name": "Esmir Bajraktarević",
+    "pos": "Winger",
+    "club": "PSV Eindhoven"
+   }
+  ],
+  "url": "/countdown/countdown-36-bosnia/"
+ },
+ "Panama": {
+  "name": "Panama",
+  "rank": 35,
+  "code": "pa",
+  "group": "L",
+  "fifa_rank": "33",
+  "odds_cup": "1000-1",
+  "best_finish": "Group stage (2018)",
+  "blurb": "Los Canaleros return to the World Cup with tactical flexibility and grit",
+  "players": [
+   {
+    "name": "Amir Murillo",
+    "pos": "Right Back",
+    "club": "Beşiktaş"
+   },
+   {
+    "name": "Adalberto Carrasquilla",
+    "pos": "Midfielder",
+    "club": "Pumas UNAM"
+   },
+   {
+    "name": "Cecilio Waterman",
+    "pos": "Striker",
+    "club": "Universidad de Concepción"
+   }
+  ],
+  "url": "/countdown/countdown-35-panama/"
+ },
+ "Ghana": {
+  "name": "Ghana",
+  "rank": 34,
+  "code": "gh",
+  "group": "L",
+  "fifa_rank": "74",
+  "odds_cup": "300-1",
+  "best_finish": "Quarterfinals (2024)",
+  "blurb": "The Black Stars bring elite attacking talent — and real volatility — to Group L",
+  "players": [
+   {
+    "name": "Antoine Semenyo",
+    "pos": "Forward",
+    "club": "Manchester City"
+   },
+   {
+    "name": "Jordan Ayew",
+    "pos": "Forward",
+    "club": "Leicester City"
+   },
+   {
+    "name": "Thomas Partey",
+    "pos": "Midfielder",
+    "club": "Villarreal"
+   }
+  ],
+  "url": "/countdown/countdown-34-ghana/"
+ },
+ "Ivory Coast": {
+  "name": "Ivory Coast",
+  "rank": 33,
+  "code": "ci",
+  "group": "E",
+  "fifa_rank": "34",
+  "odds_cup": "250-1",
+  "best_finish": "Group Stage (2006, 2010, 2014)",
+  "blurb": "Faé's Elephants attack with pace and ambition in Group E",
+  "players": [
+   {
+    "name": "Amad Diallo",
+    "pos": "Winger",
+    "club": "Manchester United"
+   },
+   {
+    "name": "Ousmane Diomande",
+    "pos": "Center Back",
+    "club": "Sporting CP"
+   },
+   {
+    "name": "Franck Kessié",
+    "pos": "Midfielder",
+    "club": "Al-Ahli"
+   }
+  ],
+  "url": "/countdown/countdown-33-ivory-coast/"
+ },
+ "Egypt": {
+  "name": "Egypt",
+  "rank": 32,
+  "code": "eg",
+  "group": "G",
+  "fifa_rank": "31",
+  "odds_cup": "300-1",
+  "best_finish": "Group Stage (1934, 1990, 2018)",
+  "blurb": "Salah and Marmoush headline a disciplined, dangerous Egyptian side",
+  "players": [
+   {
+    "name": "Mohamed Salah",
+    "pos": "Winger",
+    "club": "Liverpool"
+   },
+   {
+    "name": "Omar Marmoush",
+    "pos": "Forward",
+    "club": "Manchester City"
+   },
+   {
+    "name": "Mohamed El Shenawy",
+    "pos": "Goalkeeper",
+    "club": "Al Ahly"
+   }
+  ],
+  "url": "/countdown/countdown-32-egypt/"
+ },
+ "Australia": {
+  "name": "Australia",
+  "rank": 31,
+  "code": "au",
+  "group": "D",
+  "fifa_rank": "27",
+  "odds_cup": "500-1",
+  "best_finish": "Round of 16 (2006, 2022)",
+  "blurb": "The Socceroos bring a sixth straight World Cup and a grinding, awkward style to Group D",
+  "players": [
+   {
+    "name": "Riley McGree",
+    "pos": "Midfielder",
+    "club": "Middlesbrough"
+   },
+   {
+    "name": "Mat Ryan",
+    "pos": "Goalkeeper",
+    "club": "Levante"
+   },
+   {
+    "name": "Aziz Behich",
+    "pos": "Left Back/Wing-Back",
+    "club": "Melbourne City"
+   }
+  ],
+  "url": "/countdown/countdown-31-australia/"
+ },
+ "Algeria": {
+  "name": "Algeria",
+  "rank": 30,
+  "code": "dz",
+  "group": "J",
+  "fifa_rank": "28",
+  "odds_cup": "350-1",
+  "best_finish": "Round of 16 (2014)",
+  "blurb": "Mahrez and a possession-minded Algeria look to push Austria for second in Group J",
+  "players": [
+   {
+    "name": "Mohamed Amoura",
+    "pos": "Striker",
+    "club": "Wolfsburg"
+   },
+   {
+    "name": "Riyad Mahrez",
+    "pos": "Winger",
+    "club": "Al-Ahli"
+   },
+   {
+    "name": "Rayan Aït-Nouri",
+    "pos": "Left Back",
+    "club": "Manchester City"
+   }
+  ],
+  "url": "/countdown/countdown-30-algeria/"
+ },
+ "South Korea": {
+  "name": "South Korea",
+  "rank": 29,
+  "code": "kr",
+  "group": "A",
+  "fifa_rank": "25",
+  "odds_cup": "450-1",
+  "best_finish": "Semifinals (2002)",
+  "blurb": "Son leads a structured, technical South Korea side into a balanced Group A",
+  "players": [
+   {
+    "name": "Son Heung-min",
+    "pos": "Forward",
+    "club": "LAFC"
+   },
+   {
+    "name": "Kang-in Lee",
+    "pos": "Attacking Midfielder",
+    "club": "Paris Saint-Germain"
+   },
+   {
+    "name": "Kim Min-jae",
+    "pos": "Center Back",
+    "club": "Bayern Munich"
+   }
+  ],
+  "url": "/countdown/countdown-29-south-korea/"
+ },
+ "Scotland": {
+  "name": "Scotland",
+  "rank": 28,
+  "code": "gb-sct",
+  "group": "C",
+  "fifa_rank": "43",
+  "odds_cup": "200-1",
+  "best_finish": "Group Stage. Scotland have never reached the knockout rounds and last appeared at a World Cup in 1998.",
+  "blurb": "A pragmatic, resilient Scotland end a 28-year absence and aim for the knockouts",
+  "players": [
+   {
+    "name": "Scott McTominay",
+    "pos": "Midfielder",
+    "club": "Napoli"
+   },
+   {
+    "name": "Andy Robertson",
+    "pos": "Left Back",
+    "club": "Liverpool"
+   },
+   {
+    "name": "John McGinn",
+    "pos": "Midfielder",
+    "club": "Aston Villa"
+   }
+  ],
+  "url": "/countdown/countdown-28-scotland/"
+ },
+ "Czechia": {
+  "name": "Czechia",
+  "rank": 27,
+  "code": "cz",
+  "group": "A",
+  "fifa_rank": "41",
+  "odds_cup": "250-1",
+  "best_finish": "2nd Place (1934 and 1962 as Czechoslovakia) — As an independent nation, their last appearance was a group-stage exit in 2006.",
+  "blurb": "A physical, set-piece-heavy Czechia return to the World Cup for the first time since 2006",
+  "players": [
+   {
+    "name": "Patrik Schick",
+    "pos": "Striker",
+    "club": "Bayer Leverkusen"
+   },
+   {
+    "name": "Tomáš Souček",
+    "pos": "Midfielder",
+    "club": "West Ham United"
+   },
+   {
+    "name": "Pavel Šulc",
+    "pos": "Attacking Midfielder",
+    "club": "Lyon"
+   }
+  ],
+  "url": "/countdown/countdown-27-czechia/"
+ },
+ "Iran": {
+  "name": "Iran",
+  "rank": 26,
+  "code": "ir",
+  "group": "G",
+  "fifa_rank": "21",
+  "odds_cup": "500-1",
+  "best_finish": "Group Stage (1978, 1998, 2006, 2014, 2018, 2022)",
+  "blurb": "An experienced, hard-to-beat Iran team chases its first knockout-stage appearance",
+  "players": [
+   {
+    "name": "Mehdi Taremi",
+    "pos": "Striker",
+    "club": "Olympiacos"
+   },
+   {
+    "name": "Mohammad Mohebi",
+    "pos": "Winger",
+    "club": "Rostov"
+   },
+   {
+    "name": "Alireza Beiranvand",
+    "pos": "Goalkeeper",
+    "club": "Tractor"
+   }
+  ],
+  "url": "/countdown/countdown-26-iran/"
+ },
+ "Paraguay": {
+  "name": "Paraguay",
+  "rank": 25,
+  "code": "py",
+  "group": "D",
+  "fifa_rank": "40",
+  "odds_cup": "150-1",
+  "best_finish": "Quarterfinals (2010)",
+  "blurb": "Alfaro's gritty Paraguay return to the World Cup and shape up as Group D's awkward customer",
+  "players": [
+   {
+    "name": "Diego Gómez",
+    "pos": "Midfielder",
+    "club": "Brighton"
+   },
+   {
+    "name": "Julio Enciso",
+    "pos": "Attacking Midfielder",
+    "club": "Strasbourg"
+   },
+   {
+    "name": "Gustavo Gómez",
+    "pos": "Center Back",
+    "club": "Palmeiras"
+   }
+  ],
+  "url": "/countdown/countdown-25-paraguay/"
+ },
+ "Sweden": {
+  "name": "Sweden",
+  "rank": 24,
+  "code": "se",
+  "group": "F",
+  "fifa_rank": "38",
+  "odds_cup": "100-1",
+  "best_finish": "2nd Place (1958)",
+  "blurb": "Gyökeres, Isak, and a Potter-rebuilt Sweden bring serious top-end talent to Group F",
+  "players": [
+   {
+    "name": "Alexander Isak",
+    "pos": "Striker",
+    "club": "Liverpool"
+   },
+   {
+    "name": "Viktor Gyökeres",
+    "pos": "Striker",
+    "club": "Arsenal"
+   },
+   {
+    "name": "Anthony Elanga",
+    "pos": "Winger",
+    "club": "Newcastle United"
+   }
+  ],
+  "url": "/countdown/countdown-24-sweden/"
+ },
+ "Canada": {
+  "name": "Canada",
+  "rank": 23,
+  "code": "ca",
+  "group": "B",
+  "fifa_rank": "30",
+  "odds_cup": "200-1",
+  "best_finish": "Group Stage (1986, 2022)",
+  "blurb": "Co-hosts Canada bring Jesse Marsch's aggressive, transition-heavy style to Group B",
+  "players": [
+   {
+    "name": "Jonathan David",
+    "pos": "Striker",
+    "club": "Juventus"
+   },
+   {
+    "name": "Alphonso Davies",
+    "pos": "Left Back/Wing Back",
+    "club": "Bayern Munich"
+   },
+   {
+    "name": "Stephen Eustáquio",
+    "pos": "Midfielder",
+    "club": "Porto"
+   }
+  ],
+  "url": "/countdown/countdown-23-canada/"
+ },
+ "Austria": {
+  "name": "Austria",
+  "rank": 22,
+  "code": "at",
+  "group": "J",
+  "fifa_rank": "24",
+  "odds_cup": "150-1",
+  "best_finish": "Third Place (1954)",
+  "blurb": "Rangnick's pressing Austria return to the World Cup as Group J's stylistic threat",
+  "players": [
+   {
+    "name": "Marcel Sabitzer",
+    "pos": "Midfielder",
+    "club": "Borussia Dortmund"
+   },
+   {
+    "name": "Konrad Laimer",
+    "pos": "Right Back/Midfielder",
+    "club": "Bayern Munich"
+   },
+   {
+    "name": "Christoph Baumgartner",
+    "pos": "Attacking Midfielder",
+    "club": "RB Leipzig"
+   }
+  ],
+  "url": "/countdown/countdown-22-austria/"
+ },
+ "Senegal": {
+  "name": "Senegal",
+  "rank": 21,
+  "code": "sn",
+  "group": "I",
+  "fifa_rank": "14",
+  "odds_cup": "110-1",
+  "best_finish": "Quarterfinals (2002)",
+  "blurb": "A veteran-and-youth Senegal navigates one of the tournament's toughest groups",
+  "players": [
+   {
+    "name": "Sadio Mané",
+    "pos": "Forward",
+    "club": "Al Nassr"
+   },
+   {
+    "name": "Nicolas Jackson",
+    "pos": "Striker",
+    "club": "Bayern Munich"
+   },
+   {
+    "name": "Idrissa Gueye",
+    "pos": "Midfielder",
+    "club": "Everton"
+   }
+  ],
+  "url": "/countdown/countdown-21-senegal/"
+ },
+ "Mexico": {
+  "name": "Mexico",
+  "rank": 20,
+  "code": "mx",
+  "group": "A",
+  "fifa_rank": "15",
+  "odds_cup": "75-1",
+  "best_finish": "Quarterfinals (1970, 1986)",
+  "blurb": "Host Mexico bring a pragmatic Aguirre setup and home-field energy to Group A",
+  "players": [
+   {
+    "name": "Raúl Jiménez",
+    "pos": "Striker",
+    "club": "Fulham"
+   },
+   {
+    "name": "César Montes",
+    "pos": "Center Back",
+    "club": "Lokomotiv Moscow"
+   },
+   {
+    "name": "Edson Álvarez",
+    "pos": "Midfielder",
+    "club": "West Ham United"
+   }
+  ],
+  "url": "/countdown/countdown-20-mexico/"
+ },
+ "Türkiye": {
+  "name": "Türkiye",
+  "rank": 19,
+  "code": "tr",
+  "group": "D",
+  "fifa_rank": "22",
+  "odds_cup": "100-1",
+  "best_finish": "3rd Place (2002)",
+  "blurb": "Güler, Yıldız, and Çalhanoğlu give a returning Türkiye real attacking ceiling in Group D",
+  "players": [
+   {
+    "name": "Arda Güler",
+    "pos": "Attacking Midfielder",
+    "club": "Real Madrid"
+   },
+   {
+    "name": "Hakan Çalhanoğlu",
+    "pos": "Midfielder",
+    "club": "Inter Milan"
+   },
+   {
+    "name": "Kenan Yıldız",
+    "pos": "Winger",
+    "club": "Juventus"
+   }
+  ],
+  "url": "/countdown/countdown-19-turkiye/"
+ },
+ "United States": {
+  "name": "United States",
+  "rank": 18,
+  "code": "us",
+  "group": "D",
+  "fifa_rank": "16",
+  "odds_cup": "60-1",
+  "best_finish": "3rd Place (1930) — Quarterfinals in modern day (2002)",
+  "blurb": "A talented but unsettled USMNT enter a home World Cup with everything to prove in Group D",
+  "players": [
+   {
+    "name": "Christian Pulisic",
+    "pos": "Winger/Attacking Midfielder",
+    "club": "AC Milan"
+   },
+   {
+    "name": "Weston McKennie",
+    "pos": "Midfielder",
+    "club": "Juventus"
+   },
+   {
+    "name": "Chris Richards",
+    "pos": "Center Back",
+    "club": "Crystal Palace"
+   }
+  ],
+  "url": "/countdown/countdown-18-usa/"
+ },
+ "Switzerland": {
+  "name": "Switzerland",
+  "rank": 17,
+  "code": "ch",
+  "group": "B",
+  "fifa_rank": "19",
+  "odds_cup": "80-1",
+  "best_finish": "Quarterfinals (1934, 1938, 1954)",
+  "blurb": "Yakin's organized Switzerland aim to turn Group B favoritism into another knockout run",
+  "players": [
+   {
+    "name": "Granit Xhaka",
+    "pos": "Midfielder",
+    "club": "Sunderland"
+   },
+   {
+    "name": "Manuel Akanji",
+    "pos": "Center Back",
+    "club": "Inter Milan"
+   },
+   {
+    "name": "Dan Ndoye",
+    "pos": "Winger",
+    "club": "Nottingham Forest"
+   }
+  ],
+  "url": "/countdown/countdown-17-switzerland/"
+ },
+ "Ecuador": {
+  "name": "Ecuador",
+  "rank": 16,
+  "code": "ec",
+  "group": "E",
+  "fifa_rank": "23",
+  "odds_cup": "90-1",
+  "best_finish": "Round of 16 (2006)",
+  "blurb": "A defensive monster with young attacking talent, Ecuador may be the field's most uncomfortable knockout matchup",
+  "players": [
+   {
+    "name": "Moisés Caicedo",
+    "pos": "Midfielder",
+    "club": "Chelsea"
+   },
+   {
+    "name": "Willian Pacho",
+    "pos": "Center Back",
+    "club": "Paris Saint-Germain"
+   },
+   {
+    "name": "Piero Hincapié",
+    "pos": "Center Back/Left Back",
+    "club": "Arsenal"
+   }
+  ],
+  "url": "/countdown/countdown-16-ecuador/"
+ },
+ "Uruguay": {
+  "name": "Uruguay",
+  "rank": 15,
+  "code": "uy",
+  "group": "H",
+  "fifa_rank": "17",
+  "odds_cup": "65-1",
+  "best_finish": "Champions (1930, 1950)",
+  "blurb": "Bielsa's high-intensity Uruguay are dangerous, entertaining, and a little hard to trust in Group H",
+  "players": [
+   {
+    "name": "Federico Valverde",
+    "pos": "Midfielder",
+    "club": "Real Madrid"
+   },
+   {
+    "name": "Darwin Núñez",
+    "pos": "Striker",
+    "club": "Al-Hilal"
+   },
+   {
+    "name": "Ronald Araújo",
+    "pos": "Center Back",
+    "club": "Barcelona"
+   }
+  ],
+  "url": "/countdown/countdown-15-uruguay/"
+ },
+ "Croatia": {
+  "name": "Croatia",
+  "rank": 14,
+  "code": "hr",
+  "group": "L",
+  "fifa_rank": "11",
+  "odds_cup": "80-1",
+  "best_finish": "2nd Place (2018)",
+  "blurb": "An aging but trustworthy Croatia still feels like a knockout-round nightmare in Group L",
+  "players": [
+   {
+    "name": "Luka Modrić",
+    "pos": "Midfielder",
+    "club": "AC Milan"
+   },
+   {
+    "name": "Joško Gvardiol",
+    "pos": "Center Back/Left Back",
+    "club": "Manchester City"
+   },
+   {
+    "name": "Andrej Kramarić",
+    "pos": "Forward/Attacking Midfielder",
+    "club": "Hoffenheim"
+   }
+  ],
+  "url": "/countdown/countdown-14-croatia/"
+ },
+ "Norway": {
+  "name": "Norway",
+  "rank": 13,
+  "code": "no",
+  "group": "I",
+  "fifa_rank": "32",
+  "odds_cup": "30-1",
+  "best_finish": "Round of 16 (1938, 1998)",
+  "blurb": "Back at the World Cup for the first time since 1998 with Haaland, Ødegaard, and a real attack",
+  "players": [
+   {
+    "name": "Erling Haaland",
+    "pos": "Striker",
+    "club": "Manchester City"
+   },
+   {
+    "name": "Martin Ødegaard",
+    "pos": "Midfielder",
+    "club": "Arsenal"
+   },
+   {
+    "name": "Antonio Nusa",
+    "pos": "Winger",
+    "club": "RB Leipzig"
+   }
+  ],
+  "url": "/countdown/countdown-13-norway/"
+ },
+ "Japan": {
+  "name": "Japan",
+  "rank": 12,
+  "code": "jp",
+  "group": "F",
+  "fifa_rank": "18",
+  "odds_cup": "65-1",
+  "best_finish": "Round of 16 (2002, 2010, 2018, 2022)",
+  "blurb": "Tactically flexible, tournament-tested, and trying to push past the Round of 16",
+  "players": [
+   {
+    "name": "Takefusa Kubo",
+    "pos": "Winger/Attacking Midfielder",
+    "club": "Real Sociedad"
+   },
+   {
+    "name": "Wataru Endo",
+    "pos": "Midfielder",
+    "club": "Liverpool"
+   },
+   {
+    "name": "Ritsu Doan",
+    "pos": "Winger",
+    "club": "Eintracht Frankfurt"
+   }
+  ],
+  "url": "/countdown/countdown-12-japan/"
+ },
+ "Belgium": {
+  "name": "Belgium",
+  "rank": 11,
+  "code": "be",
+  "group": "G",
+  "fifa_rank": "9",
+  "odds_cup": "35-1",
+  "best_finish": "3rd Place (2018)",
+  "blurb": "A team in transition with De Bruyne, Doku, and Courtois leading one more run",
+  "players": [
+   {
+    "name": "Kevin De Bruyne",
+    "pos": "Midfielder",
+    "club": "Napoli"
+   },
+   {
+    "name": "Jeremy Doku",
+    "pos": "Winger",
+    "club": "Manchester City"
+   },
+   {
+    "name": "Thibaut Courtois",
+    "pos": "Goalkeeper",
+    "club": "Real Madrid"
+   }
+  ],
+  "url": "/countdown/countdown-11-belgium/"
+ },
+ "Morocco": {
+  "name": "Morocco",
+  "rank": 10,
+  "code": "ma",
+  "group": "C",
+  "fifa_rank": "8",
+  "odds_cup": "50-1",
+  "best_finish": "4th Place (2022)",
+  "blurb": "The 2022 semifinalists return with a new coach and the burden of proving that run was not a one-off",
+  "players": [
+   {
+    "name": "Achraf Hakimi",
+    "pos": "Right Back",
+    "club": "Paris Saint-Germain"
+   },
+   {
+    "name": "Brahim Díaz",
+    "pos": "Attacking Midfielder/Winger",
+    "club": "Real Madrid"
+   },
+   {
+    "name": "Yassine Bounou",
+    "pos": "Goalkeeper",
+    "club": "Al Hilal"
+   }
+  ],
+  "url": "/countdown/countdown-10-morocco/"
+ },
+ "Colombia": {
+  "name": "Colombia",
+  "rank": 9,
+  "code": "co",
+  "group": "K",
+  "fifa_rank": "13",
+  "odds_cup": "40-1",
+  "best_finish": "Quarterfinals (2014)",
+  "blurb": "A real star in Luis Díaz, a tournament icon in James, and just enough chaos to be the field's most dangerous dark horse",
+  "players": [
+   {
+    "name": "Luis Díaz",
+    "pos": "Winger",
+    "club": "Bayern Munich"
+   },
+   {
+    "name": "James Rodríguez",
+    "pos": "Attacking Midfielder",
+    "club": "Minnesota United"
+   },
+   {
+    "name": "Daniel Muñoz",
+    "pos": "Right Back",
+    "club": "Crystal Palace"
+   }
+  ],
+  "url": "/countdown/countdown-9-colombia/"
+ },
+ "Germany": {
+  "name": "Germany",
+  "rank": 8,
+  "code": "de",
+  "group": "E",
+  "fifa_rank": "10",
+  "odds_cup": "14-1",
+  "best_finish": "Champions (1954, 1974, 1990, 2014)",
+  "blurb": "Loaded with talent and carrying the scars of back-to-back group-stage exits, Germany's first job is to look like Germany again",
+  "players": [
+   {
+    "name": "Jamal Musiala",
+    "pos": "Attacking Midfielder",
+    "club": "Bayern Munich"
+   },
+   {
+    "name": "Florian Wirtz",
+    "pos": "Attacking Midfielder",
+    "club": "Liverpool"
+   },
+   {
+    "name": "Joshua Kimmich",
+    "pos": "Midfielder/Right Back",
+    "club": "Bayern Munich"
+   }
+  ],
+  "url": "/countdown/countdown-8-germany/"
+ },
+ "Netherlands": {
+  "name": "Netherlands",
+  "rank": 7,
+  "code": "nl",
+  "group": "F",
+  "fifa_rank": "7",
+  "odds_cup": "20-1",
+  "best_finish": "Runners-Up (1974, 1978, 2010)",
+  "blurb": "Maybe the best team just outside the true favorites — if the No. 9 spot produces, this is a semifinal-caliber side",
+  "players": [
+   {
+    "name": "Virgil van Dijk",
+    "pos": "Center Back",
+    "club": "Liverpool"
+   },
+   {
+    "name": "Frenkie de Jong",
+    "pos": "Midfielder",
+    "club": "Barcelona"
+   },
+   {
+    "name": "Cody Gakpo",
+    "pos": "Forward/Winger",
+    "club": "Liverpool"
+   }
+  ],
+  "url": "/countdown/countdown-7-netherlands/"
+ },
+ "Portugal": {
+  "name": "Portugal",
+  "rank": 6,
+  "code": "pt",
+  "group": "K",
+  "fifa_rank": "5",
+  "odds_cup": "10-1",
+  "best_finish": "Third Place (1966)",
+  "blurb": "The deepest squad in the tournament and the best midfield trio at the World Cup — but can Martínez turn the menu into a team?",
+  "players": [
+   {
+    "name": "Vitinha",
+    "pos": "Midfielder",
+    "club": "Paris Saint-Germain"
+   },
+   {
+    "name": "Bruno Fernandes",
+    "pos": "Midfielder",
+    "club": "Manchester United"
+   },
+   {
+    "name": "Nuno Mendes",
+    "pos": "Left Back",
+    "club": "Paris Saint-Germain"
+   }
+  ],
+  "url": "/countdown/countdown-6-portugal/"
+ },
+ "Brazil": {
+  "name": "Brazil",
+  "rank": 5,
+  "code": "br",
+  "group": "C",
+  "fifa_rank": "6",
+  "odds_cup": "8.5-1",
+  "best_finish": "Champions (1958, 1962, 1970, 1994, 2002). Brazil are still the only five-time World Cup winners and are chasing their first title in 24 years.",
+  "blurb": "The only five-time champions are chasing a first title in 24 years — and Ancelotti was hired to make them practical, not pretty",
+  "players": [
+   {
+    "name": "Vinícius Júnior",
+    "pos": "Winger",
+    "club": "Real Madrid"
+   },
+   {
+    "name": "Raphinha",
+    "pos": "Winger",
+    "club": "Barcelona"
+   },
+   {
+    "name": "Gabriel",
+    "pos": "Center Back",
+    "club": "Arsenal"
+   }
+  ],
+  "url": "/countdown/countdown-5-brazil/"
+ },
+ "Argentina": {
+  "name": "Argentina",
+  "rank": 4,
+  "code": "ar",
+  "group": "J",
+  "fifa_rank": "3",
+  "odds_cup": "9-1",
+  "best_finish": "Champions (1978, 1986, 2022). Argentina are the defending World Cup champions and are trying to become the first team to repeat since Brazil in 1962.",
+  "blurb": "The defending champions don't need to be the most talented team in the field — until someone proves otherwise, they're still the champions, and they still have Messi",
+  "players": [
+   {
+    "name": "Lionel Messi",
+    "pos": "Forward",
+    "club": "Inter Miami"
+   },
+   {
+    "name": "Julián Álvarez",
+    "pos": "Forward",
+    "club": "Atlético de Madrid"
+   },
+   {
+    "name": "Alexis Mac Allister",
+    "pos": "Midfielder",
+    "club": "Liverpool"
+   }
+  ],
+  "url": "/countdown/countdown-4-argentina/"
+ },
+ "Spain": {
+  "code": "es",
+  "group": "H",
+  "fifa_rank": "2",
+  "odds_cup": "5-1",
+  "best_finish": "Champions (2010)",
+  "blurb": "Reigning European champions and the consensus tournament favorite.",
+  "players": [
+   {
+    "name": "Lamine Yamal",
+    "pos": "Winger",
+    "club": "Barcelona"
+   },
+   {
+    "name": "Pedri",
+    "pos": "Midfielder",
+    "club": "Barcelona"
+   },
+   {
+    "name": "Rodri",
+    "pos": "Midfielder",
+    "club": "Manchester City"
+   }
+  ],
+  "name": "Spain",
+  "rank": null,
+  "url": null
+ },
+ "France": {
+  "code": "fr",
+  "group": "I",
+  "fifa_rank": "1",
+  "odds_cup": "11-2",
+  "best_finish": "Champions (1998, 2018)",
+  "blurb": "Absurd attacking depth and recent tournament pedigree — perennial favorites.",
+  "players": [
+   {
+    "name": "Kylian Mbappé",
+    "pos": "Forward",
+    "club": "Real Madrid"
+   },
+   {
+    "name": "Ousmane Dembélé",
+    "pos": "Winger",
+    "club": "Paris Saint-Germain"
+   },
+   {
+    "name": "Michael Olise",
+    "pos": "Winger",
+    "club": "Bayern Munich"
+   }
+  ],
+  "name": "France",
+  "rank": null,
+  "url": null
+ },
+ "England": {
+  "code": "gb-eng",
+  "group": "L",
+  "fifa_rank": "4",
+  "odds_cup": "13-2",
+  "best_finish": "Champions (1966)",
+  "blurb": "Loaded with attacking talent and chasing a first title since 1966.",
+  "players": [
+   {
+    "name": "Harry Kane",
+    "pos": "Striker",
+    "club": "Bayern Munich"
+   },
+   {
+    "name": "Jude Bellingham",
+    "pos": "Midfielder",
+    "club": "Real Madrid"
+   },
+   {
+    "name": "Bukayo Saka",
+    "pos": "Winger",
+    "club": "Arsenal"
+   }
+  ],
+  "name": "England",
+  "rank": null,
+  "url": null
+ }
+}

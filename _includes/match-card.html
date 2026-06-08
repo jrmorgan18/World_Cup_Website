@@ -1,0 +1,22 @@
+{% assign m = include.m %}
+{% assign th = site.data.teams[m.home] %}
+{% assign ta = site.data.teams[m.away] %}
+<button type="button" class="match-card"
+        data-home="{{ m.home | escape }}" data-away="{{ m.away | escape }}"
+        data-date="{{ m.date | date: '%A, %B %-d' }}" data-time="{{ m.time }}"
+        data-venue="{{ m.venue | escape }}" data-city="{{ m.city | escape }}"
+        data-group="{{ m.group }}">
+  <span class="mc-time">{{ m.time }}{% if include.show_group %}<span class="mc-group">Group {{ m.group }}</span>{% endif %}</span>
+  <span class="mc-fixture">
+    <span class="mc-team mc-home">
+      <span class="mc-name">{{ m.home }}</span>
+      <img class="mc-flag" src="https://flagcdn.com/w80/{{ th.code }}.png" alt="" loading="lazy">
+    </span>
+    <span class="mc-vs">v</span>
+    <span class="mc-team mc-away">
+      <img class="mc-flag" src="https://flagcdn.com/w80/{{ ta.code }}.png" alt="" loading="lazy">
+      <span class="mc-name">{{ m.away }}</span>
+    </span>
+  </span>
+  <span class="mc-venue">{{ m.city }} · {{ m.venue }}</span>
+</button>

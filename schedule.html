@@ -1,0 +1,92 @@
+---
+layout: default
+title: "Schedule"
+permalink: /schedule/
+---
+<div class="schedule-page">
+  <div class="schedule-header">
+    <h1 class="category-title">Group Stage Schedule</h1>
+    <p class="category-description">All 72 group-stage matches. Browse by group or by date, and tap any game for a quick head-to-head preview built from each team's capsule.</p>
+  </div>
+
+  <div class="view-toggle" role="tablist" aria-label="Schedule view">
+    <button class="view-btn active" data-view="group" role="tab" aria-selected="true">By Group</button>
+    <button class="view-btn" data-view="date" role="tab" aria-selected="false">By Date</button>
+  </div>
+
+  <!-- ===== BY GROUP ===== -->
+  <div id="view-group" class="schedule-view">
+    <nav class="group-jump" aria-label="Jump to group">
+      {% for g in site.data.schedule.group_order %}
+      <a href="#group-{{ g }}" class="group-chip">{{ g }}</a>
+      {% endfor %}
+    </nav>
+
+    {% for g in site.data.schedule.group_order %}
+    <section class="group-block" id="group-{{ g }}">
+      <div class="group-block-header">
+        <h2 class="group-name">Group {{ g }}</h2>
+        <div class="group-teams">
+          {% for tn in site.data.schedule.groups[g] %}
+          {% assign t = site.data.teams[tn] %}
+          <button type="button" class="group-team team-trigger" data-team="{{ tn | escape }}">
+            <img class="gt-flag" src="https://flagcdn.com/w40/{{ t.code }}.png" alt="" loading="lazy">
+            <span>{{ tn }}</span>
+          </button>
+          {% endfor %}
+        </div>
+      </div>
+      {% for md in (1..3) %}
+      <div class="matchday">
+        <div class="md-label">Matchday {{ md }}</div>
+        <div class="match-list">
+          {% assign gms = site.data.schedule.matches | where: 'group', g %}
+          {% for m in gms %}{% if m.matchday == md %}{% include match-card.html m=m %}{% endif %}{% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </section>
+    {% endfor %}
+  </div>
+
+  <!-- ===== BY DATE ===== -->
+  <div id="view-date" class="schedule-view" hidden>
+    {% assign alldates = site.data.schedule.matches | map: 'date' | uniq %}
+    {% for d in alldates %}
+    <section class="date-block">
+      <h2 class="date-heading">{{ d | date: '%A, %B %-d, %Y' }}</h2>
+      <div class="match-list">
+        {% assign dms = site.data.schedule.matches | where: 'date', d %}
+        {% for m in dms %}{% include match-card.html m=m show_group=true %}{% endfor %}
+      </div>
+    </section>
+    {% endfor %}
+  </div>
+
+  <p class="schedule-note">{{ site.data.schedule.meta.note }}</p>
+
+  <!-- ===== MODAL ===== -->
+  <div id="match-modal" class="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="mm-title">
+      <button type="button" class="modal-close" data-close aria-label="Close preview">&times;</button>
+      <div class="modal-meta">
+        <span id="mm-group" class="mm-badge"></span>
+        <span id="mm-datetime"></span>
+        <span id="mm-venue"></span>
+      </div>
+      <div id="mm-title" class="sr-only"></div>
+      <div class="modal-teams">
+        <div class="modal-team" id="mm-home"></div>
+        <div class="modal-vs">vs</div>
+        <div class="modal-team" id="mm-away"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  window.WC_TEAMS = {{ site.data.teams | jsonify }};
+  window.WC_BASE = "{{ site.baseurl }}";
+</script>
+<script src="{{ '/assets/js/schedule.js' | relative_url }}"></script>
