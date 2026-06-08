@@ -5,15 +5,50 @@
   var GROUP_ORDER = window.WC_GROUP_ORDER || [];
   var BASE = window.WC_BASE || "";
 
-  // Round-of-32 layout. Tokens: W:<g> group winner, R:<g> runner-up, T:<i> third slot.
-  // Third slot i is paired with the winner group in SLOT_WG[i] (used to avoid same-group ties).
-  var SLOT_WG = ["A", "C", "E", "G", "B", "D", "F", "H"];
+  // Round-of-32 layout (FIFA 2026, matches 73-88). Tokens: W:<g> winner, R:<g> runner-up, T:<i> third slot.
+  // R32 index i corresponds to match number 73 + i.
   var R32SPECS = [
-    ["W:A", "T:0"], ["R:B", "R:C"], ["W:C", "T:1"], ["W:I", "R:K"],
-    ["W:E", "T:2"], ["R:F", "R:G"], ["W:G", "T:3"], ["W:L", "R:J"],
-    ["W:B", "T:4"], ["R:A", "R:D"], ["W:D", "T:5"], ["W:J", "R:L"],
-    ["W:F", "T:6"], ["R:E", "R:H"], ["W:H", "T:7"], ["W:K", "R:I"]
+    ["R:A", "R:B"],   // 73
+    ["W:E", "T:0"],   // 74
+    ["W:F", "R:C"],   // 75
+    ["W:C", "R:F"],   // 76
+    ["W:I", "T:1"],   // 77
+    ["R:E", "R:I"],   // 78
+    ["W:A", "T:2"],   // 79
+    ["W:L", "T:3"],   // 80
+    ["W:D", "T:4"],   // 81
+    ["W:G", "T:5"],   // 82
+    ["R:K", "R:L"],   // 83
+    ["W:H", "R:J"],   // 84
+    ["W:B", "T:6"],   // 85
+    ["W:J", "R:H"],   // 86
+    ["W:K", "T:7"],   // 87
+    ["R:D", "R:G"]    // 88
   ];
+  // Candidate groups for each third-place slot (FIFA Annex C possibilities).
+  var SLOT_CAND = [
+    ["A", "B", "C", "D", "F"], // slot 0 -> match 74 (vs 1E)
+    ["C", "D", "F", "G", "H"], // slot 1 -> match 77 (vs 1I)
+    ["C", "E", "F", "H", "I"], // slot 2 -> match 79 (vs 1A)
+    ["E", "H", "I", "J", "K"], // slot 3 -> match 80 (vs 1L)
+    ["B", "E", "F", "I", "J"], // slot 4 -> match 81 (vs 1D)
+    ["A", "E", "H", "I", "J"], // slot 5 -> match 82 (vs 1G)
+    ["E", "F", "G", "I", "J"], // slot 6 -> match 85 (vs 1B)
+    ["D", "E", "I", "J", "L"]  // slot 7 -> match 87 (vs 1K)
+  ];
+  // Round of 16 (matches 89-96): each pairs two R32 winners, referenced by R32 index.
+  var R16PAIRS = [
+    [0, 2],   // 89: W73 v W75
+    [1, 4],   // 90: W74 v W77
+    [3, 5],   // 91: W76 v W78
+    [6, 7],   // 92: W79 v W80
+    [10, 11], // 93: W83 v W84
+    [8, 9],   // 94: W81 v W82
+    [13, 15], // 95: W86 v W88
+    [12, 14]  // 96: W85 v W87
+  ];
+  // Visual top-to-bottom order for the R32 column so pods line up with the R16 column.
+  var R32_DISPLAY = [0, 2, 1, 4, 3, 5, 6, 7, 10, 11, 8, 9, 13, 15, 12, 14];
 
   var state = { order: {}, thirds: [], picks: { R32: {}, R16: {}, QF: {}, SF: {}, F: {}, T3: {} } };
 
@@ -116,21 +151,28 @@
   }
 
   /* ---------- bracket ---------- */
+  // Assign the chosen third-place teams to the 8 third slots so each lands in a
+  // slot whose Annex C candidate groups include that team's group (a bipartite
+  // matching / system of distinct representatives).
   function assignThirds(chosen) {
+    var ch = chosen.slice().sort(function (a, b) { return grp(a).localeCompare(grp(b)); });
     var res = new Array(8).fill(null);
-    var used = new Array(chosen.length).fill(false);
+    var used = new Array(ch.length).fill(false);
     function bt(slot) {
       if (slot === 8) return true;
-      for (var k = 0; k < chosen.length; k++) {
-        if (used[k]) continue;
-        if (grp(chosen[k]) === SLOT_WG[slot]) continue;
-        used[k] = true; res[slot] = chosen[k];
+      for (var k = 0; k < ch.length; k++) {
+        if (used[k] || SLOT_CAND[slot].indexOf(grp(ch[k])) === -1) continue;
+        used[k] = true; res[slot] = ch[k];
         if (bt(slot + 1)) return true;
         used[k] = false; res[slot] = null;
       }
       return false;
     }
-    if (!bt(0)) for (var s = 0; s < 8; s++) res[s] = chosen[s] || null;
+    if (!bt(0)) {
+      // No valid matching for this third-place combination — fill what's left.
+      var ri = 0, rem = ch.filter(function (_, k) { return !used[k]; });
+      for (var s = 0; s < 8; s++) if (!res[s]) res[s] = rem[ri++] || null;
+    }
     return res;
   }
   function resolve(tok, thirdAssign) {
@@ -149,8 +191,8 @@
   function computeBracket() {
     var ta = assignThirds(state.thirds);
     var R32 = R32SPECS.map(function (s, i) { return buildMatch("R32", i, resolve(s[0], ta), resolve(s[1], ta)); });
-    var R16 = [], QF = [], SF = [], i;
-    for (i = 0; i < 8; i++) R16.push(buildMatch("R16", i, R32[2 * i].w, R32[2 * i + 1].w));
+    var R16 = R16PAIRS.map(function (p, j) { return buildMatch("R16", j, R32[p[0]].w, R32[p[1]].w); });
+    var QF = [], SF = [], i;
     for (i = 0; i < 4; i++) QF.push(buildMatch("QF", i, R16[2 * i].w, R16[2 * i + 1].w));
     for (i = 0; i < 2; i++) SF.push(buildMatch("SF", i, QF[2 * i].w, QF[2 * i + 1].w));
     var F = buildMatch("F", 0, SF[0].w, SF[1].w);
@@ -171,9 +213,10 @@
   function matchCard(round, idx, m) {
     return '<div class="b-match">' + slot(round, idx, m.a, m.w) + slot(round, idx, m.b, m.w) + "</div>";
   }
-  function column(label, round, matches) {
+  function column(label, round, matches, order) {
+    var idxs = order || matches.map(function (_, i) { return i; });
     return '<div class="b-col"><div class="b-col-head">' + label + "</div>"
-      + matches.map(function (m, i) { return matchCard(round, i, m); }).join("") + "</div>";
+      + idxs.map(function (idx) { return matchCard(round, idx, matches[idx]); }).join("") + "</div>";
   }
 
   function renderBracket() {
@@ -183,7 +226,7 @@
     var b = computeBracket();
     var host = document.getElementById("b-bracket");
     host.innerHTML =
-      column("Round of 32", "R32", b.R32) +
+      column("Round of 32", "R32", b.R32, R32_DISPLAY) +
       column("Round of 16", "R16", b.R16) +
       column("Quarter-finals", "QF", b.QF) +
       column("Semi-finals", "SF", b.SF) +
