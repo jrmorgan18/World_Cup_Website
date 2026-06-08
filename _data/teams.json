@@ -25,7 +25,9 @@
     "club": "Sheffield United"
    }
   ],
-  "url": "/countdown/countdown-48-curacao/"
+  "url": "/countdown/countdown-48-curacao/",
+  "formation": "5-3-2",
+  "style": "Low block, counter-attack"
  },
  "Haiti": {
   "name": "Haiti",
@@ -53,7 +55,9 @@
     "club": "Burnley"
    }
   ],
-  "url": "/countdown/countdown-47-haiti/"
+  "url": "/countdown/countdown-47-haiti/",
+  "formation": "4-4-2",
+  "style": "Low block, counter-attack"
  },
  "Cape Verde": {
   "name": "Cape Verde",
@@ -81,7 +85,9 @@
     "club": "Omonia Nicosia"
    }
   ],
-  "url": "/countdown/countdown-46-cape-verde/"
+  "url": "/countdown/countdown-46-cape-verde/",
+  "formation": "4-3-3",
+  "style": "Compact, counter-attack"
  },
  "New Zealand": {
   "name": "New Zealand",
@@ -109,7 +115,9 @@
     "club": "Swansea City"
    }
   ],
-  "url": "/countdown/countdown-45-new-zealand/"
+  "url": "/countdown/countdown-45-new-zealand/",
+  "formation": "4-2-3-1",
+  "style": "Direct & physical"
  },
  "Qatar": {
   "name": "Qatar",
@@ -137,7 +145,9 @@
     "club": "Al-Sadd"
    }
   ],
-  "url": "/countdown/countdown-44-qatar/"
+  "url": "/countdown/countdown-44-qatar/",
+  "formation": "4-4-2",
+  "style": "Compact & disciplined"
  },
  "Jordan": {
   "name": "Jordan",
@@ -165,7 +175,9 @@
     "club": "Al-Sailiya SC"
    }
   ],
-  "url": "/countdown/countdown-43-jordan/"
+  "url": "/countdown/countdown-43-jordan/",
+  "formation": "4-4-2",
+  "style": "Compact, counter-attack"
  },
  "Iraq": {
   "name": "Iraq",
@@ -193,7 +205,9 @@
     "club": "Al Zawraa"
    }
   ],
-  "url": "/countdown/countdown-42-iraq/"
+  "url": "/countdown/countdown-42-iraq/",
+  "formation": "4-2-3-1",
+  "style": "Compact & organized"
  },
  "South Africa": {
   "name": "South Africa",
@@ -221,7 +235,9 @@
     "club": "Orlando Pirates"
    }
   ],
-  "url": "/countdown/countdown-41-south-africa/"
+  "url": "/countdown/countdown-41-south-africa/",
+  "formation": "4-2-3-1",
+  "style": "Energetic press, possession"
  },
  "Saudi Arabia": {
   "name": "Saudi Arabia",
@@ -249,7 +265,9 @@
     "club": "Al-Hilal"
    }
   ],
-  "url": "/countdown/countdown-40-saudi-arabia/"
+  "url": "/countdown/countdown-40-saudi-arabia/",
+  "formation": "4-2-3-1",
+  "style": "Compact, possession"
  },
  "Uzbekistan": {
   "name": "Uzbekistan",
@@ -277,7 +295,9 @@
     "club": "Başakşehir"
    }
   ],
-  "url": "/countdown/countdown-39-uzbekistan/"
+  "url": "/countdown/countdown-39-uzbekistan/",
+  "formation": "3-4-3",
+  "style": "Organized & compact"
  },
  "DR Congo": {
   "name": "DR Congo",
@@ -305,7 +325,9 @@
     "club": "Lille"
    }
   ],
-  "url": "/countdown/countdown-38-dr-congo/"
+  "url": "/countdown/countdown-38-dr-congo/",
+  "formation": "4-1-4-1",
+  "style": "Athletic, counter-attack"
  },
  "Tunisia": {
   "name": "Tunisia",
@@ -333,7 +355,9 @@
     "club": "Al Ahly"
    }
   ],
-  "url": "/countdown/countdown-37-tunisia/"
+  "url": "/countdown/countdown-37-tunisia/",
+  "formation": "4-3-3",
+  "style": "Compact, disciplined counter"
  },
  "Bosnia and Herzegovina": {
   "name": "Bosnia and Herzegovina",
@@ -361,7 +385,9 @@
     "club": "PSV Eindhoven"
    }
   ],
-  "url": "/countdown/countdown-36-bosnia/"
+  "url": "/countdown/countdown-36-bosnia/",
+  "formation": "4-2-3-1",
+  "style": "Possession, technical"
  },
  "Panama": {
   "name": "Panama",
@@ -389,7 +415,9 @@
     "club": "Universidad de Concepción"
    }
   ],
-  "url": "/countdown/countdown-35-panama/"
+  "url": "/countdown/countdown-35-panama/",
+  "formation": "4-2-3-1",
+  "style": "Compact, counter-attack"
  },
  "Ghana": {
   "name": "Ghana",
@@ -417,7 +445,9 @@
     "club": "Villarreal"
    }
   ],
-  "url": "/countdown/countdown-34-ghana/"
+  "url": "/countdown/countdown-34-ghana/",
+  "formation": "4-3-3",
+  "style": "Athletic & direct"
  },
  "Ivory Coast": {
   "name": "Ivory Coast",
@@ -445,7 +475,9 @@
     "club": "Al-Ahli"
    }
   ],
-  "url": "/countdown/countdown-33-ivory-coast/"
+  "url": "/countdown/countdown-33-ivory-coast/",
+  "formation": "4-3-3",
+  "style": "Athletic, pressing"
  },
  "Egypt": {
   "name": "Egypt",
@@ -473,7 +505,9 @@
     "club": "Al Ahly"
    }
   ],
-  "url": "/countdown/countdown-32-egypt/"
+  "url": "/countdown/countdown-32-egypt/",
+  "formation": "4-2-3-1",
+  "style": "Compact, Salah-led counter"
  },
  "Australia": {
   "name": "Australia",
@@ -501,7 +535,9 @@
     "club": "Melbourne City"
    }
   ],
-  "url": "/countdown/countdown-31-australia/"
+  "url": "/countdown/countdown-31-australia/",
+  "formation": "4-2-3-1",
+  "style": "Physical & direct"
  },
  "Algeria": {
   "name": "Algeria",
@@ -529,7 +565,9 @@
     "club": "Manchester City"
    }
   ],
-  "url": "/countdown/countdown-30-algeria/"
+  "url": "/countdown/countdown-30-algeria/",
+  "formation": "4-3-3",
+  "style": "Possession, technical"
  },
  "South Korea": {
   "name": "South Korea",
@@ -557,7 +595,9 @@
     "club": "Bayern Munich"
    }
   ],
-  "url": "/countdown/countdown-29-south-korea/"
+  "url": "/countdown/countdown-29-south-korea/",
+  "formation": "4-2-3-1",
+  "style": "Compact, fast counter"
  },
  "Scotland": {
   "name": "Scotland",
@@ -585,7 +625,9 @@
     "club": "Aston Villa"
    }
   ],
-  "url": "/countdown/countdown-28-scotland/"
+  "url": "/countdown/countdown-28-scotland/",
+  "formation": "4-2-3-1",
+  "style": "Physical, set-piece threat"
  },
  "Czechia": {
   "name": "Czechia",
@@ -613,7 +655,9 @@
     "club": "Lyon"
    }
   ],
-  "url": "/countdown/countdown-27-czechia/"
+  "url": "/countdown/countdown-27-czechia/",
+  "formation": "4-2-3-1",
+  "style": "Organized & direct"
  },
  "Iran": {
   "name": "Iran",
@@ -641,7 +685,9 @@
     "club": "Tractor"
    }
   ],
-  "url": "/countdown/countdown-26-iran/"
+  "url": "/countdown/countdown-26-iran/",
+  "formation": "4-1-4-1",
+  "style": "Compact, defensive counter"
  },
  "Paraguay": {
   "name": "Paraguay",
@@ -669,7 +715,9 @@
     "club": "Palmeiras"
    }
   ],
-  "url": "/countdown/countdown-25-paraguay/"
+  "url": "/countdown/countdown-25-paraguay/",
+  "formation": "4-4-1-1",
+  "style": "Compact, direct counter"
  },
  "Sweden": {
   "name": "Sweden",
@@ -697,7 +745,9 @@
     "club": "Newcastle United"
    }
   ],
-  "url": "/countdown/countdown-24-sweden/"
+  "url": "/countdown/countdown-24-sweden/",
+  "formation": "3-4-2-1",
+  "style": "Direct & physical"
  },
  "Canada": {
   "name": "Canada",
@@ -725,7 +775,9 @@
     "club": "Porto"
    }
   ],
-  "url": "/countdown/countdown-23-canada/"
+  "url": "/countdown/countdown-23-canada/",
+  "formation": "4-2-3-1",
+  "style": "Pressing, fast transitions"
  },
  "Austria": {
   "name": "Austria",
@@ -753,7 +805,9 @@
     "club": "RB Leipzig"
    }
   ],
-  "url": "/countdown/countdown-22-austria/"
+  "url": "/countdown/countdown-22-austria/",
+  "formation": "4-2-3-1",
+  "style": "Relentless high press"
  },
  "Senegal": {
   "name": "Senegal",
@@ -781,7 +835,9 @@
     "club": "Everton"
    }
   ],
-  "url": "/countdown/countdown-21-senegal/"
+  "url": "/countdown/countdown-21-senegal/",
+  "formation": "4-3-3",
+  "style": "Athletic, direct transitions"
  },
  "Mexico": {
   "name": "Mexico",
@@ -809,7 +865,9 @@
     "club": "West Ham United"
    }
   ],
-  "url": "/countdown/countdown-20-mexico/"
+  "url": "/countdown/countdown-20-mexico/",
+  "formation": "4-3-3",
+  "style": "Possession & high press"
  },
  "Türkiye": {
   "name": "Türkiye",
@@ -837,7 +895,9 @@
     "club": "Juventus"
    }
   ],
-  "url": "/countdown/countdown-19-turkiye/"
+  "url": "/countdown/countdown-19-turkiye/",
+  "formation": "4-2-3-1",
+  "style": "Possession, attacking flair"
  },
  "United States": {
   "name": "United States",
@@ -865,7 +925,9 @@
     "club": "Crystal Palace"
    }
   ],
-  "url": "/countdown/countdown-18-usa/"
+  "url": "/countdown/countdown-18-usa/",
+  "formation": "4-2-3-1",
+  "style": "High press, fast transitions"
  },
  "Switzerland": {
   "name": "Switzerland",
@@ -893,7 +955,9 @@
     "club": "Nottingham Forest"
    }
   ],
-  "url": "/countdown/countdown-17-switzerland/"
+  "url": "/countdown/countdown-17-switzerland/",
+  "formation": "4-2-3-1",
+  "style": "Compact, counter-attack"
  },
  "Ecuador": {
   "name": "Ecuador",
@@ -921,7 +985,9 @@
     "club": "Arsenal"
    }
   ],
-  "url": "/countdown/countdown-16-ecuador/"
+  "url": "/countdown/countdown-16-ecuador/",
+  "formation": "4-4-2",
+  "style": "Compact, defensive, counter"
  },
  "Uruguay": {
   "name": "Uruguay",
@@ -949,7 +1015,9 @@
     "club": "Barcelona"
    }
   ],
-  "url": "/countdown/countdown-15-uruguay/"
+  "url": "/countdown/countdown-15-uruguay/",
+  "formation": "4-3-3",
+  "style": "Aggressive press, direct"
  },
  "Croatia": {
   "name": "Croatia",
@@ -977,7 +1045,9 @@
     "club": "Hoffenheim"
    }
   ],
-  "url": "/countdown/countdown-14-croatia/"
+  "url": "/countdown/countdown-14-croatia/",
+  "formation": "4-3-3",
+  "style": "Possession, midfield mastery"
  },
  "Norway": {
   "name": "Norway",
@@ -1005,7 +1075,9 @@
     "club": "RB Leipzig"
    }
   ],
-  "url": "/countdown/countdown-13-norway/"
+  "url": "/countdown/countdown-13-norway/",
+  "formation": "4-3-3",
+  "style": "Direct, feed Haaland"
  },
  "Japan": {
   "name": "Japan",
@@ -1033,7 +1105,9 @@
     "club": "Eintracht Frankfurt"
    }
   ],
-  "url": "/countdown/countdown-12-japan/"
+  "url": "/countdown/countdown-12-japan/",
+  "formation": "3-4-2-1",
+  "style": "Flexible press & transition"
  },
  "Belgium": {
   "name": "Belgium",
@@ -1061,7 +1135,9 @@
     "club": "Real Madrid"
    }
   ],
-  "url": "/countdown/countdown-11-belgium/"
+  "url": "/countdown/countdown-11-belgium/",
+  "formation": "4-3-3",
+  "style": "Attacking, fast transitions"
  },
  "Morocco": {
   "name": "Morocco",
@@ -1089,7 +1165,9 @@
     "club": "Al Hilal"
    }
   ],
-  "url": "/countdown/countdown-10-morocco/"
+  "url": "/countdown/countdown-10-morocco/",
+  "formation": "4-3-3",
+  "style": "Compact, lethal counter"
  },
  "Colombia": {
   "name": "Colombia",
@@ -1117,7 +1195,9 @@
     "club": "Crystal Palace"
    }
   ],
-  "url": "/countdown/countdown-9-colombia/"
+  "url": "/countdown/countdown-9-colombia/",
+  "formation": "4-2-3-1",
+  "style": "Possession, dangerous in transition"
  },
  "Germany": {
   "name": "Germany",
@@ -1145,7 +1225,9 @@
     "club": "Bayern Munich"
    }
   ],
-  "url": "/countdown/countdown-8-germany/"
+  "url": "/countdown/countdown-8-germany/",
+  "formation": "4-2-3-1",
+  "style": "Possession, vertical attack"
  },
  "Netherlands": {
   "name": "Netherlands",
@@ -1173,7 +1255,9 @@
     "club": "Liverpool"
    }
   ],
-  "url": "/countdown/countdown-7-netherlands/"
+  "url": "/countdown/countdown-7-netherlands/",
+  "formation": "4-2-3-1",
+  "style": "Controlled possession, set pieces"
  },
  "Portugal": {
   "name": "Portugal",
@@ -1201,7 +1285,9 @@
     "club": "Paris Saint-Germain"
    }
   ],
-  "url": "/countdown/countdown-6-portugal/"
+  "url": "/countdown/countdown-6-portugal/",
+  "formation": "4-3-3",
+  "style": "Possession, midfield control"
  },
  "Brazil": {
   "name": "Brazil",
@@ -1229,7 +1315,9 @@
     "club": "Arsenal"
    }
   ],
-  "url": "/countdown/countdown-5-brazil/"
+  "url": "/countdown/countdown-5-brazil/",
+  "formation": "4-3-3",
+  "style": "Balanced, wing-driven attack"
  },
  "Argentina": {
   "name": "Argentina",
@@ -1257,7 +1345,9 @@
     "club": "Liverpool"
    }
   ],
-  "url": "/countdown/countdown-4-argentina/"
+  "url": "/countdown/countdown-4-argentina/",
+  "formation": "4-4-2",
+  "style": "Adaptable, ruthless balance"
  },
  "Spain": {
   "code": "es",
@@ -1285,7 +1375,9 @@
   ],
   "name": "Spain",
   "rank": null,
-  "url": null
+  "url": null,
+  "formation": "4-3-3",
+  "style": "Possession & high press"
  },
  "France": {
   "code": "fr",
@@ -1313,7 +1405,9 @@
   ],
   "name": "France",
   "rank": null,
-  "url": null
+  "url": null,
+  "formation": "4-3-3",
+  "style": "Athletic, devastating transitions"
  },
  "England": {
   "code": "gb-eng",
@@ -1341,6 +1435,8 @@
   ],
   "name": "England",
   "rank": null,
-  "url": null
+  "url": null,
+  "formation": "4-2-3-1",
+  "style": "Controlled, talent-driven"
  }
 }

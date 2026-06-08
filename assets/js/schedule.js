@@ -47,6 +47,12 @@
     if (t.fifa_rank) meta.push("FIFA #" + esc(t.fifa_rank));
     if (t.rank) meta.push("Countdown #" + esc(t.rank));
     html += '<p class="mt-meta">' + meta.join(" &middot; ") + "</p>";
+    if (t.formation || t.style) {
+      html += '<div class="mt-tactics">';
+      if (t.formation) html += '<div class="mt-tac"><span class="mt-tac-label">Formation</span><span class="mt-tac-val">' + esc(t.formation) + "</span></div>";
+      if (t.style) html += '<div class="mt-tac"><span class="mt-tac-label">Style of play</span><span class="mt-tac-val">' + esc(t.style) + "</span></div>";
+      html += "</div>";
+    }
     if (t.blurb) html += '<p class="mt-blurb">' + esc(t.blurb) + "</p>";
     if (t.players && t.players.length) {
       html += '<ul class="mt-players">';
