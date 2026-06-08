@@ -20,6 +20,7 @@ permalink: /schedule/
   <div class="view-toggle" role="tablist" aria-label="Schedule view">
     <button class="view-btn active" data-view="group" role="tab" aria-selected="true">By Group</button>
     <button class="view-btn" data-view="date" role="tab" aria-selected="false">By Date</button>
+    <button class="view-btn" data-view="standings" role="tab" aria-selected="false">Standings</button>
   </div>
 
   <!-- ===== TEAM SCHEDULE (search result) ===== -->
@@ -77,6 +78,16 @@ permalink: /schedule/
     {% endfor %}
   </div>
 
+  <!-- ===== STANDINGS ===== -->
+  <div id="view-standings" class="schedule-view" hidden>
+    <div class="standings-legend">
+      <span><i class="lg-swatch lg-q1"></i> Advance (top 2)</span>
+      <span><i class="lg-swatch lg-q3"></i> 3rd — best-thirds race</span>
+    </div>
+    <div id="standings-grid" class="standings-grid"></div>
+    <p class="standings-foot">Tables update from final scores. Tiebreakers applied: points, goal difference, goals scored, then head-to-head.</p>
+  </div>
+
   <p class="schedule-note">{{ site.data.schedule.meta.note }}</p>
 
   <!-- ===== MODAL ===== -->
@@ -101,6 +112,9 @@ permalink: /schedule/
 
 <script>
   window.WC_TEAMS = {{ site.data.teams | jsonify }};
+  window.WC_MATCHES = {{ site.data.schedule.matches | jsonify }};
+  window.WC_GROUPS = {{ site.data.schedule.groups | jsonify }};
+  window.WC_GROUP_ORDER = {{ site.data.schedule.group_order | jsonify }};
   window.WC_BASE = "{{ site.baseurl }}";
 </script>
 <script src="{{ '/assets/js/schedule.js' | relative_url }}"></script>

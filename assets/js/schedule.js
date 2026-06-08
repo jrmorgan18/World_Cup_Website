@@ -2,10 +2,22 @@
   "use strict";
   var TEAMS = window.WC_TEAMS || {};
   var BASE = window.WC_BASE || "";
+  var MATCHES = window.WC_MATCHES || [];
+  var GROUPS = window.WC_GROUPS || {};
+  var GROUP_ORDER = window.WC_GROUP_ORDER || [];
 
   var groupView = document.getElementById("view-group");
   var dateView = document.getElementById("view-date");
   var teamView = document.getElementById("view-team");
+  var standingsView = document.getElementById("view-standings");
+  var standingsBuilt = false;
+
+  function setView(view) {
+    groupView.hidden = view !== "group";
+    dateView.hidden = view !== "date";
+    if (standingsView) standingsView.hidden = view !== "standings";
+    if (view === "standings" && !standingsBuilt) { buildStandings(); standingsBuilt = true; }
+  }
 
   /* ---- View toggle ---- */
   var toggle = document.querySelector(".view-toggle");
@@ -20,8 +32,7 @@
         b.classList.toggle("active", active);
         b.setAttribute("aria-selected", active ? "true" : "false");
       });
-      groupView.hidden = view !== "group";
-      dateView.hidden = view !== "date";
+      setView(view);
     });
   }
 
@@ -99,8 +110,7 @@
     if (searchInput) searchInput.value = "";
     var active = document.querySelector(".view-btn.active");
     var v = active ? active.getAttribute("data-view") : "group";
-    groupView.hidden = v !== "group";
-    dateView.hidden = v !== "date";
+    setView(v);
   }
 
   function trySearch() {
@@ -222,4 +232,76 @@
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape" && !modal.hidden) close();
   });
+
+  /* ---- Standings ---- */
+  function isFinal(m) {
+    return typeof m.home_score === "number" && typeof m.away_score === "number" &&
+      (m.status == null || m.status === "FINISHED");
+  }
+
+  function h2h(x, y, played) {
+    var px = 0, py = 0;
+    played.forEach(function (m) {
+      var involved = (m.home === x && m.away === y) || (m.home === y && m.away === x);
+      if (!involved) return;
+      var xs = m.home === x ? m.home_score : m.away_score;
+      var ys = m.home === x ? m.away_score : m.home_score;
+      if (xs > ys) px += 3; else if (xs < ys) py += 3; else { px++; py++; }
+    });
+    return py - px; // positive => y ranks above x
+  }
+
+  function computeGroup(g) {
+    var teams = (GROUPS[g] || []).slice();
+    var row = {};
+    teams.forEach(function (t) { row[t] = { team: t, p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 }; });
+    var played = MATCHES.filter(function (m) { return m.group === g && isFinal(m); });
+    played.forEach(function (m) {
+      var H = row[m.home], A = row[m.away];
+      if (!H || !A) return;
+      var hs = m.home_score, as = m.away_score;
+      H.p++; A.p++; H.gf += hs; H.ga += as; A.gf += as; A.ga += hs;
+      if (hs > as) { H.w++; A.l++; H.pts += 3; }
+      else if (hs < as) { A.w++; H.l++; A.pts += 3; }
+      else { H.d++; A.d++; H.pts++; A.pts++; }
+    });
+    var arr = teams.map(function (t) { var r = row[t]; r.gd = r.gf - r.ga; return r; });
+    arr.sort(function (a, b) {
+      if (b.pts !== a.pts) return b.pts - a.pts;
+      if (b.gd !== a.gd) return b.gd - a.gd;
+      if (b.gf !== a.gf) return b.gf - a.gf;
+      var hh = h2h(a.team, b.team, played);
+      if (hh) return hh;
+      return a.team.localeCompare(b.team);
+    });
+    return arr;
+  }
+
+  function buildStandings() {
+    var grid = document.getElementById("standings-grid");
+    if (!grid) return;
+    grid.innerHTML = GROUP_ORDER.map(function (g) {
+      var rows = computeGroup(g);
+      var anyPlayed = rows.some(function (r) { return r.p > 0; });
+      var body = rows.map(function (r, i) {
+        var pos = i + 1;
+        var cls = pos <= 2 ? "q1" : (pos === 3 ? "q3" : "");
+        var t = TEAMS[r.team] || {};
+        return '<tr class="' + cls + '">'
+          + '<td class="st-pos">' + pos + "</td>"
+          + '<td class="st-team"><img class="st-flag" src="https://flagcdn.com/w40/' + esc(t.code) + '.png" alt="">'
+          +   '<button type="button" class="st-name team-trigger" data-team="' + esc(r.team) + '">' + esc(r.team) + "</button></td>"
+          + "<td>" + r.p + "</td><td>" + r.w + "</td><td>" + r.d + "</td><td>" + r.l + "</td>"
+          + '<td class="st-hide">' + r.gf + '</td><td class="st-hide">' + r.ga + "</td>"
+          + "<td>" + (r.gd > 0 ? "+" : "") + r.gd + '</td><td class="st-pts">' + r.pts + "</td>"
+          + "</tr>";
+      }).join("");
+      return '<div class="standings-card">'
+        + '<h3 class="standings-title">Group ' + g + (anyPlayed ? "" : ' <span class="st-pending">not started</span>') + "</h3>"
+        + '<table class="standings-table"><thead><tr>'
+        + '<th>#</th><th class="st-team-h">Team</th><th title="Played">P</th><th title="Won">W</th><th title="Drawn">D</th><th title="Lost">L</th>'
+        + '<th class="st-hide" title="Goals for">GF</th><th class="st-hide" title="Goals against">GA</th><th title="Goal difference">GD</th><th title="Points">Pts</th>'
+        + "</tr></thead><tbody>" + body + "</tbody></table></div>";
+    }).join("");
+  }
 })();
