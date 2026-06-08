@@ -72,7 +72,7 @@
     mmGroup.textContent = "Group " + card.getAttribute("data-group");
     mmGroup.hidden = false;
     mmDateTime.textContent = card.getAttribute("data-date") + " · " + card.getAttribute("data-time");
-    mmVenue.textContent = card.getAttribute("data-city") + " · " + card.getAttribute("data-venue");
+    mmVenue.textContent = card.getAttribute("data-venue");
     mmHome.innerHTML = teamPanel(home);
     mmAway.innerHTML = teamPanel(away);
     document.querySelector(".modal-vs").hidden = false;
