@@ -1415,6 +1415,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* ---- Modal ---- */
 body.modal-open { overflow: hidden; }
 .modal { position: fixed; inset: 0; z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 20px; }
+.modal[hidden] { display: none; }
 .modal-backdrop { position: absolute; inset: 0; background: rgba(4, 7, 13, 0.78); backdrop-filter: blur(3px); }
 .modal-card {
   position: relative; z-index: 1; width: 100%; max-width: 760px; max-height: 88vh; overflow-y: auto;
