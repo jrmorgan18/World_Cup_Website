@@ -1,0 +1,53 @@
+---
+layout: default
+title: "Predict the Bracket"
+permalink: /bracket/
+---
+<div class="bracket-page">
+  <div class="schedule-header">
+    <h1 class="category-title">Predict the Bracket</h1>
+    <p class="category-description">Call every group, pick the eight best third-place teams, then click your way through the knockouts to crown a champion. Your picks save automatically — share the link to compare.</p>
+  </div>
+
+  <div class="bracket-actions">
+    <span class="bracket-status" id="bracket-status"></span>
+    <div class="bracket-buttons">
+      <button type="button" class="bracket-btn" id="bracket-share">Copy share link</button>
+      <button type="button" class="bracket-btn bracket-btn-ghost" id="bracket-reset">Reset</button>
+    </div>
+  </div>
+
+  <!-- Step 1: group predictions -->
+  <section class="bracket-step">
+    <h2 class="bracket-step-title"><span class="bracket-step-num">1</span> Predict the groups</h2>
+    <p class="bracket-step-hint">Tap teams in your predicted finishing order (1st → 4th). Tap a ranked team to remove it.</p>
+    <div id="b-groups" class="b-groups"></div>
+  </section>
+
+  <!-- Step 2: best thirds -->
+  <section class="bracket-step" id="b-thirds-step" hidden>
+    <h2 class="bracket-step-title"><span class="bracket-step-num">2</span> Pick the best thirds <span class="b-thirds-count" id="b-thirds-count">0 / 8</span></h2>
+    <p class="bracket-step-hint">Eight of the twelve third-place teams advance. Choose the eight you think make it.</p>
+    <div id="b-thirds" class="b-thirds"></div>
+  </section>
+
+  <!-- Step 3: knockout bracket -->
+  <section class="bracket-step" id="b-bracket-step" hidden>
+    <h2 class="bracket-step-title"><span class="bracket-step-num">3</span> Fill the bracket</h2>
+    <p class="bracket-step-hint">Tap the team you think wins each tie to send them through. <span class="b-note">Round-of-32 matchups use a standard bracket layout for prediction purposes.</span></p>
+    <div id="b-champion" class="b-champion" hidden></div>
+    <div class="b-bracket-scroll">
+      <div id="b-bracket" class="b-bracket"></div>
+    </div>
+  </section>
+
+  <p class="bracket-incomplete" id="bracket-incomplete">Finish predicting all 12 groups to unlock the best-thirds picker and the bracket.</p>
+</div>
+
+<script>
+  window.WC_TEAMS = {{ site.data.teams | jsonify }};
+  window.WC_GROUPS = {{ site.data.schedule.groups | jsonify }};
+  window.WC_GROUP_ORDER = {{ site.data.schedule.group_order | jsonify }};
+  window.WC_BASE = "{{ site.baseurl }}";
+</script>
+<script src="{{ '/assets/js/bracket.js' | relative_url }}"></script>
