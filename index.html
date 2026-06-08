@@ -10,6 +10,17 @@ title: Home
   </div>
 </section>
 
+<section class="kickoff-section" id="kickoff-section" hidden>
+  <div class="kickoff-countdown" id="kickoff-countdown"></div>
+  <div class="kickoff-matches" id="kickoff-matches">
+    <div class="kickoff-matches-head">
+      <h2 class="section-heading" id="kickoff-matches-title">Up Next</h2>
+      <a class="kickoff-all" href="{{ '/schedule' | relative_url }}">Full schedule →</a>
+    </div>
+    <div class="kickoff-list" id="kickoff-list"></div>
+  </div>
+</section>
+
 {% assign latest = site.posts | first %}
 {% if latest %}
 <section class="featured-section">
@@ -108,3 +119,10 @@ title: Home
   </div>
 </section>
 {% endif %}
+
+<script>
+  window.WC_MATCHES = {{ site.data.schedule.matches | jsonify }};
+  window.WC_TEAMS = {{ site.data.teams | jsonify }};
+  window.WC_BASE = "{{ site.baseurl }}";
+</script>
+<script src="{{ '/assets/js/home-countdown.js' | relative_url }}"></script>

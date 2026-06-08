@@ -1323,6 +1323,64 @@ img { max-width: 100%; height: auto; display: block; }
   .pitch-club { font-size: 0.62rem; }
 }
 
+/* ===== Homepage kickoff module ===== */
+.kickoff-section {
+  max-width: var(--max-width); margin: 0 auto 8px; padding: 0 20px;
+  display: grid; grid-template-columns: minmax(260px, 360px) 1fr; gap: 24px; align-items: start;
+}
+.kickoff-countdown {
+  background: linear-gradient(160deg, var(--color-surface-raised), var(--color-surface));
+  border: 1px solid var(--color-border); border-radius: var(--radius-lg);
+  padding: 24px 20px; text-align: center;
+}
+.ko-cd-title {
+  font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.08em;
+  font-size: 0.8rem; color: var(--color-text-muted); margin-bottom: 14px;
+}
+.ko-cd-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.ko-cd-box {
+  background: var(--color-bg); border: 1px solid var(--color-border); border-radius: var(--radius);
+  padding: 12px 4px; display: flex; flex-direction: column; gap: 2px;
+}
+.ko-cd-num { font-family: var(--font-display); font-size: 1.9rem; font-weight: 700; color: var(--color-accent); line-height: 1; }
+.ko-cd-lab { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-text-muted); }
+.ko-cd-sub { margin-top: 14px; font-size: 0.82rem; color: var(--color-text); line-height: 1.4; }
+.ko-live {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.05em;
+  font-size: 1.05rem; font-weight: 600; color: var(--color-text); padding: 18px 0;
+}
+.ko-live-dot { width: 12px; height: 12px; border-radius: 50%; background: var(--color-red); box-shadow: 0 0 0 0 rgba(192,57,43,0.7); animation: koPulse 1.6s infinite; }
+@keyframes koPulse { 0% { box-shadow: 0 0 0 0 rgba(192,57,43,0.6); } 70% { box-shadow: 0 0 0 10px rgba(192,57,43,0); } 100% { box-shadow: 0 0 0 0 rgba(192,57,43,0); } }
+
+.kickoff-matches-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+.kickoff-matches-head .section-heading { margin: 0; }
+.kickoff-all { font-family: var(--font-display); font-size: 0.82rem; letter-spacing: 0.03em; text-transform: uppercase; color: var(--color-accent); white-space: nowrap; }
+.kickoff-all:hover { color: var(--color-accent-hover); }
+.kickoff-list { display: flex; flex-direction: column; gap: 8px; }
+.ko-match {
+  display: grid; grid-template-columns: 96px 1fr auto; align-items: center; gap: 12px;
+  background: var(--color-surface); border: 1px solid var(--color-border);
+  border-radius: var(--radius); padding: 10px 14px; transition: border-color 0.15s, background 0.15s;
+}
+.ko-match:hover { border-color: var(--color-accent); background: var(--color-surface-raised); }
+.ko-time { font-family: var(--font-display); font-size: 0.82rem; font-weight: 600; color: var(--color-accent); white-space: nowrap; }
+.ko-fixture { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.ko-team { display: flex; align-items: center; gap: 7px; flex: 1; min-width: 0; }
+.ko-home { justify-content: flex-end; text-align: right; }
+.ko-name { font-weight: 600; font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ko-flag { width: 26px; height: 18px; object-fit: cover; border-radius: 2px; flex-shrink: 0; }
+.ko-vs { color: var(--color-text-muted); font-size: 0.78rem; flex-shrink: 0; }
+.ko-grp { font-size: 0.66rem; font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase; color: var(--color-text-muted); background: var(--color-accent-subtle); padding: 3px 7px; border-radius: 4px; white-space: nowrap; }
+.kickoff-done { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 18px; color: var(--color-text-muted); }
+.kickoff-done a { color: var(--color-accent); }
+
+@media (max-width: 760px) {
+  .kickoff-section { grid-template-columns: 1fr; gap: 16px; }
+  .ko-match { grid-template-columns: 80px 1fr; grid-template-areas: "time fixture" "grp fixture"; row-gap: 4px; }
+  .ko-grp { grid-area: grp; justify-self: start; }
+}
+
 /* ===== Schedule page ===== */
 .schedule-page { max-width: var(--max-width); margin: 0 auto; padding: 32px 20px 64px; }
 .schedule-header { text-align: center; margin-bottom: 24px; }
