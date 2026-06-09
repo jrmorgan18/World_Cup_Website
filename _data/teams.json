@@ -1383,9 +1383,9 @@
   "code": "fr",
   "group": "I",
   "fifa_rank": "1",
-  "odds_cup": "11-2",
+  "odds_cup": "+475",
   "best_finish": "Champions (1998, 2018)",
-  "blurb": "Absurd attacking depth and recent tournament pedigree — perennial favorites.",
+  "blurb": "Staggering attacking depth, an elite defense, and a last-dance Deschamps — only the midfield stands between them and another title",
   "players": [
    {
     "name": "Kylian Mbappé",
@@ -1393,19 +1393,19 @@
     "club": "Real Madrid"
    },
    {
-    "name": "Ousmane Dembélé",
-    "pos": "Winger",
-    "club": "Paris Saint-Germain"
-   },
-   {
     "name": "Michael Olise",
     "pos": "Winger",
     "club": "Bayern Munich"
+   },
+   {
+    "name": "William Saliba",
+    "pos": "Center Back",
+    "club": "Arsenal"
    }
   ],
   "name": "France",
-  "rank": null,
-  "url": null,
+  "rank": 2,
+  "url": "/countdown/countdown-2-france/",
   "formation": "4-3-3",
   "style": "Athletic, devastating transitions"
  },
