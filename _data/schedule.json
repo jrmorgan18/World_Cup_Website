@@ -30,7 +30,10 @@
    "venue": "Guadalajara Stadium",
    "city": "Guadalajara",
    "home": "South Korea",
-   "away": "Czechia"
+   "away": "Czechia",
+   "home_score": 2,
+   "away_score": 1,
+   "status": "FINISHED"
   },
   {
    "id": 3,
