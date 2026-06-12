@@ -46,9 +46,9 @@
    "city": "Toronto",
    "home": "Canada",
    "away": "Bosnia and Herzegovina",
-   "home_score": 0,
+   "home_score": 1,
    "away_score": 1,
-   "status": "IN_PLAY"
+   "status": "FINISHED"
   },
   {
    "id": 4,
