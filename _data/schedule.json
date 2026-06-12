@@ -15,7 +15,10 @@
    "venue": "Mexico City Stadium",
    "city": "Mexico City",
    "home": "Mexico",
-   "away": "South Africa"
+   "away": "South Africa",
+   "home_score": 2,
+   "away_score": 0,
+   "status": "FINISHED"
   },
   {
    "id": 2,
@@ -27,7 +30,10 @@
    "venue": "Guadalajara Stadium",
    "city": "Guadalajara",
    "home": "South Korea",
-   "away": "Czechia"
+   "away": "Czechia",
+   "home_score": 2,
+   "away_score": 1,
+   "status": "FINISHED"
   },
   {
    "id": 3,
