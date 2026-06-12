@@ -45,7 +45,10 @@
    "venue": "Toronto Stadium",
    "city": "Toronto",
    "home": "Canada",
-   "away": "Bosnia and Herzegovina"
+   "away": "Bosnia and Herzegovina",
+   "home_score": 0,
+   "away_score": 1,
+   "status": "IN_PLAY"
   },
   {
    "id": 4,
