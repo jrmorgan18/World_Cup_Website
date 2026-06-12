@@ -15,7 +15,10 @@
    "venue": "Mexico City Stadium",
    "city": "Mexico City",
    "home": "Mexico",
-   "away": "South Africa"
+   "away": "South Africa",
+   "home_score": 2,
+   "away_score": 0,
+   "status": "FINISHED"
   },
   {
    "id": 2,
