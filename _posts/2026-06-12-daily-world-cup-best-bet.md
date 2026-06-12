@@ -17,8 +17,6 @@ I am simply too emotionally invested in the United States opener against Paragua
 
 The boosted offer is for the USA to record at least one total shot at +101, up from an original price of -10000. Barring something truly unprecedented, the U.S. will register a shot at some point during the match. At plus money, this is the easiest recommendation on the board.
 
-![FanDuel customer special offering USA to record at least one total shot against Paraguay at +101]({{ '/assets/images/fanduel-usa-shots-promo-2026-06-12.jpg' | relative_url }})
-
 This is a promotional market, so availability and maximum wager may vary by account. If the special appears in your FanDuel account, take the free square and enjoy the game without trying to handicap the U.S. through the nerves.
 
 ## Canada vs. Bosnia and Herzegovina - Under 2.5 Goals
