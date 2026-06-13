@@ -87,7 +87,10 @@
    "venue": "San Francisco Bay Area Stadium",
    "city": "San Francisco Bay Area",
    "home": "Qatar",
-   "away": "Switzerland"
+   "away": "Switzerland",
+   "home_score": 0,
+   "away_score": 1,
+   "status": "PAUSED"
   },
   {
    "id": 7,
