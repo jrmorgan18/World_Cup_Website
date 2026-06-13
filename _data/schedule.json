@@ -60,7 +60,10 @@
    "venue": "Los Angeles Stadium",
    "city": "Los Angeles",
    "home": "United States",
-   "away": "Paraguay"
+   "away": "Paraguay",
+   "home_score": 4,
+   "away_score": 1,
+   "status": "FINISHED"
   },
   {
    "id": 6,
