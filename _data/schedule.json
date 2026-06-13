@@ -88,9 +88,9 @@
    "city": "San Francisco Bay Area",
    "home": "Qatar",
    "away": "Switzerland",
-   "home_score": 0,
+   "home_score": 1,
    "away_score": 1,
-   "status": "PAUSED"
+   "status": "FINISHED"
   },
   {
    "id": 7,
