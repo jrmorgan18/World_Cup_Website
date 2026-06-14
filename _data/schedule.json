@@ -75,7 +75,10 @@
    "venue": "BC Place Vancouver",
    "city": "Vancouver",
    "home": "Australia",
-   "away": "Türkiye"
+   "away": "Türkiye",
+   "home_score": 2,
+   "away_score": 0,
+   "status": "FINISHED"
   },
   {
    "id": 8,
@@ -120,7 +123,7 @@
    "away": "Scotland",
    "home_score": 0,
    "away_score": 1,
-   "status": "IN_PLAY"
+   "status": "FINISHED"
   },
   {
    "id": 10,
