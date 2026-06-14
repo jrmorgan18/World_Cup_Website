@@ -105,7 +105,7 @@
    "away": "Morocco",
    "home_score": 1,
    "away_score": 1,
-   "status": "PAUSED"
+   "status": "FINISHED"
   },
   {
    "id": 5,
@@ -117,7 +117,10 @@
    "venue": "Boston Stadium",
    "city": "Boston",
    "home": "Haiti",
-   "away": "Scotland"
+   "away": "Scotland",
+   "home_score": 0,
+   "away_score": 1,
+   "status": "IN_PLAY"
   },
   {
    "id": 10,
