@@ -135,7 +135,10 @@
    "venue": "Houston Stadium",
    "city": "Houston",
    "home": "Germany",
-   "away": "Curaçao"
+   "away": "Curaçao",
+   "home_score": 3,
+   "away_score": 1,
+   "status": "PAUSED"
   },
   {
    "id": 11,
