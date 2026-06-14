@@ -136,9 +136,9 @@
    "city": "Houston",
    "home": "Germany",
    "away": "Curaçao",
-   "home_score": 3,
+   "home_score": 7,
    "away_score": 1,
-   "status": "PAUSED"
+   "status": "FINISHED"
   },
   {
    "id": 11,
@@ -150,7 +150,10 @@
    "venue": "Dallas Stadium",
    "city": "Dallas",
    "home": "Netherlands",
-   "away": "Japan"
+   "away": "Japan",
+   "home_score": 0,
+   "away_score": 0,
+   "status": "IN_PLAY"
   },
   {
    "id": 9,
