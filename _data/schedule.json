@@ -60,7 +60,10 @@
    "venue": "Los Angeles Stadium",
    "city": "Los Angeles",
    "home": "United States",
-   "away": "Paraguay"
+   "away": "Paraguay",
+   "home_score": 4,
+   "away_score": 1,
+   "status": "FINISHED"
   },
   {
    "id": 6,
@@ -84,7 +87,10 @@
    "venue": "San Francisco Bay Area Stadium",
    "city": "San Francisco Bay Area",
    "home": "Qatar",
-   "away": "Switzerland"
+   "away": "Switzerland",
+   "home_score": 1,
+   "away_score": 1,
+   "status": "FINISHED"
   },
   {
    "id": 7,
@@ -96,7 +102,10 @@
    "venue": "New York New Jersey Stadium",
    "city": "New York/New Jersey",
    "home": "Brazil",
-   "away": "Morocco"
+   "away": "Morocco",
+   "home_score": 1,
+   "away_score": 1,
+   "status": "PAUSED"
   },
   {
    "id": 5,
