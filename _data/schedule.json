@@ -180,7 +180,10 @@
    "venue": "Monterrey Stadium",
    "city": "Monterrey",
    "home": "Sweden",
-   "away": "Tunisia"
+   "away": "Tunisia",
+   "home_score": 5,
+   "away_score": 1,
+   "status": "FINISHED"
   },
   {
    "id": 14,
