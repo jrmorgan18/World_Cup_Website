@@ -207,7 +207,10 @@
    "venue": "Seattle Stadium",
    "city": "Seattle",
    "home": "Belgium",
-   "away": "Egypt"
+   "away": "Egypt",
+   "home_score": 0,
+   "away_score": 0,
+   "status": "IN_PLAY"
   },
   {
    "id": 13,
