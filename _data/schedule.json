@@ -135,7 +135,10 @@
    "venue": "Houston Stadium",
    "city": "Houston",
    "home": "Germany",
-   "away": "Curaçao"
+   "away": "Curaçao",
+   "home_score": 7,
+   "away_score": 1,
+   "status": "FINISHED"
   },
   {
    "id": 11,
@@ -147,7 +150,10 @@
    "venue": "Dallas Stadium",
    "city": "Dallas",
    "home": "Netherlands",
-   "away": "Japan"
+   "away": "Japan",
+   "home_score": 2,
+   "away_score": 2,
+   "status": "FINISHED"
   },
   {
    "id": 9,
@@ -159,7 +165,10 @@
    "venue": "Philadelphia Stadium",
    "city": "Philadelphia",
    "home": "Ivory Coast",
-   "away": "Ecuador"
+   "away": "Ecuador",
+   "home_score": 1,
+   "away_score": 0,
+   "status": "FINISHED"
   },
   {
    "id": 12,
@@ -171,7 +180,10 @@
    "venue": "Monterrey Stadium",
    "city": "Monterrey",
    "home": "Sweden",
-   "away": "Tunisia"
+   "away": "Tunisia",
+   "home_score": 5,
+   "away_score": 1,
+   "status": "FINISHED"
   },
   {
    "id": 14,
