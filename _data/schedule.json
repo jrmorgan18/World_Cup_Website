@@ -165,7 +165,10 @@
    "venue": "Philadelphia Stadium",
    "city": "Philadelphia",
    "home": "Ivory Coast",
-   "away": "Ecuador"
+   "away": "Ecuador",
+   "home_score": 1,
+   "away_score": 0,
+   "status": "FINISHED"
   },
   {
    "id": 12,
