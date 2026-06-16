@@ -264,7 +264,10 @@
    "venue": "New York New Jersey Stadium",
    "city": "New York/New Jersey",
    "home": "France",
-   "away": "Senegal"
+   "away": "Senegal",
+   "home_score": 0,
+   "away_score": 0,
+   "status": "IN_PLAY"
   },
   {
    "id": 18,
