@@ -553,6 +553,14 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--color-text-muted);
 }
 
+.betting-tracker-stat-negative dd {
+  color: var(--color-red);
+}
+
+.betting-tracker-stat-negative .betting-tracker-detail {
+  color: var(--color-text-muted);
+}
+
 .empty-state {
   grid-column: 1 / -1;
   text-align: center;
