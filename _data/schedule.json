@@ -222,7 +222,10 @@
    "venue": "Miami Stadium",
    "city": "Miami",
    "home": "Saudi Arabia",
-   "away": "Uruguay"
+   "away": "Uruguay",
+   "home_score": 1,
+   "away_score": 1,
+   "status": "FINISHED"
   },
   {
    "id": 15,
