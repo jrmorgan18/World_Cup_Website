@@ -237,7 +237,10 @@
    "venue": "Los Angeles Stadium",
    "city": "Los Angeles",
    "home": "Iran",
-   "away": "New Zealand"
+   "away": "New Zealand",
+   "home_score": 2,
+   "away_score": 2,
+   "status": "FINISHED"
   },
   {
    "id": 20,
