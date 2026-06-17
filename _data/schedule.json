@@ -314,8 +314,8 @@
    "home": "Portugal",
    "away": "DR Congo",
    "home_score": 1,
-   "away_score": 0,
-   "status": "IN_PLAY"
+   "away_score": 1,
+   "status": "FINISHED"
   },
   {
    "id": 22,
@@ -327,7 +327,10 @@
    "venue": "Dallas Stadium",
    "city": "Dallas",
    "home": "England",
-   "away": "Croatia"
+   "away": "Croatia",
+   "home_score": 1,
+   "away_score": 0,
+   "status": "IN_PLAY"
   },
   {
    "id": 21,
