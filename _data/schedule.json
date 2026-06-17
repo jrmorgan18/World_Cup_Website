@@ -342,7 +342,10 @@
    "venue": "Toronto Stadium",
    "city": "Toronto",
    "home": "Ghana",
-   "away": "Panama"
+   "away": "Panama",
+   "home_score": 0,
+   "away_score": 0,
+   "status": "IN_PLAY"
   },
   {
    "id": 24,
