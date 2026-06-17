@@ -252,7 +252,10 @@
    "venue": "San Francisco Bay Area Stadium",
    "city": "San Francisco Bay Area",
    "home": "Austria",
-   "away": "Jordan"
+   "away": "Jordan",
+   "home_score": 1,
+   "away_score": 1,
+   "status": "IN_PLAY"
   },
   {
    "id": 17,
@@ -294,7 +297,10 @@
    "venue": "Kansas City Stadium",
    "city": "Kansas City",
    "home": "Argentina",
-   "away": "Algeria"
+   "away": "Algeria",
+   "home_score": 3,
+   "away_score": 0,
+   "status": "FINISHED"
   },
   {
    "id": 23,
