@@ -86,7 +86,7 @@ title: Home
   </div>
 </section>
 
-{% assign recent_posts = site.posts | slice: 1, 6 %}
+{% assign recent_posts = site.posts | slice: 0, 6 %}
 {% if recent_posts.size > 0 %}
 <section class="recent-section">
   <h2 class="section-heading">Recent Articles</h2>
