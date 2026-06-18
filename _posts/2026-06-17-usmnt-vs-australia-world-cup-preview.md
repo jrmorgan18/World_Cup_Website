@@ -10,12 +10,29 @@ hero_image: /assets/images/us-paraguay.jpg
 
 ## Group D Standings
 
-| Team | P | W | D | L | GF | GA | GD | Pts |
-|:-----|:-:|:-:|:-:|:-:|:--:|:--:|:--:|:---:|
-| 🇺🇸 United States | 1 | 1 | 0 | 0 | 4 | 1 | +3 | **3** |
-| 🇦🇺 Australia | 1 | 1 | 0 | 0 | 2 | 0 | +2 | **3** |
-| 🇹🇷 Türkiye | 1 | 0 | 0 | 1 | 0 | 2 | -2 | **0** |
-| 🇵🇾 Paraguay | 1 | 0 | 0 | 1 | 1 | 4 | -3 | **0** |
+<table class="standings-table">
+  <thead>
+    <tr><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="https://flagcdn.com/w40/us.png" alt="USA" style="height:16px;vertical-align:middle;margin-right:6px;">United States</td>
+      <td>1</td><td>1</td><td>0</td><td>0</td><td>4</td><td>1</td><td>+3</td><td><strong>3</strong></td>
+    </tr>
+    <tr>
+      <td><img src="https://flagcdn.com/w40/au.png" alt="AUS" style="height:16px;vertical-align:middle;margin-right:6px;">Australia</td>
+      <td>1</td><td>1</td><td>0</td><td>0</td><td>2</td><td>0</td><td>+2</td><td><strong>3</strong></td>
+    </tr>
+    <tr>
+      <td><img src="https://flagcdn.com/w40/tr.png" alt="TUR" style="height:16px;vertical-align:middle;margin-right:6px;">Türkiye</td>
+      <td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>2</td><td>-2</td><td><strong>0</strong></td>
+    </tr>
+    <tr>
+      <td><img src="https://flagcdn.com/w40/py.png" alt="PAR" style="height:16px;vertical-align:middle;margin-right:6px;">Paraguay</td>
+      <td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>4</td><td>-3</td><td><strong>0</strong></td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
