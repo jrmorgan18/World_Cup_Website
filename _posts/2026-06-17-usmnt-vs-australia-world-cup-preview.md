@@ -2,10 +2,10 @@
 layout: post
 title: "USMNT vs. Australia: World Cup Preview"
 subtitle: "After a dominant opening win, the US faces Australia at Lumen Field with a chance to take control of Group D"
-date: 2026-06-17 09:00:00 -0500
+date: 2026-06-17 12:30:00 -0400
 categories: [usmnt]
-thumbnail: /assets/images/mckennie-usmnt.jpg
-hero_image: /assets/images/mckennie-usmnt.jpg
+thumbnail: /assets/images/usmnt-paraguay-celebration.jpg
+hero_image: /assets/images/usmnt-paraguay-celebration.jpg
 ---
 
 ## Group D Standings
