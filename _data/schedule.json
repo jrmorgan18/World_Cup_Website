@@ -387,7 +387,10 @@
    "venue": "Los Angeles Stadium",
    "city": "Los Angeles",
    "home": "Switzerland",
-   "away": "Bosnia and Herzegovina"
+   "away": "Bosnia and Herzegovina",
+   "home_score": 4,
+   "away_score": 1,
+   "status": "FINISHED"
   },
   {
    "id": 27,
@@ -399,7 +402,10 @@
    "venue": "BC Place Vancouver",
    "city": "Vancouver",
    "home": "Canada",
-   "away": "Qatar"
+   "away": "Qatar",
+   "home_score": 0,
+   "away_score": 0,
+   "status": "IN_PLAY"
   },
   {
    "id": 28,
