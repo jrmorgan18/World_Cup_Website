@@ -345,7 +345,7 @@
    "away": "Panama",
    "home_score": 1,
    "away_score": 0,
-   "status": "IN_PLAY"
+   "status": "FINISHED"
   },
   {
    "id": 24,
@@ -372,7 +372,10 @@
    "venue": "Atlanta Stadium",
    "city": "Atlanta",
    "home": "Czechia",
-   "away": "South Africa"
+   "away": "South Africa",
+   "home_score": 1,
+   "away_score": 0,
+   "status": "IN_PLAY"
   },
   {
    "id": 26,
