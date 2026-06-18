@@ -343,9 +343,9 @@
    "city": "Toronto",
    "home": "Ghana",
    "away": "Panama",
-   "home_score": 0,
+   "home_score": 1,
    "away_score": 0,
-   "status": "IN_PLAY"
+   "status": "FINISHED"
   },
   {
    "id": 24,
@@ -357,7 +357,10 @@
    "venue": "Mexico City Stadium",
    "city": "Mexico City",
    "home": "Uzbekistan",
-   "away": "Colombia"
+   "away": "Colombia",
+   "home_score": 1,
+   "away_score": 3,
+   "status": "FINISHED"
   },
   {
    "id": 25,
