@@ -417,7 +417,10 @@
    "venue": "Guadalajara Stadium",
    "city": "Guadalajara",
    "home": "Mexico",
-   "away": "South Korea"
+   "away": "South Korea",
+   "home_score": 1,
+   "away_score": 0,
+   "status": "FINISHED"
   },
   {
    "id": 32,
