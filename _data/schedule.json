@@ -403,9 +403,9 @@
    "city": "Vancouver",
    "home": "Canada",
    "away": "Qatar",
-   "home_score": 0,
+   "home_score": 6,
    "away_score": 0,
-   "status": "IN_PLAY"
+   "status": "FINISHED"
   },
   {
    "id": 28,
