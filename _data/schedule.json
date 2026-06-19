@@ -432,7 +432,10 @@
    "venue": "Seattle Stadium",
    "city": "Seattle",
    "home": "United States",
-   "away": "Australia"
+   "away": "Australia",
+   "home_score": 2,
+   "away_score": 0,
+   "status": "IN_PLAY"
   },
   {
    "id": 30,
