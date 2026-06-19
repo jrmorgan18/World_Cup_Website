@@ -21,7 +21,10 @@ title: Home
   </div>
 </section>
 
+{% assign latest = site.posts | where: "slug", "usmnt-vs-australia-world-cup-preview" | first %}
+{% unless latest %}
 {% assign latest = site.posts | first %}
+{% endunless %}
 {% if latest %}
 <section class="featured-section">
   <h2 class="section-heading">Latest Article</h2>
