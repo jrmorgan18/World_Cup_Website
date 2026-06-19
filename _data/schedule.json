@@ -435,7 +435,7 @@
    "away": "Australia",
    "home_score": 2,
    "away_score": 0,
-   "status": "IN_PLAY"
+   "status": "FINISHED"
   },
   {
    "id": 30,
@@ -447,7 +447,10 @@
    "venue": "Boston Stadium",
    "city": "Boston",
    "home": "Scotland",
-   "away": "Morocco"
+   "away": "Morocco",
+   "home_score": 0,
+   "away_score": 1,
+   "status": "IN_PLAY"
   },
   {
    "id": 29,
