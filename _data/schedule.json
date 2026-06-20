@@ -450,7 +450,7 @@
    "away": "Morocco",
    "home_score": 0,
    "away_score": 1,
-   "status": "IN_PLAY"
+   "status": "FINISHED"
   },
   {
    "id": 29,
@@ -462,7 +462,10 @@
    "venue": "Philadelphia Stadium",
    "city": "Philadelphia",
    "home": "Brazil",
-   "away": "Haiti"
+   "away": "Haiti",
+   "home_score": 3,
+   "away_score": 0,
+   "status": "FINISHED"
   },
   {
    "id": 31,
@@ -474,7 +477,10 @@
    "venue": "San Francisco Bay Area Stadium",
    "city": "San Francisco Bay Area",
    "home": "Türkiye",
-   "away": "Paraguay"
+   "away": "Paraguay",
+   "home_score": 0,
+   "away_score": 1,
+   "status": "PAUSED"
   },
   {
    "id": 36,
