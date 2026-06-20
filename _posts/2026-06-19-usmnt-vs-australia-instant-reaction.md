@@ -49,6 +49,8 @@ For a player who was not exactly a household name a month ago, the Baltimore-bor
 
 Chris Richards was excellent too. This is why his return matters so much. He gives the back line a different level of confidence. He won headers. He cleared danger. He organized. And when Irankunda finally came on and gave Australia some real pace in the second half, Richards made a huge play to cover for Tim Ream and prevent a potentially dangerous break from turning into something worse.
 
+## Second Half Concerns?
+
 That second half, though, is where the concern comes in.
 
 The US did not collapse, and it felt worse in the tension of the moment than the stats or a brief re-watch would suggest. Australia finished with only three shots and 0.35 xG, so this was not a game where the Americans were hanging on for dear life. But the second-half dropoff is starting to become a trend. It happened in the friendlies against Portugal, Belgium, and Germany. It happened against Paraguay. It happened again here.
@@ -60,6 +62,8 @@ Australia made three changes at halftime, including bringing on Irankunda and Co
 The best chance came when Irankunda got in behind Ream down the right and cut the ball back to Cristian Volpato, who blasted his first-time shot over the bar. Later, Australia got a dangerous sequence in the box with a looping cross, a cutback, and a blocked shot in traffic. It was not constant danger, but it was enough to make you think about what this might look like against a team with more quality.
 
 The referee did not help matters. Felix Zwayer was too hesitant to give Australia cards for persistent fouling, and the game got chippier as the half went on. There were several challenges that could have brought yellows for Australia earlier. Instead, the temperature kept rising until Balogun and Harry Souttar got tangled up late, leading to a brief scuffle and yellow cards for both. Balogun's yellow is frustrating because it was avoidable, but it also felt like a product of a game the referee allowed to get too physical for too long.
+
+## What's Next?
 
 That matters because the US now have to think about cards in the final group game. Cards reset after the group stage, but any player that picks up a second yellow in the final group game would be suspended for the first knockout game. So Tyler Adams, Antonee Robinson, Chris Richards, and Balogun are all players you would rather not risk if there is any chance they could miss the Round of 32. With the group won, Pochettino can rotate heavily. Christian Pulisic will get some extra time to rest. Maybe he gets a late cameo if the staff wants him to test the calf. But after two wins in two games, there is no reason to force it. Perhaps Pochettino can even experiment with a different tactical look that the team may need to break out against a stronger opponent in the latter stages of the knockouts.
 
