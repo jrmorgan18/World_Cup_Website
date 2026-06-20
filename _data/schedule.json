@@ -504,7 +504,10 @@
    "venue": "Houston Stadium",
    "city": "Houston",
    "home": "Netherlands",
-   "away": "Sweden"
+   "away": "Sweden",
+   "home_score": 5,
+   "away_score": 1,
+   "status": "IN_PLAY"
   },
   {
    "id": 33,
