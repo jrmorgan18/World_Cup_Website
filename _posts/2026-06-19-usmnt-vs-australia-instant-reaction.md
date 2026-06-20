@@ -5,8 +5,8 @@ subtitle: "Two games. Two wins. Six points. For the first time, the US men have 
 excerpt: "Two games. Two wins. Six points. Group won. For the first time in the modern World Cup, the US men have secured the top of their group with one game to spare."
 date: 2026-06-19 22:00:00 -0400
 categories: [usmnt]
-thumbnail: /assets/images/usmnt-paraguay-celebration.jpg
-hero_image: /assets/images/usmnt-paraguay-celebration.jpg
+thumbnail: /assets/images/usmnt_celebration.jpg
+hero_image: /assets/images/usmnt_celebration.jpg
 ---
 
 Two games. Two wins. Six points. Group won.
