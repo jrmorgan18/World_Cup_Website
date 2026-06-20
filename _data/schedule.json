@@ -520,9 +520,9 @@
    "city": "Toronto",
    "home": "Germany",
    "away": "Ivory Coast",
-   "home_score": 1,
+   "home_score": 2,
    "away_score": 1,
-   "status": "IN_PLAY"
+   "status": "FINISHED"
   },
   {
    "id": 34,
