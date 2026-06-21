@@ -534,7 +534,10 @@
    "venue": "Kansas City Stadium",
    "city": "Kansas City",
    "home": "Ecuador",
-   "away": "Curaçao"
+   "away": "Curaçao",
+   "home_score": 0,
+   "away_score": 0,
+   "status": "IN_PLAY"
   },
   {
    "id": 38,
