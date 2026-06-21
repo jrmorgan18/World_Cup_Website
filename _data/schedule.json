@@ -553,7 +553,7 @@
    "city": "Atlanta",
    "home": "Spain",
    "away": "Saudi Arabia",
-   "home_score": 5,
+   "home_score": 4,
    "away_score": 0,
    "status": "FINISHED"
   },
@@ -567,7 +567,10 @@
    "venue": "Los Angeles Stadium",
    "city": "Los Angeles",
    "home": "Belgium",
-   "away": "Iran"
+   "away": "Iran",
+   "home_score": 0,
+   "away_score": 0,
+   "status": "IN_PLAY"
   },
   {
    "id": 37,
