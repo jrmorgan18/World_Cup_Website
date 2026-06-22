@@ -609,7 +609,10 @@
    "venue": "Dallas Stadium",
    "city": "Dallas",
    "home": "Argentina",
-   "away": "Austria"
+   "away": "Austria",
+   "home_score": 2,
+   "away_score": 0,
+   "status": "FINISHED"
   },
   {
    "id": 42,
