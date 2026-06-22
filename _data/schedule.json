@@ -594,7 +594,10 @@
    "venue": "BC Place Vancouver",
    "city": "Vancouver",
    "home": "New Zealand",
-   "away": "Egypt"
+   "away": "Egypt",
+   "home_score": 1,
+   "away_score": 3,
+   "status": "FINISHED"
   },
   {
    "id": 43,
