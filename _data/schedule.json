@@ -684,7 +684,10 @@
    "venue": "Boston Stadium",
    "city": "Boston",
    "home": "England",
-   "away": "Ghana"
+   "away": "Ghana",
+   "home_score": 0,
+   "away_score": 0,
+   "status": "FINISHED"
   },
   {
    "id": 46,
