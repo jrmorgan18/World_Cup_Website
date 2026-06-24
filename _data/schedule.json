@@ -699,7 +699,10 @@
    "venue": "Toronto Stadium",
    "city": "Toronto",
    "home": "Panama",
-   "away": "Croatia"
+   "away": "Croatia",
+   "home_score": 0,
+   "away_score": 0,
+   "status": "PAUSED"
   },
   {
    "id": 48,
