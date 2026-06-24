@@ -701,8 +701,8 @@
    "home": "Panama",
    "away": "Croatia",
    "home_score": 0,
-   "away_score": 0,
-   "status": "PAUSED"
+   "away_score": 1,
+   "status": "FINISHED"
   },
   {
    "id": 48,
@@ -714,7 +714,10 @@
    "venue": "Guadalajara Stadium",
    "city": "Guadalajara",
    "home": "Colombia",
-   "away": "DR Congo"
+   "away": "DR Congo",
+   "home_score": 1,
+   "away_score": 0,
+   "status": "FINISHED"
   },
   {
    "id": 51,
