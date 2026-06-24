@@ -730,9 +730,9 @@
    "city": "Vancouver",
    "home": "Switzerland",
    "away": "Canada",
-   "home_score": 1,
-   "away_score": 0,
-   "status": "IN_PLAY"
+   "home_score": 2,
+   "away_score": 1,
+   "status": "FINISHED"
   },
   {
    "id": 52,
@@ -745,9 +745,9 @@
    "city": "Seattle",
    "home": "Bosnia and Herzegovina",
    "away": "Qatar",
-   "home_score": 2,
+   "home_score": 3,
    "away_score": 1,
-   "status": "IN_PLAY"
+   "status": "FINISHED"
   },
   {
    "id": 49,
