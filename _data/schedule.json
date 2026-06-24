@@ -759,7 +759,10 @@
    "venue": "Miami Stadium",
    "city": "Miami",
    "home": "Scotland",
-   "away": "Brazil"
+   "away": "Brazil",
+   "home_score": 0,
+   "away_score": 2,
+   "status": "PAUSED"
   },
   {
    "id": 50,
@@ -771,7 +774,10 @@
    "venue": "Atlanta Stadium",
    "city": "Atlanta",
    "home": "Morocco",
-   "away": "Haiti"
+   "away": "Haiti",
+   "home_score": 2,
+   "away_score": 2,
+   "status": "PAUSED"
   },
   {
    "id": 53,
