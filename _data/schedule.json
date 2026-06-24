@@ -729,7 +729,10 @@
    "venue": "BC Place Vancouver",
    "city": "Vancouver",
    "home": "Switzerland",
-   "away": "Canada"
+   "away": "Canada",
+   "home_score": 1,
+   "away_score": 0,
+   "status": "IN_PLAY"
   },
   {
    "id": 52,
@@ -741,7 +744,10 @@
    "venue": "Seattle Stadium",
    "city": "Seattle",
    "home": "Bosnia and Herzegovina",
-   "away": "Qatar"
+   "away": "Qatar",
+   "home_score": 2,
+   "away_score": 1,
+   "status": "IN_PLAY"
   },
   {
    "id": 49,
