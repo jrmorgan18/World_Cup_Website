@@ -819,7 +819,10 @@
    "venue": "Philadelphia Stadium",
    "city": "Philadelphia",
    "home": "Curaçao",
-   "away": "Ivory Coast"
+   "away": "Ivory Coast",
+   "home_score": 0,
+   "away_score": 2,
+   "status": "FINISHED"
   },
   {
    "id": 56,
@@ -831,7 +834,10 @@
    "venue": "New York New Jersey Stadium",
    "city": "New York/New Jersey",
    "home": "Ecuador",
-   "away": "Germany"
+   "away": "Germany",
+   "home_score": 2,
+   "away_score": 1,
+   "status": "FINISHED"
   },
   {
    "id": 57,
