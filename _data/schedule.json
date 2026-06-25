@@ -791,8 +791,8 @@
    "home": "Czechia",
    "away": "Mexico",
    "home_score": 0,
-   "away_score": 0,
-   "status": "IN_PLAY"
+   "away_score": 3,
+   "status": "FINISHED"
   },
   {
    "id": 54,
@@ -805,9 +805,9 @@
    "city": "Monterrey",
    "home": "South Africa",
    "away": "South Korea",
-   "home_score": 0,
+   "home_score": 1,
    "away_score": 0,
-   "status": "IN_PLAY"
+   "status": "FINISHED"
   },
   {
    "id": 55,
