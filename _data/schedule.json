@@ -761,8 +761,8 @@
    "home": "Scotland",
    "away": "Brazil",
    "home_score": 0,
-   "away_score": 2,
-   "status": "PAUSED"
+   "away_score": 3,
+   "status": "FINISHED"
   },
   {
    "id": 50,
@@ -775,9 +775,9 @@
    "city": "Atlanta",
    "home": "Morocco",
    "away": "Haiti",
-   "home_score": 2,
+   "home_score": 4,
    "away_score": 2,
-   "status": "PAUSED"
+   "status": "FINISHED"
   },
   {
    "id": 53,
@@ -789,7 +789,10 @@
    "venue": "Mexico City Stadium",
    "city": "Mexico City",
    "home": "Czechia",
-   "away": "Mexico"
+   "away": "Mexico",
+   "home_score": 0,
+   "away_score": 0,
+   "status": "IN_PLAY"
   },
   {
    "id": 54,
@@ -801,7 +804,10 @@
    "venue": "Monterrey Stadium",
    "city": "Monterrey",
    "home": "South Africa",
-   "away": "South Korea"
+   "away": "South Korea",
+   "home_score": 0,
+   "away_score": 0,
+   "status": "IN_PLAY"
   },
   {
    "id": 55,
