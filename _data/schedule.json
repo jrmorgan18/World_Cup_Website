@@ -911,8 +911,8 @@
    "home": "Norway",
    "away": "France",
    "home_score": 1,
-   "away_score": 3,
-   "status": "IN_PLAY"
+   "away_score": 4,
+   "status": "FINISHED"
   },
   {
    "id": 62,
@@ -924,7 +924,10 @@
    "venue": "Toronto Stadium",
    "city": "Toronto",
    "home": "Senegal",
-   "away": "Iraq"
+   "away": "Iraq",
+   "home_score": 5,
+   "away_score": 0,
+   "status": "FINISHED"
   },
   {
    "id": 65,
