@@ -909,7 +909,10 @@
    "venue": "Boston Stadium",
    "city": "Boston",
    "home": "Norway",
-   "away": "France"
+   "away": "France",
+   "home_score": 1,
+   "away_score": 3,
+   "status": "IN_PLAY"
   },
   {
    "id": 62,
