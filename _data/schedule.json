@@ -968,7 +968,7 @@
    "home": "Egypt",
    "away": "Iran",
    "home_score": 1,
-   "away_score": 1,
+   "away_score": 2,
    "status": "FINISHED"
   },
   {
@@ -998,8 +998,8 @@
    "home": "Panama",
    "away": "England",
    "home_score": 0,
-   "away_score": 0,
-   "status": "IN_PLAY"
+   "away_score": 2,
+   "status": "FINISHED"
   },
   {
    "id": 68,
@@ -1011,7 +1011,10 @@
    "venue": "Philadelphia Stadium",
    "city": "Philadelphia",
    "home": "Croatia",
-   "away": "Ghana"
+   "away": "Ghana",
+   "home_score": 2,
+   "away_score": 1,
+   "status": "FINISHED"
   },
   {
    "id": 71,
