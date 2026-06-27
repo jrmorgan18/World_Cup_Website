@@ -954,7 +954,7 @@
    "away": "Spain",
    "home_score": 0,
    "away_score": 1,
-   "status": "IN_PLAY"
+   "status": "FINISHED"
   },
   {
    "id": 63,
@@ -966,7 +966,10 @@
    "venue": "Seattle Stadium",
    "city": "Seattle",
    "home": "Egypt",
-   "away": "Iran"
+   "away": "Iran",
+   "home_score": 1,
+   "away_score": 1,
+   "status": "FINISHED"
   },
   {
    "id": 64,
@@ -978,7 +981,10 @@
    "venue": "BC Place Vancouver",
    "city": "Vancouver",
    "home": "New Zealand",
-   "away": "Belgium"
+   "away": "Belgium",
+   "home_score": 1,
+   "away_score": 5,
+   "status": "FINISHED"
   },
   {
    "id": 67,
