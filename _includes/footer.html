@@ -1,3 +1,19 @@
+<section class="newsletter" aria-labelledby="nl-heading">
+  <div class="newsletter-inner">
+    <div class="newsletter-copy">
+      <h3 id="nl-heading" class="newsletter-title">Never miss an article</h3>
+      <p class="newsletter-sub">Previews, recaps, and betting cards sent straight to your inbox. No spam — just the soccer.</p>
+    </div>
+    <form class="newsletter-form" id="newsletter-form" method="POST" target="nl-sink" novalidate>
+      <label class="sr-only" for="nl-email">Email address</label>
+      <input id="nl-email" type="email" required placeholder="you@example.com" autocomplete="email" inputmode="email">
+      <button type="submit" class="newsletter-btn">Subscribe</button>
+    </form>
+  </div>
+  <p class="newsletter-status" id="newsletter-status" role="status" aria-live="polite"></p>
+  <iframe name="nl-sink" class="nl-sink" title="newsletter submission" aria-hidden="true" tabindex="-1"></iframe>
+</section>
+
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-brand">
@@ -18,3 +34,4 @@
     </div>
   </div>
 </footer>
+<script src="{{ '/assets/js/newsletter.js' | relative_url }}"></script>

@@ -900,11 +900,95 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* ===== FOOTER ===== */
+/* ===== NEWSLETTER ===== */
+.newsletter {
+  border-top: 1px solid var(--color-border);
+  background: linear-gradient(180deg, var(--color-accent-subtle), transparent);
+  padding: 36px 24px 32px;
+  margin-top: 64px;
+}
+.newsletter-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 18px 32px;
+}
+.newsletter-copy { min-width: 0; }
+.newsletter-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+.newsletter-sub {
+  color: var(--color-text-muted);
+  font-size: 0.92rem;
+  margin-top: 4px;
+  max-width: 46ch;
+}
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  min-width: 280px;
+  max-width: 460px;
+}
+#nl-email {
+  flex: 1;
+  min-width: 0;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 11px 18px;
+  transition: border-color 0.15s;
+}
+#nl-email::placeholder { color: var(--color-text-muted); }
+#nl-email:focus { outline: none; border-color: var(--color-accent); }
+.newsletter-btn {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #1a1205;
+  background: var(--color-accent);
+  border: none;
+  border-radius: 999px;
+  padding: 11px 24px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+.newsletter-btn:hover { background: var(--color-accent-hover); }
+.newsletter-status {
+  max-width: var(--max-width);
+  margin: 12px auto 0;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  min-height: 1.2em;
+}
+.newsletter-status.is-ok { color: var(--color-green); }
+.newsletter-status.is-error { color: var(--color-red); }
+.nl-sink {
+  position: absolute;
+  width: 0; height: 0; border: 0;
+  visibility: hidden;
+}
+@media (max-width: 640px) {
+  .newsletter-form { max-width: none; }
+}
+
 .site-footer {
   border-top: 1px solid var(--color-border);
   background: var(--color-surface);
   padding: 48px 24px 32px;
-  margin-top: 64px;
+  margin-top: 0;
 }
 
 .footer-inner {
@@ -1730,22 +1814,13 @@ img { max-width: 100%; height: auto; display: block; }
   font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.04em;
   font-size: 0.82rem; color: var(--color-text-muted);
 }
-.ko-fix {
-  display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 4px 10px;
-  background: var(--color-surface); border: 1px solid var(--color-border);
-  border-radius: var(--radius); padding: 14px 16px;
-}
-.ko-side { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; }
-.ko-home { justify-content: flex-end; text-align: right; }
-.ko-away { justify-content: flex-start; }
-.ko-fix .mc-flag { width: 30px; height: 21px; object-fit: cover; border-radius: 3px; flex-shrink: 0; }
-.ko-fix .mc-name { font-weight: 600; font-size: 0.95rem; }
-.ko-fix-usa { border-left: 4px solid var(--color-accent); }
-.ko-fix-detail {
-  flex-basis: 100%; text-align: center; font-family: var(--font-display);
-  font-size: 0.74rem; letter-spacing: 0.03em; text-transform: uppercase; color: var(--color-accent);
-}
-.ko-tbd { font-size: 0.88rem; color: var(--color-text-muted); font-style: italic; }
+.ko-round .date-block { margin-bottom: 22px; }
+.ko-round .date-heading { font-size: 1.05rem; }
+.ko-game { cursor: default; }
+.ko-game:hover { transform: none; border-color: var(--color-border); background: var(--color-surface); }
+.ko-game-usa { border-left: 4px solid var(--color-accent); }
+.ko-game-usa:hover { border-color: var(--color-border); border-left-color: var(--color-accent); }
+.ko-tbd { font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6; }
 
 /* ---- Standings ---- */
 .standings-legend { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; margin-bottom: 20px; font-size: 0.82rem; color: var(--color-text-muted); }
