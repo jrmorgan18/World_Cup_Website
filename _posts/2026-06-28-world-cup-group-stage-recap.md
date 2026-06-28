@@ -5,8 +5,8 @@ subtitle: "Power rankings, the best XI, the bracket breakdown, and who's best po
 excerpt: "48 teams, 12 groups, 72 games, and a million third-place scenarios later — here's a full reset before the knockout rounds begin."
 date: 2026-06-28 10:00:00 -0400
 categories: [analysis]
-thumbnail: /assets/images/mbappe-france.jpg
-hero_image: /assets/images/mbappe-france.jpg
+thumbnail: /assets/images/messi-argentina-2026.jpg
+hero_image: /assets/images/messi-argentina-2026.jpg
 ---
 
 The largest group stage in World Cup history is finally done. Forty-eight teams, twelve groups, 72 games, and a million different third-place scenarios. A bracket that required a flow chart, an engineering degree, and possibly a small prayer to understand. And after all of that, we are down to 32 teams.
