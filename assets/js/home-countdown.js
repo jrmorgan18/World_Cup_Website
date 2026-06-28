@@ -83,6 +83,8 @@
   var timer = null;
   function liveBanner() {
     cdEl.innerHTML = '';
+    cdEl.style.display = 'none';
+    section.classList.add('kickoff-solo');
   }
   function renderCountdown() {
     var now = new Date();
