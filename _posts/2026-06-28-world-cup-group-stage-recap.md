@@ -164,7 +164,7 @@ The problem is their reward. They get the Netherlands. If they win that, their p
 
 ## The Bracket
 
-[![2026 World Cup Knockout Bracket](/assets/images/world_cup_2026_bracket.png)](/assets/images/world_cup_2026_bracket.png)
+[![2026 World Cup Knockout Bracket]({{ '/assets/images/world_cup_2026_bracket.png' | relative_url }})]({{ '/assets/images/world_cup_2026_bracket.png' | relative_url }})
 
 That setup matters as much as the power rankings.
 
