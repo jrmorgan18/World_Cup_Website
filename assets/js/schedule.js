@@ -10,12 +10,14 @@
   var dateView = document.getElementById("view-date");
   var teamView = document.getElementById("view-team");
   var standingsView = document.getElementById("view-standings");
+  var knockoutView = document.getElementById("view-knockout");
   var standingsBuilt = false;
 
   function setView(view) {
     groupView.hidden = view !== "group";
     dateView.hidden = view !== "date";
     if (standingsView) standingsView.hidden = view !== "standings";
+    if (knockoutView) knockoutView.hidden = view !== "knockout";
     if (view === "standings" && !standingsBuilt) { buildStandings(); standingsBuilt = true; }
   }
 
@@ -99,6 +101,8 @@
     if (!n) teamList.innerHTML = '<p class="empty-state">No fixtures found.</p>';
     groupView.hidden = true;
     dateView.hidden = true;
+    if (standingsView) standingsView.hidden = true;
+    if (knockoutView) knockoutView.hidden = true;
     teamView.hidden = false;
     clearBtn.hidden = false;
   }

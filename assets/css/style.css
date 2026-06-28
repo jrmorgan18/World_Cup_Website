@@ -1713,6 +1713,40 @@ img { max-width: 100%; height: auto; display: block; }
   font-size: 0.82rem; color: var(--color-text-muted); font-style: italic; text-align: center;
 }
 
+/* ---- Knockouts ---- */
+.ko-bracket { text-align: center; margin-bottom: 32px; }
+.ko-bracket-img {
+  max-width: 100%; height: auto; border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg); background: #fff;
+}
+.ko-bracket-cap { font-size: 0.82rem; color: var(--color-text-muted); margin-top: 10px; }
+.ko-round { margin-bottom: 32px; }
+.ko-round-head {
+  display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 6px 16px;
+  padding-bottom: 12px; margin-bottom: 16px; border-bottom: 2px solid var(--color-border);
+}
+.ko-round-name { font-family: var(--font-display); font-size: 1.5rem; color: var(--color-accent); }
+.ko-round-dates {
+  font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.04em;
+  font-size: 0.82rem; color: var(--color-text-muted);
+}
+.ko-fix {
+  display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 4px 10px;
+  background: var(--color-surface); border: 1px solid var(--color-border);
+  border-radius: var(--radius); padding: 14px 16px;
+}
+.ko-side { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; }
+.ko-home { justify-content: flex-end; text-align: right; }
+.ko-away { justify-content: flex-start; }
+.ko-fix .mc-flag { width: 30px; height: 21px; object-fit: cover; border-radius: 3px; flex-shrink: 0; }
+.ko-fix .mc-name { font-weight: 600; font-size: 0.95rem; }
+.ko-fix-usa { border-left: 4px solid var(--color-accent); }
+.ko-fix-detail {
+  flex-basis: 100%; text-align: center; font-family: var(--font-display);
+  font-size: 0.74rem; letter-spacing: 0.03em; text-transform: uppercase; color: var(--color-accent);
+}
+.ko-tbd { font-size: 0.88rem; color: var(--color-text-muted); font-style: italic; }
+
 /* ---- Standings ---- */
 .standings-legend { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; margin-bottom: 20px; font-size: 0.82rem; color: var(--color-text-muted); }
 .standings-legend span { display: inline-flex; align-items: center; gap: 7px; }

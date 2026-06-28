@@ -5,8 +5,8 @@ permalink: /schedule/
 ---
 <div class="schedule-page">
   <div class="schedule-header">
-    <h1 class="category-title">Group Stage Schedule</h1>
-    <p class="category-description">All 72 group-stage matches. Browse by group or by date, and tap any game for a quick head-to-head preview built from each team's capsule.</p>
+    <h1 class="category-title">World Cup Schedule</h1>
+    <p class="category-description">The full bracket plus all 72 group-stage matches. Jump to the knockouts, or browse the group stage by group or by date and tap any game for a quick head-to-head preview.</p>
   </div>
 
   <div class="team-search">
@@ -18,7 +18,8 @@ permalink: /schedule/
   </div>
 
   <div class="view-toggle" role="tablist" aria-label="Schedule view">
-    <button class="view-btn active" data-view="group" role="tab" aria-selected="true">By Group</button>
+    <button class="view-btn active" data-view="knockout" role="tab" aria-selected="true">Knockouts</button>
+    <button class="view-btn" data-view="group" role="tab" aria-selected="false">By Group</button>
     <button class="view-btn" data-view="date" role="tab" aria-selected="false">By Date</button>
     <button class="view-btn" data-view="standings" role="tab" aria-selected="false">Standings</button>
   </div>
@@ -29,8 +30,75 @@ permalink: /schedule/
     <div class="match-list" id="team-sched-list"></div>
   </div>
 
+  <!-- ===== KNOCKOUTS ===== -->
+  <div id="view-knockout" class="schedule-view">
+    <div class="ko-bracket">
+      <a href="{{ '/assets/images/world_cup_2026_bracket.png' | relative_url }}" target="_blank" rel="noopener">
+        <img src="{{ '/assets/images/world_cup_2026_bracket.png' | relative_url }}" alt="2026 World Cup knockout bracket, Round of 32 through the Final" class="ko-bracket-img" loading="lazy">
+      </a>
+      <p class="ko-bracket-cap">Tap the bracket to view it full size. Round-by-round dates are listed below.</p>
+    </div>
+
+    <section class="ko-round">
+      <div class="ko-round-head">
+        <h2 class="ko-round-name">Round of 32</h2>
+        <span class="ko-round-dates">June 28 – July 3</span>
+      </div>
+      <div class="match-list">
+        <div class="ko-fix"><span class="ko-side ko-home"><span class="mc-name">Germany</span><img class="mc-flag" src="https://flagcdn.com/w40/de.png" alt=""></span><span class="mc-vs">v</span><span class="ko-side ko-away"><img class="mc-flag" src="https://flagcdn.com/w40/py.png" alt=""><span class="mc-name">Paraguay</span></span></div>
+        <div class="ko-fix"><span class="ko-side ko-home"><span class="mc-name">France</span><img class="mc-flag" src="https://flagcdn.com/w40/fr.png" alt=""></span><span class="mc-vs">v</span><span class="ko-side ko-away"><img class="mc-flag" src="https://flagcdn.com/w40/se.png" alt=""><span class="mc-name">Sweden</span></span></div>
+        <div class="ko-fix"><span class="ko-side ko-home"><span class="mc-name">South Africa</span><img class="mc-flag" src="https://flagcdn.com/w40/za.png" alt=""></span><span class="mc-vs">v</span><span class="ko-side ko-away"><img class="mc-flag" src="https://flagcdn.com/w40/ca.png" alt=""><span class="mc-name">Canada</span></span></div>
+        <div class="ko-fix"><span class="ko-side ko-home"><span class="mc-name">Netherlands</span><img class="mc-flag" src="https://flagcdn.com/w40/nl.png" alt=""></span><span class="mc-vs">v</span><span class="ko-side ko-away"><img class="mc-flag" src="https://flagcdn.com/w40/ma.png" alt=""><span class="mc-name">Morocco</span></span></div>
+        <div class="ko-fix"><span class="ko-side ko-home"><span class="mc-name">Portugal</span><img class="mc-flag" src="https://flagcdn.com/w40/pt.png" alt=""></span><span class="mc-vs">v</span><span class="ko-side ko-away"><img class="mc-flag" src="https://flagcdn.com/w40/hr.png" alt=""><span class="mc-name">Croatia</span></span></div>
+        <div class="ko-fix"><span class="ko-side ko-home"><span class="mc-name">Spain</span><img class="mc-flag" src="https://flagcdn.com/w40/es.png" alt=""></span><span class="mc-vs">v</span><span class="ko-side ko-away"><img class="mc-flag" src="https://flagcdn.com/w40/at.png" alt=""><span class="mc-name">Austria</span></span></div>
+        <div class="ko-fix ko-fix-usa"><span class="ko-side ko-home"><span class="mc-name">United States</span><img class="mc-flag" src="https://flagcdn.com/w40/us.png" alt=""></span><span class="mc-vs">v</span><span class="ko-side ko-away"><img class="mc-flag" src="https://flagcdn.com/w40/ba.png" alt=""><span class="mc-name">Bosnia &amp; Herzegovina</span></span><span class="ko-fix-detail">Wed, July 1 · Santa Clara</span></div>
+        <div class="ko-fix"><span class="ko-side ko-home"><span class="mc-name">Belgium</span><img class="mc-flag" src="https://flagcdn.com/w40/be.png" alt=""></span><span class="mc-vs">v</span><span class="ko-side ko-away"><img class="mc-flag" src="https://flagcdn.com/w40/sn.png" alt=""><span class="mc-name">Senegal</span></span></div>
+        <div class="ko-fix"><span class="ko-side ko-home"><span class="mc-name">Brazil</span><img class="mc-flag" src="https://flagcdn.com/w40/br.png" alt=""></span><span class="mc-vs">v</span><span class="ko-side ko-away"><img class="mc-flag" src="https://flagcdn.com/w40/jp.png" alt=""><span class="mc-name">Japan</span></span></div>
+        <div class="ko-fix"><span class="ko-side ko-home"><span class="mc-name">Ivory Coast</span><img class="mc-flag" src="https://flagcdn.com/w40/ci.png" alt=""></span><span class="mc-vs">v</span><span class="ko-side ko-away"><img class="mc-flag" src="https://flagcdn.com/w40/no.png" alt=""><span class="mc-name">Norway</span></span></div>
+        <div class="ko-fix"><span class="ko-side ko-home"><span class="mc-name">Mexico</span><img class="mc-flag" src="https://flagcdn.com/w40/mx.png" alt=""></span><span class="mc-vs">v</span><span class="ko-side ko-away"><img class="mc-flag" src="https://flagcdn.com/w40/ec.png" alt=""><span class="mc-name">Ecuador</span></span></div>
+        <div class="ko-fix"><span class="ko-side ko-home"><span class="mc-name">England</span><img class="mc-flag" src="https://flagcdn.com/w40/gb-eng.png" alt=""></span><span class="mc-vs">v</span><span class="ko-side ko-away"><img class="mc-flag" src="https://flagcdn.com/w40/cd.png" alt=""><span class="mc-name">DR Congo</span></span></div>
+        <div class="ko-fix"><span class="ko-side ko-home"><span class="mc-name">Argentina</span><img class="mc-flag" src="https://flagcdn.com/w40/ar.png" alt=""></span><span class="mc-vs">v</span><span class="ko-side ko-away"><img class="mc-flag" src="https://flagcdn.com/w40/cv.png" alt=""><span class="mc-name">Cape Verde</span></span></div>
+        <div class="ko-fix"><span class="ko-side ko-home"><span class="mc-name">Australia</span><img class="mc-flag" src="https://flagcdn.com/w40/au.png" alt=""></span><span class="mc-vs">v</span><span class="ko-side ko-away"><img class="mc-flag" src="https://flagcdn.com/w40/eg.png" alt=""><span class="mc-name">Egypt</span></span></div>
+        <div class="ko-fix"><span class="ko-side ko-home"><span class="mc-name">Switzerland</span><img class="mc-flag" src="https://flagcdn.com/w40/ch.png" alt=""></span><span class="mc-vs">v</span><span class="ko-side ko-away"><img class="mc-flag" src="https://flagcdn.com/w40/dz.png" alt=""><span class="mc-name">Algeria</span></span></div>
+        <div class="ko-fix"><span class="ko-side ko-home"><span class="mc-name">Colombia</span><img class="mc-flag" src="https://flagcdn.com/w40/co.png" alt=""></span><span class="mc-vs">v</span><span class="ko-side ko-away"><img class="mc-flag" src="https://flagcdn.com/w40/gh.png" alt=""><span class="mc-name">Ghana</span></span></div>
+      </div>
+    </section>
+
+    <section class="ko-round">
+      <div class="ko-round-head">
+        <h2 class="ko-round-name">Round of 16</h2>
+        <span class="ko-round-dates">July 4 – July 7</span>
+      </div>
+      <p class="ko-tbd">Matchups are set as the Round of 32 finishes — follow the bracket above to see how each pod feeds in.</p>
+    </section>
+
+    <section class="ko-round">
+      <div class="ko-round-head">
+        <h2 class="ko-round-name">Quarterfinals</h2>
+        <span class="ko-round-dates">July 9 – July 11</span>
+      </div>
+      <p class="ko-tbd">Eight teams remain. Matchups follow the bracket above.</p>
+    </section>
+
+    <section class="ko-round">
+      <div class="ko-round-head">
+        <h2 class="ko-round-name">Semifinals</h2>
+        <span class="ko-round-dates">July 14 – July 15</span>
+      </div>
+      <p class="ko-tbd">The final four.</p>
+    </section>
+
+    <section class="ko-round">
+      <div class="ko-round-head">
+        <h2 class="ko-round-name">Third-Place Match &amp; Final</h2>
+        <span class="ko-round-dates">July 18 &amp; July 19</span>
+      </div>
+      <p class="ko-tbd">Third place on July 18, the Final on July 19 at MetLife Stadium.</p>
+    </section>
+  </div>
+
   <!-- ===== BY GROUP ===== -->
-  <div id="view-group" class="schedule-view">
+  <div id="view-group" class="schedule-view" hidden>
     <nav class="group-jump" aria-label="Jump to group">
       {% for g in site.data.schedule.group_order %}
       <a href="#group-{{ g }}" class="group-chip">{{ g }}</a>

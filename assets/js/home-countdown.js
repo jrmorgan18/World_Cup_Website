@@ -82,7 +82,7 @@
   var cdEl = document.getElementById("kickoff-countdown");
   var timer = null;
   function liveBanner() {
-    cdEl.innerHTML = '<div class="ko-live"><span class="ko-live-dot"></span>The World Cup is underway</div>';
+    cdEl.innerHTML = '';
   }
   function renderCountdown() {
     var now = new Date();
