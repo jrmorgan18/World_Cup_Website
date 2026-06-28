@@ -1044,7 +1044,7 @@
    "away": "Uzbekistan",
    "home_score": 3,
    "away_score": 1,
-   "status": "IN_PLAY"
+   "status": "FINISHED"
   },
   {
    "id": 69,
@@ -1056,7 +1056,10 @@
    "venue": "Kansas City Stadium",
    "city": "Kansas City",
    "home": "Algeria",
-   "away": "Austria"
+   "away": "Austria",
+   "home_score": 3,
+   "away_score": 3,
+   "status": "FINISHED"
   },
   {
    "id": 70,
@@ -1068,7 +1071,10 @@
    "venue": "Dallas Stadium",
    "city": "Dallas",
    "home": "Jordan",
-   "away": "Argentina"
+   "away": "Argentina",
+   "home_score": 1,
+   "away_score": 3,
+   "status": "FINISHED"
   }
  ],
  "groups": {
