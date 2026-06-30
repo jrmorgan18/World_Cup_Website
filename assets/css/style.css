@@ -826,22 +826,23 @@ img { max-width: 100%; height: auto; display: block; }
   margin: 0 4px;
 }
 
-.game-meta-list {
+.game-meta .game-meta-list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 28px;
+  gap: 14px 32px;
 }
 
-.game-meta-list li {
+.game-meta .game-meta-list li {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 3px;
+  margin: 0;
 }
 
-.game-meta-list .gm-label {
+.game-meta .gm-label {
   font-family: var(--font-display);
   font-size: 0.68rem;
   font-weight: 600;
@@ -850,7 +851,7 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--color-accent);
 }
 
-.game-meta-list .gm-val {
+.game-meta .gm-val {
   font-size: 0.98rem;
   color: var(--color-text);
 }
