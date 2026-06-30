@@ -5,11 +5,21 @@ subtitle: "On paper it's close to the best draw the US could have hoped for. But
 excerpt: "The group stage is over and the real tournament starts now. A tactical look at how the US can break down a stubborn, physical Bosnia side in the Round of 32."
 date: 2026-06-30 10:00:00 -0400
 categories: [usmnt]
-thumbnail: /assets/images/balogun-usmnt-wc2026.jpg
-hero_image: /assets/images/balogun-usmnt-wc2026.jpg
+thumbnail: /assets/images/usmnt-paraguay-celebration.jpg
+hero_image: /assets/images/usmnt-paraguay-celebration.jpg
 ---
 
 After three group stage games, a dominant win over Paraguay, a professional win over Australia, and a meaningless last-second loss to Türkiye with a rotated lineup, the real tournament starts now.
+
+<div class="game-meta" markdown="0">
+  <div class="game-meta-tag">Round of 32</div>
+  <div class="game-meta-teams">United States <span class="gm-vs">vs.</span> Bosnia &amp; Herzegovina</div>
+  <ul class="game-meta-list">
+    <li><span class="gm-label">When</span><span class="gm-val">Wed, July 1 &middot; 8:00 PM ET</span></li>
+    <li><span class="gm-label">Where</span><span class="gm-val">Levi's Stadium, Santa Clara</span></li>
+    <li><span class="gm-label">Watch</span><span class="gm-val">FOX &amp; Telemundo</span></li>
+  </ul>
+</div>
 
 The US men will face Bosnia and Herzegovina on Wednesday night in the Round of 32 at 8:00pm eastern (5:00pm local) at Levi's Stadium in Santa Clara. On paper, this is close to the best possible draw the US could have hoped for. Bosnia is not a European heavyweight.
 
@@ -20,6 +30,18 @@ Bosnia did not stumble into this game by accident. They got here the hard way. T
 That is not the profile of a team that is going to be overwhelmed by the moment. This is a limited team in some ways. They are not loaded with elite speed and they are not going to pass the US off the field. But they are organized, physical, stubborn, dangerous on set pieces, and very comfortable playing the kind of game where the favorite has most of the ball and slowly starts to get frustrated.
 
 That is exactly the kind of game the US has to avoid.
+
+<nav class="toc" markdown="0">
+  <div class="toc-title">In this article</div>
+  <ol>
+    <li><a href="#what-bosnia-wants-this-game-to-become">What Bosnia Wants This Game to Become</a></li>
+    <li><a href="#where-the-game-will-be-won">Where the Game Will Be Won</a></li>
+    <li><a href="#the-us-advantages">The US Advantages</a></li>
+    <li><a href="#set-pieces-could-decide-it">Set Pieces Could Decide It</a></li>
+    <li><a href="#tactical-deep-dive">Tactical Deep Dive</a></li>
+    <li><a href="#outlook">Outlook</a></li>
+  </ol>
+</nav>
 
 ## What Bosnia Wants This Game to Become
 
@@ -136,5 +158,3 @@ The US has to be mature enough not to let that happen. That means no cheap set p
 The US does not need to play the perfect game. They just need to play with the same energy and clarity they showed in the best stretches of the group stage. Press hard. Win second balls. Attack quickly before Bosnia gets set. Create overloads that force defenders to make choices. Get Pulisic and Dest attacking defenders. Let Balogun run the channels. Make Bosnia defend facing its own goal instead of standing comfortably in its box.
 
 Do that, and the US should be moving on.
-</content>
-</invoke>
