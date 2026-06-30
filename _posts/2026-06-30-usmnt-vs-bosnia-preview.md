@@ -5,8 +5,8 @@ subtitle: "On paper it's close to the best draw the US could have hoped for. But
 excerpt: "The group stage is over and the real tournament starts now. A tactical look at how the US can break down a stubborn, physical Bosnia side in the Round of 32."
 date: 2026-06-30 10:00:00 -0400
 categories: [usmnt]
-thumbnail: /assets/images/usmnt-paraguay-celebration.jpg
-hero_image: /assets/images/usmnt-paraguay-celebration.jpg
+thumbnail: /assets/images/usmnt-team-celebration.jpg
+hero_image: /assets/images/usmnt-team-celebration.jpg
 ---
 
 After three group stage games, a dominant win over Paraguay, a professional win over Australia, and a meaningless last-second loss to Türkiye with a rotated lineup, the real tournament starts now.
