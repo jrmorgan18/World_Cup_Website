@@ -952,6 +952,17 @@ img { max-width: 100%; height: auto; display: block; }
   border-color: var(--color-accent);
   background: linear-gradient(135deg, var(--color-accent-subtle), var(--color-surface));
 }
+.r16-meta {
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  text-align: center;
+  line-height: 1.35;
+  margin-bottom: 12px;
+}
 .r16-fixture {
   display: flex;
   align-items: center;
