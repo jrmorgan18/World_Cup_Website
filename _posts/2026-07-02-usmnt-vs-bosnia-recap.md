@@ -29,7 +29,7 @@ Just ask Germany. Just ask the Netherlands. Or even England and Belgium, who bot
 
 From the outset, Bosnia looked to frustrate the US attack and hope they could find one lucky counterattack or set piece to get on the scoreboard. Despite the red card, despite the frustration, despite the weird game state, the US overcame and advanced to the Round of 16.
 
-The headline moment will be Malik Tillman's free kick. After the US went down a man, after Bosnia finally started pushing bodies forward, after the crowd at Levi's Stadium went from tense to furious to fully alive, Tillman stepped up in the 82nd minute and buried a free kick from just outside the box to put the game away.
+The headline moment will be Malik Tillman's free kick. After the US went down a man, after Bosnia finally started pushing bodies forward, after the crowd at <s>Levi's</s> San Francisco Bay Area Stadium (except in Santa Clara, an hour south of San Francisco) went from tense to furious to fully alive, Tillman stepped up in the 82nd minute and buried a free kick from just outside the box to put the game away.
 
 It is probably the most technically impressive goal the US men have ever scored at a World Cup. It will certainly go down as one of the great moments in USMNT history, especially if they move deeper in this tournament.
 
@@ -163,7 +163,7 @@ Right foot. Over the wall. Keeper got a touch but could not keep it out.
 
 2-0.
 
-Levi's Stadium exploded.
+<s>Levi's</s> San Francisco Bay Area Stadium exploded.
 
 <figure style="margin:28px auto;max-width:820px;text-align:center;">
 <img src="{{ '/assets/images/usa-bosnia-tillman-celebration.jpg' | relative_url }}" alt="Malik Tillman celebrates after scoring a free kick to make it 2-0 over Bosnia" style="width:100%;height:auto;border-radius:8px;border:1px solid rgba(255,255,255,0.12);">

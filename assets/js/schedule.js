@@ -187,7 +187,8 @@
   function openMatch(card) {
     var home = card.getAttribute("data-home");
     var away = card.getAttribute("data-away");
-    mmGroup.textContent = "Group " + card.getAttribute("data-group");
+    var round = card.getAttribute("data-round");
+    mmGroup.textContent = round ? round : "Group " + card.getAttribute("data-group");
     mmGroup.hidden = false;
     mmDateTime.textContent = card.getAttribute("data-date") + " · " + card.getAttribute("data-time");
     mmVenue.textContent = card.getAttribute("data-venue");
@@ -227,7 +228,7 @@
 
   document.addEventListener("click", function (e) {
     var card = e.target.closest(".match-card");
-    if (card) { openMatch(card); return; }
+    if (card) { if (card.getAttribute("data-home")) openMatch(card); return; }
     var tt = e.target.closest(".team-trigger");
     if (tt) { openTeam(tt.getAttribute("data-team")); return; }
     if (e.target.closest("[data-close]")) { close(); return; }

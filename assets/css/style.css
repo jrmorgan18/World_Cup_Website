@@ -2044,6 +2044,8 @@ img { max-width: 100%; height: auto; display: block; }
 .ko-game:hover { transform: none; border-color: var(--color-border); background: var(--color-surface); }
 .ko-game-usa { border-left: 4px solid var(--color-accent); }
 .ko-game-usa:hover { border-color: var(--color-border); border-left-color: var(--color-accent); }
+.ko-game.ko-upcoming { cursor: pointer; }
+.ko-game.ko-upcoming:hover { border-color: var(--color-accent); background: var(--color-surface-raised); transform: translateY(-1px); }
 .ko-tbd { font-size: 0.9rem; color: var(--color-text-muted); line-height: 1.6; }
 .ko-done .mc-time span { color: var(--color-text-muted); font-size: 0.78rem; letter-spacing: 0.06em; }
 .ko-done .mc-team:not(.mc-won) .mc-name { color: var(--color-text-muted); font-weight: 500; }
