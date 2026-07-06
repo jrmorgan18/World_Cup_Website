@@ -16,8 +16,8 @@
         choose "Inspect". Find the input's name — it looks like
         "entry.1234567890". Paste that whole string into EMAIL_ENTRY.
      ===================================================================== */
-  var FORM_ID = "REPLACE_WITH_FORM_ID";
-  var EMAIL_ENTRY = "entry.REPLACE_WITH_ENTRY_ID";
+  var FORM_ID = "1FAIpQLSeob9vw5hPZYI6ZqOmh2xRrY4l0kMudRy2nitv9nrZsN4-NHQ";
+  var EMAIL_ENTRY = "entry.181187106";
   /* ===================================================================== */
 
   var form = document.getElementById("newsletter-form");
