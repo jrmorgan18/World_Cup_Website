@@ -20,42 +20,84 @@
   var EMAIL_ENTRY = "entry.181187106";
   /* ===================================================================== */
 
-  var form = document.getElementById("newsletter-form");
-  if (!form) return;
-  var input = document.getElementById("nl-email");
-  var status = document.getElementById("newsletter-status");
-
   var configured =
     FORM_ID.indexOf("REPLACE") === -1 && EMAIL_ENTRY.indexOf("REPLACE") === -1;
+  var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  if (configured) {
-    input.name = EMAIL_ENTRY;
-    form.action =
-      "https://docs.google.com/forms/d/e/" + FORM_ID + "/formResponse";
+  /* ---- Floating "Subscribe" button + popup ---- */
+  var fab = document.getElementById("nl-fab");
+  var modal = document.getElementById("nl-modal");
+  var lastFocus = null;
+
+  function openModal() {
+    if (!modal) return;
+    lastFocus = document.activeElement;
+    modal.hidden = false;
+    document.body.classList.add("nl-open");
+    var field = modal.querySelector('input[type="email"]');
+    if (field) setTimeout(function () { field.focus(); }, 30);
+  }
+  function closeModal() {
+    if (!modal) return;
+    modal.hidden = true;
+    document.body.classList.remove("nl-open");
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  if (fab && modal) {
+    fab.addEventListener("click", openModal);
+    modal.addEventListener("click", function (e) {
+      if (e.target.closest("[data-nl-close]")) closeModal();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !modal.hidden) closeModal();
+    });
   }
 
-  function setStatus(msg, ok) {
-    status.textContent = msg;
-    status.classList.toggle("is-error", ok === false);
-    status.classList.toggle("is-ok", ok === true);
+  /* ---- Wire up every signup form (footer + popup) ---- */
+  function wireForm(form) {
+    var input = form.querySelector('input[type="email"]');
+    if (!input) return;
+    var scope = form.closest(".newsletter, .nl-modal-card") || form.parentNode;
+    var status = scope ? scope.querySelector(".newsletter-status") : null;
+    var inModal = !!form.closest("#nl-modal");
+
+    function setStatus(msg, ok) {
+      if (!status) return;
+      status.textContent = msg;
+      status.classList.toggle("is-error", ok === false);
+      status.classList.toggle("is-ok", ok === true);
+    }
+
+    if (configured) {
+      input.name = EMAIL_ENTRY;
+      form.action =
+        "https://docs.google.com/forms/d/e/" + FORM_ID + "/formResponse";
+    }
+
+    form.addEventListener("submit", function (e) {
+      var email = (input.value || "").trim();
+      if (!email || !EMAIL_RE.test(email)) {
+        e.preventDefault();
+        setStatus("Please enter a valid email address.", false);
+        return;
+      }
+      if (!configured) {
+        e.preventDefault();
+        setStatus("Signup isn't connected yet — check back soon!", false);
+        return;
+      }
+      // The POST goes to the hidden iframe so the visitor stays on the page.
+      setStatus("Thanks! You're on the list. ⚽", true);
+      setTimeout(function () { form.reset(); }, 150);
+      if (inModal) {
+        setTimeout(function () {
+          closeModal();
+          setStatus("", null);
+        }, 1900);
+      }
+    });
   }
 
-  form.addEventListener("submit", function (e) {
-    var email = (input.value || "").trim();
-    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      e.preventDefault();
-      setStatus("Please enter a valid email address.", false);
-      return;
-    }
-    if (!configured) {
-      e.preventDefault();
-      setStatus("Signup isn't connected yet — check back soon!", false);
-      return;
-    }
-    // The POST goes to the hidden iframe so the visitor stays on the page.
-    setStatus("Thanks! You're on the list. ⚽", true);
-    setTimeout(function () {
-      form.reset();
-    }, 150);
-  });
+  var forms = document.querySelectorAll(".newsletter-form");
+  for (var i = 0; i < forms.length; i++) wireForm(forms[i]);
 })();

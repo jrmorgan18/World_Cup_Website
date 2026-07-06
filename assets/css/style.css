@@ -1159,7 +1159,7 @@ img { max-width: 100%; height: auto; display: block; }
   min-width: 280px;
   max-width: 460px;
 }
-#nl-email {
+.newsletter-form input[type="email"] {
   flex: 1;
   min-width: 0;
   font-family: var(--font-body);
@@ -1171,8 +1171,8 @@ img { max-width: 100%; height: auto; display: block; }
   padding: 11px 18px;
   transition: border-color 0.15s;
 }
-#nl-email::placeholder { color: var(--color-text-muted); }
-#nl-email:focus { outline: none; border-color: var(--color-accent); }
+.newsletter-form input[type="email"]::placeholder { color: var(--color-text-muted); }
+.newsletter-form input[type="email"]:focus { outline: none; border-color: var(--color-accent); }
 .newsletter-btn {
   font-family: var(--font-display);
   font-size: 0.9rem;
@@ -1205,6 +1205,109 @@ img { max-width: 100%; height: auto; display: block; }
 }
 @media (max-width: 640px) {
   .newsletter-form { max-width: none; }
+}
+
+/* ---- Floating subscribe button + popup ---- */
+.nl-fab {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 190;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: #0a0f1a;
+  background: var(--color-accent);
+  border: none;
+  border-radius: 999px;
+  padding: 12px 18px;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+.nl-fab:hover {
+  transform: translateY(-1px);
+  background: var(--color-accent-hover);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+}
+.nl-fab-icon { font-size: 1rem; line-height: 1; }
+
+.nl-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.nl-modal[hidden] { display: none; }
+.nl-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(4, 7, 13, 0.72);
+}
+.nl-modal-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 430px;
+  background: linear-gradient(180deg, var(--color-surface-raised), var(--color-surface));
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 30px 28px 26px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.55);
+  text-align: center;
+}
+.nl-modal-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: color 0.15s;
+}
+.nl-modal-close:hover { color: var(--color-text); }
+.nl-modal-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+.nl-modal-sub {
+  color: var(--color-text-muted);
+  font-size: 0.92rem;
+  margin: 6px auto 18px;
+  max-width: 34ch;
+}
+.nl-modal-card .newsletter-form {
+  flex-direction: column;
+  max-width: none;
+  min-width: 0;
+  gap: 10px;
+}
+.nl-modal-card .newsletter-form input[type="email"],
+.nl-modal-card .newsletter-btn {
+  flex: none;
+  width: 100%;
+}
+.nl-modal-card .newsletter-btn { padding: 12px 24px; }
+.nl-modal-card .newsletter-status { margin: 12px 0 0; text-align: center; }
+
+body.nl-open { overflow: hidden; }
+
+@media (max-width: 640px) {
+  .nl-fab { left: 14px; bottom: 14px; padding: 11px 15px; font-size: 0.8rem; }
 }
 
 .site-footer {
