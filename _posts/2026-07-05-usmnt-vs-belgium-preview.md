@@ -7,6 +7,7 @@ date: 2026-07-05 10:00:00 -0400
 categories: [usmnt]
 thumbnail: /assets/images/balogun-usmnt-celebration.jpg
 hero_image: /assets/images/balogun-usmnt-celebration.jpg
+newsletter_cta: true
 ---
 
 The deeper this tournament goes, the stiffer the competition becomes.

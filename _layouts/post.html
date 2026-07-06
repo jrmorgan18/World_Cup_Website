@@ -21,6 +21,18 @@ layout: default
     {{ content }}
   </div>
   <div class="article-footer">
+    {% if page.newsletter_cta %}
+    <aside class="post-cta" aria-labelledby="post-cta-title">
+      <h3 class="post-cta-title" id="post-cta-title">Enjoyed this? Get the next one in your inbox.</h3>
+      <p class="post-cta-sub">Previews, recaps, and betting cards — no spam, just the soccer.</p>
+      <form class="newsletter-form" method="POST" target="nl-sink" novalidate>
+        <label class="sr-only" for="nl-email-cta">Email address</label>
+        <input id="nl-email-cta" type="email" required placeholder="you@example.com" autocomplete="email" inputmode="email">
+        <button type="submit" class="newsletter-btn">Subscribe</button>
+      </form>
+      <p class="newsletter-status" role="status" aria-live="polite"></p>
+    </aside>
+    {% endif %}
     <div class="article-nav">
       {% if page.previous %}
       <a href="{{ page.previous.url | relative_url }}" class="article-nav-link prev">

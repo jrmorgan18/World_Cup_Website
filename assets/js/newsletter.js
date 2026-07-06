@@ -57,7 +57,7 @@
   function wireForm(form) {
     var input = form.querySelector('input[type="email"]');
     if (!input) return;
-    var scope = form.closest(".newsletter, .nl-modal-card") || form.parentNode;
+    var scope = form.closest(".newsletter, .nl-modal-card, .post-cta") || form.parentNode;
     var status = scope ? scope.querySelector(".newsletter-status") : null;
     var inModal = !!form.closest("#nl-modal");
 
