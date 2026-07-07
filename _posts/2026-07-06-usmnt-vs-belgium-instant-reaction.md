@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "USA-Belgium Instant Reaction: Put in Their Place"
-subtitle: "The gap between beating the field and beating the best showed up all at once. Belgium 4, United States 1 — and it wasn't as close as the scoreline suggests."
+subtitle: "The dream ends in Seattle. Belgium 4, United States 1 — a blunt reminder that beating the field and beating the best are still two very different things."
 excerpt: "Belgium exposed the US 4-1 in the Round of 16, punishing three deeply avoidable mistakes and reminding a talented, likable team that there is still another level above it."
 date: 2026-07-06 22:45:00 -0400
 categories: [usmnt]
-thumbnail: /assets/images/mckennie-usmnt.jpg
-hero_image: /assets/images/mckennie-usmnt.jpg
+thumbnail: /assets/images/deketelaere-belgium.jpg
+hero_image: /assets/images/deketelaere-belgium.jpg
 newsletter_cta: true
 ---
 
