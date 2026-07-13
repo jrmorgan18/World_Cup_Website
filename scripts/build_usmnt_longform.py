@@ -30,59 +30,41 @@ CITATIONS = {
     55: citation(9),
     56: citation(4, "b"),
     67: citation(10, "a"),
-    71: citation(10, "b"),
-    73: citation(11),
+    69: citation(10, "b"),
+    71: citation(11),
     93: citation(12),
-    108: citation(13),
+    106: citation(13),
     128: citation(14),
     129: citation(15),
-    132: citation(16, "a"),
-    133: citation(16, "b"),
+    130: citation(16, "a"),
+    131: citation(16, "b"),
     143: citation(17),
-    158: citation(19),
+    156: citation(19),
     178: citation(20),
     187: citation(21),
     188: citation(22),
-    195: citation(23),
-    202: citation(24),
-    209: citation(25),
-    214: citation(26),
-    221: citation(27),
+    193: citation(23),
+    200: citation(24),
+    207: citation(25),
+    212: citation(26),
+    219: citation(27),
     228: citation(28),
 }
 
 
-REWRITES = {
-    71: (
-        "A system does not manufacture genius. Genius is random and always will be. What a system does is "
-        "guarantee supply, so that when the genius does show up there are twenty other players around him good "
-        "enough to win with, and so that when he retires the next wave is already in the building. France has "
-        "reached four World Cup finals across two dramatically different generations—and this week reached a "
-        "third straight semifinal. Zidane's team; then a lost decade with Benzema and Ribéry; now Mbappé's. "
-        "Different eras, different styles, same output."
-    ),
-    73: (
-        "The scale of it is genuinely hard to process. Of the 1,248 players at this World Cup, ninety-nine were "
-        "born in France. Twenty-three of them are playing for France. The other seventy-six are playing for "
-        "somebody else: thirteen for Algeria, twelve for Haiti, eleven for Congo, nine for Senegal, eight for "
-        "Ivory Coast. In 2018 that number was fifty. Now it is seventy-six. Paris and its surrounding region "
-        "account for more players at this tournament than any other urban area on earth. The selected French "
-        "squad entered the tournament at nearly twice Argentina's estimated market value, before you even get "
-        "to the players left at home."
-    ),
-}
+REWRITES = {}
 
 
 HEADINGS = {
     2: ("01", "the-hangover", "The Hangover"),
     40: ("02", "two-models", "Two Models"),
-    100: ("03", "the-excuse", "The Excuse"),
-    163: ("04", "what-cant-be-built", "What Can't Be Built"),
-    241: ("05", "the-way-through", "The Way Through"),
+    98: ("03", "the-excuse", "The Excuse"),
+    161: ("04", "what-cant-be-built", "What Can't Be Built"),
+    238: ("05", "the-way-through", "The Way Through"),
 }
 
 
-SKIP = {38, 62, 98, 150, 151, 243, 244, 245, 246, 247, 248}
+SKIP = {38}
 
 
 PULLS = {
@@ -92,9 +74,9 @@ PULLS = {
     51: ("Argentina hopes. France restocks.", True),
     61: ("The oil was already in the ground. France had to drill.", False),
     97: ("If only our best athletes played soccer. Imagine if LeBron had chosen soccer instead of basketball.", True),
-    121: ("That body is the greatest soccer player who has ever lived.", False),
-    179: ("Two hours. In Germany.", True),
-    225: ("That is not a heartwarming coincidence. It is a diagnostic.", False),
+    119: ("That body is the greatest soccer player who has ever lived.", False),
+    177: ("Two hours. In Germany.", True),
+    223: ("That is not a heartwarming coincidence. It is a diagnostic.", False),
 }
 
 
@@ -121,13 +103,13 @@ AFTER = {
   <figcaption><strong>Before the system</strong>The decisive question is not which sport an athlete chooses at fifteen. It is whether the ball is already part of life at four. Photo: <a href="https://unsplash.com/photos/children-playing-soccer-in-a-sunny-park-y_sf8j3K2ZY" target="_blank" rel="noopener">Simone Franchina / Unsplash</a>.</figcaption>
 </figure>
 """,
-    171: """
+    170: """
 <figure class="longform-figure">
   <img src="{{ '/assets/images/usmnt-longform-baby-futbol-argentina.jpg' | relative_url }}" alt="Young children playing baby fútbol on a hard indoor court at Polideportivo 3 de Febrero in Dock Sud, Buenos Aires" loading="lazy">
   <figcaption><strong>The organized layer</strong>Baby fútbol in Dock Sud: five-a-side, a hard court, real goals, parents against the wall and a neighborhood watching. Photo: Roberto Fiadone / <a href="https://commons.wikimedia.org/wiki/File:Ni%C3%B1os_jugando_f%C3%BAtbol,_Polideportivo_3_De_Febrero,_Dock_Sud.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>.</figcaption>
 </figure>
 """,
-    174: """
+    172: """
 <figure class="longform-figure">
   <img src="{{ '/assets/images/usmnt-longform-potrero.jpg' | relative_url }}" alt="Players contesting the ball on a dirt potrero in Buenos Aires, with apartment blocks beyond the field" loading="lazy">
   <figcaption><strong>The other classroom</strong>Fútbol de potrero on a dirt field in Buenos Aires. The space is imperfect, the game continuous and nobody stops play to explain it. Photo: Roblespepe / <a href="https://commons.wikimedia.org/wiki/File:Potrero_(2).jpg" target="_blank" rel="noopener">Wikimedia Commons</a>.</figcaption>
@@ -202,7 +184,7 @@ def pullquote(text: str, light: bool) -> str:
 
 document = Document(SOURCE)
 paragraphs = [paragraph.text for paragraph in document.paragraphs]
-word_count = len(re.findall(r"\b[\w’'-]+\b", " ".join(paragraphs[3:249])))
+word_count = len(re.findall(r"\b[\w’'-]+\b", " ".join(paragraphs[3:247])))
 read_time = max(1, math.ceil(word_count / 215))
 
 front_matter = f"""---
@@ -242,14 +224,14 @@ toc_items:
 
 chunks = [front_matter]
 
-for index in range(2, 249):
+for index in range(2, 240):
     if index in SKIP:
         continue
     if index in HEADINGS:
         number, anchor, title = HEADINGS[index]
         chunks.append(f'<h2 id="{anchor}"><span class="longform-chapter-number">{number}</span><span>{title}</span></h2>')
         continue
-    if index == 242:
+    if index == 239:
         chunks.append(
             """<aside class="longform-next">
   <span class="longform-next-kicker">Continue in Part II</span>

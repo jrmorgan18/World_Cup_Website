@@ -11,8 +11,8 @@ permalink: /usmnt/why-the-usmnt-will-never-be-argentina/
 author: "Randy Morgan"
 series: "The American Soccer Question"
 part: "Part 1 of 2"
-read_time: 55
-word_count: 11741
+read_time: 54
+word_count: 11535
 hero_image: /assets/images/usmnt-longform-argentina-celebration.jpg
 thumbnail: /assets/images/pulisic-usmnt-2026.jpg
 hero_us: /assets/images/pulisic-usmnt-2026.jpg
@@ -151,13 +151,13 @@ They sent more than two thousand abroad in the last several years, third-most on
 
 And Argentina went into this World Cup ranked first in the world. Reigning World Cup and Copa America champions. Messi, and before him Maradona, and before him Kempes, decade after decade, on a fraction of our money, with a system that on paper is worse than ours in nearly every way you could measure it.<sup id="ref-4b"><a href="#note-4" aria-label="See note 4">4</a></sup>
 
-The US went in ranked 17th.
-
 So what do they have? Not passion. I am tired of hearing about passion. Passion is not a mechanism and it does not teach a nine-year-old to receive on his back foot.
 
-What they have is a machine that runs on the free labor of an entire society. Children who play constantly, from the time they can walk, with nobody scheduling it or driving them anywhere or charging for it. Clubs that are actual neighborhood institutions rather than businesses renting a field by the hour. Adults on every corner who understand what they are watching, so a kid gets corrected fifty times a week by people who are not coaches and are not being paid. A thirty-team league that hands more minutes to young players than any top division in the world, precisely because those clubs are too poor to buy anybody else. And a level of ambient pressure that means a fourteen-year-old in Rosario already knows this is a life and not an activity, and that being good is not remotely enough.
+What Argentina has is a machine that runs on the unpaid labor and accumulated knowledge of an entire society. Its clubs do not create the raw material. They find it, refine it and sell it.
 
-Argentina's development system sits on top of its culture the way a refinery sits on top of an oil field. The clubs do not create the raw material. They find it, refine it, and sell it.
+The oil was already in the ground.
+
+France had to drill.
 
 <blockquote class="longform-pullquote"><p>The oil was already in the ground. France had to drill.</p></blockquote>
 
@@ -167,19 +167,19 @@ France is not a soccer monoculture. It is a rich, developed, multi-sport country
 
 France was also not always this. That is the part we forget.
 
-They finished third in 1958 and then failed to qualify for the World Cup in 1962, 1970, and 1974. They won the Euros in 1984 with Platini and one of the great midfields anyone has ever put on a field, made the semifinals in 1982 and 1986, and then it evaporated. No Euro '88. No World Cup in 1990. No World Cup in 1994.<sup id="ref-10a"><a href="#note-10" aria-label="See note 10">10</a></sup>
+They finished third in 1958 and then failed to qualify for the World Cup in 1962, 1970, and 1974. They won the Euros in 1984 with Platini and one of the great midfields anyone has ever put on a field, made the semifinals in 1982 and 1986, and then it evaporated. No Euro '88. No World Cup in 1990. No World Cup in 1994.
 
 When the tournament came here, when I was nine years old watching Brazil knock us out on the Fourth of July, the French were watching the same games on television from a country that had never won a World Cup in sixty-four years of trying.
 
-Their history right up to 1998 is the history of a lot of countries: talent in bursts, long silences in between, and not much in the trophy case to show for any of it. I am not going to pretend that is our history, because France's version of failure was still better than anything we have ever managed. They won a European Championship. They reached two World Cup semifinals. We have never done anything close to either. But it is the same disease, and we have the more advanced case of it. France at least got golden generations and could not convert them. We have never had one.
+Their history right up to 1998 is the history of a lot of countries: talent in bursts, long silences in between, and not much in the trophy case to show for any of it. I am not going to pretend that is our history, because France's version of failure was still better than anything we have ever managed. They won a European Championship. They reached two World Cup semifinals. We have never done anything close to either. But it is the same disease, and we have the more advanced case of it. France at least got golden generations and could not convert them. We have never had one.<sup id="ref-10a"><a href="#note-10" aria-label="See note 10">10</a></sup>
 
 What changed in 1998 was not that France got good. France had been good. What changed is that France stopped being intermittent.
 
-A system does not manufacture genius. Genius is random and always will be. What a system does is guarantee supply, so that when the genius does show up there are twenty other players around him good enough to win with, and so that when he retires the next wave is already in the building. France has reached four World Cup finals across two dramatically different generations—and this week reached a third straight semifinal. Zidane's team; then a lost decade with Benzema and Ribéry; now Mbappé's. Different eras, different styles, same output.<sup id="ref-10b"><a href="#note-10" aria-label="See note 10">10</a></sup>
+A system does not manufacture genius. Genius is random and always will be. What a system does is guarantee supply, so that when the genius does show up there are twenty other players around him good enough to win with, and so that when he retires the next wave is already in the building. France has reached four World Cup finals in twenty-four years, first with Zidane at the center of the team and then, after nearly the entire roster turned over, twice more with Mbappé and Griezmann. Different eras, different styles, the same supply line.<sup id="ref-10b"><a href="#note-10" aria-label="See note 10">10</a></sup>
 
 They are not on a hot streak. They are reliable. Reliability is the thing you build, and it is the only thing worth building.
 
-The scale of it is genuinely hard to process. Of the 1,248 players at this World Cup, ninety-nine were born in France. Twenty-three of them are playing for France. The other seventy-six are playing for somebody else: thirteen for Algeria, twelve for Haiti, eleven for Congo, nine for Senegal, eight for Ivory Coast. In 2018 that number was fifty. Now it is seventy-six. Paris and its surrounding region account for more players at this tournament than any other urban area on earth. The selected French squad entered the tournament at nearly twice Argentina's estimated market value, before you even get to the players left at home.<sup id="ref-11"><a href="#note-11" aria-label="See note 11">11</a></sup>
+The scale of it is genuinely hard to process. Of the 1,248 players at this World Cup, ninety-nine were born in France. Twenty-three of them are playing for France. The other seventy-six are playing for somebody else: thirteen for Algeria, twelve for Haiti, eleven for Congo, nine for Senegal, eight for Ivory Coast. In 2018 that number was fifty. Now it is seventy-six. Paris alone accounts for more players at this tournament than any other city on earth. A French team assembled entirely from players who did not make the squad would be worth more, at market value, than the entire roster of Argentina.<sup id="ref-11"><a href="#note-11" aria-label="See note 11">11</a></sup>
 
 France is not producing a national team. France is producing a surplus so large it staffs other countries' national teams, and they still have enough left over to reach the semifinal.
 
@@ -213,13 +213,17 @@ Because we have those neighborhoods. We have soccer cultures in this country, pl
 
 We have simply never gone looking for it.
 
-And if you want proof of how badly we have failed at this, look at the team we just watched lose. Our best player at this World Cup was Folarin Balogun, born in New York, raised in England and developed by Arsenal. Our breakout star was Malik Tillman, raised in Germany and developed by Bayern Munich. Antonee Robinson was born and raised in England and came through Everton. Sergiño Dest came out of Ajax. Weston McKennie first learned the game as a kid living in Germany.<sup id="ref-12"><a href="#note-12" aria-label="See note 12">12</a></sup>
+And if you want proof of how badly we have failed at this, look at the team we just watched lose. Our best player at this World Cup was Folarin Balogun, born in New York, raised in England and developed by Arsenal. Our breakout star was Malik Tillman, raised in Germany and developed by Bayern Munich. Antonee Robinson was born and raised in England and came through Everton. Sergiño Dest came out of Ajax. Weston McKennie first learned the game as a kid living in Germany.
 
 We did not develop those players. Other countries' systems did, and we collected them on a technicality of birth or blood. We are doing to Europe what Algeria and Haiti and Senegal are doing to France, and we are not embarrassed about it, and maybe we should be.
 
-The difference is that France is also running a factory.
+The difference is that France is also running a factory.<sup id="ref-12"><a href="#note-12" aria-label="See note 12">12</a></sup>
 
 Which brings us, inevitably, to the thing Americans say instead of thinking about any of this. It shows up within ninety seconds of the conversation starting, every single time, and it has been said to me by roughly a hundred people since Belgium.
+
+“If only our best athletes played soccer.”
+
+“Imagine if LeBron had chosen soccer instead of basketball.”
 
 <blockquote class="longform-pullquote longform-pullquote--light"><p>If only our best athletes played soccer. Imagine if LeBron had chosen soccer instead of basketball.</p></blockquote>
 
@@ -257,14 +261,14 @@ The question people are really asking is: what if LeBron, at fifteen, with all o
 
 The counterfactual that would actually change anything is not LeBron at fifteen. It is LeBron at four. And if that is the question you are asking, then congratulations, you are not talking about athlete allocation anymore. You are talking about what a four-year-old in Akron is surrounded by, and who is watching him, and whether the sport is even in the room.
 
+But here is where the excuse stops being merely wrong and becomes backwards, and this is the part I cannot get past.
+
+Picture the kid this country throws away. You know him. You went to school with him. He is the quickest kid in the building and he has been the best player in every gym he has ever walked into, and then somewhere around thirteen the adults start doing math on him. He is five foot nothing and will never be bigger than five foot eight. In basketball that is a junior varsity ceiling and everyone in the building can see it by sophomore year, including him. In football he is a very fast child standing on a field with two-hundred-pound safeties. They tell him he is small, and in the sports this country actually cares about, small is not a description. It is a diagnosis.
+
 <figure class="longform-figure">
   <img src="{{ '/assets/images/usmnt-longform-free-play.jpg' | relative_url }}" alt="Children playing an informal game of soccer in a sunny public park" loading="lazy">
   <figcaption><strong>Before the system</strong>The decisive question is not which sport an athlete chooses at fifteen. It is whether the ball is already part of life at four. Photo: <a href="https://unsplash.com/photos/children-playing-soccer-in-a-sunny-park-y_sf8j3K2ZY" target="_blank" rel="noopener">Simone Franchina / Unsplash</a>.</figcaption>
 </figure>
-
-But here is where the excuse stops being merely wrong and becomes backwards, and this is the part I cannot get past.
-
-Picture the kid this country throws away. You know him. You went to school with him. He is the quickest kid in the building and he has been the best player in every gym he has ever walked into, and then somewhere around thirteen the adults start doing math on him. He is five foot nothing and will never be bigger than five foot eight. In basketball that is a junior varsity ceiling and everyone in the building can see it by sophomore year, including him. In football he is a very fast child standing on a field with two-hundred-pound safeties. They tell him he is small, and in the sports this country actually cares about, small is not a description. It is a diagnosis.
 
 I was not THAT kid, and I want to be careful here, because nothing on earth is less interesting than a middle-aged man explaining that he could have been a player. I could not have been a player. But I was small, and I was young for my grade, and I showed up to high school tryouts as a thirteen-year-old freshman standing next to boys who were already shaving. So I know exactly what got measured that week, because I watched it get measured. They ran us. They looked at us. Then they ran us some more. Nobody checked whether any of us could see a pass before the ball arrived, or find the right spot to be for a loose ball on a rebound. It would not have occurred to anyone to look, and I do not think the men doing the selecting could have told you what they were looking for beyond the thing they could see from thirty yards away or measure on their stopwatch.
 
@@ -278,19 +282,19 @@ So stop asking where our LeBron is. Ask where our Modrić is. Our Iniesta. Our P
 
 They exist.
 
-We already discussed how France is not a sports monoculture. So why don’t they have the same excuse? The excuse requires you to believe that a country's best athletes are a fixed quantity, allocated once, and that whoever wins the allocation wins the sport. France loses some of that allocation every year. It loses athletes to rugby and handball and cycling and judo and to a seven-foot-four center in San Antonio, and then it loses soccer players, actual finished ones, to other national teams entirely. France gives away more of the game every four years than we have ever had, and yet is an elite soccer power anyway.
+We already discussed how France is not a sports monoculture. So why don’t they have the same excuse? The excuse requires you to believe that a country's best athletes are a fixed quantity, allocated once, and that whoever wins the allocation wins the sport.
 
-France does not need all of its best “athletes”. It needs enough of the right ones, early, inside a system that knows what to do with them.
+France loses plenty of athletes to other sports, as well as dozens of finished soccer players to other nations. Yet it still sits at the top tier of elite soccer powers. France does not need all of its best “athletes”. It needs enough of the right ones, early, inside a system that knows what to do with them.
 
 And then there is the population argument, which is the same excuse in a different disguise.
 
-Uruguay has about three and a half million people. That is Connecticut. Uruguay has won two World Cups and reached a semifinal in 2010. Croatia has fewer people than metropolitan Chicago and finished third in 1998, second in 2018 and third in 2022. That's three top-three finishes in six tournaments. Meanwhile China has one and a half billion people and was ranked ninety-first in the world going into this tournament.<sup id="ref-14"><a href="#note-14" aria-label="See note 14">14</a></sup>
+Uruguay has about three and a half million people. That is Connecticut. Uruguay has won two World Cups and reached a semifinal in 2010. Croatia has fewer people than metropolitan Chicago and finished third in 1998, second in 2018 and third in 2022. That's three top-three finishes in six tournaments. Meanwhile China has one and a half billion people and was ranked ninety-first in the world going into this tournament.
 
-When researchers have actually run the numbers on this, population by itself does not predict anything. It only starts to matter when you multiply it by how seriously a country plays the sport. Three hundred and forty million people are not a talent pool. They are a census.<sup id="ref-15"><a href="#note-15" aria-label="See note 15">15</a></sup>
+When researchers have actually run the numbers on this, population by itself does not predict anything. It only starts to matter when you multiply it by how seriously a country plays the sport. Three hundred and forty million people are not a talent pool. They are a census.
 
-The talent pool is the number of children who play seriously enough, early enough, to develop real skill. Who are coached by somebody capable of recognizing what he is looking at. Who are seen. Who can still afford it at thirteen. Who are still in the sport at sixteen. Argentina has forty-six million people and an enormous effective soccer population. We have three hundred and forty million people and a much smaller one. That is the arithmetic that actually governs this, and no amount of raw census data gets you out of it.
+The talent pool is the number of children who play seriously enough, early enough, to develop real skill. Who are coached by somebody capable of recognizing what he is looking at. Who are seen. Who can still afford it at thirteen. Who are still in the sport at sixteen. Argentina has forty-six million people and an enormous effective soccer population. We have three hundred and forty million people and a much smaller one. That is the arithmetic that actually governs this, and no amount of raw census data gets you out of it.<sup id="ref-14"><a href="#note-14" aria-label="See note 14">14</a></sup>
 
-But the country that should end this argument permanently is the one directly south of us.
+But the country that should end this argument permanently is the one directly south of us.<sup id="ref-15"><a href="#note-15" aria-label="See note 15">15</a></sup>
 
 FIFA's own survey of the global game counted 9,464 professional male players in Mexico and 244 professional clubs. Both are the highest figures in the world. Not the highest in the region. The highest anywhere. More professional soccer players than Brazil, more professional clubs than Germany, an entire nation of a hundred and thirty million people where the sport is unquestionably, overwhelmingly, culturally first, and where a boy who is good at it is treated like a boy who is good at it.<sup id="ref-16a"><a href="#note-16" aria-label="See note 16">16</a></sup>
 
@@ -314,15 +318,19 @@ On September 1, 2001, I went to a World Cup qualifier at RFK Stadium, United Sta
 
 The upper decks were blue. At some point, after a goal, somebody up there started dropping water balloons full of blue paint into the seats below us, and I remember standing in a stadium two miles from the Capitol thinking I had never been in an American building where anybody cared this much about anything.
 
-The AP wrote the next morning that RFK looked like it had been taken over by a Central American country. Honduras won 3-2, the first home qualifying loss the United States had suffered since 1985. Bruce Arena, afterward: "Only in America, I guess. We're fighting for a home-field advantage."<sup id="ref-17"><a href="#note-17" aria-label="See note 17">17</a></sup>
+The AP wrote the next morning that RFK looked like it had been taken over by a Central American country. Honduras won 3-2, the first home qualifying loss the United States had suffered since 1985. Bruce Arena, afterward: "Only in America, I guess. We're fighting for a home-field advantage."
 
 Thirteen years later I was in Recife for the World Cup and could not get a table anywhere because Mexico's fans had taken every bar in the neighborhood. When we finally sat down and started talking to them, most of them were from the United States.
 
-That is the pool. It has been standing in front of us, in our own stadiums, singing, for twenty-five years.
+That is the pool. It has been standing in front of us, in our own stadiums, singing, for twenty-five years.<sup id="ref-17"><a href="#note-17" aria-label="See note 17">17</a></sup>
 
 That’s not to say the players are all out there already, fully formed, waiting on a field behind a strip mall for somebody to finally show up with a clipboard. Some of them are, and that is a failure, but there are also American neighborhoods where the game is not just overlooked, it is absent. No club. No suitable field. No coach, no league, no adult in the building who understands the game. In those places the work is not scouting. It is construction. It is slower, it costs more, and it is the least glamorous line item a federation will ever be asked to fund.
 
 Both things have to happen. We are currently doing neither with any seriousness.
+
+Which brings me to an important number.
+
+SFIA put outdoor soccer participation in the United States at 16.8 million people in 2025, up almost sixteen percent in a single year, with another 6.6 million playing indoors. During this World Cup their survey work had roughly 25 million Americans playing some version of the game.
 
 <aside class="longform-stat">
   <div class="longform-stat-grid">
@@ -343,7 +351,7 @@ If the reason we are not good is that Patrick Mahomes plays quarterback, then th
 
 Here is what is actually true.
 
-Yes, we do lose so many great athletes to football, basketball, baseball, lacrosse, hockey or tennis. Some of them have the perfect physical traits for soccer, but many of them do not. Some of them were never exposed to soccer or came to the game too late for it to matter.
+Yes, we do lose some great athletes to football, basketball, baseball, lacrosse, hockey or tennis. Some of them have the perfect physical traits for soccer, but many of them do not. Some of them were never exposed to soccer or came to the game too late for it to matter.
 
 However, the more disappointing truth is that many of the kids we needed did not go play football. Many of them never had that choice, because they weren’t built for that sport. They played soccer. They are playing it right now, this afternoon, on a beaten field behind a strip mall in Houston or on a concrete lot in Queens or in a church league in Los Angeles that has been running for twenty years and has never once been visited by anyone employed in professional American soccer. Around seven in ten of them will be out of organized sports by the time they are thirteen, and nobody in this sport will ever have learned their names, and it will not be because the NFL took them.<sup id="ref-19"><a href="#note-19" aria-label="See note 19">19</a></sup>
 
@@ -371,12 +379,12 @@ This is the thing Americans get most wrong about Argentina, and I got it wrong f
 
 By eight, a good one is being watched. Not by a parent with a clipboard app. By a captador, a spotter from a real club, who came to a baby fútbol match on a Saturday because that is where the players are and because everyone has always known that is where the players are. By ten or eleven there may be a man attached to the family who calls himself a representative. By thirteen a kid can be living away from home in a club's residence, eating club food, with the whole thing already understood as a career, because in that house it might be the career, the only one anybody has been offered, and everyone in the kitchen knows it.
 
+Soccer in that context is not a hobby or merely a childhood enrichment activity. It is the visible, believable, statistically absurd but locally verified exit. Everybody in the neighborhood knows somebody who got out, or knows somebody who knows him, or watched the kid two streets over sign at fourteen and buy his mother a house at nineteen. The lottery ticket is real because you have met the winner. So a nine-year-old in Rosario is not playing for a participation trophy and he is not playing for the love of it, or not only for the love of it. He is playing under conditions where losing his man at the back post gets him screamed at by four adults who are not his coach, where the boy across from him needs this more than he does, where the club can cut him, where the man who came to watch him might not come back, and where his own father is standing on the touchline wearing an expression that has nothing whatsoever to do with fun.
+
 <figure class="longform-figure">
   <img src="{{ '/assets/images/usmnt-longform-baby-futbol-argentina.jpg' | relative_url }}" alt="Young children playing baby fútbol on a hard indoor court at Polideportivo 3 de Febrero in Dock Sud, Buenos Aires" loading="lazy">
   <figcaption><strong>The organized layer</strong>Baby fútbol in Dock Sud: five-a-side, a hard court, real goals, parents against the wall and a neighborhood watching. Photo: Roberto Fiadone / <a href="https://commons.wikimedia.org/wiki/File:Ni%C3%B1os_jugando_f%C3%BAtbol,_Polideportivo_3_De_Febrero,_Dock_Sud.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>.</figcaption>
 </figure>
-
-Soccer in that context is not a hobby or merely a childhood enrichment activity. It is the visible, believable, statistically absurd but locally verified exit. Everybody in the neighborhood knows somebody who got out, or knows somebody who knows him, or watched the kid two streets over sign at fourteen and buy his mother a house at nineteen. The lottery ticket is real because you have met the winner. So a nine-year-old in Rosario is not playing for a participation trophy and he is not playing for the love of it, or not only for the love of it. He is playing under conditions where losing his man at the back post gets him screamed at by four adults who are not his coach, where the boy across from him needs this more than he does, where the club can cut him, where the man who came to watch him might not come back, and where his own father is standing on the touchline wearing an expression that has nothing whatsoever to do with fun.
 
 Now go back to the street, because the street is what that pyramid is standing on.
 
@@ -393,11 +401,11 @@ It is tempting to romanticize it all, but the desperation is not beautiful. Ther
 
 Here is the part I did not expect, and the part that should end the argument that this is all just Latin American mysticism.
 
-Researchers went back and reconstructed the childhoods of German professionals, players who came up inside the most organized, best-funded, most rigorously credentialed development system in Europe. What they found is that the ones who made it had not separated themselves by accumulating more coaching. Through roughly age fourteen, the future professionals had piled up more unorganized, self-directed soccer than organized practice. Up to about age ten they were getting somewhere in the neighborhood of two coached hours a week.<sup id="ref-20"><a href="#note-20" aria-label="See note 20">20</a></sup>
+Researchers went back and reconstructed the childhoods of German professionals, players who came up inside the most organized, best-funded, most rigorously credentialed development system in Europe. What they found is that the ones who made it had not separated themselves by accumulating more coaching. Through roughly age fourteen, the future professionals had piled up more unorganized, self-directed soccer than organized practice. Up to about age ten they were getting somewhere in the neighborhood of two coached hours a week.
 
 <blockquote class="longform-pullquote longform-pullquote--light"><p>Two hours. In Germany.</p></blockquote>
 
-The coaching mattered, obviously. Nobody is arguing that a country can produce a Champions League midfielder out of pickup games alone. The point is what the coaching was sitting on top of. The academy was doing the finishing. Something else had already done the construction, and that something else was not on anyone's schedule and nobody billed for it and no federation could have told you it was happening.
+The coaching mattered, obviously. Nobody is arguing that a country can produce a Champions League midfielder out of pickup games alone. The point is what the coaching was sitting on top of. The academy was doing the finishing. Something else had already done the construction, and that something else was not on anyone's schedule and nobody billed for it and no federation could have told you it was happening.<sup id="ref-20"><a href="#note-20" aria-label="See note 20">20</a></sup>
 
 Which brings us to the American version, and you already know it, because most of us have either lived it or driven to it.
 
@@ -407,17 +415,17 @@ Then it ends, and the ball goes in the garage, and it stays in the garage until 
 
 I will not pretend to be a neutral witness here. I coach. I know every word of what I just wrote, and I fight it, and my sessions are built around touches, and I have absolutely stood on a field arguing that we do not need to line anybody up for anything. It does not matter. I am buying my kids a few hundred extra touches inside an hour that is still an hour, on a Tuesday that still ends, after which the ball still goes back in the garage. The best coach in America, working with total freedom and unlimited resources, cannot manufacture Wednesday. In Rosario, Wednesday belongs to the kid. Here it belongs to school and screens and the fact that the ball lives in a bag in the trunk of a car.
 
-That is not a coaching problem, and it is not a parenting problem, and it is not a money problem, which is exactly what makes it worse than the problems we usually argue about.
+The problem begins outside the hours any coach controls.
 
 And there is a finding buried in the research that ought to make every American reading this uncomfortable.
 
-Economists have gone looking for a first-mover advantage in team sports, the same way you would look for one in an industry, and they found it. Take the year a country's national football association was founded, and use nothing else, and you can predict where that country sits in the world rankings a century later. It outperforms GDP per capita. It outperforms population. The earlier you organized, the better you are, still, now.<sup id="ref-21"><a href="#note-21" aria-label="See note 21">21</a></sup>
+Economists have gone looking for a first-mover advantage in team sports, the same way you would look for one in an industry, and they found it. Take the year a country's national football association was founded, and use nothing else, and you can predict where that country sits in the world rankings a century later. It outperforms GDP per capita. It outperforms population. The earlier you organized, the better you are, still, now.
 
-So look up ours. The United States Football Association was founded in 1913 and joined FIFA the following year. The modern French federation dates to 1919.<sup id="ref-22"><a href="#note-22" aria-label="See note 22">22</a></sup>
+So look up ours. The United States Football Association was founded in 1913 and joined FIFA the following year. The modern French federation dates to 1919.
 
-We are older than France. On the single variable that seems to predict this better than anything else, we are an early mover, and we went into this World Cup ranked seventeenth.
+We are older than France. On the single variable that seems to predict this better than anything else, we are an early mover, and we went into this World Cup ranked seventeenth.<sup id="ref-21"><a href="#note-21" aria-label="See note 21">21</a></sup>
 
-Now ask why a founding date would predict anything at all. It is paperwork. The reason it works everywhere else is that it is not a cause. It is a receipt. Associations do not get founded in a vacuum. They get founded because enough people are already playing, in enough places, seriously enough, that somebody finally has to write down the rules and schedule the fixtures. The date does not tell you when a country started. It tells you the game was already in the ground.
+Now ask why a founding date would predict anything at all. It is paperwork. The reason it works everywhere else is that it is not a cause. It is a receipt. Associations do not get founded in a vacuum. They get founded because enough people are already playing, in enough places, seriously enough, that somebody finally has to write down the rules and schedule the fixtures. The date does not tell you when a country started. It tells you the game was already in the ground.<sup id="ref-22"><a href="#note-22" aria-label="See note 22">22</a></sup>
 
 That is why we are the country that breaks the model. We filed first and the game never came, and then it came and we let it die, and then we filed again. Everybody else's founding date is a hundred and ten years of compounding. Ours is a hundred and ten years of a filing cabinet.
 
@@ -431,7 +439,7 @@ He was five, hanging around a baby fútbol game at Abanderado Grandoli, a neighb
 
 Take that scene apart for a second, because there is an enormous amount of knowledge buried in it. She had to see something. She had to trust what she saw. She had to understand that being tiny did not disqualify him, which is not an obvious thing to understand and which most of the adults reading this would not have understood. She had to be confident enough to tell a coach he was wrong about his own lineup. And she had to care enough about a children's game to have the argument at all.
 
-That is not passion. Passion is not a mechanism, and I already said what I think of it. What Celia had is literacy.
+That is not passion. What Celia had is literacy.
 
 Argentina is full of people who can read the game. Not at a professional level, not in a way that would earn any of them a coaching license, but well enough that a child is surrounded by useful information years before anybody officially starts developing him. The country has millions of unpaid scouts, critics, teachers and hecklers, and the great advantage is not that every Argentine father is Guardiola. It is that almost none of them are starting from zero.
 
@@ -493,7 +501,11 @@ I keep telling you this like it is something I read, but it is something I’ve 
 
 Go back to that Cockeysville team, the one with the professionals dropping in on practice. The Blast's head coach lived in our town, and his son played with us. Kenny Cooper Sr. was an English goalkeeper who had played a decade in the NASL and then won a championship coaching in Baltimore. His son, Kenny Jr., was the best player on our team by a distance.
 
-He signed with Manchester United at eighteen, played many years in MLS and appeared ten times for the USMNT.<sup id="ref-28"><a href="#note-28" aria-label="See note 28">28</a></sup>
+He signed with Manchester United at eighteen, played many years in MLS and appeared ten times for the USMNT.
+
+Now hold the two things next to each other, because this is as close to an experiment as American youth soccer is ever going to hand anybody. We all got the same field. We all got the same drills, run by the same volunteer dad. We all got Stankovic and Dragicevic on the odd Tuesday, which is more elite instruction than ninety-nine percent of American children received in 1992. One other boy from that team went on to play professionally in the lower divisions in Europe, which for a suburban Maryland travel team is a statistical absurdity and which I suspect is not a coincidence either.
+
+And the one who went the furthest, by a mile, was the one who went home to a former professional every night.<sup id="ref-28"><a href="#note-28" aria-label="See note 28">28</a></sup>
 
 <div class="longform-archive" role="group" aria-label="Archival portraits of Baltimore Blast figures Mike Stankovic and Kenny Cooper Sr.">
   <div class="longform-archive-grid">
@@ -502,10 +514,6 @@ He signed with Manchester United at eighteen, played many years in MLS and appea
   </div>
   <p><strong>Knowledge, imported.</strong> A star defender and a championship coach helped make elite soccer expertise an ordinary part of childhood in one corner of Baltimore County. Portraits: 1984–85 MISL media guide / Wikimedia Commons (<a href="https://commons.wikimedia.org/wiki/File:Mike_Stankovic,_MISL_1984-85_media_guide_page_012.tif" target="_blank" rel="noopener">Stankovic</a>, <a href="https://commons.wikimedia.org/wiki/File:Kenny_Cooper,_MISL_1984-85_media_guide_page_013.tif" target="_blank" rel="noopener">Cooper</a>).</p>
 </div>
-
-Now hold the two things next to each other, because this is as close to an experiment as American youth soccer is ever going to hand anybody. We all got the same field. We all got the same drills, run by the same volunteer dad. We all got Stankovic and Dragicevic on the odd Tuesday, which is more elite instruction than ninety-nine percent of American children received in 1992. One other boy from that team went on to play professionally in the lower divisions in Europe, which for a suburban Maryland travel team is a statistical absurdity and which I suspect is not a coincidence either.
-
-And the one who went the furthest, by a mile, was the one who went home to a former professional every night.
 
 I am not claiming our town produced him. Dallas and Manchester finished him, and he had things the rest of us did not have and were never going to have. The best coaching available anywhere near me, in the most soccer-literate square mile in the state of Maryland, was still not the variable. The variable was the house. And it was already the variable in 1992, thirty years before anybody looked at this World Cup roster and noticed the same thing.
 
