@@ -11,8 +11,8 @@ permalink: /usmnt/why-the-usmnt-will-never-be-argentina/
 author: "Randy Morgan"
 series: "The American Soccer Question"
 part: "Part 1 of 2"
-read_time: 50
-word_count: 10716
+read_time: 55
+word_count: 11741
 hero_image: /assets/images/usmnt-longform-argentina-celebration.jpg
 thumbnail: /assets/images/pulisic-usmnt-2026.jpg
 hero_us: /assets/images/pulisic-usmnt-2026.jpg
@@ -264,11 +264,11 @@ The counterfactual that would actually change anything is not LeBron at fifteen.
 
 But here is where the excuse stops being merely wrong and becomes backwards, and this is the part I cannot get past.
 
-Picture the kid this country throws away.
+Picture the kid this country throws away. You know him. You went to school with him. He is the quickest kid in the building and he has been the best player in every gym he has ever walked into, and then somewhere around thirteen the adults start doing math on him. He is five foot nothing and will never be bigger than five foot eight. In basketball that is a junior varsity ceiling and everyone in the building can see it by sophomore year, including him. In football he is a very fast child standing on a field with two-hundred-pound safeties. They tell him he is small, and in the sports this country actually cares about, small is not a description. It is a diagnosis.
 
-You know him. You went to school with him. He is the quickest kid in the building and he has been the best player in every gym he has ever walked into, and then somewhere around thirteen the adults start doing math on him. He is five foot eight. He is going to stay five foot eight. In basketball that is a junior varsity ceiling and everyone in the building can see it by sophomore year, including him. In football he is a very fast child standing on a field with two-hundred-pound safeties. They tell him he is small, and in the two sports this country actually cares about, small is not a description. It is a diagnosis.
+I was not THAT kid, and I want to be careful here, because nothing on earth is less interesting than a middle-aged man explaining that he could have been a player. I could not have been a player. But I was small, and I was young for my grade, and I showed up to high school tryouts as a thirteen-year-old freshman standing next to boys who were already shaving. So I know exactly what got measured that week, because I watched it get measured. They ran us. They looked at us. Then they ran us some more. Nobody checked whether any of us could see a pass before the ball arrived, or find the right spot to be for a loose ball on a rebound. It would not have occurred to anyone to look, and I do not think the men doing the selecting could have told you what they were looking for beyond the thing they could see from thirty yards away or measure on their stopwatch.
 
-So he plays JV. Or he quits. Or he hangs on long enough to become the best guy at the Thursday night pickup game, and that is where the story ends.
+So that kid plays JV. Or he quits. Or he hangs on long enough to become the best guy at the Thursday night pickup game, and that is where the story ends.
 
 <blockquote class="longform-pullquote"><p>That body is the greatest soccer player who has ever lived.</p></blockquote>
 
@@ -286,7 +286,7 @@ And then there is the population argument, which is the same excuse in a differe
 
 Uruguay has about three and a half million people. That is Connecticut. Uruguay has won two World Cups and reached a semifinal in 2010. Croatia has fewer people than metropolitan Chicago and finished third in 1998, second in 2018 and third in 2022. That's three top-three finishes in six tournaments. Meanwhile China has one and a half billion people and was ranked ninety-first in the world going into this tournament.<sup id="ref-14"><a href="#note-14" aria-label="See note 14">14</a></sup>
 
-When researchers have actually run the numbers on this, population by itself does not predict much. It only starts to matter when you multiply it by how seriously a country plays the sport. Three hundred and forty million people are not a talent pool. They are a census.<sup id="ref-15"><a href="#note-15" aria-label="See note 15">15</a></sup>
+When researchers have actually run the numbers on this, population by itself does not predict anything. It only starts to matter when you multiply it by how seriously a country plays the sport. Three hundred and forty million people are not a talent pool. They are a census.<sup id="ref-15"><a href="#note-15" aria-label="See note 15">15</a></sup>
 
 The talent pool is the number of children who play seriously enough, early enough, to develop real skill. Who are coached by somebody capable of recognizing what he is looking at. Who are seen. Who can still afford it at thirteen. Who are still in the sport at sixteen. Argentina has forty-six million people and an enormous effective soccer population. We have three hundred and forty million people and a much smaller one. That is the arithmetic that actually governs this, and no amount of raw census data gets you out of it.
 
@@ -310,13 +310,23 @@ Ours contains an enormous piece of Mexico's, and then Guatemala and El Salvador 
 
 The excuse says our pool is the problem. Our pool is a winning lottery ticket we have never cashed.
 
+On September 1, 2001, I went to a World Cup qualifier at RFK Stadium, United States against Honduras. It kicked off at ten in the morning on a Saturday, because it was the opening weekend of college football and every decent television window in the country was already spoken for. Fifty-four thousand people came anyway. Almost all rooting for Honduras.
+
+The upper decks were blue. At some point, after a goal, somebody up there started dropping water balloons full of blue paint into the seats below us, and I remember standing in a stadium two miles from the Capitol thinking I had never been in an American building where anybody cared this much about anything.
+
+The AP wrote the next morning that RFK looked like it had been taken over by a Central American country. Honduras won 3-2, the first home qualifying loss the United States had suffered since 1985. Bruce Arena, afterward: "Only in America, I guess. We're fighting for a home-field advantage."<sup id="ref-17"><a href="#note-17" aria-label="See note 17">17</a></sup>
+
+Thirteen years later I was in Recife for the World Cup and could not get a table anywhere because Mexico's fans had taken every bar in the neighborhood. When we finally sat down and started talking to them, most of them were from the United States.
+
+That is the pool. It has been standing in front of us, in our own stadiums, singing, for twenty-five years.
+
 That’s not to say the players are all out there already, fully formed, waiting on a field behind a strip mall for somebody to finally show up with a clipboard. Some of them are, and that is a failure, but there are also American neighborhoods where the game is not just overlooked, it is absent. No club. No suitable field. No coach, no league, no adult in the building who understands the game. In those places the work is not scouting. It is construction. It is slower, it costs more, and it is the least glamorous line item a federation will ever be asked to fund.
 
 Both things have to happen. We are currently doing neither with any seriousness.
 
 <aside class="longform-stat">
   <div class="longform-stat-grid">
-    <div class="longform-stat-item"><strong>25M</strong><span>Americans playing some version of soccer during this World Cup<sup id="ref-17"><a href="#note-17" aria-label="See note 17">17</a></sup></span></div>
+    <div class="longform-stat-item"><strong>25M</strong><span>Americans playing some version of soccer during this World Cup<sup id="ref-18"><a href="#note-18" aria-label="See note 18">18</a></sup></span></div>
     <span class="longform-stat-divider" aria-hidden="true"></span>
     <div class="longform-stat-item"><strong>26</strong><span>places on the national-team roster</span></div>
   </div>
@@ -335,7 +345,7 @@ Here is what is actually true.
 
 Yes, we do lose so many great athletes to football, basketball, baseball, lacrosse, hockey or tennis. Some of them have the perfect physical traits for soccer, but many of them do not. Some of them were never exposed to soccer or came to the game too late for it to matter.
 
-However, the more disappointing truth is that many of the kids we needed did not go play football. Many of them never had that choice, because they weren’t built for that sport. They played soccer. They are playing it right now, this afternoon, on a beaten field behind a strip mall in Houston or on a concrete lot in Queens or in a church league in Los Angeles that has been running for twenty years and has never once been visited by anyone employed in professional American soccer. Around seven in ten of them will be out of organized sports by the time they are thirteen, and nobody in this sport will ever have learned their names, and it will not be because the NFL took them.<sup id="ref-18"><a href="#note-18" aria-label="See note 18">18</a></sup>
+However, the more disappointing truth is that many of the kids we needed did not go play football. Many of them never had that choice, because they weren’t built for that sport. They played soccer. They are playing it right now, this afternoon, on a beaten field behind a strip mall in Houston or on a concrete lot in Queens or in a church league in Los Angeles that has been running for twenty years and has never once been visited by anyone employed in professional American soccer. Around seven in ten of them will be out of organized sports by the time they are thirteen, and nobody in this sport will ever have learned their names, and it will not be because the NFL took them.<sup id="ref-19"><a href="#note-19" aria-label="See note 19">19</a></sup>
 
 That is not a best athlete problem.
 
@@ -349,7 +359,7 @@ The wall goes up before anybody in American soccer is allowed near the problem.
 
 Whatever we build, we build for kids who are already in the building. Academies want you at thirteen or fourteen. Scouts show up when there is something worth driving to see. MLS Next, the youth national teams, the federation's whole apparatus, all of it switches on at an age when the decisive thing has either already happened to a child or it has not. By the time an institution in this country puts its hands on a player, the most important stretch of his development is a decade behind him, and nobody employed in professional soccer watched a minute of it.
 
-That decade is what I mean by culture. Not flags. Not tifo, not singing, not whether a guy in Philadelphia can name the Ligue 1 table. I mean the thousands of hours of unsupervised, unfunded, uncoached, unrecorded work a child does before anyone official knows his name.
+That decade is what I mean by culture. Not flags. Not tifo, not singing, not whether a guy in Baltimore can stream every game in the Bundesliga or name the Ligue 1 table. I mean the thousands of hours of unsupervised, unfunded, uncoached, unrecorded work a child does before anyone official knows his name.
 
 And I want to describe what that actually is, because Americans romanticize it and then dismiss it, which is a neat trick.
 
@@ -383,7 +393,7 @@ It is tempting to romanticize it all, but the desperation is not beautiful. Ther
 
 Here is the part I did not expect, and the part that should end the argument that this is all just Latin American mysticism.
 
-Researchers went back and reconstructed the childhoods of German professionals, players who came up inside the most organized, best-funded, most rigorously credentialed development system in Europe. What they found is that the ones who made it had not separated themselves by accumulating more coaching. Through roughly age fourteen, the future professionals had piled up more unorganized, self-directed soccer than organized practice. Up to about age ten they were getting somewhere in the neighborhood of two coached hours a week.<sup id="ref-19"><a href="#note-19" aria-label="See note 19">19</a></sup>
+Researchers went back and reconstructed the childhoods of German professionals, players who came up inside the most organized, best-funded, most rigorously credentialed development system in Europe. What they found is that the ones who made it had not separated themselves by accumulating more coaching. Through roughly age fourteen, the future professionals had piled up more unorganized, self-directed soccer than organized practice. Up to about age ten they were getting somewhere in the neighborhood of two coached hours a week.<sup id="ref-20"><a href="#note-20" aria-label="See note 20">20</a></sup>
 
 <blockquote class="longform-pullquote longform-pullquote--light"><p>Two hours. In Germany.</p></blockquote>
 
@@ -401,9 +411,9 @@ That is not a coaching problem, and it is not a parenting problem, and it is not
 
 And there is a finding buried in the research that ought to make every American reading this uncomfortable.
 
-Economists have gone looking for a first-mover advantage in team sports, the same way you would look for one in an industry, and they found it. Take the year a country's national football association was founded, and use nothing else, and you can predict where that country sits in the world rankings a century later. It outperforms GDP per capita. It outperforms population. The earlier you organized, the better you are, still, now.<sup id="ref-20"><a href="#note-20" aria-label="See note 20">20</a></sup>
+Economists have gone looking for a first-mover advantage in team sports, the same way you would look for one in an industry, and they found it. Take the year a country's national football association was founded, and use nothing else, and you can predict where that country sits in the world rankings a century later. It outperforms GDP per capita. It outperforms population. The earlier you organized, the better you are, still, now.<sup id="ref-21"><a href="#note-21" aria-label="See note 21">21</a></sup>
 
-So look up ours. The United States Football Association was founded in 1913 and joined FIFA the following year. The modern French federation dates to 1919.<sup id="ref-21"><a href="#note-21" aria-label="See note 21">21</a></sup>
+So look up ours. The United States Football Association was founded in 1913 and joined FIFA the following year. The modern French federation dates to 1919.<sup id="ref-22"><a href="#note-22" aria-label="See note 22">22</a></sup>
 
 We are older than France. On the single variable that seems to predict this better than anything else, we are an early mover, and we went into this World Cup ranked seventeenth.
 
@@ -417,7 +427,7 @@ An Argentine kid is not just playing more. He is playing in front of people who 
 
 The best illustration of this I know is the way Messi got on a field in the first place.
 
-He was five, hanging around a baby fútbol game at Abanderado Grandoli, a neighborhood club in Rosario, because his older brother was playing. A team was short a player. His grandmother Celia was standing there, and she argued with the coach until he put the smallest kid on the ground into the game.<sup id="ref-22"><a href="#note-22" aria-label="See note 22">22</a></sup>
+He was five, hanging around a baby fútbol game at Abanderado Grandoli, a neighborhood club in Rosario, because his older brother was playing. A team was short a player. His grandmother Celia was standing there, and she argued with the coach until he put the smallest kid on the ground into the game.<sup id="ref-23"><a href="#note-23" aria-label="See note 23">23</a></sup>
 
 Take that scene apart for a second, because there is an enormous amount of knowledge buried in it. She had to see something. She had to trust what she saw. She had to understand that being tiny did not disqualify him, which is not an obvious thing to understand and which most of the adults reading this would not have understood. She had to be confident enough to tell a coach he was wrong about his own lineup. And she had to care enough about a children's game to have the argument at all.
 
@@ -429,6 +439,12 @@ In America we ask the coach to do all of it.
 
 Teach the child how to receive. Teach him where to stand. Teach him to scan. Teach him how to strike a ball. Teach him why the pass was wrong, and what the shape is supposed to look like, and what the game is supposed to look like. Then send him home to a family that loves him completely, supports him without reservation, and has no idea what any of that means.
 
+My father coached our Cockeysville Rec travel team. He had played as a kid and he liked the game on television but he had never been anywhere near a high level of it, which made him a completely ordinary American youth coach. A decent man volunteering to run practices in a sport nobody had ever taught him.
+
+We were also, and I did not remotely understand this at the time, freakishly lucky. Baltimore had an indoor team, the Blast, and some of those men lived in our town with sons on our team. Every so often Mike Stankovic or Emil Dragicevic would turn up at practice and show us something. Stankovic was Serbian, a six-time MISL All-Star, a Blast fixture for the better part of two decades; the club has since retired his number. Twenty years after he stood on a field in suburban Maryland teaching a group of ten-year-olds how to receive a ball, he was on the touchline at a World Cup as an assistant coach for Ghana. Dragicevic was a Croatian midfielder who came up at Dinamo Zagreb, the same club where Luka Modrić got his start.<sup id="ref-24"><a href="#note-24" aria-label="See note 24">24</a></sup>
+
+Those afternoons were the best coaching of my childhood and I can still see them thirty years later, which should tell you how rare they were. It is also worth noticing what they were. Every last bit of the football knowledge that landed in my hometown was made somewhere else. It arrived because a professional indoor league happened to put a franchise in Baltimore and a few Yugoslavs and an Englishman happened to buy houses in the same zip code. In Rosario, that man is not a windfall. He is the guy at the end of the block, he is there on Wednesday too, and nobody organized it and nobody remembers it, because it happens every week.
+
 This is not a shot at American parents, because they cannot transmit knowledge nobody ever gave them. Watch what the same parent can do in a different sport. He can tell you why the safety was late getting over the top. He can tell you where the cutoff man should be on a throw from right field. He can call a bad shot before the ball has left the shooter's hand, and he can tell his kid why it was a bad shot, and his kid will understand him. He never took a course in any of that. It arrived through television and playgrounds and his own father and his brothers and thirty years of arguments in bars and living rooms.
 
 Then he watches his son receive a pass with the wrong foot, facing the wrong direction, under no pressure at all, and he sees nothing. Not because he is not paying attention. He is paying total attention. There is simply nothing there to see it with.
@@ -439,7 +455,7 @@ So can we build it?
 
 No, and the reason is not that Americans are lazy or that we love our own sports too much. The reason is structural, and the clearest version of it I have found comes from a book that has nothing to do with soccer.
 
-In his book, Breakneck, Dan Wang has a framing I have not been able to put down. He argues that modern China behaves like an engineering state, run by people who look at a problem and see something to be built out of, while America has become a lawyerly society, run by people trained to define process, allocate liability and block. His book is about high-speed rail and housing and pandemic policy, and I am not going to pretend the analogy transfers to youth sports without some spillage. But it explained something about American soccer that nothing inside American soccer ever explained to me.<sup id="ref-23"><a href="#note-23" aria-label="See note 23">23</a></sup>
+In his book, Breakneck, Dan Wang has a framing I have not been able to put down. He argues that modern China behaves like an engineering state, run by people who look at a problem and see something to be built out of, while America has become a lawyerly society, run by people trained to define process, allocate liability and block. His book is about high-speed rail and housing and pandemic policy, and I am not going to pretend the analogy transfers to youth sports without some spillage. But it explained something about American soccer that nothing inside American soccer ever explained to me.<sup id="ref-25"><a href="#note-25" aria-label="See note 25">25</a></sup>
 
 Every instinct we have here is a lawyerly instinct, and each one of them is individually correct. Children should be supervised. Coaches should be background-checked. Fields should be insured. Programs should be licensed and registered and waivered and certified and accountable to somebody when a kid gets hurt. I would not repeal a single one of them, and neither would you, and neither would any parent who has read a news story in the last twenty years.
 
@@ -449,7 +465,7 @@ And in 2017 we got to watch that machine work in real time.
 
 U.S. Soccer put a small amount of money behind a pilot called Soccer Starts at Home. The premise was almost insultingly simple. Get a ball in front of very young children, two and three years old, and teach the parents a few basic things to do with them, so that the ball is a normal object in the house long before any organized coaching begins. The man behind it, Tom Byer, was an American who had spent decades in Japan doing exactly this, and his argument was that the decisive years start at two or three rather than twelve, and that the first instructor does not need a license, because the first instructor is a parent teaching a toddler to pull a ball close instead of booting it away.
 
-The federation gave it seventy-five thousand dollars, which in the budget of American soccer is a rounding error, and then dropped it, reportedly because coaching education could not find adequate metrics for it.<sup id="ref-24"><a href="#note-24" aria-label="See note 24">24</a></sup>
+The federation gave it seventy-five thousand dollars, which in the budget of American soccer is a rounding error, and then dropped it, reportedly because coaching education could not find adequate metrics for it.<sup id="ref-26"><a href="#note-26" aria-label="See note 26">26</a></sup>
 
 Of course it could not. What would the metric have been? Pullbacks per three-year-old? Quarterly growth in living-room touches? Expected goals added by a mother rolling a ball across a carpet? The return on that program, if there was one, would have shown up fifteen years later in a twenty-year-old receiving under pressure without having to think about it, and nobody in that building would have been able to prove which touch, in which living room, in which year, was the one that mattered.
 
@@ -463,7 +479,7 @@ You can build the futsal court. You should build the futsal court, and I am goin
 
 Which brings me to the interesting thing about this current US men’s team. The team sheet.
 
-Christian Pulisic's father played professional indoor soccer and coached. Gio Reyna's father captained the national team and his mother played for the women's team. Sebastian Berhalter's father played in a World Cup and then coached in one. Tim Weah's father won the Ballon d'Or. Alex Freeman's father caught passes in a Super Bowl. Cameron Carter-Vickers's father was a first-round NBA draft pick.<sup id="ref-25"><a href="#note-25" aria-label="See note 25">25</a></sup>
+Christian Pulisic's father played professional indoor soccer and coached. Gio Reyna's father captained the national team and his mother played for the women's team. Sebastian Berhalter's father played in a World Cup and then coached in one. Tim Weah's father won the Ballon d'Or. Alex Freeman's father caught passes in a Super Bowl. Cameron Carter-Vickers's father was a first-round NBA draft pick.<sup id="ref-27"><a href="#note-27" aria-label="See note 27">27</a></sup>
 
 It’s not a nepotism story. Nobody handed those kids a cap, and every one of them is a real player who earned everything he has. It’s not a genetics story either, and if you try to make it one you will end up saying something stupid, because the sons of Antonio Freeman and George Weah do not share a gene. They share a house.
 
@@ -473,7 +489,27 @@ Other countries have legacy players. Thuram, Maldini, Simeone, Chiesa. Of course
 
 <blockquote class="longform-pullquote"><p>That is not a heartwarming coincidence. It is a diagnostic.</p></blockquote>
 
-And there is only one other way through, which I showed you already. Be raised somewhere else. Balogun in London. Tillman in Nuremberg. Robinson in Liverpool. Dest in Almere.
+I keep telling you this like it is something I read, but it is something I’ve lived as well.
+
+Go back to that Cockeysville team, the one with the professionals dropping in on practice. The Blast's head coach lived in our town, and his son played with us. Kenny Cooper Sr. was an English goalkeeper who had played a decade in the NASL and then won a championship coaching in Baltimore. His son, Kenny Jr., was the best player on our team by a distance.
+
+He signed with Manchester United at eighteen, played many years in MLS and appeared ten times for the USMNT.<sup id="ref-28"><a href="#note-28" aria-label="See note 28">28</a></sup>
+
+<div class="longform-archive" role="group" aria-label="Archival portraits of Baltimore Blast figures Mike Stankovic and Kenny Cooper Sr.">
+  <div class="longform-archive-grid">
+    <figure><img src="{{ '/assets/images/usmnt-longform-mike-stankovic-blast.jpg' | relative_url }}" alt="Mike Stankovic in a Baltimore Blast portrait from the 1984–85 MISL media guide" loading="lazy"><span>Mike Stankovic</span></figure>
+    <figure><img src="{{ '/assets/images/usmnt-longform-kenny-cooper-sr-blast.jpg' | relative_url }}" alt="Kenny Cooper Sr. in a Baltimore Blast portrait from the 1984–85 MISL media guide" loading="lazy"><span>Kenny Cooper Sr.</span></figure>
+  </div>
+  <p><strong>Knowledge, imported.</strong> A star defender and a championship coach helped make elite soccer expertise an ordinary part of childhood in one corner of Baltimore County. Portraits: 1984–85 MISL media guide / Wikimedia Commons (<a href="https://commons.wikimedia.org/wiki/File:Mike_Stankovic,_MISL_1984-85_media_guide_page_012.tif" target="_blank" rel="noopener">Stankovic</a>, <a href="https://commons.wikimedia.org/wiki/File:Kenny_Cooper,_MISL_1984-85_media_guide_page_013.tif" target="_blank" rel="noopener">Cooper</a>).</p>
+</div>
+
+Now hold the two things next to each other, because this is as close to an experiment as American youth soccer is ever going to hand anybody. We all got the same field. We all got the same drills, run by the same volunteer dad. We all got Stankovic and Dragicevic on the odd Tuesday, which is more elite instruction than ninety-nine percent of American children received in 1992. One other boy from that team went on to play professionally in the lower divisions in Europe, which for a suburban Maryland travel team is a statistical absurdity and which I suspect is not a coincidence either.
+
+And the one who went the furthest, by a mile, was the one who went home to a former professional every night.
+
+I am not claiming our town produced him. Dallas and Manchester finished him, and he had things the rest of us did not have and were never going to have. The best coaching available anywhere near me, in the most soccer-literate square mile in the state of Maryland, was still not the variable. The variable was the house. And it was already the variable in 1992, thirty years before anybody looked at this World Cup roster and noticed the same thing.
+
+Right now, there is only one other way through, which I showed you already. Be raised somewhere else. Balogun in London. Tillman in Nuremberg. Robinson in Liverpool. Dest in Almere.
 
 Run the two lists together and stare at them. There are essentially two reliable ways for an American boy to acquire the childhood that produces an international footballer. Be raised outside the United States. Or be raised inside a household that manufactured that childhood privately, because it happened to contain the rare and specific expertise to know how.
 
@@ -493,10 +529,11 @@ What France did was stop trying to build it.
 
 <aside class="longform-next">
   <span class="longform-next-kicker">Continue in Part II</span>
-  <h3>The United States cannot build a potrero. But Argentina is not the only way.</h3>
-  <p>The United States cannot manufacture a century of accumulated knowledge, make soccer the only game in town, or give every American kid a grandmother who argues about the lineup at baby fútbol.</p>
-  <p>France identified the places where soccer culture already existed, built a system capable of finding the players growing inside it, and made sure poverty did not keep them outside the gates. It turned scattered talent into an assembly line.</p>
-  <p><strong>The United States will never be Argentina. But could it become France?</strong></p>
+  <h3>The United States cannot build a potrero.</h3>
+  <p>It cannot manufacture a century of accumulated knowledge, make soccer the only game in town, or give every American kid a grandmother who argues about the lineup at baby fútbol. It cannot become Argentina by spending more money, hiring a better coach, or finding a few more athletes.</p>
+  <p><strong>That is the bad news. The good news is that Argentina is not the only way to build a world power.</strong></p>
+  <p>France did not inherit everything it needed. It identified the places where soccer culture already existed, built a system capable of finding the players growing inside it, and made sure poverty did not keep them outside the gates. It turned scattered talent into an assembly line.</p>
+  <p><strong>The United States will never be Argentina.<br>But could it become France?</strong></p>
   <p>In Part II, we will look at what France proved can be built—and why America still has not built it.</p>
 </aside>
 
@@ -519,19 +556,22 @@ What France did was stop trying to build it.
 <li id="note-14">World Cup records and population context: <a href="https://www.fifa.com/en/tournaments/mens/worldcup/articles/uruguay-team-profile-history" target="_blank" rel="noopener">FIFA on Uruguay</a> and <a href="https://www.fifa.com/en/articles/croatia-team-profile-history" target="_blank" rel="noopener">FIFA on Croatia</a>. China's June 2026 position is in the ranking table cited in note 4. <a class="longform-backref" href="#ref-14" aria-label="Back to note 14 in the essay">↩</a></li>
 <li id="note-15">A recent cross-country analysis finds population and GDP far weaker than football-specific history and experience: <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6928238" target="_blank" rel="noopener">“What Predicts World Cup Success?”</a>, SSRN working paper, May 2026. <a class="longform-backref" href="#ref-15" aria-label="Back to note 15 in the essay">↩</a></li>
 <li id="note-16">FIFA's 2023 professional football report counted 9,464 male professionals and 244 professional clubs in Mexico: <a href="https://inside.fifa.com/legal/news/fifa-publishes-professional-football-report-2023" target="_blank" rel="noopener">FIFA, Professional Football Report 2023</a>. World Cup finishes are from FIFA's tournament archive. <a class="longform-backref" href="#ref-16a" aria-label="Back to note 16 in the essay">↩</a></li>
-<li id="note-17">Participation estimates: <a href="https://sfia.org/resources/soccer-participation-in-the-u-s-hits-an-all-time-high-ahead-of-world-cup/" target="_blank" rel="noopener">SFIA, 2025 soccer participation report</a> and <a href="https://sfia.org/resources/the-world-cup-is-here-and-america-is-already-playing/" target="_blank" rel="noopener">SFIA, June 2026 World Cup survey</a>. <a class="longform-backref" href="#ref-17" aria-label="Back to note 17 in the essay">↩</a></li>
-<li id="note-18">The American Academy of Pediatrics reports that roughly 70% of children drop out of organized sports by age 13: <a href="https://publications.aap.org/pediatrics/article/138/3/e20162148/52612/Sports-Specialization-and-Intensive-Training-in" target="_blank" rel="noopener">AAP, “Sports Specialization and Intensive Training in Young Athletes”</a>. <a class="longform-backref" href="#ref-18" aria-label="Back to note 18 in the essay">↩</a></li>
-<li id="note-19">The retrospective German study found more childhood peer-led play among later professionals and about two hours per week of organized practice through age ten: <a href="https://doi.org/10.1080/17461391.2014.982204" target="_blank" rel="noopener">Hornig, Aust and Güllich, European Journal of Sport Science</a>. <a class="longform-backref" href="#ref-19" aria-label="Back to note 19 in the essay">↩</a></li>
-<li id="note-20">On federation age and persistent first-mover advantage: <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/mde.3758" target="_blank" rel="noopener">Daumann et al., “The early bird catches the worm,” Managerial and Decision Economics</a> (2023). <a class="longform-backref" href="#ref-20" aria-label="Back to note 20 in the essay">↩</a></li>
-<li id="note-21">Founding dates: <a href="https://www.ussoccer.com/history/timeline" target="_blank" rel="noopener">U.S. Soccer history timeline</a> and <a href="https://www.fff.fr/121-notre-histoire.html" target="_blank" rel="noopener">French Football Federation history</a>. <a class="longform-backref" href="#ref-21" aria-label="Back to note 21 in the essay">↩</a></li>
-<li id="note-22">Messi's first game at Grandoli and his grandmother Celia's insistence are recounted in <a href="https://apnews.com/article/2c6fd62146a2e4de22bee75f1ea3c9c0" target="_blank" rel="noopener">Associated Press, “Where Messi's story began”</a>. <a class="longform-backref" href="#ref-22" aria-label="Back to note 22 in the essay">↩</a></li>
-<li id="note-23">Dan Wang, <a href="https://www.penguin.co.uk/books/465161/breakneck-by-wang-dan/9781837312283" target="_blank" rel="noopener"><em>Breakneck: China's Quest to Engineer the Future</em></a> (Penguin, 2025). <a class="longform-backref" href="#ref-23" aria-label="Back to note 23 in the essay">↩</a></li>
-<li id="note-24">Grant Wahl reported the $75,000 U.S. Soccer pilot and the dispute over metrics: <a href="https://www.si.com/soccer/2018/05/24/tom-byer-us-soccer-pilot-program-canceled" target="_blank" rel="noopener">Sports Illustrated, “Tom Byer, U.S. Soccer and Soccer Starts at Home”</a> (2018). <a class="longform-backref" href="#ref-24" aria-label="Back to note 24 in the essay">↩</a></li>
-<li id="note-25">Family backgrounds are documented in official U.S. Soccer player biographies and its 2026 feature <a href="https://www.ussoccer.com/stories/2026/06/usmnt/hosting-fifa-world-cup-friends-family-atmosphere" target="_blank" rel="noopener">“A Friends and Family Atmosphere”</a>. <a class="longform-backref" href="#ref-25" aria-label="Back to note 25 in the essay">↩</a></li>
+<li id="note-17">The 10 a.m. kickoff, college-football television constraint, 54,032 crowd, 3–2 result and end of the United States' 16-year home qualifying streak are documented by <a href="https://www.frontrowsoccer.com/2017/03/22/looking-back-honduras-beat-u-s-wcq-2001/" target="_blank" rel="noopener">Michael Lewis</a>. <a href="https://www.washingtonpost.com/archive/local/2002/07/27/fan-alleges-ticket-bias-at-rfk-soccer-match/acb99334-d399-4f44-b661-029e6f931abb/" target="_blank" rel="noopener">The Washington Post</a> documented the overwhelmingly pro-Honduran atmosphere and Bruce Arena's reaction; <a href="https://www.soccerwire.com/resources/mayhem-at-rfk-the-usa-honduras-game-that-lives-in-infamy/" target="_blank" rel="noopener">SoccerWire's oral history</a> preserves the Associated Press description of RFK as having been taken over by a Central American country. <a class="longform-backref" href="#ref-17" aria-label="Back to note 17 in the essay">↩</a></li>
+<li id="note-18">Participation estimates: <a href="https://sfia.org/resources/soccer-participation-in-the-u-s-hits-an-all-time-high-ahead-of-world-cup/" target="_blank" rel="noopener">SFIA, 2025 soccer participation report</a> and <a href="https://sfia.org/resources/the-world-cup-is-here-and-america-is-already-playing/" target="_blank" rel="noopener">SFIA, June 2026 World Cup survey</a>. <a class="longform-backref" href="#ref-18" aria-label="Back to note 18 in the essay">↩</a></li>
+<li id="note-19">The American Academy of Pediatrics reports that roughly 70% of children drop out of organized sports by age 13: <a href="https://publications.aap.org/pediatrics/article/138/3/e20162148/52612/Sports-Specialization-and-Intensive-Training-in" target="_blank" rel="noopener">AAP, “Sports Specialization and Intensive Training in Young Athletes”</a>. <a class="longform-backref" href="#ref-19" aria-label="Back to note 19 in the essay">↩</a></li>
+<li id="note-20">The retrospective German study found more childhood peer-led play among later professionals and about two hours per week of organized practice through age ten: <a href="https://doi.org/10.1080/17461391.2014.982204" target="_blank" rel="noopener">Hornig, Aust and Güllich, European Journal of Sport Science</a>. <a class="longform-backref" href="#ref-20" aria-label="Back to note 20 in the essay">↩</a></li>
+<li id="note-21">On federation age and persistent first-mover advantage: <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/mde.3758" target="_blank" rel="noopener">Daumann et al., “The early bird catches the worm,” Managerial and Decision Economics</a> (2023). <a class="longform-backref" href="#ref-21" aria-label="Back to note 21 in the essay">↩</a></li>
+<li id="note-22">Founding dates: <a href="https://www.ussoccer.com/history/timeline" target="_blank" rel="noopener">U.S. Soccer history timeline</a> and <a href="https://www.fff.fr/121-notre-histoire.html" target="_blank" rel="noopener">French Football Federation history</a>. <a class="longform-backref" href="#ref-22" aria-label="Back to note 22 in the essay">↩</a></li>
+<li id="note-23">Messi's first game at Grandoli and his grandmother Celia's insistence are recounted in <a href="https://apnews.com/article/2c6fd62146a2e4de22bee75f1ea3c9c0" target="_blank" rel="noopener">Associated Press, “Where Messi's story began”</a>. <a class="longform-backref" href="#ref-23" aria-label="Back to note 23 in the essay">↩</a></li>
+<li id="note-24">The <a href="https://baltimoreblast.com/about-the-baltimore-blast/" target="_blank" rel="noopener">Baltimore Blast</a> identifies Stankovic as a six-time MISL All-Star and a member of its championship team; the <a href="https://www.ghanafa.org/stankovic-awal-salifu-join-black-stars-technical-team-for-2021-africa-cup-of-nations?amp=1" target="_blank" rel="noopener">Ghana Football Association</a> documents his later return to the Black Stars staff, and <a href="https://www.modernghana.com/sports/1129791/mike-stankovic-joins-black-stars-technical-team.html" target="_blank" rel="noopener">Modern Ghana</a> records his role as Milovan Rajevac's assistant at the 2010 World Cup. <a href="https://1982.gnkdinamo.hr/players/emil-dragicevic/" target="_blank" rel="noopener">GNK Dinamo's historical archive</a> documents Emil Dragičević's years at the club and its 1982 league and 1983 cup-winning era. <a class="longform-backref" href="#ref-24" aria-label="Back to note 24 in the essay">↩</a></li>
+<li id="note-25">Dan Wang, <a href="https://www.penguin.co.uk/books/465161/breakneck-by-wang-dan/9781837312283" target="_blank" rel="noopener"><em>Breakneck: China's Quest to Engineer the Future</em></a> (Penguin, 2025). <a class="longform-backref" href="#ref-25" aria-label="Back to note 25 in the essay">↩</a></li>
+<li id="note-26">Grant Wahl reported the $75,000 U.S. Soccer pilot and the dispute over metrics: <a href="https://www.si.com/soccer/2018/05/24/tom-byer-us-soccer-pilot-program-canceled" target="_blank" rel="noopener">Sports Illustrated, “Tom Byer, U.S. Soccer and Soccer Starts at Home”</a> (2018). <a class="longform-backref" href="#ref-26" aria-label="Back to note 26 in the essay">↩</a></li>
+<li id="note-27">Family backgrounds are documented in official U.S. Soccer player biographies and its 2026 feature <a href="https://www.ussoccer.com/stories/2026/06/usmnt/hosting-fifa-world-cup-friends-family-atmosphere" target="_blank" rel="noopener">“A Friends and Family Atmosphere”</a>. <a class="longform-backref" href="#ref-27" aria-label="Back to note 27 in the essay">↩</a></li>
+<li id="note-28">The <a href="https://www.indoorsoccerhall.com/kenny-cooper" target="_blank" rel="noopener">Indoor Soccer Hall of Fame</a> recounts Kenny Cooper Sr.'s championship run with the Baltimore Blast. <a href="https://kennycooperjr.com/about" target="_blank" rel="noopener">Kenny Cooper Jr.'s official biography</a> traces his path to Manchester United and a twelve-year professional career; his ten U.S. appearances are recorded by <a href="https://www.national-football-teams.com/player/20708/Kenny_Cooper.html" target="_blank" rel="noopener">National Football Teams</a>. <a class="longform-backref" href="#ref-28" aria-label="Back to note 28 in the essay">↩</a></li>
 </ol>
 <div class="longform-photo-credits">
 <h3>Photography &amp; licensing</h3>
-<p>Buenos Aires celebration: Gobierno de la Ciudad Autónoma de Buenos Aires, CC BY 2.5 AR. Dock Sud baby fútbol: Roberto Fiadone, CC BY-SA 4.0. Buenos Aires potrero: Roblespepe, CC BY-SA 4.0. Informal park game: Simone Franchina, Unsplash License.</p>
+<p>Buenos Aires celebration: Gobierno de la Ciudad Autónoma de Buenos Aires, CC BY 2.5 AR. Dock Sud baby fútbol: Roberto Fiadone, CC BY-SA 4.0. Buenos Aires potrero: Roblespepe, CC BY-SA 4.0. Informal park game: Simone Franchina, Unsplash License. Baltimore Blast portraits: Major Indoor Soccer League, 1984–85 media guide, public domain.</p>
 <p>Player imagery in the opening and France triptych is drawn from The World Cup Guide site archive.</p>
 </div>
 </section>

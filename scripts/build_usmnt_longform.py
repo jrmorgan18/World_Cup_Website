@@ -38,15 +38,17 @@ CITATIONS = {
     129: citation(15),
     132: citation(16, "a"),
     133: citation(16, "b"),
-    144: citation(17),
-    152: citation(18),
-    172: citation(19),
-    181: citation(20),
-    182: citation(21),
-    189: citation(22),
-    200: citation(23),
-    205: citation(24),
-    212: citation(25),
+    143: citation(17),
+    158: citation(19),
+    178: citation(20),
+    187: citation(21),
+    188: citation(22),
+    195: citation(23),
+    202: citation(24),
+    209: citation(25),
+    214: citation(26),
+    221: citation(27),
+    228: citation(28),
 }
 
 
@@ -68,14 +70,6 @@ REWRITES = {
         "squad entered the tournament at nearly twice Argentina's estimated market value, before you even get "
         "to the players left at home."
     ),
-    129: (
-        "When researchers have actually run the numbers on this, population by itself does not predict much. "
-        "It only starts to matter when you multiply it by how seriously a country plays the sport. Three hundred "
-        "and forty million people are not a talent pool. They are a census."
-    ),
-    141: None,
-    151: None,
-    152: None,
 }
 
 
@@ -83,12 +77,12 @@ HEADINGS = {
     2: ("01", "the-hangover", "The Hangover"),
     40: ("02", "two-models", "Two Models"),
     100: ("03", "the-excuse", "The Excuse"),
-    157: ("04", "what-cant-be-built", "What Can't Be Built"),
-    226: ("05", "the-way-through", "The Way Through"),
+    163: ("04", "what-cant-be-built", "What Can't Be Built"),
+    241: ("05", "the-way-through", "The Way Through"),
 }
 
 
-SKIP = {38, 62, 98, 144, 145, 228, 229, 230, 231, 232, 233}
+SKIP = {38, 62, 98, 150, 151, 243, 244, 245, 246, 247, 248}
 
 
 PULLS = {
@@ -99,8 +93,8 @@ PULLS = {
     61: ("The oil was already in the ground. France had to drill.", False),
     97: ("If only our best athletes played soccer. Imagine if LeBron had chosen soccer instead of basketball.", True),
     121: ("That body is the greatest soccer player who has ever lived.", False),
-    173: ("Two hours. In Germany.", True),
-    216: ("That is not a heartwarming coincidence. It is a diagnostic.", False),
+    179: ("Two hours. In Germany.", True),
+    225: ("That is not a heartwarming coincidence. It is a diagnostic.", False),
 }
 
 
@@ -127,17 +121,26 @@ AFTER = {
   <figcaption><strong>Before the system</strong>The decisive question is not which sport an athlete chooses at fifteen. It is whether the ball is already part of life at four. Photo: <a href="https://unsplash.com/photos/children-playing-soccer-in-a-sunny-park-y_sf8j3K2ZY" target="_blank" rel="noopener">Simone Franchina / Unsplash</a>.</figcaption>
 </figure>
 """,
-    165: """
+    171: """
 <figure class="longform-figure">
   <img src="{{ '/assets/images/usmnt-longform-baby-futbol-argentina.jpg' | relative_url }}" alt="Young children playing baby fútbol on a hard indoor court at Polideportivo 3 de Febrero in Dock Sud, Buenos Aires" loading="lazy">
   <figcaption><strong>The organized layer</strong>Baby fútbol in Dock Sud: five-a-side, a hard court, real goals, parents against the wall and a neighborhood watching. Photo: Roberto Fiadone / <a href="https://commons.wikimedia.org/wiki/File:Ni%C3%B1os_jugando_f%C3%BAtbol,_Polideportivo_3_De_Febrero,_Dock_Sud.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>.</figcaption>
 </figure>
 """,
-    168: """
+    174: """
 <figure class="longform-figure">
   <img src="{{ '/assets/images/usmnt-longform-potrero.jpg' | relative_url }}" alt="Players contesting the ball on a dirt potrero in Buenos Aires, with apartment blocks beyond the field" loading="lazy">
   <figcaption><strong>The other classroom</strong>Fútbol de potrero on a dirt field in Buenos Aires. The space is imperfect, the game continuous and nobody stops play to explain it. Photo: Roblespepe / <a href="https://commons.wikimedia.org/wiki/File:Potrero_(2).jpg" target="_blank" rel="noopener">Wikimedia Commons</a>.</figcaption>
 </figure>
+""",
+    228: """
+<div class="longform-archive" role="group" aria-label="Archival portraits of Baltimore Blast figures Mike Stankovic and Kenny Cooper Sr.">
+  <div class="longform-archive-grid">
+    <figure><img src="{{ '/assets/images/usmnt-longform-mike-stankovic-blast.jpg' | relative_url }}" alt="Mike Stankovic in a Baltimore Blast portrait from the 1984–85 MISL media guide" loading="lazy"><span>Mike Stankovic</span></figure>
+    <figure><img src="{{ '/assets/images/usmnt-longform-kenny-cooper-sr-blast.jpg' | relative_url }}" alt="Kenny Cooper Sr. in a Baltimore Blast portrait from the 1984–85 MISL media guide" loading="lazy"><span>Kenny Cooper Sr.</span></figure>
+  </div>
+  <p><strong>Knowledge, imported.</strong> A star defender and a championship coach helped make elite soccer expertise an ordinary part of childhood in one corner of Baltimore County. Portraits: 1984–85 MISL media guide / Wikimedia Commons (<a href="https://commons.wikimedia.org/wiki/File:Mike_Stankovic,_MISL_1984-85_media_guide_page_012.tif" target="_blank" rel="noopener">Stankovic</a>, <a href="https://commons.wikimedia.org/wiki/File:Kenny_Cooper,_MISL_1984-85_media_guide_page_013.tif" target="_blank" rel="noopener">Cooper</a>).</p>
+</div>
 """,
 }
 
@@ -159,26 +162,23 @@ NOTES = [
     "World Cup records and population context: <a href=\"https://www.fifa.com/en/tournaments/mens/worldcup/articles/uruguay-team-profile-history\" target=\"_blank\" rel=\"noopener\">FIFA on Uruguay</a> and <a href=\"https://www.fifa.com/en/articles/croatia-team-profile-history\" target=\"_blank\" rel=\"noopener\">FIFA on Croatia</a>. China's June 2026 position is in the ranking table cited in note 4.",
     "A recent cross-country analysis finds population and GDP far weaker than football-specific history and experience: <a href=\"https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6928238\" target=\"_blank\" rel=\"noopener\">“What Predicts World Cup Success?”</a>, SSRN working paper, May 2026.",
     "FIFA's 2023 professional football report counted 9,464 male professionals and 244 professional clubs in Mexico: <a href=\"https://inside.fifa.com/legal/news/fifa-publishes-professional-football-report-2023\" target=\"_blank\" rel=\"noopener\">FIFA, Professional Football Report 2023</a>. World Cup finishes are from FIFA's tournament archive.",
+    "The 10 a.m. kickoff, college-football television constraint, 54,032 crowd, 3–2 result and end of the United States' 16-year home qualifying streak are documented by <a href=\"https://www.frontrowsoccer.com/2017/03/22/looking-back-honduras-beat-u-s-wcq-2001/\" target=\"_blank\" rel=\"noopener\">Michael Lewis</a>. <a href=\"https://www.washingtonpost.com/archive/local/2002/07/27/fan-alleges-ticket-bias-at-rfk-soccer-match/acb99334-d399-4f44-b661-029e6f931abb/\" target=\"_blank\" rel=\"noopener\">The Washington Post</a> documented the overwhelmingly pro-Honduran atmosphere and Bruce Arena's reaction; <a href=\"https://www.soccerwire.com/resources/mayhem-at-rfk-the-usa-honduras-game-that-lives-in-infamy/\" target=\"_blank\" rel=\"noopener\">SoccerWire's oral history</a> preserves the Associated Press description of RFK as having been taken over by a Central American country.",
     "Participation estimates: <a href=\"https://sfia.org/resources/soccer-participation-in-the-u-s-hits-an-all-time-high-ahead-of-world-cup/\" target=\"_blank\" rel=\"noopener\">SFIA, 2025 soccer participation report</a> and <a href=\"https://sfia.org/resources/the-world-cup-is-here-and-america-is-already-playing/\" target=\"_blank\" rel=\"noopener\">SFIA, June 2026 World Cup survey</a>.",
     "The American Academy of Pediatrics reports that roughly 70% of children drop out of organized sports by age 13: <a href=\"https://publications.aap.org/pediatrics/article/138/3/e20162148/52612/Sports-Specialization-and-Intensive-Training-in\" target=\"_blank\" rel=\"noopener\">AAP, “Sports Specialization and Intensive Training in Young Athletes”</a>.",
     "The retrospective German study found more childhood peer-led play among later professionals and about two hours per week of organized practice through age ten: <a href=\"https://doi.org/10.1080/17461391.2014.982204\" target=\"_blank\" rel=\"noopener\">Hornig, Aust and Güllich, European Journal of Sport Science</a>.",
     "On federation age and persistent first-mover advantage: <a href=\"https://onlinelibrary.wiley.com/doi/full/10.1002/mde.3758\" target=\"_blank\" rel=\"noopener\">Daumann et al., “The early bird catches the worm,” Managerial and Decision Economics</a> (2023).",
     "Founding dates: <a href=\"https://www.ussoccer.com/history/timeline\" target=\"_blank\" rel=\"noopener\">U.S. Soccer history timeline</a> and <a href=\"https://www.fff.fr/121-notre-histoire.html\" target=\"_blank\" rel=\"noopener\">French Football Federation history</a>.",
     "Messi's first game at Grandoli and his grandmother Celia's insistence are recounted in <a href=\"https://apnews.com/article/2c6fd62146a2e4de22bee75f1ea3c9c0\" target=\"_blank\" rel=\"noopener\">Associated Press, “Where Messi's story began”</a>.",
+    "The <a href=\"https://baltimoreblast.com/about-the-baltimore-blast/\" target=\"_blank\" rel=\"noopener\">Baltimore Blast</a> identifies Stankovic as a six-time MISL All-Star and a member of its championship team; the <a href=\"https://www.ghanafa.org/stankovic-awal-salifu-join-black-stars-technical-team-for-2021-africa-cup-of-nations?amp=1\" target=\"_blank\" rel=\"noopener\">Ghana Football Association</a> documents his later return to the Black Stars staff, and <a href=\"https://www.modernghana.com/sports/1129791/mike-stankovic-joins-black-stars-technical-team.html\" target=\"_blank\" rel=\"noopener\">Modern Ghana</a> records his role as Milovan Rajevac's assistant at the 2010 World Cup. <a href=\"https://1982.gnkdinamo.hr/players/emil-dragicevic/\" target=\"_blank\" rel=\"noopener\">GNK Dinamo's historical archive</a> documents Emil Dragičević's years at the club and its 1982 league and 1983 cup-winning era.",
     "Dan Wang, <a href=\"https://www.penguin.co.uk/books/465161/breakneck-by-wang-dan/9781837312283\" target=\"_blank\" rel=\"noopener\"><em>Breakneck: China's Quest to Engineer the Future</em></a> (Penguin, 2025).",
     "Grant Wahl reported the $75,000 U.S. Soccer pilot and the dispute over metrics: <a href=\"https://www.si.com/soccer/2018/05/24/tom-byer-us-soccer-pilot-program-canceled\" target=\"_blank\" rel=\"noopener\">Sports Illustrated, “Tom Byer, U.S. Soccer and Soccer Starts at Home”</a> (2018).",
     "Family backgrounds are documented in official U.S. Soccer player biographies and its 2026 feature <a href=\"https://www.ussoccer.com/stories/2026/06/usmnt/hosting-fifa-world-cup-friends-family-atmosphere\" target=\"_blank\" rel=\"noopener\">“A Friends and Family Atmosphere”</a>.",
+    "The <a href=\"https://www.indoorsoccerhall.com/kenny-cooper\" target=\"_blank\" rel=\"noopener\">Indoor Soccer Hall of Fame</a> recounts Kenny Cooper Sr.'s championship run with the Baltimore Blast. <a href=\"https://kennycooperjr.com/about\" target=\"_blank\" rel=\"noopener\">Kenny Cooper Jr.'s official biography</a> traces his path to Manchester United and a twelve-year professional career; his ten U.S. appearances are recorded by <a href=\"https://www.national-football-teams.com/player/20708/Kenny_Cooper.html\" target=\"_blank\" rel=\"noopener\">National Football Teams</a>.",
 ]
 
 
 def clean(text: str, index: int) -> str:
     text = REWRITES.get(index, text)
-    if text is None:
-        text = {
-            141: paragraphs[index].replace("that is the a failure", "that is a failure"),
-            151: paragraphs[index].replace("some many", "so many"),
-            152: paragraphs[index].replace("by the time they are fourteen", "by the time they are thirteen"),
-        }[index]
     return (
         text.replace("\u00a0", " ")
         .replace("talent deficient squads", "talent-deficient squads")
@@ -187,6 +187,10 @@ def clean(text: str, index: int) -> str:
         .replace("jump starting", "jump-starting")
         .replace("a real effective tactical identity", "a real, effective tactical identity")
         .replace("Pogba, Kante and Griezmann", "Pogba, Kanté and Griezmann")
+        .replace("some many", "so many")
+        .replace("by the time they are fourteen", "by the time they are thirteen")
+        .replace("Stankovic and Dragisovic", "Stankovic and Dragicevic")
+        .replace("a five-time All-Star", "a six-time MISL All-Star")
         .strip()
     )
 
@@ -198,7 +202,7 @@ def pullquote(text: str, light: bool) -> str:
 
 document = Document(SOURCE)
 paragraphs = [paragraph.text for paragraph in document.paragraphs]
-word_count = len(re.findall(r"\b[\w’'-]+\b", " ".join(paragraphs[3:234])))
+word_count = len(re.findall(r"\b[\w’'-]+\b", " ".join(paragraphs[3:249])))
 read_time = max(1, math.ceil(word_count / 215))
 
 front_matter = f"""---
@@ -238,30 +242,31 @@ toc_items:
 
 chunks = [front_matter]
 
-for index in range(2, 234):
+for index in range(2, 249):
     if index in SKIP:
         continue
     if index in HEADINGS:
         number, anchor, title = HEADINGS[index]
         chunks.append(f'<h2 id="{anchor}"><span class="longform-chapter-number">{number}</span><span>{title}</span></h2>')
         continue
-    if index == 227:
+    if index == 242:
         chunks.append(
             """<aside class="longform-next">
   <span class="longform-next-kicker">Continue in Part II</span>
-  <h3>The United States cannot build a potrero. But Argentina is not the only way.</h3>
-  <p>The United States cannot manufacture a century of accumulated knowledge, make soccer the only game in town, or give every American kid a grandmother who argues about the lineup at baby fútbol.</p>
-  <p>France identified the places where soccer culture already existed, built a system capable of finding the players growing inside it, and made sure poverty did not keep them outside the gates. It turned scattered talent into an assembly line.</p>
-  <p><strong>The United States will never be Argentina. But could it become France?</strong></p>
+  <h3>The United States cannot build a potrero.</h3>
+  <p>It cannot manufacture a century of accumulated knowledge, make soccer the only game in town, or give every American kid a grandmother who argues about the lineup at baby fútbol. It cannot become Argentina by spending more money, hiring a better coach, or finding a few more athletes.</p>
+  <p><strong>That is the bad news. The good news is that Argentina is not the only way to build a world power.</strong></p>
+  <p>France did not inherit everything it needed. It identified the places where soccer culture already existed, built a system capable of finding the players growing inside it, and made sure poverty did not keep them outside the gates. It turned scattered talent into an assembly line.</p>
+  <p><strong>The United States will never be Argentina.<br>But could it become France?</strong></p>
   <p>In Part II, we will look at what France proved can be built—and why America still has not built it.</p>
 </aside>"""
         )
         continue
-    if index == 143:
+    if index == 149:
         chunks.append(
             f"""<aside class="longform-stat">
   <div class="longform-stat-grid">
-    <div class="longform-stat-item"><strong>25M</strong><span>Americans playing some version of soccer during this World Cup{citation(17)}</span></div>
+    <div class="longform-stat-item"><strong>25M</strong><span>Americans playing some version of soccer during this World Cup{citation(18)}</span></div>
     <span class="longform-stat-divider" aria-hidden="true"></span>
     <div class="longform-stat-item"><strong>26</strong><span>places on the national-team roster</span></div>
   </div>
@@ -291,7 +296,7 @@ notes_html.extend([
     '</ol>',
     '<div class="longform-photo-credits">',
     '<h3>Photography &amp; licensing</h3>',
-    '<p>Buenos Aires celebration: Gobierno de la Ciudad Autónoma de Buenos Aires, CC BY 2.5 AR. Dock Sud baby fútbol: Roberto Fiadone, CC BY-SA 4.0. Buenos Aires potrero: Roblespepe, CC BY-SA 4.0. Informal park game: Simone Franchina, Unsplash License.</p>',
+    '<p>Buenos Aires celebration: Gobierno de la Ciudad Autónoma de Buenos Aires, CC BY 2.5 AR. Dock Sud baby fútbol: Roberto Fiadone, CC BY-SA 4.0. Buenos Aires potrero: Roblespepe, CC BY-SA 4.0. Informal park game: Simone Franchina, Unsplash License. Baltimore Blast portraits: Major Indoor Soccer League, 1984–85 media guide, public domain.</p>',
     '<p>Player imagery in the opening and France triptych is drawn from The World Cup Guide site archive.</p>',
     '</div>',
     '</section>',

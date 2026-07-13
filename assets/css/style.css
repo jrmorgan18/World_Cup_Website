@@ -2975,6 +2975,65 @@ body.modal-open { overflow: hidden; }
   line-height: 1.45;
 }
 
+.longform-archive {
+  width: min(860px, calc(100vw - 48px));
+  margin: 4.3rem 0 4.3rem 50%;
+  transform: translateX(-50%);
+}
+
+.longform-archive-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: #111821;
+}
+
+.longform-archive figure {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  background: #d7d2c7;
+}
+
+.longform-archive img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+  filter: contrast(1.04);
+}
+
+.longform-archive figure span {
+  position: absolute;
+  right: 13px;
+  bottom: 13px;
+  padding: 5px 8px;
+  color: #fff;
+  background: rgba(7, 11, 17, 0.8);
+  font-family: var(--font-display);
+  font-size: 0.62rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.longform-archive > p {
+  margin-top: 12px;
+  color: #746f66;
+  font-family: var(--font-body);
+  font-size: 0.76rem;
+  line-height: 1.45;
+}
+
+.longform-archive > p strong {
+  color: #292d32;
+  font-family: var(--font-display);
+  font-size: 0.67rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.longform-archive > p a { color: inherit !important; }
+
 .longform-stat {
   width: min(980px, calc(100vw - 48px));
   margin: 4rem 0 4rem 50%;
@@ -3192,6 +3251,30 @@ body.modal-open { overflow: hidden; }
   .longform-triptych {
     width: clamp(720px, calc(100vw - 300px), 1120px);
   }
+
+  .longform-archive {
+    width: clamp(720px, calc(100vw - 300px), 860px);
+  }
+}
+
+@media (min-width: 1081px) {
+  .longform-body {
+    --longform-breakout-shift: clamp(50px, calc(25vw - 220px), 140px);
+  }
+
+  .longform-pullquote,
+  .longform-figure,
+  .longform-triptych,
+  .longform-archive,
+  .longform-stat,
+  .longform-next {
+    transform: translateX(calc(-50% + var(--longform-breakout-shift)));
+  }
+
+  .longform-figure,
+  .longform-triptych {
+    max-width: 1040px;
+  }
 }
 
 @media (max-width: 1080px) {
@@ -3244,6 +3327,7 @@ body.modal-open { overflow: hidden; }
   .longform-pullquote,
   .longform-figure,
   .longform-triptych,
+  .longform-archive,
   .longform-stat,
   .longform-next { width: calc(100vw - 32px); }
 }
@@ -3296,6 +3380,8 @@ body.modal-open { overflow: hidden; }
   .longform-triptych { margin-block: 3.3rem; }
   .longform-triptych-grid { min-height: 310px; }
   .longform-triptych figure span { right: 7px; bottom: 7px; font-size: 0.52rem; padding: 4px 5px; }
+  .longform-archive { margin-block: 3.3rem; }
+  .longform-archive figure span { right: 7px; bottom: 7px; font-size: 0.52rem; padding: 4px 5px; }
   .longform-stat { padding: 34px 22px; }
   .longform-stat-grid { grid-template-columns: 1fr; gap: 20px; }
   .longform-stat-divider { width: 80px; height: 1px; margin: 0 auto; }
