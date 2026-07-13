@@ -3,7 +3,7 @@
 <head>
   {% include head.html %}
 </head>
-<body>
+<body{% if page.layout == 'longform' %} class="longform-page"{% endif %}>
   {% include nav.html %}
   <main class="site-main">
     {{ content }}

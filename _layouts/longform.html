@@ -1,0 +1,85 @@
+---
+layout: default
+---
+<div class="longform-progress" aria-hidden="true">
+  <span id="longform-progress-bar"></span>
+</div>
+
+<article class="longform" data-longform>
+  <header class="longform-hero">
+    <div class="longform-hero-grid" aria-hidden="true">
+      <figure class="longform-hero-panel longform-hero-us">
+        <img src="{{ page.hero_us | relative_url }}" alt="">
+        <figcaption>United States</figcaption>
+      </figure>
+      <figure class="longform-hero-panel longform-hero-argentina">
+        <img src="{{ page.hero_argentina | relative_url }}" alt="">
+        <figcaption>Argentina</figcaption>
+      </figure>
+      <figure class="longform-hero-panel longform-hero-france">
+        <img src="{{ page.hero_france | relative_url }}" alt="">
+        <figcaption>France</figcaption>
+      </figure>
+    </div>
+    <div class="longform-hero-shade"></div>
+    <div class="longform-hero-copy">
+      <div class="longform-kicker">
+        <span>{{ page.series }}</span>
+        <span>{{ page.part }}</span>
+      </div>
+      <h1>
+        <span>{{ page.title_primary }}</span>
+        <em>{{ page.title_secondary }}</em>
+      </h1>
+      <p class="longform-dek">{{ page.subtitle }}</p>
+      <div class="longform-byline">
+        <span>By {{ page.author }}</span>
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+        <span>{{ page.read_time }} min read</span>
+      </div>
+    </div>
+    <a class="longform-scroll" href="#the-hangover" aria-label="Begin reading">
+      <span>Begin</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </a>
+  </header>
+
+  <div class="longform-shell">
+    <aside class="longform-rail">
+      <nav class="longform-toc" aria-label="Table of contents">
+        <p class="longform-toc-label">In this essay</p>
+        <ol>
+          {% for item in page.toc_items %}
+          <li><a href="#{{ item.id }}"><span>0{{ forloop.index }}</span>{{ item.label }}</a></li>
+          {% endfor %}
+        </ol>
+        <a class="longform-notes-link" href="#notes">Notes &amp; sources</a>
+        <div class="longform-series-note">
+          <span>Coming in Part II</span>
+          <strong>What America can actually build</strong>
+        </div>
+      </nav>
+    </aside>
+
+    <div class="longform-main">
+      <div class="longform-body" id="longform-body">
+        {{ content }}
+      </div>
+
+      {% if page.newsletter_cta %}
+      <aside class="longform-newsletter">
+        <span class="longform-newsletter-kicker">Follow the argument</span>
+        <h2>Part II is coming next.</h2>
+        <p>Subscribe for the conclusion—and for the rest of our World Cup coverage.</p>
+        <form class="newsletter-form" action="https://formspree.io/f/xnnvlzve" method="POST">
+          <input type="email" name="email" placeholder="Your email address" required aria-label="Email address">
+          <input type="hidden" name="source" value="USMNT longform Part I">
+          <button type="submit">Get Part II</button>
+        </form>
+      </aside>
+      {% endif %}
+    </div>
+  </div>
+</article>
+
+<script src="{{ '/assets/js/longform.js' | relative_url }}"></script>

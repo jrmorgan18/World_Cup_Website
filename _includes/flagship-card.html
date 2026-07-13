@@ -1,0 +1,19 @@
+{% assign flagship = include.post %}
+<a href="{{ flagship.url | relative_url }}" class="flagship-card">
+  <div class="flagship-visual" aria-hidden="true">
+    <div class="flagship-panel flagship-panel-us"><img src="{{ flagship.hero_us | relative_url }}" alt=""></div>
+    <div class="flagship-panel flagship-panel-argentina"><img src="{{ flagship.hero_argentina | relative_url }}" alt=""></div>
+    <div class="flagship-panel flagship-panel-france"><img src="{{ flagship.hero_france | relative_url }}" alt=""></div>
+    <span class="flagship-visual-label">USA <i>/</i> Argentina <i>/</i> France</span>
+  </div>
+  <div class="flagship-copy">
+    <div class="flagship-kicker"><span>The Long Read</span><span>{{ flagship.part }}</span></div>
+    <h3>{{ flagship.title }}</h3>
+    <p>{{ flagship.subtitle }}</p>
+    <div class="flagship-meta">
+      <span>By {{ flagship.author }}</span>
+      <span>{{ flagship.read_time }} min</span>
+      <strong>Read the essay <span aria-hidden="true">→</span></strong>
+    </div>
+  </div>
+</a>

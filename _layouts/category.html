@@ -11,6 +11,19 @@ layout: default
 
   {{ content }}
 
+  {% if page.featured_slug %}
+    {% assign featured_post = site.posts | where: "slug", page.featured_slug | first %}
+    {% if featured_post %}
+    <section class="category-flagship">
+      <div class="section-heading-row">
+        <h2 class="section-heading">Essential Reading</h2>
+        <span class="section-heading-note">{{ featured_post.part }}</span>
+      </div>
+      {% include flagship-card.html post=featured_post %}
+    </section>
+    {% endif %}
+  {% endif %}
+
   {% if page.category_slug == 'usmnt' and page.show_roster_tool %}
   <section class="usmnt-tool-section">
     <h2>USMNT Roster Builder</h2>
@@ -26,6 +39,7 @@ layout: default
     {% assign cat_posts = site.posts | where_exp: "post", "post.categories contains page.category_filter" %}
     {% if cat_posts.size > 0 %}
       {% for post in cat_posts %}
+      {% unless post.slug == page.featured_slug %}
       <a href="{{ post.url | relative_url }}" class="card">
         {% if post.thumbnail %}
         <div class="card-image">
@@ -52,6 +66,7 @@ layout: default
           {% endif %}
         </div>
       </a>
+      {% endunless %}
       {% endfor %}
     {% else %}
       <div class="empty-state">

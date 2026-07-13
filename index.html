@@ -21,40 +21,17 @@ title: Home
   </div>
 </section>
 
-{% assign latest = site.posts | where: "slug", "round-of-16-recap" | first %}
+{% assign latest = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina" | first %}
 {% unless latest %}
 {% assign latest = site.posts | first %}
 {% endunless %}
 {% if latest %}
 <section class="featured-section">
-  <h2 class="section-heading">Latest Article</h2>
-  <a href="{{ latest.url | relative_url }}" class="featured-card">
-    {% if latest.thumbnail %}
-    <div class="featured-image">
-      <img src="{{ latest.thumbnail | relative_url }}" alt="{{ latest.title }}">
-    </div>
-    {% elsif latest.country_code %}
-    <div class="featured-image featured-image-placeholder">
-      <img class="card-flag" src="https://flagcdn.com/w640/{{ latest.country_code }}.png" alt="flag" loading="lazy">
-    </div>
-    {% else %}
-    <div class="featured-image featured-image-placeholder">
-      <span class="card-icon">⚽</span>
-    </div>
-    {% endif %}
-    <div class="featured-body">
-      <div class="article-meta">
-        <span class="article-category">{{ latest.categories | first | replace: "-", " " | capitalize }}</span>
-        <time class="article-date">{{ latest.date | date: "%B %-d, %Y" }}</time>
-      </div>
-      <h3 class="featured-title">{{ latest.title }}</h3>
-      {% if latest.subtitle %}
-      <p class="featured-subtitle">{{ latest.subtitle }}</p>
-      {% endif %}
-      <p class="featured-excerpt">{{ latest.excerpt | strip_html | truncatewords: 40 }}</p>
-      <span class="read-more">Read article →</span>
-    </div>
-  </a>
+  <div class="section-heading-row">
+    <h2 class="section-heading">The Long Read</h2>
+    <span class="section-heading-note">Our flagship essay</span>
+  </div>
+  {% include flagship-card.html post=latest %}
 </section>
 {% endif %}
 
@@ -89,7 +66,7 @@ title: Home
   </div>
 </section>
 
-{% assign recent_posts = site.posts | slice: 0, 6 %}
+{% assign recent_posts = site.posts | where_exp: "post", "post.url != latest.url" | slice: 0, 6 %}
 {% if recent_posts.size > 0 %}
 <section class="recent-section">
   <h2 class="section-heading">Recent Articles</h2>
