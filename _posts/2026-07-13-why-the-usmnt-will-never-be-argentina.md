@@ -3,14 +3,14 @@ layout: longform
 title: "Why the USMNT Will Never Be Argentina (But Could Maybe Be France)"
 title_primary: "Why the USMNT Will Never Be Argentina"
 title_secondary: "(But Could Maybe Be France)"
-subtitle: "America keeps treating its soccer problem like a shortage of athletes. Argentina and France reveal the deeper truth—and the only model the United States might actually be able to build."
+subtitle: "America can’t recreate the conditions and culture that spawn a Messi or Maradona. It must build its own soccer culture and institutions, and France provides a blueprint."
 excerpt: "The USMNT's World Cup ended, but the argument it exposed is much larger: why Argentina's soccer culture cannot be copied, what France deliberately built, and where that leaves America."
 date: 2026-07-13 08:00:00 -0400
 categories: [usmnt, analysis]
 permalink: /usmnt/why-the-usmnt-will-never-be-argentina/
-author: "J.R. Morgan"
+author: "Randy Morgan"
 series: "The American Soccer Question"
-part: "Part I of II"
+part: "Part 1 of 2"
 read_time: 50
 word_count: 10716
 hero_image: /assets/images/usmnt-longform-argentina-celebration.jpg
