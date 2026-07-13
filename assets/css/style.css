@@ -2924,6 +2924,59 @@ body.modal-open { overflow: hidden; }
 
 .longform-figure figcaption a { color: inherit !important; }
 
+.longform-getty {
+  width: min(920px, calc(100vw - 48px));
+  margin: 4.4rem 0 4.4rem 50%;
+  padding: 40px 42px 30px;
+  transform: translateX(-50%);
+  background:
+    linear-gradient(135deg, rgba(57, 121, 174, 0.2), transparent 52%),
+    #101a29;
+  box-shadow: 0 28px 60px rgba(11, 20, 32, 0.2);
+}
+
+.longform-getty-inner {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  max-width: 540px;
+  min-height: 354px;
+  margin: 0 auto;
+}
+
+.longform-getty .gie-single,
+.longform-getty iframe {
+  display: block !important;
+  width: 100% !important;
+  max-width: 540px !important;
+  margin: 0 auto !important;
+}
+
+.longform-getty iframe {
+  height: auto !important;
+  aspect-ratio: 540 / 354;
+  border: 0;
+}
+
+.longform-getty figcaption {
+  max-width: 680px;
+  margin: 20px auto 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.longform-getty figcaption strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: 0.68rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
 .longform-triptych {
   width: min(1120px, calc(100vw - 48px));
   margin: 4.3rem 0 4.3rem 50%;
@@ -3248,6 +3301,10 @@ body.modal-open { overflow: hidden; }
     width: clamp(720px, calc(100vw - 300px), 1060px);
   }
 
+  .longform-getty {
+    width: clamp(720px, calc(100vw - 300px), 920px);
+  }
+
   .longform-triptych {
     width: clamp(720px, calc(100vw - 300px), 1120px);
   }
@@ -3264,6 +3321,7 @@ body.modal-open { overflow: hidden; }
 
   .longform-pullquote,
   .longform-figure,
+  .longform-getty,
   .longform-triptych,
   .longform-archive,
   .longform-stat,
@@ -3272,6 +3330,7 @@ body.modal-open { overflow: hidden; }
   }
 
   .longform-figure,
+  .longform-getty,
   .longform-triptych {
     max-width: 1040px;
   }
@@ -3326,6 +3385,7 @@ body.modal-open { overflow: hidden; }
   .longform-body { padding-top: 62px; }
   .longform-pullquote,
   .longform-figure,
+  .longform-getty,
   .longform-triptych,
   .longform-archive,
   .longform-stat,
@@ -3374,6 +3434,8 @@ body.modal-open { overflow: hidden; }
   .longform-pullquote { margin-block: 3rem; padding: 35px 27px; }
   .longform-pullquote p { font-size: 2.05rem; }
   .longform-figure { margin-block: 3.3rem; }
+  .longform-getty { margin-block: 3.3rem; padding: 24px 18px 22px; }
+  .longform-getty-inner { min-height: 0; }
   .longform-figure--portrait { display: block; }
   .longform-figure--portrait img { max-height: 680px; }
   .longform-figure--portrait figcaption { margin-top: 11px; }
