@@ -361,15 +361,20 @@ This is the thing Americans get most wrong about Argentina, and I got it wrong f
 
 By eight, a good one is being watched. Not by a parent with a clipboard app. By a captador, a spotter from a real club, who came to a baby fútbol match on a Saturday because that is where the players are and because everyone has always known that is where the players are. By ten or eleven there may be a man attached to the family who calls himself a representative. By thirteen a kid can be living away from home in a club's residence, eating club food, with the whole thing already understood as a career, because in that house it might be the career, the only one anybody has been offered, and everyone in the kitchen knows it.
 
+<figure class="longform-figure">
+  <img src="{{ '/assets/images/usmnt-longform-baby-futbol-argentina.jpg' | relative_url }}" alt="Young children playing baby fútbol on a hard indoor court at Polideportivo 3 de Febrero in Dock Sud, Buenos Aires" loading="lazy">
+  <figcaption><strong>The organized layer</strong>Baby fútbol in Dock Sud: five-a-side, a hard court, real goals, parents against the wall and a neighborhood watching. Photo: Roberto Fiadone / <a href="https://commons.wikimedia.org/wiki/File:Ni%C3%B1os_jugando_f%C3%BAtbol,_Polideportivo_3_De_Febrero,_Dock_Sud.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>.</figcaption>
+</figure>
+
 Soccer in that context is not a hobby or merely a childhood enrichment activity. It is the visible, believable, statistically absurd but locally verified exit. Everybody in the neighborhood knows somebody who got out, or knows somebody who knows him, or watched the kid two streets over sign at fourteen and buy his mother a house at nineteen. The lottery ticket is real because you have met the winner. So a nine-year-old in Rosario is not playing for a participation trophy and he is not playing for the love of it, or not only for the love of it. He is playing under conditions where losing his man at the back post gets him screamed at by four adults who are not his coach, where the boy across from him needs this more than he does, where the club can cut him, where the man who came to watch him might not come back, and where his own father is standing on the touchline wearing an expression that has nothing whatsoever to do with fun.
 
 Now go back to the street, because the street is what that pyramid is standing on.
 
 Take the potrero seriously as a piece of equipment. A hard surface, usually a bad one. A space far too small for the number of bodies in it. No referee, so fouls do not stop anything and complaining is worse than useless. No coach, so nobody freezes the play to explain the concept. Older kids, which is the entire engine of the thing, because a nine-year-old playing against thirteen-year-olds is not being nurtured, he is being hunted. The ball comes to him with a bigger kid already arriving. He has about a third of a second. If he takes his touch into pressure he loses it, and if he loses it he does not get it back for a long time, and everyone sees. So he learns to look before it arrives. Nobody teaches him to look. The environment charges him a fee every time he does not, and he pays it a few hundred times, and then he looks.
 
-<figure class="longform-figure longform-figure--portrait">
-  <img src="{{ '/assets/images/usmnt-longform-buenos-aires-kids.jpg' | relative_url }}" alt="Children, including one in a Lionel Messi number 10 shirt, playing soccer in Buenos Aires" loading="lazy">
-  <figcaption><strong>The game in the ground</strong>Children playing in Buenos Aires, where the ball, the shirt and the knowledge arrive long before the academy. Photo: Valenovale / <a href="https://commons.wikimedia.org/wiki/File:FootballBackyard_BuenosAiresArgentina.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>.</figcaption>
+<figure class="longform-figure">
+  <img src="{{ '/assets/images/usmnt-longform-potrero.jpg' | relative_url }}" alt="Players contesting the ball on a dirt potrero in Buenos Aires, with apartment blocks beyond the field" loading="lazy">
+  <figcaption><strong>The other classroom</strong>Fútbol de potrero on a dirt field in Buenos Aires. The space is imperfect, the game continuous and nobody stops play to explain it. Photo: Roblespepe / <a href="https://commons.wikimedia.org/wiki/File:Potrero_(2).jpg" target="_blank" rel="noopener">Wikimedia Commons</a>.</figcaption>
 </figure>
 
 Scanning. Deception. A first touch that moves the ball into space that does not exist yet. Playing off a surface that lies to you. The habit of solving a problem instead of executing an instruction. These are not mystical South American virtues. They are the predictable output of a specific training environment, and the environment is free, and it runs seven days a week, and the child does not experience one second of it as work.
@@ -526,7 +531,7 @@ What France did was stop trying to build it.
 </ol>
 <div class="longform-photo-credits">
 <h3>Photography &amp; licensing</h3>
-<p>Buenos Aires celebration: Gobierno de la Ciudad Autónoma de Buenos Aires, CC BY 2.5 AR. Buenos Aires children: Valenovale, CC BY-SA 4.0. Informal park game: Simone Franchina, Unsplash License.</p>
+<p>Buenos Aires celebration: Gobierno de la Ciudad Autónoma de Buenos Aires, CC BY 2.5 AR. Dock Sud baby fútbol: Roberto Fiadone, CC BY-SA 4.0. Buenos Aires potrero: Roblespepe, CC BY-SA 4.0. Informal park game: Simone Franchina, Unsplash License.</p>
 <p>Player imagery in the opening and France triptych is drawn from The World Cup Guide site archive.</p>
 </div>
 </section>

@@ -127,10 +127,16 @@ AFTER = {
   <figcaption><strong>Before the system</strong>The decisive question is not which sport an athlete chooses at fifteen. It is whether the ball is already part of life at four. Photo: <a href="https://unsplash.com/photos/children-playing-soccer-in-a-sunny-park-y_sf8j3K2ZY" target="_blank" rel="noopener">Simone Franchina / Unsplash</a>.</figcaption>
 </figure>
 """,
+    165: """
+<figure class="longform-figure">
+  <img src="{{ '/assets/images/usmnt-longform-baby-futbol-argentina.jpg' | relative_url }}" alt="Young children playing baby fútbol on a hard indoor court at Polideportivo 3 de Febrero in Dock Sud, Buenos Aires" loading="lazy">
+  <figcaption><strong>The organized layer</strong>Baby fútbol in Dock Sud: five-a-side, a hard court, real goals, parents against the wall and a neighborhood watching. Photo: Roberto Fiadone / <a href="https://commons.wikimedia.org/wiki/File:Ni%C3%B1os_jugando_f%C3%BAtbol,_Polideportivo_3_De_Febrero,_Dock_Sud.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>.</figcaption>
+</figure>
+""",
     168: """
-<figure class="longform-figure longform-figure--portrait">
-  <img src="{{ '/assets/images/usmnt-longform-buenos-aires-kids.jpg' | relative_url }}" alt="Children, including one in a Lionel Messi number 10 shirt, playing soccer in Buenos Aires" loading="lazy">
-  <figcaption><strong>The game in the ground</strong>Children playing in Buenos Aires, where the ball, the shirt and the knowledge arrive long before the academy. Photo: Valenovale / <a href="https://commons.wikimedia.org/wiki/File:FootballBackyard_BuenosAiresArgentina.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>.</figcaption>
+<figure class="longform-figure">
+  <img src="{{ '/assets/images/usmnt-longform-potrero.jpg' | relative_url }}" alt="Players contesting the ball on a dirt potrero in Buenos Aires, with apartment blocks beyond the field" loading="lazy">
+  <figcaption><strong>The other classroom</strong>Fútbol de potrero on a dirt field in Buenos Aires. The space is imperfect, the game continuous and nobody stops play to explain it. Photo: Roblespepe / <a href="https://commons.wikimedia.org/wiki/File:Potrero_(2).jpg" target="_blank" rel="noopener">Wikimedia Commons</a>.</figcaption>
 </figure>
 """,
 }
@@ -285,7 +291,7 @@ notes_html.extend([
     '</ol>',
     '<div class="longform-photo-credits">',
     '<h3>Photography &amp; licensing</h3>',
-    '<p>Buenos Aires celebration: Gobierno de la Ciudad Autónoma de Buenos Aires, CC BY 2.5 AR. Buenos Aires children: Valenovale, CC BY-SA 4.0. Informal park game: Simone Franchina, Unsplash License.</p>',
+    '<p>Buenos Aires celebration: Gobierno de la Ciudad Autónoma de Buenos Aires, CC BY 2.5 AR. Dock Sud baby fútbol: Roberto Fiadone, CC BY-SA 4.0. Buenos Aires potrero: Roblespepe, CC BY-SA 4.0. Informal park game: Simone Franchina, Unsplash License.</p>',
     '<p>Player imagery in the opening and France triptych is drawn from The World Cup Guide site archive.</p>',
     '</div>',
     '</section>',
