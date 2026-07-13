@@ -3171,6 +3171,29 @@ body.modal-open { overflow: hidden; }
   margin: 0;
 }
 
+@media (min-width: 821px) {
+  .longform-toc {
+    padding-left: 0;
+    transform: translateX(-26px);
+  }
+
+  .longform-series-note { max-width: 140px; }
+
+  .longform-pullquote,
+  .longform-stat,
+  .longform-next {
+    width: clamp(720px, calc(100vw - 300px), 980px);
+  }
+
+  .longform-figure {
+    width: clamp(720px, calc(100vw - 300px), 1060px);
+  }
+
+  .longform-triptych {
+    width: clamp(720px, calc(100vw - 300px), 1120px);
+  }
+}
+
 @media (max-width: 1080px) {
   .flagship-card { grid-template-columns: 1.05fr 0.95fr; }
   .flagship-copy { padding: 44px 36px; }
