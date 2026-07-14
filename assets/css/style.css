@@ -680,6 +680,18 @@ img { max-width: 100%; height: auto; display: block; }
   object-position: top;
 }
 
+.article-hero--wide img {
+  aspect-ratio: 16 / 9;
+  object-position: center;
+}
+
+.article-hero-credit {
+  margin: 7px 2px 0;
+  color: var(--color-text-muted);
+  font-size: 0.78rem;
+  text-align: right;
+}
+
 /* Article body typography */
 .article-body {
   font-size: 1.08rem;

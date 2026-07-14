@@ -12,9 +12,12 @@ layout: default
     <p class="article-subtitle">{{ page.subtitle }}</p>
     {% endif %}
     {% if page.hero_image %}
-    <div class="article-hero">
+    <div class="article-hero{% if page.hero_wide %} article-hero--wide{% endif %}">
       <img src="{{ page.hero_image | relative_url }}" alt="{{ page.title }}">
     </div>
+    {% if page.hero_credit %}
+    <p class="article-hero-credit">{{ page.hero_credit }}</p>
+    {% endif %}
     {% endif %}
   </div>
   <div class="article-body">
