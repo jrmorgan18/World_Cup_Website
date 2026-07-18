@@ -1062,6 +1062,25 @@ img { max-width: 100%; height: auto; display: block; }
   margin: 24px 0;
 }
 
+.preview-figure {
+  margin: 32px 0 38px;
+}
+
+.article-body .preview-figure img {
+  width: 100%;
+  margin: 0;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.preview-figure figcaption {
+  margin-top: 8px;
+  color: var(--color-text-muted);
+  font-size: 0.78rem;
+  line-height: 1.45;
+  text-align: right;
+}
+
 .article-body table {
   width: 100%;
   border-collapse: collapse;
