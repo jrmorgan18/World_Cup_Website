@@ -2,7 +2,9 @@
 {% assign feature_image = feature.hero_image | default: feature.thumbnail %}
 <a href="{{ feature.url | relative_url }}" class="flagship-card featured-preview-card">
   <div class="flagship-visual" aria-hidden="true">
-    <img class="featured-preview-image" src="{{ feature_image | relative_url }}" alt="">
+    <div class="flagship-panel" style="grid-column: 1 / -1;">
+      <img src="{{ feature_image | relative_url }}" alt="" style="object-position: center;">
+    </div>
     <span class="flagship-visual-label">Spain <i>/</i> Argentina</span>
   </div>
   <div class="flagship-copy">
