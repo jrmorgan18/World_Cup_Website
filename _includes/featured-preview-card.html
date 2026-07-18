@@ -1,0 +1,18 @@
+{% assign feature = include.post %}
+{% assign feature_image = feature.hero_image | default: feature.thumbnail %}
+<a href="{{ feature.url | relative_url }}" class="flagship-card featured-preview-card">
+  <div class="flagship-visual" aria-hidden="true">
+    <img class="featured-preview-image" src="{{ feature_image | relative_url }}" alt="">
+    <span class="flagship-visual-label">Spain <i>/</i> Argentina</span>
+  </div>
+  <div class="flagship-copy">
+    <div class="flagship-kicker"><span>Final Preview</span><span>July 19 &middot; 3 PM ET</span></div>
+    <h3>{{ feature.title }}</h3>
+    <p>{{ feature.subtitle }}</p>
+    <div class="flagship-meta">
+      <span>{{ feature.date | date: "%B %-d, %Y" }}</span>
+      <span>{{ feature.categories | first | capitalize }}</span>
+      <strong>Read the preview <span aria-hidden="true">&rarr;</span></strong>
+    </div>
+  </div>
+</a>
