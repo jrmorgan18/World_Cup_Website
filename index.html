@@ -10,19 +10,23 @@ title: Home
   </div>
 </section>
 
-<section class="survey-invite" aria-labelledby="survey-invite-title">
-  <div class="survey-invite-copy">
-    <span class="survey-invite-kicker">Two-minute reader survey</span>
-    <h2 id="survey-invite-title">What should come after the World Cup?</h2>
-    <p>
-      Premier League reviews? Americans Abroad? Tactical deep dives? Orioles or Ravens?
-      Tell me whether this site should continue—and what would make you keep reading.
-    </p>
-  </div>
-  <a class="survey-invite-button" href="{{ '/survey/' | relative_url }}">
-    Shape what comes next <span aria-hidden="true">→</span>
-  </a>
-</section>
+<div class="home-prompts">
+  <section class="survey-invite" aria-labelledby="survey-invite-title">
+    <div class="survey-invite-copy">
+      <span class="survey-invite-kicker">Two-minute reader survey</span>
+      <h2 id="survey-invite-title">What should come after the World Cup?</h2>
+      <p>
+        Premier League reviews? Americans Abroad? Tactical deep dives? Orioles or Ravens?
+        Tell me whether this site should continue—and what would make you keep reading.
+      </p>
+    </div>
+    <a class="survey-invite-button" href="{{ '/survey/' | relative_url }}">
+      Shape what comes next <span aria-hidden="true">→</span>
+    </a>
+  </section>
+
+  {% include donation-nudge.html placement="homepage" %}
+</div>
 
 <section class="kickoff-section" id="kickoff-section" hidden>
   <div class="kickoff-countdown" id="kickoff-countdown"></div>
@@ -48,8 +52,6 @@ title: Home
   {% include featured-preview-card.html post=latest %}
 </section>
 {% endif %}
-
-{% include donation-nudge.html placement="homepage" %}
 
 <section class="categories-section">
   <h2 class="section-heading">Explore</h2>

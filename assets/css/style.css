@@ -203,6 +203,51 @@ img { max-width: 100%; height: auto; display: block; }
   box-shadow: 0 16px 44px rgba(0, 0, 0, 0.18);
 }
 
+.home-prompts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  max-width: var(--max-width);
+  margin: 32px auto 4px;
+  padding: 0 24px;
+}
+
+.home-prompts .survey-invite,
+.home-prompts .donation-nudge {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 25px 26px;
+}
+
+.home-prompts .survey-invite {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.home-prompts .survey-invite-copy {
+  flex: 1;
+}
+
+.home-prompts .survey-invite-button {
+  margin-top: 20px;
+}
+
+.home-prompts .donation-nudge {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  gap: 20px;
+}
+
+.home-prompts .donation-nudge-action {
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.home-prompts .donation-nudge-button {
+  width: auto;
+}
+
 .survey-invite-copy { max-width: 760px; }
 
 .survey-invite-kicker,
@@ -2305,6 +2350,10 @@ body.nl-open { overflow: hidden; }
 
   .hero { padding: 48px 24px 40px; }
 
+  .home-prompts {
+    grid-template-columns: 1fr;
+  }
+
   .featured-card {
     grid-template-columns: 1fr;
   }
@@ -2383,6 +2432,10 @@ body.nl-open { overflow: hidden; }
   }
 
   .donation-nudge-button {
+    width: 100%;
+  }
+
+  .home-prompts .donation-nudge-button {
     width: 100%;
   }
 
