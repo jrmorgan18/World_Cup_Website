@@ -49,6 +49,25 @@
     return true;
   }
 
+  function joinCheckboxGroup(groupName, entryName) {
+    var fields = Array.prototype.slice.call(
+      form.querySelectorAll('[data-survey-group="' + groupName + '"]')
+    );
+    var values = [];
+
+    fields.forEach(function (field) {
+      if (field.checked) values.push(field.value);
+      field.removeAttribute("name");
+    });
+
+    var joined = document.createElement("input");
+    joined.type = "hidden";
+    joined.name = entryName;
+    joined.value = values.join(", ");
+    joined.setAttribute("data-survey-generated", "true");
+    form.appendChild(joined);
+  }
+
   form.addEventListener("click", function (event) {
     var next = event.target.closest("[data-survey-next]");
     var back = event.target.closest("[data-survey-back]");
@@ -61,11 +80,18 @@
   });
 
   form.addEventListener("submit", function (event) {
-    event.preventDefault();
-    if (!validateCurrentStep()) return;
+    if (!validateCurrentStep()) {
+      event.preventDefault();
+      return;
+    }
 
     var submit = form.querySelector('button[type="submit"]');
-    var originalLabel = submit.textContent;
+    var generated = form.querySelectorAll("[data-survey-generated]");
+    for (var i = 0; i < generated.length; i += 1) generated[i].remove();
+
+    joinCheckboxGroup("coverage", "entry.1804802992");
+    joinCheckboxGroup("formats", "entry.718833463");
+
     submit.disabled = true;
     submit.textContent = "Sending…";
     if (status) {
@@ -73,38 +99,27 @@
       status.className = "survey-status";
     }
 
-    fetch(form.action, {
-      method: "POST",
-      body: new FormData(form),
-      headers: { Accept: "application/json" }
-    })
-      .then(function (response) {
-        if (!response.ok) throw new Error("Submission failed");
+    if (typeof window.gtag === "function") {
+      window.gtag("event", "survey_complete", { survey_name: "post_world_cup_2026" });
+    }
 
-        if (typeof window.gtag === "function") {
-          window.gtag("event", "survey_complete", { survey_name: "post_world_cup_2026" });
-        }
+    try {
+      localStorage.setItem("wcg-survey-completed-v1", "1");
+    } catch (error) {}
 
-        form.innerHTML =
-          '<div class="survey-thanks" tabindex="-1">' +
-            '<span class="survey-thanks-mark" aria-hidden="true">✓</span>' +
-            '<span class="survey-step-kicker">Response received</span>' +
-            '<h2>Thank you for helping shape what comes next.</h2>' +
-            '<p>Your answers will guide whether the site continues and which stories get the most attention.</p>' +
-            '<a class="survey-button survey-button--primary" href="' + window.WC_SURVEY_HOME + '">Back to the latest coverage</a>' +
-          '</div>';
+    window.setTimeout(function () {
+      form.innerHTML =
+        '<div class="survey-thanks" tabindex="-1">' +
+          '<span class="survey-thanks-mark" aria-hidden="true">✓</span>' +
+          '<span class="survey-step-kicker">Response received</span>' +
+          '<h2>Thank you for helping shape what comes next.</h2>' +
+          '<p>Your answers will guide whether the site continues and which stories get the most attention.</p>' +
+          '<a class="survey-button survey-button--primary" href="' + window.WC_SURVEY_HOME + '">Back to the latest coverage</a>' +
+        '</div>';
 
-        var thanks = form.querySelector(".survey-thanks");
-        if (thanks) thanks.focus();
-      })
-      .catch(function () {
-        submit.disabled = false;
-        submit.textContent = originalLabel;
-        if (status) {
-          status.textContent = "Your response could not be sent. Please check your connection and try again.";
-          status.className = "survey-status is-error";
-        }
-      });
+      var thanks = form.querySelector(".survey-thanks");
+      if (thanks) thanks.focus();
+    }, 600);
   });
 
   showStep(0, false);

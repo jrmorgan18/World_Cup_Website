@@ -10,6 +10,7 @@ hero_image: /assets/images/spain-argentina-final-preview.webp
 hero_wide: true
 hero_credit: "Photo: Joan Monfort / UNICEF"
 newsletter_cta: true
+survey_popup: true
 ---
 
 In the end, it comes down to a battle of heavyweights. Two of the most prominent nations in international soccer for the past two decades. The reigning champion of Europe against the reigning champion of South America. A matchup that has never before happened in a World Cup final.

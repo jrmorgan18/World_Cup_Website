@@ -10,6 +10,7 @@ hero_image: /assets/images/argentina-england-semifinal-preview.jpg
 hero_wide: true
 hero_credit: "Photo: Carl Recine / Getty Images"
 newsletter_cta: true
+survey_popup: true
 ---
 
 Argentina and England is a game with ghosts.
