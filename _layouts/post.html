@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
+{% assign donation_start = site.donation_cta_start | date: "%s" | plus: 0 %}
+{% assign article_date = page.date | date: "%s" | plus: 0 %}
+{% assign show_article_prompts = false %}
+{% if page.donation_cta_compact or article_date >= donation_start %}
+  {% assign show_article_prompts = true %}
+{% endif %}
+<div class="article-shell{% if show_article_prompts %} article-shell--with-sidebar{% endif %}">
 <article class="article">
   <div class="article-header">
     <div class="article-meta">
@@ -24,9 +31,7 @@ layout: default
     {{ content }}
   </div>
   <div class="article-footer">
-    {% assign donation_start = site.donation_cta_start | date: "%s" | plus: 0 %}
-    {% assign article_date = page.date | date: "%s" | plus: 0 %}
-    {% if page.donation_cta_compact or article_date >= donation_start %}
+    {% if show_article_prompts %}
       {% include donation-nudge.html placement="article" %}
     {% endif %}
     {% if page.newsletter_cta %}
@@ -57,3 +62,9 @@ layout: default
     </div>
   </div>
 </article>
+{% if show_article_prompts %}
+<aside class="article-sidebar">
+  {% include article-sidebar-prompts.html placement="article_sidebar" %}
+</aside>
+{% endif %}
+</div>

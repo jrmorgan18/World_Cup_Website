@@ -1,0 +1,27 @@
+<div class="article-sidebar-prompts" aria-label="Reader actions">
+  <section class="sidebar-prompt sidebar-prompt--survey" aria-labelledby="sidebar-survey-{{ include.placement }}">
+    <span class="sidebar-prompt-kicker">Two-minute survey</span>
+    <h2 id="sidebar-survey-{{ include.placement }}">What should we cover next?</h2>
+    <p>Help shape the stories, leagues, and teams this site follows after the World Cup.</p>
+    <a class="sidebar-prompt-link" href="{{ '/survey/' | relative_url }}">
+      Take the reader survey <span aria-hidden="true">&rarr;</span>
+    </a>
+  </section>
+
+  <section class="sidebar-prompt sidebar-prompt--donation" aria-labelledby="sidebar-donation-{{ include.placement }}">
+    <span class="sidebar-prompt-kicker">Enjoying the coverage?</span>
+    <h2 id="sidebar-donation-{{ include.placement }}">Turn a good read into a little more good.</h2>
+    <p>Consider a small gift to Soccer Without Borders. Donations go directly to the charity, never to this site.</p>
+    <a
+      class="sidebar-prompt-link sidebar-prompt-link--donation"
+      href="https://secure.qgiv.com/event/p2p-allswb-playingforchange/team/1040151?utm_source=world_cup_guide&amp;utm_medium=referral&amp;utm_campaign={{ include.placement }}_donation"
+      target="_blank"
+      rel="noopener"
+      data-donation-link
+      data-donation-placement="{{ include.placement }}"
+    >
+      Make a small donation <span aria-hidden="true">&rarr;</span>
+    </a>
+    <small>Official SWB team fundraiser</small>
+  </section>
+</div>
