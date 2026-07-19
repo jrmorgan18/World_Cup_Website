@@ -4442,6 +4442,30 @@ body.modal-open { overflow: hidden; }
   color: #fff2c5;
 }
 
+.longform-body .longform-donation h2 {
+  display: block;
+  grid-template-columns: none;
+  margin: 9px 0 16px;
+  padding: 0;
+  color: #f3f1ea;
+  border: 0;
+}
+
+.longform-body .longform-donation-button,
+.longform-body .longform-donation-button:hover {
+  color: #10161f;
+  text-decoration: none;
+}
+
+.longform-body .longform-donation-links a {
+  color: #d9c88f;
+  text-decoration-color: currentColor;
+}
+
+.longform-body .longform-donation-links a:hover {
+  color: #fff2c5;
+}
+
 .longform-donation-impact {
   padding-left: 24px;
   border-left: 1px solid rgba(255, 255, 255, 0.18);

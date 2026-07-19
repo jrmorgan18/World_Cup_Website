@@ -20,6 +20,7 @@ hero_argentina: /assets/images/messi-argentina-2026.jpg
 hero_france: /assets/images/mbappe-france.jpg
 newsletter_cta: true
 donation_cta: true
+donation_cta_inline: true
 toc_items:
   - id: the-hangover
     label: The Hangover
@@ -545,6 +546,10 @@ What France did was stop trying to build it.
   <p><strong>The United States will never be Argentina.<br>But could it become France?</strong></p>
   <p>In Part II, we will look at what France proved can be built—and why America still has not built it.</p>
 </aside>
+
+{% if page.donation_cta and page.donation_cta_inline %}
+  {% include donation-cta.html %}
+{% endif %}
 
 <section class="longform-notes" id="notes">
 <h2>Notes &amp; sources</h2>

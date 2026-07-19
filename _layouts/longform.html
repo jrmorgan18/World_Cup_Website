@@ -68,7 +68,9 @@ layout: default
       </div>
 
       {% if page.donation_cta %}
-        {% include donation-cta.html %}
+        {% unless page.donation_cta_inline %}
+          {% include donation-cta.html %}
+        {% endunless %}
       {% endif %}
 
       {% if page.newsletter_cta %}
