@@ -28,6 +28,7 @@
       <a href="{{ '/categories/analysis' | relative_url }}">Analysis</a>
       <a href="{{ '/categories/betting' | relative_url }}">Betting</a>
       <a href="{{ '/categories/usmnt' | relative_url }}">USMNT</a>
+      <a href="{{ '/survey/' | relative_url }}">Reader Survey</a>
     </div>
     <div class="footer-copy">
       <p>&copy; {{ 'now' | date: "%Y" }} The World Cup Guide. All rights reserved.</p>
@@ -56,3 +57,6 @@
 </div>
 
 <script src="{{ '/assets/js/newsletter.js' | relative_url }}"></script>
+<script>
+  window.WC_SURVEY_HOME = "{{ '/' | relative_url }}";
+</script>
