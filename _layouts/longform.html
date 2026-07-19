@@ -66,6 +66,10 @@ layout: default
         {{ content }}
       </div>
 
+      {% if page.donation_cta %}
+        {% include donation-cta.html %}
+      {% endif %}
+
       {% if page.newsletter_cta %}
       <aside class="longform-newsletter">
         <span class="longform-newsletter-kicker">Follow the argument</span>
@@ -83,3 +87,6 @@ layout: default
 </article>
 
 <script src="{{ '/assets/js/longform.js' | relative_url }}"></script>
+{% if page.donation_cta %}
+<script src="{{ '/assets/js/donation.js' | relative_url }}"></script>
+{% endif %}

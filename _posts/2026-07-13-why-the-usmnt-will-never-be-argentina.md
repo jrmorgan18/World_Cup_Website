@@ -19,6 +19,7 @@ hero_us: /assets/images/pulisic-usmnt-2026.jpg
 hero_argentina: /assets/images/messi-argentina-2026.jpg
 hero_france: /assets/images/mbappe-france.jpg
 newsletter_cta: true
+donation_cta: true
 toc_items:
   - id: the-hangover
     label: The Hangover
