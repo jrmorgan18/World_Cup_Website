@@ -3,6 +3,7 @@ description: "Your essential guide to the 2026 FIFA World Cup — team profiles,
 url: "https://jrmorgan18.github.io"
 baseurl: "/World_Cup_Website"
 permalink: /:categories/:title/
+donation_cta_start: 2026-07-19
 
 # Default image for social/link previews (Open Graph / Twitter cards)
 # when a page has no hero_image or thumbnail of its own.

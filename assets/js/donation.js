@@ -7,7 +7,7 @@
 
     window.gtag("event", "donation_click", {
       charity: "Soccer Without Borders Maryland",
-      placement: "longform_essay",
+      placement: link.getAttribute("data-donation-placement") || "unknown",
       outbound_url: link.href
     });
   });

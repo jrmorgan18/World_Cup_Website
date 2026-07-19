@@ -1,0 +1,26 @@
+{% assign donation_id = "donation-nudge-" | append: include.placement %}
+<aside class="donation-nudge donation-nudge--{{ include.placement }}" aria-labelledby="{{ donation_id }}">
+  <div class="donation-nudge-copy">
+    <span class="donation-nudge-kicker">Enjoying the coverage?</span>
+    <h2 id="{{ donation_id }}">Turn a good read into a little more good.</h2>
+    <p>
+      If this site has made following the game more fun, useful, or interesting,
+      consider a small donation to Soccer Without Borders. Every gift goes
+      straight to the charity&mdash;not to this site&mdash;and adds to our shared team total.
+    </p>
+  </div>
+  <div class="donation-nudge-action">
+    <a
+      class="donation-nudge-button"
+      href="https://secure.qgiv.com/event/p2p-allswb-playingforchange/team/1040151?utm_source=world_cup_guide&amp;utm_medium=referral&amp;utm_campaign={{ include.placement }}_donation"
+      target="_blank"
+      rel="noopener"
+      data-donation-link
+      data-donation-placement="{{ include.placement }}"
+    >
+      Make a small donation <span aria-hidden="true">&rarr;</span>
+    </a>
+    <span class="donation-nudge-note">Official SWB team fundraiser</span>
+  </div>
+</aside>
+<script src="{{ '/assets/js/donation.js' | relative_url }}"></script>

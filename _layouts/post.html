@@ -24,6 +24,11 @@ layout: default
     {{ content }}
   </div>
   <div class="article-footer">
+    {% assign donation_start = site.donation_cta_start | date: "%s" | plus: 0 %}
+    {% assign article_date = page.date | date: "%s" | plus: 0 %}
+    {% if page.donation_cta_compact or article_date >= donation_start %}
+      {% include donation-nudge.html placement="article" %}
+    {% endif %}
     {% if page.newsletter_cta %}
     <aside class="post-cta" aria-labelledby="post-cta-title">
       <h3 class="post-cta-title" id="post-cta-title">Enjoyed this? Get the next one in your inbox.</h3>
