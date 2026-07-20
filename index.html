@@ -39,15 +39,15 @@ title: Home
   </div>
 </section>
 
-{% assign latest = site.posts | where: "slug", "spain-vs-argentina-world-cup-final-preview" | first %}
+{% assign latest = site.posts | where: "slug", "world-cup-final-recap-the-machine-wins" | first %}
 {% unless latest %}
 {% assign latest = site.posts | first %}
 {% endunless %}
 {% if latest %}
 <section class="featured-section">
   <div class="section-heading-row">
-    <h2 class="section-heading">World Cup Final</h2>
-    <span class="section-heading-note">Featured preview</span>
+    <h2 class="section-heading">World Cup Wrap</h2>
+    <span class="section-heading-note">Championship recap</span>
   </div>
   {% include featured-preview-card.html post=latest %}
 </section>

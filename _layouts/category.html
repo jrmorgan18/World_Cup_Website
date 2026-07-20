@@ -17,9 +17,13 @@ layout: default
     <section class="category-flagship">
       <div class="section-heading-row">
         <h2 class="section-heading">Essential Reading</h2>
-        <span class="section-heading-note">{{ featured_post.part }}</span>
+        <span class="section-heading-note">{{ featured_post.feature_kicker | default: featured_post.part }}</span>
       </div>
+      {% if featured_post.feature_card == "single" %}
+      {% include featured-preview-card.html post=featured_post %}
+      {% else %}
       {% include flagship-card.html post=featured_post %}
+      {% endif %}
     </section>
     {% endif %}
   {% endif %}

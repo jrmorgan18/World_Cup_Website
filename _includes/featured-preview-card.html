@@ -5,16 +5,19 @@
     <div class="flagship-panel" style="grid-column: 1 / -1;">
       <img src="{{ feature_image | relative_url }}" alt="" style="object-position: center;">
     </div>
-    <span class="flagship-visual-label">Spain <i>/</i> Argentina</span>
+    <span class="flagship-visual-label">{{ feature.feature_label | default: "Spain / Argentina" }}</span>
   </div>
   <div class="flagship-copy">
-    <div class="flagship-kicker"><span>Final Preview</span><span>July 19 &middot; 3 PM ET</span></div>
+    <div class="flagship-kicker">
+      <span>{{ feature.feature_kicker | default: "Final Preview" }}</span>
+      <span>{{ feature.feature_detail | default: "July 19 · 3 PM ET" }}</span>
+    </div>
     <h3>{{ feature.title }}</h3>
     <p>{{ feature.subtitle }}</p>
     <div class="flagship-meta">
       <span>{{ feature.date | date: "%B %-d, %Y" }}</span>
       <span>{{ feature.categories | first | capitalize }}</span>
-      <strong>Read the preview <span aria-hidden="true">&rarr;</span></strong>
+      <strong>{{ feature.feature_cta | default: "Read the preview" }} <span aria-hidden="true">&rarr;</span></strong>
     </div>
   </div>
 </a>
