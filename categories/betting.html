@@ -9,19 +9,114 @@ placeholder_icon: "💰"
 
 <section class="betting-tracker" aria-labelledby="betting-tracker-title">
   <div class="betting-tracker-heading">
-    <span class="betting-tracker-kicker">Daily Picks Tracker</span>
+    <span class="betting-tracker-kicker">All Picks Tracker</span>
     <h2 id="betting-tracker-title">World Cup Betting Record</h2>
+    <p>Daily picks plus all six pre-tournament futures, graded at one unit per bet.</p>
   </div>
   <dl class="betting-tracker-stats">
     <div class="betting-tracker-stat">
       <dt>Record</dt>
-      <dd>7-21-2</dd>
+      <dd>9-25-2</dd>
       <dd class="betting-tracker-detail">Win-Loss-Push</dd>
     </div>
     <div class="betting-tracker-stat betting-tracker-stat-negative">
       <dt>Total Units</dt>
-      <dd>-14.69</dd>
+      <dd>-14.99</dd>
       <dd class="betting-tracker-detail">Units Lost</dd>
     </div>
   </dl>
+</section>
+
+<section class="futures-tracker" aria-labelledby="futures-tracker-title">
+  <div class="futures-tracker-header">
+    <div>
+      <span class="betting-tracker-kicker">Pre-Tournament Futures</span>
+      <h2 id="futures-tracker-title">My Six Best Bets: Final Grades</h2>
+      <p>
+        Every future from
+        <a href="{{ '/betting/my-six-best-bets-2026-world-cup/' | relative_url }}">the initial best bets article</a>,
+        graded at one unit risked per bet.
+      </p>
+    </div>
+    <dl class="futures-tracker-summary">
+      <div>
+        <dt>Record</dt>
+        <dd>2-4</dd>
+      </div>
+      <div class="futures-summary-negative">
+        <dt>Net</dt>
+        <dd>-0.30u</dd>
+      </div>
+      <div class="futures-summary-negative">
+        <dt>ROI</dt>
+        <dd>-5.0%</dd>
+      </div>
+    </dl>
+  </div>
+
+  <div class="futures-table-wrap">
+    <table class="futures-table">
+      <caption class="sr-only">Final results for the six pre-tournament World Cup futures</caption>
+      <thead>
+        <tr>
+          <th scope="col">Future</th>
+          <th scope="col">Odds</th>
+          <th scope="col">Tournament Result</th>
+          <th scope="col">Grade</th>
+          <th scope="col">Units</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Portugal to win the World Cup</td>
+          <td>+900</td>
+          <td>Lost in Round of 16</td>
+          <td><span class="bet-grade bet-grade-loss">Loss</span></td>
+          <td class="units-negative">-1.00</td>
+        </tr>
+        <tr>
+          <td>Ecuador to reach the Round of 16</td>
+          <td>+175</td>
+          <td>Lost in Round of 32</td>
+          <td><span class="bet-grade bet-grade-loss">Loss</span></td>
+          <td class="units-negative">-1.00</td>
+        </tr>
+        <tr>
+          <td>Japan to win Group F</td>
+          <td>+300</td>
+          <td>Finished second in Group F</td>
+          <td><span class="bet-grade bet-grade-loss">Loss</span></td>
+          <td class="units-negative">-1.00</td>
+        </tr>
+        <tr>
+          <td>Colombia to reach the quarterfinals</td>
+          <td>+280</td>
+          <td>Lost in Round of 16</td>
+          <td><span class="bet-grade bet-grade-loss">Loss</span></td>
+          <td class="units-negative">-1.00</td>
+        </tr>
+        <tr>
+          <td>USA to reach the Round of 16</td>
+          <td>+125</td>
+          <td>Reached the Round of 16</td>
+          <td><span class="bet-grade bet-grade-win">Win</span></td>
+          <td class="units-positive">+1.25</td>
+        </tr>
+        <tr>
+          <td>Spain to reach the final</td>
+          <td>+245</td>
+          <td>Reached the final</td>
+          <td><span class="bet-grade bet-grade-win">Win</span></td>
+          <td class="units-positive">+2.45</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row">Futures total</th>
+          <td colspan="3">2-4 record</td>
+          <td class="units-negative">-0.30</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
 </section>
