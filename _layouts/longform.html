@@ -10,15 +10,15 @@ layout: default
     <div class="longform-hero-grid" aria-hidden="true">
       <figure class="longform-hero-panel longform-hero-us">
         <img src="{{ page.hero_us | relative_url }}" alt="">
-        <figcaption>United States</figcaption>
+        <figcaption>{{ page.hero_us_label | default: "United States" }}</figcaption>
       </figure>
       <figure class="longform-hero-panel longform-hero-argentina">
         <img src="{{ page.hero_argentina | relative_url }}" alt="">
-        <figcaption>Argentina</figcaption>
+        <figcaption>{{ page.hero_argentina_label | default: "Argentina" }}</figcaption>
       </figure>
       <figure class="longform-hero-panel longform-hero-france">
         <img src="{{ page.hero_france | relative_url }}" alt="">
-        <figcaption>France</figcaption>
+        <figcaption>{{ page.hero_france_label | default: "France" }}</figcaption>
       </figure>
     </div>
     <div class="longform-hero-shade"></div>
@@ -38,7 +38,7 @@ layout: default
         <span>{{ page.read_time }} min read</span>
       </div>
     </div>
-    <a class="longform-scroll" href="#the-hangover" aria-label="Begin reading">
+    <a class="longform-scroll" href="#{{ page.start_id | default: 'the-hangover' }}" aria-label="Begin reading">
       <span>Begin</span>
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
     </a>
@@ -54,10 +54,12 @@ layout: default
           {% endfor %}
         </ol>
         <a class="longform-notes-link" href="#notes">Notes &amp; sources</a>
-        <div class="longform-series-note">
-          <span>Coming in Part II</span>
-          <strong>What America can actually build</strong>
-        </div>
+        {% if page.series_link_url %}
+        <a class="longform-series-note" href="{{ page.series_link_url | relative_url }}">
+          <span>{{ page.series_link_kicker }}</span>
+          <strong>{{ page.series_link_title }}</strong>
+        </a>
+        {% endif %}
         {% include article-sidebar-prompts.html placement="longform_sidebar" %}
       </nav>
     </aside>
@@ -75,13 +77,13 @@ layout: default
 
       {% if page.newsletter_cta %}
       <aside class="longform-newsletter">
-        <span class="longform-newsletter-kicker">Follow the argument</span>
-        <h2>Part II is coming next.</h2>
-        <p>Subscribe for the conclusion—and for the rest of our World Cup coverage.</p>
+        <span class="longform-newsletter-kicker">{{ page.newsletter_kicker | default: "Follow the argument" }}</span>
+        <h2>{{ page.newsletter_heading | default: "Stay with the project." }}</h2>
+        <p>{{ page.newsletter_text | default: "Subscribe for future longform essays and the rest of our coverage." }}</p>
         <form class="newsletter-form" action="https://formspree.io/f/xnnvlzve" method="POST">
           <input type="email" name="email" placeholder="Your email address" required aria-label="Email address">
-          <input type="hidden" name="source" value="USMNT longform Part I">
-          <button type="submit">Get Part II</button>
+          <input type="hidden" name="source" value="{{ page.newsletter_source | default: page.title }}">
+          <button type="submit">{{ page.newsletter_button | default: "Subscribe" }}</button>
         </form>
       </aside>
       {% endif %}

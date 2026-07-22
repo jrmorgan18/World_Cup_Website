@@ -1,0 +1,44 @@
+{% assign part1 = include.part1 %}
+{% assign part2 = include.part2 %}
+{% if part1 and part2 %}
+<div class="series-feature">
+  <div class="series-feature-visual" aria-hidden="true">
+    <figure class="series-feature-image series-feature-image--one">
+      <img src="{{ part1.hero_image | default: part1.thumbnail | relative_url }}" alt="">
+      <span>Part 1 · The inheritance</span>
+    </figure>
+    <figure class="series-feature-image series-feature-image--two">
+      <img src="{{ part2.hero_image | default: part2.thumbnail | relative_url }}" alt="">
+      <span>Part 2 · The build</span>
+    </figure>
+  </div>
+
+  <div class="series-feature-copy">
+    <p class="series-feature-kicker">Two-part longform · By {{ part1.author }}</p>
+    <h3>The American Soccer Question</h3>
+    <p class="series-feature-dek">Why America cannot copy Argentina’s inherited soccer culture—and what France’s deliberate development machine reveals about the institutions the United States can build.</p>
+
+    <div class="series-feature-parts">
+      <a class="series-feature-part" href="{{ part1.url | relative_url }}">
+        <span class="series-feature-part-number">01</span>
+        <span class="series-feature-part-copy">
+          <small>Start here · {{ part1.read_time }} min</small>
+          <strong>Why the USMNT will never be Argentina</strong>
+          <em>Culture, inheritance and the limits of the usual American excuses</em>
+        </span>
+        <span class="series-feature-arrow" aria-hidden="true">→</span>
+      </a>
+
+      <a class="series-feature-part series-feature-part--current" href="{{ part2.url | relative_url }}">
+        <span class="series-feature-part-number">02</span>
+        <span class="series-feature-part-copy">
+          <small>Continue here · {{ part2.read_time }} min</small>
+          <strong>How America could maybe become France</strong>
+          <em>The missing rung, the USWNT lesson and a blueprint worth building</em>
+        </span>
+        <span class="series-feature-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+</div>
+{% endif %}

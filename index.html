@@ -39,17 +39,15 @@ title: Home
   </div>
 </section>
 
-{% assign latest = site.posts | where: "slug", "world-cup-final-recap-the-machine-wins" | first %}
-{% unless latest %}
-{% assign latest = site.posts | first %}
-{% endunless %}
-{% if latest %}
+{% assign longform_part1 = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina" | first %}
+{% assign longform_part2 = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina-part-2" | first %}
+{% if longform_part1 and longform_part2 %}
 <section class="featured-section">
   <div class="section-heading-row">
-    <h2 class="section-heading">World Cup Wrap</h2>
-    <span class="section-heading-note">Championship recap</span>
+    <h2 class="section-heading">The American Soccer Question</h2>
+    <span class="section-heading-note">Complete two-part longform</span>
   </div>
-  {% include featured-preview-card.html post=latest %}
+  {% include longform-series-feature.html part1=longform_part1 part2=longform_part2 %}
 </section>
 {% endif %}
 
@@ -84,12 +82,13 @@ title: Home
   </div>
 </section>
 
-{% assign recent_posts = site.posts | where_exp: "post", "post.url != latest.url" | slice: 0, 6 %}
-{% if recent_posts.size > 0 %}
 <section class="recent-section">
   <h2 class="section-heading">Recent Articles</h2>
   <div class="article-grid">
-    {% for post in recent_posts %}
+    {% assign recent_count = 0 %}
+    {% for post in site.posts %}
+    {% unless post.slug == longform_part1.slug or post.slug == longform_part2.slug %}
+    {% if recent_count < 6 %}
     <a href="{{ post.url | relative_url }}" class="card">
       {% if post.thumbnail %}
       <div class="card-image">
@@ -113,10 +112,12 @@ title: Home
         <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
       </div>
     </a>
+    {% assign recent_count = recent_count | plus: 1 %}
+    {% endif %}
+    {% endunless %}
     {% endfor %}
   </div>
 </section>
-{% endif %}
 
 <script>
   window.WC_MATCHES = {{ site.data.schedule.matches | jsonify }};

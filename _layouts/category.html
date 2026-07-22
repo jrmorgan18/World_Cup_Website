@@ -11,7 +11,21 @@ layout: default
 
   {{ content }}
 
-  {% if page.featured_slug %}
+  {% if page.featured_series_slugs %}
+    {% assign part1_slug = page.featured_series_slugs | first %}
+    {% assign part2_slug = page.featured_series_slugs | last %}
+    {% assign featured_part1 = site.posts | where: "slug", part1_slug | first %}
+    {% assign featured_part2 = site.posts | where: "slug", part2_slug | first %}
+    {% if featured_part1 and featured_part2 %}
+    <section class="category-flagship category-series-feature">
+      <div class="section-heading-row">
+        <h2 class="section-heading">{{ page.featured_series_heading | default: "Essential Reading" }}</h2>
+        <span class="section-heading-note">Complete two-part essay</span>
+      </div>
+      {% include longform-series-feature.html part1=featured_part1 part2=featured_part2 %}
+    </section>
+    {% endif %}
+  {% elsif page.featured_slug %}
     {% assign featured_post = site.posts | where: "slug", page.featured_slug | first %}
     {% if featured_post %}
     <section class="category-flagship">
@@ -43,7 +57,14 @@ layout: default
     {% assign cat_posts = site.posts | where_exp: "post", "post.categories contains page.category_filter" %}
     {% if cat_posts.size > 0 %}
       {% for post in cat_posts %}
-      {% unless post.slug == page.featured_slug %}
+      {% assign is_featured = false %}
+      {% if post.slug == page.featured_slug %}
+        {% assign is_featured = true %}
+      {% endif %}
+      {% if page.featured_series_slugs contains post.slug %}
+        {% assign is_featured = true %}
+      {% endif %}
+      {% unless is_featured %}
       <a href="{{ post.url | relative_url }}" class="card">
         {% if post.thumbnail %}
         <div class="card-image">

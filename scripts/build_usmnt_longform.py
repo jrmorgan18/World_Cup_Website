@@ -207,7 +207,18 @@ thumbnail: /assets/images/pulisic-usmnt-2026.jpg
 hero_us: /assets/images/pulisic-usmnt-2026.jpg
 hero_argentina: /assets/images/messi-argentina-2026.jpg
 hero_france: /assets/images/mbappe-france.jpg
+start_id: the-hangover
+series_link_url: /usmnt/why-the-usmnt-will-never-be-argentina-part-2/
+series_link_kicker: Continue with Part 2
+series_link_title: What America can actually build
+donation_cta: true
+donation_cta_inline: true
 newsletter_cta: true
+newsletter_kicker: Keep reading deeply
+newsletter_heading: The argument continues in Part 2.
+newsletter_text: Read the conclusion now, then subscribe for future longform essays and coverage.
+newsletter_button: Subscribe
+newsletter_source: USMNT longform Part 1
 toc_items:
   - id: the-hangover
     label: The Hangover
@@ -240,7 +251,8 @@ for index in range(2, 240):
   <p><strong>That is the bad news. The good news is that Argentina is not the only way to build a world power.</strong></p>
   <p>France did not inherit everything it needed. It identified the places where soccer culture already existed, built a system capable of finding the players growing inside it, and made sure poverty did not keep them outside the gates. It turned scattered talent into an assembly line.</p>
   <p><strong>The United States will never be Argentina.<br>But could it become France?</strong></p>
-  <p>In Part II, we will look at what France proved can be built—and why America still has not built it.</p>
+  <p>Part II looks at what France proved can be built—and why America still has not built it.</p>
+  <a class="longform-next-cta" href="{{ '/usmnt/why-the-usmnt-will-never-be-argentina-part-2/' | relative_url }}">Read Part II <span aria-hidden="true">→</span></a>
 </aside>"""
         )
         continue
@@ -268,6 +280,10 @@ for index in range(2, 240):
         chunks.append(text)
     if index in AFTER:
         chunks.append(AFTER[index].strip())
+
+chunks.append("""{% if page.donation_cta and page.donation_cta_inline %}
+  {% include donation-cta.html %}
+{% endif %}""")
 
 notes_html = ['<section class="longform-notes" id="notes">', '<h2>Notes &amp; sources</h2>', '<ol>']
 first_ref_suffix = {3: "a", 4: "a", 10: "a", 16: "a"}
