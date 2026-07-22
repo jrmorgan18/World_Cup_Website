@@ -523,6 +523,11 @@ We would still be living behind the wall, and the rung would still need building
 
 <h2 id="growing-into-it"><span class="longform-chapter-number">05</span><span>Growing Into It</span></h2>
 
+<figure class="longform-figure">
+  <img src="{{ '/assets/images/usmnt-longform-part2-metlife-final.jpg' | relative_url }}" alt="MetLife Stadium dressed as New York New Jersey Stadium for the 2026 World Cup" loading="lazy">
+  <figcaption><strong>The stadium at the end of the road</strong>MetLife Stadium in its 2026 World Cup configuration, one month before it hosted the final. The tournament ended here. What American soccer builds after it is the question that remains. Photo: MiracleMiles, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> / <a href="https://commons.wikimedia.org/wiki/File:MetLife_Stadium_Exterior,_2026_FIFA_World_Cup_(June_20,_2026)_(cropped).jpg" target="_blank" rel="noopener">Wikimedia Commons</a>.</figcaption>
+</figure>
+
 They played the World Cup final at MetLife Stadium last Sunday, a few hours up the road from me. My son watched because Messi was playing and the one thing he knows about soccer is that, “Messi is the goat.”
 
 He is six. He did not care much that the game was being played in our country, in a stadium built for the Jets and Giants, or that two weeks earlier the United States had been eliminated from its own tournament. He knew Messi was special, so he climbed onto the couch and watched.

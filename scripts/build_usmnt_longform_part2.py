@@ -165,6 +165,12 @@ AFTER = {
   <figcaption><strong>A field that admits everyone</strong>A hard-court mini-pitch with accessible gates creates the kind of ordinary, repeatable opportunity the market fails to deliver. Photo: Courtesy of the <a href="https://ussoccerfoundation.org/programs/safe-places-to-play/" target="_blank" rel="noopener">U.S. Soccer Foundation</a>.</figcaption>
 </figure>
 """,
+    214: """
+<figure class="longform-figure">
+  <img src="{{ '/assets/images/usmnt-longform-part2-metlife-final.jpg' | relative_url }}" alt="MetLife Stadium dressed as New York New Jersey Stadium for the 2026 World Cup" loading="lazy">
+  <figcaption><strong>The stadium at the end of the road</strong>MetLife Stadium in its 2026 World Cup configuration, one month before it hosted the final. The tournament ended here. What American soccer builds after it is the question that remains. Photo: MiracleMiles, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a> / <a href="https://commons.wikimedia.org/wiki/File:MetLife_Stadium_Exterior,_2026_FIFA_World_Cup_(June_20,_2026)_(cropped).jpg" target="_blank" rel="noopener">Wikimedia Commons</a>.</figcaption>
+</figure>
+""",
     242: """
 <figure class="longform-figure">
   <img src="{{ '/assets/images/usmnt-longform-part2-mini-pitch-community.jpg' | relative_url }}" alt="A coach lifts a young player as families celebrate around a neighborhood mini-pitch" loading="lazy">
@@ -301,6 +307,8 @@ for index in range(3, 249):
     if index in HEADINGS:
         number, anchor, title = HEADINGS[index]
         chunks.append(f'<h2 id="{anchor}"><span class="longform-chapter-number">{number}</span><span>{title}</span></h2>')
+        if index in AFTER:
+            chunks.append(AFTER[index].strip())
         continue
     if index in PULLS:
         text, light = PULLS[index]
