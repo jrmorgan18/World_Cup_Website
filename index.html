@@ -12,64 +12,49 @@ section_theme: home
     <h1>
       <span class="de-baltimore" aria-hidden="true">Baltim<span>8</span>re sports.</span>
       <span class="sr-only">Baltimore sports.</span>
-      <em>Global soccer.</em>
+      <em class="de-global-soccer" aria-hidden="true">Gl<span class="de-soccer-ball"></span>bal S<span class="de-soccer-ball"></span>cc<span class="de-soccer-ball"></span>r.</em>
+      <span class="sr-only">Global soccer.</span>
     </h1>
     <span class="de-home-rule" aria-hidden="true"></span>
     <p class="de-home-dek">Original reporting and analysis for people who want to understand the game, not just follow the score.</p>
   </div>
 </section>
 
-<nav class="de-home-desks" aria-label="Coverage desks">
-  <a href="{{ '/orioles/' | relative_url }}"><span>01</span><strong>Orioles</strong></a>
-  <a href="{{ '/soccer/' | relative_url }}"><span>02</span><strong>Soccer</strong></a>
-  <a href="{{ '/ravens/' | relative_url }}"><span>03</span><strong>Ravens</strong></a>
-</nav>
-
 {% assign sample_feature = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina-part-2" | first %}
 {% if sample_feature %}
 <section class="de-home-editorial">
-  <div class="de-home-section-label">
-    <p>Featured story</p>
-    <span>Longform</span>
-  </div>
-  <a class="de-lead-story" href="{{ sample_feature.url | relative_url }}">
-    <figure>
-      <img src="{{ sample_feature.hero_image | relative_url }}" alt="" loading="eager">
-      <span>{{ sample_feature.part }}</span>
-    </figure>
-    <div class="de-lead-story-copy">
-      <p class="de-lead-kicker">Project 2030 <i aria-hidden="true"></i> USMNT</p>
-      <h2>{{ sample_feature.title }}</h2>
-      <p class="de-lead-dek">{{ sample_feature.excerpt }}</p>
-      <p class="de-lead-meta">By {{ sample_feature.author }} <span aria-hidden="true">&middot;</span> {{ sample_feature.read_time }} minute read</p>
-      <strong>Read the feature <span aria-hidden="true">&rarr;</span></strong>
+  <div class="de-home-content-grid">
+    <div class="de-home-feature-column">
+      <div class="de-home-section-label">
+        <p>Featured story</p>
+        <span>Longform</span>
+      </div>
+      <a class="de-lead-story" href="{{ sample_feature.url | relative_url }}">
+        <figure>
+          <img src="{{ sample_feature.hero_image | relative_url }}" alt="" loading="eager">
+          <span>{{ sample_feature.part }}</span>
+        </figure>
+        <div class="de-lead-story-copy">
+          <p class="de-lead-kicker">Project 2030 <i aria-hidden="true"></i> USMNT</p>
+          <h2>{{ sample_feature.title }}</h2>
+          <p class="de-lead-dek">{{ sample_feature.excerpt }}</p>
+          <p class="de-lead-meta">By {{ sample_feature.author }} <span aria-hidden="true">&middot;</span> {{ sample_feature.read_time }} minute read</p>
+          <strong>Read the feature <span aria-hidden="true">&rarr;</span></strong>
+        </div>
+      </a>
     </div>
-  </a>
+    <aside class="de-recent-sidebar" aria-labelledby="recent-heading">
+      <div class="de-home-section-label">
+        <p id="recent-heading">Recent articles</p>
+        <span>Latest</span>
+      </div>
+      <ol class="de-recent-list">
+        <li><span class="de-recent-number">01</span><div><small class="de-recent-tag de-recent-tag--orioles">Orioles</small><h3>The five decisions that will shape Baltimore&rsquo;s next window</h3><p>Coming soon</p></div></li>
+        <li><span class="de-recent-number">02</span><div><small class="de-recent-tag de-recent-tag--ravens">Ravens</small><h3>What the Ravens need from their next offensive evolution</h3><p>Coming soon</p></div></li>
+        <li><span class="de-recent-number">03</span><div><small class="de-recent-tag de-recent-tag--soccer">Project 2030</small><h3>The first checkpoint of the new USMNT cycle</h3><p>Coming soon</p></div></li>
+        <li><span class="de-recent-number">04</span><div><small class="de-recent-tag de-recent-tag--soccer">Soccer</small><h3>Champions League tactical notebook</h3><p>Coming soon</p></div></li>
+      </ol>
+    </aside>
+  </div>
 </section>
 {% endif %}
-
-<section class="de-section de-latest de-home-latest">
-  <div class="de-section-heading">
-    <div>
-      <p class="de-kicker">The latest</p>
-      <h2>More from Dual Eights</h2>
-    </div>
-    <a class="de-text-link de-text-link--dark" href="{{ '/world-cup-2026/' | relative_url }}">Explore the archive <span aria-hidden="true">&rarr;</span></a>
-  </div>
-  <div class="de-story-grid">
-    {% for post in site.posts limit: 6 %}
-    <a class="de-story-card" href="{{ post.url | relative_url }}">
-      <div class="de-story-image{% unless post.thumbnail or post.hero_image %} de-story-image--empty{% endunless %}">
-        {% if post.thumbnail %}<img src="{{ post.thumbnail | relative_url }}" alt="" loading="lazy">
-        {% elsif post.hero_image %}<img src="{{ post.hero_image | relative_url }}" alt="" loading="lazy">
-        {% else %}<span>DE</span>{% endif %}
-      </div>
-      <div class="de-story-copy">
-        <p><span>{{ post.categories | first | replace: '-', ' ' }}</span><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time></p>
-        <h3>{{ post.title }}</h3>
-        <small>{{ post.excerpt | strip_html | truncatewords: 20 }}</small>
-      </div>
-    </a>
-    {% endfor %}
-  </div>
-</section>
