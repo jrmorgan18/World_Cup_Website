@@ -16,11 +16,11 @@ section_theme: home
         <a class="de-text-link" href="{{ '/soccer/' | relative_url }}">Enter the soccer desk <span aria-hidden="true">&rarr;</span></a>
       </div>
     </div>
-    <div class="de-hero-board" aria-label="Dual Eights coverage areas">
+    <div class="de-hero-board" aria-label="Jersey backs honoring Baltimore number eights Cal Ripken and Lamar Jackson">
       <div class="de-board-grid" aria-hidden="true">
         <span class="de-board-center"></span>
-        <span class="de-board-eight de-board-eight--one">8</span>
-        <span class="de-board-eight de-board-eight--two">8</span>
+        <span class="de-jersey de-jersey--ripken"><small>Ripken</small><strong>8</strong></span>
+        <span class="de-jersey de-jersey--jackson"><small>Jackson</small><strong>8</strong></span>
       </div>
       <div class="de-board-label de-board-label--orioles"><span>01</span><strong>Orioles</strong><small>Baseball / Baltimore</small></div>
       <div class="de-board-label de-board-label--ravens"><span>02</span><strong>Ravens</strong><small>Football / Baltimore</small></div>
@@ -97,7 +97,7 @@ section_theme: home
       <div class="de-story-image{% unless post.thumbnail or post.hero_image %} de-story-image--empty{% endunless %}">
         {% if post.thumbnail %}<img src="{{ post.thumbnail | relative_url }}" alt="" loading="lazy">
         {% elsif post.hero_image %}<img src="{{ post.hero_image | relative_url }}" alt="" loading="lazy">
-        {% else %}<span>88</span>{% endif %}
+        {% else %}<span>DE</span>{% endif %}
       </div>
       <div class="de-story-copy">
         <p><span>{{ post.categories | first | replace: '-', ' ' }}</span><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time></p>
@@ -112,5 +112,5 @@ section_theme: home
 <section class="de-manifesto">
   <p class="de-kicker">Why Dual Eights</p>
   <blockquote>&ldquo;Two advanced midfielders. Two Baltimore legends. A publication built between the lines.&rdquo;</blockquote>
-  <p>The name starts with soccer tactics and ends with two number eights who define Baltimore sporting greatness. The coverage lives in that overlap: local loyalty, global curiosity and a belief that the smartest stories are rarely the loudest ones.</p>
+  <p>The name starts with soccer tactics and ends with two number eights who define Baltimore sporting greatness: Cal Ripken and Lamar Jackson. The coverage lives in that overlap&mdash;local loyalty, global curiosity and a belief that the smartest stories are rarely the loudest ones.</p>
 </section>
