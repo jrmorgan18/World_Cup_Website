@@ -1,0 +1,25 @@
+---
+layout: concept
+title: Homepage design comparison
+permalink: /designs/
+body_class: concept-gallery
+---
+<main class="gallery-shell">
+  <header class="gallery-header">
+    <div><p>Dual Eights · Homepage study</p><h1>Five directions</h1></div>
+    <a href="{{ '/' | relative_url }}">Current homepage &rarr;</a>
+  </header>
+  <p class="gallery-intro">The content stays consistent. The logo, jersey treatment, layout and color balance change. Open any concept for a full-size view.</p>
+  <section class="gallery-grid" aria-label="Five homepage design concepts">
+    {% assign concepts = "one|The Tunnel|Jerseys dominate a black editorial masthead with a crisp DE monogram,two|Split Decision|An energetic orange-purple split with a Roman-eight shield,three|The Sporting Press|A cream newspaper-inspired page with a classic wordmark,four|Stadium Lights|A dramatic night-game treatment with a dimensional DE badge,five|Between the Lines|A tactical-grid design joining Baltimore color with soccer gold" | split: "," %}
+    {% for item in concepts %}
+      {% assign parts = item | split: "|" %}
+      <article class="gallery-card gallery-card--{{ parts[0] }}">
+        <a class="gallery-preview" href="{{ '/designs/' | append: parts[0] | append: '/' | relative_url }}" aria-label="Open {{ parts[1] }} full size">
+          <iframe src="{{ '/designs/' | append: parts[0] | append: '/' | relative_url }}" title="{{ parts[1] }} preview" tabindex="-1" loading="lazy"></iframe>
+        </a>
+        <div class="gallery-card-copy"><span>0{{ forloop.index }}</span><h2>{{ parts[1] }}</h2><p>{{ parts[2] }}</p><a href="{{ '/designs/' | append: parts[0] | append: '/' | relative_url }}">Open full design &rarr;</a></div>
+      </article>
+    {% endfor %}
+  </section>
+</main>
