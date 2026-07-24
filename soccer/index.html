@@ -1,0 +1,60 @@
+---
+layout: default
+title: Soccer
+permalink: /soccer/
+section_theme: soccer
+---
+<section class="hub-hero hub-hero--soccer">
+  <div class="hub-hero-inner">
+    <p class="de-eyebrow"><span></span> The soccer desk</p>
+    <h1>The world&rsquo;s game,<br><em>past the final whistle.</em></h1>
+    <p>Project 2030 follows the next USMNT cycle from its first decisions to the next World Cup. The rest of the desk goes deep on the Champions League, Europe&rsquo;s major leagues and the complete 2026 archive.</p>
+  </div>
+  <div class="hub-hero-stat"><strong>123</strong><span>pieces preserved from<br>World Cup 2026</span></div>
+</section>
+
+<nav class="section-subnav" aria-label="Soccer sections">
+  <a href="{{ '/soccer/project-2030/' | relative_url }}">Project 2030</a>
+  <a href="{{ '/soccer/analysis/' | relative_url }}">Analysis</a>
+  <a href="{{ '/world-cup-2026/' | relative_url }}">World Cup archive</a>
+  <a href="{{ '/categories/usmnt/' | relative_url }}">USMNT archive</a>
+</nav>
+
+<section class="hub-section">
+  <div class="de-section-heading">
+    <div><p class="de-kicker">The next cycle</p><h2>Project 2030</h2></div>
+    <p>A living record of the decisions, players and turning points that will shape the United States over the next four years.</p>
+  </div>
+  <a class="project-card" href="{{ '/soccer/project-2030/' | relative_url }}">
+    <div class="project-card-copy">
+      <span class="project-card-tag">Flagship project / 2026&ndash;2030</span>
+      <h3>Four years. One question.</h3>
+      <p>What would it take for the United States to become something more than a talented host nation? Track the checkpoints, build the player board and scout the generation coming next.</p>
+      <strong>Open Project 2030 <span aria-hidden="true">&rarr;</span></strong>
+    </div>
+    <div class="project-card-mark" aria-hidden="true"><span>20</span><b>30</b></div>
+  </a>
+</section>
+
+<section class="hub-section hub-section--tint">
+  <div class="de-section-heading">
+    <div><p class="de-kicker">Choose a lane</p><h2>Inside the soccer desk</h2></div>
+  </div>
+  <div class="hub-lane-grid">
+    <a href="{{ '/soccer/analysis/' | relative_url }}" class="hub-lane-card">
+      <span>01 / Europe</span><h3>Analysis</h3><p>Champions League and Big Five coverage built around tactics, teams and the ideas changing the game.</p><strong>Go to analysis &rarr;</strong>
+    </a>
+    <a href="{{ '/world-cup-2026/' | relative_url }}" class="hub-lane-card hub-lane-card--archive">
+      <span>02 / The archive</span><h3>World Cup 2026</h3><p>Every team profile, player countdown, preview, recap and long-form essay remains available in one permanent home.</p><strong>Explore the archive &rarr;</strong>
+    </a>
+  </div>
+</section>
+
+{% assign longform_part1 = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina" | first %}
+{% assign longform_part2 = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina-part-2" | first %}
+{% if longform_part1 and longform_part2 %}
+<section class="hub-section">
+  <div class="de-section-heading"><div><p class="de-kicker">Essential reading</p><h2>The American Soccer Question</h2></div><p>The two-part essay that leads directly into Project 2030.</p></div>
+  {% include longform-series-feature.html part1=longform_part1 part2=longform_part2 %}
+</section>
+{% endif %}

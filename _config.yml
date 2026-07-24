@@ -1,5 +1,5 @@
-title: "The World Cup Guide"
-description: "Your essential guide to the 2026 FIFA World Cup — team profiles, player spotlights, analysis, and betting insights"
+title: "Dual Eights"
+description: "An independent sports journal covering Baltimore baseball, Baltimore football, and the world’s game."
 url: "https://jrmorgan18.github.io"
 baseurl: "/World_Cup_Website"
 permalink: /:categories/:title/
@@ -9,8 +9,7 @@ donation_cta_start: 2026-07-19
 # when a page has no hero_image or thumbnail of its own.
 og_image: "/assets/images/og-default.jpg"
 
-# Chat widget — set this to the Cloudflare Worker URL after deploying worker/.
-# Leave blank or remove to hide the widget.
+# Chat widget — remains on the existing World Cup worker until the new site is approved.
 chat_worker_url: "https://world-cup-chat.jrmorgan16.workers.dev"
 
 collections_dir: ""

@@ -3,13 +3,14 @@
 <head>
   {% include head.html %}
 </head>
-<body{% if page.layout == 'longform' %} class="longform-page"{% endif %}>
+{% assign section_theme = page.section_theme | default: "soccer" %}
+<body class="theme-{{ section_theme }}{% if page.layout == 'longform' %} longform-page{% endif %}">
   {% include nav.html %}
   <main class="site-main">
     {{ content }}
   </main>
   {% include footer.html %}
-  {% include survey-prompt.html %}
+  {% if page.show_survey_prompt %}{% include survey-prompt.html %}{% endif %}
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>
 </html>

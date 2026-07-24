@@ -1,0 +1,21 @@
+---
+layout: default
+title: World Cup 2026 Archive
+permalink: /world-cup-2026/
+section_theme: soccer
+---
+<section class="archive-hero">
+  <div><p class="de-eyebrow"><span></span> The complete archive</p><h1>World Cup<br><em>2026</em></h1><p>The tournament is over. Every team profile, player countdown, bet, preview, recap and long-form essay remains exactly where readers found it.</p></div>
+  <aside><strong>123</strong><span>published pieces</span><small>March &ndash; July 2026</small></aside>
+</section>
+<section class="archive-links">
+  <a href="{{ '/categories/countdown/' | relative_url }}"><span>48</span><h2>Team countdown</h2><p>Every nation profiled and ranked before kickoff.</p></a>
+  <a href="{{ '/categories/players/' | relative_url }}"><span>36</span><h2>Player profiles</h2><p>The most interesting players entering the tournament.</p></a>
+  <a href="{{ '/categories/usmnt/' | relative_url }}"><span>17</span><h2>USMNT</h2><p>Previews, recaps and the larger American soccer question.</p></a>
+  <a href="{{ '/categories/analysis/' | relative_url }}"><span>12</span><h2>Analysis</h2><p>Tactical previews, tournament recaps and deep dives.</p></a>
+  <a href="{{ '/categories/betting/' | relative_url }}"><span>13</span><h2>Betting</h2><p>The complete card and its final accounting.</p></a>
+</section>
+<section class="archive-tools"><div><p class="de-kicker">Tournament tools</p><h2>Revisit the competition</h2></div><a href="{{ '/schedule/' | relative_url }}">Final schedule <span>&rarr;</span></a><a href="{{ '/bracket/' | relative_url }}">Tournament bracket <span>&rarr;</span></a></section>
+{% assign longform_part1 = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina" | first %}
+{% assign longform_part2 = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina-part-2" | first %}
+{% if longform_part1 and longform_part2 %}<section class="hub-section"><div class="de-section-heading"><div><p class="de-kicker">The final word</p><h2>The American Soccer Question</h2></div><p>The two-part longform that bridges the World Cup archive and Project 2030.</p></div>{% include longform-series-feature.html part1=longform_part1 part2=longform_part2 %}</section>{% endif %}

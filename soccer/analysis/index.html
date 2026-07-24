@@ -1,0 +1,23 @@
+---
+layout: default
+title: Soccer Analysis
+permalink: /soccer/analysis/
+section_theme: soccer
+---
+<section class="module-hero module-hero--analysis">
+  <p class="de-eyebrow"><span></span> Champions League / Big Five</p>
+  <h1>European analysis</h1>
+  <p>Tactics, team-building and the ideas moving through Europe&rsquo;s biggest competitions.</p>
+</section>
+<section class="analysis-shell">
+  <div class="de-section-heading"><div><p class="de-kicker">From the archive</p><h2>Latest analysis</h2></div><p>Existing World Cup and Champions League work remains here while the new European desk takes shape.</p></div>
+  <div class="de-story-grid">
+    {% assign analysis_posts = site.posts | where_exp: "post", "post.categories contains 'analysis'" %}
+    {% for post in analysis_posts %}
+    <a class="de-story-card" href="{{ post.url | relative_url }}">
+      <div class="de-story-image{% unless post.thumbnail or post.hero_image %} de-story-image--empty{% endunless %}">{% if post.thumbnail %}<img src="{{ post.thumbnail | relative_url }}" alt="" loading="lazy">{% elsif post.hero_image %}<img src="{{ post.hero_image | relative_url }}" alt="" loading="lazy">{% else %}<span>88</span>{% endif %}</div>
+      <div class="de-story-copy"><p><span>Analysis</span><time>{{ post.date | date: "%b %-d, %Y" }}</time></p><h3>{{ post.title }}</h3><small>{{ post.excerpt | strip_html | truncatewords: 20 }}</small></div>
+    </a>
+    {% endfor %}
+  </div>
+</section>

@@ -1,127 +1,116 @@
 ---
 layout: default
 title: Home
+section_theme: home
 ---
-<section class="hero">
-  <div class="hero-content">
-    <h1 class="hero-title">The World Cup Guide</h1>
-    <p class="hero-subtitle">Your essential guide to the 2026 FIFA World Cup</p>
-    <p class="hero-detail">Team profiles, player spotlights, tactical analysis, and betting insights — counting down to kickoff.</p>
+<section class="de-hero">
+  <div class="de-hero-glow de-hero-glow--orange" aria-hidden="true"></div>
+  <div class="de-hero-glow de-hero-glow--purple" aria-hidden="true"></div>
+  <div class="de-hero-inner">
+    <div class="de-hero-copy">
+      <p class="de-eyebrow"><span></span> An independent sports journal</p>
+      <h1><span>Dual</span> <em>Eights</em></h1>
+      <p class="de-hero-dek">Baltimore sports. Global football. One point of view built for the people who want to understand the game, not just follow the score.</p>
+      <div class="de-hero-actions">
+        <a class="de-button de-button--light" href="#coverage">Explore the coverage <span aria-hidden="true">&darr;</span></a>
+        <a class="de-text-link" href="{{ '/soccer/' | relative_url }}">Enter the soccer desk <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+    <div class="de-hero-board" aria-label="Dual Eights coverage areas">
+      <div class="de-board-grid" aria-hidden="true">
+        <span class="de-board-center"></span>
+        <span class="de-board-eight de-board-eight--one">8</span>
+        <span class="de-board-eight de-board-eight--two">8</span>
+      </div>
+      <div class="de-board-label de-board-label--orioles"><span>01</span><strong>Orioles</strong><small>Baseball / Baltimore</small></div>
+      <div class="de-board-label de-board-label--ravens"><span>02</span><strong>Ravens</strong><small>Football / Baltimore</small></div>
+      <div class="de-board-label de-board-label--soccer"><span>03</span><strong>Soccer</strong><small>America / The world</small></div>
+    </div>
+  </div>
+  <div class="de-hero-rail" aria-label="Coverage statement">
+    <span>Independent</span><i></i><span>Analytical</span><i></i><span>Baltimore rooted</span><i></i><span>Globally curious</span>
   </div>
 </section>
 
-<div class="home-prompts">
-  <section class="survey-invite" aria-labelledby="survey-invite-title">
-    <div class="survey-invite-copy">
-      <span class="survey-invite-kicker">Two-minute reader survey</span>
-      <h2 id="survey-invite-title">What should come after the World Cup?</h2>
-      <p>
-        Premier League reviews? Americans Abroad? Tactical deep dives? Orioles or Ravens?
-        Tell me whether this site should continue—and what would make you keep reading.
-      </p>
+<section class="de-section de-coverage" id="coverage">
+  <div class="de-section-heading">
+    <div>
+      <p class="de-kicker">The coverage</p>
+      <h2>Three games. One editorial standard.</h2>
     </div>
-    <a class="survey-invite-button" href="{{ '/survey/' | relative_url }}">
-      Shape what comes next <span aria-hidden="true">→</span>
+    <p>Original analysis, strong opinions and the context behind what happens next.</p>
+  </div>
+  <div class="de-desk-grid">
+    <a class="de-desk-card de-desk-card--orioles" href="{{ '/orioles/' | relative_url }}">
+      <span class="de-desk-number">01</span>
+      <div class="de-desk-icon" aria-hidden="true">B</div>
+      <p class="de-desk-label">Baltimore baseball</p>
+      <h3>Orioles</h3>
+      <p>Season-long perspective on the roster, the farm, the front office and life in Birdland.</p>
+      <strong>Visit the Orioles desk <span aria-hidden="true">&rarr;</span></strong>
     </a>
-  </section>
-
-  {% include donation-nudge.html placement="homepage" %}
-</div>
-
-<section class="kickoff-section" id="kickoff-section" hidden>
-  <div class="kickoff-countdown" id="kickoff-countdown"></div>
-  <div class="kickoff-matches" id="kickoff-matches">
-    <div class="kickoff-matches-head">
-      <h2 class="section-heading" id="kickoff-matches-title">Up Next</h2>
-      <a class="kickoff-all" href="{{ '/schedule' | relative_url }}">Full schedule →</a>
-    </div>
-    <div class="kickoff-list" id="kickoff-list"></div>
+    <a class="de-desk-card de-desk-card--ravens" href="{{ '/ravens/' | relative_url }}">
+      <span class="de-desk-number">02</span>
+      <div class="de-desk-icon" aria-hidden="true">F</div>
+      <p class="de-desk-label">Baltimore football</p>
+      <h3>Ravens</h3>
+      <p>Film, tactics, roster construction and the weekly questions shaping the Ravens.</p>
+      <strong>Visit the Ravens desk <span aria-hidden="true">&rarr;</span></strong>
+    </a>
+    <a class="de-desk-card de-desk-card--soccer" href="{{ '/soccer/' | relative_url }}">
+      <span class="de-desk-number">03</span>
+      <div class="de-desk-icon" aria-hidden="true">FC</div>
+      <p class="de-desk-label">The world&rsquo;s game</p>
+      <h3>Soccer</h3>
+      <p>Project 2030, European analysis and a permanent home for the complete World Cup archive.</p>
+      <strong>Visit the soccer desk <span aria-hidden="true">&rarr;</span></strong>
+    </a>
   </div>
 </section>
 
 {% assign longform_part1 = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina" | first %}
 {% assign longform_part2 = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina-part-2" | first %}
 {% if longform_part1 and longform_part2 %}
-<section class="featured-section">
-  <div class="section-heading-row">
-    <h2 class="section-heading">The American Soccer Question</h2>
-    <span class="section-heading-note">Complete two-part longform</span>
+<section class="de-section de-feature-section">
+  <div class="de-section-heading de-section-heading--light">
+    <div>
+      <p class="de-kicker">Featured longform</p>
+      <h2>The American Soccer Question</h2>
+    </div>
+    <p>The World Cup is over. The argument it exposed is only beginning.</p>
   </div>
   {% include longform-series-feature.html part1=longform_part1 part2=longform_part2 %}
 </section>
 {% endif %}
 
-<section class="categories-section">
-  <h2 class="section-heading">Explore</h2>
-  <div class="category-cards">
-    <a href="{{ '/categories/countdown' | relative_url }}" class="category-card">
-      <span class="category-card-icon">🏆</span>
-      <h3>World Cup Countdown</h3>
-      <p>48 teams profiled and ranked, counting down to #1</p>
-    </a>
-    <a href="{{ '/categories/players' | relative_url }}" class="category-card">
-      <span class="category-card-icon">⭐</span>
-      <h3>Players</h3>
-      <p>The stars and storylines to watch this summer</p>
-    </a>
-    <a href="{{ '/categories/analysis' | relative_url }}" class="category-card">
-      <span class="category-card-icon">📊</span>
-      <h3>Analysis</h3>
-      <p>Tactics, matchups, and deep dives</p>
-    </a>
-    <a href="{{ '/categories/betting' | relative_url }}" class="category-card">
-      <span class="category-card-icon">💰</span>
-      <h3>Betting</h3>
-      <p>Odds, value picks, and market analysis</p>
-    </a>
-    <a href="{{ '/categories/usmnt' | relative_url }}" class="category-card">
-      <img class="category-card-flag" src="https://flagcdn.com/w160/us.png" alt="US flag">
-      <h3>USMNT</h3>
-      <p>Everything about the US Men's National Team</p>
-    </a>
+<section class="de-section de-latest">
+  <div class="de-section-heading">
+    <div>
+      <p class="de-kicker">From the archive</p>
+      <h2>Latest writing</h2>
+    </div>
+    <a class="de-text-link de-text-link--dark" href="{{ '/world-cup-2026/' | relative_url }}">Explore World Cup 2026 <span aria-hidden="true">&rarr;</span></a>
   </div>
-</section>
-
-<section class="recent-section">
-  <h2 class="section-heading">Recent Articles</h2>
-  <div class="article-grid">
-    {% assign recent_count = 0 %}
-    {% for post in site.posts %}
-    {% unless post.slug == longform_part1.slug or post.slug == longform_part2.slug %}
-    {% if recent_count < 6 %}
-    <a href="{{ post.url | relative_url }}" class="card">
-      {% if post.thumbnail %}
-      <div class="card-image">
-        <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" loading="lazy">
+  <div class="de-story-grid">
+    {% for post in site.posts limit: 6 %}
+    <a class="de-story-card" href="{{ post.url | relative_url }}">
+      <div class="de-story-image{% unless post.thumbnail or post.hero_image %} de-story-image--empty{% endunless %}">
+        {% if post.thumbnail %}<img src="{{ post.thumbnail | relative_url }}" alt="" loading="lazy">
+        {% elsif post.hero_image %}<img src="{{ post.hero_image | relative_url }}" alt="" loading="lazy">
+        {% else %}<span>88</span>{% endif %}
       </div>
-      {% elsif post.country_code %}
-      <div class="card-image card-image-placeholder">
-        <img class="card-flag" src="https://flagcdn.com/w320/{{ post.country_code }}.png" alt="flag" loading="lazy">
-      </div>
-      {% else %}
-      <div class="card-image card-image-placeholder">
-        <span class="card-icon">⚽</span>
-      </div>
-      {% endif %}
-      <div class="card-body">
-        <div class="article-meta">
-          <span class="article-category">{{ post.categories | first | replace: "-", " " | capitalize }}</span>
-          <time class="card-date">{{ post.date | date: "%B %-d, %Y" }}</time>
-        </div>
-        <h3 class="card-title">{{ post.title }}</h3>
-        <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+      <div class="de-story-copy">
+        <p><span>{{ post.categories | first | replace: '-', ' ' }}</span><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time></p>
+        <h3>{{ post.title }}</h3>
+        <small>{{ post.excerpt | strip_html | truncatewords: 20 }}</small>
       </div>
     </a>
-    {% assign recent_count = recent_count | plus: 1 %}
-    {% endif %}
-    {% endunless %}
     {% endfor %}
   </div>
 </section>
 
-<script>
-  window.WC_MATCHES = {{ site.data.schedule.matches | jsonify }};
-  window.WC_TEAMS = {{ site.data.teams | jsonify }};
-  window.WC_BASE = "{{ site.baseurl }}";
-</script>
-<script src="{{ '/assets/js/home-countdown.js' | relative_url }}"></script>
+<section class="de-manifesto">
+  <p class="de-kicker">Why Dual Eights</p>
+  <blockquote>&ldquo;Two advanced midfielders. Two Baltimore legends. A publication built between the lines.&rdquo;</blockquote>
+  <p>The name starts with soccer tactics and ends with two number eights who define Baltimore sporting greatness. The coverage lives in that overlap: local loyalty, global curiosity and a belief that the smartest stories are rarely the loudest ones.</p>
+</section>
