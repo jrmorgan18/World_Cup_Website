@@ -142,9 +142,7 @@ body { overflow-x: hidden; }
 .de-home-hero h1>span,.de-home-hero h1>em { display:block; font-style:normal; }
 .de-home-hero h1>em { margin-top:8px; color:transparent; font-size:.62em; letter-spacing:-.5px; -webkit-text-stroke:1px rgba(255,255,255,.9); }
 .de-baltimore>span { color:transparent; background:linear-gradient(90deg,var(--de-orange) 0 47%,var(--de-purple-light) 53% 100%); background-clip:text; -webkit-background-clip:text; -webkit-text-stroke:0; }
-.de-soccer-ball { position:relative; width:.72em; aspect-ratio:1; margin:0 .035em; display:inline-block!important; vertical-align:-.07em; overflow:hidden; border:1px solid rgba(255,255,255,.9); border-radius:50%; background:#f4f2ec; box-shadow:inset 0 0 0 1px rgba(10,10,13,.2),0 0 10px rgba(255,255,255,.08); -webkit-text-stroke:0; }
-.de-soccer-ball::before { content:''; position:absolute; z-index:2; left:50%; top:50%; width:31%; aspect-ratio:1; background:#111116; clip-path:polygon(50% 0,98% 35%,79% 93%,21% 93%,2% 35%); transform:translate(-50%,-50%); }
-.de-soccer-ball::after { content:''; position:absolute; inset:-8%; opacity:.78; background:conic-gradient(from -18deg,transparent 0 7%,#111116 7% 11%,transparent 11% 27%,#111116 27% 31%,transparent 31% 47%,#111116 47% 51%,transparent 51% 67%,#111116 67% 71%,transparent 71% 87%,#111116 87% 91%,transparent 91% 100%); }
+.de-soccer-separator { width:.8em; height:.8em; margin:0 .14em; display:inline-block; object-fit:contain; vertical-align:-.13em; filter:drop-shadow(0 2px 4px rgba(0,0,0,.55)); }
 .de-home-rule { display:block; width:100px; height:3px; margin:18px auto 15px; background:linear-gradient(90deg,var(--de-orange) 0 50%,var(--de-purple) 50%); }
 .de-home-dek { max-width:500px; margin:auto; color:#aaa7af; font-family:'Newsreader',serif; font-size:1rem; line-height:1.4; }
 .de-home-editorial { max-width:var(--de-wide); margin:0 auto; padding:58px 32px 82px; }
