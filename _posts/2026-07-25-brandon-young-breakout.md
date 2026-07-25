@@ -115,6 +115,6 @@ If Young makes most of his remaining turns and pitches at that level, his final 
 
 Workload could become another consideration. Young threw 111 total innings in 2024 and approximately 91 between the majors and minors last season. He is already at 108 combined innings this year, including his brief time at Norfolk. That does not guarantee a shutdown, but it gives the Orioles reason to monitor him rather than assuming he will make every remaining start without interruption.
 
-The bottom line is this that Young’s breakout is real, but the ERA has gotten ahead of the improvement. He has rebuilt his arsenal well enough to turn last season’s barrels into this season’s near-misses. That makes him a legitimate starter.
+The bottom line is that Young’s breakout is real, but the ERA has gotten ahead of the improvement. He has rebuilt his arsenal well enough to turn last season’s barrels into this season’s near-misses. That makes him a legitimate starter.
 
 This season may ultimately be a lost cause, but Young proving he can be at least a back of the rotation starter is a positive outcome either way. With Bradish and Baz signed long term, Young can now potentially pair with Kremer to solidify the back end of the rotation going forward. Now if they can just add a true ace (or two), they may be in business.
