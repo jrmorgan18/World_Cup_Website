@@ -329,6 +329,17 @@ body { overflow-x: hidden; }
 .archive-placeholder h3 { margin:8px 0 12px; font-family:var(--font-display); font-size:2.5rem; text-transform:uppercase; }
 .archive-placeholder p { color:#99969e; }
 .archive-placeholder > small { padding:10px 13px; border:1px solid rgba(255,255,255,.14); color:var(--club-accent-light); font-family:var(--font-display); font-size:.62rem; letter-spacing:1px; text-transform:uppercase; }
+.club-feature-teaser { position:relative; min-height:390px; display:grid; grid-template-columns:minmax(0,1fr) 230px; overflow:hidden; border:1px solid rgba(255,255,255,.15); background:radial-gradient(circle at 72% 25%,rgba(111,63,197,.18),transparent 29%),linear-gradient(140deg,#15121a,#09090b); }
+.club-feature-teaser::before { content:''; position:absolute; left:0; top:0; bottom:0; width:5px; background:var(--club-accent); }
+.club-feature-teaser-copy { position:relative; z-index:2; max-width:940px; padding:48px 54px; align-self:center; }
+.club-feature-teaser-copy>p:first-child { color:var(--club-accent-light); font-family:var(--font-display); font-size:.68rem; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; }
+.club-feature-teaser-copy>p:first-child i { display:inline-block; width:4px; height:4px; margin:0 8px 2px; border-radius:50%; background:#fff; }
+.club-feature-teaser h3 { margin:14px 0 20px; color:#fff; font-family:'Newsreader',serif; font-size:clamp(2.5rem,4.6vw,4.8rem); font-weight:500; line-height:.96; letter-spacing:-1.5px; }
+.club-feature-teaser-copy>p:nth-of-type(2) { max-width:720px; color:#aaa6b0; font-size:1.02rem; line-height:1.55; }
+.club-feature-teaser-copy>span { display:inline-block; margin-top:26px; color:#d4d0d8; font-family:var(--font-display); font-size:.65rem; letter-spacing:1.1px; text-transform:uppercase; }
+.club-feature-teaser-mark { position:relative; z-index:2; padding:34px; display:flex; flex-direction:column; align-items:center; justify-content:center; background:linear-gradient(160deg,var(--de-purple),#2a153e); font-family:var(--font-display); text-transform:uppercase; }
+.club-feature-teaser-mark small,.club-feature-teaser-mark span { font-size:.68rem; letter-spacing:2px; }
+.club-feature-teaser-mark strong { color:#fff; font-size:8rem; line-height:.9; }
 
 /* World Cup archive */
 .archive-hero { min-height:520px; padding:100px max(32px,calc((100vw - var(--de-wide))/2 + 32px)); display:flex; justify-content:space-between; align-items:end; gap:60px; background:radial-gradient(circle at 75% 20%,rgba(212,168,67,.18),transparent 32%),#0a101b; }
@@ -425,6 +436,10 @@ body { overflow-x: hidden; }
   .roster-preview { overflow-x:auto; }
   .roster-row { min-width:560px; }
   .archive-placeholder { align-items:flex-start; flex-direction:column; gap:30px; padding:32px; }
+  .club-feature-teaser { grid-template-columns:1fr; }
+  .club-feature-teaser-copy { padding:40px 34px; }
+  .club-feature-teaser-mark { min-height:150px; flex-direction:row; gap:16px; }
+  .club-feature-teaser-mark strong { font-size:5rem; }
   .archive-links { grid-template-columns:1fr; padding:65px 20px; }
   .archive-links a { min-height:220px; }
   .archive-links h2 { margin-top:35px; }
@@ -455,6 +470,8 @@ body { overflow-x: hidden; }
   .club-hero { min-height:300px; padding:42px 20px; }
   .club-hero h1 { font-size:3.25rem; }
   .club-hero-copy > p:last-child { font-size:1.02rem; }
+  .club-feature-teaser-copy { padding:32px 28px; }
+  .club-feature-teaser h3 { font-size:2.55rem; }
   .project-hero h1 { font-size:4.2rem; }
   .project-hero-years { display:none; }
   .scouting-board { padding:32px; }
