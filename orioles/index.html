@@ -8,7 +8,46 @@ section_theme: orioles
   <div class="club-hero-ghost" aria-hidden="true">B</div>
   <div class="club-hero-copy"><p class="de-eyebrow"><span></span> The Orioles desk</p><h1>Birdland,<br><em>from every angle.</em></h1><p>Independent analysis of the roster, the farm, the front office and the long summer in Baltimore.</p></div>
 </section>
+
+{% assign brandon_feature = site.posts | where: "orioles_feature", true | first %}
+{% if brandon_feature %}
 <section class="club-section">
-  <div class="de-section-heading de-section-heading--light"><div><p class="de-kicker">The foundation</p><h2>2026 Orioles archive</h2></div><p>The complete collection of 2026 pieces will be catalogued here before the Dual Eights launch.</p></div>
-  <div class="archive-placeholder archive-placeholder--orioles"><div><span>2026</span><h3>The Orioles file</h3><p>Articles are being gathered and prepared for migration. Existing work will be preserved with original publication dates and permanent links wherever possible.</p></div><small>Archive assembly in progress</small></div>
+  <div class="de-section-heading de-section-heading--light"><div><p class="de-kicker">Featured analysis</p><h2>The breakout, examined</h2></div></div>
+  <a class="orioles-feature" href="{{ brandon_feature.url | relative_url }}">
+    <div class="orioles-feature-copy">
+      <p>Pitching analysis <i aria-hidden="true"></i> July 25, 2026</p>
+      <h3>{{ brandon_feature.title }}</h3>
+      <p>{{ brandon_feature.excerpt }}</p>
+      <strong>Read the full analysis <span aria-hidden="true">&rarr;</span></strong>
+    </div>
+    <div class="orioles-feature-data" aria-label="Brandon Young season snapshot">
+      <span><small>ERA</small><strong>3.25</strong></span>
+      <span><small>xERA</small><strong>4.22</strong></span>
+      <span><small>Starts</small><strong>16</strong></span>
+      <p>The results are real. The underlying story is more complicated.</p>
+    </div>
+  </a>
+</section>
+{% endif %}
+
+<section class="club-section orioles-archive-section">
+  <div class="de-section-heading de-section-heading--light">
+    <div><p class="de-kicker">From the notebook</p><h2>2026 Orioles archive</h2></div>
+    <p>Every completed weekly recap from the 2026 season, preserved in chronological order.</p>
+  </div>
+  <div class="orioles-archive-grid">
+    {% for post in site.posts %}
+      {% if post.categories contains "orioles" and post.orioles_feature != true %}
+      <a class="orioles-archive-card" href="{{ post.url | relative_url }}">
+        <div>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d" }}</time>
+          <span>{{ post.series | default: "Orioles analysis" }}</span>
+        </div>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+        <strong>Read article <span aria-hidden="true">&rarr;</span></strong>
+      </a>
+      {% endif %}
+    {% endfor %}
+  </div>
 </section>

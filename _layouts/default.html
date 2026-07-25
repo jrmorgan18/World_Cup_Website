@@ -4,12 +4,12 @@
   {% include head.html %}
 </head>
 {% assign section_theme = page.section_theme | default: "soccer" %}
-<body class="theme-{{ section_theme }}{% if page.layout == 'longform' %} longform-page{% endif %}">
-  {% include nav.html %}
+<body{% if site.site_mode != "legacy" %} class="theme-{{ section_theme }}{% if page.layout == 'longform' %} longform-page{% endif %}"{% elsif page.layout == 'longform' %} class="longform-page"{% endif %}>
+  {% if site.site_mode == "legacy" %}{% include nav-legacy.html %}{% else %}{% include nav.html %}{% endif %}
   <main class="site-main">
     {{ content }}
   </main>
-  {% include footer.html %}
+  {% if site.site_mode == "legacy" %}{% include footer-legacy.html %}{% else %}{% include footer.html %}{% endif %}
   {% if page.show_survey_prompt %}{% include survey-prompt.html %}{% endif %}
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 </body>

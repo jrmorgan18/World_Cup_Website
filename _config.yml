@@ -1,4 +1,6 @@
 title: "Dual Eights"
+# Emergency presentation rollback: change this to "legacy" and rebuild.
+site_mode: dual_eights
 description: "An independent sports journal covering Baltimore baseball, Baltimore football, and the world’s game."
 url: "https://jrmorgan18.github.io"
 baseurl: "/World_Cup_Website"
