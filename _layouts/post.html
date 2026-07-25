@@ -27,7 +27,7 @@ layout: default
       <img src="{{ page.hero_image | relative_url }}" alt="{{ page.title }}">
     </div>
     {% if page.hero_credit %}
-    <p class="article-hero-credit">{{ page.hero_credit }}</p>
+    <p class="article-hero-credit">{% if page.hero_credit_url %}<a href="{{ page.hero_credit_url }}" target="_blank" rel="noopener">{{ page.hero_credit }}</a>{% else %}{{ page.hero_credit }}{% endif %}</p>
     {% endif %}
     {% endif %}
   </div>

@@ -2,11 +2,17 @@
   <p class="article-stat-kicker">By the numbers</p>
   <h2 id="{{ include.card_id }}">{{ include.stats.title }}</h2>
   <table>
+    {% if include.stats.headers %}
+    <thead><tr><th scope="col">Metric</th>{% for header in include.stats.headers %}<th scope="col">{{ header }}</th>{% endfor %}</tr></thead>
+    {% endif %}
     <tbody>
       {% for stat in include.stats.rows %}
-      <tr><th scope="row">{{ stat.name }}</th><td>{{ stat.value }}</td></tr>
+      <tr>
+        <th scope="row">{{ stat.name }}</th>
+        {% if stat.values %}{% for value in stat.values %}<td>{{ value }}</td>{% endfor %}{% else %}<td>{{ stat.value }}</td>{% endif %}
+      </tr>
       {% endfor %}
     </tbody>
   </table>
-  {% if include.stats.note %}<p class="article-stat-note">{{ include.stats.note }}</p>{% endif %}
+  {% if include.stats.note %}<p class="article-stat-note">{{ include.stats.note }}{% if include.stats.source_url %}<a href="{{ include.stats.source_url }}" target="_blank" rel="noopener">{{ include.stats.source_label | default: "Source" }} ↗</a>{% endif %}</p>{% endif %}
 </section>

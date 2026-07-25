@@ -7,11 +7,12 @@ section_theme: orioles
 permalink: /orioles/brandon-young-breakout/
 author: "Randy Morgan"
 excerpt: "Brandon Young’s improvement is real—but the ERA still overstates it. A closer look at the pitch changes behind his breakout and what Baltimore can expect next."
-hero_image: "/assets/images/brandon-young-editorial-hero.webp"
+hero_image: "https://img.mlbstatic.com/mlb-images/image/upload/t_2x1/t_w1536/mlb/axrx1rdj9xkzyspakzeu.jpg"
 hero_wide: true
-hero_credit: "Original editorial illustration created for Dual Eights."
+hero_credit: "Photo: MLB.com — Brandon Young at Houston, July 19, 2026."
+hero_credit_url: "https://www.mlb.com/news/brandon-young-7-solid-innings-orioles-extend-win-streak-7-games"
 suppress_article_prompts: true
-article_stats: { title: "Season snapshot", note: "Through July 19, 2026", rows: [{ name: "Record", value: "8–2" }, { name: "Starts", value: "16" }, { name: "Innings", value: "91⅓" }, { name: "ERA", value: "3.25" }, { name: "xERA", value: "4.22" }, { name: "FIP", value: "3.85" }, { name: "WHIP", value: "1.31" }, { name: "Strikeouts", value: "74" }] }
+article_stats: { title: "2025 vs. 2026", headers: ["2025", "2026"], note: "Statistics through July 19, 2026", source_label: "MLB / Baseball Savant", source_url: "https://baseballsavant.mlb.com/savant-player/brandon-young-687064", rows: [{ name: "Record", values: ["1–7", "8–2"] }, { name: "ERA", values: ["6.24", "3.25"] }, { name: "xERA", values: ["4.27", "4.22"] }, { name: "xFIP", values: ["4.52", "4.53"] }, { name: "WHIP", values: ["1.54", "1.31"] }, { name: "K%", values: ["18.4", "19.0"] }, { name: "BB%", values: ["8.6", "8.2"] }, { name: "Barrel%", values: ["10.2", "6.1"] }, { name: "Slider use", values: ["8.9", "14.5"] }, { name: "Slider whiff%", values: ["19.4", "43.0"] }, { name: "Chase%", values: ["27.8", "34.8"] }] }
 orioles_feature: true
 source_docx: "articles/Orioles/Brandon Young’s Breakout.docx"
 generated_by: "scripts/import_orioles_articles.py"
