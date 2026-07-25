@@ -313,7 +313,7 @@ body { overflow-x: hidden; }
 .club-hero--orioles h1 { font-size:clamp(2.8rem,4.4vw,4.25rem); }
 .club-hero--orioles .club-hero-ghost { font-size:12.5rem; }
 .club-hero--orioles .club-hero-copy>p:last-child { margin-top:14px; font-size:1.02rem; }
-.club-section--orioles-feature { padding-top:64px; }
+.club-section--orioles-feature { padding-top:48px; }
 .club-hero--ravens { background:radial-gradient(circle at 76% 25%,rgba(111,63,197,.34),transparent 32%),linear-gradient(120deg,#120d19,#080809 65%); }
 .club-hero::before { content:''; position:absolute; inset:0; opacity:.13; background-image:linear-gradient(90deg,transparent 49.8%,rgba(255,255,255,.25) 50%,transparent 50.2%),linear-gradient(rgba(255,255,255,.09) 1px,transparent 1px); background-size:100% 100%,100% 62px; }
 .club-hero-copy { position:relative; z-index:2; max-width:800px; }
@@ -489,7 +489,7 @@ body { overflow-x: hidden; }
   .club-hero--orioles { min-height:220px; padding-top:28px; padding-bottom:28px; }
   .club-hero h1 { font-size:3.8rem; }
   .club-hero--orioles h1 { font-size:2.9rem; }
-  .club-section--orioles-feature { padding-top:48px; }
+  .club-section--orioles-feature { padding-top:36px; }
   .club-hero-ghost { right:-1%; font-size:15rem; }
   .hub-hero-stat,.archive-hero aside { flex-basis:auto; width:100%; }
   .section-subnav { padding:0 20px; gap:20px; overflow-x:auto; white-space:nowrap; }
