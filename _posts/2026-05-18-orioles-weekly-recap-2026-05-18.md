@@ -3,10 +3,12 @@ layout: post
 title: "Orioles Weekly Recap: May 18, 2026"
 date: 2026-05-18 08:00:00 -0400
 categories: [orioles]
+section_theme: orioles
 permalink: /orioles/weekly-recap-2026-05-18/
 author: "Randy Morgan"
 excerpt: "Once again the Orioles teased fans with a promising start to the week only to regress back to their mediocre form in the weekend series. The O’s clawed back some ground in the AL East winning two out of three from the Yankees in Camden…"
 series: "Orioles Weekly Recap"
+suppress_article_prompts: true
 source_docx: "articles/Orioles/O_s Weekly Recap 5_18_26.docx"
 generated_by: "scripts/import_orioles_articles.py"
 ---

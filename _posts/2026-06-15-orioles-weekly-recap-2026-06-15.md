@@ -3,10 +3,12 @@ layout: post
 title: "Orioles Weekly Recap: June 15, 2026"
 date: 2026-06-15 08:00:00 -0400
 categories: [orioles]
+section_theme: orioles
 permalink: /orioles/weekly-recap-2026-06-15/
 author: "Randy Morgan"
 excerpt: "The Orioles continued to be mired in mediocrity with a seven-game homestand resulting in a losing week. The O’s dug an early hole against the AL West-leading Mariners, dropping the first two before battling back to salvage a split. The…"
 series: "Orioles Weekly Recap"
+suppress_article_prompts: true
 source_docx: "articles/Orioles/O_s Weekly Recap 6_15_26.docx"
 generated_by: "scripts/import_orioles_articles.py"
 ---

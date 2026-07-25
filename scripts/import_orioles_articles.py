@@ -199,9 +199,26 @@ def import_brandon() -> Path:
             ("title", yaml_quote(title)),
             ("date", "2026-07-25 08:00:00 -0400"),
             ("categories", "[orioles]"),
+            ("section_theme", "orioles"),
             ("permalink", f"/orioles/{BRANDON_SLUG}/"),
             ("author", yaml_quote("Randy Morgan")),
             ("excerpt", yaml_quote(excerpt)),
+            ("hero_image", yaml_quote("/assets/images/brandon-young-editorial-hero.webp")),
+            ("hero_wide", "true"),
+            ("hero_credit", yaml_quote("Original editorial illustration created for Dual Eights.")),
+            ("suppress_article_prompts", "true"),
+            (
+                "article_stats",
+                '{ title: "Season snapshot", note: "Through July 19, 2026", rows: ['
+                '{ name: "Record", value: "8–2" }, '
+                '{ name: "Starts", value: "16" }, '
+                '{ name: "Innings", value: "91⅓" }, '
+                '{ name: "ERA", value: "3.25" }, '
+                '{ name: "xERA", value: "4.22" }, '
+                '{ name: "FIP", value: "3.85" }, '
+                '{ name: "WHIP", value: "1.31" }, '
+                '{ name: "Strikeouts", value: "74" }] }',
+            ),
             ("orioles_feature", "true"),
             ("source_docx", yaml_quote(f"articles/Orioles/{BRANDON_SOURCE}")),
             ("generated_by", yaml_quote("scripts/import_orioles_articles.py")),
@@ -224,10 +241,12 @@ def import_weekly(source_name: str, publication_date: date) -> Path:
             ("title", yaml_quote(title)),
             ("date", f"{publication_date.isoformat()} 08:00:00 -0400"),
             ("categories", "[orioles]"),
+            ("section_theme", "orioles"),
             ("permalink", f"/orioles/{slug}/"),
             ("author", yaml_quote("Randy Morgan")),
             ("excerpt", yaml_quote(excerpt)),
             ("series", yaml_quote("Orioles Weekly Recap")),
+            ("suppress_article_prompts", "true"),
             ("source_docx", yaml_quote(f"articles/Orioles/{source_name}")),
             ("generated_by", yaml_quote("scripts/import_orioles_articles.py")),
         ]

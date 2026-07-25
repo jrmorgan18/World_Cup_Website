@@ -3,10 +3,12 @@ layout: post
 title: "Orioles Weekly Recap: May 11, 2026"
 date: 2026-05-11 08:00:00 -0400
 categories: [orioles]
+section_theme: orioles
 permalink: /orioles/weekly-recap-2026-05-11/
 author: "Randy Morgan"
 excerpt: "The Orioles once again had a promising start to the week before floundering in a three game losing streak and managing to tread water with a sweep-avoiding Sunday win. The mediocre week dropped them further behind the first place Yankees…"
 series: "Orioles Weekly Recap"
+suppress_article_prompts: true
 source_docx: "articles/Orioles/O_s Weekly Recap 5_11_26.docx"
 generated_by: "scripts/import_orioles_articles.py"
 ---

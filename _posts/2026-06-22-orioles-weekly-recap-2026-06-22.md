@@ -3,10 +3,12 @@ layout: post
 title: "Orioles Weekly Recap: June 22, 2026"
 date: 2026-06-22 08:00:00 -0400
 categories: [orioles]
+section_theme: orioles
 permalink: /orioles/weekly-recap-2026-06-22/
 author: "Randy Morgan"
 excerpt: "The Orioles treaded water once again this week. At least this time it was against a division leader and the best team in baseball. The Birds spent the week on the West Coast for the first two legs of a nine-game trip, dropping two of…"
 series: "Orioles Weekly Recap"
+suppress_article_prompts: true
 source_docx: "articles/Orioles/O_s Weekly Recap 6_22_26.docx"
 generated_by: "scripts/import_orioles_articles.py"
 ---

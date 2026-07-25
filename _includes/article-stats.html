@@ -1,0 +1,12 @@
+<section class="article-stat-card{% if include.class %} {{ include.class }}{% endif %}" aria-labelledby="{{ include.card_id }}">
+  <p class="article-stat-kicker">By the numbers</p>
+  <h2 id="{{ include.card_id }}">{{ include.stats.title }}</h2>
+  <table>
+    <tbody>
+      {% for stat in include.stats.rows %}
+      <tr><th scope="row">{{ stat.name }}</th><td>{{ stat.value }}</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% if include.stats.note %}<p class="article-stat-note">{{ include.stats.note }}</p>{% endif %}
+</section>

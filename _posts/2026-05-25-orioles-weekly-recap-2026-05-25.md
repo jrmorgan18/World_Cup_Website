@@ -3,10 +3,12 @@ layout: post
 title: "Orioles Weekly Recap: May 25, 2026"
 date: 2026-05-25 08:00:00 -0400
 categories: [orioles]
+section_theme: orioles
 permalink: /orioles/weekly-recap-2026-05-25/
 author: "Randy Morgan"
 excerpt: "The Orioles slipped further out of contention with another mediocre week. Once again the Birds were dominated by a division rival, prompting questions about the entire organizational philosophy. They did welcome back Jackson Holliday, who…"
 series: "Orioles Weekly Recap"
+suppress_article_prompts: true
 source_docx: "articles/Orioles/O_s Weekly Recap 5_25_26.docx"
 generated_by: "scripts/import_orioles_articles.py"
 ---

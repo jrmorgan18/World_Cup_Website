@@ -3,10 +3,12 @@ layout: post
 title: "Orioles Weekly Recap: July 13, 2026"
 date: 2026-07-13 08:00:00 -0400
 categories: [orioles]
+section_theme: orioles
 permalink: /orioles/weekly-recap-2026-07-13/
 author: "Randy Morgan"
 excerpt: "The Orioles entered the All-Star break with some positive momentum, finally doing the one thing they had failed to do seven times already this season, winning four games in a row. It took a three-game sweep of the last-place Royals to get…"
 series: "Orioles Weekly Recap"
+suppress_article_prompts: true
 source_docx: "articles/Orioles/O_s Weekly Recap 7_13_26.docx"
 generated_by: "scripts/import_orioles_articles.py"
 ---

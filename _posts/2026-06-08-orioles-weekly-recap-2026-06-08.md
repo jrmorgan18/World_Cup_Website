@@ -3,10 +3,12 @@ layout: post
 title: "Orioles Weekly Recap: June 8, 2026"
 date: 2026-06-08 08:00:00 -0400
 categories: [orioles]
+section_theme: orioles
 permalink: /orioles/weekly-recap-2026-06-08/
 author: "Randy Morgan"
 excerpt: "The Orioles looked to be carrying the momentum over from their 5-2 record the previous week, taking two of three from Boston in Fenway and then blowing out the Blue Jays to open the weekend series. Unfortunately just as the O’s reached…"
 series: "Orioles Weekly Recap"
+suppress_article_prompts: true
 source_docx: "articles/Orioles/O_s Weekly Recap 6_8_26.docx"
 generated_by: "scripts/import_orioles_articles.py"
 ---

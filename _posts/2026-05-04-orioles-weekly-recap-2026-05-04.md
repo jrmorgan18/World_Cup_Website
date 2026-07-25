@@ -3,10 +3,12 @@ layout: post
 title: "Orioles Weekly Recap: May 4, 2026"
 date: 2026-05-04 08:00:00 -0400
 categories: [orioles]
+section_theme: orioles
 permalink: /orioles/weekly-recap-2026-05-04/
 author: "Randy Morgan"
 excerpt: "This was yet another week where the Orioles teased fans with some promise only to whipsaw back down worse than where they started, continuing the trend of one step forward, two steps back. The Birds welcomed the struggling Astros to…"
 series: "Orioles Weekly Recap"
+suppress_article_prompts: true
 source_docx: "articles/Orioles/O_s Weekly Recap 5_4_26.docx"
 generated_by: "scripts/import_orioles_articles.py"
 ---

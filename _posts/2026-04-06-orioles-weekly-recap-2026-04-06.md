@@ -3,10 +3,12 @@ layout: post
 title: "Orioles Weekly Recap: April 6, 2026"
 date: 2026-04-06 08:00:00 -0400
 categories: [orioles]
+section_theme: orioles
 permalink: /orioles/weekly-recap-2026-04-06/
 author: "Randy Morgan"
 excerpt: "If you squint hard enough at the first ten days of the 2026 season, you can find reasons for optimism. Trevor Rogers looks like an ace once again. The new bats showed some life in a gutsy comeback against the Twins. And the bullpen…"
 series: "Orioles Weekly Recap"
+suppress_article_prompts: true
 source_docx: "articles/Orioles/O_s Weekly Recap 4_6_26.docx"
 generated_by: "scripts/import_orioles_articles.py"
 ---

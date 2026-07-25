@@ -11,7 +11,7 @@ section_theme: orioles
 
 {% assign brandon_feature = site.posts | where: "orioles_feature", true | first %}
 {% if brandon_feature %}
-<section class="club-section">
+<section class="club-section club-section--orioles-feature">
   <div class="de-section-heading de-section-heading--light"><div><p class="de-kicker">Featured analysis</p><h2>The breakout, examined</h2></div></div>
   <a class="orioles-feature" href="{{ brandon_feature.url | relative_url }}">
     <div class="orioles-feature-copy">

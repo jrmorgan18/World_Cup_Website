@@ -3,10 +3,12 @@ layout: post
 title: "Orioles Weekly Recap: April 27, 2026"
 date: 2026-04-27 08:00:00 -0400
 categories: [orioles]
+section_theme: orioles
 permalink: /orioles/weekly-recap-2026-04-27/
 author: "Randy Morgan"
 excerpt: "With a 3-3 week the Orioles continue to scuffle through the early part of 2026. There were signs of life from the bats and the week looked on a positive trajectory after a blowout win over Boston on Friday. Then the Birds dropped both…"
 series: "Orioles Weekly Recap"
+suppress_article_prompts: true
 source_docx: "articles/Orioles/O_s Weekly Recap 4_27_26.docx"
 generated_by: "scripts/import_orioles_articles.py"
 ---

@@ -3,9 +3,15 @@ layout: post
 title: "Brandon Young’s Breakout Is Real. His ERA Probably Isn’t."
 date: 2026-07-25 08:00:00 -0400
 categories: [orioles]
+section_theme: orioles
 permalink: /orioles/brandon-young-breakout/
 author: "Randy Morgan"
 excerpt: "Brandon Young’s improvement is real—but the ERA still overstates it. A closer look at the pitch changes behind his breakout and what Baltimore can expect next."
+hero_image: "/assets/images/brandon-young-editorial-hero.webp"
+hero_wide: true
+hero_credit: "Original editorial illustration created for Dual Eights."
+suppress_article_prompts: true
+article_stats: { title: "Season snapshot", note: "Through July 19, 2026", rows: [{ name: "Record", value: "8–2" }, { name: "Starts", value: "16" }, { name: "Innings", value: "91⅓" }, { name: "ERA", value: "3.25" }, { name: "xERA", value: "4.22" }, { name: "FIP", value: "3.85" }, { name: "WHIP", value: "1.31" }, { name: "Strikeouts", value: "74" }] }
 orioles_feature: true
 source_docx: "articles/Orioles/Brandon Young’s Breakout.docx"
 generated_by: "scripts/import_orioles_articles.py"

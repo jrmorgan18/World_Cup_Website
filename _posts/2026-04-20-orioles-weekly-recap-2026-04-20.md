@@ -3,10 +3,12 @@ layout: post
 title: "Orioles Weekly Recap: April 20, 2026"
 date: 2026-04-20 08:00:00 -0400
 categories: [orioles]
+section_theme: orioles
 permalink: /orioles/weekly-recap-2026-04-20/
 author: "Randy Morgan"
 excerpt: "After taking two of three from the Giants the prior weekend, the O's came into this week hoping to build. Instead, they dropped two of three to Arizona at home and then went 1-3 at Cleveland, stumbling to 10-12 and falling to third in the…"
 series: "Orioles Weekly Recap"
+suppress_article_prompts: true
 source_docx: "articles/Orioles/O_s Weekly Recap 4_20_26.docx"
 generated_by: "scripts/import_orioles_articles.py"
 ---

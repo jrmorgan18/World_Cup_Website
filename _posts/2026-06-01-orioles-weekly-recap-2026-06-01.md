@@ -3,10 +3,12 @@ layout: post
 title: "Orioles Weekly Recap: June 1, 2026"
 date: 2026-06-01 08:00:00 -0400
 categories: [orioles]
+section_theme: orioles
 permalink: /orioles/weekly-recap-2026-06-01/
 author: "Randy Morgan"
 excerpt: "If you needed a reason to believe in this team again, the homestand delivered. The Orioles rattled off five wins in seven games, sweeping first-place Tampa Bay before splitting a four-game set with Toronto in a week that featured two of…"
 series: "Orioles Weekly Recap"
+suppress_article_prompts: true
 source_docx: "articles/Orioles/O_s Weekly Recap 6_1_26.docx"
 generated_by: "scripts/import_orioles_articles.py"
 ---

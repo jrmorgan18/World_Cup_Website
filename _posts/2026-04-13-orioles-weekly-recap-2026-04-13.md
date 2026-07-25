@@ -3,10 +3,12 @@ layout: post
 title: "Orioles Weekly Recap: April 13, 2026"
 date: 2026-04-13 08:00:00 -0400
 categories: [orioles]
+section_theme: orioles
 permalink: /orioles/weekly-recap-2026-04-13/
 author: "Randy Morgan"
 excerpt: "A week that began with the Orioles limping out of Pittsburgh ended with the O's clawing their way back above .500 and looking at least somewhat like the team we were promised coming out of spring training. The O’s swept the lowly White…"
 series: "Orioles Weekly Recap"
+suppress_article_prompts: true
 source_docx: "articles/Orioles/O_s Weekly Recap 4_13_26.docx"
 generated_by: "scripts/import_orioles_articles.py"
 ---
