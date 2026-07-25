@@ -345,6 +345,7 @@ body { overflow-x: hidden; }
 .club-feature-teaser-mark { position:relative; z-index:2; padding:34px; display:flex; flex-direction:column; align-items:center; justify-content:center; background:linear-gradient(160deg,var(--de-purple),#2a153e); font-family:var(--font-display); text-transform:uppercase; }
 .club-feature-teaser-mark small,.club-feature-teaser-mark span { font-size:.68rem; letter-spacing:2px; }
 .club-feature-teaser-mark strong { color:#fff; font-size:8rem; line-height:.9; }
+.club-section--ravens-feature { padding-top:48px; }
 
 /* Orioles editorial archive */
 .orioles-feature { position:relative; min-height:440px; display:grid; grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr); overflow:hidden; border:1px solid rgba(255,255,255,.15); background:radial-gradient(circle at 72% 20%,rgba(241,90,36,.2),transparent 28%),linear-gradient(140deg,#191513,#09090b); box-shadow:inset 5px 0 0 var(--de-orange); }
@@ -515,6 +516,7 @@ body { overflow-x: hidden; }
   .club-feature-teaser-copy { padding:40px 34px; }
   .club-feature-teaser-mark { min-height:150px; flex-direction:row; gap:16px; }
   .club-feature-teaser-mark strong { font-size:5rem; }
+  .club-section--ravens-feature { padding-top:36px; }
   .orioles-feature { grid-template-columns:1fr; }
   .orioles-feature-copy { padding:40px 34px; }
   .orioles-feature-data { grid-template-columns:repeat(3,1fr); gap:16px; }
