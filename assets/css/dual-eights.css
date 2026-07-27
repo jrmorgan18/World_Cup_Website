@@ -632,9 +632,8 @@ body { overflow-x: hidden; }
 .project-data-table tbody tr:last-child th,.project-data-table tbody tr:last-child td { border-bottom:0; }
 .project-data-table tbody td:last-child strong { display:inline-flex; min-width:35px; min-height:35px; align-items:center; justify-content:center; color:#fff; border-radius:50%; background:var(--project-red); font-family:var(--font-display); }
 .project-data-table abbr { text-decoration:none; }
-.prospect-score-table table { min-width:1460px; }
-.prospect-score-table thead th { min-width:116px; white-space:normal; line-height:1.25; }
-.prospect-score-table thead th:nth-child(-n+4),.prospect-score-table thead th:last-child { min-width:auto; }
+.prospect-score-table table { min-width:680px; }
+.prospect-score-table thead th { white-space:normal; line-height:1.25; }
 .prospect-score-key { margin-top:15px; border:1px solid var(--color-border); background:#0b192d; }
 .prospect-score-key summary { padding:16px 19px; cursor:pointer; color:#fff; font-family:var(--font-display); font-size:.68rem; letter-spacing:1px; text-transform:uppercase; }
 .prospect-score-key>div { padding:0 19px 18px; color:#a7b5c8; font-size:.88rem; }
