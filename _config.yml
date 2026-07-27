@@ -9,7 +9,7 @@ donation_cta_start: 2026-07-19
 
 # Default image for social/link previews (Open Graph / Twitter cards)
 # when a page has no hero_image or thumbnail of its own.
-og_image: "/assets/images/og-default.jpg"
+og_image: "/assets/images/dual-eights-social-card-v1.png"
 
 # Chat is intentionally disabled for the broader-sports launch.
 chat_worker_url: ""
