@@ -45,7 +45,7 @@ section_theme: project
           <details class="pool-player-card{% if profile %} pool-player-card--profiled{% endif %}">
             <summary>
               <span class="pool-player-avatar" aria-hidden="true">
-                {% if player.image %}<img src="{{ player.image | relative_url }}" alt="">{% else %}<b>{{ player.initials }}</b>{% endif %}
+                {% if player.image %}<img src="{{ player.image | relative_url }}" alt="" width="52" height="52" loading="lazy" decoding="async">{% else %}<b>{{ player.initials }}</b>{% endif %}
               </span>
               <span class="pool-player-identity">
                 <strong>{{ player.name }}</strong>
@@ -100,7 +100,7 @@ section_theme: project
 
   <footer class="player-pool-footer">
     <div><p class="de-kicker">A living document</p><h2>The categories will move because the players will.</h2></div>
-    <p>Players can be added, removed or moved between groups from one simple data file. Future profile images and reporting will slot into the same cards without redesigning the page.</p>
+    <p>Players can be added, removed or moved between groups from one simple data file. Future reporting will slot into the same cards without redesigning the page.<small>Player headshots via <a href="https://www.fotmob.com/" target="_blank" rel="noopener">FotMob</a>.</small></p>
     <a class="de-button de-button--light" href="https://jrmorgan18.github.io/USMNT_Roster_Site/" target="_blank" rel="noopener">Open roster builder <span>&rarr;</span></a>
   </footer>
 </section>
