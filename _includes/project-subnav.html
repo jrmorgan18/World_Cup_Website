@@ -1,0 +1,7 @@
+<nav class="project-subnav" aria-label="Project 2030 sections">
+  <a href="{{ '/soccer/project-2030/' | relative_url }}"{% if page.url == '/soccer/project-2030/' %} class="active" aria-current="page"{% endif %}>Overview</a>
+  <a href="{{ '/soccer/project-2030/big-board/' | relative_url }}"{% if page.url contains '/big-board/' %} class="active" aria-current="page"{% endif %}>Big Board</a>
+  <a href="{{ '/soccer/project-2030/player-pool/' | relative_url }}"{% if page.url contains '/player-pool/' %} class="active" aria-current="page"{% endif %}>Player Pool</a>
+  <a href="{{ '/soccer/project-2030/checkpoints/' | relative_url }}"{% if page.url contains '/checkpoints/' %} class="active" aria-current="page"{% endif %}>Checkpoints</a>
+  <a href="{{ '/soccer/project-2030/scouting/' | relative_url }}"{% if page.url contains '/scouting/' %} class="active" aria-current="page"{% endif %}>Scouting</a>
+</nav>

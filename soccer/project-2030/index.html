@@ -1,0 +1,65 @@
+---
+layout: default
+title: Project 2030
+permalink: /soccer/project-2030/
+section_theme: project
+---
+<section class="project-hero">
+  <div class="project-hero-years" aria-hidden="true"><span>20</span><b>30</b></div>
+  <div class="project-hero-copy">
+    <p class="de-eyebrow"><span></span> Dual Eights presents</p>
+    <h1>Project <em>2030</em></h1>
+    <p>A four-year scouting report on the United States men&rsquo;s national team: every checkpoint, every roster decision and every prospect who could change the ceiling.</p>
+    <span class="project-status"><i></i> Cycle status: foundation</span>
+  </div>
+</section>
+
+<section class="project-intro">
+  <p class="de-kicker">The mandate</p>
+  <h2>The next World Cup starts now.</h2>
+  <p>The 2026 run answered some questions and exposed much larger ones. Project 2030 will document what happens between tournaments, when development systems, coaching choices and thousands of quiet minutes determine what becomes possible.</p>
+</section>
+
+{% include project-subnav.html %}
+
+<section class="project-modules project-modules--four">
+  <a class="project-module" href="{{ '/soccer/project-2030/big-board/' | relative_url }}">
+    <span class="project-module-no">01</span><p class="de-kicker">The model</p><h2>Big Board</h2><p>A transparent, weighted ranking of the complete player pool. The methodology is currently under construction.</p><strong>Preview the board &rarr;</strong>
+  </a>
+  <a class="project-module" href="{{ '/soccer/project-2030/player-pool/' | relative_url }}">
+    <span class="project-module-no">02</span><p class="de-kicker">The living pool</p><h2>Player Pool</h2><p>Six evolving groups organize the veterans, contenders, prospects and dual-nationals on the road to 2030.</p><strong>Explore the pool &rarr;</strong>
+  </a>
+  <a class="project-module" href="{{ '/soccer/project-2030/checkpoints/' | relative_url }}">
+    <span class="project-module-no">03</span><p class="de-kicker">The timeline</p><h2>Checkpoints</h2><p>A visual chronology of the moments that matter: appointments, tournaments, breakthroughs and warning signs.</p><strong>View the timeline &rarr;</strong>
+  </a>
+  <a class="project-module" href="{{ '/soccer/project-2030/scouting/' | relative_url }}">
+    <span class="project-module-no">04</span><p class="de-kicker">Every week</p><h2>Scouting</h2><p>One promising young player at a time, watched closely and placed in the context of the 2030 cycle.</p><strong>Enter the scouting room &rarr;</strong>
+  </a>
+</section>
+
+{% assign checkpoint_story = site.posts | where: "checkpoint_feature", true | first %}
+{% assign prospect_story = site.posts | where: "prospect_feature", true | first %}
+{% if checkpoint_story and prospect_story %}
+<section class="project-latest">
+  <div class="de-section-heading">
+    <div><p class="de-kicker">New from the project</p><h2>The cycle begins</h2></div>
+    <p>Start with the calendar that will define the next four years, then meet the young players with a chance to change the roster.</p>
+  </div>
+  <div class="project-latest-grid">
+    <a class="project-story-card project-story-card--visual" href="{{ checkpoint_story.url | relative_url }}">
+      <figure><img src="{{ checkpoint_story.thumbnail | relative_url }}" alt="" loading="lazy"></figure>
+      <div><span>Checkpoints / 13 min</span><h3>{{ checkpoint_story.title }}</h3><p>{{ checkpoint_story.excerpt }}</p><strong>Read the roadmap &rarr;</strong></div>
+    </a>
+    <a class="project-story-card" href="{{ prospect_story.url | relative_url }}">
+      <span>Player Pool / 18 min</span><h3>{{ prospect_story.title }}</h3><p>{{ prospect_story.excerpt }}</p><strong>Meet the 20 prospects &rarr;</strong>
+    </a>
+  </div>
+</section>
+{% endif %}
+
+<section class="project-foundation">
+  <div><p class="de-kicker">Where the project begins</p><h2>The American Soccer Question</h2></div>
+  <p>Before the rankings and checkpoints, there is a structural question: what can American soccer realistically build?</p>
+  <a href="{{ '/usmnt/why-the-usmnt-will-never-be-argentina/' | relative_url }}">Read Part 1 <span>&rarr;</span></a>
+  <a href="{{ '/usmnt/why-the-usmnt-will-never-be-argentina-part-2/' | relative_url }}">Read Part 2 <span>&rarr;</span></a>
+</section>

@@ -1,0 +1,14 @@
+preview: true
+url: "http://127.0.0.1:4000"
+baseurl: ""
+chat_worker_url: ""
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - articles
+  - .tmp
+  - worker
+  - scripts
+  - _site-preview

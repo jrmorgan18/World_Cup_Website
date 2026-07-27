@@ -1,0 +1,88 @@
+<section class="hero">
+  <div class="hero-content">
+    <h1 class="hero-title">The World Cup Guide</h1>
+    <p class="hero-subtitle">Your essential guide to the 2026 FIFA World Cup</p>
+    <p class="hero-detail">Team profiles, player spotlights, tactical analysis, and betting insights — counting down to kickoff.</p>
+  </div>
+</section>
+
+<div class="home-prompts">
+  <section class="survey-invite" aria-labelledby="survey-invite-title">
+    <div class="survey-invite-copy">
+      <span class="survey-invite-kicker">Two-minute reader survey</span>
+      <h2 id="survey-invite-title">What should come after the World Cup?</h2>
+      <p>Premier League reviews? Americans Abroad? Tactical deep dives? Orioles or Ravens? Tell me whether this site should continue—and what would make you keep reading.</p>
+    </div>
+    <a class="survey-invite-button" href="{{ '/survey/' | relative_url }}">Shape what comes next <span aria-hidden="true">→</span></a>
+  </section>
+  {% include donation-nudge.html placement="homepage" %}
+</div>
+
+<section class="kickoff-section" id="kickoff-section" hidden>
+  <div class="kickoff-countdown" id="kickoff-countdown"></div>
+  <div class="kickoff-matches" id="kickoff-matches">
+    <div class="kickoff-matches-head">
+      <h2 class="section-heading" id="kickoff-matches-title">Up Next</h2>
+      <a class="kickoff-all" href="{{ '/schedule' | relative_url }}">Full schedule →</a>
+    </div>
+    <div class="kickoff-list" id="kickoff-list"></div>
+  </div>
+</section>
+
+{% assign longform_part1 = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina" | first %}
+{% assign longform_part2 = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina-part-2" | first %}
+{% if longform_part1 and longform_part2 %}
+<section class="featured-section">
+  <div class="section-heading-row">
+    <h2 class="section-heading">The American Soccer Question</h2>
+    <span class="section-heading-note">Complete two-part longform</span>
+  </div>
+  {% include longform-series-feature.html part1=longform_part1 part2=longform_part2 %}
+</section>
+{% endif %}
+
+<section class="categories-section">
+  <h2 class="section-heading">Explore</h2>
+  <div class="category-cards">
+    <a href="{{ '/categories/countdown' | relative_url }}" class="category-card"><span class="category-card-icon">🏆</span><h3>World Cup Countdown</h3><p>48 teams profiled and ranked, counting down to #1</p></a>
+    <a href="{{ '/categories/players' | relative_url }}" class="category-card"><span class="category-card-icon">⭐</span><h3>Players</h3><p>The stars and storylines to watch this summer</p></a>
+    <a href="{{ '/categories/analysis' | relative_url }}" class="category-card"><span class="category-card-icon">📊</span><h3>Analysis</h3><p>Tactics, matchups, and deep dives</p></a>
+    <a href="{{ '/categories/betting' | relative_url }}" class="category-card"><span class="category-card-icon">💰</span><h3>Betting</h3><p>Odds, value picks, and market analysis</p></a>
+    <a href="{{ '/categories/usmnt' | relative_url }}" class="category-card"><img class="category-card-flag" src="https://flagcdn.com/w160/us.png" alt="US flag"><h3>USMNT</h3><p>Everything about the US Men's National Team</p></a>
+  </div>
+</section>
+
+<section class="recent-section">
+  <h2 class="section-heading">Recent Articles</h2>
+  <div class="article-grid">
+    {% assign recent_count = 0 %}
+    {% for post in site.posts %}
+    {% unless post.slug == longform_part1.slug or post.slug == longform_part2.slug %}
+    {% if recent_count < 6 %}
+    <a href="{{ post.url | relative_url }}" class="card">
+      {% if post.thumbnail %}
+      <div class="card-image"><img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" loading="lazy"></div>
+      {% elsif post.country_code %}
+      <div class="card-image card-image-placeholder"><img class="card-flag" src="https://flagcdn.com/w320/{{ post.country_code }}.png" alt="flag" loading="lazy"></div>
+      {% else %}
+      <div class="card-image card-image-placeholder"><span class="card-icon">⚽</span></div>
+      {% endif %}
+      <div class="card-body">
+        <div class="article-meta"><span class="article-category">{{ post.categories | first | replace: "-", " " | capitalize }}</span><time class="card-date">{{ post.date | date: "%B %-d, %Y" }}</time></div>
+        <h3 class="card-title">{{ post.title }}</h3>
+        <p class="card-excerpt">{{ post.excerpt | strip_html | truncatewords: 25 }}</p>
+      </div>
+    </a>
+    {% assign recent_count = recent_count | plus: 1 %}
+    {% endif %}
+    {% endunless %}
+    {% endfor %}
+  </div>
+</section>
+
+<script>
+  window.WC_MATCHES = {{ site.data.schedule.matches | jsonify }};
+  window.WC_TEAMS = {{ site.data.teams | jsonify }};
+  window.WC_BASE = "{{ site.baseurl }}";
+</script>
+<script src="{{ '/assets/js/home-countdown.js' | relative_url }}"></script>

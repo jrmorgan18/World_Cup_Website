@@ -1,0 +1,31 @@
+<section class="newsletter" aria-labelledby="nl-heading">
+  <div class="newsletter-inner">
+    <div class="newsletter-copy"><h3 id="nl-heading" class="newsletter-title">Never miss an article</h3><p class="newsletter-sub">Previews, recaps, and betting cards sent straight to your inbox. No spam — just the soccer.</p></div>
+    <form class="newsletter-form" id="newsletter-form" method="POST" target="nl-sink" novalidate>
+      <label class="sr-only" for="nl-email">Email address</label><input id="nl-email" type="email" required placeholder="you@example.com" autocomplete="email" inputmode="email"><button type="submit" class="newsletter-btn">Subscribe</button>
+    </form>
+  </div>
+  <p class="newsletter-status" id="newsletter-status" role="status" aria-live="polite"></p>
+  <iframe name="nl-sink" class="nl-sink" title="newsletter submission" aria-hidden="true" tabindex="-1"></iframe>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand"><span class="logo-icon">⚽</span><span class="logo-text">The World Cup Guide</span><p class="footer-tagline">Your essential guide to the 2026 FIFA World Cup</p></div>
+    <div class="footer-nav"><h4>Categories</h4><a href="{{ '/categories/countdown' | relative_url }}">World Cup Countdown</a><a href="{{ '/categories/players' | relative_url }}">Players</a><a href="{{ '/categories/analysis' | relative_url }}">Analysis</a><a href="{{ '/categories/betting' | relative_url }}">Betting</a><a href="{{ '/categories/usmnt' | relative_url }}">USMNT</a><a href="{{ '/survey/' | relative_url }}">Reader Survey</a></div>
+    <div class="footer-copy"><p>&copy; {{ 'now' | date: "%Y" }} The World Cup Guide. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<button type="button" class="nl-fab" id="nl-fab" aria-haspopup="dialog" aria-controls="nl-modal"><span class="nl-fab-icon" aria-hidden="true">📬</span><span class="nl-fab-label">Subscribe</span></button>
+<div class="nl-modal" id="nl-modal" hidden>
+  <div class="nl-modal-backdrop" data-nl-close></div>
+  <div class="nl-modal-card" role="dialog" aria-modal="true" aria-labelledby="nl-modal-title">
+    <button type="button" class="nl-modal-close" data-nl-close aria-label="Close">&times;</button>
+    <h3 class="nl-modal-title" id="nl-modal-title">Never miss an article</h3><p class="nl-modal-sub">Previews, recaps, and betting cards sent straight to your inbox. No spam — just the soccer.</p>
+    <form class="newsletter-form" method="POST" target="nl-sink" novalidate><label class="sr-only" for="nl-email-modal">Email address</label><input id="nl-email-modal" type="email" required placeholder="you@example.com" autocomplete="email" inputmode="email"><button type="submit" class="newsletter-btn">Subscribe</button></form>
+    <p class="newsletter-status" role="status" aria-live="polite"></p>
+  </div>
+</div>
+<script src="{{ '/assets/js/newsletter.js' | relative_url }}"></script>
+<script>window.WC_SURVEY_HOME = "{{ '/' | relative_url }}";</script>

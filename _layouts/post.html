@@ -4,10 +4,14 @@ layout: default
 {% assign donation_start = site.donation_cta_start | date: "%s" | plus: 0 %}
 {% assign article_date = page.date | date: "%s" | plus: 0 %}
 {% assign show_article_prompts = false %}
-{% if page.donation_cta_compact or article_date >= donation_start %}
-  {% assign show_article_prompts = true %}
+{% if page.suppress_article_prompts != true %}
+  {% if page.donation_cta_compact or article_date >= donation_start %}
+    {% assign show_article_prompts = true %}
+  {% endif %}
 {% endif %}
-<div class="article-shell{% if show_article_prompts %} article-shell--with-sidebar{% endif %}">
+{% assign show_article_sidebar = false %}
+{% if show_article_prompts or page.article_stats %}{% assign show_article_sidebar = true %}{% endif %}
+<div class="article-shell{% if show_article_sidebar %} article-shell--with-sidebar{% endif %}">
 <article class="article">
   <div class="article-header">
     <div class="article-meta">
@@ -23,10 +27,11 @@ layout: default
       <img src="{{ page.hero_image | relative_url }}" alt="{{ page.title }}">
     </div>
     {% if page.hero_credit %}
-    <p class="article-hero-credit">{{ page.hero_credit }}</p>
+    <p class="article-hero-credit">{% if page.hero_credit_url %}<a href="{{ page.hero_credit_url }}" target="_blank" rel="noopener">{{ page.hero_credit }}</a>{% else %}{{ page.hero_credit }}{% endif %}</p>
     {% endif %}
     {% endif %}
   </div>
+  {% if page.article_stats %}{% include article-stats.html stats=page.article_stats card_id="article-stat-title-mobile" class="article-stat-card--mobile" %}{% endif %}
   <div class="article-body">
     {{ content }}
   </div>
@@ -62,9 +67,14 @@ layout: default
     </div>
   </div>
 </article>
-{% if show_article_prompts %}
-<aside class="article-sidebar">
-  {% include article-sidebar-prompts.html placement="article_sidebar" %}
+{% if show_article_sidebar %}
+<aside class="article-sidebar{% if page.article_stats %} article-sidebar--stats{% endif %}">
+  <div class="article-sidebar-stack">
+    {% if page.article_stats %}
+    {% include article-stats.html stats=page.article_stats card_id="article-stat-title" %}
+    {% endif %}
+    {% if show_article_prompts %}{% include article-sidebar-prompts.html placement="article_sidebar" %}{% endif %}
+  </div>
 </aside>
 {% endif %}
 </div>

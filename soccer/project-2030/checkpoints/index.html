@@ -1,0 +1,29 @@
+---
+layout: default
+title: Project 2030 — Checkpoints
+permalink: /soccer/project-2030/checkpoints/
+section_theme: project
+---
+<section class="module-hero">
+  <p class="de-eyebrow"><span></span> Project 2030 / Checkpoints</p>
+  <h1>Checkpoints</h1>
+  <p>The living timeline between the final whistle in 2026 and kickoff in 2030.</p>
+</section>
+{% include project-subnav.html %}
+<section class="checkpoint-shell">
+  {% assign checkpoint_story = site.posts | where: "checkpoint_feature", true | first %}
+  {% if checkpoint_story %}
+  <a class="checkpoint-feature" href="{{ checkpoint_story.url | relative_url }}">
+    <figure><img src="{{ checkpoint_story.thumbnail | relative_url }}" alt="USMNT calendar highlighting the crowded summer of 2028" loading="eager"></figure>
+    <div><p class="de-kicker">The opening roadmap</p><h2>{{ checkpoint_story.title }}</h2><p>{{ checkpoint_story.excerpt }}</p><strong>Read the full analysis &rarr;</strong></div>
+  </a>
+  {% endif %}
+  <div class="checkpoint-intro"><p class="de-kicker">The cycle at a glance</p><h2>The moments that move the program.</h2><p>The timeline will evolve as dates become official and each checkpoint produces new evidence about the direction of the team.</p></div>
+  <div class="checkpoint-line">
+    <article class="checkpoint checkpoint--active"><time>Summer 2026</time><span></span><div><small>Baseline</small><h3>The post-tournament reset</h3><p>Establish the starting point: leadership, player pool and the lessons that survive the World Cup.</p></div></article>
+    <article class="checkpoint"><time>2027</time><span></span><div><small>Checkpoint</small><h3>The first full competitive test</h3><p>Measure the new cycle against meaningful opposition and the first sustained roster choices.</p></div></article>
+    <article class="checkpoint checkpoint--critical"><time>Summer 2028</time><span></span><div><small>Critical checkpoint</small><h3>Qualifying, Copa and the Olympics</h3><p>A possible collision of three competitions will test the coach, the roster and the entire federation.</p></div></article>
+    <article class="checkpoint"><time>2029</time><span></span><div><small>Pressure</small><h3>The roster begins to close</h3><p>Roles harden, experiments narrow and the genuine position battles come into focus.</p></div></article>
+    <article class="checkpoint"><time>2030</time><span></span><div><small>Destination</small><h3>World Cup</h3><p>The final assessment of what the program built and what it still could not solve.</p></div></article>
+  </div>
+</section>

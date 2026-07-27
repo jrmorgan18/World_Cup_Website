@@ -1,0 +1,36 @@
+name: Validate site
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: ["codex/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build launch version
+        run: >-
+          bundle exec jekyll build --trace
+          --baseurl ""
+          --destination "_site-validation"
+        env:
+          JEKYLL_ENV: production
+      - name: Check internal links and launch routes
+        run: python scripts/check_site.py _site-validation

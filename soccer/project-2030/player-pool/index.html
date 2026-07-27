@@ -1,0 +1,106 @@
+---
+layout: default
+title: Project 2030 - Player Pool
+description: An evolving, curated view of the veterans, contenders and prospects in the United States men's national team player pool.
+permalink: /soccer/project-2030/player-pool/
+section_theme: project
+---
+{% assign pool_data = site.data.project_2030_player_pool %}
+{% assign player_count = pool_data.players | size %}
+<section class="module-hero module-hero--compact">
+  <p class="de-eyebrow"><span></span> Project 2030 / Living depth chart</p>
+  <h1>The Player Pool</h1>
+  <p>A curated map of the veterans, contenders and prospects who begin the road to 2030.</p>
+</section>
+{% include project-subnav.html %}
+
+<section class="player-pool-shell">
+  <header class="player-pool-intro">
+    <div>
+      <p class="de-kicker">The first cut</p>
+      <h2>{{ player_count }} players. Six starting points. One evolving pool.</h2>
+      <p>This is an editorial snapshot, not a ranking. Open a group, then select a player card to see where profiles, key indicators and continuing status updates will live.</p>
+    </div>
+    <aside>
+      <span><strong>{{ player_count }}</strong> players tracked</span>
+      <span><strong>{{ pool_data.groups | size }}</strong> working groups</span>
+      <span><strong>2030</strong> destination</span>
+    </aside>
+  </header>
+
+  <div class="pool-groups">
+    {% for group in pool_data.groups %}
+      {% assign group_players = pool_data.players | where: "group", group.id %}
+      <details class="pool-group pool-group--{{ group.id }}"{% if forloop.first %} open{% endif %}>
+        <summary>
+          <span class="pool-group-mark" aria-hidden="true">{{ group.code }}</span>
+          <span class="pool-group-title"><small>Group {{ forloop.index | prepend: '0' }}</small><strong>{{ group.name }}</strong></span>
+          <span class="pool-group-description">{{ group.description }}</span>
+          <span class="pool-group-count">{{ group_players | size }} <small>players</small></span>
+          <span class="pool-group-toggle" aria-hidden="true"></span>
+        </summary>
+        <div class="pool-player-grid">
+          {% for player in group_players %}
+          {% assign profile = site.data.project_2030_profiles[player.profile] %}
+          <details class="pool-player-card{% if profile %} pool-player-card--profiled{% endif %}">
+            <summary>
+              <span class="pool-player-avatar" aria-hidden="true">
+                {% if player.image %}<img src="{{ player.image | relative_url }}" alt="">{% else %}<b>{{ player.initials }}</b>{% endif %}
+              </span>
+              <span class="pool-player-identity">
+                <strong>{{ player.name }}</strong>
+                <small>{% if profile.position %}{{ profile.position }}{% elsif player.position %}{{ player.position }}{% elsif profile.club %}{{ profile.club }}{% elsif player.club %}{{ player.club }}{% else %}Player file queued{% endif %}</small>
+              </span>
+              <span class="pool-player-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="pool-player-profile{% if profile %} pool-player-profile--complete{% endif %}">
+              {% if profile %}
+              <header class="pool-profile-header">
+                <div><p class="de-kicker">Scouting file</p><h3>{{ player.name }}</h3></div>
+                <span>Research snapshot / {{ profile.updated }}</span>
+              </header>
+              <div class="pool-profile-body">
+                <div class="pool-profile-report">
+                  <div class="pool-profile-meta">
+                    {% if profile.club %}<span><small>Club</small>{{ profile.club }}</span>{% endif %}
+                    {% if profile.position %}<span><small>Position</small>{{ profile.position }}</span>{% endif %}
+                    <span><small>Pool group</small>{{ group.name }}</span>
+                  </div>
+                  <p class="pool-profile-summary">{{ profile.summary }}</p>
+                  {% if profile.usmnt_case %}<blockquote><span>Project 2030 case</span>{{ profile.usmnt_case }}</blockquote>{% endif %}
+                </div>
+                <aside class="pool-profile-evaluation">
+                  {% if profile.strengths %}<section><p>Strengths</p><span>{{ profile.strengths }}</span></section>{% endif %}
+                  {% if profile.questions %}<section><p>Questions to monitor</p><span>{{ profile.questions }}</span></section>{% endif %}
+                  <section><p>Current status</p><span>{{ profile.status | default: "Profile active - baseline established" }}</span></section>
+                </aside>
+              </div>
+              {% if profile.sources %}
+              <footer class="pool-profile-sources"><span>Research sources</span>{% for source in profile.sources %}<a href="{{ source.url }}" target="_blank" rel="noopener">{{ source.label }} <b>&nearr;</b></a>{% endfor %}</footer>
+              {% endif %}
+              {% else %}
+              <div>
+                <p class="de-kicker">Profile coming soon</p>
+                <p>Club role, key indicators, recent progress and the current Project 2030 outlook will be tracked here.</p>
+              </div>
+              <dl>
+                <div><dt>Current group</dt><dd>{{ group.name }}</dd></div>
+                {% if player.club %}<div><dt>Club</dt><dd>{{ player.club }}</dd></div>{% endif %}
+                {% if player.position %}<div><dt>Position</dt><dd>{{ player.position }}</dd></div>{% endif %}
+                <div><dt>Status</dt><dd>Baseline pending</dd></div>
+              </dl>
+              {% endif %}
+            </div>
+          </details>
+          {% endfor %}
+        </div>
+      </details>
+    {% endfor %}
+  </div>
+
+  <footer class="player-pool-footer">
+    <div><p class="de-kicker">A living document</p><h2>The categories will move because the players will.</h2></div>
+    <p>Players can be added, removed or moved between groups from one simple data file. Future profile images and reporting will slot into the same cards without redesigning the page.</p>
+    <a class="de-button de-button--light" href="https://jrmorgan18.github.io/USMNT_Roster_Site/" target="_blank" rel="noopener">Open roster builder <span>&rarr;</span></a>
+  </footer>
+</section>

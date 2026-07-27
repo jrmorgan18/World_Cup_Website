@@ -1,7 +1,9 @@
-title: "The World Cup Guide"
-description: "Your essential guide to the 2026 FIFA World Cup — team profiles, player spotlights, analysis, and betting insights"
-url: "https://jrmorgan18.github.io"
-baseurl: "/World_Cup_Website"
+title: "Dual Eights"
+# Emergency presentation rollback: change this to "legacy" and rebuild.
+site_mode: dual_eights
+description: "An independent sports journal covering Baltimore baseball, Baltimore football, and the world’s game."
+url: "https://dualeights.com"
+baseurl: ""
 permalink: /:categories/:title/
 donation_cta_start: 2026-07-19
 
@@ -9,9 +11,8 @@ donation_cta_start: 2026-07-19
 # when a page has no hero_image or thumbnail of its own.
 og_image: "/assets/images/og-default.jpg"
 
-# Chat widget — set this to the Cloudflare Worker URL after deploying worker/.
-# Leave blank or remove to hide the widget.
-chat_worker_url: "https://world-cup-chat.jrmorgan16.workers.dev"
+# Chat is intentionally disabled for the broader-sports launch.
+chat_worker_url: ""
 
 collections_dir: ""
 markdown: kramdown
@@ -27,6 +28,13 @@ defaults:
 
 exclude:
   - README.md
+  - DUAL_EIGHTS_ROLLBACK.md
   - Gemfile
   - Gemfile.lock
   - node_modules
+  - articles
+  - scripts
+  - worker
+  - .claude
+  - _site-preview
+  - _site-validation

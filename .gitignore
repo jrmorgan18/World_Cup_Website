@@ -1,7 +1,11 @@
 _site/
+_site-preview/
+_site-validation/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+scripts/__pycache__/
+*.pyc
 Gemfile.lock
 .DS_Store
 Thumbs.db
