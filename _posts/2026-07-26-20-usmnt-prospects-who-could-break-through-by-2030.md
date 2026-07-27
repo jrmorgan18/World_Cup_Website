@@ -26,39 +26,7 @@ This is also not a pure ranking of talent. Cavan Sullivan may have a higher theo
 
 The central distinction is between probability and upside. Some of these players already look close. Others are bets on rare talent, improved health or a developmental leap that may never come.
 
-<section class="prospect-score-section" aria-labelledby="prospect-score-heading">
-<p class="de-kicker">Research snapshot</p>
-<h2 id="prospect-score-heading">The 2030 Breakthrough Score</h2>
-<p>This score balances first-team evidence with age, upside, positional opportunity, recent trajectory and—where relevant—the likelihood that a dual-national will represent the United States. The numbers are structured judgments, not measurements precise to a single point.</p>
-<div class="project-data-table" id="prospect-score-table" role="region" aria-label="Twenty USMNT prospects ranked by the 2030 Breakthrough Score" tabindex="0">
-<table>
-<thead><tr><th scope="col">RK</th><th scope="col">Player</th><th scope="col">Age</th><th scope="col">Position</th><th scope="col"><abbr title="First-team proof">FTP</abbr><small>/25</small></th><th scope="col"><abbr title="Age-adjusted performance">AAP</abbr><small>/20</small></th><th scope="col"><abbr title="Long-term ceiling">CEIL</abbr><small>/20</small></th><th scope="col"><abbr title="USMNT pathway">PATH</abbr><small>/15</small></th><th scope="col"><abbr title="Development trajectory">TRAJ</abbr><small>/10</small></th><th scope="col"><abbr title="United States commitment probability">USA</abbr><small>/10</small></th><th scope="col">Score<small>/100</small></th></tr></thead>
-<tbody>
-<tr><td>1</td><th scope="row">Zavier Gozo</th><td>19</td><td>Winger / wingback</td><td>23</td><td>18</td><td>17</td><td>13</td><td>9</td><td>10</td><td><strong>90</strong></td></tr>
-<tr><td>2</td><th scope="row">Noahkai Banks</th><td>19</td><td>Center back</td><td>25</td><td>17</td><td>19</td><td>14</td><td>8</td><td>4</td><td><strong>87</strong></td></tr>
-<tr><td>3</td><th scope="row">Julian Hall</th><td>18</td><td>Striker / wide forward</td><td>22</td><td>18</td><td>18</td><td>12</td><td>9</td><td>7</td><td><strong>86</strong></td></tr>
-<tr><td>4</td><th scope="row">Adri Mehmeti</th><td>17</td><td>Defensive / central midfielder</td><td>20</td><td>18</td><td>16</td><td>12</td><td>9</td><td>10</td><td><strong>85</strong></td></tr>
-<tr><td>5</td><th scope="row">Neil Pierre</th><td>18</td><td>Center back</td><td>16</td><td>17</td><td>18</td><td>14</td><td>9</td><td>10</td><td><strong>84</strong></td></tr>
-<tr><td>6</td><th scope="row">Chris Brady</th><td>22</td><td>Goalkeeper</td><td>24</td><td>14</td><td>14</td><td>12</td><td>8</td><td>10</td><td><strong>82</strong></td></tr>
-<tr><td>7</td><th scope="row">Rokas Pukštas</th><td>21</td><td>Box-to-box No. 8</td><td>23</td><td>16</td><td>14</td><td>11</td><td>7</td><td>10</td><td><strong>81</strong></td></tr>
-<tr><td>8</td><th scope="row">Cavan Sullivan</th><td>16</td><td>Attacking midfielder / winger</td><td>14</td><td>16</td><td>20</td><td>12</td><td>9</td><td>10</td><td><strong>81</strong></td></tr>
-<tr><td>9</td><th scope="row">Niko Tsakiris</th><td>21</td><td>No. 8 / No. 10</td><td>20</td><td>17</td><td>16</td><td>11</td><td>6</td><td>10</td><td><strong>80</strong></td></tr>
-<tr><td>10</td><th scope="row">Paxten Aaronson</th><td>22</td><td>Attacking midfielder / No. 8</td><td>22</td><td>15</td><td>14</td><td>10</td><td>7</td><td>10</td><td><strong>78</strong></td></tr>
-<tr><td>11</td><th scope="row">Mathis Albert</th><td>17</td><td>Winger</td><td>7</td><td>17</td><td>20</td><td>13</td><td>10</td><td>10</td><td><strong>77</strong></td></tr>
-<tr><td>12</td><th scope="row">Diego Kochen</th><td>20</td><td>Goalkeeper</td><td>12</td><td>14</td><td>18</td><td>14</td><td>8</td><td>10</td><td><strong>76</strong></td></tr>
-<tr><td>13</td><th scope="row">Benjamin Cremaschi</th><td>21</td><td>Box-to-box No. 8 / attacking midfielder</td><td>19</td><td>15</td><td>14</td><td>10</td><td>8</td><td>10</td><td><strong>76</strong></td></tr>
-<tr><td>14</td><th scope="row">Kevin Paredes</th><td>23</td><td>Wingback / winger</td><td>15</td><td>13</td><td>17</td><td>13</td><td>7</td><td>10</td><td><strong>75</strong></td></tr>
-<tr><td>15</td><th scope="row">Peyton Miller</th><td>18</td><td>Left back / wingback / winger</td><td>16</td><td>14</td><td>15</td><td>11</td><td>8</td><td>10</td><td><strong>74</strong></td></tr>
-<tr><td>16</td><th scope="row">Cooper Sanchez</th><td>18</td><td>Central / attacking midfielder</td><td>18</td><td>15</td><td>14</td><td>9</td><td>7</td><td>10</td><td><strong>73</strong></td></tr>
-<tr><td>17</td><th scope="row">Beau Leroux</th><td>22</td><td>Central / defensive midfielder</td><td>20</td><td>15</td><td>12</td><td>10</td><td>5</td><td>10</td><td><strong>72</strong></td></tr>
-<tr><td>18</td><th scope="row">Francis Westfield</th><td>20</td><td>Right back / left back</td><td>20</td><td>15</td><td>11</td><td>9</td><td>6</td><td>10</td><td><strong>71</strong></td></tr>
-<tr><td>19</td><th scope="row">Cole Campbell</th><td>20</td><td>Winger</td><td>8</td><td>12</td><td>19</td><td>11</td><td>10</td><td>10</td><td><strong>70</strong></td></tr>
-<tr><td>20</td><th scope="row">Luca Bombino</th><td>20</td><td>Left back</td><td>20</td><td>14</td><td>11</td><td>9</td><td>5</td><td>10</td><td><strong>69</strong></td></tr>
-</tbody>
-</table>
-</div>
-<details class="prospect-score-key"><summary>How to read the score</summary><div><p><strong>FTP</strong> measures senior minutes, responsibility and quality of competition. <strong>AAP</strong> evaluates production relative to age, position and league. <strong>CEIL</strong> captures technical, physical and tactical upside.</p><p><strong>PATH</strong> reflects positional need and competition for places. <strong>TRAJ</strong> tracks whether a role is expanding. <strong>USA</strong> adjusts for international commitment; it is why Noahkai Banks scores below where his club evidence and ceiling alone would place him.</p></div></details>
-</section>
+The profiles below are grouped by the kind of bet each player represents, not presented in numerical order. The complete 1-to-20 ranking and a plain-language explanation of the scoring model appear at the end of the article.
 
 ## The Best Bets
 
@@ -285,3 +253,52 @@ The broader question is whether this group can add qualities the USMNT has often
 The US does not need all 20 players to develop into internationals. It needs a handful to become legitimate starters or valuable tournament options. That would deepen the pool, create real competition for places and give the next coach more ways to solve matches against opponents beyond CONCACAF.
 
 By 2030, the order of this list will almost certainly look wrong. The hope is that it looks wrong because several players developed faster and further than expected.
+
+<section class="prospect-score-section" aria-labelledby="prospect-score-heading">
+<p class="de-kicker">Methodology + complete ranking</p>
+<h2 id="prospect-score-heading">How the 2030 Breakthrough Score Works</h2>
+<p>The ranking below is ordered by total Breakthrough Score, from highest to lowest. The score is a weighted editorial model designed to answer one question: <em>Which young players are the best bets to earn meaningful USMNT roles during the 2030 cycle?</em> It is not a pure talent ranking, a forecast of World Cup selection or a claim that a one-point difference is meaningful.</p>
+<p>Each player receives points in six categories that add up to 100. The heaviest weight goes to evidence the player has already produced against senior professionals. The model then balances that evidence against age, upside, opportunity with the national team, recent momentum and—when relevant—international commitment.</p>
+
+<dl class="prospect-metric-grid" aria-label="2030 Breakthrough Score components">
+<div><dt>First-team proof <span>FTP · 25 points</span></dt><dd>How much meaningful senior soccer has the player already played, how much responsibility has he handled and how strong was the competition? A high score means the projection rests on professional evidence rather than youth reputation.</dd></div>
+<div><dt>Age-adjusted performance <span>AAP · 20 points</span></dt><dd>How impressive has the player’s production been for his age, position and league? This prevents raw goals, assists or minutes from being compared without context.</dd></div>
+<div><dt>Long-term ceiling <span>CEIL · 20 points</span></dt><dd>How valuable could the player’s technical, physical and tactical profile become if development goes well? This is the most projection-heavy part of the model.</dd></div>
+<div><dt>USMNT pathway <span>PATH · 15 points</span></dt><dd>How realistic is the route to an international role? Positional need, competition for places, tactical fit and the ability to fill multiple jobs all affect this score.</dd></div>
+<div><dt>Development trajectory <span>TRAJ · 10 points</span></dt><dd>Is the player’s club role and responsibility expanding right now? Rising minutes and responsibility score well; injuries, stalled progression or an uncertain role lower the mark.</dd></div>
+<div><dt>U.S. commitment <span>USA · 10 points</span></dt><dd>How likely is the player to be available and committed to the United States? A committed player receives full credit. An unsettled dual-national receives less because the USMNT cannot benefit from development that leads to another country.</dd></div>
+</dl>
+
+<aside class="prospect-order-note" aria-label="How the ranking is ordered">
+<p><strong>How the order is set:</strong> Add the six category scores, then sort by the total from highest to lowest. When totals are tied, the order is an editorial judgment based on ceiling, positional scarcity and the quality of the player’s most recent evidence. The article itself uses “Best Bets,” “Golden Tickets,” “Next Up” and “Lottery Tickets” to describe the type of projection; those groups are not the numerical order.</p>
+<p><strong>Two examples:</strong> Noahkai Banks earns the highest First-team Proof score in the group, but his uncertain international choice lowers his U.S. Commitment score. Mathis Albert receives elite marks for ceiling and trajectory, but his First-team Proof score remains low because his senior sample is still tiny.</p>
+</aside>
+
+<div class="project-data-table prospect-score-table" id="prospect-score-table" role="region" aria-label="Twenty USMNT prospects ordered by the 2030 Breakthrough Score" tabindex="0">
+<table>
+<thead><tr><th scope="col">Rank</th><th scope="col">Player</th><th scope="col">Age</th><th scope="col">Position</th><th scope="col">First-team proof<small>FTP · /25</small></th><th scope="col">Age-adjusted performance<small>AAP · /20</small></th><th scope="col">Long-term ceiling<small>CEIL · /20</small></th><th scope="col">USMNT pathway<small>PATH · /15</small></th><th scope="col">Development trajectory<small>TRAJ · /10</small></th><th scope="col">U.S. commitment<small>USA · /10</small></th><th scope="col">Total<small>/100</small></th></tr></thead>
+<tbody>
+<tr><td>1</td><th scope="row">Zavier Gozo</th><td>19</td><td>Winger / wingback</td><td>23</td><td>18</td><td>17</td><td>13</td><td>9</td><td>10</td><td><strong>90</strong></td></tr>
+<tr><td>2</td><th scope="row">Noahkai Banks</th><td>19</td><td>Center back</td><td>25</td><td>17</td><td>19</td><td>14</td><td>8</td><td>4</td><td><strong>87</strong></td></tr>
+<tr><td>3</td><th scope="row">Julian Hall</th><td>18</td><td>Striker / wide forward</td><td>22</td><td>18</td><td>18</td><td>12</td><td>9</td><td>7</td><td><strong>86</strong></td></tr>
+<tr><td>4</td><th scope="row">Adri Mehmeti</th><td>17</td><td>Defensive / central midfielder</td><td>20</td><td>18</td><td>16</td><td>12</td><td>9</td><td>10</td><td><strong>85</strong></td></tr>
+<tr><td>5</td><th scope="row">Neil Pierre</th><td>18</td><td>Center back</td><td>16</td><td>17</td><td>18</td><td>14</td><td>9</td><td>10</td><td><strong>84</strong></td></tr>
+<tr><td>6</td><th scope="row">Chris Brady</th><td>22</td><td>Goalkeeper</td><td>24</td><td>14</td><td>14</td><td>12</td><td>8</td><td>10</td><td><strong>82</strong></td></tr>
+<tr><td>7</td><th scope="row">Rokas Pukštas</th><td>21</td><td>Box-to-box No. 8</td><td>23</td><td>16</td><td>14</td><td>11</td><td>7</td><td>10</td><td><strong>81</strong></td></tr>
+<tr><td>8</td><th scope="row">Cavan Sullivan</th><td>16</td><td>Attacking midfielder / winger</td><td>14</td><td>16</td><td>20</td><td>12</td><td>9</td><td>10</td><td><strong>81</strong></td></tr>
+<tr><td>9</td><th scope="row">Niko Tsakiris</th><td>21</td><td>No. 8 / No. 10</td><td>20</td><td>17</td><td>16</td><td>11</td><td>6</td><td>10</td><td><strong>80</strong></td></tr>
+<tr><td>10</td><th scope="row">Paxten Aaronson</th><td>22</td><td>Attacking midfielder / No. 8</td><td>22</td><td>15</td><td>14</td><td>10</td><td>7</td><td>10</td><td><strong>78</strong></td></tr>
+<tr><td>11</td><th scope="row">Mathis Albert</th><td>17</td><td>Winger</td><td>7</td><td>17</td><td>20</td><td>13</td><td>10</td><td>10</td><td><strong>77</strong></td></tr>
+<tr><td>12</td><th scope="row">Diego Kochen</th><td>20</td><td>Goalkeeper</td><td>12</td><td>14</td><td>18</td><td>14</td><td>8</td><td>10</td><td><strong>76</strong></td></tr>
+<tr><td>13</td><th scope="row">Benjamin Cremaschi</th><td>21</td><td>Box-to-box No. 8 / attacking midfielder</td><td>19</td><td>15</td><td>14</td><td>10</td><td>8</td><td>10</td><td><strong>76</strong></td></tr>
+<tr><td>14</td><th scope="row">Kevin Paredes</th><td>23</td><td>Wingback / winger</td><td>15</td><td>13</td><td>17</td><td>13</td><td>7</td><td>10</td><td><strong>75</strong></td></tr>
+<tr><td>15</td><th scope="row">Peyton Miller</th><td>18</td><td>Left back / wingback / winger</td><td>16</td><td>14</td><td>15</td><td>11</td><td>8</td><td>10</td><td><strong>74</strong></td></tr>
+<tr><td>16</td><th scope="row">Cooper Sanchez</th><td>18</td><td>Central / attacking midfielder</td><td>18</td><td>15</td><td>14</td><td>9</td><td>7</td><td>10</td><td><strong>73</strong></td></tr>
+<tr><td>17</td><th scope="row">Beau Leroux</th><td>22</td><td>Central / defensive midfielder</td><td>20</td><td>15</td><td>12</td><td>10</td><td>5</td><td>10</td><td><strong>72</strong></td></tr>
+<tr><td>18</td><th scope="row">Francis Westfield</th><td>20</td><td>Right back / left back</td><td>20</td><td>15</td><td>11</td><td>9</td><td>6</td><td>10</td><td><strong>71</strong></td></tr>
+<tr><td>19</td><th scope="row">Cole Campbell</th><td>20</td><td>Winger</td><td>8</td><td>12</td><td>19</td><td>11</td><td>10</td><td>10</td><td><strong>70</strong></td></tr>
+<tr><td>20</td><th scope="row">Luca Bombino</th><td>20</td><td>Left back</td><td>20</td><td>14</td><td>11</td><td>9</td><td>5</td><td>10</td><td><strong>69</strong></td></tr>
+</tbody>
+</table>
+</div>
+</section>
