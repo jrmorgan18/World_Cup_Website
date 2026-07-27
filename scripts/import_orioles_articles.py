@@ -1,8 +1,7 @@
 """Import the completed 2026 Orioles DOCX archive into Jekyll posts.
 
 The source documents remain the editorial originals. This script only writes the
-known generated post filenames listed below and deliberately leaves the July 27
-draft unpublished until it is complete.
+known generated post filenames listed below.
 """
 
 from __future__ import annotations
@@ -18,7 +17,7 @@ from docx import Document
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_DIR = ROOT / "articles" / "Orioles"
 POSTS_DIR = ROOT / "_posts"
-PUBLISH_THROUGH = date(2026, 7, 25)
+PUBLISH_THROUGH = date(2026, 7, 27)
 
 BRANDON_SOURCE = "Brandon Young’s Breakout.docx"
 BRANDON_SLUG = "brandon-young-breakout"
@@ -142,7 +141,7 @@ def split_scorecard(summary: str) -> list[tuple[str, str]]:
     return entries
 
 
-def weekly_body(document: Document) -> str:
+def weekly_body(document: Document, *, linked_question_feature: str | None = None) -> str:
     nonempty = [paragraph for paragraph in document.paragraphs if normalize_text(paragraph.text)]
     if len(nonempty) < 3:
         raise ValueError("Weekly recap does not contain enough content")
@@ -164,6 +163,14 @@ def weekly_body(document: Document) -> str:
     for paragraph in nonempty[2:]:
         plain = normalize_text(paragraph.text)
         rendered = paragraph_markdown(paragraph)
+        if linked_question_feature and plain == "Question of the Week":
+            body.append("## Question of the Week")
+            body.append(
+                "This week’s question—what changed for Brandon Young and whether it is "
+                "sustainable—is covered in the full feature analysis: "
+                f"[Brandon Young’s Breakout Is Real. His ERA Probably Isn’t.]({linked_question_feature})"
+            )
+            break
         if plain in SECTION_LABELS:
             rendered = f"## {plain}"
         else:
@@ -255,8 +262,7 @@ def import_weekly(source_name: str, publication_date: date) -> Path:
     slug = f"weekly-recap-{publication_date.isoformat()}"
     excerpt = excerpt_from(document, skip=2)
     output = POSTS_DIR / f"{publication_date.isoformat()}-orioles-{slug}.md"
-    content = front_matter(
-        [
+    fields = [
             ("layout", "post"),
             ("title", yaml_quote(title)),
             ("date", f"{publication_date.isoformat()} 08:00:00 -0400"),
@@ -270,7 +276,49 @@ def import_weekly(source_name: str, publication_date: date) -> Path:
             ("source_docx", yaml_quote(f"articles/Orioles/{source_name}")),
             ("generated_by", yaml_quote("scripts/import_orioles_articles.py")),
         ]
-    ) + weekly_body(document)
+    linked_question_feature = None
+    if publication_date == date(2026, 7, 27):
+        fields.extend(
+            [
+                (
+                    "hero_image",
+                    yaml_quote(
+                        "https://img.mlbstatic.com/mlb-images/image/upload/"
+                        "t_2x1/t_w1536/mlb/axrx1rdj9xkzyspakzeu.jpg"
+                    ),
+                ),
+                ("hero_wide", "true"),
+                ("hero_credit", yaml_quote("Photo: MLB.com — Brandon Young at Houston, July 19, 2026.")),
+                (
+                    "hero_credit_url",
+                    yaml_quote(
+                        "https://www.mlb.com/news/"
+                        "brandon-young-7-solid-innings-orioles-extend-win-streak-7-games"
+                    ),
+                ),
+                (
+                    "player_of_week",
+                    '{ name: "Brandon Young", position: "RHP", period: "July 17–26, 2026", '
+                    'summary: "Young delivered two high-leverage starts during a 5–4 stretch, finishing the week with a 1.35 ERA and helping Baltimore complete the Houston sweep before stabilizing the Atlanta series.", '
+                    'image: "https://img.mlbstatic.com/mlb-images/image/upload/'
+                    't_2x1/t_w1536/mlb/axrx1rdj9xkzyspakzeu.jpg", '
+                    'image_alt: "Brandon Young pitching for the Baltimore Orioles", '
+                    'image_credit: "MLB.com", '
+                    'image_credit_url: "https://www.mlb.com/news/'
+                    'brandon-young-7-solid-innings-orioles-extend-win-streak-7-games", '
+                    'stats: [{ label: "Starts", value: "2" }, '
+                    '{ label: "Innings", value: "13⅓" }, '
+                    '{ label: "Earned runs", value: "2" }, '
+                    '{ label: "Strikeouts", value: "13" }, '
+                    '{ label: "Walks", value: "3" }, '
+                    '{ label: "ERA", value: "1.35" }] }',
+                ),
+            ]
+        )
+        linked_question_feature = "/orioles/brandon-young-breakout/"
+    content = front_matter(fields) + weekly_body(
+        document, linked_question_feature=linked_question_feature
+    )
     output.write_text(content, encoding="utf-8", newline="\n")
     return output
 

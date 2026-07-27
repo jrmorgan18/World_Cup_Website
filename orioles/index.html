@@ -29,10 +29,46 @@ section_theme: orioles
 </section>
 {% endif %}
 
+{% assign latest_player_of_week = nil %}
+{% for post in site.posts %}
+  {% if post.categories contains "orioles" and post.player_of_week %}
+    {% assign latest_player_of_week = post %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+{% if latest_player_of_week %}
+{% assign pow = latest_player_of_week.player_of_week %}
+<section class="club-section club-section--orioles-potw" aria-labelledby="orioles-potw-heading">
+  <div class="orioles-potw">
+    <figure class="orioles-potw-photo">
+      <img src="{{ pow.image }}" alt="{{ pow.image_alt | escape }}">
+      <figcaption>Photo: <a href="{{ pow.image_credit_url }}" target="_blank" rel="noopener">{{ pow.image_credit }}</a></figcaption>
+    </figure>
+    <div class="orioles-potw-copy">
+      <p class="de-kicker">Player of the week <span>{{ pow.period }} · {{ pow.position }}</span></p>
+      <div class="orioles-potw-title">
+        <div><small>Week</small><strong aria-hidden="true">★</strong></div>
+        <h2 id="orioles-potw-heading">{{ pow.name }}</h2>
+      </div>
+      <p>{{ pow.summary }}</p>
+      <div class="orioles-potw-stats" aria-label="{{ pow.name }} statistics for {{ pow.period }}">
+        {% for stat in pow.stats %}
+        <span><small>{{ stat.label }}</small><strong>{{ stat.value }}</strong></span>
+        {% endfor %}
+      </div>
+      <div class="orioles-potw-links">
+        <a href="{{ latest_player_of_week.url | relative_url }}">Read the weekly recap <span aria-hidden="true">&rarr;</span></a>
+        <a href="{{ brandon_feature.url | relative_url }}">Read the Brandon Young analysis <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
 <section class="club-section orioles-archive-section">
   <div class="de-section-heading de-section-heading--light">
     <div><p class="de-kicker">From the notebook</p><h2>2026 Orioles archive</h2></div>
-    <p>Every completed weekly recap from the 2026 season, preserved in chronological order.</p>
+    <p>Every completed weekly recap from the 2026 season, with the newest entry first.</p>
   </div>
   <div class="orioles-archive-grid">
     {% for post in site.posts %}
