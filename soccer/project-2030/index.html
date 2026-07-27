@@ -14,48 +14,48 @@ section_theme: project
   </div>
 </section>
 
-<section class="project-intro">
-  <p class="de-kicker">The mandate</p>
-  <h2>The next World Cup starts now.</h2>
-  <p>The 2026 run answered some questions and exposed much larger ones. Project 2030 will document what happens between tournaments, when development systems, coaching choices and thousands of quiet minutes determine what becomes possible.</p>
-</section>
-
 {% include project-subnav.html %}
-
-<section class="project-modules project-modules--four">
-  <a class="project-module" href="{{ '/soccer/project-2030/big-board/' | relative_url }}">
-    <span class="project-module-no">01</span><p class="de-kicker">The model</p><h2>Big Board</h2><p>A transparent, weighted ranking of the complete player pool. The methodology is currently under construction.</p><strong>Preview the board &rarr;</strong>
-  </a>
-  <a class="project-module" href="{{ '/soccer/project-2030/player-pool/' | relative_url }}">
-    <span class="project-module-no">02</span><p class="de-kicker">The living pool</p><h2>Player Pool</h2><p>Six evolving groups organize the veterans, contenders, prospects and dual-nationals on the road to 2030.</p><strong>Explore the pool &rarr;</strong>
-  </a>
-  <a class="project-module" href="{{ '/soccer/project-2030/checkpoints/' | relative_url }}">
-    <span class="project-module-no">03</span><p class="de-kicker">The timeline</p><h2>Checkpoints</h2><p>A visual chronology of the moments that matter: appointments, tournaments, breakthroughs and warning signs.</p><strong>View the timeline &rarr;</strong>
-  </a>
-  <a class="project-module" href="{{ '/soccer/project-2030/scouting/' | relative_url }}">
-    <span class="project-module-no">04</span><p class="de-kicker">Every week</p><h2>Scouting</h2><p>One promising young player at a time, watched closely and placed in the context of the 2030 cycle.</p><strong>Enter the scouting room &rarr;</strong>
-  </a>
-</section>
 
 {% assign checkpoint_story = site.posts | where: "checkpoint_feature", true | first %}
 {% assign prospect_story = site.posts | where: "prospect_feature", true | first %}
-{% if checkpoint_story and prospect_story %}
-<section class="project-latest">
-  <div class="de-section-heading">
-    <div><p class="de-kicker">New from the project</p><h2>The cycle begins</h2></div>
-    <p>Start with the calendar that will define the next four years, then meet the young players with a chance to change the roster.</p>
-  </div>
-  <div class="project-latest-grid">
-    <a class="project-story-card project-story-card--visual" href="{{ checkpoint_story.url | relative_url }}">
-      <figure><img src="{{ checkpoint_story.thumbnail | relative_url }}" alt="" loading="lazy"></figure>
-      <div><span>Checkpoints / 13 min</span><h3>{{ checkpoint_story.title }}</h3><p>{{ checkpoint_story.excerpt }}</p><strong>Read the roadmap &rarr;</strong></div>
+{% assign foundation_part1 = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina" | first %}
+{% assign foundation_part2 = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina-part-2" | first %}
+
+<section class="project-overview">
+  <section class="project-intro">
+    <p class="de-kicker">The mandate</p>
+    <h2>The next World Cup starts now.</h2>
+    <p>The 2026 run answered some questions and exposed much larger ones. Project 2030 will document what happens between tournaments, when development systems, coaching choices and thousands of quiet minutes determine what becomes possible.</p>
+  </section>
+
+  <aside class="project-article-sidebar de-recent-sidebar" aria-labelledby="project-articles-heading">
+    <div class="de-home-section-label">
+      <p id="project-articles-heading">Project reading</p>
+      <span>Latest</span>
+    </div>
+    <ol class="de-recent-list">
+      {% if checkpoint_story %}<li><span class="de-recent-number">01</span><a href="{{ checkpoint_story.url | relative_url }}"><small class="de-recent-tag">Checkpoints</small><h3>{{ checkpoint_story.title }}</h3><p>{{ checkpoint_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+      {% if prospect_story %}<li><span class="de-recent-number">02</span><a href="{{ prospect_story.url | relative_url }}"><small class="de-recent-tag">Player Pool</small><h3>{{ prospect_story.title }}</h3><p>{{ prospect_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+      {% if foundation_part1 %}<li><span class="de-recent-number">03</span><a href="{{ foundation_part1.url | relative_url }}"><small class="de-recent-tag">Foundation / Part 1</small><h3>{{ foundation_part1.title }}</h3><p>{{ foundation_part1.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+      {% if foundation_part2 %}<li><span class="de-recent-number">04</span><a href="{{ foundation_part2.url | relative_url }}"><small class="de-recent-tag">Foundation / Part 2</small><h3>{{ foundation_part2.title }}</h3><p>{{ foundation_part2.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+    </ol>
+  </aside>
+
+  <section class="project-modules project-modules--four" aria-label="Project 2030 tools">
+    <a class="project-module" href="{{ '/soccer/project-2030/big-board/' | relative_url }}">
+      <span class="project-module-no">01</span><p class="de-kicker">The model</p><h2>Big Board</h2><p>A transparent, weighted ranking of the complete player pool. The methodology is currently under construction.</p><strong>Preview the board &rarr;</strong>
     </a>
-    <a class="project-story-card" href="{{ prospect_story.url | relative_url }}">
-      <span>Player Pool / 18 min</span><h3>{{ prospect_story.title }}</h3><p>{{ prospect_story.excerpt }}</p><strong>Meet the 20 prospects &rarr;</strong>
+    <a class="project-module" href="{{ '/soccer/project-2030/player-pool/' | relative_url }}">
+      <span class="project-module-no">02</span><p class="de-kicker">The living pool</p><h2>Player Pool</h2><p>Six evolving groups organize the veterans, contenders, prospects and dual-nationals on the road to 2030.</p><strong>Explore the pool &rarr;</strong>
     </a>
-  </div>
+    <a class="project-module" href="{{ '/soccer/project-2030/checkpoints/' | relative_url }}">
+      <span class="project-module-no">03</span><p class="de-kicker">The timeline</p><h2>Checkpoints</h2><p>A visual chronology of the moments that matter: appointments, tournaments, breakthroughs and warning signs.</p><strong>View the timeline &rarr;</strong>
+    </a>
+    <a class="project-module" href="{{ '/soccer/project-2030/scouting/' | relative_url }}">
+      <span class="project-module-no">04</span><p class="de-kicker">Every week</p><h2>Scouting</h2><p>One promising young player at a time, watched closely and placed in the context of the 2030 cycle.</p><strong>Enter the scouting room &rarr;</strong>
+    </a>
+  </section>
 </section>
-{% endif %}
 
 <section class="project-foundation">
   <div><p class="de-kicker">Where the project begins</p><h2>The American Soccer Question</h2></div>
