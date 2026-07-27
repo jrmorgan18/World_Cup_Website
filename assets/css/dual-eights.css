@@ -181,6 +181,14 @@ body { overflow-x: hidden; }
 .de-recent-tag--soccer { color:#9a741b; }
 .de-recent-list h3 { color:var(--de-ink); font-family:'Newsreader',serif; font-size:1.22rem; font-weight:600; line-height:1.17; }
 .de-recent-list p { margin-top:8px; color:#88848c; font-family:var(--font-display); font-size:.62rem; letter-spacing:.9px; text-transform:uppercase; }
+.de-name-explainer { max-width:var(--de-wide); margin:0 auto; padding:0 32px 76px; }
+.de-name-explainer-inner { padding:25px 0; display:grid; grid-template-columns:90px minmax(0,1fr); gap:28px; align-items:center; border-top:1px solid var(--de-rule); border-bottom:1px solid var(--de-rule); }
+.de-name-mark { display:flex; align-items:center; gap:8px; font-family:var(--font-display); font-size:2.25rem; font-weight:700; line-height:1; }
+.de-name-mark span:first-child { color:var(--de-orange); }
+.de-name-mark span:last-child { color:var(--de-purple); }
+.de-name-mark i { width:16px; height:1px; background:#a7a3aa; }
+.de-name-copy h2 { margin-bottom:8px; color:#77737e; font-family:var(--font-display); font-size:.64rem; letter-spacing:1.8px; text-transform:uppercase; }
+.de-name-copy p { max-width:900px; color:#57545c; font-family:'Newsreader',serif; font-size:1.08rem; line-height:1.55; }
 .de-story-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
 .de-story-card { background: var(--de-white); border: 1px solid var(--de-rule); transition: transform .2s, box-shadow .2s; }
 .de-story-card:hover { transform: translateY(-4px); box-shadow: 0 18px 32px rgba(20,18,25,.11); }
@@ -763,6 +771,9 @@ body { overflow-x: hidden; }
   .de-home-bookend--jackson { right:5%; }
   .de-home-editorial { padding:48px 20px 65px; }
   .de-home-content-grid { grid-template-columns:1fr; gap:52px; }
+  .de-name-explainer { padding:0 20px 58px; }
+  .de-name-explainer-inner { grid-template-columns:1fr; gap:14px; }
+  .de-name-mark { font-size:1.8rem; }
   .de-lead-story { grid-template-columns:1fr; gap:0; }
   .de-lead-story figure { min-height:360px; }
   .de-lead-story-copy { padding:28px 0 6px; }
