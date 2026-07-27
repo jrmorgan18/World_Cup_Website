@@ -243,6 +243,52 @@ body { overflow-x: hidden; }
 .hub-lane-card p { max-width:540px; color:#9ea8bb; }
 .hub-lane-card strong { display:block; margin-top:28px; color:var(--de-soccer); font-family:var(--font-display); font-size:.75rem; letter-spacing:1px; text-transform:uppercase; }
 
+/* Soccer landing page */
+.hub-hero--soccer-compact { min-height:310px; padding-top:44px; padding-bottom:44px; align-items:center; }
+.hub-hero--soccer-compact::after { content:'SOCCER'; right:-24px; bottom:-25px; font-size:10.5rem; letter-spacing:-8px; }
+.hub-hero--soccer-compact .hub-hero-inner { max-width:770px; }
+.hub-hero--soccer-compact .de-eyebrow { margin-bottom:13px; }
+.hub-hero--soccer-compact h1 { font-size:clamp(3rem,5vw,5.25rem); line-height:.91; letter-spacing:-2.5px; }
+.hub-hero--soccer-compact .hub-hero-inner>p:last-child { max-width:680px; margin-top:18px; font-size:1.08rem; line-height:1.46; }
+.hub-hero--soccer-compact .hub-hero-stat { flex-basis:185px; padding:17px 19px; }
+.hub-hero--soccer-compact .hub-hero-stat strong { font-size:2.75rem; }
+.hub-hero--soccer-compact .hub-hero-stat span { margin-top:7px; font-size:.68rem; }
+.soccer-editorial-shell { background:var(--de-paper); color:var(--de-ink); }
+.soccer-editorial-grid { max-width:var(--de-wide); margin:0 auto; padding:52px 32px 68px; display:grid; grid-template-columns:minmax(0,1fr) 310px; gap:48px; align-items:start; }
+.soccer-editorial-shell .de-home-section-label { color:var(--de-ink); }
+.soccer-editorial-shell .de-home-section-label span { color:#77737e; }
+.soccer-feature-story { padding-top:24px; display:grid; grid-template-columns:minmax(0,1.04fr) minmax(310px,.96fr); gap:32px; }
+.soccer-feature-story figure { position:relative; min-height:400px; margin:0; overflow:hidden; background:#111824; }
+.soccer-feature-story figure img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform .35s ease; }
+.soccer-feature-story:hover figure img { transform:scale(1.02); }
+.soccer-feature-story figure>span { position:absolute; left:17px; bottom:17px; padding:7px 10px; color:#fff; background:rgba(7,13,23,.88); font-family:var(--font-display); font-size:.61rem; letter-spacing:1.2px; text-transform:uppercase; }
+.soccer-feature-copy { padding:18px 0; align-self:center; }
+.soccer-feature-kicker { color:#9a741b; font-family:var(--font-display); font-size:.61rem; font-weight:700; letter-spacing:1.35px; text-transform:uppercase; }
+.soccer-feature-kicker i { display:inline-block; width:3px; height:3px; margin:0 7px 2px; border-radius:50%; background:var(--de-soccer); }
+.soccer-feature-copy h2 { margin:13px 0 17px; color:var(--de-ink); font-family:'Newsreader',serif; font-size:clamp(2.25rem,3vw,3.35rem); font-weight:500; line-height:.98; letter-spacing:-1.1px; }
+.soccer-feature-dek { color:#57545c; font-family:'Newsreader',serif; font-size:1.08rem; line-height:1.48; }
+.soccer-feature-meta { margin-top:19px; color:#77737e; font-family:var(--font-display); font-size:.64rem; letter-spacing:.75px; text-transform:uppercase; }
+.soccer-feature-meta span { margin:0 5px; color:#a47c20; }
+.soccer-feature-copy>strong { display:inline-block; margin-top:22px; padding-bottom:4px; color:var(--de-ink); border-bottom:2px solid var(--de-soccer); font-family:var(--font-display); font-size:.7rem; letter-spacing:.95px; text-transform:uppercase; }
+.soccer-article-sidebar { min-width:0; }
+.soccer-article-sidebar .de-home-section-label { border-color:var(--de-soccer); }
+.soccer-sidebar-list { list-style:none; }
+.soccer-sidebar-list li { padding:18px 0; display:grid; grid-template-columns:27px 1fr; gap:11px; border-bottom:1px solid var(--de-rule); }
+.soccer-sidebar-number { color:#9a969e; font-family:var(--font-display); font-size:.62rem; line-height:1.4; }
+.soccer-sidebar-list small { display:block; margin-bottom:5px; color:#98731c; font-family:var(--font-display); font-size:.59rem; font-weight:700; letter-spacing:1.2px; text-transform:uppercase; }
+.soccer-sidebar-list h3 { color:var(--de-ink); font-family:'Newsreader',serif; font-size:1.13rem; font-weight:600; line-height:1.18; }
+.soccer-sidebar-list p { margin-top:7px; color:#88848c; font-family:var(--font-display); font-size:.58rem; letter-spacing:.8px; text-transform:uppercase; }
+.soccer-sidebar-list div h3 { color:#69666d; }
+.soccer-project-bridge { padding:30px max(32px,calc((100vw - var(--de-wide))/2 + 32px)); display:grid; grid-template-columns:minmax(260px,.8fr) minmax(330px,1.15fr) auto; gap:42px; align-items:center; color:#fff; border-top:1px solid rgba(212,168,67,.28); border-bottom:1px solid rgba(212,168,67,.2); background:linear-gradient(105deg,#101a2c,#080d17); }
+.soccer-project-bridge>div>p { margin-bottom:6px; color:var(--de-soccer); font-family:var(--font-display); font-size:.56rem; font-weight:700; letter-spacing:1.45px; text-transform:uppercase; }
+.soccer-project-bridge h2 { color:#fff; font-family:'Newsreader',serif; font-size:1.65rem; font-weight:600; line-height:1.08; }
+.soccer-project-bridge>p { color:#aeb7c8; font-size:.9rem; line-height:1.5; }
+.soccer-project-bridge>a { justify-self:end; white-space:nowrap; color:var(--de-soccer); font-family:var(--font-display); font-size:.64rem; font-weight:700; letter-spacing:1.1px; text-transform:uppercase; }
+.soccer-desk-links { padding-top:64px; padding-bottom:74px; }
+.soccer-desk-links .de-section-heading { margin-bottom:30px; }
+.soccer-desk-links .hub-lane-card { min-height:260px; padding:34px; }
+.soccer-desk-links .hub-lane-card h3 { margin-top:34px; font-size:2.55rem; }
+
 /* Project 2030 */
 .project-hero { position:relative; min-height:410px; padding:64px max(32px,calc((100vw - var(--de-wide))/2 + 32px)); display:flex; align-items:center; overflow:hidden; background:radial-gradient(circle at 16% 88%,rgba(239,35,60,.2),transparent 28%),linear-gradient(120deg,#06162e 48%,#0d3b73); color:#fff; }
 .project-hero::before { content:''; position:absolute; inset:0; opacity:.2; background:linear-gradient(118deg,transparent 0 64%,rgba(255,255,255,.28) 64% 65%,transparent 65% 68%,rgba(239,35,60,.6) 68% 70%,transparent 70%); }
@@ -731,6 +777,12 @@ body { overflow-x: hidden; }
   .de-lead-story { grid-template-columns:1fr; gap:0; }
   .de-lead-story figure { min-height:380px; }
   .de-lead-story-copy { padding-bottom:0; }
+  .soccer-editorial-grid { grid-template-columns:minmax(0,1fr) 280px; gap:32px; }
+  .soccer-feature-story { grid-template-columns:1fr; gap:0; }
+  .soccer-feature-story figure { min-height:360px; }
+  .soccer-feature-copy { padding-bottom:0; }
+  .soccer-project-bridge { grid-template-columns:minmax(240px,.8fr) minmax(300px,1fr); gap:28px; }
+  .soccer-project-bridge>a { grid-column:1 / -1; justify-self:start; }
   .de-desk-grid,.project-modules { grid-template-columns:1fr 1fr; }
   .de-desk-card:last-child,.project-module:last-child { grid-column:1 / -1; }
   .project-modules--four .project-module:last-child { grid-column:auto; }
@@ -784,6 +836,20 @@ body { overflow-x: hidden; }
   .de-feature-section { padding-left:20px; padding-right:20px; }
   .hub-hero,.club-hero,.archive-hero { min-height:auto; padding:75px 20px; align-items:flex-start; flex-direction:column; }
   .hub-hero h1,.club-hero h1,.archive-hero h1 { font-size:4.5rem; letter-spacing:-2px; }
+  .hub-hero--soccer-compact { min-height:auto; padding:38px 20px; gap:25px; }
+  .hub-hero--soccer-compact::after { right:-12px; bottom:-10px; font-size:7rem; letter-spacing:-5px; }
+  .hub-hero--soccer-compact h1 { font-size:clamp(3rem,10vw,4.35rem); }
+  .hub-hero--soccer-compact .hub-hero-inner>p:last-child { max-width:620px; margin-top:15px; }
+  .hub-hero--soccer-compact .hub-hero-stat { width:auto; flex-basis:auto; padding:12px 15px; display:flex; align-items:center; gap:13px; }
+  .hub-hero--soccer-compact .hub-hero-stat strong { font-size:2rem; }
+  .hub-hero--soccer-compact .hub-hero-stat span { margin:0; }
+  .soccer-editorial-grid { padding:46px 20px 60px; grid-template-columns:1fr; gap:48px; }
+  .soccer-feature-story { grid-template-columns:1fr; }
+  .soccer-feature-story figure { min-height:360px; }
+  .soccer-article-sidebar { width:100%; }
+  .soccer-project-bridge { padding:28px 20px; grid-template-columns:1fr; gap:13px; }
+  .soccer-project-bridge>a { grid-column:auto; margin-top:5px; }
+  .soccer-desk-links { padding-top:54px; padding-bottom:62px; }
   .club-hero { min-height:330px; padding:48px 20px; justify-content:center; }
   .club-hero--orioles { min-height:220px; padding-top:28px; padding-bottom:28px; }
   .club-hero h1 { font-size:3.8rem; }
@@ -891,6 +957,12 @@ body { overflow-x: hidden; }
   .de-story-grid { gap:16px; }
   .de-manifesto { padding:75px 20px; }
   .hub-hero h1,.club-hero h1,.archive-hero h1 { font-size:3.7rem; }
+  .hub-hero--soccer-compact { padding-top:32px; padding-bottom:32px; }
+  .hub-hero--soccer-compact h1 { font-size:3.25rem; }
+  .hub-hero--soccer-compact .hub-hero-inner>p:last-child { font-size:1rem; }
+  .soccer-feature-story figure { min-height:245px; }
+  .soccer-feature-copy h2 { font-size:2.55rem; }
+  .soccer-project-bridge h2 { font-size:1.45rem; }
   .club-hero { min-height:300px; padding:42px 20px; }
   .club-hero h1 { font-size:3.25rem; }
   .club-hero-copy > p:last-child { font-size:1.02rem; }

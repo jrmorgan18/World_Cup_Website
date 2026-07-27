@@ -4,11 +4,11 @@ title: Soccer
 permalink: /soccer/
 section_theme: soccer
 ---
-<section class="hub-hero hub-hero--soccer">
+<section class="hub-hero hub-hero--soccer hub-hero--soccer-compact">
   <div class="hub-hero-inner">
     <p class="de-eyebrow"><span></span> The soccer desk</p>
-    <h1>The world&rsquo;s game,<br><em>past the final whistle.</em></h1>
-    <p>Project 2030 follows the next USMNT cycle from its first decisions to the next World Cup. The rest of the desk goes deep on the Champions League, Europe&rsquo;s major leagues and the complete 2026 archive.</p>
+    <h1>The world&rsquo;s game,<br><em>beyond the score.</em></h1>
+    <p>Long-form reporting and analysis on the USMNT, the Champions League and Europe&rsquo;s major leagues&mdash;with the complete 2026 World Cup archive preserved.</p>
   </div>
   <div class="hub-hero-stat"><strong>123</strong><span>pieces preserved from<br>World Cup 2026</span></div>
 </section>
@@ -20,25 +20,61 @@ section_theme: soccer
   <a href="{{ '/categories/usmnt/' | relative_url }}">USMNT archive</a>
 </nav>
 
-<section class="hub-section">
-  <div class="de-section-heading">
-    <div><p class="de-kicker">The next cycle</p><h2>Project 2030</h2></div>
-    <p>A living record of the decisions, players and turning points that will shape the United States over the next four years.</p>
-  </div>
-  <a class="project-card" href="{{ '/soccer/project-2030/' | relative_url }}">
-    <div class="project-card-copy">
-      <span class="project-card-tag">Flagship project / 2026&ndash;2030</span>
-      <h3>Four years. One question.</h3>
-      <p>What would it take for the United States to become something more than a talented host nation? Track the checkpoints, build the player board and scout the generation coming next.</p>
-      <strong>Open Project 2030 <span aria-hidden="true">&rarr;</span></strong>
+{% assign longform_feature = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina-part-2" | first %}
+{% assign checkpoint_story = site.posts | where: "checkpoint_feature", true | first %}
+{% assign prospect_story = site.posts | where: "prospect_feature", true | first %}
+{% if longform_feature %}
+<section class="soccer-editorial-shell">
+  <div class="soccer-editorial-grid">
+    <div class="soccer-feature-column">
+      <div class="de-home-section-label">
+        <p>Featured story</p>
+        <span>Longform</span>
+      </div>
+      <a class="soccer-feature-story" href="{{ longform_feature.url | relative_url }}">
+        <figure>
+          <img src="{{ longform_feature.hero_image | relative_url }}" alt="" loading="eager">
+          <span>{{ longform_feature.part }}</span>
+        </figure>
+        <div class="soccer-feature-copy">
+          <p class="soccer-feature-kicker">Project 2030 <i aria-hidden="true"></i> USMNT</p>
+          <h2>{{ longform_feature.title }}</h2>
+          <p class="soccer-feature-dek">{{ longform_feature.excerpt }}</p>
+          <p class="soccer-feature-meta">By {{ longform_feature.author }} <span aria-hidden="true">&middot;</span> {{ longform_feature.read_time }} minute read</p>
+          <strong>Read the feature <span aria-hidden="true">&rarr;</span></strong>
+        </div>
+      </a>
     </div>
-    <div class="project-card-mark" aria-hidden="true"><span>20</span><b>30</b></div>
-  </a>
+
+    <aside class="soccer-article-sidebar" aria-labelledby="soccer-latest-heading">
+      <div class="de-home-section-label">
+        <p id="soccer-latest-heading">On the soccer desk</p>
+        <span>Latest &amp; upcoming</span>
+      </div>
+      <ol class="soccer-sidebar-list">
+        {% if checkpoint_story %}<li><span class="soccer-sidebar-number">01</span><a href="{{ checkpoint_story.url | relative_url }}"><small>Project 2030</small><h3>{{ checkpoint_story.title }}</h3><p>{{ checkpoint_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if prospect_story %}<li><span class="soccer-sidebar-number">02</span><a href="{{ prospect_story.url | relative_url }}"><small>Project 2030</small><h3>{{ prospect_story.title }}</h3><p>{{ prospect_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        <li><span class="soccer-sidebar-number">03</span><div><small>Europe</small><h3>The Summer Transfer Window: The Moves That Reshaped Europe</h3><p>Coming soon</p></div></li>
+        <li><span class="soccer-sidebar-number">04</span><div><small>Premier League</small><h3>2026&ndash;27 Premier League Preview</h3><p>Coming soon</p></div></li>
+        <li><span class="soccer-sidebar-number">05</span><div><small>Where to watch</small><h3>Your TV Guide to Europe&rsquo;s Big Five Leagues</h3><p>Coming soon</p></div></li>
+      </ol>
+    </aside>
+  </div>
+</section>
+{% endif %}
+
+<section class="soccer-project-bridge" aria-labelledby="soccer-project-title">
+  <div>
+    <p>USMNT / 2026&ndash;2030</p>
+    <h2 id="soccer-project-title">Follow the next cycle with Project 2030.</h2>
+  </div>
+  <p>A living record of the players, decisions and turning points that will shape the United States over the next four years.</p>
+  <a href="{{ '/soccer/project-2030/' | relative_url }}">Explore the project <span aria-hidden="true">&rarr;</span></a>
 </section>
 
-<section class="hub-section hub-section--tint">
+<section class="hub-section hub-section--tint soccer-desk-links">
   <div class="de-section-heading">
-    <div><p class="de-kicker">Choose a lane</p><h2>Inside the soccer desk</h2></div>
+    <div><p class="de-kicker">Explore the desk</p><h2>More soccer</h2></div>
   </div>
   <div class="hub-lane-grid">
     <a href="{{ '/soccer/analysis/' | relative_url }}" class="hub-lane-card">
@@ -49,12 +85,3 @@ section_theme: soccer
     </a>
   </div>
 </section>
-
-{% assign longform_part1 = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina" | first %}
-{% assign longform_part2 = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina-part-2" | first %}
-{% if longform_part1 and longform_part2 %}
-<section class="hub-section">
-  <div class="de-section-heading"><div><p class="de-kicker">Essential reading</p><h2>The American Soccer Question</h2></div><p>The two-part essay that leads directly into Project 2030.</p></div>
-  {% include longform-series-feature.html part1=longform_part1 part2=longform_part2 %}
-</section>
-{% endif %}
