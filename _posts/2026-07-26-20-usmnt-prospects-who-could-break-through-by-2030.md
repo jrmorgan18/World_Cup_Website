@@ -276,28 +276,28 @@ By 2030, the order of this list will almost certainly look wrong. The hope is th
 
 <div class="project-data-table prospect-score-table" id="prospect-score-table" role="region" aria-label="Twenty USMNT prospects ordered by the 2030 Breakthrough Score" tabindex="0">
 <table>
-<thead><tr><th scope="col">Rank</th><th scope="col">Player</th><th scope="col">Age</th><th scope="col">Position</th><th scope="col">First-team proof<small>FTP · /25</small></th><th scope="col">Age-adjusted performance<small>AAP · /20</small></th><th scope="col">Long-term ceiling<small>CEIL · /20</small></th><th scope="col">USMNT pathway<small>PATH · /15</small></th><th scope="col">Development trajectory<small>TRAJ · /10</small></th><th scope="col">U.S. commitment<small>USA · /10</small></th><th scope="col">Total<small>/100</small></th></tr></thead>
+<thead><tr><th scope="col">Rank</th><th scope="col">Player</th><th scope="col">Age</th><th scope="col">Position</th><th scope="col">Breakthrough Score<small>/100</small></th></tr></thead>
 <tbody>
-<tr><td>1</td><th scope="row">Zavier Gozo</th><td>19</td><td>Winger / wingback</td><td>23</td><td>18</td><td>17</td><td>13</td><td>9</td><td>10</td><td><strong>90</strong></td></tr>
-<tr><td>2</td><th scope="row">Noahkai Banks</th><td>19</td><td>Center back</td><td>25</td><td>17</td><td>19</td><td>14</td><td>8</td><td>4</td><td><strong>87</strong></td></tr>
-<tr><td>3</td><th scope="row">Julian Hall</th><td>18</td><td>Striker / wide forward</td><td>22</td><td>18</td><td>18</td><td>12</td><td>9</td><td>7</td><td><strong>86</strong></td></tr>
-<tr><td>4</td><th scope="row">Adri Mehmeti</th><td>17</td><td>Defensive / central midfielder</td><td>20</td><td>18</td><td>16</td><td>12</td><td>9</td><td>10</td><td><strong>85</strong></td></tr>
-<tr><td>5</td><th scope="row">Neil Pierre</th><td>18</td><td>Center back</td><td>16</td><td>17</td><td>18</td><td>14</td><td>9</td><td>10</td><td><strong>84</strong></td></tr>
-<tr><td>6</td><th scope="row">Chris Brady</th><td>22</td><td>Goalkeeper</td><td>24</td><td>14</td><td>14</td><td>12</td><td>8</td><td>10</td><td><strong>82</strong></td></tr>
-<tr><td>7</td><th scope="row">Rokas Pukštas</th><td>21</td><td>Box-to-box No. 8</td><td>23</td><td>16</td><td>14</td><td>11</td><td>7</td><td>10</td><td><strong>81</strong></td></tr>
-<tr><td>8</td><th scope="row">Cavan Sullivan</th><td>16</td><td>Attacking midfielder / winger</td><td>14</td><td>16</td><td>20</td><td>12</td><td>9</td><td>10</td><td><strong>81</strong></td></tr>
-<tr><td>9</td><th scope="row">Niko Tsakiris</th><td>21</td><td>No. 8 / No. 10</td><td>20</td><td>17</td><td>16</td><td>11</td><td>6</td><td>10</td><td><strong>80</strong></td></tr>
-<tr><td>10</td><th scope="row">Paxten Aaronson</th><td>22</td><td>Attacking midfielder / No. 8</td><td>22</td><td>15</td><td>14</td><td>10</td><td>7</td><td>10</td><td><strong>78</strong></td></tr>
-<tr><td>11</td><th scope="row">Mathis Albert</th><td>17</td><td>Winger</td><td>7</td><td>17</td><td>20</td><td>13</td><td>10</td><td>10</td><td><strong>77</strong></td></tr>
-<tr><td>12</td><th scope="row">Diego Kochen</th><td>20</td><td>Goalkeeper</td><td>12</td><td>14</td><td>18</td><td>14</td><td>8</td><td>10</td><td><strong>76</strong></td></tr>
-<tr><td>13</td><th scope="row">Benjamin Cremaschi</th><td>21</td><td>Box-to-box No. 8 / attacking midfielder</td><td>19</td><td>15</td><td>14</td><td>10</td><td>8</td><td>10</td><td><strong>76</strong></td></tr>
-<tr><td>14</td><th scope="row">Kevin Paredes</th><td>23</td><td>Wingback / winger</td><td>15</td><td>13</td><td>17</td><td>13</td><td>7</td><td>10</td><td><strong>75</strong></td></tr>
-<tr><td>15</td><th scope="row">Peyton Miller</th><td>18</td><td>Left back / wingback / winger</td><td>16</td><td>14</td><td>15</td><td>11</td><td>8</td><td>10</td><td><strong>74</strong></td></tr>
-<tr><td>16</td><th scope="row">Cooper Sanchez</th><td>18</td><td>Central / attacking midfielder</td><td>18</td><td>15</td><td>14</td><td>9</td><td>7</td><td>10</td><td><strong>73</strong></td></tr>
-<tr><td>17</td><th scope="row">Beau Leroux</th><td>22</td><td>Central / defensive midfielder</td><td>20</td><td>15</td><td>12</td><td>10</td><td>5</td><td>10</td><td><strong>72</strong></td></tr>
-<tr><td>18</td><th scope="row">Francis Westfield</th><td>20</td><td>Right back / left back</td><td>20</td><td>15</td><td>11</td><td>9</td><td>6</td><td>10</td><td><strong>71</strong></td></tr>
-<tr><td>19</td><th scope="row">Cole Campbell</th><td>20</td><td>Winger</td><td>8</td><td>12</td><td>19</td><td>11</td><td>10</td><td>10</td><td><strong>70</strong></td></tr>
-<tr><td>20</td><th scope="row">Luca Bombino</th><td>20</td><td>Left back</td><td>20</td><td>14</td><td>11</td><td>9</td><td>5</td><td>10</td><td><strong>69</strong></td></tr>
+<tr><td>1</td><th scope="row">Zavier Gozo</th><td>19</td><td>Winger / wingback</td><td><strong>90</strong></td></tr>
+<tr><td>2</td><th scope="row">Noahkai Banks</th><td>19</td><td>Center back</td><td><strong>87</strong></td></tr>
+<tr><td>3</td><th scope="row">Julian Hall</th><td>18</td><td>Striker / wide forward</td><td><strong>86</strong></td></tr>
+<tr><td>4</td><th scope="row">Adri Mehmeti</th><td>17</td><td>Defensive / central midfielder</td><td><strong>85</strong></td></tr>
+<tr><td>5</td><th scope="row">Neil Pierre</th><td>18</td><td>Center back</td><td><strong>84</strong></td></tr>
+<tr><td>6</td><th scope="row">Chris Brady</th><td>22</td><td>Goalkeeper</td><td><strong>82</strong></td></tr>
+<tr><td>7</td><th scope="row">Rokas Pukštas</th><td>21</td><td>Box-to-box No. 8</td><td><strong>81</strong></td></tr>
+<tr><td>8</td><th scope="row">Cavan Sullivan</th><td>16</td><td>Attacking midfielder / winger</td><td><strong>81</strong></td></tr>
+<tr><td>9</td><th scope="row">Niko Tsakiris</th><td>21</td><td>No. 8 / No. 10</td><td><strong>80</strong></td></tr>
+<tr><td>10</td><th scope="row">Paxten Aaronson</th><td>22</td><td>Attacking midfielder / No. 8</td><td><strong>78</strong></td></tr>
+<tr><td>11</td><th scope="row">Mathis Albert</th><td>17</td><td>Winger</td><td><strong>77</strong></td></tr>
+<tr><td>12</td><th scope="row">Diego Kochen</th><td>20</td><td>Goalkeeper</td><td><strong>76</strong></td></tr>
+<tr><td>13</td><th scope="row">Benjamin Cremaschi</th><td>21</td><td>Box-to-box No. 8 / attacking midfielder</td><td><strong>76</strong></td></tr>
+<tr><td>14</td><th scope="row">Kevin Paredes</th><td>23</td><td>Wingback / winger</td><td><strong>75</strong></td></tr>
+<tr><td>15</td><th scope="row">Peyton Miller</th><td>18</td><td>Left back / wingback / winger</td><td><strong>74</strong></td></tr>
+<tr><td>16</td><th scope="row">Cooper Sanchez</th><td>18</td><td>Central / attacking midfielder</td><td><strong>73</strong></td></tr>
+<tr><td>17</td><th scope="row">Beau Leroux</th><td>22</td><td>Central / defensive midfielder</td><td><strong>72</strong></td></tr>
+<tr><td>18</td><th scope="row">Francis Westfield</th><td>20</td><td>Right back / left back</td><td><strong>71</strong></td></tr>
+<tr><td>19</td><th scope="row">Cole Campbell</th><td>20</td><td>Winger</td><td><strong>70</strong></td></tr>
+<tr><td>20</td><th scope="row">Luca Bombino</th><td>20</td><td>Left back</td><td><strong>69</strong></td></tr>
 </tbody>
 </table>
 </div>
