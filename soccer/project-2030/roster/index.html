@@ -1,25 +1,16 @@
 ---
 layout: default
-title: Project 2030 — Roster
+title: Project 2030 - Roster Tools
 permalink: /soccer/project-2030/roster/
 section_theme: project
 ---
-<section class="module-hero">
-  <p class="de-eyebrow"><span></span> Project 2030 / Module 02</p>
+<section class="module-hero module-hero--compact">
+  <p class="de-eyebrow"><span></span> Project 2030 / Roster tools</p>
   <h1>The roster room</h1>
-  <p>A depth chart, a scouting board and a transparent ranking system for the complete player pool.</p>
+  <p>The roster work now lives in two purpose-built views: the evolving Player Pool and the forthcoming Big Board.</p>
 </section>
-<section class="roster-shell">
-  <div class="roster-lead">
-    <p class="de-kicker">Coming first</p><h2>How the 2030 roster takes shape</h2><p>The opening article will establish the inherited core, the positions with real depth, the aging-curve decisions and the pathways for the next generation.</p>
-    <a class="de-button de-button--navy" href="https://jrmorgan18.github.io/USMNT_Roster_Site/" target="_blank" rel="noopener">Launch the current roster builder <span>&rarr;</span></a>
-  </div>
-  <div class="roster-preview" aria-label="Future player ranking table preview">
-    <div class="roster-preview-head"><span>Player board preview</span><small>Model in development</small></div>
-    <div class="roster-row roster-row--labels"><span>Rank</span><span>Player</span><span>Role</span><span>Form</span><span>2030 fit</span></div>
-    <div class="roster-row"><span>01</span><span>Player name</span><span>Position</span><span><i style="width:88%"></i></span><span>A</span></div>
-    <div class="roster-row"><span>02</span><span>Player name</span><span>Position</span><span><i style="width:76%"></i></span><span>A</span></div>
-    <div class="roster-row"><span>03</span><span>Player name</span><span>Position</span><span><i style="width:66%"></i></span><span>B</span></div>
-    <p>Future rankings will use criteria and weights selected by the author, with every score visible rather than hidden inside a black box.</p>
-  </div>
+{% include project-subnav.html %}
+<section class="roster-shell roster-shell--bridge">
+  <a class="roster-tool-card" href="{{ '/soccer/project-2030/player-pool/' | relative_url }}"><span>Live now</span><h2>Player Pool</h2><p>Explore the first working groups and the expandable profile framework.</p><strong>Open the pool &rarr;</strong></a>
+  <a class="roster-tool-card" href="{{ '/soccer/project-2030/big-board/' | relative_url }}"><span>Under construction</span><h2>Big Board</h2><p>Preview the interface while the rating methodology is refined.</p><strong>View the preview &rarr;</strong></a>
 </section>

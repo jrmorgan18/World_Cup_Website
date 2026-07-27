@@ -1,0 +1,45 @@
+---
+layout: default
+title: Project 2030 - Big Board
+description: The future home of Dual Eights' transparent ranking of the United States men's national team player pool.
+permalink: /soccer/project-2030/big-board/
+section_theme: project
+---
+<section class="module-hero module-hero--compact">
+  <p class="de-eyebrow"><span></span> Project 2030 / Player intelligence</p>
+  <h1>The Big Board</h1>
+  <p>A transparent, evolving ranking of the players who could shape the United States&rsquo; 2030 World Cup cycle.</p>
+</section>
+{% include project-subnav.html %}
+
+<section class="big-board-shell">
+  <div class="construction-banner" role="status">
+    <span class="construction-banner-signal" aria-hidden="true"><i></i><i></i><i></i></span>
+    <div>
+      <p>Project 2030 player rankings</p>
+      <h2>The board is under construction.</h2>
+      <span>The first edition will launch with a complete methodology and a searchable ranking of the player pool.</span>
+    </div>
+    <strong>Coming soon</strong>
+  </div>
+
+  <div class="big-board-layout big-board-layout--preview-only">
+    <div class="big-board-preview" aria-label="Preview of the future Big Board">
+      <div class="big-board-preview-head">
+        <div><p class="de-kicker">Interface preview</p><h2>US Player Big Board</h2></div>
+        <span>0 players published</span>
+      </div>
+      <div class="big-board-toolbar" aria-hidden="true">
+        <span>Search player</span><span>All positions</span><span>All groups</span><span>Sort: rank</span>
+      </div>
+      <div class="big-board-table" aria-hidden="true">
+        <div class="big-board-row big-board-row--head"><span>RK</span><span>Player</span><span>Pos</span><span>Group</span><span>Score</span><span>Trend</span></div>
+        {% for row in (1..7) %}
+        <div class="big-board-row big-board-row--ghost"><span>{{ row | prepend: '0' | slice: -2, 2 }}</span><span><i></i></span><span><i></i></span><span><i></i></span><span><b></b></span><span>&mdash;</span></div>
+        {% endfor %}
+      </div>
+      <p class="big-board-preview-note">The finished board will support search, filters, sortable criteria and expandable scorecards on desktop and mobile.</p>
+    </div>
+
+  </div>
+</section>

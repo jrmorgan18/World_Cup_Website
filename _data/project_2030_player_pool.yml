@@ -1,0 +1,82 @@
+groups:
+  - id: key-vets
+    code: KV
+    name: Key Vets
+    description: The established core with the clearest path back to the roster in 2030, barring injury or a major setback.
+  - id: borderline-vets
+    code: BV
+    name: Borderline Vets
+    description: Members of the 2026 group whose role, trajectory or age creates a real question for the next cycle.
+  - id: just-missed
+    code: JM
+    name: Just Missed
+    description: Players close to the 2026 roster who begin the new cycle within striking distance of a place.
+  - id: lost-in-the-woods
+    code: LW
+    name: Lost in the Woods
+    description: Experienced internationals or former top prospects whose club careers have stalled or moved off course.
+  - id: prospects
+    code: PR
+    name: Prospects
+    description: Young players with enough promise to push past departing veterans before 2030.
+  - id: dual-nats
+    code: DN
+    name: Dual-Nats
+    description: Players eligible for another national team who could strengthen the pool but have not committed to the United States.
+
+players:
+  - { name: Chris Richards, initials: CR, group: key-vets }
+  - { name: Folarin Balogun, initials: FB, group: key-vets }
+  - { name: Alex Freeman, initials: AF, group: key-vets }
+  - { name: Malik Tillman, initials: MT, group: key-vets }
+  - { name: Weston McKennie, initials: WM, group: key-vets }
+  - { name: Christian Pulisic, initials: CP, group: key-vets }
+  - { name: Tyler Adams, initials: TA, group: key-vets }
+  - { name: 'Antonee "Jedi" Robinson', initials: AR, group: key-vets }
+  - { name: Sergiño Dest, initials: SD, group: key-vets }
+  - { name: Ricardo Pepi, initials: RP, group: key-vets }
+
+  - { name: Gio Reyna, initials: GR, group: borderline-vets }
+  - { name: Tim Weah, initials: TW, group: borderline-vets }
+  - { name: Sebastian Berhalter, initials: SB, group: borderline-vets }
+  - { name: Matt Freese, initials: MF, group: borderline-vets }
+  - { name: Matt Turner, initials: MT, group: borderline-vets }
+  - { name: Joe Scally, initials: JS, group: borderline-vets }
+  - { name: Alex Zendejas, initials: AZ, group: borderline-vets }
+  - { name: Mark McKenzie, initials: MM, group: borderline-vets }
+  - { name: Auston Trusty, initials: AT, group: borderline-vets }
+  - { name: Brenden Aaronson, initials: BA, group: borderline-vets }
+  - { name: Haji Wright, initials: HW, group: borderline-vets }
+
+  - { name: Tanner Tessmann, initials: TT, group: just-missed }
+  - { name: Diego Luna, initials: DL, group: just-missed }
+  - { name: Jack McGlynn, initials: JM, group: just-missed }
+  - { name: Aidan Morris, initials: AM, group: just-missed }
+
+  - { name: Yunus Musah, initials: YM, group: lost-in-the-woods }
+  - { name: Gaga Slonina, initials: GS, group: lost-in-the-woods }
+  - { name: Gianluca Busio, initials: GB, group: lost-in-the-woods }
+
+  - { name: Zavier Gozo, initials: ZG, group: prospects, profile: zavier-gozo }
+  - { name: Julian Hall, initials: JH, group: prospects, profile: julian-hall }
+  - { name: Adri Mehmeti, initials: AM, group: prospects, profile: adri-mehmeti }
+  - { name: Neil Pierre, initials: NP, group: prospects, profile: neil-pierre }
+  - { name: Chris Brady, initials: CB, group: prospects, profile: chris-brady }
+  - { name: Rokas Pukstas, initials: RP, group: prospects, profile: rokas-pukstas }
+  - { name: Cavan Sullivan, initials: CS, group: prospects, profile: cavan-sullivan }
+  - { name: Niko Tsakiris, initials: NT, group: prospects, profile: niko-tsakiris }
+  - { name: Paxten Aaronson, initials: PA, group: prospects, profile: paxten-aaronson }
+  - { name: Mathis Albert, initials: MA, group: prospects, profile: mathis-albert }
+  - { name: Diego Kochen, initials: DK, group: prospects, profile: diego-kochen }
+  - { name: Benjamin Cremaschi, initials: BC, group: prospects, profile: benjamin-cremaschi }
+  - { name: Kevin Paredes, initials: KP, group: prospects, profile: kevin-paredes }
+  - { name: Peyton Miller, initials: PM, group: prospects, profile: peyton-miller }
+  - { name: Cooper Sanchez, initials: CS, group: prospects, profile: cooper-sanchez }
+  - { name: Beau Leroux, initials: BL, group: prospects, profile: beau-leroux }
+  - { name: Francis Westfield, initials: FW, group: prospects, profile: francis-westfield }
+  - { name: Cole Campbell, initials: CC, group: prospects, profile: cole-campbell }
+  - { name: Luca Bombino, initials: LB, group: prospects, profile: luca-bombino }
+
+  - { name: Noahkai Banks, initials: NB, group: dual-nats, profile: noahkai-banks }
+  - { name: Leo Prescott, initials: LP, group: dual-nats, position: Goalkeeper, club: Bayern Munich }
+  - { name: Montrell Culbreath, initials: MC, group: dual-nats, club: Bayer Leverkusen }

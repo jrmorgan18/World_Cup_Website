@@ -19,14 +19,25 @@ REQUIRED_ROUTES = (
     "/sitemap.xml",
     "/soccer/",
     "/soccer/project-2030/",
+    "/soccer/project-2030/big-board/",
+    "/soccer/project-2030/player-pool/",
+    "/soccer/project-2030/checkpoints/",
+    "/soccer/project-2030/scouting/",
     "/orioles/",
     "/orioles/brandon-young-breakout/",
     "/ravens/",
     "/usmnt/why-the-usmnt-will-never-be-argentina/",
     "/usmnt/why-the-usmnt-will-never-be-argentina-part-2/",
+    "/usmnt/20-prospects-who-could-break-through-by-2030/",
+    "/usmnt/road-to-2030-summer-2028/",
 )
 PROHIBITED_OUTPUT_DIRS = ("articles", "designs", "scripts", "worker")
-PROHIBITED_HTML_TEXT = ("id=\"wcg-chat\"", "world-cup-chat.jrmorgan16.workers.dev")
+PROHIBITED_HTML_TEXT = (
+    "id=\"wcg-chat\"",
+    "world-cup-chat.jrmorgan16.workers.dev",
+    "Before the first ranking",
+    "Build the model. Then trust the output.",
+)
 
 
 class PageParser(HTMLParser):
