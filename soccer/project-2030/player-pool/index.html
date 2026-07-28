@@ -76,11 +76,11 @@ section_theme: project
                   {% if weekly_player %}
                   <section class="pool-profile-development pool-profile-development--{{ weekly_player.direction }}">
                     <div>
-                      <p>Latest development</p>
+                      <p>Weekly trend</p>
                       <span class="pool-development-signal"><b>{{ weekly_player.trend }}</b>{{ weekly_player.direction_label }}</span>
                     </div>
                     <span>{{ weekly_player.development_read }}</span>
-                    <small>Week ending {{ latest_weekly_report.week_ending }}</small>
+                    <small>Latest report / Week ending {{ latest_weekly_report.week_ending }}</small>
                   </section>
                   {% endif %}
                   {% if profile.strengths %}<section><p>Strengths</p><span>{{ profile.strengths }}</span></section>{% endif %}

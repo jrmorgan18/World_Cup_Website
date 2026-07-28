@@ -60,11 +60,11 @@ reports:
       - profile: adri-mehmeti
         name: Adri Mehmeti
         club: New York Red Bulls
-        trend: "↓"
-        direction: falling
-        direction_label: Setback
-        recap: "Received two yellow cards against Charlotte and will miss RBNY’s next match through suspension."
-        development_read: "A clear disciplinary setback that interrupts his opportunity cycle."
+        trend: "→"
+        direction: steady
+        direction_label: Holding
+        recap: "Played well against Charlotte before receiving a late second yellow for arguing. He will miss RBNY’s next match through suspension."
+        development_read: "Solid performance overall. The late dismissal creates a short-term availability issue, but it does not materially change his development outlook."
         sources:
           - { label: "Red Bulls match report", url: "https://www.newyorkredbulls.com/news/match-recap-pres-by-provident-bank-red-bulls-blanked-by-charlotte-fc" }
 
