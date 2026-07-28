@@ -19,6 +19,7 @@
 {% assign orioles_feature = site.posts | where: "orioles_feature", true | first %}
 {% assign checkpoint_story = site.posts | where: "checkpoint_feature", true | first %}
 {% assign prospect_story = site.posts | where: "prospect_feature", true | first %}
+{% assign ravens_feature = site.posts | where: "slug", "five-questions-that-will-define-ravens-season" | first %}
 {% if sample_feature %}
 <section class="de-home-editorial">
   <div class="de-home-content-grid">
@@ -50,7 +51,7 @@
         {% if checkpoint_story %}<li><span class="de-recent-number">01</span><a href="{{ checkpoint_story.url | relative_url }}"><small class="de-recent-tag de-recent-tag--soccer">Project 2030</small><h3>{{ checkpoint_story.title }}</h3><p>{{ checkpoint_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
         {% if prospect_story %}<li><span class="de-recent-number">02</span><a href="{{ prospect_story.url | relative_url }}"><small class="de-recent-tag de-recent-tag--soccer">Project 2030</small><h3>{{ prospect_story.title }}</h3><p>{{ prospect_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
         {% if orioles_feature %}<li><span class="de-recent-number">03</span><a href="{{ orioles_feature.url | relative_url }}"><small class="de-recent-tag de-recent-tag--orioles">Orioles</small><h3>{{ orioles_feature.title }}</h3><p>{{ orioles_feature.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-        <li><span class="de-recent-number">04</span><div><small class="de-recent-tag de-recent-tag--ravens">Ravens</small><h3>Top Five Questions for the Ravens Heading into Training Camp</h3><p>Coming soon</p></div></li>
+        {% if ravens_feature %}<li><span class="de-recent-number">04</span><a href="{{ ravens_feature.url | relative_url }}"><small class="de-recent-tag de-recent-tag--ravens">Ravens</small><h3>{{ ravens_feature.title }}</h3><p>{{ ravens_feature.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
       </ol>
     </aside>
   </div>
