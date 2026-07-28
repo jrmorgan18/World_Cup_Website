@@ -118,9 +118,9 @@ reports:
       - profile: niko-tsakiris
         name: Niko Tsakiris
         club: San Jose Earthquakes
-        trend: "?"
-        direction: insufficient
-        direction_label: No read
+        trend: "✚"
+        direction: injured
+        direction_label: Injured
         recap: "Missed both San Jose matches while injured. FotMob lists a muscle injury dated July 22 with an expected return in mid-August; San Jose’s match reports confirm his absence but do not provide the timeline."
         development_read: "No performance evaluation this week. The absence is explained by injury, so the next development marker is whether he returns on the projected mid-August timetable."
         sources:
