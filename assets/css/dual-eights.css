@@ -19,7 +19,7 @@
 body { overflow-x: hidden; }
 .theme-home { background: var(--de-paper); color: var(--de-ink); }
 .theme-orioles { --club-accent:var(--de-orange); --club-accent-light:var(--de-orange-light); --color-bg:#09090b; --color-surface:#171311; --color-surface-raised:#211915; --color-border:#3a2b24; --color-text:#f2eee8; --color-text-muted:#a69b94; --color-accent:var(--de-orange); --color-accent-hover:var(--de-orange-light); --color-accent-subtle:rgba(241,90,36,.13); background:var(--de-black); }
-.theme-ravens { --club-accent: var(--de-purple); --club-accent-light: var(--de-purple-light); background: var(--de-black); }
+.theme-ravens { --club-accent:var(--de-purple); --club-accent-light:var(--de-purple-light); --color-bg:#09090b; --color-surface:#15121a; --color-surface-raised:#20182a; --color-border:#352943; --color-text:#f2eef7; --color-text-muted:#aaa1b5; --color-accent:var(--de-purple-light); --color-accent-hover:#bc9aed; --color-accent-subtle:rgba(111,63,197,.15); background:var(--de-black); }
 .theme-project { --project-red:#ef233c; --project-blue:#0d3b73; --project-blue-light:#74a9df; --project-white:#fff; --de-soccer:var(--project-red); --de-soccer-navy:#071a35; --color-bg:#071a35; --color-surface:#0c2447; --color-surface-raised:#12315d; --color-border:rgba(191,211,237,.22); --color-text:#f8fafc; --color-text-muted:#aebdd1; --color-accent:var(--project-red); --color-accent-hover:#ff5269; --color-accent-subtle:rgba(239,35,60,.13); background:var(--color-bg); }
 
 /* Global masthead */
@@ -661,6 +661,22 @@ body { overflow-x: hidden; }
 .theme-orioles .article-body h2::first-letter { color:var(--de-orange); }
 .theme-orioles .article-body>p:first-child em { color:var(--de-orange-light); }
 .theme-orioles .article-nav-link:hover { border-color:var(--de-orange); background:#171311; }
+
+/* Ravens article treatment */
+.theme-ravens .article-shell { position:relative; }
+.theme-ravens .article-header { padding-top:12px; }
+.theme-ravens .article-category { color:#fff; background:var(--de-purple); border-radius:0; }
+.theme-ravens .article-title { max-width:920px; margin-top:16px; color:#fff; font-family:'Newsreader',serif; font-size:clamp(2.4rem,4.7vw,4.45rem); font-weight:500; line-height:.98; letter-spacing:-1.5px; }
+.theme-ravens .article-hero { margin-top:32px; border:1px solid rgba(154,112,223,.45); border-radius:0; background:#100d14; }
+.theme-ravens .article-hero-credit { color:#877d91; font-size:.7rem; letter-spacing:.3px; }
+.theme-ravens .article-body { color:#e6e0ec; }
+.theme-ravens .article-body h2 { color:#fff; border-bottom-color:rgba(154,112,223,.5); }
+.theme-ravens .article-body h2::first-letter { color:var(--de-purple-light); }
+.theme-ravens .article-nav-link:hover { border-color:var(--de-purple); background:#15121a; }
+.ravens-article-figure { margin:32px 0 38px; padding:10px; border:1px solid rgba(154,112,223,.28); background:#f4f1f7; }
+.article-body .ravens-article-figure img { width:100%; margin:0; aspect-ratio:3 / 2; object-fit:cover; border-radius:0; }
+.ravens-article-figure figcaption { padding:11px 6px 2px; color:#5d5367; font-size:.78rem; line-height:1.5; text-align:right; }
+.ravens-article-figure figcaption a { color:#5d397e; }
 
 /* Project 2030 article treatment */
 .theme-project .article { max-width:900px; padding-top:56px; }
