@@ -718,7 +718,7 @@ benjamin-cremaschi:
     - { label: U.S. Soccer, url: "https://www.ussoccer.com/players/c/benjamin-cremaschi" }
 
 kevin-paredes:
-  club: VfL Wolfsburg
+  club: FC Utrecht
   position: Wingback / winger
   updated: July 2026
   summary: >-
@@ -744,6 +744,7 @@ peyton-miller:
     - { label: New England Revolution, url: "https://www.revolutionsoccer.net/news/revolution-sign-homegrown-defender-peyton-miller-to-extension" }
 
 cooper-sanchez:
+  club: Atlanta United
   position: Central / attacking midfielder
   updated: July 2026
   status: Watchlist profile
