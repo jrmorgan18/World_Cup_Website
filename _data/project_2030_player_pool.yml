@@ -2,60 +2,75 @@ groups:
   - id: key-vets
     code: KV
     name: Key Vets
-    description: The established core with the clearest path back to the roster in 2030, barring injury or a major setback.
+    description: The leading candidates to form the experienced core of the 2030 team.
   - id: borderline-vets
     code: BV
     name: Borderline Vets
-    description: Members of the 2026 group whose role, trajectory or age creates a real question for the next cycle.
+    description: Established senior players whose roster place, role or age profile leaves meaningful uncertainty.
   - id: just-missed
     code: JM
     name: Just Missed
-    description: Players close to the 2026 roster who begin the new cycle within striking distance of a place.
+    description: Players close to the 2026 group or capable of forcing their way back into the pool during the next cycle.
   - id: lost-in-the-woods
     code: LW
     name: Lost in the Woods
-    description: Experienced internationals or former top prospects whose club careers have stalled or moved off course.
+    description: Players with real prior promise whose club role, development path or national-team fit has become unclear.
   - id: prospects
     code: PR
     name: Prospects
-    description: Young players with enough promise to push past departing veterans before 2030.
+    description: Younger development cases who still need stronger first-team evidence before entering the main pool.
   - id: dual-nats
     code: DN
     name: Dual-Nats
     description: Players eligible for another national team who could strengthen the pool but have not committed to the United States.
 
 players:
-  - { name: Chris Richards, initials: CR, group: key-vets, image: /assets/images/player-pool/chris-richards.png }
-  - { name: Folarin Balogun, initials: FB, group: key-vets, image: /assets/images/player-pool/folarin-balogun.png }
-  - { name: Alex Freeman, initials: AF, group: key-vets, image: /assets/images/player-pool/alex-freeman.png }
-  - { name: Malik Tillman, initials: MT, group: key-vets, image: /assets/images/player-pool/malik-tillman.png }
-  - { name: Weston McKennie, initials: WM, group: key-vets, image: /assets/images/player-pool/weston-mckennie.png }
-  - { name: Christian Pulisic, initials: CP, group: key-vets, image: /assets/images/player-pool/christian-pulisic.png }
-  - { name: Tyler Adams, initials: TA, group: key-vets, image: /assets/images/player-pool/tyler-adams.png }
-  - { name: 'Antonee "Jedi" Robinson', initials: AR, group: key-vets, image: /assets/images/player-pool/antonee-robinson.png }
-  - { name: Sergiño Dest, initials: SD, group: key-vets, image: /assets/images/player-pool/sergino-dest.png }
-  - { name: Ricardo Pepi, initials: RP, group: key-vets, image: /assets/images/player-pool/ricardo-pepi.png }
+  - { name: Chris Richards, initials: CR, group: key-vets, profile: chris-richards, image: /assets/images/player-pool/chris-richards.png }
+  - { name: Folarin Balogun, initials: FB, group: key-vets, profile: folarin-balogun, image: /assets/images/player-pool/folarin-balogun.png }
+  - { name: Alex Freeman, initials: AF, group: key-vets, profile: alex-freeman, image: /assets/images/player-pool/alex-freeman.png }
+  - { name: Malik Tillman, initials: MT, group: key-vets, profile: malik-tillman, image: /assets/images/player-pool/malik-tillman.png }
+  - { name: Weston McKennie, initials: WM, group: key-vets, profile: weston-mckennie, image: /assets/images/player-pool/weston-mckennie.png }
+  - { name: Christian Pulisic, initials: CP, group: key-vets, profile: christian-pulisic, image: /assets/images/player-pool/christian-pulisic.png }
+  - { name: Tyler Adams, initials: TA, group: key-vets, profile: tyler-adams, image: /assets/images/player-pool/tyler-adams.png }
+  - { name: Antonee Robinson, initials: AR, group: key-vets, profile: antonee-robinson, image: /assets/images/player-pool/antonee-robinson.png }
+  - { name: Sergiño Dest, initials: SD, group: key-vets, profile: sergino-dest, image: /assets/images/player-pool/sergino-dest.png }
+  - { name: Ricardo Pepi, initials: RP, group: key-vets, profile: ricardo-pepi, image: /assets/images/player-pool/ricardo-pepi.png }
 
-  - { name: Gio Reyna, initials: GR, group: borderline-vets, image: /assets/images/player-pool/gio-reyna.png }
-  - { name: Tim Weah, initials: TW, group: borderline-vets, image: /assets/images/player-pool/tim-weah.png }
-  - { name: Sebastian Berhalter, initials: SB, group: borderline-vets, image: /assets/images/player-pool/sebastian-berhalter.png }
-  - { name: Matt Freese, initials: MF, group: borderline-vets, image: /assets/images/player-pool/matt-freese.png }
-  - { name: Matt Turner, initials: MT, group: borderline-vets, image: /assets/images/player-pool/matt-turner.png }
-  - { name: Joe Scally, initials: JS, group: borderline-vets, image: /assets/images/player-pool/joe-scally.png }
-  - { name: Alex Zendejas, initials: AZ, group: borderline-vets, image: /assets/images/player-pool/alex-zendejas.png }
-  - { name: Mark McKenzie, initials: MM, group: borderline-vets, image: /assets/images/player-pool/mark-mckenzie.png }
-  - { name: Auston Trusty, initials: AT, group: borderline-vets, image: /assets/images/player-pool/auston-trusty.png }
-  - { name: Brenden Aaronson, initials: BA, group: borderline-vets, image: /assets/images/player-pool/brenden-aaronson.png }
-  - { name: Haji Wright, initials: HW, group: borderline-vets, image: /assets/images/player-pool/haji-wright.png }
+  - { name: Gio Reyna, initials: GR, group: borderline-vets, profile: gio-reyna, image: /assets/images/player-pool/gio-reyna.png }
+  - { name: Tim Weah, initials: TW, group: borderline-vets, profile: tim-weah, image: /assets/images/player-pool/tim-weah.png }
+  - { name: Sebastian Berhalter, initials: SB, group: borderline-vets, profile: sebastian-berhalter, image: /assets/images/player-pool/sebastian-berhalter.png }
+  - { name: Matt Freese, initials: MF, group: borderline-vets, profile: matt-freese, image: /assets/images/player-pool/matt-freese.png }
+  - { name: Matt Turner, initials: MT, group: borderline-vets, profile: matt-turner, image: /assets/images/player-pool/matt-turner.png }
+  - { name: Joe Scally, initials: JS, group: borderline-vets, profile: joe-scally, image: /assets/images/player-pool/joe-scally.png }
+  - { name: Alejandro Zendejas, initials: AZ, group: borderline-vets, profile: alejandro-zendejas, image: /assets/images/player-pool/alex-zendejas.png }
+  - { name: Mark McKenzie, initials: MM, group: borderline-vets, profile: mark-mckenzie, image: /assets/images/player-pool/mark-mckenzie.png }
+  - { name: Auston Trusty, initials: AT, group: borderline-vets, profile: auston-trusty, image: /assets/images/player-pool/auston-trusty.png }
+  - { name: Brenden Aaronson, initials: BA, group: borderline-vets, profile: brenden-aaronson, image: /assets/images/player-pool/brenden-aaronson.png }
+  - { name: Haji Wright, initials: HW, group: borderline-vets, profile: haji-wright, image: /assets/images/player-pool/haji-wright.png }
+  - { name: Max Arfsten, initials: MA, group: borderline-vets, profile: max-arfsten, image: /assets/images/player-pool/max-arfsten.png }
+  - { name: Miles Robinson, initials: MR, group: borderline-vets, profile: miles-robinson, image: /assets/images/player-pool/miles-robinson.png }
+  - { name: Tim Ream, initials: TR, group: borderline-vets, profile: tim-ream, image: /assets/images/player-pool/tim-ream.png }
 
-  - { name: Tanner Tessmann, initials: TT, group: just-missed, image: /assets/images/player-pool/tanner-tessmann.png }
-  - { name: Diego Luna, initials: DL, group: just-missed, image: /assets/images/player-pool/diego-luna.png }
-  - { name: Jack McGlynn, initials: JM, group: just-missed, image: /assets/images/player-pool/jack-mcglynn.png }
-  - { name: Aidan Morris, initials: AM, group: just-missed, image: /assets/images/player-pool/aidan-morris.png }
+  - { name: Johnny Cardoso, initials: JC, group: just-missed, profile: johnny-cardoso, image: /assets/images/player-pool/johnny-cardoso.png }
+  - { name: Tanner Tessmann, initials: TT, group: just-missed, profile: tanner-tessmann, image: /assets/images/player-pool/tanner-tessmann.png }
+  - { name: Diego Luna, initials: DL, group: just-missed, profile: diego-luna, image: /assets/images/player-pool/diego-luna.png }
+  - { name: Jack McGlynn, initials: JM, group: just-missed, profile: jack-mcglynn, image: /assets/images/player-pool/jack-mcglynn.png }
+  - { name: Aidan Morris, initials: AM, group: just-missed, profile: aidan-morris, image: /assets/images/player-pool/aidan-morris.png }
+  - { name: John Tolkin, initials: JT, group: just-missed, profile: john-tolkin, image: /assets/images/player-pool/john-tolkin.png }
+  - { name: Patrick Schulte, initials: PS, group: just-missed, profile: patrick-schulte, image: /assets/images/player-pool/patrick-schulte.png }
+  - { name: Roman Celentano, initials: RC, group: just-missed, profile: roman-celentano, image: /assets/images/player-pool/roman-celentano.png }
+  - { name: Cameron Carter-Vickers, initials: CCV, group: just-missed, profile: cameron-carter-vickers, image: /assets/images/player-pool/cameron-carter-vickers.png }
+  - { name: Josh Sargent, initials: JS, group: just-missed, profile: josh-sargent, image: /assets/images/player-pool/josh-sargent.png }
+  - { name: Patrick Agyemang, initials: PA, group: just-missed, profile: patrick-agyemang, image: /assets/images/player-pool/patrick-agyemang.png }
 
-  - { name: Yunus Musah, initials: YM, group: lost-in-the-woods, image: /assets/images/player-pool/yunus-musah.png }
-  - { name: Gaga Slonina, initials: GS, group: lost-in-the-woods, image: /assets/images/player-pool/gaga-slonina.png }
-  - { name: Gianluca Busio, initials: GB, group: lost-in-the-woods, image: /assets/images/player-pool/gianluca-busio.png }
+  - { name: Yunus Musah, initials: YM, group: lost-in-the-woods, profile: yunus-musah, image: /assets/images/player-pool/yunus-musah.png }
+  - { name: Gabriel Slonina, initials: GS, group: lost-in-the-woods, profile: gabriel-slonina, image: /assets/images/player-pool/gaga-slonina.png }
+  - { name: Gianluca Busio, initials: GB, group: lost-in-the-woods, profile: gianluca-busio, image: /assets/images/player-pool/gianluca-busio.png }
+  - { name: Bryan Reynolds, initials: BR, group: lost-in-the-woods, profile: bryan-reynolds, image: /assets/images/player-pool/bryan-reynolds.png }
+  - { name: George Campbell, initials: GC, group: lost-in-the-woods, profile: george-campbell, image: /assets/images/player-pool/george-campbell.png }
+
+  - { name: Caleb Wiley, initials: CW, group: prospects, profile: caleb-wiley, image: /assets/images/player-pool/caleb-wiley.png }
+  - { name: Damion Downs, initials: DD, group: prospects, profile: damion-downs, image: /assets/images/player-pool/damion-downs.png }
 
   - { name: Zavier Gozo, initials: ZG, group: prospects, profile: zavier-gozo, image: /assets/images/player-pool/zavier-gozo.png }
   - { name: Julian Hall, initials: JH, group: prospects, profile: julian-hall, image: /assets/images/player-pool/julian-hall.png }
