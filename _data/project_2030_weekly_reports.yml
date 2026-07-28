@@ -1,0 +1,260 @@
+reports:
+  - id: "2026-07-26"
+    group: prospects
+    group_label: Prospects
+    published: "July 28, 2026"
+    window: "July 20-26, 2026"
+    week_ending: "July 26, 2026"
+    source_note: "Club and local reporting prioritized"
+    summary:
+      biggest_risers: "Neil Pierre, Francis “Frankie” Westfield, Peyton Miller, Mathis Albert, Damion Downs and Diego Kochen."
+      issues_to_monitor: "Adri Mehmeti’s suspension, Niko Tsakiris’s unexplained squad absences and Chris Brady’s difficult return from the World Cup."
+      best_story: "Neil Pierre produced his first MLS goal, first MLS start and first MLS assist across two appearances."
+    players:
+      - profile: caleb-wiley
+        name: Caleb Wiley
+        club: Chelsea
+        trend: "→"
+        direction: steady
+        direction_label: Holding
+        recap: "No verified match appearance. Chelsea’s preseason work began around the end of the reporting window, and Wiley was not identified in the club’s initial training coverage."
+        development_read: "No new evidence. His immediate club role or next loan remains the important question."
+        sources:
+          - { label: "Chelsea preseason coverage", url: "https://www.chelseafc.com/en/news/article/gallery-arriving-for-pre-season-training" }
+
+      - profile: damion-downs
+        name: Damion Downs
+        club: Southampton
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        context: Preseason
+        recap: "Started Southampton’s July 24 friendly at Eintracht Braunschweig and scored the only goal in a 1-0 win. He played the opening half."
+        development_read: "Productive opening to preseason. A positive first impression, with the preseason caveat."
+        sources:
+          - { label: "Southampton match report", url: "https://www.southamptonfc.com/en/news/article/report-downs-hits-first-half-winner-in-braunschweig" }
+
+      - profile: zavier-gozo
+        name: Zavier Gozo
+        club: Real Salt Lake
+        trend: "→"
+        direction: steady
+        direction_label: Holding
+        recap: "Started and completed both of RSL’s road losses: 3-1 at LAFC and 2-1 at Portland. He remained one of the team’s trusted wide players and forced a save against Portland, but recorded no goal contribution."
+        development_read: "The consistent starting role is encouraging; the next step is converting involvement into production."
+        sources:
+          - { label: "RSL at LAFC", url: "https://www.rsl.com/news/real-salt-lake-suffers-3-1-setback-at-lafc-in-mls-return" }
+          - { label: "RSL at Portland", url: "https://www.rsl.com/news/real-salt-lake-cae-2-1-en-portland-acumulando-dos-derrotas-consecutivas-como-visitante" }
+
+      - profile: julian-hall
+        name: Julian Hall
+        club: New York Red Bulls
+        trend: "→"
+        direction: steady
+        direction_label: Holding
+        recap: "Started Red Bull New York’s 3-1 loss at Philadelphia and forced a save with a powerful second-half attempt. The club’s second match report did not provide enough detail to evaluate Hall confidently."
+        development_read: "Still receiving meaningful opportunities, but there was limited end product during a poor team week."
+        sources:
+          - { label: "Philadelphia Union match report", url: "https://www.philadelphiaunion.com/news/recap-union-return-in-style-with-3-1-rivalry-victory-over-red-bull-new-york" }
+
+      - profile: adri-mehmeti
+        name: Adri Mehmeti
+        club: New York Red Bulls
+        trend: "↓"
+        direction: falling
+        direction_label: Setback
+        recap: "Received two yellow cards against Charlotte and will miss RBNY’s next match through suspension."
+        development_read: "A clear disciplinary setback that interrupts his opportunity cycle."
+        sources:
+          - { label: "Red Bulls match report", url: "https://www.newyorkredbulls.com/news/match-recap-pres-by-provident-bank-red-bulls-blanked-by-charlotte-fc" }
+
+      - profile: neil-pierre
+        name: Neil Pierre
+        club: Philadelphia Union
+        trend: "↑↑"
+        direction: rising
+        direction_label: Rising fast
+        recap: "Came on against RBNY and scored his first MLS goal. Three days later, he made his first MLS start, played 90 minutes in a clean-sheet win over Seattle and collected his first MLS assist: approximately 124 minutes, one goal and one assist."
+        development_read: "The week’s strongest competitive development. He converted an opportunity into both production and additional trust."
+        sources:
+          - { label: "Union vs. RBNY", url: "https://www.philadelphiaunion.com/news/recap-union-return-in-style-with-3-1-rivalry-victory-over-red-bull-new-york" }
+          - { label: "Union vs. Seattle", url: "https://www.philadelphiaunion.com/news/recap-iloski-keeps-scoring-union-top-seattle" }
+
+      - profile: chris-brady
+        name: Chris Brady
+        club: Chicago Fire
+        trend: "↓"
+        direction: falling
+        direction_label: Watch
+        recap: "Returned to Chicago’s starting lineup after the World Cup and played 180 minutes in losses to Miami and NYCFC. Chicago conceded six combined goals."
+        development_read: "Difficult results, although the scorelines alone are insufficient to assign individual blame. His response over the next few matches matters more."
+        sources:
+          - { label: "Chicago at Miami", url: "https://www.chicagofirefc.com/news/matchday-chicago-fire-fc-kicks-off-second-half-of-2026-with-visit-to-inter-miami-cf-s-nu-stadium" }
+          - { label: "Chicago vs. NYCFC", url: "https://www.chicagofirefc.com/news/match-recap-chicago-fire-fc-falls-3-1-against-new-york-city-fc" }
+
+      - profile: rokas-pukstas
+        name: Rokas Pukstas
+        club: Hajduk Split
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        recap: "Played 90 minutes as Hajduk Split defeated Pafos 2-0 in the first leg of a Europa League qualifier. No goal contribution, but another full competitive appearance in an important match."
+        development_read: "Trusted for significant European minutes. That responsibility is more important developmentally than raw production this week."
+        sources:
+          - { label: "Hajduk match report", url: "https://hajduk.hr/tema/hajduk--pafos-2-0/651" }
+
+      - profile: cavan-sullivan
+        name: Cavan Sullivan
+        club: Philadelphia Union
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        recap: "Started both Philadelphia matches and played approximately 174 minutes. He hit the post against RBNY and remained involved in several attacking sequences, although he recorded no goal or assist."
+        development_read: "Two starts at his age are meaningful. The performances suggest growing first-team trust even without a statistical return."
+        sources:
+          - { label: "Union vs. RBNY", url: "https://www.philadelphiaunion.com/news/recap-union-return-in-style-with-3-1-rivalry-victory-over-red-bull-new-york" }
+          - { label: "Union vs. Seattle", url: "https://www.philadelphiaunion.com/news/recap-iloski-keeps-scoring-union-top-seattle" }
+
+      - profile: niko-tsakiris
+        name: Niko Tsakiris
+        club: San Jose Earthquakes
+        trend: "?"
+        direction: insufficient
+        direction_label: No read
+        recap: "Was not included in San Jose’s matchday squad against Orlando or the LA Galaxy. The club did not provide a clear public reason in its match reports."
+        development_read: "Availability flag. No development conclusion should be drawn until the reason for his absence is known."
+        sources:
+          - { label: "San Jose vs. Orlando", url: "https://www.sjearthquakes.com/news/match-recap-earthquakes-0-orlando-city-sc-4" }
+          - { label: "San Jose vs. LA Galaxy", url: "https://www.sjearthquakes.com/news/match-recap-earthquakes-1-la-galaxy-1" }
+
+      - profile: paxten-aaronson
+        name: Paxten Aaronson
+        club: Colorado Rapids
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        recap: "Supplied the cross for Colorado’s 96th-minute winner against San Diego. He was involved again at St. Louis, where Colorado played almost the entire match with ten men and lost 1-0."
+        development_read: "A decisive contribution reinforces his attacking value. The second match offered little fair evaluative context."
+        sources:
+          - { label: "Colorado vs. San Diego", url: "https://www.coloradorapids.com/news/recap-loic-williams-scores-stoppage-time-game-winner-to-defeat-san-diego-1-0" }
+          - { label: "Colorado at St. Louis", url: "https://www.coloradorapids.com/news/recap-10-man-rapids-drop-0-1-road-result-with-st-louis-city-sc" }
+
+      - profile: mathis-albert
+        name: Mathis Albert
+        club: Borussia Dortmund
+        trend: "↑↑"
+        direction: rising
+        direction_label: Rising fast
+        context: Preseason
+        recap: "Started Dortmund’s friendly against Fortuna Düsseldorf and scored BVB’s goal in a 2-1 loss—his first senior goal. Niko Kovač highlighted his speed, dribbling and technical ability afterward."
+        development_read: "Excellent preseason signal. The next test is whether it earns him additional senior involvement."
+        sources:
+          - { label: "Borussia Dortmund match report", url: "https://www.bvb.de/de/en/news/news-overview/news.html/2026/7/25/Kovac-Well-make-up-for-it.html" }
+
+      - profile: diego-kochen
+        name: Diego Kochen
+        club: Lyngby
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        recap: "Made his Danish Superliga debut and played 90 minutes for Lyngby against FC Copenhagen. Lyngby lost 3-2, but immediately earning a top-flight start is significant."
+        development_read: "The result was mixed; the opportunity was unequivocally positive. Establishing himself as Lyngby’s regular starter would materially improve his trajectory."
+        sources:
+          - { label: "FC Copenhagen match report", url: "https://www.fck.dk/nyhed/kampreferat-loeverne-lever-livet-lidt-farligt" }
+          - { label: "FC Copenhagen match center", url: "https://www.fck.dk/kamp/26-07-26/fc-kobenhavn-lyngby-boldklub" }
+
+      - profile: benjamin-cremaschi
+        name: Benjamin Cremaschi
+        club: Parma
+        trend: "→"
+        direction: steady
+        direction_label: Holding
+        context: Preseason
+        recap: "No match appearance during the window. He remains in Parma’s preseason following his permanent move."
+        development_read: "Evaluation unchanged while awaiting match minutes in his new environment."
+        sources:
+          - { label: "Parma signing announcement", url: "https://www.parmacalcio1913.com/en/main-news/parma-calcio-e-benjamin-cremaschi-insieme-fino-al-2031/" }
+
+      - profile: kevin-paredes
+        name: Kevin Paredes
+        club: FC Utrecht
+        trend: "→"
+        direction: steady
+        direction_label: Holding
+        context: Preseason
+        recap: "Entered FC Utrecht’s July 24 friendly against Cambuur in the 75th minute, playing approximately 15 minutes in a 1-0 loss."
+        development_read: "Limited evidence, but continued preseason availability is positive after his injury-affected Wolfsburg period."
+        sources:
+          - { label: "FC Utrecht match report", url: "https://www.fcutrecht.nl/nieuws/2026/juli/fc-utrecht-en-sc-cambuur-in-evenwicht-over-twee-duels/" }
+
+      - profile: peyton-miller
+        name: Peyton Miller
+        club: New England Revolution
+        trend: "↑↑"
+        direction: rising
+        direction_label: Rising fast
+        recap: "Played 90 minutes in New England’s 0-0 draw with Toronto, then started at left wingback and scored in a 4-1 win over Atlanta before leaving in the 68th minute: 158 minutes, one goal and one clean sheet."
+        development_read: "Strong two-way week and one of the clearest risers in the pool."
+        sources:
+          - { label: "New England vs. Toronto", url: "https://www.revolutionsoccer.net/news/recap-revolution-draw-toronto-fc-in-return-to-mls-action" }
+          - { label: "New England vs. Atlanta", url: "https://www.revolutionsoccer.net/news/recap-revolution-surge-to-4-1-triumph-over-atlanta-united" }
+
+      - profile: cooper-sanchez
+        name: Cooper Sanchez
+        club: Atlanta United
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        recap: "Started Atlanta’s comeback draw at Charlotte and was active in the team’s buildup. He started again against New England, creating a dangerous squared ball, but Atlanta faded in a 4-1 loss."
+        development_read: "Consecutive MLS starts and tactical responsibility are good developmental evidence despite the second result."
+        sources:
+          - { label: "Atlanta at Charlotte", url: "https://www.atlutd.com/news/match-recap-5-stripes-dig-deep-comeback-draw-charlotte-fc-july-22-2026" }
+          - { label: "Atlanta at New England", url: "https://www.atlutd.com/news/match-recap-atlanta-united-falls-more-clinical-new-england-revolution-july-25-2026" }
+
+      - profile: beau-leroux
+        name: Beau Leroux
+        club: San Jose Earthquakes
+        trend: "→"
+        direction: steady
+        direction_label: Holding
+        recap: "Started both San Jose matches: approximately 176 minutes across the 4-0 loss to Orlando and 1-1 draw with the Galaxy. He put a header on target against Orlando and helped the team stabilize defensively on Saturday."
+        development_read: "The workload and starting role are positive; the performances were collectively mixed."
+        sources:
+          - { label: "San Jose vs. Orlando", url: "https://www.sjearthquakes.com/news/match-recap-earthquakes-0-orlando-city-sc-4" }
+          - { label: "San Jose vs. LA Galaxy", url: "https://www.sjearthquakes.com/news/match-recap-earthquakes-1-la-galaxy-1" }
+
+      - profile: francis-westfield
+        name: Francis “Frankie” Westfield
+        club: Philadelphia Union
+        trend: "↑↑"
+        direction: rising
+        direction_label: Rising fast
+        recap: "Played 180 minutes and assisted in both Philadelphia victories. His combination with Pierre created the Seattle winner, and he earned his first MLS Team of the Matchday selection."
+        development_read: "Excellent week. His attacking production from right back is becoming repeatable rather than incidental."
+        sources:
+          - { label: "Union vs. Seattle", url: "https://www.philadelphiaunion.com/news/recap-iloski-keeps-scoring-union-top-seattle" }
+          - { label: "Union recognition", url: "https://www.philadelphiaunion.com/news/frankie-westfield-earns-first-career-mls-team-of-the-matchday-honor" }
+
+      - profile: cole-campbell
+        name: Cole Campbell
+        club: SV Elversberg
+        trend: "→"
+        direction: steady
+        direction_label: Holding
+        context: Preseason
+        recap: "No verified match during the reporting window. He remains in SV Elversberg’s preseason after making his club debut on July 18 and creating their late goal against Viktoria Köln."
+        development_read: "No new weekly evidence. The move should offer a clearer pathway to first-team minutes once competitive play begins."
+        sources:
+          - { label: "SV Elversberg match report", url: "https://sv07elversberg.de/knappe-testspiel-niederlage-sve-unterliegt-viktoria-koeln-mit-12/" }
+
+      - profile: luca-bombino
+        name: Luca Bombino
+        club: San Diego FC
+        trend: "→"
+        direction: steady
+        direction_label: Holding
+        recap: "Missed San Diego’s midweek match through suspension, then returned as an 86th-minute substitute in the 1-0 win over Dallas and helped close out the clean sheet."
+        development_read: "Positive to return immediately, but there was too little playing time for a meaningful performance evaluation."
+        sources:
+          - { label: "San Diego suspension origin", url: "https://www.sandiegofc.com/news/match-recap-san-diego-fc-falls-4-2-to-vancouver-whitecaps-fc-at-snapdragon-stadium" }
+          - { label: "Dallas match commentary", url: "https://www.skysports.com/football/san-diego-vs-fc-dallas/550468" }

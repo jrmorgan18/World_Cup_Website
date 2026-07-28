@@ -7,6 +7,7 @@ section_theme: project
 ---
 {% assign pool_data = site.data.project_2030_player_pool %}
 {% assign player_count = pool_data.players | size %}
+{% assign latest_weekly_report = site.data.project_2030_weekly_reports.reports | first %}
 <section class="module-hero module-hero--compact">
   <p class="de-eyebrow"><span></span> Project 2030 / Living depth chart</p>
   <h1>The Player Pool</h1>
@@ -42,7 +43,8 @@ section_theme: project
         <div class="pool-player-grid">
           {% for player in group_players %}
           {% assign profile = site.data.project_2030_profiles[player.profile] %}
-          <details class="pool-player-card{% if profile %} pool-player-card--profiled{% endif %}">
+          {% assign weekly_player = latest_weekly_report.players | where: "profile", player.profile | first %}
+          <details class="pool-player-card{% if profile %} pool-player-card--profiled{% endif %}" id="player-{{ player.profile }}">
             <summary>
               <span class="pool-player-avatar" aria-hidden="true">
                 {% if player.image %}<img src="{{ player.image | relative_url }}" alt="" width="52" height="52" loading="lazy" decoding="async">{% else %}<b>{{ player.initials }}</b>{% endif %}
@@ -71,6 +73,16 @@ section_theme: project
                   {% if profile.usmnt_case %}<blockquote><span>Project 2030 case</span>{{ profile.usmnt_case }}</blockquote>{% endif %}
                 </div>
                 <aside class="pool-profile-evaluation">
+                  {% if weekly_player %}
+                  <section class="pool-profile-development pool-profile-development--{{ weekly_player.direction }}">
+                    <div>
+                      <p>Latest development</p>
+                      <span class="pool-development-signal"><b>{{ weekly_player.trend }}</b>{{ weekly_player.direction_label }}</span>
+                    </div>
+                    <span>{{ weekly_player.development_read }}</span>
+                    <small>Week ending {{ latest_weekly_report.week_ending }}</small>
+                  </section>
+                  {% endif %}
                   {% if profile.strengths %}<section><p>Strengths</p><span>{{ profile.strengths }}</span></section>{% endif %}
                   {% if profile.questions %}<section><p>Questions to monitor</p><span>{{ profile.questions }}</span></section>{% endif %}
                   <section><p>Current status</p><span>{{ profile.status | default: "Profile active - baseline established" }}</span></section>

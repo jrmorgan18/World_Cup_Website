@@ -4,11 +4,75 @@ title: Project 2030 — Scouting Corner
 permalink: /soccer/project-2030/scouting/
 section_theme: project
 ---
+{% assign reports = site.data.project_2030_weekly_reports.reports %}
+{% assign latest_report = reports | first %}
 <section class="module-hero">
   <p class="de-eyebrow"><span></span> Project 2030 / Scouting</p>
   <h1>Scouting corner</h1>
   <p>A weekly notebook on the young Americans trying to become part of the 2030 answer.</p>
 </section>
+
+{% if latest_report %}
+<section class="weekly-scouting-shell">
+  <header class="weekly-scouting-header">
+    <div>
+      <p class="de-kicker">Weekly player watch</p>
+      <h2>{{ latest_report.group_label }} report</h2>
+      <p>The latest club form, opportunity signals and development movement across the Project 2030 prospect pool.</p>
+    </div>
+    <dl>
+      <div><dt>Reporting window</dt><dd>{{ latest_report.window }}</dd></div>
+      <div><dt>Current scope</dt><dd>{{ latest_report.group_label }}</dd></div>
+      <div><dt>Source standard</dt><dd>{{ latest_report.source_note }}</dd></div>
+    </dl>
+  </header>
+
+  <div class="weekly-scouting-summary" aria-label="Report summary">
+    <article><span>01</span><p>Biggest risers</p><strong>{{ latest_report.summary.biggest_risers }}</strong></article>
+    <article><span>02</span><p>Issues to monitor</p><strong>{{ latest_report.summary.issues_to_monitor }}</strong></article>
+    <article><span>03</span><p>Best development story</p><strong>{{ latest_report.summary.best_story }}</strong></article>
+  </div>
+
+  <div class="weekly-scouting-key" aria-label="Development direction key">
+    <span><b class="weekly-scouting-dot weekly-scouting-dot--rising"></b>Improving</span>
+    <span><b class="weekly-scouting-dot weekly-scouting-dot--steady"></b>Unchanged</span>
+    <span><b class="weekly-scouting-dot weekly-scouting-dot--falling"></b>Setback</span>
+    <span><b class="weekly-scouting-dot weekly-scouting-dot--insufficient"></b>Insufficient evidence</span>
+    <small>Published {{ latest_report.published }}</small>
+  </div>
+
+  <div class="weekly-scouting-table-wrap">
+    <table class="weekly-scouting-table">
+      <caption class="sr-only">Project 2030 weekly scouting report for {{ latest_report.window }}</caption>
+      <thead>
+        <tr><th scope="col">Direction</th><th scope="col">Player</th><th scope="col">Weekly report</th><th scope="col">Development read</th></tr>
+      </thead>
+      <tbody>
+        {% for report_player in latest_report.players %}
+        <tr class="weekly-scouting-row weekly-scouting-row--{{ report_player.direction }}">
+          <td data-label="Direction"><span class="weekly-scouting-trend"><b>{{ report_player.trend }}</b>{{ report_player.direction_label }}</span></td>
+          <th scope="row" data-label="Player">
+            <strong>{{ report_player.name }}</strong>
+            <span>{{ report_player.club }}</span>
+            {% if report_player.context %}<small>{{ report_player.context }}</small>{% endif %}
+          </th>
+          <td data-label="Weekly report">
+            <p>{{ report_player.recap }}</p>
+            {% if report_player.sources %}<div class="weekly-scouting-sources">{% for source in report_player.sources %}<a href="{{ source.url }}" target="_blank" rel="noopener">{{ source.label }} <b>&nearr;</b></a>{% endfor %}</div>{% endif %}
+          </td>
+          <td data-label="Development read"><p>{{ report_player.development_read }}</p></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <footer class="weekly-scouting-footer">
+    <p><strong>Built to expand.</strong> The report currently covers prospects; future player-pool groups can be added through the same weekly data feed.</p>
+    <a href="{{ '/soccer/project-2030/player-pool/' | relative_url }}">Open the player pool <span>&rarr;</span></a>
+  </footer>
+</section>
+{% endif %}
 {% include project-subnav.html %}
 <section class="scouting-shell">
   {% assign prospect_story = site.posts | where: "prospect_feature", true | first %}
