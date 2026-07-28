@@ -123,6 +123,7 @@ reports:
         direction_label: Injured
         recap: "Missed both San Jose matches while injured. FotMob lists a muscle injury dated July 22 with an expected return in mid-August; San Jose’s match reports confirm his absence but do not provide the timeline."
         development_read: "No performance evaluation this week. The absence is explained by injury, so the next development marker is whether he returns on the projected mid-August timetable."
+        profile_development_read: "No performance evaluation this week. Injured with a projected mid-August timetable."
         sources:
           - { label: "San Jose vs. Orlando", url: "https://www.sjearthquakes.com/news/match-recap-earthquakes-0-orlando-city-sc-4" }
           - { label: "San Jose vs. LA Galaxy", url: "https://www.sjearthquakes.com/news/match-recap-earthquakes-1-la-galaxy-1" }

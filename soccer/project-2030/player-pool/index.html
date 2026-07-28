@@ -79,7 +79,7 @@ section_theme: project
                       <p>Weekly trend</p>
                       <span class="pool-development-signal"><b>{{ weekly_player.trend }}</b>{{ weekly_player.direction_label }}</span>
                     </div>
-                    <span>{{ weekly_player.development_read }}</span>
+                    <span>{{ weekly_player.profile_development_read | default: weekly_player.development_read }}</span>
                     <small>Latest report / Week ending {{ latest_weekly_report.week_ending }}</small>
                   </section>
                   {% endif %}
