@@ -797,3 +797,39 @@ luca-bombino:
   sources:
     - { label: FotMob, url: "https://www.fotmob.com/players/1617160/luca-bombino" }
     - { label: San Diego FC, url: "https://www.sandiegofc.com/players/luca-bombino/" }
+
+leonard-prescott:
+  club: Bayern Munich
+  position: Goalkeeper
+  updated: July 2026
+  status: Elite dual-national prospect - recovering from injury, Germany pathway currently ahead
+  summary: >-
+    Prescott is one of the highest-upside goalkeepers in the broader US-eligible pool. The New York-born keeper stands 6-foot-5 but is more than a large target in goal. He moves well laterally, has sharp reactions and is unusually comfortable passing with both feet. Bayern accelerated him into its U19 team during the 2025-26 season and included him in several senior matchday squads, including Champions League games, although he has not yet made his professional debut. He is currently sidelined by a knee injury after moving toward Bayern's reserve team for the new season.
+  strengths: Ideal goalkeeper frame, lateral quickness, reflexes, composure, advanced distribution and the confidence to play through pressure rather than automatically clearing long.
+  questions: How quickly will he recover from the knee injury; when will he receive regular senior minutes; can he turn his size into consistent command of crosses; and is there any realistic opening for the United States to change his international direction?
+  usmnt_case: >-
+    Prescott will only be 20 during the 2030 World Cup and may possess a higher ceiling than any goalkeeper currently connected to the US pool. The problem is availability, both at club and international level. He has represented Germany in UEFA youth competition and appears firmly established in its development pathway, so a move to the US would require a formal change of association rather than an ordinary youth call-up.
+  sources:
+    - { label: Bayern Munich first-team update, url: "https://fcbayern.com/en/news/2026/03/when-four-goalkeepers-were-needed-bayerns-exceptional-years" }
+    - { label: Bundesliga scouting profile, url: "https://www.bundesliga.com/en/bundesliga/news/leonard-prescott-who-is-bayern-munich-us-born-goalkeeping-talent-neuer-36373" }
+    - { label: Germany youth record, url: "https://datencenter.dfb.de/en/data-center/people/424793/player" }
+    - { label: Knee injury update, url: "https://sport.sky.de/fussball/artikel/fc-bayern-muenchen-muss-laenger-auf-torwart-talent-prescott-verzichten/13559454/35311" }
+
+montrell-culbreath:
+  club: Bayer Leverkusen
+  position: Right winger / attacking midfielder
+  updated: July 2026
+  status: High-priority dual national - Bundesliga breakthrough established, Germany pathway active
+  summary: >-
+    Culbreath has already moved beyond the purely theoretical stage. The 18-year-old made 16 appearances across the Bundesliga, Champions League and DFB Pokal during his breakthrough 2025-26 season. He scored on his Bundesliga debut against RB Leipzig, started nine of Leverkusen's final 11 league matches and earned a new contract through 2031. He can play from the right wing or move inside as an attacking midfielder, giving him several ways to connect midfield buildup with the front line.
+
+    Culbreath is a quick, two-footed attacker who plays with more maturity than his age suggests. He can accelerate at a defender, combine in tight areas or retain possession when the direct attack is not available. Leverkusen's coaches have also praised his physical play, attention and decision-making without the ball. That matters because it gives him a path to minutes even when he is not producing a goal or assist.
+  strengths: Explosive acceleration, two-footed control, one-on-one ability, intelligent decisions in tight spaces, pressing, positional versatility and comfort playing at senior tempo.
+  questions: Can he turn promising attacks into consistent goals and assists; can he retain his place once Leverkusen's entire attacking group is available; is he ultimately more dangerous wide or between the lines; and will he remain with Germany internationally?
+  usmnt_case: >-
+    Culbreath has stronger senior evidence than most players labeled as prospects. A Bundesliga winger earning starts and Champions League minutes at 18 would immediately become relevant to the US conversation. However, he started for Germany throughout its run to the 2026 European U19 Championship final, so joining the US would require a formal change of association. Talent is not the major question here. Recruitment is.
+  sources:
+    - { label: Bayer Leverkusen player profile, url: "https://www.bayer04.de/de-de/player/werkself/bayer-04-leverkusen/montrell-culbreath" }
+    - { label: Contract extension announcement, url: "https://www.bayer04.de/en-us/news/bayer04/pro-contract-until-2031-u19-international-montrell-culbreath-signs-new-deal-with-bayer-04" }
+    - { label: Bundesliga scouting analysis, url: "https://www.bundesliga.com/en/bundesliga/news/why-leverkusens-montrell-culbreath-deserves-new-deal-german-american-37953" }
+    - { label: Germany U19 European Championship record, url: "https://www.uefa.com/under19/news/02a7-2114bbaa1133-7d48cf3671c0-1000--2026-under-19-euro-final-report-spain-overcome-germany-to-s/" }
