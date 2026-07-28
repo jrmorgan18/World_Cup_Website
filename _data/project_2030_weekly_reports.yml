@@ -8,7 +8,7 @@ reports:
     source_note: "Club and local reporting prioritized"
     summary:
       biggest_risers: "Neil Pierre, Francis “Frankie” Westfield, Peyton Miller, Mathis Albert, Damion Downs and Diego Kochen."
-      issues_to_monitor: "Adri Mehmeti’s suspension, Niko Tsakiris’s unexplained squad absences and Chris Brady’s difficult return from the World Cup."
+      issues_to_monitor: "Adri Mehmeti’s suspension, Niko Tsakiris’s muscle-injury recovery into mid-August and Chris Brady’s difficult return from the World Cup."
       best_story: "Neil Pierre produced his first MLS goal, first MLS start and first MLS assist across two appearances."
     players:
       - profile: caleb-wiley
@@ -121,11 +121,12 @@ reports:
         trend: "?"
         direction: insufficient
         direction_label: No read
-        recap: "Was not included in San Jose’s matchday squad against Orlando or the LA Galaxy. The club did not provide a clear public reason in its match reports."
-        development_read: "Availability flag. No development conclusion should be drawn until the reason for his absence is known."
+        recap: "Missed both San Jose matches while injured. FotMob lists a muscle injury dated July 22 with an expected return in mid-August; San Jose’s match reports confirm his absence but do not provide the timeline."
+        development_read: "No performance evaluation this week. The absence is explained by injury, so the next development marker is whether he returns on the projected mid-August timetable."
         sources:
           - { label: "San Jose vs. Orlando", url: "https://www.sjearthquakes.com/news/match-recap-earthquakes-0-orlando-city-sc-4" }
           - { label: "San Jose vs. LA Galaxy", url: "https://www.sjearthquakes.com/news/match-recap-earthquakes-1-la-galaxy-1" }
+          - { label: "FotMob injury status", url: "https://www.fotmob.com/players/1339609/niko-tsakiris" }
 
       - profile: paxten-aaronson
         name: Paxten Aaronson
