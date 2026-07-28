@@ -520,10 +520,11 @@ body { overflow-x: hidden; }
 .pool-profile-header>span { padding:7px 9px; color:#9caec3; border:1px solid var(--color-border); font-family:var(--font-display); font-size:.56rem; letter-spacing:.9px; text-transform:uppercase; }
 .pool-profile-body { display:grid; grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr); }
 .pool-profile-report { padding:28px 30px; }
-.pool-profile-meta { margin-bottom:24px; display:grid; grid-template-columns:repeat(3,1fr); border:1px solid var(--color-border); }
+.pool-profile-meta { margin-bottom:24px; display:grid; grid-template-columns:repeat(4,1fr); border:1px solid var(--color-border); }
 .pool-profile-meta span { min-height:68px; padding:13px 15px; display:flex; flex-direction:column; justify-content:center; color:#edf3f9; border-right:1px solid var(--color-border); font-family:'Newsreader',serif; font-size:.96rem; }
 .pool-profile-meta span:last-child { border-right:0; }
 .pool-profile-meta small { margin-bottom:5px; color:#7f91aa; font-family:var(--font-display); font-size:.52rem; letter-spacing:.8px; text-transform:uppercase; }
+.pool-profile-meta em { margin-top:3px; color:#7f91aa; font-family:var(--font-display); font-size:.45rem; font-style:normal; letter-spacing:.45px; text-transform:uppercase; }
 .pool-profile-summary { color:#d2dce8; font-family:'Newsreader',serif; font-size:1.08rem; line-height:1.65; }
 .pool-profile-report blockquote { margin:25px 0 0; padding:18px 20px; color:#fff; border-left:3px solid var(--pool-accent); background:rgba(4,17,36,.42); font-family:'Newsreader',serif; font-size:1rem; line-height:1.5; }
 .pool-profile-report blockquote span { display:block; margin-bottom:6px; color:var(--pool-accent); font-family:var(--font-display); font-size:.56rem; letter-spacing:1px; text-transform:uppercase; }
