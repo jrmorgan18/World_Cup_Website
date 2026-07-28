@@ -65,6 +65,7 @@ section_theme: project
                     {% if profile.club %}<span><small>Club</small>{{ profile.club }}</span>{% endif %}
                     {% if profile.position %}<span><small>Position</small>{{ profile.position }}</span>{% endif %}
                     <span><small>Pool group</small>{{ group.name }}</span>
+                    {% if player.age_2030 %}<span><small>Age in 2030</small>{{ player.age_2030 }} <em>on July 1</em></span>{% endif %}
                   </div>
                   <p class="pool-profile-summary">{{ profile.summary }}</p>
                   {% if profile.usmnt_case %}<blockquote><span>Project 2030 case</span>{{ profile.usmnt_case }}</blockquote>{% endif %}
@@ -87,6 +88,7 @@ section_theme: project
                 <div><dt>Current group</dt><dd>{{ group.name }}</dd></div>
                 {% if player.club %}<div><dt>Club</dt><dd>{{ player.club }}</dd></div>{% endif %}
                 {% if player.position %}<div><dt>Position</dt><dd>{{ player.position }}</dd></div>{% endif %}
+                {% if player.age_2030 %}<div><dt>Age in 2030</dt><dd>{{ player.age_2030 }} on July 1</dd></div>{% endif %}
                 <div><dt>Status</dt><dd>Baseline pending</dd></div>
               </dl>
               {% endif %}
