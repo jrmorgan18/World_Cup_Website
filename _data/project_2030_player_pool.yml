@@ -91,6 +91,15 @@ players:
   - { name: Francis Westfield, initials: FW, group: prospects, age_2030: 24, profile: francis-westfield, image: /assets/images/player-pool/francis-westfield.png }
   - { name: Cole Campbell, initials: CC, group: prospects, age_2030: 24, profile: cole-campbell, image: /assets/images/player-pool/cole-campbell.png }
   - { name: Luca Bombino, initials: LB, group: prospects, age_2030: 23, profile: luca-bombino, image: /assets/images/player-pool/luca-bombino.png }
+  - { name: Jackson Hopkins, initials: JH, group: prospects, age_2030: 26, profile: jackson-hopkins, image: /assets/images/player-pool/jackson-hopkins.png }
+  - { name: Duran Ferree, initials: DF, group: prospects, age_2030: 23, profile: duran-ferree, image: /assets/images/player-pool/duran-ferree.png }
   - { name: Noahkai Banks, initials: NB, group: dual-nats, age_2030: 23, profile: noahkai-banks, image: /assets/images/player-pool/noahkai-banks.png }
   - { name: "Leonard “Leo” Prescott", initials: LP, group: dual-nats, age_2030: 20, profile: leonard-prescott, image: /assets/images/player-pool/leo-prescott.png }
   - { name: Montrell Culbreath, initials: MC, group: dual-nats, age_2030: 22, profile: montrell-culbreath, image: /assets/images/player-pool/montrell-culbreath.png }
+  - { name: Brooklyn Raines, initials: BR, group: dual-nats, age_2030: 25, profile: brooklyn-raines, image: /assets/images/player-pool/brooklyn-raines.png }
+  - { name: Justin Ellis, initials: JE, group: dual-nats, age_2030: 23, profile: justin-ellis, image: /assets/images/player-pool/justin-ellis.png }
+  - { name: Michael Bresser, initials: MB, group: dual-nats, age_2030: 23, profile: michael-bresser, image: /assets/images/player-pool/michael-bresser.jpg }
+  - { name: Manu Romero, initials: MR, group: dual-nats, age_2030: 21, profile: manu-romero, image: /assets/images/player-pool/manu-romero.jpg }
+  - { name: Austyn Jones, initials: AJ, group: dual-nats, age_2030: 22, profile: austyn-jones, image: /assets/images/player-pool/austyn-jones.png }
+  - { name: Tyler Meiser, initials: TM, group: dual-nats, age_2030: 23, profile: tyler-meiser, image: /assets/images/player-pool/tyler-meiser.png }
+  - { name: Justin Che, initials: JC, group: dual-nats, age_2030: 26, profile: justin-che, image: /assets/images/player-pool/justin-che.png }
