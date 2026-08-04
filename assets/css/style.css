@@ -1875,6 +1875,10 @@ body.survey-prompt-open { overflow: hidden; }
   object-position: center;
 }
 
+.article-hero--contain img {
+  object-fit: contain;
+}
+
 .article-hero-credit {
   margin: 7px 2px 0;
   color: var(--color-text-muted);

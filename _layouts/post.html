@@ -23,8 +23,8 @@ layout: default
     <p class="article-subtitle">{{ page.subtitle }}</p>
     {% endif %}
     {% if page.hero_image %}
-    <div class="article-hero{% if page.hero_wide %} article-hero--wide{% endif %}">
-      <img src="{{ page.hero_image | relative_url }}" alt="{{ page.title }}">
+    <div class="article-hero{% if page.hero_wide %} article-hero--wide{% endif %}{% if page.hero_contain %} article-hero--contain{% endif %}">
+      <img src="{{ page.hero_image | relative_url }}" alt="{{ page.hero_alt | default: page.title }}">
     </div>
     {% if page.hero_credit %}
     <p class="article-hero-credit">{% if page.hero_credit_url %}<a href="{{ page.hero_credit_url }}" target="_blank" rel="noopener">{{ page.hero_credit }}</a>{% else %}{{ page.hero_credit }}{% endif %}</p>

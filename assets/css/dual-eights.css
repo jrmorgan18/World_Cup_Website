@@ -738,6 +738,10 @@ body { overflow-x: hidden; }
 .theme-orioles .article-body h2::first-letter { color:var(--de-orange); }
 .theme-orioles .article-body>p:first-child em { color:var(--de-orange-light); }
 .theme-orioles .article-nav-link:hover { border-color:var(--de-orange); background:#171311; }
+.orioles-article-figure { margin:38px 0 44px; padding:10px; border:1px solid rgba(241,90,36,.34); background:#171311; }
+.article-body .orioles-article-figure img { width:100%; margin:0; aspect-ratio:2 / 1; object-fit:cover; border-radius:0; }
+.orioles-article-figure figcaption { padding:11px 6px 2px; color:#aaa09a; font-size:.78rem; line-height:1.5; text-align:right; }
+.orioles-article-figure figcaption a { color:var(--de-orange-light); }
 
 /* Ravens article treatment */
 .theme-ravens .article-shell { position:relative; }
