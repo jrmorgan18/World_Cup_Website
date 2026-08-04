@@ -106,9 +106,9 @@ reports:
       - profile: rokas-pukstas
         name: Rokas Pukstas
         club: Hajduk Split
-        trend: "↓"
-        direction: falling
-        direction_label: Watch
+        trend: "→"
+        direction: steady
+        direction_label: Holding
         recap: "Started, was booked in the 96th minute and completed all 120 minutes of Hajduk’s July 30 Europa League qualifier at Pafos, a 4-0 extra-time defeat that overturned a 2-0 first-leg lead. He operated in a double pivot alongside Adrion Pajaziti, got a header on the Pafos goal from a 36th-minute corner that was ruled out for a foul, and picked out Marko Livaja with a header in the 93rd minute for a chance that went just past the post. Hajduk used all five substitutions without removing him; he recorded no goal contribution."
         development_read: "The full 120-minute European assignment reflects continued trust, but being part of a midfield that could not protect a two-goal first-leg advantage weakened the week. His response in the Conference League pathway bears watching."
         sources:
