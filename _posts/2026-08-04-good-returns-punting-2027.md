@@ -6,6 +6,7 @@ categories: [orioles]
 section_theme: orioles
 permalink: /orioles/good-returns-punting-2027/
 author: "Randy Morgan"
+read_time: 11
 excerpt: "The Orioles did not get robbed at the trade deadline, but they sent a clear signal that no Orioles fan will enjoy. The returns were good. The direction is still unacceptable."
 series: "Trade Deadline"
 orioles_feature: true

@@ -15,12 +15,12 @@
   </div>
 </section>
 
-{% assign sample_feature = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina-part-2" | first %}
-{% assign orioles_feature = site.posts | where: "orioles_feature", true | first %}
+{% assign main_feature = site.posts | where: "orioles_feature", true | first %}
+{% assign usmnt_feature = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina-part-2" | first %}
 {% assign checkpoint_story = site.posts | where: "checkpoint_feature", true | first %}
 {% assign prospect_story = site.posts | where: "prospect_feature", true | first %}
 {% assign ravens_feature = site.posts | where: "slug", "five-questions-that-will-define-ravens-season" | first %}
-{% if sample_feature %}
+{% if main_feature %}
 <section class="de-home-editorial">
   <div class="de-home-content-grid">
     <div class="de-home-feature-column">
@@ -28,16 +28,16 @@
         <p>Featured story</p>
         <span>Longform</span>
       </div>
-      <a class="de-lead-story" href="{{ sample_feature.url | relative_url }}">
+      <a class="de-lead-story" href="{{ main_feature.url | relative_url }}">
         <figure>
-          <img src="{{ sample_feature.hero_image | relative_url }}" alt="" loading="eager">
-          <span>{{ sample_feature.part }}</span>
+          <img src="{{ main_feature.hero_image | relative_url }}" alt="" loading="eager">
+          <span>{{ main_feature.part | default: main_feature.series }}</span>
         </figure>
         <div class="de-lead-story-copy">
-          <p class="de-lead-kicker">Project 2030 <i aria-hidden="true"></i> USMNT</p>
-          <h2>{{ sample_feature.title }}</h2>
-          <p class="de-lead-dek">{{ sample_feature.excerpt }}</p>
-          <p class="de-lead-meta">By {{ sample_feature.author }} <span aria-hidden="true">&middot;</span> {{ sample_feature.read_time }} minute read</p>
+          <p class="de-lead-kicker">{{ main_feature.series | default: "Feature" }} <i aria-hidden="true"></i> {{ main_feature.categories | first | capitalize }}</p>
+          <h2>{{ main_feature.title }}</h2>
+          <p class="de-lead-dek">{{ main_feature.excerpt }}</p>
+          <p class="de-lead-meta">By {{ main_feature.author }} <span aria-hidden="true">&middot;</span> {{ main_feature.read_time | default: 8 }} minute read</p>
           <strong>Read the feature <span aria-hidden="true">&rarr;</span></strong>
         </div>
       </a>
@@ -50,7 +50,7 @@
       <ol class="de-recent-list">
         {% if checkpoint_story %}<li><span class="de-recent-number">01</span><a href="{{ checkpoint_story.url | relative_url }}"><small class="de-recent-tag de-recent-tag--soccer">Project 2030</small><h3>{{ checkpoint_story.title }}</h3><p>{{ checkpoint_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
         {% if prospect_story %}<li><span class="de-recent-number">02</span><a href="{{ prospect_story.url | relative_url }}"><small class="de-recent-tag de-recent-tag--soccer">Project 2030</small><h3>{{ prospect_story.title }}</h3><p>{{ prospect_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-        {% if orioles_feature %}<li><span class="de-recent-number">03</span><a href="{{ orioles_feature.url | relative_url }}"><small class="de-recent-tag de-recent-tag--orioles">Orioles</small><h3>{{ orioles_feature.title }}</h3><p>{{ orioles_feature.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if usmnt_feature %}<li><span class="de-recent-number">03</span><a href="{{ usmnt_feature.url | relative_url }}"><small class="de-recent-tag de-recent-tag--soccer">USMNT</small><h3>{{ usmnt_feature.title }}</h3><p>{{ usmnt_feature.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
         {% if ravens_feature %}<li><span class="de-recent-number">04</span><a href="{{ ravens_feature.url | relative_url }}"><small class="de-recent-tag de-recent-tag--ravens">Ravens</small><h3>{{ ravens_feature.title }}</h3><p>{{ ravens_feature.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
       </ol>
     </aside>
