@@ -1,0 +1,30 @@
+# Orioles Player of the Week — powers the module on /orioles/.
+#
+# Update this file each week. It takes precedence over the `player_of_week`
+# front matter on the most recent weekly recap post, so the award can be
+# refreshed in weeks where no recap article has been published yet.
+#
+# Set `recap_url` only when a weekly recap post exists for this period; the
+# "Read the weekly recap" link is hidden when it is absent.
+name: "Jackson Holliday"
+position: "2B"
+period: "July 27 – August 2, 2026"
+summary: >-
+  Holliday was the one constant in Baltimore's lineup through deadline week. He
+  opened it 4-for-5 in Detroit — the fourth four-hit game of his career and his
+  second of the month — then came off the bench two nights later with the
+  two-run single that sparked the Orioles' rally from seven down, the club's
+  largest comeback win since 2009.
+image: "https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:67:current.png/w_720,q_auto:best/v1/people/702616/headshot/67/current"
+image_alt: "Jackson Holliday of the Baltimore Orioles"
+# Headshots crop better from the top than the centre; omit for action photos.
+image_position: "center top"
+image_credit: "MLB.com"
+image_credit_url: "https://www.mlb.com/orioles/video/jackson-holliday-s-four-hit-game-vs-tigers"
+stats:
+  - { label: "Games", value: "6" }
+  - { label: "Hits", value: "6" }
+  - { label: "Doubles", value: "1" }
+  - { label: "Runs", value: "2" }
+  - { label: "RBI", value: "2" }
+  - { label: "Best game", value: "4-for-5" }

@@ -36,12 +36,22 @@ section_theme: orioles
     {% break %}
   {% endif %}
 {% endfor %}
-{% if latest_player_of_week %}
-{% assign pow = latest_player_of_week.player_of_week %}
+{% comment %}
+  _data/orioles_player_of_week.yml wins when present so the award can be updated
+  in weeks with no recap post yet; otherwise fall back to the newest recap.
+{% endcomment %}
+{% if site.data.orioles_player_of_week %}
+  {% assign pow = site.data.orioles_player_of_week %}
+  {% assign pow_recap_url = pow.recap_url %}
+{% elsif latest_player_of_week %}
+  {% assign pow = latest_player_of_week.player_of_week %}
+  {% assign pow_recap_url = latest_player_of_week.url %}
+{% endif %}
+{% if pow %}
 <section class="club-section club-section--orioles-potw" aria-labelledby="orioles-potw-heading">
   <div class="orioles-potw">
     <figure class="orioles-potw-photo">
-      <img src="{{ pow.image }}" alt="{{ pow.image_alt | escape }}">
+      <img src="{{ pow.image }}" alt="{{ pow.image_alt | escape }}"{% if pow.image_position %} style="object-position: {{ pow.image_position }};"{% endif %}>
       <figcaption>Photo: <a href="{{ pow.image_credit_url }}" target="_blank" rel="noopener">{{ pow.image_credit }}</a></figcaption>
     </figure>
     <div class="orioles-potw-copy">
@@ -57,7 +67,7 @@ section_theme: orioles
         {% endfor %}
       </div>
       <div class="orioles-potw-links">
-        <a href="{{ latest_player_of_week.url | relative_url }}">Read the weekly recap <span aria-hidden="true">&rarr;</span></a>
+        {% if pow_recap_url %}<a href="{{ pow_recap_url | relative_url }}">Read the weekly recap <span aria-hidden="true">&rarr;</span></a>{% endif %}
         <a href="{{ brandon_feature.url | relative_url }}">Read the featured analysis <span aria-hidden="true">&rarr;</span></a>
       </div>
     </div>
