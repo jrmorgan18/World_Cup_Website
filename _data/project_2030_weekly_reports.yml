@@ -7,7 +7,7 @@ reports:
     week_ending: "August 2, 2026"
     source_note: "Official club, league and competition reporting prioritized; local club coverage used next, with ESPN and FotMob used only where official post-match detail was unavailable at the reporting cutoff"
     summary:
-      biggest_risers: "Neil Pierre, Cavan Sullivan, Francis “Frankie” Westfield, Peyton Miller, Julian Hall, Zavier Gozo and Diego Kochen. Philadelphia’s three prospects all produced strong evidence, Miller added an assist from a winger role, Hall and Gozo represented MLS at the All-Star Game, and Kochen paired another Danish top-flight start with a high-level save."
+      biggest_risers: "Neil Pierre, Cavan Sullivan, Francis “Frankie” Westfield, Peyton Miller, Julian Hall, Justin Ellis, Zavier Gozo and Diego Kochen. Philadelphia’s three prospects all produced strong evidence, Miller added an assist from a winger role, Hall and Gozo represented MLS at the All-Star Game, Ellis logged another near-full MLS start, and Kochen paired another Danish top-flight start with a high-level save."
       issues_to_monitor: "Rokas Pukstas after playing all 120 minutes of Hajduk’s 4-0 extra-time European elimination; Caleb Wiley’s omission from Chelsea’s tour group; and Benjamin Cremaschi and Niko Tsakiris in injury recovery."
       best_story: "Pierre’s 90+6-minute header helped Philadelphia turn a two-goal deficit into a 3-2 win, though Atlanta played with 10 men from the 27th minute. Westfield started at right back and hit the bar, while Sanchez’s club absence was explained by U.S. youth international duty. No competitive appearance was recorded for Wiley, Downs, Mehmeti, Albert, Cremaschi, Paredes or Campbell; Ferree was an unused substitute."
     players:
@@ -65,6 +65,18 @@ reports:
           - { label: "MLS All-Star lineup and substitutions (secondary)", url: "https://www.espn.com/soccer/match/_/gameId/401864004/liga-mx-all-stars-mls-all-stars" }
           - { label: "RBNY vs. Orlando match center (official MLS)", url: "https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/rbnyvsorl-08-01-2026/" }
           - { label: "RBNY vs. Orlando lineup and stats (secondary)", url: "https://www.espn.com/soccer/match/_/gameId/761696/orlando-city-sc-new-york-red-bulls" }
+
+      - profile: justin-ellis
+        name: Justin Ellis
+        club: Orlando City
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        recap: "Started at forward alongside Antoine Griezmann and played 87 minutes in Orlando City’s 3-2 road loss to Red Bull New York. Ellis had no goal or assist, but remained on the field through the Lions’ second-half push from a two-goal deficit to 3-2."
+        development_read: "The result was disappointing, but another near-full MLS start is positive evidence of trust in a demanding road match. His current role beside Griezmann gives the creative forward a valuable senior reference point; turning that role into another decisive action is the next test."
+        sources:
+          - { label: "RBNY vs. Orlando match center (official MLS)", url: "https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/rbnyvsorl-08-01-2026/" }
+          - { label: "RBNY vs. Orlando lineup and events (secondary)", url: "https://www.fotmob.com/matches/red-bull-new-york-vs-orlando-city/haa4lj8" }
 
       - profile: adri-mehmeti
         name: Adri Mehmeti

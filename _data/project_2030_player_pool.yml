@@ -74,6 +74,7 @@ players:
 
   - { name: Zavier Gozo, initials: ZG, group: prospects, age_2030: 23, profile: zavier-gozo, image: /assets/images/player-pool/zavier-gozo.png }
   - { name: Julian Hall, initials: JH, group: prospects, age_2030: 22, profile: julian-hall, image: /assets/images/player-pool/julian-hall.png }
+  - { name: Justin Ellis, initials: JE, group: prospects, age_2030: 23, profile: justin-ellis, image: /assets/images/player-pool/justin-ellis.png }
   - { name: Adri Mehmeti, initials: AM, group: prospects, age_2030: 21, profile: adri-mehmeti, image: /assets/images/player-pool/adri-mehmeti.png }
   - { name: Neil Pierre, initials: NP, group: prospects, age_2030: 22, profile: neil-pierre, image: /assets/images/player-pool/neil-pierre.png }
   - { name: Chris Brady, initials: CB, group: prospects, age_2030: 26, profile: chris-brady, image: /assets/images/player-pool/chris-brady.png }
@@ -97,7 +98,6 @@ players:
   - { name: "Leonard “Leo” Prescott", initials: LP, group: dual-nats, age_2030: 20, profile: leonard-prescott, image: /assets/images/player-pool/leo-prescott.png }
   - { name: Montrell Culbreath, initials: MC, group: dual-nats, age_2030: 22, profile: montrell-culbreath, image: /assets/images/player-pool/montrell-culbreath.png }
   - { name: Brooklyn Raines, initials: BR, group: dual-nats, age_2030: 25, profile: brooklyn-raines, image: /assets/images/player-pool/brooklyn-raines.png }
-  - { name: Justin Ellis, initials: JE, group: dual-nats, age_2030: 23, profile: justin-ellis, image: /assets/images/player-pool/justin-ellis.png }
   - { name: Michael Bresser, initials: MB, group: dual-nats, age_2030: 23, profile: michael-bresser, image: /assets/images/player-pool/michael-bresser.jpg }
   - { name: Manu Romero, initials: MR, group: dual-nats, age_2030: 21, profile: manu-romero, image: /assets/images/player-pool/manu-romero.jpg }
   - { name: Austyn Jones, initials: AJ, group: dual-nats, age_2030: 22, profile: austyn-jones, image: /assets/images/player-pool/austyn-jones.png }
