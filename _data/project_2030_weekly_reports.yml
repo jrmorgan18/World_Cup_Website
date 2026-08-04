@@ -43,12 +43,14 @@ reports:
         direction: rising
         direction_label: Rising
         context: All-Star
-        recap: "Participated in the MLS All-Star Skills Challenge, then played 27 minutes on the left wing in the MLS All-Stars’ 4-3 win over the Liga MX All-Stars after entering in the 63rd minute. At 19 years, 4 months and 2 days, he became RSL’s youngest All-Star and the club’s 13th all-time. He was not listed in RSL’s August 1 matchday squad at St. Louis."
-        development_read: "The week strengthened his profile through high-level recognition and a lively 27-minute All-Star shift. The exhibition setting limits the scouting weight, but becoming RSL’s youngest All-Star and Utah’s first native MLS All-Star is a meaningful marker."
+        recap: "Participated in the MLS All-Star Skills Challenge, then played 27 minutes on the left wing in the MLS All-Stars’ 4-3 win over the Liga MX All-Stars after entering in the 63rd minute. At 19 years, 4 months and 2 days, he became RSL’s youngest All-Star and the club’s 13th all-time. He was not listed in RSL’s August 1 matchday squad at St. Louis. After the reporting window, on August 4, Crystal Palace were reported to be in advanced talks to sign him for a fee put at roughly $15 million, with a medical expected during the week. Aston Villa and Atlético Madrid pursued him earlier in the year, and Premier League money is reported to have priced out clubs including Feyenoord and Anderlecht. Neither club had confirmed the move at the time of writing."
+        development_read: "The week strengthened his profile through high-level recognition and a lively 27-minute All-Star shift. The exhibition setting limits the scouting weight, but becoming RSL’s youngest All-Star and Utah’s first native MLS All-Star is a meaningful marker. A Premier League move at the reported fee would be the largest step of his career so far and would answer the pathway question quickly, though nothing is signed yet."
         sources:
           - { label: "RSL All-Star feature (official)", url: "https://www.rsl.com/news/2026-highlights-1" }
           - { label: "MLS All-Star roster (official)", url: "https://www.mlssoccer.com/news/2026-mls-all-star-team-roster" }
           - { label: "MLS All-Star lineup and substitutions (secondary)", url: "https://www.espn.com/soccer/match/_/gameId/401864004/liga-mx-all-stars-mls-all-stars" }
+          - { label: "Gozo nears Crystal Palace move (Yahoo Sports)", url: "https://uk.sports.yahoo.com/news/sources-zavier-gozo-nears-15-164945054.html" }
+          - { label: "RSL transfer context (Salt Lake Tribune)", url: "https://www.sltrib.com/sports/rsl/2026/08/04/why-real-salt-lake-could-be-losing/" }
           - { label: "RSL at St. Louis match center (official MLS)", url: "https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/stlvsrsl-08-01-2026/" }
 
       - profile: julian-hall
