@@ -13,7 +13,6 @@ hero_credit: "Photo: MLB.com — Brandon Young at Houston, July 19, 2026."
 hero_credit_url: "https://www.mlb.com/news/brandon-young-7-solid-innings-orioles-extend-win-streak-7-games"
 suppress_article_prompts: true
 article_stats: { title: "2025 vs. 2026", headers: ["2025", "2026"], note: "Statistics through July 19, 2026", source_label: "MLB / Baseball Savant", source_url: "https://baseballsavant.mlb.com/savant-player/brandon-young-687064", rows: [{ name: "Record", values: ["1–7", "8–2"] }, { name: "ERA", values: ["6.24", "3.25"] }, { name: "xERA", values: ["4.27", "4.22"] }, { name: "xFIP", values: ["4.52", "4.53"] }, { name: "WHIP", values: ["1.54", "1.31"] }, { name: "K%", values: ["18.4", "19.0"] }, { name: "BB%", values: ["8.6", "8.2"] }, { name: "Barrel%", values: ["10.2", "6.1"] }, { name: "Slider use", values: ["8.9", "14.5"] }, { name: "Slider whiff%", values: ["19.4", "43.0"] }, { name: "Chase%", values: ["27.8", "34.8"] }] }
-orioles_feature: true
 source_docx: "articles/Orioles/Brandon Young’s Breakout.docx"
 generated_by: "scripts/import_orioles_articles.py"
 ---

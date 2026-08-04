@@ -8,6 +8,14 @@ permalink: /orioles/good-returns-punting-2027/
 author: "Randy Morgan"
 excerpt: "The Orioles did not get robbed at the trade deadline, but they sent a clear signal that no Orioles fan will enjoy. The returns were good. The direction is still unacceptable."
 series: "Trade Deadline"
+orioles_feature: true
+feature_kicker: "Trade deadline analysis"
+feature_snapshot_label: "Trade deadline snapshot"
+feature_stats:
+  - { label: "Players Traded", value: "4" }
+  - { label: "Players Acquired", value: "9" }
+  - { label: "BA Top-100 Prospect", value: "No. 33" }
+feature_tagline: "The returns were good. The direction is still unacceptable."
 suppress_article_prompts: true
 source_docx: "articles/Orioles Trade Deadline.docx"
 hero_image: "https://img.mlbstatic.com/mlb-images/image/upload/t_2x1/t_w1536/mlb/mbhgyglnyispy5nmpghq.jpg"

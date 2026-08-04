@@ -14,16 +14,16 @@ section_theme: orioles
 <section class="club-section club-section--orioles-feature">
   <a class="orioles-feature" href="{{ brandon_feature.url | relative_url }}">
     <div class="orioles-feature-copy">
-      <p>Pitching analysis <i aria-hidden="true"></i> July 25, 2026</p>
+      <p>{{ brandon_feature.feature_kicker | default: "Analysis" }} <i aria-hidden="true"></i> {{ brandon_feature.date | date: "%B %-d, %Y" }}</p>
       <h3>{{ brandon_feature.title }}</h3>
       <p>{{ brandon_feature.excerpt }}</p>
       <strong>Read the full analysis <span aria-hidden="true">&rarr;</span></strong>
     </div>
-    <div class="orioles-feature-data" aria-label="Brandon Young season snapshot">
-      <span><small>ERA</small><strong>3.25</strong></span>
-      <span><small>xERA</small><strong>4.22</strong></span>
-      <span><small>Starts</small><strong>16</strong></span>
-      <p>The results are real. The underlying story is more complicated.</p>
+    <div class="orioles-feature-data" aria-label="{{ brandon_feature.feature_snapshot_label | default: 'Season snapshot' }}">
+      {% for stat in brandon_feature.feature_stats %}
+      <span><small>{{ stat.label }}</small><strong>{{ stat.value }}</strong></span>
+      {% endfor %}
+      <p>{{ brandon_feature.feature_tagline }}</p>
     </div>
   </a>
 </section>
@@ -58,7 +58,7 @@ section_theme: orioles
       </div>
       <div class="orioles-potw-links">
         <a href="{{ latest_player_of_week.url | relative_url }}">Read the weekly recap <span aria-hidden="true">&rarr;</span></a>
-        <a href="{{ brandon_feature.url | relative_url }}">Read the Brandon Young analysis <span aria-hidden="true">&rarr;</span></a>
+        <a href="{{ brandon_feature.url | relative_url }}">Read the featured analysis <span aria-hidden="true">&rarr;</span></a>
       </div>
     </div>
   </div>
