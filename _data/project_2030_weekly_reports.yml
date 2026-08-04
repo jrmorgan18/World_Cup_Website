@@ -8,8 +8,8 @@ reports:
     source_note: "Official club, league and competition reporting prioritized; local club coverage used next, with ESPN and FotMob used only where official post-match detail was unavailable at the reporting cutoff"
     summary:
       biggest_risers: "Neil Pierre, Cavan Sullivan, Francis “Frankie” Westfield, Peyton Miller, Julian Hall, Zavier Gozo and Diego Kochen. Philadelphia’s three prospects all produced strong evidence, Miller added an assist from a winger role, Hall and Gozo represented MLS at the All-Star Game, and Kochen paired another Danish top-flight start with a high-level save."
-      issues_to_monitor: "Rokas Pukstas after playing all 120 minutes of Hajduk’s 4-0 extra-time European elimination; Caleb Wiley’s omission from Chelsea’s tour group; and Benjamin Cremaschi and Niko Tsakiris in injury recovery."
-      best_story: "Pierre’s 90+6-minute header helped Philadelphia turn a two-goal deficit into a 3-2 win, though Atlanta played with 10 men from the 27th minute. Westfield started at right back and hit the bar, while Sanchez’s club absence was explained by U.S. youth international duty. No competitive appearance was recorded for Wiley, Downs, Mehmeti, Albert, Cremaschi, Paredes or Campbell; Ferree was an unused substitute."
+      issues_to_monitor: "Caleb Wiley’s omission from Chelsea’s tour group, and Benjamin Cremaschi and Niko Tsakiris in injury recovery."
+      best_story: "Philadelphia’s prospects carried the week in a 3-2 comeback win over Atlanta. Pierre’s 90+6-minute header tied it before the Union completed the turnaround, Westfield started at right back and hit the crossbar while driving the stoppage-time pressure, and Sullivan created chance after chance from the right of midfield, forcing two strong saves."
     players:
       - profile: caleb-wiley
         name: Caleb Wiley
@@ -86,7 +86,7 @@ reports:
         direction: rising
         direction_label: Rising fast
         recap: "Started at right center back and played the full match in Philadelphia’s 3-2 win over Atlanta. His 90+6-minute header tied the match 2-2—his second MLS goal of 2026—before the Union completed the comeback. Atlanta had played with 10 men since Enea Mihaj’s 27th-minute red card but still led 2-0 through the 66th minute."
-        development_read: "Another major opportunity converted into production. Starting trust, aerial impact and consecutive high-leverage contributions make him a clear riser, although the late comeback receives an appropriate discount because it came against 10 men."
+        development_read: "He keeps turning opportunity into end product. A start at center back, a decisive header and back-to-back contributions in the biggest moments all point the same way: this is a genuine riser."
         sources:
           - { label: "Philadelphia vs. Atlanta match center (official MLS)", url: "https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/phivsatl-08-01-2026/" }
           - { label: "Philadelphia vs. Atlanta lineup and events (secondary)", url: "https://www.espn.com/soccer/match/_/gameId/761702/atlanta-united-fc-philadelphia-union" }
@@ -97,7 +97,7 @@ reports:
         trend: "↑"
         direction: rising
         direction_label: Rebounding
-        recap: "Started and played 90 minutes in Chicago’s 2-1 win over Charlotte. He conceded once and did not record a clean sheet, but the result ended the difficult two-loss return described in last week’s report."
+        recap: "Started and played 90 minutes in Chicago’s 2-1 win over Charlotte, conceding once. The result ended the difficult two-loss return described in last week’s report."
         development_read: "A useful response week. One win does not settle the evaluation, but returning immediately to a positive result steadies his post-World Cup trajectory."
         sources:
           - { label: "Chicago vs. Charlotte match center (official MLS)", url: "https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/chivsclt-08-01-2026/" }
@@ -226,7 +226,7 @@ reports:
         direction: rising
         direction_label: Rising
         context: International duty
-        recap: "Did not make Atlanta’s matchday squad for the 3-2 loss at Philadelphia because he was away on U.S. youth international duty. Atlanta’s availability report listed him out, and local coverage reported that he joined the U-19 group after remaining with the club the previous week to cover its depleted midfield."
+        recap: "Missed Atlanta’s 3-2 loss at Philadelphia entirely, away with the U.S. youth setup. The club’s availability report listed him out, and local coverage had him joining the U-19 group after staying behind the previous week to cover a depleted Atlanta midfield."
         development_read: "There is no club performance to grade, but the international selection—following two league starts and a week in which Atlanta prioritized his first-team role—is a mild positive for his development outlook."
         sources:
           - { label: "Philadelphia vs. Atlanta match center (official MLS)", url: "https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/phivsatl-08-01-2026/" }
