@@ -17,12 +17,11 @@ summary: >-
   from seven down against Skubal's bullpen, the club's largest comeback win
   since 2009. He stole a base and came around to score on Taylor Ward's single
   in the same inning. The Phillies weekend was a different story: 0-for-6.
-image: "https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:67:current.png/w_720,q_auto:best/v1/people/702616/headshot/67/current"
+image: "https://img.mlbstatic.com/mlb-images/image/upload/t_2x1/t_w1536/v1785364879/mlb/il3mh57jwi5uapz7pfkv.jpg"
 image_alt: "Jackson Holliday of the Baltimore Orioles"
 # Headshots crop better from the top than the centre; omit for action photos.
-image_position: "center top"
 image_credit: "MLB.com"
-image_credit_url: "https://www.mlb.com/orioles/video/jackson-holliday-s-four-hit-game-vs-tigers"
+image_credit_url: "https://www.mlb.com/orioles/player/jackson-holliday-702616"
 stats:
   - { label: "Games", value: "6" }
   - { label: "Hits", value: "9-for-20" }
