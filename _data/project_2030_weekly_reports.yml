@@ -85,7 +85,7 @@ reports:
         trend: "↑↑"
         direction: rising
         direction_label: Rising fast
-        recap: "Started at right center back and played the full match in Philadelphia’s 3-2 win over Atlanta. His 90+6-minute header tied the match 2-2—his second MLS goal of 2026—before the Union completed the comeback. Atlanta had played with 10 men since Enea Mihaj’s 27th-minute red card but still led 2-0 through the 66th minute."
+        recap: "Started at right center back and played the full match in Philadelphia’s 3-2 win over Atlanta. He hit the crossbar with a 43rd-minute header from a corner, and the Union have made him a designed target on every set piece. His 90+6-minute header from open play tied the match 2-2—his second MLS goal of 2026—before the Union completed the comeback. Atlanta had played with 10 men since Enea Mihaj’s 27th-minute red card but still led 2-0 through the 66th minute."
         development_read: "He keeps turning opportunity into end product. A start at center back, a decisive header and back-to-back contributions in the biggest moments all point the same way: this is a genuine riser."
         sources:
           - { label: "Philadelphia vs. Atlanta match center (official MLS)", url: "https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/phivsatl-08-01-2026/" }
@@ -109,7 +109,7 @@ reports:
         trend: "↓"
         direction: falling
         direction_label: Watch
-        recap: "Started, was booked in the 96th minute and completed all 120 minutes of Hajduk’s July 30 Europa League qualifier at Pafos, a 4-0 extra-time defeat that overturned a 2-0 first-leg lead. Hajduk used all five substitutions without removing him; he recorded no goal contribution."
+        recap: "Started, was booked in the 96th minute and completed all 120 minutes of Hajduk’s July 30 Europa League qualifier at Pafos, a 4-0 extra-time defeat that overturned a 2-0 first-leg lead. He operated in a double pivot alongside Adrion Pajaziti, got a header on the Pafos goal from a 36th-minute corner that was ruled out for a foul, and picked out Marko Livaja with a header in the 93rd minute for a chance that went just past the post. Hajduk used all five substitutions without removing him; he recorded no goal contribution."
         development_read: "The full 120-minute European assignment reflects continued trust, but being part of a midfield that could not protect a two-goal first-leg advantage weakened the week. His response in the Conference League pathway bears watching."
         sources:
           - { label: "Pafos vs. Hajduk lineup (official UEFA)", url: "https://www.uefa.com/uefaeuropaleague/match/2048754--pafos-vs-hajduk-split/lineups/" }
@@ -239,7 +239,7 @@ reports:
         trend: "→"
         direction: steady
         direction_label: Holding
-        recap: "Started at left midfield and played the full match in San Jose’s 4-2 loss at Cincinnati. He recorded no goal or assist; the team-level four-goal concession is not enough by itself to assign individual defensive blame."
+        recap: "Started in central midfield alongside Ronaldo Vieira and played the full match in San Jose’s 4-2 loss at Cincinnati. He recorded no goal or assist; the team-level four-goal concession is not enough by itself to assign individual defensive blame."
         development_read: "Another 90-minute start supports the trust case, while the result and lack of production keep the week mixed rather than positive."
         sources:
           - { label: "Cincinnati vs. San Jose match center (official MLS)", url: "https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/cinvssj-08-01-2026/" }
@@ -251,7 +251,7 @@ reports:
         trend: "↑"
         direction: rising
         direction_label: Rising
-        recap: "Started at right back and played the full match in Philadelphia’s 3-2 win over Atlanta, with Neil Pierre and Nathan Harriel paired centrally and Kai Wagner on the left. Westfield supplied dangerous service, hit the crossbar late in the first half and remained involved in the stoppage-time pressure that produced the comeback."
+        recap: "Started at right back and played the full match in Philadelphia’s 3-2 win over Atlanta, with Neil Pierre and Nathan Harriel paired centrally and Kai Wagner on the left. He matched up directly against Miguel Almirón for long stretches and was again the Union’s primary right-side outlet in a game Philadelphia won from two goals down. Westfield supplied dangerous service, hit the crossbar late in the first half and remained involved in the stoppage-time pressure that produced the comeback."
         development_read: "Another full start plus genuine attacking threat strengthens the breakout rather than interrupting it. Hitting the woodwork and sustaining his two-way influence are positive signs, with the same caveat that Philadelphia played against 10 men from the 27th minute."
         sources:
           - { label: "Philadelphia vs. Atlanta match center (official MLS)", url: "https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/phivsatl-08-01-2026/" }
