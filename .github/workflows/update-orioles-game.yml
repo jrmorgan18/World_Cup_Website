@@ -8,7 +8,10 @@ name: Update Orioles last-game card
 
 on:
   schedule:
-    - cron: "15,45 * * * *"   # twice an hour (UTC) — catches final scores shortly after games end
+    # 2:00am and 4:00am Eastern (06:00 / 08:00 UTC during EDT) — once a day,
+    # plus a backup run a couple hours later in case the first run lands
+    # before a late/extra-inning game goes final.
+    - cron: "0 6,8 * * *"
   workflow_dispatch: {}
 
 permissions:
