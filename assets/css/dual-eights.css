@@ -710,6 +710,49 @@ body { overflow-x: hidden; }
 .orioles-potw-links { position:relative; z-index:1; margin-top:24px; display:flex; flex-wrap:wrap; gap:14px 24px; }
 .orioles-potw-links a { padding-bottom:4px; color:#fff; border-bottom:1px solid rgba(241,90,36,.65); font-family:var(--font-display); font-size:.64rem; letter-spacing:1px; text-transform:uppercase; }
 .orioles-potw-links a:hover { color:var(--de-orange-light); }
+
+/* Last-game card (auto-updated from MLB's live game feed) */
+.club-section--orioles-lastgame { padding-top:26px; padding-bottom:14px; }
+.orioles-lastgame { padding:38px 46px; display:grid; gap:26px; border:1px solid rgba(255,255,255,.14); background:linear-gradient(135deg,#17110e,#0b0b0d 68%); box-shadow:inset 5px 0 0 var(--de-orange); }
+.orioles-lastgame-head .de-kicker { color:var(--de-orange-light); }
+.orioles-lastgame-head .de-kicker span { margin-left:9px; color:#817b78; letter-spacing:1px; }
+.orioles-lastgame-head h2 { margin:12px 0 14px; max-width:820px; color:#fff; font-family:'Newsreader',serif; font-size:clamp(1.9rem,3.2vw,2.65rem); font-weight:500; line-height:1.08; letter-spacing:-.8px; }
+.orioles-lastgame-summary { max-width:760px; color:#aaa3a0; font-size:.98rem; line-height:1.55; }
+
+.orioles-lastgame-score { max-width:340px; border:1px solid rgba(255,255,255,.16); background:#0e0b0a; }
+.orioles-lastgame-score-row { display:grid; grid-template-columns:1fr repeat(3,42px); align-items:center; padding:11px 16px; border-bottom:1px solid rgba(255,255,255,.08); }
+.orioles-lastgame-score-team { color:#cfc9c5; font-family:var(--font-display); font-size:.82rem; letter-spacing:1px; }
+.orioles-lastgame-score-r, .orioles-lastgame-score-h, .orioles-lastgame-score-e { color:#e9e4e0; font-family:var(--font-display); font-size:.92rem; text-align:center; }
+.orioles-lastgame-score-row--orioles { background:rgba(241,90,36,.1); }
+.orioles-lastgame-score-row--orioles .orioles-lastgame-score-team { color:var(--de-orange-light); font-weight:600; }
+.orioles-lastgame-score-row--orioles .orioles-lastgame-score-r { color:#fff; font-weight:700; }
+.orioles-lastgame-score-labels { display:grid; grid-template-columns:1fr repeat(3,42px); padding:7px 16px; }
+.orioles-lastgame-score-labels span { color:#726c68; font-family:var(--font-display); font-size:.58rem; letter-spacing:1px; text-align:center; text-transform:uppercase; }
+.orioles-lastgame-score-labels span:first-child { text-align:left; }
+
+.orioles-lastgame-decisions { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px 24px; padding:22px 0; border-top:1px solid rgba(255,255,255,.12); border-bottom:1px solid rgba(255,255,255,.12); }
+.orioles-lastgame-decisions div { display:flex; flex-direction:column; gap:4px; }
+.orioles-lastgame-decisions small { color:var(--de-orange-light); font-family:var(--font-display); font-size:.6rem; letter-spacing:1.5px; text-transform:uppercase; }
+.orioles-lastgame-decisions strong { color:#fff; font-size:1rem; }
+.orioles-lastgame-decisions span { color:#8f8985; font-size:.82rem; line-height:1.4; }
+
+.orioles-lastgame-key .de-kicker { margin-bottom:14px; color:var(--de-orange-light); }
+.orioles-lastgame-key-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:14px; }
+.orioles-lastgame-key-grid > div { padding:15px 17px; border:1px solid rgba(255,255,255,.1); background:rgba(255,255,255,.02); }
+.orioles-lastgame-key-grid strong { display:flex; justify-content:space-between; align-items:baseline; gap:10px; color:#fff; font-size:.94rem; }
+.orioles-lastgame-key-grid strong span { color:#847d78; font-family:var(--font-display); font-size:.6rem; letter-spacing:.8px; text-transform:uppercase; }
+.orioles-lastgame-key-grid p { margin-top:7px; color:#b7b0ab; font-size:.85rem; line-height:1.4; }
+
+.orioles-lastgame-standing { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+.orioles-lastgame-record, .orioles-lastgame-wc { padding:18px 20px; border:1px solid rgba(255,255,255,.12); background:rgba(255,255,255,.02); }
+.orioles-lastgame-record small, .orioles-lastgame-wc small { color:#847d78; font-family:var(--font-display); font-size:.62rem; letter-spacing:1.2px; text-transform:uppercase; }
+.orioles-lastgame-record strong, .orioles-lastgame-wc strong { display:block; margin-top:6px; color:#fff; font-family:var(--font-display); font-size:1.7rem; }
+.orioles-lastgame-record span, .orioles-lastgame-wc span { display:block; margin-top:7px; color:#a69b94; font-size:.8rem; line-height:1.4; }
+.orioles-lastgame-wc--in { border-color:rgba(241,90,36,.55); background:rgba(241,90,36,.14); }
+.orioles-lastgame-wc--in strong { color:var(--de-orange-light); }
+
+.orioles-lastgame-updated { color:#66605c; font-size:.72rem; letter-spacing:.2px; }
+
 .orioles-archive-section { padding-top:26px; }
 .orioles-archive-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
 .orioles-archive-card { min-height:310px; padding:29px; display:flex; flex-direction:column; border:1px solid rgba(255,255,255,.13); background:linear-gradient(145deg,#151518,#0d0d0f); transition:transform .2s,border-color .2s; }
@@ -891,6 +934,9 @@ body { overflow-x: hidden; }
   .orioles-potw-stats { grid-template-columns:repeat(3,minmax(0,1fr)); }
   .orioles-potw-stats span:nth-child(3) { border-right:0; }
   .orioles-potw-stats span:nth-child(-n+3) { border-bottom:1px solid rgba(255,255,255,.1); }
+  .orioles-lastgame { padding:32px; }
+  .orioles-lastgame-decisions { grid-template-columns:1fr 1fr; }
+  .orioles-lastgame-standing { grid-template-columns:1fr; }
   .project-foundation { grid-template-columns:1fr 1fr; }
   .project-overview { grid-template-columns:minmax(0,1fr) 280px; column-gap:32px; }
   .project-latest-grid { grid-template-columns:1fr; }
@@ -1066,6 +1112,9 @@ body { overflow-x: hidden; }
   .de-home-bookend { width:min(36vw,150px); height:auto; }
   .de-home-bookend--ripken { left:1%; }
   .de-home-bookend--jackson { right:1%; }
+  .orioles-lastgame { padding:26px 22px; }
+  .orioles-lastgame-decisions { grid-template-columns:1fr; }
+  .orioles-lastgame-score { max-width:none; }
   .de-lead-story figure { min-height:255px; }
   .de-lead-story h2 { font-size:2.65rem; }
   .de-desk-card { padding:28px; }
