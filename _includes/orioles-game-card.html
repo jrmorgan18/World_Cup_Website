@@ -69,9 +69,22 @@
       {% endif %}
       {% if g.wild_card %}
       <div class="orioles-lastgame-wc{% if g.wild_card.rank and g.wild_card.rank <= g.wild_card.spots %} orioles-lastgame-wc--in{% endif %}">
-        <small>Wild Card race</small>
-        <strong>{% if g.wild_card.rank %}No. {{ g.wild_card.rank }}{% else %}&mdash;{% endif %}</strong>
-        <span>{{ g.wild_card.status_text }}</span>
+        <small>AL Wild Card race</small>
+        <span class="orioles-lastgame-wc-status">{{ g.wild_card.status_text }}</span>
+        {% if g.wild_card.ladder %}
+        <div class="orioles-lastgame-wc-ladder">
+          <div class="orioles-lastgame-wc-ladder-row orioles-lastgame-wc-ladder-head">
+            <span>Team</span><span>W-L</span><span>GB</span>
+          </div>
+          {% for t in g.wild_card.ladder %}
+          <div class="orioles-lastgame-wc-ladder-row{% if t.is_orioles %} orioles-lastgame-wc-ladder-row--orioles{% endif %}{% if t.is_cutoff %} orioles-lastgame-wc-ladder-row--cutoff{% endif %}">
+            <span>{{ t.abbr }}{% if t.is_cutoff %}<i>final spot</i>{% endif %}</span>
+            <span>{{ t.wins }}-{{ t.losses }}</span>
+            <span>{{ t.games_back | default: "&mdash;" }}</span>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
       </div>
       {% endif %}
     </div>
