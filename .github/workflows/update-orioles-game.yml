@@ -1,0 +1,44 @@
+name: Update Orioles last-game card
+
+# Pulls the Orioles' most recent final score, decisions, and AL East /
+# Wild Card standing from MLB's public Stats API into
+# _data/orioles_last_game.json, so the card on /orioles/ updates itself
+# after every game. No API key required. You can also edit the data file
+# by hand at any time.
+
+on:
+  schedule:
+    # 2:00am and 4:00am Eastern (06:00 / 08:00 UTC during EDT) — once a day,
+    # plus a backup run a couple hours later in case the first run lands
+    # before a late/extra-inning game goes final.
+    - cron: "0 6,8 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-orioles-game
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Update Orioles last-game card
+        run: python scripts/update_orioles_game.py
+      - name: Commit changes
+        run: |
+          if [[ -n "$(git status --porcelain _data/orioles_last_game.json)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add _data/orioles_last_game.json
+            git commit -m "Auto-update Orioles last-game card"
+            git push
+          else
+            echo "No changes to commit."
+          fi

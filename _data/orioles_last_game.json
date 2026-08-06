@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-08-06T08:40:33Z",
+  "game_pk": 824806,
+  "date": "2026-08-05",
+  "venue": "Oriole Park at Camden Yards",
+  "home_away": "home",
+  "opponent": "Los Angeles Angels",
+  "opponent_abbr": "LAA",
+  "result": "W",
+  "orioles_score": 5,
+  "opponent_score": 2,
+  "orioles_hits": 6,
+  "opponent_hits": 4,
+  "orioles_errors": 0,
+  "opponent_errors": 1,
+  "winning_pitcher": {
+    "name": "Trevor Rogers",
+    "team": "BAL",
+    "record": "7-7",
+    "line": "6.0 IP, 2 ER, 9 K, 0 BB"
+  },
+  "losing_pitcher": {
+    "name": "Reid Detmers",
+    "team": "LAA",
+    "record": "3-8",
+    "line": "4.0 IP, 3 ER, 5 K, BB"
+  },
+  "save_pitcher": {
+    "name": "Andrew Kittredge",
+    "team": "BAL",
+    "record": "5",
+    "line": "1.0 IP, 0 ER, 0 K, 0 BB"
+  },
+  "key_players": [
+    {
+      "name": "Trevor Rogers",
+      "team": "BAL",
+      "position": "P",
+      "line": "6.0 IP, 2 ER, 9 K, 0 BB"
+    },
+    {
+      "name": "Leody Taveras",
+      "team": "BAL",
+      "position": "RF",
+      "line": "1-1 | HR, 2 RBI, R"
+    },
+    {
+      "name": "Coby Mayo",
+      "team": "BAL",
+      "position": "DH",
+      "line": "2-4 | HR, K, RBI"
+    }
+  ],
+  "summary": "The Orioles beat the Angels 5-2 at Camden Yards. Trevor Rogers led the way (6.0 IP, 2 ER, 9 K, 0 BB). Baltimore has won 2 straight.",
+  "record": {
+    "wins": 56,
+    "losses": 58,
+    "pct": ".491",
+    "division": "AL East",
+    "division_rank": 4,
+    "games_back": "12.0",
+    "streak": "W2",
+    "last_10": "6-4"
+  },
+  "wild_card": {
+    "rank": 5,
+    "spots": 3,
+    "games_back": "0.5",
+    "status_text": "0.5 games back of the third AL Wild Card spot."
+  }
+}

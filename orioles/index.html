@@ -9,6 +9,8 @@ section_theme: orioles
   <div class="club-hero-copy"><p class="de-eyebrow"><span></span> The Orioles desk</p><h1>Birdland,<br><em>from every angle.</em></h1><p>Independent analysis of the roster, the farm, the front office and the long summer in Baltimore.</p></div>
 </section>
 
+{% include orioles-game-card.html %}
+
 {% assign brandon_feature = site.posts | where: "orioles_feature", true | first %}
 {% if brandon_feature %}
 <section class="club-section club-section--orioles-feature">
