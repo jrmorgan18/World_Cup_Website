@@ -1,97 +1,89 @@
 {% assign g = site.data.orioles_last_game %}
 {% if g %}
-<section class="club-section club-section--orioles-lastgame" aria-labelledby="orioles-lastgame-heading">
-  <div class="orioles-lastgame">
-    <div class="orioles-lastgame-head">
-      <p class="de-kicker">Last game <span>{{ g.date | date: "%B %-d, %Y" }} &middot; {{ g.venue }}</span></p>
-      <h2 id="orioles-lastgame-heading">
-        {% if g.result == "W" %}Orioles win{% else %}Orioles fall{% endif %},
-        {% if g.home_away == "home" %}
-          {{ g.orioles_score }}&ndash;{{ g.opponent_score }} over the {{ g.opponent }}
-        {% else %}
-          {{ g.opponent_score }}&ndash;{{ g.orioles_score }} to the {{ g.opponent }}
-        {% endif %}
-      </h2>
-      <p class="orioles-lastgame-summary">{{ g.summary }}</p>
-    </div>
+<article class="orioles-lastgame" aria-labelledby="orioles-lastgame-heading">
+  <div class="orioles-lastgame-head">
+    <p class="de-kicker">Last game <span>{{ g.date | date: "%b %-d" }}</span></p>
+    <h2 id="orioles-lastgame-heading">
+      {% if g.result == "W" %}W{% else %}L{% endif %},
+      {% if g.home_away == "home" %}{{ g.orioles_score }}&ndash;{{ g.opponent_score }}{% else %}{{ g.opponent_score }}&ndash;{{ g.orioles_score }}{% endif %}
+      vs {{ g.opponent_abbr | default: g.opponent }}
+    </h2>
+    <p class="orioles-lastgame-summary">{{ g.summary | truncatewords: 20 }}</p>
+  </div>
 
-    <div class="orioles-lastgame-score" aria-label="Final score">
-      <div class="orioles-lastgame-score-row{% if g.home_away == 'away' %} orioles-lastgame-score-row--orioles{% endif %}">
-        <span class="orioles-lastgame-score-team">{{ g.opponent_abbr | default: g.opponent }}</span>
-        <span class="orioles-lastgame-score-r">{{ g.opponent_score }}</span>
-        <span class="orioles-lastgame-score-h">{{ g.opponent_hits }}</span>
-        <span class="orioles-lastgame-score-e">{{ g.opponent_errors }}</span>
-      </div>
-      <div class="orioles-lastgame-score-row{% if g.home_away == 'home' %} orioles-lastgame-score-row--orioles{% endif %}">
-        <span class="orioles-lastgame-score-team">BAL</span>
-        <span class="orioles-lastgame-score-r">{{ g.orioles_score }}</span>
-        <span class="orioles-lastgame-score-h">{{ g.orioles_hits }}</span>
-        <span class="orioles-lastgame-score-e">{{ g.orioles_errors }}</span>
-      </div>
-      <div class="orioles-lastgame-score-labels">
-        <span></span><span>R</span><span>H</span><span>E</span>
-      </div>
+  <div class="orioles-lastgame-score" aria-label="Final score">
+    <div class="orioles-lastgame-score-row{% if g.home_away == 'away' %} orioles-lastgame-score-row--orioles{% endif %}">
+      <span class="orioles-lastgame-score-team">{{ g.opponent_abbr | default: g.opponent }}</span>
+      <span class="orioles-lastgame-score-r">{{ g.opponent_score }}</span>
+      <span class="orioles-lastgame-score-h">{{ g.opponent_hits }}</span>
+      <span class="orioles-lastgame-score-e">{{ g.opponent_errors }}</span>
     </div>
-
-    <div class="orioles-lastgame-decisions">
-      {% if g.winning_pitcher %}
-      <div><small>WP</small><strong>{{ g.winning_pitcher.name }}</strong><span>{{ g.winning_pitcher.record }} &middot; {{ g.winning_pitcher.line }}</span></div>
-      {% endif %}
-      {% if g.losing_pitcher %}
-      <div><small>LP</small><strong>{{ g.losing_pitcher.name }}</strong><span>{{ g.losing_pitcher.record }} &middot; {{ g.losing_pitcher.line }}</span></div>
-      {% endif %}
-      {% if g.save_pitcher %}
-      <div><small>SV</small><strong>{{ g.save_pitcher.name }}</strong><span>Save No. {{ g.save_pitcher.record }} &middot; {{ g.save_pitcher.line }}</span></div>
-      {% endif %}
+    <div class="orioles-lastgame-score-row{% if g.home_away == 'home' %} orioles-lastgame-score-row--orioles{% endif %}">
+      <span class="orioles-lastgame-score-team">BAL</span>
+      <span class="orioles-lastgame-score-r">{{ g.orioles_score }}</span>
+      <span class="orioles-lastgame-score-h">{{ g.orioles_hits }}</span>
+      <span class="orioles-lastgame-score-e">{{ g.orioles_errors }}</span>
     </div>
+    <div class="orioles-lastgame-score-labels">
+      <span></span><span>R</span><span>H</span><span>E</span>
+    </div>
+  </div>
 
-    {% if g.key_players %}
-    <div class="orioles-lastgame-key">
-      <p class="de-kicker">Key performers</p>
-      <div class="orioles-lastgame-key-grid">
-        {% for p in g.key_players %}
-        <div>
-          <strong>{{ p.name }}<span>{{ p.team }} &middot; {{ p.position }}</span></strong>
-          <p>{{ p.line }}</p>
+  <div class="orioles-lastgame-decisions">
+    {% if g.winning_pitcher %}
+    <div><small>WP</small><strong>{{ g.winning_pitcher.name }}</strong><span>{{ g.winning_pitcher.record }}</span></div>
+    {% endif %}
+    {% if g.losing_pitcher %}
+    <div><small>LP</small><strong>{{ g.losing_pitcher.name }}</strong><span>{{ g.losing_pitcher.record }}</span></div>
+    {% endif %}
+    {% if g.save_pitcher %}
+    <div><small>SV</small><strong>{{ g.save_pitcher.name }}</strong><span>No. {{ g.save_pitcher.record }}</span></div>
+    {% endif %}
+  </div>
+
+  {% if g.key_players %}
+  <div class="orioles-lastgame-key">
+    <p class="de-kicker">Key performers</p>
+    <div class="orioles-lastgame-key-grid">
+      {% for p in g.key_players limit: 2 %}
+      <div>
+        <strong>{{ p.name }}<span>{{ p.team }}</span></strong>
+        <p>{{ p.line }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="orioles-lastgame-standing">
+    {% if g.record %}
+    <div class="orioles-lastgame-record">
+      <small>Record</small>
+      <strong>{{ g.record.wins }}-{{ g.record.losses }}</strong>
+      <span>{{ g.record.division }} #{{ g.record.division_rank }} &middot; L10 {{ g.record.last_10 }}{% if g.record.streak %} &middot; {{ g.record.streak }}{% endif %}</span>
+    </div>
+    {% endif %}
+    {% if g.wild_card %}
+    <div class="orioles-lastgame-wc{% if g.wild_card.rank and g.wild_card.rank <= g.wild_card.spots %} orioles-lastgame-wc--in{% endif %}">
+      <small>AL Wild Card</small>
+      <span class="orioles-lastgame-wc-status">{{ g.wild_card.status_text }}</span>
+      {% if g.wild_card.ladder %}
+      <div class="orioles-lastgame-wc-ladder">
+        {% for t in g.wild_card.ladder %}
+        <div class="orioles-lastgame-wc-ladder-row{% if t.is_orioles %} orioles-lastgame-wc-ladder-row--orioles{% endif %}{% if t.is_cutoff %} orioles-lastgame-wc-ladder-row--cutoff{% endif %}">
+          <span>{{ t.abbr }}{% if t.is_cutoff %}<i>final spot</i>{% endif %}</span>
+          <span>{{ t.wins }}-{{ t.losses }}</span>
+          <span>{{ t.games_back | default: "&mdash;" }}</span>
         </div>
         {% endfor %}
       </div>
-    </div>
-    {% endif %}
-
-    <div class="orioles-lastgame-standing">
-      {% if g.record %}
-      <div class="orioles-lastgame-record">
-        <small>Record</small>
-        <strong>{{ g.record.wins }}-{{ g.record.losses }}</strong>
-        <span>{{ g.record.pct }} &middot; {{ g.record.division }} #{{ g.record.division_rank }}, {{ g.record.games_back }} GB &middot; L10: {{ g.record.last_10 }}{% if g.record.streak %} &middot; {{ g.record.streak }}{% endif %}</span>
-      </div>
-      {% endif %}
-      {% if g.wild_card %}
-      <div class="orioles-lastgame-wc{% if g.wild_card.rank and g.wild_card.rank <= g.wild_card.spots %} orioles-lastgame-wc--in{% endif %}">
-        <small>AL Wild Card race</small>
-        <span class="orioles-lastgame-wc-status">{{ g.wild_card.status_text }}</span>
-        {% if g.wild_card.ladder %}
-        <div class="orioles-lastgame-wc-ladder">
-          <div class="orioles-lastgame-wc-ladder-row orioles-lastgame-wc-ladder-head">
-            <span>Team</span><span>W-L</span><span>GB</span>
-          </div>
-          {% for t in g.wild_card.ladder %}
-          <div class="orioles-lastgame-wc-ladder-row{% if t.is_orioles %} orioles-lastgame-wc-ladder-row--orioles{% endif %}{% if t.is_cutoff %} orioles-lastgame-wc-ladder-row--cutoff{% endif %}">
-            <span>{{ t.abbr }}{% if t.is_cutoff %}<i>final spot</i>{% endif %}</span>
-            <span>{{ t.wins }}-{{ t.losses }}</span>
-            <span>{{ t.games_back | default: "&mdash;" }}</span>
-          </div>
-          {% endfor %}
-        </div>
-        {% endif %}
-      </div>
       {% endif %}
     </div>
-
-    {% if g.generated_at %}
-    <p class="orioles-lastgame-updated">Auto-updated from MLB's live game feed &middot; last refreshed {{ g.generated_at | date: "%b %-d, %-I:%M %p" }} UTC</p>
     {% endif %}
   </div>
-</section>
+
+  {% if g.generated_at %}
+  <p class="orioles-lastgame-updated">Updated {{ g.generated_at | date: "%b %-d, %-I:%M %p" }} UTC</p>
+  {% endif %}
+</article>
 {% endif %}
