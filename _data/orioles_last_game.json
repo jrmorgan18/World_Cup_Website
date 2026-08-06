@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T08:40:33Z",
+  "generated_at": "2026-08-06T11:23:34Z",
   "game_pk": 824806,
   "date": "2026-08-05",
   "venue": "Oriole Park at Camden Yards",
@@ -66,6 +66,38 @@
     "rank": 5,
     "spots": 3,
     "games_back": "0.5",
-    "status_text": "0.5 games back of the third AL Wild Card spot."
+    "status_text": "0.5 games back of the third AL Wild Card spot.",
+    "ladder": [
+      {
+        "team": "Rangers",
+        "abbr": "TEX",
+        "wins": 57,
+        "losses": 58,
+        "games_back": null,
+        "wild_card_rank": 3,
+        "is_orioles": false,
+        "is_cutoff": true
+      },
+      {
+        "team": "Guardians",
+        "abbr": "CLE",
+        "wins": 57,
+        "losses": 58,
+        "games_back": null,
+        "wild_card_rank": 4,
+        "is_orioles": false,
+        "is_cutoff": false
+      },
+      {
+        "team": "Orioles",
+        "abbr": "BAL",
+        "wins": 56,
+        "losses": 58,
+        "games_back": "0.5",
+        "wild_card_rank": 5,
+        "is_orioles": true,
+        "is_cutoff": false
+      }
+    ]
   }
 }

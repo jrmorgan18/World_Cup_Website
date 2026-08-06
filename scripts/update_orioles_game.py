@@ -114,6 +114,39 @@ def wild_card_status_text(rank, games_back):
     return "%s games back of the third AL Wild Card spot." % games_back
 
 
+def fetch_team_abbreviations():
+    data = fetch_json("https://statsapi.mlb.com/api/v1/teams?sportId=1&leagueIds=%d" % AL_LEAGUE_ID)
+    return {t["id"]: t["abbreviation"] for t in data.get("teams", [])}
+
+
+def build_wild_card_ladder(all_al_teams, abbrs):
+    """The final wild-card-spot team, everyone between it and the Orioles, and the Orioles."""
+    ranked = [t for t in all_al_teams if t.get("wildCardRank")]
+    ranked.sort(key=lambda t: int(t["wildCardRank"]))
+    orioles = next((t for t in ranked if t["team"]["id"] == ORIOLES_ID), None)
+    if not orioles:
+        return []
+    o_rank = int(orioles["wildCardRank"])
+    lo, hi = min(o_rank, WILD_CARD_SPOTS), max(o_rank, WILD_CARD_SPOTS)
+    ladder = []
+    for t in ranked:
+        rank = int(t["wildCardRank"])
+        if lo <= rank <= hi:
+            lr = t.get("leagueRecord", {})
+            gb = t.get("wildCardGamesBack")
+            ladder.append({
+                "team": t["team"]["name"],
+                "abbr": abbrs.get(t["team"]["id"], t["team"]["name"]),
+                "wins": lr.get("wins"),
+                "losses": lr.get("losses"),
+                "games_back": None if gb in (None, "-") else gb,
+                "wild_card_rank": rank,
+                "is_orioles": t["team"]["id"] == ORIOLES_ID,
+                "is_cutoff": rank == WILD_CARD_SPOTS,
+            })
+    return ladder
+
+
 def main():
     try:
         game = find_last_final_game()
@@ -148,14 +181,13 @@ def main():
             "https://statsapi.mlb.com/api/v1/standings"
             "?leagueId=%d&season=%s&standingsTypes=regularSeason" % (AL_LEAGUE_ID, date.today().year)
         )
+        all_al_teams = []
         orioles_record = None
         for rec in standings.get("records", []):
-            if rec.get("division", {}).get("id") != AL_EAST_DIVISION_ID:
-                continue
             for t in rec.get("teamRecords", []):
-                if t["team"]["id"] == ORIOLES_ID:
+                all_al_teams.append(t)
+                if t["team"]["id"] == ORIOLES_ID and rec.get("division", {}).get("id") == AL_EAST_DIVISION_ID:
                     orioles_record = t
-                    break
 
         record_block = None
         wild_card_block = None
@@ -177,11 +209,13 @@ def main():
             }
             wc_rank = int(orioles_record.get("wildCardRank")) if orioles_record.get("wildCardRank") else None
             wc_gb = orioles_record.get("wildCardGamesBack")
+            abbrs = fetch_team_abbreviations()
             wild_card_block = {
                 "rank": wc_rank,
                 "spots": WILD_CARD_SPOTS,
                 "games_back": wc_gb,
                 "status_text": wild_card_status_text(wc_rank, wc_gb),
+                "ladder": build_wild_card_ladder(all_al_teams, abbrs),
             }
 
         summary = build_summary(
@@ -224,7 +258,8 @@ def main():
                 existing = json.load(f)
 
         if existing and existing.get("game_pk") == out["game_pk"] and existing.get("result") == out["result"] \
-                and existing.get("orioles_score") == out["orioles_score"] and existing.get("record") == out["record"]:
+                and existing.get("orioles_score") == out["orioles_score"] and existing.get("record") == out["record"] \
+                and existing.get("wild_card") == out["wild_card"]:
             print("No changes (game %s already up to date)." % out["game_pk"])
             return 0
 
