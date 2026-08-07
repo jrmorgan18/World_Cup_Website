@@ -60,6 +60,26 @@ description: A four-year scouting report tracking the USMNT player pool, checkpo
   </section>
 </section>
 
+{% if pochettino_story %}
+<section class="project-latest" aria-labelledby="project-feature-heading">
+  <div class="de-section-heading">
+    <div><p class="de-kicker">Featured analysis</p><h2 id="project-feature-heading">The next cycle</h2></div>
+    <p>What the latest decision means for the road to 2030.</p>
+  </div>
+  <a class="project-story-card project-story-card--visual" href="{{ pochettino_story.url | relative_url }}">
+    <figure>
+      <img src="{{ pochettino_story.hero_image | relative_url }}" alt="" loading="lazy">
+    </figure>
+    <div>
+      <span>Project 2030 / USMNT</span>
+      <h3>{{ pochettino_story.title }}</h3>
+      <p>{{ pochettino_story.excerpt }}</p>
+      <strong>Read the analysis <span aria-hidden="true">&rarr;</span></strong>
+    </div>
+  </a>
+</section>
+{% endif %}
+
 <section class="project-foundation">
   <div><p class="de-kicker">Where the project begins</p><h2>The American Soccer Question</h2></div>
   <p>Before the rankings and checkpoints, there is a structural question: what can American soccer realistically build?</p>
