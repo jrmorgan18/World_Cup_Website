@@ -13,33 +13,63 @@ section_theme: project
 {% include project-subnav.html %}
 
 <section class="big-board-shell">
-  <div class="construction-banner" role="status">
+  <div class="construction-banner big-board-live-banner">
     <span class="construction-banner-signal" aria-hidden="true"><i></i><i></i><i></i></span>
     <div>
       <p>Project 2030 player rankings</p>
-      <h2>The board is under construction.</h2>
-      <span>The first edition will launch with a complete methodology and a searchable ranking of the player pool.</span>
+      <h2>The first Big Board is live.</h2>
+      <span>Rank the USMNT player pool for today, then see the separate projection for 2030.</span>
     </div>
-    <strong>Coming soon</strong>
+    <strong>77-player pool</strong>
   </div>
 
   <div class="big-board-layout big-board-layout--preview-only">
-    <div class="big-board-preview" aria-label="Preview of the future Big Board">
+    <div class="big-board-preview big-board-live" data-big-board data-source="{{ '/assets/data/project-2030-big-board.json' | relative_url }}">
       <div class="big-board-preview-head">
-        <div><p class="de-kicker">Interface preview</p><h2>US Player Big Board</h2></div>
-        <span>0 players published</span>
+        <div><p class="de-kicker">Live ranking</p><h2>US Player Big Board</h2></div>
+        <span data-board-snapshot>Loading board</span>
       </div>
-      <div class="big-board-toolbar" aria-hidden="true">
-        <span>Search player</span><span>All positions</span><span>All groups</span><span>Sort: rank</span>
-      </div>
-      <div class="big-board-table" aria-hidden="true">
-        <div class="big-board-row big-board-row--head"><span>RK</span><span>Player</span><span>Pos</span><span>Group</span><span>Score</span><span>Trend</span></div>
-        {% for row in (1..7) %}
-        <div class="big-board-row big-board-row--ghost"><span>{{ row | prepend: '0' | slice: -2, 2 }}</span><span><i></i></span><span><i></i></span><span><i></i></span><span><b></b></span><span>&mdash;</span></div>
-        {% endfor %}
-      </div>
-      <p class="big-board-preview-note">The finished board will support search, filters, sortable criteria and expandable scorecards on desktop and mobile.</p>
-    </div>
 
+      <div class="big-board-toolbar" aria-label="Big Board filters">
+        <label class="big-board-search">
+          <span>Search</span>
+          <input type="search" data-board-search placeholder="Player, club or league" autocomplete="off">
+        </label>
+        <label>
+          <span>Position</span>
+          <select data-board-position><option value="">All positions</option></select>
+        </label>
+        <label>
+          <span>League</span>
+          <select data-board-league><option value="">All leagues</option></select>
+        </label>
+        <label>
+          <span>Pool group</span>
+          <select data-board-group><option value="">All groups</option></select>
+        </label>
+      </div>
+
+      <p class="big-board-results" data-board-results aria-live="polite">Loading players…</p>
+      <div class="big-board-table-wrap" tabindex="0">
+        <table class="big-board-table">
+          <thead>
+            <tr>
+              <th scope="col">Rank</th>
+              <th scope="col">Player</th>
+              <th scope="col">Pos.</th>
+              <th scope="col" aria-sort="descending"><button type="button" data-board-sort="current_score">Current score <span aria-hidden="true">↓</span></button></th>
+              <th scope="col" aria-sort="none"><button type="button" data-board-sort="score_2030">2030 score <span aria-hidden="true">↕</span></button></th>
+              <th scope="col" aria-sort="none"><button type="button" data-board-sort="age_2030">Age (2030) <span aria-hidden="true">↕</span></button></th>
+              <th scope="col">Club</th>
+              <th scope="col">League</th>
+            </tr>
+          </thead>
+          <tbody data-board-body></tbody>
+        </table>
+      </div>
+      <p class="big-board-preview-note">Current Score is a present-value ranking: if the World Cup were tomorrow. The 2030 Score layers age, recent trajectory and a capped market-value signal onto that current evaluation.</p>
+    </div>
   </div>
+  <noscript><p class="big-board-no-script">The interactive Big Board requires JavaScript to display the current ranking.</p></noscript>
 </section>
+<script src="{{ '/assets/js/project-2030-big-board.js' | relative_url }}"></script>
