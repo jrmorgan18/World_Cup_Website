@@ -669,6 +669,18 @@ body { overflow-x: hidden; }
 .club-feature-teaser-mark small,.club-feature-teaser-mark span { font-size:.68rem; letter-spacing:2px; }
 .club-feature-teaser-mark strong { color:#fff; font-size:8rem; line-height:.9; }
 .club-section--ravens-feature { padding-top:48px; }
+.ravens-feature-layout { display:grid; grid-template-columns:minmax(0,1fr) minmax(280px,320px); gap:36px; align-items:start; }
+.ravens-recent-rail { min-width:0; position:sticky; top:calc(var(--header-height) + 24px); }
+.ravens-recent-heading { padding-bottom:15px; display:flex; align-items:center; justify-content:space-between; gap:18px; border-bottom:4px solid var(--de-purple); font-family:var(--font-display); text-transform:uppercase; }
+.ravens-recent-heading p { color:#fff; font-size:.72rem; font-weight:700; letter-spacing:1.8px; }
+.ravens-recent-heading span { color:#85818b; font-size:.6rem; letter-spacing:1.1px; text-align:right; }
+.ravens-recent-list { list-style:none; }
+.ravens-recent-list li { padding:22px 0; display:grid; grid-template-columns:28px minmax(0,1fr); gap:12px; border-bottom:1px solid rgba(255,255,255,.13); }
+.ravens-recent-number { color:#77717f; font-family:var(--font-display); font-size:.63rem; line-height:1.4; }
+.ravens-recent-list small { display:block; margin-bottom:7px; color:var(--de-purple-light); font-family:var(--font-display); font-size:.6rem; font-weight:700; letter-spacing:1.2px; text-transform:uppercase; }
+.ravens-recent-list h3 { color:#fff; font-family:'Newsreader',serif; font-size:1.22rem; font-weight:600; line-height:1.17; }
+.ravens-recent-list p { margin-top:9px; color:#88848c; font-family:var(--font-display); font-size:.58rem; letter-spacing:.8px; text-transform:uppercase; }
+.ravens-recent-list a:hover h3 { color:var(--de-purple-light); }
 
 /* Orioles desk: feature article (main) + last-game/POTW rail (side) */
 .orioles-desk-grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(300px,340px); grid-template-areas:"feature side" "archive side"; gap:36px; align-items:start; }
@@ -1091,6 +1103,8 @@ body { overflow-x: hidden; }
   .club-feature-teaser-mark { min-height:150px; flex-direction:row; gap:16px; }
   .club-feature-teaser-mark strong { font-size:5rem; }
   .club-section--ravens-feature { padding-top:36px; }
+  .ravens-feature-layout { grid-template-columns:1fr; }
+  .ravens-recent-rail { position:static; }
   .orioles-feature { grid-template-columns:1fr; }
   .orioles-feature-copy { padding:40px 34px; }
   .orioles-feature-data { grid-template-columns:repeat(3,1fr); gap:16px; }
