@@ -15,7 +15,7 @@
   </div>
 </section>
 
-{% assign main_feature = site.posts | where: "orioles_feature", true | first %}
+{% assign main_feature = site.posts | where: "slug", "what-will-declan-doyle-actually-change-about-the-ravens-offense" | first %}
 {% assign usmnt_feature = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina-part-2" | first %}
 {% assign checkpoint_story = site.posts | where: "checkpoint_feature", true | first %}
 {% assign prospect_story = site.posts | where: "prospect_feature", true | first %}
