@@ -727,6 +727,18 @@ body { overflow-x: hidden; }
 .orioles-feature-data small { color:rgba(255,255,255,.76); font-family:var(--font-display); font-size:.62rem; letter-spacing:1.4px; text-transform:uppercase; }
 .orioles-feature-data strong { color:#fff; font-family:var(--font-display); font-size:2.5rem; line-height:.8; }
 .orioles-feature-data p { margin-top:22px; color:#fff; font-family:'Newsreader',serif; font-size:1rem; line-height:1.35; }
+.orioles-feature-data.orioles-feature-data--table { padding:28px; display:block; align-content:normal; }
+.orioles-feature-records { width:100%; border-collapse:separate; border-spacing:0; color:#fff; background:rgba(49,13,3,.22); box-shadow:0 12px 28px rgba(58,13,0,.2); }
+.orioles-feature-records th,.orioles-feature-records td { padding:12px 13px; border:0; border-bottom:1px solid rgba(255,255,255,.18); color:#fff; background:transparent; font-family:var(--font-display); text-align:left; }
+.orioles-feature-records thead th { padding-top:10px; padding-bottom:10px; color:#ffe6dc; background:rgba(43,18,10,.72); font-size:.5rem; font-weight:700; letter-spacing:.8px; line-height:1.15; text-transform:uppercase; }
+.orioles-feature-records thead th:last-child,.orioles-feature-records tbody td { text-align:right; }
+.orioles-feature-records tbody th { font-size:.75rem; font-weight:600; letter-spacing:.2px; }
+.orioles-feature-records tbody td { font-size:1.02rem; font-weight:700; letter-spacing:.2px; }
+.orioles-feature-records tbody tr:last-child th,.orioles-feature-records tbody tr:last-child td { border-bottom:0; }
+.orioles-feature-records tbody .is-baseline th,.orioles-feature-records tbody .is-baseline td { color:#ffe5da; background:rgba(64,20,7,.24); }
+.orioles-feature-records tbody .is-highlight th,.orioles-feature-records tbody .is-highlight td { color:#2d160e; background:#fff5ef; }
+.orioles-feature-records tbody .is-highlight th { box-shadow:inset 4px 0 0 #8e2909; }
+.orioles-feature-data--table p { margin-top:18px; font-size:.92rem; }
 
 /* Orioles feature: missing-ace results table */
 .orioles-missing-ace-results { margin:36px 0 44px; }
