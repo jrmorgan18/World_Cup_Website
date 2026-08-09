@@ -9,7 +9,7 @@ author: "Randy Morgan"
 read_time: 11
 excerpt: "The Orioles did not get robbed at the trade deadline, but they sent a clear signal that no Orioles fan will enjoy. The returns were good. The direction is still unacceptable."
 series: "Trade Deadline"
-orioles_feature: true
+orioles_feature: false
 feature_kicker: "Trade deadline analysis"
 feature_snapshot_label: "Trade deadline snapshot"
 feature_stats:
