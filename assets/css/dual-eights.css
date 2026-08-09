@@ -728,6 +728,27 @@ body { overflow-x: hidden; }
 .orioles-feature-data strong { color:#fff; font-family:var(--font-display); font-size:2.5rem; line-height:.8; }
 .orioles-feature-data p { margin-top:22px; color:#fff; font-family:'Newsreader',serif; font-size:1rem; line-height:1.35; }
 
+/* Orioles feature: missing-ace results table */
+.orioles-missing-ace-results { margin:38px 0 44px; padding:32px; overflow:hidden; border:1px solid #d8dce2; background:linear-gradient(135deg,#fffaf7,#f3f5f8); box-shadow:inset 5px 0 0 var(--de-orange),0 18px 38px rgba(26,20,18,.08); }
+.orioles-missing-ace-results-header { margin-bottom:23px; display:grid; gap:7px; }
+.orioles-missing-ace-results-header>p { color:var(--de-orange); font-family:var(--font-display); font-size:.62rem; font-weight:700; letter-spacing:1.4px; text-transform:uppercase; }
+.orioles-missing-ace-results-header h2 { color:#1d1b1d; font-family:'Newsreader',serif; font-size:clamp(1.75rem,3vw,2.4rem); font-weight:600; letter-spacing:-.7px; line-height:1.02; }
+.orioles-missing-ace-results-header span { color:#736d6c; font-family:var(--font-display); font-size:.58rem; letter-spacing:.8px; text-transform:uppercase; }
+.orioles-missing-ace-results-table-wrap { overflow-x:auto; border:1px solid #d7dadd; background:#fff; scrollbar-color:#b2aba6 #f1f0ee; }
+.orioles-missing-ace-results table { width:100%; min-width:640px; margin:0; border-collapse:collapse; color:#211e1e; font-size:.9rem; }
+.orioles-missing-ace-results th,.orioles-missing-ace-results td { padding:16px 18px; border:0; border-bottom:1px solid #e2e3e5; vertical-align:middle; text-align:right; }
+.orioles-missing-ace-results thead th { color:#6b6460; background:#f2f1f0; font-family:var(--font-display); font-size:.56rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; }
+.orioles-missing-ace-results thead th:first-child,.orioles-missing-ace-results tbody th { text-align:left; }
+.orioles-missing-ace-results tbody th { color:#2a2626; font-family:'Newsreader',serif; font-size:1.05rem; font-weight:600; }
+.orioles-missing-ace-results tbody tr:last-child th,.orioles-missing-ace-results tbody tr:last-child td { border-bottom:0; }
+.orioles-missing-ace-results tbody tr:hover td,.orioles-missing-ace-results tbody tr:hover th { background:transparent; }
+.orioles-missing-ace-results-baseline { color:#7b7673; background:#fafafa; }
+.orioles-missing-ace-results-baseline th { color:#6d6865; }
+.orioles-missing-ace-results-highlight { background:linear-gradient(90deg,rgba(241,90,36,.14),rgba(255,255,255,.8)); box-shadow:inset 4px 0 0 var(--de-orange); }
+.orioles-missing-ace-results-highlight th { color:#9e3312; }
+.orioles-missing-ace-results td strong { color:#b94017; font-family:var(--font-display); font-size:.8rem; letter-spacing:.3px; }
+.orioles-missing-ace-results-note { margin:17px 0 0; color:#6d6865; font-family:'Newsreader',serif; font-size:.85rem; font-style:italic; line-height:1.45; }
+
 /* Player of the week — compact rail card */
 .orioles-potw { overflow:hidden; border:1px solid rgba(255,255,255,.14); background:linear-gradient(135deg,#17110e,#0b0b0d 68%); box-shadow:inset 5px 0 0 var(--de-orange); }
 .orioles-potw-photo { position:relative; height:170px; overflow:hidden; background:#120e0c; }
@@ -1139,6 +1160,8 @@ body { overflow-x: hidden; }
   .orioles-feature-data>span { display:block; padding:8px 0 17px; }
   .orioles-feature-data strong { display:block; margin-top:8px; font-size:2.4rem; }
   .orioles-feature-data p { grid-column:1 / -1; }
+  .orioles-missing-ace-results { padding:26px 22px; }
+  .orioles-missing-ace-results th,.orioles-missing-ace-results td { padding:14px 16px; }
   .orioles-archive-grid { grid-template-columns:1fr; }
   .archive-links { grid-template-columns:1fr; padding:65px 20px; }
   .archive-links a { min-height:220px; }
