@@ -78,7 +78,7 @@
       "score_2030": 70.0,
       "age_2030": 28,
       "club": "Bayer Leverkusen",
-      "league": "Ligue 1",
+      "league": "Bundesliga",
       "data_status": "provisional_manual_partial"
     },
     {
@@ -117,7 +117,7 @@
       "score_2030": 63.3,
       "age_2030": 27,
       "club": "Borussia Mönchengladbach",
-      "league": "Ligue 1",
+      "league": "Bundesliga",
       "data_status": "provisional_observed_advanced"
     },
     {
@@ -207,8 +207,8 @@
       "current_score": 52.8,
       "score_2030": 50.8,
       "age_2030": 29,
-      "club": "Vancouver Whitecaps",
-      "league": "Major League Soccer",
+      "club": "Middlesbrough",
+      "league": "Championship",
       "data_status": "provisional_observed_advanced"
     },
     {
@@ -364,7 +364,7 @@
       "score_2030": 47.2,
       "age_2030": null,
       "club": "1. FC Köln",
-      "league": "Ligue 1",
+      "league": "Bundesliga",
       "data_status": "provisional_observed_advanced"
     },
     {
@@ -377,7 +377,7 @@
       "score_2030": 47.7,
       "age_2030": 27,
       "club": "Borussia Mönchengladbach",
-      "league": "Ligue 1",
+      "league": "Bundesliga",
       "data_status": "provisional_observed_advanced"
     },
     {
@@ -403,7 +403,7 @@
       "score_2030": 58.5,
       "age_2030": 23,
       "club": "FC Augsburg",
-      "league": "Ligue 1",
+      "league": "Bundesliga",
       "data_status": "provisional_observed_advanced"
     },
     {
@@ -637,7 +637,7 @@
       "score_2030": 35.8,
       "age_2030": null,
       "club": "FC St. Pauli",
-      "league": "Ligue 1",
+      "league": "Bundesliga",
       "data_status": "provisional_observed_advanced"
     },
     {
@@ -702,7 +702,7 @@
       "score_2030": 48.0,
       "age_2030": 22,
       "club": "Bayer Leverkusen",
-      "league": "Ligue 1",
+      "league": "Bundesliga",
       "data_status": "provisional_observed_advanced"
     },
     {
@@ -754,7 +754,7 @@
       "score_2030": 36.0,
       "age_2030": 25,
       "club": "Southampton",
-      "league": "Ligue 1",
+      "league": "Championship",
       "data_status": "provisional_manual_partial"
     },
     {
@@ -793,7 +793,7 @@
       "score_2030": 34.9,
       "age_2030": 27,
       "club": "FC Utrecht",
-      "league": "Ligue 1",
+      "league": "Eredivisie",
       "data_status": "provisional_observed_advanced"
     },
     {
@@ -832,7 +832,7 @@
       "score_2030": 46.3,
       "age_2030": 24,
       "club": "SV Elversberg",
-      "league": "Ligue 1",
+      "league": "2. Bundesliga",
       "data_status": "provisional_observed_advanced"
     },
     {
@@ -845,7 +845,7 @@
       "score_2030": 42.5,
       "age_2030": 21,
       "club": "Borussia Dortmund",
-      "league": "Ligue 1",
+      "league": "Bundesliga",
       "data_status": "provisional_observed_advanced"
     },
     {
@@ -962,7 +962,7 @@
       "score_2030": 37.2,
       "age_2030": 20,
       "club": "Bayern Munich",
-      "league": "Ligue 1",
+      "league": "Bundesliga",
       "data_status": "prior_heavy_missing_advanced"
     },
     {

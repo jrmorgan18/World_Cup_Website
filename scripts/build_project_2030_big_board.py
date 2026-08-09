@@ -44,7 +44,6 @@ LEAGUE_NAMES = {
     "HR1": "Croatian Football League",
     "IT1": "Serie A",
     "IT2": "Serie B",
-    "L1": "Ligue 1",
     "MLS1": "Major League Soccer",
     "NL1": "Eredivisie",
     "NO1": "Eliteserien",
@@ -95,6 +94,12 @@ PLAYER_FALLBACKS = {
     "cade-cowell": {"club": "New York Red Bulls", "league": "Major League Soccer"},
 }
 
+# Club moves appear on the public board immediately, while their score remains
+# tied to the most recent completed performance window until the model refresh.
+CURRENT_PLAYER_OVERRIDES = {
+    "sebastian-berhalter": {"club": "Middlesbrough", "league": "Championship"},
+}
+
 
 def load_yaml(path: Path):
     with path.open(encoding="utf-8") as handle:
@@ -112,10 +117,30 @@ def rounded(value):
 
 def fallback_league(club: str) -> str | None:
     """Return a display league when the source snapshot lacks a competition."""
+    l1_club_leagues = {
+        "AS Monaco": "Ligue 1",
+        "Bayer Leverkusen": "Bundesliga",
+        "Bayern Munich": "Bundesliga",
+        "Borussia Dortmund": "Bundesliga",
+        "FC Augsburg": "Bundesliga",
+        "FC St. Pauli": "Bundesliga",
+        "FC Utrecht": "Eredivisie",
+        "Olympique Lyonnais": "Ligue 1",
+        "Olympique Marseille": "Ligue 1",
+        "Southampton": "Championship",
+        "SV Elversberg": "2. Bundesliga",
+        "Toulouse": "Ligue 1",
+    }
+    if club in l1_club_leagues:
+        return l1_club_leagues[club]
+    if club.startswith("1. FC K"):
+        return "Bundesliga"
     if club.startswith("Club Am"):
         return "Liga MX"
     if club.startswith("Borussia M") and club.endswith("II"):
         return "Regionalliga West"
+    if club.startswith("Borussia M"):
+        return "Bundesliga"
     return CLUB_LEAGUE_FALLBACKS.get(club)
 
 
@@ -148,10 +173,14 @@ def main() -> int:
         profile = profiles.get(player_id, {})
         transfermarkt_player = transfermarkt_by_player.get(player_id, {})
         player_fallback = PLAYER_FALLBACKS.get(player_id, {})
-        club = profile.get("club") or player_fallback.get("club", "")
+        current_override = CURRENT_PLAYER_OVERRIDES.get(player_id, {})
+        club = current_override.get("club") or profile.get("club") or player_fallback.get("club", "")
         competitions = transfermarkt_player.get("competitions") or []
-        league = LEAGUE_NAMES.get(competitions[0]) if competitions else None
-        league = league or player_fallback.get("league") or fallback_league(club)
+        competition_id = competitions[0] if competitions else None
+        # This historical export uses L1 for several different competitions,
+        # so a club-based mapping is more reliable than publishing a false label.
+        league = LEAGUE_NAMES.get(competition_id) if competition_id and competition_id != "L1" else None
+        league = current_override.get("league") or league or player_fallback.get("league") or fallback_league(club)
         if not league:
             missing_leagues.append(f"{score['name']} ({club or 'no club'})")
 
