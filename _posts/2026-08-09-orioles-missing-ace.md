@@ -56,12 +56,8 @@ That group represents the production any other free-agent acquisition would have
 
 I then compared that fifth-starter/depth slot with each free agent using FIP, which attempts to isolate outcomes a pitcher controls more directly, and converted the resulting runs saved into wins using Baltimore's actual run environment.
 
-<section class="orioles-missing-ace-results" aria-labelledby="missing-ace-results-heading">
-  <div class="orioles-missing-ace-results-header">
-    <p>The counterfactual</p>
-    <h2 id="missing-ace-results-heading">What a better starter could have changed</h2>
-    <span>Estimated impact through August 8, 2026</span>
-  </div>
+<section class="orioles-missing-ace-results" aria-label="Estimated impact of free-agent starter scenarios">
+  <p class="orioles-missing-ace-results-context">Estimated impact through August 8, 2026</p>
   <div class="orioles-missing-ace-results-table-wrap" tabindex="0" aria-label="Estimated Orioles wins added by each free-agent starter scenario">
     <table>
       <thead>
@@ -233,6 +229,11 @@ The Orioles needed top-end starting pitching for a second straight offseason and
 The more difficult part to reconcile is Rubenstein's continuing faith in Mike Elias.
 
 On July 24, with the Orioles again enduring a disappointing season, Rubenstein offered unequivocal support for his president of baseball operations. Asked whether Elias would continue leading the organization, Rubenstein said, "Absolutely. Of course," praised his reputation around baseball and added that ownership "couldn't be more pleased."
+
+<figure class="orioles-article-figure">
+  <img src="{{ '/assets/images/orioles-david-rubenstein-mike-elias-2026.jpg' | relative_url }}" alt="Orioles owner David Rubenstein acknowledges the crowd at Camden Yards" loading="lazy">
+  <figcaption>Photo: <a href="https://www.mlb.com/news/orioles-owner-david-rubenstein-confidence-in-mike-elias" target="_blank" rel="noopener">MLB.com — David Rubenstein publicly backed Mike Elias in July 2026.</a></figcaption>
+</figure>
 
 That is increasingly difficult to square with the stated expectations for the franchise.
 
