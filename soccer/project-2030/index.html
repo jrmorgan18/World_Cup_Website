@@ -20,6 +20,7 @@ description: A four-year scouting report tracking the USMNT player pool, checkpo
 {% assign checkpoint_story = site.posts | where: "checkpoint_feature", true | first %}
 {% assign prospect_story = site.posts | where: "prospect_feature", true | first %}
 {% assign pochettino_story = site.posts | where: "slug", "pochettino-is-back" | first %}
+{% assign big_board_explainer = site.posts | where: "big_board_explainer", true | first %}
 {% assign foundation_part1 = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina" | first %}
 {% assign foundation_part2 = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina-part-2" | first %}
 
@@ -36,11 +37,12 @@ description: A four-year scouting report tracking the USMNT player pool, checkpo
       <span>Latest</span>
     </div>
     <ol class="de-recent-list">
-      {% if pochettino_story %}<li><span class="de-recent-number">01</span><a href="{{ pochettino_story.url | relative_url }}"><small class="de-recent-tag">The next cycle</small><h3>{{ pochettino_story.title }}</h3><p>{{ pochettino_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-      {% if checkpoint_story %}<li><span class="de-recent-number">02</span><a href="{{ checkpoint_story.url | relative_url }}"><small class="de-recent-tag">Checkpoints</small><h3>{{ checkpoint_story.title }}</h3><p>{{ checkpoint_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-      {% if prospect_story %}<li><span class="de-recent-number">03</span><a href="{{ prospect_story.url | relative_url }}"><small class="de-recent-tag">Player Pool</small><h3>{{ prospect_story.title }}</h3><p>{{ prospect_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-      {% if foundation_part1 %}<li><span class="de-recent-number">04</span><a href="{{ foundation_part1.url | relative_url }}"><small class="de-recent-tag">Foundation / Part 1</small><h3>{{ foundation_part1.title }}</h3><p>{{ foundation_part1.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-      {% if foundation_part2 %}<li><span class="de-recent-number">05</span><a href="{{ foundation_part2.url | relative_url }}"><small class="de-recent-tag">Foundation / Part 2</small><h3>{{ foundation_part2.title }}</h3><p>{{ foundation_part2.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+      {% if big_board_explainer %}<li><span class="de-recent-number">01</span><a href="{{ big_board_explainer.url | relative_url }}"><small class="de-recent-tag">Big Board guide</small><h3>{{ big_board_explainer.title }}</h3><p>{{ big_board_explainer.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+      {% if pochettino_story %}<li><span class="de-recent-number">02</span><a href="{{ pochettino_story.url | relative_url }}"><small class="de-recent-tag">The next cycle</small><h3>{{ pochettino_story.title }}</h3><p>{{ pochettino_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+      {% if checkpoint_story %}<li><span class="de-recent-number">03</span><a href="{{ checkpoint_story.url | relative_url }}"><small class="de-recent-tag">Checkpoints</small><h3>{{ checkpoint_story.title }}</h3><p>{{ checkpoint_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+      {% if prospect_story %}<li><span class="de-recent-number">04</span><a href="{{ prospect_story.url | relative_url }}"><small class="de-recent-tag">Player Pool</small><h3>{{ prospect_story.title }}</h3><p>{{ prospect_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+      {% if foundation_part1 %}<li><span class="de-recent-number">05</span><a href="{{ foundation_part1.url | relative_url }}"><small class="de-recent-tag">Foundation / Part 1</small><h3>{{ foundation_part1.title }}</h3><p>{{ foundation_part1.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+      {% if foundation_part2 %}<li><span class="de-recent-number">06</span><a href="{{ foundation_part2.url | relative_url }}"><small class="de-recent-tag">Foundation / Part 2</small><h3>{{ foundation_part2.title }}</h3><p>{{ foundation_part2.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
     </ol>
   </aside>
 
