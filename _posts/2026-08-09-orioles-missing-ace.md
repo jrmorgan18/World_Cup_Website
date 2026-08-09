@@ -16,6 +16,12 @@ feature_stats:
   - { label: "Current record", value: "56-60" }
   - { label: "Cease scenario", value: "~61-55" }
   - { label: "Wins added", value: "+5.0" }
+feature_records:
+  - { label: "Actual", value: "56-60", style: "baseline" }
+  - { label: "Cease", value: "61-55", style: "highlight" }
+  - { label: "Suarez", value: "59-57" }
+  - { label: "King", value: "58-58" }
+  - { label: "Valdez", value: "58-58" }
 feature_tagline: "For a team two games out, a missed ace may have changed far more than the rotation."
 suppress_article_prompts: true
 source_docx: "articles/Orioles Missing Ace.docx"
