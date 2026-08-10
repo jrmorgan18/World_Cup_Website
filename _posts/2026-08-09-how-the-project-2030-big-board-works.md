@@ -32,8 +32,6 @@ The goal is not to create a fake sense of precision. A 61.2 is not inherently a 
 
 Soccer seasons are noisy. Players get hurt, change clubs, lose a manager's trust, or run unusually hot or cold for a few months. To keep one difficult stretch from wiping out a player's established level, the model uses the current season most heavily and includes the prior season at half weight.
 
-This does not freeze a player in place after an injury. It prevents a short, interrupted stretch from overwhelming the much larger body of recent evidence. As the player accumulates new minutes, the older season naturally fades and the ranking follows the new performance.
-
 ## What the 2030 Score adds
 
 The 2030 Score starts with the Current Score, then applies three capped adjustments:
