@@ -1,85 +1,95 @@
 {
-  "generated_at": "2026-08-09T06:36:59Z",
-  "game_pk": 822864,
-  "date": "2026-08-08",
+  "generated_at": "2026-08-10T07:08:15Z",
+  "game_pk": 822862,
+  "date": "2026-08-09",
   "venue": "Globe Life Field",
   "home_away": "away",
   "opponent": "Texas Rangers",
   "opponent_abbr": "TEX",
-  "result": "L",
-  "orioles_score": 1,
+  "result": "W",
+  "orioles_score": 10,
   "opponent_score": 5,
-  "orioles_hits": 6,
-  "opponent_hits": 6,
-  "orioles_errors": 2,
+  "orioles_hits": 15,
+  "opponent_hits": 8,
+  "orioles_errors": 0,
   "opponent_errors": 0,
   "winning_pitcher": {
-    "name": "Jacob deGrom",
-    "team": "TEX",
-    "record": "8-7",
-    "line": "5.0 IP, ER, 9 K, BB"
+    "name": "Yaramil Hiraldo",
+    "team": "BAL",
+    "record": "1-0",
+    "line": "2.0 IP, 0 ER, 3 K, BB"
   },
   "losing_pitcher": {
-    "name": "Kyle Bradish",
-    "team": "BAL",
-    "record": "7-11",
-    "line": "6.0 IP, ER, 4 K, 0 BB"
+    "name": "Kumar Rocker",
+    "team": "TEX",
+    "record": "4-9",
+    "line": "3.0 IP, 6 ER, 5 K, 2 BB"
   },
   "save_pitcher": null,
   "key_players": [
     {
-      "name": "Kyle Bradish",
+      "name": "Pete Alonso",
       "team": "BAL",
-      "position": "P",
-      "line": "6.0 IP, ER, 4 K, 0 BB"
+      "position": "1B",
+      "line": "3-3 | 2 HR, 2 BB, 4 RBI"
     },
     {
-      "name": "Jacob deGrom",
+      "name": "Colton Cowser",
+      "team": "BAL",
+      "position": "CF",
+      "line": "2-4 | HR, BB, K"
+    },
+    {
+      "name": "Brandon Nimmo",
       "team": "TEX",
-      "position": "P",
-      "line": "5.0 IP, ER, 9 K, BB"
-    },
-    {
-      "name": "Jackson Holliday",
-      "team": "BAL",
-      "position": "2B",
-      "line": "2-3 | HR, 2B, BB"
+      "position": "RF",
+      "line": "1-4 | HR, K, 3 RBI"
     }
   ],
-  "summary": "The Orioles fell to the Rangers 1-5 on the road at Rangers. Kyle Bradish led the way (6.0 IP, ER, 4 K, 0 BB). Baltimore has lost 3 straight.",
+  "summary": "The Orioles beat the Rangers 10-5 on the road at Rangers. Pete Alonso led the way (3-3 | 2 HR, 2 BB, 4 RBI). Baltimore has won 1 straight.",
   "record": {
-    "wins": 56,
+    "wins": 57,
     "losses": 61,
-    "pct": ".479",
+    "pct": ".483",
     "division": "AL East",
     "division_rank": 4,
     "games_back": "14.5",
-    "streak": "L3",
-    "last_10": "4-6"
+    "streak": "W1",
+    "last_10": "5-5"
   },
   "wild_card": {
     "rank": 7,
     "spots": 3,
-    "games_back": "3.0",
-    "status_text": "3.0 games back of the third AL Wild Card spot.",
+    "games_back": "2.0",
+    "status_text": "2.0 games back of the third AL Wild Card spot.",
     "ladder": [
       {
         "team": "Rangers",
         "abbr": "TEX",
         "wins": 59,
-        "losses": 58,
+        "losses": 59,
         "games_back": null,
         "wild_card_rank": 3,
         "is_orioles": false,
         "is_cutoff": true
       },
       {
+        "team": "Tigers",
+        "abbr": "DET",
+        "wins": 58,
+        "losses": 60,
+        "games_back": "1.0",
+        "wild_card_rank": 4,
+        "is_orioles": false,
+        "is_cutoff": false
+      },
+      {
         "team": "Twins",
         "abbr": "MIN",
         "wins": 58,
-        "losses": 60,
+        "losses": 61,
         "games_back": "1.5",
-        "wild_card_rank": 4,
+        "wild_card_rank": 5,
         "is_orioles": false,
         "is_cutoff": false
       },
@@ -87,18 +97,8 @@
         "team": "Guardians",
         "abbr": "CLE",
         "wins": 58,
-        "losses": 60,
+        "losses": 61,
         "games_back": "1.5",
-        "wild_card_rank": 5,
-        "is_orioles": false,
-        "is_cutoff": false
-      },
-      {
-        "team": "Tigers",
-        "abbr": "DET",
-        "wins": 57,
-        "losses": 60,
-        "games_back": "2.0",
         "wild_card_rank": 6,
         "is_orioles": false,
         "is_cutoff": false
@@ -106,9 +106,9 @@
       {
         "team": "Orioles",
         "abbr": "BAL",
-        "wins": 56,
+        "wins": 57,
         "losses": 61,
-        "games_back": "3.0",
+        "games_back": "2.0",
         "wild_card_rank": 7,
         "is_orioles": true,
         "is_cutoff": false
