@@ -16,7 +16,22 @@
       "Bash(pkill -f \"jekyll serve\")",
       "Bash(gh auth:*)",
       "Bash(git commit -m ':*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(git checkout *)",
+      "Bash(git stash *)",
+      "Bash(git credential *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"https://jrmorgan18.github.io/World_Cup_Website/analysis/round-of-32-recap/\")",
+      "Bash(curl -s \"https://jrmorgan18.github.io/World_Cup_Website/\")",
+      "Bash(curl -s \"https://jrmorgan18.github.io/World_Cup_Website/categories/analysis/\")",
+      "Bash(curl -s \"https://jrmorgan18.github.io/World_Cup_Website/schedule/\")",
+      "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless=new --disable-gpu --hide-scrollbars --force-device-scale-factor=2 --window-size=840,1560 --screenshot=\"C:\\\\Users\\\\jrmor\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-jrmor-OneDrive-Documents-Coding-World-Cup-Website\\\\0ec14f41-4f02-4ad3-9abd-0a3b8f868fdb\\\\scratchpad\\\\verify2.png\" \"C:\\\\Users\\\\jrmor\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-jrmor-OneDrive-Documents-Coding-World-Cup-Website\\\\0ec14f41-4f02-4ad3-9abd-0a3b8f868fdb\\\\scratchpad\\\\verify2.html\")",
+      "Bash(awk '{print $5}')",
+      "Bash(git commit --quiet -m ' *)",
+      "Bash(git commit -m ' *)",
+      "Bash(cp 'C:/Users/jrmor/OneDrive/Documents/Coding/World_Cup_Website/articles/Why the USMNT Will Never be Argentina \\(but could maybe be France\\).docx' C:/Users/jrmor/AppData/Local/Temp/claude/C--Users-jrmor-OneDrive-Documents-Coding-World-Cup-Website/0ec14f41-4f02-4ad3-9abd-0a3b8f868fdb/scratchpad/essay.docx)",
+      "Bash(cd C:/Users/jrmor/AppData/Local/Temp/claude/C--Users-jrmor-OneDrive-Documents-Coding-World-Cup-Website/0ec14f41-4f02-4ad3-9abd-0a3b8f868fdb/scratchpad)",
+      "Skill(dataviz)",
+      "Bash(git fetch *)"
     ]
   }
 }

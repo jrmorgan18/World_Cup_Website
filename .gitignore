@@ -9,3 +9,6 @@ scripts/__pycache__/
 Gemfile.lock
 .DS_Store
 Thumbs.db
+
+# Source PDFs for the U8 grassroots reference (third-party, not ours to redistribute)
+grassroots_coaching/

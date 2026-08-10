@@ -1,0 +1,1032 @@
+# U8 (4v4) grassroots coaching reference.
+# Session plans condensed from the Massachusetts Youth Soccer U8 session-plan library
+# and the MYSA U8 Beginner Volunteer Coach Survival Guide, which U.S. Soccer's Soccer
+# Forward resource hub points volunteer coaches toward. Wording here is condensed for
+# field use; the original PDFs are linked from `sources` below.
+
+meta:
+  age_group: "U8"
+  game_model: "4v4, no goalkeepers"
+  session_length: "60 minutes"
+  field: "25 yards wide x 35 yards long, small goal on each end line"
+  ball: "Size 3 or 4"
+  squad_note: "Plans are written for 8-12 players. With 9, run three groups of three and rotate constantly."
+
+# Play-Practice-Play, the methodology every session below is built on.
+session_flow:
+  - phase: "Play 1"
+    label: "Intentional free play"
+    minutes: "First 18-20 minutes"
+    body: "Start a game the moment two players have arrived. Begin 1v1 and grow it to 2v1, 2v2, 3v3 as more show up. This is not a teaching phase - it is your chance to watch, greet everyone and let them put their soccer hats on."
+  - phase: "Practice"
+    label: "Core activity"
+    minutes: "About 18-20 minutes"
+    body: "One game-like activity that creates the problem you want them to solve. Layer rules in one at a time rather than explaining everything up front. Short rounds with rest beat one long block."
+  - phase: "Play 2"
+    label: "The game"
+    minutes: "About 20-22 minutes"
+    body: "Back to 4v4. Picture, explain, play - about 30 seconds of talking. This is where you find out whether the practice phase landed. Do not referee it."
+
+# The five checks Mass Youth Soccer prints on every session plan.
+five_elements:
+  - "Organized - is the activity set up the right way?"
+  - "Game like - does it look like soccer?"
+  - "Repetitions - do they get enough of them for the session goal?"
+  - "Challenging - right balance of success and failure?"
+  - "Coaching - is it pitched at this age and level?"
+
+reflection_questions:
+  - "How did you achieve the goals of the session?"
+  - "What did you do well?"
+  - "What could you do better?"
+
+# ---------------------------------------------------------------------------
+# Quick coaching pointers
+# ---------------------------------------------------------------------------
+pointer_groups:
+  - id: before-practice
+    title: "Before you get to the field"
+    icon: "01"
+    points:
+      - "Arrive at least 15 minutes early so setup is done before the first child gets there."
+      - "Set up backwards: last activity first with one colour of cone, then the second-to-last with another, then the arrival game. You then only ever remove cones, never place them mid-session."
+      - "Walk the field and clear anything dangerous - holes, cans, animal burrows. If you cannot fix it, shrink the field to avoid it."
+      - "Have a couple of spare balls. Someone always leaves theirs in the car."
+      - "Know your league's U8 rules before the first game: goalkeepers or not, throw-ins, goal kicks, corners, build-out line."
+  - id: running-the-session
+    title: "Running the session"
+    icon: "02"
+    points:
+      - "Get them playing immediately. Two players is enough to start a game."
+      - "Explain in 30-60 seconds, maximum. They can hold one to three ideas at a time - give them the boundaries and the direction, then add rules round by round."
+      - "Short rounds. Ten one-minute rounds keep them engaged far better than one ten-minute game."
+      - "Coach individuals while the game keeps running instead of freezing everybody."
+      - "Ask questions rather than giving answers. The guided questions on each activity are there for that."
+      - "Be the boss of the balls. When one goes out, play another in immediately - they should be playing, not fetching."
+      - "Adjust space before adding rules: more space makes attacking easier, less space adds pressure, extra goals force scanning."
+      - "Any time a child asks for water, let them go. Even if they just went."
+  - id: whats-normal
+    title: "What's normal at seven and eight"
+    icon: "03"
+    points:
+      - "They will swarm the ball. That is parallel play, not a tactical failure."
+      - "Dribbling is not selfishness. Passing and awareness of teammates emerge later, on their own."
+      - "Do not assign permanent positions, and do not spend practice time on team shape."
+      - "They live in a dream world and have very short attention spans - defenders are more interesting as bandits, dog catchers or freeze monsters."
+      - "A strong U8 player wants the ball, can manipulate it and is willing to make decisions. That is the target, not a miniature midfielder."
+  - id: inclusive
+    title: "Keep it inclusive, not exclusive"
+    icon: "04"
+    points:
+      - "No elimination games that leave a child sitting out. The player who gets knocked out first is almost always the one who most needs the reps."
+      - "If a ball gets kicked out, send them to fetch it and rejoin - do not park them on the sideline."
+      - "Every player plays at least half the game."
+      - "Avoid lines of more than two, and never run conditioning without a ball."
+      - "Agree behaviours with the players rather than imposing them - where water bottles go, listening while someone else speaks, asking before leaving the field."
+  - id: nine-players
+    title: "Making it work with nine"
+    icon: "05"
+    points:
+      - "Three groups of three, kept all season. A vs B, B vs C, C vs A."
+      - "For 4v4, rotate one player every two to three minutes."
+      - "Or run 3v3 on one field while three players work a 1v1 or ball challenge, then swap."
+      - "Nobody should be standing still for more than a couple of minutes."
+  - id: game-day
+    title: "Game day"
+    icon: "06"
+    points:
+      - "Plan the shape ahead of time - a triangle for three, a diamond or box for four. Introduce positions without fixating on them."
+      - "Roughly equal playing time, and rotate who plays where."
+      - "Keep spare balls beside you. Priority at this age is keeping the ball in play."
+      - "Reinforce one theme from practice. Do not coach every possession from the sideline."
+      - "If you have an assistant, split the roles - one with the game, one with the bench - and swap weekly."
+      - "The weekend game is part of development, not a pass-fail exam."
+  - id: kit
+    title: "What each player brings"
+    icon: "07"
+    points:
+      - "Jersey or t-shirt, usually supplied by the club."
+      - "Shorts, or sweats once it turns cold."
+      - "Shin guards - mandatory, no shin guards means no playing."
+      - "Socks pulled over the shin guards. That is why soccer socks look so long."
+      - "Flat trainers or soccer cleats. No metal or baseball cleats."
+      - "A size 3 or 4 ball. Size 5 is too big at this age."
+      - "Plenty of water - more than you think, because half of it gets spilled."
+  - id: wrap-up
+    title: "Ending the session"
+    icon: "08"
+    points:
+      - "Turn cone collection into a race, but assign colours - otherwise they grab whatever they see."
+      - "Ask what they enjoyed today. It tells you which activities to run again."
+      - "Check in on how everyone is doing before they leave."
+      - "Say goodbye to every child and parent, and thank them."
+
+# ---------------------------------------------------------------------------
+# Activity library - the games themselves, usable without the weekly plan
+# ---------------------------------------------------------------------------
+activities:
+  - id: arrival-game
+    name: "Arrival game"
+    subtitle: "1st Play phase - intentional free play"
+    focus: "Warm-up"
+    format: "1v1 growing to 3v3"
+    numbers: "2+"
+    week_label: "Every week"
+    duration: "18-20 min"
+    setup: "Split the 25x35 field into two 15x25 fields, small goal on each end line. Start a game as soon as two players arrive. It begins 1v1 and grows to 2v1, then 2v2, up to 3v3 as more arrive. Once one field reaches 2v2 or 3v3, start the second game."
+    rules:
+      - "No waiting. The game starts with whoever is there."
+      - "Add each arriving player straight into whichever game needs them."
+    key_words: "Play forward, go to goal"
+    questions:
+      - "If you see an opening in front of you, what should you do?"
+      - "When should you pass instead of dribble?"
+    answers:
+      - "Play forward and to goal whenever you can."
+      - "If everything in front of you is closed, pass to a teammate and see if they can find a way forward."
+    note: "This is not a teaching phase. Watch, greet everyone as they arrive, and ask a question or two at the breaks to see what they already understand."
+    equipment: "Cones, 4 small goals, balls"
+
+  - id: the-game-4v4
+    name: "The Game - 4v4"
+    subtitle: "2nd Play phase"
+    focus: "Small-sided game"
+    format: "4v4"
+    numbers: "8+"
+    week_label: "Every week"
+    duration: "20-22 min"
+    setup: "Full 25x35 field, small goal on each end line, no goalkeepers. Two nine-minute halves with a two-minute break. Local rules apply."
+    rules:
+      - "If the ball leaves the field, play another one in immediately and let the game continue."
+      - "Introduce throw-ins, corners and goal kicks only if your league enforces them - and use a build-out line for goal kicks."
+    key_words: "Turn, open up, score goals"
+    questions:
+      - "Who decides whether to pass, dribble or shoot?"
+      - "What can you do to help the teammate on the ball make that decision?"
+    answers:
+      - "The player on the ball decides. Let them - the freedom to choose is the point."
+      - "If it is crowded in front of the goal, spread out and give them another option."
+    note: "Do not dwell on restarts. The game has to be played."
+    equipment: "2 small goals, pinnies, spare balls"
+
+  - id: partner-bandits
+    name: "Partner Bandits"
+    subtitle: "Core activity - Week 1"
+    focus: "Attacking"
+    format: "Pairs vs bandits"
+    numbers: "8-12"
+    week: 1
+    week_label: "Week 1"
+    duration: "18 min - 9 x 90 sec, 30 sec rest"
+    objective: "Move the ball forward past the bandits and score."
+    setup: "A 25x35 grid with a 6-wide x 3-deep box goal on each end line. Everyone is in pairs, one ball per pair. One pair is the bandits and has no ball."
+    rules:
+      - "Pairs score by dribbling into a goal or passing to their partner inside it, then attack the other goal."
+      - "Bandits steal balls and try to dribble them to either hideout (goal). The pair can win it back before they get there."
+      - "If a ball reaches a hideout, that pair loses all their points and starts again."
+      - "Bandits cannot defend inside the goals."
+      - "How many can you score in 90 seconds? Rotate bandits every round."
+    key_words: "Look up, find an opening, play through it"
+    questions:
+      - "Where can you go if the bandit closes your opening to the goal?"
+      - "What are the ways you can play the ball through an opening?"
+      - "Which part of your foot do you use to dribble forward?"
+    answers:
+      - "Tell your partner to move and make a new opening."
+      - "Dribble through it, or pass through it."
+      - "Laces - toe pointed down, make a fist with your toes, push the ball out in front."
+    note: "Variation: when the bandits get a ball to a hideout, they become scorers and the pair that lost it becomes the bandits."
+    equipment: "Cones for two box goals, one ball per pair"
+    easier:
+      name: "Bandits (coach is it)"
+      body: "Same grid and goals, but every player has their own ball and the coach is the only bandit. Players dribble into either goal, then turn and attack the other. Lose your ball to the coach and your points reset. Once they have the direction, challenge two players to share a ball."
+      questions:
+        - "Where can you go if another dribbler is in your way?"
+        - "What can you do if the bandit is blocking the goal?"
+    harder:
+      name: "Multiple 2v2 to Goal"
+      body: "Same grid, teams of two. Two separate 2v2 games run on the same field at the same time, sharing the goals - each team defends one goal and attacks the other. Score by dribbling in or passing to a teammate in the goal. After a goal the scoring team backs off to let the ball come back into play."
+      questions:
+        - "What obstacles do you have to look for in this game?"
+        - "How can you help your team create an opening?"
+
+  - id: four-corner-goals
+    name: "2v2 to 4 Corner Goals"
+    subtitle: "Core activity - Week 2"
+    focus: "Attacking"
+    format: "2v2"
+    numbers: "8-12"
+    week: 2
+    week_label: "Week 2"
+    duration: "20 min - 5 x 2 min, 2 min rest"
+    objective: "Pass or dribble past an opponent to create scoring chances."
+    setup: "Split the 25x35 field into two 15x25 fields with a small goal in each corner - four goals per field. Play 2v2 with two teams waiting on the sideline. Scatter spare balls around the field for fast restarts."
+    rules:
+      - "Each team defends the two goals in their half and attacks the two in the opponent's half."
+      - "After two minutes both teams leave and the waiting teams come on. The game restarts the moment a player steps onto the field."
+    key_words: "Find the open goal, switch it"
+    questions:
+      - "What can you do if nobody is near you?"
+      - "Where can you play the ball if the goal in front of you is crowded?"
+      - "How do you aim the ball at the goal?"
+    answers:
+      - "Dribble at the nearest goal and score."
+      - "Switch it with a big kick to the other goal."
+      - "Turn your body to the goal, point your non-kicking toe at it, strike through the middle of the ball."
+    note: "With eight players you only need one field. With fewer, make three teams - two play, one rests."
+    equipment: "8 corner goals or cone gates, spare balls"
+    easier:
+      name: "2v1 to 4 Corner Goals"
+      body: "Same four-goal fields. Coach stands at midfield with all the balls, one team on each side. Before playing a ball in, the coach calls which team gets two players and which gets one. Both teams try to win it and score in either of the opponent's goals. The round ends on a goal or when the ball leaves - everyone clears and the coach serves the next ball."
+      questions:
+        - "If your teammate has the ball, where can you go to help?"
+    harder:
+      name: "3v3 to 4 Goals"
+      body: "Same setup played 3v3, subs rotating in at least every two minutes. If the ball leaves the field, the team that did not put it out grabs any spare ball and play continues."
+      questions:
+        - "After you pass to a teammate, where do you go next?"
+
+  - id: boston-bulldogs
+    name: "Boston Bulldogs"
+    subtitle: "Core activity - Week 3"
+    focus: "Attacking"
+    format: "Pairs vs dog catchers"
+    numbers: "8-12"
+    week: 3
+    week_label: "Week 3"
+    duration: "18 min - 9 x 90 sec, 30 sec rest"
+    objective: "Play forward past the dog catchers and score."
+    setup: "A 25x35 grid with a five-yard zone across the middle - the dog pound - and a goal on each end line. Coaches start as dog catchers inside the pound and have no ball. Every pair shares one ball and starts on an end line."
+    rules:
+      - "Game starts when the coach shouts \"Who let the dogs out?\""
+      - "Bulldogs sneak through the pound and score - 100 points a goal - then turn and attack the other goal."
+      - "Lose your ball to a catcher and the pair loses all its points."
+      - "Miss the goal and there are no points. You must shoot at the far goal before returning."
+      - "Dog catchers must stay inside the pound."
+    key_words: "Play quickly through the pound, move forward without the ball"
+    questions:
+      - "What is the fastest way through the pound?"
+      - "Where should your partner move to help you get through?"
+      - "If your teammate is close, which part of the foot do you pass with?"
+    answers:
+      - "Dribble through if there is space, or knock it through to your partner."
+      - "Your partner finds an opening on the far side of the pound."
+      - "Inside of the foot - toe up and turned out, heel down, swing through the middle of the ball."
+    note: "Players can be catchers too, working in the pound with a partner. After a few rounds, let a catcher who steals a ball swap roles with the bulldog."
+    equipment: "Cones for the pound, 2 goals, one ball per pair"
+    easier:
+      name: "Dogs Gone Wild (partners)"
+      body: "Same pound and goals, but no catchers - the pairs simply play as fast as they can through the pound and score. You lose your points if the ball goes over a sideline. Coaches can step into the pound as obstacles to pass or dribble around."
+      questions:
+        - "What is the fastest way to get the ball to the goal?"
+        - "Where do you go after you kick the ball to your partner?"
+    harder:
+      name: "Boston Bulldogs (no pound)"
+      body: "Remove the pound. Catchers - coaches or players - roam anywhere on the field. Pairs play past them, score, then turn and attack the other end. Same scoring and reset rules."
+      questions:
+        - "Which part of your foot do you use to shoot or make a big kick?"
+
+  - id: end-zones-1v1
+    name: "2 x 1v1 to End Zones"
+    subtitle: "Core activity - Week 4"
+    focus: "Attacking"
+    format: "1v1 into 2v2"
+    numbers: "8-12"
+    week: 4
+    week_label: "Week 4"
+    duration: "20 min - 10 x 1 min, 1 min rest"
+    objective: "Pass or dribble past an opponent to score."
+    setup: "Split the 25x35 field into two 15x25 fields with a five-yard end zone at each end. One team waits behind one end zone with the balls, the other behind the opposite end zone."
+    rules:
+      - "On the coach's call, two players enter with a ball each and attack the opposite end zone."
+      - "The team without balls sends two players on to stop them and steal, then score in the dribblers' end zone."
+      - "Score by dribbling into the end zone. Defenders can only steal outside the end zone."
+      - "Once one ball is dead, those players help their teammate with the ball still in play."
+      - "Round ends after one minute. Goals are worth 10 points. Switch ends after five rounds."
+    key_words: "Find the opening, fake the defender"
+    questions:
+      - "What do you do if there is an opening all the way to the end zone?"
+      - "How can you use your teammate to fake the defender?"
+      - "If you see an opening, how do you dribble fastest?"
+    answers:
+      - "Dribble straight at the end zone and score."
+      - "Swing your leg at the ball without hitting it so the defender thinks you are passing, then go."
+      - "Toe down, fist with the toes, push the ball out in front with your laces and run onto it."
+    note: "Encourage the attacker in the opening 1v1, then the decisions of the attacking pair once it becomes 2v2."
+    equipment: "Cones for end zones, plenty of balls"
+    easier:
+      name: "2v1 to End Zones"
+      body: "Same fields and end zones, but two players enter sharing one ball against a single defender. The round ends as soon as the ball is scored or knocked out, or after one minute."
+      questions:
+        - "How can you take advantage of having an extra player?"
+    harder:
+      name: "3v2 to Goal and End Zone"
+      body: "Same fields with a five-yard end zone at one end and a small goal - or two pugg goals side by side - at the other. The team of three starts with the ball and attacks the goal. The team of two scores by stopping the ball in the end zone. First goal wins the round, up to one minute. Switch sides every four or five rounds."
+      questions:
+        - "What should you do when an opponent gets in front of you?"
+        - "When should you push the ball further in front of you?"
+
+  - id: guard-the-goals
+    name: "Guard the Goals"
+    subtitle: "Core activity - Week 5"
+    focus: "Defending"
+    format: "Pairs vs defenders"
+    numbers: "8-12"
+    week: 5
+    week_label: "Week 5"
+    duration: "18 min - 9 x 1 min, 1 min rest"
+    objective: "Protect the goals from opponents trying to score."
+    setup: "A 25x35 grid scattered with three-yard triangular goals. Pick one fewer defender than there are goals. Everybody else is in pairs sharing a ball."
+    rules:
+      - "Pairs dribble or pass into or through as many goals as they can in a minute."
+      - "Defenders guard all the goals and tackle the ball away, but cannot enter a triangle."
+      - "A pair that stops the ball inside a triangle is safe and can rest or plan, but cannot score until they come back out."
+      - "If a defender steals a pair's ball, that pair loses all their goals and starts counting again."
+    key_words: "Block your goal, win the ball"
+    questions:
+      - "How do you know where the attackers are?"
+      - "Where do you move if your goal is safe but another one is not?"
+      - "How do you tackle the ball away from an attacker?"
+    answers:
+      - "Keep your head up and look around."
+      - "Get your body between the attacker and the goal they are attacking."
+      - "Get close, then poke it away with your toe or put your foot in front of the ball to block it."
+    note: "This is a defending session - keep the coaching pointed at the defenders, not the pairs."
+    equipment: "Cones for several triangular goals, one ball per pair"
+    easier:
+      name: "Guard the Goals - Tag"
+      body: "Only two triangular goals with one defender each. Defenders can poke the ball away or simply tag the player on the ball, and either resets the pair's score. Coaches can partner with an attacker if numbers need it, but let the players be the defenders."
+      questions:
+        - "When should you stay close to your goal?"
+        - "What if the attacker pushes the ball too far in front of them?"
+    harder:
+      name: "Guard the Goals 3v3"
+      body: "Two triangular goals, one in each half. Two teams of three - each attacks one goal and defends the other, scoring by passing or dribbling through. The defending team cannot enter the goal it is defending. After a goal, the scorers leave the ball and drop back to protect their own goal while the opponents counter."
+      questions:
+        - "When should two defenders be close together?"
+        - "Where should the third defender go if the other two are already protecting the goal?"
+
+  - id: four-corner-shoot-defend
+    name: "4 Corner Shooting / Defending"
+    subtitle: "Core activity - Week 6"
+    focus: "Defending"
+    format: "2v2 reloading"
+    numbers: "8-12"
+    week: 6
+    week_label: "Week 6"
+    duration: "18 min - 18 x 30 sec, 30 sec rest"
+    objective: "Deny the opponent's ability to create chances or score."
+    setup: "Mark a 13x20 field with a goal on each end line - two fields if you have the numbers. Split the team in two, each group waiting in the two corners of its own end line. Coach stands off the halfway line with all the balls."
+    rules:
+      - "The coach serves a ball in and one player from each corner steps on to play 2v2."
+      - "The round is over on a goal or when the ball leaves the field. Everybody clears, the coach serves again."
+      - "Nobody enters the field before a new ball is served."
+    key_words: "Block your goal, get back"
+    questions:
+      - "What should you do when your team does not have the ball?"
+      - "Where do you go if the attacker gets past you?"
+      - "How do you tackle the ball?"
+    answers:
+      - "One of you steps to the ball, the other gets close and blocks the goal at the same time."
+      - "Back towards your goal to protect it."
+      - "Step close and poke it away, or block it from going forward."
+    note: "Serve to the player who has been least involved, and favour one side rather than serving down the middle."
+    equipment: "Cones, 2-4 small goals, a big supply of balls"
+    easier:
+      name: "1v2 to Goal"
+      body: "Same reloading format, but whichever side the coach serves to gets one player while the other side sends two - so the defending pair outnumbers the ball carrier."
+      questions:
+        - "How do two of you cooperate to win the ball back?"
+    harder:
+      name: "3v4 to Goal"
+      body: "Use the full 25x35 field. The side the coach serves to sends four players, the other sends three. Rounds last a minute, with a new ball played in whenever one goes out or is scored."
+      questions:
+        - "How do three defenders cover a goal against four attackers?"
+
+  - id: defend-3-goals-counter
+    name: "2v2 Defend 3 Goals, Counter to 1"
+    subtitle: "Core activity - Week 7"
+    focus: "Defending"
+    format: "2v2"
+    numbers: "8-12"
+    week: 7
+    week_label: "Week 7"
+    duration: "18 min - 9 x 1 min, 1 min rest"
+    objective: "Protect the goals from opponents trying to score."
+    setup: "A 15x25 grid with three small goals on one end line and a single goal on the other. Half the team waits on each end line. The team defending the single goal starts with the ball."
+    rules:
+      - "Two attackers enter; as soon as they do, two players from the other end come on to defend."
+      - "The team with the ball can attack any of the three goals. If the defenders win it, they counter to the single goal."
+      - "Defenders cannot enter the field until the attacking team takes its first touch."
+      - "Rounds last a minute, with fresh balls served in - multiple goals can be scored."
+    key_words: "Block your goal, win the ball"
+    questions:
+      - "Which of the three goals is the most dangerous?"
+      - "Where should a defender be when a goal is dangerous?"
+      - "What do you do if the attacker knocks the ball too far in front of them?"
+    answers:
+      - "The one closest to the ball."
+      - "Between the ball and that goal, blocking it."
+      - "Step in and poke tackle it away."
+    note: "The temptation is to coach the attackers because there are fewer of them. Resist it - the emphasis is on the defenders cooperating."
+    equipment: "4 small goals or cone gates, balls"
+    easier:
+      name: "2v1 Defend 3 Goals, Counter to 1"
+      body: "One attacker enters; as soon as they touch the ball, two defenders come on. Rounds last 30 seconds or until the ball is scored or leaves. Switch who attacks and who defends after several rounds."
+      questions:
+        - "With two of you against one, who steps and who covers?"
+    harder:
+      name: "2v3 Defend 3 Goals, Counter to 1"
+      body: "Three attackers against two defenders, one-minute rounds. Everything else stays the same."
+      questions:
+        - "How do you protect three goals with two players?"
+
+  - id: defend-your-goal
+    name: "3v3 Defend Your Goal"
+    subtitle: "Core activity - Week 8"
+    focus: "Defending"
+    format: "3v3"
+    numbers: "8-12"
+    week: 8
+    week_label: "Week 8"
+    duration: "18 min - 3 x 4 min, 2 min rest"
+    objective: "Deny the opponent's ability to create chances or score."
+    setup: "The 25x35 field with a goal on one end line and a three-yard end zone on the other. Play 3v3. The focus team defends the goal and scores by stopping the ball in the opponent's end zone - by passing to a teammate in it or dribbling in. The other team scores in the goal."
+    rules:
+      - "The team defending the end zone cannot camp in it, but can step in to defend a player trying to score."
+      - "Local laws apply for everything except how goals are scored."
+    key_words: "Step to the ball, get the ball"
+    questions:
+      - "If you are the closest defender to the ball, what should you do?"
+      - "When should you try to steal it?"
+      - "How do you approach the ball so you pressure it and block your goal at the same time?"
+    answers:
+      - "Step closer and pressure it. Do not let them go straight at goal."
+      - "When they knock the ball too far in front of themselves."
+      - "Bend your run so you block the goal on your way to the ball."
+    note: "Coach the team without the ball. All of it."
+    equipment: "1-2 goals, cones for the end zone"
+    easier:
+      name: "2v3 Defend Your Goal"
+      body: "Same idea on a 13x25 field: three players defend the goal against two, and score by stopping the ball in the opponent's end zone."
+      questions:
+        - "With an extra defender, who pressures and who covers?"
+    harder:
+      name: "3v4 Defend Your Goal"
+      body: "Full 25x35 field with a goal on each end line. The focus team defends its goal with three players against four, and scores in the opponent's goal."
+      questions:
+        - "How do you decide who steps when you are a player short?"
+
+  - id: groups-of-2-vs-defenders
+    name: "Groups of 2 vs The Defenders"
+    subtitle: "Core activity - Week 9"
+    focus: "Attacking"
+    format: "Pairs vs defenders"
+    numbers: "8-12"
+    week: 9
+    week_label: "Week 9"
+    duration: "18 min - 6 x 2 min, 1 min rest"
+    objective: "Pass or dribble past an opponent to create scoring chances."
+    setup: "A 25x35 grid with three goals on each end line. Pick two or three defenders; everyone else is in pairs sharing a ball."
+    rules:
+      - "Pairs dribble or pass past the defenders and score in any of the three goals on an end line, then collect any ball and attack the three goals at the other end."
+      - "Shoot, pass or dribble into a goal - all count."
+      - "If a defender steals a ball and plays it off the field, that pair loses all its points and starts again."
+      - "How many can you score in two minutes? Rotate defenders each round."
+    key_words: "Look up, move with your teammate"
+    questions:
+      - "How do you know where the goal and the opponents are?"
+      - "How can two players with a ball beat one defender?"
+      - "Why turn your body towards your teammate before you pass?"
+    answers:
+      - "Look up and see whether your opening is there or closed."
+      - "Dribble at the defender, see if they follow you, then pass."
+      - "Facing them makes the pass more accurate."
+    note: "After a few good rounds, let a defender who steals a ball swap into the attacking pair."
+    equipment: "6 small goals or cone gates, one ball per pair"
+    easier:
+      name: "Groups of 2 vs Defenders to End Lines"
+      body: "No goals - pairs score by crossing an end line, dribbling over it or passing to their partner over it. Coaches start as the defenders. After a few rounds, step out, pick two or three players to defend and go back to the core activity."
+      questions:
+        - "Where can your partner go so you can play it to them?"
+    harder:
+      name: "3v2 to Three Goals"
+      body: "Same grid and six goals played as a proper 3v2 - the team of three starts with the ball and attacks any of the three goals at one end, then turns and attacks the other three. If the defenders steal it and score, the attackers lose their points. Or let both teams defend three goals and attack three."
+      questions:
+        - "How do you keep the ball moving between three of you?"
+
+  - id: defend-each-zone
+    name: "Defend Each Zone (2v1+1+1)"
+    subtitle: "Core activity - Week 10"
+    focus: "Defending"
+    format: "Pairs vs zone defenders"
+    numbers: "8-12"
+    week: 10
+    week_label: "Week 10"
+    duration: "18 min - 9 x 1 min, 1 min rest"
+    objective: "Deny the opponent's ability to build up and create chances."
+    setup: "Divide the 25x35 field into thirds with a goal on each end line. One defender per third, who must stay in their zone. Everyone else is in pairs sharing a ball."
+    rules:
+      - "Pairs dribble or pass through each third and score at one end, then play back through and score at the other."
+      - "Miss the goal and there is no point - play on to the other end."
+      - "If a defender steals the ball, that pair loses all its points and starts again."
+    key_words: "Force them to the sides, win the ball, block your goal"
+    questions:
+      - "Why is it important to step closer to the ball?"
+      - "When should you try to tackle it?"
+      - "How do you approach so you pressure the ball and block your goal at once?"
+    answers:
+      - "It forces the attacker's head down and makes them rush."
+      - "When they knock it too far in front of themselves."
+      - "Bend your run to block the goal first, then close on the ball."
+    note: "Let defenders count their steals and challenge the next group to beat the score. The coach can hold a zone if numbers are short - but should not be the free defender."
+    equipment: "Cones to mark thirds, 2 goals, one ball per pair"
+    easier:
+      name: "Defend the Zones (halves plus a free defender)"
+      body: "Split the field in half instead of thirds. One defender per half, plus one extra defender who can go anywhere. Same scoring and reset rules."
+      questions:
+        - "When should the free defender come across to help?"
+    harder:
+      name: "Multiple Teams of 2 vs 3 Defenders"
+      body: "Field split in half, three defenders with no zone restriction who must protect both goals between them. Pairs attack one end, then the other."
+      questions:
+        - "Who closes the ball and who protects the goal?"
+
+  - id: side-goals-2v1
+    name: "2v1 to Side Goals"
+    subtitle: "Core activity - Week 11"
+    focus: "Defending"
+    format: "2v1 reloading"
+    numbers: "8-12"
+    week: 11
+    week_label: "Week 11"
+    duration: "18 min - 18 x 30 sec, 30 sec rest"
+    objective: "Protect your goal and, if you can, steal the ball."
+    setup: "A 15x25 grid with a goal on each end line, set close to the nearest corner. Coach stands at midfield on the sideline with all the balls, one team waiting on each side."
+    rules:
+      - "The coach plays a ball in. Whichever side it goes to sends one player; the other side sends two."
+      - "Each team has one goal to attack and one to defend."
+      - "The round ends on a goal or when the ball leaves. Everyone clears and the coach serves the next ball."
+    key_words: "Block your goal, win the ball"
+    questions:
+      - "What should you do when you see your goal is not protected?"
+      - "What does it mean to tackle the ball?"
+      - "How do you poke tackle it away?"
+    answers:
+      - "Move so you are blocking the goal."
+      - "Get close enough to touch the ball, then take it."
+      - "Approach from an angle, get slightly in front of the dribbler, reach in and poke it away with your toe."
+    note: "The pair will want to chase the ball together. Guide them on when one steps and the other drops. Set up more than one field if you can - it doubles the playing time."
+    equipment: "2-4 small goals, a big supply of balls"
+    easier:
+      name: "2v1 to Side Goals (players enter first)"
+      body: "Players go on before the ball does. The coach names which team has two and which has one, then plays the ball to the lone player. Rounds last a full minute with fresh balls served in when one goes out."
+      questions:
+        - "When do you step to the ball and when do you drop back?"
+    harder:
+      name: "2v2 to Side Goals (reloading)"
+      body: "Same reloading game with two players from each side entering when the ball is served."
+      questions:
+        - "How do you and your partner split the job of covering the goal?"
+
+  - id: fantastic-fours
+    name: "Fantastic 4's Soccer Festival"
+    subtitle: "Week 12 - the whole session"
+    focus: "Small-sided game"
+    format: "4v4 (3v3 if needed)"
+    numbers: "8+"
+    week: 12
+    week_label: "Week 12"
+    duration: "Rounds of 6-8 min with 2 min breaks"
+    objective: "End the season with a festival of small-sided games, each with a twist."
+    setup: "Divide everyone into teams of four - three if that is what it takes to keep everyone playing. No goalkeepers. Change opponents each round if you can, and tally the scores between games."
+    rules:
+      - "3 points for a win, 2 for a tie, 1 for a loss, plus each game's bonus."
+      - "Track goals for and against as a tie-breaker."
+      - "Adjust game length and number of rounds to fit the time you have."
+    key_words: "Play, compete, enjoy it"
+    note: "Coaches can add or adjust any condition to suit the group."
+    equipment: "Goals and pinnies for as many fields as you can run"
+    games:
+      - name: "Game 1 - Regular game"
+        body: "No conditions, no bonus points."
+      - name: "Game 2 - 3 passes, 3 points"
+        body: "Score after three consecutive passes and the goal is worth 3. Every other goal is worth 1."
+      - name: "Game 3 - One-touch goals"
+        body: "Any goal scored first time counts as 5 instead of 1."
+      - name: "Game 4 - Everyone across the halfway line"
+        body: "Every player has to be over the halfway line for a goal to count."
+      - name: "Game 5 - Everyone scores first"
+        body: "Once you have scored, you cannot score again until all your teammates have scored one."
+      - name: "Game 6 - Win by 2"
+        body: "Win by exactly two goals and your team gets 5 bonus goals towards goal difference. 3-1 earns it; 3-2 does not."
+      - name: "Game 7 - Regular game"
+        body: "No conditions, no bonus points."
+
+  # --- Extra games worth keeping in your back pocket ---
+  - id: freeze-tag-layered
+    name: "Freeze Tag (with a ball)"
+    subtitle: "How to layer an activity"
+    focus: "Ball work"
+    format: "Everyone with a ball"
+    numbers: "Any"
+    week_label: "Any week"
+    duration: "15 min - 10-12 x 1 min rounds"
+    objective: "Dribbling with your head up - and a worked example of adding rules one layer at a time."
+    setup: "A marked space, every player with a ball. Run it as a dozen one-minute rounds rather than one long game."
+    rules:
+      - "Round 1: everyone dribbles to learn the boundaries. Nobody can be tagged yet."
+      - "Rounds 2-3: dribble and avoid being tagged by the coach. Who gets tagged fewest times?"
+      - "Rounds 4-5: if the coach tags you, you are frozen until you count to five, then carry on."
+      - "Rounds 6-7: ask the players how a frozen teammate gets unfrozen - a tag, or a pass through their legs. Frozen players hold the ball over their head so everyone can see."
+      - "Rounds 8-10: players become the freeze monsters, new ones each round."
+    key_words: "Head up, keep it close"
+    note: "This is a dribbling activity, not a tagging one. If it turns into a chase game you have lost the point. The layering method works on almost any activity - give them the boundaries and the direction first, then add one rule per round."
+    equipment: "Cones, a ball each"
+
+  - id: 1v1-two-goals
+    name: "1v1 to Two Goals"
+    focus: "Attacking"
+    format: "1v1"
+    numbers: "2+"
+    week_label: "Extra"
+    duration: "Short rounds"
+    objective: "Dribbling, changing direction, spotting the open space."
+    setup: "A small field with two goals set well apart. One attacker against one defender - the attacker can score in either goal."
+    key_words: "Which goal is open?"
+    questions:
+      - "Which goal is open?"
+      - "Can you change direction?"
+      - "When can you go fast?"
+    equipment: "4 cones"
+
+  - id: 2v2-to-cones
+    name: "2v2 to Cones"
+    focus: "Attacking"
+    format: "2v2"
+    numbers: "4+"
+    week_label: "Extra"
+    duration: "Short rounds"
+    objective: "Working with a teammate without being forced to pass."
+    setup: "A field wider than it is long. Each team protects a set of cone targets and scores by playing the ball into or through the opponent's targets."
+    key_words: "Dribble if it is open, pass if the defender commits"
+    note: "Watch for: dribbling when there is space, passing when the defender commits, the teammate moving away from pressure, and how quickly they react when they lose the ball."
+    equipment: "Cones"
+
+  - id: four-goal-game
+    name: "Four-Goal Game"
+    focus: "Attacking"
+    format: "2v2, 3v3 or 4v4"
+    numbers: "4+"
+    week_label: "Extra"
+    duration: "Any"
+    objective: "Scanning, finding space, choosing between dribbling and passing."
+    setup: "Give each team two goals to attack instead of one. The extra goal turns \"spread out\" into a problem they solve for themselves rather than something you shout."
+    key_words: "Is there another goal?"
+    note: "Start without restrictions. Add a shooting zone only if it actually produces the behaviour you want."
+    equipment: "4 small goals or cone gates"
+
+  - id: get-outta-there
+    name: "2v2 Get Outta There"
+    focus: "Attacking"
+    format: "2v2 reloading"
+    numbers: "8+"
+    week_label: "Extra"
+    duration: "Continuous"
+    objective: "Immediate transition and constant repetitions."
+    setup: "Two teams line up beside the coach. The coach serves a ball and the first two from each team play 2v2. The moment the ball leaves the field or a goal is scored, the next pair goes straight in."
+    key_words: "First thought forward"
+    note: "You are the boss of the balls. Restart instantly so they spend the session playing rather than fetching. Emphasis: first thought forward, the player without the ball finds a big easy space, transition immediately."
+    equipment: "2 goals, a big supply of balls"
+
+  - id: dribble-gates
+    name: "Dribble Gates"
+    focus: "Ball work"
+    format: "Everyone with a ball"
+    numbers: "Any"
+    week_label: "Extra"
+    duration: "5-10 min"
+    objective: "Touches, both feet, changes of direction."
+    setup: "Scatter pairs of cones around the space as gates. Every player has a ball."
+    key_words: "How many gates in 60 seconds?"
+    note: "Challenge them to use as many different gates as possible, both feet, and to change direction between them."
+    equipment: "Lots of cones, a ball each"
+
+  - id: sharks-and-minnows
+    name: "Sharks and Minnows (with a ball)"
+    focus: "Ball work"
+    format: "Everyone with a ball"
+    numbers: "Any"
+    week_label: "Extra"
+    duration: "Short rounds"
+    objective: "Dribbling under pressure."
+    setup: "Standard sharks and minnows, but every minnow has a ball."
+    key_words: "Head up"
+    note: "Do not leave anyone out for long. A player who loses the ball becomes a shark, re-enters straight away, or does a quick task and rejoins."
+    equipment: "Cones, a ball each"
+
+  - id: end-zone-soccer
+    name: "End-Zone Soccer"
+    focus: "Small-sided game"
+    format: "2v2 to 4v4"
+    numbers: "4+"
+    week_label: "Extra"
+    duration: "Any"
+    objective: "Dribbling forward with purpose."
+    setup: "Score by dribbling under control into an end zone. Later you can add scoring by receiving a pass inside the end zone."
+    key_words: "Under control"
+    equipment: "Cones"
+
+  - id: numbers-game
+    name: "Numbers Game"
+    focus: "Small-sided game"
+    format: "1v1 to 3v3"
+    numbers: "6+"
+    week_label: "Extra"
+    duration: "Continuous"
+    objective: "Rapid changes of situation, lots of decisions."
+    setup: "Two teams on the sidelines. Call one, two or three players from each team onto the field to create instant 1v1, 2v2 and 3v3 situations."
+    key_words: "Go!"
+    equipment: "2 goals, balls"
+
+sources:
+  - label: "Mass Youth Soccer session plans (U8)"
+    url: "https://mayouthsoccer.org/coaches/session-plans/"
+  - label: "MYSA U8 Beginner Volunteer Coach Survival Guide"
+    url: "https://mayouthsoccer.org/wp-content/uploads/2026/04/u8-survival-guide.pdf"
+  - label: "U.S. Soccer - coaches' session plans"
+    url: "https://www.ussoccer.com/soccer-forward/resource-hub/coaches-session-plans"
+  - label: "U.S. Soccer - beginner volunteer coach survival guides"
+    url: "https://www.ussoccer.com/soccer-forward/resource-hub/beginner-volunteer-coach-survival-guides"
+  - label: "U.S. Soccer Learning Center - parallel play"
+    url: "https://learning.ussoccer.com/articles/coaching/article/parallel-play"
+  - label: "U.S. Soccer Learning Center - how to manage game day"
+    url: "https://learning.ussoccer.com/articles/coaching/article/how-to-manage-game-day"
+  - label: "U.S. Soccer - managing extreme weather"
+    url: "https://www.ussoccer.com/soccer-forward/resource-hub/managing-extreme-weather-conditions"
+  - label: "US Youth Soccer - The Game is the Best Teacher"
+    url: "https://www.usyouthsoccer.org/wp-content/uploads/sites/160/2023/09/The-Game-is-the-Best-Teacher.pdf"
+  - label: "US Youth Soccer - U8 Pairs Activities"
+    url: "https://www.usyouthsoccer.org/wp-content/uploads/sites/160/2023/09/U-8-Pairs-Activities.pdf"
+
+weeks:
+  - number: 1
+    moment: "Attacking"
+    goal: "Improve build-up in the defensive half"
+    player_actions: "Pass or dribble forward, spread out"
+    key_qualities: "Read and understand the game, take initiative"
+    skills: "Dribbling, passing and receiving - surface of the foot, quality of touch, first touch"
+    blocks:
+      - phase: "1st Play phase"
+        activity: arrival-game
+        duration: "20 min - 3 x 4 min, 1 min rest"
+        objective: "Pass or dribble past an opponent to move the ball into the attacking half."
+        key_words: "Play forward, find your teammate"
+      - phase: "Core activity"
+        activity: partner-bandits
+      - phase: "2nd Play phase"
+        activity: the-game-4v4
+        duration: "22 min - 2 x 9 min, 2 min half-time"
+        objective: "Pass or dribble past an opponent, then score."
+
+  - number: 2
+    moment: "Attacking"
+    goal: "Improve build-up in the opponent's half"
+    player_actions: "Pass or dribble forward, create passing options"
+    key_qualities: "Take initiative, be pro-active"
+    skills: "Dribbling, passing and receiving - pace and accuracy, first touch"
+    blocks:
+      - phase: "1st Play phase"
+        activity: arrival-game
+        duration: "18 min - 3 x 5 min, 1 min rest"
+        objective: "Pass or dribble past an opponent to create scoring chances."
+        key_words: "Go to goal, find a goal scorer"
+        questions:
+          - "Once you have received the ball, what do you want to do next?"
+          - "If you cannot score, who should you pass to?"
+          - "How do you aim the ball at the goal?"
+      - phase: "Core activity"
+        activity: four-corner-goals
+      - phase: "2nd Play phase"
+        activity: the-game-4v4
+        duration: "22 min - 2 x 9 min, 2 min half-time"
+        objective: "Pass or dribble past an opponent, then score."
+        key_words: "Help your teammate, switch it"
+        questions:
+          - "After you pass to a teammate, where do you go next?"
+          - "Where can you play the ball if the goal in front of you is crowded?"
+
+  - number: 3
+    moment: "Attacking"
+    goal: "Improve scoring goals"
+    player_actions: "Shoot, pass or dribble forward"
+    key_qualities: "Read and understand the game, take initiative"
+    skills: "Shooting and passing - surface of the foot, pace and accuracy"
+    blocks:
+      - phase: "1st Play phase"
+        activity: arrival-game
+        duration: "20 min - 3 x 4 min, 1 min rest"
+        objective: "Pass or dribble past an opponent to move into the attacking half."
+        key_words: "Go to goal, score goals"
+        questions:
+          - "If you have the ball, what are you trying to do?"
+          - "When should you pass instead of shoot?"
+      - phase: "Core activity"
+        activity: boston-bulldogs
+      - phase: "2nd Play phase"
+        activity: the-game-4v4
+        duration: "22 min - 2 x 9 min, 2 min half-time"
+        objective: "Pass or dribble past an opponent, then score."
+        key_words: "Open up, score goals"
+        questions:
+          - "How can you help the teammate on the ball score?"
+          - "After you shoot, what next?"
+
+  - number: 4
+    moment: "Attacking"
+    goal: "Improve scoring goals"
+    player_actions: "Pass or dribble forward"
+    key_qualities: "Take initiative, be pro-active"
+    skills: "Dribbling, passing and receiving - quality of touch, first touch"
+    blocks:
+      - phase: "1st Play phase"
+        activity: arrival-game
+        duration: "18 min - 3 x 5 min, 1 min rest"
+        objective: "Pass or dribble past an opponent to score."
+        key_words: "Go to goal, score"
+        questions:
+          - "Once you have received the ball, what do you want to do next?"
+          - "Why is it important to shoot whenever you see an opening?"
+      - phase: "Core activity"
+        activity: end-zones-1v1
+      - phase: "2nd Play phase"
+        activity: the-game-4v4
+        duration: "22 min - 2 x 9 min, 2 min half-time"
+        objective: "Pass or dribble past an opponent to score."
+        key_words: "Look up, find the opening, fake the defender"
+
+  - number: 5
+    moment: "Defending"
+    goal: "Prevent goals"
+    player_actions: "Protect the goal, steal the ball"
+    key_qualities: "Read and understand the game, focus"
+    skills: "Pressure - angle and speed of approach, distance, body position, poke or block tackle"
+    blocks:
+      - phase: "1st Play phase"
+        activity: arrival-game
+        duration: "20 min - 3 x 4 min, 1 min rest"
+        objective: "Protect your goal and, if you can, steal the ball back."
+        key_words: "Block your goal, get back"
+        questions:
+          - "What should you do if you see your goal is not protected?"
+          - "Where should you go if the opponent with the ball is closer to your goal than you are?"
+        notes: "Direct every comment at the team without the ball."
+      - phase: "Core activity"
+        activity: guard-the-goals
+      - phase: "2nd Play phase"
+        activity: the-game-4v4
+        duration: "22 min - 2 x 9 min, 2 min half-time"
+        objective: "Protect the goal and win the ball if you can."
+        key_words: "Block your goal, win the ball"
+        questions:
+          - "What is your first job when you or your teammate lose the ball?"
+          - "If your teammate is already blocking the goal, where should you go?"
+
+  - number: 6
+    moment: "Defending"
+    goal: "Prevent build-up in your half of the field"
+    player_actions: "Protect the goal, steal the ball"
+    key_qualities: "Read and understand the game, focus"
+    skills: "Pressure - angle, speed, distance, footwork. Tackles - poke, block, intercept"
+    blocks:
+      - phase: "1st Play phase"
+        activity: arrival-game
+        duration: "18 min - 3 x 5 min, 1 min rest"
+        objective: "Deny the opponent's ability to create chances or score."
+        key_words: "Block your goal, get back"
+        notes: "Set up two 13x20 fields with a four-yard gap between them."
+      - phase: "Core activity"
+        activity: four-corner-shoot-defend
+      - phase: "2nd Play phase"
+        activity: the-game-4v4
+        duration: "20 min - 3 x 4 min, 1 min rest"
+        objective: "Deny the opponent's ability to create chances or score."
+        key_words: "Block your goal, step to the ball"
+
+  - number: 7
+    moment: "Defending"
+    goal: "Prevent build-up in the opponent's half"
+    player_actions: "Protect the goal, steal the ball"
+    key_qualities: "Read and understand the game, focus"
+    skills: "Pressure and cover - distance, body position, tackle choice"
+    blocks:
+      - phase: "1st Play phase"
+        activity: arrival-game
+        duration: "20 min - 3 x 4 min, 1 min rest"
+        objective: "Protect your goal and, if you can, steal the ball back."
+        key_words: "Block your goal, get back"
+      - phase: "Core activity"
+        activity: defend-3-goals-counter
+      - phase: "2nd Play phase"
+        activity: the-game-4v4
+        duration: "22 min - 2 x 9 min, 2 min half-time"
+        objective: "Protect the goal and win the ball if you can."
+        key_words: "Block your goal, win the ball"
+
+  - number: 8
+    moment: "Defending"
+    goal: "Deny scoring chances"
+    player_actions: "Pressure the ball, steal the ball"
+    key_qualities: "Read and understand the game, take initiative"
+    skills: "Pressure - angle, speed, distance, footwork. Tackles - poke, block, intercept"
+    blocks:
+      - phase: "1st Play phase"
+        activity: arrival-game
+        duration: "18 min - 3 x 5 min, 1 min rest"
+        objective: "Deny the opponent's ability to create chances or score."
+        key_words: "Step to the ball, get the ball"
+        notes: "Two 13x20 fields with a four-yard gap between them."
+      - phase: "Core activity"
+        activity: defend-your-goal
+      - phase: "2nd Play phase"
+        activity: the-game-4v4
+        duration: "20 min - 2 x 10 min, 2 min half-time"
+        objective: "Deny the opponent's ability to create chances or score."
+        key_words: "Step to the ball, get the ball"
+
+  - number: 9
+    moment: "Attacking"
+    goal: "Improve build-up in the opponent's half"
+    player_actions: "Shoot, pass or dribble forward"
+    key_qualities: "Read and understand the game, take initiative"
+    skills: "Shooting and passing - pace and accuracy. Receiving - body position, first touch"
+    blocks:
+      - phase: "1st Play phase"
+        activity: arrival-game
+        duration: "20 min - 3 x 4 min, 1 min rest"
+        objective: "Pass or dribble past an opponent to create scoring chances."
+        key_words: "Look up, find your teammate"
+        questions:
+          - "How do you know where the goal and the opponents are?"
+          - "What can you do if the goal is too far away?"
+      - phase: "Core activity"
+        activity: groups-of-2-vs-defenders
+      - phase: "2nd Play phase"
+        activity: the-game-4v4
+        duration: "22 min - 2 x 9 min, 2 min half-time"
+        objective: "Pass or dribble past an opponent, then score."
+        key_words: "Look up, move with your teammate"
+
+  - number: 10
+    moment: "Defending"
+    goal: "Prevent build-up in your defensive half"
+    player_actions: "Protect your goal, pressure the ball, steal the ball"
+    key_qualities: "Read and understand the game, take initiative"
+    skills: "Pressure - angle, speed, distance, footwork. Tackles - poke, block, intercept"
+    blocks:
+      - phase: "1st Play phase"
+        activity: arrival-game
+        duration: "18 min - 3 x 5 min, 1 min rest"
+        objective: "Deny the opponent's ability to build up and create chances."
+        key_words: "Step to the ball, get the ball"
+        notes: "Two 13x20 fields with a four-yard gap between them."
+      - phase: "Core activity"
+        activity: defend-each-zone
+      - phase: "2nd Play phase"
+        activity: the-game-4v4
+        duration: "20 min - 2 x 10 min, 2 min half-time"
+        objective: "Deny the opponent's ability to create chances or score."
+        key_words: "Force them to the sides, win the ball, block your goal"
+
+  - number: 11
+    moment: "Defending"
+    goal: "Prevent build-up in the opponent's half"
+    player_actions: "Protect the goal, steal the ball"
+    key_qualities: "Read and understand the game, focus"
+    skills: "Pressure and cover - distance, body position, tackle choice"
+    blocks:
+      - phase: "1st Play phase"
+        activity: arrival-game
+        duration: "20 min - 3 x 4 min, 1 min rest"
+        objective: "Protect your goal and, if you can, steal the ball."
+        key_words: "Block your goal, get back"
+        questions:
+          - "What should you do if you see your goal is not protected?"
+          - "What does it mean to tackle the ball?"
+      - phase: "Core activity"
+        activity: side-goals-2v1
+      - phase: "2nd Play phase"
+        activity: the-game-4v4
+        duration: "22 min - 2 x 9 min, 2 min half-time"
+        objective: "Protect the goal and win the ball if you can."
+        key_words: "Block your goal, win the ball"
+
+  - number: 12
+    moment: "Attacking"
+    goal: "Fantastic Fours festival"
+    player_actions: "Pass or dribble forward, create passing options"
+    key_qualities: "Take initiative, be pro-active"
+    skills: "Everything from the season, in a competition"
+    blocks:
+      - phase: "Whole session"
+        activity: fantastic-fours
