@@ -5,11 +5,11 @@ reports:
     published: "August 10, 2026"
     window: "August 3-9, 2026"
     week_ending: "August 9, 2026"
-    source_note: "Official club, league and competition records were prioritized. Local reporting was used for performance detail where available; the report does not infer appearances, minutes or production where a reliable match record was unavailable at cutoff."
+    source_note: "Official club, league and competition sources were checked first, followed by local club-specific reporting. FotMob match records were used secondarily to verify lineups, minutes and event data where official post-match detail was not yet published. No appearance or production was inferred when an individual record remained unavailable."
     summary:
-      biggest_risers: "Rokas Pukstas, whose 75th-minute solo goal powered Hajduk’s 5-1 European away win, and Cavan Sullivan, who continued to receive a major attacking role in Philadelphia’s Leagues Cup match against Cruz Azul despite a difficult finish. Peyton Miller’s continued starting role and Mathis Albert’s involvement in Dortmund’s Arsenal friendly were secondary positives."
-      issues_to_monitor: "Zavier Gozo’s still-unconfirmed Crystal Palace move and absence from RSL action, Niko Tsakiris’s injury timetable, and the lack of verified competitive action or match detail for several players during the Leagues Cup/preseason-heavy week."
-      best_story: "Pukstas responded to Hajduk’s prior European elimination with a decisive individual goal at Žalgiris. The performance offered the clearest on-field recovery signal of the week."
+      biggest_risers: "Rokas Pukstas scored in both of Hajduk Split’s matches across 168 minutes; Cavan Sullivan produced a goal and an assist across 150 Leagues Cup minutes; Chris Brady paired two Chicago wins with a six-save clean sheet; and Luca Bombino scored at Club América before helping San Diego shut out Tijuana. Neil Pierre, Mathis Albert and Kevin Paredes also added meaningful senior-level minutes."
+      issues_to_monitor: "Damion Downs was omitted from Southampton’s squad for its competitive opener without a published club explanation. Zavier Gozo missed both RSL Leagues Cup squads while his reported Crystal Palace move remained unconfirmed, Diego Kochen conceded twice in a quiet loss at Randers, and Niko Tsakiris and Benjamin Cremaschi remained in injury recovery."
+      best_story: "Pukstas delivered the strongest week: he scored a 75th-minute solo goal in Hajduk’s 5-2 European win at Žalgiris, then scored again and played the full 90 in a 2-2 league draw with Istra. Sullivan’s goal-and-assist performance against Necaxa and Bombino’s two-game Leagues Cup week were close behind."
     players:
       - profile: caleb-wiley
         name: Caleb Wiley
@@ -18,22 +18,23 @@ reports:
         direction: insufficient
         direction_label: No new evidence
         context: Preseason
-        recap: "No trustworthy first-team appearance, squad inclusion or transfer resolution was verified during the window."
-        development_read: "No performance evaluation this week. Securing a clear competitive pathway remains the immediate issue."
+        recap: "Chelsea had no competitive match during the window, and Wiley was not part of the club’s touring group. No official loan or permanent move was announced by Sunday night."
+        development_read: "No performance evaluation this week. His need for a clearly defined senior pathway is becoming the central development issue."
         sources:
-          - { label: "Chelsea player news (official)", url: "https://www.chelseafc.com/en/teams/profile/caleb-wiley" }
+          - { label: "Chelsea summer transfer tracker (official club)", url: "https://www.chelseafc.com/en/news/article/summer-transfers-2026-all-the-chelsea-ins-outs-and-new-contracts-so-far" }
 
       - profile: damion-downs
         name: Damion Downs
         club: Southampton
-        trend: "?"
-        direction: insufficient
-        direction_label: No new evidence
-        context: Preseason
-        recap: "No trustworthy appearance or minute total was verified during Southampton’s transition into competitive play."
-        development_read: "No new performance evidence. The next verified competitive squad and appearance will be more informative than preseason carryover."
+        trend: "↓"
+        direction: falling
+        direction_label: Concern
+        context: EFL Cup
+        recap: "Southampton beat Colchester United 2-0 in the EFL Cup on August 8, but Downs was not included in the matchday squad. The club did not publish an availability explanation by the reporting cutoff."
+        development_read: "Missing the first competitive squad after a productive preseason outing is a mild setback. The trend can reverse quickly if he returns for the Championship opener."
         sources:
-          - { label: "Southampton fixtures (official)", url: "https://www.southamptonfc.com/en/fixtures" }
+          - { label: "Colchester cup date (official club)", url: "https://www.southamptonfc.com/en/news/article/colchester-united-a-sales-windows-begin" }
+          - { label: "Colchester 0-2 Southampton lineup (secondary match record)", url: "https://www.fotmob.com/match/5840313/matchfacts/colchester-united-vs-southampton" }
 
       - profile: zavier-gozo
         name: Zavier Gozo
@@ -42,8 +43,8 @@ reports:
         direction: steady
         direction_label: Holding
         context: Transfer watch
-        recap: "No RSL competitive appearance was verified during the window. Local reporting indicated Crystal Palace had reached an agreement in principle, but neither club had confirmed a transfer by the reporting cutoff."
-        development_read: "The possible Premier League move is consequential but remains unconfirmed. Until it is official, there is no new on-field evidence to change the assessment."
+        recap: "Gozo was not in RSL’s squad for the 1-1 Leagues Cup draw at Tigres or the 4-0 win over Atlante. Local and national reporting said Crystal Palace had agreed a deal, but neither club had announced the transfer by Sunday night."
+        development_read: "The reported Premier League move would be a major pathway step, but this week supplied no on-field evidence. Keep the trend level until the transfer and his immediate role are official."
         sources:
           - { label: "RSL player news (official)", url: "https://www.rsl.com/news/players/zavier-gozo/" }
           - { label: "Salt Lake transfer context (local)", url: "https://www.sltrib.com/sports/rsl/2026/08/04/why-real-salt-lake-could-be-losing/" }
@@ -54,21 +55,23 @@ reports:
         trend: "?"
         direction: insufficient
         direction_label: No new evidence
-        recap: "No trustworthy competitive appearance or minutes were verified during the window."
-        development_read: "No new evaluation. His next league or cup appearance should clarify whether the recent All-Star and MLS workload continues."
+        recap: "New York Red Bulls had no first-team match during the window, and no verified Red Bulls II appearance was found for Hall."
+        development_read: "No new performance evaluation this week. His recent first-team and All-Star workload remains the baseline."
         sources:
           - { label: "Hall player news (official club)", url: "https://www.newyorkredbulls.com/players/julian-hall/news/" }
 
       - profile: justin-ellis
         name: Justin Ellis
         club: Orlando City
-        trend: "?"
-        direction: insufficient
-        direction_label: No new evidence
-        recap: "No trustworthy competitive appearance or minutes were verified during the window."
-        development_read: "No new performance evaluation. The important next question is whether he retains a starting role alongside Orlando’s senior attacking options."
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        context: Leagues Cup
+        recap: "Played 107 minutes across both Orlando Leagues Cup matches: a 70-minute start at forward in the 2-1 win over Monterrey and 37 minutes off the bench in the 2-1 loss to León. He created three chances in total but recorded no goal or assist."
+        development_read: "A start and another substantial substitute appearance alongside Orlando’s senior attackers strengthened his case. The next step is turning useful link play and chance creation into production."
         sources:
-          - { label: "Ellis player profile and match log (official club)", url: "https://www.orlandocitysc.com/players/justin-ellis/match-log/" }
+          - { label: "Ellis first-team profile (official club)", url: "https://www.orlandocitysc.com/players/justin-ellis/match-log/" }
+          - { label: "Orlando Leagues Cup match records (secondary)", url: "https://www.fotmob.com/match/5844829/matchfacts/monterrey-vs-orlando-city" }
 
       - profile: adri-mehmeti
         name: Adri Mehmeti
@@ -76,32 +79,36 @@ reports:
         trend: "?"
         direction: insufficient
         direction_label: No new evidence
-        recap: "No trustworthy competitive appearance or minutes were verified during the window."
-        development_read: "No new evaluation after his return from suspension; the next senior selection is the key evidence point."
+        recap: "New York Red Bulls had no first-team match during the window, and no verified Red Bulls II appearance was found for Mehmeti."
+        development_read: "No new performance evaluation this week. His next senior selection remains the key evidence point after serving his suspension."
         sources:
           - { label: "Mehmeti player profile (official club)", url: "https://www.newyorkredbulls.com/players/adri-mehmeti/" }
 
       - profile: neil-pierre
         name: Neil Pierre
         club: Philadelphia Union
-        trend: "?"
-        direction: insufficient
-        direction_label: No new evidence
-        recap: "No trustworthy competitive appearance or minutes were verified during Philadelphia’s Leagues Cup week."
-        development_read: "No new performance evaluation. His recent MLS breakthrough remains the relevant baseline."
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        context: Leagues Cup
+        recap: "Played 102 minutes across Philadelphia’s two matches. He entered in the 79th minute of the 1-0 loss to Cruz Azul, then started at center back and completed 90 minutes in the 3-1 win over Necaxa, receiving one yellow card."
+        development_read: "A first Leagues Cup start and a composed full match in a win extended his senior breakthrough. His week added evidence that he can handle real first-team rotation responsibility."
         sources:
-          - { label: "Pierre player profile (official club)", url: "https://www.philadelphiaunion.com/players/neil-pierre/" }
+          - { label: "Union Leagues Cup schedule (official club)", url: "https://www.philadelphiaunion.com/news/philadelphia-union-announce-leagues-cup-2026-opponents-and-schedule" }
+          - { label: "Philadelphia 3-1 Necaxa lineup (secondary match record)", url: "https://www.fotmob.com/matches/necaxa-vs-philadelphia-union/8lsxg4h" }
 
       - profile: chris-brady
         name: Chris Brady
         club: Chicago Fire
-        trend: "?"
-        direction: insufficient
-        direction_label: No new evidence
-        recap: "Chicago’s August 9 Leagues Cup fixture was not complete at the reporting cutoff, and no reliable prior-window appearance record was verified."
-        development_read: "No performance evaluation this week. A completed match record is needed before changing the trend."
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        context: Leagues Cup
+        recap: "Started and played all 180 minutes as Chicago beat Necaxa 2-0 and Santos Laguna 3-1. Brady made six saves in the clean-sheet win and two more against Santos, conceding once across the two matches."
+        development_read: "Two wins, eight saves and a six-save clean sheet make this a clearly positive week. The Necaxa performance was the strongest evidence that he can still win points with shot-stopping."
         sources:
-          - { label: "Chicago Fire fixtures (official club)", url: "https://www.chicagofirefc.com/schedule/" }
+          - { label: "Chicago Leagues Cup schedule (official club)", url: "https://www.chicagofirefc.com/news/chicago-fire-fc-to-face-necaxa-santos-laguna-and-cruz-azul-in-group-stage-of-leagues-cup-2026" }
+          - { label: "Chicago 3-1 Santos lineup (secondary match record)", url: "https://www.fotmob.com/matches/chicago-fire-fc-vs-santos-laguna/1ohpka" }
 
       - profile: rokas-pukstas
         name: Rokas Pukstas
@@ -110,34 +117,34 @@ reports:
         direction: rising
         direction_label: Rising
         context: Europa Conference League qualifying
-        recap: "Scored a 75th-minute solo goal in Hajduk’s 5-1 away win over Žalgiris in Europa Conference League qualifying. Exact official minutes and starting status were not verified by cutoff."
-        development_read: "A decisive individual goal after the Pafos elimination is the week’s strongest recovery signal. The next test is repeating that influence in league and second-leg competition."
+        recap: "Started twice and played 168 minutes. He scored a 75th-minute solo goal before leaving in the 78th minute of Hajduk’s 5-2 Conference League qualifying win at Žalgiris, then scored in the 16th minute and completed 90 minutes in a 2-2 league draw with Istra. He was booked in Lithuania."
+        development_read: "Two goals in two starts, including one in Europe, made this the strongest development week in the group. He paired his trademark penalty-box timing with a high-impact transition goal and sustained the form three days later."
         sources:
           - { label: "Hajduk match list (official club)", url: "https://hajduk.hr/eng/matches" }
-          - { label: "Žalgiris vs. Hajduk report (secondary)", url: "https://www.uefa.com/uefaconferenceleague/" }
+          - { label: "Žalgiris 2-5 Hajduk match record (secondary)", url: "https://www.fotmob.com/match/5955324/matchfacts/zalgiris-vilnius-vs-hajduk-split" }
 
       - profile: cavan-sullivan
         name: Cavan Sullivan
         club: Philadelphia Union
-        trend: "→"
-        direction: steady
-        direction_label: Holding
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
         context: Leagues Cup
-        recap: "Appeared in Philadelphia’s 1-0 Leagues Cup loss to Cruz Azul and was involved in several attacking moments, but did not record a goal or assist. Exact minutes were not verified by a reliable official match record at cutoff."
-        development_read: "The attacking responsibility remains a positive, while the missed chances and result keep the week from being a rise. Converting the pressure he creates is the next step."
+        recap: "Started both matches and played 150 minutes. In the 1-0 loss to Cruz Azul he took two shots, put one on target and created two chances. Against Necaxa he produced a goal and an assist, created two more chances and left after 60 minutes with Philadelphia leading 3-0 in an eventual 3-1 win."
+        development_read: "Another strong week. Sullivan responded to a frustrating finishing night against Cruz Azul by directly producing two goals against Necaxa, reinforcing both his chance creation and growing end-product at senior level."
         sources:
-          - { label: "Philadelphia Union news (official club)", url: "https://www.philadelphiaunion.com/news/" }
-          - { label: "Cruz Azul match reaction (local supporter coverage)", url: "https://phillysoccerpage.net/" }
+          - { label: "Union Leagues Cup schedule (official club)", url: "https://www.philadelphiaunion.com/news/philadelphia-union-announce-leagues-cup-2026-opponents-and-schedule" }
+          - { label: "Philadelphia 3-1 Necaxa match record (secondary)", url: "https://www.fotmob.com/matches/necaxa-vs-philadelphia-union/8lsxg4h" }
 
       - profile: niko-tsakiris
         name: Niko Tsakiris
         club: San Jose Earthquakes
-        trend: "→"
-        direction: steady
+        trend: "✚"
+        direction: insufficient
         direction_label: Injured
         context: Injury
-        recap: "No performance evaluation this week. He remains unavailable with the previously reported projected mid-August timetable."
-        development_read: "The outlook is unchanged until he returns to team training and competitive selection."
+        recap: "No performance evaluation this week. Injured with a projected mid-August timetable."
+        development_read: "No performance evaluation this week. Injured with a projected mid-August timetable."
         sources:
           - { label: "Earthquakes player news (official club)", url: "https://www.sjearthquakes.com/news/" }
 
@@ -147,8 +154,8 @@ reports:
         trend: "?"
         direction: insufficient
         direction_label: No new evidence
-        recap: "No trustworthy competitive appearance or minutes were verified during the window."
-        development_read: "No new evaluation. His next confirmed MLS or Leagues Cup match is needed to assess whether his regular role continues."
+        recap: "Colorado Rapids had no first-team fixture during the window. No competitive club appearance was available to evaluate."
+        development_read: "No performance evaluation this week. His established starting role remains unchanged by the scheduled break."
         sources:
           - { label: "Colorado Rapids fixtures (official club)", url: "https://www.coloradorapids.com/schedule/" }
 
@@ -159,8 +166,8 @@ reports:
         direction: rising
         direction_label: Rising
         context: Preseason
-        recap: "Featured in Borussia Dortmund’s preseason match at Arsenal and took Dortmund’s fourth penalty in the shootout, which was saved. Exact playing time was not verified."
-        development_read: "Involvement in a high-profile senior preseason setting is positive, even with the missed penalty. His competitive pathway remains the more important question once the Bundesliga season begins."
+        recap: "Entered in the 59th minute and played the final 31 minutes of Dortmund’s 3-2 Emirates Cup win at Arsenal. In a pre-arranged shootout held after the match, his fourth Dortmund penalty was saved."
+        development_read: "A half-hour against elite senior opposition is useful evidence and keeps his preseason moving upward. The saved exhibition penalty is secondary to earning real first-team minutes in a win."
         sources:
           - { label: "Dortmund player profile (official club)", url: "https://www.bvb.de/de/de/mannschaften/fussball/spieler/mathis-albert.html" }
           - { label: "Arsenal vs. Dortmund report (secondary)", url: "https://as.com/futbol/internacional/tzolis-fue-vinicius-f202608-n/" }
@@ -168,48 +175,53 @@ reports:
       - profile: diego-kochen
         name: Diego Kochen
         club: Lyngby
-        trend: "?"
-        direction: insufficient
-        direction_label: No new evidence
-        recap: "No trustworthy competitive appearance or minutes were verified during the window."
-        development_read: "No new evaluation. His loan is still valuable only if it continues to produce Danish top-flight starts."
+        trend: "→"
+        direction: steady
+        direction_label: Holding
+        context: Danish Superliga
+        recap: "Started and played 90 minutes in Lyngby’s 2-0 loss at Randers. He made one save, conceded twice and completed 18 of 23 passes, including four of seven long balls."
+        development_read: "The result and shot-stopping return were modest, but another full top-flight start preserves the core value of the loan. This was a quiet holding week rather than a meaningful step forward."
         sources:
           - { label: "Lyngby news (official club)", url: "https://lyngby-boldklub.dk/" }
+          - { label: "Randers 2-0 Lyngby match record (secondary)", url: "https://www.fotmob.com/match/5739476/matchfacts/randers-fc-vs-lyngby" }
 
       - profile: benjamin-cremaschi
         name: Benjamin Cremaschi
         club: Parma
-        trend: "?"
+        trend: "✚"
         direction: insufficient
-        direction_label: No new evidence
-        context: Preseason
-        recap: "No trustworthy first-team appearance, availability update or minute total was verified during the window."
-        development_read: "No new performance evaluation. A clean preseason health and selection picture remains the immediate priority."
+        direction_label: Injured
+        context: Injury recovery
+        recap: "Cremaschi was not in the lineup data for Parma’s 2-0 friendly loss to Sampdoria on August 9. The club had previously confirmed surgery for a left-knee lateral meniscus injury, and no return announcement was published this week."
+        development_read: "No performance evaluation this week. The priority remains completing rehabilitation and returning to full-team selection."
         sources:
-          - { label: "Parma news (official club)", url: "https://www.parmacalcio1913.com/news/" }
+          - { label: "Cremaschi medical update (official club)", url: "https://www.parmacalcio1913.com/news/aggiornamento-sulle-condizioni-di-benjamin-cremaschi/" }
+          - { label: "Parma-Sampdoria fixture (official club)", url: "https://www.parmacalcio1913.com/news/lestate-del-parma-calcio-le-prime-squadre-e-la-primavera-in-ritiro-in-trentino/" }
 
       - profile: kevin-paredes
         name: Kevin Paredes
         club: FC Utrecht
-        trend: "?"
-        direction: insufficient
-        direction_label: No new evidence
-        context: Preseason
-        recap: "No trustworthy competitive appearance or minute total was verified during the window."
-        development_read: "No new evaluation. The priority is converting his encouraging early Utrecht integration into a league role."
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        context: Eredivisie debut
+        recap: "Made his competitive FC Utrecht debut as an 84th-minute substitute in the 2-1 opening-day loss at FC Groningen, giving him six regulation minutes plus stoppage time."
+        development_read: "The role was brief, but getting onto the field in the league opener is a concrete positive after preseason integration. Building toward a larger wing or wingback role is the next checkpoint."
         sources:
-          - { label: "Utrecht preseason report (official club)", url: "https://www.fcutrecht.nl/nieuws/2026/juli/fc-utrecht-wint-van-pec-zwolle/" }
+          - { label: "Utrecht 2026-27 schedule (official club)", url: "https://www.fcutrecht.nl/nieuws/2026/juni/fc-utrecht-speelt-eerste-thuiswedstrijd-tegen-az/" }
+          - { label: "Groningen 2-1 Utrecht lineup (secondary match record)", url: "https://www.fotmob.com/match/5781704/matchfacts/fc-groningen-vs-fc-utrecht" }
 
       - profile: peyton-miller
         name: Peyton Miller
         club: New England Revolution
-        trend: "↑"
-        direction: rising
-        direction_label: Rising
-        recap: "Started in New England’s August 8 match against Houston. A reliable final minute total and individual production record were not verified by cutoff."
-        development_read: "Another first-team start sustains the positive trend. The next stage is confirming how consistently the attacking-wing role survives against varied opponents."
+        trend: "→"
+        direction: steady
+        direction_label: Holding
+        recap: "Started in New England’s front line and played 79 minutes in a 2-0 home loss to Houston. He put both of his shots on target but recorded no goal, assist or created chance before being replaced."
+        development_read: "Another start in the attacking role is encouraging, and two shots on target show involvement, but the scoreless team performance keeps the weekly trend level."
         sources:
-          - { label: "New England vs. Houston match center (official MLS)", url: "https://www.mlssoccer.com/competitions/mls-regular-season/" }
+          - { label: "Houston match rescheduling notice (official club)", url: "https://www.houstondynamofc.com/news/schedule-update-road-match-vs-new-england-revolution-rescheduled-for-august-8th" }
+          - { label: "New England 0-2 Houston match record (secondary)", url: "https://www.fotmob.com/match/5071021/matchfacts/new-england-revolution-vs-houston-dynamo-fc" }
 
       - profile: cooper-sanchez
         name: Cooper Sanchez
@@ -217,8 +229,8 @@ reports:
         trend: "?"
         direction: insufficient
         direction_label: No new evidence
-        recap: "No trustworthy club appearance, minutes or availability update was verified during the window."
-        development_read: "No new performance evaluation. The next senior or Atlanta United 2 selection will determine whether his international-duty interruption affected his club pathway."
+        recap: "Atlanta United had no first-team fixture during the window. No verified Atlanta United 2 appearance or new availability report was found for Sanchez."
+        development_read: "No performance evaluation this week. His first-team role before the break remains the relevant baseline."
         sources:
           - { label: "Atlanta United news (official club)", url: "https://www.atlutd.com/news/" }
 
@@ -228,44 +240,49 @@ reports:
         trend: "?"
         direction: insufficient
         direction_label: No new evidence
-        recap: "No trustworthy competitive appearance or minutes were verified during the window."
-        development_read: "No new evaluation. His recently extended contract preserves the platform; the next question is his match influence after the break."
+        recap: "San Jose had no first-team fixture during the window, and no verified Earthquakes II appearance was found for Leroux."
+        development_read: "No performance evaluation this week. His recently extended contract and established first-team role remain unchanged."
         sources:
           - { label: "Leroux contract extension (official club)", url: "https://www.sjearthquakes.com/news/news-earthquakes-sign-midfielder-beau-leroux-to-new-contract" }
 
       - profile: francis-westfield
         name: Francis Westfield
         club: Philadelphia Union
-        trend: "?"
-        direction: insufficient
-        direction_label: No new evidence
-        recap: "No trustworthy competitive appearance or minute total was verified during Philadelphia’s Leagues Cup week."
-        development_read: "No new evaluation. His recent MLS start and attacking involvement remain the baseline to build from."
+        trend: "→"
+        direction: steady
+        direction_label: Holding
+        context: Leagues Cup
+        recap: "Played 120 minutes across Philadelphia’s two matches. He completed 90 minutes at right back in the 1-0 loss to Cruz Azul, then replaced Kai Wagner at left back for the final 30 minutes of the 3-1 win over Necaxa."
+        development_read: "A full start plus useful minutes on the opposite flank reinforced his two-sided defensive value. There was no decisive production, so the outlook holds rather than rises."
         sources:
-          - { label: "Westfield player profile (official club)", url: "https://www.philadelphiaunion.com/players/francis-westfield/" }
+          - { label: "Union Leagues Cup schedule (official club)", url: "https://www.philadelphiaunion.com/news/philadelphia-union-announce-leagues-cup-2026-opponents-and-schedule" }
+          - { label: "Cruz Azul 1-0 Philadelphia lineup (secondary match record)", url: "https://www.fotmob.com/matches/cruz-azul-vs-philadelphia/9159rlb" }
 
       - profile: cole-campbell
         name: Cole Campbell
         club: SV Elversberg
-        trend: "→"
-        direction: steady
-        direction_label: Holding
+        trend: "?"
+        direction: insufficient
+        direction_label: Minutes unavailable
         context: Preseason
-        recap: "No trustworthy competitive appearance or minutes were verified during Elversberg’s preseason period."
-        development_read: "No on-field change this week. His permanent move to a newly promoted Bundesliga club remains a meaningful pathway upgrade, with league selection the next key evidence."
+        recap: "Elversberg beat Strasbourg 5-2 in an August 4 friendly, but a trustworthy individual lineup or minute record for Campbell was not available. No production is attributed without that record."
+        development_read: "No individual performance evaluation this week. His Bundesliga opportunity remains attractive, with the August 22 cup tie the first meaningful selection checkpoint."
         sources:
+          - { label: "Elversberg fixtures (secondary match list)", url: "https://www.fotmob.com/teams/8232/fixtures/elversberg" }
           - { label: "Campbell joins Elversberg (official Bundesliga)", url: "https://www.bundesliga.com/en/bundesliga/news/cole-campbell-signs-elversberg-borussia-dortmund-38140" }
 
       - profile: luca-bombino
         name: Luca Bombino
         club: San Diego FC
-        trend: "?"
-        direction: insufficient
-        direction_label: No new evidence
-        recap: "San Diego’s August 9 Leagues Cup fixture was not complete at the reporting cutoff, and no reliable prior-window appearance record was verified."
-        development_read: "No performance evaluation this week. A completed match record is required before adjusting the trend."
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        context: Leagues Cup
+        recap: "Started both matches and played 180 minutes. Bombino scored San Diego’s goal in the 63rd minute of a 3-1 loss at Club América, then completed the 1-0 clean-sheet win over Tijuana from left back."
+        development_read: "A goal at América followed by a full-match clean sheet against Tijuana is strong two-way evidence. The week reinforced both his attacking timing and his ability to hold a senior role across a demanding turnaround."
         sources:
-          - { label: "San Diego FC fixtures (official club)", url: "https://www.sandiegofc.com/schedule/" }
+          - { label: "San Diego-Tijuana lineup (official club)", url: "https://www.sandiegofc.com/competitions/leagues-cup/2026/matches/sdvstij-08-09-2026/lineups" }
+          - { label: "América 3-1 San Diego match record (secondary)", url: "https://www.fotmob.com/matches/cf-america-vs-san-diego-fc/ilui7u8o" }
 
       - profile: jackson-hopkins
         name: Jackson Hopkins
@@ -273,8 +290,8 @@ reports:
         trend: "?"
         direction: insufficient
         direction_label: No new evidence
-        recap: "No trustworthy competitive appearance or minutes were verified during the window."
-        development_read: "No new evaluation. His recently extended U22 contract preserves the opportunity; the next matchday role matters most."
+        recap: "D.C. United had no first-team fixture during the window. No competitive appearance was available to evaluate."
+        development_read: "No performance evaluation this week. His recently extended U22 contract preserves the opportunity; the next matchday role matters most."
         sources:
           - { label: "Hopkins U22 contract (official club)", url: "https://www.dcunited.com/news/d-c-united-sign-homegrown-midfielder-jackson-hopkins-to-a-u22-initiative-contract-through-june-2029" }
 
@@ -283,11 +300,13 @@ reports:
         club: San Diego FC
         trend: "?"
         direction: insufficient
-        direction_label: No new evidence
-        recap: "San Diego’s August 9 Leagues Cup fixture was not complete at the reporting cutoff, and no reliable prior-window appearance record was verified."
-        development_read: "No performance evaluation this week. The next completed match record will determine whether he remains in the goalkeeper rotation."
+        direction_label: No minutes
+        context: Leagues Cup
+        recap: "Ferree was an unused substitute in both San Diego matches: the 3-1 loss at Club América and the 1-0 win over Tijuana. CJ dos Santos started both games."
+        development_read: "No performance evaluation this week. Two consecutive bench assignments suggest dos Santos currently has the cup role, making Ferree’s next start an important checkpoint."
         sources:
-          - { label: "San Diego FC fixtures (official club)", url: "https://www.sandiegofc.com/schedule/" }
+          - { label: "San Diego-Tijuana lineup (official club)", url: "https://www.sandiegofc.com/competitions/leagues-cup/2026/matches/sdvstij-08-09-2026/lineups" }
+          - { label: "América 3-1 San Diego lineup (secondary)", url: "https://www.fotmob.com/matches/cf-america-vs-san-diego-fc/ilui7u8o" }
 
   - id: "2026-08-02"
     group: prospects
