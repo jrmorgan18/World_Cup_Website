@@ -21,7 +21,6 @@ section_theme: ravens
     </a>
 
     <aside class="ravens-recent-rail" aria-label="Ravens training camp highlights and recent articles">
-      {% include ravens-camp-highlights.html %}
       <div class="ravens-recent-heading">
         <p id="ravens-recent-heading">Recent Ravens articles</p>
         <span>From the archive</span>
@@ -42,6 +41,7 @@ section_theme: ravens
           {% endif %}
         {% endfor %}
       </ol>
+      {% include ravens-camp-highlights.html %}
     </aside>
   </div>
 </section>
