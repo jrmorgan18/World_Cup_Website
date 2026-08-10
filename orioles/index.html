@@ -84,7 +84,6 @@ section_theme: orioles
       </div>
     </div>
     <aside class="orioles-desk-side" aria-label="Latest game and player of the week">
-      {% include orioles-game-card.html %}
       {% if pow %}
       <div class="orioles-potw" aria-labelledby="orioles-potw-heading">
         <figure class="orioles-potw-photo">
@@ -110,6 +109,7 @@ section_theme: orioles
         </div>
       </div>
       {% endif %}
+      {% include orioles-game-card.html %}
     </aside>
   </div>
 </section>
