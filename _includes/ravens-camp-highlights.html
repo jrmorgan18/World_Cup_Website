@@ -1,0 +1,23 @@
+{% assign camp = site.data.ravens_camp_highlights %}
+{% if camp %}
+<section class="ravens-camp-highlights" aria-labelledby="ravens-camp-heading">
+  <header class="ravens-camp-highlights-head">
+    <p class="de-kicker">Training camp</p>
+    <div>
+      <h2 id="ravens-camp-heading">Camp Highlights</h2>
+      <time datetime="{{ camp.date | date: '%Y-%m-%d' }}">{{ camp.edition }}</time>
+    </div>
+    <p>{{ camp.intro }}</p>
+  </header>
+
+  <ol class="ravens-camp-highlights-list">
+    {% for highlight in camp.highlights %}
+    <li>
+      <h3>{{ highlight.title }}</h3>
+      <p>{{ highlight.text }}</p>
+      <small>Reporting: {{ highlight.sources | join: "; " }}</small>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+{% endif %}

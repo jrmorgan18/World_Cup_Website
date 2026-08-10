@@ -711,7 +711,18 @@ body { overflow-x: hidden; }
 .club-feature-teaser-mark strong { color:#fff; font-size:8rem; line-height:.9; }
 .club-section--ravens-feature { padding-top:48px; }
 .ravens-feature-layout { display:grid; grid-template-columns:minmax(0,1fr) minmax(280px,320px); gap:36px; align-items:start; }
-.ravens-recent-rail { min-width:0; position:sticky; top:calc(var(--header-height) + 24px); }
+.ravens-recent-rail { min-width:0; display:grid; gap:34px; }
+.ravens-camp-highlights { padding:22px 22px 20px; border:1px solid rgba(255,255,255,.15); background:linear-gradient(145deg,#17111e,#0d0c10 72%); box-shadow:inset 5px 0 0 var(--de-purple); }
+.ravens-camp-highlights-head .de-kicker { color:var(--de-purple-light); font-size:.58rem; }
+.ravens-camp-highlights-head > div { display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-top:8px; }
+.ravens-camp-highlights-head h2 { color:#fff; font-family:'Newsreader',serif; font-size:1.52rem; font-weight:500; line-height:1.05; letter-spacing:-.4px; }
+.ravens-camp-highlights-head time { color:#a49ca8; font-family:var(--font-display); font-size:.53rem; letter-spacing:.75px; line-height:1.3; text-align:right; text-transform:uppercase; }
+.ravens-camp-highlights-head > p:last-child { margin-top:10px; color:#aaa3af; font-size:.7rem; line-height:1.4; }
+.ravens-camp-highlights-list { margin-top:16px; list-style:none; border-top:1px solid rgba(255,255,255,.13); }
+.ravens-camp-highlights-list li { padding:14px 0; border-bottom:1px solid rgba(255,255,255,.11); }
+.ravens-camp-highlights-list h3 { color:#f5f1f5; font-family:'Newsreader',serif; font-size:1rem; font-weight:600; line-height:1.15; }
+.ravens-camp-highlights-list p { margin-top:5px; color:#b7b0ba; font-size:.71rem; line-height:1.42; }
+.ravens-camp-highlights-list small { display:block; margin-top:7px; color:#887e8f; font-family:var(--font-display); font-size:.5rem; letter-spacing:.45px; line-height:1.35; text-transform:uppercase; }
 .ravens-recent-heading { padding-bottom:15px; display:flex; align-items:center; justify-content:space-between; gap:18px; border-bottom:4px solid var(--de-purple); font-family:var(--font-display); text-transform:uppercase; }
 .ravens-recent-heading p { color:#fff; font-size:.72rem; font-weight:700; letter-spacing:1.8px; }
 .ravens-recent-heading span { color:#85818b; font-size:.6rem; letter-spacing:1.1px; text-align:right; }
