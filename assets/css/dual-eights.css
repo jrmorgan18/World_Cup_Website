@@ -356,11 +356,11 @@ body { overflow-x: hidden; }
 .module-hero .de-eyebrow { color:var(--de-soccer); margin-bottom:24px; }
 .module-hero h1 { color:#fff; font-family:var(--font-display); font-size:clamp(4rem,8vw,8rem); line-height:.9; letter-spacing:-3px; text-transform:uppercase; }
 .module-hero > p:last-child { max-width:720px; margin-top:20px; color:#aeb7c7; font-family:'Newsreader',serif; font-size:1.25rem; }
-.module-hero--scouting { min-height:220px; padding-top:34px; padding-bottom:34px; }
+.module-hero--scouting { min-height:190px; padding-top:26px; padding-bottom:26px; }
 .module-hero--scouting .de-eyebrow { margin-bottom:10px; }
-.module-hero--scouting h1 { font-size:clamp(2.8rem,4.5vw,4.5rem); letter-spacing:-2px; }
-.module-hero--scouting > p:last-child { margin-top:10px; font-size:1.05rem; line-height:1.4; }
-.module-hero--scouting + .weekly-scouting-shell .weekly-scouting-header { padding-top:28px; padding-bottom:20px; }
+.module-hero--scouting h1 { font-size:clamp(2.45rem,3.5vw,3.75rem); letter-spacing:-1.6px; }
+.module-hero--scouting > p:last-child { margin-top:8px; font-size:1rem; line-height:1.35; }
+.module-hero--scouting + .weekly-scouting-shell .weekly-scouting-header { padding-top:24px; padding-bottom:18px; }
 .checkpoint-shell,.roster-shell,.scouting-shell { max-width:var(--de-wide); margin:0 auto; padding:90px 32px 120px; }
 .checkpoint-feature { margin-bottom:85px; display:grid; grid-template-columns:minmax(300px,.85fr) minmax(0,1.15fr); overflow:hidden; border:1px solid var(--color-border); background:linear-gradient(145deg,#102e57,#07172e); transition:transform .2s,border-color .2s; }
 .checkpoint-feature:hover { transform:translateY(-3px); border-color:var(--project-red); }
@@ -415,7 +415,7 @@ body { overflow-x: hidden; }
 .weekly-scouting-shell { max-width:var(--de-wide); margin:0 auto; padding:0 32px 120px; }
 .weekly-scouting-header { padding:42px 0 32px; display:grid; grid-template-columns:minmax(0,1fr) 430px; gap:70px; align-items:end; border-top:1px solid var(--color-border); }
 .weekly-scouting-header .de-kicker { color:var(--project-red); }
-.weekly-scouting-header h2 { margin:8px 0 14px; color:#fff; font-family:var(--font-display); font-size:clamp(2.5rem,4.5vw,4.6rem); line-height:1; text-transform:uppercase; }
+.weekly-scouting-header h2 { margin:7px 0 10px; color:#fff; font-family:var(--font-display); font-size:clamp(2rem,3vw,3.4rem); line-height:1; text-transform:uppercase; }
 .weekly-scouting-header>div>p:last-child { max-width:720px; color:var(--color-text-muted); font-family:'Newsreader',serif; font-size:1.08rem; line-height:1.55; }
 .weekly-scouting-header dl { display:grid; border:1px solid var(--color-border); }
 .weekly-scouting-header dl div { min-height:58px; padding:11px 14px; display:grid; grid-template-columns:120px 1fr; gap:14px; align-items:center; border-bottom:1px solid var(--color-border); }

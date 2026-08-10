@@ -27,6 +27,12 @@ section_theme: project
     </dl>
   </header>
 
+  <div class="weekly-scouting-summary" aria-label="Report summary">
+    <article><span>01</span><p>Biggest risers</p><strong>{{ latest_report.summary.biggest_risers }}</strong></article>
+    <article><span>02</span><p>Issues to monitor</p><strong>{{ latest_report.summary.issues_to_monitor }}</strong></article>
+    <article><span>03</span><p>Best development story</p><strong>{{ latest_report.summary.best_story }}</strong></article>
+  </div>
+
   <div class="weekly-scouting-key" aria-label="Development direction key">
     <span><b class="weekly-scouting-dot weekly-scouting-dot--rising"></b>Improving</span>
     <span><b class="weekly-scouting-dot weekly-scouting-dot--steady"></b>Unchanged</span>
@@ -63,12 +69,6 @@ section_theme: project
         {% endfor %}
       </tbody>
     </table>
-  </div>
-
-  <div class="weekly-scouting-summary" aria-label="Report summary">
-    <article><span>01</span><p>Biggest risers</p><strong>{{ latest_report.summary.biggest_risers }}</strong></article>
-    <article><span>02</span><p>Issues to monitor</p><strong>{{ latest_report.summary.issues_to_monitor }}</strong></article>
-    <article><span>03</span><p>Best development story</p><strong>{{ latest_report.summary.best_story }}</strong></article>
   </div>
 
   <footer class="weekly-scouting-footer">
