@@ -1,22 +1,23 @@
 ---
 layout: default
 title: Grassroots Coaching — U8 Quick Reference
-description: A field-ready reference for volunteer U8 soccer coaches — twelve weekly practice plans, every game and drill in one searchable library, and the coaching pointers that matter at seven and eight years old.
+description: A plain-English guide for volunteer coaches of seven and eight-year-olds — twelve weekly practice plans, every game drawn out in one place, and the things worth knowing before your first session.
 permalink: /soccer/project-2030/grassroots-coaching/
 section_theme: project
 ---
 {% assign gr = site.data.grassroots_u8 %}
+{% assign diagram_base = '/assets/images/grassroots/' %}
 <section class="module-hero module-hero--compact">
   <p class="de-eyebrow"><span></span> Project 2030 / Grassroots</p>
   <h1>Grassroots Coaching</h1>
-  <p>A field reference for volunteer coaches running a U8 (4v4) team: the weekly plans, every game in one place, and what actually matters at seven and eight years old.</p>
+  <p>You volunteered to coach a team of seven and eight-year-olds. Here's a season of practices, every game drawn out, and the stuff nobody tells you beforehand.</p>
 </section>
 {% include project-subnav.html %}
 
 <div class="gc-shell">
   <div class="gc-tabs" role="tablist" aria-label="Grassroots coaching sections">
     <button type="button" role="tab" id="gc-tab-plans" aria-controls="gc-panel-plans" aria-selected="true" data-gc-tab="plans">Weekly plans</button>
-    <button type="button" role="tab" id="gc-tab-games" aria-controls="gc-panel-games" aria-selected="false" data-gc-tab="games" tabindex="-1">Games &amp; drills</button>
+    <button type="button" role="tab" id="gc-tab-games" aria-controls="gc-panel-games" aria-selected="false" data-gc-tab="games" tabindex="-1">Games</button>
     <button type="button" role="tab" id="gc-tab-pointers" aria-controls="gc-panel-pointers" aria-selected="false" data-gc-tab="pointers" tabindex="-1">Pointers</button>
   </div>
 
@@ -25,17 +26,17 @@ section_theme: project
     <header class="gc-intro">
       <div>
         <p class="de-kicker">The season</p>
-        <h2>Twelve sessions, one shape.</h2>
-        <p>Every session runs Play &rarr; Practice &rarr; Play on a {{ gr.meta.field }}. Open a week for the timings, the setup and the questions to ask. Each activity links through to its full card in the library.</p>
+        <h2>Twelve practices, all the same shape.</h2>
+        <p>Play, teach one thing, play again. Open a week to see how long each bit takes, how to set it out, and what to ask them. Every game is drawn out, and links to its own page with the easier and harder versions.</p>
       </div>
       <aside class="gc-facts">
-        <span><strong>{{ gr.meta.game_model }}</strong>Game model</span>
-        <span><strong>{{ gr.meta.session_length }}</strong>Per session</span>
+        <span><strong>{{ gr.meta.session_length }}</strong>Each practice</span>
+        <span><strong>8-12 kids</strong>Works for</span>
         <span><strong>{{ gr.meta.ball }}</strong>Ball size</span>
       </aside>
     </header>
 
-    <div class="gc-flow" aria-label="Session shape">
+    <div class="gc-flow" aria-label="How a practice runs">
       {% for step in gr.session_flow %}
       <article>
         <p class="gc-flow-phase">{{ step.phase }}</p>
@@ -46,11 +47,14 @@ section_theme: project
       {% endfor %}
     </div>
 
-    <p class="gc-note">{{ gr.meta.squad_note }}</p>
+    <p class="gc-note">{{ gr.meta.space_note }}</p>
+    <p class="gc-note gc-note--quiet">{{ gr.meta.rules_note }}</p>
+
+    {% include grassroots-key.html %}
 
     <div class="gc-weeks">
       {% for week in gr.weeks %}
-      <details class="gc-week gc-week--{{ week.moment | downcase }}" id="week-{{ week.number }}">
+      <details class="gc-week" id="week-{{ week.number }}">
         <summary>
           <span class="gc-week-no">{{ week.number | prepend: '0' | slice: -2, 2 }}</span>
           <span class="gc-week-head">
@@ -62,31 +66,38 @@ section_theme: project
         </summary>
         <div class="gc-week-body">
           <dl class="gc-week-meta">
-            <div><dt>Player actions</dt><dd>{{ week.player_actions }}</dd></div>
-            <div><dt>Key qualities</dt><dd>{{ week.key_qualities }}</dd></div>
-            <div><dt>Skill focus</dt><dd>{{ week.skills }}</dd></div>
+            <div><dt>What they're practising</dt><dd>{{ week.player_actions }}</dd></div>
+            <div><dt>What to praise</dt><dd>{{ week.praise }}</dd></div>
+            <div><dt>Skills they'll use</dt><dd>{{ week.skills }}</dd></div>
           </dl>
 
           {% for block in week.blocks %}
           {% assign act = gr.activities | where: "id", block.activity | first %}
-          <article class="gc-block">
+          <article class="gc-block{% if act.diagram_alt %} gc-block--illustrated{% endif %}">
             <header>
               <p class="gc-block-phase">{{ block.phase }}</p>
               <h3><a href="#drill-{{ act.id }}" data-gc-jump="{{ act.id }}">{{ act.name }}</a></h3>
               <p class="gc-block-time">{{ block.duration | default: act.duration }}</p>
             </header>
+
+            {% if act.diagram_alt %}
+            <figure class="gc-diagram gc-diagram--inline">
+              <img src="{{ diagram_base | append: act.id | append: '.svg' | relative_url }}" alt="{{ act.diagram_alt }}" width="440" height="300" loading="lazy" decoding="async">
+            </figure>
+            {% endif %}
+
             {% assign objective = block.objective | default: act.objective %}
-            {% if objective %}<p class="gc-block-objective"><b>Objective</b> {{ objective }}</p>{% endif %}
+            {% if objective %}<p class="gc-block-objective"><b>The idea</b> {{ objective }}</p>{% endif %}
             <p class="gc-block-setup">{% if block.notes %}{{ block.notes }} {% endif %}{{ act.setup }}</p>
             {% assign kw = block.key_words | default: act.key_words %}
-            {% if kw %}<p class="gc-keywords"><b>Key words</b> {{ kw }}</p>{% endif %}
+            {% if kw %}<p class="gc-keywords"><b>Shout</b> {{ kw }}</p>{% endif %}
             {% assign qs = block.questions | default: act.questions %}
             {% if qs %}
             <ul class="gc-questions">
               {% for q in qs %}<li>{{ q }}</li>{% endfor %}
             </ul>
             {% endif %}
-            <p class="gc-block-more"><a href="#drill-{{ act.id }}" data-gc-jump="{{ act.id }}">Full setup, rules and variations <span aria-hidden="true">&rarr;</span></a></p>
+            <p class="gc-block-more"><a href="#drill-{{ act.id }}" data-gc-jump="{{ act.id }}">All the rules, plus easier and harder versions <span aria-hidden="true">&rarr;</span></a></p>
           </article>
           {% endfor %}
         </div>
@@ -96,40 +107,43 @@ section_theme: project
 
     <div class="gc-checks">
       <div>
-        <p class="de-kicker">Five elements of a training activity</p>
+        <p class="de-kicker">Quick check on any game</p>
         <ol>{% for item in gr.five_elements %}<li>{{ item }}</li>{% endfor %}</ol>
       </div>
       <div>
-        <p class="de-kicker">Afterwards, ask yourself</p>
+        <p class="de-kicker">On the drive home</p>
         <ol>{% for item in gr.reflection_questions %}<li>{{ item }}</li>{% endfor %}</ol>
       </div>
     </div>
   </section>
 
-  <!-- ==================== GAMES & DRILLS ==================== -->
+  <!-- ==================== GAMES ==================== -->
   <section class="gc-panel" id="gc-panel-games" role="tabpanel" aria-labelledby="gc-tab-games" data-gc-panel="games" hidden>
     <header class="gc-intro">
       <div>
-        <p class="de-kicker">The library</p>
-        <h2>Every game, without the week.</h2>
-        <p>All {{ gr.activities | size }} activities from the season plus a few extras worth keeping in your back pocket. Search or filter, then open the one you want to run.</p>
+        <p class="de-kicker">All the games</p>
+        <h2>Every game, without hunting through the weeks.</h2>
+        <p>All {{ gr.activities | size }} of them, each one drawn out. Handy if you want to swap something out, run a favourite again, or fill ten minutes you didn't plan for.</p>
       </div>
     </header>
 
     <div class="gc-filters">
       <label class="gc-search">
-        <span class="sr-only">Search games and drills</span>
-        <input type="search" placeholder="Search games, setups, key words&hellip;" data-gc-search autocomplete="off">
+        <span class="sr-only">Search the games</span>
+        <input type="search" placeholder="Search for a game&hellip;" data-gc-search autocomplete="off">
       </label>
-      <div class="gc-chips" role="group" aria-label="Filter by focus">
+      <div class="gc-chips" role="group" aria-label="Filter the games">
         <button type="button" class="is-active" data-gc-filter="all">All</button>
         <button type="button" data-gc-filter="Attacking">Attacking</button>
         <button type="button" data-gc-filter="Defending">Defending</button>
         <button type="button" data-gc-filter="Ball work">Ball work</button>
-        <button type="button" data-gc-filter="Small-sided game">Small-sided</button>
+        <button type="button" data-gc-filter="Small-sided game">Just play</button>
         <button type="button" data-gc-filter="Warm-up">Arrival</button>
       </div>
     </div>
+
+    {% include grassroots-key.html %}
+
     <p class="gc-empty" data-gc-empty hidden>Nothing matches that. Try a shorter search.</p>
 
     <div class="gc-drills" data-gc-drills>
@@ -148,36 +162,46 @@ section_theme: project
           <span class="gc-toggle" aria-hidden="true"></span>
         </summary>
         <div class="gc-drill-body">
-          <dl class="gc-drill-meta">
-            <div><dt>Time</dt><dd>{{ act.duration }}</dd></div>
-            <div><dt>Players</dt><dd>{{ act.numbers }}</dd></div>
-            {% if act.equipment %}<div><dt>Kit</dt><dd>{{ act.equipment }}</dd></div>{% endif %}
-          </dl>
+          <div class="gc-drill-top{% if act.diagram_alt %} gc-drill-top--illustrated{% endif %}">
+            {% if act.diagram_alt %}
+            <figure class="gc-diagram">
+              <img src="{{ diagram_base | append: act.id | append: '.svg' | relative_url }}" alt="{{ act.diagram_alt }}" width="440" height="300" loading="lazy" decoding="async">
+            </figure>
+            {% endif %}
 
-          <div class="gc-drill-section">
-            <h4>Set up</h4>
-            <p>{{ act.setup }}</p>
+            <div class="gc-drill-top-copy">
+              <dl class="gc-drill-meta">
+                <div><dt>How long</dt><dd>{{ act.duration }}</dd></div>
+                <div><dt>How many</dt><dd>{{ act.numbers }}</dd></div>
+                {% if act.equipment %}<div><dt>What you need</dt><dd>{{ act.equipment }}</dd></div>{% endif %}
+              </dl>
+
+              <div class="gc-drill-section">
+                <h4>Setting it up</h4>
+                <p>{{ act.setup }}</p>
+              </div>
+            </div>
           </div>
 
           {% if act.rules %}
           <div class="gc-drill-section">
-            <h4>How it runs</h4>
+            <h4>How it works</h4>
             <ul>{% for rule in act.rules %}<li>{{ rule }}</li>{% endfor %}</ul>
           </div>
           {% endif %}
 
           {% if act.games %}
           <div class="gc-drill-section">
-            <h4>The games</h4>
+            <h4>The rounds</h4>
             <ul class="gc-festival">{% for g in act.games %}<li><strong>{{ g.name }}</strong> {{ g.body }}</li>{% endfor %}</ul>
           </div>
           {% endif %}
 
-          {% if act.key_words %}<p class="gc-keywords"><b>Key words</b> {{ act.key_words }}</p>{% endif %}
+          {% if act.key_words %}<p class="gc-keywords"><b>Shout</b> {{ act.key_words }}</p>{% endif %}
 
           {% if act.questions %}
           <div class="gc-drill-section gc-qa">
-            <h4>Ask them</h4>
+            <h4>Things to ask them</h4>
             <ol>
               {% for q in act.questions %}
               <li>
@@ -193,7 +217,7 @@ section_theme: project
           <div class="gc-variations">
             {% if act.easier %}
             <article class="gc-variation gc-variation--easier">
-              <p class="gc-variation-label">Less challenging</p>
+              <p class="gc-variation-label">If it's too hard</p>
               <h4>{{ act.easier.name }}</h4>
               <p>{{ act.easier.body }}</p>
               {% if act.easier.questions %}<ul>{% for q in act.easier.questions %}<li>{{ q }}</li>{% endfor %}</ul>{% endif %}
@@ -201,7 +225,7 @@ section_theme: project
             {% endif %}
             {% if act.harder %}
             <article class="gc-variation gc-variation--harder">
-              <p class="gc-variation-label">More challenging</p>
+              <p class="gc-variation-label">If it's too easy</p>
               <h4>{{ act.harder.name }}</h4>
               <p>{{ act.harder.body }}</p>
               {% if act.harder.questions %}<ul>{% for q in act.harder.questions %}<li>{{ q }}</li>{% endfor %}</ul>{% endif %}
@@ -210,8 +234,8 @@ section_theme: project
           </div>
           {% endif %}
 
-          {% if act.note %}<p class="gc-drill-note"><b>Note</b> {{ act.note }}</p>{% endif %}
-          {% if act.week %}<p class="gc-block-more"><a href="#week-{{ act.week }}" data-gc-week="{{ act.week }}">See it in the Week {{ act.week }} plan <span aria-hidden="true">&rarr;</span></a></p>{% endif %}
+          {% if act.note %}<p class="gc-drill-note"><b>Tip</b> {{ act.note }}</p>{% endif %}
+          {% if act.week %}<p class="gc-block-more"><a href="#week-{{ act.week }}" data-gc-week="{{ act.week }}">See the whole Week {{ act.week }} practice <span aria-hidden="true">&rarr;</span></a></p>{% endif %}
         </div>
       </details>
       {% endfor %}
@@ -223,8 +247,8 @@ section_theme: project
     <header class="gc-intro">
       <div>
         <p class="de-kicker">The short version</p>
-        <h2>Are they playing soccer more than you are talking about soccer?</h2>
-        <p>If the answer is yes, most of the rest takes care of itself. Everything below is the accumulated advice for volunteer coaches running a U8 team for the first time.</p>
+        <h2>Are they playing more than you're talking?</h2>
+        <p>If they are, you're doing fine. The rest of this is the stuff it helps to know before your first practice.</p>
       </div>
     </header>
 
@@ -239,8 +263,8 @@ section_theme: project
     </div>
 
     <section class="gc-sources">
-      <p class="de-kicker">Where this comes from</p>
-      <p>The weekly sessions are condensed from the Massachusetts Youth Soccer U8 session-plan library and its Beginner Volunteer Coach Survival Guide, which U.S. Soccer's Soccer Forward resource hub points volunteer coaches toward. Check your own league's rules for anything to do with match day.</p>
+      <p class="de-kicker">Where this came from</p>
+      <p>The practices are adapted from the Massachusetts Youth Soccer session plans and their guide for new volunteer coaches, which is what U.S. Soccer points beginners toward. The diagrams here are our own. Anything to do with match day - how many players, whether there's a keeper, what happens when the ball goes out - comes from your own league, so check with them.</p>
       <ul>
         {% for source in gr.sources %}
         <li><a href="{{ source.url }}" target="_blank" rel="noopener">{{ source.label }} <b aria-hidden="true">&nearr;</b></a></li>

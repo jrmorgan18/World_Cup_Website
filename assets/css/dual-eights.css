@@ -1336,6 +1336,33 @@ body { overflow-x: hidden; }
 .gc-flow article p:last-child { margin-top:10px; font-size:.9rem; line-height:1.55; }
 
 .gc-note { margin-top:18px; padding:14px 18px; background:rgba(239,35,60,.12); border-left:3px solid var(--project-red); color:#e6edf6; font-family:'Newsreader',serif; font-size:1rem; }
+.gc-note--quiet { margin-top:10px; background:rgba(255,255,255,.06); border-left-color:var(--project-blue-light); }
+
+/* --- Setup diagrams --- */
+.gc-diagram { margin:0 0 20px; padding:10px; max-width:520px; background:#eef3f8; border:1px solid #dde4ec; }
+.gc-diagram img { display:block; width:100%; height:auto; }
+.gc-diagram--inline { margin:14px 0 4px; max-width:400px; }
+
+/* Diagram beside the words once there's room for both. */
+.gc-block--illustrated { display:grid; grid-template-columns:minmax(0,400px) minmax(0,1fr); column-gap:30px; align-items:start; }
+.gc-block--illustrated > header,
+.gc-block--illustrated > .gc-block-more { grid-column:1 / -1; }
+.gc-block--illustrated > .gc-diagram { grid-column:1; grid-row:2 / span 20; margin-bottom:0; }
+.gc-block--illustrated > :not(header):not(.gc-diagram):not(.gc-block-more) { grid-column:2; }
+.gc-block--illustrated > .gc-block-objective { margin-top:14px; }
+
+.gc-drill-top--illustrated { display:grid; grid-template-columns:minmax(0,440px) minmax(0,1fr); column-gap:30px; align-items:start; }
+.gc-drill-top--illustrated .gc-diagram { margin-bottom:0; max-width:none; }
+.gc-drill-top--illustrated .gc-drill-meta { padding-top:0; border-bottom:0; }
+.gc-drill-top--illustrated .gc-drill-section { margin-top:16px; }
+.gc-drill-top:not(.gc-drill-top--illustrated) .gc-drill-meta { padding-top:16px; }
+
+.gc-key { margin-top:20px; padding:16px 18px 18px; background:#f7f9fc; color:#233148; border:1px solid rgba(255,255,255,.24); }
+.gc-key > p { color:#7a8594; font-family:var(--font-display); font-size:.6rem; font-weight:700; letter-spacing:1.4px; text-transform:uppercase; }
+.gc-key ul { margin-top:12px; display:flex; flex-wrap:wrap; gap:9px 22px; list-style:none; }
+.gc-key li { display:flex; align-items:center; gap:8px; font-size:.86rem; line-height:1.3; }
+.gc-key svg { flex:0 0 auto; width:24px; height:24px; }
+.gc-key li:nth-child(n+7) svg { width:36px; }
 
 /* --- Weekly plans --- */
 .gc-weeks { margin-top:32px; display:grid; gap:10px; }
@@ -1452,6 +1479,10 @@ details[open] > summary .gc-toggle::after { transform:rotate(0); }
   .gc-flow,.gc-checks,.gc-pointers,.gc-variations { grid-template-columns:1fr; }
   .gc-filters { grid-template-columns:1fr; }
   .gc-week-meta,.gc-drill-meta { grid-template-columns:1fr; gap:12px; }
+  .gc-block--illustrated,.gc-drill-top--illustrated { display:block; }
+  .gc-block--illustrated > .gc-diagram { margin-bottom:14px; }
+  .gc-drill-top--illustrated .gc-diagram { margin-bottom:20px; }
+  .gc-drill-top--illustrated .gc-drill-meta { padding-top:0; border-bottom:1px solid #dde4ec; }
 }
 
 @media (max-width: 760px) {
@@ -1466,4 +1497,7 @@ details[open] > summary .gc-toggle::after { transform:rotate(0); }
   .gc-week-body,.gc-drill-body { padding:0 16px 20px; }
   .gc-pointer-card,.gc-sources { padding:22px 20px; }
   .gc-checks > div { padding:20px; }
+  .gc-key { padding:14px 16px 16px; }
+  .gc-key ul { gap:9px 16px; }
+  .gc-diagram,.gc-diagram--inline { max-width:none; padding:8px; }
 }
