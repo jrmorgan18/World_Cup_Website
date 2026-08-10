@@ -1,4 +1,294 @@
 reports:
+  - id: "2026-08-09"
+    group: prospects
+    group_label: Prospects
+    published: "August 10, 2026"
+    window: "August 3-9, 2026"
+    week_ending: "August 9, 2026"
+    source_note: "Official club, league and competition records were prioritized. Local reporting was used for performance detail where available; the report does not infer appearances, minutes or production where a reliable match record was unavailable at cutoff."
+    summary:
+      biggest_risers: "Rokas Pukstas, whose 75th-minute solo goal powered Hajduk’s 5-1 European away win, and Cavan Sullivan, who continued to receive a major attacking role in Philadelphia’s Leagues Cup match against Cruz Azul despite a difficult finish. Peyton Miller’s continued starting role and Mathis Albert’s involvement in Dortmund’s Arsenal friendly were secondary positives."
+      issues_to_monitor: "Zavier Gozo’s still-unconfirmed Crystal Palace move and absence from RSL action, Niko Tsakiris’s injury timetable, and the lack of verified competitive action or match detail for several players during the Leagues Cup/preseason-heavy week."
+      best_story: "Pukstas responded to Hajduk’s prior European elimination with a decisive individual goal at Žalgiris. The performance offered the clearest on-field recovery signal of the week."
+    players:
+      - profile: caleb-wiley
+        name: Caleb Wiley
+        club: Chelsea
+        trend: "?"
+        direction: insufficient
+        direction_label: No new evidence
+        context: Preseason
+        recap: "No trustworthy first-team appearance, squad inclusion or transfer resolution was verified during the window."
+        development_read: "No performance evaluation this week. Securing a clear competitive pathway remains the immediate issue."
+        sources:
+          - { label: "Chelsea player news (official)", url: "https://www.chelseafc.com/en/teams/profile/caleb-wiley" }
+
+      - profile: damion-downs
+        name: Damion Downs
+        club: Southampton
+        trend: "?"
+        direction: insufficient
+        direction_label: No new evidence
+        context: Preseason
+        recap: "No trustworthy appearance or minute total was verified during Southampton’s transition into competitive play."
+        development_read: "No new performance evidence. The next verified competitive squad and appearance will be more informative than preseason carryover."
+        sources:
+          - { label: "Southampton fixtures (official)", url: "https://www.southamptonfc.com/en/fixtures" }
+
+      - profile: zavier-gozo
+        name: Zavier Gozo
+        club: Real Salt Lake
+        trend: "→"
+        direction: steady
+        direction_label: Holding
+        context: Transfer watch
+        recap: "No RSL competitive appearance was verified during the window. Local reporting indicated Crystal Palace had reached an agreement in principle, but neither club had confirmed a transfer by the reporting cutoff."
+        development_read: "The possible Premier League move is consequential but remains unconfirmed. Until it is official, there is no new on-field evidence to change the assessment."
+        sources:
+          - { label: "RSL player news (official)", url: "https://www.rsl.com/news/players/zavier-gozo/" }
+          - { label: "Salt Lake transfer context (local)", url: "https://www.sltrib.com/sports/rsl/2026/08/04/why-real-salt-lake-could-be-losing/" }
+
+      - profile: julian-hall
+        name: Julian Hall
+        club: New York Red Bulls
+        trend: "?"
+        direction: insufficient
+        direction_label: No new evidence
+        recap: "No trustworthy competitive appearance or minutes were verified during the window."
+        development_read: "No new evaluation. His next league or cup appearance should clarify whether the recent All-Star and MLS workload continues."
+        sources:
+          - { label: "Hall player news (official club)", url: "https://www.newyorkredbulls.com/players/julian-hall/news/" }
+
+      - profile: justin-ellis
+        name: Justin Ellis
+        club: Orlando City
+        trend: "?"
+        direction: insufficient
+        direction_label: No new evidence
+        recap: "No trustworthy competitive appearance or minutes were verified during the window."
+        development_read: "No new performance evaluation. The important next question is whether he retains a starting role alongside Orlando’s senior attacking options."
+        sources:
+          - { label: "Ellis player profile and match log (official club)", url: "https://www.orlandocitysc.com/players/justin-ellis/match-log/" }
+
+      - profile: adri-mehmeti
+        name: Adri Mehmeti
+        club: New York Red Bulls
+        trend: "?"
+        direction: insufficient
+        direction_label: No new evidence
+        recap: "No trustworthy competitive appearance or minutes were verified during the window."
+        development_read: "No new evaluation after his return from suspension; the next senior selection is the key evidence point."
+        sources:
+          - { label: "Mehmeti player profile (official club)", url: "https://www.newyorkredbulls.com/players/adri-mehmeti/" }
+
+      - profile: neil-pierre
+        name: Neil Pierre
+        club: Philadelphia Union
+        trend: "?"
+        direction: insufficient
+        direction_label: No new evidence
+        recap: "No trustworthy competitive appearance or minutes were verified during Philadelphia’s Leagues Cup week."
+        development_read: "No new performance evaluation. His recent MLS breakthrough remains the relevant baseline."
+        sources:
+          - { label: "Pierre player profile (official club)", url: "https://www.philadelphiaunion.com/players/neil-pierre/" }
+
+      - profile: chris-brady
+        name: Chris Brady
+        club: Chicago Fire
+        trend: "?"
+        direction: insufficient
+        direction_label: No new evidence
+        recap: "Chicago’s August 9 Leagues Cup fixture was not complete at the reporting cutoff, and no reliable prior-window appearance record was verified."
+        development_read: "No performance evaluation this week. A completed match record is needed before changing the trend."
+        sources:
+          - { label: "Chicago Fire fixtures (official club)", url: "https://www.chicagofirefc.com/schedule/" }
+
+      - profile: rokas-pukstas
+        name: Rokas Pukstas
+        club: Hajduk Split
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        context: Europa Conference League qualifying
+        recap: "Scored a 75th-minute solo goal in Hajduk’s 5-1 away win over Žalgiris in Europa Conference League qualifying. Exact official minutes and starting status were not verified by cutoff."
+        development_read: "A decisive individual goal after the Pafos elimination is the week’s strongest recovery signal. The next test is repeating that influence in league and second-leg competition."
+        sources:
+          - { label: "Hajduk match list (official club)", url: "https://hajduk.hr/eng/matches" }
+          - { label: "Žalgiris vs. Hajduk report (secondary)", url: "https://www.uefa.com/uefaconferenceleague/" }
+
+      - profile: cavan-sullivan
+        name: Cavan Sullivan
+        club: Philadelphia Union
+        trend: "→"
+        direction: steady
+        direction_label: Holding
+        context: Leagues Cup
+        recap: "Appeared in Philadelphia’s 1-0 Leagues Cup loss to Cruz Azul and was involved in several attacking moments, but did not record a goal or assist. Exact minutes were not verified by a reliable official match record at cutoff."
+        development_read: "The attacking responsibility remains a positive, while the missed chances and result keep the week from being a rise. Converting the pressure he creates is the next step."
+        sources:
+          - { label: "Philadelphia Union news (official club)", url: "https://www.philadelphiaunion.com/news/" }
+          - { label: "Cruz Azul match reaction (local supporter coverage)", url: "https://phillysoccerpage.net/" }
+
+      - profile: niko-tsakiris
+        name: Niko Tsakiris
+        club: San Jose Earthquakes
+        trend: "→"
+        direction: steady
+        direction_label: Injured
+        context: Injury
+        recap: "No performance evaluation this week. He remains unavailable with the previously reported projected mid-August timetable."
+        development_read: "The outlook is unchanged until he returns to team training and competitive selection."
+        sources:
+          - { label: "Earthquakes player news (official club)", url: "https://www.sjearthquakes.com/news/" }
+
+      - profile: paxten-aaronson
+        name: Paxten Aaronson
+        club: Colorado Rapids
+        trend: "?"
+        direction: insufficient
+        direction_label: No new evidence
+        recap: "No trustworthy competitive appearance or minutes were verified during the window."
+        development_read: "No new evaluation. His next confirmed MLS or Leagues Cup match is needed to assess whether his regular role continues."
+        sources:
+          - { label: "Colorado Rapids fixtures (official club)", url: "https://www.coloradorapids.com/schedule/" }
+
+      - profile: mathis-albert
+        name: Mathis Albert
+        club: Borussia Dortmund
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        context: Preseason
+        recap: "Featured in Borussia Dortmund’s preseason match at Arsenal and took Dortmund’s fourth penalty in the shootout, which was saved. Exact playing time was not verified."
+        development_read: "Involvement in a high-profile senior preseason setting is positive, even with the missed penalty. His competitive pathway remains the more important question once the Bundesliga season begins."
+        sources:
+          - { label: "Dortmund player profile (official club)", url: "https://www.bvb.de/de/de/mannschaften/fussball/spieler/mathis-albert.html" }
+          - { label: "Arsenal vs. Dortmund report (secondary)", url: "https://as.com/futbol/internacional/tzolis-fue-vinicius-f202608-n/" }
+
+      - profile: diego-kochen
+        name: Diego Kochen
+        club: Lyngby
+        trend: "?"
+        direction: insufficient
+        direction_label: No new evidence
+        recap: "No trustworthy competitive appearance or minutes were verified during the window."
+        development_read: "No new evaluation. His loan is still valuable only if it continues to produce Danish top-flight starts."
+        sources:
+          - { label: "Lyngby news (official club)", url: "https://lyngby-boldklub.dk/" }
+
+      - profile: benjamin-cremaschi
+        name: Benjamin Cremaschi
+        club: Parma
+        trend: "?"
+        direction: insufficient
+        direction_label: No new evidence
+        context: Preseason
+        recap: "No trustworthy first-team appearance, availability update or minute total was verified during the window."
+        development_read: "No new performance evaluation. A clean preseason health and selection picture remains the immediate priority."
+        sources:
+          - { label: "Parma news (official club)", url: "https://www.parmacalcio1913.com/news/" }
+
+      - profile: kevin-paredes
+        name: Kevin Paredes
+        club: FC Utrecht
+        trend: "?"
+        direction: insufficient
+        direction_label: No new evidence
+        context: Preseason
+        recap: "No trustworthy competitive appearance or minute total was verified during the window."
+        development_read: "No new evaluation. The priority is converting his encouraging early Utrecht integration into a league role."
+        sources:
+          - { label: "Utrecht preseason report (official club)", url: "https://www.fcutrecht.nl/nieuws/2026/juli/fc-utrecht-wint-van-pec-zwolle/" }
+
+      - profile: peyton-miller
+        name: Peyton Miller
+        club: New England Revolution
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        recap: "Started in New England’s August 8 match against Houston. A reliable final minute total and individual production record were not verified by cutoff."
+        development_read: "Another first-team start sustains the positive trend. The next stage is confirming how consistently the attacking-wing role survives against varied opponents."
+        sources:
+          - { label: "New England vs. Houston match center (official MLS)", url: "https://www.mlssoccer.com/competitions/mls-regular-season/" }
+
+      - profile: cooper-sanchez
+        name: Cooper Sanchez
+        club: Atlanta United
+        trend: "?"
+        direction: insufficient
+        direction_label: No new evidence
+        recap: "No trustworthy club appearance, minutes or availability update was verified during the window."
+        development_read: "No new performance evaluation. The next senior or Atlanta United 2 selection will determine whether his international-duty interruption affected his club pathway."
+        sources:
+          - { label: "Atlanta United news (official club)", url: "https://www.atlutd.com/news/" }
+
+      - profile: beau-leroux
+        name: Beau Leroux
+        club: San Jose Earthquakes
+        trend: "?"
+        direction: insufficient
+        direction_label: No new evidence
+        recap: "No trustworthy competitive appearance or minutes were verified during the window."
+        development_read: "No new evaluation. His recently extended contract preserves the platform; the next question is his match influence after the break."
+        sources:
+          - { label: "Leroux contract extension (official club)", url: "https://www.sjearthquakes.com/news/news-earthquakes-sign-midfielder-beau-leroux-to-new-contract" }
+
+      - profile: francis-westfield
+        name: Francis Westfield
+        club: Philadelphia Union
+        trend: "?"
+        direction: insufficient
+        direction_label: No new evidence
+        recap: "No trustworthy competitive appearance or minute total was verified during Philadelphia’s Leagues Cup week."
+        development_read: "No new evaluation. His recent MLS start and attacking involvement remain the baseline to build from."
+        sources:
+          - { label: "Westfield player profile (official club)", url: "https://www.philadelphiaunion.com/players/francis-westfield/" }
+
+      - profile: cole-campbell
+        name: Cole Campbell
+        club: SV Elversberg
+        trend: "→"
+        direction: steady
+        direction_label: Holding
+        context: Preseason
+        recap: "No trustworthy competitive appearance or minutes were verified during Elversberg’s preseason period."
+        development_read: "No on-field change this week. His permanent move to a newly promoted Bundesliga club remains a meaningful pathway upgrade, with league selection the next key evidence."
+        sources:
+          - { label: "Campbell joins Elversberg (official Bundesliga)", url: "https://www.bundesliga.com/en/bundesliga/news/cole-campbell-signs-elversberg-borussia-dortmund-38140" }
+
+      - profile: luca-bombino
+        name: Luca Bombino
+        club: San Diego FC
+        trend: "?"
+        direction: insufficient
+        direction_label: No new evidence
+        recap: "San Diego’s August 9 Leagues Cup fixture was not complete at the reporting cutoff, and no reliable prior-window appearance record was verified."
+        development_read: "No performance evaluation this week. A completed match record is required before adjusting the trend."
+        sources:
+          - { label: "San Diego FC fixtures (official club)", url: "https://www.sandiegofc.com/schedule/" }
+
+      - profile: jackson-hopkins
+        name: Jackson Hopkins
+        club: D.C. United
+        trend: "?"
+        direction: insufficient
+        direction_label: No new evidence
+        recap: "No trustworthy competitive appearance or minutes were verified during the window."
+        development_read: "No new evaluation. His recently extended U22 contract preserves the opportunity; the next matchday role matters most."
+        sources:
+          - { label: "Hopkins U22 contract (official club)", url: "https://www.dcunited.com/news/d-c-united-sign-homegrown-midfielder-jackson-hopkins-to-a-u22-initiative-contract-through-june-2029" }
+
+      - profile: duran-ferree
+        name: Duran Ferree
+        club: San Diego FC
+        trend: "?"
+        direction: insufficient
+        direction_label: No new evidence
+        recap: "San Diego’s August 9 Leagues Cup fixture was not complete at the reporting cutoff, and no reliable prior-window appearance record was verified."
+        development_read: "No performance evaluation this week. The next completed match record will determine whether he remains in the goalkeeper rotation."
+        sources:
+          - { label: "San Diego FC fixtures (official club)", url: "https://www.sandiegofc.com/schedule/" }
+
   - id: "2026-08-02"
     group: prospects
     group_label: Prospects
