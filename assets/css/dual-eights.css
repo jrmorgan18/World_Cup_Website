@@ -1318,13 +1318,10 @@ body { overflow-x: hidden; }
 .gc-tabs button:focus-visible { outline:2px solid var(--project-blue-light); outline-offset:2px; }
 
 .gc-panel { padding-top:34px; }
-.gc-intro { display:grid; grid-template-columns:minmax(0,1.6fr) minmax(240px,.9fr); gap:36px; align-items:end; padding-bottom:30px; border-bottom:1px solid var(--color-border); }
+.gc-intro { padding-bottom:30px; border-bottom:1px solid var(--color-border); }
 .gc-intro .de-kicker { color:var(--project-red); }
 .gc-intro h2 { margin-top:8px; color:#fff; font-family:var(--font-display); font-size:clamp(1.8rem,3.4vw,2.9rem); line-height:1.02; text-transform:uppercase; }
 .gc-intro > div > p:last-child { margin-top:14px; max-width:60ch; color:var(--color-text-muted); font-family:'Newsreader',serif; font-size:1.05rem; line-height:1.55; }
-.gc-facts { display:grid; gap:10px; }
-.gc-facts span { padding:12px 15px; display:grid; gap:3px; background:rgba(255,255,255,.05); border-left:3px solid var(--project-red); color:#9fb0c6; font-family:var(--font-display); font-size:.6rem; letter-spacing:1.1px; text-transform:uppercase; }
-.gc-facts strong { color:#fff; font-size:.95rem; letter-spacing:.4px; }
 
 .gc-flow { margin-top:32px; display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
 .gc-flow article { padding:22px 24px; background:#f7f9fc; color:#233148; border-top:4px solid var(--project-blue-light); }
@@ -1342,6 +1339,12 @@ body { overflow-x: hidden; }
 .gc-diagram { margin:0 0 20px; padding:10px; max-width:520px; background:#eef3f8; border:1px solid #dde4ec; }
 .gc-diagram img { display:block; width:100%; height:auto; }
 .gc-diagram--inline { margin:14px 0 4px; max-width:400px; }
+.gc-diagram figcaption { margin:0 0 9px; color:#5d6b7d; font-family:var(--font-display); font-size:.58rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; }
+.gc-diagram figcaption span { margin-right:6px; padding:3px 6px; color:#fff; background:var(--project-red); }
+.gc-diagram--current figcaption span { background:#6c7888; }
+.gc-diagram-comparison { display:grid; grid-template-columns:minmax(0,1.45fr) minmax(0,1fr); gap:12px; }
+.gc-diagram-comparison .gc-diagram { margin-bottom:0; max-width:none; }
+.gc-diagram-comparison .gc-diagram--current { align-self:start; }
 
 /* Diagram beside the words once there's room for both. */
 .gc-block--illustrated { display:grid; grid-template-columns:minmax(0,400px) minmax(0,1fr); column-gap:30px; align-items:start; }
@@ -1353,6 +1356,7 @@ body { overflow-x: hidden; }
 
 .gc-drill-top--illustrated { display:grid; grid-template-columns:minmax(0,440px) minmax(0,1fr); column-gap:30px; align-items:start; }
 .gc-drill-top--illustrated .gc-diagram { margin-bottom:0; max-width:none; }
+.gc-drill-top--compare { grid-template-columns:minmax(0,1.5fr) minmax(280px,.75fr); }
 .gc-drill-top--illustrated .gc-drill-meta { padding-top:0; border-bottom:0; }
 .gc-drill-top--illustrated .gc-drill-section { margin-top:16px; }
 .gc-drill-top:not(.gc-drill-top--illustrated) .gc-drill-meta { padding-top:16px; }
@@ -1474,8 +1478,6 @@ details[open] > summary .gc-toggle::after { transform:rotate(0); }
 .gc-sources a b { color:var(--project-red); }
 
 @media (max-width: 900px) {
-  .gc-intro { grid-template-columns:1fr; align-items:start; gap:22px; }
-  .gc-facts { grid-template-columns:repeat(3,1fr); }
   .gc-flow,.gc-checks,.gc-pointers,.gc-variations { grid-template-columns:1fr; }
   .gc-filters { grid-template-columns:1fr; }
   .gc-week-meta,.gc-drill-meta { grid-template-columns:1fr; gap:12px; }
@@ -1489,7 +1491,6 @@ details[open] > summary .gc-toggle::after { transform:rotate(0); }
   .gc-shell { padding:0 20px 70px; }
   .gc-tabs { top:116px; margin:0 -20px 26px; padding:9px 20px; }
   .gc-panel { padding-top:26px; }
-  .gc-facts { grid-template-columns:1fr; }
   .gc-week > summary,.gc-drill > summary { padding:16px 44px 16px 16px; gap:13px; }
   .gc-toggle { right:16px; }
   .gc-week-no { font-size:1.5rem; }
@@ -1498,6 +1499,7 @@ details[open] > summary .gc-toggle::after { transform:rotate(0); }
   .gc-pointer-card,.gc-sources { padding:22px 20px; }
   .gc-checks > div { padding:20px; }
   .gc-key { padding:14px 16px 16px; }
+  .gc-diagram-comparison { grid-template-columns:1fr; }
   .gc-key ul { gap:9px 16px; }
   .gc-diagram,.gc-diagram--inline { max-width:none; padding:8px; }
 }

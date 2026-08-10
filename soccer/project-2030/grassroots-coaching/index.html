@@ -16,109 +16,13 @@ section_theme: project
 
 <div class="gc-shell">
   <div class="gc-tabs" role="tablist" aria-label="Grassroots coaching sections">
-    <button type="button" role="tab" id="gc-tab-plans" aria-controls="gc-panel-plans" aria-selected="true" data-gc-tab="plans">Weekly plans</button>
-    <button type="button" role="tab" id="gc-tab-games" aria-controls="gc-panel-games" aria-selected="false" data-gc-tab="games" tabindex="-1">Games</button>
+    <button type="button" role="tab" id="gc-tab-games" aria-controls="gc-panel-games" aria-selected="true" data-gc-tab="games">Games/Drills</button>
     <button type="button" role="tab" id="gc-tab-pointers" aria-controls="gc-panel-pointers" aria-selected="false" data-gc-tab="pointers" tabindex="-1">Pointers</button>
+    <button type="button" role="tab" id="gc-tab-plans" aria-controls="gc-panel-plans" aria-selected="false" data-gc-tab="plans" tabindex="-1">Weekly plans</button>
   </div>
 
-  <!-- ==================== WEEKLY PLANS ==================== -->
-  <section class="gc-panel" id="gc-panel-plans" role="tabpanel" aria-labelledby="gc-tab-plans" data-gc-panel="plans">
-    <header class="gc-intro">
-      <div>
-        <p class="de-kicker">The season</p>
-        <h2>Twelve practices, all the same shape.</h2>
-        <p>Play, teach one thing, play again. Open a week to see how long each bit takes, how to set it out, and what to ask them. Every game is drawn out, and links to its own page with the easier and harder versions.</p>
-      </div>
-      <aside class="gc-facts">
-        <span><strong>{{ gr.meta.session_length }}</strong>Each practice</span>
-        <span><strong>8-12 kids</strong>Works for</span>
-        <span><strong>{{ gr.meta.ball }}</strong>Ball size</span>
-      </aside>
-    </header>
-
-    <div class="gc-flow" aria-label="How a practice runs">
-      {% for step in gr.session_flow %}
-      <article>
-        <p class="gc-flow-phase">{{ step.phase }}</p>
-        <h3>{{ step.label }}</h3>
-        <small>{{ step.minutes }}</small>
-        <p>{{ step.body }}</p>
-      </article>
-      {% endfor %}
-    </div>
-
-    <p class="gc-note">{{ gr.meta.space_note }}</p>
-    <p class="gc-note gc-note--quiet">{{ gr.meta.rules_note }}</p>
-
-    {% include grassroots-key.html %}
-
-    <div class="gc-weeks">
-      {% for week in gr.weeks %}
-      <details class="gc-week" id="week-{{ week.number }}">
-        <summary>
-          <span class="gc-week-no">{{ week.number | prepend: '0' | slice: -2, 2 }}</span>
-          <span class="gc-week-head">
-            <small class="gc-chip gc-chip--{{ week.moment | downcase }}">{{ week.moment }}</small>
-            <strong>{{ week.goal }}</strong>
-            <span>{{ week.player_actions }}</span>
-          </span>
-          <span class="gc-toggle" aria-hidden="true"></span>
-        </summary>
-        <div class="gc-week-body">
-          <dl class="gc-week-meta">
-            <div><dt>What they're practising</dt><dd>{{ week.player_actions }}</dd></div>
-            <div><dt>What to praise</dt><dd>{{ week.praise }}</dd></div>
-            <div><dt>Skills they'll use</dt><dd>{{ week.skills }}</dd></div>
-          </dl>
-
-          {% for block in week.blocks %}
-          {% assign act = gr.activities | where: "id", block.activity | first %}
-          <article class="gc-block{% if act.diagram_alt %} gc-block--illustrated{% endif %}">
-            <header>
-              <p class="gc-block-phase">{{ block.phase }}</p>
-              <h3><a href="#drill-{{ act.id }}" data-gc-jump="{{ act.id }}">{{ act.name }}</a></h3>
-              <p class="gc-block-time">{{ block.duration | default: act.duration }}</p>
-            </header>
-
-            {% if act.diagram_alt %}
-            <figure class="gc-diagram gc-diagram--inline">
-              <img src="{{ diagram_base | append: act.id | append: '.svg' | relative_url }}" alt="{{ act.diagram_alt }}" width="440" height="300" loading="lazy" decoding="async">
-            </figure>
-            {% endif %}
-
-            {% assign objective = block.objective | default: act.objective %}
-            {% if objective %}<p class="gc-block-objective"><b>The idea</b> {{ objective }}</p>{% endif %}
-            <p class="gc-block-setup">{% if block.notes %}{{ block.notes }} {% endif %}{{ act.setup }}</p>
-            {% assign kw = block.key_words | default: act.key_words %}
-            {% if kw %}<p class="gc-keywords"><b>Shout</b> {{ kw }}</p>{% endif %}
-            {% assign qs = block.questions | default: act.questions %}
-            {% if qs %}
-            <ul class="gc-questions">
-              {% for q in qs %}<li>{{ q }}</li>{% endfor %}
-            </ul>
-            {% endif %}
-            <p class="gc-block-more"><a href="#drill-{{ act.id }}" data-gc-jump="{{ act.id }}">All the rules, plus easier and harder versions <span aria-hidden="true">&rarr;</span></a></p>
-          </article>
-          {% endfor %}
-        </div>
-      </details>
-      {% endfor %}
-    </div>
-
-    <div class="gc-checks">
-      <div>
-        <p class="de-kicker">Quick check on any game</p>
-        <ol>{% for item in gr.five_elements %}<li>{{ item }}</li>{% endfor %}</ol>
-      </div>
-      <div>
-        <p class="de-kicker">On the drive home</p>
-        <ol>{% for item in gr.reflection_questions %}<li>{{ item }}</li>{% endfor %}</ol>
-      </div>
-    </div>
-  </section>
-
   <!-- ==================== GAMES ==================== -->
-  <section class="gc-panel" id="gc-panel-games" role="tabpanel" aria-labelledby="gc-tab-games" data-gc-panel="games" hidden>
+  <section class="gc-panel" id="gc-panel-games" role="tabpanel" aria-labelledby="gc-tab-games" data-gc-panel="games">
     <header class="gc-intro">
       <div>
         <p class="de-kicker">All the games</p>
@@ -162,11 +66,24 @@ section_theme: project
           <span class="gc-toggle" aria-hidden="true"></span>
         </summary>
         <div class="gc-drill-body">
-          <div class="gc-drill-top{% if act.diagram_alt %} gc-drill-top--illustrated{% endif %}">
+          <div class="gc-drill-top{% if act.diagram_alt %} gc-drill-top--illustrated{% endif %}{% if act.illustration_file %} gc-drill-top--compare{% endif %}">
             {% if act.diagram_alt %}
-            <figure class="gc-diagram">
-              <img src="{{ diagram_base | append: act.id | append: '.svg' | relative_url }}" alt="{{ act.diagram_alt }}" width="440" height="300" loading="lazy" decoding="async">
-            </figure>
+              {% if act.illustration_file %}
+              <div class="gc-diagram-comparison" aria-label="New and current setup visuals">
+                <figure class="gc-diagram gc-diagram--concept">
+                  <figcaption><span>New</span> Coaching illustration</figcaption>
+                  <img src="{{ diagram_base | append: act.illustration_file | relative_url }}" alt="{{ act.illustration_alt }}" width="1200" height="800" loading="lazy" decoding="async">
+                </figure>
+                <figure class="gc-diagram gc-diagram--current">
+                  <figcaption><span>Current</span> Tactics diagram</figcaption>
+                  <img src="{{ diagram_base | append: act.id | append: '.svg' | relative_url }}" alt="{{ act.diagram_alt }}" width="440" height="300" loading="lazy" decoding="async">
+                </figure>
+              </div>
+              {% else %}
+              <figure class="gc-diagram">
+                <img src="{{ diagram_base | append: act.id | append: '.svg' | relative_url }}" alt="{{ act.diagram_alt }}" width="440" height="300" loading="lazy" decoding="async">
+              </figure>
+              {% endif %}
             {% endif %}
 
             <div class="gc-drill-top-copy">
@@ -272,6 +189,101 @@ section_theme: project
       </ul>
     </section>
   </section>
+  <!-- ==================== WEEKLY PLANS ==================== -->
+  <section class="gc-panel" id="gc-panel-plans" role="tabpanel" aria-labelledby="gc-tab-plans" data-gc-panel="plans" hidden>
+    <header class="gc-intro">
+      <div>
+        <p class="de-kicker">The season</p>
+        <h2>Twelve practices, all the same shape.</h2>
+        <p>Play, teach one thing, play again. Open a week to see how long each bit takes, how to set it out, and what to ask them. Every game is drawn out, and links to its own page with the easier and harder versions.</p>
+      </div>
+    </header>
+
+    <div class="gc-flow" aria-label="How a practice runs">
+      {% for step in gr.session_flow %}
+      <article>
+        <p class="gc-flow-phase">{{ step.phase }}</p>
+        <h3>{{ step.label }}</h3>
+        <small>{{ step.minutes }}</small>
+        <p>{{ step.body }}</p>
+      </article>
+      {% endfor %}
+    </div>
+
+    <p class="gc-note">{{ gr.meta.space_note }}</p>
+    <p class="gc-note gc-note--quiet">{{ gr.meta.rules_note }}</p>
+
+    {% include grassroots-key.html %}
+
+    <div class="gc-weeks">
+      {% for week in gr.weeks %}
+      <details class="gc-week" id="week-{{ week.number }}">
+        <summary>
+          <span class="gc-week-no">{{ week.number | prepend: '0' | slice: -2, 2 }}</span>
+          <span class="gc-week-head">
+            <small class="gc-chip gc-chip--{{ week.moment | downcase }}">{{ week.moment }}</small>
+            <strong>{{ week.goal }}</strong>
+            <span>{{ week.player_actions }}</span>
+          </span>
+          <span class="gc-toggle" aria-hidden="true"></span>
+        </summary>
+        <div class="gc-week-body">
+          <dl class="gc-week-meta">
+            <div><dt>What they're practising</dt><dd>{{ week.player_actions }}</dd></div>
+            <div><dt>What to praise</dt><dd>{{ week.praise }}</dd></div>
+            <div><dt>Skills they'll use</dt><dd>{{ week.skills }}</dd></div>
+          </dl>
+
+          {% for block in week.blocks %}
+          {% assign act = gr.activities | where: "id", block.activity | first %}
+          <article class="gc-block{% if act.diagram_alt %} gc-block--illustrated{% endif %}">
+            <header>
+              <p class="gc-block-phase">{{ block.phase }}</p>
+              <h3><a href="#drill-{{ act.id }}" data-gc-jump="{{ act.id }}">{{ act.name }}</a></h3>
+              <p class="gc-block-time">{{ block.duration | default: act.duration }}</p>
+            </header>
+
+            {% if act.diagram_alt %}
+            <figure class="gc-diagram gc-diagram--inline">
+              {% if act.illustration_file %}
+              <img src="{{ diagram_base | append: act.illustration_file | relative_url }}" alt="{{ act.illustration_alt }}" width="1200" height="800" loading="lazy" decoding="async">
+              {% else %}
+              <img src="{{ diagram_base | append: act.id | append: '.svg' | relative_url }}" alt="{{ act.diagram_alt }}" width="440" height="300" loading="lazy" decoding="async">
+              {% endif %}
+            </figure>
+            {% endif %}
+
+            {% assign objective = block.objective | default: act.objective %}
+            {% if objective %}<p class="gc-block-objective"><b>The idea</b> {{ objective }}</p>{% endif %}
+            <p class="gc-block-setup">{% if block.notes %}{{ block.notes }} {% endif %}{{ act.setup }}</p>
+            {% assign kw = block.key_words | default: act.key_words %}
+            {% if kw %}<p class="gc-keywords"><b>Shout</b> {{ kw }}</p>{% endif %}
+            {% assign qs = block.questions | default: act.questions %}
+            {% if qs %}
+            <ul class="gc-questions">
+              {% for q in qs %}<li>{{ q }}</li>{% endfor %}
+            </ul>
+            {% endif %}
+            <p class="gc-block-more"><a href="#drill-{{ act.id }}" data-gc-jump="{{ act.id }}">All the rules, plus easier and harder versions <span aria-hidden="true">&rarr;</span></a></p>
+          </article>
+          {% endfor %}
+        </div>
+      </details>
+      {% endfor %}
+    </div>
+
+    <div class="gc-checks">
+      <div>
+        <p class="de-kicker">Quick check on any game</p>
+        <ol>{% for item in gr.five_elements %}<li>{{ item }}</li>{% endfor %}</ol>
+      </div>
+      <div>
+        <p class="de-kicker">On the drive home</p>
+        <ol>{% for item in gr.reflection_questions %}<li>{{ item }}</li>{% endfor %}</ol>
+      </div>
+    </div>
+  </section>
+
 </div>
 
 <script src="{{ '/assets/js/grassroots-coaching.js' | relative_url }}"></script>

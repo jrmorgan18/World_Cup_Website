@@ -27,7 +27,8 @@
   // Keep the tab in the URL so a coach can share (or bookmark) a specific view.
   function rememberTab(name) {
     if (!window.history || !window.history.replaceState) return;
-    window.history.replaceState(null, "", name === "plans" ? window.location.pathname : "#" + name);
+    // Games is the landing view, so it gets the bare URL.
+    window.history.replaceState(null, "", name === "games" ? window.location.pathname : "#" + name);
   }
 
   tabs.forEach(function (tab, index) {
