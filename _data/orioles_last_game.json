@@ -1,93 +1,98 @@
 {
-  "generated_at": "2026-08-11T06:45:38Z",
-  "game_pk": 823675,
-  "date": "2026-08-10",
+  "generated_at": "2026-08-12T07:06:55Z",
+  "game_pk": 823673,
+  "date": "2026-08-11",
   "venue": "Target Field",
   "home_away": "away",
   "opponent": "Minnesota Twins",
   "opponent_abbr": "MIN",
-  "result": "L",
+  "result": "W",
   "orioles_score": 5,
-  "opponent_score": 9,
-  "orioles_hits": 7,
-  "opponent_hits": 14,
+  "opponent_score": 2,
+  "orioles_hits": 11,
+  "opponent_hits": 7,
   "orioles_errors": 1,
   "opponent_errors": 0,
   "winning_pitcher": {
-    "name": "Dean Kremer",
-    "team": "MIN",
-    "record": "2-4",
-    "line": "7.0 IP, ER, 7 K, BB"
+    "name": "Brandon Young",
+    "team": "BAL",
+    "record": "9-3",
+    "line": "6.0 IP, ER, 4 K, 3 BB"
   },
   "losing_pitcher": {
-    "name": "Trevor Rogers",
-    "team": "BAL",
-    "record": "7-8",
-    "line": "4.0 IP, 2 ER, 4 K, 2 BB"
+    "name": "Bailey Ober",
+    "team": "MIN",
+    "record": "7-4",
+    "line": "6.0 IP, 5 ER, 4 K, BB"
   },
-  "save_pitcher": null,
+  "save_pitcher": {
+    "name": "Andrew Kittredge",
+    "team": "BAL",
+    "record": "6",
+    "line": "1.0 IP, 0 ER, K, 0 BB"
+  },
   "key_players": [
     {
-      "name": "Dean Kremer",
-      "team": "MIN",
-      "position": "P",
-      "line": "7.0 IP, ER, 7 K, BB"
+      "name": "Pete Alonso",
+      "team": "BAL",
+      "position": "1B",
+      "line": "3-4 | HR, BB, K"
     },
     {
-      "name": "Austin Martin",
-      "team": "MIN",
-      "position": "LF",
-      "line": "4-5 | HR, 2B, RBI"
+      "name": "Gunnar Henderson",
+      "team": "BAL",
+      "position": "SS",
+      "line": "3-5 | HR, 2B, K"
     },
     {
-      "name": "Ryan Jeffers",
-      "team": "MIN",
-      "position": "C",
-      "line": "2-4 | 2B, BB, 3 RBI"
+      "name": "Christian Encarnacion-Strand",
+      "team": "BAL",
+      "position": "3B",
+      "line": "3-4 | HR, RBI, R"
     }
   ],
-  "summary": "The Orioles fell to the Twins 5-9 on the road at Twins. Dean Kremer led the way (7.0 IP, ER, 7 K, BB). Baltimore has lost 1 straight.",
+  "summary": "The Orioles beat the Twins 5-2 on the road at Twins. Pete Alonso led the way (3-4 | HR, BB, K). Baltimore has won 1 straight.",
   "record": {
-    "wins": 57,
+    "wins": 58,
     "losses": 62,
-    "pct": ".479",
+    "pct": ".483",
     "division": "AL East",
     "division_rank": 4,
     "games_back": "15.5",
-    "streak": "L1",
+    "streak": "W1",
     "last_10": "4-6"
   },
   "wild_card": {
     "rank": 7,
     "spots": 3,
-    "games_back": "3.0",
-    "status_text": "3.0 games back of the third AL Wild Card spot.",
+    "games_back": "2.0",
+    "status_text": "2.0 games back of the third AL Wild Card spot.",
     "ladder": [
       {
         "team": "Rangers",
         "abbr": "TEX",
         "wins": 60,
-        "losses": 59,
+        "losses": 60,
         "games_back": null,
         "wild_card_rank": 3,
         "is_orioles": false,
         "is_cutoff": true
       },
       {
-        "team": "Twins",
-        "abbr": "MIN",
+        "team": "Tigers",
+        "abbr": "DET",
         "wins": 59,
-        "losses": 61,
-        "games_back": "1.5",
+        "losses": 60,
+        "games_back": "0.5",
         "wild_card_rank": 4,
         "is_orioles": false,
         "is_cutoff": false
       },
       {
-        "team": "Tigers",
-        "abbr": "DET",
-        "wins": 58,
-        "losses": 60,
+        "team": "Twins",
+        "abbr": "MIN",
+        "wins": 59,
+        "losses": 62,
         "games_back": "1.5",
         "wild_card_rank": 5,
         "is_orioles": false,
@@ -97,7 +102,7 @@
         "team": "Guardians",
         "abbr": "CLE",
         "wins": 58,
-        "losses": 61,
+        "losses": 62,
         "games_back": "2.0",
         "wild_card_rank": 6,
         "is_orioles": false,
@@ -106,9 +111,9 @@
       {
         "team": "Orioles",
         "abbr": "BAL",
-        "wins": 57,
+        "wins": 58,
         "losses": 62,
-        "games_back": "3.0",
+        "games_back": "2.0",
         "wild_card_rank": 7,
         "is_orioles": true,
         "is_cutoff": false
