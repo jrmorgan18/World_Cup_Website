@@ -218,9 +218,12 @@ body { overflow-x: hidden; }
 .hub-hero-stat { position: relative; z-index: 3; flex: 0 0 210px; padding: 22px; border: 1px solid rgba(255,255,255,.2); background: rgba(8,13,23,.7); }
 .hub-hero-stat strong { display: block; color: var(--de-soccer); font-family: var(--font-display); font-size: 4rem; line-height: 1; }
 .hub-hero-stat span { display: block; margin-top: 10px; color: #b6bdca; font-size: .8rem; line-height: 1.4; text-transform: uppercase; letter-spacing: 1px; }
-.section-subnav { max-width: var(--de-wide); margin: 0 auto; min-height: 58px; padding: 0 32px; display: flex; align-items: center; gap: 34px; border-bottom: 1px solid var(--color-border); }
-.section-subnav a { font-family: var(--font-display); font-size: .72rem; text-transform: uppercase; letter-spacing: 1.2px; color: var(--color-text-muted); }
-.section-subnav a:hover { color: var(--de-soccer); }
+.section-subnav { max-width: var(--de-wide); margin: 0 auto; min-height: 58px; padding: 0 32px; display: flex; align-items: center; gap: 34px; border-top: 1px solid rgba(212,168,67,.18); border-bottom: 1px solid rgba(212,168,67,.28); background:#0b1322; scrollbar-width:none; }
+.section-subnav::-webkit-scrollbar { display:none; }
+.section-subnav a { position:relative; min-height:58px; display:flex; align-items:center; color:#e9edf5; font-family: var(--font-display); font-size: .72rem; font-weight:600; text-transform: uppercase; letter-spacing: 1.2px; }
+.section-subnav a::after { content:''; position:absolute; left:0; right:0; bottom:0; height:3px; background:var(--de-soccer); opacity:.42; transform:scaleX(.18); transform-origin:left; transition:opacity .2s ease,transform .2s ease; }
+.section-subnav a:hover { color:#fff; }
+.section-subnav a:hover::after { opacity:1; transform:scaleX(1); }
 .theme-soccer .hub-section .de-section-heading h2, .theme-soccer .analysis-shell .de-section-heading h2 { color: var(--color-text); }
 .theme-soccer .hub-section .de-section-heading > p, .theme-soccer .analysis-shell .de-section-heading > p { color: var(--color-text-muted); }
 .theme-soccer .hub-section .de-section-heading .de-kicker, .theme-soccer .analysis-shell .de-section-heading .de-kicker { color: var(--de-soccer); }
