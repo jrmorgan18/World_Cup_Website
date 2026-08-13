@@ -1,0 +1,26 @@
+editions:
+  - id: "2026-27-preseason"
+    label: "Preseason"
+    season: "2026-27"
+    published: "August 13, 2026"
+    rankings:
+      - { rank: 1, team: "PSG", previous: null }
+      - { rank: 2, team: "Arsenal", previous: null }
+      - { rank: 3, team: "Bayern Munich", previous: null }
+      - { rank: 4, team: "Barcelona", previous: null }
+      - { rank: 5, team: "Manchester City", previous: null }
+      - { rank: 6, team: "Real Madrid", previous: null }
+      - { rank: 7, team: "Manchester United", previous: null }
+      - { rank: 8, team: "Inter Milan", previous: null }
+      - { rank: 9, team: "Chelsea", previous: null }
+      - { rank: 10, team: "Atletico Madrid", previous: null }
+      - { rank: 11, team: "Liverpool", previous: null }
+      - { rank: 12, team: "Napoli", previous: null }
+      - { rank: 13, team: "Borussia Dortmund", previous: null }
+      - { rank: 14, team: "Aston Villa", previous: null }
+      - { rank: 15, team: "Juventus", previous: null }
+      - { rank: 16, team: "Bournemouth", previous: null }
+      - { rank: 17, team: "Bayer Leverkusen", previous: null }
+      - { rank: 18, team: "Brighton", previous: null }
+      - { rank: 19, team: "PSV", previous: null }
+      - { rank: 20, team: "Sporting CP", previous: null }

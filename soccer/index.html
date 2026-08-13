@@ -23,9 +23,31 @@ section_theme: soccer
 {% assign longform_feature = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina-part-2" | first %}
 {% assign checkpoint_story = site.posts | where: "checkpoint_feature", true | first %}
 {% assign prospect_story = site.posts | where: "prospect_feature", true | first %}
+{% assign power_rankings_story = site.posts | where: "power_rankings_feature", true | first %}
+{% assign power_rankings_edition = site.data.european_club_power_rankings.editions | first %}
 {% if longform_feature %}
 <section class="soccer-editorial-shell">
   <div class="soccer-editorial-grid">
+    {% if power_rankings_story and power_rankings_edition %}
+    <aside class="soccer-power-rankings" aria-labelledby="soccer-power-rankings-heading">
+      <div class="soccer-power-rankings-head">
+        <p>European clubs</p>
+        <h2 id="soccer-power-rankings-heading">Power Rankings</h2>
+        <span>{{ power_rankings_edition.label }} / {{ power_rankings_edition.season }}</span>
+      </div>
+      <div class="soccer-power-rankings-columns" aria-hidden="true"><span>Rank</span><span>Club</span><span>Prev.</span></div>
+      <ol class="soccer-power-rankings-list">
+        {% for ranked_team in power_rankings_edition.rankings limit: 10 %}
+        <li>
+          <b>{{ ranked_team.rank }}</b>
+          <span>{{ ranked_team.team }}</span>
+          <small>{% if ranked_team.previous %}{{ ranked_team.previous }}{% else %}&mdash;{% endif %}</small>
+        </li>
+        {% endfor %}
+      </ol>
+      <a href="{{ power_rankings_story.url | relative_url }}">View the full Top 20 <span aria-hidden="true">&rarr;</span></a>
+    </aside>
+    {% endif %}
     <div class="soccer-feature-column">
       <div class="de-home-section-label">
         <p>Featured story</p>
@@ -54,7 +76,7 @@ section_theme: soccer
       <ol class="soccer-sidebar-list">
         {% if checkpoint_story %}<li><span class="soccer-sidebar-number">01</span><a href="{{ checkpoint_story.url | relative_url }}"><small>Project 2030</small><h3>{{ checkpoint_story.title }}</h3><p>{{ checkpoint_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
         {% if prospect_story %}<li><span class="soccer-sidebar-number">02</span><a href="{{ prospect_story.url | relative_url }}"><small>Project 2030</small><h3>{{ prospect_story.title }}</h3><p>{{ prospect_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-        <li><span class="soccer-sidebar-number">03</span><div><small>Europe</small><h3>The Summer Transfer Window: The Moves That Reshaped Europe</h3><p>Coming soon</p></div></li>
+        {% if power_rankings_story %}<li><span class="soccer-sidebar-number">03</span><a href="{{ power_rankings_story.url | relative_url }}"><small>Europe</small><h3>{{ power_rankings_story.title }}</h3><p>{{ power_rankings_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
         <li><span class="soccer-sidebar-number">04</span><div><small>Premier League</small><h3>2026&ndash;27 Premier League Preview</h3><p>Coming soon</p></div></li>
         <li><span class="soccer-sidebar-number">05</span><div><small>Where to watch</small><h3>Your TV Guide to Europe&rsquo;s Big Five Leagues</h3><p>Coming soon</p></div></li>
       </ol>
