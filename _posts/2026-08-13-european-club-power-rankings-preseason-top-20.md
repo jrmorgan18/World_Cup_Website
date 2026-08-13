@@ -26,18 +26,38 @@ For now, though, one club remains at the top until somebody actually knocks them
 
 {% assign ranking_edition = site.data.european_club_power_rankings.editions | where: "id", page.power_rankings_edition | first %}
 {% if ranking_edition %}
-<ol class="power-rankings-article-list" aria-label="European Club Power Rankings Top 20">
-{% for ranked_team in ranking_edition.rankings %}
-  <li><b>{{ ranked_team.rank }}</b><span>{{ ranked_team.team }}</span><small>Prev. {% if ranked_team.previous %}{{ ranked_team.previous }}{% else %}&mdash;{% endif %}</small></li>
+<div class="power-rankings-board" aria-label="European Club Power Rankings Top 20">
+{% for ranking_tier in ranking_edition.tiers %}
+  <section class="power-rankings-tier-card power-rankings-tier-card--{{ ranking_tier.id }}">
+    <header>
+      <p>Tier {{ ranking_tier.id }}</p>
+      <h2>{{ ranking_tier.label }}</h2>
+      <span>{{ ranking_tier.range }}</span>
+    </header>
+    <ol>
+    {% for ranked_team in ranking_edition.rankings %}
+      {% if ranked_team.tier == ranking_tier.id %}
+      <li>
+        <a href="#rank-{{ ranked_team.rank }}">
+          <b>{{ ranked_team.rank }}</b>
+          <span class="power-rankings-club-mark"><img src="{{ ranked_team.logo | relative_url }}" alt="" width="42" height="42" loading="lazy"></span>
+          <span class="power-rankings-club-name">{{ ranked_team.team }}</span>
+          <small><span>Prev.</span>{% if ranked_team.previous %}{{ ranked_team.previous }}{% else %}&mdash;{% endif %}</small>
+        </a>
+      </li>
+      {% endif %}
+    {% endfor %}
+    </ol>
+  </section>
 {% endfor %}
-</ol>
+</div>
 {% endif %}
 
-## Tier 1: Big League and Champions League Title Favorites
+{% include power-ranking-tier-heading.html tier=1 %}
 
 These are the five teams that should enter the season believing they can win both their domestic league and the Champions League.
 
-### 1. PSG
+{% include power-ranking-team-heading.html rank=1 %}
 
 There isn't much of an argument for putting anyone else first.
 
@@ -47,7 +67,7 @@ More importantly, this isn't a champion being dismantled after reaching the summ
 
 There are teams below them that may have made flashier additions, but PSG don't need to win the transfer window. They already won the Champions League. Twice.
 
-### 2. Arsenal
+{% include power-ranking-team-heading.html rank=2 %}
 
 If anyone has a legitimate argument that they are already PSG's equal, it is Arsenal.
 
@@ -59,7 +79,7 @@ The major preseason concern is William Saliba's back injury. Arsenal's defensive
 
 If he returns healthy, this may be the strongest Arsenal team of the current era. They have moved beyond simply hoping to win the Premier League. The expectation should now be to challenge for everything.
 
-### 3. Bayern Munich
+{% include power-ranking-team-heading.html rank=3 %}
 
 Bayern retained the Bundesliga in dominant fashion last season and added the DFB-Pokal to complete the domestic double. They finished with 89 points and scored a Bundesliga-record 122 goals, then came extremely close to adding a Champions League final appearance, losing to PSG by a single goal over two semifinal legs.
 
@@ -76,7 +96,7 @@ There isn't much separating the teams from second through fifth. Bayern get the 
   <figcaption>Harry Kane remains the reference point for a Bayern side coming off a 122-goal Bundesliga season.</figcaption>
 </figure>
 
-### 4. Barcelona
+{% include power-ranking-team-heading.html rank=4 %}
 
 The most frightening thing about Barcelona is that so many of their best players should still be improving.
 
@@ -92,7 +112,7 @@ They are also pursuing Julián Álvarez of Atlético Madrid as a replacement and
 
 Barcelona should score plenty of goals. We already know they are good enough to win Spain. Whether they can consistently defend the best teams in Europe is what separates them from PSG and Arsenal at the top of this list.
 
-### 5. Manchester City
+{% include power-ranking-team-heading.html rank=5 %}
 
 It feels strange calling Manchester City the most uncertain team in any elite group, but this is not quite the City roster we have become accustomed to.
 
@@ -106,11 +126,11 @@ The ceiling remains obvious. City still have enough talent to win the Premier Le
 
 There is simply more uncertainty around them than there has been in a long time.
 
-## Tier 2: Big League Title Contenders
+{% include power-ranking-tier-heading.html tier=2 %}
 
 All six of these teams can win a major domestic league and make a serious Champions League run. Each also has at least one question that keeps them outside the top five.
 
-### 6. Real Madrid
+{% include power-ranking-team-heading.html rank=6 %}
 
 No team is harder to rank.
 
@@ -126,7 +146,7 @@ Maybe Mourinho finds the right balance immediately and Madrid are back at No. 1 
 
 For the preseason ranking, though, I need to see it work first.
 
-### 7. Manchester United
+{% include power-ranking-team-heading.html rank=7 %}
 
 After years of false starts, Manchester United finally appear to be moving in the right direction.
 
@@ -138,7 +158,7 @@ United now need to prove last season wasn't simply one good year. The gap betwee
 
 Still, this is probably the most optimistic United have had reason to be in quite a while.
 
-### 8. Inter Milan
+{% include power-ranking-team-heading.html rank=8 %}
 
 Inter remain the safest bet in Italy.
 
@@ -150,7 +170,7 @@ Losing to Bodø/Glimt in the Champions League playoff was a massive disappointme
 
 My inclination is to treat that as an aberration rather than evidence that Inter have suddenly become a mediocre European team. But they need to prove it.
 
-### 9. Chelsea
+{% include power-ranking-team-heading.html rank=9 %}
 
 This is easily one of the biggest projection bets in the ranking.
 
@@ -164,7 +184,7 @@ There is also considerable risk. Alonso is taking over another dramatically resh
 
 That is ultimately why they land at No. 9. The talent, new signings and Alonso give Chelsea one of the highest ceilings outside the top group. But after finishing 10th, they still have to demonstrate that all of those pieces actually form a good soccer team.
 
-### 10. Atlético Madrid
+{% include power-ranking-team-heading.html rank=10 %}
 
 Atlético's 2025-26 season probably deserves more attention than it received.
 
@@ -176,7 +196,7 @@ The cloud hanging over everything is Julián Álvarez, who has publicly pushed f
 
 Atlético also haven't won La Liga in five years. At some point, consistent competitiveness has to turn back into trophies if they want to move into the top tier.
 
-### 11. Liverpool
+{% include power-ranking-team-heading.html rank=11 %}
 
 Liverpool have enough talent to remain dangerous, but no Tier 2 team enters the season with more change.
 
@@ -190,11 +210,11 @@ But they also finished fifth in the Premier League before losing all that experi
 
 Iraola could inject new energy into the team and make this ranking look conservative. For now, Liverpool have more to prove than the teams directly above them.
 
-## Tier 3: Domestic Dark Horses and Champions League Qualifiers
+{% include power-ranking-tier-heading.html tier=3 %}
 
 These teams can challenge for a domestic championship or make a surprising Champions League run, but reaching the European semifinals would be an achievement rather than the expectation.
 
-### 12. Napoli
+{% include power-ranking-team-heading.html rank=12 %}
 
 Napoli finished second in Serie A and should once again be one of Inter's primary challengers.
 
@@ -202,7 +222,7 @@ Massimiliano Allegri takes over as manager, while Rasmus Højlund's move was mad
 
 There is enough here to win Italy if things fall into place, but Napoli don't quite have the same European ceiling as the teams in the first two tiers.
 
-### 13. Borussia Dortmund
+{% include power-ranking-team-heading.html rank=13 %}
 
 Dortmund finished second in Germany last year, but their European campaign ended much earlier than their talent suggested it should.
 
@@ -210,7 +230,7 @@ The summer brought another round of transition. Konstantinos Karetsas and Joane 
 
 Dortmund remain Bayern's most credible Bundesliga challenger. The question is whether all that turnover leaves them spending the first half of the season figuring out what they are.
 
-### 14. Aston Villa
+{% include power-ranking-team-heading.html rank=14 %}
 
 Few teams in this tier can match Villa's recent results.
 
@@ -222,7 +242,7 @@ Morgan Rogers, Youri Tielemans, Lucas Digne and Donyell Malen all left. Johan Ma
 
 That is enough talent to keep Villa competitive. But after losing that much proven production, they have to earn their way back toward the top ten.
 
-### 15. Juventus
+{% include power-ranking-team-heading.html rank=15 %}
 
 Juventus continue to look like a team moving toward contention without quite being there yet.
 
@@ -232,7 +252,7 @@ But last season's Champions League playoff exit was a pretty clear indication of
 
 Juventus can challenge in Serie A. I need to see more before considering them a serious Champions League threat.
 
-### 16. Bournemouth
+{% include power-ranking-team-heading.html rank=16 %}
 
 This one may be a surprise to those not paying close attention.
 
@@ -244,7 +264,7 @@ Now comes a different challenge. Bournemouth have to maintain that Premier Leagu
 
 If they do it, their rise is no longer a cute story. They're simply one of the better teams in Europe.
 
-### 17. Bayer Leverkusen
+{% include power-ranking-team-heading.html rank=17 %}
 
 Leverkusen have come back toward earth after their remarkable peak.
 
@@ -254,7 +274,7 @@ There has been considerable change at the back as well, with Alejandro Grimaldo 
 
 There is still enough talent for Leverkusen to rebound. I just see a team retooling rather than one prepared to immediately jump back among Europe's elite.
 
-### 18. Brighton
+{% include power-ranking-team-heading.html rank=18 %}
 
 Brighton are the other Premier League team whose ranking benefits from the level of competition they face every week.
 
@@ -264,11 +284,11 @@ PSV and Sporting have stronger recent histories of actually winning things. Brig
 
 Europe now gives them another opportunity to prove it outside England.
 
-## Tier 4: Smaller-League Favorites
+{% include power-ranking-tier-heading.html tier=4 %}
 
 The final two teams enter the year as major domestic contenders with enough quality to cause problems in Europe. Their path to the very top is simply more difficult.
 
-### 19. PSV
+{% include power-ranking-team-heading.html rank=19 %}
 
 PSV are the defending Eredivisie champions and remain one of the two dominant teams in the Netherlands.
 
@@ -276,7 +296,7 @@ The biggest concern is obvious: Ismael Saibari is now at Bayern Munich.
 
 Losing one of your best midfielders to the team ranked third on this list is a pretty good illustration of the structural challenge PSV face. They can replace players well enough to remain a domestic power, but keeping enough elite talent together to seriously challenge for the Champions League is another matter.
 
-### 20. Sporting CP
+{% include power-ranking-team-heading.html rank=20 %}
 
 Sporting had a strange 2025-26 season. They reached the Champions League quarterfinals and produced the best attack in Portugal, but ultimately finished the domestic season without a trophy.
 

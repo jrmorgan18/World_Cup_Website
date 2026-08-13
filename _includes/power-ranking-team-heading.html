@@ -1,0 +1,9 @@
+{% assign pr_edition = site.data.european_club_power_rankings.editions | where: "id", page.power_rankings_edition | first %}
+{% assign pr_team = pr_edition.rankings | where: "rank", include.rank | first %}
+{% if pr_team %}
+<h3 class="power-rankings-team-heading" id="rank-{{ pr_team.rank }}">
+  <span class="power-rankings-team-heading__rank">{{ pr_team.rank }}</span>
+  <img src="{{ pr_team.logo | relative_url }}" alt="" width="56" height="56" loading="lazy">
+  <span class="power-rankings-team-heading__name">{{ pr_team.team }}</span>
+</h3>
+{% endif %}

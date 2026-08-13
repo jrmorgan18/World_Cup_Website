@@ -312,13 +312,34 @@ body { overflow-x: hidden; }
 .soccer-article-figure--portrait { max-width:560px; margin-left:auto; margin-right:auto; }
 .soccer-article-figure--portrait img { aspect-ratio:4 / 5; }
 .soccer-article-figure figcaption { padding:11px 6px 2px; color:#6c6870; font-size:.78rem; line-height:1.5; }
-.power-rankings-article-list { margin:32px 0 48px; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); border:1px solid #d9d4c9; background:#f1eee7; list-style:none; }
-.power-rankings-article-list li { min-height:48px; padding:10px 14px; display:grid; grid-template-columns:34px minmax(0,1fr) 42px; gap:10px; align-items:center; border-bottom:1px solid #e3dfd6; }
-.power-rankings-article-list li:nth-child(odd) { border-right:1px solid #e3dfd6; }
-.power-rankings-article-list li:nth-last-child(-n+2) { border-bottom:0; }
-.power-rankings-article-list b { color:#9b7418; font-family:var(--font-display); font-size:.72rem; }
-.power-rankings-article-list span { color:#1a1a1d; font-family:'Newsreader',serif; font-size:1rem; font-weight:600; }
-.power-rankings-article-list small { color:#8b8790; font-family:var(--font-display); font-size:.58rem; text-align:right; text-transform:uppercase; }
+.power-rankings-board { margin:38px 0 58px; display:grid; gap:18px; }
+.power-rankings-tier-card { --tier-accent:#d4a843; display:grid; grid-template-columns:minmax(178px,.72fr) minmax(0,1.8fr); overflow:hidden; border:1px solid rgba(255,255,255,.14); background:#ded9cf; box-shadow:0 14px 30px rgba(0,0,0,.18); }
+.power-rankings-tier-card--2 { --tier-accent:#aebbd0; }
+.power-rankings-tier-card--3 { --tier-accent:#7f91ab; }
+.power-rankings-tier-card--4 { --tier-accent:#63728a; }
+.power-rankings-tier-card>header { margin:0; padding:22px 20px; display:flex; flex-direction:column; justify-content:center; border-top:4px solid var(--tier-accent); background:linear-gradient(150deg,#17243a,#0b111d); }
+.power-rankings-tier-card>header p { color:var(--tier-accent); font-family:var(--font-display); font-size:.62rem; font-weight:700; letter-spacing:1.4px; text-transform:uppercase; }
+.article-body .power-rankings-tier-card>header h2 { margin:8px 0 13px; padding:0; color:#fff; border:0; font-size:1.05rem; line-height:1.08; letter-spacing:.1px; }
+.power-rankings-tier-card>header span { color:#8997ab; font-family:var(--font-display); font-size:.55rem; letter-spacing:1px; text-transform:uppercase; }
+.power-rankings-tier-card ol { margin:0; padding:1px; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1px; background:#d8d2c7; list-style:none; }
+.power-rankings-tier-card li { min-width:0; background:#f4f1ea; }
+.power-rankings-tier-card a { min-height:64px; padding:9px 11px; display:grid; grid-template-columns:25px 42px minmax(0,1fr) 35px; gap:8px; align-items:center; color:#17171c; }
+.power-rankings-tier-card a:hover { background:#fff; }
+.power-rankings-tier-card b { color:#9b7418; font-family:var(--font-display); font-size:.74rem; text-align:center; }
+.power-rankings-club-mark { width:42px; height:42px; display:grid; place-items:center; border:1px solid #ded9cf; border-radius:50%; background:#fff; }
+.article-body .power-rankings-club-mark img { width:34px; height:34px; margin:0; object-fit:contain; border-radius:0; }
+.power-rankings-club-name { min-width:0; font-family:'Newsreader',serif; font-size:.94rem; font-weight:600; line-height:1.08; }
+.power-rankings-tier-card small { display:flex; flex-direction:column; align-items:flex-end; color:#7d7981; font-family:var(--font-display); font-size:.6rem; line-height:1.05; text-transform:uppercase; }
+.power-rankings-tier-card small span { margin-bottom:4px; color:#aaa5ac; font-size:.42rem; letter-spacing:.4px; }
+.article-body .power-rankings-tier-heading { --tier-accent:#d4a843; margin-top:66px; padding:15px 0 14px; display:grid; grid-template-columns:76px minmax(0,1fr); gap:16px; align-items:center; color:#fff; border-top:1px solid rgba(255,255,255,.16); border-bottom:1px solid rgba(255,255,255,.16); font-size:1.42rem; line-height:1.08; }
+.article-body .power-rankings-tier-heading--2 { --tier-accent:#aebbd0; }
+.article-body .power-rankings-tier-heading--3 { --tier-accent:#7f91ab; }
+.article-body .power-rankings-tier-heading--4 { --tier-accent:#63728a; }
+.power-rankings-tier-heading>span { padding:7px 8px; color:#101723; background:var(--tier-accent); font-size:.63rem; letter-spacing:1.1px; text-align:center; }
+.article-body .power-rankings-team-heading { margin:42px 0 18px; padding:12px 15px; display:grid; grid-template-columns:34px 56px minmax(0,1fr); gap:13px; align-items:center; border:1px solid rgba(255,255,255,.13); border-left:3px solid var(--de-soccer); background:linear-gradient(90deg,rgba(212,168,67,.12),rgba(255,255,255,.025)); color:#fff; }
+.power-rankings-team-heading__rank { color:var(--de-soccer); font-family:var(--font-display); font-size:.82rem; text-align:center; }
+.article-body .power-rankings-team-heading img { width:50px; height:50px; margin:0; padding:5px; object-fit:contain; border:1px solid rgba(255,255,255,.14); border-radius:50%; background:#fff; }
+.power-rankings-team-heading__name { font-family:var(--font-display); font-size:1.35rem; line-height:1; text-transform:uppercase; }
 
 /* Project 2030 */
 .project-hero { position:relative; min-height:410px; padding:64px max(32px,calc((100vw - var(--de-wide))/2 + 32px)); display:flex; align-items:center; overflow:hidden; background:radial-gradient(circle at 16% 88%,rgba(239,35,60,.2),transparent 28%),linear-gradient(120deg,#06162e 48%,#0d3b73); color:#fff; }
@@ -1149,9 +1170,14 @@ body { overflow-x: hidden; }
   .soccer-feature-story figure { min-height:360px; }
   .soccer-article-sidebar { width:100%; }
   .soccer-power-rankings { width:100%; }
-  .power-rankings-article-list { grid-template-columns:1fr; }
-  .power-rankings-article-list li:nth-child(odd) { border-right:0; }
-  .power-rankings-article-list li:nth-last-child(2) { border-bottom:1px solid #e3dfd6; }
+  .power-rankings-tier-card { grid-template-columns:1fr; }
+  .power-rankings-tier-card>header { min-height:132px; }
+  .power-rankings-tier-card ol { grid-template-columns:1fr; }
+  .power-rankings-tier-card a { grid-template-columns:28px 42px minmax(0,1fr) 36px; }
+  .article-body .power-rankings-tier-heading { grid-template-columns:68px minmax(0,1fr); gap:12px; font-size:1.12rem; }
+  .article-body .power-rankings-team-heading { grid-template-columns:30px 50px minmax(0,1fr); gap:10px; }
+  .article-body .power-rankings-team-heading img { width:46px; height:46px; }
+  .power-rankings-team-heading__name { font-size:1.12rem; }
   .soccer-project-bridge { padding:28px 20px; grid-template-columns:1fr; gap:13px; }
   .soccer-project-bridge>a { grid-column:auto; margin-top:5px; }
   .soccer-desk-links { padding-top:54px; padding-bottom:62px; }

@@ -1,0 +1,8 @@
+{% assign pr_edition = site.data.european_club_power_rankings.editions | where: "id", page.power_rankings_edition | first %}
+{% assign pr_tier = pr_edition.tiers | where: "id", include.tier | first %}
+{% if pr_tier %}
+<h2 class="power-rankings-tier-heading power-rankings-tier-heading--{{ pr_tier.id }}">
+  <span>Tier {{ pr_tier.id }}</span>
+  {{ pr_tier.label }}
+</h2>
+{% endif %}
