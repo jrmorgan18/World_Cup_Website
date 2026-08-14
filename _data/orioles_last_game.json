@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-13T07:10:51Z",
+  "generated_at": "2026-08-14T07:06:49Z",
   "game_pk": 823672,
   "date": "2026-08-12",
   "venue": "Target Field",
@@ -69,8 +69,8 @@
     "status_text": "2.0 games back of the third AL Wild Card spot.",
     "ladder": [
       {
-        "team": "Rangers",
-        "abbr": "TEX",
+        "team": "Tigers",
+        "abbr": "DET",
         "wins": 60,
         "losses": 61,
         "games_back": null,
@@ -79,8 +79,8 @@
         "is_cutoff": true
       },
       {
-        "team": "Twins",
-        "abbr": "MIN",
+        "team": "Rangers",
+        "abbr": "TEX",
         "wins": 60,
         "losses": 62,
         "games_back": "0.5",
@@ -89,11 +89,11 @@
         "is_cutoff": false
       },
       {
-        "team": "Tigers",
-        "abbr": "DET",
-        "wins": 59,
-        "losses": 61,
-        "games_back": "0.5",
+        "team": "Twins",
+        "abbr": "MIN",
+        "wins": 60,
+        "losses": 63,
+        "games_back": "1.0",
         "wild_card_rank": 5,
         "is_orioles": false,
         "is_cutoff": false
@@ -102,8 +102,8 @@
         "team": "Guardians",
         "abbr": "CLE",
         "wins": 59,
-        "losses": 62,
-        "games_back": "1.0",
+        "losses": 63,
+        "games_back": "1.5",
         "wild_card_rank": 6,
         "is_orioles": false,
         "is_cutoff": false
@@ -112,8 +112,8 @@
         "team": "Blue Jays",
         "abbr": "TOR",
         "wins": 59,
-        "losses": 63,
-        "games_back": "1.5",
+        "losses": 64,
+        "games_back": "2.0",
         "wild_card_rank": 7,
         "is_orioles": false,
         "is_cutoff": false
