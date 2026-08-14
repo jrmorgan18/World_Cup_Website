@@ -340,6 +340,36 @@ body { overflow-x: hidden; }
 .power-rankings-team-heading__rank { color:var(--de-soccer); font-family:var(--font-display); font-size:.82rem; text-align:center; }
 .article-body .power-rankings-team-heading img { width:50px; height:50px; margin:0; padding:5px; object-fit:contain; border:1px solid rgba(255,255,255,.14); border-radius:50%; background:#fff; }
 .power-rankings-team-heading__name { font-family:var(--font-display); font-size:1.35rem; line-height:1; text-transform:uppercase; }
+.laliga-race-board { margin:38px 0 56px; overflow:hidden; border:1px solid rgba(255,255,255,.16); background:#efece5; box-shadow:0 16px 32px rgba(0,0,0,.2); }
+.laliga-race-board__head { padding:23px 24px 21px; border-top:4px solid var(--de-soccer); background:linear-gradient(145deg,#17243a,#090f1a); }
+.laliga-race-board__head p { color:var(--de-soccer); font-family:var(--font-display); font-size:.59rem; font-weight:700; letter-spacing:1.35px; text-transform:uppercase; }
+.article-body .laliga-race-board__head h2 { margin:7px 0 8px; padding:0; border:0; color:#fff; font-size:1.48rem; line-height:1; }
+.laliga-race-board__head span { color:#98a5b7; font-family:var(--font-display); font-size:.55rem; letter-spacing:1px; text-transform:uppercase; }
+.laliga-race-board__clubs { margin:0; padding:0; list-style:none; }
+.laliga-race-board__club { min-height:74px; padding:10px 18px; display:grid; grid-template-columns:29px 48px minmax(0,1fr) auto; gap:12px; align-items:center; border-top:1px solid #d5d0c5; color:#171a1f; }
+.laliga-race-board__club:first-child { border-top:0; }
+.laliga-race-board__club--favorite { background:#fffaf0; }
+.laliga-race-board__club--next { background:#e5e0d7; }
+.laliga-race-board__club>span { color:#9b7418; font-family:var(--font-display); font-size:.76rem; text-align:center; }
+.article-body .laliga-race-board__club img { width:46px; height:46px; margin:0; padding:4px; object-fit:contain; border:1px solid #d9d4ca; border-radius:50%; background:#fff; }
+.laliga-race-board__club div { min-width:0; display:flex; flex-direction:column; gap:3px; }
+.laliga-race-board__club b { font-family:'Newsreader',serif; font-size:1.04rem; line-height:1; }
+.laliga-race-board__club small { color:#6d6970; font-size:.74rem; line-height:1.2; }
+.laliga-race-board__club strong { padding:6px 7px; color:#fff; background:#17243a; font-family:var(--font-display); font-size:.48rem; letter-spacing:.7px; text-transform:uppercase; white-space:nowrap; }
+.laliga-americans { margin:30px 0 38px; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1px; border:1px solid rgba(255,255,255,.18); background:rgba(255,255,255,.18); }
+.laliga-americans>div { min-width:0; padding:16px; display:grid; grid-template-columns:48px minmax(0,1fr); gap:13px; align-items:center; background:linear-gradient(135deg,#17243a,#0d1625); }
+.article-body .laliga-americans img { width:46px; height:46px; margin:0; padding:4px; object-fit:contain; border-radius:50%; background:#fff; }
+.laliga-americans p { margin:0; display:flex; flex-direction:column; gap:4px; }
+.laliga-americans b { color:#fff; font-family:'Newsreader',serif; font-size:1.06rem; line-height:1; }
+.laliga-americans span { color:#aeb8c7; font-family:var(--font-display); font-size:.53rem; letter-spacing:.8px; text-transform:uppercase; }
+.article-body .laliga-club-heading { margin:48px 0 20px; padding:11px 14px; display:grid; grid-template-columns:54px minmax(0,1fr); gap:13px; align-items:center; border:1px solid rgba(255,255,255,.15); border-left:3px solid var(--de-soccer); background:linear-gradient(90deg,rgba(212,168,67,.14),rgba(255,255,255,.03)); color:#fff; font-family:var(--font-display); font-size:1.28rem; line-height:1.02; text-transform:uppercase; }
+.article-body .laliga-club-heading img { width:50px; height:50px; margin:0; padding:4px; object-fit:contain; border-radius:50%; background:#fff; }
+.laliga-next-tier { margin:28px 0 32px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1px; border:1px solid rgba(255,255,255,.16); background:rgba(255,255,255,.16); }
+.laliga-next-tier>div { min-width:0; padding:14px 12px; display:grid; grid-template-columns:43px minmax(0,1fr); gap:10px; align-items:center; background:#141d2d; }
+.article-body .laliga-next-tier img { width:42px; height:42px; margin:0; padding:3px; object-fit:contain; border-radius:50%; background:#fff; }
+.laliga-next-tier div>div { min-width:0; display:flex; flex-direction:column; gap:4px; }
+.laliga-next-tier b { color:#fff; font-family:'Newsreader',serif; font-size:.98rem; line-height:1.05; }
+.laliga-next-tier span { color:#9ca8b8; font-family:var(--font-display); font-size:.48rem; line-height:1.2; letter-spacing:.55px; text-transform:uppercase; }
 
 /* Project 2030 */
 .project-hero { position:relative; min-height:410px; padding:64px max(32px,calc((100vw - var(--de-wide))/2 + 32px)); display:flex; align-items:center; overflow:hidden; background:radial-gradient(circle at 16% 88%,rgba(239,35,60,.2),transparent 28%),linear-gradient(120deg,#06162e 48%,#0d3b73); color:#fff; }
@@ -1178,6 +1208,13 @@ body { overflow-x: hidden; }
   .article-body .power-rankings-team-heading { grid-template-columns:30px 50px minmax(0,1fr); gap:10px; }
   .article-body .power-rankings-team-heading img { width:46px; height:46px; }
   .power-rankings-team-heading__name { font-size:1.12rem; }
+  .laliga-next-tier { grid-template-columns:1fr; }
+  .laliga-race-board__club { padding:10px 13px; grid-template-columns:25px 45px minmax(0,1fr); gap:9px; }
+  .article-body .laliga-race-board__club img { width:43px; height:43px; }
+  .laliga-race-board__club strong { grid-column:3; justify-self:start; margin-top:-2px; }
+  .laliga-americans { grid-template-columns:1fr; }
+  .article-body .laliga-club-heading { grid-template-columns:48px minmax(0,1fr); gap:10px; font-size:1.07rem; }
+  .article-body .laliga-club-heading img { width:45px; height:45px; }
   .soccer-project-bridge { padding:28px 20px; grid-template-columns:1fr; gap:13px; }
   .soccer-project-bridge>a { grid-column:auto; margin-top:5px; }
   .soccer-desk-links { padding-top:54px; padding-bottom:62px; }
