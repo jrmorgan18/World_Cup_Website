@@ -32,7 +32,7 @@ So what should we expect in 2026?
 
 Here is how I rank the Ravens’ 12 major units entering the season. This is not simply a list of their projected NFL rankings. Positional importance, depth, certainty and the degree to which a unit can change Baltimore’s championship ceiling all matter. That is why quarterback leads the list even though safety has the cleaner argument as the best unit in the NFL.
 
-## 1. Quarterback
+<h2 id="unit-quarterback">1. Quarterback</h2>
 
 <figure class="ravens-article-figure">
   <img src="{{ '/assets/images/ravens/preseason-unit-rankings-2026/quarterback-lamar-jackson.webp' | relative_url }}" alt="Lamar Jackson throws during Ravens training camp" loading="lazy">
@@ -59,7 +59,7 @@ Depth is the weakness here. Tyler Huntley is a useful backup who understands the
 
 That does not prevent quarterback from ranking first on this list. It merely explains why keeping Lamar healthy remains the single most important condition attached to the Ravens’ season.
 
-## 2. Safety
+<h2 id="unit-safety">2. Safety</h2>
 
 <figure class="ravens-article-figure">
   <img src="{{ '/assets/images/ravens/preseason-unit-rankings-2026/safety-kyle-hamilton.webp' | relative_url }}" alt="Kyle Hamilton greets young Ravens fans at training camp" loading="lazy">
@@ -82,7 +82,7 @@ Hamilton himself remains irreplaceable, but the room has both elite talent and l
 
 There are very few Ravens units where No. 1 in the NFL feels like the most reasonable starting point rather than an optimistic ceiling. This is one of them.
 
-## 3. Running Back
+<h2 id="unit-running-back">3. Running Back</h2>
 
 <figure class="ravens-article-figure">
   <img src="{{ '/assets/images/ravens/preseason-unit-rankings-2026/running-back-derrick-henry.webp' | relative_url }}" alt="Derrick Henry carries the football in Ravens training camp" loading="lazy">
@@ -109,7 +109,7 @@ None of them replaces Henry, which is the same caveat every team with an elite p
 
 This is still a top-five NFL running-back room, with a legitimate case to finish higher if Henry keeps delaying the inevitable decline.
 
-## 4. Interior Defensive Line
+<h2 id="unit-interior-defensive-line">4. Interior Defensive Line</h2>
 
 <figure class="ravens-article-figure">
   <img src="{{ '/assets/images/ravens/preseason-unit-rankings-2026/interior-dl-nnamdi-madubuike.webp' | relative_url }}" alt="Nnamdi Madubuike at Ravens training camp" loading="lazy">
@@ -134,7 +134,7 @@ Most importantly, the Ravens should not have to run their best defensive linemen
 
 The ceiling depends upon Madubuike’s neck holding up. The top-10 case does not. There is enough quality and depth here for Baltimore to have a very good interior even if his return is gradual.
 
-## 5. Edge
+<h2 id="unit-edge">5. Edge</h2>
 
 <figure class="ravens-article-figure">
   <img src="{{ '/assets/images/ravens/preseason-unit-rankings-2026/edge-trey-hendrickson.webp' | relative_url }}" alt="Trey Hendrickson works through a training-camp drill" loading="lazy">
@@ -161,7 +161,7 @@ There is also age and injury risk with Hendrickson, who missed significant time 
 
 Still, no Ravens unit received a more obvious personnel upgrade this offseason. Baltimore finally has the proven edge winner it has been trying to manufacture through scheme.
 
-## 6. Cornerback
+<h2 id="unit-cornerback">6. Cornerback</h2>
 
 <figure class="ravens-article-figure">
   <img src="{{ '/assets/images/ravens/preseason-unit-rankings-2026/cornerback-marlon-humphrey.webp' | relative_url }}" alt="Marlon Humphrey works at Ravens training camp" loading="lazy">
@@ -190,7 +190,7 @@ This is not an elite cornerback room based on the current performance of its sta
 
 An improved pass rush should help too. Covering for three seconds is generally easier than covering for five. Advanced analytics remain undefeated.
 
-## 7. Pass Catchers
+<h2 id="unit-pass-catchers">7. Pass Catchers</h2>
 
 <figure class="ravens-article-figure">
   <img src="{{ '/assets/images/ravens/preseason-unit-rankings-2026/pass-catchers-zay-flowers.webp' | relative_url }}" alt="Zay Flowers runs a route during Ravens training camp" loading="lazy">
@@ -217,7 +217,7 @@ If Andrews misses time, Baltimore suddenly has very little proven receiving prod
 
 Preferably more than one.
 
-## 8. Linebacker
+<h2 id="unit-linebacker">8. Linebacker</h2>
 
 <figure class="ravens-article-figure">
   <img src="{{ '/assets/images/ravens/preseason-unit-rankings-2026/linebacker-roquan-smith.webp' | relative_url }}" alt="Roquan Smith greets fans at Ravens training camp" loading="lazy">
@@ -242,7 +242,7 @@ If Smith, Simpson and Buchanan are available, Baltimore has a solid group. Lose 
 
 That keeps the Ravens just outside the top 10 entering the season.
 
-## 9. Blocking
+<h2 id="unit-blocking">9. Blocking</h2>
 
 <figure class="ravens-article-figure">
   <img src="{{ '/assets/images/ravens/preseason-unit-rankings-2026/blocking-ronnie-stanley.webp' | relative_url }}" alt="Ronnie Stanley prepares for a Ravens training camp drill" loading="lazy">
@@ -269,7 +269,7 @@ The interior depth is respectable. Tackle depth is much less comforting, particu
 
 The run blocking should remain a strength. If pass protection merely becomes average, this ranking will look too low. If the new interior spends September passing off stunts incorrectly while Lamar runs for his life, it will look generous.
 
-## 10. Return Unit
+<h2 id="unit-return-unit">10. Return Unit</h2>
 
 <figure class="ravens-article-figure">
   <img src="{{ '/assets/images/ravens/preseason-unit-rankings-2026/return-unit-lajohntay-wester.webp' | relative_url }}" alt="LaJohntay Wester catches a football at Ravens training camp" loading="lazy">
@@ -290,7 +290,7 @@ There is enough here to feel comfortable.
 
 There is not enough to feel particularly certain.
 
-## 11. Kicker
+<h2 id="unit-kicker">11. Kicker</h2>
 
 <figure class="ravens-article-figure">
   <img src="{{ '/assets/images/ravens/preseason-unit-rankings-2026/kicker-tyler-loop.webp' | relative_url }}" alt="Tyler Loop kicks a field goal during the Ravens’ preseason opener" loading="lazy">
@@ -317,7 +317,7 @@ If those answers are positive, Loop has enough talent to climb well above 16th.
 
 If accuracy becomes unstable during the preseason or early in the year, the Ravens should not allow a draft pick or a decent rookie percentage to guarantee him an unlimited leash.
 
-## 12. Punter
+<h2 id="unit-punter">12. Punter</h2>
 
 <figure class="ravens-article-figure">
   <img src="{{ '/assets/images/ravens/preseason-unit-rankings-2026/punter-ryan-eckley.webp' | relative_url }}" alt="Ryan Eckley throws a football during Ravens minicamp" loading="lazy">
