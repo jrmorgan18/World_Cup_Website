@@ -11,43 +11,45 @@ section_theme: ravens
 <section class="club-section club-section--ravens-feature">
   {% assign ravens_feature = site.posts | where: "ravens_feature", true | sort: "date" | reverse | first %}
   <div class="ravens-feature-layout">
-    {% if ravens_feature %}
-    <a class="club-feature-teaser club-feature-teaser--ravens" href="{{ ravens_feature.url | relative_url }}">
-      <div class="club-feature-teaser-copy">
-        <p>Featured analysis <i aria-hidden="true"></i> Ravens</p>
-        <h3>{{ ravens_feature.title }}</h3>
-        <p>{{ ravens_feature.excerpt }}</p>
-        <span>Read the feature &rarr;</span>
-      </div>
-      <div class="club-feature-teaser-mark" aria-hidden="true"><small>{{ ravens_feature.ravens_feature_mark_label | default: "New" }}</small><strong>{{ ravens_feature.ravens_feature_mark | default: "R" }}</strong><span>{{ ravens_feature.ravens_feature_mark_detail | default: "Feature" }}</span></div>
-    </a>
-    {% endif %}
+    <div class="ravens-feature-primary">
+      {% if ravens_feature %}
+      <a class="club-feature-teaser club-feature-teaser--ravens" href="{{ ravens_feature.url | relative_url }}">
+        <div class="club-feature-teaser-copy">
+          <p>Featured analysis <i aria-hidden="true"></i> Ravens</p>
+          <h3>{{ ravens_feature.title }}</h3>
+          <p>{{ ravens_feature.excerpt }}</p>
+          <span>Read the feature &rarr;</span>
+        </div>
+        <div class="club-feature-teaser-mark" aria-hidden="true"><small>{{ ravens_feature.ravens_feature_mark_label | default: "New" }}</small><strong>{{ ravens_feature.ravens_feature_mark | default: "R" }}</strong><span>{{ ravens_feature.ravens_feature_mark_detail | default: "Feature" }}</span></div>
+      </a>
+      {% endif %}
+
+      <section class="ravens-recent-rail" aria-labelledby="ravens-recent-heading">
+        <div class="ravens-recent-heading">
+          <p id="ravens-recent-heading">Recent Ravens articles</p>
+          <span>From the archive</span>
+        </div>
+        <ol class="ravens-recent-list">
+          {% assign ravens_recent_count = 0 %}
+          {% for post in site.posts %}
+            {% if post.categories contains "ravens" and post.url != ravens_feature.url and ravens_recent_count < 4 %}
+            {% assign ravens_recent_count = ravens_recent_count | plus: 1 %}
+            <li>
+              <span class="ravens-recent-number">0{{ ravens_recent_count }}</span>
+              <a href="{{ post.url | relative_url }}">
+                <small>{{ post.series | default: "Ravens analysis" }}</small>
+                <h3>{{ post.title }}</h3>
+                <p>{{ post.date | date: "%B %-d, %Y" }}</p>
+              </a>
+            </li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+      </section>
+    </div>
 
     <aside class="ravens-camp-rail" aria-label="Ravens camp highlights">
       {% include ravens-camp-highlights.html %}
     </aside>
-
-    <section class="ravens-recent-rail ravens-recent-rail--below-feature" aria-labelledby="ravens-recent-heading">
-      <div class="ravens-recent-heading">
-        <p id="ravens-recent-heading">Recent Ravens articles</p>
-        <span>From the archive</span>
-      </div>
-      <ol class="ravens-recent-list">
-        {% assign ravens_recent_count = 0 %}
-        {% for post in site.posts %}
-          {% if post.categories contains "ravens" and post.url != ravens_feature.url and ravens_recent_count < 4 %}
-          {% assign ravens_recent_count = ravens_recent_count | plus: 1 %}
-          <li>
-            <span class="ravens-recent-number">0{{ ravens_recent_count }}</span>
-            <a href="{{ post.url | relative_url }}">
-              <small>{{ post.series | default: "Ravens analysis" }}</small>
-              <h3>{{ post.title }}</h3>
-              <p>{{ post.date | date: "%B %-d, %Y" }}</p>
-            </a>
-          </li>
-          {% endif %}
-        {% endfor %}
-      </ol>
-    </section>
   </div>
 </section>
