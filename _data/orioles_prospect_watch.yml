@@ -1,0 +1,58 @@
+title: Orioles Prospect Watch
+source_label: MLB Pipeline Orioles Top 30
+source_url: https://www.mlb.com/orioles/prospects/orioles
+snapshot_date: August 16, 2026
+season_end_note: Weekly reports run through September 27, 2026.
+source_note: Rankings follow MLB Pipeline's current Orioles Top 30. Player development notes are reported separately each Sunday and distinguish verified facts from scouting interpretation.
+prospects:
+  - rank: 1
+    id: eric-booth-jr
+    name: Eric Booth Jr.
+    position: OF
+    eta: 2030
+  - rank: 2
+    id: anthony-eyanson
+    name: Anthony Eyanson
+    position: RHP
+    eta: 2027
+  - rank: 3
+    id: joseph-dzierwa
+    name: Joseph Dzierwa
+    position: LHP
+    eta: 2027
+  - rank: 4
+    id: caden-hunter
+    name: Caden Hunter
+    position: LHP
+    eta: 2027
+  - rank: 5
+    id: ike-irish
+    name: Ike Irish
+    position: OF/1B
+    eta: 2028
+  - rank: 6
+    id: nate-george
+    name: Nate George
+    position: OF
+    eta: 2028
+  - rank: 7
+    id: luis-de-leon
+    name: Luis De León
+    position: LHP
+    eta: 2026
+  - rank: 8
+    id: wehiwa-aloy
+    name: Wehiwa Aloy
+    position: SS
+    eta: 2028
+  - rank: 9
+    id: enddy-azocar
+    name: Enddy Azocar
+    position: OF
+    eta: 2028
+  - rank: 10
+    id: michael-forret
+    name: Michael Forret
+    position: RHP
+    eta: 2027
+reports: []
