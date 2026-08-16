@@ -15,7 +15,7 @@
   </div>
 </section>
 
-{% assign main_feature = site.posts | where: "slug", "what-will-declan-doyle-actually-change-about-the-ravens-offense" | first %}
+{% assign main_feature = site.posts | where: "home_feature", true | sort: "date" | reverse | first %}
 {% comment %}
   The homepage rail is intentionally rolling: mark an article `home_recent: true`
   and it will enter at the top by date, moving the oldest visible link down.
@@ -27,7 +27,7 @@
     <div class="de-home-feature-column">
       <div class="de-home-section-label">
         <p>Featured story</p>
-        <span>Longform</span>
+        <span>{{ main_feature.feature_label | default: main_feature.series | default: "Featured" }}</span>
       </div>
       <a class="de-lead-story" href="{{ main_feature.url | relative_url }}">
         <figure>
@@ -49,7 +49,7 @@
         <span>Latest</span>
       </div>
       <ol class="de-recent-list">
-        {% for post in home_recent limit: 4 %}
+        {% for post in home_recent limit: 5 %}
         {% assign recent_category = post.categories | first %}
         {% assign recent_theme = post.home_recent_theme | default: recent_category %}
         <li>

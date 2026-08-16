@@ -9,16 +9,19 @@ section_theme: ravens
   <div class="club-hero-copy"><p class="de-eyebrow"><span></span> The Ravens desk</p><h1>Football,<br><em>between the numbers.</em></h1><p>A Ravens fan&rsquo;s perspective on the numbers, roster decisions and questions shaping Baltimore football.</p></div>
 </section>
 <section class="club-section club-section--ravens-feature">
+  {% assign ravens_feature = site.posts | where: "ravens_feature", true | sort: "date" | reverse | first %}
   <div class="ravens-feature-layout">
-    <a class="club-feature-teaser club-feature-teaser--ravens" href="{{ '/ravens/what-will-declan-doyle-change/' | relative_url }}">
+    {% if ravens_feature %}
+    <a class="club-feature-teaser club-feature-teaser--ravens" href="{{ ravens_feature.url | relative_url }}">
       <div class="club-feature-teaser-copy">
         <p>Featured analysis <i aria-hidden="true"></i> Ravens</p>
-        <h3>What Will Declan Doyle Actually Change About the Ravens Offense?</h3>
-        <p>The Ravens are not replacing their offensive identity. Doyle&rsquo;s task is to disguise it better, teach it more precisely and give Lamar Jackson more answers.</p>
+        <h3>{{ ravens_feature.title }}</h3>
+        <p>{{ ravens_feature.excerpt }}</p>
         <span>Read the feature &rarr;</span>
       </div>
-      <div class="club-feature-teaser-mark" aria-hidden="true"><small>New</small><strong>OC</strong><span>Deep dive</span></div>
+      <div class="club-feature-teaser-mark" aria-hidden="true"><small>{{ ravens_feature.ravens_feature_mark_label | default: "New" }}</small><strong>{{ ravens_feature.ravens_feature_mark | default: "R" }}</strong><span>{{ ravens_feature.ravens_feature_mark_detail | default: "Feature" }}</span></div>
     </a>
+    {% endif %}
 
     <aside class="ravens-recent-rail" aria-label="Ravens highlights and recent articles">
       <div class="ravens-recent-heading">
@@ -28,7 +31,7 @@ section_theme: ravens
       <ol class="ravens-recent-list">
         {% assign ravens_recent_count = 0 %}
         {% for post in site.posts %}
-          {% if post.categories contains "ravens" and post.url != "/ravens/what-will-declan-doyle-change/" and ravens_recent_count < 4 %}
+          {% if post.categories contains "ravens" and post.url != ravens_feature.url and ravens_recent_count < 4 %}
           {% assign ravens_recent_count = ravens_recent_count | plus: 1 %}
           <li>
             <span class="ravens-recent-number">0{{ ravens_recent_count }}</span>
