@@ -40,8 +40,18 @@ section_theme: orioles
         <p>{{ brandon_feature.excerpt }}</p>
         <strong>Read the full analysis <span aria-hidden="true">&rarr;</span></strong>
       </div>
-      <div class="orioles-feature-data{% if brandon_feature.feature_records %} orioles-feature-data--table{% endif %}" aria-label="{{ brandon_feature.feature_snapshot_label | default: 'Season snapshot' }}">
-        {% if brandon_feature.feature_records %}
+      <div class="orioles-feature-data{% if brandon_feature.feature_players %} orioles-feature-data--prospects{% elsif brandon_feature.feature_records %} orioles-feature-data--table{% endif %}" aria-label="{{ brandon_feature.feature_snapshot_label | default: 'Season snapshot' }}">
+        {% if brandon_feature.feature_players %}
+        <div class="orioles-feature-prospects">
+          {% for player in brandon_feature.feature_players %}
+          <span>
+            <img src="{{ player.image | relative_url }}" alt="" loading="lazy">
+            <small>{{ player.group }}</small>
+            <strong>{{ player.name }}</strong>
+          </span>
+          {% endfor %}
+        </div>
+        {% elsif brandon_feature.feature_records %}
         <table class="orioles-feature-records">
           <thead>
             <tr><th scope="col">Pitcher</th><th scope="col">Est. Orioles record</th></tr>

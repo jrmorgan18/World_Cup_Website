@@ -9,7 +9,7 @@ author: "Randy Morgan"
 series: "Rotation analysis"
 excerpt: "The Orioles reached August only two games out of a Wild Card spot. A better starter may have changed not only the record, but the deadline that followed."
 read_time: 11
-orioles_feature: true
+orioles_feature: false
 feature_kicker: "Rotation analysis"
 feature_snapshot_label: "The Cease counterfactual"
 feature_stats:
