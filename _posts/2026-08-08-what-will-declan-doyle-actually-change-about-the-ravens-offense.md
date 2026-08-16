@@ -9,6 +9,9 @@ author: "Randy Morgan"
 series: "Ravens film room"
 excerpt: "Declan Doyle is not replacing the Ravens' offensive identity. He is trying to disguise it better, teach it more precisely and give Lamar Jackson more answers."
 read_time: 12
+home_recent: true
+home_recent_label: "Ravens"
+home_recent_theme: "ravens"
 source_docx: "articles/Declan Doyle Deep Dive.docx"
 hero_image: /assets/images/ravens-declan-doyle-lamar-jackson.jpg
 hero_wide: true

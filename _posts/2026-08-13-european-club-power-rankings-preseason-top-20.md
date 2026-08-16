@@ -5,9 +5,6 @@ subtitle: "PSG remain the standard, Arsenal lead the challengers and a summer of
 excerpt: "The first European Club Power Rankings of 2026-27, weighing recent results, summer transfers, injuries, coaching changes and continuity."
 date: 2026-08-13 09:00:00 -0400
 categories: [analysis]
-home_recent: true
-home_recent_label: "European soccer"
-home_recent_theme: "soccer"
 thumbnail: /assets/images/psg-celebration.jpg
 hero_image: /assets/images/psg-celebration.jpg
 hero_alt: "PSG players celebrating their 2026 Champions League title"
