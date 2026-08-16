@@ -79,7 +79,7 @@ section_theme: orioles
       </div>
       <div class="orioles-archive-grid">
         {% for post in site.posts %}
-          {% if post.categories contains "orioles" and post.orioles_feature != true %}
+          {% if post.categories contains "orioles" and post.url != brandon_feature.url %}
           <a class="orioles-archive-card" href="{{ post.url | relative_url }}">
             <div>
               <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d" }}</time>
