@@ -2,7 +2,7 @@ title: Orioles Prospect Watch
 source_label: MLB Pipeline Orioles Top 30
 source_url: https://www.mlb.com/orioles/prospects/orioles
 snapshot_date: August 16, 2026
-stats_as_of: August 15, 2026
+stats_as_of: August 16, 2026
 season_end_note: Weekly reports run through September 27, 2026.
 source_note: Rankings follow MLB Pipeline's current Orioles Top 30. Player development notes are reported separately each Sunday and distinguish verified facts from scouting interpretation.
 prospects:
@@ -125,5 +125,133 @@ prospects:
     acquired: "Reacquired in the 2026 Tyler Wells trade with Tampa Bay"
     image: /assets/images/orioles/prospects-2026/michael-forret.jpg
     image_alt: Michael Forret pitches for Triple-A Durham before returning to Baltimore
-    stat_line: "20 G / 20 GS · 97.2 IP · 3.32 ERA · 1.26 WHIP · 107 K"
-reports: []
+    stat_line: "21 G / 21 GS · 102.2 IP · 3.86 ERA · 1.31 WHIP · 110 K"
+reports:
+  - id: "2026-08-16"
+    published: "August 16, 2026"
+    window: "August 10-16, 2026"
+    summary:
+      biggest_risers: "Joseph Dzierwa delivered six one-hit, scoreless innings with seven strikeouts; Eric Booth Jr. reached base seven times in his first three Single-A games; Wehiwa Aloy paired a .318 week with a homer and two steals; and Luis De León struck out seven over five solid Triple-A innings."
+      issues_to_monitor: "Caden Hunter allowed six earned runs and four walks in three innings, while Michael Forret was charged with eight earned runs on 10 hits in five innings. Ike Irish remains on the seven-day injured list and Nate George remains on the 60-day injured list."
+      best_story: "Dzierwa supplied the cleanest performance on the board: six scoreless innings, one hit allowed and seven strikeouts. His 2.01 ERA, 0.86 WHIP and 132 strikeouts across 112 innings now give Baltimore a substantial full-season body of upper-level dominance."
+    players:
+      - prospect: eric-booth-jr
+        name: Eric Booth Jr.
+        team: Delmarva Shorebirds
+        level: Single-A
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        recap: "Assigned to Delmarva on August 11, Booth went 3-for-8 with four walks, two runs and one RBI across his first three Single-A games. He reached base seven times in 12 plate appearances."
+        development_read: "The sample is tiny, but the contact and strike-zone control are exactly the first signals Baltimore wanted from its top 2026 pick against full-season pitching."
+        sources:
+          - { label: "MLB official transactions", url: "https://statsapi.mlb.com/api/v1/transactions?playerId=835727&startDate=08/10/2026&endDate=08/16/2026" }
+          - { label: "August 14 box score", url: "https://www.milb.com/gameday/827299/final/box" }
+      - prospect: anthony-eyanson
+        name: Anthony Eyanson
+        team: Chesapeake Baysox
+        level: Double-A
+        trend: "→"
+        direction: steady
+        direction_label: Holding
+        recap: "Eyanson allowed two earned runs on four hits over 5.1 innings Friday, striking out seven and walking four in his second Chesapeake start."
+        development_read: "The swing-and-miss production remained strong, but four walks kept this from being a clear step forward. His first two Orioles starts still support his placement near the top of the system."
+        sources:
+          - { label: "August 14 box score", url: "https://www.milb.com/gameday/818371/final/box" }
+          - { label: "MLB player record", url: "https://www.mlb.com/player/anthony-eyanson-809254" }
+      - prospect: joseph-dzierwa
+        name: Joseph Dzierwa
+        team: Chesapeake Baysox
+        level: Double-A
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        recap: "Dzierwa worked six scoreless innings Wednesday, allowing one hit and three walks while striking out seven. He has now reached 112 innings with a 2.01 ERA and 132 strikeouts this season."
+        development_read: "This was the strongest start on the board. Dzierwa continued to pair workload, run prevention and strikeout production, strengthening his case as Baltimore's most advanced homegrown pitching prospect."
+        sources:
+          - { label: "August 12 box score", url: "https://www.milb.com/gameday/818370/final/box" }
+          - { label: "MLB player record", url: "https://www.mlb.com/player/joseph-dzierwa-804530" }
+      - prospect: caden-hunter
+        name: Caden Hunter
+        team: Chesapeake Baysox
+        level: Double-A
+        trend: "↓"
+        direction: falling
+        direction_label: Setback
+        recap: "Hunter was charged with six earned runs on three hits and four walks in three innings Tuesday. He did strike out six, but one of the hits left the park."
+        development_read: "The strikeouts show the stuff was not absent, but the walks and damage made this his first substantial Double-A setback. The next start will test how quickly he restores his earlier command."
+        sources:
+          - { label: "August 11 box score", url: "https://www.milb.com/gameday/818379/final/box" }
+          - { label: "MLB player record", url: "https://www.mlb.com/player/caden-hunter-827267" }
+      - prospect: ike-irish
+        name: Ike Irish
+        team: Frederick Keys
+        level: High-A
+        trend: "?"
+        direction: insufficient
+        direction_label: Injured
+        recap: "Irish did not appear during the reporting window. Frederick placed him on the seven-day injured list on July 24, and no activation was recorded by Sunday evening."
+        development_read: "There is no new performance evidence to evaluate. His strong .286/.388/.528 season line remains the baseline until he returns."
+        sources:
+          - { label: "MLB official transactions", url: "https://statsapi.mlb.com/api/v1/transactions?playerId=702610&startDate=07/20/2026&endDate=08/16/2026" }
+          - { label: "MLB player record", url: "https://www.mlb.com/player/ike-irish-702610" }
+      - prospect: nate-george
+        name: Nate George
+        team: Frederick Keys
+        level: High-A
+        trend: "?"
+        direction: insufficient
+        direction_label: Injured
+        recap: "George did not appear during the reporting window. Frederick transferred him to the 60-day injured list on July 8 after his last game on May 3."
+        development_read: "There is no new performance evidence to evaluate. The extended absence has interrupted the 20-year-old's development season after only 20 games."
+        sources:
+          - { label: "MLB official transactions", url: "https://statsapi.mlb.com/api/v1/transactions?playerId=825582&startDate=05/01/2026&endDate=08/16/2026" }
+          - { label: "MLB player record", url: "https://www.mlb.com/player/nate-george-825582" }
+      - prospect: luis-de-leon
+        name: Luis De León
+        team: Norfolk Tides
+        level: Triple-A
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        recap: "De León allowed two earned runs on six hits over five innings Friday, striking out seven and walking one in his third Triple-A start."
+        development_read: "The seven-to-one strikeout-to-walk line was his best Triple-A command signal yet. He still needs to reduce traffic, but this was a useful rebound at the level closest to Baltimore."
+        sources:
+          - { label: "August 14 box score", url: "https://www.milb.com/gameday/816019/final/box" }
+          - { label: "MLB player record", url: "https://www.mlb.com/player/luis-de-leon-801725" }
+      - prospect: wehiwa-aloy
+        name: Wehiwa Aloy
+        team: Chesapeake Baysox
+        level: Double-A
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        recap: "Aloy went 7-for-22 (.318/.375/.500) with a home run, three RBI and two stolen bases across five games. He finished the week with three hits Saturday."
+        development_read: "The production and athletic impact outweighed eight strikeouts. Aloy is beginning to convert his strong High-A season into meaningful Double-A results."
+        sources:
+          - { label: "August 15 box score", url: "https://www.milb.com/gameday/818368/final/box" }
+          - { label: "MLB player record", url: "https://www.mlb.com/player/wehiwa-aloy-814450" }
+      - prospect: enddy-azocar
+        name: Enddy Azocar
+        team: Frederick Keys
+        level: High-A
+        trend: "→"
+        direction: steady
+        direction_label: Holding
+        recap: "Azocar went 4-for-18 with a triple, a home run and four RBI in five games. He produced three of his four hits and all four RBI over the final two games."
+        development_read: "The weekly on-base rate was modest, but the late power kept the week from becoming a setback. His impact contact remains the carrying signal."
+        sources:
+          - { label: "August 15 box score", url: "https://www.milb.com/gameday/822261/final/box" }
+          - { label: "MLB player record", url: "https://www.mlb.com/player/enddy-azocar-821150" }
+      - prospect: michael-forret
+        name: Michael Forret
+        team: Norfolk Tides
+        level: Triple-A
+        trend: "↓"
+        direction: falling
+        direction_label: Setback
+        recap: "Forret allowed eight earned runs on 10 hits over five innings Sunday, walking two and striking out three. His combined season ERA rose from 3.32 to 3.86."
+        development_read: "This was the week's clearest concern. One start does not erase his broader season, but the hit volume and limited swing-and-miss require a sharper response in his next Triple-A turn."
+        sources:
+          - { label: "August 16 box score", url: "https://www.milb.com/gameday/816020/final/box" }
+          - { label: "MLB player record", url: "https://www.mlb.com/player/michael-forret-702650" }
