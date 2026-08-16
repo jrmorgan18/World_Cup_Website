@@ -999,15 +999,39 @@ body { overflow-x: hidden; }
 .orioles-prospect-intro dt { color:#827a75; font-family:var(--font-display); font-size:.54rem; letter-spacing:.8px; text-transform:uppercase; }
 .orioles-prospect-intro dd { color:#ddd6d1; font-family:var(--font-display); font-size:.59rem; line-height:1.35; text-align:right; }
 .orioles-prospect-intro a,.orioles-prospect-source a,.orioles-prospect-notes footer a { color:var(--de-orange-light); }
-.orioles-prospect-board-wrap { overflow-x:auto; border:1px solid rgba(241,90,36,.34); background:#0e0c0b; }
-.orioles-prospect-board { width:100%; min-width:620px; border-collapse:collapse; }
-.orioles-prospect-board th,.orioles-prospect-board td { padding:18px 22px; border-bottom:1px solid rgba(255,255,255,.1); text-align:left; }
-.orioles-prospect-board thead th { color:#a89b94; background:#17110e; font-family:var(--font-display); font-size:.57rem; letter-spacing:1px; text-transform:uppercase; }
-.orioles-prospect-board tbody tr:hover { background:rgba(241,90,36,.08); }
-.orioles-prospect-board tbody tr:last-child th,.orioles-prospect-board tbody tr:last-child td { border-bottom:0; }
-.orioles-prospect-board tbody th { color:#fff; font-family:'Newsreader',serif; font-size:1.45rem; font-weight:500; line-height:1; }
-.orioles-prospect-board td { color:#b8afa9; font-family:var(--font-display); font-size:.68rem; letter-spacing:.8px; text-transform:uppercase; }
-.orioles-prospect-rank { color:var(--de-orange-light); font-family:var(--font-display); font-size:.73rem; font-weight:700; letter-spacing:1px; }
+.orioles-prospect-card-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; scroll-margin-top:calc(var(--header-height) + 24px); }
+.orioles-prospect-card { min-width:0; overflow:hidden; border:1px solid rgba(255,255,255,.14); background:linear-gradient(145deg,#171310,#0d0c0c); box-shadow:inset 5px 0 0 var(--de-orange); }
+.orioles-prospect-card--rising { box-shadow:inset 5px 0 0 #76ba7a; }
+.orioles-prospect-card--steady { box-shadow:inset 5px 0 0 #a09a95; }
+.orioles-prospect-card--falling { box-shadow:inset 5px 0 0 #d25b49; }
+.orioles-prospect-card--insufficient { box-shadow:inset 5px 0 0 #a76bcb; }
+.orioles-prospect-card figure { position:relative; aspect-ratio:16 / 9; overflow:hidden; background:#17110e; }
+.orioles-prospect-card figure::after { content:''; position:absolute; inset:0; background:linear-gradient(0deg,rgba(9,9,11,.86),transparent 48%); pointer-events:none; }
+.orioles-prospect-card figure img { width:100%; height:100%; object-fit:cover; object-position:center; transition:transform .3s ease; }
+.orioles-prospect-card:hover figure img { transform:scale(1.025); }
+.orioles-prospect-card figcaption { position:absolute; z-index:2; left:17px; bottom:12px; color:#b9b0aa; font-size:.55rem; }
+.orioles-prospect-card figcaption a { color:#fff; }
+.orioles-prospect-card figure>span { position:absolute; z-index:2; right:16px; bottom:7px; color:#fff; font-family:var(--font-display); font-size:2.5rem; font-weight:700; line-height:1; text-shadow:0 3px 12px rgba(0,0,0,.55); }
+.orioles-prospect-card-copy { padding:25px 27px 27px; }
+.orioles-prospect-card-copy>header { display:flex; align-items:flex-start; justify-content:space-between; gap:20px; }
+.orioles-prospect-card-copy>header p { color:var(--de-orange-light); font-family:var(--font-display); font-size:.55rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; }
+.orioles-prospect-card-copy h3 { margin-top:6px; color:#fff; font-family:'Newsreader',serif; font-size:2rem; font-weight:500; letter-spacing:-.65px; line-height:1; }
+.orioles-prospect-card-trend { color:var(--de-orange-light); font-family:var(--font-display); font-size:1.2rem; font-weight:700; line-height:1; text-align:right; }
+.orioles-prospect-card-trend small { display:block; margin-top:5px; color:#8e8580; font-size:.46rem; letter-spacing:.6px; text-transform:uppercase; }
+.orioles-prospect-card dl { margin-top:20px; display:grid; grid-template-columns:minmax(135px,.8fr) minmax(0,1.2fr); gap:1px; background:rgba(255,255,255,.1); }
+.orioles-prospect-card dl>div { min-width:0; padding:13px 14px; background:#100e0d; }
+.orioles-prospect-card dt { color:#776f6b; font-family:var(--font-display); font-size:.48rem; letter-spacing:.7px; text-transform:uppercase; }
+.orioles-prospect-card dd { margin-top:4px; color:#e2dad5; font-family:'Newsreader',serif; font-size:.86rem; line-height:1.28; }
+.orioles-prospect-card dd span { display:block; margin-top:3px; color:#9d938d; font-family:var(--font-display); font-size:.49rem; letter-spacing:.55px; text-transform:uppercase; }
+.orioles-prospect-card-update { margin-top:17px; padding:17px 18px; border:1px solid rgba(241,90,36,.32); background:rgba(241,90,36,.08); }
+.orioles-prospect-card-update>p { display:flex; justify-content:space-between; gap:14px; color:var(--de-orange-light); font-family:var(--font-display); font-size:.5rem; font-weight:700; letter-spacing:.75px; text-transform:uppercase; }
+.orioles-prospect-card-update>p span { color:#7f7772; font-weight:500; text-align:right; }
+.orioles-prospect-card-update>strong { display:block; margin-top:10px; color:#fff; font-family:'Newsreader',serif; font-size:1rem; font-weight:500; line-height:1.4; }
+.orioles-prospect-card-update>small { display:block; margin-top:9px; color:#9f9690; font-size:.71rem; line-height:1.42; }
+.orioles-prospect-card-update footer { margin-top:12px; display:flex; flex-wrap:wrap; gap:7px 13px; }
+.orioles-prospect-card-update footer a { color:var(--de-orange-light); font-family:var(--font-display); font-size:.48rem; letter-spacing:.5px; text-transform:uppercase; }
+.orioles-prospect-card-update--placeholder { border-color:rgba(255,255,255,.13); background:rgba(255,255,255,.025); }
+.orioles-prospect-card-update--placeholder>strong { color:#f3a080; font-family:var(--font-display); font-size:.76rem; font-weight:700; letter-spacing:.35px; }
 .orioles-prospect-source { margin:14px 0 56px; color:#8b837e; font-size:.75rem; line-height:1.45; }
 .orioles-prospect-source a { margin-left:6px; font-family:var(--font-display); font-size:.56rem; font-weight:700; letter-spacing:.7px; text-transform:uppercase; white-space:nowrap; }
 .orioles-prospect-report { padding-top:4px; }
@@ -1465,7 +1489,9 @@ body { overflow-x: hidden; }
   .orioles-prospect-hero-mark { right:-8px; font-size:13rem; }
   .orioles-prospect-shell { padding:42px 20px 70px; }
   .orioles-prospect-intro h2,.orioles-prospect-report h2,.orioles-prospect-pending h2 { font-size:2.35rem; }
-  .orioles-prospect-board th,.orioles-prospect-board td { padding:16px; }
+  .orioles-prospect-card-grid { grid-template-columns:1fr; }
+  .orioles-prospect-card-copy { padding:23px 22px 24px; }
+  .orioles-prospect-card dl { grid-template-columns:1fr; }
   .orioles-prospect-report-head { align-items:flex-start; flex-direction:column; }
   .orioles-prospect-pending { padding:31px 25px; }
   .orioles-missing-ace-results th,.orioles-missing-ace-results td { padding:14px 16px; }
