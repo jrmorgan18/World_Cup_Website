@@ -9,6 +9,7 @@ author: "Randy Morgan"
 series: "Preseason roster analysis"
 excerpt: "Quarterback comes first because it matters most. Safety has the cleanest No. 1 case. Here is where all 12 Ravens units stand before the season."
 read_time: 20
+ravens_unit_rankings: true
 home_feature: true
 feature_label: "Preseason"
 home_recent: true
@@ -30,29 +31,6 @@ The Ravens enter the season with high hopes once again, but also with significan
 So what should we expect in 2026?
 
 Here is how I rank the Ravens’ 12 major units entering the season. This is not simply a list of their projected NFL rankings. Positional importance, depth, certainty and the degree to which a unit can change Baltimore’s championship ceiling all matter. That is why quarterback leads the list even though safety has the cleaner argument as the best unit in the NFL.
-
-<section class="ravens-unit-ranking-board" aria-labelledby="unit-ranking-board-title">
-  <div class="ravens-unit-ranking-board-head">
-    <p>2026 preseason board</p>
-    <h2 id="unit-ranking-board-title">Where the Ravens’ units stand</h2>
-    <small>Projected NFL rank and plausible range are included for every room; the order below also weighs importance, depth and ceiling.</small>
-  </div>
-  <ol class="ravens-unit-ranking-list">
-    <li><div><strong>Quarterback</strong><small>Projected NFL rank: 2nd · Range: 1st–4th</small></div><em>Ceiling driver</em></li>
-    <li><div><strong>Safety</strong><small>Projected NFL rank: 1st · Range: 1st–3rd</small></div><em>Elite</em></li>
-    <li><div><strong>Running Back</strong><small>Projected NFL rank: 3rd · Range: 1st–6th</small></div><em>Elite</em></li>
-    <li><div><strong>Interior Defensive Line</strong><small>Projected NFL rank: 6th · Range: 3rd–15th</small></div><em>Deep</em></li>
-    <li><div><strong>Edge</strong><small>Projected NFL rank: 8th · Range: 4th–14th</small></div><em>Upgraded</em></li>
-    <li><div><strong>Cornerback</strong><small>Projected NFL rank: 11th · Range: 6th–20th</small></div><em>Volatile</em></li>
-    <li><div><strong>Pass Catchers</strong><small>Projected NFL rank: 13th · Range: 8th–20th</small></div><em>Unsettled</em></li>
-    <li><div><strong>Linebacker</strong><small>Projected NFL rank: 12th · Range: 8th–20th</small></div><em>Solid</em></li>
-    <li><div><strong>Blocking</strong><small>Projected NFL rank: 18th · Range: 13th–24th</small></div><em>Question mark</em></li>
-    <li><div><strong>Return Unit</strong><small>Projected NFL rank: 14th · Range: 8th–22nd</small></div><em>Volatile</em></li>
-    <li><div><strong>Kicker</strong><small>Projected NFL rank: 16th · Range: 9th–24th</small></div><em>Prove it</em></li>
-    <li><div><strong>Punter</strong><small>Projected NFL rank: 22nd · Range: 12th–30th</small></div><em>Unknown</em></li>
-  </ol>
-  <p><strong>The distinction matters:</strong> a lower projected league rank does not automatically mean a lower place on this board. The order is about how each room could reshape Baltimore’s season.</p>
-</section>
 
 ## 1. Quarterback
 

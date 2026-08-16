@@ -11,6 +11,7 @@ layout: default
 {% endif %}
 {% assign show_article_sidebar = false %}
 {% if show_article_prompts or page.article_stats %}{% assign show_article_sidebar = true %}{% endif %}
+{% if page.ravens_unit_rankings %}{% assign show_article_sidebar = true %}{% endif %}
 <div class="article-shell{% if show_article_sidebar %} article-shell--with-sidebar{% endif %}">
 <article class="article">
   <div class="article-header">
@@ -80,8 +81,9 @@ layout: default
   </div>
 </article>
 {% if show_article_sidebar %}
-<aside class="article-sidebar{% if page.article_stats %} article-sidebar--stats{% endif %}">
+<aside class="article-sidebar{% if page.article_stats %} article-sidebar--stats{% endif %}{% if page.ravens_unit_rankings %} article-sidebar--ravens-rankings{% endif %}">
   <div class="article-sidebar-stack">
+    {% if page.ravens_unit_rankings %}{% include ravens-unit-ranking-board.html %}{% endif %}
     {% if page.article_stats %}
     {% include article-stats.html stats=page.article_stats card_id="article-stat-title" %}
     {% endif %}
