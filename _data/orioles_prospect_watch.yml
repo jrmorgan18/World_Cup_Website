@@ -10,6 +10,7 @@ prospects:
     id: eric-booth-jr
     name: Eric Booth Jr.
     position: OF
+    age: 18
     eta: 2030
     team: Delmarva Shorebirds
     level: Single-A
@@ -21,6 +22,7 @@ prospects:
     id: anthony-eyanson
     name: Anthony Eyanson
     position: RHP
+    age: 21
     eta: 2027
     team: Chesapeake Baysox
     level: Double-A
@@ -32,6 +34,7 @@ prospects:
     id: joseph-dzierwa
     name: Joseph Dzierwa
     position: LHP
+    age: 22
     eta: 2027
     team: Chesapeake Baysox
     level: Double-A
@@ -43,6 +46,7 @@ prospects:
     id: caden-hunter
     name: Caden Hunter
     position: LHP
+    age: 22
     eta: 2027
     team: Chesapeake Baysox
     level: Double-A
@@ -54,6 +58,7 @@ prospects:
     id: ike-irish
     name: Ike Irish
     position: OF/1B
+    age: 22
     eta: 2028
     team: Frederick Keys
     level: High-A
@@ -65,6 +70,7 @@ prospects:
     id: nate-george
     name: Nate George
     position: OF
+    age: 20
     eta: 2028
     team: Frederick Keys
     level: High-A
@@ -76,6 +82,7 @@ prospects:
     id: luis-de-leon
     name: Luis De León
     position: LHP
+    age: 23
     eta: 2026
     team: Norfolk Tides
     level: Triple-A
@@ -87,6 +94,7 @@ prospects:
     id: wehiwa-aloy
     name: Wehiwa Aloy
     position: SS
+    age: 22
     eta: 2028
     team: Chesapeake Baysox
     level: Double-A
@@ -98,6 +106,7 @@ prospects:
     id: enddy-azocar
     name: Enddy Azocar
     position: OF
+    age: 19
     eta: 2028
     team: Frederick Keys
     level: High-A
@@ -109,6 +118,7 @@ prospects:
     id: michael-forret
     name: Michael Forret
     position: RHP
+    age: 22
     eta: 2027
     team: Norfolk Tides
     level: Triple-A
