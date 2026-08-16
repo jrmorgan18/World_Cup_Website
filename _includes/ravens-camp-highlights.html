@@ -2,9 +2,9 @@
 {% if camp %}
 <section class="ravens-camp-highlights" aria-labelledby="ravens-camp-heading">
   <header class="ravens-camp-highlights-head">
-    <p class="de-kicker">Training camp</p>
+    <p class="de-kicker">{{ camp.kicker | default: "Training camp" }}</p>
     <div>
-      <h2 id="ravens-camp-heading">Camp Highlights</h2>
+      <h2 id="ravens-camp-heading">{{ camp.heading | default: "Camp Highlights" }}</h2>
       <time datetime="{{ camp.date | date: '%Y-%m-%d' }}">{{ camp.edition }}</time>
     </div>
     <p>{{ camp.intro }}</p>
