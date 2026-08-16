@@ -811,7 +811,8 @@ body { overflow-x: hidden; }
 .club-feature-teaser-mark strong { color:#fff; font-size:8rem; line-height:.9; }
 .club-section--ravens-feature { padding-top:24px; }
 .ravens-feature-layout { display:grid; grid-template-columns:minmax(0,1fr) minmax(280px,320px); gap:36px; align-items:start; }
-.ravens-recent-rail { min-width:0; display:grid; gap:34px; }
+.ravens-camp-rail,.ravens-recent-rail { min-width:0; }
+.ravens-recent-rail--below-feature { grid-column:1; }
 .ravens-camp-highlights { padding:22px 22px 20px; border:1px solid rgba(255,255,255,.15); background:linear-gradient(145deg,#17111e,#0d0c10 72%); box-shadow:inset 5px 0 0 var(--de-purple); }
 .ravens-camp-highlights-head .de-kicker { color:var(--de-purple-light); font-size:.58rem; }
 .ravens-camp-highlights-head > div { display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-top:8px; }
@@ -826,7 +827,7 @@ body { overflow-x: hidden; }
 .ravens-recent-heading { padding-bottom:15px; display:flex; align-items:center; justify-content:space-between; gap:18px; border-bottom:4px solid var(--de-purple); font-family:var(--font-display); text-transform:uppercase; }
 .ravens-recent-heading p { color:#fff; font-size:.72rem; font-weight:700; letter-spacing:1.8px; }
 .ravens-recent-heading span { color:#85818b; font-size:.6rem; letter-spacing:1.1px; text-align:right; }
-.ravens-recent-list { list-style:none; }
+.ravens-recent-list { margin:0; padding:0; list-style:none; }
 .ravens-recent-list li { padding:22px 0; display:grid; grid-template-columns:28px minmax(0,1fr); gap:12px; border-bottom:1px solid rgba(255,255,255,.13); }
 .ravens-recent-number { color:#77717f; font-family:var(--font-display); font-size:.63rem; line-height:1.4; }
 .ravens-recent-list small { display:block; margin-bottom:7px; color:var(--de-purple-light); font-family:var(--font-display); font-size:.6rem; font-weight:700; letter-spacing:1.2px; text-transform:uppercase; }
@@ -1355,7 +1356,8 @@ body { overflow-x: hidden; }
   .club-feature-teaser-mark strong { font-size:5rem; }
   .club-section--ravens-feature { padding-top:36px; }
   .ravens-feature-layout { grid-template-columns:1fr; }
-  .ravens-recent-rail { position:static; }
+  .ravens-camp-rail,.ravens-recent-rail { position:static; }
+  .ravens-recent-rail--below-feature { grid-column:auto; }
   .ravens-unit-ranking-list li { grid-template-columns:42px minmax(0,1fr); gap:12px; padding:13px 18px; }
   .ravens-unit-ranking-list em { grid-column:2; justify-self:start; }
   .ravens-unit-ranking-board-head { padding:23px 20px 19px; }
