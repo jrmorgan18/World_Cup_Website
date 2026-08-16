@@ -1,0 +1,88 @@
+---
+layout: default
+title: Orioles Prospect Watch
+description: Track MLB Pipeline's current top 10 Orioles prospects and their weekly development reports.
+permalink: /orioles/prospects/
+section_theme: orioles
+---
+{% assign watch = site.data.orioles_prospect_watch %}
+{% assign latest_report = watch.reports | first %}
+
+<section class="orioles-prospect-hero">
+  <div class="orioles-prospect-hero-mark" aria-hidden="true">10</div>
+  <div>
+    <p class="de-eyebrow"><span></span> The Orioles desk / Farm system</p>
+    <h1>Prospect<br><em>watch.</em></h1>
+    <p>A weekly read on the players closest to shaping Baltimore&rsquo;s next window.</p>
+  </div>
+</section>
+
+<section class="orioles-prospect-shell">
+  <div class="orioles-prospect-intro">
+    <div>
+      <p class="de-kicker">Current board</p>
+      <h2>MLB Pipeline&rsquo;s Orioles Top 10</h2>
+      <p>The board tracks Pipeline&rsquo;s current organizational ranking. The Sunday report adds the weekly context: performance, role, availability and what each result means for a prospect&rsquo;s path.</p>
+    </div>
+    <dl>
+      <div><dt>Ranking source</dt><dd><a href="{{ watch.source_url }}" target="_blank" rel="noopener">{{ watch.source_label }} <span aria-hidden="true">&nearr;</span></a></dd></div>
+      <div><dt>Snapshot</dt><dd>{{ watch.snapshot_date }}</dd></div>
+      <div><dt>Report cadence</dt><dd>Sunday night</dd></div>
+    </dl>
+  </div>
+
+  <div class="orioles-prospect-board-wrap" tabindex="0">
+    <table class="orioles-prospect-board">
+      <caption class="sr-only">Current MLB Pipeline top 10 Orioles prospects</caption>
+      <thead>
+        <tr><th scope="col">Pipeline rank</th><th scope="col">Prospect</th><th scope="col">Position</th><th scope="col">ETA</th></tr>
+      </thead>
+      <tbody>
+        {% for prospect in watch.prospects %}
+        <tr>
+          <td data-label="Pipeline rank"><span class="orioles-prospect-rank">{{ prospect.rank | prepend: '0' | slice: -2, 2 }}</span></td>
+          <th scope="row" data-label="Prospect"><strong>{{ prospect.name }}</strong></th>
+          <td data-label="Position">{{ prospect.position }}</td>
+          <td data-label="ETA">{{ prospect.eta }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  <p class="orioles-prospect-source">{{ watch.source_note }} <a href="{{ watch.source_url }}" target="_blank" rel="noopener">View the official ranking <span aria-hidden="true">&nearr;</span></a></p>
+
+  {% if latest_report %}
+  <section class="orioles-prospect-report" aria-labelledby="orioles-prospect-report-heading">
+    <header class="orioles-prospect-report-head">
+      <div>
+        <p class="de-kicker">Weekly development report</p>
+        <h2 id="orioles-prospect-report-heading">{{ latest_report.window }}</h2>
+        <p>Published {{ latest_report.published }}. Results are reported from direct team, league and local coverage wherever possible.</p>
+      </div>
+      <a href="#prospect-weekly-notes">Jump to every report <span aria-hidden="true">&darr;</span></a>
+    </header>
+    <div class="orioles-prospect-summary">
+      <article><span>01</span><p>Biggest risers</p><strong>{{ latest_report.summary.biggest_risers }}</strong></article>
+      <article><span>02</span><p>Issues to monitor</p><strong>{{ latest_report.summary.issues_to_monitor }}</strong></article>
+      <article><span>03</span><p>Week&rsquo;s headline</p><strong>{{ latest_report.summary.best_story }}</strong></article>
+    </div>
+    <div id="prospect-weekly-notes" class="orioles-prospect-notes">
+      {% for player in latest_report.players %}
+      <article class="orioles-prospect-note orioles-prospect-note--{{ player.direction }}">
+        <header><span>{{ player.trend }}</span><div><h3>{{ player.name }}</h3><p>{{ player.team }}{% if player.level %} &middot; {{ player.level }}{% endif %}</p></div><small>{{ player.direction_label }}</small></header>
+        <p>{{ player.recap }}</p>
+        <strong>{{ player.development_read }}</strong>
+        {% if player.sources %}<footer>{% for source in player.sources %}<a href="{{ source.url }}" target="_blank" rel="noopener">{{ source.label }} <span aria-hidden="true">&nearr;</span></a>{% endfor %}</footer>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% else %}
+  <section class="orioles-prospect-pending" aria-labelledby="orioles-prospect-pending-heading">
+    <p class="de-kicker">Weekly development report</p>
+    <h2 id="orioles-prospect-pending-heading">The first report publishes Sunday night.</h2>
+    <p>Each update will cover the Monday-through-Sunday window for everyone on this board, then remain here as the season&rsquo;s running record.</p>
+    <small>{{ watch.season_end_note }}</small>
+  </section>
+  {% endif %}
+</section>
