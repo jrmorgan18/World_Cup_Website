@@ -12,6 +12,9 @@ author: "Randy Morgan"
 series: "The American Soccer Question"
 part: "Part 2 of 2"
 read_time: 58
+home_recent: true
+home_recent_label: "USMNT"
+home_recent_theme: "soccer"
 word_count: 12314
 start_id: the-french-model
 hero_image: /assets/images/usmnt-longform-part2-clairefontaine.jpg
