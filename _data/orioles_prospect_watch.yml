@@ -2,6 +2,7 @@ title: Orioles Prospect Watch
 source_label: MLB Pipeline Orioles Top 30
 source_url: https://www.mlb.com/orioles/prospects/orioles
 snapshot_date: August 16, 2026
+stats_as_of: August 15, 2026
 season_end_note: Weekly reports run through September 27, 2026.
 source_note: Rankings follow MLB Pipeline's current Orioles Top 30. Player development notes are reported separately each Sunday and distinguish verified facts from scouting interpretation.
 prospects:
@@ -10,49 +11,109 @@ prospects:
     name: Eric Booth Jr.
     position: OF
     eta: 2030
+    team: Delmarva Shorebirds
+    level: Single-A
+    acquired: "2026 Draft: first round, No. 7 overall"
+    image: /assets/images/orioles/prospects-2026/eric-booth-jr.jpg
+    image_alt: Eric Booth Jr. fields a baseball during an amateur showcase
+    stat_line: "3 G · .375/.583/.375 · 0 HR · 0 SB"
   - rank: 2
     id: anthony-eyanson
     name: Anthony Eyanson
     position: RHP
     eta: 2027
+    team: Chesapeake Baysox
+    level: Double-A
+    acquired: "2026 Adley Rutschman trade with Boston"
+    image: /assets/images/orioles/prospects-2026/anthony-eyanson.webp
+    image_alt: Anthony Eyanson pitches for Chesapeake
+    stat_line: "18 G / 17 GS · 78.2 IP · 1.60 ERA · 0.94 WHIP · 110 K"
   - rank: 3
     id: joseph-dzierwa
     name: Joseph Dzierwa
     position: LHP
     eta: 2027
+    team: Chesapeake Baysox
+    level: Double-A
+    acquired: "2025 Draft: second round, No. 58 overall"
+    image: /assets/images/orioles/prospects-2026/joseph-dzierwa.webp
+    image_alt: Joseph Dzierwa pitches for Chesapeake
+    stat_line: "22 G / 20 GS · 112.0 IP · 2.01 ERA · 0.86 WHIP · 132 K"
   - rank: 4
     id: caden-hunter
     name: Caden Hunter
     position: LHP
     eta: 2027
+    team: Chesapeake Baysox
+    level: Double-A
+    acquired: "2025 Draft: sixth round, No. 184 overall"
+    image: /assets/images/orioles/prospects-2026/caden-hunter.webp
+    image_alt: Caden Hunter pitches for Chesapeake
+    stat_line: "19 G / 17 GS · 84.0 IP · 2.04 ERA · 1.02 WHIP · 128 K"
   - rank: 5
     id: ike-irish
     name: Ike Irish
     position: OF/1B
     eta: 2028
+    team: Frederick Keys
+    level: High-A
+    acquired: "2025 Draft: first round, No. 19 overall"
+    image: /assets/images/orioles/prospects-2026/ike-irish.jpg
+    image_alt: Ike Irish follows through on a swing for Frederick
+    stat_line: "76 G · .286/.388/.528 · 16 HR · 20 SB"
   - rank: 6
     id: nate-george
     name: Nate George
     position: OF
     eta: 2028
+    team: Frederick Keys
+    level: High-A
+    acquired: "2024 Draft: 16th round, No. 489 overall"
+    image: /assets/images/orioles/prospects-2026/nate-george.jpg
+    image_alt: Nate George throws during a Frederick game
+    stat_line: "20 G · .293/.372/.366 · 1 HR · 15 SB"
   - rank: 7
     id: luis-de-leon
     name: Luis De León
     position: LHP
     eta: 2026
+    team: Norfolk Tides
+    level: Triple-A
+    acquired: "International signing: Dominican Republic, December 2021"
+    image: /assets/images/orioles/prospects-2026/luis-de-leon.jpg
+    image_alt: Luis De León pitches in the Orioles farm system
+    stat_line: "22 G / 22 GS · 95.1 IP · 4.53 ERA · 1.43 WHIP · 115 K"
   - rank: 8
     id: wehiwa-aloy
     name: Wehiwa Aloy
     position: SS
     eta: 2028
+    team: Chesapeake Baysox
+    level: Double-A
+    acquired: "2025 Draft: compensation round, No. 31 overall"
+    image: /assets/images/orioles/prospects-2026/wehiwa-aloy.jpg
+    image_alt: Wehiwa Aloy prepares to hit for Chesapeake
+    stat_line: "102 G · .293/.365/.494 · 18 HR · 16 SB"
   - rank: 9
     id: enddy-azocar
     name: Enddy Azocar
     position: OF
     eta: 2028
+    team: Frederick Keys
+    level: High-A
+    acquired: "2026 Adley Rutschman trade with Boston"
+    image: /assets/images/orioles/prospects-2026/enddy-azocar.jpg
+    image_alt: Enddy Azocar stands on base during a minor league game
+    stat_line: "95 G · .291/.344/.553 · 20 HR · 11 SB"
   - rank: 10
     id: michael-forret
     name: Michael Forret
     position: RHP
     eta: 2027
+    team: Norfolk Tides
+    level: Triple-A
+    acquired: "Reacquired in the 2026 Tyler Wells trade with Tampa Bay"
+    image: /assets/images/orioles/prospects-2026/michael-forret.jpg
+    image_alt: Michael Forret pitches for Triple-A Durham before returning to Baltimore
+    stat_line: "20 G / 20 GS · 97.2 IP · 3.32 ERA · 1.26 WHIP · 107 K"
 reports: []
