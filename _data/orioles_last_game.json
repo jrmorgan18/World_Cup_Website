@@ -1,120 +1,100 @@
 {
-  "generated_at": "2026-08-15T06:19:36Z",
-  "game_pk": 822942,
-  "date": "2026-08-14",
+  "generated_at": "2026-08-16T06:21:44Z",
+  "game_pk": 822941,
+  "date": "2026-08-15",
   "venue": "Tropicana Field",
   "home_away": "away",
   "opponent": "Tampa Bay Rays",
   "opponent_abbr": "TB",
   "result": "W",
-  "orioles_score": 6,
-  "opponent_score": 5,
-  "orioles_hits": 12,
-  "opponent_hits": 9,
-  "orioles_errors": 0,
-  "opponent_errors": 0,
+  "orioles_score": 4,
+  "opponent_score": 3,
+  "orioles_hits": 9,
+  "opponent_hits": 11,
+  "orioles_errors": 1,
+  "opponent_errors": 1,
   "winning_pitcher": {
-    "name": "Josh Walker",
+    "name": "Andrew Kittredge",
     "team": "BAL",
-    "record": "1-0",
-    "line": "0.2 IP, 0 ER, K, 0 BB"
+    "record": "2-3)(BS, 4",
+    "line": "1.0 IP, ER, 0 K, 0 BB"
   },
   "losing_pitcher": {
-    "name": "Garrett Cleavinger",
+    "name": "Bryan Baker",
     "team": "TB",
-    "record": "4-4",
-    "line": "0.1 IP, 2 ER, 0 K, BB"
+    "record": "1-1",
+    "line": "1.0 IP, 0 ER, 2 K, BB"
   },
   "save_pitcher": {
     "name": "Cam Sanders",
     "team": "BAL",
-    "record": "2",
-    "line": "0.1 IP, 0 ER, 0 K, BB"
+    "record": "3",
+    "line": "1.0 IP, 0 ER, 2 K, BB"
   },
   "key_players": [
     {
-      "name": "Gunnar Henderson",
+      "name": "Pete Alonso",
       "team": "BAL",
-      "position": "SS",
-      "line": "4-4 | HR, 2B, 2 RBI"
+      "position": "1B",
+      "line": "3-5 | HR, RBI, R"
     },
     {
-      "name": "Tyler O'Neill",
-      "team": "BAL",
-      "position": "RF",
-      "line": "1-2 | 2 BB, 2 R"
+      "name": "Casey Legumina",
+      "team": "TB",
+      "position": "P",
+      "line": "2.0 IP, 0 ER, 4 K, 0 BB"
     },
     {
-      "name": "Colton Cowser",
+      "name": "Kyle Bradish",
       "team": "BAL",
-      "position": "CF",
-      "line": "1-2 | HR, K, RBI"
+      "position": "P",
+      "line": "6.0 IP, 2 ER, 3 K, 4 BB"
     }
   ],
-  "summary": "The Orioles beat the Rays 6-5 on the road at Rays. Gunnar Henderson led the way (4-4 | HR, 2B, 2 RBI). Baltimore has won 1 straight.",
+  "summary": "The Orioles beat the Rays 4-3 on the road at Rays. Pete Alonso led the way (3-5 | HR, RBI, R). Baltimore has won 2 straight.",
   "record": {
-    "wins": 59,
+    "wins": 60,
     "losses": 63,
-    "pct": ".484",
+    "pct": ".488",
     "division": "AL East",
     "division_rank": 5,
-    "games_back": "15.5",
-    "streak": "W1",
+    "games_back": "14.5",
+    "streak": "W2",
     "last_10": "5-5"
   },
   "wild_card": {
-    "rank": 7,
+    "rank": 5,
     "spots": 3,
-    "games_back": "1.0",
-    "status_text": "1.0 games back of the third AL Wild Card spot.",
+    "games_back": "0.5",
+    "status_text": "0.5 games back of the third AL Wild Card spot.",
     "ladder": [
       {
-        "team": "Tigers",
-        "abbr": "DET",
-        "wins": 60,
-        "losses": 62,
+        "team": "Rangers",
+        "abbr": "TEX",
+        "wins": 61,
+        "losses": 63,
         "games_back": null,
         "wild_card_rank": 3,
         "is_orioles": false,
         "is_cutoff": true
       },
       {
-        "team": "Twins",
-        "abbr": "MIN",
-        "wins": 60,
-        "losses": 63,
+        "team": "Blue Jays",
+        "abbr": "TOR",
+        "wins": 61,
+        "losses": 64,
         "games_back": "0.5",
         "wild_card_rank": 4,
         "is_orioles": false,
         "is_cutoff": false
       },
       {
-        "team": "Rangers",
-        "abbr": "TEX",
+        "team": "Orioles",
+        "abbr": "BAL",
         "wins": 60,
         "losses": 63,
         "games_back": "0.5",
         "wild_card_rank": 5,
-        "is_orioles": false,
-        "is_cutoff": false
-      },
-      {
-        "team": "Blue Jays",
-        "abbr": "TOR",
-        "wins": 60,
-        "losses": 64,
-        "games_back": "1.0",
-        "wild_card_rank": 6,
-        "is_orioles": false,
-        "is_cutoff": false
-      },
-      {
-        "team": "Orioles",
-        "abbr": "BAL",
-        "wins": 59,
-        "losses": 63,
-        "games_back": "1.0",
-        "wild_card_rank": 7,
         "is_orioles": true,
         "is_cutoff": false
       }
