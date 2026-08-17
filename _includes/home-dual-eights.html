@@ -49,17 +49,20 @@
         <span>Latest</span>
       </div>
       <ol class="de-recent-list">
-        {% for post in home_recent limit: 5 %}
-        {% assign recent_category = post.categories | first %}
-        {% assign recent_theme = post.home_recent_theme | default: recent_category %}
-        <li>
-          <span class="de-recent-number">0{{ forloop.index }}</span>
-          <a href="{{ post.url | relative_url }}">
-            <small class="de-recent-tag de-recent-tag--{{ recent_theme }}">{% if post.home_recent_label %}{{ post.home_recent_label }}{% else %}{{ recent_category | replace: "-", " " | capitalize }}{% endif %}</small>
-            <h3>{{ post.title }}</h3>
-            <p>{{ post.date | date: "%B %-d, %Y" }}</p>
-          </a>
-        </li>
+        {% assign home_recent_count = 0 %}
+        {% for post in home_recent %}
+          {% unless post.home_recent_after %}
+            {% if home_recent_count < 5 %}
+              {% assign home_recent_count = home_recent_count | plus: 1 %}
+              {% include home-recent-item.html post=post index=home_recent_count %}
+            {% endif %}
+            {% for inserted_post in home_recent %}
+              {% if inserted_post.home_recent_after == post.slug and home_recent_count < 5 %}
+                {% assign home_recent_count = home_recent_count | plus: 1 %}
+                {% include home-recent-item.html post=inserted_post index=home_recent_count %}
+              {% endif %}
+            {% endfor %}
+          {% endunless %}
         {% endfor %}
       </ol>
     </aside>

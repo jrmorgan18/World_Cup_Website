@@ -6,24 +6,23 @@
 #
 # Set `recap_url` only when a weekly recap post exists for this period; the
 # "Read the weekly recap" link is hidden when it is absent.
-name: "Tyler O'Neill"
-position: "OF"
-period: "August 3–9, 2026"
-recap_url: "/orioles/weekly-recap-2026-08-09/"
+name: "Pete Alonso"
+position: "1B"
+period: "August 10–16, 2026"
+recap_url: "/orioles/weekly-recap-2026-08-17/"
 summary: >-
-  O'Neill went 5-for-14 with three home runs, five RBIs and four walks during a
-  3-3 week, producing a .357 average, .500 on-base percentage and 1.500 OPS.
-  His pinch-hit homer Tuesday restored a two-run cushion, his Wednesday blast
-  started Baltimore's back-to-back sequence with Coby Mayo, and his Sunday shot
-  removed any doubt from the club's 10-5 win in Texas.
-image: "/assets/images/orioles-tyler-oneill-potw-2026.jpg"
-image_alt: "Tyler O'Neill of the Baltimore Orioles during his July 8 two-homer game"
+  Alonso went 12-for-22 with a double, two home runs, five RBIs, four walks and
+  a hit by pitch, producing a .545/.630/.864 line and a 1.494 OPS. He reached
+  base 17 times in 27 plate appearances and delivered go-ahead damage throughout
+  Baltimore's 4-2 week.
+image: "/assets/images/orioles-pete-alonso-potw-2026.jpg"
+image_alt: "Pete Alonso follows through on a swing for the Baltimore Orioles"
 image_credit: "MLB.com"
-image_credit_url: "https://www.mlb.com/orioles/video/tyler-o-neill-s-two-homer-outing"
+image_credit_url: "https://www.mlb.com/stories/player/624413"
 stats:
   - { label: "Games", value: "6" }
-  - { label: "Hits", value: "5-for-14" }
-  - { label: "AVG", value: ".357" }
-  - { label: "HR", value: "3" }
+  - { label: "Hits", value: "12-for-22" }
+  - { label: "AVG", value: ".545" }
+  - { label: "HR", value: "2" }
   - { label: "RBI", value: "5" }
-  - { label: "OPS", value: "1.500" }
+  - { label: "OPS", value: "1.494" }
