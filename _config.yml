@@ -23,7 +23,7 @@ defaults:
   - scope:
       path: "soccer/project-2030"
     values:
-      hero_image: "/assets/images/project-2030-social-card.png"
+      hero_image: "/assets/images/project-2030-social-card-x.jpg"
   - scope:
       path: ""
       type: "posts"
