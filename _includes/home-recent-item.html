@@ -1,0 +1,10 @@
+{% assign recent_category = include.post.categories | first %}
+{% assign recent_theme = include.post.home_recent_theme | default: recent_category %}
+<li>
+  <span class="de-recent-number">0{{ include.index }}</span>
+  <a href="{{ include.post.url | relative_url }}">
+    <small class="de-recent-tag de-recent-tag--{{ recent_theme }}">{% if include.post.home_recent_label %}{{ include.post.home_recent_label }}{% else %}{{ recent_category | replace: "-", " " | capitalize }}{% endif %}</small>
+    <h3>{{ include.post.title }}</h3>
+    <p>{{ include.post.date | date: "%B %-d, %Y" }}</p>
+  </a>
+</li>
