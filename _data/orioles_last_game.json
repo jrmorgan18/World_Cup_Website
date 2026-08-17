@@ -1,102 +1,77 @@
 {
-  "generated_at": "2026-08-16T06:21:44Z",
-  "game_pk": 822941,
-  "date": "2026-08-15",
+  "generated_at": "2026-08-17T06:32:33Z",
+  "game_pk": 822940,
+  "date": "2026-08-16",
   "venue": "Tropicana Field",
   "home_away": "away",
   "opponent": "Tampa Bay Rays",
   "opponent_abbr": "TB",
   "result": "W",
-  "orioles_score": 4,
-  "opponent_score": 3,
+  "orioles_score": 10,
+  "opponent_score": 2,
   "orioles_hits": 9,
-  "opponent_hits": 11,
-  "orioles_errors": 1,
-  "opponent_errors": 1,
+  "opponent_hits": 9,
+  "orioles_errors": 0,
+  "opponent_errors": 0,
   "winning_pitcher": {
-    "name": "Andrew Kittredge",
+    "name": "Trevor Rogers",
     "team": "BAL",
-    "record": "2-3)(BS, 4",
-    "line": "1.0 IP, ER, 0 K, 0 BB"
+    "record": "8-8",
+    "line": "6.0 IP, 2 ER, 6 K, BB"
   },
   "losing_pitcher": {
-    "name": "Bryan Baker",
+    "name": "Freddy Peralta",
     "team": "TB",
-    "record": "1-1",
-    "line": "1.0 IP, 0 ER, 2 K, BB"
+    "record": "5-10",
+    "line": "4.2 IP, 2 ER, 2 K, 3 BB"
   },
-  "save_pitcher": {
-    "name": "Cam Sanders",
-    "team": "BAL",
-    "record": "3",
-    "line": "1.0 IP, 0 ER, 2 K, BB"
-  },
+  "save_pitcher": null,
   "key_players": [
+    {
+      "name": "Ryan Vilade",
+      "team": "TB",
+      "position": "RF",
+      "line": "3-4 | HR, 2B, K"
+    },
     {
       "name": "Pete Alonso",
       "team": "BAL",
-      "position": "1B",
-      "line": "3-5 | HR, RBI, R"
+      "position": "DH",
+      "line": "1-1 | 2B, 2 BB, HBP"
     },
     {
-      "name": "Casey Legumina",
-      "team": "TB",
-      "position": "P",
-      "line": "2.0 IP, 0 ER, 4 K, 0 BB"
-    },
-    {
-      "name": "Kyle Bradish",
+      "name": "Jackson Holliday",
       "team": "BAL",
-      "position": "P",
-      "line": "6.0 IP, 2 ER, 3 K, 4 BB"
+      "position": "SS",
+      "line": "2-4 | 2B, BB, 3 RBI"
     }
   ],
-  "summary": "The Orioles beat the Rays 4-3 on the road at Rays. Pete Alonso led the way (3-5 | HR, RBI, R). Baltimore has won 2 straight.",
+  "summary": "The Orioles beat the Rays 10-2 on the road at Rays. Ryan Vilade led the way (3-4 | HR, 2B, K). Baltimore has won 3 straight.",
   "record": {
-    "wins": 60,
+    "wins": 61,
     "losses": 63,
-    "pct": ".488",
+    "pct": ".492",
     "division": "AL East",
-    "division_rank": 5,
-    "games_back": "14.5",
-    "streak": "W2",
+    "division_rank": 4,
+    "games_back": "13.5",
+    "streak": "W3",
     "last_10": "5-5"
   },
   "wild_card": {
-    "rank": 5,
+    "rank": 3,
     "spots": 3,
-    "games_back": "0.5",
-    "status_text": "0.5 games back of the third AL Wild Card spot.",
+    "games_back": "-",
+    "status_text": "Holding the No. 3 AL Wild Card spot.",
     "ladder": [
       {
-        "team": "Rangers",
-        "abbr": "TEX",
+        "team": "Orioles",
+        "abbr": "BAL",
         "wins": 61,
         "losses": 63,
         "games_back": null,
         "wild_card_rank": 3,
-        "is_orioles": false,
-        "is_cutoff": true
-      },
-      {
-        "team": "Blue Jays",
-        "abbr": "TOR",
-        "wins": 61,
-        "losses": 64,
-        "games_back": "0.5",
-        "wild_card_rank": 4,
-        "is_orioles": false,
-        "is_cutoff": false
-      },
-      {
-        "team": "Orioles",
-        "abbr": "BAL",
-        "wins": 60,
-        "losses": 63,
-        "games_back": "0.5",
-        "wild_card_rank": 5,
         "is_orioles": true,
-        "is_cutoff": false
+        "is_cutoff": true
       }
     ]
   }
