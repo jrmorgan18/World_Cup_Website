@@ -1,60 +1,65 @@
 {
-  "generated_at": "2026-08-17T06:32:33Z",
-  "game_pk": 822940,
-  "date": "2026-08-16",
+  "generated_at": "2026-08-18T06:24:17Z",
+  "game_pk": 822939,
+  "date": "2026-08-17",
   "venue": "Tropicana Field",
   "home_away": "away",
   "opponent": "Tampa Bay Rays",
   "opponent_abbr": "TB",
-  "result": "W",
-  "orioles_score": 10,
-  "opponent_score": 2,
-  "orioles_hits": 9,
-  "opponent_hits": 9,
-  "orioles_errors": 0,
+  "result": "L",
+  "orioles_score": 6,
+  "opponent_score": 7,
+  "orioles_hits": 14,
+  "opponent_hits": 12,
+  "orioles_errors": 1,
   "opponent_errors": 0,
   "winning_pitcher": {
-    "name": "Trevor Rogers",
-    "team": "BAL",
-    "record": "8-8",
-    "line": "6.0 IP, 2 ER, 6 K, BB"
+    "name": "Cam Booser",
+    "team": "TB",
+    "record": "1-0",
+    "line": "1.1 IP, 0 ER, 3 K, BB"
   },
   "losing_pitcher": {
-    "name": "Freddy Peralta",
-    "team": "TB",
-    "record": "5-10",
-    "line": "4.2 IP, 2 ER, 2 K, 3 BB"
+    "name": "Yennier Cano",
+    "team": "BAL",
+    "record": "2-3",
+    "line": "0.0 IP, 3 ER, 0 K, 0 BB"
   },
-  "save_pitcher": null,
+  "save_pitcher": {
+    "name": "Bryan Baker",
+    "team": "TB",
+    "record": "35",
+    "line": "1.2 IP, 0 ER, 2 K, 0 BB"
+  },
   "key_players": [
     {
-      "name": "Ryan Vilade",
+      "name": "Yandy Díaz",
       "team": "TB",
-      "position": "RF",
-      "line": "3-4 | HR, 2B, K"
-    },
-    {
-      "name": "Pete Alonso",
-      "team": "BAL",
       "position": "DH",
-      "line": "1-1 | 2B, 2 BB, HBP"
+      "line": "2-3 | HR, BB, HBP"
     },
     {
-      "name": "Jackson Holliday",
+      "name": "Christian Encarnacion-Strand",
       "team": "BAL",
-      "position": "SS",
-      "line": "2-4 | 2B, BB, 3 RBI"
+      "position": "3B",
+      "line": "3-5 | HR, K, 4 RBI"
+    },
+    {
+      "name": "Coby Mayo",
+      "team": "BAL",
+      "position": "1B",
+      "line": "2-5 | HR, 2B, K"
     }
   ],
-  "summary": "The Orioles beat the Rays 10-2 on the road at Rays. Ryan Vilade led the way (3-4 | HR, 2B, K). Baltimore has won 3 straight.",
+  "summary": "The Orioles fell to the Rays 6-7 on the road at Rays. Yandy Díaz led the way (2-3 | HR, BB, HBP). Baltimore has lost 1 straight.",
   "record": {
     "wins": 61,
-    "losses": 63,
-    "pct": ".492",
+    "losses": 64,
+    "pct": ".488",
     "division": "AL East",
     "division_rank": 4,
-    "games_back": "13.5",
-    "streak": "W3",
+    "games_back": "14.5",
+    "streak": "L1",
     "last_10": "5-5"
   },
   "wild_card": {
@@ -67,7 +72,7 @@
         "team": "Orioles",
         "abbr": "BAL",
         "wins": 61,
-        "losses": 63,
+        "losses": 64,
         "games_back": null,
         "wild_card_rank": 3,
         "is_orioles": true,
