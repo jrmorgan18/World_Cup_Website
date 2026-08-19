@@ -55,6 +55,20 @@ The current World Cup pool includes five Premier League players: Tyler Adams, Ch
 
 There have also been persistent reports connecting Folarin Balogun with Tottenham, although no move had been completed at the time of writing.
 
+<section class="premier-americans" aria-labelledby="premier-americans-title">
+  <header class="premier-americans__head">
+    <p>USMNT in England</p>
+    <h2 id="premier-americans-title">Five Americans to watch</h2>
+  </header>
+  <div class="premier-americans__grid">
+    <article><figure><img src="{{ '/assets/images/player-pool/tyler-adams.png' | relative_url }}" alt="Tyler Adams"></figure><div><h3>Tyler Adams</h3><p>Bournemouth <span>Midfield</span></p></div></article>
+    <article><figure><img src="{{ '/assets/images/player-pool/chris-richards.png' | relative_url }}" alt="Chris Richards"></figure><div><h3>Chris Richards</h3><p>Crystal Palace <span>Center back</span></p></div></article>
+    <article><figure><img src="{{ '/assets/images/player-pool/antonee-robinson.png' | relative_url }}" alt="Antonee Robinson"></figure><div><h3>Antonee Robinson</h3><p>Fulham <span>Left back</span></p></div></article>
+    <article><figure><img src="{{ '/assets/images/player-pool/brenden-aaronson.png' | relative_url }}" alt="Brenden Aaronson"></figure><div><h3>Brenden Aaronson</h3><p>Leeds United <span>Midfield</span></p></div></article>
+    <article><figure><img src="{{ '/assets/images/player-pool/haji-wright.png' | relative_url }}" alt="Haji Wright"></figure><div><h3>Haji Wright</h3><p>Coventry City <span>Forward</span></p></div></article>
+  </div>
+</section>
+
 ### Tyler Adams — Bournemouth
 
 Adams is healthy again and remains one of Bournemouth’s most important midfielders.
