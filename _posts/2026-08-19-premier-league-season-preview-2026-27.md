@@ -16,11 +16,11 @@ feature_label: "Premier League"
 feature_badge: "2026-27 preview"
 feature_kicker: "England"
 feature_topic: "Season preview"
-hero_image: /assets/images/premier-league-2026-27-preview.jpg
-hero_alt: "Bukayo Saka, Erling Haaland, Matheus Cunha and Johan Manzambi pictured after the 2026 World Cup"
+hero_image: /assets/images/premier-league-2026-27-club-kits.jpg
+hero_alt: "Players model Aston Villa, Chelsea and Liverpool kits for the 2026-27 Premier League season"
 hero_credit: "Premier League"
-hero_credit_url: "https://www.premierleague.com/en/news/4680507/premier-league-one-month-away"
-thumbnail: /assets/images/premier-league-2026-27-preview.jpg
+hero_credit_url: "https://www.premierleague.com/en/news/4658330/premier-league-club-kits-for-202627-season"
+thumbnail: /assets/images/premier-league-2026-27-club-kits.jpg
 newsletter_cta: true
 source_docx: "articles/2026-27 Premier League Season Preview.docx"
 ---
