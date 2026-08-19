@@ -51,14 +51,14 @@ The opening weekend begins with Arsenal–Coventry on Friday. Hull City hosts Ma
 
 ## Americans to Watch
 
-The current World Cup pool includes five Premier League players: Tyler Adams, Chris Richards, Antonee Robinson, Brenden Aaronson and Haji Wright.
+The current World Cup pool includes five Premier League players: Tyler Adams, Chris Richards, Antonee Robinson, Brenden Aaronson and Haji Wright. Zavier Gozo now joins them after completing his transfer from Real Salt Lake to Crystal Palace, adding another young American attacking option to the league.
 
 There have also been persistent reports connecting Folarin Balogun with Tottenham, although no move had been completed at the time of writing.
 
 <section class="premier-americans" aria-labelledby="premier-americans-title">
   <header class="premier-americans__head">
     <p>USMNT in England</p>
-    <h2 id="premier-americans-title">Five Americans to watch</h2>
+    <h2 id="premier-americans-title">Six Americans to watch</h2>
   </header>
   <div class="premier-americans__grid">
     <article><figure><img src="{{ '/assets/images/player-pool/tyler-adams.png' | relative_url }}" alt="Tyler Adams"></figure><div><h3>Tyler Adams</h3><p>Bournemouth <span>Midfield</span></p></div></article>
@@ -66,6 +66,7 @@ There have also been persistent reports connecting Folarin Balogun with Tottenha
     <article><figure><img src="{{ '/assets/images/player-pool/antonee-robinson.png' | relative_url }}" alt="Antonee Robinson"></figure><div><h3>Antonee Robinson</h3><p>Fulham <span>Left back</span></p></div></article>
     <article><figure><img src="{{ '/assets/images/player-pool/brenden-aaronson.png' | relative_url }}" alt="Brenden Aaronson"></figure><div><h3>Brenden Aaronson</h3><p>Leeds United <span>Midfield</span></p></div></article>
     <article><figure><img src="{{ '/assets/images/player-pool/haji-wright.png' | relative_url }}" alt="Haji Wright"></figure><div><h3>Haji Wright</h3><p>Coventry City <span>Forward</span></p></div></article>
+    <article><figure><img src="{{ '/assets/images/player-pool/zavier-gozo.png' | relative_url }}" alt="Zavier Gozo"></figure><div><h3>Zavier Gozo</h3><p>Crystal Palace <span>Winger</span></p></div></article>
   </div>
 </section>
 
