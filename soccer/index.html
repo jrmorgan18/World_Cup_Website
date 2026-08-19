@@ -25,8 +25,10 @@ section_theme: soccer
 {% assign prospect_story = site.posts | where: "prospect_feature", true | first %}
 {% assign power_rankings_story = site.posts | where: "power_rankings_feature", true | first %}
 {% assign laliga_preview_story = site.posts | where: "laliga_preview_feature", true | first %}
+{% assign premier_league_preview_story = site.posts | where: "premier_league_preview_feature", true | first %}
+{% assign soccer_feature = premier_league_preview_story | default: longform_feature %}
 {% assign power_rankings_edition = site.data.european_club_power_rankings.editions | first %}
-{% if longform_feature %}
+{% if soccer_feature %}
 <section class="soccer-editorial-shell">
   <div class="soccer-editorial-grid">
     {% if power_rankings_story and power_rankings_edition %}
@@ -52,18 +54,18 @@ section_theme: soccer
     <div class="soccer-feature-column">
       <div class="de-home-section-label">
         <p>Featured story</p>
-        <span>Longform</span>
+        <span>{{ soccer_feature.feature_label | default: "Longform" }}</span>
       </div>
-      <a class="soccer-feature-story" href="{{ longform_feature.url | relative_url }}">
+      <a class="soccer-feature-story" href="{{ soccer_feature.url | relative_url }}">
         <figure>
-          <img src="{{ longform_feature.hero_image | relative_url }}" alt="" loading="eager">
-          <span>{{ longform_feature.part }}</span>
+          <img src="{{ soccer_feature.hero_image | relative_url }}" alt="{{ soccer_feature.hero_alt | escape }}" loading="eager">
+          <span>{{ soccer_feature.feature_badge | default: soccer_feature.part }}</span>
         </figure>
         <div class="soccer-feature-copy">
-          <p class="soccer-feature-kicker">Project 2030 <i aria-hidden="true"></i> USMNT</p>
-          <h2>{{ longform_feature.title }}</h2>
-          <p class="soccer-feature-dek">{{ longform_feature.excerpt }}</p>
-          <p class="soccer-feature-meta">By {{ longform_feature.author }} <span aria-hidden="true">&middot;</span> {{ longform_feature.read_time }} minute read</p>
+          <p class="soccer-feature-kicker">{{ soccer_feature.feature_kicker | default: "Project 2030" }} <i aria-hidden="true"></i> {{ soccer_feature.feature_topic | default: "USMNT" }}</p>
+          <h2>{{ soccer_feature.title }}</h2>
+          <p class="soccer-feature-dek">{{ soccer_feature.excerpt }}</p>
+          <p class="soccer-feature-meta">By {{ soccer_feature.author }} <span aria-hidden="true">&middot;</span> {{ soccer_feature.read_time }} minute read</p>
           <strong>Read the feature <span aria-hidden="true">&rarr;</span></strong>
         </div>
       </a>
@@ -72,15 +74,14 @@ section_theme: soccer
     <aside class="soccer-article-sidebar" aria-labelledby="soccer-latest-heading">
       <div class="de-home-section-label">
         <p id="soccer-latest-heading">On the soccer desk</p>
-        <span>Latest &amp; upcoming</span>
+        <span>Recent</span>
       </div>
       <ol class="soccer-sidebar-list">
         {% if laliga_preview_story %}<li><span class="soccer-sidebar-number">01</span><a href="{{ laliga_preview_story.url | relative_url }}"><small>La Liga</small><h3>{{ laliga_preview_story.title }}</h3><p>{{ laliga_preview_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
         {% if power_rankings_story %}<li><span class="soccer-sidebar-number">02</span><a href="{{ power_rankings_story.url | relative_url }}"><small>Europe</small><h3>{{ power_rankings_story.title }}</h3><p>{{ power_rankings_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
         {% if checkpoint_story %}<li><span class="soccer-sidebar-number">03</span><a href="{{ checkpoint_story.url | relative_url }}"><small>Project 2030</small><h3>{{ checkpoint_story.title }}</h3><p>{{ checkpoint_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
         {% if prospect_story %}<li><span class="soccer-sidebar-number">04</span><a href="{{ prospect_story.url | relative_url }}"><small>Project 2030</small><h3>{{ prospect_story.title }}</h3><p>{{ prospect_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-        <li><span class="soccer-sidebar-number">05</span><div><small>Premier League</small><h3>2026&ndash;27 Premier League Preview</h3><p>Coming soon</p></div></li>
-        <li><span class="soccer-sidebar-number">06</span><div><small>Where to watch</small><h3>Your TV Guide to Europe&rsquo;s Big Five Leagues</h3><p>Coming soon</p></div></li>
+        {% if longform_feature %}<li><span class="soccer-sidebar-number">05</span><a href="{{ longform_feature.url | relative_url }}"><small>Longform</small><h3>{{ longform_feature.title }}</h3><p>{{ longform_feature.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
       </ol>
     </aside>
   </div>
