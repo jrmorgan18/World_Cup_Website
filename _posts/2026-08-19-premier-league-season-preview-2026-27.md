@@ -16,11 +16,11 @@ feature_label: "Premier League"
 feature_badge: "2026-27 preview"
 feature_kicker: "England"
 feature_topic: "Season preview"
-hero_image: /assets/images/premier-league-2026-27-club-kits.jpg
-hero_alt: "Players model Aston Villa, Chelsea and Liverpool kits for the 2026-27 Premier League season"
+hero_image: /assets/images/premier-league-arsenal-city-title-race.png
+hero_alt: "Arsenal's Mikel Merino battles Manchester City's Rodri during a Premier League match"
 hero_credit: "Premier League"
-hero_credit_url: "https://www.premierleague.com/en/news/4658330/premier-league-club-kits-for-202627-season"
-thumbnail: /assets/images/premier-league-2026-27-club-kits.jpg
+hero_credit_url: "https://www.premierleague.com/en/news/4681714/community-shield-how-to-watch-arsenal-v-man-city-on-pl"
+thumbnail: /assets/images/premier-league-arsenal-city-title-race.png
 newsletter_cta: true
 source_docx: "articles/2026-27 Premier League Season Preview.docx"
 ---
