@@ -900,6 +900,35 @@ body { overflow-x: hidden; }
 .orioles-missing-ace-results td strong { color:#a53612; font-family:var(--font-display); font-size:.82rem; letter-spacing:.3px; }
 .orioles-missing-ace-results-note { margin:15px 0 0; color:#d5d0cc; font-family:'Newsreader',serif; font-size:.85rem; font-style:italic; line-height:1.5; }
 
+/* Jackson Holliday vs. lefties — approach-shift visual */
+.holliday-lefty-shift { margin:38px 0 46px; overflow:hidden; border:1px solid rgba(241,90,36,.42); background:linear-gradient(145deg,#21150f,#0c0b0b 74%); box-shadow:inset 5px 0 0 var(--de-orange),0 18px 42px rgba(0,0,0,.2); }
+.holliday-lefty-shift>header { padding:24px 27px 20px; display:grid; grid-template-columns:1fr auto; align-items:end; gap:5px 20px; border-bottom:1px solid rgba(255,255,255,.13); }
+.holliday-lefty-shift>header p { grid-column:1 / -1; margin:0; color:var(--de-orange-light); font-family:var(--font-display); font-size:.57rem; font-weight:700; letter-spacing:1.35px; text-transform:uppercase; }
+.holliday-lefty-shift>header h2 { margin:0; color:#fff; font-family:'Newsreader',serif; font-size:1.65rem; font-weight:600; line-height:1.05; letter-spacing:-.4px; }
+.holliday-lefty-shift>header span { color:#918984; font-family:var(--font-display); font-size:.52rem; letter-spacing:.8px; text-align:right; text-transform:uppercase; }
+.holliday-lefty-shift-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); }
+.holliday-lefty-shift-grid>div { min-width:0; padding:22px 27px; border-right:1px solid rgba(255,255,255,.1); border-bottom:1px solid rgba(255,255,255,.1); }
+.holliday-lefty-shift-grid>div:nth-child(2n) { border-right:0; }
+.holliday-lefty-shift-grid>div:nth-last-child(-n+2) { border-bottom:0; }
+.holliday-lefty-shift-grid small,.holliday-lefty-shift-grid em { display:block; font-family:var(--font-display); text-transform:uppercase; }
+.holliday-lefty-shift-grid small { color:#938b87; font-size:.53rem; font-weight:600; letter-spacing:1px; }
+.holliday-lefty-shift-grid strong { margin-top:9px; display:flex; align-items:baseline; gap:9px; color:#fff; font-family:var(--font-display); font-size:1.7rem; line-height:1; }
+.holliday-lefty-shift-grid strong span { color:#877e79; font-size:1rem; font-weight:500; }
+.holliday-lefty-shift-grid strong i { color:var(--de-orange); font-size:.9rem; font-style:normal; }
+.holliday-lefty-shift-grid em { margin-top:8px; color:var(--de-orange-light); font-size:.48rem; font-style:normal; letter-spacing:.7px; }
+.holliday-lefty-shift>p { margin:0; padding:15px 27px; color:#aaa29d; background:rgba(255,255,255,.035); border-top:1px solid rgba(255,255,255,.1); font-size:.76rem; font-style:italic; line-height:1.45; }
+
+@media (max-width:600px) {
+  .holliday-lefty-shift>header { padding:21px 21px 18px; display:block; }
+  .holliday-lefty-shift>header h2 { margin-top:5px; font-size:1.4rem; }
+  .holliday-lefty-shift>header span { display:block; margin-top:8px; text-align:left; }
+  .holliday-lefty-shift-grid { grid-template-columns:1fr; }
+  .holliday-lefty-shift-grid>div { padding:19px 21px; border-right:0; }
+  .holliday-lefty-shift-grid>div:nth-last-child(-n+2) { border-bottom:1px solid rgba(255,255,255,.1); }
+  .holliday-lefty-shift-grid>div:last-child { border-bottom:0; }
+  .holliday-lefty-shift>p { padding:14px 21px; }
+}
+
 /* Player of the week — compact rail card */
 .orioles-potw { overflow:hidden; border:1px solid rgba(255,255,255,.14); background:linear-gradient(135deg,#17110e,#0b0b0d 68%); box-shadow:inset 5px 0 0 var(--de-orange); }
 .orioles-potw-photo { position:relative; height:170px; overflow:hidden; background:#120e0c; }

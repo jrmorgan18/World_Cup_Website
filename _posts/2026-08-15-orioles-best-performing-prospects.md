@@ -12,7 +12,7 @@ read_time: 16
 home_recent: true
 home_recent_label: "Orioles"
 home_recent_theme: "orioles"
-orioles_feature: true
+orioles_feature: false
 feature_kicker: "Prospect rankings"
 feature_snapshot_label: "Three headline arms"
 feature_players:
