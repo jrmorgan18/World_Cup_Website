@@ -26,6 +26,7 @@ section_theme: soccer
 {% assign power_rankings_story = site.posts | where: "power_rankings_feature", true | first %}
 {% assign laliga_preview_story = site.posts | where: "laliga_preview_feature", true | first %}
 {% assign premier_league_preview_story = site.posts | where: "premier_league_preview_feature", true | first %}
+{% assign rodri_barcelona_story = site.posts | where: "rodri_barcelona_feature", true | first %}
 {% assign soccer_feature = premier_league_preview_story | default: longform_feature %}
 {% assign power_rankings_edition = site.data.european_club_power_rankings.editions | first %}
 {% if soccer_feature %}
@@ -77,11 +78,12 @@ section_theme: soccer
         <span>Recent</span>
       </div>
       <ol class="soccer-sidebar-list">
-        {% if laliga_preview_story %}<li><span class="soccer-sidebar-number">01</span><a href="{{ laliga_preview_story.url | relative_url }}"><small>La Liga</small><h3>{{ laliga_preview_story.title }}</h3><p>{{ laliga_preview_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-        {% if power_rankings_story %}<li><span class="soccer-sidebar-number">02</span><a href="{{ power_rankings_story.url | relative_url }}"><small>Europe</small><h3>{{ power_rankings_story.title }}</h3><p>{{ power_rankings_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-        {% if checkpoint_story %}<li><span class="soccer-sidebar-number">03</span><a href="{{ checkpoint_story.url | relative_url }}"><small>Project 2030</small><h3>{{ checkpoint_story.title }}</h3><p>{{ checkpoint_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-        {% if prospect_story %}<li><span class="soccer-sidebar-number">04</span><a href="{{ prospect_story.url | relative_url }}"><small>Project 2030</small><h3>{{ prospect_story.title }}</h3><p>{{ prospect_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-        {% if longform_feature %}<li><span class="soccer-sidebar-number">05</span><a href="{{ longform_feature.url | relative_url }}"><small>Longform</small><h3>{{ longform_feature.title }}</h3><p>{{ longform_feature.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if rodri_barcelona_story %}<li><span class="soccer-sidebar-number">01</span><a href="{{ rodri_barcelona_story.url | relative_url }}"><small>Barcelona</small><h3>{{ rodri_barcelona_story.title }}</h3><p>{{ rodri_barcelona_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if laliga_preview_story %}<li><span class="soccer-sidebar-number">02</span><a href="{{ laliga_preview_story.url | relative_url }}"><small>La Liga</small><h3>{{ laliga_preview_story.title }}</h3><p>{{ laliga_preview_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if power_rankings_story %}<li><span class="soccer-sidebar-number">03</span><a href="{{ power_rankings_story.url | relative_url }}"><small>Europe</small><h3>{{ power_rankings_story.title }}</h3><p>{{ power_rankings_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if checkpoint_story %}<li><span class="soccer-sidebar-number">04</span><a href="{{ checkpoint_story.url | relative_url }}"><small>Project 2030</small><h3>{{ checkpoint_story.title }}</h3><p>{{ checkpoint_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if prospect_story %}<li><span class="soccer-sidebar-number">05</span><a href="{{ prospect_story.url | relative_url }}"><small>Project 2030</small><h3>{{ prospect_story.title }}</h3><p>{{ prospect_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if longform_feature %}<li><span class="soccer-sidebar-number">06</span><a href="{{ longform_feature.url | relative_url }}"><small>Longform</small><h3>{{ longform_feature.title }}</h3><p>{{ longform_feature.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
       </ol>
     </aside>
   </div>

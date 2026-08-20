@@ -309,6 +309,7 @@ body { overflow-x: hidden; }
 .soccer-desk-links .hub-lane-card h3 { margin-top:34px; font-size:2.55rem; }
 .soccer-article-figure { margin:38px 0 44px; padding:10px; border:1px solid #d9d4c9; background:#f1eee7; }
 .article-body .soccer-article-figure img { width:100%; margin:0; max-height:620px; object-fit:cover; border-radius:0; }
+.article-body .soccer-tactics-figure img { max-height:none; object-fit:contain; background:#07111e; }
 .soccer-article-figure--portrait { max-width:560px; margin-left:auto; margin-right:auto; }
 .soccer-article-figure--portrait img { aspect-ratio:4 / 5; }
 .soccer-article-figure figcaption { padding:11px 6px 2px; color:#6c6870; font-size:.78rem; line-height:1.5; }

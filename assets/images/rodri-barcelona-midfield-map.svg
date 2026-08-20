@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">How Rodri could reshape Barcelona's midfield</title>
+  <desc id="desc">Two tactical panels show Rodri helping Barcelona escape pressure in buildup and then holding behind Pedri, Dani Olmo and Lamine Yamal in attack.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111e"/>
+      <stop offset="1" stop-color="#101c2d"/>
+    </linearGradient>
+    <linearGradient id="barca" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#004d98"/>
+      <stop offset="0.49" stop-color="#004d98"/>
+      <stop offset="0.5" stop-color="#a50044"/>
+      <stop offset="1" stop-color="#a50044"/>
+    </linearGradient>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#000" flood-opacity=".45"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#f4c95d"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#63b3ed"/>
+    </marker>
+    <style>
+      .sans{font-family:Arial,Helvetica,sans-serif}.eyebrow{font-size:17px;font-weight:700;letter-spacing:3px;fill:#f4c95d}.panel-title{font-size:29px;font-weight:800;fill:#fff}.panel-sub{font-size:16px;fill:#aab9c9}.pitch{fill:#0b3b35;stroke:#5c867e;stroke-width:2}.pitch-line{fill:none;stroke:#8cb0a8;stroke-width:2;opacity:.45}.route{fill:none;stroke:#f4c95d;stroke-width:4;stroke-linecap:round;stroke-dasharray:8 8;marker-end:url(#arrow)}.movement{fill:none;stroke:#63b3ed;stroke-width:4;stroke-linecap:round;marker-end:url(#arrowBlue)}.player{fill:url(#barca);stroke:#f4c95d;stroke-width:3}.anchor{stroke:#fff;stroke-width:5}.num{font-size:18px;font-weight:900;fill:#fff;text-anchor:middle;dominant-baseline:central}.name{font-size:14px;font-weight:800;fill:#fff;text-anchor:middle;letter-spacing:.5px}.role{font-size:12px;fill:#b8c6d5;text-anchor:middle}.note{font-size:14px;font-weight:700;fill:#f4c95d}.footer{font-size:18px;fill:#dce7f0}.footer-strong{font-weight:800;fill:#fff}
+    </style>
+  </defs>
+
+  <rect width="1400" height="820" rx="30" fill="url(#bg)"/>
+  <path d="M0 14h1400" stroke="#004d98" stroke-width="14"/>
+  <path d="M700 14h700" stroke="#a50044" stroke-width="14"/>
+
+  <g class="sans">
+    <text x="48" y="64" class="eyebrow">DUAL EIGHTS / TACTICAL VIEW</text>
+    <text x="1352" y="64" text-anchor="end" class="panel-sub">Illustrative in-possession shapes</text>
+
+    <g transform="translate(48 96)">
+      <text x="0" y="0" class="eyebrow">1 / BUILDUP</text>
+      <text x="0" y="36" class="panel-title">Escape the press</text>
+      <text x="0" y="64" class="panel-sub">A second elite receiver changes the opponent's first decision.</text>
+      <rect x="0" y="88" width="632" height="542" rx="22" class="pitch"/>
+      <path d="M316 88v542M0 359h632M250 88v70h132V88M250 630v-70h132v70M273 359a43 43 0 1 0 86 0 43 43 0 1 0-86 0" class="pitch-line"/>
+
+      <path d="M185 526 C210 490 233 474 271 454" class="route"/>
+      <path d="M448 526 C414 493 382 476 332 455" class="route"/>
+      <path d="M294 422 C255 382 213 353 170 329" class="route"/>
+      <path d="M323 418 C374 374 420 344 465 315" class="route"/>
+      <path d="M188 292 C293 255 432 244 548 229" class="movement"/>
+
+      <g filter="url(#shadow)"><circle cx="175" cy="548" r="27" class="player"/><text x="175" y="548" class="num">5</text></g>
+      <text x="175" y="588" class="name">CUBARSÍ</text>
+      <text x="175" y="607" class="role">left center back</text>
+
+      <g filter="url(#shadow)"><circle cx="458" cy="548" r="27" class="player"/><text x="458" y="548" class="num">4</text></g>
+      <text x="458" y="588" class="name">ARAÚJO</text>
+      <text x="458" y="607" class="role">right center back</text>
+
+      <g filter="url(#shadow)"><circle cx="316" cy="438" r="32" class="player anchor"/><text x="316" y="438" class="num">16</text></g>
+      <text x="316" y="484" class="name">RODRI</text>
+      <text x="316" y="503" class="role">central reference</text>
+
+      <g filter="url(#shadow)"><circle cx="162" cy="310" r="27" class="player"/><text x="162" y="310" class="num">8</text></g>
+      <text x="162" y="350" class="name">PEDRI</text>
+      <text x="162" y="369" class="role">drops to receive</text>
+
+      <g filter="url(#shadow)"><circle cx="480" cy="296" r="27" class="player"/><text x="480" y="296" class="num">10</text></g>
+      <text x="480" y="336" class="name">OLMO</text>
+      <text x="480" y="355" class="role">between the lines</text>
+
+      <g filter="url(#shadow)"><circle cx="566" cy="214" r="27" class="player"/><text x="566" y="214" class="num">27</text></g>
+      <text x="566" y="254" class="name">LAMINE</text>
+      <text x="566" y="273" class="role">holds width</text>
+
+      <text x="24" y="116" class="note">Rodri can stay ahead of the center backs</text>
+    </g>
+
+    <g transform="translate(720 96)">
+      <text x="0" y="0" class="eyebrow">2 / ATTACK</text>
+      <text x="0" y="36" class="panel-title">Advance with a safety net</text>
+      <text x="0" y="64" class="panel-sub">Pedri can move closer to the creators while Rodri guards the middle.</text>
+      <rect x="0" y="88" width="632" height="542" rx="22" class="pitch"/>
+      <path d="M316 88v542M0 359h632M250 88v70h132V88M250 630v-70h132v70M273 359a43 43 0 1 0 86 0 43 43 0 1 0-86 0" class="pitch-line"/>
+      <rect x="205" y="376" width="222" height="176" rx="34" fill="#f4c95d" opacity=".08" stroke="#f4c95d" stroke-width="2" stroke-dasharray="8 8"/>
+      <text x="316" y="540" class="note" text-anchor="middle">central counter lane</text>
+
+      <path d="M316 447 C276 396 234 348 184 306" class="movement"/>
+      <path d="M326 438 C367 381 421 340 470 300" class="route"/>
+      <path d="M182 275 C280 251 397 239 546 222" class="movement"/>
+      <path d="M476 270 C445 222 400 193 348 176" class="route"/>
+
+      <g filter="url(#shadow)"><circle cx="316" cy="456" r="32" class="player anchor"/><text x="316" y="456" class="num">16</text></g>
+      <text x="316" y="502" class="name">RODRI</text>
+      <text x="316" y="521" class="role">holds behind the ball</text>
+
+      <g filter="url(#shadow)"><circle cx="166" cy="286" r="27" class="player"/><text x="166" y="286" class="num">8</text></g>
+      <text x="166" y="326" class="name">PEDRI</text>
+      <text x="166" y="345" class="role">left half-space</text>
+
+      <g filter="url(#shadow)"><circle cx="482" cy="282" r="27" class="player"/><text x="482" y="282" class="num">10</text></g>
+      <text x="482" y="322" class="name">GAVI / OLMO</text>
+      <text x="482" y="341" class="role">running or creation</text>
+
+      <g filter="url(#shadow)"><circle cx="566" cy="210" r="27" class="player"/><text x="566" y="210" class="num">27</text></g>
+      <text x="566" y="250" class="name">LAMINE</text>
+      <text x="566" y="269" class="role">isolated wide</text>
+
+      <g filter="url(#shadow)"><circle cx="328" cy="162" r="27" class="player"/><text x="328" y="162" class="num">9</text></g>
+      <text x="328" y="202" class="name">NO. 9</text>
+      <text x="328" y="221" class="role">pins the line</text>
+
+      <text x="24" y="116" class="note">Pedri starts 25–30 yards closer to danger</text>
+    </g>
+
+    <text x="48" y="776" class="footer"><tspan class="footer-strong">The idea:</tspan> Rodri organizes and protects; Pedri connects; Flick can change the third midfielder without rebuilding the structure.</text>
+  </g>
+</svg>
