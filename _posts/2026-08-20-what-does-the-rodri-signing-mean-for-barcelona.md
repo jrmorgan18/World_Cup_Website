@@ -62,20 +62,35 @@ The ideal partnership has Rodri locking down the holding midfield position and a
 
 Against a high press, Pedri can drop alongside Rodri and give Barcelona two elite players capable of receiving under pressure. Once the first line is broken, Rodri can remain behind the ball while Pedri advances into the space between midfield and defense.
 
+<figure class="soccer-article-figure soccer-tactics-figure">
+  <img src="{{ '/assets/images/rodri-barcelona-tactics-1-buildup.png' | relative_url }}" alt="Tactical diagram showing Rodri as Barcelona's central pivot with Pedri dropping selectively during buildup">
+  <figcaption>In buildup, Rodri becomes the stable first reference while Pedri can drop selectively rather than carry every first-phase possession. Illustration: Dual Eights.</figcaption>
+</figure>
+
 When Lamine receives on the wing, Pedri can move closer to him as the combination player rather than remaining 30 yards deeper because Barcelona needs someone to protect against the next turnover.
+
+<figure class="soccer-article-figure soccer-tactics-figure">
+  <img src="{{ '/assets/images/rodri-barcelona-tactics-2-attack.png' | relative_url }}" alt="Tactical diagram showing Rodri holding behind the ball as Pedri and Barcelona's attacking midfielders move higher">
+  <figcaption>Once Barcelona breaks the first line, Rodri holds behind the ball and Pedri can occupy a more dangerous left-interior space. Illustration: Dual Eights.</figcaption>
+</figure>
 
 When possession is lost, Pedri can jump toward the ball more aggressively knowing Rodri is behind him protecting the middle. Even as his minutes declined in the knockout rounds for Spain, Pedri was among the tournament leaders at winning the ball back in the opponent’s final third. He has been among Barcelona’s leaders in ball recoveries in each of the past two years, and Rodri will now allow him to apply that pressure higher up the field.
 
-Essentially, Rodri can absorb some of the least glamorous responsibilities Pedri has taken on without reducing his influence on the game.
-
 <figure class="soccer-article-figure soccer-tactics-figure">
-  <img src="{{ '/assets/images/rodri-barcelona-midfield-map.svg' | relative_url }}" alt="Tactical diagram showing Rodri anchoring Barcelona's buildup before protecting the center as Pedri advances">
-  <figcaption>One way the pieces could fit: Rodri gives Barcelona a second route through the press, then stays behind the attack so Pedri can connect closer to Lamine Yamal. Illustration: Dual Eights.</figcaption>
+  <img src="{{ '/assets/images/rodri-barcelona-tactics-3-counterpress.png' | relative_url }}" alt="Tactical diagram showing Pedri counterpressing high while Rodri blocks the central transition lane">
+  <figcaption>When possession turns over, Pedri can attack the loss while Rodri screens the central escape route. Illustration: Dual Eights.</figcaption>
 </figure>
+
+Essentially, Rodri can absorb some of the least glamorous responsibilities Pedri has taken on without reducing his influence on the game.
 
 There is some concern, however, with how Rodri’s centrality to Spain during the World Cup eventually pushed Pedri to an impact-sub role.
 
 In the knockout stages, Luis de la Fuente preferred Fabián Ruiz next to Rodri, with Dani Olmo playing ahead of them, leaving Pedri on the bench during Spain’s biggest knockout games. De la Fuente insisted that was tactical rather than a reflection of Pedri’s form: against Belgium, in particular, he wanted Fabián’s greater physical strength before introducing Pedri later to increase Spain’s control and possession.
+
+<figure class="soccer-article-figure">
+  <img src="{{ '/assets/images/pedri-spain-world-cup-2026.jpg' | relative_url }}" alt="Pedri wearing Spain's number 20 shirt during the official 2026 World Cup portrait session">
+  <figcaption>Pedri during Spain’s 2026 World Cup portrait session. His reduced knockout-round role offers a useful warning: Rodri’s presence changes which partner best fits each game. Photo: <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/scanning-for-success-how-spains-pedri-stays-a-step-ahead">Johnnie Izquierdo — FIFA/FIFA via Getty Images</a>.</figcaption>
+</figure>
 
 None of this suggests that Rodri and Pedri cannot thrive in tandem. Spain utilized that partnership effectively during the early stages of the competition. However, it underscores how securing a world-class holding midfielder alters a manager’s tactical calculus.
 
