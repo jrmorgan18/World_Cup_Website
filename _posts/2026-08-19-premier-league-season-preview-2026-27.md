@@ -8,7 +8,7 @@ categories: [soccer]
 author: "Dual Eights"
 read_time: 14
 home_recent: true
-home_recent_after: "jackson-holliday-lefty-improvements"
+home_recent_position: 1
 home_recent_label: "Premier League"
 home_recent_theme: "soccer"
 premier_league_preview_feature: true

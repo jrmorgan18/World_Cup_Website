@@ -21,6 +21,9 @@
   and it will enter at the top by date, moving the oldest visible link down.
 {% endcomment %}
 {% assign home_recent = site.posts | where: "home_recent", true | sort: "date" | reverse %}
+{% assign home_recent_top = home_recent | where: "home_recent_position", 1 | first %}
+{% assign home_recent_third = home_recent | where: "home_recent_position", 3 | first %}
+{% assign home_recent_limit = 8 %}
 {% if main_feature %}
 <section class="de-home-editorial">
   <div class="de-home-content-grid">
@@ -50,17 +53,27 @@
       </div>
       <ol class="de-recent-list">
         {% assign home_recent_count = 0 %}
+        {% if home_recent_top %}
+          {% assign home_recent_count = home_recent_count | plus: 1 %}
+          {% include home-recent-item.html post=home_recent_top index=home_recent_count %}
+        {% endif %}
         {% for post in home_recent %}
-          {% unless post.home_recent_after %}
-            {% if home_recent_count < 7 %}
+          {% unless post.home_recent_after or post.home_recent_position %}
+            {% if home_recent_count < home_recent_limit %}
               {% assign home_recent_count = home_recent_count | plus: 1 %}
               {% include home-recent-item.html post=post index=home_recent_count %}
             {% endif %}
+            {% if home_recent_third and home_recent_count == 2 %}
+              {% assign home_recent_count = home_recent_count | plus: 1 %}
+              {% include home-recent-item.html post=home_recent_third index=home_recent_count %}
+            {% endif %}
             {% for inserted_post in home_recent %}
-              {% if inserted_post.home_recent_after == post.slug and home_recent_count < 7 %}
-                {% assign home_recent_count = home_recent_count | plus: 1 %}
-                {% include home-recent-item.html post=inserted_post index=home_recent_count %}
-              {% endif %}
+              {% unless inserted_post.home_recent_position %}
+                {% if inserted_post.home_recent_after == post.slug and home_recent_count < home_recent_limit %}
+                  {% assign home_recent_count = home_recent_count | plus: 1 %}
+                  {% include home-recent-item.html post=inserted_post index=home_recent_count %}
+                {% endif %}
+              {% endunless %}
             {% endfor %}
           {% endunless %}
         {% endfor %}
