@@ -1244,6 +1244,9 @@ body { overflow-x: hidden; }
 .project-article-figure { margin:42px 0 48px; padding:12px; border:1px solid rgba(255,255,255,.17); background:#f4f2ed; }
 .project-article-figure img { width:100%; margin:0; border-radius:0; }
 .project-article-figure figcaption { padding:13px 8px 4px; color:#516074; font-size:.78rem; line-height:1.5; }
+.article-video { margin:30px 0 38px; padding:10px; border:1px solid rgba(107,171,255,.35); background:#07172e; }
+.article-video video { display:block; width:100%; max-height:620px; background:#02060c; }
+.article-video figcaption { padding:11px 5px 2px; color:#aeb9c9; font-size:.78rem; line-height:1.5; }
 .prospect-score-section { margin:50px 0 54px; }
 .prospect-score-section>.de-kicker { color:#ef5d70; }
 .prospect-score-section>h2 { margin-top:8px; }
