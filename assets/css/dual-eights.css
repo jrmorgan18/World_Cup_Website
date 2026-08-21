@@ -344,7 +344,7 @@ body { overflow-x: hidden; }
 .laliga-race-board { margin:38px 0 56px; overflow:hidden; border:1px solid rgba(255,255,255,.16); background:#efece5; box-shadow:0 16px 32px rgba(0,0,0,.2); }
 .laliga-race-board__head { padding:23px 24px 21px; border-top:4px solid var(--de-soccer); background:linear-gradient(145deg,#17243a,#090f1a); }
 .laliga-race-board__head p { color:var(--de-soccer); font-family:var(--font-display); font-size:.59rem; font-weight:700; letter-spacing:1.35px; text-transform:uppercase; }
-.article-body .laliga-race-board__head h2 { margin:7px 0 8px; padding:0; border:0; color:#fff; font-size:1.48rem; line-height:1; }
+.article-body .laliga-race-board__head :is(h2,h3) { margin:7px 0 8px; padding:0; border:0; color:#fff; font-size:1.48rem; line-height:1; }
 .laliga-race-board__head span { color:#98a5b7; font-family:var(--font-display); font-size:.55rem; letter-spacing:1px; text-transform:uppercase; }
 .laliga-race-board__clubs { margin:0; padding:0; list-style:none; }
 .laliga-race-board__club { min-height:74px; padding:10px 18px; display:grid; grid-template-columns:29px 48px minmax(0,1fr) auto; gap:12px; align-items:center; border-top:1px solid #d5d0c5; color:#171a1f; }
@@ -357,6 +357,9 @@ body { overflow-x: hidden; }
 .laliga-race-board__club b { font-family:'Newsreader',serif; font-size:1.04rem; line-height:1; }
 .laliga-race-board__club small { color:#6d6970; font-size:.74rem; line-height:1.2; }
 .laliga-race-board__club strong { padding:6px 7px; color:#fff; background:#17243a; font-family:var(--font-display); font-size:.48rem; letter-spacing:.7px; text-transform:uppercase; white-space:nowrap; }
+.league-preview-race-board .laliga-race-board__club { min-height:84px; padding:15px 26px; grid-template-columns:56px minmax(185px,1.3fr) minmax(145px,.7fr); gap:20px; }
+.league-preview-race-board .laliga-race-board__club>div { grid-column:2; }
+.league-preview-race-board .laliga-race-board__club>em { grid-column:3; justify-self:end; color:#8d6816; font-family:var(--font-display); font-size:.7rem; font-style:normal; font-weight:700; letter-spacing:1px; text-align:right; text-transform:uppercase; }
 .laliga-americans { margin:30px 0 38px; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1px; border:1px solid rgba(255,255,255,.18); background:rgba(255,255,255,.18); }
 .laliga-americans>div { min-width:0; padding:16px; display:grid; grid-template-columns:48px minmax(0,1fr); gap:13px; align-items:center; background:linear-gradient(135deg,#17243a,#0d1625); }
 .article-body .laliga-americans img { width:46px; height:46px; margin:0; padding:4px; object-fit:contain; border-radius:50%; background:#fff; }
@@ -366,7 +369,7 @@ body { overflow-x: hidden; }
 .premier-americans { margin:32px 0 46px; overflow:hidden; border:1px solid rgba(255,255,255,.17); background:#0c1421; box-shadow:0 16px 32px rgba(0,0,0,.2); }
 .premier-americans__head { padding:18px 20px 16px; border-top:4px solid var(--de-soccer); background:linear-gradient(145deg,#17243a,#090f1a); }
 .premier-americans__head p { margin:0; color:var(--de-soccer); font-family:var(--font-display); font-size:.56rem; font-weight:700; letter-spacing:1.25px; text-transform:uppercase; }
-.article-body .premier-americans__head h2 { margin:6px 0 0; padding:0; border:0; color:#fff; font-size:1.35rem; line-height:1; }
+.article-body .premier-americans__head :is(h2,h3) { margin:6px 0 0; padding:0; border:0; color:#fff; font-size:1.35rem; line-height:1; }
 .premier-americans__grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1px; background:rgba(255,255,255,.14); }
 .premier-americans__grid article { min-width:0; padding:13px 9px 15px; display:flex; flex-direction:column; align-items:center; background:linear-gradient(155deg,#18243a,#0c1421); text-align:center; }
 .premier-americans__grid figure { width:88px; height:88px; margin:0 0 11px; display:flex; align-items:flex-end; justify-content:center; overflow:hidden; border:1px solid rgba(255,255,255,.17); border-radius:50%; background:radial-gradient(circle at 50% 38%,#f4f1e8 0 47%,#b8c1ce 48% 100%); }
@@ -374,6 +377,9 @@ body { overflow-x: hidden; }
 .article-body .premier-americans__grid h3 { margin:0; color:#fff; font-family:'Newsreader',serif; font-size:.9rem; font-weight:650; line-height:1.05; }
 .premier-americans__grid p { margin:6px 0 0; color:#b8c2d0; font-family:var(--font-display); font-size:.46rem; line-height:1.3; letter-spacing:.45px; text-transform:uppercase; }
 .premier-americans__grid p span { display:block; margin-top:2px; color:#77869a; }
+.theme-soccer .article-body>h2 { margin:72px 0 24px; padding:16px 0 14px; border-top:3px solid var(--de-soccer); border-bottom:1px solid rgba(255,255,255,.2); color:#fff; font-size:clamp(1.85rem,3.2vw,2.5rem); letter-spacing:.25px; line-height:.95; }
+.theme-soccer .article-body>h3 { margin:48px 0 18px; padding-left:14px; border-left:3px solid var(--de-soccer); color:#fff; font-family:var(--font-display); font-size:.9rem; letter-spacing:1px; line-height:1.1; text-transform:uppercase; }
+.theme-soccer .article-body>h4 { margin:34px 0 13px; padding:10px 13px; border-left:3px solid var(--de-soccer); background:linear-gradient(90deg,rgba(212,168,67,.14),rgba(255,255,255,.025)); color:#fff; font-family:var(--font-display); font-size:.8rem; font-weight:700; letter-spacing:.8px; line-height:1.3; text-transform:uppercase; }
 .article-body .laliga-club-heading { margin:48px 0 20px; padding:11px 14px; display:grid; grid-template-columns:54px minmax(0,1fr); gap:13px; align-items:center; border:1px solid rgba(255,255,255,.15); border-left:3px solid var(--de-soccer); background:linear-gradient(90deg,rgba(212,168,67,.14),rgba(255,255,255,.03)); color:#fff; font-family:var(--font-display); font-size:1.28rem; line-height:1.02; text-transform:uppercase; }
 .article-body .laliga-club-heading img { width:50px; height:50px; margin:0; padding:4px; object-fit:contain; border-radius:50%; background:#fff; }
 .laliga-next-tier { margin:28px 0 32px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1px; border:1px solid rgba(255,255,255,.16); background:rgba(255,255,255,.16); }
@@ -1862,4 +1868,11 @@ details[open] > summary .gc-toggle::after { transform:rotate(0); }
   .gc-diagram-comparison { grid-template-columns:1fr; }
   .gc-key ul { gap:9px 16px; }
   .gc-diagram,.gc-diagram--inline { max-width:none; padding:8px; }
+}
+
+@media (max-width: 560px) {
+  .league-preview-race-board .laliga-race-board__club { min-height:70px; padding:11px 14px; grid-template-columns:48px minmax(0,1fr) auto; gap:11px; }
+  .league-preview-race-board .laliga-race-board__club>em { max-width:88px; font-size:.55rem; line-height:1.25; }
+  .theme-soccer .article-body>h2 { margin-top:58px; font-size:1.8rem; }
+  .theme-soccer .article-body>h3 { margin-top:40px; }
 }

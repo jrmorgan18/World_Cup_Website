@@ -27,7 +27,7 @@ Serie A is legitimately open, with the defending champions facing a deep group o
 
 For American fans, there is plenty to follow beyond the title races. Christian Pulisic and Weston McKennie remain at major Italian clubs, several of the most interesting young USMNT players are scattered around Germany and France suddenly has perhaps the deepest collection of established Americans of any major European league.
 
-<section class="laliga-race-board" aria-labelledby="three-races-heading">
+<section class="laliga-race-board league-preview-race-board" aria-labelledby="three-races-heading">
   <div class="laliga-race-board__head">
     <p>Three leagues, three very different markets</p>
     <h2 id="three-races-heading">The title races at a glance</h2>
@@ -65,11 +65,11 @@ The current preseason title prices have Inter at -110, followed by Juventus and 
     <h3 id="serie-a-americans-heading">Serie A</h3>
   </div>
   <div class="premier-americans__grid">
-    <article><img src="{{ '/assets/images/player-pool/christian-pulisic.png' | relative_url }}" alt="Christian Pulisic"><div><strong>Christian Pulisic</strong><span>AC Milan · Attacker</span><p>Health first, then another central role in Milan’s attack.</p></div></article>
-    <article><img src="{{ '/assets/images/player-pool/weston-mckennie.png' | relative_url }}" alt="Weston McKennie"><div><strong>Weston McKennie</strong><span>Juventus · Midfielder</span><p>Versatility keeps surviving every Juventus reset.</p></div></article>
-    <article><img src="{{ '/assets/images/player-pool/yunus-musah.png' | relative_url }}" alt="Yunus Musah"><div><strong>Yunus Musah</strong><span>AC Milan · Midfielder</span><p>A return from loan in search of a stable role.</p></div></article>
-    <article><img src="{{ '/assets/images/player-pool/benjamin-cremaschi.png' | relative_url }}" alt="Benjamin Cremaschi"><div><strong>Benjamin Cremaschi</strong><span>Parma · Midfielder</span><p>A healthy season can finally show what translates.</p></div></article>
-    <article><img src="{{ '/assets/images/player-pool/gianluca-busio.png' | relative_url }}" alt="Gianluca Busio"><div><strong>Gianluca Busio</strong><span>Venezia · Midfielder</span><p>The captain returns to Italy’s top flight.</p></div></article>
+    <article><figure><img src="{{ '/assets/images/player-pool/christian-pulisic.png' | relative_url }}" alt="Christian Pulisic"></figure><h3>Christian Pulisic</h3><p><span>AC Milan · Attacker</span>Health first, then another central role in Milan’s attack.</p></article>
+    <article><figure><img src="{{ '/assets/images/player-pool/weston-mckennie.png' | relative_url }}" alt="Weston McKennie"></figure><h3>Weston McKennie</h3><p><span>Juventus · Midfielder</span>Versatility keeps surviving every Juventus reset.</p></article>
+    <article><figure><img src="{{ '/assets/images/player-pool/yunus-musah.png' | relative_url }}" alt="Yunus Musah"></figure><h3>Yunus Musah</h3><p><span>AC Milan · Midfielder</span>A return from loan in search of a stable role.</p></article>
+    <article><figure><img src="{{ '/assets/images/player-pool/benjamin-cremaschi.png' | relative_url }}" alt="Benjamin Cremaschi"></figure><h3>Benjamin Cremaschi</h3><p><span>Parma · Midfielder</span>A healthy season can finally show what translates.</p></article>
+    <article><figure><img src="{{ '/assets/images/player-pool/gianluca-busio.png' | relative_url }}" alt="Gianluca Busio"></figure><h3>Gianluca Busio</h3><p><span>Venezia · Midfielder</span>The captain returns to Italy’s top flight.</p></article>
   </div>
 </section>
 
@@ -109,7 +109,7 @@ For the USMNT, this season gives Busio another opportunity to force himself back
 
 ### The Title Race
 
-<section class="laliga-race-board" aria-labelledby="serie-a-race-heading">
+<section class="laliga-race-board league-preview-race-board" aria-labelledby="serie-a-race-heading">
   <div class="laliga-race-board__head">
     <p>The leading trio</p>
     <h3 id="serie-a-race-heading">No runaway favorite</h3>
@@ -196,11 +196,11 @@ The Bundesliga remains one of the best leagues for monitoring the next generatio
     <h3 id="bundesliga-americans-heading">Bundesliga</h3>
   </div>
   <div class="premier-americans__grid">
-    <article><img src="{{ '/assets/images/player-pool/malik-tillman.png' | relative_url }}" alt="Malik Tillman"><div><strong>Malik Tillman</strong><span>Bayer Leverkusen · Attacker</span><p>The rebuild offers a larger creative role.</p></div></article>
-    <article><img src="{{ '/assets/images/player-pool/noahkai-banks.png' | relative_url }}" alt="Noahkai Banks"><div><strong>Noahkai Banks</strong><span>Augsburg · Center back</span><p>A teenage starter with enormous long-term upside.</p></div></article>
-    <article><img src="{{ '/assets/images/player-pool/mathis-albert.png' | relative_url }}" alt="Mathis Albert"><div><strong>Mathis Albert</strong><span>Dortmund · Winger</span><p>The 17-year-old lottery ticket in Dortmund’s attack.</p></div></article>
-    <article><img src="{{ '/assets/images/player-pool/joe-scally.png' | relative_url }}" alt="Joe Scally"><div><strong>Joe Scally</strong><span>Gladbach · Fullback</span><p>Reliability remains his strongest club argument.</p></div></article>
-    <article><img src="{{ '/assets/images/player-pool/cole-campbell.png' | relative_url }}" alt="Cole Campbell"><div><strong>Cole Campbell</strong><span>Elversberg · Winger</span><p>A move designed to turn potential into minutes.</p></div></article>
+    <article><figure><img src="{{ '/assets/images/player-pool/malik-tillman.png' | relative_url }}" alt="Malik Tillman"></figure><h3>Malik Tillman</h3><p><span>Bayer Leverkusen · Attacker</span>The rebuild offers a larger creative role.</p></article>
+    <article><figure><img src="{{ '/assets/images/player-pool/noahkai-banks.png' | relative_url }}" alt="Noahkai Banks"></figure><h3>Noahkai Banks</h3><p><span>Augsburg · Center back</span>A teenage starter with enormous long-term upside.</p></article>
+    <article><figure><img src="{{ '/assets/images/player-pool/mathis-albert.png' | relative_url }}" alt="Mathis Albert"></figure><h3>Mathis Albert</h3><p><span>Dortmund · Winger</span>The 17-year-old lottery ticket in Dortmund’s attack.</p></article>
+    <article><figure><img src="{{ '/assets/images/player-pool/joe-scally.png' | relative_url }}" alt="Joe Scally"></figure><h3>Joe Scally</h3><p><span>Gladbach · Fullback</span>Reliability remains his strongest club argument.</p></article>
+    <article><figure><img src="{{ '/assets/images/player-pool/cole-campbell.png' | relative_url }}" alt="Cole Campbell"></figure><h3>Cole Campbell</h3><p><span>Elversberg · Winger</span>A move designed to turn potential into minutes.</p></article>
   </div>
 </section>
 
@@ -236,7 +236,7 @@ Campbell has moved from Dortmund to newly promoted Elversberg in search of the c
 
 ### The Title Race
 
-<section class="laliga-race-board" aria-labelledby="bundesliga-race-heading">
+<section class="laliga-race-board league-preview-race-board" aria-labelledby="bundesliga-race-heading">
   <div class="laliga-race-board__head">
     <p>The gap to close</p>
     <h3 id="bundesliga-race-heading">Bayern against the field</h3>
@@ -299,11 +299,11 @@ France may have the most interesting group of Americans in Europe this season.
     <h3 id="ligue-one-americans-heading">Ligue 1</h3>
   </div>
   <div class="premier-americans__grid">
-    <article><img src="{{ '/assets/images/player-pool/folarin-balogun.png' | relative_url }}" alt="Folarin Balogun"><div><strong>Folarin Balogun</strong><span>Monaco · Striker</span><p>Nineteen goals — and a transfer market watching.</p></div></article>
-    <article><img src="{{ '/assets/images/player-pool/tim-weah.png' | relative_url }}" alt="Tim Weah"><div><strong>Tim Weah</strong><span>Marseille · Right side</span><p>Another season testing his defensive evolution.</p></div></article>
-    <article><img src="{{ '/assets/images/player-pool/gio-reyna.png' | relative_url }}" alt="Gio Reyna"><div><strong>Gio Reyna</strong><span>Strasbourg · Attacker</span><p>A clean chance to trade theory for availability.</p></div></article>
-    <article><img src="{{ '/assets/images/player-pool/tanner-tessmann.png' | relative_url }}" alt="Tanner Tessmann"><div><strong>Tanner Tessmann</strong><span>Lyon · Midfielder</span><p>Dependable is established; influential is next.</p></div></article>
-    <article><img src="{{ '/assets/images/player-pool/bryan-reynolds.png' | relative_url }}" alt="Bryan Reynolds"><div><strong>Bryan Reynolds</strong><span>Rennes · Right back</span><p>A major-league return that must produce minutes.</p></div></article>
+    <article><figure><img src="{{ '/assets/images/player-pool/folarin-balogun.png' | relative_url }}" alt="Folarin Balogun"></figure><h3>Folarin Balogun</h3><p><span>Monaco · Striker</span>Nineteen goals — and a transfer market watching.</p></article>
+    <article><figure><img src="{{ '/assets/images/player-pool/tim-weah.png' | relative_url }}" alt="Tim Weah"></figure><h3>Tim Weah</h3><p><span>Marseille · Right side</span>Another season testing his defensive evolution.</p></article>
+    <article><figure><img src="{{ '/assets/images/player-pool/gio-reyna.png' | relative_url }}" alt="Gio Reyna"></figure><h3>Gio Reyna</h3><p><span>Strasbourg · Attacker</span>A clean chance to trade theory for availability.</p></article>
+    <article><figure><img src="{{ '/assets/images/player-pool/tanner-tessmann.png' | relative_url }}" alt="Tanner Tessmann"></figure><h3>Tanner Tessmann</h3><p><span>Lyon · Midfielder</span>Dependable is established; influential is next.</p></article>
+    <article><figure><img src="{{ '/assets/images/player-pool/bryan-reynolds.png' | relative_url }}" alt="Bryan Reynolds"></figure><h3>Bryan Reynolds</h3><p><span>Rennes · Right back</span>A major-league return that must produce minutes.</p></article>
   </div>
 </section>
 
@@ -345,7 +345,7 @@ Reynolds earned another shot in a major European league after several productive
 
 ### The Title Race
 
-<section class="laliga-race-board" aria-labelledby="ligue-one-race-heading">
+<section class="laliga-race-board league-preview-race-board" aria-labelledby="ligue-one-race-heading">
   <div class="laliga-race-board__head">
     <p>The competitive baseline</p>
     <h3 id="ligue-one-race-heading">Can anyone make PSG care in April?</h3>
