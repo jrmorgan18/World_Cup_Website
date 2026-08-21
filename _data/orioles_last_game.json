@@ -1,72 +1,72 @@
 {
-  "generated_at": "2026-08-20T06:25:43Z",
-  "game_pk": 824801,
-  "date": "2026-08-19",
+  "generated_at": "2026-08-21T06:26:38Z",
+  "game_pk": 824802,
+  "date": "2026-08-20",
   "venue": "Oriole Park at Camden Yards",
   "home_away": "home",
   "opponent": "New York Yankees",
   "opponent_abbr": "NYY",
   "result": "L",
-  "orioles_score": 3,
-  "opponent_score": 5,
-  "orioles_hits": 6,
-  "opponent_hits": 10,
-  "orioles_errors": 0,
+  "orioles_score": 1,
+  "opponent_score": 6,
+  "orioles_hits": 4,
+  "opponent_hits": 11,
+  "orioles_errors": 1,
   "opponent_errors": 0,
   "winning_pitcher": {
-    "name": "Brent Headrick",
+    "name": "Gerrit Cole",
     "team": "NYY",
-    "record": "7-2",
-    "line": "1.0 IP, 0 ER, K, 0 BB"
+    "record": "7-6",
+    "line": "6.0 IP, ER, 8 K, BB"
   },
   "losing_pitcher": {
-    "name": "Cam Sanders",
+    "name": "Kyle Bradish",
     "team": "BAL",
-    "record": "1-1",
-    "line": "0.2 IP, 2 ER, K, BB"
+    "record": "7-12",
+    "line": "5.2 IP, 3 ER, 5 K, 2 BB"
   },
   "save_pitcher": {
-    "name": "David Bednar",
+    "name": "Ryan Yarbrough",
     "team": "NYY",
-    "record": "29",
-    "line": "1.0 IP, 0 ER, K, 0 BB"
+    "record": "3",
+    "line": "3.0 IP, 0 ER, 4 K, 0 BB"
   },
   "key_players": [
     {
-      "name": "Jazz Chisholm Jr.",
+      "name": "Spencer Jones",
       "team": "NYY",
-      "position": "2B",
-      "line": "1-2 | 2 BB, 2 R, SB"
+      "position": "RF",
+      "line": "3-4 | HR, RBI, 2 R"
     },
     {
-      "name": "Dylan Beavers",
-      "team": "BAL",
-      "position": "LF",
-      "line": "1-3 | HR, BB, K"
+      "name": "Gerrit Cole",
+      "team": "NYY",
+      "position": "P",
+      "line": "6.0 IP, ER, 8 K, BB"
     },
     {
-      "name": "Ben Rice",
+      "name": "Luis García Jr.",
       "team": "NYY",
-      "position": "DH",
-      "line": "2-5 | HR, 2 K, RBI"
+      "position": "1B",
+      "line": "3-4 | HR, K, RBI"
     }
   ],
-  "summary": "The Orioles fell to the Yankees 3-5 at Camden Yards. Jazz Chisholm Jr. led the way (1-2 | 2 BB, 2 R, SB). Baltimore has lost 3 straight.",
+  "summary": "The Orioles fell to the Yankees 1-6 at Camden Yards. Spencer Jones led the way (3-4 | HR, RBI, 2 R). Baltimore has lost 4 straight.",
   "record": {
     "wins": 61,
-    "losses": 66,
-    "pct": ".480",
+    "losses": 67,
+    "pct": ".477",
     "division": "AL East",
     "division_rank": 5,
     "games_back": "15.5",
-    "streak": "L3",
-    "last_10": "5-5"
+    "streak": "L4",
+    "last_10": "4-6"
   },
   "wild_card": {
-    "rank": 7,
+    "rank": 8,
     "spots": 3,
-    "games_back": "1.5",
-    "status_text": "1.5 games back of the third AL Wild Card spot.",
+    "games_back": "2.0",
+    "status_text": "2.0 games back of the third AL Wild Card spot.",
     "ladder": [
       {
         "team": "Twins",
@@ -81,9 +81,9 @@
       {
         "team": "Rangers",
         "abbr": "TEX",
-        "wins": 62,
+        "wins": 63,
         "losses": 65,
-        "games_back": "0.5",
+        "games_back": null,
         "wild_card_rank": 4,
         "is_orioles": false,
         "is_cutoff": false
@@ -91,9 +91,9 @@
       {
         "team": "Blue Jays",
         "abbr": "TOR",
-        "wins": 62,
+        "wins": 63,
         "losses": 66,
-        "games_back": "1.0",
+        "games_back": "0.5",
         "wild_card_rank": 5,
         "is_orioles": false,
         "is_cutoff": false
@@ -101,10 +101,20 @@
       {
         "team": "Guardians",
         "abbr": "CLE",
+        "wins": 62,
+        "losses": 66,
+        "games_back": "1.0",
+        "wild_card_rank": 6,
+        "is_orioles": false,
+        "is_cutoff": false
+      },
+      {
+        "team": "Tigers",
+        "abbr": "DET",
         "wins": 61,
         "losses": 66,
         "games_back": "1.5",
-        "wild_card_rank": 6,
+        "wild_card_rank": 7,
         "is_orioles": false,
         "is_cutoff": false
       },
@@ -112,9 +122,9 @@
         "team": "Orioles",
         "abbr": "BAL",
         "wins": 61,
-        "losses": 66,
-        "games_back": "1.5",
-        "wild_card_rank": 7,
+        "losses": 67,
+        "games_back": "2.0",
+        "wild_card_rank": 8,
         "is_orioles": true,
         "is_cutoff": false
       }
