@@ -18,7 +18,7 @@ hero_credit_url: "https://www.mlb.com/stories/player/624413"
 home_recent: false
 home_recent_theme: orioles
 home_recent_label: "Orioles"
-orioles_feature: true
+orioles_feature: false
 feature_kicker: "Weekly recap"
 feature_snapshot_label: "August 10–16 snapshot"
 feature_stats:

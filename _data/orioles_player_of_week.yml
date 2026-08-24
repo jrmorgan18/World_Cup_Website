@@ -8,22 +8,22 @@
 # "Read the weekly recap" link is hidden when it is absent.
 name: "Pete Alonso"
 position: "1B"
-period: "August 10–16, 2026"
-recap_url: "/orioles/weekly-recap-2026-08-17/"
+period: "August 17–23, 2026"
+recap_url: "/orioles/weekly-recap-2026-08-24/"
 summary: >-
-  Alonso went 12-for-22 with a double, two home runs, five RBIs, four walks and
-  a hit by pitch, producing a .545/.630/.864 line and a 1.494 OPS. He reached
-  base 17 times in 27 plate appearances and delivered go-ahead damage throughout
-  Baltimore's 4-2 week.
+  Alonso went 10-for-29 with three home runs and five RBIs during a 2-5 week,
+  producing a .345 average and 1.000 OPS while carrying a disappearing offense.
+  He homered Monday, Wednesday and Friday and supplied the middle-of-the-order
+  power Baltimore needed while most of the lineup went quiet.
 image: "/assets/images/orioles-pete-alonso-potw-2026.jpg"
 image_position: "center 28%"
 image_alt: "Pete Alonso follows through on a swing for the Baltimore Orioles"
 image_credit: "MLB.com"
 image_credit_url: "https://www.mlb.com/stories/player/624413"
 stats:
-  - { label: "Games", value: "6" }
-  - { label: "Hits", value: "12-for-22" }
-  - { label: "AVG", value: ".545" }
-  - { label: "HR", value: "2" }
+  - { label: "Games", value: "7" }
+  - { label: "Hits", value: "10-for-29" }
+  - { label: "AVG", value: ".345" }
+  - { label: "HR", value: "3" }
   - { label: "RBI", value: "5" }
-  - { label: "OPS", value: "1.494" }
+  - { label: "OPS", value: "1.000" }
