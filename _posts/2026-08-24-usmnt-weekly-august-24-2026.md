@@ -21,6 +21,17 @@ hero_credit_url: "https://www.acmilan.com/en/teams/men-first-team/players/yunus-
 
 *Reporting window: **August 17-23, 2026***
 
+<nav class="article-section-nav" aria-label="Jump to article section">
+  <span>Jump to</span>
+  <a href="#stock-watch">Stock Watch</a>
+  <a href="#spotlight-players">Spotlight Players</a>
+  <a href="#premier-league">Premier League</a>
+  <a href="#la-liga">La Liga</a>
+  <a href="#serie-a">Serie A</a>
+  <a href="#germany">Germany</a>
+  <a href="#ligue-1">Ligue 1</a>
+  <a href="#eredivisie">Eredivisie</a>
+</nav>
 
 The strongest American performances of the week belonged to Sergiño Dest, Yunus Musah, Malik Tillman, Gianluca Busio, Tanner Tessmann and Ricardo Pepi. The biggest concerns are Haji Wright's quad injury, Kevin Paredes' new injury and Joe Scally's increasingly precarious situation at Borussia Mönchengladbach.
 

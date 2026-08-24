@@ -1242,6 +1242,10 @@ body { overflow-x: hidden; }
 .article-video { margin:30px 0 38px; padding:10px; border:1px solid rgba(107,171,255,.35); background:#07172e; }
 .article-video video { display:block; width:100%; max-height:620px; background:#02060c; }
 .article-video figcaption { padding:11px 5px 2px; color:#aeb9c9; font-size:.78rem; line-height:1.5; }
+.article-section-nav { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:22px 0 26px; padding:13px 15px; border:1px solid rgba(107,171,255,.35); background:#07172e; }
+.article-section-nav span { margin-right:4px; color:#8ebeff; font-family:var(--font-display); font-size:.6rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
+.article-section-nav a { padding:5px 8px; border:1px solid rgba(174,205,242,.28); border-radius:999px; color:#edf5ff; font-family:var(--font-display); font-size:.58rem; letter-spacing:.04em; text-decoration:none; text-transform:uppercase; }
+.article-section-nav a:hover, .article-section-nav a:focus-visible { border-color:#8ebeff; background:rgba(107,171,255,.16); color:#fff; }
 .article-stock-watch { margin:24px 0 34px; overflow:hidden; border:1px solid rgba(107,171,255,.42); background:#07172e; color:#f4f7fb; }
 .article-stock-watch-heading { display:grid; grid-template-columns:auto 1fr auto; align-items:baseline; gap:14px; padding:18px 20px 15px; border-bottom:1px solid rgba(151,183,223,.24); }
 .article-stock-watch-heading span { color:#75aefb; font-size:.66rem; font-weight:800; letter-spacing:.16em; text-transform:uppercase; }
