@@ -1,7 +1,7 @@
 title: Orioles Prospect Watch
 source_label: MLB Pipeline Orioles Top 30
 source_url: https://www.mlb.com/orioles/prospects/orioles
-snapshot_date: August 23, 2026
+snapshot_date: August 24, 2026
 stats_as_of: August 23, 2026
 season_end_note: Weekly reports run through September 27, 2026.
 source_note: Rankings follow MLB Pipeline's current Orioles Top 30. Player development notes are reported separately each Sunday and distinguish verified facts from scouting interpretation.
@@ -17,7 +17,7 @@ prospects:
     acquired: "2026 Draft: first round, No. 7 overall"
     image: /assets/images/orioles/prospects-2026/eric-booth-jr.jpg
     image_alt: Eric Booth Jr. fields a baseball during an amateur showcase
-    stat_line: "6 G · .200/.407/.200 · 0 HR · 0 SB"
+    stat_line: "23 AB · .217/.387 · 0 HR · 0 SB · .604 OPS"
   - rank: 2
     id: anthony-eyanson
     name: Anthony Eyanson
@@ -89,7 +89,7 @@ prospects:
     acquired: "International signing: Dominican Republic, December 2021"
     image: /assets/images/orioles/prospects-2026/luis-de-leon.jpg
     image_alt: Luis De León pitches in the Orioles farm system
-    stat_line: "23 G / 22 GS · 96.1 IP · 4.48 ERA · 1.44 WHIP · 117 K"
+    stat_line: "24 G / 22 GS · 97.1 IP · 4.53 ERA · 1.46 WHIP · 118 K"
   - rank: 8
     id: wehiwa-aloy
     name: Wehiwa Aloy
@@ -113,7 +113,7 @@ prospects:
     acquired: "2026 Adley Rutschman trade with Boston"
     image: /assets/images/orioles/prospects-2026/enddy-azocar.jpg
     image_alt: Enddy Azocar stands on base during a minor league game
-    stat_line: "432 AB · .294/.347 · 21 HR · 15 SB · .898 OPS"
+    stat_line: "437 AB · .297/.349 · 21 HR · 15 SB · .903 OPS"
   - rank: 10
     id: michael-forret
     name: Michael Forret
@@ -125,14 +125,14 @@ prospects:
     acquired: "Reacquired in the 2026 Tyler Wells trade with Tampa Bay"
     image: /assets/images/orioles/prospects-2026/michael-forret.jpg
     image_alt: Michael Forret pitches for Triple-A Durham before returning to Baltimore
-    stat_line: "20 G / 20 GS · 97.2 IP · 3.32 ERA · 1.26 WHIP · 107 K"
+    stat_line: "22 G / 21 GS · 107.2 IP · 3.85 ERA · 1.32 WHIP · 115 K"
 reports:
   - id: "2026-08-23"
     published: "August 23, 2026"
     window: "August 17-23, 2026"
     summary:
       biggest_risers: "Anthony Eyanson delivered a career-best seven innings with eight strikeouts and no walks; Wehiwa Aloy hit homers on August 18 and August 23 while adding an August 22 double; and Joseph Dzierwa remained effective in a five-inning August 19 start."
-      issues_to_monitor: "Ike Irish and Nate George had no new appearances listed while injured; Caden Hunter, Luis De León and Michael Forret also had no new appearances located in the official window; Eric Booth Jr. is still working through a tiny first-professional sample."
+      issues_to_monitor: "Ike Irish is out for the season after a left meniscus tear and July knee procedure, while Nate George remains on the 60-day injured list with an undisclosed illness. Michael Forret's Triple-A transition remains a concern after Norfolk was held hitless in his August 23 start; Eric Booth Jr. is still working through a tiny first-professional sample."
       best_story: "Eyanson's first career seven-inning start was the clearest verified development: five hits, one run, no walks and eight strikeouts in Double-A Chesapeake."
     players:
       - prospect: eric-booth-jr
@@ -142,11 +142,11 @@ reports:
         trend: "→"
         direction: steady
         direction_label: Holding
-        recap: "The official player log shows Booth going 1-for-9 with a walk across his August 18-19 appearances, including an RBI single on August 19."
-        development_read: "The first-professional sample remains tiny. The two-game stretch was quiet overall, so the next several Delmarva games will provide more useful evidence than this week's limited line."
+        recap: "Booth stayed active for Delmarva and drove in a run on a sacrifice fly on August 20. His official first-professional line now stands at five hits and four RBIs in 23 at-bats."
+        development_read: "The sample remains tiny, but the active assignment and a second run-producing event are more useful than treating a quiet stretch as an absence. The next several Delmarva games should add needed context."
         sources:
-          - { label: "Baseball Savant player record", url: "https://baseballsavant.mlb.com/savant-player/eric-booth-jr-835727?stats=career-r-hitting-milb" }
-          - { label: "MiLB debut highlight", url: "https://www.milb.com/video/eric-booth-jr-collects-first-hit-and-rbi?t=milb-top-videos" }
+          - { label: "MiLB player record", url: "https://www.milb.com/player/eric-booth-jr-835727" }
+          - { label: "August 20 sacrifice fly", url: "https://www.milb.com/video/eric-booth-jr-out-on-a-sacrifice-fly-to-left-fielder-jay-mcqueen-jhomnard?t=playerid-835727" }
       - prospect: anthony-eyanson
         name: Anthony Eyanson
         team: Chesapeake Baysox
@@ -175,14 +175,14 @@ reports:
         name: Caden Hunter
         team: Chesapeake Baysox
         level: Double-A
-        trend: "?"
-        direction: insufficient
-        direction_label: No new data
-        recap: "I did not locate a new appearance for Hunter in the official MLB/MiLB player records during the August 17-23 window. His current season line is 20 games (18 starts), 89.0 innings, a 2.02 ERA, a 1.04 WHIP and 130 strikeouts."
-        development_read: "There is no new performance evidence to weigh after last week's setback. His next confirmed start and command response remain the key checkpoints."
+        trend: "↑"
+        direction: rising
+        direction_label: Rebound
+        recap: "Hunter started August 18 against Richmond and earned the win with five innings of one-run ball, two strikeouts and six runners stranded."
+        development_read: "The workload was shorter and the strikeout total modest, but limiting Richmond to one run was a clear response to the prior outing. He remains active in Chesapeake's rotation with a 2.02 ERA across 89 innings."
         sources:
-          - { label: "MLB player record", url: "https://www.mlb.com/player/caden-hunter-827267" }
-          - { label: "Baseball Savant player record", url: "https://baseballsavant.mlb.com/savant-player/caden-hunter-827267?player_id=827267" }
+          - { label: "Chesapeake Baysox: August 18 start", url: "https://www.mlb.com/milb/chesapeake/news/big-offensive-innings-wehiwa-aloy-homer-highlights-baysox-tuesday-win-against-flying-squirrels" }
+          - { label: "MiLB player record", url: "https://www.milb.com/player/caden-hunter-827267" }
       - prospect: ike-irish
         name: Ike Irish
         team: Frederick Keys
@@ -190,11 +190,11 @@ reports:
         trend: "?"
         direction: insufficient
         direction_label: Injured
-        recap: "Irish remained on the seven-day injured list and had no appearance listed in the official player record during August 17-23."
-        development_read: "There is no new performance evidence to evaluate. His .286/.388/.528 line and 16 homers remain the baseline until he returns."
+        recap: "Did not play: Irish is out for the season after tearing his left meniscus on July 22 and undergoing a left knee meniscectomy on July 28. MLB Pipeline lists his expected return as 2027."
+        development_read: "This is a health hold, not a performance read. His .286/.388/.528 line and 16 homers remain the baseline until his recovery progresses."
         sources:
-          - { label: "MLB player record", url: "https://www.mlb.com/player/ike-irish-702610" }
-          - { label: "Baseball Savant player record", url: "https://baseballsavant.mlb.com/savant-player/ike-irish-702610?player_id=702610" }
+          - { label: "MLB Pipeline injury report", url: "https://www.mlb.com/orioles/news/top-prospect-injuries-roster-moves" }
+          - { label: "MiLB player record", url: "https://www.milb.com/player/ike-irish-702610" }
       - prospect: nate-george
         name: Nate George
         team: Frederick Keys
@@ -202,8 +202,8 @@ reports:
         trend: "?"
         direction: insufficient
         direction_label: Injured
-        recap: "I did not locate a new appearance or transaction for George in the official records during August 17-23; he remains on the 60-day injured list."
-        development_read: "There is no new performance evidence to evaluate. Health and a return timetable remain the only meaningful development questions after his extended absence."
+        recap: "Did not play: George remains on the 60-day injured list after his May 7 placement for an undisclosed illness. MLB Pipeline lists his return as to be determined."
+        development_read: "This is an availability issue, not a performance verdict. Health and a return timetable remain the only meaningful development questions after the extended absence."
         sources:
           - { label: "MLB official transactions", url: "https://statsapi.mlb.com/api/v1/transactions?playerId=825582&startDate=08/17/2026&endDate=08/23/2026" }
           - { label: "MLB player record", url: "https://www.mlb.com/player/nate-george-825582" }
@@ -211,11 +211,11 @@ reports:
         name: Luis De León
         team: Norfolk Tides
         level: Triple-A
-        trend: "?"
-        direction: insufficient
-        direction_label: No new data
-        recap: "I did not locate a new appearance for De León in the official MLB/MiLB player records during August 17-23. His current season line is 23 games (22 starts), 96.1 innings, a 4.48 ERA, a 1.44 WHIP and 117 strikeouts."
-        development_read: "There is no new performance evidence to evaluate this week. His next Norfolk start will show whether the improved strikeout-to-walk work from the prior report carries forward."
+        trend: "→"
+        direction: steady
+        direction_label: Holding
+        recap: "De León made one relief appearance during the window; the official season total moved to 24 appearances, 97.1 innings and 118 strikeouts. He remains active with Norfolk."
+        development_read: "The short relief outing does not materially change the evaluation. The more revealing next step is whether Norfolk returns him to a regular starting workload."
         sources:
           - { label: "MiLB player record", url: "https://www.milb.com/player/luis-de-leon-801725" }
           - { label: "MLB player record", url: "https://www.mlb.com/player/luis-de-leon-801725" }
@@ -247,14 +247,14 @@ reports:
         name: Michael Forret
         team: Norfolk Tides
         level: Triple-A
-        trend: "?"
-        direction: insufficient
-        direction_label: No new data
-        recap: "I did not locate a new appearance for Forret in the official MLB/MiLB player records during August 17-23. His current season line is 20 games (20 starts), 97.2 innings, a 3.32 ERA, a 1.26 WHIP and 107 strikeouts."
-        development_read: "There is no new performance evidence to evaluate this week. His next Triple-A start will be the first opportunity to assess the response to his earlier Norfolk setback."
+        trend: "↓"
+        direction: falling
+        direction_label: Setback
+        recap: "Forret started the first game of Norfolk's August 23 doubleheader against Nashville. The Sounds broke through with a fifth-inning homer and added another run in the frame as the Tides were held hitless in a 2-0 loss."
+        development_read: "The start confirms that he was active, but Norfolk's difficult stretch has now pushed his combined line to a 3.85 ERA and 1.32 WHIP across 107.2 innings. His next turn is important evidence after a rough early Triple-A transition."
         sources:
-          - { label: "MLB player record", url: "https://www.mlb.com/player/michael-forret-702650" }
-          - { label: "Baseball Savant player record", url: "https://baseballsavant.mlb.com/savant-player/michael-forret-702650?player_id=702650" }
+          - { label: "Nashville Sounds: August 23 doubleheader", url: "https://www.mlb.com/milb/nashville/news/sounds-first-no-hitter-since-2017-highlights-twin-bill-sweep" }
+          - { label: "MiLB player record", url: "https://www.milb.com/player/michael-forret-702650" }
   - id: "2026-08-16"
     published: "August 16, 2026"
     window: "August 10-16, 2026"
