@@ -304,6 +304,46 @@ reports:
         development_read: "Remaining a non-starting bench option without competitive minutes is a negative pathway signal; he needs a starting role or match appearances to move the evaluation forward."
         sources:
           - { label: "San Diego vs Colorado lineups (official)", url: "https://www.sandiegofc.com/competitions/mls-regular-season/2026/matches/sdvscol-08-22-2026/lineups" }
+      - profile: yunus-musah
+        name: Yunus Musah
+        club: AC Milan
+        trend: "↑↑"
+        direction: rising
+        direction_label: Rising fast
+        context: Serie A
+        recap: "Started in midfield in AC Milan's 2-1 win at Torino. Local coverage praised his intelligence, connective passing, vertical intent and important transition recoveries."
+        development_read: "This was a genuinely encouraging re-entry point. Musah looked like a connector in possession rather than only an athlete winning challenges, the clearest route back into the USMNT midfield conversation."
+
+      - profile: ricardo-pepi
+        name: Ricardo Pepi
+        club: PSV Eindhoven
+        trend: "↑"
+        direction: rising
+        direction_label: Scoring
+        context: Eredivisie
+        recap: "Started at striker and converted a confident penalty just before halftime in PSV's 5-1 win over Groningen."
+        development_read: "He is starting and scoring regularly for the best team in the Netherlands. The next evaluative question is how fully he rounds out the all-around striker role."
+
+      - profile: sergino-dest
+        name: Sergino Dest
+        club: PSV Eindhoven
+        trend: "↑↑"
+        direction: rising
+        direction_label: Rising fast
+        context: Eredivisie
+        recap: "Started at right back, made an aggressive forward run, combined with Ruben van Bommel and scored PSV's fifth goal against Groningen."
+        development_read: "A healthy Dest remains a uniquely valuable attacking weapon. The performance reinforced how much PSV values his ability to carry and combine through pressure from fullback."
+
+      - profile: chris-richards
+        name: Chris Richards
+        club: Crystal Palace
+        trend: "→"
+        direction: steady
+        direction_label: Mixed
+        context: Premier League
+        recap: "Played 90 minutes in Palace's 2-0 loss at Everton. He was around both Everton goals, but also made several aggressive reads and stopped dangerous breaks later in the second half."
+        development_read: "The two goal moments are real corrections, but his starting place remains secure and the recovery actions still show the front-foot defending that makes him central to the pool."
+
   - id: "2026-08-16"
     group: prospects
     group_label: Prospects
