@@ -50,6 +50,7 @@ section_theme: project
       </thead>
       <tbody data-weekly-scouting-body>
         {% for report_player in latest_report.players %}
+        {% unless report_player.player_pool_only %}
         <tr class="weekly-scouting-row weekly-scouting-row--{{ report_player.direction }}" data-profile="{{ report_player.profile }}">
           <td data-label="Direction"><span class="weekly-scouting-trend"><b>{{ report_player.trend }}</b>{{ report_player.direction_label }}</span></td>
           <td data-label="2030 score" class="weekly-scouting-score-cell">
@@ -66,6 +67,7 @@ section_theme: project
           </td>
           <td data-label="Development read"><p>{{ report_player.development_read }}</p></td>
         </tr>
+        {% endunless %}
         {% endfor %}
       </tbody>
     </table>
