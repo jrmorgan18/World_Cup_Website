@@ -74,13 +74,10 @@ section_theme: project
                 </div>
                 <aside class="pool-profile-evaluation">
                   {% if weekly_player %}
-                  <section class="pool-profile-development pool-profile-development--{{ weekly_player.direction }}">
-                    <div>
-                      <p>Weekly trend</p>
-                      <span class="pool-development-signal"><b>{{ weekly_player.trend }}</b>{{ weekly_player.direction_label }}</span>
-                    </div>
-                    <span>{{ weekly_player.profile_development_read | default: weekly_player.development_read }}</span>
-                    <small>Latest report / Week ending {{ latest_weekly_report.week_ending }}</small>
+                  <section class="pool-profile-last-week">
+                    <p>Last Week Performance</p>
+                    <span>{{ weekly_player.recap }}</span>
+                    <small>USMNT Weekly / Week ending {{ latest_weekly_report.week_ending }}</small>
                   </section>
                   {% endif %}
                   {% if profile.strengths %}<section><p>Strengths</p><span>{{ profile.strengths }}</span></section>{% endif %}
