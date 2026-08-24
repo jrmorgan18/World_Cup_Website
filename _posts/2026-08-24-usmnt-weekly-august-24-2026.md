@@ -10,11 +10,13 @@ author: "Randy Morgan"
 read_time: 12
 section_theme: project
 usmnt_weekly_feature: true
-hero_image: /assets/images/cavan-sullivan-2026-philadelphia-union.jpg
-thumbnail: /assets/images/cavan-sullivan-2026-philadelphia-union.jpg
-hero_alt: "Cavan Sullivan playing for the Philadelphia Union in 2026"
-hero_credit: "Philadelphia Union / MLS"
-hero_credit_url: "https://www.philadelphiaunion.com/news/cavan-sullivan-selected-for-u-s-u-19-training-camp-in-spain"
+home_feature: true
+series: "USMNT Weekly"
+hero_image: /assets/images/yunus-musah-ac-milan-hero.png
+thumbnail: /assets/images/yunus-musah-ac-milan-hero.png
+hero_alt: "Yunus Musah in AC Milan's red and black shirt"
+hero_credit: "AC Milan"
+hero_credit_url: "https://www.acmilan.com/en/teams/men-first-team/players/yunus-musah/biography"
 ---
 
 *Reporting window: **August 17-23, 2026***
@@ -25,6 +27,10 @@ The strongest American performances of the week belonged to Sergiño Dest, Yunus
 
 ## Stock Watch
 
+<figure class="article-stock-watch">
+  <img src="{{ '/assets/images/usmnt-weekly-stock-watch-2026-08-24.png' | relative_url }}" alt="Stock Watch graphic with up, mixed and concern lanes" loading="lazy">
+  <figcaption>USMNT Stock Watch &mdash; week ending August 23, 2026.</figcaption>
+</figure>
 
 **Up:** Sergiño Dest, Yunus Musah, Malik Tillman, Gianluca Busio, Tanner Tessmann and Ricardo Pepi.
 
@@ -56,13 +62,7 @@ Johnny Cardoso, Alex Freeman and Folarin Balogun are also worth monitoring for v
 ## Spotlight Players
 
 
-### Yunus Musah, AC Milan (Serie A)
-
-
-<figure class="article-player-portrait">
-  <img src="{{ '/assets/images/player-pool/yunus-musah.png' | relative_url }}" alt="Yunus Musah" loading="lazy">
-  <figcaption>Yunus Musah / AC Milan</figcaption>
-</figure>
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/yunus-musah.png' | relative_url }}" alt="">Yunus Musah, AC Milan (Serie A)</span>
 
 <figure class="article-video">
   <video controls playsinline preload="metadata" aria-label="Yunus Musah turns away from pressure and progresses the ball from deep against Torino">
@@ -93,13 +93,7 @@ More importantly, the description focused on Musah as a connector in possession 
 That is significant from a USMNT perspective. The athleticism has never been the question with Musah. His ceiling changes if he can consistently turn that athleticism into a more complete central-midfield game, receiving cleanly, connecting play and choosing the right progressive action rather than relying overwhelmingly on carrying the ball himself.
 
 
-### Ricardo Pepi, PSV (Eredivisie)
-
-
-<figure class="article-player-portrait">
-  <img src="{{ '/assets/images/player-pool/ricardo-pepi.png' | relative_url }}" alt="Ricardo Pepi" loading="lazy">
-  <figcaption>Ricardo Pepi / PSV</figcaption>
-</figure>
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/ricardo-pepi.png' | relative_url }}" alt="">Ricardo Pepi, PSV (Eredivisie)</span>
 
 <figure class="article-video">
   <video controls playsinline preload="metadata" aria-label="Ricardo Pepi converts a penalty for PSV against Groningen">
@@ -125,13 +119,7 @@ Still, the broader development is difficult to argue with.
 Pepi is starting regularly and scoring regularly for the best team in the Netherlands. For a USMNT striker, that is a considerably stronger position than being an efficient backup getting scattered minutes.
 
 
-### Sergiño Dest, PSV (Eredivisie)
-
-
-<figure class="article-player-portrait">
-  <img src="{{ '/assets/images/player-pool/sergino-dest.png' | relative_url }}" alt="Sergiño Dest" loading="lazy">
-  <figcaption>Sergiño Dest / PSV</figcaption>
-</figure>
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/sergino-dest.png' | relative_url }}" alt="">Sergiño Dest, PSV (Eredivisie)</span>
 
 <figure class="article-video">
   <video controls playsinline preload="metadata" aria-label="Sergiño Dest scores for PSV against Groningen">
@@ -160,13 +148,7 @@ Dest was therefore not simply piling onto a helpless opponent. His ability to jo
 For the USMNT, a healthy Dest playing this way remains one of the most unique weapons in the player pool.
 
 
-### Chris Richards, Crystal Palace (Premier League)
-
-
-<figure class="article-player-portrait">
-  <img src="{{ '/assets/images/player-pool/chris-richards.png' | relative_url }}" alt="Chris Richards" loading="lazy">
-  <figcaption>Chris Richards / Crystal Palace</figcaption>
-</figure>
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/chris-richards.png' | relative_url }}" alt="">Chris Richards, Crystal Palace (Premier League)</span>
 
 <figure class="article-video">
   <video controls playsinline preload="metadata" aria-label="Everton score their first goal against Crystal Palace">
@@ -197,13 +179,7 @@ Fotmob didn’t treat him too harshly, with a 6.7 rating for the game, but he wi
 Perhaps the most important early-season development for Richards is that his starting position remains secure.
 
 
-### Cavan Sullivan, Philadelphia Union (MLS)
-
-
-<figure class="article-player-portrait">
-  <img src="{{ '/assets/images/player-pool/cavan-sullivan.png' | relative_url }}" alt="Cavan Sullivan" loading="lazy">
-  <figcaption>Cavan Sullivan / Philadelphia Union</figcaption>
-</figure>
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/cavan-sullivan.png' | relative_url }}" alt="">Cavan Sullivan, Philadelphia Union (MLS)</span>
 
 <figure class="article-video">
   <video controls playsinline preload="metadata" aria-label="Cavan Sullivan scores a header for Philadelphia against Austin">

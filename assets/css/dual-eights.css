@@ -1253,10 +1253,12 @@ body { overflow-x: hidden; }
 .article-video { margin:30px 0 38px; padding:10px; border:1px solid rgba(107,171,255,.35); background:#07172e; }
 .article-video video { display:block; width:100%; max-height:620px; background:#02060c; }
 .article-video figcaption { padding:11px 5px 2px; color:#aeb9c9; font-size:.78rem; line-height:1.5; }
-.article-player-portrait { float:right; width:min(38%,192px); margin:0 0 18px 24px; padding:8px; border:1px solid rgba(107,171,255,.35); background:#07172e; }
-.article-player-portrait img { display:block; width:100%; height:auto; background:#02060c; }
-.article-player-portrait figcaption { padding:8px 3px 1px; color:#aeb9c9; font-size:.72rem; line-height:1.35; text-align:center; }
-@media (max-width:640px) { .article-player-portrait { float:none; width:192px; max-width:100%; margin:0 auto 20px; } }
+.article-stock-watch { margin:24px 0 34px; padding:10px; border:1px solid rgba(107,171,255,.35); background:#07172e; }
+.article-stock-watch img { display:block; width:100%; height:auto; }
+.article-stock-watch figcaption { padding:11px 5px 2px; color:#aeb9c9; font-size:.78rem; line-height:1.5; }
+.article-spotlight-name { display:inline-flex; align-items:center; gap:10px; }
+.article-spotlight-avatar { width:42px; height:42px; flex:0 0 42px; border:1px solid rgba(107,171,255,.45); border-radius:50%; object-fit:cover; background:#07172e; vertical-align:middle; }
+@media (max-width:640px) { .article-spotlight-name { gap:8px; } .article-spotlight-avatar { width:36px; height:36px; flex-basis:36px; } }
 .prospect-score-section { margin:50px 0 54px; }
 .prospect-score-section>.de-kicker { color:#ef5d70; }
 .prospect-score-section>h2 { margin-top:8px; }
