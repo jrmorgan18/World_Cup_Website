@@ -28,8 +28,45 @@ The strongest American performances of the week belonged to Sergiño Dest, Yunus
 ## Stock Watch
 
 <figure class="article-stock-watch">
-  <img src="{{ '/assets/images/usmnt-weekly-stock-watch-2026-08-24.png' | relative_url }}" alt="Stock Watch graphic with up, mixed and concern lanes" loading="lazy">
-  <figcaption>USMNT Stock Watch &mdash; week ending August 23, 2026.</figcaption>
+  <div class="article-stock-watch-heading">
+    <span>Project 2030</span>
+    <strong>USMNT Stock Watch</strong>
+    <small>Week ending August 23, 2026</small>
+  </div>
+  <div class="article-stock-watch-grid">
+    <section class="stock-watch-lane stock-watch-lane--up">
+      <p><span aria-hidden="true">&#8593;</span> Up</p>
+      <ul>
+        <li>Sergiño Dest</li>
+        <li>Yunus Musah</li>
+        <li>Malik Tillman</li>
+        <li>Gianluca Busio</li>
+        <li>Tanner Tessmann</li>
+        <li>Ricardo Pepi</li>
+      </ul>
+    </section>
+    <section class="stock-watch-lane stock-watch-lane--mixed">
+      <p><span aria-hidden="true">&#8212;</span> Mixed</p>
+      <ul>
+        <li>Brenden Aaronson</li>
+        <li>Weston McKennie</li>
+        <li>Tim Weah</li>
+        <li>Chris Richards</li>
+      </ul>
+    </section>
+    <section class="stock-watch-lane stock-watch-lane--concern">
+      <p><span aria-hidden="true">&#8595;</span> Concern</p>
+      <ul>
+        <li>Haji Wright</li>
+        <li>Kevin Paredes</li>
+        <li>Joe Scally</li>
+      </ul>
+    </section>
+  </div>
+  <div class="article-stock-watch-notes">
+    <p><strong>Role watch:</strong> Noahkai Banks, Cole Campbell</p>
+    <p><strong>Monitor:</strong> Johnny Cardoso, Alex Freeman, Folarin Balogun</p>
+  </div>
 </figure>
 
 **Up:** Sergiño Dest, Yunus Musah, Malik Tillman, Gianluca Busio, Tanner Tessmann and Ricardo Pepi.
