@@ -13,7 +13,7 @@ read_time: 10
 home_recent: true
 home_recent_label: "Orioles"
 home_recent_theme: "orioles"
-orioles_feature: true
+orioles_feature: false
 feature_kicker: "Player development"
 feature_snapshot_label: "OPS against lefties by season"
 feature_stats:

@@ -18,6 +18,15 @@ hero_credit_url: "https://www.mlb.com/stories/player/624413"
 home_recent: false
 home_recent_theme: orioles
 home_recent_label: "Orioles"
+orioles_feature: true
+feature_kicker: "Weekly recap"
+feature_snapshot_label: "August 10–16 snapshot"
+feature_stats:
+  - { label: "Week", value: "4-2" }
+  - { label: "Season", value: "61-63" }
+  - { label: "Wild Card", value: "+0.5" }
+  - { label: "Alonso OPS", value: "1.494" }
+feature_tagline: "A four-game winning streak carried Baltimore into the final American League Wild Card spot."
 player_of_week: { name: "Pete Alonso", position: "1B", period: "August 10–16, 2026", summary: "Alonso went 12-for-22 with a double, two home runs, five RBIs, four walks and a hit by pitch, producing a .545/.630/.864 line and a 1.494 OPS.", image: "/assets/images/orioles-pete-alonso-potw-2026.jpg", image_alt: "Pete Alonso follows through on a swing for the Baltimore Orioles", image_credit: "MLB.com", image_credit_url: "https://www.mlb.com/stories/player/624413", stats: [{ label: "Games", value: "6" }, { label: "Hits", value: "12-for-22" }, { label: "AVG", value: ".545" }, { label: "HR", value: "2" }, { label: "RBI", value: "5" }, { label: "OPS", value: "1.494" }] }
 ---
 
