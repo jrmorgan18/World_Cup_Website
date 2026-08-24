@@ -1,72 +1,77 @@
 {
-  "generated_at": "2026-08-23T06:22:17Z",
-  "game_pk": 824798,
-  "date": "2026-08-22",
+  "generated_at": "2026-08-24T06:34:51Z",
+  "game_pk": 824799,
+  "date": "2026-08-23",
   "venue": "Oriole Park at Camden Yards",
   "home_away": "home",
   "opponent": "Tampa Bay Rays",
   "opponent_abbr": "TB",
-  "result": "W",
-  "orioles_score": 3,
-  "opponent_score": 2,
-  "orioles_hits": 8,
-  "opponent_hits": 8,
+  "result": "L",
+  "orioles_score": 1,
+  "opponent_score": 3,
+  "orioles_hits": 2,
+  "opponent_hits": 7,
   "orioles_errors": 0,
-  "opponent_errors": 0,
+  "opponent_errors": 1,
   "winning_pitcher": {
-    "name": "Rico Garcia",
-    "team": "BAL",
-    "record": "5-1",
-    "line": "1.0 IP, 0 ER, 0 K, 0 BB"
+    "name": "Nick Martinez",
+    "team": "TB",
+    "record": "13-4",
+    "line": "6.0 IP, 0 ER, 4 K, 0 BB"
   },
   "losing_pitcher": {
+    "name": "Shane Baz",
+    "team": "BAL",
+    "record": "4-14",
+    "line": "5.2 IP, 3 ER, 3 K, 3 BB"
+  },
+  "save_pitcher": {
     "name": "Bryan Baker",
     "team": "TB",
-    "record": "1-2",
-    "line": "0.0 IP, 0 ER, 0 K, 0 BB"
+    "record": "37",
+    "line": "1.0 IP, ER, 0 K, 0 BB"
   },
-  "save_pitcher": null,
   "key_players": [
     {
-      "name": "Shane McClanahan",
+      "name": "Nick Martinez",
       "team": "TB",
       "position": "P",
-      "line": "5.0 IP, 0 ER, 5 K, BB"
+      "line": "6.0 IP, 0 ER, 4 K, 0 BB"
     },
     {
-      "name": "Samuel Basallo",
+      "name": "Colton Cowser",
       "team": "BAL",
-      "position": "1B",
-      "line": "1-1 | HR, 2 RBI, R"
+      "position": "CF",
+      "line": "2-3 | HR, 2B, RBI"
     },
     {
-      "name": "Liam Hicks",
-      "team": "TB",
-      "position": "C",
-      "line": "1-2 | HR, RBI, R"
+      "name": "Shane Baz",
+      "team": "BAL",
+      "position": "P",
+      "line": "5.2 IP, 3 ER, 3 K, 3 BB"
     }
   ],
-  "summary": "The Orioles beat the Rays 3-2 at Camden Yards. Shane McClanahan led the way (5.0 IP, 0 ER, 5 K, BB). Baltimore has won 2 straight.",
+  "summary": "The Orioles fell to the Rays 1-3 at Camden Yards. Nick Martinez led the way (6.0 IP, 0 ER, 4 K, 0 BB). Baltimore has lost 1 straight.",
   "record": {
     "wins": 63,
-    "losses": 67,
-    "pct": ".485",
+    "losses": 68,
+    "pct": ".481",
     "division": "AL East",
     "division_rank": 5,
-    "games_back": "13.5",
-    "streak": "W2",
+    "games_back": "14.5",
+    "streak": "L1",
     "last_10": "5-5"
   },
   "wild_card": {
     "rank": 7,
     "spots": 3,
-    "games_back": "1.0",
-    "status_text": "1.0 games back of the third AL Wild Card spot.",
+    "games_back": "2.0",
+    "status_text": "2.0 games back of the third AL Wild Card spot.",
     "ladder": [
       {
-        "team": "Rangers",
-        "abbr": "TEX",
-        "wins": 64,
+        "team": "Guardians",
+        "abbr": "CLE",
+        "wins": 65,
         "losses": 66,
         "games_back": null,
         "wild_card_rank": 3,
@@ -74,9 +79,9 @@
         "is_cutoff": true
       },
       {
-        "team": "Guardians",
-        "abbr": "CLE",
-        "wins": 64,
+        "team": "Rangers",
+        "abbr": "TEX",
+        "wins": 65,
         "losses": 66,
         "games_back": null,
         "wild_card_rank": 4,
@@ -87,8 +92,8 @@
         "team": "Blue Jays",
         "abbr": "TOR",
         "wins": 64,
-        "losses": 67,
-        "games_back": "0.5",
+        "losses": 68,
+        "games_back": "1.5",
         "wild_card_rank": 5,
         "is_orioles": false,
         "is_cutoff": false
@@ -97,8 +102,8 @@
         "team": "Twins",
         "abbr": "MIN",
         "wins": 63,
-        "losses": 67,
-        "games_back": "1.0",
+        "losses": 68,
+        "games_back": "2.0",
         "wild_card_rank": 6,
         "is_orioles": false,
         "is_cutoff": false
@@ -107,8 +112,8 @@
         "team": "Orioles",
         "abbr": "BAL",
         "wins": 63,
-        "losses": 67,
-        "games_back": "1.0",
+        "losses": 68,
+        "games_back": "2.0",
         "wild_card_rank": 7,
         "is_orioles": true,
         "is_cutoff": false
