@@ -15,7 +15,6 @@ hero_image: /assets/images/epl-weekly-recap-2026-08-24-arsenal.jpg
 hero_wide: true
 hero_alt: "An Arsenal player challenges a Coventry City player for the ball during the Premier League opener"
 home_recent: true
-home_recent_position: 1
 home_recent_label: "Premier League"
 home_recent_theme: soccer
 premier_league_weekly_recap_feature: true

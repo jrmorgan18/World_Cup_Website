@@ -261,7 +261,14 @@ body { overflow-x: hidden; }
 .soccer-editorial-shell .de-home-section-label { color:var(--de-ink); }
 .soccer-editorial-shell .de-home-section-label span { color:#77737e; }
 .soccer-feature-column { grid-area:feature; min-width:0; }
-.soccer-power-rankings { grid-area:rankings; overflow:hidden; border:1px solid #d8d4ca; background:#111a29; color:#fff; }
+.soccer-left-rail { grid-area:rankings; display:grid; gap:18px; align-items:start; }
+.soccer-euro-totw-promo { display:block; overflow:hidden; color:#fff; border:1px solid #d8d4ca; background:#101926; box-shadow:0 10px 20px rgba(8,14,23,.18); }
+.soccer-euro-totw-promo img { display:block; width:100%; aspect-ratio:4 / 5; object-fit:cover; object-position:top; }
+.soccer-euro-totw-promo span { padding:12px 13px 13px; display:block; font-family:var(--font-display); font-size:.6rem; font-weight:700; letter-spacing:.75px; line-height:1.3; text-transform:uppercase; }
+.soccer-euro-totw-promo b { margin-top:5px; display:block; color:var(--de-soccer); font-size:.52rem; letter-spacing:1px; }
+.soccer-euro-totw-promo:hover { color:#fff; border-color:var(--de-soccer); }
+.soccer-euro-totw-promo:hover img { opacity:.92; }
+.soccer-power-rankings { overflow:hidden; border:1px solid #d8d4ca; background:#111a29; color:#fff; }
 .soccer-power-rankings-head { padding:21px 18px 18px; border-bottom:3px solid var(--de-soccer); background:linear-gradient(145deg,#162641,#0a111d); }
 .soccer-power-rankings-head p { color:var(--de-soccer); font-family:var(--font-display); font-size:.56rem; font-weight:700; letter-spacing:1.25px; text-transform:uppercase; }
 .soccer-power-rankings-head h2 { margin:5px 0 7px; font-family:var(--font-display); font-size:1.5rem; line-height:1; text-transform:uppercase; }
@@ -378,6 +385,8 @@ body { overflow-x: hidden; }
 .premier-americans__grid p { margin:6px 0 0; color:#b8c2d0; font-family:var(--font-display); font-size:.46rem; line-height:1.3; letter-spacing:.45px; text-transform:uppercase; }
 .premier-americans__grid p span { display:block; margin-top:2px; color:#77869a; }
 .theme-soccer .article-body>h2 { margin:72px 0 24px; padding:16px 0 14px; border-top:3px solid var(--de-soccer); border-bottom:1px solid rgba(255,255,255,.2); color:#fff; font-size:clamp(1.85rem,3.2vw,2.5rem); letter-spacing:.25px; line-height:.95; }
+.theme-soccer .article-body>h2.euro-team-player-heading { display:flex; align-items:center; gap:14px; }
+.article-body .euro-team-player-heading img { width:48px; height:48px; margin:0; padding:4px; flex:0 0 auto; object-fit:contain; border:1px solid rgba(255,255,255,.18); border-radius:50%; background:#fff; }
 .theme-soccer .article-body>h3 { margin:48px 0 18px; padding-left:14px; border-left:3px solid var(--de-soccer); color:#fff; font-family:var(--font-display); font-size:.9rem; letter-spacing:1px; line-height:1.1; text-transform:uppercase; }
 .theme-soccer .article-body>h4 { margin:34px 0 13px; padding:10px 13px; border-left:3px solid var(--de-soccer); background:linear-gradient(90deg,rgba(212,168,67,.14),rgba(255,255,255,.025)); color:#fff; font-family:var(--font-display); font-size:.8rem; font-weight:700; letter-spacing:.8px; line-height:1.3; text-transform:uppercase; }
 .article-body .laliga-club-heading { margin:48px 0 20px; padding:11px 14px; display:grid; grid-template-columns:54px minmax(0,1fr); gap:13px; align-items:center; border:1px solid rgba(255,255,255,.15); border-left:3px solid var(--de-soccer); background:linear-gradient(90deg,rgba(212,168,67,.14),rgba(255,255,255,.03)); color:#fff; font-family:var(--font-display); font-size:1.28rem; line-height:1.02; text-transform:uppercase; }

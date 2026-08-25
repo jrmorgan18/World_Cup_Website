@@ -22,6 +22,7 @@
 {% endcomment %}
 {% assign home_recent = site.posts | where: "home_recent", true | sort: "date" | reverse %}
 {% assign home_recent_top = home_recent | where: "home_recent_position", 1 | first %}
+{% assign home_recent_second = home_recent | where: "home_recent_position", 2 | first %}
 {% assign home_recent_third = home_recent | where: "home_recent_position", 3 | first %}
 {% assign home_recent_limit = 8 %}
 {% if main_feature %}
@@ -57,15 +58,19 @@
           {% assign home_recent_count = home_recent_count | plus: 1 %}
           {% include home-recent-item.html post=home_recent_top index=home_recent_count %}
         {% endif %}
+        {% if home_recent_second %}
+          {% assign home_recent_count = home_recent_count | plus: 1 %}
+          {% include home-recent-item.html post=home_recent_second index=home_recent_count %}
+        {% endif %}
+        {% if home_recent_third %}
+          {% assign home_recent_count = home_recent_count | plus: 1 %}
+          {% include home-recent-item.html post=home_recent_third index=home_recent_count %}
+        {% endif %}
         {% for post in home_recent %}
           {% unless post.home_recent_after or post.home_recent_position %}
             {% if home_recent_count < home_recent_limit %}
               {% assign home_recent_count = home_recent_count | plus: 1 %}
               {% include home-recent-item.html post=post index=home_recent_count %}
-            {% endif %}
-            {% if home_recent_third and home_recent_count == 2 %}
-              {% assign home_recent_count = home_recent_count | plus: 1 %}
-              {% include home-recent-item.html post=home_recent_third index=home_recent_count %}
             {% endif %}
             {% for inserted_post in home_recent %}
               {% unless inserted_post.home_recent_position %}
