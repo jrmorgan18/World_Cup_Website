@@ -13,9 +13,9 @@ suppress_article_prompts: true
 source_docx: "articles/Euro Team of the Week - 8_25_26.docx"
 hero_image: /assets/images/malen-euro-team-of-week-2026.jpg
 hero_wide: true
-hero_alt: "Donyell Malen controls the ball for Borussia Dortmund"
-hero_credit: "Steffen Prößdorf / CC BY-SA 4.0"
-hero_credit_url: "https://commons.wikimedia.org/wiki/File:Donyell_Malen_2021.jpg"
+hero_alt: "Donyell Malen celebrates for Roma after scoring against Fiorentina"
+hero_credit: "AS Roma"
+hero_credit_url: "https://www.asroma.com/en/news/75795/roma-v-fiorentina-the-gallery"
 home_recent: true
 home_recent_position: 2
 home_recent_label: "European Team of the Week"
