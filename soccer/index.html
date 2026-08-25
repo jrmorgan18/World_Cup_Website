@@ -28,7 +28,8 @@ section_theme: soccer
 {% assign premier_league_preview_story = site.posts | where: "premier_league_preview_feature", true | first %}
 {% assign rodri_barcelona_story = site.posts | where: "rodri_barcelona_feature", true | first %}
 {% assign euro_leagues_preview_story = site.posts | where: "euro_leagues_preview_feature", true | first %}
-{% assign soccer_feature = premier_league_preview_story | default: longform_feature %}
+{% assign premier_league_weekly_recap_story = site.posts | where: "premier_league_weekly_recap_feature", true | first %}
+{% assign soccer_feature = premier_league_weekly_recap_story | default: premier_league_preview_story | default: longform_feature %}
 {% assign power_rankings_edition = site.data.european_club_power_rankings.editions | first %}
 {% if soccer_feature %}
 <section class="soccer-editorial-shell">
