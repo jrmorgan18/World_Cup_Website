@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T06:34:51Z",
+  "generated_at": "2026-08-25T06:26:33Z",
   "game_pk": 824799,
   "date": "2026-08-23",
   "venue": "Oriole Park at Camden Yards",
@@ -58,20 +58,20 @@
     "pct": ".481",
     "division": "AL East",
     "division_rank": 5,
-    "games_back": "14.5",
+    "games_back": "15.0",
     "streak": "L1",
     "last_10": "5-5"
   },
   "wild_card": {
     "rank": 7,
     "spots": 3,
-    "games_back": "2.0",
-    "status_text": "2.0 games back of the third AL Wild Card spot.",
+    "games_back": "2.5",
+    "status_text": "2.5 games back of the third AL Wild Card spot.",
     "ladder": [
       {
         "team": "Guardians",
         "abbr": "CLE",
-        "wins": 65,
+        "wins": 66,
         "losses": 66,
         "games_back": null,
         "wild_card_rank": 3,
@@ -79,12 +79,22 @@
         "is_cutoff": true
       },
       {
-        "team": "Rangers",
-        "abbr": "TEX",
+        "team": "Astros",
+        "abbr": "HOU",
         "wins": 65,
         "losses": 66,
-        "games_back": null,
+        "games_back": "0.5",
         "wild_card_rank": 4,
+        "is_orioles": false,
+        "is_cutoff": false
+      },
+      {
+        "team": "Twins",
+        "abbr": "MIN",
+        "wins": 64,
+        "losses": 68,
+        "games_back": "2.0",
+        "wild_card_rank": 5,
         "is_orioles": false,
         "is_cutoff": false
       },
@@ -92,16 +102,6 @@
         "team": "Blue Jays",
         "abbr": "TOR",
         "wins": 64,
-        "losses": 68,
-        "games_back": "1.5",
-        "wild_card_rank": 5,
-        "is_orioles": false,
-        "is_cutoff": false
-      },
-      {
-        "team": "Twins",
-        "abbr": "MIN",
-        "wins": 63,
         "losses": 68,
         "games_back": "2.0",
         "wild_card_rank": 6,
@@ -113,7 +113,7 @@
         "abbr": "BAL",
         "wins": 63,
         "losses": 68,
-        "games_back": "2.0",
+        "games_back": "2.5",
         "wild_card_rank": 7,
         "is_orioles": true,
         "is_cutoff": false
