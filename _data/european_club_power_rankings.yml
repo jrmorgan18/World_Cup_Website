@@ -17,23 +17,23 @@ editions:
         label: "Smaller-League Favorites"
         range: "Ranks 19–20"
     rankings:
-      - { rank: 1, team: "PSG", previous: null, tier: 1, logo: "/assets/images/club-logos/psg.png" }
-      - { rank: 2, team: "Arsenal", previous: null, tier: 1, logo: "/assets/images/club-logos/arsenal.png" }
-      - { rank: 3, team: "Barcelona", previous: null, tier: 1, logo: "/assets/images/club-logos/barcelona.png" }
-      - { rank: 4, team: "Bayern Munich", previous: null, tier: 1, logo: "/assets/images/club-logos/bayern-munich.png" }
-      - { rank: 5, team: "Real Madrid", previous: null, tier: 1, logo: "/assets/images/club-logos/real-madrid.png" }
-      - { rank: 6, team: "Inter Milan", previous: null, tier: 2, logo: "/assets/images/club-logos/inter-milan.png" }
-      - { rank: 7, team: "Manchester City", previous: null, tier: 2, logo: "/assets/images/club-logos/manchester-city.png" }
-      - { rank: 8, team: "Chelsea", previous: null, tier: 2, logo: "/assets/images/club-logos/chelsea.png" }
-      - { rank: 9, team: "Manchester United", previous: null, tier: 2, logo: "/assets/images/club-logos/manchester-united.png" }
-      - { rank: 10, team: "Atlético Madrid", previous: null, tier: 2, logo: "/assets/images/club-logos/atletico-madrid.png" }
-      - { rank: 11, team: "Liverpool", previous: null, tier: 2, logo: "/assets/images/club-logos/liverpool.png" }
-      - { rank: 12, team: "Napoli", previous: null, tier: 3, logo: "/assets/images/club-logos/napoli.png" }
-      - { rank: 13, team: "Borussia Dortmund", previous: null, tier: 3, logo: "/assets/images/club-logos/borussia-dortmund.png" }
-      - { rank: 14, team: "Brighton", previous: null, tier: 3, logo: "/assets/images/club-logos/brighton.png" }
+      - { rank: 1, team: "PSG", previous: 1, tier: 1, logo: "/assets/images/club-logos/psg.png" }
+      - { rank: 2, team: "Arsenal", previous: 2, tier: 1, logo: "/assets/images/club-logos/arsenal.png" }
+      - { rank: 3, team: "Barcelona", previous: 4, tier: 1, logo: "/assets/images/club-logos/barcelona.png" }
+      - { rank: 4, team: "Bayern Munich", previous: 3, tier: 1, logo: "/assets/images/club-logos/bayern-munich.png" }
+      - { rank: 5, team: "Real Madrid", previous: 6, tier: 1, logo: "/assets/images/club-logos/real-madrid.png" }
+      - { rank: 6, team: "Inter Milan", previous: 8, tier: 2, logo: "/assets/images/club-logos/inter-milan.png" }
+      - { rank: 7, team: "Manchester City", previous: 5, tier: 2, logo: "/assets/images/club-logos/manchester-city.png" }
+      - { rank: 8, team: "Chelsea", previous: 9, tier: 2, logo: "/assets/images/club-logos/chelsea.png" }
+      - { rank: 9, team: "Manchester United", previous: 7, tier: 2, logo: "/assets/images/club-logos/manchester-united.png" }
+      - { rank: 10, team: "Atlético Madrid", previous: 10, tier: 2, logo: "/assets/images/club-logos/atletico-madrid.png" }
+      - { rank: 11, team: "Liverpool", previous: 11, tier: 2, logo: "/assets/images/club-logos/liverpool.png" }
+      - { rank: 12, team: "Napoli", previous: 12, tier: 3, logo: "/assets/images/club-logos/napoli.png" }
+      - { rank: 13, team: "Borussia Dortmund", previous: 13, tier: 3, logo: "/assets/images/club-logos/borussia-dortmund.png" }
+      - { rank: 14, team: "Brighton", previous: 18, tier: 3, logo: "/assets/images/club-logos/brighton.png" }
       - { rank: 15, team: "Brentford", previous: null, tier: 3, logo: "/assets/images/club-logos/brentford.png" }
-      - { rank: 16, team: "Juventus", previous: null, tier: 3, logo: "/assets/images/club-logos/juventus.png" }
-      - { rank: 17, team: "Bournemouth", previous: null, tier: 3, logo: "/assets/images/club-logos/bournemouth.png" }
+      - { rank: 16, team: "Juventus", previous: 15, tier: 3, logo: "/assets/images/club-logos/juventus.png" }
+      - { rank: 17, team: "Bournemouth", previous: 16, tier: 3, logo: "/assets/images/club-logos/bournemouth.png" }
       - { rank: 18, team: "Roma", previous: null, tier: 3, logo: "/assets/images/club-logos/roma.png" }
-      - { rank: 19, team: "Bayer Leverkusen", previous: null, tier: 4, logo: "/assets/images/club-logos/bayer-leverkusen.png" }
-      - { rank: 20, team: "PSV", previous: null, tier: 4, logo: "/assets/images/club-logos/psv.png" }
+      - { rank: 19, team: "Bayer Leverkusen", previous: 17, tier: 4, logo: "/assets/images/club-logos/bayer-leverkusen.png" }
+      - { rank: 20, team: "PSV", previous: 19, tier: 4, logo: "/assets/images/club-logos/psv.png" }
