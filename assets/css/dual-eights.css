@@ -1185,6 +1185,8 @@ body { overflow-x: hidden; }
 .theme-ravens .article-body h2 { color:#fff; border-bottom-color:rgba(154,112,223,.5); }
 .theme-ravens .article-body h2::first-letter { color:var(--de-purple-light); }
 .theme-ravens .article-nav-link:hover { border-color:var(--de-purple); background:#15121a; }
+.theme-ravens .article-body>h3.nfl-team-heading { display:flex; align-items:center; gap:12px; padding-left:0; border-left:0; }
+.article-body .nfl-team-heading img { width:46px; height:46px; margin:0; padding:4px; flex:0 0 auto; object-fit:contain; border:1px solid rgba(255,255,255,.18); border-radius:50%; background:#fff; }
 .ravens-article-figure { margin:32px 0 38px; padding:10px; border:1px solid rgba(154,112,223,.28); background:#f4f1f7; }
 .article-body .ravens-article-figure img { width:100%; margin:0; aspect-ratio:3 / 2; object-fit:cover; border-radius:0; }
 .ravens-article-figure figcaption { padding:11px 6px 2px; color:#5d5367; font-size:.78rem; line-height:1.5; text-align:right; }

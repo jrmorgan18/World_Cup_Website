@@ -36,7 +36,7 @@ Using that framework, these are the three 2025 playoff teams in each conference 
 
 ## AFC: Three Teams Most Likely to Fall Out
 
-### 1. Pittsburgh Steelers
+<h3 class="nfl-team-heading"><img src="{{ '/assets/images/nfl-logos/pit.png' | relative_url }}" alt="" aria-hidden="true" loading="lazy"><span>1. Pittsburgh Steelers</span></h3>
 
 Pittsburgh is the easiest call in the conference because almost every underlying indicator was less impressive than the 10-7 record.
 
@@ -60,7 +60,7 @@ Going from 10-7 to 8-9 would probably be enough.
 
 *Dropout confidence: High*
 
-### 2. Jacksonville Jaguars
+<h3 class="nfl-team-heading"><img src="{{ '/assets/images/nfl-logos/jax.png' | relative_url }}" alt="" aria-hidden="true" loading="lazy"><span>2. Jacksonville Jaguars</span></h3>
 
 Jacksonville requires a more careful argument because the Jaguars were genuinely good last season.
 
@@ -88,7 +88,7 @@ But it does not have to become a total bottom-feeder to fall out of the postseas
 
 *Dropout confidence: Medium-high*
 
-### 3. Denver Broncos
+<h3 class="nfl-team-heading"><img src="{{ '/assets/images/nfl-logos/den.png' | relative_url }}" alt="" aria-hidden="true" loading="lazy"><span>3. Denver Broncos</span></h3>
 
 Denver is the hardest AFC selection because the Broncos should still be good.
 
@@ -120,7 +120,7 @@ But if Jacksonville falls in the AFC South, that automatically creates a cleaner
 
 ## AFC: Three Teams Most Likely to Return
 
-### 1. Baltimore Ravens
+<h3 class="nfl-team-heading"><img src="{{ '/assets/images/nfl-logos/bal.png' | relative_url }}" alt="" aria-hidden="true" loading="lazy"><span>1. Baltimore Ravens</span></h3>
 
 The Ravens have the cleanest rebound case in the league.
 
@@ -140,7 +140,7 @@ That is a much easier bet.
 
 *Newcomer confidence: Very high*
 
-### 2. Cincinnati Bengals
+<h3 class="nfl-team-heading"><img src="{{ '/assets/images/nfl-logos/cin.png' | relative_url }}" alt="" aria-hidden="true" loading="lazy"><span>2. Cincinnati Bengals</span></h3>
 
 Cincinnati's rebound case is less tidy because the Bengals actually played like a bad team for long stretches.
 
@@ -160,7 +160,7 @@ But the path is obvious.
 
 *Newcomer confidence: High*
 
-### 3. Kansas City Chiefs
+<h3 class="nfl-team-heading"><img src="{{ '/assets/images/nfl-logos/kc.png' | relative_url }}" alt="" aria-hidden="true" loading="lazy"><span>3. Kansas City Chiefs</span></h3>
 
 Kansas City is the strongest example of a record telling a much uglier story than the underlying performance.
 
@@ -182,7 +182,7 @@ They just have to stop losing like a six-win team while playing like a nine-win 
 
 ## NFC: Three Teams Most Likely to Fall Out
 
-### 1. Carolina Panthers
+<h3 class="nfl-team-heading"><img src="{{ '/assets/images/nfl-logos/car.png' | relative_url }}" alt="" aria-hidden="true" loading="lazy"><span>1. Carolina Panthers</span></h3>
 
 Carolina is the clearest dropout candidate in either conference.
 
@@ -198,7 +198,7 @@ It means they probably need to become substantially better just to reproduce an 
 
 *Dropout confidence: Very high*
 
-### 2. Chicago Bears
+<h3 class="nfl-team-heading"><img src="{{ '/assets/images/nfl-logos/chi.png' | relative_url }}" alt="" aria-hidden="true" loading="lazy"><span>2. Chicago Bears</span></h3>
 
 Chicago is the purest regression candidate on the board.
 
@@ -218,7 +218,7 @@ In fact, that may be the most likely outcome.
 
 *Dropout confidence: High*
 
-### 3. Green Bay Packers
+<h3 class="nfl-team-heading"><img src="{{ '/assets/images/nfl-logos/gb.png' | relative_url }}" alt="" aria-hidden="true" loading="lazy"><span>3. Green Bay Packers</span></h3>
 
 Green Bay is the least comfortable selection among the NFC fallers.
 
@@ -242,7 +242,7 @@ It may not guarantee they get one of the seven spots.
 
 ## NFC: Three Teams Most Likely to Return
 
-### 1. Detroit Lions
+<h3 class="nfl-team-heading"><img src="{{ '/assets/images/nfl-logos/det.png' | relative_url }}" alt="" aria-hidden="true" loading="lazy"><span>1. Detroit Lions</span></h3>
 
 Detroit is the easiest newcomer pick in the NFC.
 
@@ -258,7 +258,7 @@ It would be more surprising to see the Lions miss the playoffs a second consecut
 
 *Newcomer confidence: Very high*
 
-### 2. Dallas Cowboys
+<h3 class="nfl-team-heading"><img src="{{ '/assets/images/nfl-logos/dal.png' | relative_url }}" alt="" aria-hidden="true" loading="lazy"><span>2. Dallas Cowboys</span></h3>
 
 Dallas is a bet on one side of the roster staying good while the other stops being historically awful.
 
@@ -270,7 +270,7 @@ That defensive projection may prove ambitious, and the schedule is a real obstac
 
 *Newcomer confidence: Medium-high*
 
-### 3. Tampa Bay Buccaneers
+<h3 class="nfl-team-heading"><img src="{{ '/assets/images/nfl-logos/tb.png' | relative_url }}" alt="" aria-hidden="true" loading="lazy"><span>3. Tampa Bay Buccaneers</span></h3>
 
 Tampa Bay is the least compelling statistical newcomer and perhaps the best reminder that playoff forecasting is not the same exercise as ranking teams one through 32.
 
