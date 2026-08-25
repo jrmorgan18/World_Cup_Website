@@ -1,6 +1,6 @@
 editions:
   - id: "2026-27-preseason"
-    label: "Preseason"
+    label: "Weekly update"
     season: "2026-27"
     published: "August 13, 2026"
     tiers:
@@ -19,21 +19,21 @@ editions:
     rankings:
       - { rank: 1, team: "PSG", previous: null, tier: 1, logo: "/assets/images/club-logos/psg.png" }
       - { rank: 2, team: "Arsenal", previous: null, tier: 1, logo: "/assets/images/club-logos/arsenal.png" }
-      - { rank: 3, team: "Bayern Munich", previous: null, tier: 1, logo: "/assets/images/club-logos/bayern-munich.png" }
-      - { rank: 4, team: "Barcelona", previous: null, tier: 1, logo: "/assets/images/club-logos/barcelona.png" }
-      - { rank: 5, team: "Manchester City", previous: null, tier: 1, logo: "/assets/images/club-logos/manchester-city.png" }
-      - { rank: 6, team: "Real Madrid", previous: null, tier: 2, logo: "/assets/images/club-logos/real-madrid.png" }
-      - { rank: 7, team: "Manchester United", previous: null, tier: 2, logo: "/assets/images/club-logos/manchester-united.png" }
-      - { rank: 8, team: "Inter Milan", previous: null, tier: 2, logo: "/assets/images/club-logos/inter-milan.png" }
-      - { rank: 9, team: "Chelsea", previous: null, tier: 2, logo: "/assets/images/club-logos/chelsea.png" }
+      - { rank: 3, team: "Barcelona", previous: null, tier: 1, logo: "/assets/images/club-logos/barcelona.png" }
+      - { rank: 4, team: "Bayern Munich", previous: null, tier: 1, logo: "/assets/images/club-logos/bayern-munich.png" }
+      - { rank: 5, team: "Real Madrid", previous: null, tier: 1, logo: "/assets/images/club-logos/real-madrid.png" }
+      - { rank: 6, team: "Inter Milan", previous: null, tier: 2, logo: "/assets/images/club-logos/inter-milan.png" }
+      - { rank: 7, team: "Manchester City", previous: null, tier: 2, logo: "/assets/images/club-logos/manchester-city.png" }
+      - { rank: 8, team: "Chelsea", previous: null, tier: 2, logo: "/assets/images/club-logos/chelsea.png" }
+      - { rank: 9, team: "Manchester United", previous: null, tier: 2, logo: "/assets/images/club-logos/manchester-united.png" }
       - { rank: 10, team: "Atlético Madrid", previous: null, tier: 2, logo: "/assets/images/club-logos/atletico-madrid.png" }
       - { rank: 11, team: "Liverpool", previous: null, tier: 2, logo: "/assets/images/club-logos/liverpool.png" }
       - { rank: 12, team: "Napoli", previous: null, tier: 3, logo: "/assets/images/club-logos/napoli.png" }
       - { rank: 13, team: "Borussia Dortmund", previous: null, tier: 3, logo: "/assets/images/club-logos/borussia-dortmund.png" }
-      - { rank: 14, team: "Aston Villa", previous: null, tier: 3, logo: "/assets/images/club-logos/aston-villa.png" }
-      - { rank: 15, team: "Juventus", previous: null, tier: 3, logo: "/assets/images/club-logos/juventus.png" }
-      - { rank: 16, team: "Bournemouth", previous: null, tier: 3, logo: "/assets/images/club-logos/bournemouth.png" }
-      - { rank: 17, team: "Bayer Leverkusen", previous: null, tier: 3, logo: "/assets/images/club-logos/bayer-leverkusen.png" }
-      - { rank: 18, team: "Brighton", previous: null, tier: 3, logo: "/assets/images/club-logos/brighton.png" }
-      - { rank: 19, team: "PSV", previous: null, tier: 4, logo: "/assets/images/club-logos/psv.png" }
-      - { rank: 20, team: "Sporting CP", previous: null, tier: 4, logo: "/assets/images/club-logos/sporting-cp.png" }
+      - { rank: 14, team: "Brighton", previous: null, tier: 3, logo: "/assets/images/club-logos/brighton.png" }
+      - { rank: 15, team: "Brentford", previous: null, tier: 3, logo: "/assets/images/club-logos/brentford.png" }
+      - { rank: 16, team: "Juventus", previous: null, tier: 3, logo: "/assets/images/club-logos/juventus.png" }
+      - { rank: 17, team: "Bournemouth", previous: null, tier: 3, logo: "/assets/images/club-logos/bournemouth.png" }
+      - { rank: 18, team: "Roma", previous: null, tier: 3, logo: "/assets/images/club-logos/roma.png" }
+      - { rank: 19, team: "Bayer Leverkusen", previous: null, tier: 4, logo: "/assets/images/club-logos/bayer-leverkusen.png" }
+      - { rank: 20, team: "PSV", previous: null, tier: 4, logo: "/assets/images/club-logos/psv.png" }

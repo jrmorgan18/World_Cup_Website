@@ -52,7 +52,7 @@ section_theme: soccer
       </div>
       <div class="soccer-power-rankings-columns" aria-hidden="true"><span>Rank</span><span>Club</span><span>Prev.</span></div>
       <ol class="soccer-power-rankings-list">
-        {% for ranked_team in power_rankings_edition.rankings limit: 10 %}
+        {% for ranked_team in power_rankings_edition.rankings limit: 20 %}
         <li>
           <b>{{ ranked_team.rank }}</b>
           <span>{{ ranked_team.team }}</span>
