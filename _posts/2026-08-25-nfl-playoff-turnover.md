@@ -11,10 +11,11 @@ excerpt: "Roughly half the playoff field changes every year. The Ravens have the
 read_time: 15
 suppress_article_prompts: true
 source_docx: "articles/NFL Playoff Turnover 2026.docx"
-hero_image: /assets/images/ravens-lamar-playoff-turnover-2026.png
+hero_image: /assets/images/ravens-lamar-playoff-turnover-2026.jpg
 hero_wide: true
-hero_alt: "Lamar Jackson prepares to throw a football under stadium lights"
-hero_credit: "AI-generated editorial illustration"
+hero_alt: "Lamar Jackson throws a football while warming up in a purple Baltimore Ravens uniform"
+hero_credit: "Joey Pulone / Baltimore Ravens Photos"
+hero_credit_url: "https://www.baltimoreravens.com/photos/28-top-photos-of-28-year-old-lamar-jackson"
 home_recent: true
 home_recent_position: 1
 home_recent_label: "NFL"
