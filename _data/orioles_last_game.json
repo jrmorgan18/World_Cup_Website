@@ -1,69 +1,64 @@
 {
-  "generated_at": "2026-08-25T06:26:33Z",
-  "game_pk": 824799,
-  "date": "2026-08-23",
-  "venue": "Oriole Park at Camden Yards",
-  "home_away": "home",
-  "opponent": "Tampa Bay Rays",
-  "opponent_abbr": "TB",
-  "result": "L",
-  "orioles_score": 1,
-  "opponent_score": 3,
-  "orioles_hits": 2,
+  "generated_at": "2026-08-26T06:28:28Z",
+  "game_pk": 823016,
+  "date": "2026-08-25",
+  "venue": "Busch Stadium",
+  "home_away": "away",
+  "opponent": "St. Louis Cardinals",
+  "opponent_abbr": "STL",
+  "result": "W",
+  "orioles_score": 13,
+  "opponent_score": 1,
+  "orioles_hits": 16,
   "opponent_hits": 7,
   "orioles_errors": 0,
   "opponent_errors": 1,
   "winning_pitcher": {
-    "name": "Nick Martinez",
-    "team": "TB",
-    "record": "13-4",
-    "line": "6.0 IP, 0 ER, 4 K, 0 BB"
+    "name": "Chris Bassitt",
+    "team": "BAL",
+    "record": "5-4",
+    "line": "6.2 IP, ER, 5 K, 0 BB"
   },
   "losing_pitcher": {
-    "name": "Shane Baz",
-    "team": "BAL",
-    "record": "4-14",
-    "line": "5.2 IP, 3 ER, 3 K, 3 BB"
+    "name": "Matthew Liberatore",
+    "team": "STL",
+    "record": "5-12",
+    "line": "4.0 IP, 8 ER, 7 K, BB"
   },
-  "save_pitcher": {
-    "name": "Bryan Baker",
-    "team": "TB",
-    "record": "37",
-    "line": "1.0 IP, ER, 0 K, 0 BB"
-  },
+  "save_pitcher": null,
   "key_players": [
     {
-      "name": "Nick Martinez",
-      "team": "TB",
-      "position": "P",
-      "line": "6.0 IP, 0 ER, 4 K, 0 BB"
+      "name": "Pete Alonso",
+      "team": "BAL",
+      "position": "1B",
+      "line": "4-4 | HR, 2B, 4 RBI"
     },
     {
-      "name": "Colton Cowser",
-      "team": "BAL",
-      "position": "CF",
-      "line": "2-3 | HR, 2B, RBI"
-    },
-    {
-      "name": "Shane Baz",
+      "name": "Chris Bassitt",
       "team": "BAL",
       "position": "P",
-      "line": "5.2 IP, 3 ER, 3 K, 3 BB"
+      "line": "6.2 IP, ER, 5 K, 0 BB"
+    },
+    {
+      "name": "Christian Encarnacion-Strand",
+      "team": "BAL",
+      "position": "3B",
+      "line": "2-5 | HR, K, 3 RBI"
     }
   ],
-  "summary": "The Orioles fell to the Rays 1-3 at Camden Yards. Nick Martinez led the way (6.0 IP, 0 ER, 4 K, 0 BB). Baltimore has lost 1 straight.",
+  "summary": "The Orioles beat the Cardinals 13-1 on the road at Cardinals. Pete Alonso led the way (4-4 | HR, 2B, 4 RBI). Baltimore has won 1 straight.",
   "record": {
-    "wins": 63,
+    "wins": 64,
     "losses": 68,
-    "pct": ".481",
+    "pct": ".485",
     "division": "AL East",
-    "division_rank": 5,
-    "games_back": "15.0",
-    "streak": "L1",
+    "division_rank": 4,
+    "games_back": "14.0",
+    "streak": "W1",
     "last_10": "5-5"
   },
   "wild_card": {
-    "rank": 7,
+    "rank": 5,
     "spots": 3,
     "games_back": "2.5",
     "status_text": "2.5 games back of the third AL Wild Card spot.",
@@ -71,7 +66,7 @@
       {
         "team": "Guardians",
         "abbr": "CLE",
-        "wins": 66,
+        "wins": 67,
         "losses": 66,
         "games_back": null,
         "wild_card_rank": 3,
@@ -79,42 +74,22 @@
         "is_cutoff": true
       },
       {
-        "team": "Astros",
-        "abbr": "HOU",
-        "wins": 65,
-        "losses": 66,
-        "games_back": "0.5",
+        "team": "Rangers",
+        "abbr": "TEX",
+        "wins": 66,
+        "losses": 67,
+        "games_back": "1.0",
         "wild_card_rank": 4,
-        "is_orioles": false,
-        "is_cutoff": false
-      },
-      {
-        "team": "Twins",
-        "abbr": "MIN",
-        "wins": 64,
-        "losses": 68,
-        "games_back": "2.0",
-        "wild_card_rank": 5,
-        "is_orioles": false,
-        "is_cutoff": false
-      },
-      {
-        "team": "Blue Jays",
-        "abbr": "TOR",
-        "wins": 64,
-        "losses": 68,
-        "games_back": "2.0",
-        "wild_card_rank": 6,
         "is_orioles": false,
         "is_cutoff": false
       },
       {
         "team": "Orioles",
         "abbr": "BAL",
-        "wins": 63,
+        "wins": 64,
         "losses": 68,
         "games_back": "2.5",
-        "wild_card_rank": 7,
+        "wild_card_rank": 5,
         "is_orioles": true,
         "is_cutoff": false
       }
