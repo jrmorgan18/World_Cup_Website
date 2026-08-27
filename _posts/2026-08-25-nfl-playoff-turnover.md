@@ -17,7 +17,6 @@ hero_alt: "Lamar Jackson throws a football while warming up in a purple Baltimor
 hero_credit: "Joey Pulone / Baltimore Ravens Photos"
 hero_credit_url: "https://www.baltimoreravens.com/photos/28-top-photos-of-28-year-old-lamar-jackson"
 home_recent: true
-home_recent_position: 1
 home_recent_label: "NFL"
 home_recent_theme: ravens
 ravens_feature: true

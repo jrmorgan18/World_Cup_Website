@@ -10,7 +10,9 @@ author: "Randy Morgan"
 read_time: 12
 section_theme: project
 usmnt_weekly_feature: true
-home_feature: true
+home_feature: false
+home_recent: true
+home_recent_position: 1
 series: "USMNT Weekly"
 hero_image: /assets/images/yunus-musah-ac-milan-hero.png
 thumbnail: /assets/images/yunus-musah-ac-milan-hero.png
