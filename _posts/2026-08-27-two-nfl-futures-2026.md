@@ -118,7 +118,7 @@ The first concern is where Jacksonville's 2025 strength came from. The Jags fini
       <span class="rank-strip-plot"><span class="rank-strip-dot" style="left:16.13%;"><span>6th</span></span></span>
     </li>
     <li>
-      <span class="rank-strip-label">Defense &middot; EPA per play</span>
+      <span class="rank-strip-label">Defense &middot; EPA per play <small>(PFF)</small></span>
       <span class="rank-strip-plot"><span class="rank-strip-dot" style="left:6.45%;"><span>3rd</span></span></span>
     </li>
     <li>
@@ -130,7 +130,7 @@ The first concern is where Jacksonville's 2025 strength came from. The Jags fini
       <span class="rank-strip-plot"><span class="rank-strip-dot" style="left:35.48%;"><span>12th</span></span></span>
     </li>
     <li>
-      <span class="rank-strip-label">Defensive EPA, turnovers removed <small>(BetMGM)</small></span>
+      <span class="rank-strip-label">Defensive EPA, turnovers removed <small>(clevanalytics)</small></span>
       <span class="rank-strip-plot">
         <span class="rank-strip-move" style="left:12.9%; width:19.36%;"></span>
         <span class="rank-strip-dot" style="left:12.9%;"><span>5th</span></span>
@@ -143,10 +143,10 @@ The first concern is where Jacksonville's 2025 strength came from. The Jags fini
     <li><i aria-hidden="true"></i> As played</li>
     <li><i class="is-adjusted" aria-hidden="true"></i> With turnovers stripped out</li>
   </ul>
-  <p class="rank-strip-note">The bottom row is BetMGM's turnover-adjusted version of defensive EPA per play, which starts from its own fifth-place baseline rather than the third-place season figure listed above it.</p>
+  <p class="rank-strip-note">The two defensive EPA rows come from different analysts and are not directly comparable: the season figure is PFF's, which had Jacksonville third; the turnover-adjusted row is clevanalytics', which starts from its own fifth-place baseline. Both point the same direction &mdash; the defense looks meaningfully worse once takeaways come out.</p>
 </section>
 
-Defense obviously matters, but defensive performance is less stable from season to season than offense, particularly when it is accompanied by an extreme turnover advantage. Jacksonville finished +13 in turnover differential and generated 31 takeaways after producing only nine the year before. BetMGM's analysis found that if turnovers are removed, the Jaguars fall from fifth to 11th in defensive EPA per play. Jacksonville also received 27 points from defensive or special-teams touchdowns.
+Defense obviously matters, but defensive performance is less stable from season to season than offense, particularly when it is accompanied by an extreme turnover advantage. Jacksonville finished +13 in turnover differential and generated 31 takeaways after producing only nine the year before. An analysis by clevanalytics found that if turnovers are removed, the Jaguars fall from fifth to 11th in defensive EPA per play, the second-largest drop in the league behind Chicago. Jacksonville also received 27 points from defensive or special-teams touchdowns.
 
 <div class="bet-stat-strip">
   <div>

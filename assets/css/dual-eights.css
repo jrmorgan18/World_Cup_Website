@@ -2074,6 +2074,7 @@ details[open] > summary .gc-toggle::after { transform:rotate(0); }
 .rank-strip-list li { padding:13px 0; display:grid; grid-template-columns:minmax(120px,.85fr) minmax(0,2fr); gap:18px; align-items:center; border-top:1px solid rgba(255,255,255,.09); }
 .rank-strip-list li:first-child { border-top:0; }
 .rank-strip-label { color:#cdd8d2; font-family:var(--font-display); font-size:.63rem; font-weight:600; letter-spacing:.8px; line-height:1.3; text-transform:uppercase; }
+.rank-strip-label small { color:#7f8b84; font-size:.9em; font-weight:400; letter-spacing:.5px; }
 .rank-strip-plot { position:relative; height:22px; }
 .rank-strip-plot::before { content:''; position:absolute; left:0; right:0; top:10px; height:2px; background:var(--bet-track); }
 .rank-strip-dot { position:absolute; top:3px; width:16px; height:16px; margin-left:-8px; border-radius:50%; background:var(--bet-mark); box-shadow:0 0 0 2px #0e1512; }
