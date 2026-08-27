@@ -17,7 +17,7 @@ hero_alt: "Donyell Malen celebrates for Roma after scoring against Fiorentina"
 hero_credit: "AS Roma"
 hero_credit_url: "https://www.asroma.com/en/news/75795/roma-v-fiorentina-the-gallery"
 home_recent: true
-home_recent_position: 2
+home_recent_position: 3
 home_recent_label: "European Team of the Week"
 home_recent_theme: soccer
 euro_team_of_week_feature: true

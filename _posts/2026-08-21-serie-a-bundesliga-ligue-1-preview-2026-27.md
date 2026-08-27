@@ -8,7 +8,7 @@ categories: [soccer]
 author: "Dual Eights"
 read_time: 17
 home_recent: true
-home_recent_position: 3
+home_recent_position: 4
 home_recent_label: "European soccer"
 home_recent_theme: "soccer"
 euro_leagues_preview_feature: true
