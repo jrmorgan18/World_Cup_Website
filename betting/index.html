@@ -1,0 +1,101 @@
+---
+layout: default
+title: Betting
+permalink: /betting/
+section_theme: betting
+---
+<section class="club-hero club-hero--betting">
+  <div class="club-hero-ghost" aria-hidden="true">+</div>
+  <div class="club-hero-copy"><p class="de-eyebrow"><span></span> The betting desk</p><h1>Bets,<br><em>with the math shown.</em></h1><p>Every wager gets a price, a break-even number and an honest estimate of the case against it. No plays without a reason.</p></div>
+</section>
+
+{% assign betting_feature = site.posts | where: "betting_feature", true | sort: "date" | reverse | first %}
+{% assign betting_posts = site.posts | where_exp: "post", "post.categories contains 'betting'" %}
+
+<section class="club-section club-section--betting">
+  {% if betting_feature %}
+  <a class="club-feature-teaser club-feature-teaser--betting" href="{{ betting_feature.url | relative_url }}">
+    <div class="club-feature-teaser-copy">
+      <p>{{ betting_feature.feature_kicker | default: "Featured card" }} <i aria-hidden="true"></i> {{ betting_feature.date | date: "%B %-d, %Y" }}</p>
+      <h3>{{ betting_feature.title }}</h3>
+      <p>{{ betting_feature.excerpt }}</p>
+      <span>Read the card &rarr;</span>
+    </div>
+    <div class="club-feature-teaser-mark" aria-hidden="true"><small>{{ betting_feature.betting_feature_mark_label | default: "Plays" }}</small><strong>{{ betting_feature.betting_feature_mark | default: "2" }}</strong><span>{{ betting_feature.betting_feature_mark_detail | default: "On the board" }}</span></div>
+  </a>
+
+  {% if betting_feature.betting_card %}
+  <div class="betting-board" aria-label="Open positions">
+    <div class="betting-board-head">
+      <p class="de-kicker">On the board</p>
+      <span>{{ betting_feature.betting_card_note | default: "Prices at time of writing" }}</span>
+    </div>
+    <ol class="betting-board-list">
+      {% for bet in betting_feature.betting_card %}
+      <li>
+        <div class="betting-board-bet">
+          <small>{{ bet.market }}</small>
+          <strong>{{ bet.selection }}</strong>
+        </div>
+        <div class="betting-board-price">
+          <span class="betting-odds">{{ bet.odds }}</span>
+          <small>{{ bet.book }}</small>
+        </div>
+        <div class="betting-board-edge">
+          <small>Break-even</small>
+          <strong>{{ bet.break_even }}</strong>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+  {% endif %}
+  {% endif %}
+
+  <div class="betting-desk-grid">
+    <section class="betting-recent" aria-labelledby="betting-recent-heading">
+      <div class="betting-recent-heading">
+        <p id="betting-recent-heading">More from the betting desk</p>
+        <span>Newest first</span>
+      </div>
+      {% assign betting_recent_count = 0 %}
+      <ol class="betting-recent-list">
+        {% for post in betting_posts %}
+          {% if post.url != betting_feature.url and betting_recent_count < 6 %}
+          {% assign betting_recent_count = betting_recent_count | plus: 1 %}
+          <li>
+            <span class="betting-recent-number">0{{ betting_recent_count }}</span>
+            <a href="{{ post.url | relative_url }}">
+              <small>{{ post.series | default: "Betting" }}</small>
+              <h3>{{ post.title }}</h3>
+              <p>{{ post.date | date: "%B %-d, %Y" }}</p>
+            </a>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ol>
+      {% if betting_recent_count == 0 %}
+      <p class="betting-recent-empty">The first cards of the NFL season are up top. More to come.</p>
+      {% endif %}
+    </section>
+
+    <aside class="betting-side" aria-label="How these bets are graded">
+      <div class="betting-method">
+        <p class="de-kicker">House rules</p>
+        <h2>How a bet gets on the board</h2>
+        <ul class="betting-method-list">
+          <li><strong>A price, not a pick.</strong> Every play is written with the number attached. The same bet is worth taking at one price and worth passing at another.</li>
+          <li><strong>Break-even first.</strong> The odds convert to the win rate the bet needs. If the estimate isn't clearly above it, there's no play.</li>
+          <li><strong>The case against.</strong> The strongest argument on the other side goes in the article, not the comments.</li>
+          <li><strong>One unit.</strong> Everything is graded flat, so the record reflects the reads and not the sizing.</li>
+        </ul>
+      </div>
+
+      <a class="betting-archive-teaser" href="{{ '/categories/betting/' | relative_url }}">
+        <span>The archive</span>
+        <div><p>Every 2026 World Cup card, fully graded</p><h2>The tournament ledger.</h2></div>
+        <strong>Open the World Cup record <span aria-hidden="true">&rarr;</span></strong>
+      </a>
+    </aside>
+  </div>
+</section>

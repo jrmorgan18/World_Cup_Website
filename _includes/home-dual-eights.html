@@ -24,6 +24,7 @@
 {% assign home_recent_top = home_recent | where: "home_recent_position", 1 | first %}
 {% assign home_recent_second = home_recent | where: "home_recent_position", 2 | first %}
 {% assign home_recent_third = home_recent | where: "home_recent_position", 3 | first %}
+{% assign home_recent_fourth = home_recent | where: "home_recent_position", 4 | first %}
 {% assign home_recent_limit = 8 %}
 {% if main_feature %}
 <section class="de-home-editorial">
@@ -65,6 +66,10 @@
         {% if home_recent_third %}
           {% assign home_recent_count = home_recent_count | plus: 1 %}
           {% include home-recent-item.html post=home_recent_third index=home_recent_count %}
+        {% endif %}
+        {% if home_recent_fourth %}
+          {% assign home_recent_count = home_recent_count | plus: 1 %}
+          {% include home-recent-item.html post=home_recent_fourth index=home_recent_count %}
         {% endif %}
         {% for post in home_recent %}
           {% unless post.home_recent_after or post.home_recent_position %}
