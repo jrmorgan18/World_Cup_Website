@@ -1,60 +1,65 @@
 {
-  "generated_at": "2026-08-26T06:28:28Z",
-  "game_pk": 823016,
-  "date": "2026-08-25",
+  "generated_at": "2026-08-27T15:31:16Z",
+  "game_pk": 823015,
+  "date": "2026-08-26",
   "venue": "Busch Stadium",
   "home_away": "away",
   "opponent": "St. Louis Cardinals",
   "opponent_abbr": "STL",
   "result": "W",
-  "orioles_score": 13,
-  "opponent_score": 1,
-  "orioles_hits": 16,
-  "opponent_hits": 7,
+  "orioles_score": 8,
+  "opponent_score": 7,
+  "orioles_hits": 13,
+  "opponent_hits": 11,
   "orioles_errors": 0,
-  "opponent_errors": 1,
+  "opponent_errors": 0,
   "winning_pitcher": {
-    "name": "Chris Bassitt",
+    "name": "Grant Wolfram",
     "team": "BAL",
-    "record": "5-4",
-    "line": "6.2 IP, ER, 5 K, 0 BB"
+    "record": "5-2",
+    "line": "1.0 IP, 0 ER, 0 K, BB"
   },
   "losing_pitcher": {
-    "name": "Matthew Liberatore",
+    "name": "Riley O'Brien",
     "team": "STL",
-    "record": "5-12",
-    "line": "4.0 IP, 8 ER, 7 K, BB"
+    "record": "3-6",
+    "line": "1.0 IP, ER, 0 K, 0 BB"
   },
-  "save_pitcher": null,
+  "save_pitcher": {
+    "name": "Andrew Kittredge",
+    "team": "BAL",
+    "record": "7",
+    "line": "1.0 IP, 0 ER, 0 K, BB"
+  },
   "key_players": [
-    {
-      "name": "Pete Alonso",
-      "team": "BAL",
-      "position": "1B",
-      "line": "4-4 | HR, 2B, 4 RBI"
-    },
-    {
-      "name": "Chris Bassitt",
-      "team": "BAL",
-      "position": "P",
-      "line": "6.2 IP, ER, 5 K, 0 BB"
-    },
     {
       "name": "Christian Encarnacion-Strand",
       "team": "BAL",
-      "position": "3B",
-      "line": "2-5 | HR, K, 3 RBI"
+      "position": "1B",
+      "line": "4-5 | 2 2B, K, 2 RBI"
+    },
+    {
+      "name": "Bryan Torres",
+      "team": "STL",
+      "position": "LF",
+      "line": "3-3 | R, SB"
+    },
+    {
+      "name": "Iván Herrera",
+      "team": "STL",
+      "position": "DH",
+      "line": "3-4 | BB, K, R"
     }
   ],
-  "summary": "The Orioles beat the Cardinals 13-1 on the road at Cardinals. Pete Alonso led the way (4-4 | HR, 2B, 4 RBI). Baltimore has won 1 straight.",
+  "summary": "The Orioles beat the Cardinals 8-7 on the road at Cardinals. Christian Encarnacion-Strand led the way (4-5 | 2 2B, K, 2 RBI). Baltimore has won 2 straight.",
   "record": {
-    "wins": 64,
+    "wins": 65,
     "losses": 68,
-    "pct": ".485",
+    "pct": ".489",
     "division": "AL East",
     "division_rank": 4,
     "games_back": "14.0",
-    "streak": "W1",
+    "streak": "W2",
     "last_10": "5-5"
   },
   "wild_card": {
@@ -66,7 +71,7 @@
       {
         "team": "Guardians",
         "abbr": "CLE",
-        "wins": 67,
+        "wins": 68,
         "losses": 66,
         "games_back": null,
         "wild_card_rank": 3,
@@ -77,8 +82,8 @@
         "team": "Rangers",
         "abbr": "TEX",
         "wins": 66,
-        "losses": 67,
-        "games_back": "1.0",
+        "losses": 68,
+        "games_back": "2.0",
         "wild_card_rank": 4,
         "is_orioles": false,
         "is_cutoff": false
@@ -86,7 +91,7 @@
       {
         "team": "Orioles",
         "abbr": "BAL",
-        "wins": 64,
+        "wins": 65,
         "losses": 68,
         "games_back": "2.5",
         "wild_card_rank": 5,

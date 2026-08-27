@@ -9,7 +9,7 @@ author: "Randy Morgan"
 series: "Farm system rankings"
 excerpt: "Baltimore's post-deadline farm system has three top-100 arms and a deep group of productive upper-level bats. These ten prospects are performing best right now."
 read_time: 16
-home_recent: true
+home_recent: false
 home_recent_label: "Orioles"
 home_recent_theme: "orioles"
 orioles_feature: false
