@@ -1738,6 +1738,37 @@ body { overflow-x: hidden; }
 }
 
 /* ===================== Grassroots coaching (U8 reference) ===================== */
+
+.gc-age-nav {
+  display: flex;
+  gap: .6rem;
+  max-width: 1180px;
+  margin: 1.2rem auto 0;
+  padding: 0 1.4rem;
+}
+.gc-age-nav a {
+  display: flex;
+  align-items: baseline;
+  gap: .45rem;
+  border: 1px solid #d6dce3;
+  border-radius: 999px;
+  padding: .52rem .9rem;
+  color: #496072;
+  background: #fff;
+  font-family: var(--font-display, Oswald, sans-serif);
+  font-size: .88rem;
+  font-weight: 700;
+  letter-spacing: .03em;
+  text-decoration: none;
+}
+.gc-age-nav a span { font-family: inherit; font-size: .72rem; font-weight: 500; letter-spacing: 0; }
+.gc-age-nav a:hover, .gc-age-nav a:focus-visible { border-color: #ef233c; color: #0d2440; }
+.gc-age-nav a.is-active { border-color: #0d2440; background: #0d2440; color: #fff; }
+@media (max-width: 520px) {
+  .gc-age-nav { gap: .35rem; padding: 0 1rem; }
+  .gc-age-nav a { flex: 1; justify-content: center; padding: .5rem .35rem; }
+  .gc-age-nav a span { display: none; }
+}
 .gc-shell { max-width:var(--de-wide); margin:0 auto; padding:0 32px 110px; }
 
 .gc-tabs { position:sticky; top:130px; z-index:7; margin:0 -32px 34px; padding:10px 32px; display:flex; gap:8px; overflow-x:auto; background:rgba(7,26,53,.97); backdrop-filter:blur(12px); border-bottom:1px solid var(--color-border); scrollbar-width:none; }

@@ -1,0 +1,339 @@
+# U10 grassroots coaching reference. Adapted from Massachusetts Youth Soccer's
+# U10 attacking and defending session plans and its U10 volunteer guide.
+meta:
+  age_group: "Ages 9-10"
+  session_length: "About an hour"
+  ball: "Size 4"
+  space_note: "Use the 7v7 field when it is available, then split it into two small fields for the first play phase. A 19-yard-wide small field is plenty for 1v1 through 3v3."
+  rules_note: "These plans use the U10 source curriculum's 7v7 context. Match rules, goalkeepers, build-out lines and restarts belong to your league, so use its version on game day."
+
+session_flow:
+  - phase: "First 20 minutes"
+    label: "Intentional free play"
+    minutes: "Three quick rounds"
+    body: "Start with small-sided soccer and watch for the week's problem. Let the game show you what needs attention."
+  - phase: "Middle 20 minutes"
+    label: "The main problem"
+    minutes: "One game with a clear challenge"
+    body: "Use numbers, targets and space to create the decision. Ask a question at the break, then get the ball moving again."
+  - phase: "Last 20 minutes"
+    label: "Play the whole game"
+    minutes: "Put the idea back in soccer"
+    body: "Return to a directional game with real transitions. Rotate roles each round and resist solving every decision for them."
+
+five_elements:
+  - "Does the game look enough like soccer to make the week's decision real?"
+  - "Do both teams have a direction, a target and a reason to transition?"
+  - "Are the numbers and space creating the right challenge?"
+  - "Can I change space or numbers before adding a complicated condition?"
+  - "Did I coach with questions and leave room for players' solutions?"
+
+reflection_questions:
+  - "Did the player actions show up in the last game?"
+  - "Which question helped them notice the problem?"
+  - "Should next week's space, numbers or challenge change?"
+
+pointer_groups:
+  - id: before-practice
+    title: "Before practice"
+    icon: "01"
+    points:
+      - "Set up the small-sided arrival fields first, then the main game, then the final game."
+      - "Know the theme, player actions and one question. You do not need a speech."
+      - "Have plenty of balls beside each field so restarts are immediate."
+      - "Use the build-out line and match details your league uses when they matter to the practice game."
+  - id: running-the-session
+    title: "While you coach"
+    icon: "02"
+    points:
+      - "Keep the players playing. Coach in the breaks and talk to individuals while the game continues."
+      - "Ask, then let a round happen before asking again. Players need the chance to find an answer."
+      - "Rotate players through different roles and do not lock anyone into a position."
+      - "Make the field wider for more attacking time; make it smaller for more pressure."
+      - "Use short intervals and clear restarts, especially in the first play phase."
+  - id: whats-normal
+    title: "What is normal at U10"
+    icon: "03"
+    points:
+      - "Players are beginning to see teammates and space, but their decisions will still be inconsistent."
+      - "Technical mistakes are part of the decision-making process; praise the right idea as well as the execution."
+      - "Pressure, cover and balance are useful ideas only when a game lets players feel why they matter."
+      - "Enjoyment, equal involvement and a willingness to try things remain the foundation."
+
+activities:
+  - id: arrival-game
+    diagram_file: arrival-game
+    name: "Small-Sided Arrival Game"
+    focus: "Warm-up"
+    format: "1v1 up to 3v3"
+    numbers: "2 or more"
+    week_label: "Every week"
+    duration: "15-20 min"
+    diagram_alt: "Two small fields with teams playing toward a goal at each end."
+    objective: "Find the theme in a real game."
+    setup: "Set up two 19-yard-wide fields with small goals. Start 1v1, 2v1 or 2v2 and add players as they arrive. Use kick-ins or dribble-ins to keep it moving."
+    key_words: "Play forward, react fast"
+    questions: ["What do you see when you get the ball?", "What changes when you lose it?"]
+    equipment: "Cones, small goals, balls"
+  - id: build-out-end-zone
+    name: "Build Out to the End Zone"
+    focus: "Attacking"
+    format: "4v4 or 5v4"
+    numbers: "8 or more"
+    week_label: "Sessions 1-2"
+    duration: "15-20 min"
+    diagram_alt: "A 7v7-sized area with an end zone, a goal and teams playing in opposite directions."
+    objective: "Keeping the ball in the first half, then finding a way forward."
+    setup: "Use a 24-by-35-yard area with a goal at one end and an end zone at the other. One team builds toward the end zone; the other tries to win it and score."
+    key_words: "First touch, support, play forward"
+    questions: ["Where is the first safe pass?", "When can we play forward?"]
+    equipment: "Cones, one goal, balls"
+  - id: four-goal-game
+    diagram_file: four-goal-game
+    name: "Four Goal Game"
+    focus: "Attacking"
+    format: "3v3 or 4v4"
+    numbers: "6 or more"
+    week_label: "Sessions 1-4"
+    duration: "10-15 min"
+    diagram_alt: "A field with two goals at each end, creating a choice of direction."
+    objective: "Seeing a new route when one goal is blocked."
+    setup: "Give each team two goals to attack. Make the field wide enough that changing the point of attack becomes possible."
+    key_words: "Scan, switch, support"
+    questions: ["Which goal has space?", "How can we move the defender?"]
+    equipment: "Four small goals or cone gates"
+  - id: 2v2-to-cones
+    diagram_file: 2v2-to-cones
+    name: "Two on Two to the Cones"
+    focus: "Attacking"
+    format: "2v2"
+    numbers: "4 or more"
+    week_label: "Sessions 3-4"
+    duration: "Short rounds"
+    diagram_alt: "A wide field with cone targets at either end and two players against two."
+    objective: "Recognizing when to dribble, pass or move to help."
+    setup: "Make the field wider than long. Teams score by playing the ball into or through the opponent's row of cone targets."
+    key_words: "Draw them in, find the free player"
+    questions: ["What makes a teammate a good option?", "When should you drive forward instead?"]
+    equipment: "Cones, balls"
+  - id: scoring-2v1
+    name: "Score or Counter"
+    focus: "Attacking"
+    format: "3v3 or 4v4"
+    numbers: "6 or more"
+    week_label: "Sessions 5-6"
+    duration: "15-20 min"
+    diagram_alt: "A larger area with one regular goal and two small counter goals."
+    objective: "Creating a scoring chance while protecting against the counter."
+    setup: "Set a regular goal at one end and two counter goals at the other. The attacking team scores in the regular goal; the defending team wins it and counters to either small goal."
+    key_words: "Finish, combine, counter"
+    questions: ["When is the opening to shoot?", "Can a pass create a 2v1?"]
+    equipment: "One goal, two small goals, cones, balls"
+  - id: groups-of-2-vs-defenders
+    diagram_file: groups-of-2-vs-defenders
+    name: "Pairs Against Defenders"
+    focus: "Attacking"
+    format: "2v1 or 2v2"
+    numbers: "6 or more"
+    week_label: "Sessions 5-6"
+    duration: "Short rounds"
+    diagram_alt: "Two attackers working against defenders with small goals across the field."
+    objective: "Creating and using an advantage near goal."
+    setup: "Serve a ball to two attackers against one or two defenders. The attackers look to score; new players enter after each round."
+    key_words: "Commit them, make an option"
+    questions: ["What makes it a 2v1?", "Where can the second attacker help?"]
+    equipment: "Goals, balls, cones"
+  - id: press-and-cover
+    name: "Press, Cover, Counter"
+    focus: "Defending"
+    format: "3v3 or 4v4"
+    numbers: "6 or more"
+    week_label: "Sessions 7-8"
+    duration: "15-20 min"
+    diagram_alt: "A small game with a regular goal and small counter goals, showing a pressing defender and cover."
+    objective: "Stopping the ball moving forward, then attacking straight away."
+    setup: "Use a small directional field with a regular goal and two counter goals. Let one team build; the other presses, covers and counterattacks on the win."
+    key_words: "Closest player pressures, teammate covers"
+    questions: ["Who is closest to the ball?", "Where can the next defender help?"]
+    equipment: "One goal, two small goals, cones, balls"
+  - id: defend-3-goals-counter
+    diagram_file: defend-3-goals-counter
+    name: "Three Goals to Defend"
+    focus: "Defending"
+    format: "3v3 or 4v4"
+    numbers: "6 or more"
+    week_label: "Sessions 7-8"
+    duration: "15 min"
+    diagram_alt: "Three small goals across one end and one counter goal at the other."
+    objective: "Protecting the important space while looking to counter."
+    setup: "One team attacks three small goals; the other protects them and counters to one goal after a regain."
+    key_words: "Protect, pressure, help"
+    questions: ["Which space must we protect first?", "What happens after we win it?"]
+    equipment: "Four small goals, cones, balls"
+  - id: defend-your-goal
+    diagram_file: defend-your-goal
+    name: "Protect the Goal"
+    focus: "Defending"
+    format: "3v3 or 4v4"
+    numbers: "6 or more"
+    week_label: "Sessions 9-10"
+    duration: "15-20 min"
+    diagram_alt: "A field with a goal at one end and an end zone at the other."
+    objective: "Denying a shot, then breaking out with the ball."
+    setup: "Give one side a goal to protect and the other an end zone to reach after winning the ball. Switch roles between rounds."
+    key_words: "Block the way, force, help"
+    questions: ["Where is the goal?", "How can the second defender help?"]
+    equipment: "One goal, cones, balls"
+  - id: defend-each-zone
+    diagram_file: defend-each-zone
+    name: "Defend Each Zone"
+    focus: "Defending"
+    format: "4v4 or 5v5"
+    numbers: "8 or more"
+    week_label: "Sessions 9-10"
+    duration: "15-20 min"
+    diagram_alt: "A field divided into three zones with teams playing toward goals."
+    objective: "Recognizing pressure, cover and balance across the field."
+    setup: "Divide a directional field into three zones. Start with one defender in each zone, then remove the restriction as players understand the problem."
+    key_words: "Pressure, cover, balance"
+    questions: ["Who pressures the ball?", "Who covers the space behind them?"]
+    equipment: "Cones, two goals, balls"
+  - id: side-goals-2v1
+    diagram_file: side-goals-2v1
+    name: "Two Against One to Side Goals"
+    focus: "Defending"
+    format: "2v1"
+    numbers: "6 or more"
+    week_label: "Session 11"
+    duration: "Short rounds"
+    diagram_alt: "Two attackers against one defender with goals at opposite sides."
+    objective: "Delaying an outnumbered attack and protecting the goal."
+    setup: "Send two attackers and one defender into a small field. The defender tries to slow them down, protect the best route and win the ball if it is there."
+    key_words: "Delay, protect, recover"
+    questions: ["Which route is most dangerous?", "How can you buy time for help?"]
+    equipment: "Two goals, balls, cones"
+  - id: the-game
+    diagram_file: the-game
+    name: "The Game"
+    focus: "Small-sided game"
+    format: "4v4 to 6v6"
+    numbers: "8 or more"
+    week_label: "Every week"
+    duration: "15-20 min"
+    diagram_alt: "A directional small-sided soccer field with two goals."
+    objective: "Using the week's idea in soccer."
+    setup: "Use two goals and the space your group can handle. Keep teams even, rotate roles, and use your league's restarts when useful."
+    key_words: "See it, decide, react"
+    questions: ["What did you see?", "What changes when we lose it?"]
+    equipment: "Two goals, balls, cones"
+  - id: festival
+    diagram_file: festival
+    name: "End-of-Season Festival"
+    focus: "Small-sided game"
+    format: "3v3 or 4v4"
+    numbers: "Any"
+    week_label: "Session 12"
+    duration: "The whole session"
+    diagram_alt: "Two small fields with teams playing at once."
+    objective: "Reviewing the season through games."
+    setup: "Set up two fields. Play short rounds, switch opponents and let players see every role."
+    key_words: "Play, communicate, enjoy it"
+    equipment: "Cones, balls, goals"
+
+weeks:
+  - number: 1
+    moment: "Attacking"
+    goal: "Building up in our own half"
+    player_actions: "Receive, support, play forward when it is on"
+    praise: "Finding a useful first pass"
+    skills: "Receiving, passing, dribbling"
+    blocks: [{ phase: "Just play", activity: arrival-game }, { phase: "Teach one thing", activity: build-out-end-zone }, { phase: "Play again", activity: the-game }]
+  - number: 2
+    moment: "Attacking"
+    goal: "Building up in our own half, with more pressure"
+    player_actions: "Create an angle, keep it, then penetrate"
+    praise: "Moving after the pass"
+    skills: "Passing, receiving, awareness"
+    blocks: [{ phase: "Just play", activity: arrival-game }, { phase: "Teach one thing", activity: build-out-end-zone }, { phase: "Play again", activity: the-game }]
+  - number: 3
+    moment: "Attacking"
+    goal: "Building in the opponent's half"
+    player_actions: "Scan, support, change the point of attack"
+    praise: "Seeing the open goal"
+    skills: "Dribbling, passing, receiving"
+    blocks: [{ phase: "Just play", activity: arrival-game }, { phase: "Teach one thing", activity: four-goal-game }, { phase: "Play again", activity: the-game }]
+  - number: 4
+    moment: "Attacking"
+    goal: "Creating an opening near goal"
+    player_actions: "Draw a defender, find the free option"
+    praise: "Making a teammate useful"
+    skills: "2v2 decisions, support"
+    blocks: [{ phase: "Just play", activity: arrival-game }, { phase: "Teach one thing", activity: 2v2-to-cones }, { phase: "Play again", activity: the-game }]
+  - number: 5
+    moment: "Attacking"
+    goal: "Scoring goals"
+    player_actions: "Shoot, pass or dribble forward"
+    praise: "Taking the chance"
+    skills: "Finishing, combination play"
+    blocks: [{ phase: "Just play", activity: arrival-game }, { phase: "Teach one thing", activity: scoring-2v1 }, { phase: "Play again", activity: the-game }]
+  - number: 6
+    moment: "Attacking"
+    goal: "Creating a 2v1 near goal"
+    player_actions: "Commit a defender, make a passing option"
+    praise: "A smart decision in the final third"
+    skills: "Passing, receiving, finishing"
+    blocks: [{ phase: "Just play", activity: arrival-game }, { phase: "Teach one thing", activity: groups-of-2-vs-defenders }, { phase: "Play again", activity: the-game }]
+  - number: 7
+    moment: "Defending"
+    goal: "Preventing the opponent building up"
+    player_actions: "Protect the goal, pressure, cover"
+    praise: "The closest player acting quickly"
+    skills: "Approach, body position, tackling"
+    blocks: [{ phase: "Just play", activity: arrival-game }, { phase: "Teach one thing", activity: press-and-cover }, { phase: "Play again", activity: the-game }]
+  - number: 8
+    moment: "Defending"
+    goal: "Winning it high and countering"
+    player_actions: "Pressure, help, attack after the regain"
+    praise: "Helping the first defender"
+    skills: "Pressure, cover, transition"
+    blocks: [{ phase: "Just play", activity: arrival-game }, { phase: "Teach one thing", activity: defend-3-goals-counter }, { phase: "Play again", activity: the-game }]
+  - number: 9
+    moment: "Defending"
+    goal: "Preventing build-up near our goal"
+    player_actions: "Protect the goal, force play away, win it"
+    praise: "Standing in the important space"
+    skills: "Pressure, cover, body shape"
+    blocks: [{ phase: "Just play", activity: arrival-game }, { phase: "Teach one thing", activity: defend-your-goal }, { phase: "Play again", activity: the-game }]
+  - number: 10
+    moment: "Defending"
+    goal: "Defending as a group"
+    player_actions: "Pressure, cover, balance"
+    praise: "Staying connected"
+    skills: "Positioning, communication"
+    blocks: [{ phase: "Just play", activity: arrival-game }, { phase: "Teach one thing", activity: defend-each-zone }, { phase: "Play again", activity: the-game }]
+  - number: 11
+    moment: "Defending"
+    goal: "Defending an outnumbered attack"
+    player_actions: "Delay, protect the goal, recover"
+    praise: "Not diving in"
+    skills: "1v2 defending, recovery"
+    blocks: [{ phase: "Just play", activity: arrival-game }, { phase: "Teach one thing", activity: side-goals-2v1 }, { phase: "Play again", activity: the-game }]
+  - number: 12
+    moment: "Small-sided game"
+    goal: "End-of-season festival"
+    player_actions: "Everything from the season"
+    praise: "All of it"
+    skills: "The lot"
+    blocks: [{ phase: "The whole session", activity: festival }]
+
+sources:
+  - label: "Mass Youth Soccer U10 session plans"
+    url: "https://mayouthsoccer.org/coaches/session-plans/"
+  - label: "Mass Youth Soccer U10 volunteer coach survival guide"
+    url: "https://mayouthsoccer.org/wp-content/uploads/2026/04/u10-survival.pdf"
+  - label: "U.S. Soccer - session plans for coaches"
+    url: "https://www.ussoccer.com/soccer-forward/resource-hub/coaches-session-plans"
+  - label: "U.S. Soccer - guides for new volunteer coaches"
+    url: "https://www.ussoccer.com/soccer-forward/resource-hub/beginner-volunteer-coach-survival-guides"
+  - label: "U.S. Soccer - handling game day"
+    url: "https://learning.ussoccer.com/articles/coaching/article/how-to-manage-game-day"

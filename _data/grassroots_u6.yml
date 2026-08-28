@@ -1,0 +1,286 @@
+# U6 grassroots coaching reference. Adapted from the Massachusetts Youth
+# Soccer U6 session plans and beginner volunteer survival guide.
+meta:
+  age_group: "Ages 4-6"
+  session_length: "About 45-50 minutes"
+  ball: "Size 3"
+  space_note: "A small rectangle, roughly a basketball court or smaller, is enough. Make two tiny fields when you can: fewer kids around each ball means more playing."
+  rules_note: "At this age, keep the game tiny and simple. Use your own league's rules on match day, but at practice start with 1v1, 2v2 or 3v3 and let every child have a ball whenever possible."
+
+session_flow:
+  - phase: "First 15 minutes"
+    label: "Arrive and play"
+    minutes: "Start when two children are there"
+    body: "Give everyone a ball or start a tiny game. Say hello, show the edges, and get moving before you explain anything else."
+  - phase: "Middle 15 minutes"
+    label: "One playful challenge"
+    minutes: "One game, one simple idea"
+    body: "Use a short story - sharks, treasure or a race. Show it once, then let them discover it through lots of quick turns."
+  - phase: "Last 15 minutes"
+    label: "Play soccer"
+    minutes: "Small teams, lots of restarts"
+    body: "Finish with a real tiny game. Roll in a fresh ball as soon as one goes out and celebrate brave tries, not just goals."
+
+five_elements:
+  - "Does every child have a ball, a job, or a quick turn?"
+  - "Can I explain it with one short sentence and a demo?"
+  - "Are they moving and smiling more than they are waiting?"
+  - "Can they succeed sometimes?"
+  - "Would making the space bigger or smaller fix the game before I add a rule?"
+
+reflection_questions:
+  - "Did everyone get lots of touches?"
+  - "Which game made them want another turn?"
+  - "What is one tiny change for next week?"
+
+pointer_groups:
+  - id: before-practice
+    title: "Before they arrive"
+    icon: "01"
+    points:
+      - "Set out the first game before anyone arrives. At U6, a fast start matters more than a perfect plan."
+      - "Bring a ball for every child if you can, plus a few spare balls and lots of cones."
+      - "Use one clear boundary and keep the next game close by. Walking a long way between activities loses the group."
+      - "Check the space for holes, equipment and anything a child could trip over."
+  - id: running-the-session
+    title: "While you coach"
+    icon: "02"
+    points:
+      - "Keep instructions under thirty seconds. Show the game instead of explaining every detail."
+      - "Use imagination: sharks, pirates, treasure and superheroes turn repetition into play."
+      - "Never eliminate a child for long. Give them a new role, then bring them straight back in."
+      - "Use short rounds. Change the game before attention runs out, not after."
+      - "Keep spare balls at your feet and restart instantly."
+  - id: whats-normal
+    title: "What is normal at U6"
+    icon: "03"
+    points:
+      - "Everybody chasing the ball, forgetting which way to go and wanting to dribble are all normal."
+      - "They are still learning to share space and attention. Do not expect passing patterns or positions."
+      - "A player may need a water break, a parent nearby or a minute out. Let that be fine."
+      - "The win is a child leaving excited to play again next week."
+
+activities:
+  - id: u6-arrival
+    diagram_file: arrival-game
+    name: "Little Games"
+    subtitle: "A game that grows as children arrive"
+    focus: "Warm-up"
+    format: "1v1 up to 3v3"
+    numbers: "2 or more"
+    week_label: "Every week"
+    duration: "10-15 min"
+    diagram_alt: "Two small fields with children playing small games."
+    objective: "Start moving, find the ball and go toward a goal."
+    setup: "Make one tiny field with a cone goal at each end. Start 1v1, then make a second field or add a player as children arrive."
+    key_words: "Find your ball, go to the goal"
+    questions: ["Which way are you going?", "Can you take your ball with you?"]
+    equipment: "Cones, balls, two small goals"
+  - id: dribble-gates
+    diagram_file: dribble-gates
+    name: "Gates"
+    focus: "Ball work"
+    format: "Everyone with a ball"
+    numbers: "Any"
+    week_label: "Every week"
+    duration: "5-10 min"
+    diagram_alt: "Pairs of cones scattered around a square making little gates, with children dribbling their own ball through them."
+    objective: "Lots of touches and turns."
+    setup: "Scatter cone gates around a small space. Every child has a ball and goes through any open gate."
+    key_words: "Little touches, turn away"
+    questions: ["Can you find a new gate?", "Can you turn before you bump anybody?"]
+    equipment: "Lots of cones, a ball each"
+  - id: freeze-tag-layered
+    diagram_file: freeze-tag-layered
+    name: "Freeze Tag with a Ball"
+    focus: "Ball work"
+    format: "Everyone with a ball"
+    numbers: "Any"
+    week_label: "Weeks 1-2"
+    duration: "Short rounds"
+    diagram_alt: "Children with balls dribbling in a square while a tagger chases them."
+    objective: "Keeping the ball close while noticing other people."
+    setup: "Everyone dribbles in a square. One friendly freeze monster tries to tag them; a tagged child stands still with their ball above their head until a teammate high-fives them."
+    key_words: "Keep it close, look up"
+    questions: ["Where is the monster?", "Can you turn into empty space?"]
+    equipment: "Cones, a ball each"
+  - id: sharks-and-minnows
+    diagram_file: sharks-and-minnows
+    name: "Sharks and Minnows"
+    focus: "Ball work"
+    format: "Everyone with a ball"
+    numbers: "Any"
+    week_label: "Weeks 2-3"
+    duration: "Short rounds"
+    diagram_alt: "A grid with sharks in the middle and children dribbling from one side to the other."
+    objective: "Dribbling with someone in the way."
+    setup: "Make a rectangle. The minnows dribble from one safe shore to the other while one or two sharks try to touch their ball."
+    key_words: "Head up, find a gap"
+    note: "Nobody sits out. A child who loses a ball can be a shark for the next round, then comes straight back."
+    equipment: "Cones, a ball each"
+  - id: boston-bulldogs
+    diagram_file: boston-bulldogs
+    name: "Boston Bulldogs"
+    focus: "Attacking"
+    format: "Small groups"
+    numbers: "6 or more"
+    week_label: "Weeks 3-4"
+    duration: "Short rounds"
+    diagram_alt: "Children dribbling across a middle zone guarded by bulldogs."
+    objective: "Going forward with the ball and changing direction."
+    setup: "Mark a middle band as the bulldog pound. Players with balls begin at either end and try to dribble through to the far side."
+    key_words: "Go, turn, go again"
+    questions: ["Where is a safe way through?", "What can you do if a bulldog is in front?"]
+    equipment: "Cones, a ball each"
+  - id: end-zones-1v1
+    diagram_file: end-zones-1v1
+    name: "End Zone Soccer"
+    focus: "Attacking"
+    format: "1v1 or 2v2"
+    numbers: "4 or more"
+    week_label: "Weeks 4-5"
+    duration: "10 min"
+    diagram_alt: "A small field with a scoring zone across each end."
+    objective: "Going to an open space with the ball."
+    setup: "Give each team an end zone. Score by dribbling under control into the far zone. Start 1v1, then add a teammate if it stays lively."
+    key_words: "Go forward, under control"
+    questions: ["Which way is your zone?", "Can you get there with your ball?"]
+    equipment: "Cones, balls"
+  - id: 1v1-two-goals
+    diagram_file: 1v1-two-goals
+    name: "One on One, Two Goals"
+    focus: "Attacking"
+    format: "1v1"
+    numbers: "2 per field"
+    week_label: "Weeks 5-6"
+    duration: "Short rounds"
+    diagram_alt: "A small square with two goals set apart, one attacker and one defender."
+    objective: "Seeing the open goal and changing direction."
+    setup: "Set two cone goals at one end of a small field. The player with the ball can score in either; swap jobs after a goal or a minute."
+    key_words: "Which goal is open?"
+    questions: ["Can you trick them?", "Can you turn to the other goal?"]
+    equipment: "Cones, balls"
+  - id: four-goal-game
+    diagram_file: four-goal-game
+    name: "Four Goal Game"
+    focus: "Attacking"
+    format: "2v2 or 3v3"
+    numbers: "4 or more"
+    week_label: "Weeks 6-8"
+    duration: "10-15 min"
+    diagram_alt: "A square field with two goals at each end."
+    objective: "Finding a goal with space in front of it."
+    setup: "Give each team two cone goals to attack. Keep teams small and swap quickly."
+    key_words: "Can you find the other goal?"
+    questions: ["Which goal has space?", "Can you turn and go there?"]
+    equipment: "Four cone goals, balls"
+  - id: numbers-game
+    diagram_file: numbers-game
+    name: "Numbers"
+    focus: "Small-sided game"
+    format: "1v1 up to 3v3"
+    numbers: "6 or more"
+    week_label: "Weeks 8-9"
+    duration: "Keeps going"
+    diagram_alt: "Two teams waiting beside a small field while the coach calls a number."
+    objective: "Fast starts and lots of little games."
+    setup: "Make two teams beside a tiny field. Call one, two or three and that many from each side run in when you serve a ball."
+    key_words: "Ready, go!"
+    equipment: "Two small goals, plenty of balls"
+  - id: festival
+    diagram_file: festival
+    name: "Tiny Soccer Festival"
+    focus: "Small-sided game"
+    format: "2v2 or 3v3"
+    numbers: "Any"
+    week_label: "Week 10"
+    duration: "The whole session"
+    diagram_alt: "Two small fields with children playing at the same time."
+    objective: "Finishing the season by playing."
+    setup: "Set up two tiny fields, make quick teams and play short games. Swap opponents after each round."
+    key_words: "Play, help, have fun"
+    equipment: "Cones, balls, small goals"
+
+weeks:
+  - number: 1
+    moment: "Ball work"
+    goal: "Making friends with the ball"
+    player_actions: "Carry it, stop it, turn with it"
+    praise: "Trying a new touch"
+    skills: "Dribbling, stopping, turning"
+    blocks: [{ phase: "Just play", activity: u6-arrival }, { phase: "Teach one thing", activity: freeze-tag-layered }, { phase: "Play again", activity: u6-arrival }]
+  - number: 2
+    moment: "Ball work"
+    goal: "Keeping the ball close"
+    player_actions: "Take little touches, look up"
+    praise: "Keeping going after a bump"
+    skills: "Dribbling, awareness"
+    blocks: [{ phase: "Just play", activity: u6-arrival }, { phase: "Teach one thing", activity: dribble-gates }, { phase: "Play again", activity: sharks-and-minnows }]
+  - number: 3
+    moment: "Attacking"
+    goal: "Finding a way past someone"
+    player_actions: "Go, turn, go again"
+    praise: "Trying a turn"
+    skills: "Dribbling, changing direction"
+    blocks: [{ phase: "Just play", activity: u6-arrival }, { phase: "Teach one thing", activity: sharks-and-minnows }, { phase: "Play again", activity: boston-bulldogs }]
+  - number: 4
+    moment: "Attacking"
+    goal: "Going toward a target"
+    player_actions: "Go forward under control"
+    praise: "Finding the right way"
+    skills: "Dribbling, direction"
+    blocks: [{ phase: "Just play", activity: u6-arrival }, { phase: "Teach one thing", activity: end-zones-1v1 }, { phase: "Play again", activity: boston-bulldogs }]
+  - number: 5
+    moment: "Attacking"
+    goal: "Choosing an open goal"
+    player_actions: "Look, turn, go"
+    praise: "Looking before moving"
+    skills: "Dribbling, changing direction"
+    blocks: [{ phase: "Just play", activity: u6-arrival }, { phase: "Teach one thing", activity: 1v1-two-goals }, { phase: "Play again", activity: end-zones-1v1 }]
+  - number: 6
+    moment: "Attacking"
+    goal: "Being brave in a little game"
+    player_actions: "Try to score, win the ball back"
+    praise: "Having another go"
+    skills: "1v1 play, shooting"
+    blocks: [{ phase: "Just play", activity: u6-arrival }, { phase: "Teach one thing", activity: four-goal-game }, { phase: "Play again", activity: end-zones-1v1 }]
+  - number: 7
+    moment: "Ball work"
+    goal: "Turning away from trouble"
+    player_actions: "Look up, turn into space"
+    praise: "Finding a new gate"
+    skills: "Dribbling, turning"
+    blocks: [{ phase: "Just play", activity: dribble-gates }, { phase: "Teach one thing", activity: sharks-and-minnows }, { phase: "Play again", activity: four-goal-game }]
+  - number: 8
+    moment: "Attacking"
+    goal: "Seeing another way to goal"
+    player_actions: "Look, turn, go"
+    praise: "Changing their mind"
+    skills: "Awareness, dribbling"
+    blocks: [{ phase: "Just play", activity: u6-arrival }, { phase: "Teach one thing", activity: four-goal-game }, { phase: "Play again", activity: numbers-game }]
+  - number: 9
+    moment: "Small-sided game"
+    goal: "Starting quickly and playing often"
+    player_actions: "Run in, find the ball, go to goal"
+    praise: "Being ready"
+    skills: "1v1 and 2v2 play"
+    blocks: [{ phase: "Just play", activity: numbers-game }, { phase: "Teach one thing", activity: 1v1-two-goals }, { phase: "Play again", activity: numbers-game }]
+  - number: 10
+    moment: "Small-sided game"
+    goal: "End-of-season play day"
+    player_actions: "Everything they have tried"
+    praise: "All of it"
+    skills: "The lot"
+    blocks: [{ phase: "The whole session", activity: festival }]
+
+sources:
+  - label: "Mass Youth Soccer U6 session plans"
+    url: "https://mayouthsoccer.org/coaches/session-plans/"
+  - label: "Mass Youth Soccer U6 volunteer coach survival guide"
+    url: "https://mayouthsoccer.org/wp-content/uploads/2023/12/u6_survival_guide.pdf"
+  - label: "U.S. Soccer - session plans for coaches"
+    url: "https://www.ussoccer.com/soccer-forward/resource-hub/coaches-session-plans"
+  - label: "U.S. Soccer - guides for new volunteer coaches"
+    url: "https://www.ussoccer.com/soccer-forward/resource-hub/beginner-volunteer-coach-survival-guides"
+  - label: "U.S. Soccer - why they all chase the ball"
+    url: "https://learning.ussoccer.com/articles/coaching/article/parallel-play"

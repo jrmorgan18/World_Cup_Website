@@ -1,0 +1,84 @@
+{% assign diagram_base = '/assets/images/grassroots/' %}
+<section class="module-hero module-hero--compact">
+  <p class="de-eyebrow"><span></span> Project 2030 / Grassroots</p>
+  <h1>Grassroots Coaching</h1>
+  <p>{{ page.grassroots_intro }}</p>
+</section>
+{% include project-subnav.html %}
+
+<nav class="gc-age-nav" aria-label="Choose an age group">
+  <a href="{{ '/soccer/project-2030/grassroots-coaching/u6/' | relative_url }}"{% if page.age_group == 'U6' %} class="is-active" aria-current="page"{% endif %}>U6 <span>Ages 4-6</span></a>
+  <a href="{{ '/soccer/project-2030/grassroots-coaching/' | relative_url }}"{% if page.age_group == 'U8' %} class="is-active" aria-current="page"{% endif %}>U8 <span>Ages 7-8</span></a>
+  <a href="{{ '/soccer/project-2030/grassroots-coaching/u10/' | relative_url }}"{% if page.age_group == 'U10' %} class="is-active" aria-current="page"{% endif %}>U10 <span>Ages 9-10</span></a>
+</nav>
+
+<div class="gc-shell">
+  <div class="gc-tabs" role="tablist" aria-label="{{ page.age_group }} grassroots coaching sections">
+    <button type="button" role="tab" id="gc-tab-games" aria-controls="gc-panel-games" aria-selected="true" data-gc-tab="games">Games/Drills</button>
+    <button type="button" role="tab" id="gc-tab-pointers" aria-controls="gc-panel-pointers" aria-selected="false" data-gc-tab="pointers" tabindex="-1">Pointers</button>
+    <button type="button" role="tab" id="gc-tab-plans" aria-controls="gc-panel-plans" aria-selected="false" data-gc-tab="plans" tabindex="-1">Weekly plans</button>
+  </div>
+
+  <section class="gc-panel" id="gc-panel-games" role="tabpanel" aria-labelledby="gc-tab-games" data-gc-panel="games">
+    <header class="gc-intro"><div>
+      <p class="de-kicker">{{ page.age_group }} game library</p>
+      <h2>Every game, without hunting through the weeks.</h2>
+      <p>All {{ gr.activities | size }} of them, written for {{ gr.meta.age_group }} and drawn out where a setup picture helps. Use one as planned or use the search when you need a quick replacement.</p>
+    </div></header>
+    <div class="gc-filters">
+      <label class="gc-search"><span class="sr-only">Search the games</span><input type="search" placeholder="Search for a game&hellip;" data-gc-search autocomplete="off"></label>
+      <div class="gc-chips" role="group" aria-label="Filter the games">
+        <button type="button" class="is-active" data-gc-filter="all">All</button>
+        <button type="button" data-gc-filter="Attacking">Attacking</button>
+        <button type="button" data-gc-filter="Defending">Defending</button>
+        <button type="button" data-gc-filter="Ball work">Ball work</button>
+        <button type="button" data-gc-filter="Small-sided game">Just play</button>
+        <button type="button" data-gc-filter="Warm-up">Arrival</button>
+      </div>
+    </div>
+    {% include grassroots-key.html %}
+    <p class="gc-empty" data-gc-empty hidden>Nothing matches that. Try a shorter search.</p>
+    <div class="gc-drills" data-gc-drills>
+      {% for act in gr.activities %}
+      <details class="gc-drill" id="drill-{{ act.id }}" data-focus="{{ act.focus }}" data-search="{{ act.name | append: ' ' | append: act.subtitle | append: ' ' | append: act.focus | append: ' ' | append: act.format | append: ' ' | append: act.objective | append: ' ' | append: act.setup | append: ' ' | append: act.key_words | append: ' ' | append: act.week_label | strip_html | downcase }}">
+        <summary><span class="gc-drill-head"><span class="gc-drill-tags"><small class="gc-chip gc-chip--{{ act.focus | downcase | replace: ' ', '-' }}">{{ act.focus }}</small><small class="gc-chip gc-chip--plain">{{ act.format }}</small><small class="gc-chip gc-chip--plain">{{ act.week_label }}</small></span><strong>{{ act.name }}</strong><span>{{ act.objective | default: act.subtitle }}</span></span><span class="gc-toggle" aria-hidden="true"></span></summary>
+        <div class="gc-drill-body">
+          <div class="gc-drill-top{% if act.diagram_file %} gc-drill-top--illustrated{% endif %}">
+            {% if act.diagram_file %}<figure class="gc-diagram"><img src="{{ diagram_base | append: act.diagram_file | append: '.svg' | relative_url }}" alt="{{ act.diagram_alt }}" width="440" height="300" loading="lazy" decoding="async"></figure>{% endif %}
+            <div class="gc-drill-top-copy"><dl class="gc-drill-meta"><div><dt>How long</dt><dd>{{ act.duration }}</dd></div><div><dt>How many</dt><dd>{{ act.numbers }}</dd></div>{% if act.equipment %}<div><dt>What you need</dt><dd>{{ act.equipment }}</dd></div>{% endif %}</dl><div class="gc-drill-section"><h4>Setting it up</h4><p>{{ act.setup }}</p></div></div>
+          </div>
+          {% if act.rules %}<div class="gc-drill-section"><h4>How it works</h4><ul>{% for rule in act.rules %}<li>{{ rule }}</li>{% endfor %}</ul></div>{% endif %}
+          {% if act.key_words %}<p class="gc-keywords"><b>Shout</b> {{ act.key_words }}</p>{% endif %}
+          {% if act.questions %}<div class="gc-drill-section gc-qa"><h4>Things to ask them</h4><ol>{% for q in act.questions %}<li><p>{{ q }}</p>{% if act.answers[forloop.index0] %}<small>{{ act.answers[forloop.index0] }}</small>{% endif %}</li>{% endfor %}</ol></div>{% endif %}
+          {% if act.note %}<p class="gc-drill-note"><b>Tip</b> {{ act.note }}</p>{% endif %}
+          {% if act.week %}<p class="gc-block-more"><a href="#week-{{ act.week }}" data-gc-week="{{ act.week }}">See the whole Week {{ act.week }} practice <span aria-hidden="true">&rarr;</span></a></p>{% endif %}
+        </div>
+      </details>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="gc-panel" id="gc-panel-pointers" role="tabpanel" aria-labelledby="gc-tab-pointers" data-gc-panel="pointers" hidden>
+    <header class="gc-intro"><div><p class="de-kicker">The short version</p><h2>{{ page.pointer_heading }}</h2><p>{{ page.pointer_intro }}</p></div></header>
+    <div class="gc-pointers">{% for group in gr.pointer_groups %}<article class="gc-pointer-card"><span class="gc-pointer-no" aria-hidden="true">{{ group.icon }}</span><h3>{{ group.title }}</h3><ul>{% for point in group.points %}<li>{{ point }}</li>{% endfor %}</ul></article>{% endfor %}</div>
+    <section class="gc-sources"><p class="de-kicker">Where this came from</p><p>The weekly plans are adapted from the Massachusetts Youth Soccer {{ page.age_group }} session-plan library and beginner volunteer guide, both recommended by U.S. Soccer. The diagrams here are our own simplified coaching visuals. Match-day rules are league-specific, so check yours.</p><ul>{% for source in gr.sources %}<li><a href="{{ source.url }}" target="_blank" rel="noopener">{{ source.label }} <b aria-hidden="true">&nearr;</b></a></li>{% endfor %}</ul></section>
+  </section>
+
+  <section class="gc-panel" id="gc-panel-plans" role="tabpanel" aria-labelledby="gc-tab-plans" data-gc-panel="plans" hidden>
+    <header class="gc-intro"><div><p class="de-kicker">The season</p><h2>{{ gr.weeks | size }} practices, all the same shape.</h2><p>Play, teach one thing, play again. Open a week to see the purpose, the games and the questions that make it easy to coach.</p></div></header>
+    <div class="gc-flow" aria-label="How a practice runs">{% for step in gr.session_flow %}<article><p class="gc-flow-phase">{{ step.phase }}</p><h3>{{ step.label }}</h3><small>{{ step.minutes }}</small><p>{{ step.body }}</p></article>{% endfor %}</div>
+    <p class="gc-note">{{ gr.meta.space_note }}</p><p class="gc-note gc-note--quiet">{{ gr.meta.rules_note }}</p>
+    {% include grassroots-key.html %}
+    <div class="gc-weeks">
+      {% for week in gr.weeks %}
+      <details class="gc-week" id="week-{{ week.number }}"><summary><span class="gc-week-no">{{ week.number | prepend: '0' | slice: -2, 2 }}</span><span class="gc-week-head"><small class="gc-chip gc-chip--{{ week.moment | downcase | replace: ' ', '-' }}">{{ week.moment }}</small><strong>{{ week.goal }}</strong><span>{{ week.player_actions }}</span></span><span class="gc-toggle" aria-hidden="true"></span></summary>
+        <div class="gc-week-body"><dl class="gc-week-meta"><div><dt>What they're practising</dt><dd>{{ week.player_actions }}</dd></div><div><dt>What to praise</dt><dd>{{ week.praise }}</dd></div><div><dt>Skills they'll use</dt><dd>{{ week.skills }}</dd></div></dl>
+        {% for block in week.blocks %}{% assign act = gr.activities | where: "id", block.activity | first %}<article class="gc-block{% if act.diagram_file %} gc-block--illustrated{% endif %}"><header><p class="gc-block-phase">{{ block.phase }}</p><h3><a href="#drill-{{ act.id }}" data-gc-jump="{{ act.id }}">{{ act.name }}</a></h3><p class="gc-block-time">{{ block.duration | default: act.duration }}</p></header>{% if act.diagram_file %}<figure class="gc-diagram gc-diagram--inline"><img src="{{ diagram_base | append: act.diagram_file | append: '.svg' | relative_url }}" alt="{{ act.diagram_alt }}" width="440" height="300" loading="lazy" decoding="async"></figure>{% endif %}{% assign objective = block.objective | default: act.objective %}{% if objective %}<p class="gc-block-objective"><b>The idea</b> {{ objective }}</p>{% endif %}<p class="gc-block-setup">{% if block.notes %}{{ block.notes }} {% endif %}{{ act.setup }}</p>{% assign kw = block.key_words | default: act.key_words %}{% if kw %}<p class="gc-keywords"><b>Shout</b> {{ kw }}</p>{% endif %}{% assign qs = block.questions | default: act.questions %}{% if qs %}<ul class="gc-questions">{% for q in qs %}<li>{{ q }}</li>{% endfor %}</ul>{% endif %}<p class="gc-block-more"><a href="#drill-{{ act.id }}" data-gc-jump="{{ act.id }}">All the rules and coaching questions <span aria-hidden="true">&rarr;</span></a></p></article>{% endfor %}
+        </div>
+      </details>
+      {% endfor %}
+    </div>
+    <div class="gc-checks"><div><p class="de-kicker">Quick check on any game</p><ol>{% for item in gr.five_elements %}<li>{{ item }}</li>{% endfor %}</ol></div><div><p class="de-kicker">On the drive home</p><ol>{% for item in gr.reflection_questions %}<li>{{ item }}</li>{% endfor %}</ol></div></div>
+  </section>
+</div>
+<script src="{{ '/assets/js/grassroots-coaching.js' | relative_url }}"></script>
