@@ -8,10 +8,12 @@ name: Update Orioles last-game card
 
 on:
   schedule:
-    # 2:00am and 4:00am Eastern (06:00 / 08:00 UTC during EDT) — once a day,
-    # plus a backup run a couple hours later in case the first run lands
-    # before a late/extra-inning game goes final.
-    - cron: "0 6,8 * * *"
+    # 2:17am and 4:43am Eastern (06:17 / 08:43 UTC during EDT).  GitHub
+    # warns that scheduled workflows at the top of an hour can be delayed or
+    # dropped during peak load, so keep both the primary run and its backup
+    # well away from minute 00.
+    - cron: "17 6 * * *"
+    - cron: "43 8 * * *"
   workflow_dispatch: {}
 
 permissions:
