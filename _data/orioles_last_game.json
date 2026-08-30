@@ -1,100 +1,90 @@
 {
-  "generated_at": "2026-08-29T12:44:16Z",
-  "game_pk": 824960,
-  "date": "2026-08-28",
+  "generated_at": "2026-08-30T11:59:51Z",
+  "game_pk": 824961,
+  "date": "2026-08-29",
   "venue": "Sutter Health Park",
   "home_away": "away",
   "opponent": "Athletics",
   "opponent_abbr": "ATH",
   "result": "W",
-  "orioles_score": 4,
+  "orioles_score": 5,
   "opponent_score": 3,
-  "orioles_hits": 6,
-  "opponent_hits": 9,
+  "orioles_hits": 7,
+  "opponent_hits": 10,
   "orioles_errors": 0,
-  "opponent_errors": 1,
+  "opponent_errors": 3,
   "winning_pitcher": {
-    "name": "Andrew Kittredge",
+    "name": "Shane Baz",
     "team": "BAL",
-    "record": "3-3",
-    "line": "1.0 IP, 0 ER, 2 K, 0 BB"
+    "record": "5-14",
+    "line": "5.2 IP, 2 ER, 4 K, 3 BB"
   },
   "losing_pitcher": {
-    "name": "Brady Basso",
+    "name": "Jack Perkins",
     "team": "ATH",
-    "record": "0-1",
-    "line": "1.0 IP, ER, 2 K, BB"
+    "record": "3-10",
+    "line": "5.0 IP, ER, 5 K, 4 BB"
   },
   "save_pitcher": {
-    "name": "Alex Hoppe",
+    "name": "Andrew Kittredge",
     "team": "BAL",
-    "record": "1",
-    "line": "1.0 IP, 0 ER, K, 0 BB"
+    "record": "8",
+    "line": "1.0 IP, 0 ER, 0 K, 0 BB"
   },
   "key_players": [
     {
-      "name": "Brandon Young",
+      "name": "Leody Taveras",
       "team": "BAL",
-      "position": "P",
-      "line": "7.0 IP, ER, 4 K, BB"
+      "position": "RF",
+      "line": "2-3 | 2 2B, BB, 3 RBI"
     },
     {
-      "name": "Jacob Lopez",
+      "name": "Shane Baz",
+      "team": "BAL",
+      "position": "P",
+      "line": "5.2 IP, 2 ER, 4 K, 3 BB"
+    },
+    {
+      "name": "Donovan Walton",
       "team": "ATH",
-      "position": "P",
-      "line": "5.0 IP, ER, 6 K, 3 BB"
-    },
-    {
-      "name": "Coby Mayo",
-      "team": "BAL",
-      "position": "1B",
-      "line": "2-4 | HBP, 2 K, RBI"
+      "position": "SS",
+      "line": "1-2 | BB, HBP, RBI"
     }
   ],
-  "summary": "The Orioles beat the Athletics 4-3 on the road at Athletics. Brandon Young led the way (7.0 IP, ER, 4 K, BB). Baltimore has won 1 straight.",
+  "summary": "The Orioles beat the Athletics 5-3 on the road at Athletics. Leody Taveras led the way (2-3 | 2 2B, BB, 3 RBI). Baltimore has won 2 straight.",
   "record": {
-    "wins": 66,
+    "wins": 67,
     "losses": 69,
-    "pct": ".489",
+    "pct": ".493",
     "division": "AL East",
     "division_rank": 4,
     "games_back": "14.5",
-    "streak": "W1",
-    "last_10": "5-5"
+    "streak": "W2",
+    "last_10": "6-4"
   },
   "wild_card": {
-    "rank": 5,
+    "rank": 4,
     "spots": 3,
-    "games_back": "2.0",
-    "status_text": "2.0 games back of the third AL Wild Card spot.",
+    "games_back": "1.0",
+    "status_text": "1.0 games back of the third AL Wild Card spot.",
     "ladder": [
       {
         "team": "Guardians",
         "abbr": "CLE",
         "wins": 68,
-        "losses": 67,
+        "losses": 68,
         "games_back": null,
         "wild_card_rank": 3,
         "is_orioles": false,
         "is_cutoff": true
       },
       {
-        "team": "Rangers",
-        "abbr": "TEX",
-        "wins": 66,
-        "losses": 69,
-        "games_back": "2.0",
-        "wild_card_rank": 4,
-        "is_orioles": false,
-        "is_cutoff": false
-      },
-      {
         "team": "Orioles",
         "abbr": "BAL",
-        "wins": 66,
+        "wins": 67,
         "losses": 69,
-        "games_back": "2.0",
-        "wild_card_rank": 5,
+        "games_back": "1.0",
+        "wild_card_rank": 4,
         "is_orioles": true,
         "is_cutoff": false
       }
