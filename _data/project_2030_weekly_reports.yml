@@ -52,8 +52,8 @@ reports:
         direction: steady
         direction_label: Holding
         context: MLS appearance
-        recap: "Hall appeared for RBNY in the August 29 3-1 home loss to Philadelphia. A reliable minute total was not available from the match record reviewed, so this entry does not infer one."
-        development_read: "The senior appearance sustains his immediate first-team involvement. Without a verified minute total or a decisive individual event, the weekly development read remains even."
+        recap: "Hall was active in RBNY's attack during the August 29 3-1 home loss to Philadelphia, creating a couple of good chances and hitting the post with a well-struck curling effort. He could not convert the performance into a goal."
+        development_read: "The senior appearance and credible attacking threat sustain his immediate first-team involvement. The lack of a finish keeps the weekly read even, but the chance creation is encouraging evidence."
         sources:
           - { label: "RBNY–Philadelphia match center (official MLS)", url: "https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/rbnyvsphi-08-29-2026/" }
       - profile: justin-ellis
