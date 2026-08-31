@@ -6,24 +6,23 @@
 #
 # Set `recap_url` only when a weekly recap post exists for this period; the
 # "Read the weekly recap" link is hidden when it is absent.
-name: "Pete Alonso"
-position: "1B"
-period: "August 17–23, 2026"
-recap_url: "/orioles/weekly-recap-2026-08-24/"
+name: "Gunnar Henderson"
+position: "SS"
+period: "August 25–30, 2026"
+recap_url: "/orioles/weekly-recap-2026-08-31/"
 summary: >-
-  Alonso went 10-for-29 with three home runs and five RBIs during a 2-5 week,
-  producing a .345 average and 1.000 OPS while carrying a disappearing offense.
-  He homered Monday, Wednesday and Friday and supplied the middle-of-the-order
-  power Baltimore needed while most of the lineup went quiet.
-image: "/assets/images/orioles-pete-alonso-potw-2026.jpg"
-image_position: "center 28%"
-image_alt: "Pete Alonso follows through on a swing for the Baltimore Orioles"
+  Henderson finished the week at .300/.391/.750 with a double, triple, two home
+  runs, six RBIs and a 1.141 OPS. His 4-for-4, two-homer, five-RBI Sunday carried
+  Baltimore from a 5-1 deficit to a series sweep.
+image: "/assets/images/orioles/orioles-gunnar-henderson-potw-2026-08-31.jpg"
+image_position: "center center"
+image_alt: "Gunnar Henderson follows through on a swing for the Baltimore Orioles against the Athletics"
 image_credit: "MLB.com"
-image_credit_url: "https://www.mlb.com/stories/player/624413"
+image_credit_url: "https://www.mlb.com/news/gunnar-henderson-homers-twice-goes-4-for-4-orioles-win"
 stats:
-  - { label: "Games", value: "7" }
-  - { label: "Hits", value: "10-for-29" }
-  - { label: "AVG", value: ".345" }
-  - { label: "HR", value: "3" }
-  - { label: "RBI", value: "5" }
-  - { label: "OPS", value: "1.000" }
+  - { label: "Games", value: "6" }
+  - { label: "AVG", value: ".300" }
+  - { label: "HR", value: "2" }
+  - { label: "RBI", value: "6" }
+  - { label: "SLG", value: ".750" }
+  - { label: "OPS", value: "1.141" }
