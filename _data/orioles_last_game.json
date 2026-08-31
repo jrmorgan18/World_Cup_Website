@@ -1,66 +1,66 @@
 {
-  "generated_at": "2026-08-30T11:59:51Z",
-  "game_pk": 824961,
-  "date": "2026-08-29",
+  "generated_at": "2026-08-31T14:01:28Z",
+  "game_pk": 824959,
+  "date": "2026-08-30",
   "venue": "Sutter Health Park",
   "home_away": "away",
   "opponent": "Athletics",
   "opponent_abbr": "ATH",
   "result": "W",
-  "orioles_score": 5,
-  "opponent_score": 3,
+  "orioles_score": 8,
+  "opponent_score": 5,
   "orioles_hits": 7,
-  "opponent_hits": 10,
+  "opponent_hits": 9,
   "orioles_errors": 0,
-  "opponent_errors": 3,
+  "opponent_errors": 0,
   "winning_pitcher": {
-    "name": "Shane Baz",
+    "name": "Chris Bassitt",
     "team": "BAL",
-    "record": "5-14",
-    "line": "5.2 IP, 2 ER, 4 K, 3 BB"
+    "record": "6-4",
+    "line": "5.2 IP, 5 ER, 4 K, 3 BB"
   },
   "losing_pitcher": {
-    "name": "Jack Perkins",
+    "name": "Jeffrey Springs",
     "team": "ATH",
-    "record": "3-10",
-    "line": "5.0 IP, ER, 5 K, 4 BB"
+    "record": "3-13",
+    "line": "4.2 IP, 7 ER, 6 K, BB"
   },
   "save_pitcher": {
-    "name": "Andrew Kittredge",
+    "name": "Yennier Cano",
     "team": "BAL",
-    "record": "8",
+    "record": "3",
     "line": "1.0 IP, 0 ER, 0 K, 0 BB"
   },
   "key_players": [
     {
-      "name": "Leody Taveras",
+      "name": "Gunnar Henderson",
       "team": "BAL",
-      "position": "RF",
-      "line": "2-3 | 2 2B, BB, 3 RBI"
-    },
-    {
-      "name": "Shane Baz",
-      "team": "BAL",
-      "position": "P",
-      "line": "5.2 IP, 2 ER, 4 K, 3 BB"
-    },
-    {
-      "name": "Donovan Walton",
-      "team": "ATH",
       "position": "SS",
-      "line": "1-2 | BB, HBP, RBI"
+      "line": "4-4 | 2 HR, 3B, 5 RBI"
+    },
+    {
+      "name": "Brian Serven",
+      "team": "ATH",
+      "position": "C",
+      "line": "2-4 | HR, 2 RBI, 2 R"
+    },
+    {
+      "name": "Pete Alonso",
+      "team": "BAL",
+      "position": "DH",
+      "line": "1-2 | BB, HBP, 2 R"
     }
   ],
-  "summary": "The Orioles beat the Athletics 5-3 on the road at Athletics. Leody Taveras led the way (2-3 | 2 2B, BB, 3 RBI). Baltimore has won 2 straight.",
+  "summary": "The Orioles beat the Athletics 8-5 on the road at Athletics. Gunnar Henderson led the way (4-4 | 2 HR, 3B, 5 RBI). Baltimore has won 3 straight.",
   "record": {
-    "wins": 67,
+    "wins": 68,
     "losses": 69,
-    "pct": ".493",
+    "pct": ".496",
     "division": "AL East",
     "division_rank": 4,
     "games_back": "14.5",
-    "streak": "W2",
-    "last_10": "6-4"
+    "streak": "W3",
+    "last_10": "7-3"
   },
   "wild_card": {
     "rank": 4,
@@ -71,7 +71,7 @@
       {
         "team": "Guardians",
         "abbr": "CLE",
-        "wins": 68,
+        "wins": 69,
         "losses": 68,
         "games_back": null,
         "wild_card_rank": 3,
@@ -81,7 +81,7 @@
       {
         "team": "Orioles",
         "abbr": "BAL",
-        "wins": 67,
+        "wins": 68,
         "losses": 69,
         "games_back": "1.0",
         "wild_card_rank": 4,
