@@ -8,7 +8,7 @@ reports:
     source_note: "Official club and competition reports were checked first, with local club-specific coverage used for context and secondary records only to corroborate availability or minutes. The report distinguishes verified match facts from scouting interpretation and does not infer unreported statistics."
     summary:
       biggest_risers: "Cole Campbell scored on his Bundesliga debut; Rokas Pukstas delivered Hajduk's extra-time European winner; Peyton Miller recorded a third straight MLS match with an assist; and Diego Kochen produced a six-save performance. Cavan Sullivan, Neil Pierre and Justin Ellis also supplied direct goal contributions, while Zavier Gozo made his Crystal Palace first-team debut."
-      issues_to_monitor: "Kevin Paredes is officially out for several months with an ankle injury. Damion Downs missed both Southampton matchday squads, Caleb Wiley still lacks a defined senior assignment, Julian Hall and Luca Bombino were outside their clubs' MLS squads, and Duran Ferree remained an unused backup. Chris Brady conceded four goals across two starts in an otherwise secure starting role."
+      issues_to_monitor: "Kevin Paredes is officially out for several months with an ankle injury. Damion Downs missed both Southampton matchday squads, Caleb Wiley still lacks a defined senior assignment, Luca Bombino was outside San Diego's MLS squad, and Duran Ferree remained an unused backup. Chris Brady conceded four goals across two starts in an otherwise secure starting role."
       best_story: "Campbell marked Elversberg's first Bundesliga match with his first senior goal in a 3-2 upset of Bayer Leverkusen. Pukstas supplied the other defining moment, scoring in extra time to send Hajduk into the Conference League before an expected transfer."
     players:
       - profile: caleb-wiley
@@ -51,11 +51,11 @@ reports:
         trend: "→"
         direction: steady
         direction_label: Holding
-        context: Availability watch
-        recap: "Hall was not listed in RBNY's official lineup or unused substitutes for the August 29 3-1 loss to Philadelphia; no competitive minutes were verified in the window."
-        development_read: "The absence interrupts the consecutive-start evidence from the prior week, but no reason was published, so this is a neutral availability note rather than a performance downgrade."
+        context: MLS appearance
+        recap: "Hall appeared for RBNY in the August 29 3-1 home loss to Philadelphia. A reliable minute total was not available from the match record reviewed, so this entry does not infer one."
+        development_read: "The senior appearance sustains his immediate first-team involvement. Without a verified minute total or a decisive individual event, the weekly development read remains even."
         sources:
-          - { label: "Philadelphia–RBNY box score (official)", url: "https://www.philadelphiaunion.com/news/box-score-philadelphia-union-3-rbny-1" }
+          - { label: "RBNY–Philadelphia match center (official MLS)", url: "https://www.mlssoccer.com/competitions/mls-regular-season/2026/matches/rbnyvsphi-08-29-2026/" }
       - profile: justin-ellis
         name: Justin Ellis
         club: Orlando City
