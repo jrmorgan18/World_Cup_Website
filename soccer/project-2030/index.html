@@ -78,7 +78,7 @@ description: A four-year scouting report tracking the USMNT player pool, checkpo
       <img src="{{ usmnt_weekly_story.hero_image | relative_url }}" alt="" loading="eager">
     </figure>
     <div>
-      <span>Project 2030 / Week ending August 23</span>
+      <span>Project 2030 / {% if usmnt_weekly_story.reporting_window %}{{ usmnt_weekly_story.reporting_window }}{% else %}{{ usmnt_weekly_story.date | date: "%B %-d, %Y" }}{% endif %}</span>
       <h3>{{ usmnt_weekly_story.title }}</h3>
       <p>{{ usmnt_weekly_story.excerpt }}</p>
       <strong>Read the weekly report <span aria-hidden="true">&rarr;</span></strong>
