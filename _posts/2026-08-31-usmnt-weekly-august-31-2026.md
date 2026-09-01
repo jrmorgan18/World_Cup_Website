@@ -86,19 +86,19 @@ There were also a few rough developments. Chris Richards had a difficult night d
   </div>
 </figure>
 
-Up: Gio Reyna, Cole Campbell, Sergiño Dest and Yunus Musah.
+**Up:** Gio Reyna, Cole Campbell, Sergiño Dest and Yunus Musah.
 
 Reyna's first Strasbourg start was the type of performance he badly needed after years of inconsistent club minutes. Campbell scored nine minutes into Elversberg's first Bundesliga game and looked comfortable at the level. Dest contributed another goal and assist for PSV, while Musah played another full 90 and received positive reviews for his midfield work despite missing a golden scoring chance.
 
-Encouraging role developments: Folarin Balogun, Alex Freeman, Zavier Gozo and Noahkai Banks.
+**Encouraging role developments:** Folarin Balogun, Alex Freeman, Zavier Gozo and Noahkai Banks.
 
 Balogun secured a transfer to Everton, making the jump from Ligue 1 to the Premier LEague. Freeman finally received a meaningful La Liga opportunity, playing the final 28 minutes against Alavés after barely featuring in Villarreal's first two matches. Gozo made his Premier League debut for Crystal Palace with 22 minutes against Manchester City. Banks opened the Bundesliga season as a starter in Augsburg's 3-0 win over Schalke, continuing an encouraging start after also playing 90 minutes in the cup.
 
-Mixed: Antonee Robinson, Chris Richards, Malik Tillman, Tim Weah, Johnny Cardoso, Ricardo Pepi, and Tanner Tessman
+**Mixed:** Antonee Robinson, Chris Richards, Malik Tillman, Tim Weah, Johnny Cardoso, Ricardo Pepi, and Tanner Tessman
 
 Robinson continues to play major minutes for Fulham, but the team has started poorly. Richards' starting position remains secure, but he came up short on the tall task of defending Erling Haaland this weekend.Tillman remained in Leverkusen's starting lineup but was part of a disappointing attacking performance against Elversberg. Weah captained Marseille again but received poor local reviews in a loss to Monaco. Cardoso finally got his first Atlético minutes, although only for the final six minutes, while Pepi started yet again for PSV but was one of the few attackers who did not contribute to the 6-1 rout of Utrecht.Tessman was part of an elimination mid-week in Europe then was rested at the weekend.
 
-Concern: Brenden Aaronson, Joe Scally, Bryan Reynolds, Haji Wright and Kevin Paredes.
+**Concern:** Brenden Aaronson, Joe Scally, Bryan Reynolds, Haji Wright and Kevin Paredes.
 
 Aaronson lasted only 45 minutes against Brentford, with Leeds-focused coverage saying the game passed him by. Scally is on Gladbach's transfer list, Reynolds has barely played since joining Rennes, Wright remains out with his quad injury and Paredes now faces another lengthy rehabilitation.
 
@@ -182,7 +182,9 @@ The larger positive remains Richards' club role. He continues to start against o
 
 But if he is going to become the unquestioned leader of the USMNT defense during the next cycle, these are the individual moments he needs to win more often.
 
-### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/cole-campbell.png' | relative_url }}" alt="">Cole Campbell, Elversberg (Bundesliga)</span>Campbell could hardly have asked for a better start to Elversberg's Bundesliga season. Playing on the left side of the attack in the club's first-ever Bundesliga match, Campbell scored in the 9th minute to put Elversberg 2-0 ahead against Tillman’s Bayer Leverkusen.
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/cole-campbell.png' | relative_url }}" alt="">Cole Campbell, Elversberg (Bundesliga)</span>
+
+Campbell could hardly have asked for a better start to Elversberg's Bundesliga season. Playing on the left side of the attack in the club's first-ever Bundesliga match, Campbell scored in the 9th minute to put Elversberg 2-0 ahead against Tillman’s Bayer Leverkusen.
 
 The goal came immediately after the restart following Elversberg's opener. Leverkusen played a poor pass in its own half, Campbell reacted quickly to collect the loose ball and confidently drove his shot home before the visitors could reset.
 
@@ -304,7 +306,9 @@ There is still a long way to go, but a night where he makes a goal-saving block 
 
 ## Premier League
 
-### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/tyler-adams.png' | relative_url }}" alt="">Tyler Adams, Bournemouth</span>Adams again began on the bench for Bournemouth and entered in the second half of the 1-1 draw with Everton.
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/tyler-adams.png' | relative_url }}" alt="">Tyler Adams, Bournemouth</span>
+
+Adams again began on the bench for Bournemouth and entered in the second half of the 1-1 draw with Everton.
 
 He replaced Lewis Cook around the 69th minute with Bournemouth protecting a lead before Everton eventually equalized from a stoppage-time corner.
 
@@ -312,23 +316,31 @@ There was not much opportunity for Adams to influence the match beyond helping B
 
 Given his importance to the USMNT when healthy, it will be worth watching whether that is simply post-World Cup workload management or Bournemouth's preferred midfield hierarchy.
 
-### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/antonee-robinson.png' | relative_url }}" alt="">Antonee Robinson, Fulham</span>Robinson had a busy week, starting both of Fulham's Premier League matches, playing 82 minutes in the 3-2 loss to Chelsea on Monday and then going the full 90 in Sunday's 1-0 defeat at Sunderland.
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/antonee-robinson.png' | relative_url }}" alt="">Antonee Robinson, Fulham</span>
+
+Robinson had a busy week, starting both of Fulham's Premier League matches, playing 82 minutes in the 3-2 loss to Chelsea on Monday and then going the full 90 in Sunday's 1-0 defeat at Sunderland.
 
 Fulham is adapting to a more aggressive possession structure under Álvaro Arbeloa, with the fullbacks receiving more responsibility in buildup and the entire team committing more numbers forward. That can create good attacking positions for Robinson, but it also asks him to do more work receiving and progressing the ball in crowded areas rather than simply exploding forward on overlapping runs.
 
 Two games is far too early to judge whether the system suits him, but Fulham has opened the season with consecutive league losses and Robinson has not had his usual influence in the final third.
 
-### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/brenden-aaronson.png' | relative_url }}" alt="">Brenden Aaronson, Leeds</span>Aaronson started Leeds' 1-1 draw against Brentford but lasted only 45 minutes.
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/brenden-aaronson.png' | relative_url }}" alt="">Brenden Aaronson, Leeds</span>
+
+Aaronson started Leeds' 1-1 draw against Brentford but lasted only 45 minutes.
 
 LeedsUnited.news gave him a 4/10 and said the game simply did not suit him. Aaronson struggled to get involved, made little attacking impact and was replaced by Harry Wilson at halftime as Daniel Farke changed the midfield structure.
 
 That is a disappointing follow-up after he also received lukewarm local reviews in the opening-weekend win at Nottingham Forest. Aaronson remains part of the rotation, but he needs to turn the pressing and movement that coaches appreciate into more consistent attacking production.
 
-### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/haji-wright.png' | relative_url }}" alt="">Haji Wright, Coventry</span>Wright remains sidelined with the serious quadriceps injury that is expected to keep him out for roughly three months.
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/haji-wright.png' | relative_url }}" alt="">Haji Wright, Coventry</span>
+
+Wright remains sidelined with the serious quadriceps injury that is expected to keep him out for roughly three months.
 
 There is not much new to report until he gets closer to returning. The frustrating part is that the injury removes his opportunity to immediately prove that his Championship scoring production can translate to the Premier League.
 
-### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/zavier-gozo.png' | relative_url }}" alt="">Zavier Gozo, Crystal Palace</span>Gozo made his Premier League debut against Manchester City, replacing Yéremy Pino in the 68th minute.
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/zavier-gozo.png' | relative_url }}" alt="">Zavier Gozo, Crystal Palace</span>
+
+Gozo made his Premier League debut against Manchester City, replacing Yéremy Pino in the 68th minute.
 
 The match was already getting away from Palace by the time he entered, so there was little opportunity to make a real impact. Still, 22 Premier League minutes only ten days after completing his move from Real Salt Lake is an encouraging early sign.
 
@@ -336,13 +348,17 @@ The first goal for Gozo is simply to keep making the matchday squad. Consistent 
 
 ## La Liga
 
-### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/johnny-cardoso.png' | relative_url }}" alt="">Johnny Cardoso, Atlético Madrid</span>Cardoso finally made his first La Liga appearance of the season, replacing Morten Hjulmand in the 85th minute of Atlético's 3-1 win at Sevilla.
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/johnny-cardoso.png' | relative_url }}" alt="">Johnny Cardoso, Atlético Madrid</span>
+
+Cardoso finally made his first La Liga appearance of the season, replacing Morten Hjulmand in the 85th minute of Atlético's 3-1 win at Sevilla.
 
 Six minutes is not enough to evaluate the performance, but simply getting onto the field represents progress after he was an unused substitute in Atlético's opening two matches.
 
 The depth-chart issue remains. Hjulmand has started well, Pablo Barrios continues to play major minutes and Cardoso is entering the season as the midfielder trying to break into an established group rather than reclaiming an automatic role.
 
-### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/alex-freeman.png' | relative_url }}" alt="">Alex Freeman, Villarreal</span>Freeman received his most substantial minutes of the season in Villarreal's 1-0 loss at Alavés.
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/alex-freeman.png' | relative_url }}" alt="">Alex Freeman, Villarreal</span>
+
+Freeman received his most substantial minutes of the season in Villarreal's 1-0 loss at Alavés.
 
 He replaced Santiago Mouriño at right back in the 62nd minute and played the final 28-plus minutes as Villarreal chased an equalizer.
 
@@ -352,25 +368,33 @@ After only a token appearance in the opener and then remaining on the bench agai
 
 ## Serie A
 
-### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/christian-pulisic.png' | relative_url }}" alt="">Christian Pulisic, AC Milan</span>Pulisic was available but remained an unused substitute in Milan's 2-0 victory over Venezia.
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/christian-pulisic.png' | relative_url }}" alt="">Christian Pulisic, AC Milan</span>
+
+Pulisic was available but remained an unused substitute in Milan's 2-0 victory over Venezia.
 
 His delayed post-World Cup return means Milan has been able to bring him along slowly rather than immediately throwing him into the starting lineup.
 
 There is no serious reason for concern yet, but after two league games without an appearance, the next couple of weeks should begin revealing how Rúben Amorim intends to fit Pulisic into a reshaped attack.
 
-### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/weston-mckennie.png' | relative_url }}" alt="">Weston McKennie, Juventus</span>McKennie missed Juventus' 2-0 victory over Parma because of fatigue.
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/weston-mckennie.png' | relative_url }}" alt="">Weston McKennie, Juventus</span>
+
+McKennie missed Juventus' 2-0 victory over Parma because of fatigue.
 
 Luciano Spalletti confirmed before the game that McKennie would be unavailable rather than leaving him out for tactical reasons.
 
 After starting Juventus' opener, this looks like workload management rather than anything related to his place in the team.
 
-### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/benjamin-cremaschi.png' | relative_url }}" alt="">Benjamin Cremaschi, Parma</span>Cremaschi played roughly the final half hour of Parma's 2-0 loss to Juventus, continuing his return after injuries disrupted most of last season.
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/benjamin-cremaschi.png' | relative_url }}" alt="">Benjamin Cremaschi, Parma</span>
+
+Cremaschi played roughly the final half hour of Parma's 2-0 loss to Juventus, continuing his return after injuries disrupted most of last season.
 
 He did not substantially change a Parma attack that spent much of the game defending deep and struggling to create clean opportunities.
 
 The minutes remain more important than the performance right now. Cremaschi barely played during his first Serie A season. Establishing himself as a regular substitute would at least give him the chance to push for something larger.
 
-### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/gianluca-busio.png' | relative_url }}" alt="">Gianluca Busio, Venezia</span>Busio played another full 90 minutes as Venezia lost 2-0 to Milan.
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/gianluca-busio.png' | relative_url }}" alt="">Gianluca Busio, Venezia</span>
+
+Busio played another full 90 minutes as Venezia lost 2-0 to Milan.
 
 Sky Italia gave him a 6, placing him around the middle of Venezia's ratings rather than among the players blamed for the defeat.
 
@@ -378,19 +402,25 @@ Venezia has lost its opening two matches, but Busio continues to start centrally
 
 ## Germany
 
-### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/malik-tillman.png' | relative_url }}" alt="">Malik Tillman, Bayer Leverkusen</span>Tillman started against Campbell's Elversberg but had relatively little influence as Leverkusen somehow fell behind 3-0 to the newly promoted club. He played about 65 minutes before being substituted during Leverkusen's attempt to rescue the match.
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/malik-tillman.png' | relative_url }}" alt="">Malik Tillman, Bayer Leverkusen</span>
+
+Tillman started against Campbell's Elversberg but had relatively little influence as Leverkusen somehow fell behind 3-0 to the newly promoted club. He played about 65 minutes before being substituted during Leverkusen's attempt to rescue the match.
 
 The entire Leverkusen attack deserves criticism. They controlled most of the possession but were repeatedly caught by Elversberg's intensity and created too little until the game was already slipping away.
 
 Tillman's strong World Cup and cup opener remain more meaningful than one poor Bundesliga afternoon, but this was certainly a step backward.
 
-### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/noahkai-banks.png' | relative_url }}" alt="">Noahkai Banks, Augsburg</span>Banks played 90 minutes in Augsburg's 3-0 victory over Schalke and helped the club begin its Bundesliga season with a clean sheet. Combined with his full 90 in the DFB-Pokal the previous weekend, Banks has now started the season with consecutive complete games.
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/noahkai-banks.png' | relative_url }}" alt="">Noahkai Banks, Augsburg</span>
+
+Banks played 90 minutes in Augsburg's 3-0 victory over Schalke and helped the club begin its Bundesliga season with a clean sheet. Combined with his full 90 in the DFB-Pokal the previous weekend, Banks has now started the season with consecutive complete games.
 
 For a 19-year-old center back, being boringly dependable enough to stay on the field every week is probably more valuable than producing a string of highlight plays.
 
 If Banks eventually chooses the United States internationally, regular Bundesliga minutes will make it difficult to keep him outside the USMNT center-back conversation.
 
-### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/joe-scally.png' | relative_url }}" alt="">Joe Scally, Borussia Mönchengladbach</span>Scally's situation has become pretty clear.
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/joe-scally.png' | relative_url }}" alt="">Joe Scally, Borussia Mönchengladbach</span>
+
+Scally's situation has become pretty clear.
 
 Gladbach sporting director Rouven Schröder publicly placed both Scally and Florian Neuhaus on the transfer list after manager Eugen Polanski excluded them from the cup squad. Local coverage described the move as an unmistakable signal that neither player is part of the preferred plans.
 
@@ -400,7 +430,9 @@ Scally is only 23 and already has extensive Bundesliga and USMNT experience.
 
 At this point, getting out of Gladbach and finding another club where he can actually play looks like the obvious best outcome.
 
-### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/mathis-albert.png' | relative_url }}" alt="">Mathis Albert, Borussia Dortmund</span>Albert did not feature for Dortmund's senior team but dropped down to the youth/U21 group and promptly produced a goal and an assist in a 4-1 Premier League International Cup victory over Fulham's U21s.
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/mathis-albert.png' | relative_url }}" alt="">Mathis Albert, Borussia Dortmund</span>
+
+Albert did not feature for Dortmund's senior team but dropped down to the youth/U21 group and promptly produced a goal and an assist in a 4-1 Premier League International Cup victory over Fulham's U21s.
 
 He created Dortmund's equalizer with a long pass in the 25th minute and then scored himself three minutes later after pouncing on a poor Fulham pass. Dortmund's official report described Albert as lively throughout the match.
 
@@ -416,7 +448,9 @@ It is still early, but the pattern is becoming difficult to ignore. Maloney curr
 
 ## Ligue 1
 
-### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/folarin-balogun.png' | relative_url }}" alt="">Folarin Balogun, Monaco / Everton</span>Balogun did not play for Monaco this week, but we now know why.
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/folarin-balogun.png' | relative_url }}" alt="">Folarin Balogun, Monaco / Everton</span>
+
+Balogun did not play for Monaco this week, but we now know why.
 
 Everton and Monaco have agreed a deal to send the USMNT striker back to the Premier League, with L'Équipe reporting a €45 million fee plus €5 million in potential bonuses and a future sell-on percentage. That works out to roughly $52 million guaranteed with another $6 million available in add-ons. Balogun is expected to complete his medical and the remaining formalities before the transfer deadline.
 
@@ -430,13 +464,17 @@ Balogun also returns to England as a considerably different player than the one 
 
 For the USMNT, the move gives Balogun a chance to compete against stronger competition week in and week out, but also presents more intrasquad competition, risking him losing playing time if he doesn’t perform.
 
-### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/tim-weah.png' | relative_url }}" alt="">Tim Weah, Marseille</span>Weah again started at right back and wore the captain's armband in Marseille's 2-0 loss at Monaco.
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/tim-weah.png' | relative_url }}" alt="">Tim Weah, Marseille</span>
+
+Weah again started at right back and wore the captain's armband in Marseille's 2-0 loss at Monaco.
 
 Marseille-focused ratings generally criticized his lack of attacking influence, with Weah struggling to consistently create danger from wide areas as Monaco controlled the match.
 
 There continues to be an interesting split between Weah's club standing and his weekly output. Being trusted enough to captain Marseille is meaningful evidence of how highly the coaching staff values him, but he has not yet translated that trust into especially impactful performances.
 
-### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/tanner-tessmann.png' | relative_url }}" alt="">Tanner Tessmann, Lyon</span>Tessmann started Lyon's decisive Champions League qualifier against Fenerbahçe and played about 75 minutes in the 2-1 loss that eliminated Lyon from the competition.
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/tanner-tessmann.png' | relative_url }}" alt="">Tanner Tessmann, Lyon</span>
+
+Tessmann started Lyon's decisive Champions League qualifier against Fenerbahçe and played about 75 minutes in the 2-1 loss that eliminated Lyon from the competition.
 
 This was a much tougher night than his strong performance in the first leg.
 
@@ -444,7 +482,9 @@ Lyon struggled to control midfield for long periods and Tessmann was unable to d
 
 Three days later he was an unused substitute in Lyon's 1-1 league draw against Le Havre. There are rumblings that he could be in line for a transfer away from Lyon, as the club is in some financial trouble. Or the weekend off could have just been rest after a tough European match.
 
-### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/mark-mckenzie.png' | relative_url }}" alt="">Mark McKenzie, Toulouse</span>McKenzie played another full 90 minutes as Toulouse drew Brest 2-2.
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/mark-mckenzie.png' | relative_url }}" alt="">Mark McKenzie, Toulouse</span>
+
+McKenzie played another full 90 minutes as Toulouse drew Brest 2-2.
 
 He has now played every minute of Toulouse's first two Ligue 1 matches.
 
@@ -452,13 +492,17 @@ Toulouse will be frustrated to have conceded a 95th-minute equalizer after twice
 
 After being more of a depth piece for the US at the World Cup, consistent Ligue 1 starts give him the opportunity to push himself back toward the national-team rotation.
 
-### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/bryan-reynolds.png' | relative_url }}" alt="">Bryan Reynolds, Rennes</span>Reynolds was an unused substitute in Rennes' 3-2 victory over Le Mans. He has played only two Ligue 1 minutes through Rennes' first two league games. That is becoming an early concern.
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/bryan-reynolds.png' | relative_url }}" alt="">Bryan Reynolds, Rennes</span>
+
+Reynolds was an unused substitute in Rennes' 3-2 victory over Le Mans. He has played only two Ligue 1 minutes through Rennes' first two league games. That is becoming an early concern.
 
 The idea behind moving to Rennes was to step into a stronger league and test himself at a higher level. That only helps if he actually gets onto the field.
 
 ## Eredivisie
 
-### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/sergino-dest.png' | relative_url }}" alt="">Sergiño Dest, PSV</span>Dest remains on fire, playing all 90 minutes and recording a goal and an assist as PSV demolished Utrecht 6-1.
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/sergino-dest.png' | relative_url }}" alt="">Sergiño Dest, PSV</span>
+
+Dest remains on fire, playing all 90 minutes and recording a goal and an assist as PSV demolished Utrecht 6-1.
 
 The assist came on Guus Til's first-half goal, while Dest capped the scoring himself in stoppage time after another aggressive attacking run. He finished with four shots, three on target and six crosses.
 
@@ -466,13 +510,17 @@ Through his first three Eredivisie appearances of the season, Dest already has t
 
 When healthy and playing this confidently, he remains nearly impossible to replicate within the American pool.
 
-### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/ricardo-pepi.png' | relative_url }}" alt="">Ricardo Pepi, PSV</span>Pepi started his fourth consecutive Eredivisie match but was oddly left out of PSV's scoring explosion. He played 77 minutes, finishing with only one shot as PSV scored six goals around him.
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/ricardo-pepi.png' | relative_url }}" alt="">Ricardo Pepi, PSV</span>
+
+Pepi started his fourth consecutive Eredivisie match but was oddly left out of PSV's scoring explosion. He played 77 minutes, finishing with only one shot as PSV scored six goals around him.
 
 There is no reason to read too much into one quiet afternoon. Pepi has already scored twice this season and, more importantly, appears to have established himself as PSV's first-choice striker rather than the high-efficiency backup role he occupied previously.
 
 For his USMNT outlook, the consistent starts matter almost as much as the goals.
 
-### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/kevin-paredes.png' | relative_url }}" alt="">Kevin Paredes, Utrecht</span>Unfortunately, Utrecht confirmed that Paredes will miss several months with the ankle injury he suffered against Sparta Rotterdam.
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/kevin-paredes.png' | relative_url }}" alt="">Kevin Paredes, Utrecht</span>
+
+Unfortunately, Utrecht confirmed that Paredes will miss several months with the ankle injury he suffered against Sparta Rotterdam.
 
 The club said Paredes had been feeling increasingly comfortable as his minutes grew before the setback.
 
