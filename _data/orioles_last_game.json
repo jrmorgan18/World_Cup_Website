@@ -1,72 +1,72 @@
 {
-  "generated_at": "2026-08-31T14:01:28Z",
-  "game_pk": 824959,
-  "date": "2026-08-30",
-  "venue": "Sutter Health Park",
+  "generated_at": "2026-09-01T11:45:07Z",
+  "game_pk": 824314,
+  "date": "2026-08-31",
+  "venue": "Coors Field",
   "home_away": "away",
-  "opponent": "Athletics",
-  "opponent_abbr": "ATH",
+  "opponent": "Colorado Rockies",
+  "opponent_abbr": "COL",
   "result": "W",
-  "orioles_score": 8,
-  "opponent_score": 5,
-  "orioles_hits": 7,
-  "opponent_hits": 9,
+  "orioles_score": 2,
+  "opponent_score": 1,
+  "orioles_hits": 4,
+  "opponent_hits": 8,
   "orioles_errors": 0,
   "opponent_errors": 0,
   "winning_pitcher": {
-    "name": "Chris Bassitt",
+    "name": "Grant Wolfram",
     "team": "BAL",
-    "record": "6-4",
-    "line": "5.2 IP, 5 ER, 4 K, 3 BB"
+    "record": "6-2",
+    "line": "2.0 IP, 0 ER, 2 K, 0 BB"
   },
   "losing_pitcher": {
-    "name": "Jeffrey Springs",
-    "team": "ATH",
-    "record": "3-13",
-    "line": "4.2 IP, 7 ER, 6 K, BB"
+    "name": "Mark Manfredi",
+    "team": "COL",
+    "record": "1-1",
+    "line": "1.1 IP, ER, K, 3 BB"
   },
   "save_pitcher": {
-    "name": "Yennier Cano",
+    "name": "Andrew Kittredge",
     "team": "BAL",
-    "record": "3",
-    "line": "1.0 IP, 0 ER, 0 K, 0 BB"
+    "record": "9",
+    "line": "1.0 IP, 0 ER, K, 0 BB"
   },
   "key_players": [
     {
-      "name": "Gunnar Henderson",
-      "team": "BAL",
-      "position": "SS",
-      "line": "4-4 | 2 HR, 3B, 5 RBI"
+      "name": "Tanner Gordon",
+      "team": "COL",
+      "position": "P",
+      "line": "5.0 IP, ER, 3 K, BB"
     },
     {
-      "name": "Brian Serven",
-      "team": "ATH",
-      "position": "C",
-      "line": "2-4 | HR, 2 RBI, 2 R"
+      "name": "Cade Povich",
+      "team": "BAL",
+      "position": "P",
+      "line": "5.0 IP, ER, 4 K, 3 BB"
     },
     {
-      "name": "Pete Alonso",
+      "name": "Grant Wolfram",
       "team": "BAL",
-      "position": "DH",
-      "line": "1-2 | BB, HBP, 2 R"
+      "position": "P",
+      "line": "2.0 IP, 0 ER, 2 K, 0 BB"
     }
   ],
-  "summary": "The Orioles beat the Athletics 8-5 on the road at Athletics. Gunnar Henderson led the way (4-4 | 2 HR, 3B, 5 RBI). Baltimore has won 3 straight.",
+  "summary": "The Orioles beat the Rockies 2-1 on the road at Rockies. Tanner Gordon led the way (5.0 IP, ER, 3 K, BB). Baltimore has won 4 straight.",
   "record": {
-    "wins": 68,
+    "wins": 69,
     "losses": 69,
-    "pct": ".496",
+    "pct": ".500",
     "division": "AL East",
     "division_rank": 4,
-    "games_back": "14.5",
-    "streak": "W3",
-    "last_10": "7-3"
+    "games_back": "13.5",
+    "streak": "W4",
+    "last_10": "8-2"
   },
   "wild_card": {
     "rank": 4,
     "spots": 3,
-    "games_back": "1.0",
-    "status_text": "1.0 games back of the third AL Wild Card spot.",
+    "games_back": "0.5",
+    "status_text": "0.5 games back of the third AL Wild Card spot.",
     "ladder": [
       {
         "team": "Guardians",
@@ -81,9 +81,9 @@
       {
         "team": "Orioles",
         "abbr": "BAL",
-        "wins": 68,
+        "wins": 69,
         "losses": 69,
-        "games_back": "1.0",
+        "games_back": "0.5",
         "wild_card_rank": 4,
         "is_orioles": true,
         "is_cutoff": false
