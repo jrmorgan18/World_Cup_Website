@@ -16,13 +16,7 @@ hero_wide: true
 hero_alt: "Donyell Malen celebrates for Roma after scoring against Fiorentina"
 hero_credit: "AS Roma"
 hero_credit_url: "https://www.asroma.com/en/news/75795/roma-v-fiorentina-the-gallery"
-home_recent: true
-home_recent_position: 3
-home_recent_label: "European Team of the Week"
-home_recent_theme: soccer
-euro_team_of_week_feature: true
-soccer_promo_image: /assets/images/euro-team-of-week-2026-08-25.png
-soccer_promo_alt: "European Weekend Team of the Week Best XI graphic featuring Donyell Malen"
+home_recent: false
 ---
 
 The European club season is starting to get into full swing, and the first major weekend produced several performances worthy of a spot in our Team of the Week.

@@ -17,7 +17,6 @@ hero_alt: "Trevor Lawrence takes a shotgun snap in a teal Jacksonville Jaguars u
 hero_credit: "All-Pro Reels / Wikimedia Commons (CC BY-SA 2.0)"
 hero_credit_url: "https://commons.wikimedia.org/wiki/File:Trevor_Lawrence_vs_Commanders_2022.jpg"
 home_recent: true
-home_recent_position: 2
 home_recent_label: "Betting"
 home_recent_theme: betting
 betting_feature: true
