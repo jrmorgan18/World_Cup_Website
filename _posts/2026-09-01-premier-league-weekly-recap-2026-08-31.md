@@ -11,11 +11,9 @@ series: "Premier League Weekly Recap"
 read_time: 13
 suppress_article_prompts: true
 source_docx: "articles/Premier League Weekly Recap - 8_31_26.docx"
-hero_image: /assets/images/epl-weekly-recap-2026-08-31-haaland-city.jpg
+hero_image: /assets/images/epl-weekly-recap-2026-08-31-saka-villa.png
 hero_wide: true
-hero_alt: "Erling Haaland in action for Manchester City"
-hero_credit: "Manchester City"
-hero_credit_url: "https://www.mancity.com/news/mens/city-v-brentford-match-gallery-premier-league-20-feb-63844040"
+hero_alt: "Bukayo Saka celebrates for Arsenal at Villa Park"
 home_recent: true
 home_recent_position: 3
 home_recent_label: "Premier League"
@@ -54,7 +52,7 @@ Maresca also backed off his experiment of playing Guehi in midfield, with Nico O
 Two games is not enough to declare the transition from Pep Guardiola complete, but this was a much cleaner version of the new City.
 
 <figure class="soccer-article-figure">
-  <img src="{{ '/assets/images/epl-weekly-recap-2026-08-31-haaland-city.jpg' | relative_url }}" alt="Erling Haaland in action for Manchester City" loading="lazy">
+  <img src="{{ '/assets/images/epl-weekly-recap-2026-08-31-cherki-city.png' | relative_url }}" alt="Rayan Cherki shoots for Manchester City" loading="lazy">
 </figure>
 
 ## Liverpool 2-2 Nottingham Forest
@@ -72,10 +70,6 @@ There was some controversy surrounding that sequence because Liverpool was tryin
 The attacking talent is obvious. Liverpool has now come from behind four separate times in two matches. However it is concerning how frequently it has been required.
 
 Newcastle attacked the spaces Liverpool left after turnovers last week. Forest caused similar trouble with more direct balls and aggressive runs beyond the midfield. Iraola's team can create chances, but it has not yet demonstrated much control over where or how these games are played.
-
-<figure class="soccer-article-figure">
-  <img src="{{ '/assets/images/epl-weekly-recap-2026-08-24-liverpool.jpg' | relative_url }}" alt="Liverpool players celebrate during a Premier League match" loading="lazy">
-</figure>
 
 ## Bournemouth 1-1 Everton
 
@@ -103,11 +97,15 @@ Hull was facing another promoted team in a game that could eventually have real 
 
 The "we're going to win the league" chants from the away end can probably remain ironic for a while, but Hull has already made its survival case considerably more interesting.
 
+<figure class="soccer-article-figure">
+  <img src="{{ '/assets/images/epl-weekly-recap-2026-08-31-hull-city.png' | relative_url }}" alt="Hull City and Coventry City players contest the ball" loading="lazy">
+</figure>
+
 ## Tottenham 0-2 Newcastle United
 
 *Goals: Anthony Elanga 62', Yoane Wissa 72'*
 
-## Tottenham was better than it was in the 3-0 opening loss to Brentford, but that is quite a low bar. Spurs actually created the better opportunities in the first half, but Lukas Hornicek made several saves to keep the game scoreless. Newcastle then took control after halftime.
+Tottenham was better than it was in the 3-0 opening loss to Brentford, but that is quite a low bar. Spurs actually created the better opportunities in the first half, but Lukas Hornicek made several saves to keep the game scoreless. Newcastle then took control after halftime.
 
 Anthony Elanga opened the scoring with an excellent finish in the 62nd minute. Ten minutes later Yoane Wissa improvised an acrobatic finish after Tottenham failed to deal with a deep corner.
 
@@ -125,7 +123,7 @@ Two very different opponents have produced the same basic result.
 
 Chelsea may be the most entertaining team in the league if it keeps playing games like this.
 
-## The Blues were 3-0 ahead after only 32 minutes. Romeo Lavia opened the scoring after João Pedro met a corner at the near post and Mats Wieffer blocked the effort on the goal line. A mix-up between Wieffer and goalkeeper Bart Verbruggen left the loose ball for Lavia to poke home. Morgan Rogers helped create the second for Pedro Neto before João Pedro finished an excellent counter against his former club.
+The Blues were 3-0 ahead after only 32 minutes. Romeo Lavia opened the scoring after João Pedro met a corner at the near post and Mats Wieffer blocked the effort on the goal line. A mix-up between Wieffer and goalkeeper Bart Verbruggen left the loose ball for Lavia to poke home. Morgan Rogers helped create the second for Pedro Neto before João Pedro finished an excellent counter against his former club.
 
 Brighton pulled one back before halftime, then reduced the deficit again when Pascal Groß's effort deflected in off João Pedro. Chelsea responded through Cole Palmer, whose finish from the edge of the box gave his team enough breathing room to survive Groß's stoppage-time header.
 
@@ -183,10 +181,6 @@ The performance did not completely erase the issues from Hull, as Ipswich found 
 
 United has much bigger tests ahead. At least there is now something positive to build from.
 
-<figure class="soccer-article-figure">
-  <img src="{{ '/assets/images/epl-weekly-recap-2026-08-31-bruno-united.jpg' | relative_url }}" alt="Bruno Fernandes in action for Manchester United" loading="lazy">
-</figure>
-
 ## Aston Villa 0-1 Arsenal
 
 Goal: Bukayo Saka 59'
@@ -203,7 +197,7 @@ Eberechi Eze came on and gave Arsenal another player willing to receive and comb
 
 From there Arsenal did what its great at and killed the game. Villa pushed forward but failed to register a shot on target for the second consecutive match. Arteta introduced Bruno Guimarães, Mikel Merino and former Villa defender Ezri Konsa to add more control and physical presence. Arsenal protected the center, won enough second balls and never allowed Villa to generate sustained pressure around Raya.
 
-## Arsenal produced eight 1-0 victories during last season's championship run and the formula appears to still work for them. Control the match, avoid giving away high-quality chances and trust Saka or another attacker to eventually produce the decisive moment.
+Arsenal produced eight 1-0 victories during last season's championship run and the formula appears to still work for them. Control the match, avoid giving away high-quality chances and trust Saka or another attacker to eventually produce the decisive moment.
 
 # Six Takeaways From Matchweek 2
 
@@ -219,7 +213,7 @@ That is what makes the champions difficult to knock off over 38 matches.
 
 They do not always need to play well enough to win 3-0.
 
-## Sometimes 1-0 works perfectly fine.
+Sometimes 1-0 works perfectly fine.
 
 ## 2. Manchester City Looked More Comfortable Under Maresca
 
@@ -255,7 +249,7 @@ Palmer, João Pedro, Rogers and Neto are all dangerous when the opponent leaves 
 
 There is some risk.
 
-## Brighton nearly recovered from 3-0 down, and Chelsea's midfield situation could become uncomfortable if Caicedo misses time while Fernández's future remains unsettled.
+Brighton nearly recovered from 3-0 down, and Chelsea's midfield situation could become uncomfortable if Caicedo misses time while Fernández's future remains unsettled.
 
 But there are worse problems than trying to figure out how to provide more control behind an attack already scoring at this rate.
 
@@ -266,4 +260,3 @@ Liverpool has scored four goals and lost neither of Iraola's first two matches, 
 Newcastle and Forest both found ways to bypass Liverpool's initial pressure and attack a defense that was not properly protected. Liverpool then needed its attacking quality to dig out a result.
 
 Having to produce a comeback every week is not a sustainable path to competing for a trophy. The talent should eventually produce plenty of goals. Iraola's bigger early job is giving Liverpool enough structure behind its attacks that every turnover does not feel potentially dangerous.
-
