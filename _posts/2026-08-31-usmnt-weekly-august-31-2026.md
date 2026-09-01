@@ -18,11 +18,11 @@ home_recent_label: "USMNT Weekly"
 home_recent_theme: soccer
 series: "USMNT Weekly"
 reporting_window: "Week ending August 30"
-hero_image: /assets/images/gio-reyna-strasbourg-lens-2026.jpg
-thumbnail: /assets/images/gio-reyna-strasbourg-lens-2026.jpg
-hero_alt: "Gio Reyna in action for Strasbourg against Lens"
-hero_credit: "beIN SPORTS USA"
-hero_credit_url: "https://www.youtube.com/watch?v=gICLZydYQ3A"
+hero_image: /assets/images/gio-reyna-strasbourg-action-2026.png
+thumbnail: /assets/images/gio-reyna-strasbourg-action-2026.png
+hero_alt: "Gio Reyna shoots for Strasbourg against Lens"
+hero_credit: "Racing Club de Strasbourg Alsace"
+hero_credit_url: "https://www.youtube.com/watch?v=ZLuB9Oo9CQM"
 ---
 
 *Reporting window: **August 24-30, 2026***
