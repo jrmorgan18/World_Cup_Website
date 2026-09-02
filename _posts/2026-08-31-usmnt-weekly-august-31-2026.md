@@ -90,9 +90,11 @@ There were also a few rough developments. Chris Richards had a difficult night d
 
 Reyna's first Strasbourg start was the type of performance he badly needed after years of inconsistent club minutes. Campbell scored nine minutes into Elversberg's first Bundesliga game and looked comfortable at the level. Dest contributed another goal and assist for PSV, while Musah played another full 90 and received positive reviews for his midfield work despite missing a golden scoring chance.
 
-**Encouraging role developments:** Folarin Balogun, Alex Freeman, Zavier Gozo and Noahkai Banks.
+**Encouraging role developments:** Alex Freeman, Zavier Gozo and Noahkai Banks.
 
-Balogun secured a transfer to Everton, making the jump from Ligue 1 to the Premier LEague. Freeman finally received a meaningful La Liga opportunity, playing the final 28 minutes against Alavés after barely featuring in Villarreal's first two matches. Gozo made his Premier League debut for Crystal Palace with 22 minutes against Manchester City. Banks opened the Bundesliga season as a starter in Augsburg's 3-0 win over Schalke, continuing an encouraging start after also playing 90 minutes in the cup.
+Freeman finally received a meaningful La Liga opportunity, playing the final 28 minutes against Alavés after barely featuring in Villarreal's first two matches. Gozo made his Premier League debut for Crystal Palace with 22 minutes against Manchester City. Banks opened the Bundesliga season as a starter in Augsburg's 3-0 win over Schalke, continuing an encouraging start after also playing 90 minutes in the cup.
+
+**Transfer watch:** Balogun's proposed Everton move was called off late on deadline day, leaving him at Monaco and restoring uncertainty around his immediate club role.
 
 **Mixed:** Antonee Robinson, Chris Richards, Malik Tillman, Tim Weah, Johnny Cardoso, Ricardo Pepi, and Tanner Tessman
 
@@ -448,21 +450,15 @@ It is still early, but the pattern is becoming difficult to ignore. Maloney curr
 
 ## Ligue 1
 
-### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/folarin-balogun.png' | relative_url }}" alt="">Folarin Balogun, Monaco / Everton</span>
+### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/folarin-balogun.png' | relative_url }}" alt="">Folarin Balogun, Monaco</span>
 
-Balogun did not play for Monaco this week, but we now know why.
+Balogun did not play for Monaco this week, with the club working toward a late transfer.
 
-Everton and Monaco have agreed a deal to send the USMNT striker back to the Premier League, with L'Équipe reporting a €45 million fee plus €5 million in potential bonuses and a future sell-on percentage. That works out to roughly $52 million guaranteed with another $6 million available in add-ons. Balogun is expected to complete his medical and the remaining formalities before the transfer deadline.
+Everton and Monaco had agreed a deal to send the USMNT striker back to the Premier League, but the transfer was called off at the last minute on deadline day. Balogun remains at Monaco.
 
-Monaco had kept him out of its opening matches while working on a transfer, so there is nothing meaningful to evaluate from his club performances this week. The much more important development is his new situation.
+Monaco had kept him out of its opening matches while working on the move, so there is nothing meaningful to evaluate from his club performances this week. The failed transfer leaves his immediate role in Monaco's attack as the key question.
 
-Everton looks like a pretty good landing spot.
-
-The club is moving Beto to Fiorentina and has been searching for a more reliable finisher at striker. Thierno Barry remains another option, but Everton is spending enough on Balogun that he should arrive with a real opportunity to lead the line rather than merely provide depth. NBC Sports made essentially that argument, viewing Balogun as a strong fit for an Everton team that has often created more chances than its strikers have converted.
-
-Balogun also returns to England as a considerably different player than the one who struggled to break through at Arsenal. He scored 18 goals across Ligue 1 and the Champions League last season, then added three goals for the US during the World Cup.
-
-For the USMNT, the move gives Balogun a chance to compete against stronger competition week in and week out, but also presents more intrasquad competition, risking him losing playing time if he doesn’t perform.
+For the USMNT, the main point is that Balogun stays with a club where he has already shown he can produce. The next step is simply rejoining Monaco's matchday group and turning that continuity into competitive minutes.
 
 ### <span class="article-spotlight-name"><img class="article-spotlight-avatar" src="{{ '/assets/images/player-pool/tim-weah.png' | relative_url }}" alt="">Tim Weah, Marseille</span>
 
