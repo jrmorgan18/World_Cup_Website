@@ -30,7 +30,7 @@ section_theme: soccer
 {% assign euro_leagues_preview_story = site.posts | where: "euro_leagues_preview_feature", true | first %}
 {% assign premier_league_weekly_recap_story = site.posts | where: "premier_league_weekly_recap_feature", true | first %}
 {% assign euro_team_of_week_story = site.posts | where: "euro_team_of_week_feature", true | first %}
-{% assign soccer_feature = euro_team_of_week_story | default: premier_league_preview_story | default: longform_feature %}
+{% assign soccer_feature = power_rankings_story | default: euro_team_of_week_story | default: premier_league_preview_story | default: longform_feature %}
 {% assign power_rankings_edition = site.data.european_club_power_rankings.editions | first %}
 {% if soccer_feature %}
 <section class="soccer-editorial-shell">
