@@ -12,6 +12,27 @@
      HTML embed (not the JavaScript one), and copy the numeric id out of
      the action URL — https://app.kit.com/forms/<FORM_ID>/subscriptions
      Current form uid: 916b45cbd0
+
+     ANALYTICS
+     ---------------------------------------------------------------------
+     "newsletter_signup" fires only after Kit has answered the POST — the
+     hidden iframe finishing its load — so it counts accepted signups
+     rather than clicks on the Subscribe button. Every event carries a
+     cta_location naming the surface that earned it:
+
+       footer | modal | article_bottom | longform
+
+     A new signup surface gets a data-nl-location="<name>" on its form;
+     anything unlabelled reports as "unknown".
+
+     Two one-time steps in the GA4 admin make this usable:
+       1. Admin -> Events -> mark "newsletter_signup" as a key event.
+       2. Admin -> Custom definitions -> register "cta_location" as a
+          custom event dimension so it can be broken out in reports.
+
+     Kit is double opt-in, so this event means Kit accepted the address
+     and sent a confirmation mail, not that the reader confirmed it.
+     Confirmed-subscriber counts still have to come from Kit.
      ===================================================================== */
   var FORM_ID = "9740849";
   var EMAIL_FIELD = "email_address";
@@ -19,6 +40,39 @@
 
   var configured = /^\d+$/.test(FORM_ID);
   var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  /* ---- Conversion tracking ----
+     One hidden iframe serves every form on the page, so a submit records
+     which form it came from and the next iframe load claims it. The claim
+     expires so a stale submit can never be credited to an unrelated load. */
+  var CLAIM_TTL_MS = 20000;
+  var sink = document.querySelector('iframe[name="nl-sink"]');
+  var pendingSignup = null;
+
+  function track(eventName, params) {
+    if (typeof window.gtag === "function") window.gtag("event", eventName, params);
+  }
+
+  function locationOf(form) {
+    var named = form.getAttribute("data-nl-location");
+    if (named) return named;
+    if (form.closest("#nl-modal")) return "modal";
+    if (form.closest(".post-cta")) return "article_bottom";
+    if (form.closest(".longform-newsletter")) return "longform";
+    if (form.closest(".newsletter")) return "footer";
+    return "unknown";
+  }
+
+  if (sink) {
+    sink.addEventListener("load", function () {
+      // Ignore the initial about:blank load and any load we did not cause.
+      if (!pendingSignup) return;
+      var signup = pendingSignup;
+      pendingSignup = null;
+      if (Date.now() - signup.at > CLAIM_TTL_MS) return;
+      track("newsletter_signup", { cta_location: signup.location });
+    });
+  }
 
   /* ---- Floating "Subscribe" button + popup ---- */
   var fab = document.getElementById("nl-fab");
@@ -53,9 +107,10 @@
   function wireForm(form) {
     var input = form.querySelector('input[type="email"]');
     if (!input) return;
-    var scope = form.closest(".newsletter, .nl-modal-card, .post-cta") || form.parentNode;
+    var scope = form.closest(".newsletter, .nl-modal-card, .post-cta, .longform-newsletter") || form.parentNode;
     var status = scope ? scope.querySelector(".newsletter-status") : null;
     var inModal = !!form.closest("#nl-modal");
+    var ctaLocation = locationOf(form);
 
     function setStatus(msg, ok) {
       if (!status) return;
@@ -81,7 +136,9 @@
         setStatus("Signup isn't connected yet — check back soon!", false);
         return;
       }
-      // The POST goes to the hidden iframe so the visitor stays on the page.
+      // The POST goes to the hidden iframe so the visitor stays on the page;
+      // the iframe's load handler above turns the reply into a GA event.
+      pendingSignup = { location: ctaLocation, at: Date.now() };
       setStatus("Thanks! Check your inbox to confirm.", true);
       setTimeout(function () { form.reset(); }, 150);
       if (inModal) {

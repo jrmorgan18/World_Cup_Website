@@ -1,0 +1,70 @@
+{% comment %}
+  Topic-affinity "keep reading" rail for the end of an article.
+
+  Candidates are gathered in three passes and stop as soon as the limit is
+  reached, so the strongest affinity wins:
+    1. posts sharing a category with this one (newest first),
+    2. posts from the same desk (section_theme),
+    3. the newest posts, as a last resort on a thin archive.
+
+  Params:
+    desk_label — human name for the desk, used in the heading ("Ravens").
+    limit      — how many articles to show (default 3).
+{% endcomment %}
+{%- assign related_limit = include.limit | default: 3 -%}
+{%- assign related_label = include.desk_label | default: "Dual Eights" -%}
+{%- assign related_urls = "|" -%}
+{%- assign related_count = 0 -%}
+{%- assign related_passes = "topic,desk,recent" | split: "," -%}
+{%- capture related_items -%}
+  {%- for related_pass in related_passes -%}
+    {%- for post in site.posts -%}
+      {%- if related_count >= related_limit -%}{%- break -%}{%- endif -%}
+      {%- if post.url == page.url -%}{%- continue -%}{%- endif -%}
+      {%- assign related_eligible = false -%}
+      {%- if related_pass == "topic" -%}
+        {%- for category in page.categories -%}
+          {%- if post.categories contains category -%}
+            {%- assign related_eligible = true -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- elsif related_pass == "desk" -%}
+        {%- if post.section_theme and post.section_theme == page.section_theme -%}
+          {%- assign related_eligible = true -%}
+        {%- endif -%}
+      {%- else -%}
+        {%- assign related_eligible = true -%}
+      {%- endif -%}
+      {%- if related_eligible -%}
+        {%- capture related_key %}|{{ post.url }}|{% endcapture -%}
+        {%- unless related_urls contains related_key -%}
+          {%- assign related_urls = related_urls | append: post.url | append: "|" -%}
+          {%- assign related_count = related_count | plus: 1 -%}
+          {%- assign related_topic = post.categories | first | replace: "-", " " | capitalize -%}
+          {%- assign related_topic = post.series | default: related_topic -%}
+      <li>
+        <a href="{{ post.url | relative_url }}">
+          <small>{{ related_topic }}</small>
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.date | date: "%B %-d, %Y" }}</p>
+        </a>
+      </li>
+        {%- endunless -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if related_count >= related_limit -%}{%- break -%}{%- endif -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- assign related_items = related_items | strip -%}
+{% if related_items != "" %}
+<section class="article-related" aria-labelledby="article-related-heading">
+  <div class="article-related-head">
+    <span class="nav-label">Keep reading</span>
+    <h2 class="article-related-title" id="article-related-heading">More {{ related_label }}</h2>
+  </div>
+  <ol class="article-related-list">
+    {{ related_items }}
+  </ol>
+</section>
+{% endif %}

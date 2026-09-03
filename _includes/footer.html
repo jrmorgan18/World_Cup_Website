@@ -5,7 +5,7 @@
       <h3 id="nl-heading" class="newsletter-title">The next good read, in your inbox.</h3>
       <p class="newsletter-sub">Baltimore baseball, Baltimore football and soccer analysis. No content mill. No spam.</p>
     </div>
-    <form class="newsletter-form" id="newsletter-form" method="POST" target="nl-sink" novalidate>
+    <form class="newsletter-form" id="newsletter-form" method="POST" target="nl-sink" data-nl-location="footer" novalidate>
       <label class="sr-only" for="nl-email">Email address</label>
       <input id="nl-email" type="email" required placeholder="you@example.com" autocomplete="email" inputmode="email">
       <button type="submit" class="newsletter-btn">Join the list</button>
@@ -53,7 +53,7 @@
     <p class="de-kicker">The Dual Eights dispatch</p>
     <h3 class="nl-modal-title" id="nl-modal-title">Never miss a good read.</h3>
     <p class="nl-modal-sub">New analysis from all three desks, delivered occasionally.</p>
-    <form class="newsletter-form" method="POST" target="nl-sink" novalidate>
+    <form class="newsletter-form" method="POST" target="nl-sink" data-nl-location="modal" novalidate>
       <label class="sr-only" for="nl-email-modal">Email address</label>
       <input id="nl-email-modal" type="email" required placeholder="you@example.com" autocomplete="email" inputmode="email">
       <button type="submit" class="newsletter-btn">Join the list</button>
@@ -61,4 +61,4 @@
     <p class="newsletter-status" role="status" aria-live="polite"></p>
   </div>
 </div>
-<script src="{{ '/assets/js/newsletter.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/newsletter.js' | relative_url }}?v=20260903-engagement"></script>

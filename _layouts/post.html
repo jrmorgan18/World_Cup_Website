@@ -48,23 +48,54 @@ layout: default
   <div class="article-body">
     {{ content }}
   </div>
+  {% comment %}
+    Desk copy for the end-of-article prompts. The reader just finished a piece
+    from one desk, so the signup pitch and the "keep reading" rail both speak
+    to that desk rather than to the site as a whole.
+  {% endcomment %}
+  {% assign desk = page.section_theme %}
+  {% if desk == nil or desk == "" %}{% assign desk = page.categories | first %}{% endif %}
+  {% case desk %}
+    {% when "ravens" or "nfl" %}
+      {% assign desk_label = "Ravens" %}
+      {% assign desk_pitch = "Camp reporting, roster math and Baltimore football analysis." %}
+    {% when "orioles" %}
+      {% assign desk_label = "Orioles" %}
+      {% assign desk_pitch = "Prospect coverage, weekly recaps and Baltimore baseball analysis." %}
+    {% when "project" or "project-2030" %}
+      {% assign desk_label = "Project 2030" %}
+      {% assign desk_pitch = "Scouting reports and player tracking from the road to 2030." %}
+    {% when "usmnt" %}
+      {% assign desk_label = "USMNT" %}
+      {% assign desk_pitch = "Squad news, match analysis and the road to the next cycle." %}
+    {% when "betting" %}
+      {% assign desk_label = "Betting" %}
+      {% assign desk_pitch = "Betting cards, market reads and the numbers behind them." %}
+    {% when "countdown" or "players" %}
+      {% assign desk_label = "World Cup" %}
+      {% assign desk_pitch = "Team previews, player profiles and tournament analysis." %}
+    {% else %}
+      {% assign desk_label = "Soccer" %}
+      {% assign desk_pitch = "Previews, recaps and analysis from the club and international game." %}
+  {% endcase %}
   <div class="article-footer">
-    {% if show_article_prompts %}
-      {% include donation-nudge.html placement="article" %}
-    {% endif %}
-    {% if page.newsletter_cta %}
+    {% unless page.newsletter_cta == false %}
     <aside class="post-cta" aria-labelledby="post-cta-title">
-      <h3 class="post-cta-title" id="post-cta-title">Enjoyed this? Get the next one in your inbox.</h3>
-      <p class="post-cta-sub">Previews, recaps, and betting cards — no spam, just the soccer.</p>
-      <form class="newsletter-form" method="POST" target="nl-sink" novalidate>
+      <h3 class="post-cta-title" id="post-cta-title">Enjoyed this? Get the next {{ desk_label }} deep dive.</h3>
+      <p class="post-cta-sub">{{ desk_pitch }} No content mill, no spam.</p>
+      <form class="newsletter-form" method="POST" target="nl-sink" data-nl-location="article_bottom" novalidate>
         <label class="sr-only" for="nl-email-cta">Email address</label>
         <input id="nl-email-cta" type="email" required placeholder="you@example.com" autocomplete="email" inputmode="email">
         <button type="submit" class="newsletter-btn">Subscribe</button>
       </form>
       <p class="newsletter-status" role="status" aria-live="polite"></p>
     </aside>
+    {% endunless %}
+    {% include article-related.html desk_label=desk_label limit=3 %}
+    {% if show_article_prompts %}
+      {% include donation-nudge.html placement="article" %}
     {% endif %}
-    <div class="article-nav">
+    <div class="article-nav article-nav--secondary">
       {% if page.previous %}
       <a href="{{ page.previous.url | relative_url }}" class="article-nav-link prev">
         <span class="nav-label">← Previous</span>

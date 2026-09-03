@@ -80,11 +80,12 @@ layout: default
         <span class="longform-newsletter-kicker">{{ page.newsletter_kicker | default: "Follow the argument" }}</span>
         <h2>{{ page.newsletter_heading | default: "Stay with the project." }}</h2>
         <p>{{ page.newsletter_text | default: "Subscribe for future longform essays and the rest of our coverage." }}</p>
-        <form class="newsletter-form" action="https://formspree.io/f/xnnvlzve" method="POST">
+        <form class="newsletter-form" action="https://formspree.io/f/xnnvlzve" method="POST" target="nl-sink" data-nl-location="longform">
           <input type="email" name="email" placeholder="Your email address" required aria-label="Email address">
           <input type="hidden" name="source" value="{{ page.newsletter_source | default: page.title }}">
           <button type="submit">{{ page.newsletter_button | default: "Subscribe" }}</button>
         </form>
+        <p class="newsletter-status" role="status" aria-live="polite"></p>
       </aside>
       {% endif %}
     </div>
