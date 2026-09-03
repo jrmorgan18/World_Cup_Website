@@ -26,6 +26,7 @@ REQUIRED_ROUTES = (
     "/orioles/",
     "/orioles/brandon-young-breakout/",
     "/ravens/",
+    "/ravens/dashboard/",
     "/usmnt/why-the-usmnt-will-never-be-argentina/",
     "/usmnt/why-the-usmnt-will-never-be-argentina-part-2/",
     "/usmnt/20-prospects-who-could-break-through-by-2030/",

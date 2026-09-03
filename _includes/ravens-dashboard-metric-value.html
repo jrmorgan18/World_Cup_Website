@@ -1,0 +1,12 @@
+{%- assign metric_value = include.metric.value -%}
+{%- if metric_value == nil -%}
+N/A
+{%- elsif include.definition.format == "percentage_1" -%}
+{{ metric_value | round: 1 }}%
+{%- elsif include.definition.format == "decimal_2" -%}
+{{ metric_value | round: 2 }}
+{%- elsif include.definition.format == "signed_integer" -%}
+{%- if metric_value > 0 -%}+{%- endif -%}{{ metric_value }}
+{%- else -%}
+{{ metric_value }}
+{%- endif -%}

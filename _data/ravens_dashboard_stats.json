@@ -1,0 +1,166 @@
+{
+  "generated_at": "2026-09-03T22:29:22Z",
+  "as_of": "2026-09-03",
+  "season": 2026,
+  "benchmark_season": 2025,
+  "current_snapshot": "2026-preseason",
+  "snapshots": [
+    {
+      "id": "2026-preseason",
+      "week": 0,
+      "label": "2026 preseason",
+      "previous_snapshot": null,
+      "sample_note": "No 2026 regular-season games yet",
+      "record": "0-0",
+      "metrics": {
+        "point_differential": {
+          "value": null,
+          "rank": null,
+          "source": "nflverse schedules"
+        },
+        "turnover_differential": {
+          "value": null,
+          "rank": null,
+          "source": "nflverse play-by-play"
+        },
+        "offensive_epa_per_play": {
+          "value": null,
+          "rank": null,
+          "source": "nflverse play-by-play"
+        },
+        "offensive_success_rate": {
+          "value": null,
+          "rank": null,
+          "source": "nflverse play-by-play"
+        },
+        "explosive_play_rate": {
+          "value": null,
+          "rank": null,
+          "source": "nflverse play-by-play"
+        },
+        "red_zone_td_rate": {
+          "value": null,
+          "rank": null,
+          "source": "nflverse play-by-play"
+        },
+        "defensive_epa_per_play": {
+          "value": null,
+          "rank": null,
+          "source": "nflverse play-by-play"
+        },
+        "defensive_success_rate": {
+          "value": null,
+          "rank": null,
+          "source": "nflverse play-by-play"
+        },
+        "explosive_play_rate_allowed": {
+          "value": null,
+          "rank": null,
+          "source": "nflverse play-by-play"
+        },
+        "opponent_red_zone_td_rate": {
+          "value": null,
+          "rank": null,
+          "source": "nflverse play-by-play"
+        }
+      }
+    }
+  ],
+  "benchmark_snapshot": {
+    "id": "2025-final",
+    "week": 18,
+    "label": "2025 final benchmark",
+    "previous_snapshot": null,
+    "sample_note": "17 regular-season games",
+    "record": "8-9",
+    "metrics": {
+      "point_differential": {
+        "value": 26,
+        "rank": 15,
+        "source": "nflverse schedules"
+      },
+      "turnover_differential": {
+        "value": -1,
+        "rank": 16,
+        "source": "nflverse play-by-play"
+      },
+      "offensive_epa_per_play": {
+        "value": 0.04,
+        "rank": 12,
+        "source": "nflverse play-by-play"
+      },
+      "offensive_success_rate": {
+        "value": 44.6,
+        "rank": 13,
+        "source": "nflverse play-by-play"
+      },
+      "explosive_play_rate": {
+        "value": 12.0,
+        "rank": 3,
+        "source": "nflverse play-by-play"
+      },
+      "red_zone_td_rate": {
+        "value": 49.2,
+        "rank": 26,
+        "source": "nflverse play-by-play"
+      },
+      "defensive_epa_per_play": {
+        "value": 0.04,
+        "rank": 20,
+        "source": "nflverse play-by-play"
+      },
+      "defensive_success_rate": {
+        "value": 44.5,
+        "rank": 16,
+        "source": "nflverse play-by-play"
+      },
+      "explosive_play_rate_allowed": {
+        "value": 10.4,
+        "rank": 21,
+        "source": "nflverse play-by-play"
+      },
+      "opponent_red_zone_td_rate": {
+        "value": 51.6,
+        "rank": 6,
+        "source": "nflverse play-by-play"
+      }
+    }
+  },
+  "header": {
+    "record": "0-0",
+    "division_standing": "Standings begin after Week 1",
+    "streak": "—",
+    "next_game": {
+      "week": 1,
+      "opponent": "Indianapolis Colts",
+      "opponent_abbr": "IND",
+      "location": "away",
+      "date": "2026-09-13",
+      "display": "at Indianapolis Colts · Sep 13 · 1:00 PM ET",
+      "venue": "Lucas Oil Stadium",
+      "source": "nflverse schedules"
+    }
+  },
+  "recent_form": {
+    "sequence": [],
+    "record": null,
+    "point_differential": null
+  },
+  "recent_games": [],
+  "sources": {
+    "schedule": {
+      "label": "nflverse schedules",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv"
+    },
+    "play_by_play": {
+      "label": "nflverse play-by-play",
+      "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2026.parquet"
+    },
+    "methodology": {
+      "label": "nflverse data update schedule",
+      "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
+    },
+    "license": "CC BY 4.0",
+    "retrieved_at": "2026-09-03T22:29:22Z"
+  }
+}

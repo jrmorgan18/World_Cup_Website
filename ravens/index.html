@@ -8,6 +8,30 @@ section_theme: ravens
   <div class="club-hero-ghost" aria-hidden="true">F</div>
   <div class="club-hero-copy"><p class="de-eyebrow"><span></span> The Ravens desk</p><h1>Football,<br><em>between the numbers.</em></h1><p>A Ravens fan&rsquo;s perspective on the numbers, roster decisions and questions shaping Baltimore football.</p></div>
 </section>
+
+{% assign ravens_stats = site.data.ravens_dashboard_stats %}
+{% assign ravens_editorial = site.data.ravens_dashboard %}
+<section class="ravens-hub-tools" aria-labelledby="ravens-tools-heading">
+  <div class="ravens-hub-tools-heading">
+    <div><p class="de-kicker">The living model</p><h2 id="ravens-tools-heading">Follow the season</h2></div>
+    <p>One permanent home for the numbers, health and weekly judgments shaping Baltimore&rsquo;s championship case.</p>
+  </div>
+  <a class="ravens-dashboard-module" href="{{ '/ravens/dashboard/' | relative_url }}">
+    <span class="ravens-dashboard-module-no" aria-hidden="true">01</span>
+    <div class="ravens-dashboard-module-copy">
+      <p class="de-kicker">Updated {{ ravens_editorial.meta.last_updated | date: "%B %-d" }}</p>
+      <h2>Season Dashboard</h2>
+      <p>Track EPA, success rate, explosive plays, red-zone performance, injuries and the week-to-week changes that matter.</p>
+      <strong>Open the dashboard <span aria-hidden="true">&rarr;</span></strong>
+    </div>
+    <dl class="ravens-dashboard-module-status">
+      <div><dt>Regular season</dt><dd>{{ ravens_stats.header.record }}</dd></div>
+      <div><dt>Preseason</dt><dd>{{ ravens_editorial.preseason_form.record }} <small>+{{ ravens_editorial.preseason_form.point_differential }}</small></dd></div>
+      {% if ravens_stats.header.next_game %}<div><dt>Next</dt><dd>{{ ravens_stats.header.next_game.display }}</dd></div>{% endif %}
+    </dl>
+  </a>
+</section>
+
 <section class="club-section club-section--ravens-feature">
   {% assign ravens_feature = site.posts | where: "ravens_feature", true | sort: "date" | reverse | first %}
   <div class="ravens-feature-layout">

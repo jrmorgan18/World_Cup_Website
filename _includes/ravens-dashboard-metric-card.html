@@ -1,0 +1,65 @@
+{% assign metric_id = include.metric_id %}
+{% assign definition = site.data.ravens_dashboard.metric_definitions | where: "id", metric_id | first %}
+{% assign current_metric = include.current.metrics[metric_id] %}
+{% assign benchmark_metric = include.benchmark.metrics[metric_id] %}
+{% assign editorial_metric = site.data.ravens_dashboard.editorial.metric_assessments[metric_id] %}
+{% assign trend_available = false %}
+{% assign trend_direction = "stable" %}
+{% assign trend_quality = "stable" %}
+{% if include.previous and current_metric.value != nil %}
+  {% assign previous_metric = include.previous.metrics[metric_id] %}
+  {% if previous_metric.value != nil %}
+    {% assign trend_available = true %}
+    {% assign metric_delta = current_metric.value | minus: previous_metric.value %}
+    {% assign absolute_delta = metric_delta | abs %}
+    {% if absolute_delta <= definition.stable_delta %}
+      {% assign trend_direction = "stable" %}
+      {% assign trend_quality = "stable" %}
+    {% elsif metric_delta > 0 %}
+      {% assign trend_direction = "up" %}
+      {% if definition.direction == "higher" %}{% assign trend_quality = "improved" %}{% else %}{% assign trend_quality = "declined" %}{% endif %}
+    {% else %}
+      {% assign trend_direction = "down" %}
+      {% if definition.direction == "lower" %}{% assign trend_quality = "improved" %}{% else %}{% assign trend_quality = "declined" %}{% endif %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
+<article class="ravens-metric-card" id="metric-{{ metric_id }}">
+  <header>
+    <p>{{ definition.group }}</p>
+    {% if editorial_metric.status %}<span class="ravens-status ravens-status--{{ editorial_metric.status | slugify }}">{{ editorial_metric.status }}</span>{% endif %}
+  </header>
+  <h3>{{ definition.display_name }}</h3>
+  <div class="ravens-metric-reading">
+    <strong>{% include ravens-dashboard-metric-value.html metric=current_metric definition=definition %}</strong>
+    {% if current_metric.rank %}<span>NFL rank {{ current_metric.rank }}</span>{% endif %}
+  </div>
+  {% if trend_available %}
+  <p class="ravens-trend ravens-trend--{{ trend_quality }}">
+    <span aria-hidden="true">{% if trend_direction == "up" %}↑{% elsif trend_direction == "down" %}↓{% else %}→{% endif %}</span>
+    {{ trend_quality | capitalize }} from {{ include.previous.label }}
+  </p>
+  {% elsif current_metric.value != nil %}
+  <p class="ravens-trend ravens-trend--new">No previous snapshot</p>
+  {% else %}
+  <p class="ravens-trend ravens-trend--new">Awaiting regular-season data</p>
+  {% endif %}
+  {% if current_metric.value == nil and benchmark_metric.value != nil %}
+  <p class="ravens-metric-benchmark">
+    <span>{{ include.benchmark.label }}</span>
+    <strong>{% include ravens-dashboard-metric-value.html metric=benchmark_metric definition=definition %}</strong>
+    {% if benchmark_metric.rank %}<small>NFL rank {{ benchmark_metric.rank }}</small>{% endif %}
+  </p>
+  {% endif %}
+  <p class="ravens-metric-interpretation">{{ editorial_metric.interpretation }}</p>
+  <details class="ravens-metric-definition">
+    <summary>What this measures</summary>
+    <p>{{ definition.description }} {% if definition.direction == "higher" %}Higher is better.{% else %}Lower is better.{% endif %}</p>
+  </details>
+  <p class="ravens-metric-source">Source: {{ current_metric.source | default: definition.default_source }}</p>
+  <span class="sr-only">
+    {{ definition.display_name }}:
+    {% include ravens-dashboard-metric-value.html metric=current_metric definition=definition %}{% if current_metric.rank %}, ranked {{ current_metric.rank }} in the NFL{% endif %}{% if trend_available %}, {{ trend_quality }} from {{ include.previous.label }}{% endif %}.
+  </span>
+</article>

@@ -1,0 +1,256 @@
+---
+layout: default
+title: "Baltimore Ravens Season Dashboard"
+description: "Track the Baltimore Ravens' record, performance trends, advanced metrics, injuries, unit evaluations and season outlook throughout the NFL season."
+permalink: /ravens/dashboard/
+section_theme: ravens
+---
+{% assign dashboard = site.data.ravens_dashboard %}
+{% assign stats = site.data.ravens_dashboard_stats %}
+{% assign current_snapshot = stats.snapshots | where: "id", stats.current_snapshot | first %}
+{% assign previous_snapshot = nil %}
+{% if current_snapshot.previous_snapshot %}
+  {% assign previous_snapshot = stats.snapshots | where: "id", current_snapshot.previous_snapshot | first %}
+{% endif %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Baltimore Ravens Season Dashboard",
+  "description": {{ page.description | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "dateModified": {{ dashboard.meta.last_updated | jsonify }},
+  "isPartOf": {"@type": "WebSite", "name": "Dual Eights", "url": {{ site.url | jsonify }}}
+}
+</script>
+
+<article class="ravens-dashboard">
+  <header class="ravens-dashboard-hero">
+    <div class="ravens-dashboard-hero-inner">
+      <nav class="ravens-dashboard-breadcrumb" aria-label="Breadcrumb">
+        <a href="{{ '/ravens/' | relative_url }}">Ravens</a><span aria-hidden="true">/</span><span>Season Dashboard</span>
+      </nav>
+      <div class="ravens-dashboard-title-row">
+        <div>
+          <p class="de-eyebrow"><span></span> Living season tracker</p>
+          <h1>Baltimore Ravens<br><em>Season Dashboard</em></h1>
+          <p class="ravens-dashboard-update">{{ dashboard.meta.season_label }} · Updated {{ dashboard.meta.last_updated | date: "%B %-d, %Y" }} · {{ dashboard.meta.update_context }}</p>
+        </div>
+        <div class="ravens-dashboard-record" aria-label="Current Ravens status">
+          <strong>{{ stats.header.record }}</strong>
+          <p>{{ stats.header.division_standing }}</p>
+          <span>Current streak: {{ stats.header.streak }}</span>
+          {% if stats.header.next_game %}<span class="ravens-next-game"><b>Next:</b> {{ stats.header.next_game.display }}</span>{% endif %}
+        </div>
+      </div>
+      <p class="ravens-dashboard-notice"><strong>Data status:</strong> {{ dashboard.meta.data_notice }}</p>
+    </div>
+  </header>
+
+  <nav class="ravens-dashboard-jump" aria-label="Dashboard sections">
+    <a href="#scorecard">Scorecard</a>
+    <a href="#units">Units</a>
+    <a href="#results">Results</a>
+    <a href="#injuries">Injuries</a>
+    <a href="#changes">What changed</a>
+  </nav>
+
+  <section class="ravens-dashboard-section ravens-state" aria-labelledby="state-title">
+    <div class="ravens-section-heading">
+      <p class="de-kicker">The current read</p>
+      <h2 id="state-title">State of the Ravens</h2>
+    </div>
+    <div class="ravens-state-layout">
+      <p class="ravens-state-summary">{{ dashboard.editorial.state.summary }}</p>
+      <dl class="ravens-state-callouts">
+        <div><dt>Biggest strength</dt><dd>{{ dashboard.editorial.state.biggest_strength }}</dd></div>
+        <div><dt>Biggest concern</dt><dd>{{ dashboard.editorial.state.biggest_concern }}</dd></div>
+        <div><dt>What changed this week</dt><dd>{{ dashboard.editorial.state.changed_this_week }}</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="ravens-dashboard-section ravens-scorecard" id="scorecard" aria-labelledby="scorecard-title">
+    <div class="ravens-section-heading ravens-section-heading--split">
+      <div><p class="de-kicker">Numbers with context</p><h2 id="scorecard-title">Core Scorecard</h2></div>
+      <p>{{ current_snapshot.sample_note }}. Statuses are editorial judgments and can override the statistical rank.</p>
+    </div>
+    {% for group in dashboard.scorecard_groups %}
+    <div class="ravens-scorecard-group">
+      <h3>{{ group.name }}</h3>
+      <div class="ravens-metric-grid">
+        {% for metric_id in group.metric_ids %}
+          {% include ravens-dashboard-metric-card.html metric_id=metric_id current=current_snapshot previous=previous_snapshot benchmark=stats.benchmark_snapshot %}
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </section>
+
+  <section class="ravens-dashboard-section" aria-labelledby="phase-title">
+    <div class="ravens-section-heading"><p class="de-kicker">How the team is winning</p><h2 id="phase-title">Offense &amp; Defense</h2></div>
+    <div class="ravens-phase-grid">
+      {% assign phases = "offense,defense" | split: "," %}
+      {% for phase_name in phases %}
+        {% assign phase = dashboard.editorial.overviews[phase_name] %}
+        <article class="ravens-phase-card">
+          <header><h3>{{ phase_name | capitalize }}</h3><span class="ravens-status">{{ phase.status }}</span></header>
+          <p>{{ phase.assessment }}</p>
+          <p class="ravens-phase-trend"><strong>Trend:</strong> {{ phase.trend_summary }}</p>
+          <dl class="ravens-overview-metrics">
+            {% for metric_id in phase.metric_ids %}
+              {% assign definition = dashboard.metric_definitions | where: "id", metric_id | first %}
+              {% assign metric = current_snapshot.metrics[metric_id] %}
+              <div><dt><a href="#metric-{{ metric_id }}">{{ definition.short_label }}</a></dt><dd>{% include ravens-dashboard-metric-value.html metric=metric definition=definition %}</dd></div>
+            {% endfor %}
+          </dl>
+          {% for link in phase.links %}<a class="ravens-analysis-link" href="{{ link.url | relative_url }}">{{ link.label }} →</a>{% endfor %}
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="ravens-dashboard-section" id="units" aria-labelledby="units-title">
+    <div class="ravens-section-heading ravens-section-heading--split">
+      <div><p class="de-kicker">Film and role evaluation</p><h2 id="units-title">Unit Report Card</h2></div>
+      <p>Assessments are manually edited. They are not automatic conversions of rankings.</p>
+    </div>
+    <div class="ravens-unit-grid">
+      {% for unit in dashboard.editorial.units %}
+      <article class="ravens-unit-card">
+        <header>
+          <h3>{{ unit.name }}</h3>
+          <p><span class="ravens-status">{{ unit.assessment }}</span> <span class="ravens-unit-trend" aria-label="Trend: {{ unit.trend }}">{% if unit.trend == "up" %}↑{% elsif unit.trend == "down" %}↓{% else %}→{% endif %}</span></p>
+        </header>
+        <p>{{ unit.explanation }}</p>
+        {% if unit.link %}<a href="{{ unit.link | relative_url }}">Read related analysis →</a>{% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <div class="ravens-dashboard-paired">
+    <section class="ravens-dashboard-section" id="results" aria-labelledby="results-title">
+      <div class="ravens-section-heading"><p class="de-kicker">Recent form</p><h2 id="results-title">Recent Results</h2></div>
+      {% if stats.recent_games.size > 0 %}
+        <div class="ravens-form-strip" aria-label="Last five results">
+          {% for result in stats.recent_form.sequence %}<span class="ravens-result ravens-result--{{ result | downcase }}">{{ result }}</span>{% endfor %}
+          <p>Last five: {{ stats.recent_form.record }}{% if stats.recent_form.point_differential != nil %} · Point differential: {% if stats.recent_form.point_differential > 0 %}+{% endif %}{{ stats.recent_form.point_differential }}{% endif %}</p>
+        </div>
+        <ol class="ravens-games-list">
+          {% for game in stats.recent_games limit:5 %}
+          <li>
+            <p>{{ game.week }} · {% if game.location == "away" %}at{% else %}vs.{% endif %} {{ game.opponent }}</p>
+            <strong>{{ game.result }} {{ game.ravens_score }}–{{ game.opponent_score }}</strong>
+            <span>{{ game.takeaway }}</span>
+            {% if game.recap_url %}<a href="{{ game.recap_url | relative_url }}">Read the recap →</a>{% endif %}
+          </li>
+          {% endfor %}
+        </ol>
+      {% else %}
+        <div class="ravens-form-strip" aria-label="2026 preseason results">
+          {% for result in dashboard.preseason_form.sequence %}<span class="ravens-result ravens-result--{{ result | downcase }}">{{ result }}</span>{% endfor %}
+          <p><strong>2026 preseason:</strong> {{ dashboard.preseason_form.record }} · {{ dashboard.preseason_form.points_for }}–{{ dashboard.preseason_form.points_against }} · Point differential: +{{ dashboard.preseason_form.point_differential }}</p>
+        </div>
+        <p class="ravens-preseason-caveat">Preseason results are presented separately and do not count toward the regular-season scorecard or NFL ranks.</p>
+        <ol class="ravens-games-list">
+          {% for game in dashboard.preseason_games %}
+          <li>
+            <p>{{ game.week }} · {% if game.location == "away" %}at{% else %}vs.{% endif %} {{ game.opponent }}</p>
+            <strong>{{ game.result }} {{ game.ravens_score }}–{{ game.opponent_score }}</strong>
+            <span>{{ game.takeaway }}</span>
+            <a href="{{ game.recap_url }}">Official recap →</a>
+          </li>
+          {% endfor %}
+        </ol>
+      {% endif %}
+    </section>
+
+    <section class="ravens-dashboard-section" id="injuries" aria-labelledby="injuries-title">
+      <div class="ravens-section-heading"><p class="de-kicker">Material absences only</p><h2 id="injuries-title">Injuries &amp; Availability</h2></div>
+      {% if dashboard.injuries.size > 0 %}
+      <div class="ravens-injury-list">
+        {% for injury in dashboard.injuries %}
+        <article>
+          <header><h3>{{ injury.player }} <span>{{ injury.position }}</span></h3><span class="ravens-status">{{ injury.status }}</span></header>
+          <p class="ravens-injury-meta">{{ injury.injury }} · {{ injury.importance }}{% if injury.games_missed != nil %} · {{ injury.games_missed }} games missed{% endif %}</p>
+          <p>{{ injury.impact }}</p>
+          <p class="ravens-availability"><strong>Availability:</strong> {{ injury.expected_availability }}</p>
+          <small>Source: <a href="{{ injury.source_url }}">{{ injury.source_label }}</a></small>
+        </article>
+        {% endfor %}
+      </div>
+      {% else %}
+      <div class="ravens-empty-state"><strong>No material injuries listed</strong><p>Unknown availability is not treated as healthy.</p></div>
+      {% endif %}
+    </section>
+  </div>
+
+  <section class="ravens-dashboard-section" id="changes" aria-labelledby="changes-title">
+    <div class="ravens-section-heading ravens-section-heading--split">
+      <div><p class="de-kicker">Signal, not noise</p><h2 id="changes-title">What Changed This Week?</h2></div>
+      <p>Manually selected movements in how the Ravens should be understood.</p>
+    </div>
+    <div class="ravens-change-grid">
+      {% for change in dashboard.editorial.weekly_changes %}
+      <article>
+        <span aria-label="{{ change.direction }} trend">{% if change.direction == "up" %}↑{% elsif change.direction == "down" %}↓{% else %}→{% endif %}</span>
+        <div><h3>{{ change.title }}</h3><p>{{ change.text }}</p></div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="ravens-dashboard-section ravens-championship" aria-labelledby="championship-title">
+    <div class="ravens-section-heading ravens-section-heading--split">
+      <div><p class="de-kicker">The standard in Baltimore</p><h2 id="championship-title">Championship Check</h2></div>
+      <p>Five traits that shape whether this profile can hold up against the best teams in January.</p>
+    </div>
+    <ol>
+      {% for item in dashboard.editorial.championship_check %}
+      <li><div><h3>{{ item.category }}</h3><span class="ravens-status">{{ item.status }}</span></div><p>{{ item.explanation }}</p></li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section class="ravens-dashboard-section ravens-latest" aria-labelledby="latest-title">
+    <div class="ravens-section-heading ravens-section-heading--split">
+      <div><p class="de-kicker">Go deeper</p><h2 id="latest-title">Latest Ravens Analysis</h2></div>
+      <a href="{{ '/ravens/' | relative_url }}">Visit the Ravens desk →</a>
+    </div>
+    <div class="de-story-grid">
+      {% for article_url in dashboard.related_articles %}
+        {% assign post = site.posts | where: "url", article_url | first %}
+        {% if post %}
+        <a class="de-story-card" href="{{ post.url | relative_url }}">
+          <div class="de-story-image{% unless post.thumbnail or post.hero_image %} de-story-image--empty{% endunless %}">{% if post.thumbnail %}<img src="{{ post.thumbnail | relative_url }}" alt="" loading="lazy">{% elsif post.hero_image %}<img src="{{ post.hero_image | relative_url }}" alt="" loading="lazy">{% else %}<span>DE</span>{% endif %}</div>
+          <div class="de-story-copy"><p><span>{{ post.series | default: "Ravens analysis" }}</span><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time></p><h3>{{ post.title }}</h3><small>{{ post.excerpt | strip_html | truncatewords: 20 }}</small></div>
+        </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="ravens-dashboard-section ravens-glossary" aria-labelledby="glossary-title">
+    <div class="ravens-section-heading"><p class="de-kicker">Plain-language reference</p><h2 id="glossary-title">Metric Glossary &amp; Sources</h2></div>
+    <div class="ravens-glossary-grid">
+      {% for definition in dashboard.metric_definitions %}
+      <details><summary>{{ definition.short_label }}</summary><p>{{ definition.description }} {% if definition.direction == "higher" %}Higher is better.{% else %}Lower is better.{% endif %}</p></details>
+      {% endfor %}
+    </div>
+    <div class="ravens-source-list">
+      {% for source in dashboard.sources %}
+      <article>
+        <h3><a href="{{ source.url }}">{{ source.name }}</a></h3>
+        <p>{{ source.role }}</p>
+        <small>{{ source.cadence }}{% if source.license %} · {{ source.license }}{% endif %}</small>
+      </article>
+      {% endfor %}
+    </div>
+    <ul class="ravens-methodology-list">
+      {% for note in dashboard.methodology_notes %}<li>{{ note }}</li>{% endfor %}
+    </ul>
+    <p class="ravens-source-note">The updater stores compact weekly snapshots in the repository; browsers never download the source Parquet files. Availability and editorial judgments remain separate from calculated metrics.</p>
+  </section>
+</article>

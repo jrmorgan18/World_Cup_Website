@@ -25,6 +25,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Validate Ravens dashboard data
+        run: ruby scripts/check_ravens_dashboard.rb
       - name: Build launch version
         run: >-
           bundle exec jekyll build --trace
