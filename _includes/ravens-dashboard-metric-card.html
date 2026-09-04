@@ -3,6 +3,16 @@
 {% assign current_metric = include.current.metrics[metric_id] %}
 {% assign benchmark_metric = include.benchmark.metrics[metric_id] %}
 {% assign editorial_metric = site.data.ravens_dashboard.editorial.metric_assessments[metric_id] %}
+{% assign rank_metric = current_metric %}
+{% assign rank_context = "Current NFL position" %}
+{% if current_metric.value == nil %}
+  {% assign rank_metric = benchmark_metric %}
+  {% assign rank_context = include.benchmark.label %}
+{% endif %}
+{% if rank_metric.rank %}
+  {% assign rank_inverse = 32 | minus: rank_metric.rank %}
+  {% assign rank_percent = rank_inverse | times: 100 | divided_by: 31 %}
+{% endif %}
 {% assign trend_available = false %}
 {% assign trend_direction = "stable" %}
 {% assign trend_quality = "stable" %}
@@ -51,6 +61,12 @@
     <strong>{% include ravens-dashboard-metric-value.html metric=benchmark_metric definition=definition %}</strong>
     {% if benchmark_metric.rank %}<small>NFL rank {{ benchmark_metric.rank }}</small>{% endif %}
   </p>
+  {% endif %}
+  {% if rank_metric.rank %}
+  <div class="ravens-rank-visual" aria-label="{{ rank_context }}: number {{ rank_metric.rank }} of 32 NFL teams">
+    <div class="ravens-rank-track" aria-hidden="true"><span>32</span><i style="--rank-percent:{{ rank_percent }}%"></i><span>1</span></div>
+    <p><span>{{ rank_context }}</span><strong>No. {{ rank_metric.rank }}</strong></p>
+  </div>
   {% endif %}
   <p class="ravens-metric-interpretation">{{ editorial_metric.interpretation }}</p>
   <details class="ravens-metric-definition">

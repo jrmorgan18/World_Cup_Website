@@ -16,6 +16,16 @@ meta:
     includes 2025 final values only as a labeled comparison baseline.
 
 metric_definitions:
+  - id: "overall_efficiency"
+    group: "Team"
+    display_name: "Dual Eights efficiency index"
+    short_label: "Efficiency index"
+    unit: "index"
+    description: "A 0–100 league-percentile composite weighting offensive EPA/play, offensive success rate, defensive EPA allowed/play and opponent success rate equally. It is not DVOA and is not opponent-adjusted."
+    direction: "higher"
+    format: "decimal_1"
+    stable_delta: 1.0
+    default_source: "Dual Eights index from nflverse play-by-play"
   - id: "point_differential"
     group: "Team"
     display_name: "Point differential"
@@ -119,7 +129,7 @@ metric_definitions:
 
 scorecard_groups:
   - name: "Team"
-    metric_ids: ["point_differential", "turnover_differential"]
+    metric_ids: ["overall_efficiency", "point_differential", "turnover_differential"]
   - name: "Offense"
     metric_ids: ["offensive_epa_per_play", "offensive_success_rate", "explosive_play_rate", "red_zone_td_rate"]
   - name: "Defense"
@@ -140,6 +150,7 @@ editorial:
     changed_this_week: "Madubuike and Flowers returned to team work, while the initial 53-man roster clarified the Week 1 depth chart."
 
   metric_assessments:
+    overall_efficiency: { status: null, interpretation: "The 2026 index begins after Week 1. The 2025 baseline combines four transparent, equally weighted efficiency percentiles." }
     point_differential: { status: null, interpretation: "Regular-season scoring margin begins after Week 1; the preseason +65 is displayed separately." }
     turnover_differential: { status: null, interpretation: "Regular-season takeaway and giveaway context begins after Week 1." }
     offensive_epa_per_play: { status: null, interpretation: "No 2026 regular-season offensive plays yet; the labeled 2025 value provides scale only." }
@@ -176,16 +187,16 @@ editorial:
         - { label: "Five questions defining the Ravens' season", url: "/ravens/five-questions-that-will-define-the-season/" }
 
   units:
-    - { name: "Quarterback", assessment: "Elite", trend: "stable", explanation: "Jackson remains the central championship advantage and the offense's answer when structure breaks." }
-    - { name: "Running backs", assessment: "Strength", trend: "stable", explanation: "Henry gives Baltimore a physical baseline that magnifies every hesitation created by Jackson and motion." }
-    - { name: "Wide receivers", assessment: "Solid", trend: "up", explanation: "Flowers returned September 3 after a minor issue, restoring the room's proven stress point." }
-    - { name: "Tight ends", assessment: "Solid", trend: "stable", explanation: "The group remains essential to hiding run and pass intentions from heavier personnel." }
-    - { name: "Offensive line", assessment: "Concern", trend: "down", explanation: "Pinter's likely season-ending knee injury leaves center continuity as the clearest structural risk." }
-    - { name: "Defensive line", assessment: "Solid", trend: "up", explanation: "Madubuike joined team drills September 3, a meaningful step even with Week 1 still day-to-day." }
-    - { name: "Edge rushers", assessment: "Solid", trend: "stable", explanation: "Trey Hendrickson raises the proven ceiling; regular-season four-man wins will be the real test." }
-    - { name: "Linebackers", assessment: "Solid", trend: "up", explanation: "Buchanan has returned to team work, though Week 1 versus Week 2 remains unsettled." }
-    - { name: "Secondary", assessment: "Strength", trend: "stable", explanation: "Depth and versatility give Jesse Minter options to change the coverage picture after the snap." }
-    - { name: "Specialists", assessment: "Mixed", trend: "down", explanation: "Tyler Loop went 5-for-8 in the preseason, and Jake Moody's practice-squad addition keeps the kicking evaluation open." }
+    - { name: "Quarterback", assessment: "Elite", trend: "stable", season_grade: "A", last_game_grade: "B+", explanation: "Jackson remains the central championship advantage and the offense's answer when structure breaks." }
+    - { name: "Running backs", assessment: "Strength", trend: "stable", season_grade: "A-", last_game_grade: "B+", explanation: "Henry gives Baltimore a physical baseline that magnifies every hesitation created by Jackson and motion." }
+    - { name: "Wide receivers", assessment: "Solid", trend: "up", season_grade: "B", last_game_grade: "A-", explanation: "Flowers returned September 3 after a minor issue, restoring the room's proven stress point." }
+    - { name: "Tight ends", assessment: "Solid", trend: "stable", season_grade: "B", last_game_grade: "B", explanation: "The group remains essential to hiding run and pass intentions from heavier personnel." }
+    - { name: "Offensive line", assessment: "Concern", trend: "down", season_grade: "C", last_game_grade: "A-", explanation: "Pinter's likely season-ending knee injury leaves center continuity as the clearest structural risk." }
+    - { name: "Defensive line", assessment: "Solid", trend: "up", season_grade: "B", last_game_grade: "A", explanation: "Madubuike joined team drills September 3, a meaningful step even with Week 1 still day-to-day." }
+    - { name: "Edge rushers", assessment: "Solid", trend: "stable", season_grade: "B", last_game_grade: "A", explanation: "Trey Hendrickson raises the proven ceiling; regular-season four-man wins will be the real test." }
+    - { name: "Linebackers", assessment: "Solid", trend: "up", season_grade: "B", last_game_grade: "A-", explanation: "Buchanan has returned to team work, though Week 1 versus Week 2 remains unsettled." }
+    - { name: "Secondary", assessment: "Strength", trend: "stable", season_grade: "A-", last_game_grade: "A", explanation: "Depth and versatility give Jesse Minter options to change the coverage picture after the snap." }
+    - { name: "Specialists", assessment: "Mixed", trend: "down", season_grade: "C+", last_game_grade: "B", explanation: "Tyler Loop went 5-for-8 in the preseason, and Jake Moody's practice-squad addition keeps the kicking evaluation open." }
 
   weekly_changes:
     - { direction: "up", title: "Interior defensive line", text: "Madubuike joined team drills September 3; Minter called his Week 1 status day-to-day." }
@@ -207,6 +218,40 @@ preseason_form:
   points_for: 78
   points_against: 13
 
+unit_grade_context:
+  season_label: "Preseason outlook"
+  last_game_label: "Preseason finale"
+  note: "Dual Eights editorial grades, informed by role, film and results. They are not PFF grades; regular-season rolling grades begin after Week 1."
+
+preseason_last_game:
+  type_label: "Preseason finale"
+  week: "Preseason 3"
+  date: "2026-08-28"
+  location: "home"
+  opponent: "Washington Commanders"
+  opponent_abbr: "WAS"
+  result: "W"
+  ravens_score: 41
+  opponent_score: 3
+  takeaway: "Baltimore controlled the game from start to finish and completed a 3-0 preseason."
+  key_stats:
+    - { label: "Total yards", value: "456–177", detail: "Baltimore–Washington" }
+    - { label: "First-half first downs", value: "17–1", detail: "Baltimore–Washington" }
+    - { label: "Sacks allowed", value: "0", detail: "Across three Ravens quarterbacks" }
+    - { label: "Washington third downs", value: "1-of-12", detail: "Six conversions allowed all preseason" }
+  source_label: "Official Ravens recap"
+  source_url: "https://www.baltimoreravens.com/news/ravens-dominate-commanders-2026-nfl-preseason-undefeated"
+
+opponent_availability:
+  team: "IND"
+  label: "Preliminary Colts availability watch"
+  note: "The official Week 1 injury report has not been filed. These are dated club-reported availability items, not game-status projections."
+  items:
+    - { player: "Cam Taylor-Britt", position: "CB", status: "Out", detail: "Serving a one-game NFL suspension and will miss the opener.", source_url: "https://www.colts.com/news/colts-cb-cam-taylor-britt-suspended-one-game-by-nfl" }
+    - { player: "Will Mallory", position: "TE", status: "IR", detail: "Placed on injured reserve with a return designation.", source_url: "https://www.colts.com/news/colts-make-roster-moves-to-form-initial-53-man-roster" }
+    - { player: "Tyler Warren", position: "TE", status: "Monitor", detail: "The Colts were managing a groin issue with Week 1 in mind.", source_url: "https://www.colts.com/news/colts-hopeful-alec-pierce-returns-to-practice-this-week-starters-minus-daniel-jones-jonathan-taylor-to-play-8-12-plays-in-preseason-finale-vs-detroit-lions" }
+    - { player: "Charvarius Ward Sr.", position: "CB", status: "Returning", detail: "Returned to practice after a back issue and said he expects to be ready.", source_url: "https://www.colts.com/news/colts-cb-charvarius-ward-sr-returns-practice-expects-ready-week-1-baltimore-ravens" }
+
 preseason_games:
   - { week: "Preseason 3", date: "2026-08-28", location: "home", opponent: "Washington Commanders", result: "W", ravens_score: 41, opponent_score: 3, takeaway: "Baltimore closed an unbeaten preseason with its largest margin, while the defense again kept the opponent out of the end zone.", recap_url: "https://www.baltimoreravens.com/news/ravens-dominate-commanders-2026-nfl-preseason-undefeated" }
   - { week: "Preseason 2", date: "2026-08-22", location: "away", opponent: "Minnesota Vikings", result: "W", ravens_score: 13, opponent_score: 3, takeaway: "A second straight single-digit defensive allowance reinforced the roster-depth signal.", recap_url: "https://www.baltimoreravens.com/news/ravens-defeat-vikings-defense-win-preseason-2026-sacks-interceptions" }
@@ -225,11 +270,13 @@ sources:
   - { name: "Baltimore Ravens official news and roster reports", role: "Availability, roster status and dated team context", url: "https://www.baltimoreravens.com/news/", cadence: "Reviewed for each dashboard update" }
 
 methodology_notes:
+  - "The Dual Eights efficiency index is the equal-weight average of four league percentiles: offensive EPA/play, offensive success rate, defensive EPA allowed/play and opponent success rate. It is not DVOA and is not opponent-adjusted."
   - "Only regular-season plays count toward the ranked scorecard. Kneels, spikes, two-point attempts, deleted plays and aborted plays are excluded."
   - "Explosive plays are runs of 10+ yards or passes of 20+ yards, divided by eligible run/pass plays."
   - "Red-zone rates are drive-level: a drive qualifies once it reaches the opponent 20-yard line."
   - "Pressure rate is omitted because the free sources reviewed do not expose a defensible complete pressure variable."
   - "Playoff probability is omitted until a transparent, repeatable model is added."
+  - "Unit letter grades are editorial. PFF grades are not reproduced because full team, position and weekly grades require a paid subscription."
 
 related_articles:
   - "/ravens/what-will-declan-doyle-change/"

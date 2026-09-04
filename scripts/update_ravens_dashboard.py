@@ -55,6 +55,7 @@ PBP_COLUMNS = [
     "two_point_attempt",
     "play_deleted",
     "aborted_play",
+    "sack",
 ]
 
 TEAM_NAMES = {
@@ -72,6 +73,7 @@ TEAM_NAMES = {
 }
 
 METRICS = {
+    "overall_efficiency": {"direction": "higher", "source": "Dual Eights index from nflverse play-by-play"},
     "point_differential": {"direction": "higher", "source": "nflverse schedules"},
     "turnover_differential": {"direction": "higher", "source": "nflverse play-by-play"},
     "offensive_epa_per_play": {"direction": "higher", "source": "nflverse play-by-play"},
@@ -206,6 +208,16 @@ def compute_league_metrics(schedule_games, pbp):
     table["red_zone_td_rate"] = red_zone_rates(plays, "posteam")
     table["opponent_red_zone_td_rate"] = red_zone_rates(plays, "defteam")
 
+    # A transparent, non-opponent-adjusted alternative to proprietary DVOA.
+    # Each component contributes equally after conversion to a league percentile.
+    components = pd.concat([
+        table["offensive_epa_per_play"].rank(method="average", pct=True, ascending=True) * 100,
+        table["offensive_success_rate"].rank(method="average", pct=True, ascending=True) * 100,
+        table["defensive_epa_per_play"].rank(method="average", pct=True, ascending=False) * 100,
+        table["defensive_success_rate"].rank(method="average", pct=True, ascending=False) * 100,
+    ], axis=1)
+    table["overall_efficiency"] = components.mean(axis=1)
+
     return records, table
 
 
@@ -219,7 +231,7 @@ def metric_payload(table, team):
             ascending = definition["direction"] == "lower"
             ranks = values.rank(method="min", ascending=ascending)
             rank = int(ranks.loc[team]) if team in ranks.index else None
-        digits = 2 if "epa_per_play" in metric_id else (1 if "rate" in metric_id else None)
+        digits = 2 if "epa_per_play" in metric_id else (1 if "rate" in metric_id or metric_id == "overall_efficiency" else None)
         payload[metric_id] = {
             "value": finite_number(value, digits),
             "rank": rank,
@@ -291,6 +303,67 @@ def recent_games_payload(schedule_games):
             "opponent_score": opp_score,
         })
     return payload
+
+
+def team_metric(table, team, metric_id):
+    if team not in table.index or metric_id not in table or pd.isna(table.at[team, metric_id]):
+        return {"value": None, "rank": None}
+    definition = METRICS[metric_id]
+    values = table[metric_id].dropna()
+    ranks = values.rank(method="min", ascending=definition["direction"] == "lower")
+    digits = 2 if "epa_per_play" in metric_id else 1
+    return {"value": finite_number(table.at[team, metric_id], digits), "rank": int(ranks.loc[team])}
+
+
+def matchup_payload(table, opponent, label):
+    pairs = [
+        ("When Baltimore has the ball", "EPA / play", "offensive_epa_per_play", "defensive_epa_per_play"),
+        ("Baltimore's big-play test", "Explosive rate", "explosive_play_rate", "explosive_play_rate_allowed"),
+        ("When the opponent has the ball", "EPA / play", "defensive_epa_per_play", "offensive_epa_per_play"),
+        ("The red-zone matchup", "TD rate", "opponent_red_zone_td_rate", "red_zone_td_rate"),
+    ]
+    return {
+        "label": label,
+        "items": [
+            {
+                "title": title,
+                "stat": stat,
+                "ravens": team_metric(table, TEAM, ravens_metric),
+                "opponent": team_metric(table, opponent, opponent_metric),
+            }
+            for title, stat, ravens_metric, opponent_metric in pairs
+        ],
+    }
+
+
+def last_game_payload(recent_games, pbp):
+    if not recent_games:
+        return None
+    game = dict(recent_games[0])
+    game_rows = pbp[pbp["game_id"] == game["game_id"]]
+    plays = eligible_scrimmage_plays(game_rows, {game["game_id"]})
+    opponent = game_rows.loc[game_rows["posteam"].notna() & (game_rows["posteam"] != TEAM), "posteam"]
+    opponent_abbr = opponent.mode().iloc[0] if not opponent.empty else None
+
+    def side_rows(team):
+        return plays[plays["posteam"] == team]
+
+    def turnovers(team):
+        rows = game_rows[(game_rows["posteam"] == team) & (game_rows["play_deleted"].fillna(0) != 1)]
+        return int((rows["interception"].fillna(0) + rows["fumble_lost"].fillna(0)).sum())
+
+    ravens_plays = side_rows(TEAM)
+    opponent_plays = side_rows(opponent_abbr)
+    game["type_label"] = "Regular season"
+    game["opponent_abbr"] = opponent_abbr
+    game["key_stats"] = [
+        {"label": "Scrimmage yards", "value": f"{int(ravens_plays['yards_gained'].sum())}–{int(opponent_plays['yards_gained'].sum())}", "detail": "Baltimore–opponent"},
+        {"label": "EPA / play", "value": f"{ravens_plays['epa'].mean():.2f} / {opponent_plays['epa'].mean():.2f}", "detail": "Baltimore / opponent"},
+        {"label": "Success rate", "value": f"{ravens_plays['success'].mean() * 100:.1f}% / {opponent_plays['success'].mean() * 100:.1f}%", "detail": "Baltimore / opponent"},
+        {"label": "Turnovers", "value": f"{turnovers(TEAM)}–{turnovers(opponent_abbr)}", "detail": "Baltimore–opponent"},
+    ]
+    game["source"] = "nflverse play-by-play"
+    return game
 
 
 def streak_text(recent_games):
@@ -371,6 +444,15 @@ def main():
         existing = read_existing(output)
         snapshots = merge_snapshots(existing, current)
         recent_games = recent_games_payload(current_games)
+        next_game = format_next_game(schedule, args.season, args.as_of)
+        if next_game:
+            if current["week"] > 0:
+                matchup_table = current_table
+                matchup_label = f"{args.season} through Week {current['week']}"
+            else:
+                matchup_table = benchmark_table
+                matchup_label = f"{benchmark_season} regular-season baseline"
+            next_game["matchup"] = matchup_payload(matchup_table, next_game["opponent_abbr"], matchup_label)
         sequence = [game["result"] for game in reversed(recent_games)]
         recent_margin = sum(game["ravens_score"] - game["opponent_score"] for game in recent_games)
         now = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
@@ -386,8 +468,9 @@ def main():
                 "record": current["record"],
                 "division_standing": "Standings begin after Week 1" if current["week"] == 0 else "AFC North",
                 "streak": streak_text(recent_games),
-                "next_game": format_next_game(schedule, args.season, args.as_of),
+                "next_game": next_game,
             },
+            "last_game": last_game_payload(recent_games, current_pbp),
             "recent_form": {
                 "sequence": sequence,
                 "record": None if not sequence else f"{sequence.count('W')}-{sequence.count('L')}",

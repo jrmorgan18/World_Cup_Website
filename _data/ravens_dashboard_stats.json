@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T22:29:22Z",
+  "generated_at": "2026-09-04T03:01:20Z",
   "as_of": "2026-09-03",
   "season": 2026,
   "benchmark_season": 2025,
@@ -13,6 +13,11 @@
       "sample_note": "No 2026 regular-season games yet",
       "record": "0-0",
       "metrics": {
+        "overall_efficiency": {
+          "value": null,
+          "rank": null,
+          "source": "Dual Eights index from nflverse play-by-play"
+        },
         "point_differential": {
           "value": null,
           "rank": null,
@@ -74,6 +79,11 @@
     "sample_note": "17 regular-season games",
     "record": "8-9",
     "metrics": {
+      "overall_efficiency": {
+        "value": 55.5,
+        "rank": 15,
+        "source": "Dual Eights index from nflverse play-by-play"
+      },
       "point_differential": {
         "value": 26,
         "rank": 15,
@@ -138,9 +148,63 @@
       "date": "2026-09-13",
       "display": "at Indianapolis Colts · Sep 13 · 1:00 PM ET",
       "venue": "Lucas Oil Stadium",
-      "source": "nflverse schedules"
+      "source": "nflverse schedules",
+      "matchup": {
+        "label": "2025 regular-season baseline",
+        "items": [
+          {
+            "title": "When Baltimore has the ball",
+            "stat": "EPA / play",
+            "ravens": {
+              "value": 0.04,
+              "rank": 12
+            },
+            "opponent": {
+              "value": 0.0,
+              "rank": 15
+            }
+          },
+          {
+            "title": "Baltimore's big-play test",
+            "stat": "Explosive rate",
+            "ravens": {
+              "value": 12.0,
+              "rank": 3
+            },
+            "opponent": {
+              "value": 9.1,
+              "rank": 14
+            }
+          },
+          {
+            "title": "When the opponent has the ball",
+            "stat": "EPA / play",
+            "ravens": {
+              "value": 0.04,
+              "rank": 20
+            },
+            "opponent": {
+              "value": 0.08,
+              "rank": 9
+            }
+          },
+          {
+            "title": "The red-zone matchup",
+            "stat": "TD rate",
+            "ravens": {
+              "value": 51.6,
+              "rank": 6
+            },
+            "opponent": {
+              "value": 68.2,
+              "rank": 3
+            }
+          }
+        ]
+      }
     }
   },
+  "last_game": null,
   "recent_form": {
     "sequence": [],
     "record": null,
@@ -161,6 +225,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-09-03T22:29:22Z"
+    "retrieved_at": "2026-09-04T03:01:20Z"
   }
 }

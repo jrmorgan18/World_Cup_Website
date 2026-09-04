@@ -12,6 +12,9 @@ section_theme: ravens
 {% if current_snapshot.previous_snapshot %}
   {% assign previous_snapshot = stats.snapshots | where: "id", current_snapshot.previous_snapshot | first %}
 {% endif %}
+{% assign last_game = stats.last_game %}
+{% unless last_game %}{% assign last_game = dashboard.preseason_last_game %}{% endunless %}
+{% assign next_game = stats.header.next_game %}
 
 <script type="application/ld+json">
 {
@@ -41,7 +44,6 @@ section_theme: ravens
           <strong>{{ stats.header.record }}</strong>
           <p>{{ stats.header.division_standing }}</p>
           <span>Current streak: {{ stats.header.streak }}</span>
-          {% if stats.header.next_game %}<span class="ravens-next-game"><b>Next:</b> {{ stats.header.next_game.display }}</span>{% endif %}
         </div>
       </div>
       <p class="ravens-dashboard-notice"><strong>Data status:</strong> {{ dashboard.meta.data_notice }}</p>
@@ -49,14 +51,18 @@ section_theme: ravens
   </header>
 
   <nav class="ravens-dashboard-jump" aria-label="Dashboard sections">
+    <a href="#state">State</a>
+    <a href="#games">Game center</a>
     <a href="#scorecard">Scorecard</a>
+    <a href="#performance">Performance</a>
     <a href="#units">Units</a>
     <a href="#results">Results</a>
     <a href="#injuries">Injuries</a>
     <a href="#changes">What changed</a>
+    <a href="#championship">Championship</a>
   </nav>
 
-  <section class="ravens-dashboard-section ravens-state" aria-labelledby="state-title">
+  <section class="ravens-dashboard-section ravens-state" id="state" aria-labelledby="state-title">
     <div class="ravens-section-heading">
       <p class="de-kicker">The current read</p>
       <h2 id="state-title">State of the Ravens</h2>
@@ -68,6 +74,57 @@ section_theme: ravens
         <div><dt>Biggest concern</dt><dd>{{ dashboard.editorial.state.biggest_concern }}</dd></div>
         <div><dt>What changed this week</dt><dd>{{ dashboard.editorial.state.changed_this_week }}</dd></div>
       </dl>
+    </div>
+  </section>
+
+  <section class="ravens-dashboard-section ravens-game-center" id="games" aria-labelledby="games-title">
+    <div class="ravens-section-heading ravens-section-heading--split">
+      <div><p class="de-kicker">The games that frame the week</p><h2 id="games-title">Game Center</h2></div>
+      <p>Last-game production alongside the next opponent's statistical profile and reported availability.</p>
+    </div>
+    <div class="ravens-game-grid">
+      <article class="ravens-game-card ravens-game-card--last">
+        <header>
+          <div><p class="ravens-game-label">{{ last_game.type_label | default: last_game.week }}</p><h3>Last Game</h3></div>
+          <strong class="ravens-game-score ravens-game-score--{{ last_game.result | downcase }}"><span>{{ last_game.result }}</span> {{ last_game.ravens_score }}–{{ last_game.opponent_score }}</strong>
+        </header>
+        <p class="ravens-game-opponent">{% if last_game.location == "away" %}at{% else %}vs.{% endif %} {{ last_game.opponent }} · {{ last_game.date | date: "%b %-d" }}</p>
+        <p class="ravens-game-takeaway">{{ last_game.takeaway }}</p>
+        <dl class="ravens-game-stats">
+          {% for item in last_game.key_stats %}
+          <div><dt>{{ item.label }}</dt><dd>{{ item.value }}</dd>{% if item.detail %}<small>{{ item.detail }}</small>{% endif %}</div>
+          {% endfor %}
+        </dl>
+        {% if last_game.source_url %}<a class="ravens-game-source" href="{{ last_game.source_url }}">{{ last_game.source_label | default: "Game source" }} →</a>{% else %}<small class="ravens-game-source">Source: {{ last_game.source }}</small>{% endif %}
+      </article>
+
+      <article class="ravens-game-card ravens-game-card--next">
+        <header><div><p class="ravens-game-label">Week {{ next_game.week }}</p><h3>Next Game</h3></div><span class="ravens-game-date">{{ next_game.date | date: "%b %-d" }}</span></header>
+        <p class="ravens-game-opponent">{{ next_game.display }}</p>
+        {% if next_game.venue %}<p class="ravens-game-venue">{{ next_game.venue }}</p>{% endif %}
+        {% if next_game.matchup %}
+        <div class="ravens-matchup-heading"><strong>Key matchup numbers</strong><span>{{ next_game.matchup.label }}</span></div>
+        <div class="ravens-matchup-list">
+          {% for item in next_game.matchup.items %}
+          <div>
+            <p><strong>{{ item.title }}</strong><span>{{ item.stat }}</span></p>
+            <dl><div><dt>BAL</dt><dd>{{ item.ravens.value }} <small>No. {{ item.ravens.rank }}</small></dd></div><div><dt>{{ next_game.opponent_abbr }}</dt><dd>{{ item.opponent.value }} <small>No. {{ item.opponent.rank }}</small></dd></div></dl>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+        {% if dashboard.opponent_availability.team == next_game.opponent_abbr %}
+        <div class="ravens-opponent-watch">
+          <h4>{{ dashboard.opponent_availability.label }}</h4>
+          <ul>
+            {% for item in dashboard.opponent_availability.items %}
+            <li><p><strong>{{ item.player }} <span>{{ item.position }}</span></strong><em>{{ item.status }}</em></p><span>{{ item.detail }} <a href="{{ item.source_url }}">Source</a></span></li>
+            {% endfor %}
+          </ul>
+          <small>{{ dashboard.opponent_availability.note }}</small>
+        </div>
+        {% endif %}
+      </article>
     </div>
   </section>
 
@@ -88,7 +145,7 @@ section_theme: ravens
     {% endfor %}
   </section>
 
-  <section class="ravens-dashboard-section" aria-labelledby="phase-title">
+  <section class="ravens-dashboard-section" id="performance" aria-labelledby="phase-title">
     <div class="ravens-section-heading"><p class="de-kicker">How the team is winning</p><h2 id="phase-title">Offense &amp; Defense</h2></div>
     <div class="ravens-phase-grid">
       {% assign phases = "offense,defense" | split: "," %}
@@ -114,7 +171,7 @@ section_theme: ravens
   <section class="ravens-dashboard-section" id="units" aria-labelledby="units-title">
     <div class="ravens-section-heading ravens-section-heading--split">
       <div><p class="de-kicker">Film and role evaluation</p><h2 id="units-title">Unit Report Card</h2></div>
-      <p>Assessments are manually edited. They are not automatic conversions of rankings.</p>
+      <p>{{ dashboard.unit_grade_context.note }}</p>
     </div>
     <div class="ravens-unit-grid">
       {% for unit in dashboard.editorial.units %}
@@ -123,6 +180,10 @@ section_theme: ravens
           <h3>{{ unit.name }}</h3>
           <p><span class="ravens-status">{{ unit.assessment }}</span> <span class="ravens-unit-trend" aria-label="Trend: {{ unit.trend }}">{% if unit.trend == "up" %}↑{% elsif unit.trend == "down" %}↓{% else %}→{% endif %}</span></p>
         </header>
+        <dl class="ravens-unit-grades">
+          <div><dt>{{ dashboard.unit_grade_context.season_label }}</dt><dd>{{ unit.season_grade }}</dd></div>
+          <div><dt>{{ dashboard.unit_grade_context.last_game_label }}</dt><dd>{{ unit.last_game_grade }}</dd></div>
+        </dl>
         <p>{{ unit.explanation }}</p>
         {% if unit.link %}<a href="{{ unit.link | relative_url }}">Read related analysis →</a>{% endif %}
       </article>
@@ -202,7 +263,7 @@ section_theme: ravens
     </div>
   </section>
 
-  <section class="ravens-dashboard-section ravens-championship" aria-labelledby="championship-title">
+  <section class="ravens-dashboard-section ravens-championship" id="championship" aria-labelledby="championship-title">
     <div class="ravens-section-heading ravens-section-heading--split">
       <div><p class="de-kicker">The standard in Baltimore</p><h2 id="championship-title">Championship Check</h2></div>
       <p>Five traits that shape whether this profile can hold up against the best teams in January.</p>

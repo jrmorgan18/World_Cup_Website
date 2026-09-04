@@ -27,11 +27,11 @@ errors = []
 definitions = editorial.fetch("metric_definitions")
 definition_ids = definitions.map { |definition| definition.fetch("id") }
 assert(definition_ids.uniq.length == definition_ids.length, "Metric ids must be unique", errors)
-assert(definition_ids.length == 10, "The defensible free-source scorecard must contain ten metrics", errors)
+assert(definition_ids.length == 11, "The defensible free-source scorecard must contain eleven metrics", errors)
 
 definitions.each do |definition|
   assert(%w[higher lower].include?(definition["direction"]), "#{definition['id']} has an invalid direction", errors)
-  assert(%w[signed_integer decimal_2 percentage_1].include?(definition["format"]), "#{definition['id']} has an invalid format", errors)
+  assert(%w[signed_integer decimal_1 decimal_2 percentage_1].include?(definition["format"]), "#{definition['id']} has an invalid format", errors)
   assert(!definition["description"].to_s.empty?, "#{definition['id']} needs a description", errors)
 end
 
@@ -54,6 +54,9 @@ def validate_snapshot(snapshot, definition_ids, errors)
     assert(value.nil? || value.is_a?(Numeric), "#{snapshot['id']}.#{metric_id} value must be numeric or null", errors)
     assert(rank.nil? || (rank.is_a?(Integer) && rank.between?(1, 32)), "#{snapshot['id']}.#{metric_id} rank must be 1–32 or null", errors)
     assert(!metric["source"].to_s.empty?, "#{snapshot['id']}.#{metric_id} needs a source", errors)
+    if metric_id == "overall_efficiency" && !value.nil?
+      assert(value.between?(0, 100), "#{snapshot['id']}.overall_efficiency must be 0–100", errors)
+    end
   end
 end
 
@@ -78,6 +81,8 @@ assert(units.map { |unit| unit["name"] } == expected_units, "Unit report card mu
 units.each do |unit|
   assert(UNIT_STATUSES.include?(unit["assessment"]), "#{unit['name']} has an invalid assessment", errors)
   assert(TRENDS.include?(unit["trend"]), "#{unit['name']} has an invalid trend", errors)
+  assert(unit["season_grade"].to_s.match?(/\A[ABCDF][+-]?\z/), "#{unit['name']} needs a valid season grade", errors)
+  assert(unit["last_game_grade"].to_s.match?(/\A[ABCDF][+-]?\z/), "#{unit['name']} needs a valid last-game grade", errors)
 end
 
 changes = editorial.dig("editorial", "weekly_changes")
@@ -110,8 +115,31 @@ assert(points_for == editorial.dig("preseason_form", "points_for"), "Preseason p
 assert(points_against == editorial.dig("preseason_form", "points_against"), "Preseason points against do not match the game list", errors)
 assert(points_for - points_against == editorial.dig("preseason_form", "point_differential"), "Preseason point differential does not match", errors)
 
+preseason_last_game = editorial.fetch("preseason_last_game")
+assert(preseason_last_game["result"] == "W", "Preseason last-game result must be a win", errors)
+assert(preseason_last_game["ravens_score"] == 41 && preseason_last_game["opponent_score"] == 3, "Preseason last-game score must be 41–3", errors)
+assert(preseason_last_game.fetch("key_stats").length >= 4, "Preseason last game needs at least four key stats", errors)
+assert(preseason_last_game["source_url"].to_s.start_with?("https://www.baltimoreravens.com/"), "Preseason last game needs an official Ravens source", errors)
+
+opponent_availability = editorial.fetch("opponent_availability")
+assert(opponent_availability["team"] == "IND", "Opponent availability must match the Week 1 Colts matchup", errors)
+assert(opponent_availability.fetch("items").length >= 3, "Opponent availability needs at least three dated items", errors)
+opponent_availability.fetch("items").each do |item|
+  assert(item["source_url"].to_s.start_with?("https://www.colts.com/"), "#{item['player']} needs an official Colts source", errors)
+end
+
 assert(stats.dig("header", "record").match?(/^\d{1,2}-\d{1,2}(?:-\d{1,2})?$/), "Header record has an invalid format", errors)
 assert(stats.dig("header", "next_game", "opponent_abbr") == "IND", "Expected Week 1 opponent is not Indianapolis", errors) if stats.fetch("season") == 2026
+next_matchup = stats.dig("header", "next_game", "matchup")
+assert(next_matchup && next_matchup.fetch("items").length == 4, "Next game needs four matchup comparisons", errors)
+if next_matchup
+  next_matchup.fetch("items").each do |item|
+    %w[ravens opponent].each do |side|
+      assert(item.dig(side, "value").is_a?(Numeric), "#{item['title']} #{side} value must be numeric", errors)
+      assert(item.dig(side, "rank").is_a?(Integer), "#{item['title']} #{side} rank must be numeric", errors)
+    end
+  end
+end
 Date.iso8601(editorial.dig("meta", "last_updated").to_s)
 Date.iso8601(stats.fetch("as_of"))
 
