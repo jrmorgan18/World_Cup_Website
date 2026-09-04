@@ -208,7 +208,7 @@ def compute_league_metrics(schedule_games, pbp):
     table["red_zone_td_rate"] = red_zone_rates(plays, "posteam")
     table["opponent_red_zone_td_rate"] = red_zone_rates(plays, "defteam")
 
-    # A transparent, non-opponent-adjusted alternative to proprietary DVOA.
+    # A transparent, non-opponent-adjusted team efficiency index.
     # Each component contributes equally after conversion to a league percentile.
     components = pd.concat([
         table["offensive_epa_per_play"].rank(method="average", pct=True, ascending=True) * 100,

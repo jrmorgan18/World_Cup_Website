@@ -21,7 +21,7 @@ metric_definitions:
     display_name: "Dual Eights efficiency index"
     short_label: "Efficiency index"
     unit: "index"
-    description: "A 0–100 league-percentile composite weighting offensive EPA/play, offensive success rate, defensive EPA allowed/play and opponent success rate equally. It is not DVOA and is not opponent-adjusted."
+    description: "A 0–100 league-percentile composite weighting offensive EPA/play, offensive success rate, defensive EPA allowed/play and opponent success rate equally. It is not opponent-adjusted."
     direction: "higher"
     format: "decimal_1"
     stable_delta: 1.0
@@ -221,7 +221,7 @@ preseason_form:
 unit_grade_context:
   season_label: "Preseason outlook"
   last_game_label: "Preseason finale"
-  note: "Dual Eights editorial grades, informed by role, film and results. They are not PFF grades; regular-season rolling grades begin after Week 1."
+  note: "Dual Eights editorial grades, informed by role, film and results; regular-season rolling grades begin after Week 1."
 
 preseason_last_game:
   type_label: "Preseason finale"
@@ -270,13 +270,13 @@ sources:
   - { name: "Baltimore Ravens official news and roster reports", role: "Availability, roster status and dated team context", url: "https://www.baltimoreravens.com/news/", cadence: "Reviewed for each dashboard update" }
 
 methodology_notes:
-  - "The Dual Eights efficiency index is the equal-weight average of four league percentiles: offensive EPA/play, offensive success rate, defensive EPA allowed/play and opponent success rate. It is not DVOA and is not opponent-adjusted."
+  - "The Dual Eights efficiency index is the equal-weight average of four league percentiles: offensive EPA/play, offensive success rate, defensive EPA allowed/play and opponent success rate. It is a transparent, non-opponent-adjusted team index."
   - "Only regular-season plays count toward the ranked scorecard. Kneels, spikes, two-point attempts, deleted plays and aborted plays are excluded."
   - "Explosive plays are runs of 10+ yards or passes of 20+ yards, divided by eligible run/pass plays."
   - "Red-zone rates are drive-level: a drive qualifies once it reaches the opponent 20-yard line."
   - "Pressure rate is omitted because the free sources reviewed do not expose a defensible complete pressure variable."
   - "Playoff probability is omitted until a transparent, repeatable model is added."
-  - "Unit letter grades are editorial. PFF grades are not reproduced because full team, position and weekly grades require a paid subscription."
+  - "Unit letter grades are editorial, informed by role, film and results; they are separate from the statistical scorecard."
 
 related_articles:
   - "/ravens/what-will-declan-doyle-change/"

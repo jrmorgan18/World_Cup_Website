@@ -42,7 +42,7 @@
   </header>
   <h3>{{ definition.display_name }}</h3>
   <div class="ravens-metric-reading">
-    <strong>{% include ravens-dashboard-metric-value.html metric=current_metric definition=definition %}</strong>
+    <strong class="ravens-metric-value{% if current_metric.value == nil %} ravens-metric-value--empty{% endif %}">{% include ravens-dashboard-metric-value.html metric=current_metric definition=definition %}</strong>
     {% if current_metric.rank %}<span>NFL rank {{ current_metric.rank }}</span>{% endif %}
   </div>
   {% if trend_available %}

@@ -54,7 +54,6 @@ section_theme: ravens
     <a href="#state">State</a>
     <a href="#games">Game center</a>
     <a href="#scorecard">Scorecard</a>
-    <a href="#performance">Performance</a>
     <a href="#units">Units</a>
     <a href="#results">Results</a>
     <a href="#injuries">Injuries</a>
@@ -143,29 +142,6 @@ section_theme: ravens
       </div>
     </div>
     {% endfor %}
-  </section>
-
-  <section class="ravens-dashboard-section" id="performance" aria-labelledby="phase-title">
-    <div class="ravens-section-heading"><p class="de-kicker">How the team is winning</p><h2 id="phase-title">Offense &amp; Defense</h2></div>
-    <div class="ravens-phase-grid">
-      {% assign phases = "offense,defense" | split: "," %}
-      {% for phase_name in phases %}
-        {% assign phase = dashboard.editorial.overviews[phase_name] %}
-        <article class="ravens-phase-card">
-          <header><h3>{{ phase_name | capitalize }}</h3><span class="ravens-status">{{ phase.status }}</span></header>
-          <p>{{ phase.assessment }}</p>
-          <p class="ravens-phase-trend"><strong>Trend:</strong> {{ phase.trend_summary }}</p>
-          <dl class="ravens-overview-metrics">
-            {% for metric_id in phase.metric_ids %}
-              {% assign definition = dashboard.metric_definitions | where: "id", metric_id | first %}
-              {% assign metric = current_snapshot.metrics[metric_id] %}
-              <div><dt><a href="#metric-{{ metric_id }}">{{ definition.short_label }}</a></dt><dd>{% include ravens-dashboard-metric-value.html metric=metric definition=definition %}</dd></div>
-            {% endfor %}
-          </dl>
-          {% for link in phase.links %}<a class="ravens-analysis-link" href="{{ link.url | relative_url }}">{{ link.label }} →</a>{% endfor %}
-        </article>
-      {% endfor %}
-    </div>
   </section>
 
   <section class="ravens-dashboard-section" id="units" aria-labelledby="units-title">
