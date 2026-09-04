@@ -317,8 +317,8 @@ def team_metric(table, team, metric_id):
 
 def matchup_payload(table, opponent, label):
     pairs = [
-        ("When Baltimore has the ball", "EPA / play", "offensive_epa_per_play", "defensive_epa_per_play"),
-        ("Baltimore's big-play test", "Explosive rate", "explosive_play_rate", "explosive_play_rate_allowed"),
+        ("When the Ravens have the ball", "EPA / play", "offensive_epa_per_play", "defensive_epa_per_play"),
+        ("The Ravens' big-play test", "Explosive rate", "explosive_play_rate", "explosive_play_rate_allowed"),
         ("When the opponent has the ball", "EPA / play", "defensive_epa_per_play", "offensive_epa_per_play"),
         ("The red-zone matchup", "TD rate", "opponent_red_zone_td_rate", "red_zone_td_rate"),
     ]
@@ -357,10 +357,10 @@ def last_game_payload(recent_games, pbp):
     game["type_label"] = "Regular season"
     game["opponent_abbr"] = opponent_abbr
     game["key_stats"] = [
-        {"label": "Scrimmage yards", "value": f"{int(ravens_plays['yards_gained'].sum())}–{int(opponent_plays['yards_gained'].sum())}", "detail": "Baltimore–opponent"},
-        {"label": "EPA / play", "value": f"{ravens_plays['epa'].mean():.2f} / {opponent_plays['epa'].mean():.2f}", "detail": "Baltimore / opponent"},
-        {"label": "Success rate", "value": f"{ravens_plays['success'].mean() * 100:.1f}% / {opponent_plays['success'].mean() * 100:.1f}%", "detail": "Baltimore / opponent"},
-        {"label": "Turnovers", "value": f"{turnovers(TEAM)}–{turnovers(opponent_abbr)}", "detail": "Baltimore–opponent"},
+        {"label": "Scrimmage yards", "value": f"{int(ravens_plays['yards_gained'].sum())}–{int(opponent_plays['yards_gained'].sum())}", "detail": "Ravens–opponent"},
+        {"label": "EPA / play", "value": f"{ravens_plays['epa'].mean():.2f} / {opponent_plays['epa'].mean():.2f}", "detail": "Ravens / opponent"},
+        {"label": "Success rate", "value": f"{ravens_plays['success'].mean() * 100:.1f}% / {opponent_plays['success'].mean() * 100:.1f}%", "detail": "Ravens / opponent"},
+        {"label": "Turnovers", "value": f"{turnovers(TEAM)}–{turnovers(opponent_abbr)}", "detail": "Ravens–opponent"},
     ]
     game["source"] = "nflverse play-by-play"
     return game

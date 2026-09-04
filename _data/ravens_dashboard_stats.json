@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T03:01:20Z",
+  "generated_at": "2026-09-04T03:09:51Z",
   "as_of": "2026-09-03",
   "season": 2026,
   "benchmark_season": 2025,
@@ -153,7 +153,7 @@
         "label": "2025 regular-season baseline",
         "items": [
           {
-            "title": "When Baltimore has the ball",
+            "title": "When the Ravens have the ball",
             "stat": "EPA / play",
             "ravens": {
               "value": 0.04,
@@ -165,7 +165,7 @@
             }
           },
           {
-            "title": "Baltimore's big-play test",
+            "title": "The Ravens' big-play test",
             "stat": "Explosive rate",
             "ravens": {
               "value": 12.0,
@@ -225,6 +225,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-09-04T03:01:20Z"
+    "retrieved_at": "2026-09-04T03:09:51Z"
   }
 }

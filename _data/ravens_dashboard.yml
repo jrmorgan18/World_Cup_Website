@@ -121,7 +121,7 @@ metric_definitions:
     display_name: "Opponent red-zone touchdown rate"
     short_label: "Opponent RZ TD rate"
     unit: "percent"
-    description: "Share of opponent drives reaching Baltimore's 20-yard line that produce a touchdown."
+    description: "Share of opponent drives reaching the Ravens' 20-yard line that produce a touchdown."
     direction: "lower"
     format: "percentage_1"
     stable_delta: 1.0
@@ -138,14 +138,14 @@ scorecard_groups:
 editorial:
   state:
     summary: >-
-      Baltimore reaches Week 1 with a 3-0 preseason and a 78-13 aggregate score,
+      The Ravens reach Week 1 with a 3-0 preseason and a 78-13 aggregate score,
       useful evidence of depth but not a substitute for regular-season performance.
       Lamar Jackson and Derrick Henry still establish a championship-level ceiling,
       while the defense's three-game preseason showing was the cleanest team-wide
       signal. The immediate questions sit inside: Danny Pinter's likely season-ending
       knee injury complicated the center picture, and Nnamdi Madubuike is only now
       returning to team work. Zay Flowers' September 3 return is a meaningful positive.
-    biggest_strength: "The Jackson–Henry core and a deep defense give Baltimore answers in multiple game scripts."
+    biggest_strength: "The Jackson–Henry core and a deep defense give the Ravens answers in multiple game scripts."
     biggest_concern: "Center stability and fast interior pressure remain the clearest threats to the offense's full menu."
     changed_this_week: "Madubuike and Flowers returned to team work, while the initial 53-man roster clarified the Week 1 depth chart."
 
@@ -156,11 +156,11 @@ editorial:
     offensive_epa_per_play: { status: null, interpretation: "No 2026 regular-season offensive plays yet; the labeled 2025 value provides scale only." }
     offensive_success_rate: { status: null, interpretation: "No 2026 regular-season offensive plays yet; the labeled 2025 value provides scale only." }
     explosive_play_rate: { status: null, interpretation: "No 2026 regular-season sample yet. Explosives use a fixed 10-yard run / 20-yard pass definition." }
-    red_zone_td_rate: { status: null, interpretation: "The drive-level 2026 rate begins once Baltimore has a regular-season red-zone possession." }
+    red_zone_td_rate: { status: null, interpretation: "The drive-level 2026 rate begins once the Ravens have a regular-season red-zone possession." }
     defensive_epa_per_play: { status: null, interpretation: "The preseason defense was strong, but no preseason play is included in the ranked regular-season metric." }
     defensive_success_rate: { status: null, interpretation: "No 2026 regular-season opponent plays yet; the labeled 2025 value provides scale only." }
     explosive_play_rate_allowed: { status: null, interpretation: "The regular-season baseline begins after Week 1 under the same explosive-play definition as the offense." }
-    opponent_red_zone_td_rate: { status: null, interpretation: "The drive-level 2026 rate begins once an opponent reaches Baltimore's red zone." }
+    opponent_red_zone_td_rate: { status: null, interpretation: "The drive-level 2026 rate begins once an opponent reaches the Ravens' red zone." }
 
   overviews:
     offense:
@@ -188,7 +188,7 @@ editorial:
 
   units:
     - { name: "Quarterback", assessment: "Elite", trend: "stable", season_grade: "A", last_game_grade: "B+", explanation: "Jackson remains the central championship advantage and the offense's answer when structure breaks." }
-    - { name: "Running backs", assessment: "Strength", trend: "stable", season_grade: "A-", last_game_grade: "B+", explanation: "Henry gives Baltimore a physical baseline that magnifies every hesitation created by Jackson and motion." }
+    - { name: "Running backs", assessment: "Strength", trend: "stable", season_grade: "A-", last_game_grade: "B+", explanation: "Henry gives the Ravens a physical baseline that magnifies every hesitation created by Jackson and motion." }
     - { name: "Wide receivers", assessment: "Solid", trend: "up", season_grade: "B", last_game_grade: "A-", explanation: "Flowers returned September 3 after a minor issue, restoring the room's proven stress point." }
     - { name: "Tight ends", assessment: "Solid", trend: "stable", season_grade: "B", last_game_grade: "B", explanation: "The group remains essential to hiding run and pass intentions from heavier personnel." }
     - { name: "Offensive line", assessment: "Concern", trend: "down", season_grade: "C", last_game_grade: "A-", explanation: "Pinter's likely season-ending knee injury leaves center continuity as the clearest structural risk." }
@@ -205,7 +205,7 @@ editorial:
     - { direction: "down", title: "Kicker certainty", text: "Loop's 5-for-8 preseason and Moody's addition leave a live evaluation entering Week 1." }
 
   championship_check:
-    - { category: "Quarterback play", status: "Ready", explanation: "Jackson gives Baltimore a championship answer within structure and when the original play disappears." }
+    - { category: "Quarterback play", status: "Ready", explanation: "Jackson gives the Ravens a championship answer within structure and when the original play disappears." }
     - { category: "Pass protection", status: "Concern", explanation: "The center picture can create immediate interior pressure that narrows the offense before the snap." }
     - { category: "Explosive offense", status: "Trending Right", explanation: "Flowers, Henry and Jackson give Doyle the pieces; the regular season will test the presentation." }
     - { category: "Four-man pass rush", status: "Trending Right", explanation: "Hendrickson changes the edge ceiling, while Madubuike's return improves the interior outlook." }
@@ -233,10 +233,10 @@ preseason_last_game:
   result: "W"
   ravens_score: 41
   opponent_score: 3
-  takeaway: "Baltimore controlled the game from start to finish and completed a 3-0 preseason."
+  takeaway: "The Ravens controlled the game from start to finish and completed a 3-0 preseason."
   key_stats:
-    - { label: "Total yards", value: "456–177", detail: "Baltimore–Washington" }
-    - { label: "First-half first downs", value: "17–1", detail: "Baltimore–Washington" }
+    - { label: "Total yards", value: "456–177", detail: "Ravens–Washington" }
+    - { label: "First-half first downs", value: "17–1", detail: "Ravens–Washington" }
     - { label: "Sacks allowed", value: "0", detail: "Across three Ravens quarterbacks" }
     - { label: "Washington third downs", value: "1-of-12", detail: "Six conversions allowed all preseason" }
   source_label: "Official Ravens recap"
@@ -253,13 +253,13 @@ opponent_availability:
     - { player: "Charvarius Ward Sr.", position: "CB", status: "Returning", detail: "Returned to practice after a back issue and said he expects to be ready.", source_url: "https://www.colts.com/news/colts-cb-charvarius-ward-sr-returns-practice-expects-ready-week-1-baltimore-ravens" }
 
 preseason_games:
-  - { week: "Preseason 3", date: "2026-08-28", location: "home", opponent: "Washington Commanders", result: "W", ravens_score: 41, opponent_score: 3, takeaway: "Baltimore closed an unbeaten preseason with its largest margin, while the defense again kept the opponent out of the end zone.", recap_url: "https://www.baltimoreravens.com/news/ravens-dominate-commanders-2026-nfl-preseason-undefeated" }
+  - { week: "Preseason 3", date: "2026-08-28", location: "home", opponent: "Washington Commanders", result: "W", ravens_score: 41, opponent_score: 3, takeaway: "The Ravens closed an unbeaten preseason with their largest margin, while the defense again kept the opponent out of the end zone.", recap_url: "https://www.baltimoreravens.com/news/ravens-dominate-commanders-2026-nfl-preseason-undefeated" }
   - { week: "Preseason 2", date: "2026-08-22", location: "away", opponent: "Minnesota Vikings", result: "W", ravens_score: 13, opponent_score: 3, takeaway: "A second straight single-digit defensive allowance reinforced the roster-depth signal.", recap_url: "https://www.baltimoreravens.com/news/ravens-defeat-vikings-defense-win-preseason-2026-sacks-interceptions" }
   - { week: "Preseason 1", date: "2026-08-15", location: "home", opponent: "Philadelphia Eagles", result: "W", ravens_score: 24, opponent_score: 7, takeaway: "The Ravens opened with a balanced win and allowed only one touchdown.", recap_url: "https://www.baltimoreravens.com/news/ravens-take-care-of-eagles-preseason-opener-ravens-2026" }
 
 injuries:
   - { player: "Danny Pinter", position: "C", status: "Out", injury: "Knee", importance: "Starter", expected_availability: "The club reported the August 19 injury as likely season-ending.", impact: "His absence reopens the center competition at the point where quick pressure is most disruptive to Jackson.", source_label: "BaltimoreRavens.com · Aug. 24", source_url: "https://www.baltimoreravens.com/news/nnamdi-madubuike-next-step-hits-sled-first-time-danny-pinter-injury-season-ending-ravens-preseason-week-3" }
-  - { player: "Nnamdi Madubuike", position: "DL", status: "Returning", injury: "Neck surgery recovery", importance: "Critical", expected_availability: "He joined team drills September 3; Minter called him day-to-day for Week 1.", impact: "His interior rush changes how often Baltimore can create pressure with four and preserve coverage disguise.", source_label: "BaltimoreRavens.com · Sept. 3", source_url: "https://www.baltimoreravens.com/news/nnamdi-madubuike-ravens-team-drills-return-teddye-buchanan-tavius-robinson-contract-year-jesse-minter" }
+  - { player: "Nnamdi Madubuike", position: "DL", status: "Returning", injury: "Neck surgery recovery", importance: "Critical", expected_availability: "He joined team drills September 3; Minter called him day-to-day for Week 1.", impact: "His interior rush changes how often the Ravens can create pressure with four and preserve coverage disguise.", source_label: "BaltimoreRavens.com · Sept. 3", source_url: "https://www.baltimoreravens.com/news/nnamdi-madubuike-ravens-team-drills-return-teddye-buchanan-tavius-robinson-contract-year-jesse-minter" }
   - { player: "Teddye Buchanan", position: "ILB", status: "Returning", injury: "ACL recovery", importance: "Starter", expected_availability: "He has taken team reps and is close, but Week 1 versus Week 2 remained uncertain September 3.", impact: "His return restores a starting-level range defender behind the defensive front.", source_label: "BaltimoreRavens.com · Sept. 3", source_url: "https://www.baltimoreravens.com/news/nnamdi-madubuike-ravens-team-drills-return-teddye-buchanan-tavius-robinson-contract-year-jesse-minter" }
   - { player: "Zay Flowers", position: "WR", status: "Returning", injury: "Minor health issue", importance: "Critical", expected_availability: "Returned to practice September 3 after being sidelined since August joint practices.", impact: "His movement and separation are central to creating space for the rest of the passing game.", source_label: "BaltimoreRavens.com · Sept. 3", source_url: "https://www.baltimoreravens.com/news/zay-flowers-returns-ravens-practice-wide-receiver-injury" }
   - { player: "Bilhal Kone", position: "CB", status: "Injured Reserve", injury: "Undisclosed", importance: "Depth", expected_availability: "Designated to return and must miss at least the first four regular-season games.", impact: "The designation temporarily reduces cornerback depth without consuming a season-long return slot.", source_label: "BaltimoreRavens.com · Aug. 30", source_url: "https://www.baltimoreravens.com/news/ravens-53-man-roster-cuts-set-announced-2026-initial" }
