@@ -1,11 +1,12 @@
 {% assign preview_ceiling = site.posts | where: "slug", "ravens-season-preview-ceiling" | first %}
+{% assign preview_predictions = site.posts | where: "slug", "ravens-specific-predictions" | first %}
 {% assign preview_afc_north = site.posts | where: "slug", "afc-north-outlook" | first %}
 {% assign preview_heading_id = "ravens-preview-heading-" | append: include.context %}
 <section class="ravens-preview-package ravens-preview-package--{{ include.context }}" aria-labelledby="{{ preview_heading_id }}">
   <div class="ravens-preview-cover">
     <img src="{{ '/assets/images/ravens-season-preview-2026-package.webp' | relative_url }}" alt=""{% if include.context == "home" %} loading="eager"{% endif %}>
     <div class="ravens-preview-cover-copy">
-      <p><span>Dual Eights presents</span> <i aria-hidden="true"></i> 2 of 3 published</p>
+      <p><span>Dual Eights presents</span> <i aria-hidden="true"></i> 3 of 3 published</p>
       <h2 id="{{ preview_heading_id }}">Ravens 2026<br><em>Season Preview</em></h2>
       <p>The people who set Baltimore&rsquo;s ceiling, five exact calls on what comes next and the one rival that can take the North.</p>
     </div>
@@ -19,11 +20,11 @@
         <div><p><b>01</b> The ceiling</p><h3>{{ preview_ceiling.title }}</h3><small>{{ preview_ceiling.read_time }} min read <span aria-hidden="true">&rarr;</span></small></div>
       </a>
     </li>
-    <li class="ravens-preview-part ravens-preview-part--pending">
-      <div>
-        <figure><img src="{{ '/assets/images/ravens-season-preview-2026-package.webp' | relative_url }}" alt="" loading="lazy"><span>Coming this week</span></figure>
-        <div><p><b>02</b> The calls</p><h3>Five Very Specific Predictions</h3><small>Publishing this week</small></div>
-      </div>
+    <li class="ravens-preview-part ravens-preview-part--live">
+      <a href="{{ preview_predictions.url | relative_url }}">
+        <figure><img src="{{ preview_predictions.hero_image | relative_url }}" alt="" loading="lazy"><span>Read now</span></figure>
+        <div><p><b>02</b> The calls</p><h3>{{ preview_predictions.title }}</h3><small>{{ preview_predictions.read_time }} min read <span aria-hidden="true">&rarr;</span></small></div>
+      </a>
     </li>
     <li class="ravens-preview-part ravens-preview-part--live">
       <a href="{{ preview_afc_north.url | relative_url }}">
