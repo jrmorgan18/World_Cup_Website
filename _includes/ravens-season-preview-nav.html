@@ -1,0 +1,10 @@
+{% assign preview_ceiling = site.posts | where: "slug", "ravens-season-preview-ceiling" | first %}
+{% assign preview_afc_north = site.posts | where: "slug", "afc-north-outlook" | first %}
+<nav class="ravens-preview-nav" aria-label="Ravens 2026 season preview">
+  <p><span>Ravens 2026</span> Season preview</p>
+  <ol>
+    <li{% if page.season_preview_part == 1 %} class="is-current"{% endif %}><a href="{{ preview_ceiling.url | relative_url }}"{% if page.season_preview_part == 1 %} aria-current="page"{% endif %}><b>01</b><span>The ceiling</span></a></li>
+    <li class="is-pending"><span><b>02</b><span>Predictions <small>Coming this week</small></span></span></li>
+    <li{% if page.season_preview_part == 3 %} class="is-current"{% endif %}><a href="{{ preview_afc_north.url | relative_url }}"{% if page.season_preview_part == 3 %} aria-current="page"{% endif %}><b>03</b><span>AFC North</span></a></li>
+  </ol>
+</nav>

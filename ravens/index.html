@@ -37,6 +37,9 @@ section_theme: ravens
   <div class="ravens-feature-layout">
     <div class="ravens-feature-primary">
       {% if ravens_feature %}
+      {% if ravens_feature.season_preview_feature %}
+      {% include ravens-season-preview-feature.html context="ravens" %}
+      {% else %}
       <a class="club-feature-teaser club-feature-teaser--ravens" href="{{ ravens_feature.url | relative_url }}">
         <div class="club-feature-teaser-copy">
           <p>Featured analysis <i aria-hidden="true"></i> Ravens</p>
@@ -46,6 +49,7 @@ section_theme: ravens
         </div>
         <div class="club-feature-teaser-mark" aria-hidden="true"><small>{{ ravens_feature.ravens_feature_mark_label | default: "New" }}</small><strong>{{ ravens_feature.ravens_feature_mark | default: "R" }}</strong><span>{{ ravens_feature.ravens_feature_mark_detail | default: "Feature" }}</span></div>
       </a>
+      {% endif %}
       {% endif %}
 
       <section class="ravens-recent-rail" aria-labelledby="ravens-recent-heading">
