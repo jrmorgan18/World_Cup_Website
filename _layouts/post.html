@@ -44,6 +44,9 @@ layout: default
     {% endif %}
     {% endif %}
   </div>
+  {% if page.series_slug == "ravens-2026-season-preview" %}
+  {% include ravens-season-preview-nav.html %}
+  {% endif %}
   {% if page.article_stats %}{% include article-stats.html stats=page.article_stats card_id="article-stat-title-mobile" class="article-stat-card--mobile" %}{% endif %}
   <div class="article-body">
     {{ content }}

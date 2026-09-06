@@ -31,9 +31,12 @@
   <div class="de-home-content-grid">
     <div class="de-home-feature-column">
       <div class="de-home-section-label">
-        <p>Featured story</p>
+        <p>{% if main_feature.season_preview_feature %}Featured series{% else %}Featured story{% endif %}</p>
         <span>{{ main_feature.feature_label | default: main_feature.series | default: "Featured" }}</span>
       </div>
+      {% if main_feature.season_preview_feature %}
+      {% include ravens-season-preview-feature.html context="home" %}
+      {% else %}
       <a class="de-lead-story" href="{{ main_feature.url | relative_url }}">
         <figure>
           <img src="{{ main_feature.hero_image | relative_url }}" alt="" loading="eager">
@@ -47,6 +50,7 @@
           <strong>Read the feature <span aria-hidden="true">&rarr;</span></strong>
         </div>
       </a>
+      {% endif %}
     </div>
     <aside class="de-recent-sidebar" aria-labelledby="recent-heading">
       <div class="de-home-section-label">

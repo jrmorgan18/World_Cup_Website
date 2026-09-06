@@ -2062,6 +2062,124 @@ details[open] > summary .gc-toggle::after { transform:rotate(0); }
 .betting-article-figure figcaption { padding:11px 6px 2px; color:#4d5b54; font-size:.78rem; line-height:1.5; text-align:right; }
 .betting-article-figure figcaption a { color:#1b6b4a; }
 
+/* Ravens 2026 season preview */
+.ravens-preview-package { overflow:hidden; border:1px solid #2b2533; background:#0a090d; box-shadow:0 24px 60px rgba(0,0,0,.16); }
+.ravens-preview-cover { position:relative; min-height:410px; display:flex; align-items:flex-end; overflow:hidden; isolation:isolate; }
+.ravens-preview-cover>img { position:absolute; z-index:-2; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; }
+.ravens-preview-cover::after { content:""; position:absolute; z-index:-1; inset:0; background:linear-gradient(90deg,rgba(6,6,9,.98) 0%,rgba(6,6,9,.88) 44%,rgba(6,6,9,.2) 78%),linear-gradient(0deg,rgba(6,6,9,.8),transparent 60%); }
+.ravens-preview-cover-copy { max-width:680px; padding:54px; }
+.ravens-preview-cover-copy>p:first-child { margin:0 0 20px; color:#c5a9e4; font-family:var(--font-display); font-size:.72rem; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; }
+.ravens-preview-cover-copy>p:first-child span { color:#d5b45c; }
+.ravens-preview-cover-copy>p:first-child i { display:inline-block; width:4px; height:4px; margin:0 9px 2px; border-radius:50%; background:#fff; }
+.ravens-preview-cover h2 { margin:0; color:#fff; font-family:'Newsreader',serif; font-size:clamp(3.3rem,6vw,6.2rem); font-weight:500; line-height:.82; letter-spacing:-2.8px; }
+.ravens-preview-cover h2 em { color:#a97ad7; font-weight:400; }
+.ravens-preview-cover-copy>p:last-child { max-width:570px; margin:25px 0 0; color:#d5d0dc; font-size:1rem; line-height:1.6; }
+.ravens-preview-cover-index { position:absolute; right:26px; top:26px; display:flex; gap:7px; }
+.ravens-preview-cover-index span { width:38px; height:38px; display:grid; place-items:center; border:1px solid rgba(255,255,255,.3); color:#fff; font-family:var(--font-display); font-size:.62rem; letter-spacing:1px; }
+.ravens-preview-cover-index span:nth-child(2) { border-color:#d5b45c; color:#d5b45c; }
+.ravens-preview-parts { margin:0; padding:0; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); list-style:none; border-top:1px solid #2b2533; }
+.ravens-preview-part { min-width:0; background:#111016; }
+.ravens-preview-part+li { border-left:1px solid #2b2533; }
+.ravens-preview-part>a,.ravens-preview-part>div { height:100%; display:flex; flex-direction:column; color:inherit; }
+.ravens-preview-part figure { position:relative; margin:0; aspect-ratio:16 / 8.7; overflow:hidden; background:#21172d; }
+.ravens-preview-part figure::after { content:""; position:absolute; inset:0; background:linear-gradient(0deg,rgba(5,5,8,.72),transparent 60%); }
+.ravens-preview-part figure img { width:100%; height:100%; object-fit:cover; transition:transform .3s ease,filter .3s ease; }
+.ravens-preview-part--live a:hover figure img { transform:scale(1.035); }
+.ravens-preview-part figure>span { position:absolute; z-index:2; left:14px; bottom:12px; padding:6px 8px; background:#08070b; color:#fff; font-family:var(--font-display); font-size:.58rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; }
+.ravens-preview-part>*>div { flex:1; padding:22px 22px 25px; }
+.ravens-preview-part p { margin:0; color:#9d77c5; font-family:var(--font-display); font-size:.63rem; font-weight:700; letter-spacing:1.2px; text-transform:uppercase; }
+.ravens-preview-part p b { margin-right:8px; color:#d5b45c; font-size:.72rem; }
+.ravens-preview-part h3 { margin:12px 0 20px; color:#f7f4fa; font-family:'Newsreader',serif; font-size:clamp(1.35rem,2.15vw,1.75rem); font-weight:500; line-height:1.04; letter-spacing:-.35px; }
+.ravens-preview-part small { display:block; margin-top:auto; color:#aca5b2; font-size:.71rem; letter-spacing:.35px; }
+.ravens-preview-part small span { color:#d5b45c; }
+.ravens-preview-part--pending { background:#18151d; }
+.ravens-preview-part--pending figure img { filter:saturate(.5) brightness(.55); object-position:right center; }
+.ravens-preview-part--pending figure>span { background:#d5b45c; color:#151019; }
+.ravens-preview-part--pending h3 { color:#bbb4c1; }
+.ravens-preview-package--home { margin-top:28px; }
+.ravens-preview-package--ravens .ravens-preview-cover { min-height:380px; }
+
+.ravens-preview-nav { margin:34px 0 14px; border:1px solid #d9d1e0; background:#f5f2f7; }
+.ravens-preview-nav>p { margin:0; padding:11px 16px; border-bottom:1px solid #d9d1e0; color:#4c4058; font-family:var(--font-display); font-size:.67rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; }
+.ravens-preview-nav>p span { margin-right:7px; color:#6f3fc5; }
+.ravens-preview-nav ol { margin:0; padding:0; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); list-style:none; }
+.ravens-preview-nav li+li { border-left:1px solid #d9d1e0; }
+.ravens-preview-nav li>a,.ravens-preview-nav li>span { min-height:66px; padding:13px 15px; display:flex; gap:11px; align-items:center; color:#27212d; }
+.ravens-preview-nav li b { color:#7d5b9e; font-family:var(--font-display); font-size:.67rem; letter-spacing:.8px; }
+.ravens-preview-nav li span span { display:flex; flex-direction:column; }
+.ravens-preview-nav li small { margin-top:2px; color:#817888; font-size:.62rem; text-transform:uppercase; }
+.ravens-preview-nav li.is-current { box-shadow:inset 0 -3px #6f3fc5; background:#fff; }
+.ravens-preview-nav li.is-current b { color:#6f3fc5; }
+.ravens-preview-nav li.is-pending>span { color:#837b89; }
+
+.ravens-ceiling-index { margin:36px 0 46px; padding:0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); border-top:1px solid #d8d0df; border-left:1px solid #d8d0df; list-style:none; }
+.ravens-ceiling-index li { min-height:84px; padding:17px 18px; display:flex; gap:15px; align-items:center; border-right:1px solid #d8d0df; border-bottom:1px solid #d8d0df; background:#f7f4f9; }
+.ravens-ceiling-index li>span { color:#7d5b9e; font-family:var(--font-display); font-size:.7rem; font-weight:700; letter-spacing:1px; }
+.ravens-ceiling-index b { display:block; color:#28212e; font-family:'Newsreader',serif; font-size:1.12rem; font-weight:600; line-height:1.1; }
+.ravens-ceiling-index small { display:block; margin-top:5px; color:#6e6674; font-size:.7rem; letter-spacing:.25px; }
+
+.afc-team-snapshot { margin:28px 0 42px; display:grid; grid-template-columns:minmax(0,1.15fr) minmax(230px,.85fr); border:1px solid #d7d0dc; background:#f7f5f8; }
+.afc-team-snapshot>div { padding:23px; }
+.afc-team-snapshot>div+div { border-left:1px solid #d7d0dc; }
+.afc-team-snapshot p { margin:0 0 16px; color:#6d4b8e; font-family:var(--font-display); font-size:.67rem; font-weight:700; letter-spacing:1.1px; text-transform:uppercase; }
+.afc-team-snapshot dl { margin:0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1px; background:#ddd7e1; }
+.afc-team-snapshot dl>div { min-width:0; padding:11px 12px; background:#fff; }
+.afc-team-snapshot dt { color:#746c79; font-size:.67rem; line-height:1.25; }
+.afc-team-snapshot dd { margin:4px 0 0; color:#211c26; font-family:var(--font-display); font-size:.95rem; font-weight:700; }
+.afc-team-snapshot dd small { color:#756a7e; font-family:inherit; font-size:.64rem; font-weight:500; }
+.afc-team-snapshot ul { margin:0; padding:0; list-style:none; }
+.afc-team-snapshot li { position:relative; margin:0; padding:9px 0 9px 18px; border-top:1px solid #ddd7e1; color:#3d3742; font-size:.76rem; line-height:1.4; }
+.afc-team-snapshot li:first-child { border-top:0; padding-top:0; }
+.afc-team-snapshot li::before { content:""; position:absolute; left:0; top:15px; width:7px; height:2px; background:#7d5b9e; }
+.afc-team-snapshot li:first-child::before { top:6px; }
+.afc-team-snapshot--bengals { border-top:4px solid #db641f; }
+.afc-team-snapshot--steelers { border-top:4px solid #d4b238; }
+.afc-team-snapshot--browns { border-top:4px solid #6d321a; }
+
+.afc-finish-run,.afc-projected-standings { margin:28px 0 40px; padding:0; list-style:none; }
+.afc-finish-run { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); border:1px solid #d7d0dc; }
+.afc-finish-run li { min-height:112px; padding:17px 14px; display:flex; flex-direction:column; background:#f7f5f8; }
+.afc-finish-run li+li { border-left:1px solid #d7d0dc; }
+.afc-finish-run span { color:#7d5b9e; font-family:var(--font-display); font-size:.67rem; letter-spacing:1px; }
+.afc-finish-run b { margin-top:auto; color:#28212e; font-family:'Newsreader',serif; font-size:1.05rem; line-height:1.1; }
+.afc-finish-run small { margin-top:4px; color:#756d7b; font-size:.64rem; }
+.afc-projected-standings { border-top:3px solid #6f3fc5; }
+.afc-projected-standings li { padding:15px 17px; display:grid; grid-template-columns:42px 1fr auto; align-items:center; border-bottom:1px solid #d9d2dd; background:#f8f6f9; }
+.afc-projected-standings span { color:#7d5b9e; font-family:var(--font-display); font-size:.68rem; }
+.afc-projected-standings b { color:#2b2530; font-family:'Newsreader',serif; font-size:1.14rem; }
+.afc-projected-standings strong { color:#2b2530; font-family:var(--font-display); font-size:.84rem; }
+
+@media (max-width:900px) {
+  .ravens-preview-cover { min-height:370px; }
+  .ravens-preview-cover-copy { padding:42px; }
+  .ravens-preview-parts { grid-template-columns:1fr; }
+  .ravens-preview-part+li { border-left:0; border-top:1px solid #2b2533; }
+  .ravens-preview-part>a,.ravens-preview-part>div { display:grid; grid-template-columns:minmax(160px,.7fr) minmax(0,1fr); }
+  .ravens-preview-part figure { height:100%; min-height:180px; aspect-ratio:auto; }
+}
+
+@media (max-width:700px) {
+  .ravens-preview-cover { min-height:430px; }
+  .ravens-preview-cover::after { background:linear-gradient(0deg,rgba(6,6,9,.98),rgba(6,6,9,.7) 72%,rgba(6,6,9,.28)); }
+  .ravens-preview-cover-copy { padding:100px 24px 30px; }
+  .ravens-preview-cover h2 { font-size:3.35rem; letter-spacing:-1.8px; }
+  .ravens-preview-cover-copy>p:last-child { font-size:.94rem; }
+  .ravens-preview-cover-index { right:18px; top:18px; }
+  .ravens-preview-part>a,.ravens-preview-part>div { grid-template-columns:1fr; }
+  .ravens-preview-part figure { min-height:190px; aspect-ratio:16 / 9; }
+  .ravens-preview-package--home { margin-top:20px; }
+  .ravens-preview-nav ol { grid-template-columns:1fr; }
+  .ravens-preview-nav li+li { border-left:0; border-top:1px solid #d9d1e0; }
+  .ravens-preview-nav li>a,.ravens-preview-nav li>span { min-height:54px; }
+  .ravens-ceiling-index { grid-template-columns:1fr; }
+  .afc-team-snapshot { grid-template-columns:1fr; }
+  .afc-team-snapshot>div { padding:20px; }
+  .afc-team-snapshot>div+div { border-left:0; border-top:1px solid #d7d0dc; }
+  .afc-finish-run { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .afc-finish-run li:nth-child(3) { border-left:0; }
+  .afc-finish-run li:nth-child(n+3) { border-top:1px solid #d7d0dc; }
+}
+
 /* Bet ticket — the wager, its price and the number it has to beat */
 .bet-ticket { margin:38px 0 42px; border:1px solid rgba(76,199,141,.34); background:linear-gradient(145deg,#121b16,#0b0e0c 72%); box-shadow:inset 5px 0 0 var(--de-green); }
 .bet-ticket-head { padding:22px 26px 20px; display:grid; grid-template-columns:minmax(0,1fr) auto; gap:20px; align-items:center; border-bottom:1px solid rgba(255,255,255,.12); }
