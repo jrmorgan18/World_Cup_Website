@@ -54,6 +54,11 @@ The biggest early season challenge may be managing expectations and remembering 
 
 ## 2. Kyle Hamilton will record at least four sacks and four takeaways
 
+<figure class="ravens-article-figure">
+  <img src="{{ '/assets/images/ravens-2026-kyle-hamilton.jpg' | relative_url }}" alt="Kyle Hamilton in his Ravens uniform before a game" loading="lazy">
+  <figcaption>Hamilton’s versatility gives Jesse Minter a defender opponents must locate before the snap. <a href="https://www.baltimoreravens.com/news/kyle-hamilton-most-versatile-player-nfl-ravens-safety-linebacker-2025" target="_blank" rel="noopener">Baltimore Ravens</a></figcaption>
+</figure>
+
 Minter has already provided the best description of how I expect him to use Hamilton.
 
 "Kyle is a weapon."
@@ -84,6 +89,11 @@ And considerably more disruption than either number captures.
 
 ## 3. Nate Wiggins will be the only Ravens cornerback to play more than 75% of snaps
 
+<figure class="ravens-article-figure">
+  <img src="{{ '/assets/images/ravens-2026-jesse-minter.jpg' | relative_url }}" alt="Ravens head coach Jesse Minter addresses players during the 2026 offseason program" loading="lazy">
+  <figcaption>Minter’s recent history suggests a matchup-driven, rotating cornerback room. <a href="https://www.baltimoreravens.com/photos/favorite-photos-ravens-minicamp-otas-shawn-hubbard-2026" target="_blank" rel="noopener">Shawn Hubbard / Baltimore Ravens Photos</a></figcaption>
+</figure>
+
 For years, NFL depth charts have encouraged us to think about secondary personnel too neatly.
 
 CB1. CB2. Nickel.
@@ -110,6 +120,11 @@ Almost everything around him can change.
 
 ## 4. Lamar Jackson will post the highest play-action rate of his career
 
+<figure class="ravens-article-figure">
+  <img src="{{ '/assets/images/ravens-declan-doyle-lamar-jackson.jpg' | relative_url }}" alt="Ravens offensive coordinator Declan Doyle stands beside Lamar Jackson during an offseason practice" loading="lazy">
+  <figcaption>Declan Doyle’s offense can turn the gravity of Derrick Henry and Lamar Jackson into more play-action opportunities. <a href="https://www.baltimoreravens.com/photos/favorite-photos-ravens-minicamp-otas-shawn-hubbard-2026" target="_blank" rel="noopener">Shawn Hubbard / Baltimore Ravens Photos</a></figcaption>
+</figure>
+
 If there is one offensive tendency I expect to become synonymous with Doyle's first season, this is it. Not because the Ravens need to "establish the run." Derrick Henry's existence already accomplishes the more useful part of that cliché. Defenses have to respect him whether he has carried the ball six times or sixteen.
 
 The opportunity is using that respect against them. Doyle's Bears used play action on 33.1% of their pass plays last season, the second-highest rate in the NFL. Jackson, meanwhile, was dramatically better when the Ravens attached their passing game to a run fake. PFF gave him an 87.9 passing grade on play-action dropbacks, third in the NFL. His grade without play action fell to 58.2, 37th among qualifiers.
@@ -127,6 +142,11 @@ Doyle will have to balance any deeper concepts with quicker play-action answers 
 Doyle should spend the season making defenses choose which one scares them first.
 
 ## 5. The Ravens will protect Lamar substantially better despite becoming worse at center
+
+<figure class="ravens-article-figure">
+  <img src="{{ '/assets/images/ravens-2026-vega-ioane.jpg' | relative_url }}" alt="Ravens rookie guard Vega Ioane works through a drill during the 2026 offseason program" loading="lazy">
+  <figcaption>Vega Ioane is a key variable in whether Baltimore’s rebuilt interior line protects Lamar better. <a href="https://www.baltimoreravens.com/photos/favorite-photos-ravens-minicamp-otas-shawn-hubbard-2026" target="_blank" rel="noopener">Shawn Hubbard / Baltimore Ravens Photos</a></figcaption>
+</figure>
 
 This one sounds contradictory on the surface.
 
