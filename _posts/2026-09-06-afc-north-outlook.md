@@ -170,7 +170,13 @@ Those concerns are why the Ravens should not be treated as overwhelming favorite
 
 The Ravens, meanwhile, finish the regular season with four consecutive AFC North games.
 
-<ol class="afc-finish-run" aria-label="Ravens final four regular-season games"><li><span>1</span><b>At Pittsburgh.</b></li><li><span>2</span><b>Home against Cleveland.</b></li><li><span>3</span><b>At Cincinnati on Thursday night.</b></li><li><span>4</span><b>Home against Pittsburgh.</b></li></ol>
+At Pittsburgh.
+
+Home against Cleveland.
+
+At Cincinnati on Thursday night.
+
+Home against Pittsburgh.
 
 So even if Baltimore starts the season looking like the best team in the division, there is a decent chance it will still have to prove it down the stretch.
 
