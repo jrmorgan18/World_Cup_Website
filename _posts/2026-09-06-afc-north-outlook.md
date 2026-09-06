@@ -119,7 +119,7 @@ The Steelers benefited from turnovers, health and close-game outcomes in 2025. N
 
 Eight or nine wins feels more like the ceiling for this team than the floor it often was in the Tomlin era.
 
-## Cleveland’s defense gives it a chance. The offense still gives everyone else a bigger one.
+## Cleveland’s defense gives it a chance. The offense remains a liability.
 
 <section class="afc-team-snapshot afc-team-snapshot--browns" aria-label="Cleveland Browns 2025 statistics and offseason changes">
   <div><p>Key 2025 stats</p><dl><div><dt>Record:</dt><dd>5-12</dd></div><div><dt>Points per game:</dt><dd>16.4, 31st</dd></div><div><dt>Offensive EPA/play:</dt><dd>32nd</dd></div><div><dt>Pass EPA/play:</dt><dd>32nd</dd></div><div><dt>Defensive EPA/play:</dt><dd>4th</dd></div><div><dt>Pass EPA/play allowed:</dt><dd>3rd</dd></div><div><dt>Total yards allowed:</dt><dd>283.6 per game, 4th</dd></div><div><dt>Turnover margin:</dt><dd>-7</dd></div><div><dt>Sacks allowed:</dt><dd>51</dd></div><div><dt>Adjusted Games Lost:</dt><dd>104.4, 26th</dd></div></dl></div>
