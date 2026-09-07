@@ -49,18 +49,21 @@ section_theme: ravens
     </div>
   </header>
 
-  <nav class="ravens-dashboard-jump" aria-label="Dashboard sections">
-    <a href="#state">State</a>
-    <a href="#games">Game center</a>
-    <a href="#scorecard">Scorecard</a>
-    <a href="#units">Units</a>
-    <a href="#results">Results</a>
-    <a href="#injuries">Injuries</a>
-    <a href="#changes">What changed</a>
-    <a href="#championship">Championship</a>
+  <nav class="ravens-dashboard-jump" aria-label="Dashboard sections" role="tablist">
+    <button type="button" id="dashboard-tab-state" role="tab" aria-controls="state" aria-selected="true">State</button>
+    <button type="button" id="dashboard-tab-games" role="tab" aria-controls="games" aria-selected="false" tabindex="-1">Game center</button>
+    <button type="button" id="dashboard-tab-scorecard" role="tab" aria-controls="scorecard" aria-selected="false" tabindex="-1">Scorecard</button>
+    <button type="button" id="dashboard-tab-units" role="tab" aria-controls="units" aria-selected="false" tabindex="-1">Units</button>
+    <button type="button" id="dashboard-tab-results" role="tab" aria-controls="results" aria-selected="false" tabindex="-1">Results</button>
+    <button type="button" id="dashboard-tab-injuries" role="tab" aria-controls="injuries" aria-selected="false" tabindex="-1">Injuries</button>
+    <button type="button" id="dashboard-tab-changes" role="tab" aria-controls="changes" aria-selected="false" tabindex="-1">What changed</button>
+    <button type="button" id="dashboard-tab-championship" role="tab" aria-controls="championship" aria-selected="false" tabindex="-1">Championship</button>
+    <button type="button" id="dashboard-tab-latest" role="tab" aria-controls="latest" aria-selected="false" tabindex="-1">Analysis</button>
+    <button type="button" id="dashboard-tab-reference" role="tab" aria-controls="reference" aria-selected="false" tabindex="-1">Reference</button>
   </nav>
 
-  <section class="ravens-dashboard-section ravens-state" id="state" aria-labelledby="state-title">
+  <div class="ravens-dashboard-tab-card" data-dashboard-tab-card>
+  <section class="ravens-dashboard-section ravens-state" id="state" role="tabpanel" aria-labelledby="dashboard-tab-state" tabindex="0">
     <div class="ravens-section-heading">
       <p class="de-kicker">The current read</p>
       <h2 id="state-title">State of the Ravens</h2>
@@ -75,7 +78,7 @@ section_theme: ravens
     </div>
   </section>
 
-  <section class="ravens-dashboard-section ravens-game-center" id="games" aria-labelledby="games-title">
+  <section class="ravens-dashboard-section ravens-game-center" id="games" role="tabpanel" aria-labelledby="dashboard-tab-games" tabindex="0">
     <div class="ravens-section-heading ravens-section-heading--split">
       <div><p class="de-kicker">The games that frame the week</p><h2 id="games-title">Game Center</h2></div>
       <p>Last-game production alongside the next opponent's statistical profile and reported availability.</p>
@@ -126,7 +129,7 @@ section_theme: ravens
     </div>
   </section>
 
-  <section class="ravens-dashboard-section ravens-scorecard" id="scorecard" aria-labelledby="scorecard-title">
+  <section class="ravens-dashboard-section ravens-scorecard" id="scorecard" role="tabpanel" aria-labelledby="dashboard-tab-scorecard" tabindex="0">
     <div class="ravens-section-heading ravens-section-heading--split">
       <div><p class="de-kicker">Numbers with context</p><h2 id="scorecard-title">Core Scorecard</h2></div>
       <p>{{ current_snapshot.sample_note }}. Statuses are editorial judgments and can override the statistical rank.</p>
@@ -143,7 +146,7 @@ section_theme: ravens
     {% endfor %}
   </section>
 
-  <section class="ravens-dashboard-section" id="units" aria-labelledby="units-title">
+  <section class="ravens-dashboard-section" id="units" role="tabpanel" aria-labelledby="dashboard-tab-units" tabindex="0">
     <div class="ravens-section-heading ravens-section-heading--split">
       <div><p class="de-kicker">Film and role evaluation</p><h2 id="units-title">Unit Report Card</h2></div>
       <p>{{ dashboard.unit_grade_context.note }}</p>
@@ -166,8 +169,7 @@ section_theme: ravens
     </div>
   </section>
 
-  <div class="ravens-dashboard-paired">
-    <section class="ravens-dashboard-section" id="results" aria-labelledby="results-title">
+    <section class="ravens-dashboard-section" id="results" role="tabpanel" aria-labelledby="dashboard-tab-results" tabindex="0">
       <div class="ravens-section-heading"><p class="de-kicker">Recent form</p><h2 id="results-title">Recent Results</h2></div>
       {% if stats.recent_games.size > 0 %}
         <div class="ravens-form-strip" aria-label="Last five results">
@@ -203,7 +205,7 @@ section_theme: ravens
       {% endif %}
     </section>
 
-    <section class="ravens-dashboard-section" id="injuries" aria-labelledby="injuries-title">
+    <section class="ravens-dashboard-section" id="injuries" role="tabpanel" aria-labelledby="dashboard-tab-injuries" tabindex="0">
       <div class="ravens-section-heading"><p class="de-kicker">Material absences only</p><h2 id="injuries-title">Injuries &amp; Availability</h2></div>
       {% if dashboard.injuries.size > 0 %}
       <div class="ravens-injury-list">
@@ -221,9 +223,7 @@ section_theme: ravens
       <div class="ravens-empty-state"><strong>No material injuries listed</strong><p>Unknown availability is not treated as healthy.</p></div>
       {% endif %}
     </section>
-  </div>
-
-  <section class="ravens-dashboard-section" id="changes" aria-labelledby="changes-title">
+  <section class="ravens-dashboard-section" id="changes" role="tabpanel" aria-labelledby="dashboard-tab-changes" tabindex="0">
     <div class="ravens-section-heading ravens-section-heading--split">
       <div><p class="de-kicker">Signal, not noise</p><h2 id="changes-title">What Changed This Week?</h2></div>
       <p>Manually selected movements in how the Ravens should be understood.</p>
@@ -238,7 +238,7 @@ section_theme: ravens
     </div>
   </section>
 
-  <section class="ravens-dashboard-section ravens-championship" id="championship" aria-labelledby="championship-title">
+  <section class="ravens-dashboard-section ravens-championship" id="championship" role="tabpanel" aria-labelledby="dashboard-tab-championship" tabindex="0">
     <div class="ravens-section-heading ravens-section-heading--split">
       <div><p class="de-kicker">The standard in Baltimore</p><h2 id="championship-title">Championship Check</h2></div>
       <p>Five traits that shape whether this profile can hold up against the best teams in January.</p>
@@ -250,7 +250,7 @@ section_theme: ravens
     </ol>
   </section>
 
-  <section class="ravens-dashboard-section ravens-latest" aria-labelledby="latest-title">
+  <section class="ravens-dashboard-section ravens-latest" id="latest" role="tabpanel" aria-labelledby="dashboard-tab-latest" tabindex="0">
     <div class="ravens-section-heading ravens-section-heading--split">
       <div><p class="de-kicker">Go deeper</p><h2 id="latest-title">Latest Ravens Analysis</h2></div>
       <a href="{{ '/ravens/' | relative_url }}">Visit the Ravens desk →</a>
@@ -268,7 +268,7 @@ section_theme: ravens
     </div>
   </section>
 
-  <section class="ravens-dashboard-section ravens-glossary" aria-labelledby="glossary-title">
+  <section class="ravens-dashboard-section ravens-glossary" id="reference" role="tabpanel" aria-labelledby="dashboard-tab-reference" tabindex="0">
     <div class="ravens-section-heading"><p class="de-kicker">Plain-language reference</p><h2 id="glossary-title">Metric Glossary &amp; Sources</h2></div>
     <div class="ravens-glossary-grid">
       {% for definition in dashboard.metric_definitions %}
@@ -289,4 +289,6 @@ section_theme: ravens
     </ul>
     <p class="ravens-source-note">The updater stores compact weekly snapshots in the repository; browsers never download the source Parquet files. Availability and editorial judgments remain separate from calculated metrics.</p>
   </section>
+  </div>
 </article>
+<script src="{{ '/assets/js/ravens-dashboard-tabs.js' | relative_url }}?v=20260907-ravens-dashboard-tabs"></script>
