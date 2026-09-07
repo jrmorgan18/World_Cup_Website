@@ -20,7 +20,7 @@ hero_credit_url: "https://www.mlb.com/news/gunnar-henderson-homers-twice-goes-4-
 home_recent: false
 home_recent_theme: orioles
 home_recent_label: "Orioles"
-orioles_feature: true
+orioles_feature: false
 feature_kicker: "Weekly recap"
 feature_snapshot_label: "August 25-30 snapshot"
 feature_stats:

@@ -6,23 +6,23 @@
 #
 # Set `recap_url` only when a weekly recap post exists for this period; the
 # "Read the weekly recap" link is hidden when it is absent.
-name: "Gunnar Henderson"
-position: "SS"
-period: "August 25–30, 2026"
-recap_url: "/orioles/weekly-recap-2026-08-31/"
+name: "Christian Encarnacion-Strand"
+position: "3B"
+period: "August 31–September 6, 2026"
+recap_url: "/orioles/weekly-recap-2026-09-06/"
 summary: >-
-  Henderson finished the week at .300/.391/.750 with a double, triple, two home
-  runs, six RBIs and a 1.141 OPS. His 4-for-4, two-homer, five-RBI Sunday carried
-  Baltimore from a 5-1 deficit to a series sweep.
-image: "/assets/images/orioles/orioles-gunnar-henderson-potw-2026-08-31.jpg"
+  Encarnacion-Strand went 6-for-21 with two doubles, a home run and three RBIs,
+  producing a .286/.318/.524 line and an .842 OPS in a week when Baltimore's
+  offense otherwise vanished.
+image: "/assets/images/orioles/orioles-encarnacion-strand-homer-2026-08-25.jpg"
 image_position: "center center"
-image_alt: "Gunnar Henderson follows through on a swing for the Baltimore Orioles against the Athletics"
+image_alt: "Christian Encarnacion-Strand of the Baltimore Orioles watches a home run against the St. Louis Cardinals"
 image_credit: "MLB.com"
-image_credit_url: "https://www.mlb.com/news/gunnar-henderson-homers-twice-goes-4-for-4-orioles-win"
+image_credit_url: "https://www.mlb.com/orioles/video/matthew-liberatore-in-play-run-s-to-christian-encarnacion-strand"
 stats:
-  - { label: "Games", value: "6" }
-  - { label: "AVG", value: ".300" }
-  - { label: "HR", value: "2" }
-  - { label: "RBI", value: "6" }
-  - { label: "SLG", value: ".750" }
-  - { label: "OPS", value: "1.141" }
+  - { label: "Games", value: "7" }
+  - { label: "AVG", value: ".286" }
+  - { label: "2B", value: "2" }
+  - { label: "HR", value: "1" }
+  - { label: "RBI", value: "3" }
+  - { label: "OPS", value: ".842" }
