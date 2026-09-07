@@ -788,9 +788,9 @@ cole-campbell:
     - { label: Transfer report, url: "https://www.welt.de/regionales/nrw/article6a4f67aebb0cf80de56a345c/rekordtransfer-elversberg-holt-campbell-aus-dortmund.html" }
 
 luca-bombino:
-  club: San Diego FC
+  club: Stoke City
   position: Left back
-  updated: July 2026
+  updated: September 2026
   summary: >-
     Bombino is a calmer, more possession-oriented left back than Peyton Miller. He progresses attacks through positioning, combination play and sensible passing under pressure rather than elite explosiveness. He can step inside during buildup and already has meaningful senior minutes.
   strengths: Composure, buildup understanding, combination play, inverted positioning, crossing and senior experience.
@@ -799,6 +799,7 @@ luca-bombino:
   sources:
     - { label: FotMob, url: "https://www.fotmob.com/players/1617160/luca-bombino" }
     - { label: San Diego FC, url: "https://www.sandiegofc.com/players/luca-bombino/" }
+    - { label: "San Diego FC transfer announcement", url: "https://www.sandiegofc.com/news/san-diego-fc-transfers-defender-luca-bombino-to-stoke-city" }
 
 leonard-prescott:
   club: Bayern Munich

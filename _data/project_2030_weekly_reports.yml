@@ -8,7 +8,7 @@ reports:
     source_note: "Official club, league and competition records were checked first, including local-language reporting in England, Germany, Denmark, Italy and Croatia. Local club-specific coverage supplied match context; secondary match records were used only to establish minutes or events absent from official recaps. Verified facts are separated from the development interpretation, and unreported statistics were not inferred."
     summary:
       biggest_risers: "Cavan Sullivan scored for a third straight match and became the first MLS teenager with a goal contribution in five consecutive regular-season games. Mathis Albert made his first Borussia Dortmund senior start and took six shots, Diego Kochen recorded his first Lyngby clean sheet, and Beau Leroux scored for San Jose. Justin Ellis, Caleb Wiley and Niko Tsakiris also produced direct goal contributions."
-      issues_to_monitor: "Chris Brady conceded four in Toronto despite making four saves, Benjamin Cremaschi was an unused substitute twice, Luca Bombino missed San Diego's squad again and Duran Ferree remained the backup. No competitive action: Paxten Aaronson's Colorado had no fixture; Jackson Hopkins' D.C. match was postponed; Kevin Paredes remains out for several months; Zavier Gozo and Ferree were unused substitutes."
+      issues_to_monitor: "Chris Brady conceded four in Toronto despite making four saves, Benjamin Cremaschi was an unused substitute twice and Duran Ferree remained the backup. No competitive action: Paxten Aaronson's Colorado had no fixture; Jackson Hopkins' D.C. match was postponed; Kevin Paredes remains out for several months; Zavier Gozo and Ferree were unused substitutes."
       best_story: "Sullivan supplied the defining development performance: a dangerous early shot preceded his composed 75th-minute finish, his fourth league goal and third in three matches. His history-making fifth straight MLS game with a goal contribution is now sustained senior influence, not merely a projection."
     players:
       - profile: caleb-wiley
@@ -56,7 +56,7 @@ reports:
         direction: steady
         direction_label: Holding
         context: 90-minute striker start
-        recap: "Hall, also listed in some records as Julian Zakrzewski, started at center forward and played all 90 minutes in Red Bull New York's 0-0 draw at Seattle. His best chance came in the 74th minute when he ran in behind from the left, but Andrew Thomas closed the angle and saved; Hall finished without a goal or assist."
+        recap: "Hall started at center forward and played all 90 minutes in Red Bull New York's 0-0 draw at Seattle. His best chance came in the 74th minute when he ran in behind from the left, but Andrew Thomas closed the angle and saved; Hall finished without a goal or assist."
         development_read: "A full senior start and the creation of New York's clearest chance reinforce his role, even though the final action did not arrive. The week did not materially change the projection."
         sources:
           - { label: "RBNY match recap (official)", url: "https://www.newyorkredbulls.com/news/match-recap-pres-by-provident-bank-ethan-horvath-stands-tall-rbny-take-point-in-seattle" }
@@ -261,15 +261,15 @@ reports:
           - { label: "Bundesliga live match center (official)", url: "https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/2/borussia-moenchengladbach-vs-sv-elversberg/liveticker" }
       - profile: luca-bombino
         name: Luca Bombino
-        club: San Diego FC
-        trend: "↓"
-        direction: falling
-        direction_label: Concern
-        context: Outside matchday squad
-        recap: "Bombino was not listed among San Diego's starters or substitutes for the 1-0 loss at Orlando. The club did not publish an availability explanation by the reporting cutoff."
-        development_read: "Another missed senior matchday squad extends the immediate role concern. Without an official injury explanation or reserve appearance, there is no positive development evidence to offset the selection drop."
+        club: Stoke City
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        context: Permanent Championship transfer
+        recap: "San Diego transferred Bombino permanently to Stoke City on September 1, explaining his absence from San Diego's matchday squad at Orlando. The club said it retained a future sell-on percentage; Bombino joins the EFL Championship after 17 regular-season appearances, including 13 starts, for San Diego in 2026."
+        development_read: "A permanent move to the Championship at 20 is a positive pathway step, not a selection concern. There is not yet a Stoke performance to evaluate, but the higher-level club environment gives him a stronger next development test."
         sources:
-          - { label: "San Diego match report and lineups (official)", url: "https://www.sandiegofc.com/news/match-recap-san-diego-fc-falls-1-0-to-orlando-city-sc-at-inter-co-stadium" }
+          - { label: "San Diego-to-Stoke transfer announcement (official)", url: "https://www.sandiegofc.com/news/san-diego-fc-transfers-defender-luca-bombino-to-stoke-city" }
       - profile: jackson-hopkins
         name: Jackson Hopkins
         club: D.C. United
