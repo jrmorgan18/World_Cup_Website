@@ -1,4 +1,297 @@
 reports:
+  - id: "2026-09-06"
+    group: prospects
+    group_label: Prospects
+    published: "September 7, 2026"
+    window: "August 31-September 6, 2026"
+    week_ending: "September 6, 2026"
+    source_note: "Official club, league and competition records were checked first, including local-language reporting in England, Germany, Denmark, Italy and Croatia. Local club-specific coverage supplied match context; secondary match records were used only to establish minutes or events absent from official recaps. Verified facts are separated from the development interpretation, and unreported statistics were not inferred."
+    summary:
+      biggest_risers: "Cavan Sullivan scored for a third straight match and became the first MLS teenager with a goal contribution in five consecutive regular-season games. Mathis Albert made his first Borussia Dortmund senior start and took six shots, Diego Kochen recorded his first Lyngby clean sheet, and Beau Leroux scored for San Jose. Justin Ellis, Caleb Wiley and Niko Tsakiris also produced direct goal contributions."
+      issues_to_monitor: "Chris Brady conceded four in Toronto despite making four saves, Benjamin Cremaschi was an unused substitute twice, Luca Bombino missed San Diego's squad again and Duran Ferree remained the backup. No competitive action: Paxten Aaronson's Colorado had no fixture; Jackson Hopkins' D.C. match was postponed; Kevin Paredes remains out for several months; Zavier Gozo and Ferree were unused substitutes."
+      best_story: "Sullivan supplied the defining development performance: a dangerous early shot preceded his composed 75th-minute finish, his fourth league goal and third in three matches. His history-making fifth straight MLS game with a goal contribution is now sustained senior influence, not merely a projection."
+    players:
+      - profile: caleb-wiley
+        name: Caleb Wiley
+        club: Preston North End
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        context: Goal and two starts
+        recap: "Wiley played 125 minutes across two Championship starts at left wingback. He scored Preston's 51st-minute equalizer with a powerful finish in a 3-1 loss to Bristol City, leaving after 66 minutes, then played 59 minutes in a 2-1 derby win over Blackburn."
+        development_read: "A goal and two immediate starts turn an uncertain Chelsea pathway into tangible senior evidence. The defensive side of his wingback work still needs monitoring, but regular Championship minutes are exactly the reset his outlook required."
+        sources:
+          - { label: "Chelsea transfer tracker (official)", url: "https://www.chelseafc.com/en/news/article/summer-transfers-2026-all-the-chelsea-ins-outs-and-new-contracts-so-far" }
+          - { label: "Preston-Bristol City report (secondary)", url: "https://www.skysports.com/football/preston-north-end-vs-bristol-city/560537" }
+          - { label: "Preston-Blackburn report (secondary)", url: "https://www.skysports.com/football/preston-vs-blackburn/report/560551" }
+          - { label: "Wiley match log (secondary)", url: "https://www.fotmob.com/players/1170744/caleb-wiley" }
+      - profile: damion-downs
+        name: Damion Downs
+        club: St. Louis CITY SC
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        context: New club and MLS debut
+        recap: "Southampton loaned Downs to St. Louis through the end of the 2027 MLS season. After only two training days, he made his MLS debut in stoppage time of St. Louis' 3-1 win at Western Conference-leading Vancouver; he had no goal or assist in the brief appearance."
+        development_read: "The cameo offers almost no performance evidence, but the move resolves the selection problem at Southampton and creates a clearer route to senior striker minutes. That is a modest but meaningful pathway improvement."
+        sources:
+          - { label: "Southampton loan announcement (official)", url: "https://www.southamptonfc.com/en/news/article/downs-departs-for-st-louis" }
+          - { label: "St. Louis match report (official)", url: "https://www.stlcitysc.com/news/match-report-st-louis-city-sc-wins-3-1-against-vancouver-whitecaps-fc-on-saturday-night-at-bc-place" }
+      - profile: zavier-gozo
+        name: Zavier Gozo
+        club: Crystal Palace
+        trend: "→"
+        direction: steady
+        direction_label: Holding
+        context: Premier League bench
+        recap: "Gozo was an unused first-team substitute in Crystal Palace's 3-2 Premier League win at Fulham. He was not in the Palace U21 squad for the September 2 Premier League International Cup win over Paris Saint-Germain."
+        development_read: "There was no performance to grade, but remaining with the senior matchday group after his debut keeps the pathway outlook stable. The next step is turning first-team bench inclusion into recurring minutes."
+        sources:
+          - { label: "Fulham-Palace match center (official)", url: "https://www.cpfc.co.uk/match/2645219/men/premier-league/2026-27/fulham-vs-crystal-palace-2026-09-05/" }
+          - { label: "Palace U21-PSG report (official)", url: "https://www.cpfc.co.uk/news/match-reports/u21s-report-palace-secure-statement-win-over-psg/" }
+      - profile: julian-hall
+        name: Julian Hall
+        club: Red Bull New York
+        trend: "→"
+        direction: steady
+        direction_label: Holding
+        context: 90-minute striker start
+        recap: "Hall, also listed in some records as Julian Zakrzewski, started at center forward and played all 90 minutes in Red Bull New York's 0-0 draw at Seattle. His best chance came in the 74th minute when he ran in behind from the left, but Andrew Thomas closed the angle and saved; Hall finished without a goal or assist."
+        development_read: "A full senior start and the creation of New York's clearest chance reinforce his role, even though the final action did not arrive. The week did not materially change the projection."
+        sources:
+          - { label: "RBNY match recap (official)", url: "https://www.newyorkredbulls.com/news/match-recap-pres-by-provident-bank-ethan-horvath-stands-tall-rbny-take-point-in-seattle" }
+          - { label: "Seattle lineups and stats (official)", url: "https://www.soundersfc.com/news/match-recap-sounders-fc-plays-to-scoreless-draw-with-red-bull-new-york-on-saturday-night-at-lumen-field" }
+          - { label: "Seattle chance detail (official)", url: "https://www.soundersfc.com/news/recap-sounders-red-bull-new-york-close-out-90-minutes-with-scoreless-draw" }
+      - profile: justin-ellis
+        name: Justin Ellis
+        club: Orlando City
+        trend: "↑↑"
+        direction: rising
+        direction_label: Rising fast
+        context: Match-winning assist
+        recap: "Ellis started in Orlando's attack and played 75 minutes in a 1-0 win over San Diego. In the 28th minute he slipped a precise pass through the defense for Antoine Griezmann's winner, recording his ninth assist of the season; Orlando's coach also singled out Ellis' defensive work as his biggest current improvement."
+        development_read: "Producing the decisive pass on a self-described off night while earning specific praise for defensive growth is excellent two-way development evidence. He is adding reliability to the attacking talent already evident."
+        sources:
+          - { label: "Orlando match report and quotes (official)", url: "https://www.orlandocitysc.com/news/match-report-orlando-city-defeats-san-diego-fc-1-0" }
+      - profile: adri-mehmeti
+        name: Adri Mehmeti
+        club: Red Bull New York
+        trend: "→"
+        direction: steady
+        direction_label: Holding
+        context: Road start
+        recap: "Mehmeti started in central midfield and played 74 minutes in Red Bull New York's 0-0 draw at Seattle before David Ruiz replaced him. He recorded no goal or assist as New York leaned on Ethan Horvath's six saves to secure the point."
+        development_read: "Another senior midfield start preserves his positive role trajectory, but the match supplied limited attacking evidence and Seattle controlled much of the threat. The outlook holds rather than rises."
+        sources:
+          - { label: "RBNY match recap (official)", url: "https://www.newyorkredbulls.com/news/match-recap-pres-by-provident-bank-ethan-horvath-stands-tall-rbny-take-point-in-seattle" }
+          - { label: "Seattle lineups and stats (official)", url: "https://www.soundersfc.com/news/match-recap-sounders-fc-plays-to-scoreless-draw-with-red-bull-new-york-on-saturday-night-at-lumen-field" }
+      - profile: neil-pierre
+        name: Neil Pierre
+        club: Philadelphia Union
+        trend: "→"
+        direction: steady
+        direction_label: Holding
+        context: Clean sheet with penalty warning
+        recap: "Pierre played all 90 minutes at center back in Philadelphia's 2-0 win over Montréal. The Union allowed only two shots on target and kept a clean sheet, but Pierre conceded a 68th-minute penalty for fouling Hennadii Synchuk; Andre Blake saved it."
+        development_read: "The full-match clean sheet supports his growing senior role, while the penalty is a meaningful decision-making blemish that prevents a rising grade. The overall outlook is unchanged."
+        sources:
+          - { label: "Union match recap (official)", url: "https://www.philadelphiaunion.com/news/recap-sullivan-makes-history-as-union-extend-unbeaten-run-to-eight" }
+      - profile: chris-brady
+        name: Chris Brady
+        club: Chicago Fire
+        trend: "↓"
+        direction: falling
+        direction_label: Concern
+        context: Four goals conceded
+        recap: "Brady started and played all 90 minutes in Chicago's 4-4 draw at Toronto. He made four saves from eight shots on target but conceded four times, including a Josh Sargent hat trick; the Fire nevertheless extended their unbeaten run to six matches."
+        development_read: "His starting role remains secure, but conceding four from eight shots on target is a negative weekly outcome for a goalkeeper trying to strengthen his national-team case. It is a one-week dip, not a broader role alarm."
+        sources:
+          - { label: "Chicago match report and stats (official)", url: "https://www.chicagofirefc.com/news/match-recap-maren-haile-selassie-records-brace-in-4-4-road-draw-against-toronto-fc" }
+      - profile: rokas-pukstas
+        name: Rokas Pukstas
+        club: Middlesbrough
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        context: Championship debut
+        recap: "Pukstas completed a permanent transfer from Hajduk Split to Middlesbrough on August 31. He was an unused substitute in the 1-1 draw at Burnley on September 2, then made his Boro debut with a six-minute midfield cameo in the 1-0 win at Queens Park Rangers on September 5."
+        development_read: "A move into the Championship followed by an immediate debut is a clear pathway step. Six minutes cannot establish performance quality, but the quick integration is encouraging after his decisive Hajduk farewell."
+        sources:
+          - { label: "Hajduk transfer announcement (official)", url: "https://hajduk.hr/vijest/rokas-pukstas-karijeru-nastavlja-u-middlesbroughu/18489" }
+          - { label: "QPR-Middlesbrough teams (secondary)", url: "https://www.skysports.com/football/queens-park-rangers-vs-middlesbrough/teams/560552" }
+          - { label: "Pukstas match log (secondary)", url: "https://www.fotmob.com/players/1377897/rokas-pukstas" }
+      - profile: cavan-sullivan
+        name: Cavan Sullivan
+        club: Philadelphia Union
+        trend: "↑↑"
+        direction: rising
+        direction_label: Rising fast
+        context: Third straight game with a goal
+        recap: "Sullivan started in advanced midfield and played 82 minutes in Philadelphia's 2-0 win over Montréal. His strong 13th-minute shot forced a save and created a rebound chance, then he calmly scored with his left foot in the 75th minute. It was his fourth league goal and third consecutive match with a goal."
+        development_read: "Sullivan became the youngest MLS player—and the first teenager—to post a goal contribution in five straight regular-season matches. The combination of repeated chance creation and composed finishing is the week's strongest evidence that his elite projection is translating to senior influence."
+        sources:
+          - { label: "Union match recap (official)", url: "https://www.philadelphiaunion.com/news/recap-sullivan-makes-history-as-union-extend-unbeaten-run-to-eight" }
+      - profile: niko-tsakiris
+        name: Niko Tsakiris
+        club: San Jose Earthquakes
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        context: 90 minutes and an assist
+        recap: "Tsakiris started in San Jose's midfield and played all 90 minutes in a 1-1 draw at Austin. He received from Beau Leroux in the left half-space and laid the ball back for Leroux's eighth-minute goal, earning the official assist; Austin equalized at 90+7."
+        development_read: "A full start and a purposeful final-third combination add positive evidence after his injury interruption. The late team concession does not diminish his direct contribution."
+        sources:
+          - { label: "San Jose match report (official)", url: "https://www.sjearthquakes.com/news/match-recap-earthquakes-1-austin-fc-1-x5305" }
+      - profile: paxten-aaronson
+        name: Paxten Aaronson
+        club: Colorado Rapids
+        trend: "→"
+        direction: steady
+        direction_label: No action
+        context: Schedule break
+        recap: "Colorado had no competitive fixture during the August 31-September 6 window; its next match is September 9 against Austin. Aaronson therefore recorded no appearance or minutes this week."
+        development_read: "No performance evaluation this week. The lack of a fixture does not change his established starting role or Project 2030 outlook."
+        sources:
+          - { label: "Colorado schedule (official)", url: "https://www.coloradorapids.com/schedule/" }
+      - profile: mathis-albert
+        name: Mathis Albert
+        club: Borussia Dortmund
+        trend: "↑↑"
+        direction: rising
+        direction_label: Rising fast
+        context: First senior start
+        recap: "Albert made his first Borussia Dortmund senior start and played all 90 minutes on the left wing in a 5-0 DFB-Pokal win at fifth-tier HEBC Hamburg. He took six shots, joint-second most in the match, and coach Niko Kovac praised his one-on-one ability and overall performance; Albert recorded no goal or assist."
+        development_read: "The opponent level requires context, but a full competitive senior start, high shot involvement and public coach praise are meaningful pathway evidence. This materially strengthens his near-term first-team outlook."
+        sources:
+          - { label: "Dortmund match report (official, German)", url: "https://www.bvb.de/de/de/aktuelles/news/news.html/2026/9/1/BVB-mit-Inacio-Doppelpack-und-klarem-Sieg-in-Runde-zwei.html" }
+          - { label: "Dortmund youth praise and match data (official, English)", url: "https://www.bvb.de/de/en/news/news-overview/news.html/2026/9/1/A-Record-Crowd-Lots-of-Shots-and-Praise-for-Two-Up-and-Comers.html" }
+      - profile: diego-kochen
+        name: Diego Kochen
+        club: FC Barcelona / Lyngby Boldklub
+        trend: "↑↑"
+        direction: rising
+        direction_label: Rising fast
+        context: First Lyngby clean sheet
+        recap: "Kochen started and played all 90 minutes in Lyngby's 2-0 win at Viborg. The Danish federation team sheet confirms the start, and the match record credits him with three saves from four on-target attempts and his first clean sheet of the loan."
+        development_read: "After seven saves in the previous league match, Kochen followed with a first win and clean sheet. Consecutive strong outcomes plus uninterrupted starts are the clearest evidence yet that the loan is providing both volume and developmental pressure."
+        sources:
+          - { label: "Viborg-Lyngby team sheet (official federation)", url: "https://dommer.dbu.dk/resultater/kamp/556135_506118/kampinfo" }
+          - { label: "Kochen match log (secondary)", url: "https://fbref.com/en/players/497144d6/matchlogs/2026-2027/Diego-Kochen-Match-Logs" }
+      - profile: benjamin-cremaschi
+        name: Benjamin Cremaschi
+        club: Parma
+        trend: "↓"
+        direction: falling
+        direction_label: Concern
+        context: Two unused benches
+        recap: "Cremaschi was an unused substitute in Parma's 2-0 Coppa Italia loss to Cremonese on September 1 and again in the 1-1 Serie A draw with Monza on September 6. He recorded no competitive minutes."
+        development_read: "Returning to matchday availability is positive after knee surgery, but two unused benches after cameo minutes earlier in the season are a small role setback. His recovery remains the larger context."
+        sources:
+          - { label: "Parma-Cremonese report (official, Italian)", url: "https://www.parmacalcio1913.com/news/coppa-italia-frecciarossa-parma-cremonese-0-2/" }
+          - { label: "Parma-Monza report (official, English)", url: "https://www.parmacalcio1913.com/en/main-news/seria-a-enilive-parma-monza-1-1/" }
+      - profile: kevin-paredes
+        name: Kevin Paredes
+        club: FC Utrecht
+        trend: "✚"
+        direction: insufficient
+        direction_label: Injured
+        context: Ankle injury
+        recap: "Paredes did not play. FC Utrecht's official update says the ankle injury suffered at Sparta Rotterdam will keep him unavailable for several months; no more precise timetable was published during the window."
+        development_read: "No performance evaluation this week. The extended absence delays his chance to consolidate the wingback role and makes recovery the only immediate development priority."
+        sources:
+          - { label: "FC Utrecht injury update (official, Dutch)", url: "https://www.fcutrecht.nl/nieuws/2026/augustus/kevin-paredes-enkele-maanden-niet-inzetbaar/" }
+      - profile: peyton-miller
+        name: Peyton Miller
+        club: New England Revolution
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        context: Five shots from the front line
+        recap: "Miller started in New England's front three and played all 90 minutes in a 2-1 loss at LA Galaxy. He matched his career high with five shots and, moments after Alhassan Yusuf hit one post, beat two defenders and struck the opposite post. He finished without a goal or assist."
+        development_read: "The finishing margin was narrow, but five attempts and a high-quality self-created chance reinforce that his move from fullback into an attacking winger role is generating real threat. The performance strengthens the positional experiment despite the loss."
+        sources:
+          - { label: "New England match report and notes (official)", url: "https://www.revolutionsoccer.net/news/recap-revs-continue-road-swing-2-1-loss-at-galaxy" }
+      - profile: cooper-sanchez
+        name: Cooper Sanchez
+        club: Atlanta United
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        context: Positive start; injury watch
+        recap: "Sanchez started as a defensive midfielder and played 56 minutes in Atlanta's 2-2 draw at Inter Miami. His precise line-splitting pass to Alexey Miranchuk initiated the move for Miguel Almirón's 35th-minute goal. He left after receiving treatment; secondary commentary classified the change as injury-related, but Atlanta had not published a diagnosis by cutoff."
+        development_read: "The pass before the assist was valuable senior evidence of progressive midfield play in a difficult road match. The performance nudges the outlook upward, with his availability now the immediate issue to monitor."
+        sources:
+          - { label: "Atlanta match recap (official)", url: "https://www.atlutd.com/news/match-recap-penalty-redemption-embolo-equalizes-draw-inter-miami-september-5-2026" }
+          - { label: "Atlanta starting XI (official)", url: "https://www.atlutd.com/news/starting-xi-roster-notes-breel-embolo-inter-miami-september-5-2026" }
+          - { label: "Sanchez match log (secondary)", url: "https://fbref.com/en/players/4fcf3b14/matchlogs/2026/Cooper-Sanchez-Match-Logs" }
+          - { label: "Injury stoppage commentary (secondary)", url: "https://www.skysports.com/football/inter-miami-cf-vs-atlanta-united-fc/550552" }
+      - profile: beau-leroux
+        name: Beau Leroux
+        club: San Jose Earthquakes
+        trend: "↑↑"
+        direction: rising
+        direction_label: Rising fast
+        context: Goal from midfield
+        recap: "Leroux started and played all 90 minutes in San Jose's 1-1 draw at Austin. He combined with Niko Tsakiris, advanced from the edge of the box and slid a low eighth-minute finish into the far corner for his latest MLS goal; San Jose conceded at 90+7."
+        development_read: "A composed goal from a deeper midfield starting role is strong evidence that his growing two-way responsibility is not suppressing his attacking contribution. The late equalizer was a team defensive failure, not a reason to discount his week."
+        sources:
+          - { label: "San Jose match report (official)", url: "https://www.sjearthquakes.com/news/match-recap-earthquakes-1-austin-fc-1-x5305" }
+      - profile: francis-westfield
+        name: Francis Westfield
+        club: Philadelphia Union
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        context: Another full-match clean sheet
+        recap: "Westfield started at right back and played all 90 minutes in Philadelphia's 2-0 win over Montréal. He helped limit the visitors to two shots on target and drew Victor Loturi's 73rd-minute yellow card; he recorded no goal or assist."
+        development_read: "Another complete match in the first-choice back line and a clean sheet add to the evidence that he has secured meaningful senior responsibility. The week strengthens his role case without materially changing his attacking projection."
+        sources:
+          - { label: "Union match recap (official)", url: "https://www.philadelphiaunion.com/news/recap-sullivan-makes-history-as-union-extend-unbeaten-run-to-eight" }
+      - profile: cole-campbell
+        name: Cole Campbell
+        club: SV Elversberg
+        trend: "→"
+        direction: steady
+        direction_label: Holding
+        context: Second Bundesliga start
+        recap: "Campbell started on the left and played 64 minutes in Elversberg's remarkable 4-3 comeback win at Borussia Mönchengladbach. He was denied by a well-timed tackle on a 24th-minute break and finished without a goal or assist; Bundesliga data rated him the match's most efficient passer."
+        development_read: "A second straight Bundesliga start sustains the breakthrough established by last week's goal. The substitutes drove the comeback after he left, so this was confirmation of role rather than another leap."
+        sources:
+          - { label: "Bundesliga match report (official)", url: "https://www.bundesliga.com/en/bundesliga/news/borussia-monchengladbach-elversberg-match-report-highlights-matchday-2-39041" }
+          - { label: "Bundesliga live match center (official)", url: "https://www.bundesliga.com/en/bundesliga/matchday/2026-2027/2/borussia-moenchengladbach-vs-sv-elversberg/liveticker" }
+      - profile: luca-bombino
+        name: Luca Bombino
+        club: San Diego FC
+        trend: "↓"
+        direction: falling
+        direction_label: Concern
+        context: Outside matchday squad
+        recap: "Bombino was not listed among San Diego's starters or substitutes for the 1-0 loss at Orlando. The club did not publish an availability explanation by the reporting cutoff."
+        development_read: "Another missed senior matchday squad extends the immediate role concern. Without an official injury explanation or reserve appearance, there is no positive development evidence to offset the selection drop."
+        sources:
+          - { label: "San Diego match report and lineups (official)", url: "https://www.sandiegofc.com/news/match-recap-san-diego-fc-falls-1-0-to-orlando-city-sc-at-inter-co-stadium" }
+      - profile: jackson-hopkins
+        name: Jackson Hopkins
+        club: D.C. United
+        trend: "→"
+        direction: steady
+        direction_label: No action
+        context: Match postponed
+        recap: "D.C. United's September 5 match at FC Cincinnati was postponed because inclement weather left the pitch unsafe. Hopkins therefore recorded no competitive appearance or minutes during the window."
+        development_read: "No performance evaluation this week. The postponement is schedule-driven and does not change his development outlook."
+        sources:
+          - { label: "D.C. postponement announcement (official)", url: "https://www.dcunited.com/news/d-c-united-s-match-against-fc-cincinnati-postponed-due-to-inclement-weather" }
+      - profile: duran-ferree
+        name: Duran Ferree
+        club: San Diego FC
+        trend: "↓"
+        direction: falling
+        direction_label: Concern
+        context: Unused backup
+        recap: "Ferree was an unused substitute in San Diego's 1-0 loss at Orlando while CJ Dos Santos started in goal. He recorded no competitive minutes."
+        development_read: "Remaining on the senior bench is preferable to missing the squad, but another week without a start or appearance continues to weaken the immediate playing-time outlook for a young goalkeeper."
+        sources:
+          - { label: "San Diego match report and lineups (official)", url: "https://www.sandiegofc.com/news/match-recap-san-diego-fc-falls-1-0-to-orlando-city-sc-at-inter-co-stadium" }
   - id: "2026-08-30"
     group: prospects
     group_label: Prospects

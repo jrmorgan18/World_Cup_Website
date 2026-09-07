@@ -519,7 +519,7 @@ george-campbell:
     - { label: "2025-26 career summary", url: "https://en.wikipedia.org/wiki/George_Campbell_%28soccer%29" }
 
 caleb-wiley:
-  club: "Chelsea (future unsettled after Watford loan)"
+  club: "Preston North End"
   position: "Left back / left wingback"
   updated: July 2026
   status: "Injury-delayed prospect - club reset required"
@@ -532,7 +532,7 @@ caleb-wiley:
     - { label: "July 2026 exit reporting", url: "https://sbisoccer.com/2026/07/slonina-wiley-set-to-become-latest-americans-for-chelsea-exit" }
 
 damion-downs:
-  club: "Southampton"
+  club: "St. Louis CITY SC"
   position: "Striker"
   updated: July 2026
   status: "Young striker reset - production now required"
@@ -625,7 +625,7 @@ chris-brady:
     - { label: U.S. Soccer, url: "https://www.ussoccer.com/players/b/chris-brady" }
 
 rokas-pukstas:
-  club: Hajduk Split
+  club: Middlesbrough
   position: Box-to-box No. 8
   updated: July 2026
   summary: >-
