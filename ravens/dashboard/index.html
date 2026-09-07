@@ -50,34 +50,16 @@ section_theme: ravens
   </header>
 
   <nav class="ravens-dashboard-jump" aria-label="Dashboard sections" role="tablist">
-    <button type="button" id="dashboard-tab-state" role="tab" aria-controls="state" aria-selected="true">State</button>
-    <button type="button" id="dashboard-tab-games" role="tab" aria-controls="games" aria-selected="false" tabindex="-1">Game center</button>
+    <button type="button" id="dashboard-tab-games" role="tab" aria-controls="games" aria-selected="true">Game center</button>
     <button type="button" id="dashboard-tab-scorecard" role="tab" aria-controls="scorecard" aria-selected="false" tabindex="-1">Scorecard</button>
     <button type="button" id="dashboard-tab-units" role="tab" aria-controls="units" aria-selected="false" tabindex="-1">Units</button>
     <button type="button" id="dashboard-tab-results" role="tab" aria-controls="results" aria-selected="false" tabindex="-1">Results</button>
     <button type="button" id="dashboard-tab-injuries" role="tab" aria-controls="injuries" aria-selected="false" tabindex="-1">Injuries</button>
-    <button type="button" id="dashboard-tab-changes" role="tab" aria-controls="changes" aria-selected="false" tabindex="-1">What changed</button>
-    <button type="button" id="dashboard-tab-championship" role="tab" aria-controls="championship" aria-selected="false" tabindex="-1">Championship</button>
     <button type="button" id="dashboard-tab-latest" role="tab" aria-controls="latest" aria-selected="false" tabindex="-1">Analysis</button>
     <button type="button" id="dashboard-tab-reference" role="tab" aria-controls="reference" aria-selected="false" tabindex="-1">Reference</button>
   </nav>
 
   <div class="ravens-dashboard-tab-card" data-dashboard-tab-card>
-  <section class="ravens-dashboard-section ravens-state" id="state" role="tabpanel" aria-labelledby="dashboard-tab-state" tabindex="0">
-    <div class="ravens-section-heading">
-      <p class="de-kicker">The current read</p>
-      <h2 id="state-title">State of the Ravens</h2>
-    </div>
-    <div class="ravens-state-layout">
-      <p class="ravens-state-summary">{{ dashboard.editorial.state.summary }}</p>
-      <dl class="ravens-state-callouts">
-        <div><dt>Biggest strength</dt><dd>{{ dashboard.editorial.state.biggest_strength }}</dd></div>
-        <div><dt>Biggest concern</dt><dd>{{ dashboard.editorial.state.biggest_concern }}</dd></div>
-        <div><dt>What changed this week</dt><dd>{{ dashboard.editorial.state.changed_this_week }}</dd></div>
-      </dl>
-    </div>
-  </section>
-
   <section class="ravens-dashboard-section ravens-game-center" id="games" role="tabpanel" aria-labelledby="dashboard-tab-games" tabindex="0">
     <div class="ravens-section-heading ravens-section-heading--split">
       <div><p class="de-kicker">The games that frame the week</p><h2 id="games-title">Game Center</h2></div>
@@ -223,33 +205,6 @@ section_theme: ravens
       <div class="ravens-empty-state"><strong>No material injuries listed</strong><p>Unknown availability is not treated as healthy.</p></div>
       {% endif %}
     </section>
-  <section class="ravens-dashboard-section" id="changes" role="tabpanel" aria-labelledby="dashboard-tab-changes" tabindex="0">
-    <div class="ravens-section-heading ravens-section-heading--split">
-      <div><p class="de-kicker">Signal, not noise</p><h2 id="changes-title">What Changed This Week?</h2></div>
-      <p>Manually selected movements in how the Ravens should be understood.</p>
-    </div>
-    <div class="ravens-change-grid">
-      {% for change in dashboard.editorial.weekly_changes %}
-      <article>
-        <span aria-label="{{ change.direction }} trend">{% if change.direction == "up" %}↑{% elsif change.direction == "down" %}↓{% else %}→{% endif %}</span>
-        <div><h3>{{ change.title }}</h3><p>{{ change.text }}</p></div>
-      </article>
-      {% endfor %}
-    </div>
-  </section>
-
-  <section class="ravens-dashboard-section ravens-championship" id="championship" role="tabpanel" aria-labelledby="dashboard-tab-championship" tabindex="0">
-    <div class="ravens-section-heading ravens-section-heading--split">
-      <div><p class="de-kicker">The standard in Baltimore</p><h2 id="championship-title">Championship Check</h2></div>
-      <p>Five traits that shape whether this profile can hold up against the best teams in January.</p>
-    </div>
-    <ol>
-      {% for item in dashboard.editorial.championship_check %}
-      <li><div><h3>{{ item.category }}</h3><span class="ravens-status">{{ item.status }}</span></div><p>{{ item.explanation }}</p></li>
-      {% endfor %}
-    </ol>
-  </section>
-
   <section class="ravens-dashboard-section ravens-latest" id="latest" role="tabpanel" aria-labelledby="dashboard-tab-latest" tabindex="0">
     <div class="ravens-section-heading ravens-section-heading--split">
       <div><p class="de-kicker">Go deeper</p><h2 id="latest-title">Latest Ravens Analysis</h2></div>
