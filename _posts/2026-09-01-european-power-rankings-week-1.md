@@ -13,7 +13,7 @@ power_rankings_feature: true
 power_rankings_edition: "2026-27-week-1"
 source_docx: "articles/European Power Rankings 9_1_ Roma Surges, PSG Wobbles and Leverkusen Falls Out.docx"
 home_recent: true
-home_recent_position: 2
+home_recent_position: 3
 home_recent_label: "European Power Rankings"
 home_recent_theme: soccer
 feature_label: "European Power Rankings"
