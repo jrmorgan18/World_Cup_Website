@@ -1,0 +1,55 @@
+---
+layout: default
+title: NFL Betting Dashboard
+permalink: /betting/nfl-dashboard/
+section_theme: betting
+---
+{% assign tracker = site.data.nfl_bet_tracker %}
+<section class="nfl-betting-dashboard" aria-labelledby="nfl-betting-dashboard-title">
+  <header class="nfl-betting-dashboard-head">
+    <div>
+      <p class="de-eyebrow"><span></span> NFL betting ledger</p>
+      <h1 id="nfl-betting-dashboard-title">The 2026 <em>board.</em></h1>
+      <p>Every NFL position for the season, carried from the original posted number through its final grade.</p>
+    </div>
+    <p class="nfl-betting-dashboard-updated">Updated {{ tracker.updated }}</p>
+  </header>
+
+  <div class="nfl-betting-summary" aria-label="2026 NFL betting summary">
+    <div><small>Season record</small><strong>{{ tracker.summary.record }}</strong><span>{{ tracker.summary.settled }} settled</span></div>
+    <div><small>Net units</small><strong>{{ tracker.summary.net_units }}</strong><span>Settled positions only</span></div>
+    <div><small>Open positions</small><strong>{{ tracker.summary.open_positions }}</strong><span>On the board</span></div>
+    <div><small>Open risk</small><strong>{{ tracker.summary.open_risk }}</strong><span>At posted stake</span></div>
+  </div>
+
+  <div class="nfl-betting-ledger-wrap">
+    <table class="nfl-betting-ledger">
+      <caption>2026 NFL positions</caption>
+      <thead>
+        <tr>
+          <th scope="col">Posted</th>
+          <th scope="col">Ticket</th>
+          <th scope="col">Price</th>
+          <th scope="col">Stake</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for bet in tracker.bets %}
+        <tr>
+          <td data-label="Posted"><span>{{ bet.date }}</span><small>{{ bet.group }}</small></td>
+          <th scope="row" data-label="Ticket"><a href="{{ bet.article | relative_url }}">{{ bet.ticket }}</a></th>
+          <td data-label="Price"><strong>{{ bet.odds }}</strong><small>{{ bet.book }}</small></td>
+          <td data-label="Stake">{{ bet.stake }}</td>
+          <td data-label="Status"><span class="nfl-betting-status nfl-betting-status--{{ bet.status | downcase }}">{{ bet.status }}</span><small>{{ bet.result }}</small></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+  <aside class="nfl-betting-dashboard-note">
+    <p class="de-kicker">The grading rule</p>
+    <p>The published price is the record. Single-game bets are graded when they settle; futures stay open until the market resolves. Net units reflect settled positions only, and no line is updated after publication.</p>
+  </aside>
+</section>

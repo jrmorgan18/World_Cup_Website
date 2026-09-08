@@ -52,6 +52,19 @@ section_theme: betting
   {% endif %}
   {% endif %}
 
+  <a class="betting-dashboard-link" href="{{ '/betting/nfl-dashboard/' | relative_url }}">
+    <div>
+      <p class="de-kicker">2026 NFL ledger</p>
+      <h2>Every position, one running tally.</h2>
+      <p>Track the original line, stake, grade and net units across the NFL season.</p>
+    </div>
+    <div class="betting-dashboard-link-stats" aria-label="Current NFL betting record">
+      <span><small>Record</small><strong>{{ site.data.nfl_bet_tracker.summary.record }}</strong></span>
+      <span><small>Open</small><strong>{{ site.data.nfl_bet_tracker.summary.open_positions }}</strong></span>
+      <b>Open dashboard <i aria-hidden="true">&rarr;</i></b>
+    </div>
+  </a>
+
   <div class="betting-desk-grid">
     <section class="betting-recent" aria-labelledby="betting-recent-heading">
       <div class="betting-recent-heading">
