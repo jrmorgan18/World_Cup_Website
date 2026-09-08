@@ -14,11 +14,10 @@ source_docx: "articles/Euro Team of the Week - 9_1_26.docx"
 hero_image: /assets/images/euro-team-of-week-2026-09-01.png
 hero_wide: true
 hero_alt: "European Weekend Team of the Week Best XI graphic featuring Kylian Mbappé"
-home_recent: true
-home_recent_position: 3
+home_recent: false
 home_recent_label: "European Team of the Week"
 home_recent_theme: soccer
-euro_team_of_week_feature: true
+euro_team_of_week_feature: false
 soccer_promo_image: /assets/images/euro-team-of-week-2026-09-01.png
 soccer_promo_alt: "European Weekend Team of the Week Best XI graphic featuring Kylian Mbappé"
 feature_label: "European Team of the Week"
