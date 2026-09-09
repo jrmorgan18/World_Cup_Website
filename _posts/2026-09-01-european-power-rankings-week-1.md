@@ -9,10 +9,10 @@ thumbnail: /assets/images/psg-celebration.jpg
 hero_image: /assets/images/psg-celebration.jpg
 hero_alt: "PSG players celebrating a Champions League title"
 newsletter_cta: true
-power_rankings_feature: true
+power_rankings_feature: false
 power_rankings_edition: "2026-27-week-1"
 source_docx: "articles/European Power Rankings 9_1_ Roma Surges, PSG Wobbles and Leverkusen Falls Out.docx"
-home_recent: true
+home_recent: false
 home_recent_label: "European Power Rankings"
 home_recent_theme: soccer
 feature_label: "European Power Rankings"

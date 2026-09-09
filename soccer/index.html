@@ -92,10 +92,11 @@ section_theme: soccer
       </div>
       <ol class="soccer-sidebar-list">
         {% if premier_league_weekly_recap_story %}<li><span class="soccer-sidebar-number">01</span><a href="{{ premier_league_weekly_recap_story.url | relative_url }}"><small>Premier League</small><h3>{{ premier_league_weekly_recap_story.title }}</h3><p>{{ premier_league_weekly_recap_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-        {% if rodri_barcelona_story %}<li><span class="soccer-sidebar-number">02</span><a href="{{ rodri_barcelona_story.url | relative_url }}"><small>Barcelona</small><h3>{{ rodri_barcelona_story.title }}</h3><p>{{ rodri_barcelona_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-        {% if checkpoint_story %}<li><span class="soccer-sidebar-number">03</span><a href="{{ checkpoint_story.url | relative_url }}"><small>Project 2030</small><h3>{{ checkpoint_story.title }}</h3><p>{{ checkpoint_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-        {% if prospect_story %}<li><span class="soccer-sidebar-number">04</span><a href="{{ prospect_story.url | relative_url }}"><small>Project 2030</small><h3>{{ prospect_story.title }}</h3><p>{{ prospect_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-        {% if longform_feature %}<li><span class="soccer-sidebar-number">05</span><a href="{{ longform_feature.url | relative_url }}"><small>Longform</small><h3>{{ longform_feature.title }}</h3><p>{{ longform_feature.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if power_rankings_story %}<li><span class="soccer-sidebar-number">02</span><a href="{{ power_rankings_story.url | relative_url }}"><small>European Power Rankings</small><h3>{{ power_rankings_story.title }}</h3><p>{{ power_rankings_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if rodri_barcelona_story %}<li><span class="soccer-sidebar-number">03</span><a href="{{ rodri_barcelona_story.url | relative_url }}"><small>Barcelona</small><h3>{{ rodri_barcelona_story.title }}</h3><p>{{ rodri_barcelona_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if checkpoint_story %}<li><span class="soccer-sidebar-number">04</span><a href="{{ checkpoint_story.url | relative_url }}"><small>Project 2030</small><h3>{{ checkpoint_story.title }}</h3><p>{{ checkpoint_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if prospect_story %}<li><span class="soccer-sidebar-number">05</span><a href="{{ prospect_story.url | relative_url }}"><small>Project 2030</small><h3>{{ prospect_story.title }}</h3><p>{{ prospect_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if longform_feature %}<li><span class="soccer-sidebar-number">06</span><a href="{{ longform_feature.url | relative_url }}"><small>Longform</small><h3>{{ longform_feature.title }}</h3><p>{{ longform_feature.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
       </ol>
     </aside>
   </div>
