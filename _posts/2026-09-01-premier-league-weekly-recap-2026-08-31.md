@@ -14,11 +14,10 @@ source_docx: "articles/Premier League Weekly Recap - 8_31_26.docx"
 hero_image: /assets/images/epl-weekly-recap-2026-08-31-saka-villa.png
 hero_wide: true
 hero_alt: "Bukayo Saka celebrates for Arsenal at Villa Park"
-home_recent: true
-home_recent_position: 4
+home_recent: false
 home_recent_label: "Premier League"
 home_recent_theme: soccer
-premier_league_weekly_recap_feature: true
+premier_league_weekly_recap_feature: false
 feature_label: "Premier League"
 feature_badge: "Matchweek 2"
 feature_kicker: "England"

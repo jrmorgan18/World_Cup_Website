@@ -10,7 +10,7 @@ author: "Randy Morgan"
 series: "Player development"
 excerpt: "Jackson Holliday’s .767 OPS against left-handed pitching is real progress, but the path there is more walks, better-shaped contact and survival against sliders—not sudden dominance."
 read_time: 10
-home_recent: true
+home_recent: false
 home_recent_label: "Orioles"
 home_recent_theme: "orioles"
 orioles_feature: false
