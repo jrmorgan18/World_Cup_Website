@@ -7,7 +7,7 @@ date: 2026-08-20 08:00:00 -0400
 categories: [soccer]
 author: "Dual Eights"
 read_time: 9
-home_recent: true
+home_recent: false
 home_recent_label: "Barcelona"
 home_recent_theme: "soccer"
 rodri_barcelona_feature: true
