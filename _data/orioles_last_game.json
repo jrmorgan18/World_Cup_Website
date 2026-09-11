@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T11:28:22Z",
+  "generated_at": "2026-09-11T11:30:10Z",
   "game_pk": 824791,
   "date": "2026-09-09",
   "venue": "Oriole Park at Camden Yards",
@@ -58,7 +58,7 @@
     "pct": ".483",
     "division": "AL East",
     "division_rank": 5,
-    "games_back": "17.0",
+    "games_back": "16.5",
     "streak": "W1",
     "last_10": "3-7"
   },
@@ -92,8 +92,8 @@
         "team": "Rangers",
         "abbr": "TEX",
         "wins": 72,
-        "losses": 74,
-        "games_back": "1.5",
+        "losses": 75,
+        "games_back": "2.0",
         "wild_card_rank": 5,
         "is_orioles": false,
         "is_cutoff": false
