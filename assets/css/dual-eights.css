@@ -2604,8 +2604,67 @@ details[open] > summary .gc-toggle::after { transform:rotate(0); }
 .ravens-methodology-list { max-width:920px; margin:22px 0 0; padding-left:20px; color:#554c5b; font-size:.76rem; line-height:1.55; }
 .ravens-methodology-list li + li { margin-top:6px; }
 
+/* NFL season predictions */
+.nfl-playoff-field,.nfl-playoff-bracket { margin:42px 0 52px; overflow:hidden; border:1px solid rgba(196,166,239,.38); background:linear-gradient(145deg,#1b1423,#0c0a0f 68%); box-shadow:0 20px 45px rgba(0,0,0,.24); }
+.nfl-playoff-field__head,.nfl-playoff-bracket__head { padding:25px 28px 23px; border-top:4px solid var(--de-purple); border-bottom:1px solid rgba(255,255,255,.12); }
+.nfl-playoff-field__head p,.nfl-playoff-bracket__head p { margin:0 0 7px; color:var(--de-purple-light); font-family:var(--font-display); font-size:.58rem; font-weight:700; letter-spacing:1.4px; text-transform:uppercase; }
+.article-body .nfl-playoff-field__head h2,.article-body .nfl-playoff-bracket__head h2 { margin:0; padding:0; color:#fff; border:0; font-family:'Newsreader',serif; font-size:2rem; font-weight:500; letter-spacing:-.5px; line-height:1; text-transform:none; }
+.nfl-playoff-field__head span,.nfl-playoff-bracket__head span { display:block; margin-top:9px; color:#91879a; font-family:var(--font-display); font-size:.56rem; letter-spacing:.9px; text-transform:uppercase; }
+.nfl-playoff-field__conferences { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); }
+.nfl-playoff-conference + .nfl-playoff-conference { border-left:1px solid rgba(255,255,255,.12); }
+.article-body .nfl-playoff-conference h3 { margin:0; padding:16px 20px; display:flex; align-items:center; justify-content:space-between; gap:12px; color:#958b9e; border:0; border-bottom:1px solid rgba(255,255,255,.1); font-family:var(--font-display); font-size:.56rem; font-weight:600; letter-spacing:.9px; text-transform:uppercase; }
+.nfl-playoff-conference h3 span { color:#fff; font-size:.8rem; letter-spacing:1.5px; }
+.nfl-playoff-conference--afc h3 span { color:#cbb5ee; }
+.nfl-playoff-conference--nfc h3 span { color:#8bc5ef; }
+.nfl-playoff-conference__columns { padding:8px 17px 6px; display:grid; grid-template-columns:22px 38px minmax(0,1fr) 42px; gap:9px; color:#706677; font-family:var(--font-display); font-size:.43rem; letter-spacing:.65px; text-transform:uppercase; }
+.nfl-playoff-conference__columns span:last-child { text-align:right; }
+.nfl-playoff-conference ol { margin:0; padding:0; list-style:none; }
+.article-body .nfl-playoff-conference li { min-height:57px; margin:0; padding:8px 17px; display:grid; grid-template-columns:22px 38px minmax(0,1fr) 42px; gap:9px; align-items:center; border-top:1px solid rgba(255,255,255,.075); }
+.nfl-playoff-conference li:first-child { border-top:0; }
+.nfl-playoff-conference li.is-bye { background:linear-gradient(90deg,rgba(154,112,223,.2),transparent); }
+.nfl-playoff-conference li>span { color:#8f8398; font-family:var(--font-display); font-size:.63rem; text-align:center; }
+.article-body .nfl-playoff-conference img { width:36px; height:36px; margin:0; padding:3px; object-fit:contain; border-radius:50%; background:#fff; }
+.nfl-playoff-conference b { color:#f5f0f9; font-family:'Newsreader',serif; font-size:.91rem; font-weight:600; line-height:1.05; }
+.nfl-playoff-conference em { color:#bdb2c5; font-family:var(--font-display); font-size:.62rem; font-style:normal; text-align:right; }
+.nfl-playoff-field__turnover { padding:17px 22px 19px; display:grid; gap:8px; border-top:1px solid rgba(255,255,255,.12); background:#0a080c; }
+.article-body .nfl-playoff-field__turnover p { margin:0; color:#9b919f; font-size:.72rem; line-height:1.4; }
+.nfl-playoff-field__turnover span { width:57px; margin-right:8px; display:inline-block; color:#d9c6f5; font-family:var(--font-display); font-size:.54rem; font-weight:700; letter-spacing:.8px; text-transform:uppercase; }
+.nfl-bracket-conference { border-bottom:1px solid rgba(255,255,255,.12); }
+.nfl-bracket-conference__label { padding:13px 20px; display:flex; align-items:center; justify-content:space-between; gap:16px; background:rgba(255,255,255,.04); }
+.nfl-bracket-conference__label strong { font-family:var(--font-display); font-size:.8rem; letter-spacing:1.6px; }
+.nfl-bracket-conference__label--afc strong { color:#cbb5ee; }
+.nfl-bracket-conference__label--nfc strong { color:#8bc5ef; }
+.nfl-bracket-conference__label span { color:#8e8494; font-family:var(--font-display); font-size:.53rem; letter-spacing:.8px; text-transform:uppercase; }
+.nfl-bracket-rounds { padding:18px; display:grid; grid-template-columns:1.2fr 1fr .92fr; gap:14px; align-items:center; }
+.article-body .nfl-bracket-rounds section>h3 { margin:0 0 9px; padding:0; color:#8f8595; border:0; font-family:var(--font-display); font-size:.52rem; font-weight:600; letter-spacing:1px; text-transform:uppercase; }
+.nfl-bracket-game { margin-bottom:10px; border:1px solid rgba(255,255,255,.13); background:#151019; }
+.nfl-bracket-game:last-child { margin-bottom:0; }
+.article-body .nfl-bracket-game p { min-height:34px; margin:0; padding:4px 7px; display:grid; grid-template-columns:14px 27px minmax(0,1fr) auto; gap:6px; align-items:center; color:#aaa0af; border-top:1px solid rgba(255,255,255,.08); font-family:var(--font-display); font-size:.61rem; }
+.article-body .nfl-bracket-game p:first-child { border-top:0; }
+.nfl-bracket-game p>b { color:#746a7a; font-size:.52rem; text-align:center; }
+.article-body .nfl-bracket-game img { width:25px; height:25px; margin:0; padding:2px; object-fit:contain; border-radius:50%; background:#fff; }
+.nfl-bracket-game p>strong { color:#fff; font-weight:700; }
+.nfl-bracket-game p>em { color:#b99ee0; font-size:.43rem; font-style:normal; letter-spacing:.4px; text-transform:uppercase; }
+.nfl-bracket-game--title { box-shadow:inset 3px 0 0 var(--de-purple); }
+.nfl-bracket-super-bowl { padding:24px; display:grid; grid-template-columns:1fr auto 1fr; gap:18px; align-items:center; background:linear-gradient(110deg,rgba(39,84,138,.2),rgba(154,112,223,.18)); }
+.nfl-bracket-super-bowl>div { min-width:0; padding:14px; display:grid; grid-template-columns:45px minmax(0,1fr) auto; gap:10px; align-items:center; border:1px solid rgba(255,255,255,.14); background:#100c14; }
+.article-body .nfl-bracket-super-bowl p { grid-column:1 / -1; margin:0 0 2px; color:#83798a; font-family:var(--font-display); font-size:.49rem; letter-spacing:.8px; text-transform:uppercase; }
+.article-body .nfl-bracket-super-bowl img { width:43px; height:43px; margin:0; padding:3px; object-fit:contain; border-radius:50%; background:#fff; }
+.nfl-bracket-super-bowl strong { color:#fff; font-family:'Newsreader',serif; font-size:1rem; line-height:1.05; }
+.nfl-bracket-super-bowl span { color:#fff; font-family:var(--font-display); font-size:1.35rem; }
+.nfl-bracket-super-bowl>i { color:#c9b2eb; font-family:var(--font-display); font-size:.6rem; font-style:normal; letter-spacing:1px; text-align:center; text-transform:uppercase; }
+.nfl-bracket-super-bowl .is-champion { border-color:rgba(196,166,239,.5); box-shadow:inset 0 -3px 0 var(--de-purple); }
+
 @media (max-width: 760px) {
   .ravens-source-list { grid-template-columns:1fr; }
+  .nfl-playoff-field__conferences { grid-template-columns:1fr; }
+  .nfl-playoff-conference + .nfl-playoff-conference { border-top:1px solid rgba(255,255,255,.12); border-left:0; }
+  .nfl-bracket-rounds { grid-template-columns:1fr; align-items:stretch; }
+  .nfl-bracket-rounds section { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+  .article-body .nfl-bracket-rounds section>h3 { grid-column:1 / -1; }
+  .nfl-bracket-rounds section:first-child { grid-template-columns:1fr; }
+  .nfl-bracket-super-bowl { grid-template-columns:1fr; }
+  .nfl-bracket-super-bowl>i { order:-1; }
 }
 
 @media (max-width: 900px) {
@@ -2649,6 +2708,16 @@ details[open] > summary .gc-toggle::after { transform:rotate(0); }
 }
 
 @media (max-width: 480px) {
+  .nfl-playoff-field,.nfl-playoff-bracket { margin-left:-8px; margin-right:-8px; }
+  .nfl-playoff-field__head,.nfl-playoff-bracket__head { padding:23px 20px 21px; }
+  .article-body .nfl-playoff-conference li { padding:8px 12px; grid-template-columns:19px 34px minmax(0,1fr) 38px; gap:7px; }
+  .nfl-playoff-conference__columns { padding:8px 12px 6px; grid-template-columns:19px 34px minmax(0,1fr) 38px; gap:7px; }
+  .nfl-playoff-conference b { font-size:.83rem; }
+  .nfl-playoff-field__turnover { padding:16px; }
+  .nfl-bracket-conference__label { align-items:start; flex-direction:column; gap:4px; }
+  .nfl-bracket-rounds { padding:13px; }
+  .nfl-bracket-rounds section { grid-template-columns:1fr; }
+  .nfl-bracket-super-bowl { padding:16px; }
   .ravens-dashboard-title-row h1 { font-size:2.65rem; }
   .ravens-dashboard-update { line-height:1.55; }
   .ravens-game-card { padding:23px 20px; }
