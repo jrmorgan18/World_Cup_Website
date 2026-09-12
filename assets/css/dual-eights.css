@@ -2476,6 +2476,13 @@ details[open] > summary .gc-toggle::after { transform:rotate(0); }
 .ravens-matchup-list dt { color:#c0a5dc; font-family:var(--font-display); font-size:.58rem; font-weight:700; letter-spacing:.45px; }
 .ravens-matchup-list dd { margin-top:3px; color:#fff; font-family:var(--font-display); font-size:.9rem; }
 .ravens-matchup-list dd small { color:#7e7486; font-size:.58rem; }
+.ravens-matchup-focus { margin-top:24px; padding-top:19px; border-top:2px solid #62477b; }
+.ravens-matchup-focus h4 { color:#e5d9ee; font-family:var(--font-display); font-size:.7rem; letter-spacing:.8px; text-transform:uppercase; }
+.ravens-matchup-focus ul { margin-top:11px; list-style:none; }
+.ravens-matchup-focus li { padding:11px 0; border-top:1px solid #2c2531; }
+.ravens-matchup-focus li strong { display:block; color:#d9d1df; font-size:.76rem; }
+.ravens-matchup-focus li span { margin-top:4px; display:block; color:#908797; font-size:.69rem; line-height:1.45; }
+.ravens-matchup-focus a { color:#c0a0e8; }
 .ravens-opponent-watch { margin-top:24px; padding-top:19px; border-top:2px solid #62477b; }
 .ravens-opponent-watch h4 { color:#e5d9ee; font-family:var(--font-display); font-size:.7rem; letter-spacing:.8px; text-transform:uppercase; }
 .ravens-opponent-watch ul { margin-top:11px; list-style:none; }

@@ -96,6 +96,16 @@ section_theme: ravens
           {% endfor %}
         </div>
         {% endif %}
+        {% if dashboard.matchup_focus %}
+        <div class="ravens-matchup-focus">
+          <h4>{{ dashboard.matchup_focus.label }}</h4>
+          <ul>
+            {% for item in dashboard.matchup_focus.items %}
+            <li><strong>{{ item.title }}</strong><span>{{ item.text }} <a href="{{ item.source_url }}">Source</a></span></li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
         {% if dashboard.opponent_availability.team == next_game.opponent_abbr %}
         <div class="ravens-opponent-watch">
           <h4>{{ dashboard.opponent_availability.label }}</h4>
