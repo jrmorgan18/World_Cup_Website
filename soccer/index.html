@@ -30,17 +30,19 @@ section_theme: soccer
 {% assign euro_leagues_preview_story = site.posts | where: "euro_leagues_preview_feature", true | first %}
 {% assign premier_league_weekly_recap_story = site.posts | where: "premier_league_weekly_recap_feature", true | first %}
 {% assign euro_team_of_week_story = site.posts | where: "euro_team_of_week_feature", true | first %}
-{% assign soccer_feature = euro_team_of_week_story | default: power_rankings_story | default: premier_league_preview_story | default: longform_feature %}
+{% assign champions_league_recap_story = site.posts | where: "champions_league_recap_feature", true | first %}
+{% assign team_of_week_story = champions_league_recap_story | default: euro_team_of_week_story %}
+{% assign soccer_feature = champions_league_recap_story | default: euro_team_of_week_story | default: power_rankings_story | default: premier_league_preview_story | default: longform_feature %}
 {% assign power_rankings_edition = site.data.european_club_power_rankings.editions | first %}
 {% if soccer_feature %}
 <section class="soccer-editorial-shell">
   <div class="soccer-editorial-grid">
-    {% if euro_team_of_week_story or power_rankings_story and power_rankings_edition %}
+    {% if team_of_week_story or power_rankings_story and power_rankings_edition %}
     <div class="soccer-left-rail">
-      {% if euro_team_of_week_story %}
-      <a class="soccer-euro-totw-promo" href="{{ euro_team_of_week_story.url | relative_url }}">
-        <img src="{{ euro_team_of_week_story.soccer_promo_image | relative_url }}" alt="{{ euro_team_of_week_story.soccer_promo_alt | escape }}" loading="eager">
-        <span>European Team of the Week <b>Read the Best XI &rarr;</b></span>
+      {% if team_of_week_story %}
+      <a class="soccer-euro-totw-promo" href="{{ team_of_week_story.url | relative_url }}">
+        <img src="{{ team_of_week_story.soccer_promo_image | relative_url }}" alt="{{ team_of_week_story.soccer_promo_alt | escape }}" loading="eager">
+        <span>{{ team_of_week_story.soccer_promo_label | default: "European Team of the Week" }} <b>{{ team_of_week_story.soccer_promo_cta | default: "Read the Best XI" }} &rarr;</b></span>
       </a>
       {% endif %}
       {% if power_rankings_story and power_rankings_edition %}

@@ -17,7 +17,6 @@ hero_alt: "Lamine Yamal celebrates for Barcelona against Athletic Club"
 hero_credit: "Photo: Juan Echeverria / CC BY-SA 4.0"
 hero_credit_url: "https://commons.wikimedia.org/wiki/File:LamineYamal_-_FCB_-_Partido_Athletic_Club_vs_FC_Barcelona.jpg"
 home_recent: true
-home_recent_position: 3
 home_recent_label: "European Team of the Week"
 home_recent_theme: soccer
 euro_team_of_week_feature: true
