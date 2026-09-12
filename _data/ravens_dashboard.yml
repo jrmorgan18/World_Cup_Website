@@ -6,14 +6,15 @@
 meta:
   season: 2026
   season_label: "2026 Season"
-  last_updated: "2026-09-03"
-  update_context: "Week 1 approach"
+  last_updated: "2026-09-12"
+  update_context: "Week 1 at Indianapolis"
   data_status: "preseason"
   data_notice: >-
     The 2026 regular season has not started. Preseason results are shown in a
     separate, clearly labeled sample; current-year league ranks and advanced
-    metrics remain unavailable rather than being treated as zero. The scorecard
-    includes 2025 final values only as a labeled comparison baseline.
+    metrics remain unavailable rather than being treated as zero. Week 1
+    availability reflects the final Friday reports for Baltimore and Indianapolis.
+    The scorecard includes 2025 final values only as a labeled comparison baseline.
 
 metric_definitions:
   - id: "overall_efficiency"
@@ -138,17 +139,16 @@ scorecard_groups:
 editorial:
   state:
     summary: >-
-      The Ravens preseason domination seems to have carried over with the new coaching
-      staff, as they went 3-0 with a 78-13 aggregate score. That speaks to the depth
-      of the squad but doesn't necessarily shed much light on how things will play out
-      with all the starters playing. If they keep Lamar healthy, the Ravens have a
-      championship-level ceiling. The crucial early-season questions sit on both sides
-      of the interior line: the open question at center after Danny Pinter's injury,
-      and what they will get from Nnamdi Madubuike this season with him just returning
-      to team work.
+      Baltimore opens Jesse Minter's tenure Sunday in Indianapolis with a healthy
+      Lamar Jackson and Zay Flowers available for Declan Doyle's debut as play caller.
+      The biggest immediate stress point is the middle of the line: Jovaughn Gwyn and
+      rookie Vega Ioane will make their first NFL starts against DeForest Buckner and
+      Grover Stewart. On defense, Nnamdi Madubuike and Teddye Buchanan are out, shifting
+      more responsibility to Broderick Washington Jr., Trenton Simpson and the depth
+      behind them against Jonathan Taylor and Daniel Jones' play-action game.
     biggest_strength: "The Jackson–Henry core and a deep defense give the Ravens answers in multiple game scripts."
-    biggest_concern: "Center stability and fast interior pressure remain the clearest threats to the offense's full menu."
-    changed_this_week: "Madubuike and Flowers returned to team work, while the initial 53-man roster clarified the Week 1 depth chart."
+    biggest_concern: "Three new interior offensive-line starters face an immediate test from DeForest Buckner and Grover Stewart."
+    changed_this_week: "Gwyn won the center job; Flowers was cleared; Madubuike and Buchanan were ruled out; Walker is questionable."
 
   metric_assessments:
     overall_efficiency: { status: null, interpretation: "The 2026 index begins after Week 1. The 2025 baseline combines four transparent, equally weighted efficiency percentiles." }
@@ -167,22 +167,22 @@ editorial:
     offense:
       status: "Good"
       assessment: >-
-        Jackson and Henry still force a defense to solve numbers before the snap,
-        and Flowers' return restores the primary space-creating receiver. Declan
-        Doyle's first real test is keeping that multiplicity intact while the center
-        group settles after Pinter's injury.
-      trend_summary: "Preseason complete; regular-season efficiency begins at Indianapolis."
+        Jackson, Henry and a fully cleared Flowers give Doyle the core pieces for his
+        debut, but the interior line is the matchup. Gwyn will make his first NFL start
+        at center, Ioane will debut at right guard and John Simpson is also new at left
+        guard against a Colts front led by Buckner and Stewart.
+      trend_summary: "Flowers is cleared; Walker is questionable; Gwyn starts at center."
       metric_ids: ["offensive_epa_per_play", "explosive_play_rate", "red_zone_td_rate"]
       links:
         - { label: "How Declan Doyle could change the offense", url: "/ravens/what-will-declan-doyle-change/" }
     defense:
-      status: "Good"
+      status: "Solid"
       assessment: >-
-        Allowing 13 points across three preseason games is a real result and a
-        positive depth signal, though personnel and opponent quality prevent a
-        league-strength conclusion. Madubuike's return to team drills improves the
-        outlook for four-man pressure without making his Week 1 status certain.
-      trend_summary: "Finished the preseason 3-0 while allowing 4.3 points per game."
+        Madubuike and Buchanan will not play, so the unbeaten preseason's depth signal
+        gets an immediate test. Baltimore must handle Taylor's explosive running and
+        Jones' play-action efficiency without its top interior rusher, while Alec
+        Pierce's return keeps the Colts' vertical threat in the plan.
+      trend_summary: "Madubuike and Buchanan are out; Pierce is cleared for Indianapolis."
       metric_ids: ["defensive_epa_per_play", "defensive_success_rate", "explosive_play_rate_allowed"]
       links:
         - { label: "Five questions defining the Ravens' season", url: "/ravens/five-questions-that-will-define-the-season/" }
@@ -190,27 +190,27 @@ editorial:
   units:
     - { name: "Quarterback", assessment: "Elite", trend: "stable", season_grade: "A", last_game_grade: "B+", explanation: "Jackson remains the central championship advantage and the offense's answer when structure breaks." }
     - { name: "Running backs", assessment: "Strength", trend: "stable", season_grade: "A-", last_game_grade: "B+", explanation: "Henry gives the Ravens a physical baseline that magnifies every hesitation created by Jackson and motion." }
-    - { name: "Wide receivers", assessment: "Solid", trend: "up", season_grade: "B", last_game_grade: "A-", explanation: "Flowers returned September 3 after a minor issue, restoring the room's proven stress point." }
+    - { name: "Wide receivers", assessment: "Solid", trend: "up", season_grade: "B", last_game_grade: "A-", explanation: "Flowers practiced fully Thursday and Friday and has no game designation; Walker is questionable with a groin injury." }
     - { name: "Tight ends", assessment: "Solid", trend: "stable", season_grade: "B", last_game_grade: "B", explanation: "The group remains essential to hiding run and pass intentions from heavier personnel." }
-    - { name: "Offensive line", assessment: "Concern", trend: "down", season_grade: "C", last_game_grade: "A-", explanation: "Pinter's likely season-ending knee injury leaves center continuity as the clearest structural risk." }
-    - { name: "Defensive line", assessment: "Solid", trend: "up", season_grade: "B", last_game_grade: "A", explanation: "Madubuike joined team drills September 3, a meaningful step even with Week 1 still day-to-day." }
+    - { name: "Offensive line", assessment: "Concern", trend: "down", season_grade: "C", last_game_grade: "A-", explanation: "Gwyn won the Week 1 center job and will make his first NFL start beside rookie Ioane, also debuting, against Buckner and Stewart." }
+    - { name: "Defensive line", assessment: "Solid", trend: "down", season_grade: "B-", last_game_grade: "A", explanation: "Madubuike is out for Week 1 despite being close, leaving Washington and the interior rotation to cover his snaps against Taylor." }
     - { name: "Edge rushers", assessment: "Solid", trend: "stable", season_grade: "B", last_game_grade: "A", explanation: "Trey Hendrickson raises the proven ceiling; regular-season four-man wins will be the real test." }
-    - { name: "Linebackers", assessment: "Solid", trend: "up", season_grade: "B", last_game_grade: "A-", explanation: "Buchanan has returned to team work, though Week 1 versus Week 2 remains unsettled." }
-    - { name: "Secondary", assessment: "Strength", trend: "stable", season_grade: "A-", last_game_grade: "A", explanation: "Depth and versatility give Jesse Minter options to change the coverage picture after the snap." }
-    - { name: "Specialists", assessment: "Mixed", trend: "down", season_grade: "C+", last_game_grade: "B", explanation: "Tyler Loop went 5-for-8 in the preseason, and Jake Moody's practice-squad addition keeps the kicking evaluation open." }
+    - { name: "Linebackers", assessment: "Solid", trend: "down", season_grade: "B-", last_game_grade: "A-", explanation: "Buchanan is out, putting Simpson next to Smith and making a practice-squad elevation for Carl Jones Jr. a possibility." }
+    - { name: "Secondary", assessment: "Strength", trend: "stable", season_grade: "A-", last_game_grade: "A", explanation: "Minter can vary the picture after the snap, but Pierce's clearance means the secondary must honor Indianapolis' vertical speed." }
+    - { name: "Specialists", assessment: "Mixed", trend: "stable", season_grade: "C+", last_game_grade: "B", explanation: "Loop remains the Week 1 kicker after responding to Moody's practice-squad arrival with a clean run in practice." }
 
   weekly_changes:
-    - { direction: "up", title: "Interior defensive line", text: "Madubuike joined team drills September 3; Minter called his Week 1 status day-to-day." }
-    - { direction: "up", title: "Receiver availability", text: "Flowers returned to practice after missing time with a minor issue." }
-    - { direction: "down", title: "Center stability", text: "Pinter's knee injury is expected to end his season and leaves the position unsettled." }
-    - { direction: "down", title: "Kicker certainty", text: "Loop's 5-for-8 preseason and Moody's addition leave a live evaluation entering Week 1." }
+    - { direction: "up", title: "Receiver availability", text: "Flowers practiced fully Thursday and Friday and carries no Week 1 designation." }
+    - { direction: "up", title: "Center decision", text: "Gwyn won the Week 1 job and has built several weeks of first-team work with Jackson." }
+    - { direction: "down", title: "Front-seven availability", text: "Madubuike and Buchanan were both ruled out for the opener." }
+    - { direction: "down", title: "Receiver depth", text: "Walker is questionable after being limited all week by a groin injury." }
 
   championship_check:
     - { category: "Quarterback play", status: "Ready", explanation: "Jackson gives the Ravens a championship answer within structure and when the original play disappears." }
-    - { category: "Pass protection", status: "Concern", explanation: "The center picture can create immediate interior pressure that narrows the offense before the snap." }
+    - { category: "Pass protection", status: "Concern", explanation: "Gwyn and Ioane make their first NFL starts against a Colts interior led by Buckner and Stewart." }
     - { category: "Explosive offense", status: "Trending Right", explanation: "Flowers, Henry and Jackson give Doyle the pieces; the regular season will test the presentation." }
-    - { category: "Four-man pass rush", status: "Trending Right", explanation: "Hendrickson changes the edge ceiling, while Madubuike's return improves the interior outlook." }
-    - { category: "Health", status: "Unclear", explanation: "Flowers is back, but Madubuike and Buchanan are still progressing and Pinter is expected to miss the season." }
+    - { category: "Four-man pass rush", status: "Unclear", explanation: "Hendrickson raises the edge ceiling, but Madubuike's Week 1 absence removes the best interior pressure source." }
+    - { category: "Health", status: "Concern", explanation: "Flowers is cleared, but Madubuike and Buchanan are out, Walker is questionable and Pinter is expected to miss the season." }
 
 preseason_form:
   sequence: ["W", "W", "W"]
@@ -243,15 +243,27 @@ preseason_last_game:
   source_label: "Official Ravens recap"
   source_url: "https://www.baltimoreravens.com/news/ravens-dominate-commanders-2026-nfl-preseason-undefeated"
 
+matchup_focus:
+  label: "Colts matchup lens"
+  items:
+    - title: "Protect the new interior"
+      text: "Gwyn and Ioane make their first NFL starts, with three new starters inside against Buckner and Stewart."
+      source_url: "https://www.baltimoreravens.com/news/game-preview-ravens-colts-week-1-2026-lamar-jackson-jesse-minter-jonathan-taylor-daniel-jones"
+    - title: "Disrupt the play-action engine"
+      text: "Taylor ran for 1,585 yards in 2025, and his threat helped Jones attack downfield efficiently off play-action."
+      source_url: "https://www.baltimoreravens.com/news/ravens-opponent-preview-indianapolis-colts-week-1-nfl-analysis"
+    - title: "Cover without the full front seven"
+      text: "Madubuike and Buchanan are out while Pierce is cleared, increasing the burden on Baltimore's pressure plan and secondary."
+      source_url: "https://www.baltimoreravens.com/news/nnamdi-madubuike-injury-report-ravens-colts-season-opener-neck"
+
 opponent_availability:
   team: "IND"
-  label: "Preliminary Colts availability watch"
-  note: "The official Week 1 injury report has not been filed. These are dated club-reported availability items, not game-status projections."
+  label: "Final Colts availability watch"
+  note: "Status reflects the final Friday report and confirmed Week 1 suspension information available September 11."
   items:
     - { player: "Cam Taylor-Britt", position: "CB", status: "Out", detail: "Serving a one-game NFL suspension and will miss the opener.", source_url: "https://www.colts.com/news/colts-cb-cam-taylor-britt-suspended-one-game-by-nfl" }
-    - { player: "Will Mallory", position: "TE", status: "IR", detail: "Placed on injured reserve with a return designation.", source_url: "https://www.colts.com/news/colts-make-roster-moves-to-form-initial-53-man-roster" }
-    - { player: "Tyler Warren", position: "TE", status: "Monitor", detail: "The Colts were managing a groin issue with Week 1 in mind.", source_url: "https://www.colts.com/news/colts-hopeful-alec-pierce-returns-to-practice-this-week-starters-minus-daniel-jones-jonathan-taylor-to-play-8-12-plays-in-preseason-finale-vs-detroit-lions" }
-    - { player: "Charvarius Ward Sr.", position: "CB", status: "Returning", detail: "Returned to practice after a back issue and said he expects to be ready.", source_url: "https://www.colts.com/news/colts-cb-charvarius-ward-sr-returns-practice-expects-ready-week-1-baltimore-ravens" }
+    - { player: "Alec Pierce", position: "WR", status: "Available", detail: "Cleared to play after ankle surgery, though a limited week leaves his workload worth monitoring.", source_url: "https://www.baltimoreravens.com/news/nnamdi-madubuike-injury-report-ravens-colts-season-opener-neck" }
+    - { player: "Austin Ajiake", position: "LB", status: "Questionable", detail: "Missed Friday's practice with a hamstring injury and is the Colts' lone injury designation.", source_url: "https://www.baltimoreravens.com/news/nnamdi-madubuike-injury-report-ravens-colts-season-opener-neck" }
 
 preseason_games:
   - { week: "Preseason 3", date: "2026-08-28", location: "home", opponent: "Washington Commanders", result: "W", ravens_score: 41, opponent_score: 3, takeaway: "The Ravens closed an unbeaten preseason with their largest margin, while the defense again kept the opponent out of the end zone.", recap_url: "https://www.baltimoreravens.com/news/ravens-dominate-commanders-2026-nfl-preseason-undefeated" }
@@ -259,10 +271,11 @@ preseason_games:
   - { week: "Preseason 1", date: "2026-08-15", location: "home", opponent: "Philadelphia Eagles", result: "W", ravens_score: 24, opponent_score: 7, takeaway: "The Ravens opened with a balanced win and allowed only one touchdown.", recap_url: "https://www.baltimoreravens.com/news/ravens-take-care-of-eagles-preseason-opener-ravens-2026" }
 
 injuries:
-  - { player: "Danny Pinter", position: "C", status: "Out", injury: "Knee", importance: "Starter", expected_availability: "The club reported the August 19 injury as likely season-ending.", impact: "His absence reopens the center competition at the point where quick pressure is most disruptive to Jackson.", source_label: "BaltimoreRavens.com · Aug. 24", source_url: "https://www.baltimoreravens.com/news/nnamdi-madubuike-next-step-hits-sled-first-time-danny-pinter-injury-season-ending-ravens-preseason-week-3" }
-  - { player: "Nnamdi Madubuike", position: "DL", status: "Returning", injury: "Neck surgery recovery", importance: "Critical", expected_availability: "He joined team drills September 3; Minter called him day-to-day for Week 1.", impact: "His interior rush changes how often the Ravens can create pressure with four and preserve coverage disguise.", source_label: "BaltimoreRavens.com · Sept. 3", source_url: "https://www.baltimoreravens.com/news/nnamdi-madubuike-ravens-team-drills-return-teddye-buchanan-tavius-robinson-contract-year-jesse-minter" }
-  - { player: "Teddye Buchanan", position: "ILB", status: "Returning", injury: "ACL recovery", importance: "Starter", expected_availability: "He has taken team reps and is close, but Week 1 versus Week 2 remained uncertain September 3.", impact: "His return restores a starting-level range defender behind the defensive front.", source_label: "BaltimoreRavens.com · Sept. 3", source_url: "https://www.baltimoreravens.com/news/nnamdi-madubuike-ravens-team-drills-return-teddye-buchanan-tavius-robinson-contract-year-jesse-minter" }
-  - { player: "Zay Flowers", position: "WR", status: "Returning", injury: "Minor health issue", importance: "Critical", expected_availability: "Returned to practice September 3 after being sidelined since August joint practices.", impact: "His movement and separation are central to creating space for the rest of the passing game.", source_label: "BaltimoreRavens.com · Sept. 3", source_url: "https://www.baltimoreravens.com/news/zay-flowers-returns-ravens-practice-wide-receiver-injury" }
+  - { player: "Danny Pinter", position: "C", status: "Out", injury: "Knee", importance: "Starter", expected_availability: "The club reported the August 19 injury as likely season-ending.", impact: "His absence accelerated Gwyn into the Week 1 job and left Baltimore opening with three new interior starters.", source_label: "BaltimoreRavens.com · Aug. 24", source_url: "https://www.baltimoreravens.com/news/nnamdi-madubuike-next-step-hits-sled-first-time-danny-pinter-injury-season-ending-ravens-preseason-week-3" }
+  - { player: "Nnamdi Madubuike", position: "DL", status: "Out", injury: "Neck surgery recovery", importance: "Critical", expected_availability: "Ruled out for Week 1; Minter said he is ‘really, really close’ after two contact-heavy weeks.", impact: "Washington and the interior rotation must replace Baltimore's best inside pass rusher against Taylor and Jones.", source_label: "BaltimoreRavens.com · Sept. 11", source_url: "https://www.baltimoreravens.com/news/nnamdi-madubuike-injury-report-ravens-colts-season-opener-neck" }
+  - { player: "Teddye Buchanan", position: "ILB", status: "Out", injury: "Knee recovery", importance: "Starter", expected_availability: "Ruled out for Week 1 after being limited throughout the week.", impact: "Simpson is in line to start beside Smith, with only three healthy inside linebackers on the 53-man roster.", source_label: "BaltimoreRavens.com · Sept. 11", source_url: "https://www.baltimoreravens.com/news/nnamdi-madubuike-injury-report-ravens-colts-season-opener-neck" }
+  - { player: "Zay Flowers", position: "WR", status: "Available", injury: "Hamstring", importance: "Critical", expected_availability: "Practiced fully Thursday and Friday and carries no game designation.", impact: "His movement and separation restore the offense's primary space-creating receiver for Doyle's debut.", source_label: "BaltimoreRavens.com · Sept. 11", source_url: "https://www.baltimoreravens.com/news/nnamdi-madubuike-injury-report-ravens-colts-season-opener-neck" }
+  - { player: "Devontez Walker", position: "WR", status: "Questionable", injury: "Groin", importance: "Depth", expected_availability: "Questionable after being limited in practice throughout the week.", impact: "An absence would reduce Baltimore's vertical depth and could create more work for rookie Elijah Sarratt.", source_label: "BaltimoreRavens.com · Sept. 11", source_url: "https://www.baltimoreravens.com/news/nnamdi-madubuike-injury-report-ravens-colts-season-opener-neck" }
   - { player: "Bilhal Kone", position: "CB", status: "Injured Reserve", injury: "Undisclosed", importance: "Depth", expected_availability: "Designated to return and must miss at least the first four regular-season games.", impact: "The designation temporarily reduces cornerback depth without consuming a season-long return slot.", source_label: "BaltimoreRavens.com · Aug. 30", source_url: "https://www.baltimoreravens.com/news/ravens-53-man-roster-cuts-set-announced-2026-initial" }
 
 sources:
@@ -280,5 +293,6 @@ methodology_notes:
   - "Unit letter grades are editorial, informed by role, film and results; they are separate from the statistical scorecard."
 
 related_articles:
-  - "/ravens/what-will-declan-doyle-change/"
-  - "/ravens/five-questions-that-will-define-the-season/"
+  - "/ravens/nfl-season-predictions-2026/"
+  - "/ravens/2026-season-preview-ceiling/"
+  - "/ravens/2026-specific-predictions/"
