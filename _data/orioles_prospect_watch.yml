@@ -1,8 +1,8 @@
 title: Orioles Prospect Watch
 source_label: MLB Pipeline Orioles Top 30
 source_url: https://www.mlb.com/orioles/prospects/orioles
-snapshot_date: September 7, 2026
-stats_as_of: September 6, 2026
+snapshot_date: September 14, 2026
+stats_as_of: September 13, 2026
 season_end_note: Weekly reports run through September 27, 2026.
 source_note: Rankings follow MLB Pipeline's current Orioles Top 30. Player development notes are reported separately each Sunday and distinguish verified facts from scouting interpretation.
 prospects:
@@ -17,7 +17,7 @@ prospects:
     acquired: "2026 Draft: first round, No. 7 overall"
     image: /assets/images/orioles/prospects-2026/eric-booth-jr.jpg
     image_alt: Eric Booth Jr. fields a baseball during an amateur showcase
-    stat_line: "63 AB · .270/.377 · 0 HR · 3 SB · .679 OPS"
+    stat_line: "67 AB · .284/.390 · 0 HR · 3 SB · .718 OPS"
   - rank: 2
     id: anthony-eyanson
     name: Anthony Eyanson
@@ -29,7 +29,7 @@ prospects:
     acquired: "2026 Adley Rutschman trade with Boston"
     image: /assets/images/orioles/prospects-2026/anthony-eyanson.webp
     image_alt: Anthony Eyanson pitches for Chesapeake
-    stat_line: "21 G / 20 GS · 95.1 IP · 1.51 ERA · 0.93 WHIP · 134 K"
+    stat_line: "22 G / 21 GS · 99.1 IP · 1.54 ERA · 0.96 WHIP · 141 K"
   - rank: 3
     id: joseph-dzierwa
     name: Joseph Dzierwa
@@ -41,7 +41,7 @@ prospects:
     acquired: "2025 Draft: second round, No. 58 overall"
     image: /assets/images/orioles/prospects-2026/joseph-dzierwa.webp
     image_alt: Joseph Dzierwa pitches for Chesapeake
-    stat_line: "25 G / 23 GS · 126.0 IP · 2.36 ERA · 0.91 WHIP · 145 K"
+    stat_line: "26 G / 24 GS · 131.0 IP · 2.27 ERA · 0.90 WHIP · 149 K"
   - rank: 4
     id: caden-hunter
     name: Caden Hunter
@@ -53,7 +53,7 @@ prospects:
     acquired: "2025 Draft: sixth round, No. 184 overall"
     image: /assets/images/orioles/prospects-2026/caden-hunter.webp
     image_alt: Caden Hunter pitches for Chesapeake
-    stat_line: "22 G / 20 GS · 99.0 IP · 2.09 ERA · 1.06 WHIP · 147 K"
+    stat_line: "23 G / 21 GS · 103.0 IP · 2.01 ERA · 1.06 WHIP · 151 K"
   - rank: 5
     id: ike-irish
     name: Ike Irish
@@ -89,7 +89,7 @@ prospects:
     acquired: "International signing: Dominican Republic, December 2021"
     image: /assets/images/orioles/prospects-2026/luis-de-leon.jpg
     image_alt: Luis De León pitches in the Orioles farm system
-    stat_line: "MLB: 2 G · 1.2 IP · 10.80 ERA · 2 K · MiLB: 99.0 IP · 121 K"
+    stat_line: "MLB: 4 G · 3.2 IP · 4.91 ERA · 2 K · MiLB: 99.0 IP · 121 K"
   - rank: 8
     id: wehiwa-aloy
     name: Wehiwa Aloy
@@ -101,7 +101,7 @@ prospects:
     acquired: "2025 Draft: compensation round, No. 31 overall"
     image: /assets/images/orioles/prospects-2026/wehiwa-aloy.jpg
     image_alt: Wehiwa Aloy prepares to hit for Chesapeake
-    stat_line: "451 AB · .288/.360 · 24 HR · 18 SB · .870 OPS"
+    stat_line: "469 AB · .286/.355 · 24 HR · 20 SB · .854 OPS"
   - rank: 9
     id: enddy-azocar
     name: Enddy Azocar
@@ -113,7 +113,7 @@ prospects:
     acquired: "2026 Adley Rutschman trade with Boston"
     image: /assets/images/orioles/prospects-2026/enddy-azocar.jpg
     image_alt: Enddy Azocar stands on base during a minor league game
-    stat_line: "466 AB · .296/.349 · 21 HR · 20 SB · .890 OPS"
+    stat_line: "471 AB · .295/.348 · 21 HR · 20 SB · .885 OPS"
   - rank: 10
     id: michael-forret
     name: Michael Forret
@@ -127,6 +127,135 @@ prospects:
     image_alt: Michael Forret pitches for Triple-A Durham before returning to Baltimore
     stat_line: "24 G / 23 GS · 115.2 IP · 3.89 ERA · 1.33 WHIP · 125 K"
 reports:
+  - id: "2026-09-13"
+    published: "September 14, 2026"
+    window: "September 7-13, 2026"
+    summary:
+      biggest_risers: "Joseph Dzierwa finished a five-scoreless-inning start with four strikeouts, Anthony Eyanson struck out seven in four one-run innings in his final scheduled Chesapeake start, and Caden Hunter held Richmond to three unearned runs over four innings."
+      issues_to_monitor: "Michael Forret is now listed on Norfolk's seven-day injured list with no reason or return timetable published. Ike Irish and Nate George remain unavailable because of their existing knee and illness-related absences."
+      best_story: "The three top healthy pitching prospects closed their Double-A regular seasons with the same essential signal: Dzierwa, Eyanson and Hunter each made a final scheduled start, preserving elite season-long strikeout production while keeping their roles intact."
+    players:
+      - prospect: eric-booth-jr
+        name: Eric Booth Jr.
+        team: Delmarva Shorebirds
+        level: Single-A
+        trend: "→"
+        direction: steady
+        direction_label: Season complete
+        recap: "Did not play: Delmarva's regular season concluded after September 6. Booth's final official 2026 line is 67 at-bats, a .284 average, a .390 on-base percentage, nine RBIs and three steals."
+        development_read: "The first professional sample remains small, but it ended with a .718 OPS and a .390 on-base percentage. The key next step is an offseason plan rather than drawing a larger conclusion from 67 at-bats."
+        sources:
+          - { label: "MiLB player record", url: "https://www.milb.com/player/eric-booth-jr-835727" }
+          - { label: "Delmarva Shorebirds schedule", url: "https://www.milb.com/delmarva/schedule/2026-09" }
+      - prospect: anthony-eyanson
+        name: Anthony Eyanson
+        team: Chesapeake Baysox
+        level: Double-A
+        trend: "↑"
+        direction: rising
+        direction_label: Strong finish
+        recap: "Eyanson made his final scheduled Chesapeake start on September 10, allowing one run over four innings while striking out seven. He finished the regular season at 99.1 innings, a 1.54 ERA and 141 strikeouts."
+        development_read: "The rain-shortened outing still supplied the desired finish: he struck out the final five hitters he faced after navigating early traffic. The 141 strikeouts and 1.54 ERA make the full season stronger evidence than the limited final-start workload."
+        sources:
+          - { label: "Chesapeake Baysox: September 10 recap", url: "https://www.milb.com/chesapeake/news/baysox-win-third-consecutive-game-over-flying-squirrels-in-rain-ravaged-thursday-night" }
+          - { label: "MiLB player record", url: "https://www.milb.com/player/anthony-eyanson-809254" }
+      - prospect: joseph-dzierwa
+        name: Joseph Dzierwa
+        team: Chesapeake Baysox
+        level: Double-A
+        trend: "↑"
+        direction: rising
+        direction_label: Strong finish
+        recap: "Dzierwa threw five scoreless innings with four strikeouts against Richmond on September 9. His official regular-season line now stands at 131 innings, a 2.27 ERA, a 0.90 WHIP and 149 strikeouts."
+        development_read: "The scoreless final start restored the run-prevention trend after the uneven September 2 outing. More importantly, it completed a 131-inning season in which he paired high strikeout volume with excellent traffic control."
+        sources:
+          - { label: "MiLB prospect highlight: September 9 start", url: "https://www.milb.com/chesapeake/video/joseph-dzierwa-strikes-out-four?t=t418-default-vtp" }
+          - { label: "Chesapeake Baysox: September 9 recap", url: "https://www.milb.com/chesapeake/news/baysox-hang-on-for-wednesday-night-win-in-richmond-despite-squirrely-finish" }
+          - { label: "MiLB player record", url: "https://www.milb.com/player/joseph-dzierwa-804530" }
+      - prospect: caden-hunter
+        name: Caden Hunter
+        team: Chesapeake Baysox
+        level: Double-A
+        trend: "↑"
+        direction: rising
+        direction_label: Strong finish
+        recap: "Hunter worked four innings against Richmond on September 8, allowing three unearned runs on two hits with two walks and four strikeouts. His season ended at 103 innings, a 2.01 ERA and 151 strikeouts."
+        development_read: "The final line was not spotless, but the earned-run prevention was. Finishing with 151 strikeouts in 103 innings confirms the missed-bat profile that has carried him through a rapid climb to Double-A."
+        sources:
+          - { label: "Chesapeake Baysox: September 8 recap", url: "https://www.milb.com/chesapeake/news/honeycutt-clubs-his-way-to-first-multi-homer-game-in-tuesday-night-baysox-win-in-richmond" }
+          - { label: "MiLB player record", url: "https://www.milb.com/player/caden-hunter-827267" }
+      - prospect: ike-irish
+        name: Ike Irish
+        team: Frederick Keys
+        level: High-A
+        trend: "?"
+        direction: insufficient
+        direction_label: Injured
+        recap: "Did not play: Irish remains on Frederick's seven-day injured list following his July left-meniscus injury and knee procedure. MLB Pipeline continues to list his expected return as 2027."
+        development_read: "This remains a health hold rather than a performance evaluation. His .286/.388/.528 season, with 16 homers and 20 steals, is the appropriate baseline until a recovery update is reported."
+        sources:
+          - { label: "MLB Pipeline injury report", url: "https://www.mlb.com/orioles/news/top-prospect-injuries-roster-moves" }
+          - { label: "MiLB player record", url: "https://www.milb.com/player/ike-irish-702610" }
+      - prospect: nate-george
+        name: Nate George
+        team: Frederick Keys
+        level: High-A
+        trend: "?"
+        direction: insufficient
+        direction_label: Injured
+        recap: "Did not play: George remains on Frederick's 60-day injured list after his May placement for an undisclosed illness. No return timetable has been reported."
+        development_read: "The extended absence remains an availability issue, not a performance verdict. A verified recovery or activation update is the only meaningful next development."
+        sources:
+          - { label: "MiLB player record and transactions", url: "https://www.milb.com/player/nate-george-825582" }
+          - { label: "MLB Pipeline injury report", url: "https://www.mlb.com/orioles/news/top-prospect-injuries-roster-moves" }
+      - prospect: luis-de-leon
+        name: Luis De León
+        team: Baltimore Orioles
+        level: MLB
+        trend: "↑"
+        direction: rising
+        direction_label: Settling in
+        recap: "De León made a scoreless one-inning relief appearance against Cleveland on September 8, allowing one hit and no walks. He has now made four MLB appearances, totaling 3.2 innings with a 4.91 ERA and two strikeouts."
+        development_read: "One clean inning is a small sample, but it is a positive response after his first two appearances. The meaningful development remains that Baltimore is continuing to use him in the Major League bullpen."
+        sources:
+          - { label: "MLB player record and game log", url: "https://www.mlb.com/player/luis-de-leon-801725" }
+          - { label: "Orioles: De León promotion", url: "https://www.mlb.com/orioles/news/heston-kjerstad-orioles-callup-rosters-expanding?t=orioles-pipeline-coverage" }
+      - prospect: wehiwa-aloy
+        name: Wehiwa Aloy
+        team: Chesapeake Baysox
+        level: Double-A
+        trend: "→"
+        direction: steady
+        direction_label: Holding
+        recap: "Aloy remained active through Chesapeake's final regular-season series. His official totals finished at 469 at-bats, a .286 average, 24 homers, 89 RBIs, 20 steals and an .854 OPS."
+        development_read: "There was no additional home-run spike after the prior week's three-homer surge, but the finished 24-homer, 20-steal line preserves the season's central takeaway: his power and athletic production translated at Double-A."
+        sources:
+          - { label: "MiLB player record", url: "https://www.milb.com/player/wehiwa-aloy-814450" }
+          - { label: "Chesapeake Baysox final-series coverage", url: "https://www.milb.com/chesapeake/news/baysox-win-third-consecutive-game-over-flying-squirrels-in-rain-ravaged-thursday-night" }
+      - prospect: enddy-azocar
+        name: Enddy Azocar
+        team: Frederick Keys
+        level: High-A
+        trend: "→"
+        direction: steady
+        direction_label: Season complete
+        recap: "Did not play: Frederick's regular season concluded after September 6. Azocar's final official line is 471 at-bats, a .295 average, 21 homers, 86 RBIs, 20 steals and an .885 OPS."
+        development_read: "The completed season is the important result: at age 19, Azocar combined 21 homers and 20 steals while maintaining a .295 average. That is a broader and more meaningful data point than a quiet final week."
+        sources:
+          - { label: "MiLB player record", url: "https://www.milb.com/player/enddy-azocar-821150" }
+          - { label: "Frederick Keys schedule", url: "https://www.milb.com/frederick/schedule/2026-09" }
+      - prospect: michael-forret
+        name: Michael Forret
+        team: Norfolk Tides
+        level: Triple-A
+        trend: "?"
+        direction: insufficient
+        direction_label: Injured
+        recap: "Did not play: Forret is listed on Norfolk's seven-day injured list. The official transaction record does not publish an injury reason or a return timetable."
+        development_read: "This is an availability hold rather than a performance conclusion. His 115.2 innings, 3.89 ERA and 125 strikeouts remain the relevant baseline until Norfolk or Baltimore provides a status update."
+        sources:
+          - { label: "MiLB player record and transactions", url: "https://www.milb.com/player/michael-forret-702650" }
+          - { label: "Norfolk Tides schedule and results", url: "https://www.milb.com/norfolk/schedule/2026-09" }
   - id: "2026-09-06"
     published: "September 7, 2026"
     window: "August 31-September 6, 2026"
