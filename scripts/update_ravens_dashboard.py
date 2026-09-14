@@ -292,15 +292,18 @@ def recent_games_payload(schedule_games):
         team_score = int(game["home_score"] if is_home else game["away_score"])
         opp_score = int(game["away_score"] if is_home else game["home_score"])
         opponent = game["away_team"] if is_home else game["home_team"]
+        result = "W" if team_score > opp_score else ("L" if team_score < opp_score else "T")
+        result_word = {"W": "defeated", "L": "lost to", "T": "tied"}[result]
         payload.append({
             "game_id": game["game_id"],
             "week": f"Week {int(game['week'])}",
             "date": str(game["gameday"]),
             "location": "home" if is_home else "away",
             "opponent": TEAM_NAMES.get(opponent, opponent),
-            "result": "W" if team_score > opp_score else ("L" if team_score < opp_score else "T"),
+            "result": result,
             "ravens_score": team_score,
             "opponent_score": opp_score,
+            "takeaway": f"Baltimore {result_word} {TEAM_NAMES.get(opponent, opponent)} {team_score}–{opp_score}.",
         })
     return payload
 

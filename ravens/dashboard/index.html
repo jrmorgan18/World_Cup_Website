@@ -106,7 +106,7 @@ section_theme: ravens
           </ul>
         </div>
         {% endif %}
-        {% if dashboard.opponent_availability.team == next_game.opponent_abbr %}
+        {% if dashboard.opponent_availability.team == next_game.opponent_abbr and dashboard.opponent_availability.items.size > 0 %}
         <div class="ravens-opponent-watch">
           <h4>{{ dashboard.opponent_availability.label }}</h4>
           <ul>
