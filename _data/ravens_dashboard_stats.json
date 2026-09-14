@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T04:18:59Z",
+  "generated_at": "2026-09-14T16:57:09Z",
   "as_of": "2026-09-14",
   "season": 2026,
   "benchmark_season": 2025,
@@ -79,7 +79,7 @@
       "record": "1-0",
       "metrics": {
         "overall_efficiency": {
-          "value": 83.9,
+          "value": 83.3,
           "rank": 1,
           "source": "Dual Eights index from nflverse play-by-play"
         },
@@ -95,12 +95,12 @@
         },
         "offensive_epa_per_play": {
           "value": 0.32,
-          "rank": 3,
+          "rank": 4,
           "source": "nflverse play-by-play"
         },
         "offensive_success_rate": {
           "value": 50.0,
-          "rank": 5,
+          "rank": 6,
           "source": "nflverse play-by-play"
         },
         "explosive_play_rate": {
@@ -110,7 +110,7 @@
         },
         "red_zone_td_rate": {
           "value": 75.0,
-          "rank": 11,
+          "rank": 13,
           "source": "nflverse play-by-play"
         },
         "defensive_epa_per_play": {
@@ -125,7 +125,7 @@
         },
         "explosive_play_rate_allowed": {
           "value": 13.2,
-          "rank": 23,
+          "rank": 25,
           "source": "nflverse play-by-play"
         },
         "opponent_red_zone_td_rate": {
@@ -222,7 +222,7 @@
             "stat": "EPA / play",
             "ravens": {
               "value": 0.32,
-              "rank": 3
+              "rank": 4
             },
             "opponent": {
               "value": 0.02,
@@ -238,7 +238,7 @@
             },
             "opponent": {
               "value": 11.1,
-              "rank": 16
+              "rank": 18
             }
           },
           {
@@ -250,7 +250,7 @@
             },
             "opponent": {
               "value": -0.01,
-              "rank": 15
+              "rank": 17
             }
           },
           {
@@ -262,7 +262,7 @@
             },
             "opponent": {
               "value": 80.0,
-              "rank": 7
+              "rank": 9
             }
           }
         ]
@@ -339,6 +339,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-09-14T04:18:59Z"
+    "retrieved_at": "2026-09-14T16:57:09Z"
   }
 }
