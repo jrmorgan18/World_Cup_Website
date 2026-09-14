@@ -26,7 +26,13 @@ jobs:
         with:
           python-version: "3.12"
       - name: Validate Ravens dashboard data
+        id: validate-ravens-dashboard
+        continue-on-error: true
         run: ruby scripts/check_ravens_dashboard.rb
+      - name: Warn when Ravens dashboard data needs attention
+        if: steps.validate-ravens-dashboard.outcome == 'failure'
+        run: >-
+          echo "::warning title=Ravens dashboard data needs attention::The data check failed, but site validation continued. Review the Validate Ravens dashboard data log for details."
       - name: Build launch version
         run: >-
           bundle exec jekyll build --trace
