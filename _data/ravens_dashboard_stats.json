@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-04T03:09:51Z",
-  "as_of": "2026-09-03",
+  "generated_at": "2026-09-14T04:18:59Z",
+  "as_of": "2026-09-14",
   "season": 2026,
   "benchmark_season": 2025,
-  "current_snapshot": "2026-preseason",
+  "current_snapshot": "2026-week-01",
   "snapshots": [
     {
       "id": "2026-preseason",
@@ -66,6 +66,71 @@
         "opponent_red_zone_td_rate": {
           "value": null,
           "rank": null,
+          "source": "nflverse play-by-play"
+        }
+      }
+    },
+    {
+      "id": "2026-week-01",
+      "week": 1,
+      "label": "Through Week 1",
+      "previous_snapshot": "2026-preseason",
+      "sample_note": "1 regular-season game",
+      "record": "1-0",
+      "metrics": {
+        "overall_efficiency": {
+          "value": 83.9,
+          "rank": 1,
+          "source": "Dual Eights index from nflverse play-by-play"
+        },
+        "point_differential": {
+          "value": 18,
+          "rank": 4,
+          "source": "nflverse schedules"
+        },
+        "turnover_differential": {
+          "value": 1,
+          "rank": 7,
+          "source": "nflverse play-by-play"
+        },
+        "offensive_epa_per_play": {
+          "value": 0.32,
+          "rank": 3,
+          "source": "nflverse play-by-play"
+        },
+        "offensive_success_rate": {
+          "value": 50.0,
+          "rank": 5,
+          "source": "nflverse play-by-play"
+        },
+        "explosive_play_rate": {
+          "value": 15.0,
+          "rank": 3,
+          "source": "nflverse play-by-play"
+        },
+        "red_zone_td_rate": {
+          "value": 75.0,
+          "rank": 11,
+          "source": "nflverse play-by-play"
+        },
+        "defensive_epa_per_play": {
+          "value": -0.24,
+          "rank": 5,
+          "source": "nflverse play-by-play"
+        },
+        "defensive_success_rate": {
+          "value": 41.5,
+          "rank": 9,
+          "source": "nflverse play-by-play"
+        },
+        "explosive_play_rate_allowed": {
+          "value": 13.2,
+          "rank": 23,
+          "source": "nflverse play-by-play"
+        },
+        "opponent_red_zone_td_rate": {
+          "value": 100.0,
+          "rank": 22,
           "source": "nflverse play-by-play"
         }
       }
@@ -137,80 +202,129 @@
     }
   },
   "header": {
-    "record": "0-0",
-    "division_standing": "Standings begin after Week 1",
-    "streak": "—",
+    "record": "1-0",
+    "division_standing": "AFC North",
+    "streak": "W1",
     "next_game": {
-      "week": 1,
-      "opponent": "Indianapolis Colts",
-      "opponent_abbr": "IND",
-      "location": "away",
-      "date": "2026-09-13",
-      "display": "at Indianapolis Colts · Sep 13 · 1:00 PM ET",
-      "venue": "Lucas Oil Stadium",
+      "week": 2,
+      "opponent": "New Orleans Saints",
+      "opponent_abbr": "NO",
+      "location": "home",
+      "date": "2026-09-20",
+      "display": "vs. New Orleans Saints · Sep 20 · 1:00 PM ET",
+      "venue": "M&T Bank Stadium",
       "source": "nflverse schedules",
       "matchup": {
-        "label": "2025 regular-season baseline",
+        "label": "2026 through Week 1",
         "items": [
           {
             "title": "When the Ravens have the ball",
             "stat": "EPA / play",
             "ravens": {
-              "value": 0.04,
-              "rank": 12
+              "value": 0.32,
+              "rank": 3
             },
             "opponent": {
-              "value": 0.0,
-              "rank": 15
+              "value": 0.02,
+              "rank": 16
             }
           },
           {
             "title": "The Ravens' big-play test",
             "stat": "Explosive rate",
             "ravens": {
-              "value": 12.0,
+              "value": 15.0,
               "rank": 3
             },
             "opponent": {
-              "value": 9.1,
-              "rank": 14
+              "value": 11.1,
+              "rank": 16
             }
           },
           {
             "title": "When the opponent has the ball",
             "stat": "EPA / play",
             "ravens": {
-              "value": 0.04,
-              "rank": 20
+              "value": -0.24,
+              "rank": 5
             },
             "opponent": {
-              "value": 0.08,
-              "rank": 9
+              "value": -0.01,
+              "rank": 15
             }
           },
           {
             "title": "The red-zone matchup",
             "stat": "TD rate",
             "ravens": {
-              "value": 51.6,
-              "rank": 6
+              "value": 100.0,
+              "rank": 22
             },
             "opponent": {
-              "value": 68.2,
-              "rank": 3
+              "value": 80.0,
+              "rank": 7
             }
           }
         ]
       }
     }
   },
-  "last_game": null,
-  "recent_form": {
-    "sequence": [],
-    "record": null,
-    "point_differential": null
+  "last_game": {
+    "game_id": "2026_01_BAL_IND",
+    "week": "Week 1",
+    "date": "2026-09-13",
+    "location": "away",
+    "opponent": "Indianapolis Colts",
+    "result": "W",
+    "ravens_score": 41,
+    "opponent_score": 23,
+    "takeaway": "Baltimore defeated Indianapolis Colts 41–23.",
+    "type_label": "Regular season",
+    "opponent_abbr": "IND",
+    "key_stats": [
+      {
+        "label": "Scrimmage yards",
+        "value": "509–251",
+        "detail": "Ravens–opponent"
+      },
+      {
+        "label": "EPA / play",
+        "value": "0.32 / -0.24",
+        "detail": "Ravens / opponent"
+      },
+      {
+        "label": "Success rate",
+        "value": "50.0% / 41.5%",
+        "detail": "Ravens / opponent"
+      },
+      {
+        "label": "Turnovers",
+        "value": "1–2",
+        "detail": "Ravens–opponent"
+      }
+    ],
+    "source": "nflverse play-by-play"
   },
-  "recent_games": [],
+  "recent_form": {
+    "sequence": [
+      "W"
+    ],
+    "record": "1-0",
+    "point_differential": 18
+  },
+  "recent_games": [
+    {
+      "game_id": "2026_01_BAL_IND",
+      "week": "Week 1",
+      "date": "2026-09-13",
+      "location": "away",
+      "opponent": "Indianapolis Colts",
+      "result": "W",
+      "ravens_score": 41,
+      "opponent_score": 23,
+      "takeaway": "Baltimore defeated Indianapolis Colts 41–23."
+    }
+  ],
   "sources": {
     "schedule": {
       "label": "nflverse schedules",
@@ -225,6 +339,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-09-04T03:09:51Z"
+    "retrieved_at": "2026-09-14T04:18:59Z"
   }
 }
