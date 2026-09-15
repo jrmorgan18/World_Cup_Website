@@ -46,7 +46,47 @@ The biggest concern came from Gianluca Busio, who assisted Venezia’s opening g
 
 ## Stock Watch
 
-●   ↑ Up: Cavan Sullivan, Christian Pulisic, Sergiño Dest, Malik Tillman, Yunus Musah ●   ↗ Encouraging role developments: Alex Freeman, Tyler Adams, Johnny Cardoso, Bryan Reynolds ●   — Mixed: Ricardo Pepi, Antonee Robinson, Chris Richards, Brenden Aaronson, Cole Campbell, Tim Weah, Mark McKenzie ●   ↓ Concern: Gianluca Busio, Benjamin Cremaschi
+<figure class="article-stock-watch">
+  <div class="article-stock-watch-heading">
+    <span>Project 2030</span>
+    <strong>USMNT Stock Watch</strong>
+    <small>Week ending September 13, 2026</small>
+  </div>
+  <div class="article-stock-watch-grid">
+    <section class="stock-watch-lane stock-watch-lane--up">
+      <p><span aria-hidden="true">&#8593;</span> Up</p>
+      <ul>
+        <li>Cavan Sullivan</li>
+        <li>Christian Pulisic</li>
+        <li>Sergiño Dest</li>
+        <li>Malik Tillman</li>
+        <li>Yunus Musah</li>
+      </ul>
+    </section>
+    <section class="stock-watch-lane stock-watch-lane--mixed">
+      <p><span aria-hidden="true">&#8212;</span> Mixed</p>
+      <ul>
+        <li>Ricardo Pepi</li>
+        <li>Antonee Robinson</li>
+        <li>Chris Richards</li>
+        <li>Brenden Aaronson</li>
+        <li>Cole Campbell</li>
+        <li>Tim Weah</li>
+        <li>Mark McKenzie</li>
+      </ul>
+    </section>
+    <section class="stock-watch-lane stock-watch-lane--concern">
+      <p><span aria-hidden="true">&#8595;</span> Concern</p>
+      <ul>
+        <li>Gianluca Busio</li>
+        <li>Benjamin Cremaschi</li>
+      </ul>
+    </section>
+  </div>
+  <div class="article-stock-watch-notes">
+    <p><strong>Encouraging role developments:</strong> Alex Freeman, Tyler Adams, Johnny Cardoso, Bryan Reynolds</p>
+  </div>
+</figure>
 
 **Up: Cavan Sullivan, Christian Pulisic, Sergiño Dest, Malik Tillman and Yunus Musah.**
 
