@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Build the Ravens dashboard's objective weekly snapshot from nflverse.
+"""Build the Ravens dashboard's objective weekly snapshot.
 
-The script uses free, keyless nflverse schedule and play-by-play releases. It
-keeps prior weekly snapshots in the generated JSON so the Jekyll dashboard can
-show real week-over-week movement. Availability and editorial assessments stay
-in _data/ravens_dashboard.yml so dated official club reports can be reviewed
-before health context is published.
+The script uses free, keyless nflverse schedule, play-by-play and Next Gen Stats
+releases plus ESPN's Total QBR feed. It keeps prior weekly snapshots in the
+generated JSON so the Jekyll dashboard can show real week-over-week movement.
+Availability and editorial assessments stay in _data/ravens_dashboard.yml so
+dated official club reports can be reviewed before health context is published.
 
 Usage:
   python scripts/update_ravens_dashboard.py
@@ -23,6 +23,8 @@ import os
 import sys
 from datetime import date, datetime, timezone
 from pathlib import Path
+from urllib.parse import urlencode
+from urllib.request import Request, urlopen
 
 import pandas as pd
 
@@ -35,6 +37,9 @@ PBP_URL = "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_
 PBP_DOCS_URL = "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
 NGS_URL = "https://github.com/nflverse/nflverse-data/releases/download/nextgen_stats/ngs_{stat_type}.parquet"
 NGS_DOCS_URL = "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html"
+ESPN_QBR_API_URL = "https://site.web.api.espn.com/apis/fitt/v3/sports/football/nfl/qbr"
+ESPN_QBR_PAGE_URL = "https://www.espn.com/nfl/qbr/_/season/{season}/seasontype/2"
+LAMAR_ESPN_ID = "3916387"
 
 PBP_COLUMNS = [
     "game_id",
@@ -107,6 +112,79 @@ def signed_text(value, digits, suffix=""):
     return f"{number:+.{digits}f}{suffix}"
 
 
+def fetch_espn_qbr(season):
+    """Fetch ESPN's qualified, league-wide regular-season Total QBR table."""
+    query = urlencode({
+        "region": "us",
+        "lang": "en",
+        "qbrType": "seasons",
+        "seasontype": 2,
+        "isqualified": "true",
+        "sort": "schedAdjQBR:desc",
+        "season": season,
+    })
+    request = Request(
+        f"{ESPN_QBR_API_URL}?{query}",
+        headers={
+            "Accept": "application/json",
+            "User-Agent": "Dual-Eights-Ravens-Dashboard/1.0",
+        },
+    )
+    with urlopen(request, timeout=30) as response:
+        return json.load(response)
+
+
+def espn_qbr_metric(data, season):
+    """Return Lamar Jackson's qualified Total QBR and league rank."""
+    categories = data.get("categories") or []
+    if not categories:
+        return None
+    names = categories[0].get("names") or []
+    try:
+        qbr_index = names.index("schedAdjQBR")
+    except ValueError:
+        return None
+
+    player = next(
+        (
+            row for row in data.get("athletes", [])
+            if str(row.get("athlete", {}).get("id")) == LAMAR_ESPN_ID
+        ),
+        None,
+    )
+    if not player or not player.get("categories"):
+        return None
+    totals = player["categories"][0].get("totals") or []
+    ranks = player["categories"][0].get("ranks") or []
+    if qbr_index >= len(totals) or qbr_index >= len(ranks):
+        return None
+    try:
+        value = float(totals[qbr_index])
+        rank = int(float(ranks[qbr_index]))
+    except (TypeError, ValueError):
+        return None
+
+    week = data.get("requestedSeason", {}).get("type", {}).get("week", {}).get("number")
+    period_label = f"Through Week {int(week)}" if week else f"{season} regular season"
+    return {
+        "source_label": "ESPN",
+        "source_url": ESPN_QBR_PAGE_URL.format(season=season),
+        "period_label": period_label,
+        "label": "Jackson QBR",
+        "value": f"{value:.1f}",
+        "rank": rank,
+        "rank_group": "NFL",
+    }
+
+
+def existing_qbr_metric(existing):
+    """Preserve the last good ESPN value when its optional feed is unavailable."""
+    for metric in existing.get("unit_analytics", {}).get("Quarterback", []):
+        if metric.get("label") == "Jackson QBR" and metric.get("source_label") == "ESPN":
+            return metric
+    return None
+
+
 def ngs_player_metric(data, season, position, volume_column, metric_column, label, digits, suffix=""):
     """Return the Ravens' volume leader and his rank among NGS qualifiers at the position."""
     eligible = data[
@@ -162,7 +240,7 @@ def secondary_cpoe_metric(pbp, valid_game_ids, week):
     }
 
 
-def unit_analytics_payload(season, week, current_games, current_pbp, ngs_data):
+def unit_analytics_payload(season, week, current_games, current_pbp, ngs_data, qbr_metric=None):
     analytics = {}
     specs = [
         ("Quarterback", "passing", "QB", "attempts", "completion_percentage_above_expectation", "CPOE", 1, "%"),
@@ -174,6 +252,9 @@ def unit_analytics_payload(season, week, current_games, current_pbp, ngs_data):
         result = ngs_player_metric(ngs_data[stat_type], season, position, volume, metric, label, digits, suffix)
         if result:
             analytics[unit_name] = [result]
+
+    if qbr_metric:
+        analytics.setdefault("Quarterback", []).append(qbr_metric)
 
     coverage = secondary_cpoe_metric(current_pbp, current_games["game_id"].tolist(), week)
     if coverage:
@@ -548,8 +629,22 @@ def main():
             next_game["matchup"] = matchup_payload(matchup_table, next_game["opponent_abbr"], matchup_label)
         sequence = [game["result"] for game in reversed(recent_games)]
         recent_margin = sum(game["ravens_score"] - game["opponent_score"] for game in recent_games)
+        qbr_metric = None
+        if current["week"] > 0:
+            try:
+                qbr_metric = espn_qbr_metric(fetch_espn_qbr(args.season), args.season)
+            except Exception as error:
+                print(f"ESPN QBR unavailable; keeping the last good value: {error}", file=sys.stderr)
+            qbr_metric = qbr_metric or existing_qbr_metric(existing)
         unit_analytics = (
-            unit_analytics_payload(args.season, current["week"], current_games, current_pbp, ngs_data)
+            unit_analytics_payload(
+                args.season,
+                current["week"],
+                current_games,
+                current_pbp,
+                ngs_data,
+                qbr_metric,
+            )
             if current["week"] > 0 else {}
         )
         now = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
@@ -579,6 +674,7 @@ def main():
                 "schedule": {"label": "nflverse schedules", "url": SCHEDULE_URL},
                 "play_by_play": {"label": "nflverse play-by-play", "url": PBP_URL.format(season=args.season)},
                 "next_gen_stats": {"label": "NFL Next Gen Stats via nflverse", "url": NGS_DOCS_URL},
+                "espn_qbr": {"label": "ESPN Total QBR", "url": ESPN_QBR_PAGE_URL.format(season=args.season)},
                 "methodology": {"label": "nflverse data update schedule", "url": PBP_DOCS_URL},
                 "license": "CC BY 4.0",
                 "retrieved_at": now,

@@ -281,6 +281,7 @@ injuries:
 sources:
   - { name: "nflverse schedules and play-by-play", role: "Automated regular-season results, EPA, success, explosive plays, red-zone drives and NFL ranks", url: "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html", cadence: "Schedules update about every five minutes; play-by-play is refreshed nightly after game days.", license: "CC BY 4.0" }
   - { name: "NFL Next Gen Stats via nflverse", role: "Automated CPOE, RYOE per attempt and YAC over expectation values and qualifying-player ranks for the Unit Report Card", url: "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html", cadence: "Current-season player summaries update nightly when players meet NFL Next Gen Stats minimums." }
+  - { name: "ESPN Total QBR", role: "Automated Lamar Jackson Total QBR and qualified league rank for the Unit Report Card", url: "https://www.espn.com/nfl/qbr/_/season/2026/seasontype/2", cadence: "Checked nightly; the last good value is retained if ESPN is temporarily unavailable." }
   - { name: "ESPN Analytics Win Rate Rankings", role: "Manually entered team and Ravens player PRWR, RSWR, PBWR and RBWR context for the Unit Report Card", url: "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking", cadence: "Current dashboard snapshot is through Week 1, September 15 at 10 a.m. ET." }
   - { name: "Baltimore Ravens official schedule", role: "2026 schedule and official preseason results", url: "https://www.baltimoreravens.com/schedule/2026/", cadence: "As published by the club" }
   - { name: "Baltimore Ravens official news and roster reports", role: "Availability, roster status and dated team context", url: "https://www.baltimoreravens.com/news/", cadence: "Reviewed for each dashboard update" }
@@ -292,6 +293,7 @@ methodology_notes:
   - "Red-zone rates are drive-level: a drive qualifies once it reaches the opponent 20-yard line."
   - "ESPN pass-block and pass-rush win rates measure whether the blocker sustains or the rusher defeats a block within 2.5 seconds; its run-block and run-stop rates evaluate the result of blocks on designed runs."
   - "NFL Next Gen Stats CPOE compares actual completion rate with expected completion rate; RYOE/att compares a runner's yards with the model's expectation per attempt; YACOE compares yards after catch with expected yards after catch."
+  - "ESPN Total QBR values quarterback contributions on passes, rushes, sacks, turnovers and penalties on a 0–100 scale, adjusted for opponent strength. Only qualified quarterbacks are ranked."
   - "The secondary's opponent CPOE is calculated from nflverse play-by-play and ranked from lowest to highest because suppressing completions relative to expectation is better."
   - "Pressure rate is omitted because the free sources reviewed do not expose a defensible complete pressure variable."
   - "Playoff probability is omitted until a transparent, repeatable model is added."

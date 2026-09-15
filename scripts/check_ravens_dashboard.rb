@@ -110,6 +110,12 @@ expected_automated_units = current_snapshot && current_snapshot["week"].to_i > 0
 assert(automated_analytics.keys == expected_automated_units, "Automated unit analytics must contain the supported units in order", errors)
 automated_analytics.each { |unit_name, metrics| validate_analytics.call(unit_name, metrics) }
 assert((automated_analytics.keys & editorial_analytics.map { |unit| unit["name"] }).empty?, "A unit cannot mix automated and editorial analytics", errors)
+if current_snapshot && current_snapshot["week"].to_i > 0
+  quarterback_metrics = automated_analytics.fetch("Quarterback", [])
+  qbr = quarterback_metrics.find { |metric| metric["label"] == "Jackson QBR" }
+  assert(!qbr.nil?, "Quarterback analytics must include Jackson QBR", errors)
+  assert(qbr && qbr["source_label"] == "ESPN", "Jackson QBR must be attributed to ESPN", errors)
+end
 
 changes = editorial.dig("editorial", "weekly_changes")
 assert(changes.length.between?(3, 5), "What Changed must contain 3–5 items", errors)

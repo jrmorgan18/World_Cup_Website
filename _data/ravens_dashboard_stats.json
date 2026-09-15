@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T17:28:59Z",
+  "generated_at": "2026-09-15T18:12:50Z",
   "as_of": "2026-09-15",
   "season": 2026,
   "benchmark_season": 2025,
@@ -315,6 +315,15 @@
         "value": "+6.4%",
         "rank": 10,
         "rank_group": "QB"
+      },
+      {
+        "source_label": "ESPN",
+        "source_url": "https://www.espn.com/nfl/qbr/_/season/2026/seasontype/2",
+        "period_label": "Through Week 1",
+        "label": "Jackson QBR",
+        "value": "82.7",
+        "rank": 7,
+        "rank_group": "NFL"
       }
     ],
     "Running backs": [
@@ -395,11 +404,15 @@
       "label": "NFL Next Gen Stats via nflverse",
       "url": "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html"
     },
+    "espn_qbr": {
+      "label": "ESPN Total QBR",
+      "url": "https://www.espn.com/nfl/qbr/_/season/2026/seasontype/2"
+    },
     "methodology": {
       "label": "nflverse data update schedule",
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-09-15T17:28:59Z"
+    "retrieved_at": "2026-09-15T18:12:50Z"
   }
 }
