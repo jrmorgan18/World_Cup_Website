@@ -312,9 +312,9 @@ reports:
     week_ending: "September 6, 2026"
     source_note: "Official club, league and competition records were checked first, including local-language reporting in England, Germany, Denmark, Italy and Croatia. Local club-specific coverage supplied match context; secondary match records were used only to establish minutes or events absent from official recaps. Verified facts are separated from the development interpretation, and unreported statistics were not inferred."
     summary:
-      biggest_risers: "Cavan Sullivan scored for a third straight match and became the first MLS teenager with a goal contribution in five consecutive regular-season games. Mathis Albert made his first Borussia Dortmund senior start and took six shots, Diego Kochen recorded his first Lyngby clean sheet, and Beau Leroux scored for San Jose. Justin Ellis, Caleb Wiley and Niko Tsakiris also produced direct goal contributions."
+      biggest_risers: "Cavan Sullivan now has two goals and two traditional assists, with MLS also crediting him with two additional secondary assists. Niko Tsakiris supplied a goal and two assists at San Diego, while Neil Pierre’s proactive defending helped Philadelphia control its 5-0 win there. Mathis Albert made his first Borussia Dortmund senior start and took six shots, Diego Kochen recorded his first Lyngby clean sheet, and Beau Leroux scored for San Jose."
       issues_to_monitor: "Chris Brady conceded four in Toronto despite making four saves, Benjamin Cremaschi was an unused substitute twice and Duran Ferree remained the backup. No competitive action: Paxten Aaronson's Colorado had no fixture; Jackson Hopkins' D.C. match was postponed; Kevin Paredes remains out for several months; Zavier Gozo and Ferree were unused substitutes."
-      best_story: "Sullivan supplied the defining development performance: a dangerous early shot preceded his composed 75th-minute finish, his fourth league goal and third in three matches. His history-making fifth straight MLS game with a goal contribution is now sustained senior influence, not merely a projection."
+      best_story: "Sullivan’s latest production reinforces that his senior influence is no longer merely a projection: two goals and two traditional assists, plus two MLS secondary-assist credits, combine end product with repeated involvement in scoring sequences."
     players:
       - profile: caleb-wiley
         name: Caleb Wiley
@@ -384,23 +384,23 @@ reports:
         trend: "→"
         direction: steady
         direction_label: Holding
-        context: Road start
-        recap: "Mehmeti started in central midfield and played 74 minutes in Red Bull New York's 0-0 draw at Seattle before David Ruiz replaced him. He recorded no goal or assist as New York leaned on Ethan Horvath's six saves to secure the point."
-        development_read: "Another senior midfield start preserves his positive role trajectory, but the match supplied limited attacking evidence and Seattle controlled much of the threat. The outlook holds rather than rises."
+        context: Injury exit, then full Columbus return
+        recap: "Mehmeti’s early exit against LAFC was injury-related rather than tactical. He then returned to complete the full 90 minutes at Columbus, providing a positive availability signal after the midweek scare."
+        development_read: "The quick full-match return is encouraging evidence of resilience and preserves his positive role trajectory. The immediate priority is sustaining that availability through a demanding senior schedule."
         sources:
-          - { label: "RBNY match recap (official)", url: "https://www.newyorkredbulls.com/news/match-recap-pres-by-provident-bank-ethan-horvath-stands-tall-rbny-take-point-in-seattle" }
-          - { label: "Seattle lineups and stats (official)", url: "https://www.soundersfc.com/news/match-recap-sounders-fc-plays-to-scoreless-draw-with-red-bull-new-york-on-saturday-night-at-lumen-field" }
+          - { label: "Red Bulls at Columbus recap (secondary)", url: "https://fieldlevelmedia.com/mls/red-bulls-strike-late-against-crew-to-halt-losing-streak/" }
+          - { label: "Mehmeti return update (secondary)", url: "https://www.rotowire.com/soccer/headlines/adri-mehmeti-news-starting-saturday-533056" }
       - profile: neil-pierre
         name: Neil Pierre
         club: Philadelphia Union
         trend: "→"
         direction: steady
         direction_label: Holding
-        context: Clean sheet with penalty warning
-        recap: "Pierre played all 90 minutes at center back in Philadelphia's 2-0 win over Montréal. The Union allowed only two shots on target and kept a clean sheet, but Pierre conceded a 68th-minute penalty for fouling Hennadii Synchuk; Andre Blake saved it."
-        development_read: "The full-match clean sheet supports his growing senior role, while the penalty is a meaningful decision-making blemish that prevents a rising grade. The overall outlook is unchanged."
+        context: Proactive defending at San Diego
+        recap: "Pierre helped anchor Philadelphia’s 5-0 win at San Diego with proactive defending: he stepped forward to break up attacks, handled transition moments aggressively and helped keep the hosts from establishing a foothold."
+        development_read: "The performance adds positive evidence beyond a clean-sheet result. Pierre’s willingness to engage early and stop attacks before they develop is an encouraging senior-center-back trait."
         sources:
-          - { label: "Union match recap (official)", url: "https://www.philadelphiaunion.com/news/recap-sullivan-makes-history-as-union-extend-unbeaten-run-to-eight" }
+          - { label: "Union at San Diego box score (official)", url: "https://www.philadelphiaunion.com/news/box-score-philadelphia-union-5-san-diego-fc-0" }
       - profile: chris-brady
         name: Chris Brady
         club: Chicago Fire
@@ -431,22 +431,23 @@ reports:
         trend: "↑↑"
         direction: rising
         direction_label: Rising fast
-        context: Third straight game with a goal
-        recap: "Sullivan started in advanced midfield and played 82 minutes in Philadelphia's 2-0 win over Montréal. His strong 13th-minute shot forced a save and created a rebound chance, then he calmly scored with his left foot in the 75th minute. It was his fourth league goal and third consecutive match with a goal."
-        development_read: "Sullivan became the youngest MLS player—and the first teenager—to post a goal contribution in five straight regular-season matches. The combination of repeated chance creation and composed finishing is the week's strongest evidence that his elite projection is translating to senior influence."
+        context: Two goals, two assists and two secondary assists
+        recap: "Sullivan now reads as two goals and two traditional assists, with MLS also crediting him with two additional secondary assists. The production pairs finishing with repeated involvement in the moves that create goals."
+        development_read: "The primary goal and assist totals already represent a major senior output spike; the secondary-assist credits reinforce how often he is initiating or advancing decisive sequences. His elite projection is translating to sustained MLS influence."
         sources:
-          - { label: "Union match recap (official)", url: "https://www.philadelphiaunion.com/news/recap-sullivan-makes-history-as-union-extend-unbeaten-run-to-eight" }
+          - { label: "Union at San Diego box score (official)", url: "https://www.philadelphiaunion.com/news/box-score-philadelphia-union-5-san-diego-fc-0" }
+          - { label: "Union–Cincinnati recap (local)", url: "https://www.inquirer.com/soccer/cavan-sullivan-philadelphia-union-fc-cincinnati-bruno-damiani-20260909.html" }
       - profile: niko-tsakiris
         name: Niko Tsakiris
         club: San Jose Earthquakes
-        trend: "↑"
+        trend: "↑↑"
         direction: rising
-        direction_label: Rising
-        context: 90 minutes and an assist
-        recap: "Tsakiris started in San Jose's midfield and played all 90 minutes in a 1-1 draw at Austin. He received from Beau Leroux in the left half-space and laid the ball back for Leroux's eighth-minute goal, earning the official assist; Austin equalized at 90+7."
-        development_read: "A full start and a purposeful final-third combination add positive evidence after his injury interruption. The late team concession does not diminish his direct contribution."
+        direction_label: Rising fast
+        context: Goal and two assists at San Diego
+        recap: "Tsakiris led San Jose’s 3-2 win at San Diego with a goal and two assists. His distant outside-of-the-foot pass into the box set up Ousseni Bouda’s well-timed header, adding a high-difficulty creative moment to a three-goal-contribution night."
+        development_read: "A goal and two assists in a road win is an emphatic response after injury interruption. The Bouda assist in particular shows the vision and execution to create danger from distance, strengthening his attacking-midfield case."
         sources:
-          - { label: "San Jose match report (official)", url: "https://www.sjearthquakes.com/news/match-recap-earthquakes-1-austin-fc-1-x5305" }
+          - { label: "San Diego–San Jose match report (AP)", url: "https://abcnews.go.com/Sports/wireStory/niko-tsakiris-goal-2-assists-lead-earthquakes-3-136326777" }
       - profile: paxten-aaronson
         name: Paxten Aaronson
         club: Colorado Rapids
