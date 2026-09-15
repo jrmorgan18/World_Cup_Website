@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-14T16:57:09Z",
-  "as_of": "2026-09-14",
+  "generated_at": "2026-09-15T15:33:36Z",
+  "as_of": "2026-09-15",
   "season": 2026,
   "benchmark_season": 2025,
   "current_snapshot": "2026-week-01",
@@ -79,13 +79,13 @@
       "record": "1-0",
       "metrics": {
         "overall_efficiency": {
-          "value": 83.3,
+          "value": 82.8,
           "rank": 1,
           "source": "Dual Eights index from nflverse play-by-play"
         },
         "point_differential": {
           "value": 18,
-          "rank": 4,
+          "rank": 5,
           "source": "nflverse schedules"
         },
         "turnover_differential": {
@@ -115,22 +115,22 @@
         },
         "defensive_epa_per_play": {
           "value": -0.24,
-          "rank": 5,
+          "rank": 6,
           "source": "nflverse play-by-play"
         },
         "defensive_success_rate": {
           "value": 41.5,
-          "rank": 9,
+          "rank": 10,
           "source": "nflverse play-by-play"
         },
         "explosive_play_rate_allowed": {
           "value": 13.2,
-          "rank": 25,
+          "rank": 27,
           "source": "nflverse play-by-play"
         },
         "opponent_red_zone_td_rate": {
           "value": 100.0,
-          "rank": 22,
+          "rank": 24,
           "source": "nflverse play-by-play"
         }
       }
@@ -226,7 +226,7 @@
             },
             "opponent": {
               "value": 0.02,
-              "rank": 16
+              "rank": 17
             }
           },
           {
@@ -238,7 +238,7 @@
             },
             "opponent": {
               "value": 11.1,
-              "rank": 18
+              "rank": 20
             }
           },
           {
@@ -246,11 +246,11 @@
             "stat": "EPA / play",
             "ravens": {
               "value": -0.24,
-              "rank": 5
+              "rank": 6
             },
             "opponent": {
               "value": -0.01,
-              "rank": 17
+              "rank": 18
             }
           },
           {
@@ -258,7 +258,7 @@
             "stat": "TD rate",
             "ravens": {
               "value": 100.0,
-              "rank": 22
+              "rank": 24
             },
             "opponent": {
               "value": 80.0,
@@ -339,6 +339,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-09-14T16:57:09Z"
+    "retrieved_at": "2026-09-15T15:33:36Z"
   }
 }
