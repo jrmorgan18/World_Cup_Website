@@ -153,6 +153,21 @@ section_theme: ravens
         <dl class="ravens-unit-grades">
           <div><dt>{{ dashboard.unit_grade_context.season_label }}</dt><dd>{{ unit.season_grade }}</dd></div>
           <div><dt>{{ dashboard.unit_grade_context.last_game_label }}</dt><dd>{{ unit.last_game_grade }}</dd></div>
+          <div class="ravens-unit-third-party{% unless unit.espn_metrics %} ravens-unit-third-party--empty{% endunless %}">
+            <dt><a href="{{ dashboard.unit_grade_context.third_party_source_url }}" title="{{ dashboard.unit_grade_context.third_party_as_of }}">{{ dashboard.unit_grade_context.third_party_label }}</a></dt>
+            {% if unit.espn_metrics %}
+            <dd>
+              {% for metric in unit.espn_metrics %}
+              <span class="ravens-unit-rate">
+                <span><b>{{ metric.label }}</b> {{ metric.value }}</span>
+                <small class="ravens-rank-pill{% if metric.rank <= 8 %} ravens-rank-pill--strong{% elsif metric.rank >= 25 %} ravens-rank-pill--weak{% endif %}">No. {{ metric.rank }}{% if metric.rank_group %} {{ metric.rank_group }}{% endif %}</small>
+              </span>
+              {% endfor %}
+            </dd>
+            {% else %}
+            <dd aria-label="ESPN trench metric does not apply to this unit">—</dd>
+            {% endif %}
+          </div>
         </dl>
         <p>{{ unit.explanation }}</p>
         {% if unit.link %}<a href="{{ unit.link | relative_url }}">Read related analysis →</a>{% endif %}

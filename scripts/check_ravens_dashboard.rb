@@ -85,6 +85,21 @@ units.each do |unit|
   assert(unit["last_game_grade"].to_s.match?(/\A[ABCDF][+-]?\z/), "#{unit['name']} needs a valid last-game grade", errors)
 end
 
+espn_context = editorial.fetch("unit_grade_context")
+assert(espn_context["third_party_label"].to_s.start_with?("ESPN"), "Unit grades need an ESPN third-party label", errors)
+assert(espn_context["third_party_source_url"].to_s.start_with?("https://www.espn.com/"), "Unit grades need an ESPN source link", errors)
+assert(!espn_context["third_party_as_of"].to_s.empty?, "ESPN unit metrics need an as-of label", errors)
+
+espn_units = units.select { |unit| unit.key?("espn_metrics") }
+assert(espn_units.map { |unit| unit["name"] } == ["Offensive line", "Defensive line", "Edge rushers"], "ESPN trench metrics must map to the three expected units", errors)
+espn_units.each do |unit|
+  assert(unit["espn_metrics"].is_a?(Array) && unit["espn_metrics"].length == 2, "#{unit['name']} needs two ESPN win-rate metrics", errors)
+  unit["espn_metrics"].each do |metric|
+    assert(metric["value"].to_s.match?(/\A\d{1,3}%\z/), "#{unit['name']} has an invalid ESPN rate", errors)
+    assert(metric["rank"].is_a?(Integer) && metric["rank"].between?(1, 32), "#{unit['name']} has an invalid ESPN rank", errors)
+  end
+end
+
 changes = editorial.dig("editorial", "weekly_changes")
 assert(changes.length.between?(3, 5), "What Changed must contain 3–5 items", errors)
 changes.each { |change| assert(TRENDS.include?(change["direction"]), "#{change['title']} has an invalid direction", errors) }

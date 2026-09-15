@@ -6,7 +6,7 @@
 meta:
   season: 2026
   season_label: "2026 Season"
-  last_updated: "2026-09-14"
+  last_updated: "2026-09-15"
   update_context: "Through Week 1 · New Orleans next"
   data_status: "through-week-1"
   data_notice: >-
@@ -190,12 +190,12 @@ editorial:
 
   units:
     - { name: "Quarterback", assessment: "Elite", trend: "up", season_grade: "A", last_game_grade: "A", explanation: "Jackson threw for 324 yards, ran for 40 more and scored on the ground, supplying the off-script answers that changed the shape of the game." }
-    - { name: "Running backs", assessment: "Strength", trend: "up", season_grade: "A", last_game_grade: "A", explanation: "Henry ran for 144 yards and three touchdowns, then helped close the game after Baltimore lost two receivers." }
+    - { name: "Running backs", assessment: "Strength", trend: "up", season_grade: "A", last_game_grade: "A", explanation: "Henry ran for 144 yards and three touchdowns, then helped close the game after the Ravens lost two receivers." }
     - { name: "Wide receivers", assessment: "Mixed", trend: "down", season_grade: "B+", last_game_grade: "A", explanation: "Flowers posted a career-high 150 yards before leaving with a hamstring injury, while Lane's wrist injury immediately clouds the room's depth." }
     - { name: "Tight ends", assessment: "Solid", trend: "stable", season_grade: "B", last_game_grade: "B", explanation: "The group provided dependable complementary production while the offense used under-center and play-action looks to create space." }
-    - { name: "Offensive line", assessment: "Solid", trend: "up", season_grade: "B+", last_game_grade: "B+", explanation: "The three new interior starters helped facilitate a 506-yard day against Indianapolis, though the group was part of a 10-penalty afternoon." }
-    - { name: "Defensive line", assessment: "Solid", trend: "stable", season_grade: "B", last_game_grade: "B", explanation: "Without Madubuike, the interior helped limit Indianapolis to 251 net yards after the opening drive but still allowed Jonathan Taylor's two touchdowns." }
-    - { name: "Edge rushers", assessment: "Solid", trend: "up", season_grade: "B+", last_game_grade: "A-", explanation: "Baltimore registered nine quarterback hits, and the front helped turn an early defensive wobble into two takeaways and a closing fourth-down sack." }
+    - { name: "Offensive line", assessment: "Solid", trend: "up", season_grade: "B+", last_game_grade: "B+", espn_metrics: [{ label: "PBWR", value: "38%", rank: 28 }, { label: "RBWR", value: "80%", rank: 3 }], explanation: "The three new interior starters helped facilitate a 506-yard day against Indianapolis, though the group was part of a 10-penalty afternoon." }
+    - { name: "Defensive line", assessment: "Solid", trend: "stable", season_grade: "B", last_game_grade: "B", espn_metrics: [{ label: "Team RSWR", value: "25%", rank: 26 }, { label: "Travis Jones RSWR", value: "62%", rank: 3, rank_group: "DT" }], explanation: "Without Madubuike, the interior helped limit Indianapolis to 251 net yards after the opening drive but still allowed Jonathan Taylor's two touchdowns." }
+    - { name: "Edge rushers", assessment: "Solid", trend: "up", season_grade: "B+", last_game_grade: "A-", espn_metrics: [{ label: "Team PRWR", value: "46%", rank: 19 }, { label: "Tavius Robinson PRWR", value: "31%", rank: 7, rank_group: "EDGE" }], explanation: "The Ravens registered nine quarterback hits, and the front helped turn an early defensive wobble into two takeaways and a closing fourth-down sack." }
     - { name: "Linebackers", assessment: "Solid", trend: "up", season_grade: "B", last_game_grade: "A-", explanation: "Roquan Smith's interception and the second-level response after the first drive helped stabilize a group playing without Buchanan." }
     - { name: "Secondary", assessment: "Strength", trend: "stable", season_grade: "B+", last_game_grade: "B+", explanation: "The coverage unit recovered from a loose opening series and produced a takeaway, but the 23rd-ranked early explosive-play rate allowed leaves work to do." }
     - { name: "Specialists", assessment: "Solid", trend: "up", season_grade: "B+", last_game_grade: "A", explanation: "Loop made both field goals, including a career-long 57-yarder, plus all five extra points in his strongest possible opening response." }
@@ -223,7 +223,10 @@ preseason_form:
 unit_grade_context:
   season_label: "2026 season to date"
   last_game_label: "Week 1 at Indianapolis"
-  note: "Dual Eights editorial grades, informed by role, film and results; Week 1 provides the first regular-season evidence, not a settled season verdict."
+  third_party_label: "ESPN · Week 1"
+  third_party_source_url: "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking"
+  third_party_as_of: "Through Week 1 · Sept. 15, 10 a.m. ET"
+  note: "Dual Eights letter grades remain editorial. ESPN win rates are displayed separately as third-party evidence; Week 1 is an early sample, not a settled season verdict."
 
 preseason_last_game:
   type_label: "Preseason finale"
@@ -279,6 +282,7 @@ injuries:
 
 sources:
   - { name: "nflverse schedules and play-by-play", role: "Automated regular-season results, EPA, success, explosive plays, red-zone drives and NFL ranks", url: "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html", cadence: "Schedules update about every five minutes; play-by-play is refreshed nightly after game days.", license: "CC BY 4.0" }
+  - { name: "ESPN Analytics Win Rate Rankings", role: "Manually entered team and Ravens player PRWR, RSWR, PBWR and RBWR context for the Unit Report Card", url: "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking", cadence: "Current dashboard snapshot is through Week 1, September 15 at 10 a.m. ET." }
   - { name: "Baltimore Ravens official schedule", role: "2026 schedule and official preseason results", url: "https://www.baltimoreravens.com/schedule/2026/", cadence: "As published by the club" }
   - { name: "Baltimore Ravens official news and roster reports", role: "Availability, roster status and dated team context", url: "https://www.baltimoreravens.com/news/", cadence: "Reviewed for each dashboard update" }
 
@@ -287,9 +291,11 @@ methodology_notes:
   - "Only regular-season plays count toward the ranked scorecard. Kneels, spikes, two-point attempts, deleted plays and aborted plays are excluded."
   - "Explosive plays are runs of 10+ yards or passes of 20+ yards, divided by eligible run/pass plays."
   - "Red-zone rates are drive-level: a drive qualifies once it reaches the opponent 20-yard line."
+  - "ESPN pass-block and pass-rush win rates measure whether the blocker sustains or the rusher defeats a block within 2.5 seconds; its run-block and run-stop rates evaluate the result of blocks on designed runs."
   - "Pressure rate is omitted because the free sources reviewed do not expose a defensible complete pressure variable."
   - "Playoff probability is omitted until a transparent, repeatable model is added."
   - "Unit letter grades are editorial, informed by role, film and results; they are separate from the statistical scorecard."
+  - "ESPN win rates are shown as third-party evidence and are not converted directly into Dual Eights letter grades. Team ranks are among 32 teams; player ranks are within the listed ESPN position group."
 
 related_articles:
   - "/ravens/first-and-five-colts-week-one-2026/"
