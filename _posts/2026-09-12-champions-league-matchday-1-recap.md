@@ -19,7 +19,7 @@ hero_alt: "Raphinha celebrates with Barcelona teammates in the rain after scorin
 hero_credit: "Photo: FC Barcelona"
 hero_credit_url: "https://www.fcbarcelona.com/en/football/first-team/photos/4574338/photos-from-barcas-win-over-feyenoord"
 home_recent: true
-home_recent_position: 3
+home_recent_position: 4
 home_recent_label: "Champions League"
 home_recent_theme: soccer
 champions_league_recap_feature: true

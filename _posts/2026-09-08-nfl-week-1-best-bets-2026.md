@@ -9,7 +9,7 @@ permalink: /betting/nfl-week-1-best-bets-2026/
 author: "Randy Morgan"
 series: "NFL Week 1 Best Bets"
 home_recent: true
-home_recent_position: 2
+home_recent_position: 3
 home_recent_label: "Betting"
 home_recent_theme: betting
 excerpt: "A number-driven Stevenson prop, the half-point that makes Dallas playable and a smaller-stake Chargers-Cardinals thesis."
