@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T15:33:36Z",
+  "generated_at": "2026-09-15T17:28:59Z",
   "as_of": "2026-09-15",
   "season": 2026,
   "benchmark_season": 2025,
@@ -305,6 +305,63 @@
     ],
     "source": "nflverse play-by-play"
   },
+  "unit_analytics": {
+    "Quarterback": [
+      {
+        "source_label": "NFL NGS",
+        "source_url": "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html",
+        "period_label": "Through Week 1",
+        "label": "Jackson CPOE",
+        "value": "+6.4%",
+        "rank": 10,
+        "rank_group": "QB"
+      }
+    ],
+    "Running backs": [
+      {
+        "source_label": "NFL NGS",
+        "source_url": "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html",
+        "period_label": "Through Week 1",
+        "label": "Henry RYOE/att",
+        "value": "+1.29",
+        "rank": 8,
+        "rank_group": "RB"
+      }
+    ],
+    "Wide receivers": [
+      {
+        "source_label": "NFL NGS",
+        "source_url": "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html",
+        "period_label": "Through Week 1",
+        "label": "Flowers YACOE",
+        "value": "+9.66",
+        "rank": 1,
+        "rank_group": "WR"
+      }
+    ],
+    "Tight ends": [
+      {
+        "source_label": "NFL NGS",
+        "source_url": "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html",
+        "period_label": "Through Week 1",
+        "label": "Andrews YACOE",
+        "value": "+0.73",
+        "rank": 10,
+        "rank_group": "TE"
+      }
+    ],
+    "Secondary": [
+      {
+        "source_label": "nflverse",
+        "source_url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html",
+        "period_label": "Through Week 1",
+        "label": "Opp. CPOE",
+        "value": "-5.1%",
+        "rank": 7,
+        "rank_group": "NFL"
+      }
+    ]
+  },
   "recent_form": {
     "sequence": [
       "W"
@@ -334,11 +391,15 @@
       "label": "nflverse play-by-play",
       "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2026.parquet"
     },
+    "next_gen_stats": {
+      "label": "NFL Next Gen Stats via nflverse",
+      "url": "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html"
+    },
     "methodology": {
       "label": "nflverse data update schedule",
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-09-15T15:33:36Z"
+    "retrieved_at": "2026-09-15T17:28:59Z"
   }
 }

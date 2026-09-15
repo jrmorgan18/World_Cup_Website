@@ -85,20 +85,31 @@ units.each do |unit|
   assert(unit["last_game_grade"].to_s.match?(/\A[ABCDF][+-]?\z/), "#{unit['name']} needs a valid last-game grade", errors)
 end
 
-espn_context = editorial.fetch("unit_grade_context")
-assert(espn_context["third_party_label"].to_s.start_with?("ESPN"), "Unit grades need an ESPN third-party label", errors)
-assert(espn_context["third_party_source_url"].to_s.start_with?("https://www.espn.com/"), "Unit grades need an ESPN source link", errors)
-assert(!espn_context["third_party_as_of"].to_s.empty?, "ESPN unit metrics need an as-of label", errors)
+analytics_context = editorial.fetch("unit_grade_context")
+assert(!analytics_context["analytics_as_of"].to_s.empty?, "Unit analytics need an as-of label", errors)
 
-espn_units = units.select { |unit| unit.key?("espn_metrics") }
-assert(espn_units.map { |unit| unit["name"] } == ["Offensive line", "Defensive line", "Edge rushers"], "ESPN trench metrics must map to the three expected units", errors)
-espn_units.each do |unit|
-  assert(unit["espn_metrics"].is_a?(Array) && unit["espn_metrics"].length == 2, "#{unit['name']} needs two ESPN win-rate metrics", errors)
-  unit["espn_metrics"].each do |metric|
-    assert(metric["value"].to_s.match?(/\A\d{1,3}%\z/), "#{unit['name']} has an invalid ESPN rate", errors)
-    assert(metric["rank"].is_a?(Integer) && metric["rank"].between?(1, 32), "#{unit['name']} has an invalid ESPN rank", errors)
+validate_analytics = lambda do |unit_name, metrics|
+  assert(metrics.is_a?(Array) && metrics.length.between?(1, 2), "#{unit_name} needs one or two analytics metrics", errors)
+  metrics.each do |metric|
+    assert(!metric["source_label"].to_s.empty?, "#{unit_name} analytics need a source label", errors)
+    assert(metric["source_url"].to_s.start_with?("https://"), "#{unit_name} analytics need a source link", errors)
+    assert(!metric["period_label"].to_s.empty?, "#{unit_name} analytics need a period label", errors)
+    assert(!metric["label"].to_s.empty?, "#{unit_name} has an unlabeled analytics metric", errors)
+    assert(!metric["value"].to_s.empty?, "#{unit_name} has an empty analytics value", errors)
+    assert(metric["rank"].is_a?(Integer) && metric["rank"].between?(1, 32), "#{unit_name} has an invalid analytics rank", errors)
   end
 end
+
+editorial_analytics = units.select { |unit| unit.key?("analytics_metrics") }
+assert(editorial_analytics.map { |unit| unit["name"] } == ["Offensive line", "Defensive line", "Edge rushers"], "ESPN trench metrics must map to the three expected units", errors)
+editorial_analytics.each { |unit| validate_analytics.call(unit["name"], unit["analytics_metrics"]) }
+
+automated_analytics = stats.fetch("unit_analytics")
+current_snapshot = snapshots.find { |snapshot| snapshot["id"] == stats.fetch("current_snapshot") }
+expected_automated_units = current_snapshot && current_snapshot["week"].to_i > 0 ? ["Quarterback", "Running backs", "Wide receivers", "Tight ends", "Secondary"] : []
+assert(automated_analytics.keys == expected_automated_units, "Automated unit analytics must contain the supported units in order", errors)
+automated_analytics.each { |unit_name, metrics| validate_analytics.call(unit_name, metrics) }
+assert((automated_analytics.keys & editorial_analytics.map { |unit| unit["name"] }).empty?, "A unit cannot mix automated and editorial analytics", errors)
 
 changes = editorial.dig("editorial", "weekly_changes")
 assert(changes.length.between?(3, 5), "What Changed must contain 3–5 items", errors)

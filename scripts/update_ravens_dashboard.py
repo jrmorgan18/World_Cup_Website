@@ -33,6 +33,8 @@ TEAM = "BAL"
 SCHEDULE_URL = "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv"
 PBP_URL = "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_{season}.parquet"
 PBP_DOCS_URL = "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
+NGS_URL = "https://github.com/nflverse/nflverse-data/releases/download/nextgen_stats/ngs_{stat_type}.parquet"
+NGS_DOCS_URL = "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html"
 
 PBP_COLUMNS = [
     "game_id",
@@ -41,7 +43,9 @@ PBP_COLUMNS = [
     "posteam",
     "defteam",
     "play_type",
+    "pass_attempt",
     "epa",
+    "cpoe",
     "success",
     "yards_gained",
     "interception",
@@ -94,6 +98,87 @@ def finite_number(value, digits=None):
     if digits is None:
         return int(round(number))
     return round(number, digits)
+
+
+def signed_text(value, digits, suffix=""):
+    number = finite_number(value, digits)
+    if number is None:
+        return None
+    return f"{number:+.{digits}f}{suffix}"
+
+
+def ngs_player_metric(data, season, position, volume_column, metric_column, label, digits, suffix=""):
+    """Return the Ravens' volume leader and his rank among NGS qualifiers at the position."""
+    eligible = data[
+        (data["season"] == season)
+        & (data["season_type"] == "REG")
+        & (data["week"] == 0)
+        & (data["player_position"] == position)
+        & data[metric_column].notna()
+    ].copy()
+    ravens = eligible[eligible["team_abbr"] == TEAM].sort_values(volume_column, ascending=False)
+    if ravens.empty:
+        return None
+    eligible["metric_rank"] = eligible[metric_column].rank(method="min", ascending=False).astype(int)
+    player = eligible.loc[ravens.index[0]]
+    last_name = str(player["player_last_name"])
+    return {
+        "source_label": "NFL NGS",
+        "source_url": NGS_DOCS_URL,
+        "period_label": f"Through Week {int(data.loc[data['season'] == season, 'week'].max())}",
+        "label": f"{last_name} {label}",
+        "value": signed_text(player[metric_column], digits, suffix),
+        "rank": int(player["metric_rank"]),
+        "rank_group": position,
+    }
+
+
+def secondary_cpoe_metric(pbp, valid_game_ids, week):
+    """Use opponent CPOE as a current, team-level coverage result for the secondary."""
+    attempts = pbp[
+        (pbp["season_type"] == "REG")
+        & pbp["game_id"].isin(valid_game_ids)
+        & (pbp["pass_attempt"].fillna(0) == 1)
+        & pbp["cpoe"].notna()
+        & (pbp["qb_spike"].fillna(0) != 1)
+        & (pbp["two_point_attempt"].fillna(0) != 1)
+        & (pbp["play_deleted"].fillna(0) != 1)
+        & (pbp["aborted_play"].fillna(0) != 1)
+    ]
+    if attempts.empty:
+        return None
+    values = attempts.groupby("defteam")["cpoe"].mean()
+    if TEAM not in values.index:
+        return None
+    ranks = values.rank(method="min", ascending=True).astype(int)
+    return {
+        "source_label": "nflverse",
+        "source_url": PBP_DOCS_URL,
+        "period_label": f"Through Week {week}",
+        "label": "Opp. CPOE",
+        "value": signed_text(values.loc[TEAM], 1, "%"),
+        "rank": int(ranks.loc[TEAM]),
+        "rank_group": "NFL",
+    }
+
+
+def unit_analytics_payload(season, week, current_games, current_pbp, ngs_data):
+    analytics = {}
+    specs = [
+        ("Quarterback", "passing", "QB", "attempts", "completion_percentage_above_expectation", "CPOE", 1, "%"),
+        ("Running backs", "rushing", "RB", "rush_attempts", "rush_yards_over_expected_per_att", "RYOE/att", 2, ""),
+        ("Wide receivers", "receiving", "WR", "targets", "avg_yac_above_expectation", "YACOE", 2, ""),
+        ("Tight ends", "receiving", "TE", "targets", "avg_yac_above_expectation", "YACOE", 2, ""),
+    ]
+    for unit_name, stat_type, position, volume, metric, label, digits, suffix in specs:
+        result = ngs_player_metric(ngs_data[stat_type], season, position, volume, metric, label, digits, suffix)
+        if result:
+            analytics[unit_name] = [result]
+
+    coverage = secondary_cpoe_metric(current_pbp, current_games["game_id"].tolist(), week)
+    if coverage:
+        analytics["Secondary"] = [coverage]
+    return analytics
 
 
 def read_existing(path):
@@ -426,8 +511,13 @@ def main():
         # null; do not turn a missing preseason PBP file into a false zero.
         if current_games.empty:
             current_pbp = pd.DataFrame(columns=PBP_COLUMNS)
+            ngs_data = {}
         else:
             current_pbp = pd.read_parquet(PBP_URL.format(season=args.season), columns=PBP_COLUMNS)
+            ngs_data = {
+                stat_type: pd.read_parquet(NGS_URL.format(stat_type=stat_type))
+                for stat_type in ("passing", "rushing", "receiving")
+            }
         benchmark_pbp = pd.read_parquet(PBP_URL.format(season=benchmark_season), columns=PBP_COLUMNS)
 
         current_records, current_table = compute_league_metrics(current_games, current_pbp)
@@ -458,6 +548,10 @@ def main():
             next_game["matchup"] = matchup_payload(matchup_table, next_game["opponent_abbr"], matchup_label)
         sequence = [game["result"] for game in reversed(recent_games)]
         recent_margin = sum(game["ravens_score"] - game["opponent_score"] for game in recent_games)
+        unit_analytics = (
+            unit_analytics_payload(args.season, current["week"], current_games, current_pbp, ngs_data)
+            if current["week"] > 0 else {}
+        )
         now = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
         payload = {
             "generated_at": now,
@@ -474,6 +568,7 @@ def main():
                 "next_game": next_game,
             },
             "last_game": last_game_payload(recent_games, current_pbp),
+            "unit_analytics": unit_analytics,
             "recent_form": {
                 "sequence": sequence,
                 "record": None if not sequence else f"{sequence.count('W')}-{sequence.count('L')}",
@@ -483,6 +578,7 @@ def main():
             "sources": {
                 "schedule": {"label": "nflverse schedules", "url": SCHEDULE_URL},
                 "play_by_play": {"label": "nflverse play-by-play", "url": PBP_URL.format(season=args.season)},
+                "next_gen_stats": {"label": "NFL Next Gen Stats via nflverse", "url": NGS_DOCS_URL},
                 "methodology": {"label": "nflverse data update schedule", "url": PBP_DOCS_URL},
                 "license": "CC BY 4.0",
                 "retrieved_at": now,

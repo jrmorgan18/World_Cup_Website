@@ -2552,21 +2552,21 @@ details[open] > summary .gc-toggle::after { transform:rotate(0); }
 .ravens-unit-card h3 { color:#fff; font-family:var(--font-display); font-size:1.27rem; line-height:1.1; text-transform:uppercase; }
 .ravens-unit-card header > p { display:flex; align-items:center; gap:9px; }
 .ravens-unit-trend { color:#ad9dbc; font-family:var(--font-display); font-size:1.2rem; }
-.ravens-unit-grades { margin-top:18px; display:grid; grid-template-columns:.72fr .82fr 1.46fr; gap:8px; }
+.ravens-unit-grades { margin-top:18px; display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+.ravens-unit-grades--analytics-1 { grid-template-columns:.78fr .9fr 1.32fr; }
+.ravens-unit-grades--analytics-2 { grid-template-columns:.72fr .82fr 1fr 1fr; }
 .ravens-unit-grades > div { padding:10px 12px; border-left:3px solid #6f4e8c; background:#151119; }
 .ravens-unit-grades dt { color:#a99ab3; font-family:var(--font-display); font-size:.58rem; font-weight:600; letter-spacing:.6px; text-transform:uppercase; }
 .ravens-unit-grades dd { margin-top:5px; color:#f1e8f7; font-family:var(--font-display); font-size:1.25rem; line-height:1; }
-.ravens-unit-third-party { border-left-color:#8f6abd !important; }
-.ravens-unit-third-party dt a { color:#c4a8e5; text-decoration:none; }
-.ravens-unit-third-party dt a:hover { color:#fff; }
-.ravens-unit-third-party dd { display:grid; gap:7px; font-size:.76rem; line-height:1.2; }
-.ravens-unit-rate { display:flex; align-items:center; justify-content:space-between; gap:7px; }
-.ravens-unit-rate > span { color:#f1e8f7; }
-.ravens-unit-rate b { color:#fff; font-size:.64rem; letter-spacing:.45px; text-transform:uppercase; }
+.ravens-unit-analytics { border-left-color:#8f6abd !important; }
+.ravens-unit-analytics dt a { color:#c4a8e5; text-decoration:none; }
+.ravens-unit-analytics dt a:hover { color:#fff; }
+.ravens-unit-analytics dd { display:grid; gap:7px; font-size:.76rem; line-height:1.2; }
+.ravens-unit-analytics dd b { color:#fff; font-size:.64rem; letter-spacing:.45px; text-transform:uppercase; }
+.ravens-unit-analytics dd > span { display:flex; align-items:center; justify-content:space-between; gap:6px; color:#f1e8f7; }
 .ravens-rank-pill { flex:0 0 auto; padding:3px 5px; color:#d8cedf; border:1px solid #554b5d; font-size:.52rem; line-height:1; letter-spacing:.2px; text-transform:uppercase; }
 .ravens-rank-pill--strong { color:#c8e6d1; border-color:#477257; background:rgba(71,114,87,.18); }
 .ravens-rank-pill--weak { color:#edc7cb; border-color:#804d54; background:rgba(128,77,84,.18); }
-.ravens-unit-third-party--empty dd { color:#625968; font-size:.78rem; }
 .ravens-unit-card > p { margin:16px 0 20px; color:#b8b0bf; font-size:.9rem; line-height:1.5; }
 .ravens-dashboard-paired { max-width:var(--de-wide); margin:0 auto; padding:0 32px; display:grid; grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr); gap:56px; border-top:1px solid rgba(255,255,255,.08); }
 .ravens-dashboard-paired .ravens-dashboard-section { max-width:none; width:100%; padding-right:0; padding-left:0; border:0; }
@@ -2722,7 +2722,7 @@ details[open] > summary .gc-toggle::after { transform:rotate(0); }
   .ravens-unit-grid { grid-template-columns:1fr; }
   .ravens-unit-card,.ravens-unit-card:nth-child(2n+1) { border-left:1px solid var(--color-border); }
   .ravens-unit-grades { grid-template-columns:1fr 1fr; }
-  .ravens-unit-third-party { grid-column:1 / -1; }
+  .ravens-unit-grades--analytics-1 .ravens-unit-analytics { grid-column:1 / -1; }
   .ravens-championship li { grid-template-columns:1fr; gap:12px; }
   .ravens-glossary-grid { grid-template-columns:1fr; }
 }

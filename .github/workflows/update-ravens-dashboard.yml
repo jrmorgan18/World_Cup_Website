@@ -1,8 +1,9 @@
 name: Update Ravens season dashboard
 
 # Refreshes the objective Ravens snapshot from the free nflverse schedule and
-# play-by-play releases. The updater preserves earlier weekly snapshots and
-# writes only when football data changes, so daily checks do not create noise.
+# play-by-play and Next Gen Stats releases. The updater preserves earlier weekly
+# snapshots and writes only when football data changes, so daily checks do not
+# create noise.
 
 on:
   schedule:

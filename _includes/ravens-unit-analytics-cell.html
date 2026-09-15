@@ -1,0 +1,7 @@
+<div class="ravens-unit-analytics">
+  <dt><a href="{{ include.metric.source_url }}">{{ include.metric.source_label }} · {{ include.metric.period_label }}</a></dt>
+  <dd>
+    <b>{{ include.metric.label }}</b>
+    <span>{{ include.metric.value }} <small class="ravens-rank-pill{% if include.metric.rank <= 8 %} ravens-rank-pill--strong{% elsif include.metric.rank >= 25 %} ravens-rank-pill--weak{% endif %}">No. {{ include.metric.rank }}{% if include.metric.rank_group %} {{ include.metric.rank_group }}{% endif %}</small></span>
+  </dd>
+</div>
