@@ -7,9 +7,9 @@ reports:
     week_ending: "September 13, 2026"
     source_note: "Official club, league and competition reports were checked first, with local club-specific reporting used for match context. The late Sunday San Diego-Philadelphia match is included through the final whistle. Secondary records are used only where the official account does not publish a player’s minutes or event detail. Facts below are verified; the development read is scouting interpretation, and unreported statistics are not inferred."
     summary:
-      biggest_risers: "Cavan Sullivan led the week with two goals and four assists across two Philadelphia starts. Paxten Aaronson scored in both Colorado matches, Justin Ellis assisted in both Orlando wins, Niko Tsakiris produced a goal and two assists, Peyton Miller scored, Beau Leroux supplied two assists, and Frankie Westfield paired an assist with two clean sheets."
+      biggest_risers: "Cavan Sullivan led the week with two goals and two traditional assists across two Philadelphia starts, with MLS also crediting two additional secondary assists. Paxten Aaronson scored in both Colorado matches, Justin Ellis assisted in both Orlando wins, Niko Tsakiris produced a goal and two assists, Peyton Miller scored, Beau Leroux supplied two assists, and Frankie Westfield paired an assist with two clean sheets."
       issues_to_monitor: "Kevin Paredes remains out for several months with an ankle injury. Caleb Wiley was an unused substitute twice after starting both matches the prior week, while Rokas Pukstas and Mathis Albert remained in first-team matchday environments without a substantial league role. Benjamin Cremaschi had no club fixture, and Duran Ferree’s expanded goalkeeper opportunity came with a difficult Sunday start."
-      best_story: "Cavan Sullivan followed a three-assist performance against Cincinnati with two goals and another assist at San Diego. Cincinnati played with 10 men after the 16th minute, which tempers the midweek context, but Sullivan’s repeated production in a second senior start made his the week’s clearest development leap."
+      best_story: "Cavan Sullivan followed his creative work against Cincinnati with two goals and another traditional assist at San Diego. MLS also credited him with two secondary assists across the week. Cincinnati played with 10 men after the 16th minute, which tempers the midweek context, but Sullivan’s repeated production in a second senior start made his the week’s clearest development leap."
     players:
       - profile: caleb-wiley
         name: Caleb Wiley
@@ -80,9 +80,9 @@ reports:
         trend: "↑"
         direction: rising
         direction_label: Rising
-        context: 122 minutes across two starts
-        recap: "Mehmeti started both Red Bull New York matches, playing 32 minutes in the 2-0 loss at LAFC before completing the 1-0 road win at Columbus. Local coverage singled out his strong midfield performance in Columbus; he recorded no goal or assist."
-        development_read: "Two starts and a complete performance in a road shutout win strengthen the first-team role case. The early removal at LAFC is worth monitoring, but the response three days later makes the overall week positive."
+        context: Injury exit, then full Columbus return
+        recap: "Mehmeti started both Red Bull New York matches, but his 32nd-minute exit in the 2-0 loss at LAFC was injury-related rather than tactical. He then returned to complete the 1-0 road win at Columbus, where local coverage singled out his midfield performance; he recorded no goal or assist."
+        development_read: "The full-match Columbus return is the key positive signal after the midweek injury scare. Two starts and a complete performance in a road shutout win strengthen the first-team role case, provided the availability holds."
         sources:
           - { label: "LAFC-RBNY recap (official)", url: "https://www.lafc.com/news/recap-lafc-2-0-rbny-2026-mls-season-september-9" }
           - { label: "Columbus-RBNY report (local)", url: "https://www.vavel.com/en-us/soccer/2026/09/12/mls/1271238-columbus-0-1-red-bulls-donkor-keeps-ny-in-playoff-hunt.html" }
@@ -92,9 +92,9 @@ reports:
         trend: "↑"
         direction: rising
         direction_label: Rising
-        context: 176 minutes; two starts and two clean sheets
-        recap: "Pierre completed the 5-0 win over FC Cincinnati at center back, then started at San Diego and played 86 minutes of the 4-0 shutout before being replaced. He was booked in first-half stoppage time on Sunday and recorded no goal or assist."
-        development_read: "Two senior starts and two clean sheets in five days are strong evidence that his first-team opportunity after returning from loan is real. Cincinnati’s early red card reduced the difficulty of the first match, but Pierre followed it with another long, scoreless defensive shift on the road."
+        context: 176 minutes; proactive defending in two clean sheets
+        recap: "Pierre completed the 5-0 win over FC Cincinnati at center back, then started at San Diego and played 86 minutes of the 4-0 shutout before being replaced. His proactive San Diego defending—stepping forward to break up attacks and handle transitions aggressively—helped Philadelphia keep the hosts from establishing a foothold. He was booked in first-half stoppage time on Sunday and recorded no goal or assist."
+        development_read: "Two senior starts and two clean sheets in five days are strong evidence that his first-team opportunity after returning from loan is real. Cincinnati’s early red card reduced the difficulty of the first match, but Pierre’s proactive road defending at San Diego added a more demanding, positive data point."
         sources:
           - { label: "Philadelphia-Cincinnati box score (official)", url: "https://fe-en.phi-prd.deltatre.digital/news/box-score-philadelphia-union-5-fc-cincinnati-0" }
           - { label: "San Diego-Philadelphia match center (official league feed)", url: "https://www.sandiegofc.com/competitions/mls-regular-season/2026/matches/sdvsphi-09-13-2026/" }
@@ -130,9 +130,9 @@ reports:
         trend: "↑↑"
         direction: rising
         direction_label: Rising fast
-        context: 152 minutes; two goals, four assists
-        recap: "Sullivan delivered three assists in 75 minutes of Philadelphia’s 5-0 win over FC Cincinnati, setting up all three Bruno Damiani goals. He then played 77 minutes in a 4-0 win at San Diego, scored in first-half stoppage time and again in the 62nd minute, and added the secondary assist on Damiani’s 67th-minute goal. Cincinnati played with 10 men after the 16th minute."
-        development_read: "The man advantage tempers the midweek dominance, but six direct goal contributions across two senior starts cannot be dismissed—especially after the two-goal, one-assist performance at San Diego. The combination of creation, box arrival and repeat production makes this the strongest upward week on the board."
+        context: 152 minutes; two goals, two traditional assists, two secondary assists
+        recap: "Sullivan now reads as two goals and two traditional assists, with MLS also crediting him with two additional secondary assists. His 152 minutes across two Philadelphia starts included the San Diego brace, and the production paired finishing with repeated involvement in the moves that created goals. Cincinnati played with 10 men after the 16th minute."
+        development_read: "The man advantage tempers the midweek context, but the primary goal and assist totals already represent a major senior output spike. The secondary-assist credits reinforce how often Sullivan is initiating or advancing decisive sequences; the combination of creation, box arrival and repeat production makes this the strongest upward week on the board."
         sources:
           - { label: "Philadelphia-Cincinnati box score (official)", url: "https://fe-en.phi-prd.deltatre.digital/news/box-score-philadelphia-union-5-fc-cincinnati-0" }
           - { label: "San Diego-Philadelphia match center (official league feed)", url: "https://www.sandiegofc.com/competitions/mls-regular-season/2026/matches/sdvsphi-09-13-2026/" }
@@ -143,8 +143,8 @@ reports:
         direction: rising
         direction_label: Rising fast
         context: One goal, two assists; two wins
-        recap: "Tsakiris drove San Jose’s 3-2 win at San Diego. He scored in the third minute, had a penalty saved two minutes later, then assisted Preston Judd’s 12th-minute finish and Ousseni Bouda’s 35th-minute header. He started again in the 1-0 win over Houston; his corner began the sequence for Daniel Munie’s winner, though no official assist was awarded."
-        development_read: "The response to the saved penalty is as important as the production: Tsakiris kept demanding the ball and still created two more goals. A second start in a clean-sheet win completes the week with both decisive output and role continuity."
+        recap: "Tsakiris drove San Jose’s 3-2 win at San Diego. He scored in the third minute, had a penalty saved two minutes later, then assisted Preston Judd’s 12th-minute finish and delivered a distant outside-of-the-foot pass into the box for Ousseni Bouda’s 35th-minute header. He started again in the 1-0 win over Houston; his corner began the sequence for Daniel Munie’s winner, though no official assist was awarded."
+        development_read: "The response to the saved penalty is as important as the production: Tsakiris kept demanding the ball and still created two more goals. The outside-of-the-foot Bouda assist displays the vision and execution to create danger from distance; a second start in a clean-sheet win completes the week with both decisive output and role continuity."
         sources:
           - { label: "San Diego-San Jose recap (official)", url: "https://www.sjearthquakes.com/news/match-recap-earthquakes-3-san-diego-fc-2" }
           - { label: "San Jose-Houston report (local/AP)", url: "https://infonews.ca/news/7869518/munie-scores-a-goal-gunn-has-4-saves-earthquakes-beat-dynamo-1-0/" }
