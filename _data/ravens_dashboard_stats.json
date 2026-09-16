@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-15T18:12:50Z",
-  "as_of": "2026-09-15",
+  "generated_at": "2026-09-16T15:25:32Z",
+  "as_of": "2026-09-16",
   "season": 2026,
   "benchmark_season": 2025,
   "current_snapshot": "2026-week-01",
@@ -319,7 +319,7 @@
       {
         "source_label": "ESPN",
         "source_url": "https://www.espn.com/nfl/qbr/_/season/2026/seasontype/2",
-        "period_label": "Through Week 1",
+        "period_label": "Through Week 2",
         "label": "Jackson QBR",
         "value": "82.7",
         "rank": 7,
@@ -413,6 +413,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-09-15T18:12:50Z"
+    "retrieved_at": "2026-09-16T15:25:32Z"
   }
 }
