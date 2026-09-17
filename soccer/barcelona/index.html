@@ -1,0 +1,533 @@
+---
+layout: default
+title: "Barcelona Season Dashboard"
+description: "Track Barcelona's La Liga and Champions League form, expected goals, pressing numbers, per-player output, rotation load and availability throughout the 2026-27 season."
+permalink: /soccer/barcelona/
+section_theme: barcelona
+---
+{% assign dashboard = site.data.barcelona_dashboard %}
+{% assign stats = site.data.barcelona_dashboard_stats %}
+{% assign laliga = stats.competitions.laliga %}
+{% assign ucl = stats.competitions.ucl %}
+{% assign overall = stats.all_competitions %}
+{% assign rotation = stats.rotation %}
+{% assign congestion = stats.congestion %}
+
+{% assign laliga_current = laliga.snapshots | last %}
+{% assign laliga_previous = laliga.snapshots | where: "id", laliga_current.previous_snapshot | first %}
+{% assign ucl_current = ucl.snapshots | last %}
+{% assign ucl_previous = ucl.snapshots | where: "id", ucl_current.previous_snapshot | first %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Barcelona Season Dashboard",
+  "description": {{ page.description | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "dateModified": {{ dashboard.meta.last_updated | jsonify }},
+  "isPartOf": {"@type": "WebSite", "name": "Dual Eights", "url": {{ site.url | jsonify }}}
+}
+</script>
+
+<article class="barca-dashboard">
+  <header class="barca-hero">
+    <div class="barca-hero-inner">
+      <nav class="barca-breadcrumb" aria-label="Breadcrumb">
+        <a href="{{ '/soccer/' | relative_url }}">Soccer</a><span aria-hidden="true">/</span><span>Barcelona</span>
+      </nav>
+      <div class="barca-hero-row">
+        <div class="barca-hero-copy">
+          <p class="de-eyebrow"><span></span> Living season tracker</p>
+          <h1>Barcelona<br><em>Season Dashboard</em></h1>
+          <p class="barca-hero-update">{{ dashboard.meta.season_label }} · Updated {{ dashboard.meta.last_updated | date: "%B %-d, %Y" }} · {{ dashboard.meta.update_context }}</p>
+        </div>
+        <div class="barca-hero-status" aria-label="Current Barcelona status">
+          <div class="barca-hero-record">
+            <strong>{{ overall.record }}</strong>
+            <span>All competitions · {{ overall.goals_for }}–{{ overall.goals_against }}</span>
+          </div>
+          <dl class="barca-hero-splits">
+            <div>
+              <dt>{{ laliga.label }}</dt>
+              <dd>{% if laliga.standing %}{{ laliga.standing.rank }}{% if laliga.standing.rank == 1 %}st{% elsif laliga.standing.rank == 2 %}nd{% elsif laliga.standing.rank == 3 %}rd{% else %}th{% endif %} · {{ laliga.standing.points }} pts{% else %}{{ laliga_current.record }}{% endif %}</dd>
+            </div>
+            <div>
+              <dt>{{ ucl.label }}</dt>
+              <dd>{% if ucl.standing %}{{ ucl.standing.rank }}{% if ucl.standing.rank == 1 %}st{% elsif ucl.standing.rank == 2 %}nd{% elsif ucl.standing.rank == 3 %}rd{% else %}th{% endif %} · {{ ucl.standing.points }} pts{% else %}{{ ucl_current.record }}{% endif %}</dd>
+            </div>
+          </dl>
+          <div class="barca-form-strip" aria-label="Recent results across all competitions">
+            {% for result in overall.form %}<span class="barca-result barca-result--{{ result | downcase }}">{{ result }}</span>{% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="barca-jump" aria-label="Dashboard sections" role="tablist" data-dashboard-tablist>
+    <button type="button" id="barca-tab-matches" role="tab" aria-controls="matches" aria-selected="true">Match center</button>
+    <button type="button" id="barca-tab-scorecard" role="tab" aria-controls="scorecard" aria-selected="false" tabindex="-1">Scorecard</button>
+    <button type="button" id="barca-tab-squad" role="tab" aria-controls="squad" aria-selected="false" tabindex="-1">Squad</button>
+    <button type="button" id="barca-tab-rotation" role="tab" aria-controls="rotation" aria-selected="false" tabindex="-1">Rotation load</button>
+    <button type="button" id="barca-tab-results" role="tab" aria-controls="results" aria-selected="false" tabindex="-1">Results &amp; tables</button>
+    <button type="button" id="barca-tab-availability" role="tab" aria-controls="availability" aria-selected="false" tabindex="-1">Availability</button>
+    <button type="button" id="barca-tab-latest" role="tab" aria-controls="latest" aria-selected="false" tabindex="-1">Analysis</button>
+    <button type="button" id="barca-tab-reference" role="tab" aria-controls="reference" aria-selected="false" tabindex="-1">Reference</button>
+  </nav>
+
+  <div class="barca-tab-card" data-dashboard-tab-card>
+
+    <section class="barca-section" id="matches" role="tabpanel" aria-labelledby="barca-tab-matches" tabindex="0">
+      <div class="barca-section-heading barca-section-heading--split">
+        <div><p class="de-kicker">The fixtures that frame the week</p><h2>Match Center</h2></div>
+        <p>{{ dashboard.editorial.state.changed_this_week }}</p>
+      </div>
+
+      <div class="barca-match-grid">
+        {% assign last_match = overall.last_match %}
+        {% if last_match %}
+        {% assign last_competition = stats.competitions[last_match.competition] %}
+        <article class="barca-match-card barca-match-card--last">
+          <header>
+            <div>
+              <p class="barca-match-label">{{ last_competition.label }}</p>
+              <h3>Last match</h3>
+            </div>
+            <strong class="barca-score barca-score--{{ last_match.result | downcase }}">
+              <span>{{ last_match.result }}</span> {{ last_match.goals_for }}–{{ last_match.goals_against }}
+            </strong>
+          </header>
+          <p class="barca-match-opponent">{% if last_match.location == "away" %}at{% else %}vs.{% endif %} {{ last_match.opponent }} · {{ last_match.date | date: "%b %-d" }}</p>
+          {% if last_match.detail %}
+          <dl class="barca-match-stats">
+            <div><dt>Expected goals</dt><dd>{{ last_match.detail.xg }}<small>vs {{ last_match.detail.opponent_xg }} allowed</small></dd></div>
+            <div><dt>Possession</dt><dd>{{ last_match.detail.possession }}%<small>{{ last_match.detail.opponent_possession }}% opponent</small></dd></div>
+            <div><dt>Shots</dt><dd>{{ last_match.detail.shots }}<small>{{ last_match.detail.shots_on_target }} on target</small></dd></div>
+            <div><dt>Big chances</dt><dd>{{ last_match.detail.big_chances }}<small>created</small></dd></div>
+            <div><dt>PPDA</dt><dd>{{ last_match.detail.ppda }}<small>passes per defensive action</small></dd></div>
+            <div><dt>Final-third entries</dt><dd>{{ last_match.detail.final_third_entries }}<small>{{ last_match.detail.touches_in_box }} touches in the box</small></dd></div>
+          </dl>
+          {% endif %}
+          <small class="barca-match-source">Source: ESPN per-match team statistics</small>
+        </article>
+        {% endif %}
+
+        {% assign next_match = overall.next_match %}
+        {% if next_match %}
+        {% assign next_competition = stats.competitions[next_match.competition] %}
+        <article class="barca-match-card barca-match-card--next">
+          <header>
+            <div>
+              <p class="barca-match-label">{{ next_competition.label }}</p>
+              <h3>Next match</h3>
+            </div>
+            <span class="barca-match-date">{{ next_match.date | date: "%b %-d" }}</span>
+          </header>
+          <p class="barca-match-opponent">{% if next_match.location == "away" %}at{% else %}vs.{% endif %} {{ next_match.opponent }}</p>
+          {% if next_match.venue %}<p class="barca-match-venue">{{ next_match.venue }}</p>{% endif %}
+
+          {% assign opponent_row = next_competition.table | where: "team_id", next_match.opponent_id | first %}
+          {% if opponent_row %}
+          <div class="barca-matchup">
+            <div class="barca-matchup-heading"><strong>Where they stand</strong><span>{{ next_competition.table_label }}</span></div>
+            <dl class="barca-matchup-list">
+              <div><dt>Position</dt><dd>No. {{ opponent_row.rank }}<small>{{ opponent_row.points }} points from {{ opponent_row.played }}</small></dd></div>
+              <div><dt>Goals</dt><dd>{{ opponent_row.goals_for }}–{{ opponent_row.goals_against }}<small>scored–conceded</small></dd></div>
+              <div><dt>Record</dt><dd>{{ opponent_row.wins }}-{{ opponent_row.draws }}-{{ opponent_row.losses }}<small>W-D-L</small></dd></div>
+            </dl>
+          </div>
+          {% endif %}
+
+          <div class="barca-fixture-run">
+            <h4>The run of fixtures</h4>
+            <ol>
+              {% for fixture in overall.fixtures limit: 5 %}
+              {% assign fixture_competition = stats.competitions[fixture.competition] %}
+              <li>
+                <time datetime="{{ fixture.date }}">{{ fixture.date | date: "%b %-d" }}</time>
+                <span>{% if fixture.location == "away" %}at{% else %}vs.{% endif %} {{ fixture.opponent_short | default: fixture.opponent }}</span>
+                <small>{{ fixture_competition.short_label }}</small>
+              </li>
+              {% endfor %}
+            </ol>
+          </div>
+        </article>
+        {% endif %}
+      </div>
+
+      <div class="barca-chase">
+        <div class="barca-section-heading"><p class="de-kicker">{{ dashboard.title_race.note }}</p><h3>{{ dashboard.title_race.label }}</h3></div>
+        <ul class="barca-chase-list">
+          {% for item in dashboard.title_race.watch %}
+          <li><strong>{{ item.title }}</strong><span>{{ item.text }}</span></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
+
+    <section class="barca-section" id="scorecard" role="tabpanel" aria-labelledby="barca-tab-scorecard" tabindex="0">
+      <div class="barca-section-heading barca-section-heading--split">
+        <div><p class="de-kicker">Numbers with context</p><h2>Core Scorecard</h2></div>
+        <p>{{ dashboard.meta.data_notice }}</p>
+      </div>
+
+      <div class="barca-competition-switch" role="tablist" aria-label="Competition">
+        <button type="button" role="tab" id="switch-laliga" aria-controls="scorecard-laliga" aria-selected="true" data-competition-tab>
+          {{ laliga.label }} <small>{{ laliga_current.sample_note }}</small>
+        </button>
+        <button type="button" role="tab" id="switch-ucl" aria-controls="scorecard-ucl" aria-selected="false" tabindex="-1" data-competition-tab>
+          {{ ucl.label }} <small>{{ ucl_current.sample_note }}</small>
+        </button>
+      </div>
+
+      {% assign competition_panels = "laliga,ucl" | split: "," %}
+      {% for competition_key in competition_panels %}
+        {% assign competition = stats.competitions[competition_key] %}
+        {% if competition_key == "laliga" %}
+          {% assign competition_current = laliga_current %}
+          {% assign competition_previous = laliga_previous %}
+        {% else %}
+          {% assign competition_current = ucl_current %}
+          {% assign competition_previous = ucl_previous %}
+        {% endif %}
+        {% assign competition_assessments = dashboard.editorial.metric_assessments[competition_key] %}
+        <div class="barca-scorecard-panel" id="scorecard-{{ competition_key }}" role="tabpanel" aria-labelledby="switch-{{ competition_key }}" data-competition-panel{% unless competition_key == "laliga" %} hidden{% endunless %}>
+          <p class="barca-scorecard-context">
+            <strong>{{ competition.label }}:</strong> {{ competition_current.record }} (W-D-L) from {{ competition_current.sample_note }}, ranked against {{ competition_current.teams_ranked }} clubs.
+            {% if competition_previous %}Movement is measured against {{ competition_previous.label }}.{% endif %}
+          </p>
+          {% for group in dashboard.scorecard_groups %}
+          <div class="barca-scorecard-group">
+            <h3>{{ group.name }}</h3>
+            <div class="barca-metric-grid">
+              {% for metric_id in group.metric_ids %}
+                {% include club-dashboard-metric-card.html
+                   metric_id=metric_id
+                   definitions=dashboard.metric_definitions
+                   assessments=competition_assessments
+                   current=competition_current
+                   previous=competition_previous
+                   league_size=competition_current.teams_ranked
+                   rank_label=competition.rank_label
+                   rank_context=competition.rank_label
+                   prefix="barca" %}
+              {% endfor %}
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      {% endfor %}
+    </section>
+
+    <section class="barca-section" id="squad" role="tabpanel" aria-labelledby="barca-tab-squad" tabindex="0">
+      <div class="barca-section-heading barca-section-heading--split">
+        <div><p class="de-kicker">Every player, both competitions</p><h2>Squad Report</h2></div>
+        <p>Season output with the La Liga and Champions League splits kept separate. Minutes are calculated from match team sheets; scouting notes are editorial.</p>
+      </div>
+
+      {% for group in dashboard.editorial.squad_groups %}
+        {% assign group_players = stats.squad | where: "position_abbr", group.id %}
+        {% if group_players.size > 0 %}
+        <div class="barca-squad-group">
+          <div class="barca-squad-group-head">
+            <h3>{{ group.name }}</h3>
+            <span>{{ group_players | size }} players</span>
+          </div>
+          <div class="barca-player-grid">
+            {% for player in group_players %}
+            {% assign note = dashboard.editorial.player_notes[player.player_id] %}
+            <details class="barca-player-card{% if note %} barca-player-card--noted{% endif %}" id="player-{{ player.player_id }}">
+              <summary>
+                <span class="barca-player-avatar" aria-hidden="true">{% if player.jersey %}{{ player.jersey }}{% else %}{{ player.name | slice: 0 }}{% endif %}</span>
+                <span class="barca-player-identity">
+                  <strong>{{ player.name }}</strong>
+                  <small>{{ player.position }}{% if player.age %} · {{ player.age }}{% endif %}{% if note %} · {{ note.role }}{% endif %}</small>
+                </span>
+                <span class="barca-player-line">
+                  <b>{{ player.totals.minutes }}<i>min</i></b>
+                  <b>{{ player.totals.goals }}<i>G</i></b>
+                  <b>{{ player.totals.assists }}<i>A</i></b>
+                </span>
+                <span class="barca-player-toggle" aria-hidden="true"></span>
+              </summary>
+              <div class="barca-player-body">
+                {% if note %}<p class="barca-player-note">{{ note.note }}</p>{% endif %}
+                <div class="barca-player-splits">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th scope="col">Competition</th>
+                        <th scope="col">Apps</th>
+                        <th scope="col">Starts</th>
+                        <th scope="col">Minutes</th>
+                        {% if group.id == "G" %}<th scope="col">Saves</th><th scope="col">Conceded</th>{% else %}<th scope="col">Goals</th><th scope="col">Assists</th>{% endif %}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {% for competition_key in competition_panels %}
+                        {% assign split = player.competitions[competition_key] %}
+                        {% if split %}
+                        <tr>
+                          <th scope="row">{{ stats.competitions[competition_key].short_label }}</th>
+                          <td>{{ split.appearances | default: 0 }}</td>
+                          <td>{{ split.starts | default: 0 }}</td>
+                          <td>{{ split.minutes | default: 0 }}</td>
+                          {% if group.id == "G" %}
+                          <td>{{ split.saves | default: 0 }}</td>
+                          <td>{{ split.goals_conceded | default: 0 }}</td>
+                          {% else %}
+                          <td>{{ split.goals | default: 0 }}</td>
+                          <td>{{ split.assists | default: 0 }}</td>
+                          {% endif %}
+                        </tr>
+                        {% endif %}
+                      {% endfor %}
+                      <tr class="barca-player-total">
+                        <th scope="row">Total</th>
+                        <td>{{ player.totals.appearances }}</td>
+                        <td>{{ player.totals.starts }}</td>
+                        <td>{{ player.totals.minutes }}</td>
+                        {% if group.id == "G" %}
+                        <td>{{ player.totals.saves }}</td>
+                        <td>&mdash;</td>
+                        {% else %}
+                        <td>{{ player.totals.goals }}</td>
+                        <td>{{ player.totals.assists }}</td>
+                        {% endif %}
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <dl class="barca-player-meta">
+                  {% if player.totals.minutes_per_contribution %}<div><dt>Minutes per goal or assist</dt><dd>{{ player.totals.minutes_per_contribution }}</dd></div>{% endif %}
+                  {% if player.totals.shots > 0 %}<div><dt>Shots</dt><dd>{{ player.totals.shots }}</dd></div>{% endif %}
+                  {% if player.totals.yellow_cards > 0 %}<div><dt>Yellow cards</dt><dd>{{ player.totals.yellow_cards }}</dd></div>{% endif %}
+                  {% if player.citizenship %}<div><dt>Citizenship</dt><dd>{{ player.citizenship }}</dd></div>{% endif %}
+                </dl>
+                {% unless note %}<p class="barca-player-pending">No scouting note yet. The automated season line updates daily.</p>{% endunless %}
+              </div>
+            </details>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </section>
+
+    <section class="barca-section" id="rotation" role="tabpanel" aria-labelledby="barca-tab-rotation" tabindex="0">
+      <div class="barca-section-heading barca-section-heading--split">
+        <div><p class="de-kicker">Two matches a week, one squad</p><h2>Rotation &amp; Congestion Load</h2></div>
+        <p>{{ dashboard.editorial.rotation_context.note }}</p>
+      </div>
+
+      <div class="barca-load-summary">
+        <div class="barca-load-headline barca-load-headline--{{ congestion.load_level | downcase }}">
+          <p>Current load</p>
+          <strong>{{ congestion.load_level }}</strong>
+          <span>{{ congestion.matches_last_window }} {% if congestion.matches_last_window == 1 %}match{% else %}matches{% endif %} in {{ congestion.window_days }} days</span>
+        </div>
+        <dl class="barca-load-stats">
+          <div><dt>Matches per week</dt><dd>{{ congestion.matches_per_week }}</dd></div>
+          <div><dt>Shortest rest</dt><dd>{% if congestion.shortest_rest_recent %}{{ congestion.shortest_rest_recent }} days{% else %}&mdash;{% endif %}</dd></div>
+          <div><dt>Average rest</dt><dd>{% if congestion.average_rest_recent %}{{ congestion.average_rest_recent }} days{% else %}&mdash;{% endif %}</dd></div>
+          <div><dt>Next 14 days</dt><dd>{{ congestion.matches_next_14_days }} {% if congestion.matches_next_14_days == 1 %}match{% else %}matches{% endif %}</dd></div>
+          <div><dt>Next 30 days</dt><dd>{{ congestion.matches_next_30_days }} {% if congestion.matches_next_30_days == 1 %}match{% else %}matches{% endif %}</dd></div>
+          <div><dt>Shortest gap ahead</dt><dd>{% if congestion.shortest_rest_upcoming %}{{ congestion.shortest_rest_upcoming }} days{% else %}&mdash;{% endif %}</dd></div>
+        </dl>
+      </div>
+
+      <div class="barca-load-grid">
+        <div class="barca-minutes-board">
+          <div class="barca-minutes-head">
+            <h3>Minutes in the last {{ rotation.window_days }} days</h3>
+            <span>{{ rotation.window_start | date: "%b %-d" }} – {{ rotation.window_end | date: "%b %-d" }} · {{ rotation.matches_in_window }} matches · {{ rotation.available_minutes }} minutes available</span>
+          </div>
+          <ol class="barca-minutes-list">
+            {% for player in rotation.players limit: 16 %}
+            <li>
+              <span class="barca-minutes-name">{{ player.name }}<small>{{ player.position_abbr }}</small></span>
+              <span class="barca-minutes-bar" aria-hidden="true"><i style="--load-share:{{ player.share }}%"></i></span>
+              <span class="barca-minutes-value">{{ player.minutes }}<small>{{ player.share }}%</small></span>
+              <span class="barca-minutes-starts">{{ player.starts }} starts</span>
+            </li>
+            {% endfor %}
+          </ol>
+          <p class="barca-minutes-note">Share is the percentage of the {{ rotation.available_minutes }} minutes available across those {{ rotation.matches_in_window }} matches.</p>
+        </div>
+
+        <aside class="barca-load-watch">
+          <h3>{{ dashboard.editorial.rotation_context.label }} watch</h3>
+          <ul>
+            {% for item in dashboard.editorial.rotation_context.watch %}
+            <li><strong>{{ item.player }}</strong><span>{{ item.text }}</span></li>
+            {% endfor %}
+          </ul>
+          <div class="barca-schedule-strip">
+            <h4>Recent and upcoming</h4>
+            <ol>
+              {% for match in congestion.recent %}
+              <li class="barca-schedule-past">
+                <time datetime="{{ match.date }}">{{ match.date | date: "%b %-d" }}</time>
+                <span>{{ match.opponent }}</span>
+                <small>{{ stats.competitions[match.competition].short_label }}</small>
+              </li>
+              {% endfor %}
+              {% for match in congestion.upcoming limit: 4 %}
+              <li class="barca-schedule-future">
+                <time datetime="{{ match.date }}">{{ match.date | date: "%b %-d" }}</time>
+                <span>{% if match.location == "away" %}at{% else %}vs.{% endif %} {{ match.opponent }}</span>
+                <small>{{ stats.competitions[match.competition].short_label }}</small>
+              </li>
+              {% endfor %}
+            </ol>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="barca-section" id="results" role="tabpanel" aria-labelledby="barca-tab-results" tabindex="0">
+      <div class="barca-section-heading barca-section-heading--split">
+        <div><p class="de-kicker">Where it all stands</p><h2>Results &amp; Tables</h2></div>
+        <p>Every completed match this season, with both competition tables kept separate.</p>
+      </div>
+
+      <div class="barca-results-grid">
+        <div class="barca-results-list">
+          <h3>Season results</h3>
+          <ol>
+            {% for match in overall.results %}
+            <li>
+              <span class="barca-result barca-result--{{ match.result | downcase }}">{{ match.result }}</span>
+              <div class="barca-result-copy">
+                <p>{% if match.location == "away" %}at{% else %}vs.{% endif %} {{ match.opponent }}</p>
+                <small>{{ match.date | date: "%b %-d" }} · {{ stats.competitions[match.competition].short_label }}</small>
+              </div>
+              <strong>{{ match.goals_for }}–{{ match.goals_against }}</strong>
+              {% if match.detail %}<span class="barca-result-xg">xG {{ match.detail.xg }}–{{ match.detail.opponent_xg }}</span>{% endif %}
+            </li>
+            {% endfor %}
+          </ol>
+        </div>
+
+        <div class="barca-tables">
+          <div class="barca-table-block">
+            <h3>{{ laliga.table_label }}</h3>
+            <table class="barca-table">
+              <thead><tr><th scope="col">#</th><th scope="col">Club</th><th scope="col">P</th><th scope="col">GD</th><th scope="col">Pts</th></tr></thead>
+              <tbody>
+                {% for row in laliga.table limit: 8 %}
+                <tr{% if row.team_id == stats.team.id %} class="barca-table-row--us"{% endif %}>
+                  <td>{{ row.rank }}</td>
+                  <th scope="row">{{ row.short_name | default: row.name }}</th>
+                  <td>{{ row.played }}</td>
+                  <td>{% if row.goal_difference > 0 %}+{% endif %}{{ row.goal_difference }}</td>
+                  <td><strong>{{ row.points }}</strong></td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+
+          <div class="barca-table-block">
+            <h3>{{ ucl.table_label }}</h3>
+            <table class="barca-table">
+              <thead><tr><th scope="col">#</th><th scope="col">Club</th><th scope="col">P</th><th scope="col">GD</th><th scope="col">Pts</th></tr></thead>
+              <tbody>
+                {% for row in ucl.table limit: 8 %}
+                <tr{% if row.team_id == stats.team.id %} class="barca-table-row--us"{% endif %}>
+                  <td>{{ row.rank }}</td>
+                  <th scope="row">{{ row.short_name | default: row.name }}</th>
+                  <td>{{ row.played }}</td>
+                  <td>{% if row.goal_difference > 0 %}+{% endif %}{{ row.goal_difference }}</td>
+                  <td><strong>{{ row.points }}</strong></td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+            {% if ucl.standing and ucl.standing.rank > 8 %}
+            <p class="barca-table-note">Barcelona sits {{ ucl.standing.rank }}th in the league phase on {{ ucl.standing.points }} points.</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="barca-section" id="availability" role="tabpanel" aria-labelledby="barca-tab-availability" tabindex="0">
+      <div class="barca-section-heading"><p class="de-kicker">Material absences only</p><h2>Availability</h2></div>
+      <p class="barca-availability-note">{{ dashboard.availability.note }}</p>
+
+      {% if stats.injuries.size > 0 %}
+      <div class="barca-injury-list">
+        {% for injury in stats.injuries %}
+        <article>
+          <header><h3>{{ injury.player }} <span>{{ injury.position }}</span></h3><span class="barca-status">{{ injury.status }}</span></header>
+          <p class="barca-injury-meta">{{ injury.type }}{% if injury.detail %} · {{ injury.detail }}{% endif %}{% if injury.side %} · {{ injury.side }}{% endif %}</p>
+          {% if injury.return_date %}<p class="barca-availability-line"><strong>Expected return:</strong> {{ injury.return_date | date: "%B %-d, %Y" }}</p>{% endif %}
+          <small>Source: {{ injury.source }}</small>
+        </article>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      {% if dashboard.availability.items.size > 0 %}
+      <div class="barca-injury-list">
+        {% for item in dashboard.availability.items %}
+        <article>
+          <header><h3>{{ item.player }} <span>{{ item.position }}</span></h3><span class="barca-status">{{ item.status }}</span></header>
+          <p class="barca-injury-meta">{{ item.detail }}</p>
+          <p>{{ item.impact }}</p>
+          <small>Source: <a href="{{ item.source_url }}">{{ item.source_label }}</a></small>
+        </article>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      {% if stats.injuries.size == 0 and dashboard.availability.items.size == 0 %}
+      <div class="barca-empty-state"><strong>No availability items listed</strong><p>Unknown availability is not treated as fit.</p></div>
+      {% endif %}
+    </section>
+
+    <section class="barca-section" id="latest" role="tabpanel" aria-labelledby="barca-tab-latest" tabindex="0">
+      <div class="barca-section-heading barca-section-heading--split">
+        <div><p class="de-kicker">Go deeper</p><h2>Latest Barcelona Analysis</h2></div>
+        <a href="{{ '/soccer/' | relative_url }}">Visit the soccer desk →</a>
+      </div>
+      <div class="de-story-grid">
+        {% for article_url in dashboard.related_articles %}
+          {% assign post = site.posts | where: "url", article_url | first %}
+          {% if post %}
+          <a class="de-story-card" href="{{ post.url | relative_url }}">
+            <div class="de-story-image{% unless post.thumbnail or post.hero_image %} de-story-image--empty{% endunless %}">{% if post.thumbnail %}<img src="{{ post.thumbnail | relative_url }}" alt="" loading="lazy">{% elsif post.hero_image %}<img src="{{ post.hero_image | relative_url }}" alt="" loading="lazy">{% else %}<span>DE</span>{% endif %}</div>
+            <div class="de-story-copy"><p><span>{{ post.series | default: "Soccer analysis" }}</span><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time></p><h3>{{ post.title }}</h3><small>{{ post.excerpt | strip_html | truncatewords: 20 }}</small></div>
+          </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="barca-section barca-glossary" id="reference" role="tabpanel" aria-labelledby="barca-tab-reference" tabindex="0">
+      <div class="barca-section-heading"><p class="de-kicker">Plain-language reference</p><h2>Metric Glossary &amp; Sources</h2></div>
+      <div class="barca-glossary-grid">
+        {% for definition in dashboard.metric_definitions %}
+        <details><summary>{{ definition.short_label }}</summary><p>{{ definition.description }} {% if definition.direction == "higher" %}Higher is better.{% else %}Lower is better.{% endif %}</p></details>
+        {% endfor %}
+      </div>
+      <div class="barca-source-list">
+        {% for source in dashboard.sources %}
+        <article>
+          <h3><a href="{{ source.url }}">{{ source.name }}</a></h3>
+          <p>{{ source.role }}</p>
+          <small>{{ source.cadence }}</small>
+        </article>
+        {% endfor %}
+      </div>
+      <ul class="barca-methodology-list">
+        {% for note in dashboard.methodology_notes %}<li>{{ note }}</li>{% endfor %}
+      </ul>
+      <p class="barca-source-note">Match statistics are cached in the repository once a fixture finishes, so the daily update only downloads new results. Editorial judgments remain separate from the calculated metrics.</p>
+    </section>
+
+  </div>
+</article>
+<script src="{{ '/assets/js/club-dashboard-tabs.js' | relative_url }}?v=20260917-club-dashboard-tabs"></script>

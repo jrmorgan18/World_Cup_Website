@@ -1,10 +1,6 @@
 (function () {
-  function initializeDashboardTabs() {
-    var tabList = document.querySelector('.ravens-dashboard-jump[role="tablist"]');
-    var tabCard = document.querySelector('[data-dashboard-tab-card]');
-
-    if (!tabList || !tabCard) return;
-
+  function initializeTabList(tabList, options) {
+    var settings = options || {};
     var tabs = Array.prototype.slice.call(tabList.querySelectorAll('[role="tab"]'));
     var panels = tabs.map(function (tab) {
       return document.getElementById(tab.getAttribute('aria-controls'));
@@ -12,8 +8,8 @@
 
     if (tabs.length === 0 || panels.some(function (panel) { return !panel; })) return;
 
-    function activateTab(tab, options) {
-      var settings = options || {};
+    function activateTab(tab, activationOptions) {
+      var activation = activationOptions || {};
       var panelId = tab.getAttribute('aria-controls');
 
       tabs.forEach(function (candidate) {
@@ -26,21 +22,21 @@
         panel.hidden = panel.id !== panelId;
       });
 
-      if (settings.updateHash && window.history && window.history.replaceState) {
+      if (settings.useHash && activation.updateHash && window.history && window.history.replaceState) {
         window.history.replaceState(null, '', '#' + panelId);
       }
 
-      if (settings.focus) tab.focus();
+      if (activation.focus) tab.focus();
     }
 
     function tabForHash() {
       var panelId = window.location.hash.slice(1);
-      return tabs.find(function (tab) {
+      return tabs.filter(function (tab) {
         return tab.getAttribute('aria-controls') === panelId;
-      });
+      })[0];
     }
 
-    activateTab(tabForHash() || tabs[0]);
+    activateTab((settings.useHash && tabForHash()) || tabs[0]);
 
     tabs.forEach(function (tab, index) {
       tab.addEventListener('click', function () {
@@ -67,15 +63,34 @@
       });
     });
 
-    window.addEventListener('hashchange', function () {
-      var tab = tabForHash();
-      if (tab) activateTab(tab);
-    });
+    if (settings.useHash) {
+      window.addEventListener('hashchange', function () {
+        var tab = tabForHash();
+        if (tab) activateTab(tab);
+      });
+    }
+  }
+
+  function initializeDashboard() {
+    var tabList = document.querySelector('[role="tablist"][data-dashboard-tablist]');
+    var tabCard = document.querySelector('[data-dashboard-tab-card]');
+    if (tabList && tabCard) {
+      initializeTabList(tabList, { useHash: true });
+    }
+
+    // Secondary switches, such as the competition toggle on the scorecard.
+    Array.prototype.forEach.call(
+      document.querySelectorAll('[role="tablist"]:not([data-dashboard-tablist])'),
+      function (switcher) {
+        if (!switcher.querySelector('[data-competition-tab]')) return;
+        initializeTabList(switcher, { useHash: false });
+      }
+    );
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initializeDashboardTabs);
+    document.addEventListener('DOMContentLoaded', initializeDashboard);
   } else {
-    initializeDashboardTabs();
+    initializeDashboard();
   }
 }());

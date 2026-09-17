@@ -23,6 +23,7 @@ REQUIRED_ROUTES = (
     "/soccer/project-2030/player-pool/",
     "/soccer/project-2030/checkpoints/",
     "/soccer/project-2030/scouting/",
+    "/soccer/barcelona/",
     "/orioles/",
     "/orioles/brandon-young-breakout/",
     "/ravens/",

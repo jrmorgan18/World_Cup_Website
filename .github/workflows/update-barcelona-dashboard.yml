@@ -1,0 +1,52 @@
+name: Update Barcelona season dashboard
+
+# Refreshes the objective Barcelona snapshot from ESPN's free, keyless soccer
+# feeds for both La Liga and the Champions League. Finished matches are cached in
+# the repository, so a daily run only downloads new fixtures and re-checks the
+# four most recent for corrections. The updater writes only when the football
+# data changes, so daily checks do not create noise.
+
+on:
+  schedule:
+    - cron: "45 6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: update-barcelona-dashboard
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Update Barcelona dashboard
+        run: python scripts/update_barcelona_dashboard.py
+      - name: Validate dashboard data
+        run: ruby scripts/check_barcelona_dashboard.rb
+      - name: Commit changes
+        id: commit
+        run: |
+          if [[ -n "$(git status --porcelain _data/barcelona_dashboard_stats.json scripts/cache/barcelona_match_stats.json)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add _data/barcelona_dashboard_stats.json scripts/cache/barcelona_match_stats.json
+            git commit -m "Auto-update Barcelona season dashboard"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "No Barcelona data changes to commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Deploy updated site
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run jekyll-pages.yml --ref main

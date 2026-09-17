@@ -33,6 +33,14 @@ jobs:
         if: steps.validate-ravens-dashboard.outcome == 'failure'
         run: >-
           echo "::warning title=Ravens dashboard data needs attention::The data check failed, but site validation continued. Review the Validate Ravens dashboard data log for details."
+      - name: Validate Barcelona dashboard data
+        id: validate-barcelona-dashboard
+        continue-on-error: true
+        run: ruby scripts/check_barcelona_dashboard.rb
+      - name: Warn when Barcelona dashboard data needs attention
+        if: steps.validate-barcelona-dashboard.outcome == 'failure'
+        run: >-
+          echo "::warning title=Barcelona dashboard data needs attention::The data check failed, but site validation continued. Review the Validate Barcelona dashboard data log for details."
       - name: Build launch version
         run: >-
           bundle exec jekyll build --trace
