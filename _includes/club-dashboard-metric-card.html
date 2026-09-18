@@ -1,0 +1,102 @@
+{%- comment -%}
+One metric card for a club season dashboard: current value, competition rank,
+movement against the previous snapshot and the editorial reading.
+
+Parameters:
+  metric_id      - the metric to render
+  definitions    - array of metric definitions (id, display_name, format, direction, stable_delta, description)
+  assessments    - hash of editorial assessments keyed by metric id
+  current        - the current snapshot
+  previous       - the previous snapshot (optional)
+  benchmark      - a fallback snapshot shown when the current value is missing (optional)
+  league_size    - number of ranked teams in the competition
+  rank_label     - short rank caption, e.g. "La Liga rank"
+  rank_context   - long rank caption, e.g. "Current La Liga position"
+  prefix         - CSS class prefix, e.g. "ravens" or "barcelona"
+{%- endcomment -%}
+{% assign metric_id = include.metric_id %}
+{% assign prefix = include.prefix | default: "ravens" %}
+{% assign league_size = include.league_size | default: 32 %}
+{% assign rank_label = include.rank_label | default: "Rank" %}
+{% assign rank_context = include.rank_context | default: "Current position" %}
+{% assign definition = include.definitions | where: "id", metric_id | first %}
+{% assign current_metric = include.current.metrics[metric_id] %}
+{% assign benchmark_metric = include.benchmark.metrics[metric_id] %}
+{% assign editorial_metric = include.assessments[metric_id] %}
+{% assign rank_metric = current_metric %}
+{% assign rank_caption = rank_context %}
+{% if current_metric.value == nil %}
+  {% assign rank_metric = benchmark_metric %}
+  {% assign rank_caption = include.benchmark.label %}
+{% endif %}
+{% if rank_metric.rank %}
+  {% assign rank_inverse = league_size | minus: rank_metric.rank %}
+  {% assign rank_divisor = league_size | minus: 1 %}
+  {% assign rank_percent = rank_inverse | times: 100 | divided_by: rank_divisor %}
+{% endif %}
+{% assign trend_available = false %}
+{% assign trend_direction = "stable" %}
+{% assign trend_quality = "stable" %}
+{% if include.previous and current_metric.value != nil %}
+  {% assign previous_metric = include.previous.metrics[metric_id] %}
+  {% if previous_metric.value != nil %}
+    {% assign trend_available = true %}
+    {% assign metric_delta = current_metric.value | minus: previous_metric.value %}
+    {% assign absolute_delta = metric_delta | abs %}
+    {% if absolute_delta <= definition.stable_delta %}
+      {% assign trend_direction = "stable" %}
+      {% assign trend_quality = "stable" %}
+    {% elsif metric_delta > 0 %}
+      {% assign trend_direction = "up" %}
+      {% if definition.direction == "higher" %}{% assign trend_quality = "improved" %}{% else %}{% assign trend_quality = "declined" %}{% endif %}
+    {% else %}
+      {% assign trend_direction = "down" %}
+      {% if definition.direction == "lower" %}{% assign trend_quality = "improved" %}{% else %}{% assign trend_quality = "declined" %}{% endif %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
+<article class="{{ prefix }}-metric-card" id="metric-{{ metric_id }}">
+  <header>
+    <p>{{ definition.group }}</p>
+    {% if editorial_metric.status %}<span class="{{ prefix }}-status {{ prefix }}-status--{{ editorial_metric.status | slugify }}">{{ editorial_metric.status }}</span>{% endif %}
+  </header>
+  <h3>{{ definition.display_name }}</h3>
+  <div class="{{ prefix }}-metric-reading">
+    <strong class="{{ prefix }}-metric-value{% if current_metric.value == nil %} {{ prefix }}-metric-value--empty{% endif %}">{% include club-dashboard-metric-value.html metric=current_metric definition=definition %}</strong>
+    {% if current_metric.rank %}<span>{{ rank_label }} {{ current_metric.rank }}</span>{% endif %}
+  </div>
+  {% if trend_available %}
+  <p class="{{ prefix }}-trend {{ prefix }}-trend--{{ trend_quality }}">
+    <span aria-hidden="true">{% if trend_direction == "up" %}↑{% elsif trend_direction == "down" %}↓{% else %}→{% endif %}</span>
+    {{ trend_quality | capitalize }} from {{ include.previous.label }}
+  </p>
+  {% elsif current_metric.value != nil %}
+  <p class="{{ prefix }}-trend {{ prefix }}-trend--new">No previous snapshot</p>
+  {% else %}
+  <p class="{{ prefix }}-trend {{ prefix }}-trend--new">Awaiting match data</p>
+  {% endif %}
+  {% if current_metric.value == nil and benchmark_metric.value != nil %}
+  <p class="{{ prefix }}-metric-benchmark">
+    <span>{{ include.benchmark.label }}</span>
+    <strong>{% include club-dashboard-metric-value.html metric=benchmark_metric definition=definition %}</strong>
+    {% if benchmark_metric.rank %}<small>{{ rank_label }} {{ benchmark_metric.rank }}</small>{% endif %}
+  </p>
+  {% endif %}
+  {% if rank_metric.rank %}
+  <div class="{{ prefix }}-rank-visual" aria-label="{{ rank_caption }}: number {{ rank_metric.rank }} of {{ league_size }}">
+    <div class="{{ prefix }}-rank-track" aria-hidden="true"><span>{{ league_size }}</span><i style="--rank-percent:{{ rank_percent }}%"></i><span>1</span></div>
+    <p><span>{{ rank_caption }}</span><strong>No. {{ rank_metric.rank }}</strong></p>
+  </div>
+  {% endif %}
+  {% if editorial_metric.interpretation %}<p class="{{ prefix }}-metric-interpretation">{{ editorial_metric.interpretation }}</p>{% endif %}
+  <details class="{{ prefix }}-metric-definition">
+    <summary>What this measures</summary>
+    <p>{{ definition.description }} {% if definition.direction == "higher" %}Higher is better.{% else %}Lower is better.{% endif %}</p>
+  </details>
+  <p class="{{ prefix }}-metric-source">Source: {{ current_metric.source | default: definition.default_source }}</p>
+  <span class="sr-only">
+    {{ definition.display_name }}:
+    {% include club-dashboard-metric-value.html metric=current_metric definition=definition %}{% if current_metric.rank %}, ranked {{ current_metric.rank }} of {{ league_size }}{% endif %}{% if trend_available %}, {{ trend_quality }} from {{ include.previous.label }}{% endif %}.
+  </span>
+</article>

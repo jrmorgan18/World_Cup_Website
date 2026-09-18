@@ -15,6 +15,7 @@ section_theme: soccer
 
 <nav class="section-subnav" aria-label="Soccer sections">
   <a href="{{ '/soccer/project-2030/' | relative_url }}">Project 2030</a>
+  <a href="{{ '/soccer/barcelona/' | relative_url }}">Barcelona</a>
   <a href="{{ '/soccer/analysis/' | relative_url }}">Analysis</a>
   <a href="{{ '/world-cup-2026/' | relative_url }}">World Cup archive</a>
   <a href="{{ '/categories/usmnt/' | relative_url }}">USMNT archive</a>
@@ -119,12 +120,16 @@ section_theme: soccer
   <div class="de-section-heading">
     <div><p class="de-kicker">Explore the desk</p><h2>More soccer</h2></div>
   </div>
+  {% assign barca_stats = site.data.barcelona_dashboard_stats %}
   <div class="hub-lane-grid">
+    <a href="{{ '/soccer/barcelona/' | relative_url }}" class="hub-lane-card">
+      <span>01 / The club</span><h3>Barcelona Dashboard</h3><p>{% if barca_stats.all_competitions %}{{ barca_stats.all_competitions.record }} across all competitions{% if barca_stats.competitions.laliga.standing %}, {{ barca_stats.competitions.laliga.standing.points }} points in La Liga{% endif %}. {% endif %}Expected goals, pressing numbers, per-player output and rotation load, updated daily.</p><strong>Open the dashboard &rarr;</strong>
+    </a>
     <a href="{{ '/soccer/analysis/' | relative_url }}" class="hub-lane-card">
-      <span>01 / Europe</span><h3>Analysis</h3><p>Champions League and Big Five coverage built around tactics, teams and the ideas changing the game.</p><strong>Go to analysis &rarr;</strong>
+      <span>02 / Europe</span><h3>Analysis</h3><p>Champions League and Big Five coverage built around tactics, teams and the ideas changing the game.</p><strong>Go to analysis &rarr;</strong>
     </a>
     <a href="{{ '/world-cup-2026/' | relative_url }}" class="hub-lane-card hub-lane-card--archive">
-      <span>02 / The archive</span><h3>World Cup 2026</h3><p>Every team profile, player countdown, preview, recap and long-form essay remains available in one permanent home.</p><strong>Explore the archive &rarr;</strong>
+      <span>03 / The archive</span><h3>World Cup 2026</h3><p>Every team profile, player countdown, preview, recap and long-form essay remains available in one permanent home.</p><strong>Explore the archive &rarr;</strong>
     </a>
   </div>
 </section>

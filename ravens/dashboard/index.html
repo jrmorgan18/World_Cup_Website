@@ -49,7 +49,7 @@ section_theme: ravens
     </div>
   </header>
 
-  <nav class="ravens-dashboard-jump" aria-label="Dashboard sections" role="tablist">
+  <nav class="ravens-dashboard-jump" aria-label="Dashboard sections" role="tablist" data-dashboard-tablist>
     <button type="button" id="dashboard-tab-games" role="tab" aria-controls="games" aria-selected="true">Game center</button>
     <button type="button" id="dashboard-tab-scorecard" role="tab" aria-controls="scorecard" aria-selected="false" tabindex="-1">Scorecard</button>
     <button type="button" id="dashboard-tab-units" role="tab" aria-controls="units" aria-selected="false" tabindex="-1">Units</button>
@@ -131,7 +131,7 @@ section_theme: ravens
       <h3>{{ group.name }}</h3>
       <div class="ravens-metric-grid">
         {% for metric_id in group.metric_ids %}
-          {% include ravens-dashboard-metric-card.html metric_id=metric_id current=current_snapshot previous=previous_snapshot benchmark=stats.benchmark_snapshot %}
+          {% include club-dashboard-metric-card.html metric_id=metric_id definitions=dashboard.metric_definitions assessments=dashboard.editorial.metric_assessments current=current_snapshot previous=previous_snapshot benchmark=stats.benchmark_snapshot league_size=32 rank_label="NFL rank" rank_context="Current NFL position" prefix="ravens" %}
         {% endfor %}
       </div>
     </div>
@@ -263,4 +263,4 @@ section_theme: ravens
   </section>
   </div>
 </article>
-<script src="{{ '/assets/js/ravens-dashboard-tabs.js' | relative_url }}?v=20260907-ravens-dashboard-tabs"></script>
+<script src="{{ '/assets/js/club-dashboard-tabs.js' | relative_url }}?v=20260917-club-dashboard-tabs"></script>

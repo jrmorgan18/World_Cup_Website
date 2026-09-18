@@ -1,0 +1,22 @@
+{%- comment -%}
+Formats one dashboard metric value. Shared by the club season dashboards.
+Parameters: metric (the snapshot metric hash), definition (the metric definition).
+{%- endcomment -%}
+{%- assign metric_value = include.metric.value -%}
+{%- if metric_value == nil -%}
+N/A
+{%- elsif include.definition.format == "percentage_1" -%}
+{{ metric_value | round: 1 }}%
+{%- elsif include.definition.format == "decimal_1" -%}
+{{ metric_value | round: 1 }}
+{%- elsif include.definition.format == "decimal_2" -%}
+{{ metric_value | round: 2 }}
+{%- elsif include.definition.format == "signed_decimal_2" -%}
+{%- if metric_value > 0 -%}+{%- endif -%}{{ metric_value | round: 2 }}
+{%- elsif include.definition.format == "signed_integer" -%}
+{%- if metric_value > 0 -%}+{%- endif -%}{{ metric_value | round: 0 }}
+{%- elsif include.definition.format == "integer" -%}
+{{ metric_value | round: 0 }}
+{%- else -%}
+{{ metric_value }}
+{%- endif -%}
