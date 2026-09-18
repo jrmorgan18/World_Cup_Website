@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-16T15:25:32Z",
-  "as_of": "2026-09-16",
+  "generated_at": "2026-09-18T14:58:27Z",
+  "as_of": "2026-09-18",
   "season": 2026,
   "benchmark_season": 2025,
   "current_snapshot": "2026-week-01",
@@ -79,7 +79,7 @@
       "record": "1-0",
       "metrics": {
         "overall_efficiency": {
-          "value": 82.8,
+          "value": 81.2,
           "rank": 1,
           "source": "Dual Eights index from nflverse play-by-play"
         },
@@ -95,12 +95,12 @@
         },
         "offensive_epa_per_play": {
           "value": 0.32,
-          "rank": 4,
+          "rank": 5,
           "source": "nflverse play-by-play"
         },
         "offensive_success_rate": {
           "value": 50.0,
-          "rank": 6,
+          "rank": 7,
           "source": "nflverse play-by-play"
         },
         "explosive_play_rate": {
@@ -125,7 +125,7 @@
         },
         "explosive_play_rate_allowed": {
           "value": 13.2,
-          "rank": 27,
+          "rank": 26,
           "source": "nflverse play-by-play"
         },
         "opponent_red_zone_td_rate": {
@@ -222,11 +222,11 @@
             "stat": "EPA / play",
             "ravens": {
               "value": 0.32,
-              "rank": 4
+              "rank": 5
             },
             "opponent": {
               "value": 0.02,
-              "rank": 17
+              "rank": 16
             }
           },
           {
@@ -238,7 +238,7 @@
             },
             "opponent": {
               "value": 11.1,
-              "rank": 20
+              "rank": 18
             }
           },
           {
@@ -262,7 +262,7 @@
             },
             "opponent": {
               "value": 80.0,
-              "rank": 9
+              "rank": 10
             }
           }
         ]
@@ -310,10 +310,10 @@
       {
         "source_label": "NFL NGS",
         "source_url": "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html",
-        "period_label": "Through Week 1",
+        "period_label": "Through Week 2",
         "label": "Jackson CPOE",
         "value": "+6.4%",
-        "rank": 10,
+        "rank": 9,
         "rank_group": "QB"
       },
       {
@@ -321,7 +321,7 @@
         "source_url": "https://www.espn.com/nfl/qbr/_/season/2026/seasontype/2",
         "period_label": "Through Week 2",
         "label": "Jackson QBR",
-        "value": "82.7",
+        "value": "79.7",
         "rank": 7,
         "rank_group": "NFL"
       }
@@ -330,10 +330,10 @@
       {
         "source_label": "NFL NGS",
         "source_url": "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html",
-        "period_label": "Through Week 1",
+        "period_label": "Through Week 2",
         "label": "Henry RYOE/att",
         "value": "+1.29",
-        "rank": 8,
+        "rank": 9,
         "rank_group": "RB"
       }
     ],
@@ -341,7 +341,7 @@
       {
         "source_label": "NFL NGS",
         "source_url": "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html",
-        "period_label": "Through Week 1",
+        "period_label": "Through Week 2",
         "label": "Flowers YACOE",
         "value": "+9.66",
         "rank": 1,
@@ -352,7 +352,7 @@
       {
         "source_label": "NFL NGS",
         "source_url": "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html",
-        "period_label": "Through Week 1",
+        "period_label": "Through Week 2",
         "label": "Andrews YACOE",
         "value": "+0.73",
         "rank": 10,
@@ -413,6 +413,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-09-16T15:25:32Z"
+    "retrieved_at": "2026-09-18T14:58:27Z"
   }
 }
