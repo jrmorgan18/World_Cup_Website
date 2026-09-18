@@ -34,7 +34,29 @@ section_theme: ravens
 
 <section class="club-section club-section--ravens-feature">
   {% assign ravens_feature = site.posts | where: "ravens_feature", true | sort: "date" | reverse | first %}
+  {% assign efficiency_rankings = ravens_stats.league_efficiency_rankings %}
   <div class="ravens-feature-layout">
+    {% if efficiency_rankings.teams.size > 0 %}
+    <aside class="ravens-efficiency-rankings" aria-labelledby="ravens-efficiency-rankings-heading">
+      <header class="ravens-efficiency-rankings-head">
+        <p>NFL · All 32 teams</p>
+        <h2 id="ravens-efficiency-rankings-heading">Efficiency Index</h2>
+        <span>{{ efficiency_rankings.label }}</span>
+      </header>
+      <div class="ravens-efficiency-rankings-columns" aria-hidden="true"><span>Rank</span><span>Team</span><span>Index</span></div>
+      <ol class="ravens-efficiency-rankings-list">
+        {% for team in efficiency_rankings.teams %}
+        <li{% if team.abbr == "BAL" %} class="is-ravens"{% endif %} title="{{ team.full_name }} · {{ team.record }}">
+          <b>{{ team.rank }}</b>
+          <span>{{ team.name }} <small>{{ team.record }}</small></span>
+          <strong>{{ team.value }}</strong>
+        </li>
+        {% endfor %}
+      </ol>
+      <a href="{{ '/ravens/dashboard/' | relative_url }}#scorecard"><span>Explore the Ravens model</span><span aria-hidden="true">&rarr;</span></a>
+    </aside>
+    {% endif %}
+
     <div class="ravens-feature-primary">
       {% if ravens_feature %}
       {% if ravens_feature.season_preview_feature %}

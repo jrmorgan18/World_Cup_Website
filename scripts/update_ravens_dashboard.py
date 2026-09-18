@@ -81,6 +81,17 @@ TEAM_NAMES = {
     "TEN": "Tennessee Titans", "WAS": "Washington Commanders",
 }
 
+TEAM_SHORT_NAMES = {
+    "ARI": "Cardinals", "ATL": "Falcons", "BAL": "Ravens", "BUF": "Bills",
+    "CAR": "Panthers", "CHI": "Bears", "CIN": "Bengals", "CLE": "Browns",
+    "DAL": "Cowboys", "DEN": "Broncos", "DET": "Lions", "GB": "Packers",
+    "HOU": "Texans", "IND": "Colts", "JAX": "Jaguars", "KC": "Chiefs",
+    "LA": "Rams", "LAC": "Chargers", "LV": "Raiders", "MIA": "Dolphins",
+    "MIN": "Vikings", "NE": "Patriots", "NO": "Saints", "NYG": "Giants",
+    "NYJ": "Jets", "PHI": "Eagles", "PIT": "Steelers", "SEA": "Seahawks",
+    "SF": "49ers", "TB": "Buccaneers", "TEN": "Titans", "WAS": "Commanders",
+}
+
 METRICS = {
     "overall_efficiency": {"direction": "higher", "source": "Dual Eights index from nflverse play-by-play"},
     "point_differential": {"direction": "higher", "source": "nflverse schedules"},
@@ -414,6 +425,37 @@ def record_text(records, team):
     return f"{base}-{int(row['ties'])}" if int(row["ties"]) else base
 
 
+def efficiency_rankings_payload(season, as_of, records, table):
+    """Publish the same league-wide index used by the Ravens scorecard."""
+    week = int(table.attrs.get("week", 0))
+    if week == 0 or "overall_efficiency" not in table:
+        return {
+            "label": f"{season} preseason",
+            "sample_note": "Rankings begin after Week 1",
+            "teams": [],
+        }
+
+    values = table["overall_efficiency"].dropna()
+    ranks = values.rank(method="min", ascending=False).astype(int)
+    ordered = values.sort_values(ascending=False, kind="stable")
+    teams = []
+    for abbreviation, value in ordered.items():
+        teams.append({
+            "rank": int(ranks.loc[abbreviation]),
+            "abbr": abbreviation,
+            "name": TEAM_SHORT_NAMES.get(abbreviation, TEAM_NAMES.get(abbreviation, abbreviation)),
+            "full_name": TEAM_NAMES.get(abbreviation, abbreviation),
+            "record": record_text(records, abbreviation),
+            "value": finite_number(value, 1),
+        })
+
+    return {
+        "label": f"Games through {as_of.strftime('%B')} {as_of.day}",
+        "sample_note": "Completed regular-season games; early-season sample",
+        "teams": teams,
+    }
+
+
 def format_next_game(schedule, season, as_of):
     upcoming = schedule[
         (schedule["season"] == season)
@@ -656,6 +698,12 @@ def main():
             "current_snapshot": current["id"],
             "snapshots": snapshots,
             "benchmark_snapshot": benchmark,
+            "league_efficiency_rankings": efficiency_rankings_payload(
+                args.season,
+                args.as_of,
+                current_records,
+                current_table,
+            ),
             "header": {
                 "record": current["record"],
                 "division_standing": "Standings begin after Week 1" if current["week"] == 0 else "AFC North",

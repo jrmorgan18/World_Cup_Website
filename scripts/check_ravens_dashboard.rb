@@ -44,6 +44,7 @@ snapshots = stats.fetch("snapshots")
 snapshot_ids = snapshots.map { |snapshot| snapshot.fetch("id") }
 assert(snapshot_ids.uniq.length == snapshot_ids.length, "Snapshot ids must be unique", errors)
 assert(snapshot_ids.include?(stats.fetch("current_snapshot")), "current_snapshot does not exist", errors)
+current_snapshot = snapshots.find { |snapshot| snapshot["id"] == stats.fetch("current_snapshot") }
 
 def validate_snapshot(snapshot, definition_ids, errors)
   metrics = snapshot.fetch("metrics")
@@ -66,6 +67,32 @@ validate_snapshot(benchmark, definition_ids, errors)
 benchmark.fetch("metrics").each do |metric_id, metric|
   assert(!metric["value"].nil?, "Benchmark #{metric_id} must be populated", errors)
   assert(!metric["rank"].nil?, "Benchmark #{metric_id} must have a league rank", errors)
+end
+
+league_rankings = stats.fetch("league_efficiency_rankings")
+ranking_teams = league_rankings.fetch("teams")
+assert(!league_rankings["label"].to_s.empty?, "League efficiency rankings need a period label", errors)
+assert(!league_rankings["sample_note"].to_s.empty?, "League efficiency rankings need a sample note", errors)
+if current_snapshot && current_snapshot["week"].to_i > 0
+  assert(ranking_teams.length == 32, "League efficiency rankings must contain all 32 NFL teams", errors)
+  abbreviations = ranking_teams.map { |team| team["abbr"] }
+  assert(abbreviations.uniq.length == 32, "League efficiency rankings must not repeat a team", errors)
+  ranking_teams.each do |team|
+    assert(team["rank"].is_a?(Integer) && team["rank"].between?(1, 32), "#{team['abbr']} has an invalid efficiency rank", errors)
+    assert(team["value"].is_a?(Numeric) && team["value"].between?(0, 100), "#{team['abbr']} has an invalid efficiency value", errors)
+    assert(!team["name"].to_s.empty? && !team["full_name"].to_s.empty?, "#{team['abbr']} needs display names", errors)
+    assert(team["record"].to_s.match?(/^\d{1,2}-\d{1,2}(?:-\d{1,2})?$/), "#{team['abbr']} has an invalid record", errors)
+  end
+  assert(ranking_teams.each_cons(2).all? { |left, right| left["value"] >= right["value"] }, "League efficiency rankings must be sorted high to low", errors)
+  ravens_ranking = ranking_teams.find { |team| team["abbr"] == "BAL" }
+  assert(!ravens_ranking.nil?, "League efficiency rankings must include the Ravens", errors)
+  if ravens_ranking
+    ravens_metric = current_snapshot.dig("metrics", "overall_efficiency")
+    assert(ravens_ranking["rank"] == ravens_metric["rank"], "Ravens sidebar rank must match the scorecard", errors)
+    assert(ravens_ranking["value"] == ravens_metric["value"], "Ravens sidebar index must match the scorecard", errors)
+  end
+else
+  assert(ranking_teams.empty?, "Preseason league efficiency rankings must be empty", errors)
 end
 
 metric_editorial = editorial.dig("editorial", "metric_assessments")
@@ -105,7 +132,6 @@ assert(editorial_analytics.map { |unit| unit["name"] } == ["Offensive line", "De
 editorial_analytics.each { |unit| validate_analytics.call(unit["name"], unit["analytics_metrics"]) }
 
 automated_analytics = stats.fetch("unit_analytics")
-current_snapshot = snapshots.find { |snapshot| snapshot["id"] == stats.fetch("current_snapshot") }
 expected_automated_units = current_snapshot && current_snapshot["week"].to_i > 0 ? ["Quarterback", "Running backs", "Wide receivers", "Tight ends", "Secondary"] : []
 assert(automated_analytics.keys == expected_automated_units, "Automated unit analytics must contain the supported units in order", errors)
 automated_analytics.each { |unit_name, metrics| validate_analytics.call(unit_name, metrics) }

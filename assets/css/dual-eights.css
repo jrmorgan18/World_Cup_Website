@@ -831,9 +831,30 @@ body { overflow-x: hidden; }
 .club-feature-teaser-mark small,.club-feature-teaser-mark span { font-size:.68rem; letter-spacing:2px; }
 .club-feature-teaser-mark strong { color:#fff; font-size:8rem; line-height:.9; }
 .club-section--ravens-feature { padding-top:24px; }
-.ravens-feature-layout { display:grid; grid-template-columns:minmax(0,1fr) minmax(280px,320px); gap:36px; align-items:start; }
-.ravens-feature-primary,.ravens-camp-rail,.ravens-recent-rail { min-width:0; }
+.ravens-feature-layout { display:grid; grid-template-columns:220px minmax(0,1fr) minmax(280px,300px); grid-template-areas:"rankings feature daily"; gap:32px; align-items:start; }
+.ravens-feature-primary,.ravens-camp-rail,.ravens-recent-rail,.ravens-efficiency-rankings { min-width:0; }
 .ravens-feature-primary { display:grid; gap:36px; }
+.ravens-feature-primary { grid-area:feature; }
+.ravens-camp-rail { grid-area:daily; }
+.ravens-efficiency-rankings { grid-area:rankings; overflow:hidden; border:1px solid rgba(255,255,255,.15); background:#111016; color:#fff; }
+.ravens-efficiency-rankings-head { padding:19px 16px 16px; border-bottom:3px solid var(--de-purple); background:linear-gradient(145deg,#241630,#0d0b10); }
+.ravens-efficiency-rankings-head p { color:var(--de-purple-light); font-family:var(--font-display); font-size:.53rem; font-weight:700; letter-spacing:1.1px; text-transform:uppercase; }
+.ravens-efficiency-rankings-head h2 { margin:5px 0 7px; font-family:var(--font-display); font-size:1.3rem; line-height:1; text-transform:uppercase; }
+.ravens-efficiency-rankings-head span { color:#98909e; font-family:var(--font-display); font-size:.5rem; letter-spacing:.75px; text-transform:uppercase; }
+.ravens-efficiency-rankings-columns,.ravens-efficiency-rankings-list li { display:grid; grid-template-columns:30px minmax(0,1fr) 36px; gap:7px; align-items:center; }
+.ravens-efficiency-rankings-columns { padding:9px 11px 6px; color:#776f7e; font-family:var(--font-display); font-size:.42rem; letter-spacing:.55px; text-transform:uppercase; }
+.ravens-efficiency-rankings-columns span:last-child { text-align:right; }
+.ravens-efficiency-rankings-list { list-style:none; }
+.ravens-efficiency-rankings-list li { min-height:32px; padding:5px 11px; border-top:1px solid rgba(255,255,255,.07); }
+.ravens-efficiency-rankings-list b { color:var(--de-purple-light); font-family:var(--font-display); font-size:.67rem; }
+.ravens-efficiency-rankings-list span { overflow:hidden; font-family:'Newsreader',serif; font-size:.79rem; font-weight:600; line-height:1.05; text-overflow:ellipsis; white-space:nowrap; }
+.ravens-efficiency-rankings-list small { margin-left:4px; color:#756e7a; font-family:var(--font-display); font-size:.43rem; font-weight:500; }
+.ravens-efficiency-rankings-list strong { color:#aaa3b0; font-family:var(--font-display); font-size:.61rem; text-align:right; }
+.ravens-efficiency-rankings-list li.is-ravens { background:linear-gradient(90deg,rgba(111,63,197,.48),rgba(111,63,197,.12)); box-shadow:inset 3px 0 0 var(--de-purple-light); }
+.ravens-efficiency-rankings-list li.is-ravens b,.ravens-efficiency-rankings-list li.is-ravens span,.ravens-efficiency-rankings-list li.is-ravens strong { color:#fff; }
+.ravens-efficiency-rankings-list li.is-ravens small { color:#d4c2ec; }
+.ravens-efficiency-rankings>a { padding:14px 13px; display:flex; justify-content:space-between; color:#fff; border-top:1px solid rgba(255,255,255,.12); background:#0b090d; font-family:var(--font-display); font-size:.52rem; font-weight:700; letter-spacing:.68px; text-transform:uppercase; }
+.ravens-efficiency-rankings>a:hover { color:var(--de-purple-light); }
 .ravens-camp-highlights { padding:22px 22px 20px; border:1px solid rgba(255,255,255,.15); background:linear-gradient(145deg,#17111e,#0d0c10 72%); box-shadow:inset 5px 0 0 var(--de-purple); }
 .ravens-camp-highlights-head .de-kicker { color:var(--de-purple-light); font-size:.58rem; }
 .ravens-camp-highlights-head > div { display:flex; align-items:baseline; justify-content:space-between; gap:12px; margin-top:8px; }
@@ -1413,6 +1434,10 @@ body { overflow-x: hidden; }
 .nl-fab-icon { font-family:var(--font-display); font-size:.75rem; letter-spacing:-2px; }
 
 /* Responsive */
+@media (max-width: 1180px) and (min-width: 769px) {
+  .ravens-feature-layout { grid-template-columns:210px minmax(0,1fr); grid-template-areas:"rankings feature" "daily feature"; gap:32px 30px; }
+}
+
 @media (max-width: 1040px) {
   .de-home-bookend { width:min(20vw,200px); opacity:.82; }
   .de-home-hero-copy { width:58vw; }
@@ -1600,7 +1625,7 @@ body { overflow-x: hidden; }
   .club-feature-teaser-mark { min-height:150px; flex-direction:row; gap:16px; }
   .club-feature-teaser-mark strong { font-size:5rem; }
   .club-section--ravens-feature { padding-top:36px; }
-  .ravens-feature-layout { grid-template-columns:1fr; }
+  .ravens-feature-layout { grid-template-columns:1fr; grid-template-areas:"feature" "rankings" "daily"; }
   .ravens-camp-rail,.ravens-recent-rail { position:static; }
   .ravens-unit-ranking-list li { grid-template-columns:42px minmax(0,1fr); gap:12px; padding:13px 18px; }
   .ravens-unit-ranking-list em { grid-column:2; justify-self:start; }

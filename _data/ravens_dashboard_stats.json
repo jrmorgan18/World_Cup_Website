@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T14:58:27Z",
+  "generated_at": "2026-09-18T19:01:44Z",
   "as_of": "2026-09-18",
   "season": 2026,
   "benchmark_season": 2025,
@@ -200,6 +200,268 @@
         "source": "nflverse play-by-play"
       }
     }
+  },
+  "league_efficiency_rankings": {
+    "label": "Games through September 18",
+    "sample_note": "Completed regular-season games; early-season sample",
+    "teams": [
+      {
+        "rank": 1,
+        "abbr": "BAL",
+        "name": "Ravens",
+        "full_name": "Baltimore Ravens",
+        "record": "1-0",
+        "value": 81.2
+      },
+      {
+        "rank": 2,
+        "abbr": "SF",
+        "name": "49ers",
+        "full_name": "San Francisco 49ers",
+        "record": "1-0",
+        "value": 78.9
+      },
+      {
+        "rank": 3,
+        "abbr": "JAX",
+        "name": "Jaguars",
+        "full_name": "Jacksonville Jaguars",
+        "record": "1-0",
+        "value": 78.5
+      },
+      {
+        "rank": 4,
+        "abbr": "ARI",
+        "name": "Cardinals",
+        "full_name": "Arizona Cardinals",
+        "record": "1-0",
+        "value": 78.1
+      },
+      {
+        "rank": 5,
+        "abbr": "KC",
+        "name": "Chiefs",
+        "full_name": "Kansas City Chiefs",
+        "record": "1-0",
+        "value": 74.6
+      },
+      {
+        "rank": 6,
+        "abbr": "NYJ",
+        "name": "Jets",
+        "full_name": "New York Jets",
+        "record": "1-0",
+        "value": 70.7
+      },
+      {
+        "rank": 7,
+        "abbr": "LV",
+        "name": "Raiders",
+        "full_name": "Las Vegas Raiders",
+        "record": "1-0",
+        "value": 64.5
+      },
+      {
+        "rank": 8,
+        "abbr": "NYG",
+        "name": "Giants",
+        "full_name": "New York Giants",
+        "record": "1-0",
+        "value": 63.3
+      },
+      {
+        "rank": 9,
+        "abbr": "BUF",
+        "name": "Bills",
+        "full_name": "Buffalo Bills",
+        "record": "2-0",
+        "value": 62.5
+      },
+      {
+        "rank": 9,
+        "abbr": "WAS",
+        "name": "Commanders",
+        "full_name": "Washington Commanders",
+        "record": "0-1",
+        "value": 62.5
+      },
+      {
+        "rank": 11,
+        "abbr": "CHI",
+        "name": "Bears",
+        "full_name": "Chicago Bears",
+        "record": "1-0",
+        "value": 61.7
+      },
+      {
+        "rank": 12,
+        "abbr": "CIN",
+        "name": "Bengals",
+        "full_name": "Cincinnati Bengals",
+        "record": "1-0",
+        "value": 57.0
+      },
+      {
+        "rank": 13,
+        "abbr": "ATL",
+        "name": "Falcons",
+        "full_name": "Atlanta Falcons",
+        "record": "0-1",
+        "value": 54.7
+      },
+      {
+        "rank": 14,
+        "abbr": "SEA",
+        "name": "Seahawks",
+        "full_name": "Seattle Seahawks",
+        "record": "1-0",
+        "value": 53.9
+      },
+      {
+        "rank": 15,
+        "abbr": "GB",
+        "name": "Packers",
+        "full_name": "Green Bay Packers",
+        "record": "0-1",
+        "value": 51.6
+      },
+      {
+        "rank": 15,
+        "abbr": "MIN",
+        "name": "Vikings",
+        "full_name": "Minnesota Vikings",
+        "record": "1-0",
+        "value": 51.6
+      },
+      {
+        "rank": 17,
+        "abbr": "HOU",
+        "name": "Texans",
+        "full_name": "Houston Texans",
+        "record": "0-1",
+        "value": 50.0
+      },
+      {
+        "rank": 18,
+        "abbr": "NE",
+        "name": "Patriots",
+        "full_name": "New England Patriots",
+        "record": "0-1",
+        "value": 49.2
+      },
+      {
+        "rank": 19,
+        "abbr": "PIT",
+        "name": "Steelers",
+        "full_name": "Pittsburgh Steelers",
+        "record": "1-0",
+        "value": 48.4
+      },
+      {
+        "rank": 20,
+        "abbr": "NO",
+        "name": "Saints",
+        "full_name": "New Orleans Saints",
+        "record": "0-1",
+        "value": 47.3
+      },
+      {
+        "rank": 21,
+        "abbr": "TB",
+        "name": "Buccaneers",
+        "full_name": "Tampa Bay Buccaneers",
+        "record": "0-1",
+        "value": 46.9
+      },
+      {
+        "rank": 22,
+        "abbr": "DET",
+        "name": "Lions",
+        "full_name": "Detroit Lions",
+        "record": "1-1",
+        "value": 46.1
+      },
+      {
+        "rank": 23,
+        "abbr": "CAR",
+        "name": "Panthers",
+        "full_name": "Carolina Panthers",
+        "record": "0-1",
+        "value": 42.2
+      },
+      {
+        "rank": 23,
+        "abbr": "PHI",
+        "name": "Eagles",
+        "full_name": "Philadelphia Eagles",
+        "record": "1-0",
+        "value": 42.2
+      },
+      {
+        "rank": 25,
+        "abbr": "DAL",
+        "name": "Cowboys",
+        "full_name": "Dallas Cowboys",
+        "record": "0-1",
+        "value": 39.1
+      },
+      {
+        "rank": 26,
+        "abbr": "MIA",
+        "name": "Dolphins",
+        "full_name": "Miami Dolphins",
+        "record": "0-1",
+        "value": 37.9
+      },
+      {
+        "rank": 27,
+        "abbr": "TEN",
+        "name": "Titans",
+        "full_name": "Tennessee Titans",
+        "record": "0-1",
+        "value": 31.6
+      },
+      {
+        "rank": 28,
+        "abbr": "DEN",
+        "name": "Broncos",
+        "full_name": "Denver Broncos",
+        "record": "0-1",
+        "value": 28.5
+      },
+      {
+        "rank": 29,
+        "abbr": "LAC",
+        "name": "Chargers",
+        "full_name": "Los Angeles Chargers",
+        "record": "0-1",
+        "value": 26.6
+      },
+      {
+        "rank": 30,
+        "abbr": "LA",
+        "name": "Rams",
+        "full_name": "Los Angeles Rams",
+        "record": "0-1",
+        "value": 24.6
+      },
+      {
+        "rank": 31,
+        "abbr": "CLE",
+        "name": "Browns",
+        "full_name": "Cleveland Browns",
+        "record": "0-1",
+        "value": 23.8
+      },
+      {
+        "rank": 32,
+        "abbr": "IND",
+        "name": "Colts",
+        "full_name": "Indianapolis Colts",
+        "record": "0-1",
+        "value": 20.3
+      }
+    ]
   },
   "header": {
     "record": "1-0",
@@ -413,6 +675,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-09-18T14:58:27Z"
+    "retrieved_at": "2026-09-18T19:01:44Z"
   }
 }
