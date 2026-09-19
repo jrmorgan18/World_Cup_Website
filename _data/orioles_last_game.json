@@ -1,60 +1,65 @@
 {
-  "generated_at": "2026-09-18T11:25:19Z",
-  "game_pk": 823576,
-  "date": "2026-09-16",
-  "venue": "Citi Field",
-  "home_away": "away",
-  "opponent": "New York Mets",
-  "opponent_abbr": "NYM",
-  "result": "W",
-  "orioles_score": 7,
-  "opponent_score": 1,
-  "orioles_hits": 9,
-  "opponent_hits": 7,
-  "orioles_errors": 1,
+  "generated_at": "2026-09-19T11:09:00Z",
+  "game_pk": 824790,
+  "date": "2026-09-18",
+  "venue": "Oriole Park at Camden Yards",
+  "home_away": "home",
+  "opponent": "Milwaukee Brewers",
+  "opponent_abbr": "MIL",
+  "result": "L",
+  "orioles_score": 5,
+  "opponent_score": 6,
+  "orioles_hits": 12,
+  "opponent_hits": 10,
+  "orioles_errors": 0,
   "opponent_errors": 0,
   "winning_pitcher": {
-    "name": "Chris Bassitt",
-    "team": "BAL",
-    "record": "8-5",
-    "line": "6.2 IP, ER, 6 K, BB"
+    "name": "Trevor Megill",
+    "team": "MIL",
+    "record": "3-3)(BS, 3",
+    "line": "1.0 IP, 2 ER, K, 0 BB"
   },
   "losing_pitcher": {
-    "name": "Xzavion Curry",
-    "team": "NYM",
-    "record": "0-1",
-    "line": "3.0 IP, 6 ER, 3 K, BB"
+    "name": "Grant Wolfram",
+    "team": "BAL",
+    "record": "6-4",
+    "line": "1.0 IP, 0 ER, K, 0 BB"
   },
-  "save_pitcher": null,
+  "save_pitcher": {
+    "name": "Chad Patrick",
+    "team": "MIL",
+    "record": "6",
+    "line": "1.0 IP, 0 ER, K, 0 BB"
+  },
   "key_players": [
     {
-      "name": "Christian Encarnacion-Strand",
+      "name": "Jackson Chourio",
+      "team": "MIL",
+      "position": "LF",
+      "line": "2-5 | HR, BB, K"
+    },
+    {
+      "name": "Coby Mayo",
       "team": "BAL",
       "position": "3B",
-      "line": "3-4 | HR, 2 2B, K"
+      "line": "3-4 | 3 2B, BB, R"
     },
     {
-      "name": "Chris Bassitt",
+      "name": "Pete Alonso",
       "team": "BAL",
-      "position": "P",
-      "line": "6.2 IP, ER, 6 K, BB"
-    },
-    {
-      "name": "Jefry Yan",
-      "team": "NYM",
-      "position": "P",
-      "line": "3.0 IP, 0 ER, 3 K, 0 BB"
+      "position": "1B",
+      "line": "1-4 | HR, BB, 2 K"
     }
   ],
-  "summary": "The Orioles beat the Mets 7-1 on the road at Mets. Christian Encarnacion-Strand led the way (3-4 | HR, 2 2B, K). Baltimore has won 3 straight.",
+  "summary": "The Orioles fell to the Brewers 5-6 at Camden Yards. Jackson Chourio led the way (2-5 | HR, BB, K). Baltimore has lost 1 straight.",
   "record": {
     "wins": 75,
-    "losses": 78,
-    "pct": ".490",
+    "losses": 79,
+    "pct": ".487",
     "division": "AL East",
     "division_rank": 5,
     "games_back": "18.5",
-    "streak": "W3",
+    "streak": "L1",
     "last_10": "6-4"
   },
   "wild_card": {
@@ -64,10 +69,10 @@
     "status_text": "3.0 games back of the third AL Wild Card spot.",
     "ladder": [
       {
-        "team": "Guardians",
-        "abbr": "CLE",
+        "team": "White Sox",
+        "abbr": "CWS",
         "wins": 78,
-        "losses": 75,
+        "losses": 76,
         "games_back": null,
         "wild_card_rank": 3,
         "is_orioles": false,
@@ -76,9 +81,9 @@
       {
         "team": "Rangers",
         "abbr": "TEX",
-        "wins": 76,
+        "wins": 77,
         "losses": 77,
-        "games_back": "2.0",
+        "games_back": "1.0",
         "wild_card_rank": 4,
         "is_orioles": false,
         "is_cutoff": false
@@ -87,7 +92,7 @@
         "team": "Blue Jays",
         "abbr": "TOR",
         "wins": 76,
-        "losses": 77,
+        "losses": 78,
         "games_back": "2.0",
         "wild_card_rank": 5,
         "is_orioles": false,
@@ -97,7 +102,7 @@
         "team": "Orioles",
         "abbr": "BAL",
         "wins": 75,
-        "losses": 78,
+        "losses": 79,
         "games_back": "3.0",
         "wild_card_rank": 6,
         "is_orioles": true,
