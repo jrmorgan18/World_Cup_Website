@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1705" viewBox="0 0 1200 1705" role="img" aria-labelledby="title desc">
+<title id="title">Ravens versus Saints Week 2 matchup data</title>
+<desc id="desc">League-ranked offensive and defensive efficiency comparison through Week 1 of the 2026 NFL season.</desc>
+<rect width="1200" height="1705" fill="#09080c"/>
+<path d="M0 0H1200V205H0Z" fill="#15101d"/>
+<path d="M0 0H1200V12H0Z" fill="#7c4dc4"/>
+<circle cx="78" cy="74" r="30" fill="#7c4dc4"/>
+<text x="78" y="84" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="900" text-anchor="middle" letter-spacing="0">DE</text>
+<text x="124" y="65" fill="#bda4e5" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800" text-anchor="start" letter-spacing="2.5">DUAL EIGHTS</text>
+<text x="58" y="132" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="900" text-anchor="start" letter-spacing="0.5">RAVENS × SAINTS</text>
+<text x="58" y="178" fill="#e8bc55" font-family="Arial, Helvetica, sans-serif" font-size="33" font-weight="800" text-anchor="start" letter-spacing="3.2">MATCHUP DNA</text>
+<text x="1142" y="70" fill="#d9d2df" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="800" text-anchor="end" letter-spacing="1.2">WEEK 2 · 2026</text>
+<text x="1142" y="104" fill="#8f8499" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="500" text-anchor="end" letter-spacing="0">League ranks through Week 1</text>
+<text x="1142" y="142" fill="#e8bc55" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" text-anchor="end" letter-spacing="1.1">PERFORMANCE: #1 BEST</text>
+<text x="1142" y="169" fill="#c8b1ed" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="800" text-anchor="end" letter-spacing="1.1">TENDENCY: #1 MOST FREQUENT</text>
+<rect x="58" y="230" width="1084" height="694" rx="18" fill="#121019" stroke="#332940" stroke-width="2"/>
+<rect x="58" y="230" width="10" height="694" rx="5" fill="#9b6ee6"/>
+<text x="88" y="261" fill="#9b6ee6" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" text-anchor="start" letter-spacing="1.6">WHEN THE RAVENS HAVE THE BALL</text>
+<text x="88" y="300" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="800" text-anchor="start" letter-spacing="0">RAVENS OFFENSE</text>
+<text x="1112" y="300" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="800" text-anchor="end" letter-spacing="0">SAINTS DEFENSE</text>
+<text x="600" y="298" fill="#756b80" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">VS</text>
+<line x1="80" y1="324" x2="1124" y2="324" stroke="#332940" stroke-width="2"/>
+<rect x="68" y="324" width="1074" height="38" fill="#1b1722"/>
+<text x="600" y="350" fill="#a99db4" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="800" text-anchor="middle" letter-spacing="1.2">EFFICIENCY &amp; EXECUTION</text>
+<text x="100" y="394" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start" letter-spacing="0">+0.32</text>
+<rect x="339" y="371" width="60" height="31" rx="15" fill="#e8bc55"/>
+<text x="369" y="393" fill="#18121f" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#4</text>
+<text x="618" y="394" fill="#cfc8d5" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="0">EPA / play</text>
+<text x="1136" y="394" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="end" letter-spacing="0">+0.02</text>
+<rect x="837" y="371" width="60" height="31" rx="15" fill="#394052"/>
+<text x="867" y="393" fill="#dce0e8" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#17</text>
+<line x1="84" y1="413" x2="1124" y2="413" stroke="#26202f" stroke-width="1"/>
+<rect x="68" y="413" width="1074" height="51" fill="#17131d"/>
+<text x="100" y="445" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start" letter-spacing="0">50.0%</text>
+<rect x="339" y="422" width="60" height="31" rx="15" fill="#e8bc55"/>
+<text x="369" y="444" fill="#18121f" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#6</text>
+<text x="618" y="445" fill="#cfc8d5" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="0">Success rate</text>
+<text x="1136" y="445" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="end" letter-spacing="0">45.8%</text>
+<rect x="837" y="422" width="60" height="31" rx="15" fill="#394052"/>
+<text x="867" y="444" fill="#dce0e8" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#20</text>
+<line x1="84" y1="464" x2="1124" y2="464" stroke="#26202f" stroke-width="1"/>
+<text x="100" y="496" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start" letter-spacing="0">+0.31</text>
+<rect x="339" y="473" width="60" height="31" rx="15" fill="#e8bc55"/>
+<text x="369" y="495" fill="#18121f" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#3</text>
+<text x="618" y="496" fill="#cfc8d5" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="0">Early-down EPA / play</text>
+<text x="1136" y="496" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="end" letter-spacing="0">+0.05</text>
+<rect x="837" y="473" width="60" height="31" rx="15" fill="#394052"/>
+<text x="867" y="495" fill="#dce0e8" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#18</text>
+<line x1="84" y1="515" x2="1124" y2="515" stroke="#26202f" stroke-width="1"/>
+<rect x="68" y="515" width="1074" height="51" fill="#17131d"/>
+<text x="100" y="547" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start" letter-spacing="0">+0.38</text>
+<rect x="339" y="524" width="60" height="31" rx="15" fill="#e8bc55"/>
+<text x="369" y="546" fill="#18121f" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#6</text>
+<text x="618" y="547" fill="#cfc8d5" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="0">Pass EPA / play</text>
+<text x="1136" y="547" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="end" letter-spacing="0">+0.02</text>
+<rect x="837" y="524" width="60" height="31" rx="15" fill="#394052"/>
+<text x="867" y="546" fill="#dce0e8" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#18</text>
+<line x1="84" y1="566" x2="1124" y2="566" stroke="#26202f" stroke-width="1"/>
+<text x="100" y="598" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start" letter-spacing="0">+0.28</text>
+<rect x="339" y="575" width="60" height="31" rx="15" fill="#e8bc55"/>
+<text x="369" y="597" fill="#18121f" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#3</text>
+<text x="618" y="598" fill="#cfc8d5" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="0">Rush EPA / play</text>
+<text x="1136" y="598" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="end" letter-spacing="0">+0.02</text>
+<rect x="837" y="575" width="60" height="31" rx="15" fill="#394052"/>
+<text x="867" y="597" fill="#dce0e8" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#17</text>
+<line x1="84" y1="617" x2="1124" y2="617" stroke="#26202f" stroke-width="1"/>
+<rect x="68" y="617" width="1074" height="51" fill="#17131d"/>
+<text x="100" y="649" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start" letter-spacing="0">15.0%</text>
+<rect x="339" y="626" width="60" height="31" rx="15" fill="#e8bc55"/>
+<text x="369" y="648" fill="#18121f" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#3</text>
+<text x="618" y="649" fill="#cfc8d5" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="0">Explosive-play rate</text>
+<text x="1136" y="649" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="end" letter-spacing="0">11.1%</text>
+<rect x="837" y="626" width="60" height="31" rx="15" fill="#394052"/>
+<text x="867" y="648" fill="#dce0e8" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#20</text>
+<line x1="84" y1="668" x2="1124" y2="668" stroke="#26202f" stroke-width="1"/>
+<text x="100" y="700" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start" letter-spacing="0">+4.8%</text>
+<rect x="339" y="677" width="60" height="31" rx="15" fill="#7d58b3"/>
+<text x="369" y="699" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#11</text>
+<text x="618" y="700" fill="#cfc8d5" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="0">Completion pct. over expected</text>
+<text x="1136" y="700" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="end" letter-spacing="0">-2.9%</text>
+<rect x="837" y="677" width="60" height="31" rx="15" fill="#7d58b3"/>
+<text x="867" y="699" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#11</text>
+<line x1="84" y1="719" x2="1124" y2="719" stroke="#26202f" stroke-width="1"/>
+<rect x="68" y="719" width="1074" height="51" fill="#17131d"/>
+<text x="100" y="751" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start" letter-spacing="0">37.5%</text>
+<rect x="339" y="728" width="60" height="31" rx="15" fill="#394052"/>
+<text x="369" y="750" fill="#dce0e8" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#17</text>
+<text x="618" y="751" fill="#cfc8d5" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="0">Third-down conversion</text>
+<text x="1136" y="751" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="end" letter-spacing="0">38.5%</text>
+<rect x="837" y="728" width="60" height="31" rx="15" fill="#394052"/>
+<text x="867" y="750" fill="#dce0e8" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#17</text>
+<line x1="84" y1="770" x2="1124" y2="770" stroke="#26202f" stroke-width="1"/>
+<rect x="68" y="770" width="1074" height="38" fill="#1b1722"/>
+<text x="600" y="796" fill="#a99db4" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="800" text-anchor="middle" letter-spacing="1.2">TENDENCY</text>
+<text x="100" y="840" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start" letter-spacing="0">-6.6%</text>
+<rect x="339" y="817" width="60" height="31" rx="15" fill="#2e2440"/>
+<text x="369" y="839" fill="#c8b1ed" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#26</text>
+<text x="618" y="840" fill="#cfc8d5" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="0">Pass rate over expected</text>
+<text x="1136" y="840" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="end" letter-spacing="0">+0.1%</text>
+<rect x="837" y="817" width="60" height="31" rx="15" fill="#2e2440"/>
+<text x="867" y="839" fill="#c8b1ed" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#11</text>
+<line x1="84" y1="859" x2="1124" y2="859" stroke="#26202f" stroke-width="1"/>
+<rect x="68" y="859" width="1074" height="51" fill="#17131d"/>
+<text x="100" y="891" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start" letter-spacing="0">1.7%</text>
+<rect x="339" y="868" width="60" height="31" rx="15" fill="#2e2440"/>
+<text x="369" y="890" fill="#c8b1ed" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#26</text>
+<text x="618" y="891" fill="#cfc8d5" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="0">No-huddle rate</text>
+<text x="1136" y="891" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="end" letter-spacing="0">1.4%</text>
+<rect x="837" y="868" width="60" height="31" rx="15" fill="#2e2440"/>
+<text x="867" y="890" fill="#c8b1ed" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#29</text>
+<line x1="84" y1="910" x2="1124" y2="910" stroke="#26202f" stroke-width="1"/>
+<rect x="58" y="944" width="1084" height="694" rx="18" fill="#121019" stroke="#332940" stroke-width="2"/>
+<rect x="58" y="944" width="10" height="694" rx="5" fill="#e8bc55"/>
+<text x="88" y="975" fill="#e8bc55" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" text-anchor="start" letter-spacing="1.6">WHEN THE SAINTS HAVE THE BALL</text>
+<text x="88" y="1014" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="800" text-anchor="start" letter-spacing="0">SAINTS OFFENSE</text>
+<text x="1112" y="1014" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="800" text-anchor="end" letter-spacing="0">RAVENS DEFENSE</text>
+<text x="600" y="1012" fill="#756b80" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">VS</text>
+<line x1="80" y1="1038" x2="1124" y2="1038" stroke="#332940" stroke-width="2"/>
+<rect x="68" y="1038" width="1074" height="38" fill="#1b1722"/>
+<text x="600" y="1064" fill="#a99db4" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="800" text-anchor="middle" letter-spacing="1.2">EFFICIENCY &amp; EXECUTION</text>
+<text x="100" y="1108" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start" letter-spacing="0">-0.01</text>
+<rect x="339" y="1085" width="60" height="31" rx="15" fill="#394052"/>
+<text x="369" y="1107" fill="#dce0e8" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#18</text>
+<text x="618" y="1108" fill="#cfc8d5" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="0">EPA / play</text>
+<text x="1136" y="1108" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="end" letter-spacing="0">-0.24</text>
+<rect x="837" y="1085" width="60" height="31" rx="15" fill="#e8bc55"/>
+<text x="867" y="1107" fill="#18121f" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#6</text>
+<line x1="84" y1="1127" x2="1124" y2="1127" stroke="#26202f" stroke-width="1"/>
+<rect x="68" y="1127" width="1074" height="51" fill="#17131d"/>
+<text x="100" y="1159" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start" letter-spacing="0">42.9%</text>
+<rect x="339" y="1136" width="60" height="31" rx="15" fill="#394052"/>
+<text x="369" y="1158" fill="#dce0e8" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#17</text>
+<text x="618" y="1159" fill="#cfc8d5" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="0">Success rate</text>
+<text x="1136" y="1159" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="end" letter-spacing="0">41.5%</text>
+<rect x="837" y="1136" width="60" height="31" rx="15" fill="#7d58b3"/>
+<text x="867" y="1158" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#10</text>
+<line x1="84" y1="1178" x2="1124" y2="1178" stroke="#26202f" stroke-width="1"/>
+<text x="100" y="1210" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start" letter-spacing="0">-0.02</text>
+<rect x="339" y="1187" width="60" height="31" rx="15" fill="#394052"/>
+<text x="369" y="1209" fill="#dce0e8" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#17</text>
+<text x="618" y="1210" fill="#cfc8d5" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="0">Early-down EPA / play</text>
+<text x="1136" y="1210" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="end" letter-spacing="0">-0.21</text>
+<rect x="837" y="1187" width="60" height="31" rx="15" fill="#e8bc55"/>
+<text x="867" y="1209" fill="#18121f" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#4</text>
+<line x1="84" y1="1229" x2="1124" y2="1229" stroke="#26202f" stroke-width="1"/>
+<rect x="68" y="1229" width="1074" height="51" fill="#17131d"/>
+<text x="100" y="1261" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start" letter-spacing="0">-0.00</text>
+<rect x="339" y="1238" width="60" height="31" rx="15" fill="#394052"/>
+<text x="369" y="1260" fill="#dce0e8" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#17</text>
+<text x="618" y="1261" fill="#cfc8d5" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="0">Pass EPA / play</text>
+<text x="1136" y="1261" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="end" letter-spacing="0">-0.46</text>
+<rect x="837" y="1238" width="60" height="31" rx="15" fill="#e8bc55"/>
+<text x="867" y="1260" fill="#18121f" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#2</text>
+<line x1="84" y1="1280" x2="1124" y2="1280" stroke="#26202f" stroke-width="1"/>
+<text x="100" y="1312" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start" letter-spacing="0">-0.02</text>
+<rect x="339" y="1289" width="60" height="31" rx="15" fill="#394052"/>
+<text x="369" y="1311" fill="#dce0e8" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#18</text>
+<text x="618" y="1312" fill="#cfc8d5" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="0">Rush EPA / play</text>
+<text x="1136" y="1312" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="end" letter-spacing="0">+0.12</text>
+<rect x="837" y="1289" width="60" height="31" rx="15" fill="#4a223f"/>
+<text x="867" y="1311" fill="#f3badc" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#28</text>
+<line x1="84" y1="1331" x2="1124" y2="1331" stroke="#26202f" stroke-width="1"/>
+<rect x="68" y="1331" width="1074" height="51" fill="#17131d"/>
+<text x="100" y="1363" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start" letter-spacing="0">9.5%</text>
+<rect x="339" y="1340" width="60" height="31" rx="15" fill="#394052"/>
+<text x="369" y="1362" fill="#dce0e8" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#17</text>
+<text x="618" y="1363" fill="#cfc8d5" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="0">Explosive-play rate</text>
+<text x="1136" y="1363" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="end" letter-spacing="0">13.2%</text>
+<rect x="837" y="1340" width="60" height="31" rx="15" fill="#4a223f"/>
+<text x="867" y="1362" fill="#f3badc" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#27</text>
+<line x1="84" y1="1382" x2="1124" y2="1382" stroke="#26202f" stroke-width="1"/>
+<text x="100" y="1414" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start" letter-spacing="0">-1.2%</text>
+<rect x="339" y="1391" width="60" height="31" rx="15" fill="#394052"/>
+<text x="369" y="1413" fill="#dce0e8" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#21</text>
+<text x="618" y="1414" fill="#cfc8d5" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="0">Completion pct. over expected</text>
+<text x="1136" y="1414" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="end" letter-spacing="0">-5.1%</text>
+<rect x="837" y="1391" width="60" height="31" rx="15" fill="#e8bc55"/>
+<text x="867" y="1413" fill="#18121f" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#7</text>
+<line x1="84" y1="1433" x2="1124" y2="1433" stroke="#26202f" stroke-width="1"/>
+<rect x="68" y="1433" width="1074" height="51" fill="#17131d"/>
+<text x="100" y="1465" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start" letter-spacing="0">50.0%</text>
+<rect x="339" y="1442" width="60" height="31" rx="15" fill="#7d58b3"/>
+<text x="369" y="1464" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#9</text>
+<text x="618" y="1465" fill="#cfc8d5" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="0">Third-down conversion</text>
+<text x="1136" y="1465" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="end" letter-spacing="0">30.0%</text>
+<rect x="837" y="1442" width="60" height="31" rx="15" fill="#7d58b3"/>
+<text x="867" y="1464" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#11</text>
+<line x1="84" y1="1484" x2="1124" y2="1484" stroke="#26202f" stroke-width="1"/>
+<rect x="68" y="1484" width="1074" height="38" fill="#1b1722"/>
+<text x="600" y="1510" fill="#a99db4" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="800" text-anchor="middle" letter-spacing="1.2">TENDENCY</text>
+<text x="100" y="1554" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start" letter-spacing="0">+5.1%</text>
+<rect x="339" y="1531" width="60" height="31" rx="15" fill="#2e2440"/>
+<text x="369" y="1553" fill="#c8b1ed" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#2</text>
+<text x="618" y="1554" fill="#cfc8d5" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="0">Pass rate over expected</text>
+<text x="1136" y="1554" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="end" letter-spacing="0">-4.5%</text>
+<rect x="837" y="1531" width="60" height="31" rx="15" fill="#2e2440"/>
+<text x="867" y="1553" fill="#c8b1ed" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#21</text>
+<line x1="84" y1="1573" x2="1124" y2="1573" stroke="#26202f" stroke-width="1"/>
+<rect x="68" y="1573" width="1074" height="51" fill="#17131d"/>
+<text x="100" y="1605" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="start" letter-spacing="0">22.6%</text>
+<rect x="339" y="1582" width="60" height="31" rx="15" fill="#2e2440"/>
+<text x="369" y="1604" fill="#c8b1ed" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#1</text>
+<text x="618" y="1605" fill="#cfc8d5" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="600" text-anchor="middle" letter-spacing="0">No-huddle rate</text>
+<text x="1136" y="1605" fill="#f7f4fb" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" text-anchor="end" letter-spacing="0">13.2%</text>
+<rect x="837" y="1582" width="60" height="31" rx="15" fill="#2e2440"/>
+<text x="867" y="1604" fill="#c8b1ed" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="800" text-anchor="middle" letter-spacing="0">#5</text>
+<line x1="84" y1="1624" x2="1124" y2="1624" stroke="#26202f" stroke-width="1"/>
+<text x="58" y="1680" fill="#7f7588" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" text-anchor="start" letter-spacing="0.8">SOURCE: NFLVERSE PLAY-BY-PLAY · REGULAR SEASON THROUGH WEEK 1 · EARLY-SEASON SAMPLE</text>
+<text x="1142" y="1680" fill="#9b6ee6" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="800" text-anchor="end" letter-spacing="1.1">DUALEIGHTS.COM</text>
+</svg>

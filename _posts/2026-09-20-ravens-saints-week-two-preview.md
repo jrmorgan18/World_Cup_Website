@@ -38,11 +38,6 @@ That could make a game that looks like an easy win for the Ravens more interesti
   <figcaption>The baseline numbers for the Ravens’ Week 2 home opener. Dual Eights graphic.</figcaption>
 </figure>
 
-<figure class="ravens-article-figure ravens-article-figure--graphic">
-  <img src="{{ '/assets/images/ravens/saints-week-two-2026/ravens-saints-injury-watch-2026.png' | relative_url }}" alt="Ravens and Saints Week 2 injury watch, including Zay Flowers, Ronnie Stanley, Chris Olave and Chase Young" loading="lazy">
-  <figcaption>The availability picture is as important as the game plan. Dual Eights graphic.</figcaption>
-</figure>
-
 <p class="ravens-dashboard-inline"><strong>Follow the live model:</strong> The <a href="{{ '/ravens/dashboard/' | relative_url }}">Ravens Season Dashboard</a> tracks current efficiency, matchup data, injuries and unit trends through game day.</p>
 
 ## The Saints have to prove Detroit did not expose something
@@ -58,6 +53,11 @@ Without Flowers, New Orleans can devote more safety help toward Henry unless Ras
 <figure class="ravens-article-figure">
   <img src="{{ '/assets/images/ravens/week-one-colts-2026/lamar-jackson-colts-week-one.jpg' | relative_url }}" alt="Lamar Jackson throws during the Ravens' Week 1 win over the Indianapolis Colts" loading="lazy">
   <figcaption>Lamar Jackson throws during Week 1 in Indianapolis. <a href="https://www.baltimoreravens.com/photos/game-action-gallery-ravens-at-colts-week-1" rel="noopener">Shawn Hubbard / Baltimore Ravens Photos</a></figcaption>
+</figure>
+
+<figure class="ravens-article-figure ravens-article-figure--graphic">
+  <img src="{{ '/assets/images/ravens/saints-week-two-2026/ravens-saints-matchup-dna.svg' | relative_url }}" alt="League-ranked Ravens offense versus Saints defense and Saints offense versus Ravens defense matchup comparison" loading="lazy">
+  <figcaption>Dual Eights matchup profile, calculated from <a href="https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html" rel="noopener">nflverse play-by-play data</a> through Week 1. League ranks are based on a one-game sample.</figcaption>
 </figure>
 
 ## The Ravens’ pressure could decide the afternoon
@@ -82,6 +82,11 @@ Kyle Hamilton, Marlon Humphrey and Keyon Martin matter here, too. Hamilton’s p
 <figure class="ravens-article-figure">
   <img src="{{ '/assets/images/ravens/week-one-colts-2026/kyle-hamilton-colts-week-one.jpg' | relative_url }}" alt="Kyle Hamilton tackles Colts receiver Josh Downs during the Ravens' Week 1 win" loading="lazy">
   <figcaption>Kyle Hamilton brings down Josh Downs in Indianapolis. <a href="https://www.baltimoreravens.com/photos/game-action-gallery-ravens-at-colts-week-1" rel="noopener">Shawn Hubbard / Baltimore Ravens Photos</a></figcaption>
+</figure>
+
+<figure class="ravens-article-figure ravens-article-figure--graphic">
+  <img src="{{ '/assets/images/ravens/saints-week-two-2026/ravens-saints-injury-watch-2026.png' | relative_url }}" alt="Ravens and Saints Week 2 injury watch, including Zay Flowers, Ronnie Stanley, Chris Olave and Chase Young" loading="lazy">
+  <figcaption>The availability picture is as important as the game plan. Dual Eights graphic.</figcaption>
 </figure>
 
 ## The inactive list could rewrite the offensive plan
