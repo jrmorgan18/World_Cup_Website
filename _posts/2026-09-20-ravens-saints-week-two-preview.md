@@ -11,9 +11,11 @@ excerpt: "The Ravens’ Week 2 home opener is a test of whether Derrick Henry, L
 read_time: 7
 suppress_article_prompts: true
 source_docx: "articles/Ravens-Saints Preview.docx"
-hero_image: /assets/images/ravens/saints-week-two-2026/ravens-saints-at-a-glance-2026.png
+hero_image: /assets/images/ravens/saints-week-two-2026/ravens-henry-lamar-colts-week-one.jpg
 hero_wide: true
-hero_alt: "Ravens vs. Saints Week 2 at a glance, featuring Week 1 results and key matchup numbers"
+hero_alt: "Lamar Jackson and Derrick Henry celebrate during the Ravens' Week 1 win over the Indianapolis Colts"
+hero_credit: "Shawn Hubbard / Baltimore Ravens Photos"
+hero_credit_url: "https://www.baltimoreravens.com/photos/game-action-gallery-ravens-at-colts-week-1"
 home_feature: true
 home_recent: true
 ravens_feature: true
@@ -30,6 +32,11 @@ Week 2 asks a tougher question: does the structure still work when one of its mo
 Zay Flowers is out with a hamstring injury after turning five catches into 150 yards in the opener. Nnamdi Madubuike and Teddye Buchanan are also still out, while Ronnie Stanley, John Simpson and Trey Hendrickson enter Sunday questionable. The Saints have their own uncertainty, most notably Chris Olave and Chase Young, but expect Alvin Kamara and Cameron Jordan back after both missed Week 1.
 
 That could make a game that looks like an easy win for the Ravens more interesting than we may like.
+
+<figure class="ravens-article-figure ravens-article-figure--graphic">
+  <img src="{{ '/assets/images/ravens/saints-week-two-2026/ravens-saints-at-a-glance-2026.png' | relative_url }}" alt="Ravens vs. Saints Week 2 at a glance, featuring Week 1 results and key matchup numbers" loading="lazy">
+  <figcaption>The baseline numbers for the Ravens’ Week 2 home opener. Dual Eights graphic.</figcaption>
+</figure>
 
 <figure class="ravens-article-figure ravens-article-figure--graphic">
   <img src="{{ '/assets/images/ravens/saints-week-two-2026/ravens-saints-injury-watch-2026.png' | relative_url }}" alt="Ravens and Saints Week 2 injury watch, including Zay Flowers, Ronnie Stanley, Chris Olave and Chase Young" loading="lazy">
