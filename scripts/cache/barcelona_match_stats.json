@@ -1,5 +1,271 @@
 {
   "matches": {
+    "401882859": {
+      "away_score": 3,
+      "away_team": "83",
+      "barcelona_minutes": [
+        {
+          "minutes": 90,
+          "played": true,
+          "player_id": "187946",
+          "starter": true
+        },
+        {
+          "minutes": 59,
+          "played": true,
+          "player_id": "186430",
+          "starter": true
+        },
+        {
+          "minutes": 90,
+          "played": true,
+          "player_id": "368992",
+          "starter": true
+        },
+        {
+          "minutes": 90,
+          "played": true,
+          "player_id": "176399",
+          "starter": true
+        },
+        {
+          "minutes": 90,
+          "played": true,
+          "player_id": "128714",
+          "starter": true
+        },
+        {
+          "minutes": 90,
+          "played": true,
+          "player_id": "231828",
+          "starter": true
+        },
+        {
+          "minutes": 85,
+          "played": true,
+          "player_id": "250465",
+          "starter": true
+        },
+        {
+          "minutes": 76,
+          "played": true,
+          "player_id": "354334",
+          "starter": true
+        },
+        {
+          "minutes": 76,
+          "played": true,
+          "player_id": "231050",
+          "starter": true
+        },
+        {
+          "minutes": 85,
+          "played": true,
+          "player_id": "268782",
+          "starter": true
+        },
+        {
+          "minutes": 90,
+          "played": true,
+          "player_id": "362150",
+          "starter": true
+        },
+        {
+          "minutes": 0,
+          "played": false,
+          "player_id": "399200",
+          "starter": false
+        },
+        {
+          "minutes": 14,
+          "played": true,
+          "player_id": "227765",
+          "starter": false
+        },
+        {
+          "minutes": 0,
+          "played": false,
+          "player_id": "403582",
+          "starter": false
+        },
+        {
+          "minutes": 0,
+          "played": false,
+          "player_id": "403576",
+          "starter": false
+        },
+        {
+          "minutes": 0,
+          "played": false,
+          "player_id": "231692",
+          "starter": false
+        },
+        {
+          "minutes": 0,
+          "played": false,
+          "player_id": "323702",
+          "starter": false
+        },
+        {
+          "minutes": 0,
+          "played": false,
+          "player_id": "131634",
+          "starter": false
+        },
+        {
+          "minutes": 5,
+          "played": true,
+          "player_id": "376423",
+          "starter": false
+        },
+        {
+          "minutes": 14,
+          "played": true,
+          "player_id": "274913",
+          "starter": false
+        },
+        {
+          "minutes": 5,
+          "played": true,
+          "player_id": "217289",
+          "starter": false
+        },
+        {
+          "minutes": 0,
+          "played": false,
+          "player_id": "323703",
+          "starter": false
+        },
+        {
+          "minutes": 31,
+          "played": true,
+          "player_id": "312015",
+          "starter": false
+        }
+      ],
+      "competition": "laliga",
+      "date": "2026-09-19T19:00Z",
+      "event_id": "401882859",
+      "home_score": 1,
+      "home_team": "243",
+      "stats": {
+        "243": {
+          "accuratePasses": 203.0,
+          "attemptsConcededIbox": 12.0,
+          "ballRecovery": 44.0,
+          "bigChanceCreated": 1.0,
+          "defensiveActions": 19.0,
+          "expectedGoals": 0.449,
+          "expectedGoalsConceded": 3.262,
+          "finalThirdEntries": 52.0,
+          "foulsCommitted": 10.0,
+          "goalsPrevented": -1.407,
+          "interceptions": 2.0,
+          "offsideProvoked": 0.0,
+          "penAreaEntries": 17.0,
+          "possWonAtt3rd": 7.0,
+          "possessionPct": 30.5,
+          "ppda": 22.8,
+          "redCards": 0.0,
+          "saves": 5.0,
+          "shotsOnTarget": 3.0,
+          "totalPasses": 278.0,
+          "totalShots": 7.0,
+          "totalTackles": 21.0,
+          "touchesInOppBox": 13.0,
+          "yellowCards": 1.0
+        },
+        "83": {
+          "accuratePasses": 581.0,
+          "attemptsConcededIbox": 3.0,
+          "ballRecovery": 44.0,
+          "bigChanceCreated": 4.0,
+          "defensiveActions": 26.0,
+          "expectedGoals": 3.262,
+          "expectedGoalsConceded": 0.449,
+          "finalThirdEntries": 77.0,
+          "foulsCommitted": 11.0,
+          "goalsPrevented": -0.142,
+          "interceptions": 10.0,
+          "offsideProvoked": 0.0,
+          "penAreaEntries": 21.0,
+          "possWonAtt3rd": 4.0,
+          "possessionPct": 69.5,
+          "ppda": 8.5,
+          "redCards": 0.0,
+          "saves": 2.0,
+          "shotsOnTarget": 7.0,
+          "totalPasses": 642.0,
+          "totalShots": 24.0,
+          "totalTackles": 15.0,
+          "touchesInOppBox": 28.0,
+          "yellowCards": 0.0
+        }
+      }
+    },
+    "401882860": {
+      "away_score": 1,
+      "away_team": "101",
+      "competition": "laliga",
+      "date": "2026-09-19T12:00Z",
+      "event_id": "401882860",
+      "home_score": 1,
+      "home_team": "97",
+      "stats": {
+        "101": {
+          "accuratePasses": 396.0,
+          "attemptsConcededIbox": 8.0,
+          "ballRecovery": 43.0,
+          "bigChanceCreated": 1.0,
+          "defensiveActions": 24.0,
+          "expectedGoals": 1.19,
+          "expectedGoalsConceded": 0.547,
+          "finalThirdEntries": 60.0,
+          "foulsCommitted": 13.0,
+          "goalsPrevented": -0.242,
+          "interceptions": 5.0,
+          "offsideProvoked": 0.0,
+          "penAreaEntries": 26.0,
+          "possWonAtt3rd": 3.0,
+          "possessionPct": 62.8,
+          "ppda": 8.8,
+          "redCards": 0.0,
+          "saves": 2.0,
+          "shotsOnTarget": 2.0,
+          "totalPasses": 475.0,
+          "totalShots": 19.0,
+          "totalTackles": 21.0,
+          "touchesInOppBox": 15.0,
+          "yellowCards": 2.0
+        },
+        "97": {
+          "accuratePasses": 188.0,
+          "attemptsConcededIbox": 6.0,
+          "ballRecovery": 42.0,
+          "bigChanceCreated": 0.0,
+          "defensiveActions": 30.0,
+          "expectedGoals": 0.547,
+          "expectedGoalsConceded": 1.19,
+          "finalThirdEntries": 60.0,
+          "foulsCommitted": 21.0,
+          "goalsPrevented": -0.612,
+          "interceptions": 8.0,
+          "offsideProvoked": 0.0,
+          "penAreaEntries": 28.0,
+          "possWonAtt3rd": 3.0,
+          "possessionPct": 37.2,
+          "ppda": 12.8,
+          "redCards": 0.0,
+          "saves": 1.0,
+          "shotsOnTarget": 3.0,
+          "totalPasses": 268.0,
+          "totalShots": 9.0,
+          "totalTackles": 9.0,
+          "touchesInOppBox": 21.0,
+          "yellowCards": 3.0
+        }
+      }
+    },
     "401882862": {
       "away_score": 3,
       "away_team": "3751",
@@ -60,6 +326,132 @@
           "totalTackles": 16.0,
           "touchesInOppBox": 34.0,
           "yellowCards": 2.0
+        }
+      }
+    },
+    "401882864": {
+      "away_score": 0,
+      "away_team": "87",
+      "competition": "laliga",
+      "date": "2026-09-19T16:30Z",
+      "event_id": "401882864",
+      "home_score": 5,
+      "home_team": "85",
+      "stats": {
+        "85": {
+          "accuratePasses": 371.0,
+          "attemptsConcededIbox": 6.0,
+          "ballRecovery": 54.0,
+          "bigChanceCreated": 2.0,
+          "defensiveActions": 36.0,
+          "expectedGoals": 2.084,
+          "expectedGoalsConceded": 0.615,
+          "finalThirdEntries": 48.0,
+          "foulsCommitted": 13.0,
+          "goalsPrevented": 0.221,
+          "interceptions": 16.0,
+          "offsideProvoked": 0.0,
+          "penAreaEntries": 20.0,
+          "possWonAtt3rd": 4.0,
+          "possessionPct": 41.2,
+          "ppda": 11.1,
+          "redCards": 0.0,
+          "saves": 5.0,
+          "shotsOnTarget": 9.0,
+          "totalPasses": 428.0,
+          "totalShots": 13.0,
+          "totalTackles": 25.0,
+          "touchesInOppBox": 17.0,
+          "yellowCards": 2.0
+        },
+        "87": {
+          "accuratePasses": 539.0,
+          "attemptsConcededIbox": 8.0,
+          "ballRecovery": 54.0,
+          "bigChanceCreated": 0.0,
+          "defensiveActions": 19.0,
+          "expectedGoals": 0.615,
+          "expectedGoalsConceded": 2.084,
+          "finalThirdEntries": 65.0,
+          "foulsCommitted": 11.0,
+          "goalsPrevented": -1.624,
+          "interceptions": 4.0,
+          "offsideProvoked": 0.0,
+          "penAreaEntries": 25.0,
+          "possWonAtt3rd": 3.0,
+          "possessionPct": 58.8,
+          "ppda": 17.4,
+          "redCards": 0.0,
+          "saves": 4.0,
+          "shotsOnTarget": 5.0,
+          "totalPasses": 607.0,
+          "totalShots": 11.0,
+          "totalTackles": 15.0,
+          "touchesInOppBox": 17.0,
+          "yellowCards": 5.0
+        }
+      }
+    },
+    "401882866": {
+      "away_score": 0,
+      "away_team": "96",
+      "competition": "laliga",
+      "date": "2026-09-19T14:15Z",
+      "event_id": "401882866",
+      "home_score": 0,
+      "home_team": "93",
+      "stats": {
+        "93": {
+          "accuratePasses": 560.0,
+          "attemptsConcededIbox": 0.0,
+          "ballRecovery": 55.0,
+          "bigChanceCreated": 0.0,
+          "defensiveActions": 36.0,
+          "expectedGoals": 1.649,
+          "expectedGoalsConceded": 0.047,
+          "finalThirdEntries": 81.0,
+          "foulsCommitted": 14.0,
+          "goalsPrevented": 0.0,
+          "interceptions": 13.0,
+          "offsideProvoked": 0.0,
+          "penAreaEntries": 35.0,
+          "possWonAtt3rd": 4.0,
+          "possessionPct": 69.0,
+          "ppda": 7.2,
+          "redCards": 0.0,
+          "saves": 0.0,
+          "shotsOnTarget": 6.0,
+          "totalPasses": 621.0,
+          "totalShots": 24.0,
+          "totalTackles": 22.0,
+          "touchesInOppBox": 28.0,
+          "yellowCards": 2.0
+        },
+        "96": {
+          "accuratePasses": 208.0,
+          "attemptsConcededIbox": 9.0,
+          "ballRecovery": 50.0,
+          "bigChanceCreated": 0.0,
+          "defensiveActions": 19.0,
+          "expectedGoals": 0.047,
+          "expectedGoalsConceded": 1.649,
+          "finalThirdEntries": 36.0,
+          "foulsCommitted": 13.0,
+          "goalsPrevented": 0.791,
+          "interceptions": 14.0,
+          "offsideProvoked": 0.0,
+          "penAreaEntries": 8.0,
+          "possWonAtt3rd": 0.0,
+          "possessionPct": 31.0,
+          "ppda": 20.2,
+          "redCards": 0.0,
+          "saves": 6.0,
+          "shotsOnTarget": 0.0,
+          "totalPasses": 279.0,
+          "totalShots": 2.0,
+          "totalTackles": 17.0,
+          "touchesInOppBox": 5.0,
+          "yellowCards": 0.0
         }
       }
     },
