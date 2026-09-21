@@ -2811,6 +2811,14 @@ details[open] > summary .gc-toggle::after { transform:rotate(0); }
 .barca-hero-splits dd { margin-top:5px; color:#fff; font-family:var(--font-display); font-size:.92rem; }
 .barca-form-strip { margin-top:16px; display:flex; flex-wrap:wrap; gap:5px; }
 .barca-result { display:inline-flex; align-items:center; justify-content:center; width:25px; height:25px; color:#0a1424; font-family:var(--font-display); font-size:.68rem; font-weight:700; }
+.barca-feature-article { display:grid; grid-template-columns:156px minmax(0,1fr); gap:0; margin:26px 0 0; overflow:hidden; border:1px solid var(--color-border); background:#101d30; color:#fff; text-decoration:none; }
+.barca-feature-article:hover { border-color:var(--barca-gold); }
+.barca-feature-article img { width:156px; height:116px; object-fit:cover; }
+.barca-feature-article-copy { display:flex; flex-direction:column; justify-content:center; padding:15px 19px; }
+.barca-feature-article-copy small { color:var(--barca-gold); font-family:var(--font-display); font-size:.56rem; font-weight:700; letter-spacing:1.2px; text-transform:uppercase; }
+.barca-feature-article-copy strong { max-width:760px; margin-top:5px; color:#fff; font-family:var(--font-display); font-size:1.04rem; line-height:1.03; text-transform:uppercase; }
+.barca-feature-article-copy em { margin-top:8px; color:#9fb0c4; font-family:var(--font-display); font-size:.58rem; font-style:normal; letter-spacing:.7px; text-transform:uppercase; }
+.barca-feature-article-copy b { color:var(--barca-gold); }
 .barca-result--w { background:var(--barca-gold); }
 .barca-result--d { color:#e8eef5; background:#3b5573; }
 .barca-result--l { color:#fff; background:var(--barca-garnet); }
@@ -3063,6 +3071,10 @@ details[open] > summary .gc-toggle::after { transform:rotate(0); }
 @media (max-width: 680px) {
   .barca-dashboard { padding:0 18px 64px; }
   .barca-hero { margin:0 -18px; padding:40px 18px 34px; }
+  .barca-feature-article { grid-template-columns:112px minmax(0,1fr); margin-top:18px; }
+  .barca-feature-article img { width:112px; height:112px; }
+  .barca-feature-article-copy { padding:12px; }
+  .barca-feature-article-copy strong { font-size:.82rem; }
   .barca-jump { margin:0 -18px; padding:0 14px; top:64px; }
   .barca-jump button { padding:13px 10px; font-size:.58rem; }
   .barca-match-card { padding:22px 18px; }

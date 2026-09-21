@@ -12,6 +12,7 @@ section_theme: barcelona
 {% assign overall = stats.all_competitions %}
 {% assign rotation = stats.rotation %}
 {% assign congestion = stats.congestion %}
+{% assign barcelona_feature_story = site.posts | where: "barcelona_breaking_feature", true | first %}
 
 {% assign laliga_current = laliga.snapshots | last %}
 {% assign laliga_previous = laliga.snapshots | where: "id", laliga_current.previous_snapshot | first %}
@@ -64,6 +65,13 @@ section_theme: barcelona
       </div>
     </div>
   </header>
+
+  {% if barcelona_feature_story %}
+  <a class="barca-feature-article" href="{{ barcelona_feature_story.url | relative_url }}">
+    <img src="{{ barcelona_feature_story.thumbnail | default: barcelona_feature_story.hero_image | relative_url }}" alt="{{ barcelona_feature_story.hero_alt | escape }}" loading="eager">
+    <span class="barca-feature-article-copy"><small>Featured analysis</small><strong>{{ barcelona_feature_story.title }}</strong><em>Read the feature <b aria-hidden="true">→</b></em></span>
+  </a>
+  {% endif %}
 
   <nav class="barca-jump" aria-label="Dashboard sections" role="tablist" data-dashboard-tablist>
     <button type="button" id="barca-tab-matches" role="tab" aria-controls="matches" aria-selected="true">Match center</button>
