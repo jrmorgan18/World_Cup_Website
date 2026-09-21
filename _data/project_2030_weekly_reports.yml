@@ -1,4 +1,307 @@
 reports:
+  - id: "2026-09-20"
+    group: prospects
+    group_label: Prospects
+    published: "September 21, 2026"
+    window: "September 14-20, 2026"
+    week_ending: "September 20, 2026"
+    source_note: "Official club, league, competition and U.S. Soccer records were checked first, followed by local club-specific reporting and local-language coverage. The late Sunday European and MLS matches, plus Damion Downs' September 20 USMNT addition, are included. Julian Hall's research alias was reconciled to the same player. Facts below are verified; the development read is scouting interpretation, and unreported statistics are not inferred."
+    summary:
+      biggest_risers: "Cavan Sullivan scored, assisted and earned his first senior USMNT call-up; Peyton Miller delivered his first MLS brace immediately after his own first call-up; and Julian Hall ended a 12-match MLS scoring drought with the Hudson River Derby winner. Beau Leroux added an assist, Niko Tsakiris helped draw a red card and earned a secondary assist, Frankie Westfield assisted, Luca Bombino made his Stoke debut, and Cole Campbell played 87 Bundesliga minutes."
+      issues_to_monitor: "Rokas Pukstas and Benjamin Cremaschi were unused in two league matches apiece, so their new-club roles remain unsettled. Caleb Wiley missed Preston's match while recovering from a minor injury, Kevin Paredes remains out for several months, and Diego Kochen conceded four in a difficult Lyngby loss. Zavier Gozo and Mathis Albert had no club minutes, while San Diego had no match for Duran Ferree."
+      best_story: "The first senior USMNT roster of the 2030 cycle named 12 first-time call-ups, including Cavan Sullivan, Julian Hall, Justin Ellis, Adri Mehmeti, Neil Pierre, Zavier Gozo, Mathis Albert, Diego Kochen, Peyton Miller, Frankie Westfield and Cole Campbell from this board. Chris Brady returned and Damion Downs was added on Sunday, making the international window the next major development test."
+    players:
+      - profile: caleb-wiley
+        name: Caleb Wiley
+        club: Preston North End
+        trend: "✚"
+        direction: insufficient
+        direction_label: Injured
+        context: No competitive appearance
+        recap: "Wiley was not in Preston's squad for the 2-2 Championship draw at QPR on September 19. Local team news reported that he remained out while recovering from the minor problem that also kept him out against Lincoln; the prior update described stiffness after travel rather than a significant new injury."
+        development_read: "No performance evaluation this week. The absence interrupts his attempt to establish a starting role, but the available reporting describes a short-term fitness issue rather than a changed depth-chart decision."
+        sources:
+          - { label: "Preston team news via Lancashire Evening Post (local)", url: "https://at.headtopics.com/news/qpr-v-preston-north-end-team-news-two-changes-as-hughes-87916365" }
+          - { label: "QPR-Preston match report (competition broadcaster)", url: "https://www.skysports.com/football/queens-park-rangers-vs-preston-north-end/live/560590" }
+      - profile: damion-downs
+        name: Damion Downs
+        club: St. Louis CITY SC
+        trend: "↑"
+        direction: rising
+        direction_label: USMNT call-up
+        context: Two substitute appearances; senior roster addition
+        recap: "Downs entered in the 78th minute of St. Louis' 3-0 U.S. Open Cup semifinal win at Colorado and in the 83rd minute of the 3-1 MLS win over Toronto. He recorded no goal or assist, but helped St. Louis reach its first Open Cup final. U.S. Soccer then added him to the senior roster on September 20 after Ricardo Pepi withdrew injured."
+        development_read: "The club role remains a short-bench assignment, but two appearances in a winning week plus a return to the senior national team move his outlook forward. The next question is whether the international window can help him compete for more St. Louis minutes."
+        sources:
+          - { label: "Open Cup semifinal report (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usoc/match-recap-st-louis-city-vs-colorado-rapids-open-cup-semifinal" }
+          - { label: "St. Louis-Toronto report (official club)", url: "https://www.stlcitysc.com/news/match-report-st-louis-city-sc-earns-three-points-at-energizer-park-with-3-1-win-over-toronto-fc" }
+          - { label: "Downs roster addition (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt/damion-downs-added-to-fall-roster" }
+      - profile: zavier-gozo
+        name: Zavier Gozo
+        club: Crystal Palace
+        trend: "↑"
+        direction: rising
+        direction_label: First USMNT call-up
+        context: No club minutes; senior roster selection
+        recap: "Gozo did not appear in Palace's 4-0 Europa League win over Lech Poznan and was an unused substitute in the 0-0 Premier League draw at Leeds. His major development was selection for his first senior USMNT camp."
+        development_read: "The first call-up is a meaningful rise in national-team standing, even though this week supplied no new club performance evidence. Breaking into Palace's match rotation remains the more important long-term test."
+        sources:
+          - { label: "Palace-Lech report and lineups (official club)", url: "https://www.cpfc.co.uk/news/match-reports/match-report-highlights-crystal-palace-lech-poznan-september-2026/" }
+          - { label: "Leeds-Palace lineups (secondary match record)", url: "https://en.as.com/resultados/futbol/inglaterra/2026_2027/directo/regular_a_5_6a38cde94569c29/alineaciones/amp/" }
+          - { label: "USMNT roster (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt/mauricio-pochettino-september-october-roster" }
+      - profile: julian-hall
+        name: Julian Hall
+        club: New York Red Bulls
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        context: 1 start, 84 minutes, 1 goal
+        recap: "Hall started the Hudson River Derby at center forward and scored the 57th-minute winner in Red Bull New York's 1-0 victory at NYCFC. He pressed an errant back pass, beat Matt Freese to the ball and finished calmly before leaving in the 84th minute. The goal ended a 12-match MLS scoring drought and arrived one day after his first senior USMNT call-up."
+        development_read: "This was a high-value striker week: decisive pressing, a composed finish in a rivalry match and senior international recognition. Ending the drought while retaining a major starting role materially strengthens his Project 2030 case."
+        sources:
+          - { label: "Hudson River Derby feature (official MLS)", url: "https://fantasy.mlssoccer.com/news/fresh-off-usmnt-call-up-julian-hall-plays-hudson-river-derby-hero" }
+          - { label: "USMNT roster (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt/mauricio-pochettino-september-october-roster" }
+      - profile: justin-ellis
+        name: Justin Ellis
+        club: Orlando City
+        trend: "↑"
+        direction: rising
+        direction_label: First USMNT call-up
+        context: 1 start, 90 minutes
+        recap: "Ellis played the full match as Orlando lost 4-2 at New England. His pass into Martín Ojeda deflected into Iván Angulo's path for Orlando's first goal, so he helped create the scoring sequence without receiving an official assist. He was also named to his first senior USMNT roster."
+        development_read: "A full senior start and involvement in a goal sequence add useful club evidence, while the first national-team call-up confirms the wider rise in his standing. The team result was poor, but his individual development direction remains positive."
+        sources:
+          - { label: "New England-Orlando recap and lineups (official New England)", url: "https://www.revolutionsoccer.net/news/recap-revs-defeat-orlando-4-2-third-straight-win" }
+          - { label: "Orlando match report (official club)", url: "https://www.orlandocitysc.com/news/match-report-orlando-city-sc-falls-4-2-at-new-england-revolution" }
+          - { label: "USMNT roster (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt/mauricio-pochettino-september-october-roster" }
+      - profile: adri-mehmeti
+        name: Adri Mehmeti
+        club: New York Red Bulls
+        trend: "↑"
+        direction: rising
+        direction_label: First USMNT call-up
+        context: 1 start, 84 minutes
+        recap: "Mehmeti started in central midfield and played 84 minutes of Red Bull New York's 1-0 derby win at NYCFC, receiving a sixth-minute caution. The clean-sheet victory came one day after he earned his first senior USMNT call-up."
+        development_read: "Returning from last week's injury concern to start and contribute through 84 minutes in a rivalry win is positive availability evidence. The senior call-up adds another clear marker that his composure and distribution are being recognized above youth level."
+        sources:
+          - { label: "NYCFC-Red Bulls lineups (secondary match record)", url: "https://www.worldfootball.net/match-report/co73/usa-major-league-soccer/ma11803873/new-york-city-fc_new-york-rb/live-commentary/" }
+          - { label: "Derby and call-up reaction (official MLS)", url: "https://fantasy.mlssoccer.com/news/fresh-off-usmnt-call-up-julian-hall-plays-hudson-river-derby-hero" }
+      - profile: neil-pierre
+        name: Neil Pierre
+        club: Philadelphia Union
+        trend: "↑"
+        direction: rising
+        direction_label: First USMNT call-up
+        context: 1 start, 90 minutes
+        recap: "Pierre played the full match at center back as Philadelphia recovered from conceding three times in the first 16 minutes to win 4-3 at Sporting Kansas City. It was his 10th MLS start, and he was selected for his first senior USMNT camp."
+        development_read: "The opening defensive collapse prevents this from being graded as a strong club performance, but completing another start during an 11-match unbeaten run and earning senior recognition still advances his broader outlook."
+        sources:
+          - { label: "Philadelphia-Sporting KC box score (official club)", url: "https://www.philadelphiaunion.com/news/box-score-philadelphia-union-4-sporting-kansas-city-3" }
+          - { label: "Union lineup notes (official club)", url: "https://www.philadelphiaunion.com/news/xi-notes-presented-bimbo-philadelphia-union-at-sporting-kansas-city-091926" }
+          - { label: "USMNT roster (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt/mauricio-pochettino-september-october-roster" }
+      - profile: chris-brady
+        name: Chris Brady
+        club: Chicago Fire
+        trend: "→"
+        direction: steady
+        direction_label: Mixed
+        context: 1 start, 90 minutes, 2 saves
+        recap: "Brady played the full match and made two saves in Chicago's 3-0 loss at Supporters' Shield leader Nashville. He was beaten three times as the Fire's seven-match unbeaten run gave way to a second straight loss, then was recalled to the senior USMNT roster after being part of the 2026 World Cup squad."
+        development_read: "The national-team recall confirms his place in the goalkeeper conversation, but the club match did not strengthen his case. With no clear individual error established by the best available records, the week is steady rather than a downgrade."
+        sources:
+          - { label: "Nashville-Chicago lineup (competition record)", url: "https://www.worldfootball.net/match-report/co73/major-league-soccer/ma11803906/nashville-sc_chicago-fire/" }
+          - { label: "Match report and save total (secondary wire report)", url: "https://fieldlevelmedia.com/mls/nashville-sc-blank-chicago-to-become-first-team-to-clinch-playoff-berth/" }
+          - { label: "Brady call-up (official Chicago Fire)", url: "https://matchcenter.chicagofirefc.com/news/chicago-fire-fc-goalkeeper-chris-brady-called-up-to-the-u-s-men-s-national-team-for-september-and-october-matches" }
+      - profile: rokas-pukstas
+        name: Rokas Pukstas
+        club: Middlesbrough
+        trend: "↓"
+        direction: falling
+        direction_label: Role concern
+        context: Two unused substitute appearances
+        recap: "Pukstas was an unused substitute in Middlesbrough's 2-2 home draw with Millwall on September 15 and the 2-2 draw at Birmingham on September 19. He recorded no competitive minutes despite Boro using five substitutes in each match."
+        development_read: "Two more unused benches after only seven cup minutes in the previous week make the early Middlesbrough role a genuine concern. He is in the senior matchday group, but he needs actual Championship minutes for the move to advance his development."
+        sources:
+          - { label: "Middlesbrough-Millwall lineups (competition broadcaster)", url: "https://www.skysports.com/football/middlesbrough-vs-millwall/teams/560562" }
+          - { label: "Birmingham-Middlesbrough lineups (competition broadcaster)", url: "https://www.skysports.com/football/birmingham-city-vs-middlesbrough/teams/560582" }
+      - profile: cavan-sullivan
+        name: Cavan Sullivan
+        club: Philadelphia Union
+        trend: "↑"
+        direction: rising
+        direction_label: Rising fast
+        context: 1 start, 84 minutes, 1 goal, 1 assist
+        recap: "Sullivan started and played 84 minutes in Philadelphia's 4-3 comeback at Sporting Kansas City. He helped start the comeback with the official secondary assist on Bruno Damiani's 64th-minute goal, then scored two minutes later. The goal contribution streak reached eight MLS matches, his 12th assist set an MLS single-season record for a teenager, and he earned his first senior USMNT call-up."
+        development_read: "Another decisive performance—this time in a comeback from 3-0 down—adds to a sustained run rather than a one-game spike. The first senior call-up and record-setting production make him the clearest upward mover on the board."
+        sources:
+          - { label: "Philadelphia-Sporting KC box score (official club)", url: "https://www.philadelphiaunion.com/news/box-score-philadelphia-union-4-sporting-kansas-city-3" }
+          - { label: "Philadelphia comeback recap (official club)", url: "https://www.philadelphiaunion.com/news/recap-union-complete-stunning-three-goal-comeback-in-kansas-city" }
+          - { label: "USMNT roster (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt/mauricio-pochettino-september-october-roster" }
+      - profile: niko-tsakiris
+        name: Niko Tsakiris
+        club: San Jose Earthquakes
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        context: 1 start, 78 minutes, 1 secondary assist
+        recap: "Tsakiris started and played 78 minutes in San Jose's 2-2 draw with LAFC. His run onto Beau Leroux's pass drew Aaron Long's 36th-minute red card just outside the area, and MLS credited Tsakiris with the secondary assist on Preston Judd's 70th-minute goal. He also delivered multiple dangerous crosses before leaving."
+        development_read: "He influenced the match through movement and chance creation even without a primary assist. LAFC playing with 10 men for more than half the game tempers the evaluation, but this was still another constructive attacking start."
+        sources:
+          - { label: "San Jose-LAFC match recap (official club)", url: "https://www.sjearthquakes.com/news/match-recap-earthquakes-2-lafc-2" }
+      - profile: paxten-aaronson
+        name: Paxten Aaronson
+        club: Colorado Rapids
+        trend: "→"
+        direction: steady
+        direction_label: Steady
+        context: 2 starts, 174 minutes
+        recap: "Aaronson played the full U.S. Open Cup semifinal as Colorado lost 3-0 to St. Louis, then started and played 84 minutes in the 3-3 MLS draw with Seattle. He recorded no goal or assist and was cautioned in the cup loss."
+        development_read: "The 174-minute workload confirms his status as a core starter, but a cup exit and no direct attacking contribution leave the week neutral. His role is secure; the next step is restoring the production seen earlier in September."
+        sources:
+          - { label: "Colorado-St. Louis Open Cup report (official Colorado)", url: "https://www.coloradorapids.com/news/rapids-fall-to-st-louis-city-sc-exit-u-s-open-cup" }
+          - { label: "Colorado-Seattle recap (official club)", url: "https://www.coloradorapids.com/news/recap-whittaker-secures-brace-rapids-split-points-with-seattle" }
+      - profile: mathis-albert
+        name: Mathis Albert
+        club: Borussia Dortmund
+        trend: "↑"
+        direction: rising
+        direction_label: First USMNT call-up
+        context: No club appearance; senior roster selection
+        recap: "Albert was not in Borussia Dortmund's squad for the 1-0 Bundesliga win at Stuttgart and recorded no competitive club minutes. He was nevertheless selected for his first senior USMNT camp as one of the roster's 13 uncapped players."
+        development_read: "The call-up is a major recognition marker, but it does not resolve the lack of senior club minutes. His next development test remains converting Dortmund's belief into first-team matchday involvement."
+        sources:
+          - { label: "Stuttgart-Dortmund report and lineup (official Dortmund)", url: "https://www.bvb.de/de/de/aktuelles/news/news.html/2026/9/19/BVB-gewinnt-in-Stuttgart-und-geht-als-Tabellenfuehrer-in-die-Laenderspielpause.html" }
+          - { label: "USMNT roster (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt/mauricio-pochettino-september-october-roster" }
+      - profile: diego-kochen
+        name: Diego Kochen
+        club: FC Barcelona / Lyngby
+        trend: "→"
+        direction: steady
+        direction_label: Mixed
+        context: 1 start, 90 minutes, 4 goals conceded
+        recap: "Kochen played the full match in Lyngby's 4-0 home loss to Silkeborg. He conceded in the 39th and 52nd minutes before teammate Simon Colyn's dismissal left Lyngby with 10 men; the final two goals arrived in the 72nd and 85th. He was also named to his first senior USMNT roster."
+        development_read: "The four-goal loss is negative performance evidence, although the late game state was worsened by the red card. The senior call-up prevents an overall downgrade, but his club response after the international window will matter."
+        sources:
+          - { label: "Lyngby-Silkeborg report (official Lyngby, Danish)", url: "https://lyngby-boldklub.dk/2026/09/18/nederlag-fredag-aften-mod-silkeborg/" }
+          - { label: "Match events and lineup (official Danish FA)", url: "https://www.dbujylland.dk/resultater/kamp/556145_506118/kampinfo" }
+          - { label: "USMNT roster (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt/mauricio-pochettino-september-october-roster" }
+      - profile: benjamin-cremaschi
+        name: Benjamin Cremaschi
+        club: Parma
+        trend: "↓"
+        direction: falling
+        direction_label: Role concern
+        context: Two unused substitute appearances
+        recap: "Cremaschi was an unused substitute in Parma's 2-1 loss at Como on September 14 and again in the 2-1 home win over Genoa on September 20. He recorded no competitive minutes."
+        development_read: "Making both squads is a baseline positive after the move, but two unused benches mean the Serie A role has not started. The trend turns down until he begins receiving first-team minutes."
+        sources:
+          - { label: "Como-Parma report and lineup (official Parma)", url: "https://www.parmacalcio1913.com/en/main-news/seria-a-como-2-1-parma/" }
+          - { label: "Parma-Genoa live record (secondary Italian coverage)", url: "https://sport.virgilio.it/dirette/live/serie-a/20-9-2026/parma-genoa/2638168/" }
+      - profile: kevin-paredes
+        name: Kevin Paredes
+        club: FC Utrecht
+        trend: "✚"
+        direction: insufficient
+        direction_label: Injured
+        context: No competitive appearance
+        recap: "Paredes remained unavailable and recorded no competitive minutes. Utrecht's official medical update continues to project an absence of several months because of the ankle injury suffered in August."
+        development_read: "No performance evaluation this week. The priority remains rehabilitation; there is no new evidence to change the longer-term outlook until a return timetable becomes clearer."
+        sources:
+          - { label: "Paredes injury update (official Utrecht, Dutch)", url: "https://www.fcutrecht.nl/nieuws/2026/augustus/kevin-paredes-enkele-maanden-niet-inzetbaar/" }
+      - profile: peyton-miller
+        name: Peyton Miller
+        club: New England Revolution
+        trend: "↑"
+        direction: rising
+        direction_label: Rising fast
+        context: 1 start, 90 minutes, 2 goals
+        recap: "Miller played the full match as an attacking left winger and scored twice in New England's 4-2 win over Orlando. He finished a 59th-minute breakaway calmly, then made another run behind the line for the 90+3 winner. The brace took him to seven league goals and followed his first senior USMNT call-up."
+        development_read: "This was the week's biggest club-performance jump: two well-timed attacking runs, two composed finishes and a match-winning contribution. His winger role is now producing sustained end product rather than just promising flashes."
+        sources:
+          - { label: "New England-Orlando recap and box score (official club)", url: "https://www.revolutionsoccer.net/news/recap-revs-defeat-orlando-4-2-third-straight-win" }
+          - { label: "Miller call-up (official New England)", url: "https://www.revolutionsoccer.net/news/peyton-miller-brooklyn-raines-earn-first-senior-call-ups-to-us-mens-national-team" }
+      - profile: cooper-sanchez
+        name: Cooper Sanchez
+        club: Atlanta United
+        trend: "↑"
+        direction: rising
+        direction_label: Positive cameo
+        context: 1 substitute appearance, 25 minutes
+        recap: "Sanchez entered in the 65th minute of Atlanta's 1-0 win at Portland. He joined the midfield, had a 72nd-minute shot blocked wide by Diego Chara and helped Atlanta protect the clean-sheet victory through sustained late Portland pressure."
+        development_read: "A 25-minute road cameo in a disciplined win is a modest positive after recent starts and absences. He remains short of a locked-in role, but continued senior minutes keep the trend moving forward."
+        sources:
+          - { label: "Portland-Atlanta recap (official Atlanta)", url: "https://www.atlutd.com/news/match-recap-alexey-miranchuk-defensive-discipline-lifts-5-stripes-over-portland-timbers-september-19-2026" }
+          - { label: "Portland-Atlanta lineups (competition broadcaster)", url: "https://www.skysports.com/football/portland-timbers-vs-atlanta-united-fc/teams/550600" }
+      - profile: beau-leroux
+        name: Beau Leroux
+        club: San Jose Earthquakes
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        context: 1 start, 90 minutes, 1 assist
+        recap: "Leroux played the full match in San Jose's 2-2 draw with LAFC. His through ball sent Niko Tsakiris behind the defense and led to Aaron Long's 36th-minute red card, then Leroux supplied the official assist on Reid Roberts' 90+8 equalizer."
+        development_read: "He directly shaped both of San Jose's most important moments with progressive passing. The long man advantage tempers the team result, but his willingness and ability to break lines were clear positives."
+        sources:
+          - { label: "San Jose-LAFC match recap (official club)", url: "https://www.sjearthquakes.com/news/match-recap-earthquakes-2-lafc-2" }
+      - profile: francis-westfield
+        name: Francis Westfield
+        club: Philadelphia Union
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        context: 1 start, 90 minutes, 1 assist
+        recap: "Westfield played the full match at right back in Philadelphia's 4-3 win at Sporting Kansas City. After the Union conceded three times in the opening 16 minutes, he drove into the attack and supplied the official assist for Bruno Damiani's 64th-minute goal that began the comeback. He also received his first senior USMNT call-up."
+        development_read: "The early defensive damage is a real caveat, but the full-match trust, decisive attacking contribution and first national-team selection make the overall week positive. His two-way consistency remains the next target."
+        sources:
+          - { label: "Philadelphia-Sporting KC box score (official club)", url: "https://www.philadelphiaunion.com/news/box-score-philadelphia-union-4-sporting-kansas-city-3" }
+          - { label: "Philadelphia comeback recap (official club)", url: "https://www.philadelphiaunion.com/news/recap-union-complete-stunning-three-goal-comeback-in-kansas-city" }
+          - { label: "USMNT roster (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt/mauricio-pochettino-september-october-roster" }
+      - profile: cole-campbell
+        name: Cole Campbell
+        club: SV Elversberg
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        context: 1 start, 87 minutes
+        recap: "Campbell started on the left of Elversberg's attack and played 87 minutes in a 0-0 Bundesliga draw at Schalke. He had a first-half shot blocked and created a late chance for Lukas Petkov before leaving after a brief injury stoppage. He was also named to his first senior USMNT roster."
+        development_read: "An 87-minute Bundesliga start in a credible away result reinforces that his role is real, and the senior call-up rewards that club momentum. The brief late injury stoppage is worth monitoring, but there was no reported diagnosis by cutoff."
+        sources:
+          - { label: "Schalke-Elversberg report (official Bundesliga)", url: "https://www.bundesliga.com/en/bundesliga/news/schalke-elversberg-match-report-highlights-matchday-4-kurucay-39288" }
+          - { label: "Schalke-Elversberg live record (German match coverage)", url: "https://www.sportschau.de/live-und-ergebnisse/ma12194047/liveticker" }
+          - { label: "USMNT roster (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt/mauricio-pochettino-september-october-roster" }
+      - profile: luca-bombino
+        name: Luca Bombino
+        club: Stoke City
+        trend: "↑"
+        direction: rising
+        direction_label: Stoke debut
+        context: 1 substitute appearance, 10 minutes
+        recap: "Bombino made his Stoke City debut in the 2-1 Championship win over Sheffield United, replacing Eric Bocat in the 80th minute. Stoke scored in the 78th and 86th minutes to overturn a 1-0 deficit, so Bombino was on the field for the late winner."
+        development_read: "The sample was brief, but a first Championship appearance is a concrete step after the transfer. The next marker is whether he can turn late-match duty into a recurring rotation role."
+        sources:
+          - { label: "Stoke-Sheffield United match report and lineups (national match coverage)", url: "https://www.theguardian.com/football/match/2026/sep/19/stokecity-v-sheffieldunited" }
+      - profile: jackson-hopkins
+        name: Jackson Hopkins
+        club: D.C. United
+        trend: "→"
+        direction: steady
+        direction_label: Steady
+        context: 1 start, 65 minutes
+        recap: "Hopkins started and played 65 minutes in D.C. United's 2-1 home loss to Charlotte. D.C. generated 31 shots but the official report did not credit Hopkins with a goal, assist or highlighted chance before Nathan Ordaz replaced him."
+        development_read: "Another start preserves his senior role, but there was no decisive individual evidence to move the projection. He needs to translate regular minutes into more consistent attacking production."
+        sources:
+          - { label: "D.C.-Charlotte report and box score (official D.C. United)", url: "https://www.dcunited.com/news/post-match-facts-dcvclt-x6903" }
+      - profile: duran-ferree
+        name: Duran Ferree
+        club: San Diego FC
+        trend: "—"
+        direction: insufficient
+        direction_label: No club match
+        context: No competitive action
+        recap: "San Diego FC had no first-team competitive match in the September 14-20 window, so Ferree recorded no appearance and there is no new performance evidence to evaluate."
+        development_read: "No performance evaluation this week. His next selection after the five-goal loss to Philadelphia will show whether that difficult start changed the goalkeeper hierarchy."
+        sources:
+          - { label: "San Diego 2026 schedule (official club)", url: "https://www.sandiegofc.com/news/san-diego-fc-announces-2026-mls-regular-season-schedule" }
   - id: "2026-09-13"
     group: prospects
     group_label: Prospects
