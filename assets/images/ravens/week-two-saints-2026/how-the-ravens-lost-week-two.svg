@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">How the Ravens lost Week 2</title>
+  <desc id="desc">A Dual Eights graphic highlighting the Ravens' 64.3 percent offensive success rate, New Orleans' eight third-down conversions, and Baltimore's decision to punt on fourth-and-one.</desc>
+  <rect width="1200" height="675" fill="#09070f"/>
+  <path d="M0 0h1200v18H0z" fill="#f2c94c"/>
+  <path d="M0 18h1200v7H0z" fill="#6f2da8"/>
+  <text x="72" y="92" fill="#bca9d2" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" letter-spacing="4">DUAL EIGHTS • FIRST AND FIVE</text>
+  <text x="72" y="158" fill="#ffffff" font-family="Georgia, serif" font-size="55" font-weight="700">How the Ravens lost Week 2</text>
+  <text x="72" y="202" fill="#cfc8d9" font-family="Arial, Helvetica, sans-serif" font-size="25">They won most ordinary snaps. The decisive moments went the other way.</text>
+  <g transform="translate(72 260)">
+    <rect width="322" height="276" rx="20" fill="#16111f" stroke="#43265e" stroke-width="2"/>
+    <text x="28" y="57" fill="#f2c94c" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" letter-spacing="2">OFFENSIVE SUCCESS</text>
+    <text x="28" y="143" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="800">64.3%</text>
+    <text x="28" y="190" fill="#cfc8d9" font-family="Arial, Helvetica, sans-serif" font-size="22">Second-highest by a</text>
+    <text x="28" y="222" fill="#cfc8d9" font-family="Arial, Helvetica, sans-serif" font-size="22">losing team since 2022</text>
+  </g>
+  <g transform="translate(439 260)">
+    <rect width="322" height="276" rx="20" fill="#16111f" stroke="#43265e" stroke-width="2"/>
+    <text x="28" y="57" fill="#f2c94c" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" letter-spacing="2">MONEY DOWNS</text>
+    <text x="28" y="143" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="800">8 of 15</text>
+    <text x="28" y="190" fill="#cfc8d9" font-family="Arial, Helvetica, sans-serif" font-size="22">Saints conversions on</text>
+    <text x="28" y="222" fill="#cfc8d9" font-family="Arial, Helvetica, sans-serif" font-size="22">third down</text>
+  </g>
+  <g transform="translate(806 260)">
+    <rect width="322" height="276" rx="20" fill="#16111f" stroke="#43265e" stroke-width="2"/>
+    <text x="28" y="57" fill="#f2c94c" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" letter-spacing="2">THE DECISION</text>
+    <text x="28" y="143" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="800">4th &amp; 1</text>
+    <text x="28" y="190" fill="#cfc8d9" font-family="Arial, Helvetica, sans-serif" font-size="22">Tie game. 8:20 left.</text>
+    <text x="28" y="222" fill="#cfc8d9" font-family="Arial, Helvetica, sans-serif" font-size="22">The Ravens punted.</text>
+  </g>
+  <line x1="72" y1="585" x2="1128" y2="585" stroke="#43265e" stroke-width="2"/>
+  <text x="72" y="625" fill="#91879b" font-family="Arial, Helvetica, sans-serif" font-size="18">Sources: SumerSports; NFL game statistics • Graphic: Dual Eights</text>
+</svg>
