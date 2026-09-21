@@ -2,7 +2,7 @@
 layout: post
 title: "Barcelona Is Breaking La Liga: Raphinha, a Historic Start and Life Without a No. 9"
 subtitle: "Eight wins, 31 league goals and a fluid front line have made an impossible start feel strangely sustainable."
-date: 2026-09-20 22:30:00 -0400
+date: 2026-09-20 12:00:00 -0400
 categories: [soccer]
 section_theme: soccer
 permalink: /soccer/barcelona/barcelona-breaking-la-liga-raphinha-2026/
