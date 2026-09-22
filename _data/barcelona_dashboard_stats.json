@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-21T13:23:44Z",
-  "as_of": "2026-09-21",
+  "generated_at": "2026-09-22T12:04:30Z",
+  "as_of": "2026-09-22",
   "season": 2026,
   "season_label": "2026-27",
   "team": {
@@ -1328,9 +1328,9 @@
         {
           "event_id": "401882832",
           "competition": "laliga",
-          "date": "2026-10-25T18:00Z",
+          "date": "2026-10-25T20:00Z",
           "completed": false,
-          "status_detail": "TBD",
+          "status_detail": "10/25 - 4:00 PM EDT",
           "location": "home",
           "venue": "Spotify Camp Nou",
           "opponent": "Real Madrid",
@@ -1347,7 +1347,7 @@
           "competition": "laliga",
           "date": "2026-11-01T20:00Z",
           "completed": false,
-          "status_detail": "TBD",
+          "status_detail": "TBC",
           "location": "home",
           "venue": "Spotify Camp Nou",
           "opponent": "Alavés",
@@ -1364,7 +1364,7 @@
           "competition": "laliga",
           "date": "2026-11-08T20:00Z",
           "completed": false,
-          "status_detail": "TBD",
+          "status_detail": "TBC",
           "location": "away",
           "venue": "Riyadh Air Metropolitano",
           "opponent": "Atlético Madrid",
@@ -1381,7 +1381,7 @@
           "competition": "laliga",
           "date": "2026-11-22T20:00Z",
           "completed": false,
-          "status_detail": "TBD",
+          "status_detail": "TBC",
           "location": "home",
           "venue": "Spotify Camp Nou",
           "opponent": "Villarreal",
@@ -4000,82 +4000,73 @@
   "injuries": [],
   "rotation": {
     "window_days": 21,
-    "window_start": "2026-08-31",
-    "window_end": "2026-09-21",
-    "matches_in_window": 6,
-    "available_minutes": 540,
+    "window_start": "2026-09-01",
+    "window_end": "2026-09-22",
+    "matches_in_window": 5,
+    "available_minutes": 450,
     "players": [
       {
         "player_id": "362150",
         "name": "Lamine Yamal",
         "position_abbr": "F",
-        "minutes": 516,
-        "starts": 6,
-        "matches": 6,
-        "share": 95.6
+        "minutes": 426,
+        "starts": 5,
+        "matches": 5,
+        "share": 94.7
       },
       {
         "player_id": "231050",
         "name": "Raphinha",
         "position_abbr": "F",
-        "minutes": 480,
-        "starts": 6,
-        "matches": 6,
-        "share": 88.9
-      },
-      {
-        "player_id": "250465",
-        "name": "Pedri",
-        "position_abbr": "M",
-        "minutes": 432,
-        "starts": 6,
-        "matches": 6,
-        "share": 80.0
-      },
-      {
-        "player_id": "368992",
-        "name": "Pau Cubarsí",
-        "position_abbr": "D",
-        "minutes": 422,
+        "minutes": 395,
         "starts": 5,
         "matches": 5,
-        "share": 78.1
+        "share": 87.8
       },
       {
         "player_id": "231828",
         "name": "Rodri",
         "position_abbr": "M",
-        "minutes": 412,
+        "minutes": 385,
         "starts": 5,
-        "matches": 6,
-        "share": 76.3
+        "matches": 5,
+        "share": 85.6
+      },
+      {
+        "player_id": "250465",
+        "name": "Pedri",
+        "position_abbr": "M",
+        "minutes": 355,
+        "starts": 5,
+        "matches": 5,
+        "share": 78.9
+      },
+      {
+        "player_id": "368992",
+        "name": "Pau Cubarsí",
+        "position_abbr": "D",
+        "minutes": 332,
+        "starts": 4,
+        "matches": 4,
+        "share": 73.8
       },
       {
         "player_id": "297362",
         "name": "Joan García",
         "position_abbr": "G",
-        "minutes": 405,
-        "starts": 5,
-        "matches": 5,
-        "share": 75.0
+        "minutes": 315,
+        "starts": 4,
+        "matches": 4,
+        "share": 70.0
       },
       {
         "player_id": "186430",
         "name": "Andreas Christensen",
         "position_abbr": "D",
-        "minutes": 402,
-        "starts": 4,
-        "matches": 6,
-        "share": 74.4
-      },
-      {
-        "player_id": "268782",
-        "name": "Anthony Gordon",
-        "position_abbr": "F",
-        "minutes": 316,
-        "starts": 4,
+        "minutes": 312,
+        "starts": 3,
         "matches": 5,
-        "share": 58.5
+        "share": 69.3
       },
       {
         "player_id": "128714",
@@ -4084,43 +4075,25 @@
         "minutes": 298,
         "starts": 4,
         "matches": 4,
-        "share": 55.2
-      },
-      {
-        "player_id": "227765",
-        "name": "Dani Olmo",
-        "position_abbr": "M",
-        "minutes": 288,
-        "starts": 3,
-        "matches": 6,
-        "share": 53.3
-      },
-      {
-        "player_id": "354334",
-        "name": "Fermín López",
-        "position_abbr": "M",
-        "minutes": 287,
-        "starts": 3,
-        "matches": 5,
-        "share": 53.1
+        "share": 66.2
       },
       {
         "player_id": "176399",
         "name": "João Cancelo",
         "position_abbr": "D",
-        "minutes": 281,
+        "minutes": 268,
         "starts": 3,
-        "matches": 5,
-        "share": 52.0
+        "matches": 4,
+        "share": 59.6
       },
       {
-        "player_id": "403582",
-        "name": "Xavi Espart",
-        "position_abbr": "D",
-        "minutes": 259,
+        "player_id": "354334",
+        "name": "Fermín López",
+        "position_abbr": "M",
+        "minutes": 260,
         "starts": 3,
-        "matches": 3,
-        "share": 48.0
+        "matches": 4,
+        "share": 57.8
       },
       {
         "player_id": "312015",
@@ -4129,34 +4102,61 @@
         "minutes": 256,
         "starts": 3,
         "matches": 4,
-        "share": 47.4
+        "share": 56.9
       },
       {
-        "player_id": "231692",
-        "name": "Jules Koundé",
-        "position_abbr": "D",
-        "minutes": 242,
+        "player_id": "268782",
+        "name": "Anthony Gordon",
+        "position_abbr": "F",
+        "minutes": 239,
+        "starts": 3,
+        "matches": 4,
+        "share": 53.1
+      },
+      {
+        "player_id": "227765",
+        "name": "Dani Olmo",
+        "position_abbr": "M",
+        "minutes": 225,
         "starts": 2,
-        "matches": 3,
-        "share": 44.8
+        "matches": 5,
+        "share": 50.0
       },
       {
         "player_id": "274913",
         "name": "Karim Adeyemi",
         "position_abbr": "F",
-        "minutes": 233,
+        "minutes": 220,
         "starts": 2,
-        "matches": 6,
-        "share": 43.1
+        "matches": 5,
+        "share": 48.9
+      },
+      {
+        "player_id": "403582",
+        "name": "Xavi Espart",
+        "position_abbr": "D",
+        "minutes": 169,
+        "starts": 2,
+        "matches": 2,
+        "share": 37.6
+      },
+      {
+        "player_id": "231692",
+        "name": "Jules Koundé",
+        "position_abbr": "D",
+        "minutes": 152,
+        "starts": 1,
+        "matches": 2,
+        "share": 33.8
       },
       {
         "player_id": "376423",
         "name": "Marc Bernal",
         "position_abbr": "M",
-        "minutes": 176,
-        "starts": 1,
-        "matches": 6,
-        "share": 32.6
+        "minutes": 113,
+        "starts": 0,
+        "matches": 5,
+        "share": 25.1
       },
       {
         "player_id": "187946",
@@ -4165,16 +4165,7 @@
         "minutes": 90,
         "starts": 1,
         "matches": 1,
-        "share": 16.7
-      },
-      {
-        "player_id": "131634",
-        "name": "Wojciech Szczesny",
-        "position_abbr": "G",
-        "minutes": 45,
-        "starts": 0,
-        "matches": 1,
-        "share": 8.3
+        "share": 20.0
       },
       {
         "player_id": "217289",
@@ -4183,7 +4174,16 @@
         "minutes": 45,
         "starts": 0,
         "matches": 4,
-        "share": 8.3
+        "share": 10.0
+      },
+      {
+        "player_id": "131634",
+        "name": "Wojciech Szczesny",
+        "position_abbr": "G",
+        "minutes": 45,
+        "starts": 0,
+        "matches": 1,
+        "share": 10.0
       },
       {
         "player_id": "323702",
@@ -4192,7 +4192,7 @@
         "minutes": 37,
         "starts": 0,
         "matches": 2,
-        "share": 6.9
+        "share": 8.2
       },
       {
         "player_id": "323703",
@@ -4201,35 +4201,21 @@
         "minutes": 13,
         "starts": 0,
         "matches": 1,
-        "share": 2.4
-      },
-      {
-        "player_id": "399200",
-        "name": "Hamza Abdelkarim",
-        "position_abbr": "F",
-        "minutes": 5,
-        "starts": 0,
-        "matches": 1,
-        "share": 0.9
+        "share": 2.9
       }
     ]
   },
   "congestion": {
     "window_days": 21,
-    "matches_last_window": 6,
-    "matches_per_week": 2.0,
-    "load_level": "Heavy",
+    "matches_last_window": 5,
+    "matches_per_week": 1.67,
+    "load_level": "Moderate",
     "shortest_rest_recent": 3,
-    "average_rest_recent": 3.8,
+    "average_rest_recent": 3.2,
     "matches_next_14_days": 0,
     "matches_next_30_days": 4,
     "shortest_rest_upcoming": 3,
     "recent": [
-      {
-        "date": "2026-08-31T19:30Z",
-        "competition": "laliga",
-        "opponent": "Rayo"
-      },
       {
         "date": "2026-09-06T14:15Z",
         "competition": "laliga",
@@ -4420,9 +4406,9 @@
       {
         "event_id": "401882832",
         "competition": "laliga",
-        "date": "2026-10-25T18:00Z",
+        "date": "2026-10-25T20:00Z",
         "completed": false,
-        "status_detail": "TBD",
+        "status_detail": "10/25 - 4:00 PM EDT",
         "location": "home",
         "venue": "Spotify Camp Nou",
         "opponent": "Real Madrid",
@@ -4439,7 +4425,7 @@
         "competition": "laliga",
         "date": "2026-11-01T20:00Z",
         "completed": false,
-        "status_detail": "TBD",
+        "status_detail": "TBC",
         "location": "home",
         "venue": "Spotify Camp Nou",
         "opponent": "Alavés",
@@ -4473,7 +4459,7 @@
         "competition": "laliga",
         "date": "2026-11-08T20:00Z",
         "completed": false,
-        "status_detail": "TBD",
+        "status_detail": "TBC",
         "location": "away",
         "venue": "Riyadh Air Metropolitano",
         "opponent": "Atlético Madrid",
