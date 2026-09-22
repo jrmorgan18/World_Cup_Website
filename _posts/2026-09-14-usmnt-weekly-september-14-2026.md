@@ -9,10 +9,9 @@ permalink: /soccer/project-2030/usmnt-weekly-september-14-2026/
 author: "Randy Morgan"
 read_time: 24
 section_theme: project
-usmnt_weekly_feature: true
+usmnt_weekly_feature: false
 home_feature: false
-home_recent: true
-home_recent_position: 1
+home_recent: false
 home_recent_label: "USMNT Weekly"
 home_recent_theme: soccer
 series: "USMNT Weekly"
