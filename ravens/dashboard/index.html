@@ -23,7 +23,7 @@ section_theme: ravens
   "name": "Baltimore Ravens Season Dashboard",
   "description": {{ page.description | jsonify }},
   "url": {{ page.url | absolute_url | jsonify }},
-  "dateModified": {{ dashboard.meta.last_updated | jsonify }},
+  "dateModified": {{ stats.as_of | jsonify }},
   "isPartOf": {"@type": "WebSite", "name": "Dual Eights", "url": {{ site.url | jsonify }}}
 }
 </script>
@@ -38,7 +38,7 @@ section_theme: ravens
         <div>
           <p class="de-eyebrow"><span></span> Living season tracker</p>
           <h1>The Ravens<br><em>Season Dashboard</em></h1>
-          <p class="ravens-dashboard-update">{{ dashboard.meta.season_label }} · Updated {{ dashboard.meta.last_updated | date: "%B %-d, %Y" }} · {{ dashboard.meta.update_context }}</p>
+          <p class="ravens-dashboard-update">{{ dashboard.meta.season_label }} · Updated {{ stats.as_of | date: "%B %-d, %Y" }} · {{ current_snapshot.label }}{% if next_game %} · {{ next_game.opponent }} next{% endif %}</p>
         </div>
         <div class="ravens-dashboard-record" aria-label="Current Ravens status">
           <strong>{{ stats.header.record }}</strong>
@@ -96,7 +96,7 @@ section_theme: ravens
           {% endfor %}
         </div>
         {% endif %}
-        {% if dashboard.matchup_focus %}
+        {% if dashboard.matchup_focus and dashboard.matchup_focus.team == next_game.opponent_abbr %}
         <div class="ravens-matchup-focus">
           <h4>{{ dashboard.matchup_focus.label }}</h4>
           <ul>

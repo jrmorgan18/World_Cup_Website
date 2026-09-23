@@ -246,6 +246,7 @@ preseason_last_game:
   source_url: "https://www.baltimoreravens.com/news/ravens-dominate-commanders-2026-nfl-preseason-undefeated"
 
 matchup_focus:
+  team: "NO"
   label: "Saints matchup lens"
   items:
     - title: "Sustain the opening efficiency"
