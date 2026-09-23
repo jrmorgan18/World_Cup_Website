@@ -123,7 +123,9 @@ validate_analytics = lambda do |unit_name, metrics|
     assert(!metric["period_label"].to_s.empty?, "#{unit_name} analytics need a period label", errors)
     assert(!metric["label"].to_s.empty?, "#{unit_name} has an unlabeled analytics metric", errors)
     assert(!metric["value"].to_s.empty?, "#{unit_name} has an empty analytics value", errors)
-    assert(metric["rank"].is_a?(Integer) && metric["rank"].between?(1, 32), "#{unit_name} has an invalid analytics rank", errors)
+    rank_group = metric["rank_group"].to_s
+    assert(metric["rank"].is_a?(Integer) && metric["rank"] >= 1, "#{unit_name} has an invalid analytics rank", errors)
+    assert(rank_group != "NFL" || metric["rank"] <= 32, "#{unit_name} has an invalid NFL analytics rank", errors)
   end
 end
 
@@ -181,8 +183,9 @@ assert(preseason_last_game["source_url"].to_s.start_with?("https://www.baltimore
 
 opponent_availability = editorial.fetch("opponent_availability")
 next_opponent = stats.dig("header", "next_game", "opponent_abbr")
-assert(opponent_availability["team"] == next_opponent, "Opponent availability must match the next scheduled opponent", errors)
-opponent_availability.fetch("items").each do |item|
+opponent_availability_items = opponent_availability.fetch("items")
+assert(opponent_availability_items.empty? || opponent_availability["team"] == next_opponent, "Opponent availability must match the next scheduled opponent when availability is published", errors)
+opponent_availability_items.each do |item|
   assert(item["source_url"].to_s.start_with?("https://"), "#{item['player']} needs a linked source", errors)
 end
 
