@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T11:47:39Z",
+  "generated_at": "2026-09-23T11:47:04Z",
   "game_pk": 824787,
   "date": "2026-09-21",
   "venue": "Oriole Park at Camden Yards",
@@ -65,13 +65,13 @@
   "wild_card": {
     "rank": 6,
     "spots": 3,
-    "games_back": "4.5",
-    "status_text": "4.5 games back of the third AL Wild Card spot.",
+    "games_back": "5.0",
+    "status_text": "5.0 games back of the third AL Wild Card spot.",
     "ladder": [
       {
         "team": "White Sox",
         "abbr": "CWS",
-        "wins": 80,
+        "wins": 81,
         "losses": 76,
         "games_back": null,
         "wild_card_rank": 3,
@@ -79,9 +79,9 @@
         "is_cutoff": true
       },
       {
-        "team": "Astros",
-        "abbr": "HOU",
-        "wins": 77,
+        "team": "Rangers",
+        "abbr": "TEX",
+        "wins": 78,
         "losses": 79,
         "games_back": "3.0",
         "wild_card_rank": 4,
@@ -93,7 +93,7 @@
         "abbr": "TOR",
         "wins": 77,
         "losses": 80,
-        "games_back": "3.5",
+        "games_back": "4.0",
         "wild_card_rank": 5,
         "is_orioles": false,
         "is_cutoff": false
@@ -103,7 +103,7 @@
         "abbr": "BAL",
         "wins": 76,
         "losses": 81,
-        "games_back": "4.5",
+        "games_back": "5.0",
         "wild_card_rank": 6,
         "is_orioles": true,
         "is_cutoff": false
