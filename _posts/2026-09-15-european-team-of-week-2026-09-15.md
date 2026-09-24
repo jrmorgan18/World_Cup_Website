@@ -15,11 +15,6 @@ hero_wide: true
 hero_alt: "Erling Haaland scores Manchester City's winner against Manchester United at Old Trafford"
 hero_credit: "Manchester City"
 hero_credit_url: "https://www.mancity.com/news/mens/man-utd-v-city-match-gallery-pl-13-sep-63924898"
-home_recent: true
-home_recent_position: 2
-home_recent_label: "European Team of the Week"
-home_recent_theme: soccer
-euro_team_of_week_feature: true
 soccer_promo_image: /assets/images/euro-team-of-week-2026-09-15.jpg
 soccer_promo_alt: "European Weekend Team of the Week Best XI graphic featuring Erling Haaland"
 feature_label: "European Team of the Week"
