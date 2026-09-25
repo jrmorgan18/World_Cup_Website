@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-24T12:17:35Z",
-  "as_of": "2026-09-24",
+  "generated_at": "2026-09-25T12:18:54Z",
+  "as_of": "2026-09-25",
   "season": 2026,
   "season_label": "2026-27",
   "team": {
@@ -4000,8 +4000,8 @@
   "injuries": [],
   "rotation": {
     "window_days": 21,
-    "window_start": "2026-09-03",
-    "window_end": "2026-09-24",
+    "window_start": "2026-09-04",
+    "window_end": "2026-09-25",
     "matches_in_window": 5,
     "available_minutes": 450,
     "players": [
@@ -4213,7 +4213,7 @@
     "shortest_rest_recent": 3,
     "average_rest_recent": 3.2,
     "matches_next_14_days": 0,
-    "matches_next_30_days": 4,
+    "matches_next_30_days": 5,
     "shortest_rest_upcoming": 3,
     "recent": [
       {
@@ -4266,6 +4266,12 @@
         "competition": "ucl",
         "opponent": "PSG",
         "location": "away"
+      },
+      {
+        "date": "2026-10-25T20:00Z",
+        "competition": "laliga",
+        "opponent": "Real Madrid",
+        "location": "home"
       }
     ]
   },
