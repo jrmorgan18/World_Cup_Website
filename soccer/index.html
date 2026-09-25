@@ -34,8 +34,9 @@ section_theme: soccer
 {% assign euro_team_of_week_story = site.posts | where: "euro_team_of_week_feature", true | first %}
 {% assign champions_league_recap_story = site.posts | where: "champions_league_recap_feature", true | first %}
 {% assign usmnt_weekly_story = site.posts | where: "usmnt_weekly_feature", true | first %}
+{% assign usmnt_camp_story = site.posts | where: "usmnt_camp_feature", true | first %}
 {% assign team_of_week_story = euro_team_of_week_story | default: champions_league_recap_story %}
-{% assign soccer_feature = usmnt_weekly_story | default: champions_league_recap_story | default: euro_team_of_week_story | default: power_rankings_story | default: premier_league_preview_story | default: longform_feature %}
+{% assign soccer_feature = usmnt_camp_story | default: usmnt_weekly_story | default: champions_league_recap_story | default: euro_team_of_week_story | default: power_rankings_story | default: premier_league_preview_story | default: longform_feature %}
 {% assign power_rankings_edition = site.data.european_club_power_rankings.editions | first %}
 {% if soccer_feature %}
 <section class="soccer-editorial-shell">

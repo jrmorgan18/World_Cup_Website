@@ -23,6 +23,7 @@ description: A four-year scouting report tracking the USMNT player pool, checkpo
 {% assign big_board_explainer = site.posts | where: "big_board_explainer", true | first %}
 {% assign sullivan_miami_story = site.posts | where: "sullivan_miami_feature", true | first %}
 {% assign usmnt_weekly_story = site.posts | where: "usmnt_weekly_feature", true | first %}
+{% assign usmnt_camp_story = site.posts | where: "usmnt_camp_feature", true | first %}
 {% assign foundation_part1 = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina" | first %}
 {% assign foundation_part2 = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina-part-2" | first %}
 
@@ -39,12 +40,13 @@ description: A four-year scouting report tracking the USMNT player pool, checkpo
       <span>Latest</span>
     </div>
     <ol class="de-recent-list">
-      {% if usmnt_weekly_story %}<li><span class="de-recent-number">01</span><a href="{{ usmnt_weekly_story.url | relative_url }}"><small class="de-recent-tag">USMNT Weekly</small><h3>{{ usmnt_weekly_story.title }}</h3><p>{{ usmnt_weekly_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-      {% if sullivan_miami_story %}<li><span class="de-recent-number">02</span><a href="{{ sullivan_miami_story.url | relative_url }}"><small class="de-recent-tag">Scouting tape</small><h3>{{ sullivan_miami_story.title }}</h3><p>{{ sullivan_miami_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-      {% if big_board_explainer %}<li><span class="de-recent-number">03</span><a href="{{ big_board_explainer.url | relative_url }}"><small class="de-recent-tag">Big Board guide</small><h3>{{ big_board_explainer.title }}</h3><p>{{ big_board_explainer.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-      {% if pochettino_story %}<li><span class="de-recent-number">04</span><a href="{{ pochettino_story.url | relative_url }}"><small class="de-recent-tag">The next cycle</small><h3>{{ pochettino_story.title }}</h3><p>{{ pochettino_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-      {% if checkpoint_story %}<li><span class="de-recent-number">05</span><a href="{{ checkpoint_story.url | relative_url }}"><small class="de-recent-tag">Checkpoints</small><h3>{{ checkpoint_story.title }}</h3><p>{{ checkpoint_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-      {% if prospect_story %}<li><span class="de-recent-number">06</span><a href="{{ prospect_story.url | relative_url }}"><small class="de-recent-tag">Player Pool</small><h3>{{ prospect_story.title }}</h3><p>{{ prospect_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+      {% if usmnt_camp_story %}<li><span class="de-recent-number">01</span><a href="{{ usmnt_camp_story.url | relative_url }}"><small class="de-recent-tag">Camp preview</small><h3>{{ usmnt_camp_story.title }}</h3><p>{{ usmnt_camp_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+      {% if usmnt_weekly_story %}<li><span class="de-recent-number">02</span><a href="{{ usmnt_weekly_story.url | relative_url }}"><small class="de-recent-tag">USMNT Weekly</small><h3>{{ usmnt_weekly_story.title }}</h3><p>{{ usmnt_weekly_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+      {% if sullivan_miami_story %}<li><span class="de-recent-number">03</span><a href="{{ sullivan_miami_story.url | relative_url }}"><small class="de-recent-tag">Scouting tape</small><h3>{{ sullivan_miami_story.title }}</h3><p>{{ sullivan_miami_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+      {% if big_board_explainer %}<li><span class="de-recent-number">04</span><a href="{{ big_board_explainer.url | relative_url }}"><small class="de-recent-tag">Big Board guide</small><h3>{{ big_board_explainer.title }}</h3><p>{{ big_board_explainer.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+      {% if pochettino_story %}<li><span class="de-recent-number">05</span><a href="{{ pochettino_story.url | relative_url }}"><small class="de-recent-tag">The next cycle</small><h3>{{ pochettino_story.title }}</h3><p>{{ pochettino_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+      {% if checkpoint_story %}<li><span class="de-recent-number">06</span><a href="{{ checkpoint_story.url | relative_url }}"><small class="de-recent-tag">Checkpoints</small><h3>{{ checkpoint_story.title }}</h3><p>{{ checkpoint_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+      {% if prospect_story %}<li><span class="de-recent-number">07</span><a href="{{ prospect_story.url | relative_url }}"><small class="de-recent-tag">Player Pool</small><h3>{{ prospect_story.title }}</h3><p>{{ prospect_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
     </ol>
   </aside>
 
@@ -67,10 +69,30 @@ description: A four-year scouting report tracking the USMNT player pool, checkpo
   </section>
 </section>
 
+{% if usmnt_camp_story %}
+<section class="project-latest" aria-labelledby="project-camp-heading">
+  <div class="de-section-heading de-section-heading--light">
+    <div><p class="de-kicker">Main piece</p><h2 id="project-camp-heading">The first camp of the cycle</h2></div>
+    <p>Twelve first-time call-ups, four matches and the first real competition for 2030 places.</p>
+  </div>
+  <a class="project-story-card project-story-card--visual" href="{{ usmnt_camp_story.url | relative_url }}">
+    <figure>
+      <img src="{{ usmnt_camp_story.hero_image | relative_url }}" alt="{{ usmnt_camp_story.hero_alt | escape }}" loading="eager">
+    </figure>
+    <div>
+      <span>Project 2030 / Camp preview</span>
+      <h3>{{ usmnt_camp_story.title }}</h3>
+      <p>{{ usmnt_camp_story.excerpt }}</p>
+      <strong>Meet the newcomers <span aria-hidden="true">&rarr;</span></strong>
+    </div>
+  </a>
+</section>
+{% endif %}
+
 {% if usmnt_weekly_story %}
 <section class="project-latest" aria-labelledby="project-weekly-heading">
   <div class="de-section-heading de-section-heading--light">
-    <div><p class="de-kicker">Main piece</p><h2 id="project-weekly-heading">USMNT Weekly</h2></div>
+    <div><p class="de-kicker">Latest weekly report</p><h2 id="project-weekly-heading">USMNT Weekly</h2></div>
     <p>The latest club-form read of the Project 2030 cycle, with spotlight video from four key players.</p>
   </div>
   <a class="project-story-card project-story-card--visual" href="{{ usmnt_weekly_story.url | relative_url }}">

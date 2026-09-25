@@ -11,8 +11,7 @@ read_time: 23
 section_theme: project
 usmnt_weekly_feature: true
 home_feature: false
-home_recent: true
-home_recent_position: 1
+home_recent: false
 home_recent_label: "USMNT Weekly"
 home_recent_theme: soccer
 series: "USMNT Weekly"
