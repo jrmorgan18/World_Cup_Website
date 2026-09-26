@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "Ravens–Cowboys Preview: Baltimore Has the Matchup. Now It Has to Exploit It."
-subtitle: "The Cowboys’ defense has struggled with almost everything Lamar Jackson and Derrick Henry do best. Dallas also has exactly the passing game capable of punishing the Ravens if their Week 2 problems follow them to Rio."
+title: "Ravens-Cowboys Preview"
 date: 2026-09-26 14:45:00 -0400
 categories: [ravens, nfl]
 section_theme: ravens
 permalink: /ravens/ravens-cowboys-week-three-preview-2026/
 author: "Randy Morgan"
-series: "Ravens–Cowboys Preview"
+series: "Ravens-Cowboys Preview"
 excerpt: "Dallas has struggled with almost everything Lamar Jackson and Derrick Henry do best. Dak Prescott and CeeDee Lamb can still punish Baltimore if its Week 2 problems follow it to Rio."
 read_time: 12
 suppress_article_prompts: true
@@ -100,7 +99,7 @@ The Ravens can force those young defenders to communicate through shifts, motion
 </figure>
 
 <figure class="ravens-article-figure ravens-article-figure--graphic">
-  <img src="{{ '/assets/images/ravens/cowboys-week-three-2026/ravens-cowboys-injury-watch-2026.svg' | relative_url }}" alt="Friday injury watch: Flowers and Stanley uncertain; Madubuike and Buchanan nearing returns; Overshown, Durant, Hooker and Locke out for Dallas" loading="lazy" decoding="async">
+  <img src="{{ '/assets/images/ravens/cowboys-week-three-2026/ravens-cowboys-injury-watch-2026.svg' | relative_url }}" alt="Friday injury watch: Flowers uncertain; Stanley ruled out; Madubuike and Buchanan nearing returns; Overshown, Durant, Hooker and Locke out for Dallas" loading="lazy" decoding="async">
   <figcaption>Friday’s availability report; check the game-day inactives for the final lineup. Dual Eights graphic.</figcaption>
 </figure>
 
@@ -118,9 +117,9 @@ Losing Stanley is different.
 
 New Orleans pressured Lamar on 55.6 percent of his second-half dropbacks after getting to him on only 26.3 percent in the first half. Lamar averaged 1.9 yards per attempt under pressure, threw his interception and took three sacks. From a clean pocket, he went 16-of-22 for 218 yards and a touchdown.
 
-Stanley left that game with his toe injury and remained a major question entering Friday. Dallas has not rushed the passer particularly well. The Cowboys rank near the bottom of the league in pressure rate and sack rate, but they have better individual pass rushers than those team numbers suggest.
+Stanley left that game with his toe injury and has been ruled out for Sunday. Dallas has not rushed the passer particularly well. The Cowboys rank near the bottom of the league in pressure rate and sack rate, but they have better individual pass rushers than those team numbers suggest.
 
-If Stanley plays and can function normally, the Ravens should be able to dictate this matchup. However, if Carson Vinson has to start at left tackle, Doyle may need to send more protection help, shorten concepts and devote tight ends or running backs to assisting the edge. Suddenly the Ravens are using some of the personnel advantage they wanted to attack Dallas with simply to keep Lamar clean.
+With Carson Vinson starting, Doyle may need to send more protection help, shorten concepts and devote tight ends or running backs to assisting the edge. Suddenly the Ravens are using some of the personnel advantage they wanted to attack Dallas with simply to keep Lamar clean.
 
 ## When the Cowboys Have the Ball
 

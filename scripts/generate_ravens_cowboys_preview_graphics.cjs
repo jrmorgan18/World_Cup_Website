@@ -48,8 +48,8 @@ const injuryBody = rect(55,148,530,449)+rect(615,148,530,449)+
   text(80,248,"Zay Flowers · hamstring",27,"#f4f4f7",800)+
   text(80,281,"Returned to the field Friday.",22,"#b5b6c0")+
   text(80,312,"Availability and workload uncertain.",22,"#b5b6c0")+
-  text(80,364,"Ronnie Stanley · toe",27,"#f4f4f7",800)+
-  text(80,397,"Protection plan hinges on left tackle.",22,"#b5b6c0")+
+  text(80,364,"Ronnie Stanley · ruled out",27,"#f4f4f7",800)+
+  text(80,397,"Carson Vinson starts at left tackle.",22,"#b5b6c0")+
   text(80,449,"Madubuike + Buchanan",27,"#f4f4f7",800)+
   text(80,482,"Full practices Wednesday and Thursday.",22,"#b5b6c0")+
   text(80,513,"Buchanan expected back; Madubuike trending.",21,"#b5b6c0")+
