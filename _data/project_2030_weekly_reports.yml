@@ -1,4 +1,290 @@
 reports:
+  - id: "2026-09-27"
+    group: prospects
+    group_label: Prospects
+    published: "September 28, 2026"
+    window: "September 21-27, 2026"
+    week_ending: "September 27, 2026"
+    source_note: "Official club, league and U.S. Soccer records were checked first, followed by local club-specific reporting and local-language coverage. The late Saturday MLS matches and the complete USA-Peru record are included. Julian Hall's research alias was reconciled to the same player. Facts below are verified; the development read is scouting interpretation, and unreported statistics are not inferred."
+    summary:
+      biggest_risers: "Justin Ellis scored the fastest USMNT debut goal of the modern era, while Julian Hall became the first American since January 2025 to score and assist on his senior debut. Mathis Albert won the penalty that put the USA ahead, Cavan Sullivan and Peyton Miller started in their first caps, Diego Kochen kept a clean second half, Paxten Aaronson scored his seventh MLS goal, and Beau Leroux added his ninth league assist."
+      issues_to_monitor: "Niko Tsakiris missed San Jose's win with an upper-body injury, while Kevin Paredes remains several months from returning from his ankle injury. Duran Ferree conceded three times in the final 18 minutes as San Diego lost a three-goal lead, Jackson Hopkins was removed at halftime in Vancouver, and local Parma coverage described Benjamin Cremaschi as outside the current midfield rotation."
+      best_story: "The 4-1 win over Peru supplied the clearest Project 2030 evidence of the week. Eleven Americans debuted, including 10 players from this prospect board. Ellis and Hall scored, Hall also assisted, Albert drew a penalty two minutes after entering, and the starting debuts of Sullivan and Miller showed that the new cycle is already giving the youngest tier meaningful senior responsibility."
+    players:
+      - profile: caleb-wiley
+        name: Caleb Wiley
+        club: Preston North End
+        trend: "✚"
+        direction: insufficient
+        direction_label: Injured
+        context: No competitive action
+        recap: "Preston had no club match during the extended international window, and Wiley was not part of the USMNT squad. No new official recovery timetable was published after the minor issue that kept him out before the break."
+        development_read: "No performance evaluation this week. The next meaningful evidence will be whether he returns to Preston's squad and can reclaim the left-sided role when Championship play resumes."
+        sources:
+          - { label: "Preston international-break preview (official club)", url: "https://www.pnefc.net/news/2026/september/23/jt-s-international-preview---september-october-2026/" }
+          - { label: "Preston schedule (secondary fixture record)", url: "https://upto.com/preston-north-end" }
+      - profile: damion-downs
+        name: Damion Downs
+        club: St. Louis CITY SC
+        trend: "→"
+        direction: steady
+        direction_label: Awaiting opportunity
+        context: USMNT unused substitute
+        recap: "Downs was away from St. Louis on senior international duty and was an unused substitute in the USA's 4-1 win over Peru. The official MLS availability report listed international duty as the reason he missed St. Louis' match at Red Bull New York."
+        development_read: "Selection keeps him in the senior national-team picture, but the week supplied no new performance evidence. His next test is earning minutes either against Chile or when he returns to St. Louis."
+        sources:
+          - { label: "USA-Peru match report (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-peru-match-recap-highlights-orlando-florida" }
+          - { label: "MLS player status report (official league)", url: "https://matchcenter.mlsnextpro.com/news/mls-player-status-report-matchday-28-saturday-september-26-sunday-september-27" }
+      - profile: zavier-gozo
+        name: Zavier Gozo
+        club: Crystal Palace
+        trend: "↑"
+        direction: rising
+        direction_label: First USMNT cap
+        context: 1 substitute appearance, 28 minutes
+        recap: "Gozo made his senior USMNT debut in the 4-1 win over Peru, replacing Cavan Sullivan in the 62nd minute and completing the match on the left side. He recorded no goal or assist."
+        development_read: "A first senior cap is a concrete rise in international standing. The cameo did not produce a decisive action, but it adds another high-level environment to his rapid transition after joining Crystal Palace."
+        sources:
+          - { label: "USA-Peru match report and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-peru-match-recap-highlights-orlando-florida" }
+      - profile: julian-hall
+        name: Julian Hall
+        club: New York Red Bulls
+        trend: "↑↑"
+        direction: rising
+        direction_label: Rising fast
+        context: USMNT debut; 28 minutes, 1 goal, 1 assist
+        recap: "Hall entered in the 62nd minute against Peru, scored his first international goal in the 72nd by attacking Sebastian Berhalter's far-post cross, then assisted Berhalter's 90th-minute goal. He became the first USMNT player since January 2025 to score and assist on his debut and the third-youngest American to register a modern-era assist."
+        development_read: "This was a major step: Hall translated his MLS scoring form immediately to the senior international level, combining striker movement, brave finishing and useful link play. The debut materially strengthens his Project 2030 outlook."
+        sources:
+          - { label: "USA-Peru match report and milestones (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-peru-match-recap-highlights-orlando-florida" }
+      - profile: justin-ellis
+        name: Justin Ellis
+        club: Orlando City
+        trend: "↑↑"
+        direction: rising
+        direction_label: Rising fast
+        context: First USMNT start; 62 minutes, 1 goal
+        recap: "Ellis started on his senior debut at Orlando's home stadium, drew the foul that created an early free kick and then headed Gio Reyna's service into the far corner in the fourth minute. It was the fastest debut goal in the USMNT's modern era. He left in the 62nd minute after an active central-forward performance."
+        development_read: "Scoring immediately while showing the movement to win and finish the set piece is elite first-cap evidence. Ellis' productive MLS season now has a senior international proof point, making him one of the week's clearest risers."
+        sources:
+          - { label: "USA-Peru match report and goal detail (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-peru-match-recap-highlights-orlando-florida" }
+          - { label: "Ellis debut-goal feature (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt/orlando-city-sc-justin-ellis-scores-fastest-debut-goal-vs-peru" }
+      - profile: adri-mehmeti
+        name: Adri Mehmeti
+        club: New York Red Bulls
+        trend: "↑"
+        direction: rising
+        direction_label: First USMNT cap
+        context: 1 substitute appearance, 2-plus minutes
+        recap: "Mehmeti made his senior USMNT debut in the 4-1 win over Peru, replacing captain Tyler Adams in the 88th minute and helping close the match through stoppage time. He recorded no goal or assist."
+        development_read: "The sample was too short for a meaningful performance grade, but earning a senior cap at 17 is a significant recognition marker. More international minutes will be needed to evaluate how quickly his midfield qualities translate."
+        sources:
+          - { label: "USA-Peru match report and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-peru-match-recap-highlights-orlando-florida" }
+      - profile: neil-pierre
+        name: Neil Pierre
+        club: Philadelphia Union
+        trend: "↑"
+        direction: rising
+        direction_label: First USMNT cap
+        context: 1 substitute appearance, 3-plus minutes
+        recap: "Pierre made his senior USMNT debut in the 87th minute of the 4-1 win over Peru, replacing George Campbell at center back and completing the match through stoppage time."
+        development_read: "There was not enough time for a full performance evaluation, but the first cap confirms that his rapid rise from Union prospect to senior starter is being recognized nationally."
+        sources:
+          - { label: "USA-Peru match report and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-peru-match-recap-highlights-orlando-florida" }
+      - profile: chris-brady
+        name: Chris Brady
+        club: Chicago Fire
+        trend: "→"
+        direction: steady
+        direction_label: In the senior squad
+        context: USMNT unused substitute
+        recap: "Brady was an unused substitute in the USA's 4-1 win over Peru and recorded no club appearance while away with the national team. Matt Freese started and Diego Kochen played the second half."
+        development_read: "The call-up keeps Brady in the senior goalkeeper competition, but the week did not change the depth-chart evidence. His next opportunity may come during the remaining three matches of the window."
+        sources:
+          - { label: "USA-Peru match report and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-peru-match-recap-highlights-orlando-florida" }
+      - profile: rokas-pukstas
+        name: Rokas Pukstas
+        club: Middlesbrough
+        trend: "—"
+        direction: insufficient
+        direction_label: No club match
+        context: No competitive action
+        recap: "Middlesbrough had no competitive match during the extended international break, and Pukstas was not with the USMNT. He therefore recorded no appearance during the window."
+        development_read: "No performance evaluation this week. The break gives a recent arrival additional training time, but it does not yet resolve the concern created by consecutive unused Championship benches before the pause."
+        sources:
+          - { label: "Middlesbrough international-break outlook (local Championship coverage)", url: "https://eflchampionship.co.uk/club-news/hellberg-welcomes-break-to-sharpen-boro-squad" }
+      - profile: cavan-sullivan
+        name: Cavan Sullivan
+        club: Philadelphia Union
+        trend: "↑"
+        direction: rising
+        direction_label: First USMNT start
+        context: USMNT debut; 62 minutes
+        recap: "Sullivan started against Peru and became the fourth-youngest player to debut for the USMNT at 16 years, 363 days. He had a close-range attempt blocked after combining with Alex Freeman, stayed involved in several promising first-half sequences and was cautioned before leaving in the 62nd minute."
+        development_read: "Starting immediately and finding dangerous spaces is another strong step after his sustained MLS production. Some turnovers and the lack of end product keep the grade below Ellis and Hall, but the responsibility itself meaningfully advances his trajectory."
+        sources:
+          - { label: "USA-Peru match report and debut milestone (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-peru-match-recap-highlights-orlando-florida" }
+      - profile: niko-tsakiris
+        name: Niko Tsakiris
+        club: San Jose Earthquakes
+        trend: "✚"
+        direction: insufficient
+        direction_label: Injured
+        context: No competitive appearance
+        recap: "Tsakiris was listed as questionable with an upper-body injury and was not in San Jose's squad for the 3-1 win over Portland. The club did not publish a more specific diagnosis or return timetable by cutoff."
+        development_read: "No performance evaluation this week. The interruption comes during a productive run, so the priority is a quick return without losing his attacking-midfield role."
+        sources:
+          - { label: "MLS player status report (official league)", url: "https://matchcenter.mlsnextpro.com/news/mls-player-status-report-matchday-28-saturday-september-26-sunday-september-27" }
+          - { label: "San Jose-Portland report and lineups (official club)", url: "https://www.sjearthquakes.com/news/match-recap-earthquakes-3-portland-timbers-1-x6128" }
+      - profile: paxten-aaronson
+        name: Paxten Aaronson
+        club: Colorado Rapids
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        context: 1 start, 90 minutes, 1 goal
+        recap: "Aaronson played the full match in Colorado's 3-2 loss at the LA Galaxy and scored his seventh league goal in the 39th minute, timing a run behind the back line and finishing Rob Holding's clipped pass to make it 2-0. Colorado then conceded three second-half goals."
+        development_read: "The team collapse tempers the result, but another goal from a full-match attacking-midfield role is positive individual evidence. His recent production is becoming sustained rather than sporadic."
+        sources:
+          - { label: "LA Galaxy-Colorado match report and lineups (official club)", url: "https://www.lagalaxy.com/news/match-report-galaxy-erase-two-goal-deficit-in-3-2-home-win-over-colorado" }
+          - { label: "Colorado match recap index (official club)", url: "https://www.coloradorapids.com/news/" }
+      - profile: mathis-albert
+        name: Mathis Albert
+        club: Borussia Dortmund
+        trend: "↑↑"
+        direction: rising
+        direction_label: Impact debut
+        context: USMNT debut; 29-plus minutes, penalty won
+        recap: "Albert made his senior USMNT debut in the 61st minute against Peru. Two minutes later, his explosive run into the box forced a defender to pull him down, winning the penalty that Malik Tillman converted for the 2-1 lead."
+        development_read: "This was meaningful senior evidence despite the short sample. Albert immediately changed the match with directness and acceleration, strengthening the case that his upside can translate before he has established a Dortmund first-team role."
+        sources:
+          - { label: "USA-Peru match report and penalty detail (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-peru-match-recap-highlights-orlando-florida" }
+      - profile: diego-kochen
+        name: Diego Kochen
+        club: FC Barcelona / Lyngby
+        trend: "↑"
+        direction: rising
+        direction_label: First USMNT cap
+        context: 1 substitute appearance, 45 minutes, clean half
+        recap: "Kochen replaced Matt Freese at halftime of the 4-1 win over Peru to make his senior USMNT debut. He completed a scoreless second half as the USA controlled possession and scored three times."
+        development_read: "A clean 45-minute senior debut is a positive response after conceding four in his previous Lyngby match. Peru created little after halftime, so the workload was limited, but he handled the occasion without incident."
+        sources:
+          - { label: "USA-Peru match report and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-peru-match-recap-highlights-orlando-florida" }
+      - profile: benjamin-cremaschi
+        name: Benjamin Cremaschi
+        club: Parma
+        trend: "↓"
+        direction: falling
+        direction_label: Role concern
+        context: No competitive action; 34 league minutes this season
+        recap: "Parma had no match during the international break, but local club coverage reviewed Cremaschi's opening weeks and noted that he has played only 34 Serie A minutes across two appearances and has not entered since the Juventus match."
+        development_read: "The week supplied no new performance, but the local assessment confirms that he remains outside the current midfield rotation. Training through the break needs to produce a role change when Serie A resumes."
+        sources:
+          - { label: "Cremaschi role review via ParmaLive (local, Italian)", url: "https://www.parmalive.com/focus/soggetto-identificato-cremaschi-soli-34-minuti-campionato-parma-calcio-254575" }
+          - { label: "Parma midfield minutes review (local, Italian)", url: "https://www.parmalive.com/focus/centrocampisti-minuto-per-minuto-keita-impiegato-cremaschi-rotazioni-parma-calcio-254594" }
+      - profile: kevin-paredes
+        name: Kevin Paredes
+        club: FC Utrecht
+        trend: "✚"
+        direction: insufficient
+        direction_label: Injured
+        context: No competitive appearance
+        recap: "Paredes remained unavailable with the ankle injury suffered at Sparta Rotterdam in August. Utrecht's official update projects an absence of several months, and no revised timetable was published during the window."
+        development_read: "No performance evaluation this week. Rehabilitation remains the only relevant development priority until Utrecht provides evidence that a return is approaching."
+        sources:
+          - { label: "Paredes injury update (official Utrecht, Dutch)", url: "https://www.fcutrecht.nl/nieuws/2026/augustus/kevin-paredes-enkele-maanden-niet-inzetbaar/" }
+      - profile: peyton-miller
+        name: Peyton Miller
+        club: New England Revolution
+        trend: "↑"
+        direction: rising
+        direction_label: First USMNT start
+        context: USMNT debut; 62 minutes
+        recap: "Miller started at left back in his senior USMNT debut and played 62 minutes of the 4-1 win over Peru. His 20th-minute dribble to the end line and low cross created a close-range Tillman shot that forced Pedro Gallese into a strong save."
+        development_read: "The first cap showed that his attacking winger experience can translate into aggressive fullback play. He created one of the USA's best first-half chances and handled meaningful minutes in a winning debut."
+        sources:
+          - { label: "USA-Peru match report and chance detail (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-peru-match-recap-highlights-orlando-florida" }
+      - profile: cooper-sanchez
+        name: Cooper Sanchez
+        club: Atlanta United
+        trend: "→"
+        direction: steady
+        direction_label: Steady
+        context: 1 start, 67 minutes
+        recap: "Sanchez started in Atlanta's midfield and played 67 minutes of the 2-2 draw with New York City FC before Jay Fortune replaced him. He recorded no goal or assist; Fortune later scored the equalizer."
+        development_read: "Another MLS start is useful role evidence, but there was no decisive individual action to move the projection. He remains in Atlanta's senior rotation rather than fully established as an automatic starter."
+        sources:
+          - { label: "Atlanta-NYCFC lineup notes (official club)", url: "https://www.atlutd.com/news/starting-xi-roster-notes-brennan-embolo-new-york-city-fc-september-26-2026" }
+          - { label: "Atlanta-NYCFC match recap (official club)", url: "https://www.atlutd.com/news/match-recap-battles-back-draw-new-york-city-fc-september-26-2026" }
+      - profile: beau-leroux
+        name: Beau Leroux
+        club: San Jose Earthquakes
+        trend: "↑"
+        direction: rising
+        direction_label: Rising
+        context: 1 start, 87 minutes, 1 assist
+        recap: "Leroux started in midfield and played 87 minutes of San Jose's 3-1 win over Portland. In the 24th minute he drove into the box and slipped a short through ball to Eduard Löwen for the second goal, earning his ninth league assist and 15th goal contribution across all competitions."
+        development_read: "The progressive carry and well-weighted final pass supplied another example of his ability to advance attacks from midfield. Continued end product in a six-match unbeaten run strengthens his case."
+        sources:
+          - { label: "San Jose-Portland report, milestones and lineups (official club)", url: "https://www.sjearthquakes.com/news/match-recap-earthquakes-3-portland-timbers-1-x6128" }
+      - profile: francis-westfield
+        name: Francis Westfield
+        club: Philadelphia Union
+        trend: "↑"
+        direction: rising
+        direction_label: First USMNT cap
+        context: 1 substitute appearance, 13-plus minutes
+        recap: "Westfield made his senior USMNT debut in the 77th minute against Peru, replacing Alex Freeman at right back and completing the 4-1 win through stoppage time. He recorded no goal or assist."
+        development_read: "The cameo was too brief for a full performance judgment, but the first cap confirms that his strong Philadelphia season has elevated him into the senior national-team picture."
+        sources:
+          - { label: "USA-Peru match report and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-peru-match-recap-highlights-orlando-florida" }
+      - profile: cole-campbell
+        name: Cole Campbell
+        club: SV Elversberg
+        trend: "—"
+        direction: insufficient
+        direction_label: Load management
+        context: USMNT roster; not dressed
+        recap: "Campbell had no club match during the international window and did not dress against Peru. U.S. Soccer specifically listed load management—not an injury or selection demotion—as the reason he and Chris Richards were left out of the matchday squad."
+        development_read: "No performance evaluation this week. The explicit load-management explanation removes unnecessary concern; his opportunity should come later in the four-match national-team window."
+        sources:
+          - { label: "USA-Peru lineup notes and availability (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt/starting-xi-lineup-notes-vs-peru-orlando-florida" }
+      - profile: luca-bombino
+        name: Luca Bombino
+        club: Stoke City
+        trend: "—"
+        direction: insufficient
+        direction_label: No club match
+        context: No competitive action
+        recap: "Stoke City had no competitive match during the extended international break, and Bombino was not part of the USMNT squad. His most recent club action remains the 10-minute Championship cameo against Sheffield United on September 19."
+        development_read: "No performance evaluation this week. The pause gives him additional integration time after four Championship appearances, with the next test being whether he can expand beyond a mostly substitute role."
+        sources:
+          - { label: "Bombino season record and next Stoke fixture (secondary)", url: "https://theanalyst.com/players/12892/luca-bombino" }
+          - { label: "Extended international-break dates (official Premier League)", url: "https://www.premierleague.com/en/news/4689113/when-are-the-international-breaks-for-202627" }
+      - profile: jackson-hopkins
+        name: Jackson Hopkins
+        club: D.C. United
+        trend: "↓"
+        direction: falling
+        direction_label: Shortened role
+        context: 1 start, 45 minutes
+        recap: "Hopkins started in midfield at Vancouver but was replaced by Nikola Markovic at halftime with D.C. trailing 2-1. He recorded no goal or assist before D.C. rallied twice in the second half for a 3-3 draw."
+        development_read: "A third straight start preserves his place in the group, but the halftime removal in a match that improved after the break is negative weekly evidence. He needs a stronger complete performance after the international pause."
+        sources:
+          - { label: "Vancouver-D.C. report and lineups (official D.C. United)", url: "https://www.dcunited.com/news/post-match-facts-vanvdc-x1806" }
+      - profile: duran-ferree
+        name: Duran Ferree
+        club: San Diego FC
+        trend: "↓"
+        direction: falling
+        direction_label: Concern
+        context: 1 start, 90 minutes, 2 saves, 3 goals conceded
+        recap: "Ferree made his 14th MLS start and two saves in San Diego's 3-3 draw at Austin. San Diego led 3-0 until the 73rd minute, but Brandon Vázquez and two Christian Ramírez headers erased the lead in a 13-minute span."
+        development_read: "No single goal was established as a clear goalkeeper error by the best available reports, but conceding three late goals while protecting a three-goal lead is negative game-state evidence. His continued starting opportunity is valuable; closing matches more securely is now the immediate test."
+        sources:
+          - { label: "Austin-San Diego comeback report (official Austin FC)", url: "https://www.austinfc.com/news/austin-fc-overcomes-three-goal-deficit-to-tie-san-diego-fc" }
+          - { label: "San Diego collapse analysis (local Sporting Tribune)", url: "https://www.thesportingtribune.com/2026/09/26/san-diego-fcs-three-goal-lead-vanishes-in-draw-with-austin-fc" }
+          - { label: "Ferree start and save total (AP)", url: "https://abcnews.com/Sports/wireStory/christian-ramrez-scores-late-goals-austin-rally-3-136791564" }
   - id: "2026-09-20"
     group: prospects
     group_label: Prospects
