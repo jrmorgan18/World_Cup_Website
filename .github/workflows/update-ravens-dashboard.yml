@@ -1,13 +1,15 @@
 name: Update Ravens season dashboard
 
 # Refreshes the objective Ravens snapshot from the free nflverse schedule,
-# play-by-play and Next Gen Stats releases plus ESPN's Total QBR feed. The
+# play-by-play and Next Gen Stats releases plus ESPN's Total QBR and win rates. The
 # updater preserves earlier weekly snapshots and writes only when football data
 # changes, so daily checks do not create noise.
 
 on:
   schedule:
     - cron: "15 11 * * *"
+    # ESPN's trench table is normally refreshed Tuesday at 10 a.m. ET.
+    - cron: "30 15 * * 2"
   workflow_dispatch: {}
 
 permissions:

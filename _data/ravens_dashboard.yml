@@ -6,7 +6,7 @@
 meta:
   season: 2026
   season_label: "2026 Season"
-  last_updated: "2026-09-28"
+  last_updated: "2026-09-29"
   update_context: "Through Week 3 · Tennessee next"
   data_status: "through-week-3"
   data_notice: >-
@@ -146,7 +146,7 @@ editorial:
       immediate Week 4 question is health along an already stressed offensive line after
       Jovaughn Gwyn and Ethan Pocic both left the Cowboys game.
     biggest_strength: "The Ravens rank top-three in EPA per play, success rate and explosive-play rate; Lamar, Henry and Flowers give Doyle answers at every level."
-    biggest_concern: "The defense is 18th in EPA allowed per play and success rate, while center depth is suddenly a material Week 4 risk."
+    biggest_concern: "The defense is 19th in EPA allowed per play, while center depth is suddenly a material Week 4 risk."
     changed_this_week: "Loop's 56-yard winner completed a 34-31 Week 3 win, Flowers returned with 104 yards from scrimmage, Madubuike debuted, and the line lost two more centers to in-game injuries."
 
   metric_assessments:
@@ -156,10 +156,10 @@ editorial:
     offensive_epa_per_play: { status: "Elite", interpretation: "Baltimore's 0.19 EPA per play ranks third. The Cowboys result was not the opener's 506-yard burst, but Jackson, Flowers and the run game still found enough high-value plays to win." }
     offensive_success_rate: { status: "Elite", interpretation: "A 54.3% success rate ranks second. The offense is staying on schedule at an elite rate even when short-yardage execution has created avoidable high-leverage failures." }
     explosive_play_rate: { status: "Elite", interpretation: "The 14.5% rate ranks second under the dashboard's 10-yard run and 20-yard pass definition. Flowers' return restored a major source of stress for defenses." }
-    red_zone_td_rate: { status: "Good", interpretation: "Baltimore's 66.7% red-zone touchdown rate ranks 10th. Four touchdowns on six Week 3 red-zone trips were useful, but the failure at the Dallas 1 remains the most important qualifier." }
-    defensive_epa_per_play: { status: "Average", interpretation: "The defense is 18th at 0.02 EPA allowed per play. It produced sacks, a fumble and a goal-line stop in Rio, but too many short completions and missed tackles kept the Cowboys alive." }
-    defensive_success_rate: { status: "Average", interpretation: "Opponents have a 44.6% success rate, 18th. The Ravens have not consistently finished the plays their coverage is designed to concede underneath." }
-    explosive_play_rate_allowed: { status: "Average", interpretation: "A 9.7% allowed rate ranks 18th. The defense has reduced the opener's chunk-play problem, but it has not yet turned that into down-to-down control." }
+    red_zone_td_rate: { status: "Good", interpretation: "Baltimore's 66.7% red-zone touchdown rate ranks ninth. Four touchdowns on six Week 3 red-zone trips were useful, but the failure at the Dallas 1 remains the most important qualifier." }
+    defensive_epa_per_play: { status: "Average", interpretation: "The defense is 19th at 0.02 EPA allowed per play. It produced sacks, a fumble and a goal-line stop in Rio, but too many short completions and missed tackles kept the Cowboys alive." }
+    defensive_success_rate: { status: "Average", interpretation: "Opponents have a 44.6% success rate, 17th. The Ravens have not consistently finished the plays their coverage is designed to concede underneath." }
+    explosive_play_rate_allowed: { status: "Average", interpretation: "A 9.7% allowed rate ranks 19th. The defense has reduced the opener's chunk-play problem, but it has not yet turned that into down-to-down control." }
     opponent_red_zone_td_rate: { status: "Average", interpretation: "Opponents have scored touchdowns on 63.6% of qualifying red-zone drives, 17th. The goal-line stop against Dallas mattered, but the overall rate remains a middle-of-the-league concern." }
 
   overviews:
@@ -180,8 +180,8 @@ editorial:
         The defense created real Week 3 moments: Travis Jones forced a fumble, Roquan Smith
         had a sack and the goal-line stop gave the offense a chance to win. But 415 Cowboys
         yards, repeated missed tackles and another late scoring run leave every core defensive
-        rate at 17th or 18th. The issue is execution, not a lack of isolated splash plays.
-      trend_summary: "No. 18 in EPA allowed/play and success rate; tackling and late-down execution have to improve."
+        rate between 17th and 19th. The issue is execution, not a lack of isolated splash plays.
+      trend_summary: "No. 19 in EPA allowed/play and No. 17 in success rate allowed; tackling and late-down execution have to improve."
       metric_ids: ["defensive_epa_per_play", "defensive_success_rate", "explosive_play_rate_allowed"]
       links:
         - { label: "Five questions defining the Ravens' season", url: "/ravens/five-questions-that-will-define-the-season/" }
@@ -191,9 +191,9 @@ editorial:
     - { name: "Running backs", assessment: "Strength", trend: "stable", season_grade: "A-", last_game_grade: "B+", explanation: "Henry ran 26 times for 89 yards and two touchdowns as part of a 192-yard rushing day. The production was real, but the repeated short-yardage failures keep the game grade below an A." }
     - { name: "Wide receivers", assessment: "Strength", trend: "up", season_grade: "A-", last_game_grade: "A", explanation: "Flowers returned from his hamstring injury with five catches for 84 yards, a 20-yard jet sweep and the 27-yard catch that set up the winner. His movement and speed restored a different offensive ceiling." }
     - { name: "Tight ends", assessment: "Solid", trend: "stable", season_grade: "B", last_game_grade: "B", explanation: "Matt Hibner's go-ahead touchdown and Josh Cuevas' contribution helped bridge a brief Mark Andrews hand-injury absence. The group found the decisive play but remains a secondary option in the passing game." }
-    - { name: "Offensive line", assessment: "Concern", trend: "down", season_grade: "C+", last_game_grade: "C", analytics_metrics: [{ source_label: "ESPN", source_url: "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking", period_label: "Week 1", label: "Team PBWR", value: "38%", rank: 28, rank_group: "NFL" }, { source_label: "ESPN", source_url: "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking", period_label: "Week 1", label: "Team RBWR", value: "80%", rank: 3, rank_group: "NFL" }], explanation: "Ronnie Stanley was out, then Jovaughn Gwyn and Ethan Pocic left in-game, forcing Vega Ioane to finish at center. The group also could not repeatedly create the one yard it needed." }
-    - { name: "Defensive line", assessment: "Solid", trend: "up", season_grade: "B+", last_game_grade: "B+", analytics_metrics: [{ source_label: "ESPN", source_url: "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking", period_label: "Week 1", label: "Team RSWR", value: "25%", rank: 26, rank_group: "NFL" }, { source_label: "ESPN", source_url: "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking", period_label: "Week 1", label: "Jones RSWR", value: "62%", rank: 3, rank_group: "DT" }], explanation: "Madubuike made his season debut, Travis Jones forced a pivotal fumble and Calais Campbell recorded three quarterback hits. The interior made enough impact plays despite the defense's broader problems." }
-    - { name: "Edge rushers", assessment: "Solid", trend: "stable", season_grade: "B", last_game_grade: "B", analytics_metrics: [{ source_label: "ESPN", source_url: "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking", period_label: "Week 1", label: "Team PRWR", value: "46%", rank: 19, rank_group: "NFL" }, { source_label: "ESPN", source_url: "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking", period_label: "Week 1", label: "Robinson PRWR", value: "31%", rank: 7, rank_group: "EDGE" }], explanation: "The front recorded seven quarterback hits, but the rush did not consistently prevent Dak Prescott from turning short throws into productive drives. Pressure has to connect more cleanly with coverage." }
+    - { name: "Offensive line", assessment: "Concern", trend: "down", season_grade: "C+", last_game_grade: "C", explanation: "Ronnie Stanley was out, then Jovaughn Gwyn and Ethan Pocic left in-game, forcing Vega Ioane to finish at center. The group also could not repeatedly create the one yard it needed." }
+    - { name: "Defensive line", assessment: "Solid", trend: "up", season_grade: "B+", last_game_grade: "B+", explanation: "Madubuike made his season debut, Travis Jones forced a pivotal fumble and Calais Campbell recorded three quarterback hits. The interior made enough impact plays despite the defense's broader problems." }
+    - { name: "Edge rushers", assessment: "Solid", trend: "stable", season_grade: "B", last_game_grade: "B", explanation: "The front recorded seven quarterback hits, but the rush did not consistently prevent Dak Prescott from turning short throws into productive drives. Pressure has to connect more cleanly with coverage." }
     - { name: "Linebackers", assessment: "Mixed", trend: "stable", season_grade: "B-", last_game_grade: "B-", explanation: "Roquan Smith recorded a sack, while Trenton Simpson recovered Jones' forced fumble and posted two tackles for loss. The positive plays were offset by the tackling and pursuit errors that extended Dallas drives." }
     - { name: "Secondary", assessment: "Concern", trend: "stable", season_grade: "C+", last_game_grade: "C-", explanation: "The unit made the game-ending goal-line stop, but Dallas finished with 267 net passing yards and the defense repeatedly surrendered extra yards after short throws. The Week 4 priority remains tackling and finishing coverage reps." }
     - { name: "Specialists", assessment: "Strength", trend: "up", season_grade: "B+", last_game_grade: "A", explanation: "Loop made the 56-yard game winner, Keondre Jackson blocked a 59-yard Brandon Aubrey attempt, and Baltimore won the kickoff exchange. This was the answer after Week 2's special-teams failures." }
@@ -206,7 +206,7 @@ editorial:
 
   championship_check:
     - { category: "Quarterback play", status: "Ready", explanation: "Jackson is fourth in Total QBR and added a defining Week 3 arm-and-legs performance." }
-    - { category: "Pass protection", status: "Concern", explanation: "The interior had to reshuffle twice in Rio; the Week 4 availability of Gwyn and Pocic now matters as much as the on-field grade." }
+    - { category: "Pass protection", status: "Concern", explanation: "The interior had to reshuffle twice in Rio. With Gwyn and Pocic facing longer absences, Vega Ioane's move to center is the Week 4 test." }
     - { category: "Explosive offense", status: "Ready", explanation: "The Ravens rank second in explosive-play rate, and Flowers' return restores the offense's most flexible space creator." }
     - { category: "Four-man pass rush", status: "Unclear", explanation: "The front made splash plays and Madubuike returned, but the defense has not yet translated those moments into enough stops." }
     - { category: "Health", status: "Concern", explanation: "Flowers and Madubuike returned, but Stanley, Gwyn, Pocic, Lane and Pinter leave the line and depth chart under real pressure." }
@@ -221,8 +221,8 @@ preseason_form:
 unit_grade_context:
   season_label: "2026 season to date"
   last_game_label: "Week 3 at Dallas"
-  analytics_as_of: "NGS and QBR through Week 3 · ESPN trenches through Week 1"
-  note: "Dual Eights letter grades remain editorial. League-wide analytics are displayed separately as supporting evidence; three games remain an early sample, not a settled season verdict."
+  analytics_as_of: "Each league-wide metric carries its latest published week"
+  note: "Dual Eights letter grades remain editorial. League-wide analytics are supporting evidence; each metric is labeled with its source and latest published week."
 
 preseason_last_game:
   type_label: "Preseason finale"
@@ -251,10 +251,10 @@ matchup_focus:
       text: "Baltimore is third in EPA per play and Tennessee's defense is 19th. The Ravens should be able to create the same high-value opportunities that have made the offense a top-three unit through three games."
       source_url: "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     - title: "Protect the middle of the line"
-      text: "The matchup becomes materially different if Gwyn and Pocic cannot return after both left in Rio. A healthy Tennessee front is less important than whether Baltimore can field a stable center plan."
-      source_url: "https://www.baltimoreravens.com/news/tyler-loop-kick-ends-remarkable-rio-trip-lamar-jackson-stars-defense-still-needs-work-week-3-brazil-ravens-cowboys"
+      text: "Gwyn and Pocic are expected to miss time after both left in Rio. Vega Ioane is poised to remain at center, making the interior line the defining Week 4 protection question."
+      source_url: "https://www.baltimoreravens.com/news/jovaugh-gwyn-ethan-pocic-suffer-longer-term-injuries-against-dallas-vega-ioane-poised-to-remain-at-center"
     - title: "Finish the routine defensive plays"
-      text: "Tennessee ranks 22nd in offensive EPA per play, but Baltimore is only 18th in both defensive EPA allowed per play and success rate. The defense's Week 4 assignment starts with tackling and getting off the field."
+      text: "Tennessee ranks 22nd in offensive EPA per play, but the Ravens rank 19th in defensive EPA allowed and 17th in success rate allowed. The defense's Week 4 assignment starts with tackling and getting off the field."
       source_url: "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
 
 opponent_availability:
@@ -283,7 +283,7 @@ sources:
   - { name: "nflverse schedules and play-by-play", role: "Automated regular-season results, EPA, success, explosive plays, red-zone drives and NFL ranks", url: "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html", cadence: "Schedules update about every five minutes; play-by-play is refreshed nightly after game days.", license: "CC BY 4.0" }
   - { name: "NFL Next Gen Stats via nflverse", role: "Automated CPOE, RYOE per attempt and YAC over expectation values and qualifying-player ranks for the Unit Report Card", url: "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html", cadence: "Current-season player summaries update nightly when players meet NFL Next Gen Stats minimums." }
   - { name: "ESPN Total QBR", role: "Automated Lamar Jackson Total QBR and qualified league rank for the Unit Report Card", url: "https://www.espn.com/nfl/qbr/_/season/2026/seasontype/2", cadence: "Checked nightly; the last good value is retained if ESPN is temporarily unavailable." }
-  - { name: "ESPN Analytics Win Rate Rankings", role: "Manually entered team and Ravens player PRWR, RSWR, PBWR and RBWR context for the Unit Report Card", url: "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking", cadence: "Current dashboard snapshot is through Week 1, September 15 at 10 a.m. ET." }
+  - { name: "ESPN Analytics Win Rate Rankings", role: "Automated team and Ravens player PRWR, RSWR, PBWR and RBWR context for the Unit Report Card", url: "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking", cadence: "Checked by the daily dashboard update; the last good value is retained if ESPN is temporarily unavailable." }
   - { name: "Baltimore Ravens official schedule", role: "2026 schedule and official preseason results", url: "https://www.baltimoreravens.com/schedule/2026/", cadence: "As published by the club" }
   - { name: "Baltimore Ravens official news and roster reports", role: "Availability, roster status and dated team context", url: "https://www.baltimoreravens.com/news/", cadence: "Reviewed for each dashboard update" }
 

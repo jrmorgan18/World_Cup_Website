@@ -2,7 +2,7 @@
 """Build the Ravens dashboard's objective weekly snapshot.
 
 The script uses free, keyless nflverse schedule, play-by-play and Next Gen Stats
-releases plus ESPN's Total QBR feed. It keeps prior weekly snapshots in the
+releases plus ESPN's Total QBR and win-rate pages. It keeps prior weekly snapshots in the
 generated JSON so the Jekyll dashboard can show real week-over-week movement.
 Availability and editorial assessments stay in _data/ravens_dashboard.yml so
 dated official club reports can be reviewed before health context is published.
@@ -17,9 +17,11 @@ Requires pandas and pyarrow. A failed download leaves the existing JSON intact.
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import math
 import os
+import re
 import sys
 from datetime import date, datetime, timezone
 from pathlib import Path
@@ -39,6 +41,7 @@ NGS_URL = "https://github.com/nflverse/nflverse-data/releases/download/nextgen_s
 NGS_DOCS_URL = "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html"
 ESPN_QBR_API_URL = "https://site.web.api.espn.com/apis/fitt/v3/sports/football/nfl/qbr"
 ESPN_QBR_PAGE_URL = "https://www.espn.com/nfl/qbr/_/season/{season}/seasontype/2"
+ESPN_WIN_RATE_PAGE_URL = "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking"
 LAMAR_ESPN_ID = "3916387"
 
 PBP_COLUMNS = [
@@ -196,6 +199,111 @@ def existing_qbr_metric(existing):
     return None
 
 
+def espn_table_rows(page, caption):
+    """Read one labeled ESPN leaderboard, without depending on its CSS classes."""
+    heading = re.search(
+        rf'<h2 class="table-caption">{re.escape(caption)}</h2>\s*(<table\b.*?</table>)',
+        page,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    if not heading:
+        raise ValueError(f"ESPN win-rate table missing: {caption}")
+    rows = []
+    for row in re.findall(r"<tr\b[^>]*>.*?</tr>", heading.group(1), flags=re.IGNORECASE | re.DOTALL):
+        cells = re.findall(r"<td\b[^>]*>(.*?)</td>", row, flags=re.IGNORECASE | re.DOTALL)
+        if cells:
+            rows.append([html.unescape(re.sub(r"<[^>]+>", "", cell)).strip() for cell in cells])
+    return rows
+
+
+def espn_win_rate_metric(week, label, cell, group):
+    match = re.fullmatch(r"(\d+)%\s*\((\d+)\)", cell)
+    if not match:
+        raise ValueError(f"Unexpected ESPN win-rate cell for {label}: {cell}")
+    value, rank = map(int, match.groups())
+    if not 0 <= value <= 100 or not 1 <= rank <= 32:
+        raise ValueError(f"ESPN win-rate cell out of range for {label}: {cell}")
+    return {
+        "source_label": "ESPN",
+        "source_url": ESPN_WIN_RATE_PAGE_URL,
+        "period_label": f"Through Week {week}",
+        "label": label,
+        "value": f"{value}%",
+        "rank": rank,
+        "rank_group": group,
+    }
+
+
+def espn_player_win_rate(week, rows, label, group):
+    ravens = next((row for row in rows if len(row) >= 6 and row[2] == TEAM), None)
+    if not ravens:
+        return None
+    rank = int(ravens[0])
+    value = ravens[5]
+    if not 1 <= rank <= 32 or not re.fullmatch(r"\d+%", value):
+        raise ValueError(f"Unexpected ESPN {group} player row: {ravens}")
+    return {
+        "source_label": "ESPN",
+        "source_url": ESPN_WIN_RATE_PAGE_URL,
+        "period_label": f"Through Week {week}",
+        "label": f"{ravens[1].split()[-1]} {label}",
+        "value": value,
+        "rank": rank,
+        "rank_group": group,
+    }
+
+
+def fetch_espn_win_rates(current_week):
+    """Return the latest published Ravens trench metrics, dated to ESPN's week."""
+    request = Request(
+        ESPN_WIN_RATE_PAGE_URL,
+        headers={"Accept": "text/html", "User-Agent": "Mozilla/5.0"},
+    )
+    with urlopen(request, timeout=30) as response:
+        page = response.read().decode("utf-8")
+    stamp = re.search(r"Last updated:\s*Through Week\s+(\d+)\s+games", page)
+    if not stamp:
+        raise ValueError("ESPN win-rate update week is missing")
+    week = int(stamp.group(1))
+    if not 1 <= week <= current_week:
+        raise ValueError(f"ESPN win-rate week {week} is outside the current season")
+
+    team_rows = espn_table_rows(page, "NFL team win rate rankings")
+    ravens = next((row for row in team_rows if len(row) == 5 and row[0] == "Baltimore Ravens"), None)
+    if not ravens:
+        raise ValueError("Ravens row missing from ESPN team win-rate table")
+    _, prwr, rswr, pbwr, rbwr = ravens
+    result = {
+        "Offensive line": [
+            espn_win_rate_metric(week, "Team PBWR", pbwr, "NFL"),
+            espn_win_rate_metric(week, "Team RBWR", rbwr, "NFL"),
+        ],
+        "Defensive line": [espn_win_rate_metric(week, "Team RSWR", rswr, "NFL")],
+        "Edge rushers": [espn_win_rate_metric(week, "Team PRWR", prwr, "NFL")],
+    }
+    dt_player = espn_player_win_rate(
+        week, espn_table_rows(page, "DT run stop win rate rankings"), "RSWR", "DT"
+    ) or espn_player_win_rate(
+        week, espn_table_rows(page, "DT pass rush win rate rankings"), "PRWR", "DT"
+    )
+    edge_player = espn_player_win_rate(
+        week, espn_table_rows(page, "Edge pass rush win rate rankings"), "PRWR", "EDGE"
+    )
+    if dt_player:
+        result["Defensive line"].append(dt_player)
+    if edge_player:
+        result["Edge rushers"].append(edge_player)
+    return result
+
+
+def existing_espn_win_rates(existing):
+    stored = existing.get("unit_analytics", {})
+    units = ("Offensive line", "Defensive line", "Edge rushers")
+    if all(stored.get(unit) and all(metric.get("source_label") == "ESPN" for metric in stored[unit]) for unit in units):
+        return {unit: stored[unit] for unit in units}
+    return {}
+
+
 def ngs_player_metric(data, season, position, volume_column, metric_column, label, digits, suffix=""):
     """Return the Ravens' volume leader and his rank among NGS qualifiers at the position."""
     eligible = data[
@@ -251,7 +359,7 @@ def secondary_cpoe_metric(pbp, valid_game_ids, week):
     }
 
 
-def unit_analytics_payload(season, week, current_games, current_pbp, ngs_data, qbr_metric=None):
+def unit_analytics_payload(season, week, current_games, current_pbp, ngs_data, qbr_metric=None, trench_metrics=None):
     analytics = {}
     specs = [
         ("Quarterback", "passing", "QB", "attempts", "completion_percentage_above_expectation", "CPOE", 1, "%"),
@@ -266,6 +374,8 @@ def unit_analytics_payload(season, week, current_games, current_pbp, ngs_data, q
 
     if qbr_metric:
         analytics.setdefault("Quarterback", []).append(qbr_metric)
+
+    analytics.update(trench_metrics or {})
 
     coverage = secondary_cpoe_metric(current_pbp, current_games["game_id"].tolist(), week)
     if coverage:
@@ -511,7 +621,7 @@ def recent_games_payload(schedule_games):
             "result": result,
             "ravens_score": team_score,
             "opponent_score": opp_score,
-            "takeaway": f"Baltimore {result_word} {TEAM_NAMES.get(opponent, opponent)} {team_score}–{opp_score}.",
+            "takeaway": f"The Ravens {result_word} the {TEAM_NAMES.get(opponent, opponent)} {team_score}–{opp_score}.",
         })
     return payload
 
@@ -672,12 +782,18 @@ def main():
         sequence = [game["result"] for game in reversed(recent_games)]
         recent_margin = sum(game["ravens_score"] - game["opponent_score"] for game in recent_games)
         qbr_metric = None
+        trench_metrics = {}
         if current["week"] > 0:
             try:
                 qbr_metric = espn_qbr_metric(fetch_espn_qbr(args.season), args.season)
             except Exception as error:
                 print(f"ESPN QBR unavailable; keeping the last good value: {error}", file=sys.stderr)
             qbr_metric = qbr_metric or existing_qbr_metric(existing)
+            try:
+                trench_metrics = fetch_espn_win_rates(current["week"])
+            except Exception as error:
+                print(f"ESPN win rates unavailable; keeping the last good values: {error}", file=sys.stderr)
+            trench_metrics = trench_metrics or existing_espn_win_rates(existing)
         unit_analytics = (
             unit_analytics_payload(
                 args.season,
@@ -686,6 +802,7 @@ def main():
                 current_pbp,
                 ngs_data,
                 qbr_metric,
+                trench_metrics,
             )
             if current["week"] > 0 else {}
         )
@@ -723,6 +840,7 @@ def main():
                 "play_by_play": {"label": "nflverse play-by-play", "url": PBP_URL.format(season=args.season)},
                 "next_gen_stats": {"label": "NFL Next Gen Stats via nflverse", "url": NGS_DOCS_URL},
                 "espn_qbr": {"label": "ESPN Total QBR", "url": ESPN_QBR_PAGE_URL.format(season=args.season)},
+                "espn_win_rates": {"label": "ESPN Analytics Win Rate Rankings", "url": ESPN_WIN_RATE_PAGE_URL},
                 "methodology": {"label": "nflverse data update schedule", "url": PBP_DOCS_URL},
                 "license": "CC BY 4.0",
                 "retrieved_at": now,

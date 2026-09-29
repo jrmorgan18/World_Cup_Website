@@ -130,14 +130,12 @@ validate_analytics = lambda do |unit_name, metrics|
 end
 
 editorial_analytics = units.select { |unit| unit.key?("analytics_metrics") }
-assert(editorial_analytics.map { |unit| unit["name"] } == ["Offensive line", "Defensive line", "Edge rushers"], "ESPN trench metrics must map to the three expected units", errors)
-editorial_analytics.each { |unit| validate_analytics.call(unit["name"], unit["analytics_metrics"]) }
+assert(editorial_analytics.empty?, "Unit analytics must come from the generated statistics file", errors)
 
 automated_analytics = stats.fetch("unit_analytics")
-expected_automated_units = current_snapshot && current_snapshot["week"].to_i > 0 ? ["Quarterback", "Running backs", "Wide receivers", "Tight ends", "Secondary"] : []
+expected_automated_units = current_snapshot && current_snapshot["week"].to_i > 0 ? ["Quarterback", "Running backs", "Wide receivers", "Tight ends", "Offensive line", "Defensive line", "Edge rushers", "Secondary"] : []
 assert(automated_analytics.keys == expected_automated_units, "Automated unit analytics must contain the supported units in order", errors)
 automated_analytics.each { |unit_name, metrics| validate_analytics.call(unit_name, metrics) }
-assert((automated_analytics.keys & editorial_analytics.map { |unit| unit["name"] }).empty?, "A unit cannot mix automated and editorial analytics", errors)
 if current_snapshot && current_snapshot["week"].to_i > 0
   quarterback_metrics = automated_analytics.fetch("Quarterback", [])
   qbr = quarterback_metrics.find { |metric| metric["label"] == "Jackson QBR" }

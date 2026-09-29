@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-28T18:35:37Z",
-  "as_of": "2026-09-28",
+  "generated_at": "2026-09-29T13:41:57Z",
+  "as_of": "2026-09-29",
   "season": 2026,
   "benchmark_season": 2025,
   "current_snapshot": "2026-week-03",
@@ -240,22 +240,22 @@
         },
         "red_zone_td_rate": {
           "value": 66.7,
-          "rank": 10,
+          "rank": 9,
           "source": "nflverse play-by-play"
         },
         "defensive_epa_per_play": {
           "value": 0.02,
-          "rank": 18,
+          "rank": 19,
           "source": "nflverse play-by-play"
         },
         "defensive_success_rate": {
           "value": 44.6,
-          "rank": 18,
+          "rank": 17,
           "source": "nflverse play-by-play"
         },
         "explosive_play_rate_allowed": {
           "value": 9.7,
-          "rank": 18,
+          "rank": 19,
           "source": "nflverse play-by-play"
         },
         "opponent_red_zone_td_rate": {
@@ -332,7 +332,7 @@
     }
   },
   "league_efficiency_rankings": {
-    "label": "Games through September 28",
+    "label": "Games through September 29",
     "sample_note": "Completed regular-season games; early-season sample",
     "teams": [
       {
@@ -357,7 +357,7 @@
         "name": "Seahawks",
         "full_name": "Seattle Seahawks",
         "record": "2-1",
-        "value": 80.5
+        "value": 81.2
       },
       {
         "rank": 4,
@@ -365,7 +365,7 @@
         "name": "Bengals",
         "full_name": "Cincinnati Bengals",
         "record": "2-1",
-        "value": 74.2
+        "value": 72.7
       },
       {
         "rank": 5,
@@ -376,12 +376,20 @@
         "value": 71.1
       },
       {
-        "rank": 5,
+        "rank": 6,
         "abbr": "SF",
         "name": "49ers",
         "full_name": "San Francisco 49ers",
         "record": "3-0",
-        "value": 71.1
+        "value": 70.3
+      },
+      {
+        "rank": 7,
+        "abbr": "CHI",
+        "name": "Bears",
+        "full_name": "Chicago Bears",
+        "record": "2-1",
+        "value": 69.5
       },
       {
         "rank": 7,
@@ -389,10 +397,10 @@
         "name": "Rams",
         "full_name": "Los Angeles Rams",
         "record": "1-2",
-        "value": 68.8
+        "value": 69.5
       },
       {
-        "rank": 8,
+        "rank": 9,
         "abbr": "ATL",
         "name": "Falcons",
         "full_name": "Atlanta Falcons",
@@ -400,7 +408,7 @@
         "value": 60.9
       },
       {
-        "rank": 9,
+        "rank": 10,
         "abbr": "CAR",
         "name": "Panthers",
         "full_name": "Carolina Panthers",
@@ -408,28 +416,28 @@
         "value": 60.2
       },
       {
-        "rank": 10,
-        "abbr": "NYJ",
-        "name": "Jets",
-        "full_name": "New York Jets",
-        "record": "1-2",
-        "value": 59.4
-      },
-      {
         "rank": 11,
         "abbr": "LV",
         "name": "Raiders",
         "full_name": "Las Vegas Raiders",
         "record": "3-0",
-        "value": 58.6
+        "value": 59.4
       },
       {
         "rank": 12,
+        "abbr": "NYJ",
+        "name": "Jets",
+        "full_name": "New York Jets",
+        "record": "1-2",
+        "value": 58.6
+      },
+      {
+        "rank": 13,
         "abbr": "BUF",
         "name": "Bills",
         "full_name": "Buffalo Bills",
         "record": "3-0",
-        "value": 57.8
+        "value": 57.0
       },
       {
         "rank": 13,
@@ -440,12 +448,12 @@
         "value": 57.0
       },
       {
-        "rank": 14,
-        "abbr": "CHI",
-        "name": "Bears",
-        "full_name": "Chicago Bears",
-        "record": "1-1",
-        "value": 56.2
+        "rank": 15,
+        "abbr": "DET",
+        "name": "Lions",
+        "full_name": "Detroit Lions",
+        "record": "2-1",
+        "value": 50.0
       },
       {
         "rank": 15,
@@ -453,14 +461,6 @@
         "name": "Texans",
         "full_name": "Houston Texans",
         "record": "0-3",
-        "value": 50.8
-      },
-      {
-        "rank": 16,
-        "abbr": "DET",
-        "name": "Lions",
-        "full_name": "Detroit Lions",
-        "record": "2-1",
         "value": 50.0
       },
       {
@@ -473,11 +473,19 @@
       },
       {
         "rank": 18,
+        "abbr": "ARI",
+        "name": "Cardinals",
+        "full_name": "Arizona Cardinals",
+        "record": "1-2",
+        "value": 44.5
+      },
+      {
+        "rank": 18,
         "abbr": "DEN",
         "name": "Broncos",
         "full_name": "Denver Broncos",
         "record": "2-1",
-        "value": 45.3
+        "value": 44.5
       },
       {
         "rank": 18,
@@ -485,18 +493,10 @@
         "name": "Titans",
         "full_name": "Tennessee Titans",
         "record": "0-3",
-        "value": 45.3
+        "value": 44.5
       },
       {
-        "rank": 20,
-        "abbr": "ARI",
-        "name": "Cardinals",
-        "full_name": "Arizona Cardinals",
-        "record": "1-2",
-        "value": 43.8
-      },
-      {
-        "rank": 20,
+        "rank": 21,
         "abbr": "CLE",
         "name": "Browns",
         "full_name": "Cleveland Browns",
@@ -504,7 +504,7 @@
         "value": 43.8
       },
       {
-        "rank": 20,
+        "rank": 21,
         "abbr": "NE",
         "name": "Patriots",
         "full_name": "New England Patriots",
@@ -521,14 +521,6 @@
       },
       {
         "rank": 24,
-        "abbr": "PHI",
-        "name": "Eagles",
-        "full_name": "Philadelphia Eagles",
-        "record": "2-0",
-        "value": 42.2
-      },
-      {
-        "rank": 25,
         "abbr": "NO",
         "name": "Saints",
         "full_name": "New Orleans Saints",
@@ -536,20 +528,28 @@
         "value": 40.6
       },
       {
-        "rank": 26,
+        "rank": 25,
         "abbr": "WAS",
         "name": "Commanders",
         "full_name": "Washington Commanders",
         "record": "1-2",
-        "value": 38.3
+        "value": 39.1
       },
       {
-        "rank": 27,
+        "rank": 26,
         "abbr": "NYG",
         "name": "Giants",
         "full_name": "New York Giants",
         "record": "2-1",
         "value": 35.9
+      },
+      {
+        "rank": 27,
+        "abbr": "PIT",
+        "name": "Steelers",
+        "full_name": "Pittsburgh Steelers",
+        "record": "2-1",
+        "value": 35.2
       },
       {
         "rank": 28,
@@ -560,12 +560,12 @@
         "value": 34.4
       },
       {
-        "rank": 28,
-        "abbr": "PIT",
-        "name": "Steelers",
-        "full_name": "Pittsburgh Steelers",
+        "rank": 29,
+        "abbr": "PHI",
+        "name": "Eagles",
+        "full_name": "Philadelphia Eagles",
         "record": "2-1",
-        "value": 34.4
+        "value": 32.0
       },
       {
         "rank": 30,
@@ -573,7 +573,7 @@
         "name": "Colts",
         "full_name": "Indianapolis Colts",
         "record": "1-2",
-        "value": 28.9
+        "value": 28.1
       },
       {
         "rank": 31,
@@ -581,7 +581,7 @@
         "name": "Packers",
         "full_name": "Green Bay Packers",
         "record": "1-2",
-        "value": 26.6
+        "value": 25.8
       },
       {
         "rank": 32,
@@ -618,7 +618,7 @@
             },
             "opponent": {
               "value": 0.04,
-              "rank": 19
+              "rank": 20
             }
           },
           {
@@ -638,7 +638,7 @@
             "stat": "EPA / play",
             "ravens": {
               "value": 0.02,
-              "rank": 18
+              "rank": 19
             },
             "opponent": {
               "value": -0.07,
@@ -670,7 +670,7 @@
     "result": "W",
     "ravens_score": 34,
     "opponent_score": 31,
-    "takeaway": "Baltimore defeated Dallas Cowboys 34–31.",
+    "takeaway": "The Ravens defeated the Dallas Cowboys 34–31.",
     "type_label": "Regular season",
     "opponent_abbr": "DAL",
     "key_stats": [
@@ -747,8 +747,59 @@
         "period_label": "Through Week 3",
         "label": "Andrews YACOE",
         "value": "+0.07",
-        "rank": 22,
+        "rank": 23,
         "rank_group": "TE"
+      }
+    ],
+    "Offensive line": [
+      {
+        "source_label": "ESPN",
+        "source_url": "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking",
+        "period_label": "Through Week 2",
+        "label": "Team PBWR",
+        "value": "35%",
+        "rank": 30,
+        "rank_group": "NFL"
+      },
+      {
+        "source_label": "ESPN",
+        "source_url": "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking",
+        "period_label": "Through Week 2",
+        "label": "Team RBWR",
+        "value": "79%",
+        "rank": 1,
+        "rank_group": "NFL"
+      }
+    ],
+    "Defensive line": [
+      {
+        "source_label": "ESPN",
+        "source_url": "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking",
+        "period_label": "Through Week 2",
+        "label": "Team RSWR",
+        "value": "26%",
+        "rank": 27,
+        "rank_group": "NFL"
+      }
+    ],
+    "Edge rushers": [
+      {
+        "source_label": "ESPN",
+        "source_url": "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking",
+        "period_label": "Through Week 2",
+        "label": "Team PRWR",
+        "value": "55%",
+        "rank": 10,
+        "rank_group": "NFL"
+      },
+      {
+        "source_label": "ESPN",
+        "source_url": "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking",
+        "period_label": "Through Week 2",
+        "label": "Hendrickson PRWR",
+        "value": "26%",
+        "rank": 12,
+        "rank_group": "EDGE"
       }
     ],
     "Secondary": [
@@ -782,7 +833,7 @@
       "result": "W",
       "ravens_score": 34,
       "opponent_score": 31,
-      "takeaway": "Baltimore defeated Dallas Cowboys 34–31."
+      "takeaway": "The Ravens defeated the Dallas Cowboys 34–31."
     },
     {
       "game_id": "2026_02_NO_BAL",
@@ -793,7 +844,7 @@
       "result": "L",
       "ravens_score": 17,
       "opponent_score": 24,
-      "takeaway": "Baltimore lost to New Orleans Saints 17–24."
+      "takeaway": "The Ravens lost to the New Orleans Saints 17–24."
     },
     {
       "game_id": "2026_01_BAL_IND",
@@ -804,7 +855,7 @@
       "result": "W",
       "ravens_score": 41,
       "opponent_score": 23,
-      "takeaway": "Baltimore defeated Indianapolis Colts 41–23."
+      "takeaway": "The Ravens defeated the Indianapolis Colts 41–23."
     }
   ],
   "sources": {
@@ -824,11 +875,15 @@
       "label": "ESPN Total QBR",
       "url": "https://www.espn.com/nfl/qbr/_/season/2026/seasontype/2"
     },
+    "espn_win_rates": {
+      "label": "ESPN Analytics Win Rate Rankings",
+      "url": "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking"
+    },
     "methodology": {
       "label": "nflverse data update schedule",
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-09-28T18:35:37Z"
+    "retrieved_at": "2026-09-29T13:41:57Z"
   }
 }
