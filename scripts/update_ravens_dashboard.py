@@ -148,7 +148,7 @@ def fetch_espn_qbr(season):
         return json.load(response)
 
 
-def espn_qbr_metric(data, season):
+def espn_qbr_metric(data, season, completed_week=None):
     """Return Lamar Jackson's qualified Total QBR and league rank."""
     categories = data.get("categories") or []
     if not categories:
@@ -179,6 +179,8 @@ def espn_qbr_metric(data, season):
         return None
 
     week = data.get("requestedSeason", {}).get("type", {}).get("week", {}).get("number")
+    if week and completed_week:
+        week = min(int(week), int(completed_week))
     period_label = f"Through Week {int(week)}" if week else f"{season} regular season"
     return {
         "source_label": "ESPN",
@@ -785,7 +787,7 @@ def main():
         trench_metrics = {}
         if current["week"] > 0:
             try:
-                qbr_metric = espn_qbr_metric(fetch_espn_qbr(args.season), args.season)
+                qbr_metric = espn_qbr_metric(fetch_espn_qbr(args.season), args.season, current["week"])
             except Exception as error:
                 print(f"ESPN QBR unavailable; keeping the last good value: {error}", file=sys.stderr)
             qbr_metric = qbr_metric or existing_qbr_metric(existing)

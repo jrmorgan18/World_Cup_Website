@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T16:51:41Z",
+  "generated_at": "2026-09-30T18:07:49Z",
   "as_of": "2026-09-30",
   "season": 2026,
   "benchmark_season": 2025,
@@ -711,7 +711,7 @@
       {
         "source_label": "ESPN",
         "source_url": "https://www.espn.com/nfl/qbr/_/season/2026/seasontype/2",
-        "period_label": "Through Week 4",
+        "period_label": "Through Week 3",
         "label": "Jackson QBR",
         "value": "82.2",
         "rank": 4,
@@ -755,19 +755,19 @@
       {
         "source_label": "ESPN",
         "source_url": "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking",
-        "period_label": "Through Week 2",
+        "period_label": "Through Week 3",
         "label": "Team PBWR",
-        "value": "35%",
-        "rank": 30,
+        "value": "41%",
+        "rank": 29,
         "rank_group": "NFL"
       },
       {
         "source_label": "ESPN",
         "source_url": "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking",
-        "period_label": "Through Week 2",
+        "period_label": "Through Week 3",
         "label": "Team RBWR",
-        "value": "79%",
-        "rank": 1,
+        "value": "77%",
+        "rank": 3,
         "rank_group": "NFL"
       }
     ],
@@ -775,10 +775,10 @@
       {
         "source_label": "ESPN",
         "source_url": "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking",
-        "period_label": "Through Week 2",
+        "period_label": "Through Week 3",
         "label": "Team RSWR",
-        "value": "26%",
-        "rank": 27,
+        "value": "28%",
+        "rank": 20,
         "rank_group": "NFL"
       }
     ],
@@ -786,19 +786,19 @@
       {
         "source_label": "ESPN",
         "source_url": "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking",
-        "period_label": "Through Week 2",
+        "period_label": "Through Week 3",
         "label": "Team PRWR",
         "value": "55%",
-        "rank": 10,
+        "rank": 7,
         "rank_group": "NFL"
       },
       {
         "source_label": "ESPN",
         "source_url": "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking",
-        "period_label": "Through Week 2",
+        "period_label": "Through Week 3",
         "label": "Hendrickson PRWR",
-        "value": "26%",
-        "rank": 12,
+        "value": "28%",
+        "rank": 8,
         "rank_group": "EDGE"
       }
     ],
@@ -884,6 +884,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-09-30T16:51:41Z"
+    "retrieved_at": "2026-09-30T18:07:49Z"
   }
 }
