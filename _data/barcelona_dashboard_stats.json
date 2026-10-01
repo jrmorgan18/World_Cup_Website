@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-30T13:02:30Z",
-  "as_of": "2026-09-30",
+  "generated_at": "2026-10-01T13:57:15Z",
+  "as_of": "2026-10-01",
   "season": 2026,
   "season_label": "2026-27",
   "team": {
@@ -4000,65 +4000,11 @@
   "injuries": [],
   "rotation": {
     "window_days": 21,
-    "window_start": "2026-09-09",
-    "window_end": "2026-09-30",
-    "matches_in_window": 4,
-    "available_minutes": 360,
+    "window_start": "2026-09-10",
+    "window_end": "2026-10-01",
+    "matches_in_window": 3,
+    "available_minutes": 270,
     "players": [
-      {
-        "player_id": "362150",
-        "name": "Lamine Yamal",
-        "position_abbr": "F",
-        "minutes": 336,
-        "starts": 4,
-        "matches": 4,
-        "share": 93.3
-      },
-      {
-        "player_id": "231828",
-        "name": "Rodri",
-        "position_abbr": "M",
-        "minutes": 323,
-        "starts": 4,
-        "matches": 4,
-        "share": 89.7
-      },
-      {
-        "player_id": "231050",
-        "name": "Raphinha",
-        "position_abbr": "F",
-        "minutes": 305,
-        "starts": 4,
-        "matches": 4,
-        "share": 84.7
-      },
-      {
-        "player_id": "186430",
-        "name": "Andreas Christensen",
-        "position_abbr": "D",
-        "minutes": 284,
-        "starts": 3,
-        "matches": 4,
-        "share": 78.9
-      },
-      {
-        "player_id": "250465",
-        "name": "Pedri",
-        "position_abbr": "M",
-        "minutes": 275,
-        "starts": 4,
-        "matches": 4,
-        "share": 76.4
-      },
-      {
-        "player_id": "368992",
-        "name": "Pau Cubarsí",
-        "position_abbr": "D",
-        "minutes": 270,
-        "starts": 3,
-        "matches": 3,
-        "share": 75.0
-      },
       {
         "player_id": "128714",
         "name": "Eric García",
@@ -4066,61 +4012,70 @@
         "minutes": 270,
         "starts": 3,
         "matches": 3,
-        "share": 75.0
+        "share": 100.0
+      },
+      {
+        "player_id": "362150",
+        "name": "Lamine Yamal",
+        "position_abbr": "F",
+        "minutes": 246,
+        "starts": 3,
+        "matches": 3,
+        "share": 91.1
+      },
+      {
+        "player_id": "231828",
+        "name": "Rodri",
+        "position_abbr": "M",
+        "minutes": 241,
+        "starts": 3,
+        "matches": 3,
+        "share": 89.3
+      },
+      {
+        "player_id": "231050",
+        "name": "Raphinha",
+        "position_abbr": "F",
+        "minutes": 234,
+        "starts": 3,
+        "matches": 3,
+        "share": 86.7
+      },
+      {
+        "player_id": "250465",
+        "name": "Pedri",
+        "position_abbr": "M",
+        "minutes": 212,
+        "starts": 3,
+        "matches": 3,
+        "share": 78.5
+      },
+      {
+        "player_id": "186430",
+        "name": "Andreas Christensen",
+        "position_abbr": "D",
+        "minutes": 194,
+        "starts": 2,
+        "matches": 3,
+        "share": 71.9
+      },
+      {
+        "player_id": "368992",
+        "name": "Pau Cubarsí",
+        "position_abbr": "D",
+        "minutes": 180,
+        "starts": 2,
+        "matches": 2,
+        "share": 66.7
       },
       {
         "player_id": "176399",
         "name": "João Cancelo",
         "position_abbr": "D",
-        "minutes": 268,
-        "starts": 3,
-        "matches": 4,
-        "share": 74.4
-      },
-      {
-        "player_id": "297362",
-        "name": "Joan García",
-        "position_abbr": "G",
-        "minutes": 225,
-        "starts": 3,
-        "matches": 3,
-        "share": 62.5
-      },
-      {
-        "player_id": "227765",
-        "name": "Dani Olmo",
-        "position_abbr": "M",
-        "minutes": 210,
-        "starts": 2,
-        "matches": 4,
-        "share": 58.3
-      },
-      {
-        "player_id": "274913",
-        "name": "Karim Adeyemi",
-        "position_abbr": "F",
-        "minutes": 191,
-        "starts": 2,
-        "matches": 4,
-        "share": 53.1
-      },
-      {
-        "player_id": "354334",
-        "name": "Fermín López",
-        "position_abbr": "M",
-        "minutes": 185,
-        "starts": 2,
-        "matches": 3,
-        "share": 51.4
-      },
-      {
-        "player_id": "268782",
-        "name": "Anthony Gordon",
-        "position_abbr": "F",
         "minutes": 178,
         "starts": 2,
         "matches": 3,
-        "share": 49.4
+        "share": 65.9
       },
       {
         "player_id": "312015",
@@ -4129,16 +4084,52 @@
         "minutes": 166,
         "starts": 2,
         "matches": 3,
-        "share": 46.1
+        "share": 61.5
       },
       {
-        "player_id": "231692",
-        "name": "Jules Koundé",
-        "position_abbr": "D",
-        "minutes": 90,
+        "player_id": "354334",
+        "name": "Fermín López",
+        "position_abbr": "M",
+        "minutes": 166,
+        "starts": 2,
+        "matches": 2,
+        "share": 61.5
+      },
+      {
+        "player_id": "268782",
+        "name": "Anthony Gordon",
+        "position_abbr": "F",
+        "minutes": 151,
+        "starts": 2,
+        "matches": 2,
+        "share": 55.9
+      },
+      {
+        "player_id": "297362",
+        "name": "Joan García",
+        "position_abbr": "G",
+        "minutes": 135,
+        "starts": 2,
+        "matches": 2,
+        "share": 50.0
+      },
+      {
+        "player_id": "227765",
+        "name": "Dani Olmo",
+        "position_abbr": "M",
+        "minutes": 128,
         "starts": 1,
-        "matches": 1,
-        "share": 25.0
+        "matches": 3,
+        "share": 47.4
+      },
+      {
+        "player_id": "274913",
+        "name": "Karim Adeyemi",
+        "position_abbr": "F",
+        "minutes": 128,
+        "starts": 1,
+        "matches": 3,
+        "share": 47.4
       },
       {
         "player_id": "187946",
@@ -4147,16 +4138,7 @@
         "minutes": 90,
         "starts": 1,
         "matches": 1,
-        "share": 25.0
-      },
-      {
-        "player_id": "376423",
-        "name": "Marc Bernal",
-        "position_abbr": "M",
-        "minutes": 85,
-        "starts": 0,
-        "matches": 4,
-        "share": 23.6
+        "share": 33.3
       },
       {
         "player_id": "403582",
@@ -4165,7 +4147,16 @@
         "minutes": 79,
         "starts": 1,
         "matches": 1,
-        "share": 21.9
+        "share": 29.3
+      },
+      {
+        "player_id": "376423",
+        "name": "Marc Bernal",
+        "position_abbr": "M",
+        "minutes": 58,
+        "starts": 0,
+        "matches": 3,
+        "share": 21.5
       },
       {
         "player_id": "131634",
@@ -4174,25 +4165,25 @@
         "minutes": 45,
         "starts": 0,
         "matches": 1,
-        "share": 12.5
+        "share": 16.7
       },
       {
         "player_id": "323702",
         "name": "Gavi",
         "position_abbr": "M",
-        "minutes": 37,
+        "minutes": 29,
         "starts": 0,
-        "matches": 2,
-        "share": 10.3
+        "matches": 1,
+        "share": 10.7
       },
       {
         "player_id": "217289",
         "name": "Gabriel Jesus",
         "position_abbr": "F",
-        "minutes": 35,
+        "minutes": 27,
         "starts": 0,
-        "matches": 3,
-        "share": 9.7
+        "matches": 2,
+        "share": 10.0
       },
       {
         "player_id": "323703",
@@ -4201,26 +4192,21 @@
         "minutes": 13,
         "starts": 0,
         "matches": 1,
-        "share": 3.6
+        "share": 4.8
       }
     ]
   },
   "congestion": {
     "window_days": 21,
-    "matches_last_window": 4,
-    "matches_per_week": 1.33,
+    "matches_last_window": 3,
+    "matches_per_week": 1.0,
     "load_level": "Light",
     "shortest_rest_recent": 3,
-    "average_rest_recent": 3.3,
+    "average_rest_recent": 3.0,
     "matches_next_14_days": 2,
     "matches_next_30_days": 5,
     "shortest_rest_upcoming": 3,
     "recent": [
-      {
-        "date": "2026-09-09T16:45Z",
-        "competition": "ucl",
-        "opponent": "Feyenoord"
-      },
       {
         "date": "2026-09-13T14:15Z",
         "competition": "laliga",
