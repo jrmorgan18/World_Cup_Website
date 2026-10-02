@@ -16,8 +16,10 @@ hero_wide: true
 hero_alt: "Tyler Loop celebrates with Ravens teammates after his game-winning kick against the Cowboys in Rio"
 hero_credit: "Shawn Hubbard / Baltimore Ravens Photos"
 hero_credit_url: "https://www.baltimoreravens.com/photos/postgame-gallery-ravens-vs-cowboys-week-3"
-home_feature: true
-ravens_feature: true
+home_recent: true
+home_recent_position: 1
+home_recent_label: "Ravens"
+home_recent_theme: ravens
 feature_label: "Week 3 takeaways"
 ravens_feature_mark: "5"
 ravens_feature_mark_label: "First"
