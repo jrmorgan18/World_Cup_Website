@@ -21,7 +21,7 @@ metric_definitions:
     display_name: "Dual Eights efficiency index"
     short_label: "Efficiency index"
     unit: "index"
-    description: "A 0–100 league-percentile composite weighting offensive EPA/play, offensive success rate, defensive EPA allowed/play and opponent success rate equally. It is not opponent-adjusted."
+    description: "Version 2 adjusts offensive and defensive EPA and success rate for opponents, venue and game state, with separate dropback and designed-run estimates. It preserves performance gaps before converting to 0–100; 50 represents average unit strength, not a percentile or win probability."
     direction: "higher"
     format: "decimal_1"
     stable_delta: 1.0
@@ -150,7 +150,7 @@ editorial:
     changed_this_week: "Loop's 56-yard winner completed a 34-31 Week 3 win, Flowers returned with 104 yards from scrimmage, Madubuike debuted, and the line lost two more centers to in-game injuries."
 
   metric_assessments:
-    overall_efficiency: { status: "Elite", interpretation: "The equal-weight composite is No. 5 through three games, driven by an elite offense. That is a meaningful start, though the defensive half of the model remains only middle of the league." }
+    overall_efficiency: { status: null, interpretation: "The adjusted index compares each unit against an average opponent at a neutral venue. Earlier weekly index values have been recalculated with version 2, so movement reflects the same methodology. Early-season estimates remain sensitive to a small number of games." }
     point_differential: { status: "Good", interpretation: "The +14 margin ranks 10th. Two wins by 18 and three points outweigh the seven-point Saints loss, but it is not yet the profile of a team controlling games every week." }
     turnover_differential: { status: "Good", interpretation: "Baltimore is plus-one, 11th in the league. Travis Jones' forced fumble against Dallas supplied a defining Week 3 swing without the offense giving the ball away." }
     offensive_epa_per_play: { status: "Elite", interpretation: "Baltimore's 0.19 EPA per play ranks third. The Cowboys result was not the opener's 506-yard burst, but Jackson, Flowers and the run game still found enough high-value plays to win." }
@@ -284,7 +284,11 @@ sources:
   - { name: "Baltimore Ravens official news and roster reports", role: "Availability, roster status and dated team context", url: "https://www.baltimoreravens.com/news/", cadence: "Reviewed for each dashboard update" }
 
 methodology_notes:
-  - "The Dual Eights efficiency index is the equal-weight average of four league percentiles: offensive EPA/play, offensive success rate, defensive EPA allowed/play and opponent success rate. It is a transparent, non-opponent-adjusted team index."
+  - "Efficiency Index version 2 fits offense and defense together against the opposing unit, with a home/away adjustment and no home advantage at neutral venues. The model uses regularization to limit extreme estimates from sparse schedules; it does not import prior-season team rankings."
+  - "Dropbacks include sacks and scrambles. Dropback and designed-run effects are estimated separately, then combined using the previous season's league-wide weighted play mix for every team."
+  - "Fourth-quarter plays receive full weight at pre-snap win probabilities from 15% to 85%. Weight decreases smoothly to 25% at 5% or 95% and stays there beyond those thresholds. Other quarters and overtime retain full weight. These weights apply only to the index; the other scorecard statistics remain raw season totals and rates."
+  - "Offensive EPA, offensive success, defensive EPA suppression and defensive success suppression each contribute 25%. Their adjusted magnitudes are standardized against the previous season's league spread before a smooth conversion to 0–100. A score of 50 means average unit strength; it is not a percentile or a win probability."
+  - "Historical weekly index values are recalculated using only games through each weekly cutoff and the same prior-season calibration. Version 1 calculations remain in the source data for comparison; previously published articles retain their original rankings."
   - "Only regular-season plays count toward the ranked scorecard. Kneels, spikes, two-point attempts, deleted plays and aborted plays are excluded."
   - "Explosive plays are runs of 10+ yards or passes of 20+ yards, divided by eligible run/pass plays."
   - "Red-zone rates are drive-level: a drive qualifies once it reaches the opponent 20-yard line."

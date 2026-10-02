@@ -24,6 +24,8 @@ ravens_feature_mark_label: "NFL"
 ravens_feature_mark_detail: "Ranked"
 ---
 
+> **Methodology note:** This article preserves the original version 1 rankings. The [live Efficiency Index](/ravens/dashboard/#reference) now uses version 2, which adjusts for opponents, venue and game state and preserves the size of performance differences. Its recalculated scores will differ from those below.
+
 After three weeks we can start to get a fuzzy picture of which teams are consistently executing on one or both sides of the ball and start identifying some emerging trends.
 
 The Week 3 Dual Eights Efficiency Index has a new top team, with Kansas City jumping four spots to take the top position at 86.7. The Jags made an even larger move, climbing from seventh to second. Cincinnati and Chicago surged into the top seven. Meanwhile, the Ravens slipped from third to fifth despite winning in Brazil, and San Francisco fell five spots despite remaining undefeated.

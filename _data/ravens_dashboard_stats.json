@@ -1,86 +1,64 @@
 {
-  "generated_at": "2026-10-01T17:22:01Z",
-  "as_of": "2026-10-01",
+  "generated_at": "2026-10-02T14:11:06Z",
+  "as_of": "2026-10-02",
   "season": 2026,
   "benchmark_season": 2025,
-  "current_snapshot": "2026-week-03",
-  "snapshots": [
-    {
-      "id": "2026-preseason",
-      "week": 0,
-      "label": "2026 preseason",
-      "previous_snapshot": null,
-      "sample_note": "No 2026 regular-season games yet",
-      "record": "0-0",
-      "metrics": {
-        "overall_efficiency": {
-          "value": null,
-          "rank": null,
-          "source": "Dual Eights index from nflverse play-by-play"
-        },
-        "point_differential": {
-          "value": null,
-          "rank": null,
-          "source": "nflverse schedules"
-        },
-        "turnover_differential": {
-          "value": null,
-          "rank": null,
-          "source": "nflverse play-by-play"
-        },
-        "offensive_epa_per_play": {
-          "value": null,
-          "rank": null,
-          "source": "nflverse play-by-play"
-        },
-        "offensive_success_rate": {
-          "value": null,
-          "rank": null,
-          "source": "nflverse play-by-play"
-        },
-        "explosive_play_rate": {
-          "value": null,
-          "rank": null,
-          "source": "nflverse play-by-play"
-        },
-        "red_zone_td_rate": {
-          "value": null,
-          "rank": null,
-          "source": "nflverse play-by-play"
-        },
-        "defensive_epa_per_play": {
-          "value": null,
-          "rank": null,
-          "source": "nflverse play-by-play"
-        },
-        "defensive_success_rate": {
-          "value": null,
-          "rank": null,
-          "source": "nflverse play-by-play"
-        },
-        "explosive_play_rate_allowed": {
-          "value": null,
-          "rank": null,
-          "source": "nflverse play-by-play"
-        },
-        "opponent_red_zone_td_rate": {
-          "value": null,
-          "rank": null,
-          "source": "nflverse play-by-play"
-        }
+  "efficiency_model": {
+    "version": "2.0",
+    "calibration": {
+      "season": 2025,
+      "phase_weights": {
+        "dropback": 0.6031531517523498,
+        "designed_run": 0.39684684824765015
+      },
+      "scales": {
+        "dropback_offense_epa": 0.11628891165276557,
+        "dropback_defense_epa": 0.09849819393569298,
+        "dropback_offense_success": 0.04006840275584625,
+        "dropback_defense_success": 0.03306304410851997,
+        "designed_run_offense_epa": 0.0605151798271853,
+        "designed_run_defense_epa": 0.05383773203268271,
+        "designed_run_offense_success": 0.03264483297978287,
+        "designed_run_defense_success": 0.026638687361787282
       }
     },
+    "ridge_effective_plays": 100.0,
+    "component_weights": {
+      "offense_epa": 0.25,
+      "offense_success": 0.25,
+      "defense_epa": 0.25,
+      "defense_success": 0.25
+    },
+    "game_state": {
+      "quarter": 4,
+      "full_weight_wp": [
+        0.15,
+        0.85
+      ],
+      "minimum_weight_wp": [
+        0.05,
+        0.95
+      ],
+      "minimum_weight": 0.25
+    },
+    "display_transform": "50 + 50 * tanh(composite / 2)",
+    "note": "50 is average unit strength; score is neither a percentile nor a win probability."
+  },
+  "current_snapshot": "2026-week-04",
+  "snapshots": [
     {
       "id": "2026-week-01",
+      "model_version": "2.0",
       "week": 1,
       "label": "Through Week 1",
-      "previous_snapshot": "2026-preseason",
+      "previous_snapshot": null,
       "sample_note": "1 regular-season game",
       "record": "1-0",
+      "legacy_overall_efficiency": 82.8,
       "metrics": {
         "overall_efficiency": {
-          "value": 81.2,
-          "rank": 1,
+          "value": 58.6,
+          "rank": 4,
           "source": "Dual Eights index from nflverse play-by-play"
         },
         "point_differential": {
@@ -95,12 +73,12 @@
         },
         "offensive_epa_per_play": {
           "value": 0.32,
-          "rank": 5,
+          "rank": 4,
           "source": "nflverse play-by-play"
         },
         "offensive_success_rate": {
           "value": 50.0,
-          "rank": 7,
+          "rank": 6,
           "source": "nflverse play-by-play"
         },
         "explosive_play_rate": {
@@ -125,7 +103,7 @@
         },
         "explosive_play_rate_allowed": {
           "value": 13.2,
-          "rank": 26,
+          "rank": 27,
           "source": "nflverse play-by-play"
         },
         "opponent_red_zone_td_rate": {
@@ -137,15 +115,17 @@
     },
     {
       "id": "2026-week-02",
+      "model_version": "2.0",
       "week": 2,
       "label": "Through Week 2",
       "previous_snapshot": "2026-week-01",
       "sample_note": "2 regular-season games",
       "record": "1-1",
+      "legacy_overall_efficiency": 73.4,
       "metrics": {
         "overall_efficiency": {
-          "value": 75.0,
-          "rank": 3,
+          "value": 60.1,
+          "rank": 5,
           "source": "Dual Eights index from nflverse play-by-play"
         },
         "point_differential": {
@@ -175,17 +155,17 @@
         },
         "red_zone_td_rate": {
           "value": 66.7,
-          "rank": 14,
+          "rank": 13,
           "source": "nflverse play-by-play"
         },
         "defensive_epa_per_play": {
           "value": -0.02,
-          "rank": 13,
+          "rank": 14,
           "source": "nflverse play-by-play"
         },
         "defensive_success_rate": {
           "value": 43.5,
-          "rank": 17,
+          "rank": 18,
           "source": "nflverse play-by-play"
         },
         "explosive_play_rate_allowed": {
@@ -202,14 +182,83 @@
     },
     {
       "id": "2026-week-03",
+      "model_version": "2.0",
       "week": 3,
       "label": "Through Week 3",
       "previous_snapshot": "2026-week-02",
       "sample_note": "3 regular-season games",
       "record": "2-1",
+      "legacy_overall_efficiency": 71.1,
       "metrics": {
         "overall_efficiency": {
-          "value": 71.1,
+          "value": 60.1,
+          "rank": 5,
+          "source": "Dual Eights index from nflverse play-by-play"
+        },
+        "point_differential": {
+          "value": 14,
+          "rank": 10,
+          "source": "nflverse schedules"
+        },
+        "turnover_differential": {
+          "value": 1,
+          "rank": 11,
+          "source": "nflverse play-by-play"
+        },
+        "offensive_epa_per_play": {
+          "value": 0.19,
+          "rank": 3,
+          "source": "nflverse play-by-play"
+        },
+        "offensive_success_rate": {
+          "value": 54.3,
+          "rank": 2,
+          "source": "nflverse play-by-play"
+        },
+        "explosive_play_rate": {
+          "value": 14.5,
+          "rank": 2,
+          "source": "nflverse play-by-play"
+        },
+        "red_zone_td_rate": {
+          "value": 66.7,
+          "rank": 9,
+          "source": "nflverse play-by-play"
+        },
+        "defensive_epa_per_play": {
+          "value": 0.02,
+          "rank": 19,
+          "source": "nflverse play-by-play"
+        },
+        "defensive_success_rate": {
+          "value": 44.6,
+          "rank": 17,
+          "source": "nflverse play-by-play"
+        },
+        "explosive_play_rate_allowed": {
+          "value": 9.7,
+          "rank": 19,
+          "source": "nflverse play-by-play"
+        },
+        "opponent_red_zone_td_rate": {
+          "value": 63.6,
+          "rank": 17,
+          "source": "nflverse play-by-play"
+        }
+      }
+    },
+    {
+      "id": "2026-week-04",
+      "model_version": "2.0",
+      "week": 4,
+      "label": "Through Week 4",
+      "previous_snapshot": "2026-week-03",
+      "sample_note": "3 regular-season games",
+      "record": "2-1",
+      "legacy_overall_efficiency": 71.1,
+      "metrics": {
+        "overall_efficiency": {
+          "value": 60.1,
           "rank": 5,
           "source": "Dual Eights index from nflverse play-by-play"
         },
@@ -268,15 +317,17 @@
   ],
   "benchmark_snapshot": {
     "id": "2025-final",
+    "model_version": "2.0",
     "week": 18,
     "label": "2025 final benchmark",
     "previous_snapshot": null,
     "sample_note": "17 regular-season games",
     "record": "8-9",
+    "legacy_overall_efficiency": 55.5,
     "metrics": {
       "overall_efficiency": {
-        "value": 55.5,
-        "rank": 15,
+        "value": 52.8,
+        "rank": 17,
         "source": "Dual Eights index from nflverse play-by-play"
       },
       "point_differential": {
@@ -332,24 +383,71 @@
     }
   },
   "league_efficiency_rankings": {
-    "label": "Games through October 1",
-    "sample_note": "Completed regular-season games; early-season sample",
+    "label": "Games through October 2",
+    "sample_note": "Version 2 · opponent and venue adjusted · game-state weighted",
+    "model_version": "2.0",
+    "fit": {
+      "dropback": {
+        "intercept_epa": 0.07163774117281965,
+        "intercept_success": 0.4596760333516767,
+        "venue_epa": 0.02085219520161554,
+        "venue_success": 0.002337554873152265
+      },
+      "designed_run": {
+        "intercept_epa": -0.0758991279246457,
+        "intercept_success": 0.40714989015900827,
+        "venue_epa": 0.0023040053511511572,
+        "venue_success": 0.008080388347463337
+      }
+    },
     "teams": [
       {
         "rank": 1,
-        "abbr": "KC",
-        "name": "Chiefs",
-        "full_name": "Kansas City Chiefs",
-        "record": "3-0",
-        "value": 86.7
-      },
-      {
-        "rank": 2,
         "abbr": "JAX",
         "name": "Jaguars",
         "full_name": "Jacksonville Jaguars",
         "record": "2-1",
-        "value": 82.8
+        "value": 67.8,
+        "legacy_value": 82.8,
+        "adjusted_components": {
+          "dropback_offense_epa": 0.10336920347109957,
+          "dropback_defense_epa": 0.12465691227419604,
+          "dropback_offense_success": 0.03516663887843881,
+          "dropback_defense_success": 0.006389050676796774,
+          "designed_run_offense_epa": 0.052586809362299085,
+          "designed_run_defense_epa": 0.00208080200349392,
+          "designed_run_offense_success": 0.04465159498676602,
+          "designed_run_defense_success": 0.00902339557601215,
+          "offense_epa": 0.8809969119707309,
+          "offense_success": 1.072173500854004,
+          "defense_epa": 0.7786738569340554,
+          "defense_success": 0.25097738754550325,
+          "composite": 0.7457054143260733
+        }
+      },
+      {
+        "rank": 2,
+        "abbr": "SF",
+        "name": "49ers",
+        "full_name": "San Francisco 49ers",
+        "record": "3-0",
+        "value": 66.0,
+        "legacy_value": 71.1,
+        "adjusted_components": {
+          "dropback_offense_epa": 0.25200721575923396,
+          "dropback_defense_epa": 0.020693317519016673,
+          "dropback_offense_success": 0.08719809680334484,
+          "dropback_defense_success": 0.015260285647385392,
+          "designed_run_offense_epa": 0.04689247436740585,
+          "designed_run_defense_epa": -0.03967290430794963,
+          "designed_run_offense_success": 0.03830234996732018,
+          "designed_run_defense_success": -0.05758533170117189,
+          "offense_epa": 1.6145920878027422,
+          "offense_success": 1.7782229779322325,
+          "defense_epa": -0.16572013815737333,
+          "defense_success": -0.5794849771213655,
+          "composite": 0.6619024876140589
+        }
       },
       {
         "rank": 3,
@@ -357,15 +455,47 @@
         "name": "Seahawks",
         "full_name": "Seattle Seahawks",
         "record": "2-1",
-        "value": 81.2
+        "value": 62.6,
+        "legacy_value": 81.2,
+        "adjusted_components": {
+          "dropback_offense_epa": 0.07888121896123697,
+          "dropback_defense_epa": 0.03207300165133111,
+          "dropback_offense_success": 0.01995558275015665,
+          "dropback_defense_success": 0.015085917562298462,
+          "designed_run_offense_epa": -0.09907869901280938,
+          "designed_run_defense_epa": 0.10880810328027156,
+          "designed_run_offense_success": -0.02062243669437391,
+          "designed_run_defense_success": 0.06512401468830285,
+          "offense_epa": -0.24060745935866135,
+          "offense_success": 0.04969651150788318,
+          "defense_epa": 0.9984414180854094,
+          "defense_success": 1.2453827937066757,
+          "composite": 0.5132283159853268
+        }
       },
       {
         "rank": 4,
-        "abbr": "CIN",
-        "name": "Bengals",
-        "full_name": "Cincinnati Bengals",
-        "record": "2-1",
-        "value": 72.7
+        "abbr": "KC",
+        "name": "Chiefs",
+        "full_name": "Kansas City Chiefs",
+        "record": "3-0",
+        "value": 62.2,
+        "legacy_value": 86.7,
+        "adjusted_components": {
+          "dropback_offense_epa": 0.04202300542353728,
+          "dropback_defense_epa": 0.02301868764000714,
+          "dropback_offense_success": 0.012548498192156927,
+          "dropback_defense_success": 0.00800372346746615,
+          "designed_run_offense_epa": 0.06623503427150042,
+          "designed_run_defense_epa": -0.0015576721132330197,
+          "designed_run_offense_success": 0.03609220257912376,
+          "designed_run_defense_success": 0.02982991000599303,
+          "offense_epa": 0.6523163497918161,
+          "offense_success": 0.6276484247666243,
+          "defense_epa": 0.12947294846111898,
+          "defense_success": 0.5903957918340579,
+          "composite": 0.4999583787134043
+        }
       },
       {
         "rank": 5,
@@ -373,207 +503,623 @@
         "name": "Ravens",
         "full_name": "Baltimore Ravens",
         "record": "2-1",
-        "value": 71.1
+        "value": 60.1,
+        "legacy_value": 71.1,
+        "adjusted_components": {
+          "dropback_offense_epa": 0.07563496952161926,
+          "dropback_defense_epa": 0.03028254456061635,
+          "dropback_offense_success": 0.03686610542921364,
+          "dropback_defense_success": 0.01593407664471922,
+          "designed_run_offense_epa": 0.034407706634662985,
+          "designed_run_defense_epa": -0.0314664523407031,
+          "designed_run_offense_success": 0.024760645097328223,
+          "designed_run_defense_success": -0.005633037817020292,
+          "offense_epa": 0.617933327403435,
+          "offense_success": 0.8559514252455649,
+          "defense_epa": -0.04650944087487638,
+          "defense_success": 0.20676012051065268,
+          "composite": 0.4085338580711941
+        }
       },
       {
         "rank": 6,
-        "abbr": "SF",
-        "name": "49ers",
-        "full_name": "San Francisco 49ers",
-        "record": "3-0",
-        "value": 70.3
-      },
-      {
-        "rank": 7,
-        "abbr": "CHI",
-        "name": "Bears",
-        "full_name": "Chicago Bears",
-        "record": "2-1",
-        "value": 69.5
-      },
-      {
-        "rank": 7,
         "abbr": "LA",
         "name": "Rams",
         "full_name": "Los Angeles Rams",
         "record": "1-2",
-        "value": 69.5
+        "value": 59.4,
+        "legacy_value": 69.5,
+        "adjusted_components": {
+          "dropback_offense_epa": 0.040022490481719776,
+          "dropback_defense_epa": 0.11171318777293597,
+          "dropback_offense_success": 0.0013379884138572005,
+          "dropback_defense_success": 0.03048623363219092,
+          "designed_run_offense_epa": -0.01640452007172683,
+          "designed_run_defense_epa": -0.015653522261049137,
+          "designed_run_offense_success": 0.014830770804393233,
+          "designed_run_defense_success": 0.006984250387499389,
+          "offense_epa": 0.10000610433543149,
+          "offense_success": 0.20043109223585523,
+          "defense_epa": 0.5686903865351889,
+          "defense_success": 0.660192726698305,
+          "composite": 0.3823300774511951
+        }
       },
       {
-        "rank": 9,
-        "abbr": "ATL",
-        "name": "Falcons",
-        "full_name": "Atlanta Falcons",
-        "record": "1-2",
-        "value": 60.9
+        "rank": 7,
+        "abbr": "CIN",
+        "name": "Bengals",
+        "full_name": "Cincinnati Bengals",
+        "record": "2-1",
+        "value": 56.3,
+        "legacy_value": 72.7,
+        "adjusted_components": {
+          "dropback_offense_epa": 0.04028590911149091,
+          "dropback_defense_epa": 0.015064588093774088,
+          "dropback_offense_success": 0.008374865004280864,
+          "dropback_defense_success": -0.0151534246940959,
+          "designed_run_offense_epa": 0.03580579411432117,
+          "designed_run_defense_epa": 0.0209665928778989,
+          "designed_run_offense_success": 0.0122756242818129,
+          "designed_run_defense_success": 0.021347981815545994,
+          "offense_epa": 0.44375751715499046,
+          "offense_success": 0.2752961739023009,
+          "defense_epa": 0.2467961548133813,
+          "defense_success": 0.04159254650969085,
+          "composite": 0.25186059809509087
+        }
       },
       {
-        "rank": 10,
-        "abbr": "CAR",
-        "name": "Panthers",
-        "full_name": "Carolina Panthers",
-        "record": "1-2",
-        "value": 60.2
-      },
-      {
-        "rank": 11,
-        "abbr": "LV",
-        "name": "Raiders",
-        "full_name": "Las Vegas Raiders",
-        "record": "3-0",
-        "value": 59.4
-      },
-      {
-        "rank": 12,
-        "abbr": "NYJ",
-        "name": "Jets",
-        "full_name": "New York Jets",
-        "record": "1-2",
-        "value": 58.6
-      },
-      {
-        "rank": 13,
-        "abbr": "BUF",
-        "name": "Bills",
-        "full_name": "Buffalo Bills",
-        "record": "3-0",
-        "value": 57.0
-      },
-      {
-        "rank": 13,
+        "rank": 8,
         "abbr": "MIN",
         "name": "Vikings",
         "full_name": "Minnesota Vikings",
         "record": "3-0",
-        "value": 57.0
+        "value": 54.7,
+        "legacy_value": 57.0,
+        "adjusted_components": {
+          "dropback_offense_epa": -0.08079261938114908,
+          "dropback_defense_epa": 0.0575960873043994,
+          "dropback_offense_success": -0.07454536929939272,
+          "dropback_defense_success": 0.057255361530486895,
+          "designed_run_offense_epa": -0.014346811104483843,
+          "designed_run_defense_epa": 0.0978689107194777,
+          "designed_run_offense_success": -0.03892133563286489,
+          "designed_run_defense_success": 0.04995639361156359,
+          "offense_epa": -0.5131289230316,
+          "offense_success": -1.5952850683387259,
+          "defense_epa": 1.0740972915547577,
+          "defense_success": 1.7887016730759404,
+          "composite": 0.18859624331509306
+        }
       },
       {
-        "rank": 15,
+        "rank": 9,
         "abbr": "DET",
         "name": "Lions",
         "full_name": "Detroit Lions",
         "record": "2-1",
-        "value": 50.0
+        "value": 54.2,
+        "legacy_value": 50.0,
+        "adjusted_components": {
+          "dropback_offense_epa": 0.08602764956118467,
+          "dropback_defense_epa": -0.0477492278463315,
+          "dropback_offense_success": 0.03178515473439682,
+          "dropback_defense_success": -0.02394373656799872,
+          "designed_run_offense_epa": 0.03828436125426007,
+          "designed_run_defense_epa": -0.03547507735532269,
+          "designed_run_offense_success": 0.03512889809970896,
+          "designed_run_defense_success": 0.004215308539716113,
+          "offense_epa": 0.6972591648169908,
+          "offense_success": 0.905509079843166,
+          "defense_epa": -0.5538848119017099,
+          "defense_success": -0.37399694207058976,
+          "composite": 0.16872162267196428
+        }
       },
       {
-        "rank": 15,
-        "abbr": "HOU",
-        "name": "Texans",
-        "full_name": "Houston Texans",
-        "record": "0-3",
-        "value": 50.0
+        "rank": 10,
+        "abbr": "CHI",
+        "name": "Bears",
+        "full_name": "Chicago Bears",
+        "record": "2-1",
+        "value": 53.8,
+        "legacy_value": 70.3,
+        "adjusted_components": {
+          "dropback_offense_epa": 0.08097390221272983,
+          "dropback_defense_epa": 0.07243876703418665,
+          "dropback_offense_success": 0.018090934356166027,
+          "dropback_defense_success": 0.014662920259669646,
+          "designed_run_offense_epa": -0.0010553154162624874,
+          "designed_run_defense_epa": -0.056825768234309564,
+          "designed_run_offense_success": -0.006064884907378879,
+          "designed_run_defense_success": -0.019359959851313342,
+          "offense_epa": 0.4130650111170944,
+          "offense_success": 0.19859664686589987,
+          "defense_epa": 0.024706235214936256,
+          "defense_success": -0.020924248535792722,
+          "composite": 0.15386091116553446
+        }
       },
       {
-        "rank": 17,
-        "abbr": "TB",
-        "name": "Buccaneers",
-        "full_name": "Tampa Bay Buccaneers",
-        "record": "0-3",
-        "value": 46.1
+        "rank": 11,
+        "abbr": "BUF",
+        "name": "Bills",
+        "full_name": "Buffalo Bills",
+        "record": "3-0",
+        "value": 52.8,
+        "legacy_value": 57.0,
+        "adjusted_components": {
+          "dropback_offense_epa": 0.1167916376555416,
+          "dropback_defense_epa": -0.024552641072267872,
+          "dropback_offense_success": 0.00872142185384681,
+          "dropback_defense_success": -0.009573430301727526,
+          "designed_run_offense_epa": 0.06477637452111466,
+          "designed_run_defense_epa": -0.06557675460478991,
+          "designed_run_offense_success": 0.054929461537247926,
+          "designed_run_defense_success": -0.038755468831879206,
+          "offense_epa": 1.0305515688198494,
+          "offense_success": 0.7990342134431803,
+          "defense_epa": -0.633725093064979,
+          "defense_success": -0.7519987043267028,
+          "composite": 0.110965496217837
+        }
       },
       {
-        "rank": 18,
-        "abbr": "ARI",
-        "name": "Cardinals",
-        "full_name": "Arizona Cardinals",
+        "rank": 12,
+        "abbr": "ATL",
+        "name": "Falcons",
+        "full_name": "Atlanta Falcons",
         "record": "1-2",
-        "value": 44.5
+        "value": 52.7,
+        "legacy_value": 60.2,
+        "adjusted_components": {
+          "dropback_offense_epa": -0.2404192057708892,
+          "dropback_defense_epa": 0.03470268049545529,
+          "dropback_offense_success": -0.022793745989767248,
+          "dropback_defense_success": 0.021902378964007832,
+          "designed_run_offense_epa": 0.04417650736279446,
+          "designed_run_defense_epa": 0.04140016150461785,
+          "designed_run_offense_success": 0.0427965858143176,
+          "designed_run_defense_success": 0.019997993133578803,
+          "offense_epa": -0.9572760368094246,
+          "offense_success": 0.1771403707804406,
+          "defense_epa": 0.5176691281155333,
+          "defense_success": 0.6974723786093306,
+          "composite": 0.10875146017397
+        }
       },
       {
-        "rank": 18,
+        "rank": 13,
         "abbr": "DEN",
         "name": "Broncos",
         "full_name": "Denver Broncos",
         "record": "2-1",
-        "value": 44.5
+        "value": 52.2,
+        "legacy_value": 43.0,
+        "adjusted_components": {
+          "dropback_offense_epa": -0.03135025323880966,
+          "dropback_defense_epa": 0.08646463512704741,
+          "dropback_offense_success": -0.00788612909052224,
+          "dropback_defense_success": 0.03056730481791503,
+          "designed_run_offense_epa": 0.01700413492358444,
+          "designed_run_defense_epa": -0.07929569020013057,
+          "designed_run_offense_success": -0.010129377486877951,
+          "designed_run_defense_success": 0.00998345073148772,
+          "offense_epa": -0.051093843060539296,
+          "offense_success": -0.24184834471983288,
+          "defense_epa": -0.05503595820756457,
+          "defense_success": 0.7063519189294643,
+          "composite": 0.08959344323538188
+        }
+      },
+      {
+        "rank": 14,
+        "abbr": "CAR",
+        "name": "Panthers",
+        "full_name": "Carolina Panthers",
+        "record": "1-2",
+        "value": 52.1,
+        "legacy_value": 60.2,
+        "adjusted_components": {
+          "dropback_offense_epa": 0.04638136693882823,
+          "dropback_defense_epa": 0.04233168760232482,
+          "dropback_offense_success": -0.010097035365166105,
+          "dropback_defense_success": 0.00558652433662663,
+          "designed_run_offense_epa": -0.012785952590432184,
+          "designed_run_defense_epa": -0.00913160777106457,
+          "designed_run_offense_success": -0.01012401574506172,
+          "designed_run_defense_success": 0.010968703637735267,
+          "offense_epa": 0.156717415484006,
+          "offense_success": -0.2750641291683026,
+          "defense_epa": 0.19190726271157083,
+          "defense_success": 0.26531729497089884,
+          "composite": 0.08471946099954328
+        }
+      },
+      {
+        "rank": 15,
+        "abbr": "NYJ",
+        "name": "Jets",
+        "full_name": "New York Jets",
+        "record": "1-2",
+        "value": 50.7,
+        "legacy_value": 59.4,
+        "adjusted_components": {
+          "dropback_offense_epa": 0.04159288665356587,
+          "dropback_defense_epa": 0.028331061113668624,
+          "dropback_offense_success": 0.014952289484685145,
+          "dropback_defense_success": -0.00043763102335623753,
+          "designed_run_offense_epa": -0.02818720415865344,
+          "designed_run_defense_epa": 0.016049682365580454,
+          "designed_run_offense_success": -0.014005965239950556,
+          "designed_run_defense_success": -0.017147603868818338,
+          "offense_epa": 0.030882679801136598,
+          "offense_success": 0.05481462509669044,
+          "defense_epa": 0.2917899672479532,
+          "defense_success": -0.2634379910955063,
+          "composite": 0.02851232026256849
+        }
+      },
+      {
+        "rank": 16,
+        "abbr": "ARI",
+        "name": "Cardinals",
+        "full_name": "Arizona Cardinals",
+        "record": "1-2",
+        "value": 50.3,
+        "legacy_value": 44.5,
+        "adjusted_components": {
+          "dropback_offense_epa": 0.0378529091002667,
+          "dropback_defense_epa": -0.11332022487599631,
+          "dropback_offense_success": 0.011000389065799563,
+          "dropback_defense_success": -0.012976085985489822,
+          "designed_run_offense_epa": 0.01468473590118957,
+          "designed_run_defense_epa": 0.05421669420222417,
+          "designed_run_offense_success": 0.0162088172775684,
+          "designed_run_defense_success": -0.004674658605722767,
+          "offense_epa": 0.29263051342249646,
+          "offense_success": 0.36263226892054534,
+          "defense_epa": -0.29427553590940714,
+          "defense_success": -0.30635667284146395,
+          "composite": 0.01365764339804268
+        }
+      },
+      {
+        "rank": 17,
+        "abbr": "LV",
+        "name": "Raiders",
+        "full_name": "Las Vegas Raiders",
+        "record": "3-0",
+        "value": 50.0,
+        "legacy_value": 58.6,
+        "adjusted_components": {
+          "dropback_offense_epa": 0.06324442390203398,
+          "dropback_defense_epa": 0.011877262018495649,
+          "dropback_offense_success": 0.0075185738124422625,
+          "dropback_defense_success": -0.02568376535708038,
+          "designed_run_offense_epa": -0.02249908576277573,
+          "designed_run_defense_epa": 0.05061937156029758,
+          "designed_run_offense_success": -0.03332243644259017,
+          "designed_run_defense_success": 0.008902908749204774,
+          "offense_epa": 0.1804838145557282,
+          "offense_success": -0.2919063878684752,
+          "defense_epa": 0.44585412865130536,
+          "defense_success": -0.33590645044392153,
+          "composite": -0.00036872377634079856
+        }
       },
       {
         "rank": 18,
-        "abbr": "TEN",
-        "name": "Titans",
-        "full_name": "Tennessee Titans",
-        "record": "0-3",
-        "value": 44.5
-      },
-      {
-        "rank": 21,
-        "abbr": "CLE",
-        "name": "Browns",
-        "full_name": "Cleveland Browns",
-        "record": "2-1",
-        "value": 43.8
-      },
-      {
-        "rank": 21,
         "abbr": "NE",
         "name": "Patriots",
         "full_name": "New England Patriots",
         "record": "1-2",
-        "value": 43.8
+        "value": 49.5,
+        "legacy_value": 42.2,
+        "adjusted_components": {
+          "dropback_offense_epa": -0.08087217961872065,
+          "dropback_defense_epa": 0.06841905717935362,
+          "dropback_offense_success": 0.012122306668945707,
+          "dropback_defense_success": 0.010590999764473428,
+          "designed_run_offense_epa": -0.010611922530099573,
+          "designed_run_defense_epa": -0.03385946353799446,
+          "designed_run_offense_success": -0.023748725419522984,
+          "designed_run_defense_success": 0.01040579483171969,
+          "offense_epa": -0.4890488992713297,
+          "offense_success": -0.10622319743563913,
+          "defense_epa": 0.16938000327028396,
+          "defense_success": 0.3482256535662932,
+          "composite": -0.019416609967597934
+        }
       },
       {
-        "rank": 23,
-        "abbr": "DAL",
-        "name": "Cowboys",
-        "full_name": "Dallas Cowboys",
-        "record": "1-2",
-        "value": 43.0
+        "rank": 19,
+        "abbr": "TB",
+        "name": "Buccaneers",
+        "full_name": "Tampa Bay Buccaneers",
+        "record": "0-3",
+        "value": 47.8,
+        "legacy_value": 46.1,
+        "adjusted_components": {
+          "dropback_offense_epa": -0.18496294099537833,
+          "dropback_defense_epa": 0.0453527559865787,
+          "dropback_offense_success": -0.03999122965095889,
+          "dropback_defense_success": 0.01653295707517184,
+          "designed_run_offense_epa": 0.012607590365782252,
+          "designed_run_defense_epa": 0.04233934594096465,
+          "designed_run_offense_success": -0.018095400113292165,
+          "designed_run_defense_success": 0.030978467164937937,
+          "offense_epa": -0.8766650961769725,
+          "offense_success": -0.8219681543648939,
+          "defense_epa": 0.5898076913085827,
+          "defense_success": 0.7631009839305534,
+          "composite": -0.08643114382568257
+        }
       },
       {
-        "rank": 24,
-        "abbr": "NO",
-        "name": "Saints",
-        "full_name": "New Orleans Saints",
-        "record": "1-2",
-        "value": 40.6
+        "rank": 20,
+        "abbr": "HOU",
+        "name": "Texans",
+        "full_name": "Houston Texans",
+        "record": "0-3",
+        "value": 47.5,
+        "legacy_value": 50.0,
+        "adjusted_components": {
+          "dropback_offense_epa": -0.044499593257213484,
+          "dropback_defense_epa": -0.050892253465796976,
+          "dropback_offense_success": -0.004069814071136435,
+          "dropback_defense_success": 0.024637996817517414,
+          "designed_run_offense_epa": -0.06994742559007018,
+          "designed_run_defense_epa": 0.04498950736585807,
+          "designed_run_offense_success": -0.042348802153677444,
+          "designed_run_defense_success": 0.0266107716219316,
+          "offense_epa": -0.6895067581289789,
+          "offense_success": -0.5760763957208581,
+          "defense_epa": 0.019986681631532388,
+          "defense_success": 0.8458900580549562,
+          "composite": -0.0999266035408371
+        }
       },
       {
-        "rank": 25,
+        "rank": 21,
         "abbr": "WAS",
         "name": "Commanders",
         "full_name": "Washington Commanders",
         "record": "1-2",
-        "value": 39.1
+        "value": 47.0,
+        "legacy_value": 38.3,
+        "adjusted_components": {
+          "dropback_offense_epa": -0.013775907982988257,
+          "dropback_defense_epa": -0.057523582706285985,
+          "dropback_offense_success": -0.03007113876118027,
+          "dropback_defense_success": -0.02938038154324899,
+          "designed_run_offense_epa": 0.0061447475414686085,
+          "designed_run_defense_epa": 0.072087362522596,
+          "designed_run_offense_success": -0.003002045865535646,
+          "designed_run_defense_success": 0.02648008631105618,
+          "offense_epa": -0.031155134047142735,
+          "offense_success": -0.48915783198959595,
+          "defense_epa": 0.17912255605386124,
+          "defense_success": -0.14148800952507196,
+          "composite": -0.12066960487698736
+        }
       },
       {
-        "rank": 26,
+        "rank": 22,
+        "abbr": "NO",
+        "name": "Saints",
+        "full_name": "New Orleans Saints",
+        "record": "1-2",
+        "value": 46.6,
+        "legacy_value": 40.6,
+        "adjusted_components": {
+          "dropback_offense_epa": -0.014612595048324167,
+          "dropback_defense_epa": -0.0025091117847741624,
+          "dropback_offense_success": 0.016122397469564773,
+          "dropback_defense_success": -0.011553761104689038,
+          "designed_run_offense_epa": 0.026924473519702254,
+          "designed_run_defense_epa": -0.030012536232134426,
+          "designed_run_offense_success": 0.003546031322036142,
+          "designed_run_defense_success": -0.03209698902107177,
+          "offense_epa": 0.1007746645226321,
+          "offense_success": 0.2857991742312309,
+          "defense_epa": -0.23659191245398545,
+          "defense_success": -0.6889309691819636,
+          "composite": -0.1347372607205215
+        }
+      },
+      {
+        "rank": 23,
         "abbr": "NYG",
         "name": "Giants",
         "full_name": "New York Giants",
         "record": "2-1",
-        "value": 35.9
+        "value": 46.3,
+        "legacy_value": 34.4,
+        "adjusted_components": {
+          "dropback_offense_epa": -0.029915388854792963,
+          "dropback_defense_epa": -0.02456680868159191,
+          "dropback_offense_success": -0.007633642282247862,
+          "dropback_defense_success": 0.004763600071576467,
+          "designed_run_offense_epa": -0.016404679580014844,
+          "designed_run_defense_epa": 0.007074618906378024,
+          "designed_run_offense_success": -0.008507776781896384,
+          "designed_run_defense_success": -0.006314253576910583,
+          "offense_epa": -0.26274020905086215,
+          "offense_success": -0.21833465303671307,
+          "defense_epa": -0.09828652975680786,
+          "defense_success": -0.007165825966817141,
+          "composite": -0.14663180445280005
+        }
       },
       {
-        "rank": 27,
-        "abbr": "PIT",
-        "name": "Steelers",
-        "full_name": "Pittsburgh Steelers",
-        "record": "2-1",
-        "value": 35.2
+        "rank": 24,
+        "abbr": "CLE",
+        "name": "Browns",
+        "full_name": "Cleveland Browns",
+        "record": "3-1",
+        "value": 44.8,
+        "legacy_value": 49.2,
+        "adjusted_components": {
+          "dropback_offense_epa": 0.04865991475968465,
+          "dropback_defense_epa": -0.0038430617674793926,
+          "dropback_offense_success": 0.016214149503168934,
+          "dropback_defense_success": 0.006577716042517964,
+          "designed_run_offense_epa": -0.08992705326877273,
+          "designed_run_defense_epa": -0.02150100750329942,
+          "designed_run_offense_success": -0.03447007025964071,
+          "designed_run_defense_success": -0.017459564320551818,
+          "offense_epa": -0.33734091287008805,
+          "offense_success": -0.17496233892396565,
+          "defense_epa": -0.1820204585404489,
+          "defense_success": -0.14010779712312238,
+          "composite": -0.20860787686440624
+        }
       },
       {
-        "rank": 28,
+        "rank": 25,
         "abbr": "LAC",
         "name": "Chargers",
         "full_name": "Los Angeles Chargers",
         "record": "0-3",
-        "value": 34.4
+        "value": 42.6,
+        "legacy_value": 34.4,
+        "adjusted_components": {
+          "dropback_offense_epa": -0.09714279129304,
+          "dropback_defense_epa": -0.0027828926985413475,
+          "dropback_offense_success": -0.034432674729693455,
+          "dropback_defense_success": -0.006780995140500646,
+          "designed_run_offense_epa": -0.05579454671540008,
+          "designed_run_defense_epa": 0.025128091914721123,
+          "designed_run_offense_success": 0.012365953488392558,
+          "designed_run_defense_success": 0.00029325329143184176,
+          "offense_epa": -0.8697382375850755,
+          "offense_success": -0.36799135820335016,
+          "defense_epa": 0.16818230312277174,
+          "defense_success": -0.1193337127525225,
+          "composite": -0.29722025135454405
+        }
       },
       {
-        "rank": 29,
-        "abbr": "PHI",
-        "name": "Eagles",
-        "full_name": "Philadelphia Eagles",
-        "record": "2-1",
-        "value": 32.0
-      },
-      {
-        "rank": 30,
+        "rank": 26,
         "abbr": "IND",
         "name": "Colts",
         "full_name": "Indianapolis Colts",
         "record": "1-2",
-        "value": 28.1
+        "value": 42.2,
+        "legacy_value": 27.3,
+        "adjusted_components": {
+          "dropback_offense_epa": -0.10974982933451616,
+          "dropback_defense_epa": -0.04815242440773877,
+          "dropback_offense_success": -0.009379978704008253,
+          "dropback_defense_success": -0.015693568271006916,
+          "designed_run_offense_epa": 0.06497827008533676,
+          "designed_run_defense_epa": -0.05558380222976202,
+          "designed_run_offense_success": 0.01821939314791249,
+          "designed_run_defense_success": -0.013592262826890196,
+          "offense_epa": -0.14312210548613624,
+          "offense_success": 0.0802863818725339,
+          "defense_epa": -0.7045785285942923,
+          "defense_success": -0.48877939594831554,
+          "composite": -0.31404841203905254
+        }
+      },
+      {
+        "rank": 27,
+        "abbr": "PHI",
+        "name": "Eagles",
+        "full_name": "Philadelphia Eagles",
+        "record": "2-1",
+        "value": 41.8,
+        "legacy_value": 32.0,
+        "adjusted_components": {
+          "dropback_offense_epa": -0.06478705575370873,
+          "dropback_defense_epa": -0.0334492457429744,
+          "dropback_offense_success": -0.033053457595492775,
+          "dropback_defense_success": 0.00480515453870471,
+          "designed_run_offense_epa": 0.017983126302920417,
+          "designed_run_defense_epa": -0.012105647128543168,
+          "designed_run_offense_success": -0.0148377320199072,
+          "designed_run_defense_success": -0.01483294934293405,
+          "offense_epa": -0.2180997383460745,
+          "offense_success": -0.6779314323771266,
+          "defense_epa": -0.2940590052374428,
+          "defense_success": -0.13331407974625353,
+          "composite": -0.33085106392672436
+        }
+      },
+      {
+        "rank": 28,
+        "abbr": "DAL",
+        "name": "Cowboys",
+        "full_name": "Dallas Cowboys",
+        "record": "1-2",
+        "value": 40.9,
+        "legacy_value": 43.0,
+        "adjusted_components": {
+          "dropback_offense_epa": 0.09239788470750629,
+          "dropback_defense_epa": -0.15116921426646698,
+          "dropback_offense_success": 0.03797637374690449,
+          "dropback_defense_success": -0.06057420063055379,
+          "designed_run_offense_epa": 0.0013053861265552146,
+          "designed_run_defense_epa": -0.01787310312311906,
+          "designed_run_offense_success": -0.0010749431115110143,
+          "designed_run_defense_success": -0.02373002165568294,
+          "offense_epa": 0.487798555236463,
+          "offense_success": 0.5585941132883903,
+          "defense_epa": -1.0574294628176248,
+          "defense_success": -1.4585412266634612,
+          "composite": -0.3673945052390582
+        }
+      },
+      {
+        "rank": 29,
+        "abbr": "PIT",
+        "name": "Steelers",
+        "full_name": "Pittsburgh Steelers",
+        "record": "2-2",
+        "value": 38.9,
+        "legacy_value": 37.5,
+        "adjusted_components": {
+          "dropback_offense_epa": -0.10954704438687914,
+          "dropback_defense_epa": -0.024413637882004152,
+          "dropback_offense_success": -0.024253914789527636,
+          "dropback_defense_success": -0.02032941134256337,
+          "designed_run_offense_epa": 0.014570385220824251,
+          "designed_run_defense_epa": -0.011220973340381944,
+          "designed_run_offense_success": -0.009572479748887003,
+          "designed_run_defense_success": -0.016487999927670475,
+          "offense_epa": -0.47263548744141987,
+          "offense_success": -0.48146412022155066,
+          "defense_epa": -0.2322084327708131,
+          "defense_success": -0.6164877607487815,
+          "composite": -0.4506989502956413
+        }
+      },
+      {
+        "rank": 30,
+        "abbr": "TEN",
+        "name": "Titans",
+        "full_name": "Tennessee Titans",
+        "record": "0-3",
+        "value": 38.2,
+        "legacy_value": 43.0,
+        "adjusted_components": {
+          "dropback_offense_epa": -0.1248747422800615,
+          "dropback_defense_epa": -0.055437091294496726,
+          "dropback_offense_success": -0.02218207101948353,
+          "dropback_defense_success": -0.00012267414875052923,
+          "designed_run_offense_epa": 0.022751908722339495,
+          "designed_run_defense_epa": -0.03433605339462134,
+          "designed_run_offense_success": -0.009124430260911089,
+          "designed_run_defense_success": -0.02563093835984099,
+          "offense_epa": -0.4984824733167985,
+          "offense_success": -0.44482976302234756,
+          "defense_epa": -0.5925654672254894,
+          "defense_success": -0.3840719061300692,
+          "composite": -0.4799874024236762
+        }
       },
       {
         "rank": 31,
@@ -581,7 +1127,23 @@
         "name": "Packers",
         "full_name": "Green Bay Packers",
         "record": "1-2",
-        "value": 25.8
+        "value": 37.6,
+        "legacy_value": 25.8,
+        "adjusted_components": {
+          "dropback_offense_epa": -0.01826179415745964,
+          "dropback_defense_epa": -0.015434281743869988,
+          "dropback_offense_success": -0.030133560136095607,
+          "dropback_defense_success": -0.009151852093967435,
+          "designed_run_offense_epa": -0.08840432936964719,
+          "designed_run_defense_epa": -0.03200387878794541,
+          "designed_run_offense_success": -0.013504363655981535,
+          "designed_run_defense_success": -0.015497598706928652,
+          "offense_epa": -0.6744565462607266,
+          "offense_success": -0.6177688720467809,
+          "defense_epa": -0.3304176361058119,
+          "defense_success": -0.39782655282118434,
+          "composite": -0.5051174018086259
+        }
       },
       {
         "rank": 32,
@@ -589,7 +1151,23 @@
         "name": "Dolphins",
         "full_name": "Miami Dolphins",
         "record": "0-3",
-        "value": 11.7
+        "value": 30.0,
+        "legacy_value": 10.9,
+        "adjusted_components": {
+          "dropback_offense_epa": -0.0005826468673492641,
+          "dropback_defense_epa": -0.14922053313677056,
+          "dropback_offense_success": -0.025428004682696445,
+          "dropback_defense_success": -0.04768728364449383,
+          "designed_run_offense_epa": -0.05667227542691375,
+          "designed_run_defense_epa": -0.000477330698026042,
+          "designed_run_offense_success": -0.04263110686406721,
+          "designed_run_defense_success": -0.02230404568330973,
+          "offense_epa": -0.3746678259937176,
+          "offense_success": -0.901014933348385,
+          "defense_epa": -0.9172696020936093,
+          "defense_success": -1.2022081048993885,
+          "composite": -0.8487901165837751
+        }
       }
     ]
   },
@@ -607,7 +1185,7 @@
       "venue": "M&T Bank Stadium",
       "source": "nflverse schedules",
       "matchup": {
-        "label": "2026 through Week 3",
+        "label": "2026 through Week 4",
         "items": [
           {
             "title": "When the Ravens have the ball",
@@ -642,7 +1220,7 @@
             },
             "opponent": {
               "value": -0.07,
-              "rank": 22
+              "rank": 23
             }
           },
           {
@@ -702,7 +1280,7 @@
       {
         "source_label": "NFL NGS",
         "source_url": "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html",
-        "period_label": "Through Week 3",
+        "period_label": "Through Week 4",
         "label": "Jackson CPOE",
         "value": "+6.5%",
         "rank": 6,
@@ -711,9 +1289,9 @@
       {
         "source_label": "ESPN",
         "source_url": "https://www.espn.com/nfl/qbr/_/season/2026/seasontype/2",
-        "period_label": "Through Week 3",
+        "period_label": "Through Week 4",
         "label": "Jackson QBR",
-        "value": "82.2",
+        "value": "81.6",
         "rank": 4,
         "rank_group": "NFL"
       }
@@ -722,7 +1300,7 @@
       {
         "source_label": "NFL NGS",
         "source_url": "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html",
-        "period_label": "Through Week 3",
+        "period_label": "Through Week 4",
         "label": "Henry RYOE/att",
         "value": "+0.48",
         "rank": 14,
@@ -733,10 +1311,10 @@
       {
         "source_label": "NFL NGS",
         "source_url": "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html",
-        "period_label": "Through Week 3",
+        "period_label": "Through Week 4",
         "label": "Bateman YACOE",
         "value": "+0.30",
-        "rank": 38,
+        "rank": 39,
         "rank_group": "WR"
       }
     ],
@@ -744,10 +1322,10 @@
       {
         "source_label": "NFL NGS",
         "source_url": "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html",
-        "period_label": "Through Week 3",
+        "period_label": "Through Week 4",
         "label": "Andrews YACOE",
         "value": "+0.07",
-        "rank": 18,
+        "rank": 19,
         "rank_group": "TE"
       }
     ],
@@ -806,7 +1384,7 @@
       {
         "source_label": "nflverse",
         "source_url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html",
-        "period_label": "Through Week 3",
+        "period_label": "Through Week 4",
         "label": "Opp. CPOE",
         "value": "+1.5%",
         "rank": 17,
@@ -884,6 +1462,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-10-01T17:22:01Z"
+    "retrieved_at": "2026-10-02T14:11:06Z"
   }
 }

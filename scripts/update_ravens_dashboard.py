@@ -11,7 +11,8 @@ Usage:
   python scripts/update_ravens_dashboard.py
   python scripts/update_ravens_dashboard.py --as-of 2026-09-03
 
-Requires pandas and pyarrow. A failed download leaves the existing JSON intact.
+Requires numpy, pandas and pyarrow. Failed downloads or invalid model inputs
+leave the existing JSON intact.
 """
 
 from __future__ import annotations
@@ -29,6 +30,11 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 import pandas as pd
+
+from efficiency_model import (
+    VERSION, EXTRA_COLUMNS, fit_units, make_calibration, model_metadata,
+    prepare_plays, score_units,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -68,7 +74,7 @@ PBP_COLUMNS = [
     "play_deleted",
     "aborted_play",
     "sack",
-]
+] + EXTRA_COLUMNS
 
 TEAM_NAMES = {
     "ARI": "Arizona Cardinals", "ATL": "Atlanta Falcons", "BAL": "Baltimore Ravens",
@@ -462,7 +468,7 @@ def red_zone_rates(plays, team_column):
     return drives.groupby(team_column)["drive_td"].mean() * 100
 
 
-def compute_league_metrics(schedule_games, pbp):
+def compute_league_metrics(schedule_games, pbp, calibration):
     records = team_records(schedule_games)
     if schedule_games.empty:
         return records, pd.DataFrame(columns=METRICS.keys())
@@ -497,15 +503,19 @@ def compute_league_metrics(schedule_games, pbp):
     table["red_zone_td_rate"] = red_zone_rates(plays, "posteam")
     table["opponent_red_zone_td_rate"] = red_zone_rates(plays, "defteam")
 
-    # A transparent, non-opponent-adjusted team efficiency index.
-    # Each component contributes equally after conversion to a league percentile.
+    # Preserve the original index for an auditable v1/v2 comparison.
     components = pd.concat([
         table["offensive_epa_per_play"].rank(method="average", pct=True, ascending=True) * 100,
         table["offensive_success_rate"].rank(method="average", pct=True, ascending=True) * 100,
         table["defensive_epa_per_play"].rank(method="average", pct=True, ascending=False) * 100,
         table["defensive_success_rate"].rank(method="average", pct=True, ascending=False) * 100,
     ], axis=1)
-    table["overall_efficiency"] = components.mean(axis=1)
+    table["legacy_overall_efficiency"] = components.mean(axis=1)
+    model_plays = prepare_plays(plays, schedule_games)
+    adjusted = score_units(fit_units(model_plays), calibration)
+    table["overall_efficiency"] = adjusted["overall_efficiency"]
+    table.attrs["adjusted_components"] = adjusted.drop(columns="overall_efficiency").to_dict("index")
+    table.attrs["fit"] = adjusted.attrs["fit"]
 
     return records, table
 
@@ -544,6 +554,7 @@ def efficiency_rankings_payload(season, as_of, records, table):
         return {
             "label": f"{season} preseason",
             "sample_note": "Rankings begin after Week 1",
+            "model_version": VERSION,
             "teams": [],
         }
 
@@ -559,11 +570,15 @@ def efficiency_rankings_payload(season, as_of, records, table):
             "full_name": TEAM_NAMES.get(abbreviation, abbreviation),
             "record": record_text(records, abbreviation),
             "value": finite_number(value, 1),
+            "legacy_value": finite_number(table.at[abbreviation, "legacy_overall_efficiency"], 1),
+            "adjusted_components": table.attrs["adjusted_components"][abbreviation],
         })
 
     return {
         "label": f"Games through {as_of.strftime('%B')} {as_of.day}",
-        "sample_note": "Completed regular-season games; early-season sample",
+        "sample_note": "Version 2 · opponent and venue adjusted · game-state weighted",
+        "model_version": VERSION,
+        "fit": table.attrs.get("fit", {}),
         "teams": teams,
     }
 
@@ -707,11 +722,13 @@ def build_snapshot(season, records, table):
     snapshot_id = f"{season}-week-{week:02d}" if games_played else f"{season}-preseason"
     return {
         "id": snapshot_id,
+        "model_version": VERSION,
         "week": week,
         "label": f"Through Week {week}" if games_played else f"{season} preseason",
         "previous_snapshot": None,
-        "sample_note": f"{games_played} regular-season game{'s' if games_played != 1 else ''}" if games_played else "No 2026 regular-season games yet",
+        "sample_note": f"{games_played} regular-season game{'s' if games_played != 1 else ''}" if games_played else f"No {season} regular-season games yet",
         "record": record_text(records, TEAM),
+        "legacy_overall_efficiency": finite_number(table.at[TEAM, "legacy_overall_efficiency"], 1) if games_played else None,
         "metrics": metric_payload(table, TEAM) if games_played else {
             metric_id: {"value": None, "rank": None, "source": definition["source"]}
             for metric_id, definition in METRICS.items()
@@ -755,10 +772,14 @@ def main():
             }
         benchmark_pbp = pd.read_parquet(PBP_URL.format(season=benchmark_season), columns=PBP_COLUMNS)
 
-        current_records, current_table = compute_league_metrics(current_games, current_pbp)
-        benchmark_records, benchmark_table = compute_league_metrics(benchmark_games, benchmark_pbp)
-        ravens_games = current_games[(current_games["home_team"] == TEAM) | (current_games["away_team"] == TEAM)]
-        current_table.attrs["week"] = int(ravens_games["week"].max()) if not ravens_games.empty else 0
+        if benchmark_season >= args.season or benchmark_games.empty:
+            raise ValueError("Calibration requires a completed season before the ranking season")
+        calibration_plays = prepare_plays(
+            eligible_scrimmage_plays(benchmark_pbp, set(benchmark_games.game_id)), benchmark_games)
+        calibration = make_calibration(calibration_plays, benchmark_season)
+        current_records, current_table = compute_league_metrics(current_games, current_pbp, calibration)
+        benchmark_records, benchmark_table = compute_league_metrics(benchmark_games, benchmark_pbp, calibration)
+        current_table.attrs["week"] = int(current_games["week"].max()) if not current_games.empty else 0
         benchmark_ravens = benchmark_games[(benchmark_games["home_team"] == TEAM) | (benchmark_games["away_team"] == TEAM)]
         benchmark_table.attrs["week"] = int(benchmark_ravens["week"].max()) if not benchmark_ravens.empty else 18
 
@@ -770,7 +791,18 @@ def main():
 
         output = args.output.resolve()
         existing = read_existing(output)
-        snapshots = merge_snapshots(existing, current)
+        # Rebuild each weekly cutoff with the same model and calibration. Never
+        # compare v2 with stored v1 ranks, or fit a past week using later games.
+        snapshots = []
+        for week in sorted(current_games.week.unique()):
+            if week == current["week"]:
+                break
+            past_games = current_games[current_games.week <= week]
+            past_records, past_table = compute_league_metrics(past_games, current_pbp, calibration)
+            past_table.attrs["week"] = int(week)
+            past = build_snapshot(args.season, past_records, past_table)
+            snapshots = merge_snapshots({"snapshots": snapshots}, past)
+        snapshots = merge_snapshots({"snapshots": snapshots}, current)
         recent_games = recent_games_payload(current_games)
         next_game = format_next_game(schedule, args.season, args.as_of)
         if next_game:
@@ -814,6 +846,7 @@ def main():
             "as_of": args.as_of.isoformat(),
             "season": args.season,
             "benchmark_season": benchmark_season,
+            "efficiency_model": model_metadata(calibration),
             "current_snapshot": current["id"],
             "snapshots": snapshots,
             "benchmark_snapshot": benchmark,
@@ -856,7 +889,7 @@ def main():
         output.parent.mkdir(parents=True, exist_ok=True)
         temporary = output.with_suffix(output.suffix + ".tmp")
         with temporary.open("w", encoding="utf-8") as handle:
-            json.dump(payload, handle, indent=2, ensure_ascii=False)
+            json.dump(payload, handle, indent=2, ensure_ascii=False, allow_nan=False)
             handle.write("\n")
         os.replace(temporary, output)
         print(f"Updated {output.relative_to(ROOT)}: {current['label']} ({current['record']}); benchmark {benchmark_season} loaded.")

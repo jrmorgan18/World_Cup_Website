@@ -29,11 +29,15 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install data dependencies
-        run: python -m pip install pandas==2.3.3 pyarrow==23.0.1
+        run: python -m pip install numpy==2.4.2 pandas==2.3.3 pyarrow==23.0.1
+      - name: Test efficiency model
+        run: python -m unittest discover -s scripts -p test_efficiency_model.py -v
       - name: Update Ravens dashboard
         run: python scripts/update_ravens_dashboard.py
       - name: Validate dashboard data
         run: ruby scripts/check_ravens_dashboard.rb
+      - name: Validate efficiency model artifact
+        run: python scripts/check_efficiency_artifact.py
       - name: Commit changes
         id: commit
         run: |

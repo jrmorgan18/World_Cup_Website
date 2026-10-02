@@ -1,0 +1,147 @@
+{
+  "model_version": "2.0",
+  "cutoffs": [
+    3,
+    6,
+    9,
+    12
+  ],
+  "evaluation": "Spearman correlation with the next four calendar weeks; higher is better.",
+  "limitations": "Overlapping windows and repeated teams; descriptive diagnostic, not independent trials. No parameters selected using these results.",
+  "sources": {
+    "schedule": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+    "pbp": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_{season}.parquet"
+  },
+  "mean_correlations": {
+    "next_four_weeks_net_epa": {
+      "v1_spearman": 0.40194521599253735,
+      "v2_spearman": 0.3973607038123167
+    },
+    "next_four_weeks_margin": {
+      "v1_spearman": 0.41525785889692063,
+      "v2_spearman": 0.40221945794153435
+    }
+  },
+  "folds": [
+    {
+      "season": 2024,
+      "cutoff_week": 3,
+      "calibration_season": 2023,
+      "comparisons": {
+        "next_four_weeks_net_epa": {
+          "v1_spearman": 0.42223048781375516,
+          "v2_spearman": 0.3980938416422287
+        },
+        "next_four_weeks_margin": {
+          "v1_spearman": 0.3866263656529516,
+          "v2_spearman": 0.342988090089451
+        }
+      }
+    },
+    {
+      "season": 2024,
+      "cutoff_week": 6,
+      "calibration_season": 2023,
+      "comparisons": {
+        "next_four_weeks_net_epa": {
+          "v1_spearman": 0.49371857947966236,
+          "v2_spearman": 0.4725073313782991
+        },
+        "next_four_weeks_margin": {
+          "v1_spearman": 0.420121120095703,
+          "v2_spearman": 0.3689854290998876
+        }
+      }
+    },
+    {
+      "season": 2024,
+      "cutoff_week": 9,
+      "calibration_season": 2023,
+      "comparisons": {
+        "next_four_weeks_net_epa": {
+          "v1_spearman": 0.3946837829837456,
+          "v2_spearman": 0.4248533724340175
+        },
+        "next_four_weeks_margin": {
+          "v1_spearman": 0.3864698888727978,
+          "v2_spearman": 0.4138942369138332
+        }
+      }
+    },
+    {
+      "season": 2024,
+      "cutoff_week": 12,
+      "calibration_season": 2023,
+      "comparisons": {
+        "next_four_weeks_net_epa": {
+          "v1_spearman": 0.3831347452094883,
+          "v2_spearman": 0.3988269794721407
+        },
+        "next_four_weeks_margin": {
+          "v1_spearman": 0.5490555749760424,
+          "v2_spearman": 0.5927759841167837
+        }
+      }
+    },
+    {
+      "season": 2025,
+      "cutoff_week": 3,
+      "calibration_season": 2024,
+      "comparisons": {
+        "next_four_weeks_net_epa": {
+          "v1_spearman": 0.20403300067854568,
+          "v2_spearman": 0.18585043988269795
+        },
+        "next_four_weeks_margin": {
+          "v1_spearman": 0.248945925356213,
+          "v2_spearman": 0.22727272727272727
+        }
+      }
+    },
+    {
+      "season": 2025,
+      "cutoff_week": 6,
+      "calibration_season": 2024,
+      "comparisons": {
+        "next_four_weeks_net_epa": {
+          "v1_spearman": 0.3870140439995758,
+          "v2_spearman": 0.3892961876832844
+        },
+        "next_four_weeks_margin": {
+          "v1_spearman": 0.42630477464408184,
+          "v2_spearman": 0.3968472200701722
+        }
+      }
+    },
+    {
+      "season": 2025,
+      "cutoff_week": 9,
+      "calibration_season": 2024,
+      "comparisons": {
+        "next_four_weeks_net_epa": {
+          "v1_spearman": 0.4802933169611768,
+          "v2_spearman": 0.43145161290322576
+        },
+        "next_four_weeks_margin": {
+          "v1_spearman": 0.46299864200445584,
+          "v2_spearman": 0.41166227851717346
+        }
+      }
+    },
+    {
+      "season": 2025,
+      "cutoff_week": 12,
+      "calibration_season": 2024,
+      "comparisons": {
+        "next_four_weeks_net_epa": {
+          "v1_spearman": 0.45045377081434895,
+          "v2_spearman": 0.47800586510263926
+        },
+        "next_four_weeks_margin": {
+          "v1_spearman": 0.4415405795731195,
+          "v2_spearman": 0.46332969745224634
+        }
+      }
+    }
+  ]
+}
