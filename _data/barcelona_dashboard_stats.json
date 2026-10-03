@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-02T13:13:46Z",
-  "as_of": "2026-10-02",
+  "generated_at": "2026-10-03T12:04:32Z",
+  "as_of": "2026-10-03",
   "season": 2026,
   "season_label": "2026-27",
   "team": {
@@ -1345,9 +1345,9 @@
         {
           "event_id": "401882822",
           "competition": "laliga",
-          "date": "2026-11-01T20:00Z",
+          "date": "2026-10-31T20:00Z",
           "completed": false,
-          "status_detail": "TBD",
+          "status_detail": "10/31 - 4:00 PM EDT",
           "location": "home",
           "venue": "Spotify Camp Nou",
           "opponent": "Alavés",
@@ -4000,8 +4000,8 @@
   "injuries": [],
   "rotation": {
     "window_days": 21,
-    "window_start": "2026-09-11",
-    "window_end": "2026-10-02",
+    "window_start": "2026-09-12",
+    "window_end": "2026-10-03",
     "matches_in_window": 3,
     "available_minutes": 270,
     "players": [
@@ -4203,7 +4203,7 @@
     "load_level": "Light",
     "shortest_rest_recent": 3,
     "average_rest_recent": 3.0,
-    "matches_next_14_days": 2,
+    "matches_next_14_days": 3,
     "matches_next_30_days": 6,
     "shortest_rest_upcoming": 3,
     "recent": [
@@ -4255,7 +4255,7 @@
         "location": "home"
       },
       {
-        "date": "2026-11-01T20:00Z",
+        "date": "2026-10-31T20:00Z",
         "competition": "laliga",
         "opponent": "Alavés",
         "location": "home"
@@ -4416,9 +4416,9 @@
       {
         "event_id": "401882822",
         "competition": "laliga",
-        "date": "2026-11-01T20:00Z",
+        "date": "2026-10-31T20:00Z",
         "completed": false,
-        "status_detail": "TBD",
+        "status_detail": "10/31 - 4:00 PM EDT",
         "location": "home",
         "venue": "Spotify Camp Nou",
         "opponent": "Alavés",
