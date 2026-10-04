@@ -1,0 +1,152 @@
+{
+  "season": 2026,
+  "through_week": 3,
+  "matchup_week": 4,
+  "qualifying_plays": 5798,
+  "sources": {
+    "play_by_play": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2026.parquet",
+    "game_release": "https://static.clubs.nfl.com/image/upload/titans/l8phsolqmz7ogquqcmcx",
+    "personnel": "https://www.sharpfootballanalysis.com/stats-nfl/nfl-offensive-personnel/"
+  },
+  "definitions": {
+    "explosive": "10+ yards rushing; 20+ yards passing",
+    "success": "EPA > 0",
+    "rank": "Minimum rank, #1 best; defense lower is better",
+    "sample": "REG weeks 1\u20133, run/pass, no kneels/spikes/two-point attempts/deleted/aborted plays; EPA must exist"
+  },
+  "teams": {
+    "BAL": {
+      "offense": {
+        "values": {
+          "epa": 0.19329505394749735,
+          "success": 54.33526011560693,
+          "early_epa": 0.285915345098811,
+          "pass_epa": 0.3177195436195061,
+          "rush_epa": 0.08872553603166017,
+          "explosive": 14.450867052023122,
+          "cpoe": 7.218634388218187,
+          "third_down": 38.46153846153847,
+          "pass_oe": -8.013111815890136,
+          "no_huddle": 4.046242774566474
+        },
+        "ranks": {
+          "epa": 3,
+          "success": 2,
+          "early_epa": 1,
+          "pass_epa": 2,
+          "rush_epa": 3,
+          "explosive": 2,
+          "cpoe": 3,
+          "third_down": 19,
+          "pass_oe": 27,
+          "no_huddle": 21
+        }
+      },
+      "defense": {
+        "values": {
+          "epa": 0.020290437332321,
+          "success": 44.623655913978496,
+          "early_epa": -0.04747204424167862,
+          "pass_epa": 0.02753538770097397,
+          "rush_epa": 0.009567910786714583,
+          "explosive": 9.67741935483871,
+          "cpoe": 1.47888979109207,
+          "third_down": 42.10526315789473,
+          "pass_oe": -1.059131941167257,
+          "no_huddle": 8.064516129032258
+        },
+        "ranks": {
+          "epa": 19,
+          "success": 17,
+          "early_epa": 8,
+          "pass_epa": 17,
+          "rush_epa": 19,
+          "explosive": 19,
+          "cpoe": 17,
+          "third_down": 17,
+          "pass_oe": 12,
+          "no_huddle": 9
+        }
+      }
+    },
+    "TEN": {
+      "offense": {
+        "values": {
+          "epa": -0.06590371892002367,
+          "success": 42.675159235668794,
+          "early_epa": -0.11066631989381435,
+          "pass_epa": -0.1498633818325512,
+          "rush_epa": 0.056100166249742935,
+          "explosive": 7.643312101910828,
+          "cpoe": 1.4762245863676071,
+          "third_down": 39.473684210526315,
+          "pass_oe": -10.205399363663545,
+          "no_huddle": 14.012738853503185
+        },
+        "ranks": {
+          "epa": 22,
+          "success": 18,
+          "early_epa": 27,
+          "pass_epa": 27,
+          "rush_epa": 8,
+          "explosive": 25,
+          "cpoe": 18,
+          "third_down": 17,
+          "pass_oe": 31,
+          "no_huddle": 3
+        }
+      },
+      "defense": {
+        "values": {
+          "epa": 0.04421833831358282,
+          "success": 43.08510638297872,
+          "early_epa": 0.009292628992792354,
+          "pass_epa": 0.1394062595703457,
+          "rush_epa": -0.04135464140209287,
+          "explosive": 8.51063829787234,
+          "cpoe": 9.442977530834002,
+          "third_down": 41.46341463414634,
+          "pass_oe": -11.828341703624167,
+          "no_huddle": 6.914893617021277
+        },
+        "ranks": {
+          "epa": 20,
+          "success": 15,
+          "early_epa": 19,
+          "pass_epa": 25,
+          "rush_epa": 14,
+          "explosive": 11,
+          "cpoe": 31,
+          "third_down": 15,
+          "pass_oe": 32,
+          "no_huddle": 13
+        }
+      }
+    }
+  },
+  "reported_stats": {
+    "BAL": {
+      "record": "2-1",
+      "net_yards": 1196,
+      "points": 92,
+      "henry_rush_td": 6,
+      "two_plus_te_pct": 55
+    },
+    "TEN": {
+      "record": "0-3",
+      "net_yards": 748,
+      "points": 37,
+      "points_allowed": 59,
+      "rush_ypc_allowed": 3.6,
+      "completions_allowed": 59,
+      "attempts_faced": 83,
+      "simmons_pressures": 15,
+      "simmons_sacks": 2,
+      "ward_pass_yards": 504,
+      "ward_attempts": 88,
+      "tate_catches": 13,
+      "tate_yards": 123,
+      "tate_targets": 20
+    }
+  }
+}

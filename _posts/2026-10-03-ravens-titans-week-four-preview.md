@@ -44,6 +44,11 @@ The storyline calls out for a big day from Henry.
 
 The matchup suggests something different.
 
+<figure class="ravens-article-figure ravens-article-figure--graphic">
+  <img src="{{ '/assets/images/ravens/titans-week-four-2026/ravens-titans-at-a-glance-2026.svg' | relative_url }}" alt="Ravens–Titans at a glance: team offense, Henry's six rushing touchdowns and Tennessee's run defense through Week 3" loading="lazy" decoding="async">
+  <figcaption>Week 4 at a glance · Statistics through Week 3. Source: <a href="https://www.tennesseetitans.com/news/game-preview-titans-travel-to-baltimore-to-face-ravens" rel="noopener">Titans official game release</a>.</figcaption>
+</figure>
+
 ## The Henry game might actually belong to Lamar
 
 The Ravens should obviously run the football. Their rushing attack is not merely another way to gain yards. Henry and Lamar Jackson change how the defense has to align before the snap, and much of what Doyle wants to create in the passing game begins with that threat.
@@ -71,6 +76,11 @@ That is how you can play lighter without simply conceding five yards whenever th
 
 And that may actually make the Ravens heavy personnel more dangerous through the air than on the ground.
 
+<figure class="ravens-article-figure ravens-article-figure--graphic">
+  <img src="{{ '/assets/images/ravens/titans-week-four-2026/ravens-titans-matchup-dna.svg' | relative_url }}" alt="Matchup DNA: league-ranked Ravens offense versus Titans defense and Titans offense versus Ravens defense across eight efficiency measures through Week 3" loading="lazy" decoding="async">
+  <figcaption>Matchup DNA · #1 is best; gold marks a top-eight unit. Independently calculated from <a href="https://github.com/nflverse/nflverse-data/releases/tag/pbp" rel="noopener">nflverse play-by-play</a>, regular-season Weeks 1–3. Explosives: 10+ rushing yards or 20+ passing yards. Provider filters can differ from the figures quoted in the article. A three-game sample, not an opponent-adjusted projection. More at the <a href="{{ '/ravens/dashboard/' | relative_url }}">Ravens Dashboard</a>.</figcaption>
+</figure>
+
 ## Heavy personnel could stress Tennessee
 
 The Ravens have used two tight ends on more than 30 percent of its offensive snaps and three tight ends on another 18 percent, both well above league-average rates.
@@ -93,12 +103,22 @@ That is the conflict Doyle should be creating.
 
 The goal is to make the Titans wrong regardless of which answer they choose.
 
+<figure class="ravens-article-figure ravens-article-figure--graphic">
+  <img src="{{ '/assets/images/ravens/titans-week-four-2026/ravens-titans-passing-opportunity-2026.svg' | relative_url }}" alt="Tennessee's EPA allowed against runs versus passes, the Ravens' two-plus-tight-end usage and the Titans' completion rate allowed" loading="lazy" decoding="async">
+  <figcaption>The passing opportunity · EPA from <a href="https://github.com/nflverse/nflverse-data/releases/tag/pbp" rel="noopener">nflverse</a>; 2+ TE usage from <a href="https://www.sharpfootballanalysis.com/stats-nfl/nfl-offensive-personnel/" rel="noopener">Sharp's public all-play personnel table</a>; completion rate from the <a href="https://www.tennesseetitans.com/news/game-preview-titans-travel-to-baltimore-to-face-ravens" rel="noopener">Titans game release</a>. Through Week 3; personnel share uses Sharp's stated exclusions.</figcaption>
+</figure>
+
 <figure class="ravens-article-figure">
   <img src="{{ '/assets/images/ravens/titans-week-four-2026/lamar-jackson-cowboys-week-three.jpg' | relative_url }}" alt="Lamar Jackson carries the ball during the Ravens’ Week 3 win over Dallas in Rio" loading="lazy" decoding="async">
   <figcaption><a href="https://www.baltimoreravens.com/photos/game-action-gallery-ravens-vs-cowboys-week-3" rel="noopener">Shawn Hubbard / Baltimore Ravens Photos</a></figcaption>
 </figure>
 
 ## The matchup that can wreck everything: Vega Ioane vs. Jeffery Simmons
+
+<figure class="ravens-article-figure ravens-article-figure--graphic">
+  <img src="{{ '/assets/images/ravens/titans-week-four-2026/ravens-titans-key-matchups-2026.svg' | relative_url }}" alt="Three key matchups: Ioane against Simmons and his 15 pressures; force Ward beyond his 5.7 yards per attempt; contain Tate, who has 13 catches for 123 yards" loading="lazy" decoding="async">
+  <figcaption>Three matchups that decide it · Player statistics through Week 3 from the <a href="https://www.tennesseetitans.com/news/game-preview-titans-travel-to-baltimore-to-face-ravens" rel="noopener">Titans official game release</a>. Tactical interpretation: Dual Eights.</figcaption>
+</figure>
 
 There is one pretty substantial obstacle to all of this.
 
