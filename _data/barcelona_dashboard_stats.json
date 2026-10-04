@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-03T12:04:32Z",
-  "as_of": "2026-10-03",
+  "generated_at": "2026-10-04T12:52:40Z",
+  "as_of": "2026-10-04",
   "season": 2026,
   "season_label": "2026-27",
   "team": {
@@ -4000,8 +4000,8 @@
   "injuries": [],
   "rotation": {
     "window_days": 21,
-    "window_start": "2026-09-12",
-    "window_end": "2026-10-03",
+    "window_start": "2026-09-13",
+    "window_end": "2026-10-04",
     "matches_in_window": 3,
     "available_minutes": 270,
     "players": [
@@ -4204,7 +4204,7 @@
     "shortest_rest_recent": 3,
     "average_rest_recent": 3.0,
     "matches_next_14_days": 3,
-    "matches_next_30_days": 6,
+    "matches_next_30_days": 7,
     "shortest_rest_upcoming": 3,
     "recent": [
       {
@@ -4258,6 +4258,12 @@
         "date": "2026-10-31T20:00Z",
         "competition": "laliga",
         "opponent": "Alavés",
+        "location": "home"
+      },
+      {
+        "date": "2026-11-03T20:00Z",
+        "competition": "ucl",
+        "opponent": "Aston Villa",
         "location": "home"
       }
     ]
