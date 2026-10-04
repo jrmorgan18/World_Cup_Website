@@ -16,6 +16,9 @@
       <h3>{{ highlight.title }}</h3>
       <p>{{ highlight.text }}</p>
       <small>Reporting: {{ highlight.sources | join: "; " }}</small>
+      {% if highlight.source_links %}
+      <small>{% for source in highlight.source_links %}<a href="{{ source.url | escape }}" target="_blank" rel="noopener">{{ source.label }}</a>{% unless forloop.last %}; {% endunless %}{% endfor %}</small>
+      {% endif %}
     </li>
     {% endfor %}
   </ol>

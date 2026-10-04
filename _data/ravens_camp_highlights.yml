@@ -4,38 +4,56 @@ kicker: "Week 4 · Tennessee"
 heading: "Ravens Daily"
 intro: "Lamar Jackson and Zay Flowers are trending toward full workloads, while the Ravens prepare rookie Vega Ioane for his first start at center against Tennessee."
 highlights:
-  - title: "Lamar Jackson is back to full practice after a minor back issue"
+  - title: "Lamar Jackson was upgraded to a full participant Thursday, substantially easing concern about the back issue that limited him Wednesday."
     text: >-
-      Jackson was limited Wednesday, but returned as a full participant Thursday after Jesse Minter called the issue “something small.” Barring a setback, he is on track to start Sunday against Tennessee.
+      Jesse Minter had characterized the injury as “something small,” and Jackson’s full practice puts him firmly on track to start Sunday against Tennessee barring a setback.
     sources:
-      - "BaltimoreRavens.com · Oct. 1 injury report"
-  - title: "Zay Flowers practiced fully and says his hamstring feels behind him"
+      - "BaltimoreRavens.com"
+    source_links:
+      - label: "Baltimore Ravens"
+        url: "https://www.baltimoreravens.com/news/lamar-jackson-injury-report-practicing-back-limited-ravens-titans?utm_source=chatgpt.com"
+  - title: "Zay Flowers also practiced fully and says his hamstring problem finally feels behind him."
     text: >-
-      Flowers was deliberately limited to 21 snaps against Dallas but still gained 84 receiving yards. After a full Thursday practice, the Ravens expect to move him much closer to his normal workload against the Titans.
+      Flowers was deliberately limited to 21 snaps in Rio but still produced 84 receiving yards; after Thursday’s full session, the expectation is that Baltimore can move him much closer to his normal workload against the Titans.
     sources:
-      - "BaltimoreRavens.com · Oct. 1 News & Notes"
-  - title: "Ronnie Stanley remains limited; John Simpson is back to full participation"
+      - "BaltimoreRavens.com"
+    source_links:
+      - label: "Baltimore Ravens"
+        url: "https://www.baltimoreravens.com/news/zay-flowers-hamstring-injury-productivity-marlon-humphrey-defensive-connectivity-kyle-hamilton-vega-ioane-help-quarterback-sneak?utm_source=chatgpt.com"
+  - title: "Ronnie Stanley remains the biggest unresolved injury on Baltimore’s offense."
     text: >-
-      Stanley has been limited for a second straight day with the toe injury that kept him out against Dallas. Friday’s practice and game designation are the key checkpoints. Simpson improved from limited to full Thursday, a useful stabilizing sign as the Ravens break in a new center.
+      The left tackle was limited for a second straight day with the toe injury that kept him out against Dallas, leaving Friday’s practice and game designation as the key checkpoints. John Simpson, meanwhile, improved from limited to full participation Thursday, which would help stabilize the interior while Baltimore breaks in a new center.
     sources:
-      - "BaltimoreRavens.com · Oct. 1 injury report"
-  - title: "Vega Ioane is preparing for his first start at center"
+      - "BaltimoreRavens.com"
+    source_links:
+      - label: "Baltimore Ravens"
+        url: "https://www.baltimoreravens.com/news/lamar-jackson-injury-report-practicing-back-limited-ravens-titans?utm_source=chatgpt.com"
+  - title: "Vega Ioane is preparing to make his first start at center, and Baltimore is treating the position switch as an offense-wide adjustment rather than asking the rookie to solve everything himself."
     text: >-
-      Declan Doyle is treating the position switch as an offense-wide communication challenge, with Lamar Jackson, the coaches and the other linemen all responsible for helping the rookie. Ioane’s first start comes against four-time Pro Bowl defensive tackle Jeffery Simmons.
+      Declan Doyle said Lamar Jackson, the coaching staff and the other linemen all need to raise their communication and execution around Ioane, who is taking his first regular week of practice reps at the position. The degree of difficulty is significant: his first assignment includes four-time Pro Bowler Jeffery Simmons.
     sources:
-      - "BaltimoreRavens.com · Oct. 1 News & Notes and press transcript"
-  - title: "Andre James is still learning the offense after a month away from football"
+      - "BaltimoreRavens.com"
+    source_links:
+      - label: "Baltimore Ravens"
+        url: "https://www.baltimoreravens.com/news/zay-flowers-hamstring-injury-productivity-marlon-humphrey-defensive-connectivity-kyle-hamilton-vega-ioane-help-quarterback-sneak?utm_source=chatgpt.com"
+  - title: "Andre James is not an immediate plug-and-play alternative at center."
     text: >-
-      The veteran center said Wednesday was his first football activity in a month as he recovers from a high ankle sprain and gets up to speed after joining the practice squad. His 61 career starts offer longer-term experience, but Ioane remains the Week 4 plan.
+      The veteran said Thursday that Wednesday was his first football activity in a month after recovering from a high ankle sprain, and he is simultaneously learning Baltimore’s offense after signing to the practice squad. His 61 career starts give the Ravens a credible longer-term option, but Ioane remains the clear Week 4 plan.
     sources:
-      - "BaltimoreRavens.com · Oct. 1 News & Notes"
-  - title: "Trey Hendrickson missed practice again; Marlon Humphrey advanced to full"
+      - "BaltimoreRavens.com"
+    source_links:
+      - label: "Baltimore Ravens"
+        url: "https://www.baltimoreravens.com/news/zay-flowers-hamstring-injury-productivity-marlon-humphrey-defensive-connectivity-kyle-hamilton-vega-ioane-help-quarterback-sneak?utm_source=chatgpt.com"
+  - title: "Trey Hendrickson missed practice again Thursday with the broken finger he has been playing through."
     text: >-
-      Hendrickson sat out Thursday with the broken finger he has played through since Week 2. He followed a similar early-week pattern before playing against Dallas, so Friday’s designation should offer a clearer read. Humphrey moved from limited Wednesday to full participation Thursday with his hamstring issue.
+      The pattern mirrors last week, when Hendrickson sat out early practices before playing in Dallas, so there is not yet evidence that his availability is in serious jeopardy. Friday’s designation will tell more; Marlon Humphrey, meanwhile, progressed from limited to full participation with his hamstring issue.
     sources:
-      - "BaltimoreRavens.com · Oct. 1 injury report"
-  - title: "The Ravens are reassessing their short-yardage options"
+      - "BaltimoreRavens.com"
+    source_links:
+      - label: "Baltimore Ravens"
+        url: "https://www.baltimoreravens.com/news/lamar-jackson-injury-report-practicing-back-limited-ravens-titans?utm_source=chatgpt.com"
+  - title: "Baltimore is reconsidering its short-yardage menu after Derrick Henry was stopped four times in key situations against Dallas."
     text: >-
-      After Derrick Henry was stopped four times in key situations against Dallas, Doyle said a quarterback sneak needs to be available in some form and that the staff is reviewing both the scheme and execution. That is a tactical response to one of the offense’s clearest early-season problems, not a promise that Jackson will become the default short-yardage runner.
+      Doyle specifically acknowledged Thursday that some form of quarterback sneak needs to be available within the offense and said the staff is reassessing both scheme and execution. That does not guarantee more Lamar sneaks, but it is a meaningful tactical response to one of the offense’s clearest early-season problems.
     sources:
-      - "BaltimoreRavens.com · Oct. 1 press transcript"
+      - "BaltimoreRavens.com"
