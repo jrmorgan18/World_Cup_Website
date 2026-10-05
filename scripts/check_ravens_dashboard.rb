@@ -13,7 +13,7 @@ METRIC_STATUSES = ["Elite", "Good", "Average", "Concern", "Problem"].freeze
 UNIT_STATUSES = ["Elite", "Strength", "Solid", "Mixed", "Concern", "Major Concern"].freeze
 CHAMPIONSHIP_STATUSES = ["Ready", "Trending Right", "Unclear", "Concern"].freeze
 TRENDS = ["up", "down", "stable"].freeze
-INJURY_STATUSES = ["Healthy", "Limited", "Questionable", "Doubtful", "Out", "Injured Reserve", "PUP", "Returning"].freeze
+INJURY_STATUSES = ["Healthy", "Limited", "Questionable", "Doubtful", "Out", "Injured Reserve", "PUP", "Returning", "Monitoring"].freeze
 IMPORTANCE = ["Critical", "Starter", "Rotation", "Depth"].freeze
 
 def assert(condition, message, errors)
@@ -136,6 +136,19 @@ automated_analytics = stats.fetch("unit_analytics")
 expected_automated_units = current_snapshot && current_snapshot["week"].to_i > 0 ? ["Quarterback", "Running backs", "Wide receivers", "Tight ends", "Offensive line", "Defensive line", "Edge rushers", "Secondary"] : []
 assert(automated_analytics.keys == expected_automated_units, "Automated unit analytics must contain the supported units in order", errors)
 automated_analytics.each { |unit_name, metrics| validate_analytics.call(unit_name, metrics) }
+filmstudy = stats["offensive_line_filmstudy"]
+if filmstudy
+  assert(filmstudy["season"] == stats["season"], "Filmstudy must use the current season", errors)
+  assert(filmstudy["week"].between?(1, current_snapshot["week"]), "Filmstudy must not claim an unplayed week", errors)
+  film_players = filmstudy.fetch("players")
+  assert(film_players.map { |row| row["player"] }.uniq.length == film_players.length, "Filmstudy must not repeat players", errors)
+  film_players.each do |row|
+    assert(row["snaps"] >= 20, "Filmstudy ranked players need 20 scored snaps", errors)
+    assert((row["points"].to_f / row["snaps"] - row["points_per_snap"]).abs <= 0.0005, "Filmstudy rates must use aggregate points and snaps", errors)
+    assert(row["latest_url"].start_with?("https://www.filmstudybaltimore.com/"), "Filmstudy grades need direct source links", errors)
+  end
+  assert(film_players.each_cons(2).all? { |left, right| left["points_per_snap"] >= right["points_per_snap"] }, "Filmstudy rankings must be sorted", errors)
+end
 if current_snapshot && current_snapshot["week"].to_i > 0
   quarterback_metrics = automated_analytics.fetch("Quarterback", [])
   qbr = quarterback_metrics.find { |metric| metric["label"] == "Jackson QBR" }

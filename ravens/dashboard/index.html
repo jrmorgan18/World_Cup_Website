@@ -162,6 +162,25 @@ section_theme: ravens
           {% for metric in automated_analytics %}{% include ravens-unit-analytics-cell.html metric=metric %}{% endfor %}
         </dl>
         <p>{{ unit.explanation }}</p>
+        {% if unit.name == "Offensive line" and stats.offensive_line_filmstudy %}
+        {% assign filmstudy = stats.offensive_line_filmstudy %}
+        <div class="ravens-filmstudy">
+          <h4>Ravens O-line rankings · Filmstudy</h4>
+          <p class="ravens-filmstudy-period"><a href="{{ filmstudy.source_url }}">{{ filmstudy.source_label }}</a> · {{ filmstudy.period_label }} · Published {{ filmstudy.published | date: "%b %-d" }}</p>
+          <div class="ravens-filmstudy-scroll" tabindex="0" role="region" aria-label="Filmstudy offensive line rankings, scroll horizontally on small screens">
+            <table>
+              <caption>Dual Eights aggregation of published Filmstudy scoring</caption>
+              <thead><tr><th scope="col">Rank</th><th scope="col">Lineman</th><th scope="col">Pts / snap</th><th scope="col">Scored snaps</th><th scope="col">Latest game grade</th></tr></thead>
+              <tbody>{% for lineman in filmstudy.players %}
+                <tr><td>{{ lineman.rank }}</td><th scope="row">{{ lineman.player }}</th><td>{{ lineman.points_per_snap }}</td><td>{{ lineman.snaps }}</td><td><a href="{{ lineman.latest_url }}">{{ lineman.latest_grade | default: "Not graded" }} <small>W{{ lineman.latest_week }}</small></a></td></tr>
+              {% endfor %}</tbody>
+            </table>
+          </div>
+          <p class="ravens-filmstudy-note">{{ filmstudy.methodology }}</p>
+          {% if filmstudy.unranked_players.size > 0 %}<p class="ravens-filmstudy-note">Below the minimum: {% for lineman in filmstudy.unranked_players %}{{ lineman.player }} ({{ lineman.snaps }} scored snaps){% unless forloop.last %}; {% endunless %}{% endfor %}.</p>{% endif %}
+          <p class="ravens-filmstudy-note">Reports: {% for report in filmstudy.reports %}<a href="{{ report.url }}">Week {{ report.week }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}. Later weeks appear when written scoring is published.</p>
+        </div>
+        {% endif %}
         {% if unit.link %}<a href="{{ unit.link | relative_url }}">Read related analysis →</a>{% endif %}
       </article>
       {% endfor %}

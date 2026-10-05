@@ -1,7 +1,7 @@
 name: Update Ravens season dashboard
 
 # Refreshes the objective Ravens snapshot from the free nflverse schedule,
-# play-by-play and Next Gen Stats releases plus ESPN's Total QBR and win rates. The
+# play-by-play and Next Gen Stats releases plus ESPN and Filmstudy scoring. The
 # updater preserves earlier weekly snapshots and writes only when football data
 # changes, so daily checks do not create noise.
 
@@ -30,6 +30,8 @@ jobs:
           python-version: "3.12"
       - name: Install data dependencies
         run: python -m pip install pandas==2.3.3 pyarrow==23.0.1
+      - name: Test optional Filmstudy scoring parser
+        run: python scripts/test_ravens_filmstudy.py
       - name: Update Ravens dashboard
         run: python scripts/update_ravens_dashboard.py
       - name: Validate dashboard data

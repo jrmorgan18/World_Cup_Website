@@ -2,7 +2,8 @@
 """Build the Ravens dashboard's objective weekly snapshot.
 
 The script uses free, keyless nflverse schedule, play-by-play and Next Gen Stats
-releases plus ESPN's Total QBR and win-rate pages. It keeps prior weekly snapshots in the
+releases plus ESPN's Total QBR, win-rate pages and Filmstudy's written OL scoring.
+It keeps prior weekly snapshots in the
 generated JSON so the Jekyll dashboard can show real week-over-week movement.
 Availability and editorial assessments stay in _data/ravens_dashboard.yml so
 dated official club reports can be reviewed before health context is published.
@@ -43,6 +44,119 @@ ESPN_QBR_API_URL = "https://site.web.api.espn.com/apis/fitt/v3/sports/football/n
 ESPN_QBR_PAGE_URL = "https://www.espn.com/nfl/qbr/_/season/{season}/seasontype/2"
 ESPN_WIN_RATE_PAGE_URL = "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking"
 LAMAR_ESPN_ID = "3916387"
+FILMSTUDY_API_URL = "https://www.filmstudybaltimore.com/wp-json/wp/v2/posts"
+FILMSTUDY_URL = "https://www.filmstudybaltimore.com/"
+OL_NAMES = {
+    "Stanley": "Ronnie Stanley", "Simpson": "John Simpson", "Gwyn": "Jovaughn Gwyn",
+    "Ioane": "Vega Ioane", "Rosengarten": "Roger Rosengarten", "Vinson": "Carson Vinson",
+    "Vorhees": "Andrew Vorhees", "Pocic": "Ethan Pocic", "Jones": "Emery Jones Jr.",
+    "Hergel": "Kyle Hergel", "James": "Andre James", "Pinter": "Danny Pinter",
+}
+
+
+def filmstudy_report_rows(content):
+    """Extract explicit points/snaps, never infer scoring from narrative blocks."""
+    paragraphs = re.findall(r"<p\b[^>]*>(.*?)</p>", content, re.I | re.S)
+    player = None
+    rows = []
+    for paragraph in paragraphs:
+        text = html.unescape(re.sub(r"<[^>]+>", " ", paragraph))
+        text = re.sub(r"\s+", " ", text).strip()
+        heading = re.match(r"([A-Z][A-Za-z'-]+)\s*:\s", text) if not text.startswith("Scoring:") else None
+        if heading:
+            player = heading.group(1)
+        if not text.startswith("Scoring:"):
+            continue
+        score = re.search(r"Scoring:\s*(\d+) plays,.*?(-?\d+(?:\.\d+)?) points", text)
+        if not score or not player:
+            raise ValueError("Filmstudy scoring paragraph has no player, snaps or points")
+        snaps, points = int(score[1]), float(score[2])
+        if snaps <= 0 or not -snaps <= points <= snaps:
+            raise ValueError("Filmstudy scoring is outside expected points-per-snap bounds")
+        grade = re.search(r"(?:That(?:[’'\ufffd]s| is))\s+(?:an?\s+)?([ABCDF][+-]?)(?=\s|\.)", text)
+        rows.append({"player": OL_NAMES.get(player, player), "snaps": snaps,
+                     "points": points, "grade": grade[1] if grade else None})
+        player = None
+    if len(rows) < 5 or len({row["player"] for row in rows}) != len(rows):
+        raise ValueError("Filmstudy report must score at least five distinct linemen")
+    return rows
+
+
+def aggregate_filmstudy(posts, season, current_week, as_of):
+    """Rank Ravens linemen by summed Filmstudy points / summed scored snaps.
+
+    This is our aggregation of Ken McKusick's raw scoring, not his adjusted
+    season letter grade or an NFL team ranking. Missing scores stay missing.
+    """
+    reports = []
+    for post in posts:
+        match = re.fullmatch(rf"offensiveline-notes-{season}-w(\d+)", post.get("slug", ""))
+        if not match or not 1 <= int(match[1]) <= current_week:
+            continue
+        if date.fromisoformat(post["date"][:10]) > as_of:
+            continue
+        reports.append({"week": int(match[1]), "url": post["link"],
+                        "published": post["date"][:10],
+                        "rows": filmstudy_report_rows(post["content"]["rendered"])})
+    reports.sort(key=lambda report: report["week"])
+    weeks = [report["week"] for report in reports]
+    if not weeks or weeks != list(range(1, max(weeks) + 1)):
+        raise ValueError("Filmstudy season aggregation requires consecutive reports starting at Week 1")
+    players = {}
+    for report in reports:
+        for row in report["rows"]:
+            total = players.setdefault(row["player"], {"player": row["player"], "snaps": 0,
+                                                       "points": 0, "weeks": []})
+            total["snaps"] += row["snaps"]
+            total["points"] += row["points"]
+            total["weeks"].append(report["week"])
+            total["latest_week"] = report["week"]
+            total["latest_grade"] = row["grade"]
+            total["latest_url"] = report["url"]
+    qualified = [row for row in players.values() if row["snaps"] >= 20]
+    qualified.sort(key=lambda row: (-row["points"] / row["snaps"], row["player"]))
+    for row in qualified:
+        ratio = row["points"] / row["snaps"]
+        row["rank"] = 1 + sum(other["points"] / other["snaps"] > ratio for other in qualified)
+        row["points_per_snap"] = round(ratio, 3)
+    latest = reports[-1]
+    return {
+        "source_label": "Filmstudy · Ken McKusick", "source_url": latest["url"],
+        "season": season, "week": latest["week"], "published": latest["published"],
+        "period_label": f"Written reports through Week {latest['week']}",
+        "methodology": "Dual Eights aggregation: total Filmstudy points divided by total scored snaps. "
+                       "Ranks compare Ravens linemen only, with at least 20 numerically scored snaps. "
+                       "Only explicitly published scores count; missing appearances are not estimated. "
+                       "Raw points per snap are not position-adjusted. Latest grades are Filmstudy's "
+                       "adjusted game grades, not cumulative grades.",
+        "players": qualified,
+        "unranked_players": [{"player": row["player"], "snaps": row["snaps"]}
+                             for row in players.values() if row["snaps"] < 20],
+        "reports": [{key: report[key] for key in ("week", "url", "published")} for report in reports],
+    }
+
+
+def fetch_filmstudy(season, current_week, as_of):
+    query = urlencode({"search": "Scoring", "per_page": 100, "orderby": "date", "order": "desc",
+                       "after": f"{season}-01-01T00:00:00", "_fields": "slug,date,link,content"})
+    request = Request(f"{FILMSTUDY_API_URL}?{query}", headers={"User-Agent": "Mozilla/5.0"})
+    with urlopen(request, timeout=30) as response:
+        posts = json.load(response)
+    return aggregate_filmstudy(posts, season, current_week, as_of)
+
+
+def refresh_filmstudy(existing, season, current_week, as_of):
+    stored = existing.get("offensive_line_filmstudy")
+    if stored and stored.get("season") != season:
+        stored = None
+    try:
+        fresh = fetch_filmstudy(season, current_week, as_of)
+        if stored and fresh["week"] < stored["week"]:
+            raise ValueError("Filmstudy feed regressed to an older reporting week")
+        return fresh
+    except Exception as error:
+        print(f"Filmstudy unavailable; keeping the last good report: {error}", file=sys.stderr)
+        return stored
 
 PBP_COLUMNS = [
     "game_id",
@@ -808,6 +922,7 @@ def main():
             )
             if current["week"] > 0 else {}
         )
+        filmstudy = refresh_filmstudy(existing, args.season, current["week"], args.as_of) if current["week"] else None
         now = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
         payload = {
             "generated_at": now,
@@ -831,6 +946,7 @@ def main():
             },
             "last_game": last_game_payload(recent_games, current_pbp),
             "unit_analytics": unit_analytics,
+            "offensive_line_filmstudy": filmstudy,
             "recent_form": {
                 "sequence": sequence,
                 "record": None if not sequence else f"{sequence.count('W')}-{sequence.count('L')}",
@@ -843,6 +959,7 @@ def main():
                 "next_gen_stats": {"label": "NFL Next Gen Stats via nflverse", "url": NGS_DOCS_URL},
                 "espn_qbr": {"label": "ESPN Total QBR", "url": ESPN_QBR_PAGE_URL.format(season=args.season)},
                 "espn_win_rates": {"label": "ESPN Analytics Win Rate Rankings", "url": ESPN_WIN_RATE_PAGE_URL},
+                "filmstudy": {"label": "Filmstudy offensive line scoring", "url": FILMSTUDY_URL},
                 "methodology": {"label": "nflverse data update schedule", "url": PBP_DOCS_URL},
                 "license": "CC BY 4.0",
                 "retrieved_at": now,
