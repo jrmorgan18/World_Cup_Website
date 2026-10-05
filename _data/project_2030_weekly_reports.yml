@@ -85,24 +85,24 @@ reports:
       - profile: neil-pierre
         name: Neil Pierre
         club: Philadelphia Union
-        trend: "→"
-        direction: steady
-        direction_label: Mixed first start
+        trend: "↑"
+        direction: rising
+        direction_label: Positive first USMNT start
         context: 1 start, 63 minutes
-        recap: "Pierre made his first senior start at center back against Chile and played 63 minutes. The USA conceded from a crowded corner scramble before halftime and a 20-yard shot after the break; Pierre left with the team trailing 2-1. He was unused against Mexico."
-        development_read: "The first start is important experience, but the defensive unit allowed 17 shots and eight on target. It was valuable senior exposure rather than a clear upward performance signal."
+        recap: "Pierre made his first senior start at center back against Chile and played 63 minutes. After a shaky opening 20 minutes, he settled into the match and delivered a solid performance before Chris Richards replaced him. He was an unused substitute against Mexico."
+        development_read: "A senior start at center back at his age is a major positive marker, and Pierre's recovery from the unsettled opening showed composure. The full defensive sample was imperfect, but the responsibility and his response strengthen his trajectory."
         sources:
           - { label: "USA-Chile match report, scoring and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-chile-match-recap-highlights-st-louis" }
           - { label: "USA-Mexico match report and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-mexico-match-recap-highlights-arizona" }
       - profile: chris-brady
         name: Chris Brady
         club: Chicago Fire
-        trend: "↑"
-        direction: rising
-        direction_label: Strong first USMNT start
+        trend: "↓"
+        direction: falling
+        direction_label: Shaky first USMNT start
         context: 1 start, 45 minutes, 5 saves
-        recap: "Brady made his first senior start against Chile and produced five first-half saves, including a sharp recovery stop after initially checking his run off the line. He conceded only a 45th-minute goal in a crowded six-yard-box scramble and was replaced at halftime as planned."
-        development_read: "Five saves in a demanding first start are meaningful positive evidence. The late scramble prevents a clean-half headline, but Brady looked capable under sustained pressure and strengthened his place in the senior goalkeeper competition."
+        recap: "Brady made his first senior start against Chile and produced five first-half saves, but the performance was uneven. His hesitation to come out and clear a through ball forced one of his better recovery saves, and he could not claim or clear the crowded corner sequence that led to Chile's first goal. He was replaced at halftime as planned."
+        development_read: "The five saves show real shot-stopping ability, but the hesitant decision-making and inability to control the corner-kick moment outweigh that positive. It was a useful first-start learning experience, not a performance that strengthens his immediate senior case."
         sources:
           - { label: "USA-Chile match report, saves and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-chile-match-recap-highlights-st-louis" }
       - profile: rokas-pukstas
@@ -235,12 +235,12 @@ reports:
       - profile: francis-westfield
         name: Francis Westfield
         club: Philadelphia Union
-        trend: "↑"
-        direction: rising
-        direction_label: First USMNT start
+        trend: "→"
+        direction: steady
+        direction_label: Mixed first USMNT start
         context: 1 start, 62 minutes
-        recap: "Westfield made his first senior start at right back against Chile and played 62 minutes before Alex Freeman replaced him. The USA conceded twice during his spell but recovered to win 4-2. He was an unused substitute against Mexico."
-        development_read: "Starting against senior international opposition is meaningful recognition of his MLS growth. The collective defensive performance was uneven, so the upward move reflects opportunity and responsibility more than a dominant individual display."
+        recap: "Westfield made his first senior start at right back against Chile and played 62 minutes before Alex Freeman replaced him. The USA conceded twice during his spell, and Westfield bore the most responsibility for one of the goals, before the team recovered to win 4-2. He was an unused substitute against Mexico."
+        development_read: "The first start remains an important recognition marker, but the defensive mistake makes the performance mixed rather than an upward result. The opportunity is still valuable; the next step is showing that his club-level two-way reliability holds at senior international speed."
         sources:
           - { label: "USA-Chile match report and first-start note (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-chile-match-recap-highlights-st-louis" }
           - { label: "USA-Mexico match report and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-mexico-match-recap-highlights-arizona" }
