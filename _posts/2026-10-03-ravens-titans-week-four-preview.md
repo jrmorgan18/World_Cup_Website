@@ -17,8 +17,9 @@ hero_wide: true
 hero_alt: "Derrick Henry runs between Cowboys defenders during the Ravens’ Week 3 win in Rio"
 hero_credit: "Shawn Hubbard / Baltimore Ravens Photos"
 hero_credit_url: "https://www.baltimoreravens.com/photos/game-action-gallery-ravens-vs-cowboys-week-3"
-home_feature: true
-ravens_feature: true
+home_recent: true
+home_recent_label: "Ravens"
+home_recent_theme: ravens
 feature_label: "Week 4 preview"
 ravens_feature_mark: "4"
 ravens_feature_mark_label: "Week"
