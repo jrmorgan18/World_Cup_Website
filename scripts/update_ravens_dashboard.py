@@ -52,6 +52,17 @@ OL_NAMES = {
     "Vorhees": "Andrew Vorhees", "Pocic": "Ethan Pocic", "Jones": "Emery Jones Jr.",
     "Hergel": "Kyle Hergel", "James": "Andre James", "Pinter": "Danny Pinter",
 }
+FILMSTUDY_GRADE_POINTS = {
+    "A+": 4.33, "A": 4.00, "A-": 3.67, "B+": 3.33, "B": 3.00, "B-": 2.67,
+    "C+": 2.33, "C": 2.00, "C-": 1.67, "D+": 1.33, "D": 1.00, "D-": 0.67,
+    "F": 0.00,
+}
+FILMSTUDY_GRADE_SCALE = tuple(FILMSTUDY_GRADE_POINTS.items())
+
+
+def filmstudy_letter_grade(points):
+    """Round a weighted published Filmstudy grade to the nearest letter band."""
+    return min(FILMSTUDY_GRADE_SCALE, key=lambda item: abs(item[1] - points))[0]
 
 
 def filmstudy_report_rows(content):
@@ -83,11 +94,7 @@ def filmstudy_report_rows(content):
 
 
 def aggregate_filmstudy(posts, season, current_week, as_of):
-    """Rank Ravens linemen by summed Filmstudy points / summed scored snaps.
-
-    This is our aggregation of Ken McKusick's raw scoring, not his adjusted
-    season letter grade or an NFL team ranking. Missing scores stay missing.
-    """
+    """Rank Ravens linemen by their snap-weighted Filmstudy letter grades."""
     reports = []
     for post in posts:
         match = re.fullmatch(rf"offensiveline-notes-{season}-w(\d+)", post.get("slug", ""))
@@ -105,33 +112,41 @@ def aggregate_filmstudy(posts, season, current_week, as_of):
     players = {}
     for report in reports:
         for row in report["rows"]:
-            total = players.setdefault(row["player"], {"player": row["player"], "snaps": 0,
-                                                       "points": 0, "weeks": []})
-            total["snaps"] += row["snaps"]
-            total["points"] += row["points"]
+            if row["grade"] is not None and row["grade"] not in FILMSTUDY_GRADE_POINTS:
+                raise ValueError("Filmstudy scored player has no recognizable adjusted letter grade")
+            total = players.setdefault(row["player"], {"player": row["player"], "scored_snaps": 0, "graded_snaps": 0,
+                                                       "weighted_grade_points": 0, "weeks": []})
+            total["scored_snaps"] += row["snaps"]
+            if row["grade"] is not None:
+                total["graded_snaps"] += row["snaps"]
+                total["weighted_grade_points"] += row["snaps"] * FILMSTUDY_GRADE_POINTS[row["grade"]]
             total["weeks"].append(report["week"])
             total["latest_week"] = report["week"]
             total["latest_grade"] = row["grade"]
             total["latest_url"] = report["url"]
-    qualified = [row for row in players.values() if row["snaps"] >= 20]
-    qualified.sort(key=lambda row: (-row["points"] / row["snaps"], row["player"]))
+    qualified = [row for row in players.values() if row["graded_snaps"] >= 20]
+    qualified.sort(key=lambda row: (-row["weighted_grade_points"] / row["graded_snaps"], row["player"]))
     for row in qualified:
-        ratio = row["points"] / row["snaps"]
-        row["rank"] = 1 + sum(other["points"] / other["snaps"] > ratio for other in qualified)
-        row["points_per_snap"] = round(ratio, 3)
+        row["grade_average"] = row["weighted_grade_points"] / row["graded_snaps"]
+    for row in qualified:
+        row["rank"] = 1 + sum(other["grade_average"] > row["grade_average"] for other in qualified)
+        row["aggregate_grade"] = filmstudy_letter_grade(row["grade_average"])
+    for row in qualified:
+        del row["weighted_grade_points"]
+        del row["grade_average"]
     latest = reports[-1]
     return {
         "source_label": "Filmstudy · Ken McKusick", "source_url": latest["url"],
         "season": season, "week": latest["week"], "published": latest["published"],
         "period_label": f"Written reports through Week {latest['week']}",
-        "methodology": "Dual Eights aggregation: total Filmstudy points divided by total scored snaps. "
-                       "Ranks compare Ravens linemen only, with at least 20 numerically scored snaps. "
-                       "Only explicitly published scores count; missing appearances are not estimated. "
-                       "Raw points per snap are not position-adjusted. Latest grades are Filmstudy's "
-                       "adjusted game grades, not cumulative grades.",
+        "methodology": "Dual Eights aggregation: each published Filmstudy adjusted game letter "
+                       "grade is converted to a standard grade-point scale, weighted by the player's "
+                       "scored snaps, then rounded to the nearest letter grade. Ranks compare Ravens "
+                       "linemen only, with at least 20 graded snaps. Only explicitly published grades "
+                       "count; missing appearances are not estimated.",
         "players": qualified,
-        "unranked_players": [{"player": row["player"], "snaps": row["snaps"]}
-                             for row in players.values() if row["snaps"] < 20],
+        "unranked_players": [{"player": row["player"], "snaps": row["scored_snaps"]}
+                             for row in players.values() if row["graded_snaps"] < 20],
         "reports": [{key: report[key] for key in ("week", "url", "published")} for report in reports],
     }
 

@@ -143,11 +143,11 @@ if filmstudy
   film_players = filmstudy.fetch("players")
   assert(film_players.map { |row| row["player"] }.uniq.length == film_players.length, "Filmstudy must not repeat players", errors)
   film_players.each do |row|
-    assert(row["snaps"] >= 20, "Filmstudy ranked players need 20 scored snaps", errors)
-    assert((row["points"].to_f / row["snaps"] - row["points_per_snap"]).abs <= 0.0005, "Filmstudy rates must use aggregate points and snaps", errors)
+    assert(row["graded_snaps"] >= 20, "Filmstudy ranked players need 20 graded snaps", errors)
+    assert(row["aggregate_grade"].to_s.match?(/\A[ABCDF][+-]?\z/), "Filmstudy rankings need an aggregate letter grade", errors)
     assert(row["latest_url"].start_with?("https://www.filmstudybaltimore.com/"), "Filmstudy grades need direct source links", errors)
   end
-  assert(film_players.each_cons(2).all? { |left, right| left["points_per_snap"] >= right["points_per_snap"] }, "Filmstudy rankings must be sorted", errors)
+  assert(film_players.each_cons(2).all? { |left, right| left["rank"] <= right["rank"] }, "Filmstudy rankings must be sorted", errors)
 end
 if current_snapshot && current_snapshot["week"].to_i > 0
   quarterback_metrics = automated_analytics.fetch("Quarterback", [])

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T13:10:58Z",
+  "generated_at": "2026-10-05T13:44:57Z",
   "as_of": "2026-10-05",
   "season": 2026,
   "benchmark_season": 2025,
@@ -886,12 +886,12 @@
     "week": 2,
     "published": "2026-09-22",
     "period_label": "Written reports through Week 2",
-    "methodology": "Dual Eights aggregation: total Filmstudy points divided by total scored snaps. Ranks compare Ravens linemen only, with at least 20 numerically scored snaps. Only explicitly published scores count; missing appearances are not estimated. Raw points per snap are not position-adjusted. Latest grades are Filmstudy's adjusted game grades, not cumulative grades.",
+    "methodology": "Dual Eights aggregation: each published Filmstudy adjusted game letter grade is converted to a standard grade-point scale, weighted by the player's scored snaps, then rounded to the nearest letter grade. Ranks compare Ravens linemen only, with at least 20 graded snaps. Only explicitly published grades count; missing appearances are not estimated.",
     "players": [
       {
         "player": "Roger Rosengarten",
-        "snaps": 115,
-        "points": 94.5,
+        "scored_snaps": 115,
+        "graded_snaps": 115,
         "weeks": [
           1,
           2
@@ -900,26 +900,12 @@
         "latest_grade": "B+",
         "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w2/",
         "rank": 1,
-        "points_per_snap": 0.822
-      },
-      {
-        "player": "Jovaughn Gwyn",
-        "snaps": 115,
-        "points": 90.0,
-        "weeks": [
-          1,
-          2
-        ],
-        "latest_week": 2,
-        "latest_grade": "B-",
-        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w2/",
-        "rank": 2,
-        "points_per_snap": 0.783
+        "aggregate_grade": "A-"
       },
       {
         "player": "John Simpson",
-        "snaps": 115,
-        "points": 89.0,
+        "scored_snaps": 115,
+        "graded_snaps": 115,
         "weeks": [
           1,
           2
@@ -927,27 +913,13 @@
         "latest_week": 2,
         "latest_grade": "C",
         "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w2/",
-        "rank": 3,
-        "points_per_snap": 0.774
-      },
-      {
-        "player": "Vega Ioane",
-        "snaps": 115,
-        "points": 79.5,
-        "weeks": [
-          1,
-          2
-        ],
-        "latest_week": 2,
-        "latest_grade": "D-",
-        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w2/",
-        "rank": 4,
-        "points_per_snap": 0.691
+        "rank": 2,
+        "aggregate_grade": "C+"
       },
       {
         "player": "Ronnie Stanley",
-        "snaps": 104,
-        "points": 71.0,
+        "scored_snaps": 104,
+        "graded_snaps": 104,
         "weeks": [
           1,
           2
@@ -955,8 +927,36 @@
         "latest_week": 2,
         "latest_grade": "B-",
         "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w2/",
+        "rank": 3,
+        "aggregate_grade": "C-"
+      },
+      {
+        "player": "Jovaughn Gwyn",
+        "scored_snaps": 115,
+        "graded_snaps": 115,
+        "weeks": [
+          1,
+          2
+        ],
+        "latest_week": 2,
+        "latest_grade": "B-",
+        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w2/",
+        "rank": 4,
+        "aggregate_grade": "C-"
+      },
+      {
+        "player": "Vega Ioane",
+        "scored_snaps": 115,
+        "graded_snaps": 115,
+        "weeks": [
+          1,
+          2
+        ],
+        "latest_week": 2,
+        "latest_grade": "D-",
+        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w2/",
         "rank": 5,
-        "points_per_snap": 0.683
+        "aggregate_grade": "D+"
       }
     ],
     "unranked_players": [
@@ -1064,6 +1064,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-10-05T13:10:58Z"
+    "retrieved_at": "2026-10-05T13:44:57Z"
   }
 }

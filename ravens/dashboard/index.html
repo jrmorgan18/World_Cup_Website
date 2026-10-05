@@ -169,10 +169,10 @@ section_theme: ravens
           <p class="ravens-filmstudy-period"><a href="{{ filmstudy.source_url }}">{{ filmstudy.source_label }}</a> · {{ filmstudy.period_label }} · Published {{ filmstudy.published | date: "%b %-d" }}</p>
           <div class="ravens-filmstudy-scroll" tabindex="0" role="region" aria-label="Filmstudy offensive line rankings, scroll horizontally on small screens">
             <table>
-              <caption>Dual Eights aggregation of published Filmstudy scoring</caption>
-              <thead><tr><th scope="col">Rank</th><th scope="col">Lineman</th><th scope="col">Pts / snap</th><th scope="col">Scored snaps</th><th scope="col">Latest game grade</th></tr></thead>
+              <caption>Dual Eights aggregation of published Filmstudy letter grades</caption>
+              <thead><tr><th scope="col">Rank</th><th scope="col">Lineman</th><th scope="col">Aggregate grade</th></tr></thead>
               <tbody>{% for lineman in filmstudy.players %}
-                <tr><td>{{ lineman.rank }}</td><th scope="row">{{ lineman.player }}</th><td>{{ lineman.points_per_snap }}</td><td>{{ lineman.snaps }}</td><td><a href="{{ lineman.latest_url }}">{{ lineman.latest_grade | default: "Not graded" }} <small>W{{ lineman.latest_week }}</small></a></td></tr>
+                <tr><td>{{ lineman.rank }}</td><th scope="row">{{ lineman.player }}</th><td><a href="{{ lineman.latest_url }}">{{ lineman.aggregate_grade }}</a></td></tr>
               {% endfor %}</tbody>
             </table>
           </div>

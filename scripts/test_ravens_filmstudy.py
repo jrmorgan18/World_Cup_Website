@@ -22,12 +22,12 @@ class FilmstudyTests(unittest.TestCase):
     def aggregate(self, posts):
         return dashboard.aggregate_filmstudy(posts, 2026, 4, date(2026, 10, 5))
 
-    def test_weighted_points_not_mean_of_weekly_rates(self):
+    def test_weighted_letter_grades_use_scored_snaps(self):
         result = self.aggregate([report(2, 20, 10), report(1, 80, 80, "A")])
         self.assertEqual(result["week"], 2)
         for row in result["players"]:
-            self.assertEqual(row["points_per_snap"], 0.9)
-            self.assertEqual(row["snaps"], 100)
+            self.assertEqual(row["aggregate_grade"], "A-")
+            self.assertEqual(row["graded_snaps"], 100)
             self.assertEqual(row["latest_grade"], "B-")
             self.assertEqual(row["rank"], 1)
 
@@ -36,6 +36,10 @@ class FilmstudyTests(unittest.TestCase):
         post["content"]["rendered"] = post["content"]["rendered"].replace("That’s", "That\ufffds")
         result = self.aggregate([post])
         self.assertTrue(all(row["latest_grade"] == "B-" for row in result["players"]))
+
+    def test_grade_scale_rounds_to_nearest_letter(self):
+        self.assertEqual(dashboard.filmstudy_letter_grade(3.84), "A")
+        self.assertEqual(dashboard.filmstudy_letter_grade(2.50), "B-")
 
     def test_small_samples_stay_unranked(self):
         post = report(1)
