@@ -1,4 +1,295 @@
 reports:
+  - id: "2026-10-04"
+    group: prospects
+    group_label: Prospects
+    published: "October 5, 2026"
+    window: "September 28-October 4, 2026"
+    week_ending: "October 4, 2026"
+    source_note: "Official U.S. Soccer, club, league and federation records were checked first, followed by local club-specific reporting and local-language sources. This report includes the USA's matches against Chile and Mexico and the U.S. U-20 camp in Spain. Julian Hall's research alias, Julian Zakrzewski, was reconciled to the same player. Facts below are verified; the development read is scouting interpretation, and minutes or performances not published by trustworthy sources are explicitly left ungraded."
+    summary:
+      biggest_risers: "Julian Hall scored in both USMNT wins and now has three goals in his first three caps. Cavan Sullivan became the youngest scorer in program history against Mexico, Mathis Albert became the record holder against Chile before Sullivan surpassed him four days later, Diego Kochen kept a clean sheet in his first senior start, and Chris Brady made five saves in his first start."
+      issues_to_monitor: "Kevin Paredes remains out with a long-term ankle injury, while Niko Tsakiris had no match in which to test his recent upper-body issue. Zavier Gozo and Cole Campbell did not play in either senior match this week, and several club-based prospects had no competitive action during the extended international window."
+      best_story: "The youth movement produced two emphatic wins: 4-2 over Chile and 3-0 over Mexico. Hall scored in both, Sullivan and Albert set successive youngest-scorer records, Kochen shut out Mexico, and five additional prospects earned meaningful senior minutes. The performances supplied unusually strong evidence against senior international opposition."
+    players:
+      - profile: caleb-wiley
+        name: Caleb Wiley
+        club: Preston North End
+        trend: "—"
+        direction: insufficient
+        direction_label: No club match
+        context: No competitive action
+        recap: "Preston North End had no competitive fixture during the extended international window, and Wiley was not in the USMNT squad. He recorded no appearance during the report window."
+        development_read: "No performance evaluation this week. The pause does not change his Project 2030 outlook; the next useful evidence will come when Championship play resumes."
+        sources:
+          - { label: "Preston North End fixtures (official club)", url: "https://www.pnefc.net/fixtures" }
+      - profile: damion-downs
+        name: Damion Downs
+        club: St. Louis CITY SC
+        trend: "→"
+        direction: steady
+        direction_label: Senior reserve minutes
+        context: 1 substitute appearance, 19-plus minutes
+        recap: "Downs replaced Gio Reyna in the 71st minute of the USA's 4-2 win over Chile and played through stoppage time at center forward. He recorded no goal or assist, then was an unused substitute in the 3-0 win over Mexico."
+        development_read: "The minutes preserve his place in the senior striker conversation but do not materially change it. He was trusted to help chase a comeback against Chile, though other young attackers supplied the decisive actions."
+        sources:
+          - { label: "USA-Chile match report and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-chile-match-recap-highlights-st-louis" }
+          - { label: "USA-Mexico match report and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-mexico-match-recap-highlights-arizona" }
+      - profile: zavier-gozo
+        name: Zavier Gozo
+        club: Crystal Palace
+        trend: "—"
+        direction: insufficient
+        direction_label: No match minutes
+        context: USMNT unused substitute twice
+        recap: "Gozo was available but remained an unused substitute against both Chile and Mexico. Crystal Palace had no club fixture during the extended international window."
+        development_read: "No performance evaluation this week. Remaining in the senior camp is useful exposure, but two matches without minutes leave his role behind the other young attackers unresolved."
+        sources:
+          - { label: "USA-Chile match report and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-chile-match-recap-highlights-st-louis" }
+          - { label: "USA-Mexico match report and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-mexico-match-recap-highlights-arizona" }
+      - profile: julian-hall
+        name: Julian Hall
+        club: New York Red Bulls
+        trend: "↑↑"
+        direction: rising
+        direction_label: Breakout international week
+        context: 2 starts, 136 minutes, 2 goals
+        recap: "Hall started both wins. He played 71 minutes against Chile, scoring the 51st-minute equalizer with a well-directed header from Gio Reyna's cross. He then played 65 minutes against Mexico and opened the scoring in the 28th minute by reacting first to a saved cross. Hall has scored in each of his first three USMNT appearances."
+        development_read: "This was the strongest week on the board. Hall translated his Red Bulls attacking activity into repeatable senior-international production, showing both aerial timing and penalty-box anticipation against two established opponents."
+        sources:
+          - { label: "USA-Chile match report and Hall goal (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-chile-match-recap-highlights-st-louis" }
+          - { label: "USA-Mexico match report and Hall goal (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-mexico-match-recap-highlights-arizona" }
+      - profile: justin-ellis
+        name: Justin Ellis
+        club: Orlando City
+        trend: "→"
+        direction: steady
+        direction_label: Senior substitute role
+        context: 1 substitute appearance, 25 minutes
+        recap: "Ellis was an unused substitute against Chile, then replaced Hall in the 65th minute of the 3-0 win over Mexico. He played the final 25 minutes at center forward and recorded no goal or assist."
+        development_read: "The week was quieter than his goal-scoring debut, but appearing against Mexico kept him in the senior rotation. There was not enough individual production to move his projection further."
+        sources:
+          - { label: "USA-Chile match report and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-chile-match-recap-highlights-st-louis" }
+          - { label: "USA-Mexico match report and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-mexico-match-recap-highlights-arizona" }
+      - profile: adri-mehmeti
+        name: Adri Mehmeti
+        club: New York Red Bulls
+        trend: "↑"
+        direction: rising
+        direction_label: First USMNT start
+        context: 1 start, 62 minutes
+        recap: "Mehmeti earned his first senior start against Chile and played 62 minutes in midfield before Tyler Adams replaced him. The USA trailed 2-1 when he left and ultimately won 4-2. Mehmeti recorded no goal or assist and was an unused substitute against Mexico."
+        development_read: "Starting at 17 is a meaningful trust marker even without a decisive action. The match exposed him to a fast, physical senior midfield and advances the projection more than his short debut cameo did."
+        sources:
+          - { label: "USA-Chile match report and first-start note (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-chile-match-recap-highlights-st-louis" }
+          - { label: "USA-Mexico match report and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-mexico-match-recap-highlights-arizona" }
+      - profile: neil-pierre
+        name: Neil Pierre
+        club: Philadelphia Union
+        trend: "→"
+        direction: steady
+        direction_label: Mixed first start
+        context: 1 start, 63 minutes
+        recap: "Pierre made his first senior start at center back against Chile and played 63 minutes. The USA conceded from a crowded corner scramble before halftime and a 20-yard shot after the break; Pierre left with the team trailing 2-1. He was unused against Mexico."
+        development_read: "The first start is important experience, but the defensive unit allowed 17 shots and eight on target. It was valuable senior exposure rather than a clear upward performance signal."
+        sources:
+          - { label: "USA-Chile match report, scoring and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-chile-match-recap-highlights-st-louis" }
+          - { label: "USA-Mexico match report and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-mexico-match-recap-highlights-arizona" }
+      - profile: chris-brady
+        name: Chris Brady
+        club: Chicago Fire
+        trend: "↑"
+        direction: rising
+        direction_label: Strong first USMNT start
+        context: 1 start, 45 minutes, 5 saves
+        recap: "Brady made his first senior start against Chile and produced five first-half saves, including a sharp recovery stop after initially checking his run off the line. He conceded only a 45th-minute goal in a crowded six-yard-box scramble and was replaced at halftime as planned."
+        development_read: "Five saves in a demanding first start are meaningful positive evidence. The late scramble prevents a clean-half headline, but Brady looked capable under sustained pressure and strengthened his place in the senior goalkeeper competition."
+        sources:
+          - { label: "USA-Chile match report, saves and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-chile-match-recap-highlights-st-louis" }
+      - profile: rokas-pukstas
+        name: Rokas Pukstas
+        club: Middlesbrough
+        trend: "—"
+        direction: insufficient
+        direction_label: No club match
+        context: No competitive action
+        recap: "Middlesbrough had no competitive fixture during the extended international window, and Pukstas was not in the USMNT squad. He recorded no appearance during the report window."
+        development_read: "No performance evaluation this week. The central question remains whether the break helps him move from unused Championship substitute into Michael Carrick's rotation."
+        sources:
+          - { label: "Middlesbrough fixtures (official club)", url: "https://www.mfc.co.uk/fixtures/" }
+      - profile: cavan-sullivan
+        name: Cavan Sullivan
+        club: Philadelphia Union
+        trend: "↑↑"
+        direction: rising
+        direction_label: Historic senior breakthrough
+        context: 1 start, 1 substitute appearance, 72-plus minutes, 1 goal
+        recap: "Sullivan entered in the 83rd minute of the 4-2 win over Chile, then started on the right against Mexico and played 65 minutes. In the 62nd minute he pressed goalkeeper Jose Rangel, intercepted the outlet and curled a left-footed finish into the empty net from roughly 30 yards. At 17 years and five days, he became the youngest scorer in USMNT history."
+        development_read: "The question has moved beyond whether Sullivan belongs in senior environments. Starting against Mexico and creating a goal through anticipation, pressure and technique is major evidence that his MLS production can translate to a higher level."
+        sources:
+          - { label: "USA-Chile match report and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-chile-match-recap-highlights-st-louis" }
+          - { label: "USA-Mexico match report and youngest-scorer record (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-mexico-match-recap-highlights-arizona" }
+      - profile: niko-tsakiris
+        name: Niko Tsakiris
+        club: San Jose Earthquakes
+        trend: "✚"
+        direction: insufficient
+        direction_label: Injury status untested
+        context: No competitive action
+        recap: "San Jose had no match during the window, so Tsakiris had no opportunity to demonstrate his availability after being listed with an upper-body injury the previous week. No new official diagnosis or return timetable was published by cutoff."
+        development_read: "No performance evaluation this week. His next squad status will show whether the issue was a brief interruption or one that disrupts his productive late-season run."
+        sources:
+          - { label: "San Jose schedule (official MLS)", url: "https://www.mlssoccer.com/clubs/san-jose-earthquakes/schedule/" }
+          - { label: "Previous MLS player status report (official league)", url: "https://matchcenter.mlsnextpro.com/news/mls-player-status-report-matchday-28-saturday-september-26-sunday-september-27" }
+      - profile: paxten-aaronson
+        name: Paxten Aaronson
+        club: Colorado Rapids
+        trend: "—"
+        direction: insufficient
+        direction_label: No club match
+        context: No competitive action
+        recap: "Colorado had no match during the extended international window and Aaronson was not in the USMNT squad. He recorded no appearance during the report window."
+        development_read: "No performance evaluation this week. His recent run of MLS goals remains the relevant evidence until Colorado resumes play."
+        sources:
+          - { label: "Colorado Rapids schedule (official MLS)", url: "https://www.mlssoccer.com/clubs/colorado-rapids/schedule/" }
+      - profile: mathis-albert
+        name: Mathis Albert
+        club: Borussia Dortmund
+        trend: "↑↑"
+        direction: rising
+        direction_label: First senior goal
+        context: 2 substitute appearances, 21-plus minutes, 1 goal
+        recap: "Albert entered in the 71st minute against Chile and scored in stoppage time, attacking Auston Trusty's headed pass and forcing the ball in off the crossbar. At 17 years, 131 days he briefly became the youngest USMNT scorer. He added a short substitute appearance from the 88th minute against Mexico."
+        development_read: "Albert followed last week's penalty-winning debut with a senior goal and again showed the direct, explosive box-running that makes his upside unusual. Sullivan broke the age record four days later, but the developmental value of Albert's finish is unchanged."
+        sources:
+          - { label: "USA-Chile match report and Albert goal (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-chile-match-recap-highlights-st-louis" }
+          - { label: "USA-Mexico match report and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-mexico-match-recap-highlights-arizona" }
+      - profile: diego-kochen
+        name: Diego Kochen
+        club: FC Barcelona / Lyngby
+        trend: "↑↑"
+        direction: rising
+        direction_label: Mexico clean sheet
+        context: 1 start, 90 minutes, 1 save, clean sheet
+        recap: "Kochen made his first senior start in the 3-0 win over Mexico. He disrupted a close-range first-half chance with a touch and made the match's defining save in the 58th minute, slapping a well-hit volley over the bar. Mexico finished with one shot on target, and Kochen earned his first USMNT clean sheet."
+        development_read: "A composed shutout against the USA's biggest rival is strong evidence after an uneven early club season. The workload was not heavy, but Kochen delivered when tested and made a credible claim for more senior minutes."
+        sources:
+          - { label: "USA-Mexico match report, save and clean sheet (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-mexico-match-recap-highlights-arizona" }
+      - profile: benjamin-cremaschi
+        name: Benjamin Cremaschi
+        club: Parma
+        trend: "—"
+        direction: insufficient
+        direction_label: No club match
+        context: No competitive action
+        recap: "Parma had no competitive fixture during the extended international window, and Cremaschi was not in the USMNT squad. He recorded no appearance during the report window."
+        development_read: "No performance evaluation this week. The break did not supply evidence that his limited early-season role has changed; earning a place in Parma's midfield rotation remains the immediate task."
+        sources:
+          - { label: "Parma schedule (official club)", url: "https://www.parmacalcio1913.com/en/schedule/" }
+      - profile: kevin-paredes
+        name: Kevin Paredes
+        club: FC Utrecht
+        trend: "✚"
+        direction: insufficient
+        direction_label: Injured
+        context: No competitive appearance
+        recap: "Paredes remained unavailable with the ankle injury suffered at Sparta Rotterdam in August. Utrecht's official update projected an absence of several months, and the club published no revised return timetable during this window."
+        development_read: "No performance evaluation this week. Rehabilitation remains the only relevant development priority until Utrecht reports that he is approaching a return."
+        sources:
+          - { label: "Paredes injury update (official FC Utrecht, Dutch)", url: "https://www.fcutrecht.nl/nieuws/2026/augustus/kevin-paredes-enkele-maanden-niet-inzetbaar/" }
+      - profile: peyton-miller
+        name: Peyton Miller
+        club: New England Revolution
+        trend: "→"
+        direction: steady
+        direction_label: Late Mexico cameo
+        context: 1 substitute appearance, 8-plus minutes
+        recap: "Miller was an unused substitute against Chile and entered for Gio Reyna in the 82nd minute of the 3-0 win over Mexico. He helped close the match from an advanced left-sided role and recorded no goal or assist."
+        development_read: "The cameo kept him involved in a high-level senior result, but it was too short to change the projection. His first-start performance against Peru remains the stronger evidence from this camp."
+        sources:
+          - { label: "USA-Chile match report and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-chile-match-recap-highlights-st-louis" }
+          - { label: "USA-Mexico match report and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-mexico-match-recap-highlights-arizona" }
+      - profile: cooper-sanchez
+        name: Cooper Sanchez
+        club: Atlanta United
+        trend: "→"
+        direction: steady
+        direction_label: U-20 international camp
+        context: USA U-20 roster; individual minutes unavailable
+        recap: "Sanchez joined the U.S. U-20 team in Spain for friendlies against Brazil and Denmark. Brazil's federation recorded a 2-0 U.S. loss on October 1, and Denmark's federation recorded a 3-3 draw on October 4. Neither federation nor U.S. Soccer published player-level minutes by cutoff, so Sanchez's appearances and production are not inferred."
+        development_read: "The call-up keeps Sanchez central to the 2027 U-20 World Cup group, but the lack of trustworthy player-level match data means this week does not receive a performance grade."
+        sources:
+          - { label: "U.S. U-20 camp roster and schedule (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/ynt-u20-mnt/us-under-20-mens-national-team-training-camp-spain" }
+          - { label: "USA-Brazil result (official Brazilian federation, Portuguese)", url: "https://www.cbf.com.br/selecao-brasileira/noticias/selecao-sub-20/a/selecao-sub-20-x-estados-unidos-vitoria-2-a-0-amistoso" }
+          - { label: "Denmark-USA result (official Danish federation, Danish)", url: "https://www.dbu.dk/landshold/herrelandshold/u20-landsholdet/program/?page=0" }
+      - profile: beau-leroux
+        name: Beau Leroux
+        club: San Jose Earthquakes
+        trend: "—"
+        direction: insufficient
+        direction_label: No club match
+        context: No competitive action
+        recap: "San Jose had no match during the extended international window, and Leroux was not in the USMNT squad. He recorded no appearance during the report window."
+        development_read: "No performance evaluation this week. His nine league assists and established starting role remain the relevant season evidence."
+        sources:
+          - { label: "San Jose schedule (official MLS)", url: "https://www.mlssoccer.com/clubs/san-jose-earthquakes/schedule/" }
+      - profile: francis-westfield
+        name: Francis Westfield
+        club: Philadelphia Union
+        trend: "↑"
+        direction: rising
+        direction_label: First USMNT start
+        context: 1 start, 62 minutes
+        recap: "Westfield made his first senior start at right back against Chile and played 62 minutes before Alex Freeman replaced him. The USA conceded twice during his spell but recovered to win 4-2. He was an unused substitute against Mexico."
+        development_read: "Starting against senior international opposition is meaningful recognition of his MLS growth. The collective defensive performance was uneven, so the upward move reflects opportunity and responsibility more than a dominant individual display."
+        sources:
+          - { label: "USA-Chile match report and first-start note (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-chile-match-recap-highlights-st-louis" }
+          - { label: "USA-Mexico match report and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-mexico-match-recap-highlights-arizona" }
+      - profile: cole-campbell
+        name: Cole Campbell
+        club: SV Elversberg
+        trend: "—"
+        direction: insufficient
+        direction_label: Still awaiting senior debut
+        context: Not selected vs. Chile; unused vs. Mexico
+        recap: "Campbell was not on the matchday sheet against Chile. He returned to the bench against Mexico but remained an unused substitute and is now the only uncapped player on the senior roster. Elversberg had no club fixture during the international window."
+        development_read: "No performance evaluation this week. Returning to the bench was a step toward availability, but the window still has not supplied senior minutes; Canada on October 6 is the final opportunity of the camp."
+        sources:
+          - { label: "USA-Chile match report and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/09/usmnt-vs-chile-match-recap-highlights-st-louis" }
+          - { label: "Mexico match preview noting Campbell as the remaining uncapped player (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt/rivalry-match-glendale-mexico" }
+          - { label: "USA-Mexico match report and unused substitutes (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-mexico-match-recap-highlights-arizona" }
+      - profile: luca-bombino
+        name: Luca Bombino
+        club: Stoke City
+        trend: "—"
+        direction: insufficient
+        direction_label: No club match
+        context: No competitive action
+        recap: "Stoke City had no competitive fixture during the extended international window, and Bombino was not in a U.S. national-team squad. He recorded no appearance during the report window."
+        development_read: "No performance evaluation this week. The priority remains converting his positive transfer to Stoke into first-team Championship minutes once club play resumes."
+        sources:
+          - { label: "Stoke City fixtures (official club)", url: "https://www.stokecityfc.com/fixtures" }
+      - profile: jackson-hopkins
+        name: Jackson Hopkins
+        club: D.C. United
+        trend: "—"
+        direction: insufficient
+        direction_label: No competitive action
+        context: Not in squad for club friendly
+        recap: "D.C. United had no competitive match. The club played a September 30 friendly against SC Paderborn, but Hopkins was not listed in the starting lineup or among the substitutes in the official match record."
+        development_read: "No performance evaluation this week. His absence from a heavily rotated friendly does not by itself establish a new role change, but it provided no response to last week's halftime substitution in Vancouver."
+        sources:
+          - { label: "D.C. United-SC Paderborn match facts and lineups (official club)", url: "https://www.dcunited.com/news/post-match-facts-dcvscp" }
+      - profile: duran-ferree
+        name: Duran Ferree
+        club: San Diego FC
+        trend: "—"
+        direction: insufficient
+        direction_label: No club match
+        context: No competitive action
+        recap: "San Diego FC had no match during the extended international window, and Ferree was not in a U.S. national-team squad. He recorded no appearance during the report window."
+        development_read: "No performance evaluation this week. The next club match will determine whether he retains the goal after the late three-goal concession sequence against Minnesota."
+        sources:
+          - { label: "San Diego FC schedule (official MLS)", url: "https://www.mlssoccer.com/clubs/san-diego-fc/schedule/" }
   - id: "2026-09-27"
     group: prospects
     group_label: Prospects
