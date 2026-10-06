@@ -34,7 +34,7 @@ section_theme: ravens
 
 <section class="club-section club-section--ravens-feature">
   {% assign ravens_feature = site.posts | where: "ravens_feature", true | sort: "date" | reverse | first %}
-  {% assign efficiency_rankings = ravens_stats.league_efficiency_rankings %}
+  {% assign efficiency_rankings = site.data.dual_eights_efficiency | default: ravens_stats.league_efficiency_rankings %}
   <div class="ravens-feature-layout">
     {% if efficiency_rankings.teams.size > 0 %}
     <aside class="ravens-efficiency-rankings" aria-labelledby="ravens-efficiency-rankings-heading">
@@ -53,7 +53,11 @@ section_theme: ravens
         </li>
         {% endfor %}
       </ol>
+      {% if efficiency_rankings.article_url %}
+      <a href="{{ efficiency_rankings.article_url | relative_url }}"><span>Read the rankings &amp; method</span><span aria-hidden="true">&rarr;</span></a>
+      {% else %}
       <a href="{{ '/ravens/dashboard/' | relative_url }}#scorecard"><span>Explore the Ravens model</span><span aria-hidden="true">&rarr;</span></a>
+      {% endif %}
     </aside>
     {% endif %}
 
@@ -62,14 +66,17 @@ section_theme: ravens
       {% if ravens_feature.season_preview_feature %}
       {% include ravens-season-preview-feature.html context="ravens" %}
       {% else %}
-      <a class="club-feature-teaser club-feature-teaser--ravens" href="{{ ravens_feature.url | relative_url }}">
+      <a class="club-feature-teaser club-feature-teaser--ravens{% if ravens_feature.ravens_feature_image %} club-feature-teaser--photo{% endif %}" href="{{ ravens_feature.url | relative_url }}">
+        {% if ravens_feature.ravens_feature_image %}
+        <figure class="club-feature-teaser-photo"><img src="{{ ravens_feature.hero_image | relative_url }}" alt="{{ ravens_feature.hero_alt | escape }}" loading="eager" width="1280" height="720"></figure>
+        {% endif %}
         <div class="club-feature-teaser-copy">
           <p>Featured analysis <i aria-hidden="true"></i> Ravens</p>
           <h3>{{ ravens_feature.title }}</h3>
           <p>{{ ravens_feature.excerpt }}</p>
           <span>Read the feature &rarr;</span>
         </div>
-        <div class="club-feature-teaser-mark" aria-hidden="true"><small>{{ ravens_feature.ravens_feature_mark_label | default: "New" }}</small><strong>{{ ravens_feature.ravens_feature_mark | default: "R" }}</strong><span>{{ ravens_feature.ravens_feature_mark_detail | default: "Feature" }}</span></div>
+        {% unless ravens_feature.ravens_feature_image %}<div class="club-feature-teaser-mark" aria-hidden="true"><small>{{ ravens_feature.ravens_feature_mark_label | default: "New" }}</small><strong>{{ ravens_feature.ravens_feature_mark | default: "R" }}</strong><span>{{ ravens_feature.ravens_feature_mark_detail | default: "Feature" }}</span></div>{% endunless %}
       </a>
       {% endif %}
       {% endif %}

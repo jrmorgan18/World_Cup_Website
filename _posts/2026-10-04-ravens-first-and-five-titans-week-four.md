@@ -17,8 +17,11 @@ hero_wide: true
 hero_alt: "Lamar Jackson throws against the Titans during the Ravens’ Week 4 home win"
 hero_credit: "Shawn Hubbard / Baltimore Ravens Photos"
 hero_credit_url: "https://www.baltimoreravens.com/photos/game-action-gallery-ravens-vs-titans-week-4"
-home_feature: true
-ravens_feature: true
+home_feature: false
+home_recent: true
+home_recent_lead: true
+home_recent_label: "First and Five"
+ravens_feature: false
 feature_label: "Week 4 takeaways"
 ravens_feature_mark: "5"
 ravens_feature_mark_label: "First"

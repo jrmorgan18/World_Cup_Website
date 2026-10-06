@@ -1,66 +1,56 @@
-date: 2026-10-04
-edition: "October 4, 2026"
-kicker: "Week 4 · Tennessee"
+date: 2026-10-05
+edition: "October 5, 2026"
+kicker: "Week 5 · Atlanta"
 heading: "Ravens Daily"
-intro: "The Ravens survived Tennessee 24-18, but the win came with a serious injury bill and several issues that will follow them into Week 5."
+intro: "Monday's updates on Lamar Jackson, the injury list, the offensive line and what the film revealed after the win over Tennessee."
 highlights:
-  - title: "Lamar Jackson’s left ankle is now the Ravens’ biggest concern, although the early news is relatively encouraging."
+  - title: "Lamar Jackson’s status for Sunday night in Atlanta remains uncertain, but the Ravens do not believe his ankle injury will be a long-term problem."
     text: >-
-      Jackson was injured on a sack just before halftime of Baltimore’s 24-18 win over Tennessee and did not return; he left the stadium in a protective boot, but NFL Network reported that he is believed to be day-to-day. Jesse Minter said there were discussions about putting Jackson back into the game, another indication that Baltimore may have been exercising caution with a 24-7 halftime lead.
+      Jackson underwent imaging Monday, and Jesse Minter said the team is still gathering information before assessing his chances of playing, while adding that he does not expect the injury to be “crazy long-term.” Tyler Huntley would start if Jackson cannot go, with Wednesday’s practice providing the first real indication of his Week 5 availability.
+    sources:
+      - "The Baltimore Sun"
+      - "BaltimoreRavens.com"
+    source_links:
+      - label: "Ravens News & Notes"
+        url: "https://www.baltimoreravens.com/news/lamar-jackson-ankle-injury-update-jesse-minter-ravens-pass-rush-defensive-line-tyler-loop"
+  - title: "There was no definitive Monday update on Marlon Humphrey, Andrew Vorhees or Durham Smythe, leaving three potentially significant injuries unresolved."
+    text: >-
+      Humphrey has a calf injury, Vorhees injured his foot and Smythe injured his Achilles against Tennessee. The latter two are especially important structurally: Emery Jones replaced Vorhees at right guard, while rookie tight ends Matt Hibner and Josh Cuevas would have to absorb more of Smythe’s blocking and movement responsibilities if he misses time.
     sources:
       - "BaltimoreRavens.com"
-      - "Reuters"
     source_links:
-      - label: "Baltimore Ravens"
-        url: "https://www.baltimoreravens.com/news/lamar-jackson-ankle-injury-ravens-titans-tyler-huntley"
-  - title: "The Ravens lost three other starters, turning a routine-looking win into a potentially expensive afternoon."
-    text: >-
-      Marlon Humphrey left with a calf injury, Andrew Vorhees with a foot injury and Durham Smythe with an Achilles injury; none returned, and Minter had no immediate timetable for any of them. Vorhees’ injury is especially problematic for an offensive line already playing without its top three centers.
-    sources:
-      - "BaltimoreRavens.com"
-      - "Reuters"
-    source_links:
-      - label: "Baltimore Ravens"
+      - label: "Ravens injury report"
         url: "https://www.baltimoreravens.com/news/ravens-injuries-durham-smythe-marlon-humphrey-andrew-vorhees-achilles-calf-sidelined"
-  - title: "Vega Ioane’s first start at center went considerably better than anyone had a right to expect."
+  - title: "The Ravens’ battered offensive line could be headed for a fourth different starting combination in five games."
     text: >-
-      The rookie handled a wet football, two quarterbacks and a matchup with three-time All-Pro Jeffery Simmons without an obvious snapping or protection disaster; Simmons finished without a sack, and Baltimore’s own review credited Ioane with holding up well throughout the afternoon. The center crisis is not solved after one game, but the emergency option looked viable.
+      First-round rookie Vega Ioane held up well in his first start at center, but Vorhees’ foot injury forced Emery Jones into the game at right guard after Baltimore had already lost centers Jovaughn Gwyn, Ethan Pocic and Danny Pinter. Ronnie Stanley’s return Sunday helps, but the line that was already Baltimore’s biggest roster question has quickly become an exercise in survival.
     sources:
       - "BaltimoreRavens.com"
+      - "Baltimore Beatdown"
     source_links:
-      - label: "Baltimore Ravens"
+      - label: "Ioane's first start"
         url: "https://www.baltimoreravens.com/news/vega-ioane-first-start-center-ravens-titans-rookie"
-  - title: "Baltimore’s offense disappeared after Jackson left."
+  - title: "The pass rush was considerably better than the one-sack box score suggests."
     text: >-
-      The Ravens scored 24 points before halftime but were shut out after the break, with four punts and a missed field goal on their five second-half possessions. Tyler Huntley was efficient, completing 8 of 9 passes, but Baltimore became considerably more conservative and never recreated the explosive offense that Jackson had directed to a 24-7 lead.
+      Baltimore generated 18 pressures and five quarterback hits despite blitzing Cam Ward only five times and playing without Trey Hendrickson; Next Gen Stats credited Nnamdi Madubuike with six pressures and Mike Green with five. Minter said Tennessee repeatedly used seven-man protections, which helps explain the lack of sacks and makes the underlying disruption more encouraging as Madubuike works back toward full strength.
+    sources:
+      - "BaltimoreRavens.com/Next Gen Stats"
+    source_links:
+      - label: "Pass-rush review"
+        url: "https://www.baltimoreravens.com/news/lamar-jackson-ankle-injury-update-jesse-minter-ravens-pass-rush-defensive-line-tyler-loop"
+  - title: "Minter acknowledged that Baltimore deliberately became more conservative after Jackson left, but he was not satisfied with how the offense executed that plan."
+    text: >-
+      The Ravens failed to convert three third downs between midfield and the Tennessee 40 in the second half, helping turn a 24-7 halftime lead into a game that required an onside-kick recovery to finish. Protecting a lead with Huntley and worsening rain was reasonable; repeatedly failing to extend drives was not.
     sources:
       - "BaltimoreRavens.com"
-      - "Reuters"
     source_links:
-      - label: "Game recap"
-        url: "https://www.baltimoreravens.com/news/game-recap-ravens-titans-week-4-game-recap-injuries-lamar-jackson"
-  - title: "The penalty problem somehow got worse."
+      - label: "Minter's Monday review"
+        url: "https://www.baltimoreravens.com/news/lamar-jackson-ankle-injury-update-jesse-minter-ravens-pass-rush-defensive-line-tyler-loop"
+  - title: "The penalty problem is no longer something the Ravens can dismiss as an early-season annoyance."
     text: >-
-      Baltimore committed 13 penalties for 131 yards, pushing a problem Jesse Minter has emphasized repeatedly into legitimate early-season concern. Minter called the total “unacceptable” afterward and acknowledged that the Ravens continue to make games more difficult by getting in their own way.
+      After committing 13 penalties for 131 yards Sunday, Minter again put responsibility on himself and the coaching staff for getting the problem corrected. Baltimore is 3-1 despite the mistakes, but an offense dealing with this many injuries cannot keep donating field position and manageable down-and-distance situations when the schedule gets harder.
     sources:
       - "BaltimoreRavens.com"
     source_links:
       - label: "The Breakdown"
         url: "https://www.baltimoreravens.com/news/ravens-injuries-titans-breakdown-lamar-jackson-marlon-humphrey-2026"
-  - title: "Zay Flowers looks fully past the hamstring problem."
-    text: >-
-      Flowers caught eight passes for 118 yards and a touchdown while playing a normal offensive role, with no reported setback after his workload had been carefully managed the previous week in Brazil. With Jackson’s availability suddenly uncertain, having Flowers back at full capacity becomes even more valuable.
-    sources:
-      - "Reuters"
-      - "BaltimoreRavens.com"
-    source_links:
-      - label: "Baltimore Ravens"
-        url: "https://www.baltimoreravens.com/news/game-recap-ravens-titans-week-4-game-recap-injuries-lamar-jackson"
-  - title: "Tyler Loop showed off absurd range, then reminded everyone why kicker evaluation cannot revolve around one highlight."
-    text: >-
-      His 64-yard field goal was the longest ever made at M&T Bank Stadium, but he later missed from 40 yards as Tennessee climbed back into the game. The leg strength is beyond question. The week-to-week consistency still needs to follow.
-    sources:
-      - "BaltimoreRavens.com"
-    source_links:
-      - label: "Baltimore Ravens"
-        url: "https://www.baltimoreravens.com/news/tyler-loop-history-longest-field-goal-mt-bank-stadium-ravens-titans"
