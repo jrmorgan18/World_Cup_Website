@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-05T15:20:06Z",
-  "as_of": "2026-10-05",
+  "generated_at": "2026-10-06T13:39:30Z",
+  "as_of": "2026-10-06",
   "season": 2026,
   "season_label": "2026-27",
   "team": {
@@ -4000,8 +4000,8 @@
   "injuries": [],
   "rotation": {
     "window_days": 21,
-    "window_start": "2026-09-14",
-    "window_end": "2026-10-05",
+    "window_start": "2026-09-15",
+    "window_end": "2026-10-06",
     "matches_in_window": 2,
     "available_minutes": 180,
     "players": [
@@ -4194,7 +4194,7 @@
     "load_level": "Light",
     "shortest_rest_recent": 3,
     "average_rest_recent": 3.0,
-    "matches_next_14_days": 3,
+    "matches_next_14_days": 4,
     "matches_next_30_days": 7,
     "shortest_rest_upcoming": 3,
     "recent": [
