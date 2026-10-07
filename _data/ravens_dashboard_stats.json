@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-06T17:10:37Z",
-  "as_of": "2026-10-06",
+  "generated_at": "2026-10-07T17:48:44Z",
+  "as_of": "2026-10-07",
   "season": 2026,
   "benchmark_season": 2025,
   "current_snapshot": "2026-week-04",
@@ -397,7 +397,7 @@
     }
   },
   "league_efficiency_rankings": {
-    "label": "Games through October 6",
+    "label": "Games through October 7",
     "sample_note": "Completed regular-season games; early-season sample",
     "teams": [
       {
@@ -770,7 +770,7 @@
         "period_label": "Through Week 4",
         "label": "Jackson CPOE",
         "value": "+7.1%",
-        "rank": 5,
+        "rank": 4,
         "rank_group": "QB"
       },
       {
@@ -790,7 +790,7 @@
         "period_label": "Through Week 4",
         "label": "Henry RYOE/att",
         "value": "+0.18",
-        "rank": 16,
+        "rank": 15,
         "rank_group": "RB"
       }
     ],
@@ -801,7 +801,7 @@
         "period_label": "Through Week 4",
         "label": "Flowers YACOE",
         "value": "+3.83",
-        "rank": 3,
+        "rank": 2,
         "rank_group": "WR"
       }
     ],
@@ -812,7 +812,7 @@
         "period_label": "Through Week 4",
         "label": "Andrews YACOE",
         "value": "-0.27",
-        "rank": 24,
+        "rank": 23,
         "rank_group": "TE"
       }
     ],
@@ -874,7 +874,7 @@
         "period_label": "Through Week 4",
         "label": "Opp. CPOE",
         "value": "+2.6%",
-        "rank": 23,
+        "rank": 22,
         "rank_group": "NFL"
       }
     ]
@@ -1064,6 +1064,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-10-06T17:10:37Z"
+    "retrieved_at": "2026-10-07T17:48:44Z"
   }
 }
