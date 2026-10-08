@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-07T17:48:44Z",
-  "as_of": "2026-10-07",
+  "generated_at": "2026-10-08T17:52:07Z",
+  "as_of": "2026-10-08",
   "season": 2026,
   "benchmark_season": 2025,
   "current_snapshot": "2026-week-04",
@@ -397,7 +397,7 @@
     }
   },
   "league_efficiency_rankings": {
-    "label": "Games through October 7",
+    "label": "Games through October 8",
     "sample_note": "Completed regular-season games; early-season sample",
     "teams": [
       {
@@ -789,8 +789,8 @@
         "source_url": "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html",
         "period_label": "Through Week 4",
         "label": "Henry RYOE/att",
-        "value": "+0.18",
-        "rank": 15,
+        "value": "+0.20",
+        "rank": 14,
         "rank_group": "RB"
       }
     ],
@@ -1064,6 +1064,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-10-07T17:48:44Z"
+    "retrieved_at": "2026-10-08T17:52:07Z"
   }
 }
