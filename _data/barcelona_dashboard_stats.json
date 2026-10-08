@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-07T13:59:47Z",
-  "as_of": "2026-10-07",
+  "generated_at": "2026-10-08T14:07:01Z",
+  "as_of": "2026-10-08",
   "season": 2026,
   "season_label": "2026-27",
   "team": {
@@ -4000,100 +4000,19 @@
   "injuries": [],
   "rotation": {
     "window_days": 21,
-    "window_start": "2026-09-16",
-    "window_end": "2026-10-07",
-    "matches_in_window": 2,
-    "available_minutes": 180,
+    "window_start": "2026-09-17",
+    "window_end": "2026-10-08",
+    "matches_in_window": 1,
+    "available_minutes": 90,
     "players": [
       {
-        "player_id": "128714",
-        "name": "Eric García",
-        "position_abbr": "D",
-        "minutes": 180,
-        "starts": 2,
-        "matches": 2,
+        "player_id": "187946",
+        "name": "Dominik Livakovic",
+        "position_abbr": "G",
+        "minutes": 90,
+        "starts": 1,
+        "matches": 1,
         "share": 100.0
-      },
-      {
-        "player_id": "362150",
-        "name": "Lamine Yamal",
-        "position_abbr": "F",
-        "minutes": 180,
-        "starts": 2,
-        "matches": 2,
-        "share": 100.0
-      },
-      {
-        "player_id": "176399",
-        "name": "João Cancelo",
-        "position_abbr": "D",
-        "minutes": 167,
-        "starts": 2,
-        "matches": 2,
-        "share": 92.8
-      },
-      {
-        "player_id": "231828",
-        "name": "Rodri",
-        "position_abbr": "M",
-        "minutes": 151,
-        "starts": 2,
-        "matches": 2,
-        "share": 83.9
-      },
-      {
-        "player_id": "186430",
-        "name": "Andreas Christensen",
-        "position_abbr": "D",
-        "minutes": 149,
-        "starts": 2,
-        "matches": 2,
-        "share": 82.8
-      },
-      {
-        "player_id": "250465",
-        "name": "Pedri",
-        "position_abbr": "M",
-        "minutes": 146,
-        "starts": 2,
-        "matches": 2,
-        "share": 81.1
-      },
-      {
-        "player_id": "231050",
-        "name": "Raphinha",
-        "position_abbr": "F",
-        "minutes": 144,
-        "starts": 2,
-        "matches": 2,
-        "share": 80.0
-      },
-      {
-        "player_id": "312015",
-        "name": "Gerard Martín",
-        "position_abbr": "D",
-        "minutes": 121,
-        "starts": 1,
-        "matches": 2,
-        "share": 67.2
-      },
-      {
-        "player_id": "227765",
-        "name": "Dani Olmo",
-        "position_abbr": "M",
-        "minutes": 104,
-        "starts": 1,
-        "matches": 2,
-        "share": 57.8
-      },
-      {
-        "player_id": "274913",
-        "name": "Karim Adeyemi",
-        "position_abbr": "F",
-        "minutes": 104,
-        "starts": 1,
-        "matches": 2,
-        "share": 57.8
       },
       {
         "player_id": "368992",
@@ -4102,16 +4021,52 @@
         "minutes": 90,
         "starts": 1,
         "matches": 1,
-        "share": 50.0
+        "share": 100.0
       },
       {
-        "player_id": "187946",
-        "name": "Dominik Livakovic",
-        "position_abbr": "G",
+        "player_id": "176399",
+        "name": "João Cancelo",
+        "position_abbr": "D",
         "minutes": 90,
         "starts": 1,
         "matches": 1,
-        "share": 50.0
+        "share": 100.0
+      },
+      {
+        "player_id": "128714",
+        "name": "Eric García",
+        "position_abbr": "D",
+        "minutes": 90,
+        "starts": 1,
+        "matches": 1,
+        "share": 100.0
+      },
+      {
+        "player_id": "231828",
+        "name": "Rodri",
+        "position_abbr": "M",
+        "minutes": 90,
+        "starts": 1,
+        "matches": 1,
+        "share": 100.0
+      },
+      {
+        "player_id": "362150",
+        "name": "Lamine Yamal",
+        "position_abbr": "F",
+        "minutes": 90,
+        "starts": 1,
+        "matches": 1,
+        "share": 100.0
+      },
+      {
+        "player_id": "250465",
+        "name": "Pedri",
+        "position_abbr": "M",
+        "minutes": 85,
+        "starts": 1,
+        "matches": 1,
+        "share": 94.4
       },
       {
         "player_id": "268782",
@@ -4120,7 +4075,7 @@
         "minutes": 85,
         "starts": 1,
         "matches": 1,
-        "share": 47.2
+        "share": 94.4
       },
       {
         "player_id": "354334",
@@ -4129,80 +4084,84 @@
         "minutes": 76,
         "starts": 1,
         "matches": 1,
-        "share": 42.2
+        "share": 84.4
       },
       {
-        "player_id": "297362",
-        "name": "Joan García",
-        "position_abbr": "G",
-        "minutes": 45,
+        "player_id": "231050",
+        "name": "Raphinha",
+        "position_abbr": "F",
+        "minutes": 76,
         "starts": 1,
         "matches": 1,
-        "share": 25.0
+        "share": 84.4
       },
       {
-        "player_id": "131634",
-        "name": "Wojciech Szczesny",
-        "position_abbr": "G",
-        "minutes": 45,
+        "player_id": "186430",
+        "name": "Andreas Christensen",
+        "position_abbr": "D",
+        "minutes": 59,
+        "starts": 1,
+        "matches": 1,
+        "share": 65.6
+      },
+      {
+        "player_id": "312015",
+        "name": "Gerard Martín",
+        "position_abbr": "D",
+        "minutes": 31,
         "starts": 0,
         "matches": 1,
-        "share": 25.0
+        "share": 34.4
+      },
+      {
+        "player_id": "227765",
+        "name": "Dani Olmo",
+        "position_abbr": "M",
+        "minutes": 14,
+        "starts": 0,
+        "matches": 1,
+        "share": 15.6
+      },
+      {
+        "player_id": "274913",
+        "name": "Karim Adeyemi",
+        "position_abbr": "F",
+        "minutes": 14,
+        "starts": 0,
+        "matches": 1,
+        "share": 15.6
       },
       {
         "player_id": "376423",
         "name": "Marc Bernal",
         "position_abbr": "M",
-        "minutes": 34,
-        "starts": 0,
-        "matches": 2,
-        "share": 18.9
-      },
-      {
-        "player_id": "323702",
-        "name": "Gavi",
-        "position_abbr": "M",
-        "minutes": 29,
+        "minutes": 5,
         "starts": 0,
         "matches": 1,
-        "share": 16.1
+        "share": 5.6
       },
       {
         "player_id": "217289",
         "name": "Gabriel Jesus",
         "position_abbr": "F",
-        "minutes": 27,
-        "starts": 0,
-        "matches": 2,
-        "share": 15.0
-      },
-      {
-        "player_id": "323703",
-        "name": "Alejandro Balde",
-        "position_abbr": "D",
-        "minutes": 13,
+        "minutes": 5,
         "starts": 0,
         "matches": 1,
-        "share": 7.2
+        "share": 5.6
       }
     ]
   },
   "congestion": {
     "window_days": 21,
-    "matches_last_window": 2,
-    "matches_per_week": 0.67,
+    "matches_last_window": 1,
+    "matches_per_week": 0.33,
     "load_level": "Light",
-    "shortest_rest_recent": 3,
-    "average_rest_recent": 3.0,
+    "shortest_rest_recent": null,
+    "average_rest_recent": null,
     "matches_next_14_days": 4,
     "matches_next_30_days": 7,
     "shortest_rest_upcoming": 3,
     "recent": [
-      {
-        "date": "2026-09-16T19:30Z",
-        "competition": "laliga",
-        "opponent": "Racing"
-      },
       {
         "date": "2026-09-19T19:00Z",
         "competition": "laliga",
