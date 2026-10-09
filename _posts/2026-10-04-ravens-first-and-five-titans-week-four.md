@@ -19,7 +19,8 @@ hero_credit: "Shawn Hubbard / Baltimore Ravens Photos"
 hero_credit_url: "https://www.baltimoreravens.com/photos/game-action-gallery-ravens-vs-titans-week-4"
 home_feature: false
 home_recent: true
-home_recent_lead: true
+home_recent_lead: false
+home_recent_position: 1
 home_recent_label: "First and Five"
 ravens_feature: false
 feature_label: "Week 4 takeaways"

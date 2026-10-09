@@ -17,7 +17,10 @@ hero_wide: true
 hero_alt: "Trevor Lawrence throws against the Bengals during Jacksonville's Week 4 win in Cincinnati"
 hero_credit: "Kam Nedd / Jacksonville Jaguars"
 hero_credit_url: "https://www.jaguars.com/news/game-report-2026-week-4-jaguars-22-bengals-17"
-home_feature: true
+home_feature: false
+home_recent: true
+home_recent_lead: true
+home_recent_label: "Week 4 efficiency"
 ravens_feature: true
 ravens_feature_image: true
 feature_label: "Week 4 efficiency"

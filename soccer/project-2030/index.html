@@ -24,8 +24,27 @@ description: A four-year scouting report tracking the USMNT player pool, checkpo
 {% assign sullivan_miami_story = site.posts | where: "sullivan_miami_feature", true | first %}
 {% assign usmnt_weekly_story = site.posts | where: "usmnt_weekly_feature", true | first %}
 {% assign usmnt_camp_story = site.posts | where: "usmnt_camp_feature", true | first %}
+{% assign usmnt_window_story = site.posts | where: "usmnt_window_feature", true | first %}
 {% assign foundation_part1 = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina" | first %}
 {% assign foundation_part2 = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina-part-2" | first %}
+
+{% if usmnt_window_story %}
+<section class="project-latest" aria-labelledby="project-window-heading">
+  <div class="de-section-heading de-section-heading--light">
+    <div><p class="de-kicker">Main piece</p><h2 id="project-window-heading">The kids are alright</h2></div>
+    <p>Four wins, a new generation and a much more competitive USMNT.</p>
+  </div>
+  <a class="project-story-card project-story-card--visual" href="{{ usmnt_window_story.url | relative_url }}">
+    <figure><img src="{{ usmnt_window_story.hero_image | relative_url }}" alt="{{ usmnt_window_story.hero_alt | escape }}" loading="eager"></figure>
+    <div>
+      <span>Project 2030 / USMNT Window Recap</span>
+      <h3>{{ usmnt_window_story.title }}</h3>
+      <p>{{ usmnt_window_story.excerpt }}</p>
+      <strong>Read the recap and watch the clips <span aria-hidden="true">&rarr;</span></strong>
+    </div>
+  </a>
+</section>
+{% endif %}
 
 <section class="project-overview">
   <section class="project-intro">
@@ -72,7 +91,7 @@ description: A four-year scouting report tracking the USMNT player pool, checkpo
 {% if usmnt_camp_story %}
 <section class="project-latest" aria-labelledby="project-camp-heading">
   <div class="de-section-heading de-section-heading--light">
-    <div><p class="de-kicker">Main piece</p><h2 id="project-camp-heading">The first camp of the cycle</h2></div>
+    <div><p class="de-kicker">Camp preview</p><h2 id="project-camp-heading">The first camp of the cycle</h2></div>
     <p>Twelve first-time call-ups, four matches and the first real competition for 2030 places.</p>
   </div>
   <a class="project-story-card project-story-card--visual" href="{{ usmnt_camp_story.url | relative_url }}">
