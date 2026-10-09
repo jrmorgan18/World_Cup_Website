@@ -405,8 +405,8 @@
       "current_score": 44.4,
       "score_2030": 52.4,
       "age_2030": 23,
-      "club": "San Diego FC",
-      "league": "Major League Soccer",
+      "club": "Stoke City",
+      "league": "Championship",
       "data_status": "provisional_observed_advanced"
     },
     {
@@ -418,8 +418,8 @@
       "current_score": 43.1,
       "score_2030": 44.5,
       "age_2030": 28,
-      "club": "1. FC Köln",
-      "league": "Bundesliga",
+      "club": "Birmingham City",
+      "league": "Championship",
       "data_status": "provisional_observed_advanced"
     },
     {
@@ -601,7 +601,7 @@
       "score_2030": 44.8,
       "age_2030": 28,
       "club": "Venezia",
-      "league": "Serie B",
+      "league": "Serie A",
       "data_status": "provisional_manual_observed"
     },
     {
@@ -730,8 +730,8 @@
       "current_score": 35.2,
       "score_2030": 36.6,
       "age_2030": 30,
-      "club": "FC St. Pauli",
-      "league": "Bundesliga",
+      "club": "NYCFC",
+      "league": "Major League Soccer",
       "data_status": "provisional_observed_advanced"
     },
     {
@@ -808,8 +808,8 @@
       "current_score": 33.2,
       "score_2030": 41.3,
       "age_2030": 25,
-      "club": "Chelsea (future unsettled after Watford loan)",
-      "league": "Premier League",
+      "club": "Preston North End",
+      "league": "Championship",
       "data_status": "provisional_observed_advanced"
     },
     {
