@@ -225,6 +225,9 @@ section_theme: ravens
 
     <section class="ravens-dashboard-section" id="injuries" role="tabpanel" aria-labelledby="dashboard-tab-injuries" tabindex="0">
       <div class="ravens-section-heading"><p class="de-kicker">Material absences only</p><h2 id="injuries-title">Injuries &amp; Availability</h2></div>
+      {% if dashboard.injury_report_context %}
+      <p class="ravens-availability"><strong>{{ dashboard.injury_report_context.label }}</strong><br>{{ dashboard.injury_report_context.note }}</p>
+      {% endif %}
       {% if dashboard.injuries.size > 0 %}
       <div class="ravens-injury-list">
         {% for injury in dashboard.injuries %}
