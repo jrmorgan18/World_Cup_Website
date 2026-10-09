@@ -55,6 +55,37 @@ class FilmstudyTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.aggregate([report(1), report(3)])
 
+    def test_combined_report_imports_prior_game_without_double_counting(self):
+        combined = report(4)
+        combined["content"]["rendered"] = combined["content"]["rendered"].replace(
+            "after adjustment.</p>",
+            "after adjustment.</p><p>Scoring vs Cowboys (combined 51 snaps RG and 7 C): "
+            "58 plays, 49 blocks, 48 points (.83 per play). That’s a B after adjustment.</p>")
+        combined["content"]["rendered"] += (
+            "<p><strong>Jones, E.:</strong> Notes.</p>"
+            "<p>Scoring: 31 plays, 22 blocks, 17 points (.55 per play). That’s an F even afteradjustment.</p>"
+            "<p>Scoring vs Cowboys: 3 plays, 3 blocks (6th OL).</p>"
+            "<p><strong>Vinson:</strong> Notes.</p><p>Scoring vs Cowboys: DNP</p>")
+        result = dashboard.aggregate_filmstudy(
+            [report(1), report(2), combined], 2026, 4, date(2026, 10, 9), {"Cowboys": [3]})
+        self.assertEqual([row["week"] for row in result["reports"]], [1, 2, 3, 4])
+        jones = next(row for row in result["players"] if row["player"] == "Emery Jones Jr.")
+        self.assertEqual(jones["graded_snaps"], 31)
+        self.assertEqual(jones["aggregate_grade"], "F")
+        stanley = next(row for row in result["players"] if row["player"] == "Ronnie Stanley")
+        self.assertEqual(stanley["graded_snaps"], 208)
+        result = dashboard.aggregate_filmstudy(
+            [report(1), report(2), report(3), combined], 2026, 4, date(2026, 10, 9), {"Cowboys": [3]})
+        stanley = next(row for row in result["players"] if row["player"] == "Ronnie Stanley")
+        self.assertEqual(stanley["graded_snaps"], 200)
+
+    def test_retrospective_large_sample_without_points_fails_closed(self):
+        combined = report(4)
+        combined["content"]["rendered"] += "<p>Scoring vs Cowboys: 58 plays, unknown points.</p>"
+        with self.assertRaises(ValueError):
+            dashboard.aggregate_filmstudy(
+                [report(1), report(2), combined], 2026, 4, date(2026, 10, 9), {"Cowboys": [3]})
+
     def test_malformed_scoring_is_not_silently_skipped(self):
         post = report(1)
         post["content"]["rendered"] = post["content"]["rendered"].replace("40 points", "unknown points", 1)

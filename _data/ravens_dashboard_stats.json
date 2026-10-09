@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-08T17:52:07Z",
-  "as_of": "2026-10-08",
+  "generated_at": "2026-10-09T04:47:18Z",
+  "as_of": "2026-10-09",
   "season": 2026,
   "benchmark_season": 2025,
   "current_snapshot": "2026-week-04",
@@ -397,7 +397,7 @@
     }
   },
   "league_efficiency_rankings": {
-    "label": "Games through October 8",
+    "label": "Games through October 9",
     "sample_note": "Completed regular-season games; early-season sample",
     "teams": [
       {
@@ -406,7 +406,7 @@
         "name": "Chiefs",
         "full_name": "Kansas City Chiefs",
         "record": "4-0",
-        "value": 82.8
+        "value": 83.6
       },
       {
         "rank": 2,
@@ -426,6 +426,14 @@
       },
       {
         "rank": 4,
+        "abbr": "JAX",
+        "name": "Jaguars",
+        "full_name": "Jacksonville Jaguars",
+        "record": "3-1",
+        "value": 78.9
+      },
+      {
+        "rank": 4,
         "abbr": "SEA",
         "name": "Seahawks",
         "full_name": "Seattle Seahawks",
@@ -433,23 +441,15 @@
         "value": 78.9
       },
       {
-        "rank": 5,
-        "abbr": "JAX",
-        "name": "Jaguars",
-        "full_name": "Jacksonville Jaguars",
-        "record": "3-1",
-        "value": 78.1
-      },
-      {
         "rank": 6,
         "abbr": "ATL",
         "name": "Falcons",
         "full_name": "Atlanta Falcons",
         "record": "2-2",
-        "value": 76.6
+        "value": 77.3
       },
       {
-        "rank": 6,
+        "rank": 7,
         "abbr": "CHI",
         "name": "Bears",
         "full_name": "Chicago Bears",
@@ -494,10 +494,18 @@
         "name": "Vikings",
         "full_name": "Minnesota Vikings",
         "record": "4-0",
-        "value": 57.0
+        "value": 56.2
       },
       {
         "rank": 13,
+        "abbr": "TB",
+        "name": "Buccaneers",
+        "full_name": "Tampa Bay Buccaneers",
+        "record": "1-4",
+        "value": 53.9
+      },
+      {
+        "rank": 14,
         "abbr": "HOU",
         "name": "Texans",
         "full_name": "Houston Texans",
@@ -505,7 +513,7 @@
         "value": 52.3
       },
       {
-        "rank": 14,
+        "rank": 15,
         "abbr": "BUF",
         "name": "Bills",
         "full_name": "Buffalo Bills",
@@ -513,7 +521,7 @@
         "value": 51.6
       },
       {
-        "rank": 14,
+        "rank": 15,
         "abbr": "NE",
         "name": "Patriots",
         "full_name": "New England Patriots",
@@ -521,7 +529,7 @@
         "value": 51.6
       },
       {
-        "rank": 16,
+        "rank": 17,
         "abbr": "ARI",
         "name": "Cardinals",
         "full_name": "Arizona Cardinals",
@@ -529,15 +537,15 @@
         "value": 50.8
       },
       {
-        "rank": 17,
+        "rank": 18,
         "abbr": "DET",
         "name": "Lions",
         "full_name": "Detroit Lions",
         "record": "2-2",
-        "value": 48.4
+        "value": 49.2
       },
       {
-        "rank": 18,
+        "rank": 19,
         "abbr": "NYJ",
         "name": "Jets",
         "full_name": "New York Jets",
@@ -545,7 +553,7 @@
         "value": 47.7
       },
       {
-        "rank": 19,
+        "rank": 20,
         "abbr": "CLE",
         "name": "Browns",
         "full_name": "Cleveland Browns",
@@ -553,20 +561,12 @@
         "value": 46.9
       },
       {
-        "rank": 19,
-        "abbr": "TB",
-        "name": "Buccaneers",
-        "full_name": "Tampa Bay Buccaneers",
-        "record": "0-4",
-        "value": 46.9
-      },
-      {
         "rank": 21,
         "abbr": "DAL",
         "name": "Cowboys",
         "full_name": "Dallas Cowboys",
-        "record": "2-2",
-        "value": 41.4
+        "record": "2-3",
+        "value": 42.2
       },
       {
         "rank": 22,
@@ -574,7 +574,7 @@
         "name": "Broncos",
         "full_name": "Denver Broncos",
         "record": "2-2",
-        "value": 40.6
+        "value": 39.8
       },
       {
         "rank": 23,
@@ -585,12 +585,12 @@
         "value": 36.7
       },
       {
-        "rank": 23,
+        "rank": 24,
         "abbr": "LAC",
         "name": "Chargers",
         "full_name": "Los Angeles Chargers",
         "record": "0-4",
-        "value": 36.7
+        "value": 35.2
       },
       {
         "rank": 25,
@@ -598,7 +598,7 @@
         "name": "Steelers",
         "full_name": "Pittsburgh Steelers",
         "record": "2-2",
-        "value": 35.2
+        "value": 34.4
       },
       {
         "rank": 26,
@@ -606,7 +606,7 @@
         "name": "Saints",
         "full_name": "New Orleans Saints",
         "record": "1-3",
-        "value": 33.6
+        "value": 32.8
       },
       {
         "rank": 26,
@@ -614,7 +614,7 @@
         "name": "Giants",
         "full_name": "New York Giants",
         "record": "3-1",
-        "value": 33.6
+        "value": 32.8
       },
       {
         "rank": 28,
@@ -622,15 +622,15 @@
         "name": "Titans",
         "full_name": "Tennessee Titans",
         "record": "0-4",
-        "value": 32.0
+        "value": 30.5
       },
       {
-        "rank": 29,
+        "rank": 28,
         "abbr": "WAS",
         "name": "Commanders",
         "full_name": "Washington Commanders",
         "record": "1-3",
-        "value": 31.2
+        "value": 30.5
       },
       {
         "rank": 30,
@@ -638,7 +638,7 @@
         "name": "Packers",
         "full_name": "Green Bay Packers",
         "record": "2-2",
-        "value": 27.3
+        "value": 25.8
       },
       {
         "rank": 31,
@@ -646,7 +646,7 @@
         "name": "Eagles",
         "full_name": "Philadelphia Eagles",
         "record": "2-2",
-        "value": 14.8
+        "value": 14.1
       },
       {
         "rank": 32,
@@ -654,7 +654,7 @@
         "name": "Dolphins",
         "full_name": "Miami Dolphins",
         "record": "0-4",
-        "value": 13.3
+        "value": 12.5
       }
     ]
   },
@@ -683,7 +683,7 @@
             },
             "opponent": {
               "value": -0.06,
-              "rank": 7
+              "rank": 6
             }
           },
           {
@@ -778,8 +778,8 @@
         "source_url": "https://www.espn.com/nfl/qbr/_/season/2026/seasontype/2",
         "period_label": "Through Week 4",
         "label": "Jackson QBR",
-        "value": "81.1",
-        "rank": 4,
+        "value": "80.9",
+        "rank": 3,
         "rank_group": "NFL"
       }
     ],
@@ -820,19 +820,19 @@
       {
         "source_label": "ESPN",
         "source_url": "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking",
-        "period_label": "Through Week 3",
+        "period_label": "Through Week 4",
         "label": "Team PBWR",
-        "value": "41%",
-        "rank": 29,
+        "value": "48%",
+        "rank": 20,
         "rank_group": "NFL"
       },
       {
         "source_label": "ESPN",
         "source_url": "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking",
-        "period_label": "Through Week 3",
+        "period_label": "Through Week 4",
         "label": "Team RBWR",
-        "value": "77%",
-        "rank": 3,
+        "value": "75%",
+        "rank": 7,
         "rank_group": "NFL"
       }
     ],
@@ -840,10 +840,10 @@
       {
         "source_label": "ESPN",
         "source_url": "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking",
-        "period_label": "Through Week 3",
+        "period_label": "Through Week 4",
         "label": "Team RSWR",
-        "value": "28%",
-        "rank": 20,
+        "value": "30%",
+        "rank": 12,
         "rank_group": "NFL"
       }
     ],
@@ -851,16 +851,16 @@
       {
         "source_label": "ESPN",
         "source_url": "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking",
-        "period_label": "Through Week 3",
+        "period_label": "Through Week 4",
         "label": "Team PRWR",
-        "value": "55%",
-        "rank": 7,
+        "value": "54%",
+        "rank": 11,
         "rank_group": "NFL"
       },
       {
         "source_label": "ESPN",
         "source_url": "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking",
-        "period_label": "Through Week 3",
+        "period_label": "Through Week 4",
         "label": "Hendrickson PRWR",
         "value": "28%",
         "rank": 8,
@@ -874,95 +874,144 @@
         "period_label": "Through Week 4",
         "label": "Opp. CPOE",
         "value": "+2.6%",
-        "rank": 22,
+        "rank": 23,
         "rank_group": "NFL"
       }
     ]
   },
   "offensive_line_filmstudy": {
     "source_label": "Filmstudy · Ken McKusick",
-    "source_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w2/",
+    "source_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w4/",
     "season": 2026,
-    "week": 2,
-    "published": "2026-09-22",
-    "period_label": "Written reports through Week 2",
+    "week": 4,
+    "published": "2026-10-07",
+    "period_label": "Written reports through Week 4",
     "methodology": "Dual Eights aggregation: each published Filmstudy adjusted game letter grade is converted to a standard grade-point scale, weighted by the player's scored snaps, then rounded to the nearest letter grade. Ranks compare Ravens linemen only, with at least 20 graded snaps. Only explicitly published grades count; missing appearances are not estimated.",
     "players": [
       {
-        "player": "Roger Rosengarten",
-        "scored_snaps": 115,
-        "graded_snaps": 115,
+        "player": "Carson Vinson",
+        "scored_snaps": 70,
+        "graded_snaps": 58,
         "weeks": [
-          1,
-          2
+          2,
+          3
         ],
-        "latest_week": 2,
-        "latest_grade": "B+",
-        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w2/",
+        "latest_week": 3,
+        "latest_grade": "B",
+        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w4/",
         "rank": 1,
-        "aggregate_grade": "A-"
+        "aggregate_grade": "B"
       },
       {
-        "player": "John Simpson",
-        "scored_snaps": 115,
-        "graded_snaps": 115,
+        "player": "Roger Rosengarten",
+        "scored_snaps": 232,
+        "graded_snaps": 232,
         "weeks": [
           1,
-          2
+          2,
+          3,
+          4
         ],
-        "latest_week": 2,
+        "latest_week": 4,
         "latest_grade": "C",
-        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w2/",
+        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w4/",
         "rank": 2,
+        "aggregate_grade": "B-"
+      },
+      {
+        "player": "Vega Ioane",
+        "scored_snaps": 232,
+        "graded_snaps": 232,
+        "weeks": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "latest_week": 4,
+        "latest_grade": "A",
+        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w4/",
+        "rank": 3,
         "aggregate_grade": "C+"
       },
       {
-        "player": "Ronnie Stanley",
-        "scored_snaps": 104,
-        "graded_snaps": 104,
+        "player": "John Simpson",
+        "scored_snaps": 232,
+        "graded_snaps": 232,
         "weeks": [
           1,
-          2
+          2,
+          3,
+          4
         ],
-        "latest_week": 2,
-        "latest_grade": "B-",
-        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w2/",
-        "rank": 3,
+        "latest_week": 4,
+        "latest_grade": "C",
+        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w4/",
+        "rank": 4,
+        "aggregate_grade": "C"
+      },
+      {
+        "player": "Ronnie Stanley",
+        "scored_snaps": 163,
+        "graded_snaps": 163,
+        "weeks": [
+          1,
+          2,
+          4
+        ],
+        "latest_week": 4,
+        "latest_grade": "C",
+        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w4/",
+        "rank": 5,
         "aggregate_grade": "C-"
       },
       {
         "player": "Jovaughn Gwyn",
-        "scored_snaps": 115,
-        "graded_snaps": 115,
+        "scored_snaps": 157,
+        "graded_snaps": 157,
         "weeks": [
           1,
-          2
+          2,
+          3
         ],
-        "latest_week": 2,
-        "latest_grade": "B-",
-        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w2/",
-        "rank": 4,
-        "aggregate_grade": "C-"
+        "latest_week": 3,
+        "latest_grade": "F",
+        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w4/",
+        "rank": 6,
+        "aggregate_grade": "D+"
       },
       {
-        "player": "Vega Ioane",
-        "scored_snaps": 115,
-        "graded_snaps": 115,
+        "player": "Andrew Vorhees",
+        "scored_snaps": 35,
+        "graded_snaps": 28,
         "weeks": [
-          1,
-          2
+          3,
+          4
         ],
-        "latest_week": 2,
-        "latest_grade": "D-",
-        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w2/",
-        "rank": 5,
-        "aggregate_grade": "D+"
+        "latest_week": 4,
+        "latest_grade": "F",
+        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w4/",
+        "rank": 7,
+        "aggregate_grade": "F"
+      },
+      {
+        "player": "Emery Jones Jr.",
+        "scored_snaps": 31,
+        "graded_snaps": 31,
+        "weeks": [
+          4
+        ],
+        "latest_week": 4,
+        "latest_grade": "F",
+        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w4/",
+        "rank": 7,
+        "aggregate_grade": "F"
       }
     ],
     "unranked_players": [
       {
-        "player": "Carson Vinson",
-        "snaps": 12
+        "player": "Ethan Pocic",
+        "snaps": 9
       }
     ],
     "reports": [
@@ -975,6 +1024,16 @@
         "week": 2,
         "url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w2/",
         "published": "2026-09-22"
+      },
+      {
+        "week": 3,
+        "url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w4/",
+        "published": "2026-10-07"
+      },
+      {
+        "week": 4,
+        "url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w4/",
+        "published": "2026-10-07"
       }
     ]
   },
@@ -1064,6 +1123,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-10-08T17:52:07Z"
+    "retrieved_at": "2026-10-09T04:47:18Z"
   }
 }

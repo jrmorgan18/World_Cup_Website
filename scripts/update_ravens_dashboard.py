@@ -65,7 +65,7 @@ def filmstudy_letter_grade(points):
     return min(FILMSTUDY_GRADE_SCALE, key=lambda item: abs(item[1] - points))[0]
 
 
-def filmstudy_report_rows(content):
+def filmstudy_report_rows(content, scoring_label="Scoring"):
     """Extract explicit points/snaps, never infer scoring from narrative blocks."""
     paragraphs = re.findall(r"<p\b[^>]*>(.*?)</p>", content, re.I | re.S)
     player = None
@@ -73,13 +73,21 @@ def filmstudy_report_rows(content):
     for paragraph in paragraphs:
         text = html.unescape(re.sub(r"<[^>]+>", " ", paragraph))
         text = re.sub(r"\s+", " ", text).strip()
-        heading = re.match(r"([A-Z][A-Za-z'-]+)\s*:\s", text) if not text.startswith("Scoring:") else None
-        if heading:
+        heading = re.match(r"([A-Z][A-Za-z'-]+)(?:,\s*[A-Z]\.)?\s*:\s", text)
+        if heading and not text.startswith("Scoring"):
             player = heading.group(1)
-        if not text.startswith("Scoring:"):
+        if not re.match(rf"{re.escape(scoring_label)}(?:\s*\([^)]*\))?:", text):
             continue
-        score = re.search(r"Scoring:\s*(\d+) plays,.*?(-?\d+(?:\.\d+)?) points", text)
+        score = re.search(r":\s*(\d+) plays,.*?(-?\d+(?:\.\d+)?) points", text)
         if not score or not player:
+            # Retrospective notes sometimes give DNP or an ungraded sub-20-snap
+            # appearance without points. Neither is an invented game grade.
+            if scoring_label != "Scoring" and (
+                text.endswith(": DNP") or
+                re.search(r":\s*(\d+) plays", text) and
+                int(re.search(r":\s*(\d+) plays", text)[1]) < 20
+            ):
+                continue
             raise ValueError("Filmstudy scoring paragraph has no player, snaps or points")
         snaps, points = int(score[1]), float(score[2])
         if snaps <= 0 or not -snaps <= points <= snaps:
@@ -87,24 +95,38 @@ def filmstudy_report_rows(content):
         grade = re.search(r"(?:That(?:[’'\ufffd]s| is))\s+(?:an?\s+)?([ABCDF][+-]?)(?=\s|\.)", text)
         rows.append({"player": OL_NAMES.get(player, player), "snaps": snaps,
                      "points": points, "grade": grade[1] if grade else None})
-        player = None
     if len(rows) < 5 or len({row["player"] for row in rows}) != len(rows):
         raise ValueError("Filmstudy report must score at least five distinct linemen")
     return rows
 
 
-def aggregate_filmstudy(posts, season, current_week, as_of):
+def aggregate_filmstudy(posts, season, current_week, as_of, opponent_weeks=None):
     """Rank Ravens linemen by their snap-weighted Filmstudy letter grades."""
-    reports = []
+    reports_by_week = {}
+    retrospective_reports = []
     for post in posts:
         match = re.fullmatch(rf"offensiveline-notes-{season}-w(\d+)", post.get("slug", ""))
         if not match or not 1 <= int(match[1]) <= current_week:
             continue
         if date.fromisoformat(post["date"][:10]) > as_of:
             continue
-        reports.append({"week": int(match[1]), "url": post["link"],
-                        "published": post["date"][:10],
-                        "rows": filmstudy_report_rows(post["content"]["rendered"])})
+        week = int(match[1])
+        content = post["content"]["rendered"]
+        reports_by_week[week] = {"week": week, "url": post["link"],
+                                 "published": post["date"][:10],
+                                 "rows": filmstudy_report_rows(content)}
+        for opponent in set(re.findall(r"Scoring vs ([A-Za-z]+)", content)):
+            candidates = [number for number in (opponent_weeks or {}).get(opponent, []) if number < week]
+            if len(candidates) != 1:
+                raise ValueError(f"Filmstudy retrospective opponent has no unique prior game: {opponent}")
+            retrospective_reports.append({"week": candidates[0], "url": post["link"],
+                                           "published": post["date"][:10],
+                                           "rows": filmstudy_report_rows(content, f"Scoring vs {opponent}")})
+    # A standalone report takes precedence if it is later published for a week
+    # initially covered inside another report.
+    for report in retrospective_reports:
+        reports_by_week.setdefault(report["week"], report)
+    reports = list(reports_by_week.values())
     reports.sort(key=lambda report: report["week"])
     weeks = [report["week"] for report in reports]
     if not weeks or weeks != list(range(1, max(weeks) + 1)):
@@ -157,7 +179,15 @@ def fetch_filmstudy(season, current_week, as_of):
     request = Request(f"{FILMSTUDY_API_URL}?{query}", headers={"User-Agent": "Mozilla/5.0"})
     with urlopen(request, timeout=30) as response:
         posts = json.load(response)
-    return aggregate_filmstudy(posts, season, current_week, as_of)
+    opponent_weeks = {}
+    if any("Scoring vs " in post.get("content", {}).get("rendered", "") for post in posts):
+        games = completed_games(pd.read_csv(SCHEDULE_URL), season, as_of)
+        for _, game in games.iterrows():
+            if TEAM not in (game["home_team"], game["away_team"]):
+                continue
+            opponent = game["away_team"] if game["home_team"] == TEAM else game["home_team"]
+            opponent_weeks.setdefault(TEAM_NAMES[opponent].split()[-1], []).append(int(game["week"]))
+    return aggregate_filmstudy(posts, season, current_week, as_of, opponent_weeks)
 
 
 def refresh_filmstudy(existing, season, current_week, as_of):

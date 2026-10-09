@@ -6,7 +6,7 @@
 meta:
   season: 2026
   season_label: "2026 Season"
-  last_updated: "2026-10-05"
+  last_updated: "2026-10-09"
   update_context: "Through available Week 4 games · Atlanta next"
   data_status: "through-week-4"
   data_notice: >-
@@ -188,11 +188,11 @@ editorial:
         - { label: "Five questions defining the Ravens' season", url: "/ravens/five-questions-that-will-define-the-season/" }
 
   units:
-    - { name: "Quarterback", assessment: "Elite", trend: "stable", season_grade: "A", last_game_grade: "A+", explanation: "Jackson completed 15 of 20 for 222 yards and two touchdowns before his ankle injury. He was outstanding through the opening half, building a 24-7 lead before Huntley took over. The cumulative ESPN QBR is 81.3, fourth among qualifiers.", link: "/ravens/first-and-five-titans-week-four-2026/" }
+    - { name: "Quarterback", assessment: "Elite", trend: "stable", season_grade: "A", last_game_grade: "A+", explanation: "Jackson completed 15 of 20 for 222 yards and two touchdowns before his ankle injury. He was outstanding through the opening half, building a 24-7 lead before Huntley took over. His latest cumulative ESPN QBR and qualified league rank appear alongside the grade.", link: "/ravens/first-and-five-titans-week-four-2026/" }
     - { name: "Running backs", assessment: "Solid", trend: "down", season_grade: "B+", last_game_grade: "C+", explanation: "Henry gained 73 yards on 23 carries with one touchdown. The workload helped protect the lead, but 3.2 yards per carry was a quieter rushing day than the passing offense's early explosion." }
     - { name: "Wide receivers", assessment: "Strength", trend: "stable", season_grade: "A-", last_game_grade: "A", explanation: "Flowers finished with eight catches for 118 yards and a touchdown. His 52-yard reception supplied the vertical punch, while Bateman also delivered useful intermediate gains." }
     - { name: "Tight ends", assessment: "Solid", trend: "up", season_grade: "B", last_game_grade: "B+", explanation: "Andrews caught the three-yard touchdown that capped a 98-yard drive, and Hibner added a chunk gain. Smythe's Achilles injury threatens the group's blocking depth heading into Atlanta." }
-    - { name: "Offensive line", assessment: "Mixed", trend: "up", season_grade: "C+", last_game_grade: "C", explanation: "Ioane stabilized center in his first start there. Official NGS reporting credited Simmons with just one pressure on 32 rushes, none in nine matchups with Ioane. Stanley returned, but Vorhees left with a foot injury. The separate Filmstudy table below is older written scoring, not a Week 4 evaluation.", link: "/ravens/first-and-five-titans-week-four-2026/" }
+    - { name: "Offensive line", assessment: "Mixed", trend: "up", season_grade: "C+", last_game_grade: "C", explanation: "Ioane stabilized center in his first start there. Official NGS reporting credited Simmons with just one pressure on 32 rushes, none in nine matchups with Ioane. Stanley returned, but Vorhees left with a foot injury. Filmstudy's October 7 report supplies the Tennessee grades and delayed Dallas scoring used in the aggregate letter grades below.", link: "/ravens/first-and-five-titans-week-four-2026/" }
     - { name: "Defensive line", assessment: "Strength", trend: "up", season_grade: "B+", last_game_grade: "B-", explanation: "Madubuike's fourth-and-goal stop was massive, but the interior did not consistently close down the run game or prevent Tennessee's late push. The goal-line win did not make this a complete defensive-line performance." }
     - { name: "Edge rushers", assessment: "Solid", trend: "down", season_grade: "B", last_game_grade: "C+", explanation: "Burke's first career sack and Mike Green's rush that helped force the early interception were real positives. Without Hendrickson, however, the rush did not generate enough sustained disruption or finish enough opportunities." }
     - { name: "Linebackers", assessment: "Solid", trend: "up", season_grade: "B", last_game_grade: "B-", explanation: "Simpson's opening-drive interception supplied one of two takeaways, but the unit did not consistently clean up plays in space as Tennessee mounted its late push." }
@@ -287,7 +287,7 @@ sources:
   - { name: "NFL Next Gen Stats via nflverse", role: "Automated CPOE, RYOE per attempt and YAC over expectation values and qualifying-player ranks for the Unit Report Card", url: "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html", cadence: "Current-season player summaries update nightly when players meet NFL Next Gen Stats minimums." }
   - { name: "ESPN Total QBR", role: "Automated Lamar Jackson Total QBR and qualified league rank for the Unit Report Card", url: "https://www.espn.com/nfl/qbr/_/season/2026/seasontype/2", cadence: "Checked nightly; the last good value is retained if ESPN is temporarily unavailable." }
   - { name: "ESPN Analytics Win Rate Rankings", role: "Automated team and Ravens player PRWR, RSWR, PBWR and RBWR context for the Unit Report Card", url: "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking", cadence: "Checked by the daily dashboard update; the last good value is retained if ESPN is temporarily unavailable." }
-  - { name: "Filmstudy · Ken McKusick", role: "Published Ravens offensive-line points, scored snaps and adjusted game grades; Dual Eights aggregates the raw points-per-snap rankings", url: "https://www.filmstudybaltimore.com/", cadence: "Written scoring reports checked daily; the last good aggregation is retained if unavailable, incomplete or older than the stored reporting week." }
+  - { name: "Filmstudy · Ken McKusick", role: "Published Ravens offensive-line adjusted game letter grades, aggregated by Dual Eights using scored-snap weights", url: "https://www.filmstudybaltimore.com/", cadence: "Written scoring reports checked daily; the last good aggregation is retained if unavailable, incomplete or older than the stored reporting week." }
   - { name: "Baltimore Ravens official schedule", role: "2026 schedule and official preseason results", url: "https://www.baltimoreravens.com/schedule/2026/", cadence: "As published by the club" }
   - { name: "Baltimore Ravens official news and roster reports", role: "Availability, roster status and dated team context", url: "https://www.baltimoreravens.com/news/", cadence: "Reviewed for each dashboard update" }
 
@@ -304,7 +304,7 @@ methodology_notes:
   - "Playoff probability is omitted until a transparent, repeatable model is added."
   - "Unit letter grades are editorial, informed by role, film and results; they are separate from the statistical scorecard."
   - "ESPN win rates are shown as third-party evidence and are not converted directly into Dual Eights letter grades. Team ranks are among 32 teams; player ranks are within the listed ESPN position group."
-  - "Filmstudy ranks compare Ravens linemen only. Dual Eights divides each player's summed published scoring points by summed scored snaps, with a 20-scored-snap minimum; it does not average rounded weekly rates or invent scores for missing appearances. These raw rates are not position-adjusted and are separate from Filmstudy's adjusted game letter grades."
+  - "Filmstudy ranks compare Ravens linemen only. Dual Eights converts each explicitly published adjusted game letter grade to a standard grade-point scale, weights it by that game's scored snaps and rounds the average to the nearest letter grade. Players need at least 20 graded snaps; ungraded appearances do not enter the average. Delayed scoring published inside a later report is assigned to the actual game week and counted once."
 
 related_articles:
   - "/ravens/first-and-five-titans-week-four-2026/"
