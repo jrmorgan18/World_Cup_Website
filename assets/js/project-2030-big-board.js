@@ -8,6 +8,7 @@
   var body = board.querySelector("[data-board-body]");
   var resultText = board.querySelector("[data-board-results]");
   var snapshot = board.querySelector("[data-board-snapshot]");
+  var freshness = board.querySelector("[data-board-freshness]");
   var search = board.querySelector("[data-board-search]");
   var positionFilter = board.querySelector("[data-board-position]");
   var leagueFilter = board.querySelector("[data-board-league]");
@@ -129,7 +130,10 @@
       addOptions(positionFilter, populatedValues("position"));
       addOptions(leagueFilter, populatedValues("league"));
       addOptions(groupFilter, populatedValues("group"));
-      snapshot.textContent = data.snapshot_through ? "Snapshot through " + data.snapshot_through : "Current snapshot";
+      snapshot.textContent = data.updated_on
+        ? "Updated " + data.updated_on
+        : data.snapshot_through ? "Snapshot through " + data.snapshot_through : "Current snapshot";
+      if (freshness) freshness.textContent = data.freshness_note || "";
       updateSortButtons();
       render();
     })
