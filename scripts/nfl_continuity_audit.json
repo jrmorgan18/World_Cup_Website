@@ -1,0 +1,253 @@
+{
+  "note": "Whole-league sensitivity with frozen production coefficients. No coefficient refit or team-specific tuning.",
+  "current": [
+    {
+      "team": "SF",
+      "default_rank": 1,
+      "default_points": 9.35177062034287,
+      "without_transition_rank": 1,
+      "without_transition_points": 9.72137996193085
+    },
+    {
+      "team": "JAX",
+      "default_rank": 2,
+      "default_points": 6.620791061136359,
+      "without_transition_rank": 2,
+      "without_transition_points": 6.814101652975923
+    },
+    {
+      "team": "LA",
+      "default_rank": 3,
+      "default_points": 6.1733010643298565,
+      "without_transition_rank": 3,
+      "without_transition_points": 6.554804279068746
+    },
+    {
+      "team": "BUF",
+      "default_rank": 4,
+      "default_points": 5.540848450448841,
+      "without_transition_rank": 4,
+      "without_transition_points": 5.8860152404546575
+    },
+    {
+      "team": "BAL",
+      "default_rank": 6,
+      "default_points": 5.060071571650406,
+      "without_transition_rank": 5,
+      "without_transition_points": 5.714244304156816
+    },
+    {
+      "team": "CHI",
+      "default_rank": 5,
+      "default_points": 5.347726972281519,
+      "without_transition_rank": 6,
+      "without_transition_points": 5.381414759794029
+    },
+    {
+      "team": "SEA",
+      "default_rank": 7,
+      "default_points": 4.1573255039204255,
+      "without_transition_rank": 7,
+      "without_transition_points": 4.501900154516006
+    },
+    {
+      "team": "CIN",
+      "default_rank": 8,
+      "default_points": 3.562493737954867,
+      "without_transition_rank": 8,
+      "without_transition_points": 3.8748465690212903
+    },
+    {
+      "team": "KC",
+      "default_rank": 9,
+      "default_points": 3.219658067944855,
+      "without_transition_rank": 9,
+      "without_transition_points": 3.206805399388128
+    },
+    {
+      "team": "ATL",
+      "default_rank": 10,
+      "default_points": 2.2743860153091875,
+      "without_transition_rank": 10,
+      "without_transition_points": 2.542600036122985
+    },
+    {
+      "team": "IND",
+      "default_rank": 11,
+      "default_points": 1.0362998899610747,
+      "without_transition_rank": 11,
+      "without_transition_points": 1.3565158076904689
+    },
+    {
+      "team": "DET",
+      "default_rank": 12,
+      "default_points": 0.7836279555322568,
+      "without_transition_rank": 12,
+      "without_transition_points": 0.9617069333761163
+    },
+    {
+      "team": "NE",
+      "default_rank": 13,
+      "default_points": 0.7485300783013833,
+      "without_transition_rank": 13,
+      "without_transition_points": 0.8656199942210616
+    },
+    {
+      "team": "DEN",
+      "default_rank": 14,
+      "default_points": 0.41731722349619726,
+      "without_transition_rank": 14,
+      "without_transition_points": 0.7657841037909138
+    },
+    {
+      "team": "CAR",
+      "default_rank": 15,
+      "default_points": 0.22739427212325525,
+      "without_transition_rank": 15,
+      "without_transition_points": 0.2925798391966554
+    },
+    {
+      "team": "DAL",
+      "default_rank": 16,
+      "default_points": -0.2369422753672935,
+      "without_transition_rank": 16,
+      "without_transition_points": 0.1841125409514125
+    },
+    {
+      "team": "TB",
+      "default_rank": 17,
+      "default_points": -0.5970400246503094,
+      "without_transition_rank": 17,
+      "without_transition_points": -0.46416192985980914
+    },
+    {
+      "team": "GB",
+      "default_rank": 18,
+      "default_points": -1.3348280358620852,
+      "without_transition_rank": 18,
+      "without_transition_points": -1.1507090038289485
+    },
+    {
+      "team": "ARI",
+      "default_rank": 19,
+      "default_points": -1.7093215134378241,
+      "without_transition_rank": 19,
+      "without_transition_points": -1.3987737250987686
+    },
+    {
+      "team": "WAS",
+      "default_rank": 21,
+      "default_points": -2.126199396612223,
+      "without_transition_rank": 20,
+      "without_transition_points": -1.7484312869084824
+    },
+    {
+      "team": "MIN",
+      "default_rank": 20,
+      "default_points": -1.7642113349859458,
+      "without_transition_rank": 21,
+      "without_transition_points": -1.7685048378230956
+    },
+    {
+      "team": "PIT",
+      "default_rank": 23,
+      "default_points": -2.3208237979676394,
+      "without_transition_rank": 22,
+      "without_transition_points": -2.012542747573068
+    },
+    {
+      "team": "PHI",
+      "default_rank": 24,
+      "default_points": -2.639079123415911,
+      "without_transition_rank": 23,
+      "without_transition_points": -2.3199353911484035
+    },
+    {
+      "team": "HOU",
+      "default_rank": 25,
+      "default_points": -3.1009458910496788,
+      "without_transition_rank": 24,
+      "without_transition_points": -2.7251512996005567
+    },
+    {
+      "team": "LAC",
+      "default_rank": 29,
+      "default_points": -4.479881115038729,
+      "without_transition_rank": 25,
+      "without_transition_points": -4.341710880607922
+    },
+    {
+      "team": "NYJ",
+      "default_rank": 27,
+      "default_points": -3.434855935765582,
+      "without_transition_rank": 26,
+      "without_transition_points": -4.3462376672440115
+    },
+    {
+      "team": "LV",
+      "default_rank": 22,
+      "default_points": -2.319669686263883,
+      "without_transition_rank": 27,
+      "without_transition_points": -4.363458366977768
+    },
+    {
+      "team": "CLE",
+      "default_rank": 26,
+      "default_points": -3.1250136088776754,
+      "without_transition_rank": 28,
+      "without_transition_points": -4.786173069068541
+    },
+    {
+      "team": "NYG",
+      "default_rank": 28,
+      "default_points": -4.235673591850649,
+      "without_transition_rank": 29,
+      "without_transition_points": -4.978495854031488
+    },
+    {
+      "team": "NO",
+      "default_rank": 30,
+      "default_points": -5.374422950571104,
+      "without_transition_rank": 30,
+      "without_transition_points": -5.385202597257762
+    },
+    {
+      "team": "MIA",
+      "default_rank": 31,
+      "default_points": -7.086141326953112,
+      "without_transition_rank": 31,
+      "without_transition_points": -7.537655971544392
+    },
+    {
+      "team": "TEN",
+      "default_rank": 32,
+      "default_points": -8.636492876063711,
+      "without_transition_rank": 32,
+      "without_transition_points": -9.297286948083045
+    }
+  ],
+  "without_transition_validation": {
+    "2024": {
+      "games": 272,
+      "mae": 10.018609129432651,
+      "rmse": 12.913785460519135
+    },
+    "2025": {
+      "games": 272,
+      "mae": 10.137501789148715,
+      "rmse": 12.957166674671683
+    }
+  },
+  "default_validation": {
+    "2024": {
+      "games": 272,
+      "mae": 10.023673001242214,
+      "rmse": 12.90873380307573
+    },
+    "2025": {
+      "games": 272,
+      "mae": 10.143357111914744,
+      "rmse": 12.980818417225349
+    }
+  }
+}

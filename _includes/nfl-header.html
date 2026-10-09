@@ -1,0 +1,19 @@
+{% assign nfl = site.data.nfl_dashboard %}
+<header class="nfl-hero">
+  <div class="nfl-hero-inner">
+    <div><p class="de-eyebrow"><span></span> The NFL desk <span class="nfl-beta">Beta</span></p>
+      <h1>{{ include.heading | default: 'The league,<br><em>measured.</em>' }}</h1>
+      <p class="nfl-hero-description">{{ include.description | default: 'Two views of every team. Efficiency measures what has happened. Team Strength Index projects what comes next.' }}</p>
+    </div>
+    <div class="nfl-cutoff"><span>{{ nfl.season }} season</span><strong>Through Week {{ nfl.rating_week }}</strong><p>{{ nfl.rating_games }} completed games · all 32 teams</p><small>Ratings data through {{ nfl.data_through | date: "%B %-d" }}<br>Refreshed {{ nfl.generated_at | date: "%B %-d, %Y" }}</small></div>
+  </div>
+</header>
+<nav class="nfl-tabs" aria-label="NFL pages">
+  <div>
+    <a href="{{ '/nfl/' | relative_url }}" {% if page.nfl_view == 'overview' %}aria-current="page"{% endif %}>Overview</a>
+    <a href="{{ '/nfl/rankings/' | relative_url }}" {% if page.nfl_view == 'rankings' %}aria-current="page"{% endif %}>Rankings</a>
+    <a href="{{ '/nfl/spreads/' | relative_url }}" {% if page.nfl_view == 'spreads' %}aria-current="page"{% endif %}>Week {{ nfl.projection_week }} spreads</a>
+    <a href="{{ '/nfl/results/' | relative_url }}" {% if page.nfl_view == 'results' %}aria-current="page"{% endif %}>2026 results</a>
+    <a href="{{ '/nfl/methodology/' | relative_url }}" {% if page.nfl_view == 'methodology' %}aria-current="page"{% endif %}>How it works</a>
+  </div>
+</nav>

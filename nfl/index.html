@@ -1,0 +1,25 @@
+---
+layout: default
+title: "NFL Rankings, Efficiency and Weekly Spreads"
+description: "The Dual Eights NFL desk: Team Strength Index beta, Efficiency Index, weekly projected spreads and 2026 results."
+permalink: /nfl/
+section_theme: nfl
+nfl_page: true
+nfl_view: overview
+---
+{% include nfl-header.html %}
+<article class="nfl-shell" data-nfl-view="overview">
+  <section class="nfl-index-grid" aria-label="Two ways to evaluate teams">
+    <div class="nfl-index-card nfl-index-card-tsi"><p class="de-kicker">Looking ahead <span class="nfl-beta">Beta</span></p><h2>Team Strength Index</h2><p>Opponent-adjusted play efficiency, success rate, special teams and quarterback context, balanced with historical performance.</p><div class="nfl-leader"><span>{{ site.data.nfl_dashboard.teams.first.name }}</span><strong>{% if site.data.nfl_dashboard.teams.first.strength > 0 %}+{% endif %}{{ site.data.nfl_dashboard.teams.first.strength | round: 1 }} <small>pts</small></strong></div><p class="nfl-small">Points above an average team on a neutral field. A +5 team projects five points better than average.</p><a href="{{ '/nfl/rankings/' | relative_url }}" class="nfl-text-link">Explore all 32 teams →</a></div>
+    {% assign efficiency_leaders = site.data.nfl_dashboard.teams | sort: 'efficiency' | reverse %}
+    <div class="nfl-index-card"><p class="de-kicker">This season’s performance</p><h2>Efficiency Index</h2><p>The existing Dual Eights measure: equal weight for offensive EPA, offensive success, defensive EPA and defensive success.</p><div class="nfl-leader"><span>{{ efficiency_leaders.first.name }}</span><strong>{{ efficiency_leaders.first.efficiency | round: 1 }} <small>/ 100</small></strong></div><p class="nfl-small">League percentile composite. Higher is better. Uses completed games from this season.</p><a href="{{ '/nfl/rankings/' | relative_url }}?sort=efficiency" class="nfl-text-link">Compare Efficiency and TSI →</a></div>
+  </section>
+  <section class="nfl-section"><div class="nfl-section-heading"><div><p class="de-kicker">The leading group</p><h2>Who sets the pace?</h2></div><a href="{{ '/nfl/rankings/' | relative_url }}" class="nfl-text-link">Full sortable rankings →</a></div>
+    {% include nfl-ranking-table.html compact=true %}
+    <p class="nfl-small nfl-table-note">TSI points measure projected strength; Efficiency scores measure this season’s performance. Closely rated teams can exchange ranks with very small point changes.</p>
+  </section>
+  <section class="nfl-destinations"><a href="{{ '/nfl/spreads/' | relative_url }}"><span class="de-kicker">Week {{ site.data.nfl_dashboard.projection_week }}</span><h2>The matchup board</h2><p>Model spreads, market snapshots and interactive quarterback choices.</p><strong>View this week’s spreads →</strong></a><a href="{{ '/nfl/results/' | relative_url }}"><span class="de-kicker">2026 only</span><h2>Let the results speak</h2><p>Saved pregame forecasts and retrospective season results, clearly identified.</p><strong>Explore the results →</strong></a></section>
+  <section class="nfl-section"><div class="nfl-section-heading"><div><p class="de-kicker">From the NFL desk</p><h2>League analysis</h2></div><a href="{{ '/ravens/' | relative_url }}" class="nfl-text-link">Baltimore coverage →</a></div><div class="nfl-articles">{% assign nfl_count = 0 %}{% for post in site.posts %}{% if post.categories contains 'nfl' and nfl_count < 4 %}{% assign nfl_count = nfl_count | plus: 1 %}<a href="{{ post.url | relative_url }}"><time>{{ post.date | date: "%B %-d, %Y" }}</time><h3>{{ post.title }}</h3><span>Read the analysis →</span></a>{% endif %}{% endfor %}</div></section>
+  <p class="nfl-small">The Team Strength Index is in beta. <a class="nfl-text-link" href="{{ '/nfl/methodology/' | relative_url }}">Read the method, assumptions and data sources.</a></p>
+</article>
+{% include nfl-data.html %}

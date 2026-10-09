@@ -1,0 +1,228 @@
+{
+  "teams": [
+    {
+      "abbr": "SF",
+      "name": "San Francisco 49ers",
+      "rank": 1,
+      "strength": 9.35177062034287,
+      "warnings": []
+    },
+    {
+      "abbr": "JAX",
+      "name": "Jacksonville Jaguars",
+      "rank": 2,
+      "strength": 6.620791061136359,
+      "warnings": []
+    },
+    {
+      "abbr": "LA",
+      "name": "Los Angeles Rams",
+      "rank": 3,
+      "strength": 6.1733010643298565,
+      "warnings": []
+    },
+    {
+      "abbr": "BUF",
+      "name": "Buffalo Bills",
+      "rank": 4,
+      "strength": 5.540848450448841,
+      "warnings": []
+    },
+    {
+      "abbr": "CHI",
+      "name": "Chicago Bears",
+      "rank": 5,
+      "strength": 5.34772697228152,
+      "warnings": []
+    },
+    {
+      "abbr": "BAL",
+      "name": "Baltimore Ravens",
+      "rank": 6,
+      "strength": 5.060071571650406,
+      "warnings": []
+    },
+    {
+      "abbr": "SEA",
+      "name": "Seattle Seahawks",
+      "rank": 7,
+      "strength": 4.1573255039204255,
+      "warnings": []
+    },
+    {
+      "abbr": "CIN",
+      "name": "Cincinnati Bengals",
+      "rank": 8,
+      "strength": 3.562493737954867,
+      "warnings": []
+    },
+    {
+      "abbr": "KC",
+      "name": "Kansas City Chiefs",
+      "rank": 9,
+      "strength": 3.219658067944855,
+      "warnings": []
+    },
+    {
+      "abbr": "ATL",
+      "name": "Atlanta Falcons",
+      "rank": 10,
+      "strength": 2.2743860153091884,
+      "warnings": []
+    },
+    {
+      "abbr": "IND",
+      "name": "Indianapolis Colts",
+      "rank": 11,
+      "strength": 1.036299889961075,
+      "warnings": []
+    },
+    {
+      "abbr": "DET",
+      "name": "Detroit Lions",
+      "rank": 12,
+      "strength": 0.7836279555322568,
+      "warnings": []
+    },
+    {
+      "abbr": "NE",
+      "name": "New England Patriots",
+      "rank": 13,
+      "strength": 0.7485300783013833,
+      "warnings": []
+    },
+    {
+      "abbr": "DEN",
+      "name": "Denver Broncos",
+      "rank": 14,
+      "strength": 0.41731722349619726,
+      "warnings": []
+    },
+    {
+      "abbr": "CAR",
+      "name": "Carolina Panthers",
+      "rank": 15,
+      "strength": 0.22739427212325503,
+      "warnings": []
+    },
+    {
+      "abbr": "DAL",
+      "name": "Dallas Cowboys",
+      "rank": 16,
+      "strength": -0.2369422753672924,
+      "warnings": []
+    },
+    {
+      "abbr": "TB",
+      "name": "Tampa Bay Buccaneers",
+      "rank": 17,
+      "strength": -0.5970400246503089,
+      "warnings": []
+    },
+    {
+      "abbr": "GB",
+      "name": "Green Bay Packers",
+      "rank": 18,
+      "strength": -1.3348280358620852,
+      "warnings": []
+    },
+    {
+      "abbr": "ARI",
+      "name": "Arizona Cardinals",
+      "rank": 19,
+      "strength": -1.7093215134378241,
+      "warnings": []
+    },
+    {
+      "abbr": "MIN",
+      "name": "Minnesota Vikings",
+      "rank": 20,
+      "strength": -1.7642113349859454,
+      "warnings": []
+    },
+    {
+      "abbr": "WAS",
+      "name": "Washington Commanders",
+      "rank": 21,
+      "strength": -2.1261993966122232,
+      "warnings": []
+    },
+    {
+      "abbr": "LV",
+      "name": "Las Vegas Raiders",
+      "rank": 22,
+      "strength": -2.319669686263883,
+      "warnings": []
+    },
+    {
+      "abbr": "PIT",
+      "name": "Pittsburgh Steelers",
+      "rank": 23,
+      "strength": -2.3208237979676394,
+      "warnings": []
+    },
+    {
+      "abbr": "PHI",
+      "name": "Philadelphia Eagles",
+      "rank": 24,
+      "strength": -2.639079123415911,
+      "warnings": []
+    },
+    {
+      "abbr": "HOU",
+      "name": "Houston Texans",
+      "rank": 25,
+      "strength": -3.100945891049679,
+      "warnings": []
+    },
+    {
+      "abbr": "CLE",
+      "name": "Cleveland Browns",
+      "rank": 26,
+      "strength": -3.1250136088776754,
+      "warnings": []
+    },
+    {
+      "abbr": "NYJ",
+      "name": "New York Jets",
+      "rank": 27,
+      "strength": -3.4348559357655826,
+      "warnings": []
+    },
+    {
+      "abbr": "NYG",
+      "name": "New York Giants",
+      "rank": 28,
+      "strength": -4.235673591850649,
+      "warnings": []
+    },
+    {
+      "abbr": "LAC",
+      "name": "Los Angeles Chargers",
+      "rank": 29,
+      "strength": -4.4798811150387285,
+      "warnings": []
+    },
+    {
+      "abbr": "NO",
+      "name": "New Orleans Saints",
+      "rank": 30,
+      "strength": -5.374422950571104,
+      "warnings": []
+    },
+    {
+      "abbr": "MIA",
+      "name": "Miami Dolphins",
+      "rank": 31,
+      "strength": -7.086141326953112,
+      "warnings": []
+    },
+    {
+      "abbr": "TEN",
+      "name": "Tennessee Titans",
+      "rank": 32,
+      "strength": -8.636492876063711,
+      "warnings": []
+    }
+  ]
+}

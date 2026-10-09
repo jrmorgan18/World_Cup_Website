@@ -1,0 +1,20 @@
+---
+layout: default
+title: "NFL Weekly Model Spreads"
+description: "Compare Team Strength Index projected NFL spreads with dated market snapshots and explore weekly quarterback scenarios."
+permalink: /nfl/spreads/
+section_theme: nfl
+nfl_page: true
+nfl_view: spreads
+---
+{% include nfl-header.html heading="The matchup<br><em>board.</em>" description="Projected scoring margins, market snapshots and the quarterback assumptions behind this week’s games." %}
+<article class="nfl-shell" data-nfl-view="spreads">
+  <section><div class="nfl-section-heading"><div><p class="de-kicker">Week {{ site.data.nfl_dashboard.projection_week }}</p><h2>This week’s spreads</h2></div><p class="nfl-small">Ratings through Week {{ site.data.nfl_dashboard.rating_week }}.<br>Home advantage: {{ site.data.nfl_dashboard.home_advantage | round: 1 }} points; international games are neutral.</p></div>
+  <p class="nfl-notice">A model spread is a projected scoring margin. Market lines are the nflverse schedule snapshot, and can differ by book or move after retrieval. Completed games retain their saved pregame forecast.</p>
+  <div class="nfl-table-scroll" tabindex="0" aria-label="Weekly spreads; scroll horizontally for all columns"><table class="nfl-table nfl-spreads-table"><caption class="sr-only">Week {{ site.data.nfl_dashboard.projection_week }} projected NFL spreads and market snapshots</caption><thead><tr><th scope="col" class="nfl-team-cell">Game / kickoff ET</th><th scope="col">Model spread</th><th scope="col">Market</th><th scope="col">Gap to market</th><th scope="col" class="nfl-team-cell">Assumed quarterbacks</th><th scope="col">Status</th></tr></thead><tbody id="nfl-spread-rows">{% for game in site.data.nfl_dashboard.games %}{% if game.week == site.data.nfl_dashboard.projection_week %}<tr><th scope="row" class="nfl-team-cell">{{ game.away }} {% if game.neutral %}vs.{% else %}at{% endif %} {{ game.home }}<small>{{ game.date | date: "%b %-d" }} · {{ game.time_et }} ET</small></th><td>{% if game.forecast_home_margin > 0 %}{{ game.home }}{% else %}{{ game.away }}{% endif %} −{{ game.forecast_home_margin | abs | round: 1 }}</td><td>{% if game.market_home_margin > 0 %}{{ game.home }}{% else %}{{ game.away }}{% endif %} −{{ game.market_home_margin | abs }}</td><td>{{ game.forecast_home_margin | minus: game.market_home_margin | round: 1 }} home pts</td><td class="nfl-team-cell">{{ game.away_qb }} / {{ game.home_qb }}</td><td>{{ game.status }}</td></tr>{% endif %}{% endfor %}</tbody></table></div>
+  <p class="nfl-small nfl-table-note">Gap = model home margin minus market home margin. A positive gap favors the home team relative to the market. Weather, rest and non-QB injuries are currently outside the model.</p>
+  <p class="nfl-small" id="nfl-market-time"></p></section>
+  {% include nfl-qb-scenarios.html %}
+  <noscript><p class="nfl-notice">Default spreads are shown above. Enable JavaScript to test quarterback changes.</p></noscript>
+</article>
+{% include nfl-data.html %}

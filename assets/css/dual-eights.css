@@ -3133,3 +3133,8 @@ details[open] > summary .gc-toggle::after { transform:rotate(0); }
   .barca-results-list li { grid-template-columns:26px minmax(0,1fr) auto; }
   .barca-result-xg { grid-column:2 / -1; }
 }
+
+/* NFL league desk */
+.nav-link--nfl::after { background: #e7bd71; }
+.nfl-desk-bridge { max-width:1320px; margin:24px auto; padding:0 32px; color:var(--color-text-muted); }
+.nfl-desk-bridge a { color:var(--color-accent); }
