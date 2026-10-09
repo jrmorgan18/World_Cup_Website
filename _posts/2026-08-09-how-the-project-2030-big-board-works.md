@@ -28,9 +28,9 @@ The Current Score is built from three pieces:
 
 The goal is not to create a fake sense of precision. A 61.2 is not inherently a different caliber of player than a 60.8. The score is a transparent way to combine the evidence and make the order of the board easier to interrogate.
 
-## A two-season window, not a one-season overreaction
+## Recent evidence with older context
 
-Soccer seasons are noisy. Players get hurt, change clubs, lose a manager's trust, or run unusually hot or cold for a few months. To keep one difficult stretch from wiping out a player's established level, the model uses the current season most heavily and includes the prior season at half weight.
+Soccer seasons are noisy. Players get hurt, change clubs, lose a manager's trust, or run unusually hot or cold for a few months. To keep one difficult stretch from wiping out a player's established level, the model gives the most weight to the recent twelve-month club window and includes the preceding window at half weight. Some source observations cover a separately dated season rather than the entire rolling window; those remain identified with their actual period.
 
 ## What the 2030 Score adds
 
@@ -46,11 +46,19 @@ The projection adjustments are deliberately modest. A player does not become a s
 
 ## What the board does not do
 
-The Big Board does not include a separate injury/readiness penalty. If a player is injured, the ranking treats him as healthy; the effects of the absence should already show up through playing time and performance when enough games have passed. It also does not make a new transfer instantly change a score. The club and league label can update right away, but the score waits for actual evidence in the new environment.
+The Big Board does not include a separate injury/readiness penalty. Verified injury absences can be removed from eligible club opportunities, so a documented absence is not automatically treated as a lost selection battle. That changes the availability denominator, not the player's recorded minutes or production. It also does not make a new transfer instantly change a score. The club and league label can update right away, but the score waits for actual evidence in the new environment; older performance remains tied to the club and competition where it happened.
 
 The data is also not perfectly complete. Some players have deeper defensive or advanced data than others, especially outside the largest leagues. The model identifies those gaps in its internal audit and uses cautious fallbacks rather than inventing precision. Players without enough usable evidence remain on the pool but may appear without a score until the record is sufficient.
 
 ## A living board
+
+### What changed in the October 9, 2026 update
+
+The October release adds available club evidence through October 5 and senior international matches through October 6. Friendlies enter the international history at a quarter of the major-competition minute weight. Older or incomplete source observations remain in use where comparable new data is unavailable, so the release date does not mean every player's underlying statistics share that date.
+
+For MLS players with fewer than 900 league minutes **or** at most five starts in the previous season, the new-season role sample begins at their first league start. Both played minutes and eligible opportunities use that same starting point. Cavan Sullivan has a separate May 1, 2026 cutoff for his club sample. These adjustments measure the role a player earned after breaking through rather than counting earlier weeks as opportunities he failed to take.
+
+The update also checks position and availability, keeps reserve-team evidence separate from first-team league evidence, and avoids treating different position-specific baskets as a comparable form trend. Non-overlapping production samples are combined once per rating period before applying the existing volume cap and older-period decay. The 65% club-performance, 15% club-role and 20% international weights remain unchanged.
 
 The point of publishing the methodology is accountability. Readers should be able to disagree with a ranking, understand the evidence behind it, and see what would need to change for a player to move. The board will update as club seasons develop, USMNT matches add new evidence, and better data becomes available.
 
