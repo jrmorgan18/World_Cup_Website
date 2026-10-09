@@ -139,15 +139,16 @@ scorecard_groups:
 editorial:
   state:
     summary: >-
-      The Ravens are 3-1 after a 24-18 win over Tennessee, but the health questions grew
-      as Lamar Jackson, Marlon Humphrey, Durham Smythe and Andrew Vorhees all left injured.
+      The Ravens are 3-1 after a 24-18 win over Tennessee, with Atlanta next.
       Jackson threw for 222 yards and two touchdowns before halftime, Flowers finished
       with 118 receiving yards, and Tyler Loop hit a stadium-record 64-yard field goal.
       The defense improved, forcing two turnovers and making another goal-line stop.
-      The next test is Atlanta, with Jackson's ankle and the reshuffled offensive line
-      at the center of the week's availability watch.
+      Jackson, Hendrickson, Humphrey and new center Cam Jurgens missed Thursday's
+      practice, while Flowers, John Simpson and Vorhees were limited. Stanley returned
+      to full participation. Smythe is on injured reserve for the season, and final
+      Week 5 game designations are pending.
     biggest_strength: "The Ravens remain top-three in offensive EPA/play, success rate and explosive-play rate through four games."
-    biggest_concern: "Jackson's ankle, three centers on IR and fresh injuries to Humphrey, Smythe and Vorhees make health the immediate Week 5 concern."
+    biggest_concern: "Jackson, Hendrickson, Humphrey and Jurgens remain out of practice. Flowers, Simpson and Vorhees are limited, while Smythe and three centers remain on IR."
     changed_this_week: "A second straight win moved the Ravens to 3-1; the defense improved, Ioane handled his first start at center, and Loop made a 64-yarder."
 
   metric_assessments:
@@ -191,8 +192,8 @@ editorial:
     - { name: "Quarterback", assessment: "Elite", trend: "stable", season_grade: "A", last_game_grade: "A+", explanation: "Jackson completed 15 of 20 for 222 yards and two touchdowns before his ankle injury. He was outstanding through the opening half, building a 24-7 lead before Huntley took over. His latest cumulative ESPN QBR and qualified league rank appear alongside the grade.", link: "/ravens/first-and-five-titans-week-four-2026/" }
     - { name: "Running backs", assessment: "Solid", trend: "down", season_grade: "B+", last_game_grade: "C+", explanation: "Henry gained 73 yards on 23 carries with one touchdown. The workload helped protect the lead, but 3.2 yards per carry was a quieter rushing day than the passing offense's early explosion." }
     - { name: "Wide receivers", assessment: "Strength", trend: "stable", season_grade: "A-", last_game_grade: "A", explanation: "Flowers finished with eight catches for 118 yards and a touchdown. His 52-yard reception supplied the vertical punch, while Bateman also delivered useful intermediate gains." }
-    - { name: "Tight ends", assessment: "Solid", trend: "up", season_grade: "B", last_game_grade: "B+", explanation: "Andrews caught the three-yard touchdown that capped a 98-yard drive, and Hibner added a chunk gain. Smythe's Achilles injury threatens the group's blocking depth heading into Atlanta." }
-    - { name: "Offensive line", assessment: "Mixed", trend: "up", season_grade: "C+", last_game_grade: "C", explanation: "Ioane stabilized center in his first start there. Official NGS reporting credited Simmons with just one pressure on 32 rushes, none in nine matchups with Ioane. Stanley returned, but Vorhees left with a foot injury. Filmstudy's October 7 report supplies the Tennessee grades and delayed Dallas scoring used in the aggregate letter grades below.", link: "/ravens/first-and-five-titans-week-four-2026/" }
+    - { name: "Tight ends", assessment: "Solid", trend: "up", season_grade: "B", last_game_grade: "B+", explanation: "Andrews caught the three-yard touchdown that capped a 98-yard drive, and Hibner added a chunk gain. Smythe is now on injured reserve for the season with a torn Achilles; Vannett joined the active roster to help replace his blocking role." }
+    - { name: "Offensive line", assessment: "Mixed", trend: "up", season_grade: "C+", last_game_grade: "C", explanation: "Ioane stabilized center in his first start there. Official NGS reporting credited Simmons with just one pressure on 32 rushes, none in nine matchups with Ioane. Stanley practiced fully Thursday; Vorhees and Simpson were limited, and Jurgens remains in concussion protocol. Filmstudy's October 7 report supplies the Tennessee grades and delayed Dallas scoring used in the aggregate letter grades below.", link: "/ravens/first-and-five-titans-week-four-2026/" }
     - { name: "Defensive line", assessment: "Strength", trend: "up", season_grade: "B+", last_game_grade: "B-", explanation: "Madubuike's fourth-and-goal stop was massive, but the interior did not consistently close down the run game or prevent Tennessee's late push. The goal-line win did not make this a complete defensive-line performance." }
     - { name: "Edge rushers", assessment: "Solid", trend: "down", season_grade: "B", last_game_grade: "C+", explanation: "Burke's first career sack and Mike Green's rush that helped force the early interception were real positives. Without Hendrickson, however, the rush did not generate enough sustained disruption or finish enough opportunities." }
     - { name: "Linebackers", assessment: "Solid", trend: "up", season_grade: "B", last_game_grade: "B-", explanation: "Simpson's opening-drive interception supplied one of two takeaways, but the unit did not consistently clean up plays in space as Tennessee mounted its late push." }
@@ -203,11 +204,11 @@ editorial:
     - { direction: "up", title: "The defense answered", text: "Two takeaways, a fourth-and-goal stop and 18 points allowed moved both core defensive efficiency measures to 11th." }
     - { direction: "up", title: "Ioane steadied center", text: "The rookie handled his first start at center while Simmons generated no pressures in their nine matchups." }
     - { direction: "up", title: "Loop's range", text: "A 64-yard field goal set the M&T Bank Stadium record, although a later miss from 40 left a finishing opportunity unused." }
-    - { direction: "down", title: "Four more injury exits", text: "Jackson, Humphrey, Smythe and Vorhees all left the Titans game. Week 5 practice reports will determine the replacement plan." }
+    - { direction: "down", title: "Week 5 availability", text: "Jackson, Hendrickson, Humphrey and Jurgens missed Thursday practice. Flowers, Simpson and Vorhees were limited; Stanley practiced fully. Smythe is on season-ending IR, and final Atlanta game designations are pending." }
 
   championship_check:
     - { category: "Quarterback play", status: "Ready", explanation: "Jackson remains fourth in qualified Total QBR. The concern is his ankle, not the quality of his first-half play against Tennessee." }
-    - { category: "Pass protection", status: "Trending Right", explanation: "Ioane passed a difficult first test at center, but Vorhees' foot adds another continuity question with three centers already on IR." }
+    - { category: "Pass protection", status: "Trending Right", explanation: "Ioane passed a difficult first test at center and Stanley practiced fully Thursday. Vorhees and Simpson were limited, while Jurgens remains in concussion protocol with three other centers on IR." }
     - { category: "Explosive offense", status: "Ready", explanation: "The Ravens remain second in explosive-play rate, with Flowers' 52-yard reception the latest example." }
     - { category: "Four-man pass rush", status: "Unclear", explanation: "Only one sack against Tennessee keeps finishing pressure on the agenda, particularly while Hendrickson recovers." }
     - { category: "Health", status: "Concern", explanation: "Jackson, Hendrickson, Humphrey and Jurgens missed Thursday practice; Flowers, Simpson and Vorhees were limited. Smythe is on IR for the season. Final Week 5 game designations are pending." }
@@ -252,8 +253,8 @@ matchup_focus:
       text: "The Ravens' offense is third in EPA/play, but Atlanta's defense is eighth in the available results. Maintaining the passing ceiling will depend on Jackson's availability and the protection plan."
       source_url: "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     - title: "Protect the middle of the line"
-      text: "Ioane held up at center against Tennessee, but Vorhees' foot injury leaves another interior position under review. Atlanta is the next test of a line that keeps changing personnel."
-      source_url: "https://www.baltimoreravens.com/news/vega-ioane-first-start-center-ravens-titans-rookie"
+      text: "Ioane is preparing for another start at center while Jurgens remains in concussion protocol. Vorhees and Simpson were limited Thursday, but Stanley returned to full participation. Final Atlanta game designations are pending."
+      source_url: "https://www.baltimoreravens.com/team/injury-report/"
     - title: "Finish the routine defensive plays"
       text: "Atlanta's offense ranks 32nd in EPA/play through its three completed games. That comparison is provisional until the Falcons' remaining Week 4 game is included; the Ravens' defensive EPA rank improved to 11th."
       source_url: "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
