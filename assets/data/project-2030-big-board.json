@@ -424,19 +424,6 @@
     },
     {
       "rank": 33,
-      "name": "Noahkai Banks",
-      "profile": "noahkai-banks",
-      "position": "CB",
-      "group": "Dual-Nats",
-      "current_score": 42.5,
-      "score_2030": 58.9,
-      "age_2030": 23,
-      "club": "FC Augsburg",
-      "league": "Bundesliga",
-      "data_status": "provisional_observed_advanced"
-    },
-    {
-      "rank": 34,
       "name": "Yunus Musah",
       "profile": "yunus-musah",
       "position": "CM",
@@ -449,7 +436,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 35,
+      "rank": 34,
       "name": "Justin Che",
       "profile": "justin-che",
       "position": "FB",
@@ -462,7 +449,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 36,
+      "rank": 35,
       "name": "Francis Westfield",
       "profile": "francis-westfield",
       "position": "FB",
@@ -475,7 +462,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 37,
+      "rank": 36,
       "name": "Cade Cowell",
       "profile": "cade-cowell",
       "position": "W",
@@ -488,7 +475,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 38,
+      "rank": 37,
       "name": "Adri Mehmeti",
       "profile": "adri-mehmeti",
       "position": "DM",
@@ -501,7 +488,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 39,
+      "rank": 38,
       "name": "Patrick Agyemang",
       "profile": "patrick-agyemang",
       "position": "ST",
@@ -514,7 +501,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 40,
+      "rank": 39,
       "name": "George Campbell",
       "profile": "george-campbell",
       "position": "CB",
@@ -527,7 +514,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 41,
+      "rank": 40,
       "name": "Peyton Miller",
       "profile": "peyton-miller",
       "position": "W",
@@ -540,7 +527,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 42,
+      "rank": 41,
       "name": "Justin Ellis",
       "profile": "justin-ellis",
       "position": "ST",
@@ -553,7 +540,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 43,
+      "rank": 42,
       "name": "Tanner Tessmann",
       "profile": "tanner-tessmann",
       "position": "DM",
@@ -566,7 +553,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 44,
+      "rank": 43,
       "name": "Jack McGlynn",
       "profile": "jack-mcglynn",
       "position": "CM",
@@ -579,7 +566,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 45,
+      "rank": 44,
       "name": "John Tolkin",
       "profile": "john-tolkin",
       "position": "FB",
@@ -592,7 +579,7 @@
       "data_status": "provisional_manual_partial"
     },
     {
-      "rank": 46,
+      "rank": 45,
       "name": "Diego Luna",
       "profile": "diego-luna",
       "position": "AM",
@@ -605,7 +592,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 47,
+      "rank": 46,
       "name": "Gianluca Busio",
       "profile": "gianluca-busio",
       "position": "CM",
@@ -618,7 +605,7 @@
       "data_status": "provisional_manual_observed"
     },
     {
-      "rank": 48,
+      "rank": 47,
       "name": "Rokas Pukstas",
       "profile": "rokas-pukstas",
       "position": "CM",
@@ -631,7 +618,7 @@
       "data_status": "provisional_defensive_only"
     },
     {
-      "rank": 49,
+      "rank": 48,
       "name": "Cameron Carter-Vickers",
       "profile": "cameron-carter-vickers",
       "position": "CB",
@@ -644,7 +631,7 @@
       "data_status": "provisional_defensive_only"
     },
     {
-      "rank": 50,
+      "rank": 49,
       "name": "Patrick Schulte",
       "profile": "patrick-schulte",
       "position": "GK",
@@ -657,7 +644,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 51,
+      "rank": 50,
       "name": "Julian Hall",
       "profile": "julian-hall",
       "position": "ST",
@@ -670,7 +657,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 52,
+      "rank": 51,
       "name": "Niko Tsakiris",
       "profile": "niko-tsakiris",
       "position": "AM",
@@ -683,7 +670,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 53,
+      "rank": 52,
       "name": "Josh Sargent",
       "profile": "josh-sargent",
       "position": "ST",
@@ -696,7 +683,7 @@
       "data_status": "provisional_manual_partial"
     },
     {
-      "rank": 54,
+      "rank": 53,
       "name": "Luca de la Torre",
       "profile": "luca-de-la-torre",
       "position": "CM",
@@ -709,7 +696,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 55,
+      "rank": 54,
       "name": "Paxten Aaronson",
       "profile": "paxten-aaronson",
       "position": "AM",
@@ -722,7 +709,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 56,
+      "rank": 55,
       "name": "Beau Leroux",
       "profile": "beau-leroux",
       "position": "CM",
@@ -735,7 +722,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 57,
+      "rank": 56,
       "name": "James Sands",
       "profile": "james-sands",
       "position": "DM",
@@ -748,7 +735,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 58,
+      "rank": 57,
       "name": "Brooklyn Raines",
       "profile": "brooklyn-raines",
       "position": "DM",
@@ -761,7 +748,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 59,
+      "rank": 58,
       "name": "Montrell Culbreath",
       "profile": "montrell-culbreath",
       "position": "W",
@@ -774,7 +761,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 60,
+      "rank": 59,
       "name": "Damion Downs",
       "profile": "damion-downs",
       "position": "ST",
@@ -787,7 +774,7 @@
       "data_status": "provisional_manual_partial"
     },
     {
-      "rank": 61,
+      "rank": 60,
       "name": "Cole Campbell",
       "profile": "cole-campbell",
       "position": "W",
@@ -800,7 +787,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 62,
+      "rank": 61,
       "name": "Zavier Gozo",
       "profile": "zavier-gozo",
       "position": "W",
@@ -813,7 +800,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 63,
+      "rank": 62,
       "name": "Caleb Wiley",
       "profile": "caleb-wiley",
       "position": "FB",
@@ -826,7 +813,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 64,
+      "rank": 63,
       "name": "Duran Ferree",
       "profile": "duran-ferree",
       "position": "GK",
@@ -839,7 +826,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 65,
+      "rank": 64,
       "name": "Kevin Paredes",
       "profile": "kevin-paredes",
       "position": "FB",
@@ -852,7 +839,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 66,
+      "rank": 65,
       "name": "Benjamin Cremaschi",
       "profile": "benjamin-cremaschi",
       "position": "CM",
@@ -865,7 +852,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 67,
+      "rank": 66,
       "name": "Mathis Albert",
       "profile": "mathis-albert",
       "position": "W",
@@ -878,7 +865,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 68,
+      "rank": 67,
       "name": "Michael Bresser",
       "profile": "michael-bresser",
       "position": "CB",
@@ -891,7 +878,7 @@
       "data_status": "provisional_defensive_only"
     },
     {
-      "rank": 69,
+      "rank": 68,
       "name": "Jackson Hopkins",
       "profile": "jackson-hopkins",
       "position": "CM",
@@ -904,7 +891,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 70,
+      "rank": 69,
       "name": "Diego Kochen",
       "profile": "diego-kochen",
       "position": "GK",
@@ -917,7 +904,7 @@
       "data_status": "prior_heavy_missing_advanced"
     },
     {
-      "rank": 71,
+      "rank": 70,
       "name": "Cooper Sanchez",
       "profile": "cooper-sanchez",
       "position": "CM",
@@ -930,7 +917,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 72,
+      "rank": 71,
       "name": "Roman Celentano",
       "profile": "roman-celentano",
       "position": "GK",
@@ -943,7 +930,7 @@
       "data_status": "provisional_observed_advanced"
     },
     {
-      "rank": 73,
+      "rank": 72,
       "name": "Gabriel Slonina",
       "profile": "gabriel-slonina",
       "position": "GK",
@@ -956,7 +943,7 @@
       "data_status": "prior_heavy_missing_advanced"
     },
     {
-      "rank": 74,
+      "rank": 73,
       "name": "Leonard “Leo” Prescott",
       "profile": "leonard-prescott",
       "position": "GK",
