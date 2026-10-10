@@ -25,7 +25,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts' / 'strength_beta_lab'))
 from fetch_strength_beta_inputs import fetch, COLUMNS
 from fetch_refinement_inputs import EXTRAS
-from refine_strength_beta import (RefinedBuilder, Experiment, model_payload, correct_venues, metrics)
+from refine_strength_beta import (RefinedBuilder, Experiment, model_payload, correct_venues, metrics, skill_for)
 from update_ravens_dashboard import compute_league_metrics
 
 BASE = 'https://github.com/nflverse/nflverse-data/releases/download/'
@@ -129,6 +129,25 @@ def number(value):
     return float(value) if pd.notna(value) and np.isfinite(float(value)) else None
 
 
+def actual_starter_adjustment(game, assumed, snapshot, features, coefficients):
+    """Replace assumed QB skill with actual starter skill, using the pregame cutoff only."""
+    adjustment = 0.
+    changed = False
+    for side, sign in [('home', 1.), ('away', -1.)]:
+        actual_id = getattr(game, side+'_qb_id', None)
+        assumed_id = assumed.get(getattr(game, side+'_team'), {}).get('id')
+        if not assumed_id or pd.isna(actual_id) or not actual_id or actual_id == assumed_id:
+            continue
+        changed = True
+        actual = skill_for(snapshot['skills'], actual_id, snapshot['priors'])
+        original = skill_for(snapshot['skills'], assumed_id, snapshot['priors'])
+        for metric in ['epa', 'cpoe', 'rush']:
+            feature = 'qb_'+metric+'_delta'
+            if feature in features:
+                adjustment += sign*(actual.get(metric, 0.)-original.get(metric, 0.))*coefficients[features.index(feature)]
+    return float(adjustment), changed
+
+
 def build(cache, season, requested, audit=False):
     config = json.loads((ROOT/'scripts/nfl_model_config.json').read_text())
     seed = json.loads((ROOT/'scripts/nfl_model_seed.json').read_text())
@@ -188,18 +207,25 @@ def build(cache, season, requested, audit=False):
         replay=historical_rows.get(g.game_id)
         prediction=forecast['home_margin'] if forecast else float(np.array(replay.features)@replay_coef) if replay else None
         kind='saved' if forecast else 'retrospective' if replay else 'unavailable'
-        assumed=details.get(int(g.week)-1,{}).get('starters',{})
+        snapshot=details.get(forecast['rating_week'] if forecast else int(g.week)-1,{})
+        assumed=dict(snapshot.get('starters',{}))
+        if forecast:
+            assumed[g.home_team]={'id':forecast['home_qb_id'],'name':forecast['home_qb']}
+            assumed[g.away_team]={'id':forecast['away_qb_id'],'name':forecast['away_qb']}
+        adjustment,changed=actual_starter_adjustment(g,assumed,snapshot,exp.features,coef) if final and snapshot and prediction is not None else (0.,False)
         games_out.append({'game_id':g.game_id,'week':int(g.week),'date':str(g.gameday),'time_et':str(g.gametime),
             'kickoff_utc':kickoff_utc(g).isoformat(),'home':g.home_team,'away':g.away_team,'neutral':g.location=='Neutral',
             'stadium':str(g.stadium),'status':'Final' if final else 'Upcoming',
             'home_score':int(g.home_score) if final else None,'away_score':int(g.away_score) if final else None,
             'actual_home_margin':int(g.home_score-g.away_score) if final else None,
             'forecast_home_margin':prediction,'forecast_kind':kind,
+            'display_home_margin':prediction+adjustment if prediction is not None else None,
+            'lineup_adjustment':adjustment,'lineup_changed':changed,
             'forecast_generated_at':forecast['generated_at'] if forecast else generated_at,
             'forecast_rating_week':forecast['rating_week'] if forecast else int(g.week)-1,
             'home_qb':forecast['home_qb'] if forecast else assumed.get(g.home_team,{}).get('name'),
             'away_qb':forecast['away_qb'] if forecast else assumed.get(g.away_team,{}).get('name'),
-            'home_qb_id':forecast['home_qb_id'] if forecast else None,'away_qb_id':forecast['away_qb_id'] if forecast else None,
+            'home_qb_id':assumed.get(g.home_team,{}).get('id'),'away_qb_id':assumed.get(g.away_team,{}).get('id'),
             'market_home_margin':number(g.spread_line),'market_kind':'Closing line' if final else 'Market snapshot',
             'market_retrieved_at':next(s['fetched_at'] for s in json.loads((cache/'manifest.json').read_text()) if s['file']=='games.csv'),
             'actual_home_qb':str(g.home_qb_name) if final and pd.notna(g.home_qb_name) else None,

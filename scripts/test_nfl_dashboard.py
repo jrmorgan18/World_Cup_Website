@@ -2,7 +2,7 @@
 import unittest
 from copy import deepcopy
 import pandas as pd
-from update_nfl_dashboard import add_forecasts, completed_cutoff, archived_before_game
+from update_nfl_dashboard import add_forecasts, completed_cutoff, archived_before_game, actual_starter_adjustment
 
 
 class NFLDashboardTests(unittest.TestCase):
@@ -38,6 +38,20 @@ class NFLDashboardTests(unittest.TestCase):
         self.assertEqual(before,frozen);self.assertEqual(after[0],frozen[0]);self.assertEqual(len(after),2)
         repeated=add_forecasts(after,games,teams,1.5,4,'2026-10-07T13:00:00+00:00')
         self.assertEqual(repeated,after)
+
+    def test_actual_starter_replacement_uses_cutoff_skills_and_home_away_signs(self):
+        from types import SimpleNamespace
+        game=SimpleNamespace(home_team='DAL',away_team='TB',home_qb_id='dak',away_qb_id='backup')
+        snapshot={'skills':pd.DataFrame.from_dict({'dak':{'epa':.2,'cpoe':0.,'rush':0.},
+            'baker':{'epa':.3,'cpoe':0.,'rush':0.},'backup':{'epa':-.1,'cpoe':0.,'rush':0.}},orient='index'),'priors':{}}
+        assumed={'DAL':{'id':'dak'},'TB':{'id':'baker'}}
+        adjustment,changed=actual_starter_adjustment(game,assumed,snapshot,['qb_epa_delta'],[10.])
+        self.assertTrue(changed);self.assertAlmostEqual(adjustment,4.)
+        game.home_qb_id='backup';game.away_qb_id='baker'
+        adjustment,changed=actual_starter_adjustment(game,assumed,snapshot,['qb_epa_delta'],[10.])
+        self.assertTrue(changed);self.assertAlmostEqual(adjustment,-3.)
+        game.home_qb_id='dak'
+        self.assertEqual(actual_starter_adjustment(game,assumed,snapshot,['qb_epa_delta'],[10.]),(0.,False))
 
     def test_eastern_kickoff_is_compared_in_utc(self):
         game=next(self.schedule().itertuples())

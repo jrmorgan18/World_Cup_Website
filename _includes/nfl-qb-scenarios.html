@@ -1,8 +1,11 @@
-<section class="nfl-panel nfl-scenarios" id="team-detail" aria-labelledby="nfl-scenario-heading">
-  <div class="nfl-section-heading"><div><p class="de-kicker">Explore a lineup</p><h2 id="nfl-scenario-heading">Quarterback scenarios</h2></div><button type="button" id="nfl-reset" class="nfl-button nfl-button-secondary">Reset scenarios</button></div>
+<dialog class="nfl-scenarios" id="team-detail" aria-labelledby="nfl-scenario-heading">
+  <div class="nfl-panel">
+  <div class="nfl-section-heading"><div><p class="de-kicker">Explore a lineup</p><h2 id="nfl-scenario-heading">Quarterback scenarios</h2></div><button type="button" id="nfl-close-scenarios" class="nfl-button nfl-button-secondary" aria-label="Close quarterback scenarios">Close</button></div>
+  <button type="button" id="nfl-reset" class="nfl-button nfl-button-secondary">Reset scenarios</button>
   <p class="nfl-small">Try a different QB for this week. Weekly choices adjust upcoming spreads. Apply a choice to the rankings when exploring a longer absence.</p>
   <div class="nfl-controls"><div><label for="nfl-team-select">Team</label><select id="nfl-team-select">{% assign alphabetical = site.data.nfl_dashboard.teams | sort: 'name' %}{% for team in alphabetical %}<option value="{{ team.abbr }}">{{ team.name }}</option>{% endfor %}</select></div><div><label for="nfl-qb-select">Quarterback</label><select id="nfl-qb-select"></select></div></div>
   <div class="nfl-checks"><label><input type="checkbox" id="nfl-backup"> Use the first backup this week</label><label><input type="checkbox" id="nfl-apply-ranks"> Apply this QB choice to rankings</label></div>
   <div id="nfl-team-detail" aria-live="polite"></div>
   <p class="nfl-small nfl-data-note">Depth chart: <time datetime="{{ site.data.nfl_dashboard.depth_chart_as_of }}">{{ site.data.nfl_dashboard.depth_chart_as_of | date: "%B %-d, %Y · %-I:%M %p UTC" }}</time>. Depth order is a lineup assumption; current-week injury context appears when available.</p>
-</section>
+  </div>
+</dialog>

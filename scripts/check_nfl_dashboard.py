@@ -24,6 +24,9 @@ def validate(data):
         if g['forecast_kind']=='saved':
             assert datetime.fromisoformat(g['forecast_generated_at'])<datetime.fromisoformat(g['kickoff_utc'])
             assert g['forecast_rating_week']<g['week']
+        if 'display_home_margin' in g and g['forecast_home_margin'] is not None:
+            assert abs(g['display_home_margin']-g['forecast_home_margin']-g['lineup_adjustment'])<1e-7
+            if g['status']!='Final':assert not g['lineup_changed'] and g['lineup_adjustment']==0
         if g['status']=='Final':assert g['actual_home_margin']==g['home_score']-g['away_score']
     public=json.dumps(data)
     assert '0.3-beta' not in public and 'beta 0.3' not in public.lower()

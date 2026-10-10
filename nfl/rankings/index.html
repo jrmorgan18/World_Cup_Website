@@ -7,7 +7,7 @@ section_theme: nfl
 nfl_page: true
 nfl_view: rankings
 ---
-{% include nfl-header.html heading="All 32.<br><em>Two perspectives.</em>" description="Sort projected team strength alongside this season’s Efficiency Index, then explore the contributions behind each rating." %}
+{% include nfl-header.html heading="NFL <em>rankings.</em>" %}
 <article class="nfl-shell" data-nfl-view="rankings">
   <section aria-labelledby="nfl-rankings-heading"><div class="nfl-section-heading"><div><p class="de-kicker">The full league</p><h2 id="nfl-rankings-heading">Team rankings</h2></div><a id="nfl-download" href="{{ '/assets/data/nfl-rankings.csv' | relative_url }}" download class="nfl-text-link">Download default rankings CSV ↓</a></div>
   <div class="nfl-controls"><div class="nfl-search-control"><label for="nfl-search">Find a team</label><input type="search" id="nfl-search" placeholder="Team name or abbreviation"></div><div><label for="nfl-sort">Sort by</label><select id="nfl-sort"><option value="rank">TSI rank</option><option value="efficiency">Efficiency Index</option><option value="strength">TSI points</option><option value="weekly_rank_change">Weekly movement</option><option value="offense_points">Offense</option><option value="defense_points">Defense</option><option value="st_points">Special teams</option><option value="name">Team name</option></select></div></div>

@@ -24,8 +24,14 @@ states this. They are not asserted to have been publicly published then.
 The initial archive preserves the October 6 research forecast for Thursday’s
 Tampa Bay–Dallas game, which finished before this hub was built. The forecast
 assumed Mayfield; the record retains that assumption. Actual starters and
-scores are separately sourced from the schedule. User QB scenarios never
-rewrite results or archives.
+scores are separately sourced from the schedule. Completed games show a
+separate `display_home_margin` adjusted to actual starters using the QB skill
+snapshot at `forecast_rating_week`. `forecast_home_margin` and the saved
+archive retain the original forecast. Adjustment labels and original margins
+remain visible, so a retrospective lineup correction is never presented as a
+saved pregame prediction. The displayed game error uses the adjusted margin;
+internal summary metrics retain the original forecast basis. User QB scenarios
+never rewrite results or archives.
 
 `nfl_continuity_audit.json` records a whole-league experiment removing
 coach/QB carry reductions while retaining frozen coefficients. Default
