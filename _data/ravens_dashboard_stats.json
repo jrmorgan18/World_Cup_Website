@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-09T17:26:35Z",
-  "as_of": "2026-10-09",
+  "generated_at": "2026-10-10T16:14:01Z",
+  "as_of": "2026-10-10",
   "season": 2026,
   "benchmark_season": 2025,
   "current_snapshot": "2026-week-04",
@@ -397,7 +397,7 @@
     }
   },
   "league_efficiency_rankings": {
-    "label": "Games through October 9",
+    "label": "Games through October 10",
     "sample_note": "Completed regular-season games; early-season sample",
     "teams": [
       {
@@ -1123,6 +1123,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-10-09T17:26:35Z"
+    "retrieved_at": "2026-10-10T16:14:01Z"
   }
 }
