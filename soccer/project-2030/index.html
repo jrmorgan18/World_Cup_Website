@@ -90,6 +90,23 @@ description: A four-year scouting report tracking the USMNT player pool, checkpo
   </section>
 </section>
 
+{% if board_update_story %}
+<section class="project-latest" aria-labelledby="project-board-update-heading">
+  <div class="de-section-heading de-section-heading--light">
+    <div><p class="de-kicker">Latest Big Board update</p><h2 id="project-board-update-heading">The next wave takes shape</h2></div>
+    <p>The biggest October risers and fallers, plus a roster selector for the complete player pool.</p>
+  </div>
+  <a class="project-story-card project-story-card--visual" href="{{ board_update_story.url | relative_url }}">
+    <figure><img src="{{ board_update_story.hero_image | relative_url }}" alt="{{ board_update_story.hero_alt | escape }}" loading="lazy"></figure>
+    <div>
+      <span>Project 2030 / Big Board</span><h3>{{ board_update_story.title }}</h3>
+      <p>{{ board_update_story.excerpt }}</p>
+      <strong>Read the update <span aria-hidden="true">&rarr;</span></strong>
+    </div>
+  </a>
+</section>
+{% endif %}
+
 {% if usmnt_camp_story %}
 <section class="project-latest" aria-labelledby="project-camp-heading">
   <div class="de-section-heading de-section-heading--light">
@@ -110,22 +127,7 @@ description: A four-year scouting report tracking the USMNT player pool, checkpo
 </section>
 {% endif %}
 
-{% if board_update_story %}
-<section class="project-latest" aria-labelledby="project-board-update-heading">
-  <div class="de-section-heading de-section-heading--light">
-    <div><p class="de-kicker">Latest Big Board update</p><h2 id="project-board-update-heading">The next wave takes shape</h2></div>
-    <p>The biggest October risers and fallers, plus a roster selector for the complete player pool.</p>
-  </div>
-  <a class="project-story-card project-story-card--visual" href="{{ board_update_story.url | relative_url }}">
-    <figure><img src="{{ board_update_story.hero_image | relative_url }}" alt="{{ board_update_story.hero_alt | escape }}" loading="lazy"></figure>
-    <div>
-      <span>Project 2030 / Big Board</span><h3>{{ board_update_story.title }}</h3>
-      <p>{{ board_update_story.excerpt }}</p>
-      <strong>Read the update <span aria-hidden="true">&rarr;</span></strong>
-    </div>
-  </a>
-</section>
-{% endif %}
+
 
 {% if usmnt_weekly_story %}
 <section class="project-latest" aria-labelledby="project-weekly-heading">
