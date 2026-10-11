@@ -127,6 +127,8 @@
     })
     .then(function (data) {
       players = data.players || [];
+      var poolSize = document.querySelector("[data-board-pool-size]");
+      if (poolSize) poolSize.textContent = players.length + "-player pool";
       addOptions(positionFilter, populatedValues("position"));
       addOptions(leagueFilter, populatedValues("league"));
       addOptions(groupFilter, populatedValues("group"));
