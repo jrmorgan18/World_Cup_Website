@@ -61,7 +61,7 @@ We've seen him create from the right wing, drift into central attacking position
 
 There is still reason for restraint. MLS is not the Premier League, Sullivan remains physically immature and a few months of exceptional performances don't establish him as an international star.
 
-But, I would be surprised if Sullivan is not on the move to Europe as early as this January. While he can’t join Manchester City until he is 18 (if they aren’t relegated), an earlier move to a club in Spain, France or Germany would depend on meeting FIFA’s rules for international transfers of minors and receiving the required approval.
+But, I would be surprised if Sullivan is not on the move to Europe as early as this January. While he can’t join Manchester City until he is 18 (if they aren’t relegated), he is free to join a team on loan in Spain, France or Germany to continue his progression.
 
 For me, that makes him the most exciting story in the American player pool right now.
 
@@ -169,4 +169,4 @@ The updated [roster selector](https://jrmorgan18.github.io/USMNT_Roster_Site/) i
 
 [Explore the full Big Board]({{ '/soccer/project-2030/big-board/' | relative_url }}) or [open the roster selector](https://jrmorgan18.github.io/USMNT_Roster_Site/).
 
-*Comparison note: changes in this article use the previously published July board as their baseline. The initial October ranking preceded Banks’ removal; the live board now contains 73 scored players and three unscored players. Scores are unchanged by that pool correction or the subsequent club-label corrections. [Sullivan’s age](https://www.philadelphiaunion.com/players/cavan-sullivan/) is current at publication; any move before 18 is subject to [FIFA’s rules for transfers of minors](https://ipt.fifa.com/legal/news/new-edition-guide-submitting-minor-application).*
+*Comparison note: changes in this article use the previously published July board as their baseline. The initial October ranking preceded Banks’ removal; the live board now contains 73 scored players and three unscored players. Scores are unchanged by that pool correction or the subsequent club-label corrections. [Sullivan’s age](https://www.philadelphiaunion.com/players/cavan-sullivan/) is current at publication.*
