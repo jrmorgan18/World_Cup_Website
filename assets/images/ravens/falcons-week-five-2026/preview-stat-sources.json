@@ -1,0 +1,563 @@
+{
+  "season": 2026,
+  "through_week": 4,
+  "matchup_week": 5,
+  "tables": {
+    "offensive": {
+      "url": "https://sumersports.com/teams/offensive/",
+      "updated": "2026-10-09 10:35 AM EST",
+      "teams": [
+        {
+          "team": "San Francisco 49ers",
+          "epa_rank": 1,
+          "epa": 0.25,
+          "success": 53.07,
+          "pass_epa": 0.51,
+          "rush_epa": -0.01
+        },
+        {
+          "team": "Jacksonville Jaguars",
+          "epa_rank": 2,
+          "epa": 0.14,
+          "success": 49.33,
+          "pass_epa": 0.26,
+          "rush_epa": 0.03
+        },
+        {
+          "team": "Buffalo Bills",
+          "epa_rank": 3,
+          "epa": 0.14,
+          "success": 46.64,
+          "pass_epa": 0.18,
+          "rush_epa": 0.08
+        },
+        {
+          "team": "Baltimore Ravens",
+          "epa_rank": 4,
+          "epa": 0.13,
+          "success": 51.46,
+          "pass_epa": 0.28,
+          "rush_epa": 0.01
+        },
+        {
+          "team": "Detroit Lions",
+          "epa_rank": 5,
+          "epa": 0.12,
+          "success": 50.94,
+          "pass_epa": 0.24,
+          "rush_epa": -0.08
+        },
+        {
+          "team": "Kansas City Chiefs",
+          "epa_rank": 6,
+          "epa": 0.12,
+          "success": 47.22,
+          "pass_epa": 0.16,
+          "rush_epa": 0.08
+        },
+        {
+          "team": "Dallas Cowboys",
+          "epa_rank": 7,
+          "epa": 0.09,
+          "success": 47.54,
+          "pass_epa": 0.16,
+          "rush_epa": -0.03
+        },
+        {
+          "team": "Carolina Panthers",
+          "epa_rank": 8,
+          "epa": 0.07,
+          "success": 44.78,
+          "pass_epa": 0.17,
+          "rush_epa": -0.11
+        },
+        {
+          "team": "Chicago Bears",
+          "epa_rank": 9,
+          "epa": 0.05,
+          "success": 46.64,
+          "pass_epa": 0.14,
+          "rush_epa": -0.02
+        },
+        {
+          "team": "Cincinnati Bengals",
+          "epa_rank": 10,
+          "epa": 0.02,
+          "success": 44.18,
+          "pass_epa": 0.11,
+          "rush_epa": -0.14
+        },
+        {
+          "team": "Las Vegas Raiders",
+          "epa_rank": 11,
+          "epa": -0.01,
+          "success": 41.42,
+          "pass_epa": 0.18,
+          "rush_epa": -0.24
+        },
+        {
+          "team": "New Orleans Saints",
+          "epa_rank": 12,
+          "epa": -0.01,
+          "success": 45.02,
+          "pass_epa": 0.01,
+          "rush_epa": -0.05
+        },
+        {
+          "team": "New York Jets",
+          "epa_rank": 13,
+          "epa": -0.02,
+          "success": 46.49,
+          "pass_epa": 0.13,
+          "rush_epa": -0.2
+        },
+        {
+          "team": "Los Angeles Rams",
+          "epa_rank": 14,
+          "epa": -0.02,
+          "success": 48.19,
+          "pass_epa": 0.0,
+          "rush_epa": -0.05
+        },
+        {
+          "team": "Houston Texans",
+          "epa_rank": 15,
+          "epa": -0.03,
+          "success": 41.73,
+          "pass_epa": 0.01,
+          "rush_epa": -0.1
+        },
+        {
+          "team": "Seattle Seahawks",
+          "epa_rank": 16,
+          "epa": -0.03,
+          "success": 44.73,
+          "pass_epa": 0.12,
+          "rush_epa": -0.2
+        },
+        {
+          "team": "Atlanta Falcons",
+          "epa_rank": 17,
+          "epa": -0.06,
+          "success": 48.78,
+          "pass_epa": -0.24,
+          "rush_epa": 0.08
+        },
+        {
+          "team": "Cleveland Browns",
+          "epa_rank": 18,
+          "epa": -0.07,
+          "success": 40.61,
+          "pass_epa": 0.03,
+          "rush_epa": -0.19
+        },
+        {
+          "team": "Arizona Cardinals",
+          "epa_rank": 19,
+          "epa": -0.07,
+          "success": 44.32,
+          "pass_epa": -0.1,
+          "rush_epa": -0.03
+        },
+        {
+          "team": "Denver Broncos",
+          "epa_rank": 20,
+          "epa": -0.08,
+          "success": 39.57,
+          "pass_epa": -0.08,
+          "rush_epa": -0.1
+        },
+        {
+          "team": "New York Giants",
+          "epa_rank": 21,
+          "epa": -0.09,
+          "success": 39.67,
+          "pass_epa": 0.0,
+          "rush_epa": -0.18
+        },
+        {
+          "team": "New England Patriots",
+          "epa_rank": 22,
+          "epa": -0.09,
+          "success": 43.48,
+          "pass_epa": -0.16,
+          "rush_epa": -0.02
+        },
+        {
+          "team": "Indianapolis Colts",
+          "epa_rank": 23,
+          "epa": -0.09,
+          "success": 41.11,
+          "pass_epa": -0.26,
+          "rush_epa": 0.11
+        },
+        {
+          "team": "Washington Commanders",
+          "epa_rank": 24,
+          "epa": -0.1,
+          "success": 39.62,
+          "pass_epa": -0.08,
+          "rush_epa": -0.12
+        },
+        {
+          "team": "Tampa Bay Buccaneers",
+          "epa_rank": 25,
+          "epa": -0.13,
+          "success": 40.13,
+          "pass_epa": -0.23,
+          "rush_epa": 0.0
+        },
+        {
+          "team": "Green Bay Packers",
+          "epa_rank": 26,
+          "epa": -0.13,
+          "success": 39.57,
+          "pass_epa": -0.02,
+          "rush_epa": -0.38
+        },
+        {
+          "team": "Tennessee Titans",
+          "epa_rank": 27,
+          "epa": -0.14,
+          "success": 40.93,
+          "pass_epa": -0.21,
+          "rush_epa": -0.03
+        },
+        {
+          "team": "Minnesota Vikings",
+          "epa_rank": 28,
+          "epa": -0.15,
+          "success": 35.98,
+          "pass_epa": -0.16,
+          "rush_epa": -0.14
+        },
+        {
+          "team": "Pittsburgh Steelers",
+          "epa_rank": 29,
+          "epa": -0.16,
+          "success": 38.98,
+          "pass_epa": -0.2,
+          "rush_epa": -0.1
+        },
+        {
+          "team": "Philadelphia Eagles",
+          "epa_rank": 30,
+          "epa": -0.17,
+          "success": 38.26,
+          "pass_epa": -0.23,
+          "rush_epa": -0.08
+        },
+        {
+          "team": "Miami Dolphins",
+          "epa_rank": 31,
+          "epa": -0.17,
+          "success": 34.29,
+          "pass_epa": -0.24,
+          "rush_epa": -0.09
+        },
+        {
+          "team": "Los Angeles Chargers",
+          "epa_rank": 32,
+          "epa": -0.18,
+          "success": 40.82,
+          "pass_epa": -0.18,
+          "rush_epa": -0.17
+        }
+      ]
+    },
+    "defensive": {
+      "url": "https://sumersports.com/teams/defensive/",
+      "updated": "2026-10-09 10:35 AM EST",
+      "teams": [
+        {
+          "team": "Minnesota Vikings",
+          "epa_rank": 1,
+          "epa": -0.21,
+          "success": 33.61,
+          "pass_epa": -0.25,
+          "rush_epa": -0.16
+        },
+        {
+          "team": "Seattle Seahawks",
+          "epa_rank": 2,
+          "epa": -0.18,
+          "success": 36.44,
+          "pass_epa": -0.18,
+          "rush_epa": -0.18
+        },
+        {
+          "team": "Los Angeles Rams",
+          "epa_rank": 3,
+          "epa": -0.16,
+          "success": 40.51,
+          "pass_epa": -0.22,
+          "rush_epa": -0.09
+        },
+        {
+          "team": "Chicago Bears",
+          "epa_rank": 4,
+          "epa": -0.12,
+          "success": 43.23,
+          "pass_epa": -0.23,
+          "rush_epa": 0.03
+        },
+        {
+          "team": "Tampa Bay Buccaneers",
+          "epa_rank": 5,
+          "epa": -0.11,
+          "success": 41.7,
+          "pass_epa": -0.04,
+          "rush_epa": -0.21
+        },
+        {
+          "team": "Jacksonville Jaguars",
+          "epa_rank": 6,
+          "epa": -0.1,
+          "success": 42.68,
+          "pass_epa": -0.09,
+          "rush_epa": -0.12
+        },
+        {
+          "team": "Las Vegas Raiders",
+          "epa_rank": 7,
+          "epa": -0.1,
+          "success": 42.56,
+          "pass_epa": -0.11,
+          "rush_epa": -0.07
+        },
+        {
+          "team": "Atlanta Falcons",
+          "epa_rank": 8,
+          "epa": -0.1,
+          "success": 38.28,
+          "pass_epa": -0.02,
+          "rush_epa": -0.28
+        },
+        {
+          "team": "Kansas City Chiefs",
+          "epa_rank": 9,
+          "epa": -0.09,
+          "success": 38.82,
+          "pass_epa": -0.07,
+          "rush_epa": -0.11
+        },
+        {
+          "team": "Baltimore Ravens",
+          "epa_rank": 10,
+          "epa": -0.07,
+          "success": 41.87,
+          "pass_epa": -0.06,
+          "rush_epa": -0.08
+        },
+        {
+          "team": "Los Angeles Chargers",
+          "epa_rank": 11,
+          "epa": -0.07,
+          "success": 41.5,
+          "pass_epa": -0.01,
+          "rush_epa": -0.13
+        },
+        {
+          "team": "New England Patriots",
+          "epa_rank": 12,
+          "epa": -0.06,
+          "success": 40.61,
+          "pass_epa": -0.12,
+          "rush_epa": 0.03
+        },
+        {
+          "team": "Pittsburgh Steelers",
+          "epa_rank": 13,
+          "epa": -0.04,
+          "success": 46.93,
+          "pass_epa": -0.02,
+          "rush_epa": -0.06
+        },
+        {
+          "team": "Cincinnati Bengals",
+          "epa_rank": 14,
+          "epa": -0.04,
+          "success": 44.03,
+          "pass_epa": 0.0,
+          "rush_epa": -0.12
+        },
+        {
+          "team": "New York Jets",
+          "epa_rank": 15,
+          "epa": -0.04,
+          "success": 48.02,
+          "pass_epa": 0.03,
+          "rush_epa": -0.12
+        },
+        {
+          "team": "New York Giants",
+          "epa_rank": 16,
+          "epa": -0.03,
+          "success": 45.69,
+          "pass_epa": -0.02,
+          "rush_epa": -0.05
+        },
+        {
+          "team": "Green Bay Packers",
+          "epa_rank": 17,
+          "epa": -0.02,
+          "success": 45.38,
+          "pass_epa": 0.0,
+          "rush_epa": -0.04
+        },
+        {
+          "team": "San Francisco 49ers",
+          "epa_rank": 18,
+          "epa": -0.02,
+          "success": 43.63,
+          "pass_epa": 0.02,
+          "rush_epa": -0.07
+        },
+        {
+          "team": "Cleveland Browns",
+          "epa_rank": 19,
+          "epa": -0.02,
+          "success": 43.75,
+          "pass_epa": -0.02,
+          "rush_epa": -0.02
+        },
+        {
+          "team": "Washington Commanders",
+          "epa_rank": 20,
+          "epa": -0.02,
+          "success": 46.41,
+          "pass_epa": 0.0,
+          "rush_epa": -0.05
+        },
+        {
+          "team": "Carolina Panthers",
+          "epa_rank": 21,
+          "epa": -0.01,
+          "success": 43.28,
+          "pass_epa": -0.01,
+          "rush_epa": 0.0
+        },
+        {
+          "team": "Denver Broncos",
+          "epa_rank": 22,
+          "epa": 0.0,
+          "success": 44.98,
+          "pass_epa": -0.05,
+          "rush_epa": 0.06
+        },
+        {
+          "team": "Philadelphia Eagles",
+          "epa_rank": 23,
+          "epa": 0.01,
+          "success": 46.97,
+          "pass_epa": 0.03,
+          "rush_epa": -0.02
+        },
+        {
+          "team": "Houston Texans",
+          "epa_rank": 24,
+          "epa": 0.02,
+          "success": 38.43,
+          "pass_epa": 0.09,
+          "rush_epa": -0.1
+        },
+        {
+          "team": "Indianapolis Colts",
+          "epa_rank": 25,
+          "epa": 0.02,
+          "success": 45.67,
+          "pass_epa": 0.02,
+          "rush_epa": 0.02
+        },
+        {
+          "team": "Tennessee Titans",
+          "epa_rank": 26,
+          "epa": 0.02,
+          "success": 43.31,
+          "pass_epa": 0.17,
+          "rush_epa": -0.11
+        },
+        {
+          "team": "Arizona Cardinals",
+          "epa_rank": 27,
+          "epa": 0.04,
+          "success": 42.36,
+          "pass_epa": 0.29,
+          "rush_epa": -0.23
+        },
+        {
+          "team": "Miami Dolphins",
+          "epa_rank": 28,
+          "epa": 0.04,
+          "success": 45.99,
+          "pass_epa": 0.3,
+          "rush_epa": -0.2
+        },
+        {
+          "team": "Buffalo Bills",
+          "epa_rank": 29,
+          "epa": 0.07,
+          "success": 48.16,
+          "pass_epa": 0.11,
+          "rush_epa": 0.02
+        },
+        {
+          "team": "New Orleans Saints",
+          "epa_rank": 30,
+          "epa": 0.14,
+          "success": 52.02,
+          "pass_epa": 0.17,
+          "rush_epa": 0.1
+        },
+        {
+          "team": "Detroit Lions",
+          "epa_rank": 31,
+          "epa": 0.15,
+          "success": 47.92,
+          "pass_epa": 0.23,
+          "rush_epa": 0.02
+        },
+        {
+          "team": "Dallas Cowboys",
+          "epa_rank": 32,
+          "epa": 0.16,
+          "success": 50.65,
+          "pass_epa": 0.36,
+          "rush_epa": -0.02
+        }
+      ]
+    }
+  },
+  "rank_method": "EPA/play: published ordering. Other metrics: minimum rank from displayed rounded values; ties share rank. Higher is better on offense; lower opponent production is better on defense.",
+  "sources": {
+    "situational": "https://www.sharpfootballanalysis.com/fantasy/ravens-falcons-week-5-fantasy-football-preview-nfl-worksheet-rich-hribar-2026/",
+    "official_matchup": "https://www.baltimoreravens.com/game-day/2026/reg-week5/ravens-at-falcons/media"
+  },
+  "reported": {
+    "BAL": {
+      "record": "3\u20131",
+      "points_per_game": 29.0,
+      "yards_per_play": 6.6,
+      "third_long_converted": 2,
+      "third_long_attempts": 17
+    },
+    "ATL": {
+      "record": "2\u20132",
+      "points_per_game": 24.0,
+      "yards_per_play": 5.9,
+      "rush_yards_allowed": 193,
+      "rush_ypc_allowed": 2.72,
+      "pressure_rate": 46.3,
+      "three_and_out_rate": 29.5,
+      "bijan_rush_yards": 494,
+      "bijan_rush_attempts": 85
+    },
+    "Huntley_Week4": {
+      "completions": 8,
+      "attempts": 9,
+      "yards": 63,
+      "offensive_possessions": 5,
+      "points": 0
+    }
+  }
+}
