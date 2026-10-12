@@ -33,3 +33,5 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 @media(max-width:760px){.nfl-scenario-launcher{right:16px;bottom:max(16px,env(safe-area-inset-bottom))}.nfl-shell{padding-bottom:90px}.nfl-scenarios .nfl-panel{padding:20px}.nfl-scenarios h2{font-size:1.5rem}.nfl-scenarios .nfl-section-heading{gap:12px}}
+
+.nfl-interim-note{padding-top:0;padding-bottom:0}.nfl-interim-note .nfl-notice{margin-bottom:0}

@@ -15,6 +15,10 @@ def validate(data):
         assert abs(t['strength']-sum(t[k] for k in ['offense_points','defense_points','st_points','qb_points']))<1e-7
         assert 1<=t['efficiency_rank']<=32
         assert any(q['id']==t['expected_qb']['id'] for q in t['qb_options'])
+    if 'rating_week_complete' in data:
+        assert data['rating_week_completed_games']<=data['rating_week_scheduled_games']
+        assert data['rating_week_complete']==(data['rating_week_completed_games']==data['rating_week_scheduled_games'])
+        assert len(data['rating_pending_games'])==data['rating_week_scheduled_games']-data['rating_week_completed_games']
     games=data['games']
     assert len({g['game_id'] for g in games})==len(games)
     assert sum(g['status']=='Final' and g['week']<=data['rating_week'] for g in games)==data['rating_games']

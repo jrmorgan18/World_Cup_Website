@@ -55,3 +55,8 @@ python -m unittest discover -s scripts/strength_beta_lab -p test_refinement.py -
 bundle exec jekyll build --destination _site-validation
 python scripts/check_site.py _site-validation
 ```
+
+Manual interim updates: pass `--ratings-week 5 --allow-partial-week` to include
+only final games from Week 5. All earlier weeks must be complete. Coverage
+is checked against PBP, pending matchups are exposed on the UI, and the
+scheduled default still requires a fully completed week.

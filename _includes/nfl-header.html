@@ -4,7 +4,7 @@
     <div><p class="de-eyebrow"><span></span> The NFL desk <span class="nfl-beta">Beta</span></p>
       <h1>{{ include.heading | default: 'NFL <em>rankings.</em>' }}</h1>
     </div>
-    <div class="nfl-cutoff"><span>{{ nfl.season }} season</span><strong>Through Week {{ nfl.rating_week }}</strong><small>Ratings data through {{ nfl.data_through | date: "%B %-d" }}<br>Refreshed {{ nfl.generated_at | date: "%B %-d, %Y" }}</small></div>
+    <div class="nfl-cutoff"><span>{{ nfl.season }} season</span><strong>Through Week {{ nfl.rating_week }}{% if nfl.rating_week_complete == false %} · partial{% endif %}</strong><small>Ratings data through {{ nfl.data_through | date: "%B %-d" }}<br>Refreshed {{ nfl.generated_at | date: "%B %-d, %Y" }}</small></div>
   </div>
 </header>
 <nav class="nfl-tabs" aria-label="NFL pages">
@@ -18,4 +18,7 @@
 </nav>
 {% if page.nfl_view == 'overview' or page.nfl_view == 'rankings' or page.nfl_view == 'spreads' %}
 <button type="button" class="nfl-button nfl-scenario-launcher" id="nfl-open-scenarios" aria-haspopup="dialog" aria-controls="team-detail">QB scenarios</button>
+{% endif %}
+{% if nfl.rating_week_complete == false %}
+<div class="nfl-shell nfl-interim-note"><p class="nfl-notice">Interim Week {{ nfl.rating_week }} update: {{ nfl.rating_week_completed_games }} of {{ nfl.rating_week_scheduled_games }} games completed. {% for game in nfl.rating_pending_games %}{{ game.away }} at {{ game.home }} is pending and excluded.{% endfor %} Week {{ nfl.projection_week }} spreads are early projections.</p></div>
 {% endif %}

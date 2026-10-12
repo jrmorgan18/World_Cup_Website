@@ -81,13 +81,18 @@ def refresh_inputs(cache, season):
     atomic_json(cache/'manifest.json',core); atomic_json(extra/'manifest.json',supplement)
 
 
-def completed_cutoff(schedule, season, requested=None):
+def completed_cutoff(schedule, season, requested=None, allow_partial=False):
     regular = schedule[(schedule.season==season)&(schedule.game_type=='REG')]
     if requested is None:
         complete = [int(w) for w,g in regular.groupby('week') if g.home_score.notna().all() and g.away_score.notna().all()]
         if not complete: raise ValueError('No fully completed regular-season week')
         requested = max(complete)
     through = regular[regular.week<=requested]
+    if allow_partial:
+        earlier=through[through.week<requested]
+        if earlier.home_score.isna().any() or earlier.away_score.isna().any():
+            raise ValueError('Partial cutoff requires all earlier weeks to be complete')
+        through=through[through.home_score.notna()&through.away_score.notna()]
     if through.empty or through.home_score.isna().any() or through.away_score.isna().any():
         raise ValueError('Rating cutoff contains missing or unfinished games')
     if set(through.week.astype(int)) != set(range(1,requested+1)):
@@ -106,7 +111,7 @@ def archived_before_game(archive, game):
     return stamp < kickoff_utc(game) and archive['rating_week'] < int(game.week)
 
 
-def add_forecasts(archive, upcoming, teams, home_advantage, rating_week, generated_at):
+def add_forecasts(archive, upcoming, teams, home_advantage, rating_week, generated_at, cutoff_context=None):
     preserved = list(archive)
     existing = {f['game_id']:f for f in sorted(archive,key=lambda f:f['generated_at'])}
     now = datetime.fromisoformat(generated_at)
@@ -121,7 +126,7 @@ def add_forecasts(archive, upcoming, teams, home_advantage, rating_week, generat
             'home_margin':margin,
             'home_qb':h['expected_qb']['name'],'away_qb':a['expected_qb']['name'],
             'home_qb_id':h['expected_qb']['id'],'away_qb_id':a['expected_qb']['id'],
-            'provenance':'Saved research forecast','published_before_kickoff':False})
+            'provenance':'Saved research forecast','published_before_kickoff':False,**(cutoff_context or {})})
     return preserved
 
 
@@ -148,11 +153,16 @@ def actual_starter_adjustment(game, assumed, snapshot, features, coefficients):
     return float(adjustment), changed
 
 
-def build(cache, season, requested, audit=False):
+def build(cache, season, requested, audit=False, allow_partial=False):
     config = json.loads((ROOT/'scripts/nfl_model_config.json').read_text())
     seed = json.loads((ROOT/'scripts/nfl_model_seed.json').read_text())
     schedule = pd.read_csv(cache/'games.csv')
-    cutoff, completed = completed_cutoff(schedule,season,requested)
+    cutoff, completed = completed_cutoff(schedule,season,requested,allow_partial)
+    pbp_coverage=pd.read_parquet(cache/f'pbp-{season}.parquet',columns=['game_id'])
+    missing=set(completed.game_id)-set(pbp_coverage.game_id)
+    if missing:raise ValueError('Missing play-by-play for completed games: '+', '.join(sorted(missing)))
+    rating_schedule=schedule[(schedule.season==season)&(schedule.game_type=='REG')&(schedule.week==cutoff)]
+    pending=rating_schedule[rating_schedule.home_score.isna()|rating_schedule.away_score.isna()]
     builder = RefinedBuilder(cache,season,cutoff)
     parameters = {k:v for k,v in config['experiment'].items() if k in Experiment.__dataclass_fields__}
     exp = Experiment(**parameters)
@@ -191,7 +201,7 @@ def build(cache, season, requested, audit=False):
     archive_path=ROOT/'_data/nfl_forecast_archive.json'
     archive=json.loads(archive_path.read_text()).get('forecasts',[]) if archive_path.exists() else []
     by_team={t['abbr']:t for t in teams}
-    archive=add_forecasts(archive,upcoming,by_team,model['home_advantage'],cutoff,generated_at)
+    archive=add_forecasts(archive,upcoming,by_team,model['home_advantage'],cutoff,generated_at,{'rating_week_complete':pending.empty,'rating_games':len(completed)})
     saved={f['game_id']:f for f in sorted(archive,key=lambda f:f['generated_at']) if f['season']==season}
     historical_rows={r.game_id:r for r in rows.itertuples() if r.season==season}
     replay_coef=coef.copy()
@@ -244,6 +254,9 @@ def build(cache, season, requested, audit=False):
     sources=json.loads((cache/'manifest.json').read_text())+builder.extra_sources
     payload={'season':season,'rating_week':cutoff,'projection_week':current_week,'rating_games':len(completed),
         'generated_at':generated_at,'data_through':str(completed.gameday.max()),
+        'rating_week_complete':pending.empty,'rating_week_completed_games':int((completed.week==cutoff).sum()),
+        'rating_week_scheduled_games':len(rating_schedule),
+        'rating_pending_games':[{'away':g.away_team,'home':g.home_team,'date':str(g.gameday),'time_et':str(g.gametime)} for g in pending.itertuples()],
         'depth_chart_as_of':str(builder.depth_all.dt.max()),'home_advantage':model['home_advantage'],
         'teams':teams,'games':games_out,'results_summary':{'saved':summary('saved'),'retrospective':summary('retrospective')},
         'sources':[{'file':s['file'],'url':s.get('url'),'retrieved_at':s.get('fetched_at'),'last_modified':s.get('http_last_modified')} for s in sources if s['file'] in [f'pbp-{season}.parquet','games.csv','depth_charts.parquet','injuries.parquet']],
@@ -276,11 +289,13 @@ def main():
     parser.add_argument('--ratings-week',type=int)
     parser.add_argument('--cache-dir',type=Path,default=Path(os.environ.get('NFL_CACHE_DIR',str(ROOT/'.nfl-cache'))))
     parser.add_argument('--no-refresh',action='store_true')
+    parser.add_argument('--allow-partial-week',action='store_true',help='Manual interim update using only completed games in the requested week')
     parser.add_argument('--audit-continuity',action='store_true')
     args=parser.parse_args()
+    if args.allow_partial_week and args.ratings_week is None:raise ValueError('Partial updates require an explicit ratings week')
     if args.season!=2026:raise ValueError('The public beta results page currently supports 2026 only')
     if not args.no_refresh:refresh_inputs(args.cache_dir,args.season)
-    build(args.cache_dir,args.season,args.ratings_week,args.audit_continuity)
+    build(args.cache_dir,args.season,args.ratings_week,args.audit_continuity,args.allow_partial_week)
 
 
 if __name__=='__main__':main()

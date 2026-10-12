@@ -22,6 +22,14 @@ class NFLDashboardTests(unittest.TestCase):
         self.assertEqual(cutoff,1);self.assertEqual(len(selected),2)
         with self.assertRaises(ValueError):completed_cutoff(games,2026,2)
 
+    def test_manual_partial_week_uses_only_final_games(self):
+        games=pd.DataFrame({'season':[2026]*4,'game_type':['REG']*4,'week':[1,1,2,2],
+            'home_score':[10.,20.,12.,None],'away_score':[3.,15.,6.,None]})
+        cutoff,selected=completed_cutoff(games,2026,2,allow_partial=True)
+        self.assertEqual(cutoff,2);self.assertEqual(len(selected),3)
+        games.loc[0,'home_score']=None
+        with self.assertRaises(ValueError):completed_cutoff(games,2026,2,allow_partial=True)
+
     def test_forecasts_are_preserved_and_post_kickoff_updates_are_blocked(self):
         games=self.schedule();teams=self.teams()
         before=add_forecasts([],games,teams,1.5,4,'2026-10-06T12:00:00+00:00')
