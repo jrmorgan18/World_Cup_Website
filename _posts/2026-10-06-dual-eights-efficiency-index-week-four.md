@@ -19,9 +19,9 @@ hero_credit: "Kam Nedd / Jacksonville Jaguars"
 hero_credit_url: "https://www.jaguars.com/news/game-report-2026-week-4-jaguars-22-bengals-17"
 home_feature: false
 home_recent: true
-home_recent_lead: true
+home_recent_lead: false
 home_recent_label: "Week 4 efficiency"
-ravens_feature: true
+ravens_feature: false
 ravens_feature_image: true
 feature_label: "Week 4 efficiency"
 ravens_feature_mark: "32"

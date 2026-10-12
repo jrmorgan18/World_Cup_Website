@@ -37,7 +37,9 @@ Parameters:
 {% assign trend_available = false %}
 {% assign trend_direction = "stable" %}
 {% assign trend_quality = "stable" %}
-{% if include.previous and current_metric.value != nil %}
+{% assign comparable_model = true %}
+{% if metric_id == "overall_efficiency" and include.current.model_version != include.previous.model_version %}{% assign comparable_model = false %}{% endif %}
+{% if include.previous and current_metric.value != nil and comparable_model %}
   {% assign previous_metric = include.previous.metrics[metric_id] %}
   {% if previous_metric.value != nil %}
     {% assign trend_available = true %}
@@ -71,6 +73,8 @@ Parameters:
     <span aria-hidden="true">{% if trend_direction == "up" %}↑{% elsif trend_direction == "down" %}↓{% else %}→{% endif %}</span>
     {{ trend_quality | capitalize }} from {{ include.previous.label }}
   </p>
+  {% elsif current_metric.value != nil and comparable_model == false %}
+  <p class="{{ prefix }}-trend {{ prefix }}-trend--new">New model scale; no like-for-like change</p>
   {% elsif current_metric.value != nil %}
   <p class="{{ prefix }}-trend {{ prefix }}-trend--new">No previous snapshot</p>
   {% else %}

@@ -55,7 +55,7 @@ section_theme: ravens
         {% endfor %}
       </ol>
       {% if efficiency_rankings.article_url %}
-      <a href="{{ efficiency_rankings.article_url | relative_url }}"><span>Read the rankings &amp; method</span><span aria-hidden="true">&rarr;</span></a>
+      <a href="{{ efficiency_rankings.article_url | relative_url }}"><span>{{ efficiency_rankings.article_link_label | default: "Read the rankings &amp; method" }}</span><span aria-hidden="true">&rarr;</span></a>
       {% else %}
       <a href="{{ '/ravens/dashboard/' | relative_url }}#scorecard"><span>Explore the Ravens model</span><span aria-hidden="true">&rarr;</span></a>
       {% endif %}

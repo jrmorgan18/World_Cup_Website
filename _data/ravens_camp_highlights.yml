@@ -1,67 +1,35 @@
-date: 2026-10-08
-edition: "October 8, 2026"
+date: 2026-10-10
+edition: "October 10, 2026"
 kicker: "Week 5 · Atlanta"
 heading: "Ravens Daily"
-intro: "Thursday's practice brought another day without Lamar Jackson, some key offensive-line progress, and injury questions on both sides ahead of Sunday night in Atlanta."
+intro: "Saturday's final updates added offensive-line depth for the Ravens and clarified Atlanta's availability ahead of Sunday night."
 highlights:
-  - title: "Lamar Jackson missed practice for a second straight day, increasing the possibility that Tyler Huntley starts Sunday night in Atlanta."
+  - title: "Atlanta ruled out leading pass rusher Za'Darius Smith on Saturday, giving Tyler Huntley and the Ravens' battered offensive line a welcome break."
     text: >-
-      Jackson continues recovering from the ankle sprain suffered against Tennessee, and the Ravens have not given a definitive timetable for his return. Jesse Minter has left open the possibility of Jackson playing without practicing, but Friday's injury designation is the next important checkpoint.
+      Smith, who leads the Falcons with 2.5 sacks, was downgraded from questionable because of a concussion/neck injury. With fellow edge defender Samson Ebukam also questionable, Atlanta elevated Bralen Trice and Drake Jackson from its practice squad.
     sources:
-      - "ESPN · Jamison Hensley"
+      - "Falcons Wire"
+      - "AtlantaFalcons.com"
+    source_links:
+      - label: "Falcons Wire · Saturday update"
+        url: "https://sports.yahoo.com/articles/falcons-rule-key-edge-rusher-205032974.html"
+      - label: "Falcons transactions"
+        url: "https://www.atlantafalcons.com/team/transactions/2026"
+  - title: "The Ravens elevated offensive linemen Chuma Edoga and Kyle Hergel for Sunday night's game, reinforcing a unit still dealing with considerable injury uncertainty."
+    text: >-
+      Starting guard Andrew Vorhees remains questionable with a foot injury, while newly acquired center Cam Jurgens is unavailable. Edoga brings 25 career starts and experience at tackle and guard, while Hergel provides interior depth behind Vega Ioane, John Simpson and potentially Emery Jones Jr.
+    sources:
       - "BaltimoreRavens.com"
     source_links:
-      - label: "Thursday practice report"
-        url: "https://www.baltimoreravens.com/news/lamar-jackson-injury-report-ravens-falcons-zay-flowers-ronnie-stanley-trey-hendrickson"
-  - title: "Declan Doyle is preparing separate offensive plans for Jackson and Huntley."
+      - label: "Ravens · Edoga and Hergel elevated"
+        url: "https://www.baltimoreravens.com/news/ravens-practice-squad-elevations-kyle-hergel-chuma-edoga-falcons"
+      - label: "Ravens injury report"
+        url: "https://www.baltimoreravens.com/team/injury-report/"
+  - title: "Atlanta placed linebacker Yasir Abdullah on injured reserve, further reducing its defensive depth ahead of Sunday's matchup."
     text: >-
-      Doyle said the staff is accounting for their different strengths and Jackson's possible physical limitations, while emphasizing that the Ravens will still pursue explosive plays whichever quarterback starts. After the offense went scoreless with Huntley in the second half against Tennessee, a full week to prepare should make a meaningful difference.
+      Abdullah had already been ruled out with a hamstring injury, but Saturday's transaction confirms an absence of at least four games. The Falcons signed defensive back Jammie Robinson to the active roster in the corresponding move, giving them additional secondary and special-teams depth.
     sources:
-      - "BaltimoreRavens.com"
-      - "Ravens Thursday press conference"
+      - "AtlantaFalcons.com"
     source_links:
-      - label: "Thursday press conference transcript"
-        url: "https://www.baltimoreravens.com/news/transcript-press-conferences-10-8-26"
-  - title: "Ronnie Stanley returned as a full participant, while Andrew Vorhees progressed from out to limited."
-    text: >-
-      Vorhees injured his foot against Tennessee, while Stanley is managing toe and ankle issues. Newly acquired center Cam Jurgens remained sidelined in concussion protocol and was not expected to debut until Week 6, leaving Vega Ioane in line for another start at center against Atlanta. John Simpson remained limited with a groin issue.
-    sources:
-      - "Ravens official injury report"
-      - "BaltimoreRavens.com"
-    source_links:
-      - label: "Ravens Thursday injury report"
-        url: "https://www.baltimoreravens.com/news/lamar-jackson-injury-report-ravens-falcons-zay-flowers-ronnie-stanley-trey-hendrickson"
-  - title: "Trey Hendrickson and Marlon Humphrey remained out of practice, putting two important defensive starters in doubt for Sunday."
-    text: >-
-      Hendrickson had yet to practice since undergoing a procedure on his broken finger, while Humphrey continued recovering from hamstring and calf injuries. The Ravens generated pressure without Hendrickson against Tennessee, but potentially missing both players against Michael Penix Jr. and Drake London would put more responsibility on Mike Green and the healthy corners.
-    sources:
-      - "Ravens official injury report"
-      - "ESPN · Jamison Hensley"
-    source_links:
-      - label: "Ravens Thursday practice report"
-        url: "https://www.baltimoreravens.com/news/lamar-jackson-injury-report-ravens-falcons-zay-flowers-ronnie-stanley-trey-hendrickson"
-  - title: "Zay Flowers remained limited with a foot injury as several other offensive contributors made progress."
-    text: >-
-      Rashod Bateman, Kyle Hamilton and Chris Moore were full participants Thursday, while left guard John Simpson remained limited with a groin issue. Flowers' status is especially important if Huntley starts, given his ability to create separation and turn shorter completions into explosive gains.
-    sources:
-      - "Ravens official injury report"
-    source_links:
-      - label: "Ravens Thursday injury report"
-        url: "https://www.baltimoreravens.com/news/lamar-jackson-injury-report-ravens-falcons-zay-flowers-ronnie-stanley-trey-hendrickson"
-  - title: "Anthony Weaver may use more traditional linebacker-heavy packages against Atlanta's rushing attack."
-    text: >-
-      Weaver discussed three-linebacker looks against the Falcons' heavier personnel, with Trenton Simpson and Teddye Buchanan offering options alongside Roquan Smith. He also stressed setting firm edges and maintaining backside discipline against Atlanta's outside-zone concepts, which have challenged the Ravens' run defense.
-    sources:
-      - "Ravens Thursday press conference"
-    source_links:
-      - label: "Weaver's Thursday comments"
-        url: "https://www.baltimoreravens.com/news/transcript-press-conferences-10-8-26"
-  - title: "Atlanta's injury outlook improved at left tackle, but the pass rush remained shorthanded."
-    text: >-
-      Jake Matthews returned to limited practice Thursday after suffering a groin injury Monday night, while former Raven Za'Darius Smith missed another session while in concussion protocol. Matthews' availability would help protect Penix against the Ravens' pressure packages; Smith's possible absence could ease the task for an offensive line still adjusting to its fourth starting combination.
-    sources:
-      - "Atlanta Falcons injury report"
-      - "NBC Sports"
-    source_links:
-      - label: "Falcons Thursday injury report"
-        url: "https://www.atlantafalcons.com/news/falcons-injury-report-ilb-divine-deablo-de-samson-ebukam-added-to-report"
+      - label: "Falcons · Abdullah placed on IR"
+        url: "https://www.atlantafalcons.com/news/falcons-place-yasir-abdullah-on-ir-sign-jammie-robinson"

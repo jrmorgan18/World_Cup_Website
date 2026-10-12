@@ -30,10 +30,17 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 import pandas as pd
+import efficiency_model as efficiency
+import special_teams
+from efficiency_dashboard import (
+    SOURCE as EFFICIENCY_SOURCE, apply_model, calibration,
+    preserve_published_history, sidebar_payload,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUTPUT = ROOT / "_data" / "ravens_dashboard_stats.json"
+EFFICIENCY_OUTPUT = ROOT / "_data" / "dual_eights_efficiency.json"
 TEAM = "BAL"
 SCHEDULE_URL = "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv"
 PBP_URL = "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_{season}.parquet"
@@ -228,6 +235,7 @@ PBP_COLUMNS = [
     "aborted_play",
     "sack",
 ]
+PBP_COLUMNS = list(dict.fromkeys(PBP_COLUMNS + efficiency.EXTRA_COLUMNS + special_teams.EXTRA_COLUMNS))
 
 TEAM_NAMES = {
     "ARI": "Arizona Cardinals", "ATL": "Atlanta Falcons", "BAL": "Baltimore Ravens",
@@ -683,7 +691,7 @@ def metric_payload(table, team):
         payload[metric_id] = {
             "value": finite_number(value, digits),
             "rank": rank,
-            "source": definition["source"],
+            "source": EFFICIENCY_SOURCE if metric_id == "overall_efficiency" and table.attrs.get("model_version") == efficiency.VERSION else definition["source"],
         }
     return payload
 
@@ -719,6 +727,16 @@ def efficiency_rankings_payload(season, as_of, records, table):
             "record": record_text(records, abbreviation),
             "value": finite_number(value, 1),
         })
+        adjusted = table.attrs.get("adjusted_units")
+        if adjusted is not None:
+            units = {
+                "offense": adjusted[["offense_epa", "offense_success"]].mean(axis=1),
+                "defense": adjusted[["defense_epa", "defense_success"]].mean(axis=1),
+                "special_teams": adjusted.special_teams,
+            }
+            teams[-1]["unrounded_value"] = float(value)
+            for unit, strengths in units.items():
+                teams[-1][unit + "_rank"] = int(strengths.rank(method="min", ascending=False).loc[abbreviation])
 
     return {
         "label": f"Games through {as_of.strftime('%B')} {as_of.day}",
@@ -866,6 +884,7 @@ def build_snapshot(season, records, table):
     snapshot_id = f"{season}-week-{week:02d}" if games_played else f"{season}-preseason"
     return {
         "id": snapshot_id,
+        "model_version": table.attrs.get("model_version", "1"),
         "week": week,
         "label": f"Through Week {week}" if games_played else f"{season} preseason",
         "previous_snapshot": None,
@@ -916,8 +935,13 @@ def main():
 
         current_records, current_table = compute_league_metrics(current_games, current_pbp)
         benchmark_records, benchmark_table = compute_league_metrics(benchmark_games, benchmark_pbp)
+        anchors = calibration(args.season)
+        if benchmark_season != anchors["season"]:
+            raise ValueError("Benchmark season must match the frozen efficiency calibration season")
+        current_table = apply_model(current_table, current_pbp, current_games, eligible_scrimmage_plays, anchors)
+        benchmark_table = apply_model(benchmark_table, benchmark_pbp, benchmark_games, eligible_scrimmage_plays, anchors)
         ravens_games = current_games[(current_games["home_team"] == TEAM) | (current_games["away_team"] == TEAM)]
-        current_table.attrs["week"] = int(ravens_games["week"].max()) if not ravens_games.empty else 0
+        current_table.attrs["week"] = int(current_games["week"].max()) if not current_games.empty else 0
         benchmark_ravens = benchmark_games[(benchmark_games["home_team"] == TEAM) | (benchmark_games["away_team"] == TEAM)]
         benchmark_table.attrs["week"] = int(benchmark_ravens["week"].max()) if not benchmark_ravens.empty else 18
 
@@ -929,6 +953,7 @@ def main():
 
         output = args.output.resolve()
         existing = read_existing(output)
+        preserve_published_history(existing, read_existing(EFFICIENCY_OUTPUT))
         snapshots = merge_snapshots(existing, current)
         recent_games = recent_games_payload(current_games)
         next_game = format_next_game(schedule, args.season, args.as_of)
@@ -974,6 +999,7 @@ def main():
             "as_of": args.as_of.isoformat(),
             "season": args.season,
             "benchmark_season": benchmark_season,
+            "efficiency_model": efficiency.model_metadata(anchors),
             "current_snapshot": current["id"],
             "snapshots": snapshots,
             "benchmark_snapshot": benchmark,
@@ -1011,16 +1037,24 @@ def main():
             },
         }
 
-        if existing and comparable_payload(existing) == comparable_payload(payload):
+        board = sidebar_payload(payload["league_efficiency_rankings"], args.season, current["week"], args.as_of)
+        board_changed = output == DEFAULT_OUTPUT.resolve() and comparable_payload(read_existing(EFFICIENCY_OUTPUT)) != comparable_payload(board)
+        if existing and comparable_payload(existing) == comparable_payload(payload) and not board_changed:
             print(f"No football-data changes; keeping {output.relative_to(ROOT)} unchanged.")
             return 0
 
         output.parent.mkdir(parents=True, exist_ok=True)
         temporary = output.with_suffix(output.suffix + ".tmp")
         with temporary.open("w", encoding="utf-8") as handle:
-            json.dump(payload, handle, indent=2, ensure_ascii=False)
+            json.dump(payload, handle, indent=2, ensure_ascii=False, allow_nan=False)
             handle.write("\n")
         os.replace(temporary, output)
+        if board_changed:
+            board_temporary = EFFICIENCY_OUTPUT.with_suffix(".json.tmp")
+            with board_temporary.open("w", encoding="utf-8") as handle:
+                json.dump(board, handle, indent=2, ensure_ascii=False, allow_nan=False)
+                handle.write("\n")
+            os.replace(board_temporary, EFFICIENCY_OUTPUT)
         print(f"Updated {output.relative_to(ROOT)}: {current['label']} ({current['record']}); benchmark {benchmark_season} loaded.")
         return 0
     except Exception as error:

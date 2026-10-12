@@ -70,6 +70,12 @@ benchmark.fetch("metrics").each do |metric_id, metric|
 end
 
 league_rankings = stats.fetch("league_efficiency_rankings")
+if stats.dig("efficiency_model", "version") == "2.1"
+  sidebar = JSON.parse(File.read(File.join(ROOT, "_data", "dual_eights_efficiency.json"), encoding: "utf-8"))
+  assert(sidebar["model_version"] == "2.1", "Sidebar must use the current v2.1 model", errors)
+  assert(sidebar["teams"] == league_rankings["teams"], "Sidebar and dashboard must use identical current rankings", errors)
+  assert(sidebar["through_week"] == current_snapshot["week"], "Sidebar must use the current reporting week", errors)
+end
 ranking_teams = league_rankings.fetch("teams")
 assert(!league_rankings["label"].to_s.empty?, "League efficiency rankings need a period label", errors)
 assert(!league_rankings["sample_note"].to_s.empty?, "League efficiency rankings need a sample note", errors)

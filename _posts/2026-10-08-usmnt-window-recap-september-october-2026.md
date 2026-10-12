@@ -11,8 +11,11 @@ section_theme: project
 series: "USMNT Window Recap"
 reporting_window: "September 26–October 6, 2026"
 usmnt_window_feature: true
-home_feature: true
-home_recent: false
+home_feature: false
+home_recent: true
+home_recent_lead: true
+home_recent_label: "USMNT window recap"
+home_recent_theme: project
 feature_label: "USMNT window recap"
 source_docx: "articles/USMNT September Camp Recap.docx"
 hero_image: /assets/images/usmnt-window-2026-10/sullivan-mexico-celebration.jpg
