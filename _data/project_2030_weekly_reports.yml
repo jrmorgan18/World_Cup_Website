@@ -7,8 +7,8 @@ reports:
     week_ending: "October 11, 2026"
     source_note: "Official club, league, federation and verified match records were prioritized, followed by original local club-specific coverage in the relevant language. Club press releases republished by OurSports Central retain their official origin; secondary match logs fill only specific gaps. Julian Hall's research aliases were searched and reconciled. Recaps state verified facts and attributed local observations; development reads are scouting interpretation. Minutes use regulation time unless stoppage-time substitutions require a qualified total. This report covers the completed Monday-Sunday window and excludes October 12 fixtures."
     summary:
-      biggest_risers: "Justin Ellis supplied the USA's winner against Canada, Cavan Sullivan created both Union goals, and Julian Hall scored again for the Red Bulls. Paxten Aaronson and Frankie Westfield added assists, while Mathis Albert's first senior start, Cole Campbell's first senior cap and Luca Bombino's longer Championship opportunity were smaller positive steps."
-      issues_to_monitor: "Wiley, Pukstas, Tsakiris and Paredes missed action with documented injuries. Gozo and Ferree had no verified competitive minutes; Cremaschi was unused and Downs received only a stoppage-time cameo. Watch injury clearances, the young attackers' access to club minutes, Kochen's response after five conceded, and Brady's decision-making rather than save totals alone."
+      biggest_risers: "Justin Ellis supplied the USA's winner against Canada, Cavan Sullivan created both Union goals, and Julian Hall scored again for the Red Bulls. Paxten Aaronson and Frankie Westfield added assists, while Luca Bombino's longer Championship opportunity was another positive step."
+      issues_to_monitor: "Wiley, Pukstas, Tsakiris and Paredes missed action with documented injuries. Ferree had no verified competitive minutes; Cremaschi was unused and Downs received only a stoppage-time cameo. Watch injury clearances, the young attackers' access to club minutes, Kochen's response after five conceded, and Brady's decision-making rather than save totals alone."
       best_story: "Club football resumed after the USA's 1-0 win over Canada. The strongest evidence was specific: Ellis's finish, Sullivan's two scoring combinations, Hall's first-time goal and Aaronson's dead-ball delivery. Next week, watch whether Campbell and Albert turn international trust into club opportunities and whether Bombino's longer outing becomes a sustained role."
     players:
       - profile: caleb-wiley
@@ -37,12 +37,12 @@ reports:
       - profile: zavier-gozo
         name: "Zavier Gozo"
         club: "Crystal Palace"
-        trend: "↓"
-        direction: "falling"
-        direction_label: "Senior opportunities narrowing"
+        trend: "→"
+        direction: "steady"
+        direction_label: "Early post-break selection watch"
         context: "0 verified competitive appearances"
-        recap: "Gozo was unused against Canada and was absent from Palace's senior matchday squad in the 3-1 win over Nottingham Forest on October 11. The completed match squad corroborates that absence; no verified reserve appearance or current explanation for exclusion was located."
-        development_read: "Another week without senior minutes weakens the near-term pathway after his transfer. This is a role assessment, not evidence that his ability has declined or that he is injured."
+        recap: "Gozo was unused against Canada and was absent from Palace's senior matchday squad in the 3-1 win over Nottingham Forest on October 11. The completed match squad corroborates that absence; no verified reserve appearance or current explanation for exclusion was located after a long international break."
+        development_read: "Keep the weekly assessment even rather than reading too much into one club omission immediately after an extended international window. He still needs a first Palace opportunity, but this week alone does not materially change the near-term outlook."
         sources:
           - { label: "USA-Canada match and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-canada-match-recap-highlights-st-paul-minnesota" }
           - { label: "Palace-Forest completed squad (secondary match record)", url: "https://www.footballwebpages.co.uk/match/2026-2027/premier-league/crystal-palace/nottingham-forest/590994" }
@@ -66,7 +66,7 @@ reports:
         direction_label: "USMNT match winner"
         context: "2 appearances, 1 start, 52 regulation minutes, 1 goal"
         recap: "Ellis started against Canada, scored the 29th-minute winner from Alex Freeman's delivery, and left at halftime. He subsequently entered Orlando's 3-2 win over Columbus on October 10 at 83 minutes, with no club goal or assist."
-        development_read: "The decisive international finish strengthens his case for further senior opportunities. Orlando still used him late off the bench, so the next step is converting that international impact into a larger club role."
+        development_read: "The decisive international finish strengthens his case for further senior opportunities. His quick return for Orlando after leaving the Canada match with what initially appeared to be a potentially serious injury is an especially positive availability sign. The next step is converting that international impact into a larger club role."
         sources:
           - { label: "USA-Canada match and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-canada-match-recap-highlights-st-paul-minnesota" }
           - { label: "Orlando-Columbus substitutions (official club release, republished)", url: "https://www.oursportscentral.com/services/releases/orlando-city-earns-3-2-home-win-over-columbus-crew/n-6420460" }
@@ -157,12 +157,12 @@ reports:
       - profile: mathis-albert
         name: "Mathis Albert"
         club: "Borussia Dortmund"
-        trend: "↑"
-        direction: "rising"
-        direction_label: "First senior international start"
+        trend: "→"
+        direction: "steady"
+        direction_label: "Senior exposure, club minutes pending"
         context: "1 start, 61 minutes; no club minutes"
         recap: "Albert made his first USMNT start against Canada, playing 61 minutes on the left of the attacking line with no goal or assist. He then remained an unused substitute in Dortmund's 2-2 Bundesliga draw with Werder Bremen on October 9."
-        development_read: "The senior start at 17 is a meaningful responsibility marker. Dortmund's unused-bench role remains the limiting factor; this is a modest rise in experience and trust, not proof of a club breakthrough."
+        development_read: "The senior start at 17 is a meaningful responsibility marker, but Dortmund's unused-bench role remains the limiting factor. Treat it as useful senior exposure rather than enough evidence for a changed weekly trajectory."
         sources:
           - { label: "USA-Canada match and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-canada-match-recap-highlights-st-paul-minnesota" }
           - { label: "Dortmund-Bremen lineup (official BVB)", url: "https://www.bvb.de/de/de/aktuelles/news/news.html/2026/10/9/BVB-kassiert-Last-Minute-Ausgleich-gegen-Werder-Bremen.html" }
@@ -205,12 +205,12 @@ reports:
       - profile: peyton-miller
         name: "Peyton Miller"
         club: "New England Revolution"
-        trend: "→"
-        direction: "steady"
-        direction_label: "Threat without finishing"
+        trend: "↑"
+        direction: "rising"
+        direction_label: "High-volume attacking role"
         context: "1 start, 85 minutes, 5 shots / 4 on target"
         recap: "Miller was unused against Canada, then started in New England's front three in the 0-3 loss to Seattle on October 10. He matched his career highs with five shots and four on target, including a back-post chance saved before halftime. Griffin Yow replaced him at 85 minutes. He had no goal or assist."
-        development_read: "The winger role continues to produce genuine attacking involvement. The volume is encouraging, but failing to convert and the heavy team defeat keep the overall weekly trend even; this is not a wingback-only evaluation."
+        development_read: "The winger role continues to produce genuine attacking involvement. Five shots and four on target from an 85-minute start are enough positive evidence to move the weekly trend up despite no end product or a difficult team result; this is not a wingback-only evaluation."
         sources:
           - { label: "Revs-Seattle recap and lineup (official club)", url: "https://www.revolutionsoccer.net/news/recap-revs-begin-busy-week-3-0-loss-to-sounders" }
           - { label: "USA-Canada match and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-canada-match-recap-highlights-st-paul-minnesota" }
@@ -252,12 +252,12 @@ reports:
       - profile: cole-campbell
         name: "Cole Campbell"
         club: "SV Elversberg"
-        trend: "↑"
-        direction: "rising"
-        direction_label: "Senior debut and club threat"
+        trend: "→"
+        direction: "steady"
+        direction_label: "Senior debut, role still developing"
         context: "2 substitute appearances, 50 regulation minutes"
         recap: "Campbell made his senior USA debut against Canada at 61 minutes. He then played 21 minutes off Elversberg's bench in the 0-1 defeat at Union Berlin on October 10; the club recap describes his late long-range effort saved by Frederik Rønnow. No goal or assist was recorded. The club minutes are corroborated by the secondary match log."
-        development_read: "A first senior cap is a modest positive, and the saved effort adds an actual club attacking moment. The club role was still substitute-based, so the week advances exposure more than established first-team standing."
+        development_read: "A first senior cap and the saved effort are positive moments, but the club role was still substitute-based. Keep the weekly assessment even until that exposure turns into a more established first-team role."
         sources:
           - { label: "USA-Canada match and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-canada-match-recap-highlights-st-paul-minnesota" }
           - { label: "Union-Elversberg recap (official SVE, German)", url: "https://sv07elversberg.de/sve-verliert-nach-spaetem-gegentor-in-berlin/" }
