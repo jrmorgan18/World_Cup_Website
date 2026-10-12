@@ -1,9 +1,315 @@
 {
-  "generated_at": "2026-10-11T16:38:50Z",
-  "as_of": "2026-10-11",
+  "generated_at": "2026-10-12T19:11:52Z",
+  "as_of": "2026-10-12",
   "season": 2026,
   "benchmark_season": 2025,
-  "current_snapshot": "2026-week-04",
+  "efficiency_model": {
+    "version": "2.1",
+    "calibration": {
+      "season": 2025,
+      "phase_weights": {
+        "dropback": 0.6031531517523498,
+        "designed_run": 0.39684684824765015
+      },
+      "scales": {
+        "dropback_offense_epa": 0.11628891165276561,
+        "dropback_defense_epa": 0.098498193935693,
+        "dropback_offense_success": 0.04006840275584625,
+        "dropback_defense_success": 0.03306304410851997,
+        "designed_run_offense_epa": 0.060515179827185295,
+        "designed_run_defense_epa": 0.05383773203268272,
+        "designed_run_offense_success": 0.03264483297978287,
+        "designed_run_defense_success": 0.026638687361787282
+      },
+      "special_teams": {
+        "baseline": {
+          "lookup": {
+            "field_goal": {
+              "0:0": 2.9980404848984143,
+              "0:1": 2.9921867176752173,
+              "0:2": 2.973880491820883,
+              "0:3": 2.9321170945990422,
+              "0:4": 2.866162401121649,
+              "0:5": 2.7950474271796852,
+              "0:6": 2.7401662423313766,
+              "0:7": 2.607453112937803,
+              "0:8": 2.3501929558131853,
+              "0:9": 2.1773902470252384,
+              "0:10": 2.030551384033644,
+              "0:11": 1.8459606480209056,
+              "0:12": 1.6577897615039574,
+              "0:13": 1.4745502092044112,
+              "0:14": 1.3655285506128918,
+              "0:15": 1.3288761043705306,
+              "0:16": 1.3231346045305103,
+              "0:17": 1.329181337493834,
+              "0:18": 1.3409416167938681,
+              "0:19": 1.3557033773124518,
+              "0:20": 1.3636343040323737,
+              "1:0": 2.978446636157878,
+              "1:1": 2.9572999960972655,
+              "1:2": 2.9191398237462036,
+              "1:3": 2.857909847703756,
+              "1:4": 2.7798316955109796,
+              "1:5": 2.7043160144625005,
+              "1:6": 2.595785641622234,
+              "1:7": 2.4266534360329914,
+              "1:8": 2.2346579548795082,
+              "1:9": 1.9894079406345042,
+              "1:10": 1.7663352332619178,
+              "1:11": 1.7040606943063996,
+              "1:12": 1.8507724076483523,
+              "1:13": 2.149236938576367,
+              "1:14": 2.448212974325299,
+              "1:15": 2.664593850155585,
+              "1:16": 2.8018219069841366,
+              "1:17": 2.884640422802562,
+              "1:18": 2.933528303620422,
+              "1:19": 2.962003346701384,
+              "1:20": 2.9713458000487125,
+              "2:0": 2.9873206090345654,
+              "2:1": 2.9763848272180944,
+              "2:2": 2.96153598542223,
+              "2:3": 2.9477647540451852,
+              "2:4": 2.940435559184018,
+              "2:5": 2.912818968575898,
+              "2:6": 2.7840656557042216,
+              "2:7": 2.556091652341807,
+              "2:8": 2.3233293396705013,
+              "2:9": 2.062731423088625,
+              "2:10": 1.771974165623598,
+              "2:11": 1.5304844201742038,
+              "2:12": 1.3381100813509135,
+              "2:13": 1.0949660125042742,
+              "2:14": 0.6427920434988574,
+              "2:15": 0.005647725988328614,
+              "2:16": -0.5840428515780893,
+              "2:17": -1.0300418396468807,
+              "2:18": -1.363018815628581,
+              "2:19": -1.6230059284640572,
+              "2:20": -1.7336448303834695
+            },
+            "extra_point": {
+              "0:0": 0.9222233978298675,
+              "0:1": 0.9222254177498229,
+              "0:2": 0.9222309075056762,
+              "0:3": 0.922245817744813,
+              "0:4": 0.9222861474636141,
+              "0:5": 0.9223921202707807,
+              "0:6": 0.9226097756727994,
+              "0:7": 0.9218249645210691,
+              "0:8": 0.894017115914097,
+              "0:9": 0.5606311641253479,
+              "0:10": 0.07740475370975292,
+              "0:11": 0.006073982414294699,
+              "0:12": 0.0005630104216173718,
+              "0:13": 6.309486621579834e-05,
+              "0:14": 7.885231569482497e-06,
+              "0:15": 1.034586132471548e-06,
+              "0:16": 1.3839450402744203e-07,
+              "0:17": 1.8648925484714283e-08,
+              "0:18": 2.5198380364448454e-09,
+              "0:19": 3.4082287017871587e-10,
+              "0:20": 1.253648683800372e-10,
+              "1:0": 0.9836065573760554,
+              "1:1": 0.9836065573570903,
+              "1:2": 0.9836065569761685,
+              "1:3": 0.9836065493251468,
+              "1:4": 0.9836063956503224,
+              "1:5": 0.9836033090296449,
+              "1:6": 0.9835413209383759,
+              "1:7": 0.9822996132809012,
+              "1:8": 0.9586434448717868,
+              "1:9": 0.7310349099978827,
+              "1:10": 0.521064947122007,
+              "1:11": 0.5010940437778731,
+              "1:12": 0.5000545865732321,
+              "1:13": 0.50000271799697,
+              "1:14": 0.5000001353218234,
+              "1:15": 0.5000000067372788,
+              "1:16": 0.5000000003354292,
+              "1:17": 0.5000000000166999,
+              "1:18": 0.5000000000008318,
+              "1:19": 0.5000000000000414,
+              "1:20": 0.5000000000000094,
+              "2:0": 0.9980290526615225,
+              "2:1": 0.9918625276965866,
+              "2:2": 0.9779072640140012,
+              "2:3": 0.9662098452404329,
+              "2:4": 0.9621762419894256,
+              "2:5": 0.9612722053802158,
+              "2:6": 0.9611497196935139,
+              "2:7": 0.9609625149207397,
+              "2:8": 0.9540231213339981,
+              "2:9": 0.8642995652267743,
+              "2:10": 0.722586912231526,
+              "2:11": 0.7016204847541824,
+              "2:12": 0.7001354833745482,
+              "2:13": 0.7000141087932623,
+              "2:14": 0.7000016986545526,
+              "2:15": 0.7000002193916752,
+              "2:16": 0.7000000291688201,
+              "2:17": 0.7000000039215505,
+              "2:18": 0.7000000005294287,
+              "2:19": 0.7000000000715858,
+              "2:20": 0.7000000000263296
+            },
+            "punt": {
+              "0:0": -0.24409054885767908,
+              "0:1": -0.17866989574733533,
+              "0:2": -0.07384244101365023,
+              "0:3": -0.028992926629309888,
+              "0:4": -0.03976171237245025,
+              "0:5": -0.06644616104456912,
+              "0:6": -0.10156775635304445,
+              "0:7": -0.1631534697522373,
+              "0:8": -0.31253358249359375,
+              "0:9": -0.7252160254250053,
+              "0:10": -1.0022184949734352,
+              "1:0": -0.4347493433252714,
+              "1:1": -0.4233629415839895,
+              "1:2": -0.4159082657675647,
+              "1:3": -0.4250006333029797,
+              "1:4": -0.47473419652929094,
+              "1:5": -0.588042023117361,
+              "1:6": -0.7932246259839835,
+              "1:7": -1.1244920714188524,
+              "1:8": -1.474629944767305,
+              "1:9": -1.7270110988503011,
+              "1:10": -1.8300163140484613,
+              "2:0": -0.2262636307557739,
+              "2:1": -0.24299214046905085,
+              "2:2": -0.26213570969472644,
+              "2:3": -0.30645253893336244,
+              "2:4": -0.42060444538032427,
+              "2:5": -0.634318018407295,
+              "2:6": -0.9275737116876391,
+              "2:7": -1.2860599258397059,
+              "2:8": -1.7056641301718518,
+              "2:9": -2.1263037071016986,
+              "2:10": -2.305277042825833
+            },
+            "kickoff": {
+              "0:0": 0.34829998492805336,
+              "0:1": 0.3482999849252494,
+              "0:2": 0.34829998486893093,
+              "0:3": 0.34829998373774457,
+              "0:4": 0.3482999610172625,
+              "0:5": 0.3482995046648078,
+              "0:6": 0.34829033883394894,
+              "0:7": 0.34810634030067134,
+              "0:8": 0.3444513663102092,
+              "0:9": 0.28446133975621307,
+              "0:10": 0.06324006441212965,
+              "0:11": 0.003805008154527332,
+              "0:12": 0.00019142733453802877,
+              "0:13": 9.535585671294037e-06,
+              "0:14": 4.747612064018303e-07,
+              "0:15": 2.363699925659271e-08,
+              "0:16": 1.1768169738863665e-09,
+              "0:17": 5.859026732344902e-11,
+              "0:18": 2.9170376453902478e-12,
+              "0:19": 1.452307526838329e-13,
+              "0:20": 3.240536110483111e-14,
+              "1:0": 4.539411688393116,
+              "1:1": 4.534942424058032,
+              "1:2": 4.447664201180273,
+              "1:3": 3.3330458164253307,
+              "1:4": 1.498412160736297,
+              "1:5": 1.2494740991571165,
+              "1:6": 1.2362333662370806,
+              "1:7": 1.2361494853866017,
+              "1:8": 1.2376823662809466,
+              "1:9": 1.241717552357318,
+              "1:10": 1.2512902856961663,
+              "1:11": 1.2701110061159537,
+              "1:12": 1.2964415427854885,
+              "1:13": 1.3199488288469505,
+              "1:14": 1.3338820201423323,
+              "1:15": 1.3402343901719393,
+              "1:16": 1.3427820198196134,
+              "1:17": 1.3437506101019234,
+              "1:18": 1.3441113366590196,
+              "1:19": 1.3442446444016691,
+              "1:20": 1.344275216465654,
+              "2:0": 1.2617615640690891,
+              "2:1": 1.261822032916385,
+              "2:2": 1.2646423243193845,
+              "2:3": 1.31081700669059,
+              "2:4": 1.4081418909275927,
+              "2:5": 1.4273197321873987,
+              "2:6": 1.4295664540205402,
+              "2:7": 1.4289187129285206,
+              "2:8": 1.424906668236209,
+              "2:9": 1.4014197415718446,
+              "2:10": 1.2864037265638326,
+              "2:11": 1.222394902164965,
+              "2:12": 1.2132650340696485,
+              "2:13": 1.210902696756691,
+              "2:14": 1.2100465399384572,
+              "2:15": 1.2097266928945964,
+              "2:16": 1.20960802953437,
+              "2:17": 1.2095642237200266,
+              "2:18": 1.2095480870458153,
+              "2:19": 1.2095421477547479,
+              "2:20": 1.2095407874928594
+            }
+          },
+          "offsets": {
+            "field_goal": 0.007782311769168267,
+            "extra_point": -0.0018737968920456167,
+            "punt": -0.008394063518014343,
+            "kickoff": -0.00029155510513266634
+          }
+        },
+        "mean": 0.17488503933748106,
+        "scale": 1.459952795901174
+      }
+    },
+    "ridge_effective_plays": 100.0,
+    "component_weights": {
+      "offense_epa": 0.225,
+      "offense_success": 0.225,
+      "defense_epa": 0.225,
+      "defense_success": 0.225,
+      "special_teams": 0.1
+    },
+    "special_teams": {
+      "shrink_games": 2.0,
+      "bucket_widths": {
+        "field_goal": 5,
+        "extra_point": 5,
+        "punt": 10,
+        "kickoff": 5
+      },
+      "smoothing_bandwidths": {
+        "field_goal": 5,
+        "extra_point": 5,
+        "punt": 10,
+        "kickoff": 5
+      },
+      "clock_buckets_seconds": [
+        60,
+        180
+      ],
+      "weighting": "Full weight; points above context expectation per team game"
+    },
+    "game_state": {
+      "quarter": 4,
+      "full_weight_wp": [
+        0.15,
+        0.85
+      ],
+      "minimum_weight_wp": [
+        0.05,
+        0.95
+      ],
+      "minimum_weight": 0.25
+    },
+    "display_transform": "50 + 50 * tanh(composite / 2)",
+    "note": "50 is average unit strength; score is neither a percentile nor a win probability."
+  },
+  "current_snapshot": "2026-week-05",
   "snapshots": [
     {
       "id": "2026-preseason",
@@ -68,7 +374,8 @@
           "rank": null,
           "source": "nflverse play-by-play"
         }
-      }
+      },
+      "model_version": "1"
     },
     {
       "id": "2026-week-01",
@@ -133,7 +440,8 @@
           "rank": 24,
           "source": "nflverse play-by-play"
         }
-      }
+      },
+      "model_version": "1"
     },
     {
       "id": "2026-week-02",
@@ -198,7 +506,8 @@
           "rank": 26,
           "source": "nflverse play-by-play"
         }
-      }
+      },
+      "model_version": "1"
     },
     {
       "id": "2026-week-03",
@@ -263,7 +572,8 @@
           "rank": 17,
           "source": "nflverse play-by-play"
         }
-      }
+      },
+      "model_version": "1"
     },
     {
       "id": "2026-week-04",
@@ -274,9 +584,9 @@
       "record": "3-1",
       "metrics": {
         "overall_efficiency": {
-          "value": 82.0,
-          "rank": 2,
-          "source": "Dual Eights index from nflverse play-by-play"
+          "value": 60.5,
+          "rank": 6,
+          "source": "Dual Eights v2.1 · opponent/venue adjustment + special teams"
         },
         "point_differential": {
           "value": 20,
@@ -328,11 +638,79 @@
           "rank": 13,
           "source": "nflverse play-by-play"
         }
+      },
+      "model_version": "2.1"
+    },
+    {
+      "id": "2026-week-05",
+      "model_version": "2.1",
+      "week": 5,
+      "label": "Through Week 5",
+      "previous_snapshot": "2026-week-04",
+      "sample_note": "5 regular-season games",
+      "record": "4-1",
+      "metrics": {
+        "overall_efficiency": {
+          "value": 62.5,
+          "rank": 5,
+          "source": "Dual Eights v2.1 · opponent/venue adjustment + special teams"
+        },
+        "point_differential": {
+          "value": 27,
+          "rank": 6,
+          "source": "nflverse schedules"
+        },
+        "turnover_differential": {
+          "value": 3,
+          "rank": 9,
+          "source": "nflverse play-by-play"
+        },
+        "offensive_epa_per_play": {
+          "value": 0.15,
+          "rank": 6,
+          "source": "nflverse play-by-play"
+        },
+        "offensive_success_rate": {
+          "value": 50.7,
+          "rank": 2,
+          "source": "nflverse play-by-play"
+        },
+        "explosive_play_rate": {
+          "value": 13.2,
+          "rank": 3,
+          "source": "nflverse play-by-play"
+        },
+        "red_zone_td_rate": {
+          "value": 73.7,
+          "rank": 5,
+          "source": "nflverse play-by-play"
+        },
+        "defensive_epa_per_play": {
+          "value": -0.02,
+          "rank": 15,
+          "source": "nflverse play-by-play"
+        },
+        "defensive_success_rate": {
+          "value": 40.9,
+          "rank": 7,
+          "source": "nflverse play-by-play"
+        },
+        "explosive_play_rate_allowed": {
+          "value": 9.4,
+          "rank": 17,
+          "source": "nflverse play-by-play"
+        },
+        "opponent_red_zone_td_rate": {
+          "value": 55.6,
+          "rank": 12,
+          "source": "nflverse play-by-play"
+        }
       }
     }
   ],
   "benchmark_snapshot": {
     "id": "2025-final",
+    "model_version": "2.1",
     "week": 18,
     "label": "2025 final benchmark",
     "previous_snapshot": null,
@@ -340,9 +718,9 @@
     "record": "8-9",
     "metrics": {
       "overall_efficiency": {
-        "value": 55.5,
-        "rank": 15,
-        "source": "Dual Eights index from nflverse play-by-play"
+        "value": 53.2,
+        "rank": 17,
+        "source": "Dual Eights v2.1 · opponent/venue adjustment + special teams"
       },
       "point_differential": {
         "value": 26,
@@ -397,120 +775,176 @@
     }
   },
   "league_efficiency_rankings": {
-    "label": "Games through October 11",
+    "label": "Games through October 12",
     "sample_note": "Completed regular-season games; early-season sample",
     "teams": [
       {
         "rank": 1,
+        "abbr": "SF",
+        "name": "49ers",
+        "full_name": "San Francisco 49ers",
+        "record": "5-0",
+        "value": 69.0,
+        "unrounded_value": 68.99811345582714,
+        "offense_rank": 1,
+        "defense_rank": 12,
+        "special_teams_rank": 20
+      },
+      {
+        "rank": 2,
+        "abbr": "JAX",
+        "name": "Jaguars",
+        "full_name": "Jacksonville Jaguars",
+        "record": "4-1",
+        "value": 68.2,
+        "unrounded_value": 68.15863366525443,
+        "offense_rank": 4,
+        "defense_rank": 4,
+        "special_teams_rank": 19
+      },
+      {
+        "rank": 3,
+        "abbr": "SEA",
+        "name": "Seahawks",
+        "full_name": "Seattle Seahawks",
+        "record": "3-2",
+        "value": 63.4,
+        "unrounded_value": 63.37781086905029,
+        "offense_rank": 26,
+        "defense_rank": 2,
+        "special_teams_rank": 2
+      },
+      {
+        "rank": 4,
         "abbr": "KC",
         "name": "Chiefs",
         "full_name": "Kansas City Chiefs",
         "record": "4-0",
-        "value": 83.6
+        "value": 62.6,
+        "unrounded_value": 62.60553083488442,
+        "offense_rank": 5,
+        "defense_rank": 13,
+        "special_teams_rank": 10
       },
       {
-        "rank": 2,
+        "rank": 5,
         "abbr": "BAL",
         "name": "Ravens",
         "full_name": "Baltimore Ravens",
-        "record": "3-1",
-        "value": 82.0
-      },
-      {
-        "rank": 3,
-        "abbr": "LA",
-        "name": "Rams",
-        "full_name": "Los Angeles Rams",
-        "record": "2-2",
-        "value": 80.5
-      },
-      {
-        "rank": 4,
-        "abbr": "JAX",
-        "name": "Jaguars",
-        "full_name": "Jacksonville Jaguars",
-        "record": "3-1",
-        "value": 78.9
-      },
-      {
-        "rank": 4,
-        "abbr": "SEA",
-        "name": "Seahawks",
-        "full_name": "Seattle Seahawks",
-        "record": "3-1",
-        "value": 78.9
+        "record": "4-1",
+        "value": 62.5,
+        "unrounded_value": 62.47583712128633,
+        "offense_rank": 6,
+        "defense_rank": 10,
+        "special_teams_rank": 14
       },
       {
         "rank": 6,
-        "abbr": "ATL",
-        "name": "Falcons",
-        "full_name": "Atlanta Falcons",
-        "record": "2-2",
-        "value": 77.3
+        "abbr": "MIN",
+        "name": "Vikings",
+        "full_name": "Minnesota Vikings",
+        "record": "5-0",
+        "value": 61.6,
+        "unrounded_value": 61.58736769338773,
+        "offense_rank": 32,
+        "defense_rank": 1,
+        "special_teams_rank": 1
       },
       {
         "rank": 7,
-        "abbr": "CHI",
-        "name": "Bears",
-        "full_name": "Chicago Bears",
-        "record": "3-1",
-        "value": 76.6
-      },
-      {
-        "rank": 8,
         "abbr": "CIN",
         "name": "Bengals",
         "full_name": "Cincinnati Bengals",
-        "record": "2-2",
-        "value": 71.1
+        "record": "3-2",
+        "value": 59.1,
+        "unrounded_value": 59.11670221506895,
+        "offense_rank": 8,
+        "defense_rank": 14,
+        "special_teams_rank": 13
       },
       {
-        "rank": 9,
-        "abbr": "SF",
-        "name": "49ers",
-        "full_name": "San Francisco 49ers",
-        "record": "4-0",
-        "value": 70.3
-      },
-      {
-        "rank": 10,
-        "abbr": "LV",
-        "name": "Raiders",
-        "full_name": "Las Vegas Raiders",
-        "record": "3-1",
-        "value": 63.3
-      },
-      {
-        "rank": 11,
+        "rank": 8,
         "abbr": "CAR",
         "name": "Panthers",
         "full_name": "Carolina Panthers",
         "record": "2-2",
-        "value": 60.2
+        "value": 56.8,
+        "unrounded_value": 56.82098529941788,
+        "offense_rank": 12,
+        "defense_rank": 15,
+        "special_teams_rank": 11
       },
       {
-        "rank": 12,
-        "abbr": "MIN",
-        "name": "Vikings",
-        "full_name": "Minnesota Vikings",
-        "record": "4-0",
-        "value": 56.2
-      },
-      {
-        "rank": 13,
+        "rank": 9,
         "abbr": "TB",
         "name": "Buccaneers",
         "full_name": "Tampa Bay Buccaneers",
         "record": "1-4",
-        "value": 53.9
+        "value": 56.7,
+        "unrounded_value": 56.66237895057769,
+        "offense_rank": 22,
+        "defense_rank": 7,
+        "special_teams_rank": 5
+      },
+      {
+        "rank": 10,
+        "abbr": "LA",
+        "name": "Rams",
+        "full_name": "Los Angeles Rams",
+        "record": "2-2",
+        "value": 55.9,
+        "unrounded_value": 55.87259499665392,
+        "offense_rank": 10,
+        "defense_rank": 6,
+        "special_teams_rank": 32
+      },
+      {
+        "rank": 11,
+        "abbr": "CHI",
+        "name": "Bears",
+        "full_name": "Chicago Bears",
+        "record": "3-2",
+        "value": 55.5,
+        "unrounded_value": 55.46430645997709,
+        "offense_rank": 9,
+        "defense_rank": 20,
+        "special_teams_rank": 9
+      },
+      {
+        "rank": 12,
+        "abbr": "NE",
+        "name": "Patriots",
+        "full_name": "New England Patriots",
+        "record": "3-2",
+        "value": 55.4,
+        "unrounded_value": 55.44645059245238,
+        "offense_rank": 11,
+        "defense_rank": 9,
+        "special_teams_rank": 26
+      },
+      {
+        "rank": 13,
+        "abbr": "ATL",
+        "name": "Falcons",
+        "full_name": "Atlanta Falcons",
+        "record": "2-3",
+        "value": 55.2,
+        "unrounded_value": 55.17087928477353,
+        "offense_rank": 15,
+        "defense_rank": 3,
+        "special_teams_rank": 28
       },
       {
         "rank": 14,
-        "abbr": "HOU",
-        "name": "Texans",
-        "full_name": "Houston Texans",
-        "record": "0-4",
-        "value": 52.3
+        "abbr": "DET",
+        "name": "Lions",
+        "full_name": "Detroit Lions",
+        "record": "3-2",
+        "value": 53.7,
+        "unrounded_value": 53.7343989752351,
+        "offense_rank": 3,
+        "defense_rank": 28,
+        "special_teams_rank": 8
       },
       {
         "rank": 15,
@@ -518,184 +952,256 @@
         "name": "Bills",
         "full_name": "Buffalo Bills",
         "record": "3-1",
-        "value": 51.6
+        "value": 53.6,
+        "unrounded_value": 53.60405559648704,
+        "offense_rank": 2,
+        "defense_rank": 29,
+        "special_teams_rank": 6
       },
       {
-        "rank": 15,
-        "abbr": "NE",
-        "name": "Patriots",
-        "full_name": "New England Patriots",
-        "record": "2-2",
-        "value": 51.6
+        "rank": 16,
+        "abbr": "DEN",
+        "name": "Broncos",
+        "full_name": "Denver Broncos",
+        "record": "3-2",
+        "value": 53.4,
+        "unrounded_value": 53.42866482809745,
+        "offense_rank": 21,
+        "defense_rank": 5,
+        "special_teams_rank": 21
       },
       {
         "rank": 17,
-        "abbr": "ARI",
-        "name": "Cardinals",
-        "full_name": "Arizona Cardinals",
-        "record": "1-3",
-        "value": 50.8
+        "abbr": "HOU",
+        "name": "Texans",
+        "full_name": "Houston Texans",
+        "record": "1-4",
+        "value": 51.6,
+        "unrounded_value": 51.63208684993062,
+        "offense_rank": 23,
+        "defense_rank": 8,
+        "special_teams_rank": 17
       },
       {
         "rank": 18,
-        "abbr": "DET",
-        "name": "Lions",
-        "full_name": "Detroit Lions",
-        "record": "2-2",
-        "value": 49.2
+        "abbr": "IND",
+        "name": "Colts",
+        "full_name": "Indianapolis Colts",
+        "record": "2-3",
+        "value": 49.7,
+        "unrounded_value": 49.71739507833148,
+        "offense_rank": 14,
+        "defense_rank": 25,
+        "special_teams_rank": 3
       },
       {
         "rank": 19,
         "abbr": "NYJ",
         "name": "Jets",
         "full_name": "New York Jets",
-        "record": "1-3",
-        "value": 47.7
+        "record": "2-3",
+        "value": 49.0,
+        "unrounded_value": 49.03279897789447,
+        "offense_rank": 20,
+        "defense_rank": 16,
+        "special_teams_rank": 12
       },
       {
         "rank": 20,
-        "abbr": "CLE",
-        "name": "Browns",
-        "full_name": "Cleveland Browns",
-        "record": "3-1",
-        "value": 46.9
+        "abbr": "NYG",
+        "name": "Giants",
+        "full_name": "New York Giants",
+        "record": "3-1-1",
+        "value": 46.9,
+        "unrounded_value": 46.91345451007418,
+        "offense_rank": 25,
+        "defense_rank": 18,
+        "special_teams_rank": 4
       },
       {
         "rank": 21,
+        "abbr": "ARI",
+        "name": "Cardinals",
+        "full_name": "Arizona Cardinals",
+        "record": "1-4",
+        "value": 44.8,
+        "unrounded_value": 44.84803364840358,
+        "offense_rank": 13,
+        "defense_rank": 23,
+        "special_teams_rank": 27
+      },
+      {
+        "rank": 22,
+        "abbr": "PIT",
+        "name": "Steelers",
+        "full_name": "Pittsburgh Steelers",
+        "record": "3-2",
+        "value": 44.4,
+        "unrounded_value": 44.40233445505724,
+        "offense_rank": 16,
+        "defense_rank": 24,
+        "special_teams_rank": 18
+      },
+      {
+        "rank": 23,
+        "abbr": "GB",
+        "name": "Packers",
+        "full_name": "Green Bay Packers",
+        "record": "3-2",
+        "value": 43.9,
+        "unrounded_value": 43.91348768035774,
+        "offense_rank": 17,
+        "defense_rank": 21,
+        "special_teams_rank": 24
+      },
+      {
+        "rank": 24,
+        "abbr": "CLE",
+        "name": "Browns",
+        "full_name": "Cleveland Browns",
+        "record": "3-2",
+        "value": 42.1,
+        "unrounded_value": 42.11265311441266,
+        "offense_rank": 27,
+        "defense_rank": 17,
+        "special_teams_rank": 23
+      },
+      {
+        "rank": 25,
+        "abbr": "PHI",
+        "name": "Eagles",
+        "full_name": "Philadelphia Eagles",
+        "record": "2-3",
+        "value": 41.7,
+        "unrounded_value": 41.742192646723225,
+        "offense_rank": 30,
+        "defense_rank": 19,
+        "special_teams_rank": 7
+      },
+      {
+        "rank": 26,
+        "abbr": "WAS",
+        "name": "Commanders",
+        "full_name": "Washington Commanders",
+        "record": "1-3-1",
+        "value": 39.7,
+        "unrounded_value": 39.68275544150497,
+        "offense_rank": 24,
+        "defense_rank": 22,
+        "special_teams_rank": 25
+      },
+      {
+        "rank": 27,
+        "abbr": "LV",
+        "name": "Raiders",
+        "full_name": "Las Vegas Raiders",
+        "record": "3-2",
+        "value": 38.5,
+        "unrounded_value": 38.523695601247816,
+        "offense_rank": 18,
+        "defense_rank": 26,
+        "special_teams_rank": 22
+      },
+      {
+        "rank": 28,
         "abbr": "DAL",
         "name": "Cowboys",
         "full_name": "Dallas Cowboys",
         "record": "2-3",
-        "value": 42.2
+        "value": 37.5,
+        "unrounded_value": 37.5302541351455,
+        "offense_rank": 7,
+        "defense_rank": 32,
+        "special_teams_rank": 16
       },
       {
-        "rank": 22,
-        "abbr": "DEN",
-        "name": "Broncos",
-        "full_name": "Denver Broncos",
-        "record": "2-2",
-        "value": 39.8
-      },
-      {
-        "rank": 23,
-        "abbr": "IND",
-        "name": "Colts",
-        "full_name": "Indianapolis Colts",
-        "record": "2-2",
-        "value": 36.7
-      },
-      {
-        "rank": 24,
-        "abbr": "LAC",
-        "name": "Chargers",
-        "full_name": "Los Angeles Chargers",
-        "record": "0-4",
-        "value": 35.2
-      },
-      {
-        "rank": 25,
-        "abbr": "PIT",
-        "name": "Steelers",
-        "full_name": "Pittsburgh Steelers",
-        "record": "2-2",
-        "value": 34.4
-      },
-      {
-        "rank": 26,
+        "rank": 29,
         "abbr": "NO",
         "name": "Saints",
         "full_name": "New Orleans Saints",
-        "record": "1-3",
-        "value": 32.8
-      },
-      {
-        "rank": 26,
-        "abbr": "NYG",
-        "name": "Giants",
-        "full_name": "New York Giants",
-        "record": "3-1",
-        "value": 32.8
-      },
-      {
-        "rank": 28,
-        "abbr": "TEN",
-        "name": "Titans",
-        "full_name": "Tennessee Titans",
-        "record": "0-4",
-        "value": 30.5
-      },
-      {
-        "rank": 28,
-        "abbr": "WAS",
-        "name": "Commanders",
-        "full_name": "Washington Commanders",
-        "record": "1-3",
-        "value": 30.5
+        "record": "1-4",
+        "value": 36.1,
+        "unrounded_value": 36.10399933349139,
+        "offense_rank": 19,
+        "defense_rank": 30,
+        "special_teams_rank": 15
       },
       {
         "rank": 30,
-        "abbr": "GB",
-        "name": "Packers",
-        "full_name": "Green Bay Packers",
-        "record": "2-2",
-        "value": 25.8
+        "abbr": "LAC",
+        "name": "Chargers",
+        "full_name": "Los Angeles Chargers",
+        "record": "0-5",
+        "value": 35.4,
+        "unrounded_value": 35.39858489731614,
+        "offense_rank": 31,
+        "defense_rank": 11,
+        "special_teams_rank": 30
       },
       {
         "rank": 31,
-        "abbr": "PHI",
-        "name": "Eagles",
-        "full_name": "Philadelphia Eagles",
-        "record": "2-2",
-        "value": 14.1
+        "abbr": "TEN",
+        "name": "Titans",
+        "full_name": "Tennessee Titans",
+        "record": "0-5",
+        "value": 27.1,
+        "unrounded_value": 27.081042279575023,
+        "offense_rank": 29,
+        "defense_rank": 27,
+        "special_teams_rank": 31
       },
       {
         "rank": 32,
         "abbr": "MIA",
         "name": "Dolphins",
         "full_name": "Miami Dolphins",
-        "record": "0-4",
-        "value": 12.5
+        "record": "0-5",
+        "value": 26.2,
+        "unrounded_value": 26.20697532652758,
+        "offense_rank": 28,
+        "defense_rank": 31,
+        "special_teams_rank": 29
       }
     ]
   },
   "header": {
-    "record": "3-1",
+    "record": "4-1",
     "division_standing": "AFC North",
-    "streak": "W2",
+    "streak": "W3",
     "next_game": {
-      "week": 5,
-      "opponent": "Atlanta Falcons",
-      "opponent_abbr": "ATL",
+      "week": 6,
+      "opponent": "Cleveland Browns",
+      "opponent_abbr": "CLE",
       "location": "away",
-      "date": "2026-10-11",
-      "display": "at Atlanta Falcons · Oct 11 · 8:20 PM ET",
-      "venue": "Mercedes-Benz Stadium",
+      "date": "2026-10-18",
+      "display": "at Cleveland Browns · Oct 18 · 1:00 PM ET",
+      "venue": "Huntington Bank Field",
       "source": "nflverse schedules",
       "matchup": {
-        "label": "2026 through Week 4",
+        "label": "2026 through Week 5",
         "items": [
           {
             "title": "When the Ravens have the ball",
             "stat": "EPA / play",
             "ravens": {
-              "value": 0.19,
-              "rank": 3
+              "value": 0.15,
+              "rank": 6
             },
             "opponent": {
-              "value": -0.06,
-              "rank": 6
+              "value": -0.02,
+              "rank": 16
             }
           },
           {
             "title": "The Ravens' big-play test",
             "stat": "Explosive rate",
             "ravens": {
-              "value": 14.2,
-              "rank": 2
+              "value": 13.2,
+              "rank": 3
             },
             "opponent": {
-              "value": 6.8,
-              "rank": 5
+              "value": 11.7,
+              "rank": 29
             }
           },
           {
@@ -703,23 +1209,23 @@
             "stat": "EPA / play",
             "ravens": {
               "value": -0.02,
-              "rank": 11
+              "rank": 15
             },
             "opponent": {
-              "value": -0.03,
-              "rank": 19
+              "value": -0.06,
+              "rank": 24
             }
           },
           {
             "title": "The red-zone matchup",
             "stat": "TD rate",
             "ravens": {
-              "value": 60.0,
-              "rank": 13
+              "value": 55.6,
+              "rank": 12
             },
             "opponent": {
-              "value": 80.0,
-              "rank": 3
+              "value": 45.5,
+              "rank": 31
             }
           }
         ]
@@ -727,36 +1233,36 @@
     }
   },
   "last_game": {
-    "game_id": "2026_04_TEN_BAL",
-    "week": "Week 4",
-    "date": "2026-10-04",
-    "location": "home",
-    "opponent": "Tennessee Titans",
+    "game_id": "2026_05_BAL_ATL",
+    "week": "Week 5",
+    "date": "2026-10-11",
+    "location": "away",
+    "opponent": "Atlanta Falcons",
     "result": "W",
-    "ravens_score": 24,
-    "opponent_score": 18,
-    "takeaway": "The Ravens defeated the Tennessee Titans 24–18.",
+    "ravens_score": 30,
+    "opponent_score": 23,
+    "takeaway": "The Ravens defeated the Atlanta Falcons 30–23.",
     "type_label": "Regular season",
-    "opponent_abbr": "TEN",
+    "opponent_abbr": "ATL",
     "key_stats": [
       {
         "label": "Scrimmage yards",
-        "value": "386–297",
+        "value": "393–367",
         "detail": "Ravens–opponent"
       },
       {
         "label": "EPA / play",
-        "value": "0.17 / -0.16",
+        "value": "0.04 / -0.02",
         "detail": "Ravens / opponent"
       },
       {
         "label": "Success rate",
-        "value": "44.1% / 36.2%",
+        "value": "47.1% / 34.4%",
         "detail": "Ravens / opponent"
       },
       {
         "label": "Turnovers",
-        "value": "0–2",
+        "value": "1–1",
         "detail": "Ravens–opponent"
       }
     ],
@@ -770,16 +1276,16 @@
         "period_label": "Through Week 5",
         "label": "Jackson CPOE",
         "value": "+7.1%",
-        "rank": 4,
+        "rank": 2,
         "rank_group": "QB"
       },
       {
         "source_label": "ESPN",
         "source_url": "https://www.espn.com/nfl/qbr/_/season/2026/seasontype/2",
-        "period_label": "Through Week 4",
+        "period_label": "Through Week 5",
         "label": "Jackson QBR",
-        "value": "80.9",
-        "rank": 3,
+        "value": "79.9",
+        "rank": 2,
         "rank_group": "NFL"
       }
     ],
@@ -789,8 +1295,8 @@
         "source_url": "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html",
         "period_label": "Through Week 5",
         "label": "Henry RYOE/att",
-        "value": "+0.20",
-        "rank": 15,
+        "value": "+0.22",
+        "rank": 19,
         "rank_group": "RB"
       }
     ],
@@ -800,8 +1306,8 @@
         "source_url": "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html",
         "period_label": "Through Week 5",
         "label": "Flowers YACOE",
-        "value": "+3.83",
-        "rank": 2,
+        "value": "+2.81",
+        "rank": 6,
         "rank_group": "WR"
       }
     ],
@@ -811,7 +1317,7 @@
         "source_url": "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html",
         "period_label": "Through Week 5",
         "label": "Andrews YACOE",
-        "value": "-0.27",
+        "value": "-0.15",
         "rank": 23,
         "rank_group": "TE"
       }
@@ -871,10 +1377,10 @@
       {
         "source_label": "nflverse",
         "source_url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html",
-        "period_label": "Through Week 4",
+        "period_label": "Through Week 5",
         "label": "Opp. CPOE",
-        "value": "+2.6%",
-        "rank": 23,
+        "value": "+0.9%",
+        "rank": 19,
         "rank_group": "NFL"
       }
     ]
@@ -1042,12 +1548,24 @@
       "W",
       "L",
       "W",
+      "W",
       "W"
     ],
-    "record": "3-1",
-    "point_differential": 20
+    "record": "4-1",
+    "point_differential": 27
   },
   "recent_games": [
+    {
+      "game_id": "2026_05_BAL_ATL",
+      "week": "Week 5",
+      "date": "2026-10-11",
+      "location": "away",
+      "opponent": "Atlanta Falcons",
+      "result": "W",
+      "ravens_score": 30,
+      "opponent_score": 23,
+      "takeaway": "The Ravens defeated the Atlanta Falcons 30–23."
+    },
     {
       "game_id": "2026_04_TEN_BAL",
       "week": "Week 4",
@@ -1123,6 +1641,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-10-11T16:38:50Z"
+    "retrieved_at": "2026-10-12T19:11:52Z"
   }
 }

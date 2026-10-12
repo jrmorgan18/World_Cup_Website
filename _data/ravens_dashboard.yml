@@ -6,14 +6,14 @@
 meta:
   season: 2026
   season_label: "2026 Season"
-  last_updated: "2026-10-09"
-  update_context: "Through available Week 4 games · Atlanta next"
-  data_status: "through-week-4"
+  last_updated: "2026-10-12"
+  update_context: "Through available Week 5 games · Cleveland next"
+  data_status: "through-week-5"
   data_notice: >-
-    Four games are still an early sample, so league ranks and rate statistics are
+    Five games are still an early sample, so league ranks and rate statistics are
     directional rather than predictive. The scorecard uses 2026 regular-season
     play-by-play and keeps the 2025 final values as a labeled comparison baseline.
-    League ranks include completed games only and may change as remaining Week 4
+    League ranks include completed games only and may change as remaining Week 5
     results arrive. ESPN trench rates and Filmstudy scoring carry their own reporting weeks.
 
 metric_definitions:
@@ -22,11 +22,11 @@ metric_definitions:
     display_name: "Dual Eights efficiency index"
     short_label: "Efficiency index"
     unit: "index"
-    description: "A 0–100 league-percentile composite weighting offensive EPA/play, offensive success rate, defensive EPA allowed/play and opponent success rate equally. It is not opponent-adjusted."
+    description: "The v2.1 observed-efficiency index: opponent/venue-adjusted offense and defense each carry 45%, and context-adjusted special teams carry 10%. A fixed prior-season calibration preserves performance magnitudes. Its 0–100 display scale is neither a percentile nor a win probability."
     direction: "higher"
     format: "decimal_1"
     stable_delta: 1.0
-    default_source: "Dual Eights index from nflverse play-by-play"
+    default_source: "Dual Eights v2.1 from nflverse play-by-play"
   - id: "point_differential"
     group: "Team"
     display_name: "Point differential"
@@ -139,79 +139,81 @@ scorecard_groups:
 editorial:
   state:
     summary: >-
-      The Ravens are 3-1 after a 24-18 win over Tennessee, with Atlanta next.
-      Jackson threw for 222 yards and two touchdowns before halftime, Flowers finished
-      with 118 receiving yards, and Tyler Loop hit a stadium-record 64-yard field goal.
-      The defense improved, forcing two turnovers and making another goal-line stop.
-      Jackson, Hendrickson, Humphrey and new center Cam Jurgens missed Thursday's
-      practice, while Flowers, John Simpson and Vorhees were limited. Stanley returned
-      to full participation. Smythe is on injured reserve for the season, and final
-      Week 5 game designations are pending.
-    biggest_strength: "The Ravens remain top-three in offensive EPA/play, success rate and explosive-play rate through four games."
-    biggest_concern: "Jackson, Hendrickson, Humphrey and Jurgens remain out of practice. Flowers, Simpson and Vorhees are limited, while Smythe and three centers remain on IR."
-    changed_this_week: "A second straight win moved the Ravens to 3-1; the defense improved, Ioane handled his first start at center, and Loop made a 64-yarder."
+      The Ravens are 4-1 and alone atop the AFC North after a 30-23 overtime win
+      in Atlanta. Huntley delivered two touchdown passes and the winning quarterback
+      sneak while Henry and Hill powered a 208-yard rushing night. Hamilton's
+      interception finished the comeback. The season offense remains second in
+      success rate and third in explosive-play rate, but third-down defense and
+      pass protection still need work. Jackson, Hendrickson, Jurgens and Vorhees
+      missed the Falcons game; their Cleveland availability awaits this week's
+      reports. Flowers and Humphrey played and their old questionable labels have
+      been removed. Broderick Washington's newly reported ankle issue is being monitored.
+    biggest_strength: "The offense remains second in success rate, third in explosive-play rate and fifth in red-zone touchdown rate after finding a way to win without Jackson."
+    biggest_concern: "Jackson's ankle and the absences of Hendrickson, Jurgens and Vorhees remain unresolved. Cleveland game designations have not been issued."
+    changed_this_week: "A third straight win moved the Ravens to 4-1. Huntley finished the comeback, the run game produced 208 yards, and Hamilton sealed overtime."
 
   metric_assessments:
-    overall_efficiency: { status: "Elite", interpretation: "The available Week 4 results lift the equal-weight index to 82.0, No. 2. The offense remains elite and the defensive components improved against Tennessee; this is still an early, non-opponent-adjusted sample." }
-    point_differential: { status: "Good", interpretation: "The six-point Titans win moves the season margin to +20, eighth among the available results. Closing games more decisively remains a priority." }
-    turnover_differential: { status: "Good", interpretation: "The Ravens are +3, fifth in the league. Simpson's interception and Hamilton's forced fumble supplied two takeaways against Tennessee without a Ravens giveaway." }
-    offensive_epa_per_play: { status: "Elite", interpretation: "The Ravens remain third at 0.19 EPA/play. An explosive first half offset the scoreless second half after Jackson's injury." }
-    offensive_success_rate: { status: "Elite", interpretation: "The 51.7% season rate ranks second, down from Week 3 after a 44.1% game against Tennessee. The team must preserve its down-to-down rhythm through the injury reshuffle." }
-    explosive_play_rate: { status: "Elite", interpretation: "The Ravens' 14.2% season rate ranks second. Flowers' 52-yard reception highlighted another game of valuable passing gains." }
-    red_zone_td_rate: { status: "Good", interpretation: "The season red-zone touchdown rate rises to 73.3%, eighth. Early finishing against Tennessee helped build the lead the Ravens ultimately defended." }
-    defensive_epa_per_play: { status: "Good", interpretation: "Season EPA allowed improves to -0.02, 11th, after holding Tennessee to -0.16 per eligible play. The goal-line stop was another pivotal defensive win." }
-    defensive_success_rate: { status: "Good", interpretation: "Opponent success drops to 42.6%, 11th. Tennessee succeeded on just 36.2% of eligible plays, a meaningful improvement after Dallas." }
-    explosive_play_rate_allowed: { status: "Average", interpretation: "The season rate is 9.4%, 17th. The late Tennessee rally remains a reminder to eliminate costly gains while protecting a lead." }
-    opponent_red_zone_td_rate: { status: "Average", interpretation: "Opponents have scored touchdowns on 60.0% of red-zone drives, 13th. Madubuike's fourth-and-goal stop kept Tennessee from converting a crucial possession." }
+    overall_efficiency: { status: "Good", interpretation: "The Ravens are fifth at 62.5 in the published v2.1 index after Atlanta, up from sixth at 60.5 through Week 4. The model adjusts for opponent and venue and blends offense, defense and special teams; this five-game sample is not a forecast, and remaining Week 5 games may change league ranks." }
+    point_differential: { status: "Good", interpretation: "The seven-point overtime win lifts the season margin to +27, sixth among completed league results." }
+    turnover_differential: { status: "Good", interpretation: "The season remains +3, ninth in the league. Andrews' lost fumble and Hamilton's game-sealing interception left the Falcons game at one giveaway and one takeaway." }
+    offensive_epa_per_play: { status: "Good", interpretation: "The offense is sixth at 0.15 EPA/play for the season. The Atlanta game produced 0.04 per eligible play as Huntley led the late comeback." }
+    offensive_success_rate: { status: "Elite", interpretation: "The 50.7% season success rate ranks second. The Ravens succeeded on 47.1% of eligible plays against Atlanta." }
+    explosive_play_rate: { status: "Elite", interpretation: "The season explosive-play rate is 13.2%, third in the league. Hill's 47-yard run supplied Atlanta's standout rushing gain." }
+    red_zone_td_rate: { status: "Good", interpretation: "The Ravens have converted 73.7% of qualifying red-zone drives into touchdowns, fifth in the league. The late regulation and overtime scores made the difference in Atlanta." }
+    defensive_epa_per_play: { status: "Average", interpretation: "Season EPA allowed is -0.02, 15th. Atlanta was also held to -0.02 per eligible play; the defense conceded only one offensive touchdown, but third-down conversions extended too many drives." }
+    defensive_success_rate: { status: "Good", interpretation: "Opponent success improves to 40.9%, seventh in the league, after Atlanta succeeded on 34.4% of eligible plays." }
+    explosive_play_rate_allowed: { status: "Average", interpretation: "The season rate is 9.4%, 17th. Limiting long gains remains important even as the defense wins more individual downs." }
+    opponent_red_zone_td_rate: { status: "Good", interpretation: "Opponents have scored touchdowns on 55.6% of qualifying red-zone drives, 12th. Atlanta's offense managed one touchdown despite repeated third-down conversions." }
 
   overviews:
     offense:
       status: "Elite"
       assessment: >-
-        The Ravens are top-three in EPA per play, success rate and explosive-play rate
-        through four games. Jackson's first-half passing and Flowers' explosive gains
-        built a 24-7 lead against Tennessee. The scoreless second half and mounting
-        injuries make continuity, protection and penalties the immediate corrections.
-      trend_summary: "Top-three in EPA/play, success rate and explosive rate; Jackson's ankle and line continuity frame Week 5."
+        The Ravens are second in success rate, third in explosive-play rate and sixth
+        in EPA per play through five games. A 208-yard rushing night and Huntley's
+        late execution kept the offense competitive without Jackson. The receiving
+        group made key late plays, but ball security and protection remain priorities.
+      trend_summary: "Huntley and the run game delivered in Atlanta; Jackson's recovery and the interior line frame Cleveland week."
       metric_ids: ["offensive_epa_per_play", "explosive_play_rate", "red_zone_td_rate"]
       links:
         - { label: "How Declan Doyle could change the offense", url: "/ravens/what-will-declan-doyle-change/" }
     defense:
       status: "Good"
       assessment: >-
-        Two takeaways and Madubuike's goal-line stop helped hold Tennessee to 18 points.
-        Both EPA allowed and opponent success improved to 11th in the available league
-        results. Finishing pressure with sacks and avoiding penalties remain important,
-        especially with Humphrey's calf now part of the availability watch.
-      trend_summary: "EPA allowed/play and opponent success improve to No. 11; the front still needs to finish its pressure."
+        Atlanta's offense scored 16 points, with the other seven coming from a fumble
+        return. Hamilton ended overtime with an interception, while the front made
+        important late plays. Opponent success is seventh for the season, but Atlanta's
+        9-of-17 third-down conversion rate shows the situational work still required.
+      trend_summary: "Opponent success improves to seventh; third-down defense remains the clearest correction after Atlanta."
       metric_ids: ["defensive_epa_per_play", "defensive_success_rate", "explosive_play_rate_allowed"]
       links:
         - { label: "Five questions defining the Ravens' season", url: "/ravens/five-questions-that-will-define-the-season/" }
 
   units:
-    - { name: "Quarterback", assessment: "Elite", trend: "stable", season_grade: "A", last_game_grade: "A+", explanation: "Jackson completed 15 of 20 for 222 yards and two touchdowns before his ankle injury. He was outstanding through the opening half, building a 24-7 lead before Huntley took over. His latest cumulative ESPN QBR and qualified league rank appear alongside the grade.", link: "/ravens/first-and-five-titans-week-four-2026/" }
-    - { name: "Running backs", assessment: "Solid", trend: "down", season_grade: "B+", last_game_grade: "C+", explanation: "Henry gained 73 yards on 23 carries with one touchdown. The workload helped protect the lead, but 3.2 yards per carry was a quieter rushing day than the passing offense's early explosion." }
-    - { name: "Wide receivers", assessment: "Strength", trend: "stable", season_grade: "A-", last_game_grade: "A", explanation: "Flowers finished with eight catches for 118 yards and a touchdown. His 52-yard reception supplied the vertical punch, while Bateman also delivered useful intermediate gains." }
-    - { name: "Tight ends", assessment: "Solid", trend: "up", season_grade: "B", last_game_grade: "B+", explanation: "Andrews caught the three-yard touchdown that capped a 98-yard drive, and Hibner added a chunk gain. Smythe is now on injured reserve for the season with a torn Achilles; Vannett joined the active roster to help replace his blocking role." }
-    - { name: "Offensive line", assessment: "Mixed", trend: "up", season_grade: "C+", last_game_grade: "C", explanation: "Ioane stabilized center in his first start there. Official NGS reporting credited Simmons with just one pressure on 32 rushes, none in nine matchups with Ioane. Stanley practiced fully Thursday; Vorhees and Simpson were limited, and Jurgens remains in concussion protocol. Filmstudy's October 7 report supplies the Tennessee grades and delayed Dallas scoring used in the aggregate letter grades below.", link: "/ravens/first-and-five-titans-week-four-2026/" }
-    - { name: "Defensive line", assessment: "Strength", trend: "up", season_grade: "B+", last_game_grade: "B-", explanation: "Madubuike's fourth-and-goal stop was massive, but the interior did not consistently close down the run game or prevent Tennessee's late push. The goal-line win did not make this a complete defensive-line performance." }
-    - { name: "Edge rushers", assessment: "Solid", trend: "down", season_grade: "B", last_game_grade: "C+", explanation: "Burke's first career sack and Mike Green's rush that helped force the early interception were real positives. Without Hendrickson, however, the rush did not generate enough sustained disruption or finish enough opportunities." }
-    - { name: "Linebackers", assessment: "Solid", trend: "up", season_grade: "B", last_game_grade: "B-", explanation: "Simpson's opening-drive interception supplied one of two takeaways, but the unit did not consistently clean up plays in space as Tennessee mounted its late push." }
-    - { name: "Secondary", assessment: "Mixed", trend: "up", season_grade: "B-", last_game_grade: "C+", explanation: "Carnell Tate repeatedly found space and the tackling issues resurfaced. Hamilton's forced fumble, recovered by Starks, was a huge turning point, but it does not erase the coverage and finish problems." }
-    - { name: "Specialists", assessment: "Strength", trend: "down", season_grade: "B+", last_game_grade: "B+", explanation: "Loop made the stadium-record 64-yarder before halftime, but missed from 40 in the fourth quarter. The spectacular long-range kick and routine miss belong in the same evaluation." }
+    - { name: "Quarterback", assessment: "Elite", trend: "stable", season_grade: "A", last_game_grade: "A+", explanation: "Week 5 update: Huntley completed 24 of 32 passes for 201 yards, two touchdowns and no interceptions, then scored the overtime winner. The displayed letter grades retain the Week 4 editorial evaluation; Jackson's latest season QBR and CPOE are separate analytics.", link: "/ravens/first-and-five-falcons-week-five-2026/" }
+    - { name: "Running backs", assessment: "Solid", trend: "down", season_grade: "B+", last_game_grade: "C+", explanation: "Week 5 update: Henry ran for 102 yards and added a receiving touchdown; Hill contributed 73 rushing yards. Their production led a 208-yard team rushing night. Letter grades remain the Week 4 editorial evaluation." }
+    - { name: "Wide receivers", assessment: "Strength", trend: "stable", season_grade: "A-", last_game_grade: "A", explanation: "Week 5 update: Flowers returned to action, Bateman supplied key completions and Walker caught the late touchdown. Flowers' current YAC over expectation is shown separately from the retained Week 4 letter grades." }
+    - { name: "Tight ends", assessment: "Solid", trend: "up", season_grade: "B", last_game_grade: "B+", explanation: "Week 5 update: Andrews' lost fumble was returned for a touchdown, though he helped on the overtime drive. Vannett joined the blocking rotation with Smythe on IR. The letter grades remain the Week 4 evaluation." }
+    - { name: "Offensive line", assessment: "Mixed", trend: "up", season_grade: "C+", last_game_grade: "C", explanation: "Week 5 update: Ioane made his second start at center and Emery Jones Jr. replaced the inactive Vorhees. The run game produced 208 yards. Jurgens' debut still requires concussion clearance. ESPN trench rates and Filmstudy's aggregated letter grades remain through Week 4 until new reports are published.", link: "/ravens/first-and-five-falcons-week-five-2026/" }
+    - { name: "Defensive line", assessment: "Strength", trend: "up", season_grade: "B+", last_game_grade: "B-", explanation: "Week 5 update: Campbell helped anchor the front and Madubuike's workload rose to 53 snaps. Washington's ankle is a new availability watch. ESPN run-stop rates and the editorial letter grades still carry their Week 4 dates." }
+    - { name: "Edge rushers", assessment: "Solid", trend: "down", season_grade: "B", last_game_grade: "C+", explanation: "Week 5 update: Green recorded a sack and two tackles for loss, while Robinson's late strip-sack helped stop Atlanta's final regulation drive. Hendrickson missed a second game. The letter grades and latest published ESPN rush rates remain through Week 4." }
+    - { name: "Linebackers", assessment: "Solid", trend: "up", season_grade: "B", last_game_grade: "B-", explanation: "Week 5 update: Atlanta converted 9 of 17 third downs, keeping underneath coverage and situational execution on the correction list. No defensible free league-wide linebacker metric is added; the letter grades remain the Week 4 evaluation." }
+    - { name: "Secondary", assessment: "Mixed", trend: "up", season_grade: "B-", last_game_grade: "C+", explanation: "Week 5 update: Hamilton sealed overtime with an interception and Starks led the team with 10 tackles. Humphrey played all 64 defensive snaps. The updated opponent CPOE is separate from the retained Week 4 letter grades." }
+    - { name: "Specialists", assessment: "Strength", trend: "down", season_grade: "B+", last_game_grade: "B+", explanation: "Week 5 update: Loop made all three field-goal attempts, including two from 51 yards, plus the overtime extra point. The letter grades remain the Week 4 editorial evaluation." }
 
   weekly_changes:
-    - { direction: "up", title: "The defense answered", text: "Two takeaways, a fourth-and-goal stop and 18 points allowed moved both core defensive efficiency measures to 11th." }
-    - { direction: "up", title: "Ioane steadied center", text: "The rookie handled his first start at center while Simmons generated no pressures in their nine matchups." }
-    - { direction: "up", title: "Loop's range", text: "A 64-yard field goal set the M&T Bank Stadium record, although a later miss from 40 left a finishing opportunity unused." }
-    - { direction: "down", title: "Week 5 availability", text: "Jackson, Hendrickson, Humphrey and Jurgens missed Thursday practice. Flowers, Simpson and Vorhees were limited; Stanley practiced fully. Smythe is on season-ending IR, and final Atlanta game designations are pending." }
+    - { direction: "up", title: "Huntley finished the job", text: "Two touchdown passes, the overtime sneak and no interceptions gave the Ravens a third straight win without their starting quarterback." }
+    - { direction: "up", title: "The run game traveled", text: "Henry and Hill powered 208 rushing yards behind another reshuffled line." }
+    - { direction: "up", title: "The defense closed", text: "Hamilton's overtime interception sealed the win. Atlanta's offensive scoring was limited to 16 points." }
+    - { direction: "down", title: "Third downs still hurt", text: "Atlanta converted 9 of 17 third downs. Situational coverage remains a priority despite the late stops." }
+    - { direction: "stable", title: "Cleveland availability pending", text: "Jackson, Hendrickson, Jurgens and Vorhees missed Atlanta. Resolved game-day flags have been removed; new Week 6 designations await official reports." }
 
   championship_check:
-    - { category: "Quarterback play", status: "Ready", explanation: "Jackson remains fourth in qualified Total QBR. The concern is his ankle, not the quality of his first-half play against Tennessee." }
-    - { category: "Pass protection", status: "Trending Right", explanation: "Ioane passed a difficult first test at center and Stanley practiced fully Thursday. Vorhees and Simpson were limited, while Jurgens remains in concussion protocol with three other centers on IR." }
-    - { category: "Explosive offense", status: "Ready", explanation: "The Ravens remain second in explosive-play rate, with Flowers' 52-yard reception the latest example." }
-    - { category: "Four-man pass rush", status: "Unclear", explanation: "Only one sack against Tennessee keeps finishing pressure on the agenda, particularly while Hendrickson recovers." }
-    - { category: "Health", status: "Concern", explanation: "Jackson, Hendrickson, Humphrey and Jurgens missed Thursday practice; Flowers, Simpson and Vorhees were limited. Smythe is on IR for the season. Final Week 5 game designations are pending." }
+    - { category: "Quarterback play", status: "Ready", explanation: "Jackson is second in the latest qualified Total QBR rankings. Huntley delivered the Atlanta comeback; Jackson's recovery remains the availability question." }
+    - { category: "Pass protection", status: "Unclear", explanation: "Ioane has stabilized center, but Jurgens and Vorhees missed Atlanta and the line remains in transition." }
+    - { category: "Explosive offense", status: "Ready", explanation: "The Ravens remain third in explosive-play rate. The run game supplied Atlanta's biggest offensive gain." }
+    - { category: "Four-man pass rush", status: "Unclear", explanation: "Green and Robinson made important plays in Atlanta, but Hendrickson's absence remains a limitation. Team win rates are still published through Week 4." }
+    - { category: "Health", status: "Concern", explanation: "Jackson, Hendrickson, Jurgens and Vorhees missed Week 5. Several centers and Smythe remain on IR; no final Cleveland designations have been issued." }
 
 preseason_form:
   sequence: ["W", "W", "W"]
@@ -221,10 +223,10 @@ preseason_form:
   points_against: 13
 
 unit_grade_context:
-  season_label: "2026 season to date"
+  season_label: "Editorial through Week 4"
   last_game_label: "Week 4 vs. Tennessee"
   analytics_as_of: "Each league-wide metric carries its latest published week"
-  note: "Dual Eights letter grades remain editorial. League-wide analytics are supporting evidence; each metric is labeled with its source and latest published week."
+  note: "Letter grades and assessment arrows retain the latest editorial evaluation, through Week 4; Week 5 grades have not been assigned. Week 5 production is summarized below each unit. League-wide analytics are refreshed independently and labeled with their actual reporting week."
 
 preseason_last_game:
   type_label: "Preseason finale"
@@ -246,28 +248,28 @@ preseason_last_game:
   source_url: "https://www.baltimoreravens.com/news/ravens-dominate-commanders-2026-nfl-preseason-undefeated"
 
 matchup_focus:
-  team: "ATL"
-  label: "Falcons matchup lens"
+  team: "CLE"
+  label: "Browns matchup lens"
   items:
-    - title: "Make the offensive edge count"
-      text: "The Ravens' offense is third in EPA/play, but Atlanta's defense is eighth in the available results. Maintaining the passing ceiling will depend on Jackson's availability and the protection plan."
+    - title: "Keep the offense on schedule"
+      text: "The Ravens are sixth in offensive EPA/play, while Cleveland is 16th in defensive EPA allowed. The quarterback decision and interior-line availability still frame the plan."
       source_url: "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
-    - title: "Protect the middle of the line"
-      text: "Ioane is preparing for another start at center while Jurgens remains in concussion protocol. Vorhees and Simpson were limited Thursday, but Stanley returned to full participation. Final Atlanta game designations are pending."
-      source_url: "https://www.baltimoreravens.com/team/injury-report/"
-    - title: "Finish the routine defensive plays"
-      text: "Atlanta's offense ranks 32nd in EPA/play through its three completed games. That comparison is provisional until the Falcons' remaining Week 4 game is included; the Ravens' defensive EPA rank improved to 11th."
+    - title: "Test the Browns' big-play defense"
+      text: "The Ravens are third in explosive-play rate; Cleveland ranks 29th in explosive gains allowed. Avoiding negative plays will give the Ravens more chances to exploit that opening."
       source_url: "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
+    - title: "Win the protection battle"
+      text: "Cleveland allowed eight sacks against the Jets. Schwesinger's new ankle injury and Graham's ongoing recovery also bear watching on the other side of the line."
+      source_url: "https://www.baltimoreravens.com/news/injured-carson-schwesinger-could-face-ravens-week-6-todd-monken-bengals-have-bye-before-facing-ravens-around-afc-north"
 
 opponent_availability:
-  team: "ATL"
-  label: "Falcons availability watch"
-  note: "Through Thursday, October 8 practice. Final Week 5 game designations are pending."
+  team: "CLE"
+  label: "Browns availability watch"
+  note: "Reviewed October 12. Week 6 practice reports and final Ravens-game designations are not yet published; prior absences are not treated as new Out designations."
   items:
-    - { player: "Jake Matthews", position: "OT", status: "Limited", detail: "Returned to limited practice with a groin injury. His availability affects protection for Penix.", source_label: "Falcons official report · Oct. 8", source_url: "https://www.atlantafalcons.com/news/falcons-injury-report-ilb-divine-deablo-de-samson-ebukam-added-to-report" }
-    - { player: "Za'Darius Smith", position: "EDGE", status: "Monitoring", detail: "Did not practice with a concussion/neck injury; remains in concussion protocol.", source_label: "Falcons official report · Oct. 8", source_url: "https://www.atlantafalcons.com/news/falcons-injury-report-ilb-divine-deablo-de-samson-ebukam-added-to-report" }
-    - { player: "Divine Deablo", position: "LB", status: "Limited", detail: "Added to Thursday's report with a hamstring injury; practiced on a limited basis.", source_label: "Falcons official report · Oct. 8", source_url: "https://www.atlantafalcons.com/news/falcons-injury-report-ilb-divine-deablo-de-samson-ebukam-added-to-report" }
-    - { player: "Samson Ebukam", position: "EDGE", status: "Limited", detail: "Added to Thursday's report with a hamstring injury; practiced on a limited basis.", source_label: "Falcons official report · Oct. 8", source_url: "https://www.atlantafalcons.com/news/falcons-injury-report-ilb-divine-deablo-de-samson-ebukam-added-to-report" }
+    - { player: "Carson Schwesinger", position: "LB", status: "Monitoring", detail: "A Grade 1 ankle sprain was reported Monday. He has not been ruled out against the Ravens; his response to treatment will determine availability.", source_label: "Ravens AFC North report · Oct. 12", source_url: "https://www.baltimoreravens.com/news/injured-carson-schwesinger-could-face-ravens-week-6-todd-monken-bengals-have-bye-before-facing-ravens-around-afc-north" }
+    - { player: "Mason Graham", position: "DT", status: "Monitoring", detail: "Missed the Jets game with knee and ankle injuries. The Browns have described an MCL sprain and ankle sprain, with his return evaluated week to week.", source_label: "Browns medical update · Oct. 2 / Week 5 report", source_url: "https://www.clevelandbrowns.com/news/mason-graham-sustained-mcl-sprain-and-ankle-sprain-in-week-4-against-the-steelers" }
+    - { player: "Teven Jenkins", position: "G", status: "Monitoring", detail: "Ruled out for Week 5 with a back injury after missing all three practices. His Week 6 status is pending.", source_label: "Browns official Week 5 report", source_url: "https://www.clevelandbrowns.com/team/injury-report/" }
+    - { player: "Mike Hall Jr.", position: "DT", status: "Monitoring", detail: "Ruled out for Week 5 with an ankle injury. No final Cleveland-Ravens designation has been issued.", source_label: "Browns official Week 5 report", source_url: "https://www.clevelandbrowns.com/team/injury-report/" }
 
 preseason_games:
   - { week: "Preseason 3", date: "2026-08-28", location: "home", opponent: "Washington Commanders", result: "W", ravens_score: 41, opponent_score: 3, takeaway: "The Ravens closed an unbeaten preseason with their largest margin, while the defense again kept the opponent out of the end zone.", recap_url: "https://www.baltimoreravens.com/news/ravens-dominate-commanders-2026-nfl-preseason-undefeated" }
@@ -275,23 +277,21 @@ preseason_games:
   - { week: "Preseason 1", date: "2026-08-15", location: "home", opponent: "Philadelphia Eagles", result: "W", ravens_score: 24, opponent_score: 7, takeaway: "The Ravens opened with a balanced win and allowed only one touchdown.", recap_url: "https://www.baltimoreravens.com/news/ravens-take-care-of-eagles-preseason-opener-ravens-2026" }
 
 injury_report_context:
-  label: "Week 5 at Atlanta · Thursday, October 8"
-  note: "Practice participation through Thursday; final game-status designations are pending. Full participants are omitted from this card."
+  label: "Week 6 at Cleveland · Reviewed October 12"
+  note: "Includes unresolved absences and material IR cases. Flowers and Humphrey played against Atlanta; Simpson was cleared, so their old flags are removed. Week 6 practice reports and final game designations are pending. Monitoring does not mean ruled out."
 
 injuries:
-  - { player: "Lamar Jackson", position: "QB", status: "Monitoring", injury: "Ankle", importance: "Critical", expected_availability: "Did not practice Wednesday or Thursday. Minter has left open playing without practice; no final Atlanta designation yet.", impact: "Huntley is preparing to start if Jackson cannot play.", source_label: "Ravens practice report · Oct. 8", source_url: "https://www.baltimoreravens.com/news/lamar-jackson-injury-report-ravens-falcons-zay-flowers-ronnie-stanley-trey-hendrickson" }
-  - { player: "Trey Hendrickson", position: "EDGE", status: "Monitoring", injury: "Finger", importance: "Starter", expected_availability: "Did not practice Wednesday or Thursday following his finger procedure. Final Atlanta designation is pending.", impact: "Green, Robinson and Burke must carry the rush if he remains unavailable.", source_label: "Ravens practice report · Oct. 8", source_url: "https://www.baltimoreravens.com/news/lamar-jackson-injury-report-ravens-falcons-zay-flowers-ronnie-stanley-trey-hendrickson" }
-  - { player: "Marlon Humphrey", position: "CB", status: "Monitoring", injury: "Hamstring / calf", importance: "Starter", expected_availability: "Did not practice Wednesday or Thursday. Final Atlanta designation is pending.", impact: "Awuzie and the remaining corners face a larger role against Drake London if Humphrey is absent.", source_label: "Ravens practice report · Oct. 8", source_url: "https://www.baltimoreravens.com/news/lamar-jackson-injury-report-ravens-falcons-zay-flowers-ronnie-stanley-trey-hendrickson" }
-  - { player: "Cam Jurgens", position: "C", status: "Monitoring", injury: "Concussion", importance: "Starter", expected_availability: "Did not practice Thursday; remains in concussion protocol. The club expects his debut in Week 6, subject to clearance.", impact: "Ioane is preparing for another start at center against Atlanta.", source_label: "Ravens practice report · Oct. 8", source_url: "https://www.baltimoreravens.com/news/lamar-jackson-injury-report-ravens-falcons-zay-flowers-ronnie-stanley-trey-hendrickson" }
-  - { player: "Zay Flowers", position: "WR", status: "Limited", injury: "Foot", importance: "Starter", expected_availability: "Limited Wednesday and Thursday with a foot injury. Final Atlanta designation is pending.", impact: "His separation and yards after catch are especially valuable if Huntley starts.", source_label: "Ravens injury report · Oct. 8", source_url: "https://www.baltimoreravens.com/team/injury-report/" }
-  - { player: "John Simpson", position: "G", status: "Limited", injury: "Groin", importance: "Starter", expected_availability: "Limited Wednesday and Thursday. Final Atlanta designation is pending.", impact: "Another interior-line concern while Ioane remains at center.", source_label: "Ravens injury report · Oct. 8", source_url: "https://www.baltimoreravens.com/team/injury-report/" }
-  - { player: "Andrew Vorhees", position: "G", status: "Limited", injury: "Foot", importance: "Starter", expected_availability: "Improved from no practice Wednesday to limited participation Thursday. Final Atlanta designation is pending.", impact: "Emery Jones Jr. is the replacement option if Vorhees cannot start at right guard.", source_label: "Ravens injury report · Oct. 8", source_url: "https://www.baltimoreravens.com/team/injury-report/" }
+  - { player: "Lamar Jackson", position: "QB", status: "Monitoring", injury: "Ankle", importance: "Critical", expected_availability: "Missed Week 5 after not practicing all week. No final Cleveland designation has been issued.", impact: "Huntley remains the alternative if Jackson cannot return.", source_label: "Ravens official game report · Oct. 9", source_url: "https://www.baltimoreravens.com/news/lamar-jackson-trey-hendrickson-injury-report-marlon-humphrey-zay-flowers-ronnie-stanley-ravens-falcons" }
+  - { player: "Trey Hendrickson", position: "EDGE", status: "Monitoring", injury: "Finger", importance: "Starter", expected_availability: "Missed a second straight game after his finger procedure. Cleveland availability is pending.", impact: "Green, Robinson and Burke continue to cover the missing rush snaps.", source_label: "Ravens official game report · Oct. 9", source_url: "https://www.baltimoreravens.com/news/lamar-jackson-trey-hendrickson-injury-report-marlon-humphrey-zay-flowers-ronnie-stanley-ravens-falcons" }
+  - { player: "Cam Jurgens", position: "C", status: "Monitoring", injury: "Concussion", importance: "Starter", expected_availability: "Did not debut in Atlanta. Week 6 remains the target, contingent on concussion-protocol clearance.", impact: "Ioane remains the center option until Jurgens is cleared.", source_label: "Ravens game-day update · Oct. 11", source_url: "https://www.baltimoreravens.com/news/zay-flowers-marlon-humphrey-active-week-5-falcons-ravens" }
+  - { player: "Andrew Vorhees", position: "G", status: "Monitoring", injury: "Foot", importance: "Starter", expected_availability: "Inactive against Atlanta after a questionable designation. His Cleveland status awaits the new practice reports.", impact: "Emery Jones Jr. started at right guard in Week 5.", source_label: "Ravens game-day update · Oct. 11", source_url: "https://www.baltimoreravens.com/news/zay-flowers-marlon-humphrey-active-week-5-falcons-ravens" }
+  - { player: "Broderick Washington", position: "DL", status: "Monitoring", injury: "Ankle", importance: "Rotation", expected_availability: "Ankle injury reported October 12; official Cleveland designation pending.", impact: "Interior rotation bears watching.", source_label: "CBS injury tracker · Oct. 12", source_url: "https://www.cbssports.com/nfl/teams/BAL/baltimore-ravens/injuries/" }
   - { player: "Durham Smythe", position: "TE", status: "Injured Reserve", injury: "Torn Achilles", importance: "Rotation", expected_availability: "Placed on IR October 7 and out for the remainder of the season.", impact: "Vannett joined the active roster; Hibner and Cuevas may also take larger blocking roles.", source_label: "Ravens roster announcement · Oct. 7", source_url: "https://www.baltimoreravens.com/news/nick-vannett-tight-end-ravens-roster-durham-smythe-injury-2026" }
   - { player: "Danny Pinter", position: "C", status: "Injured Reserve", injury: "Knee", importance: "Starter", expected_availability: "Remains on IR after his preseason knee injury.", impact: "One of three injured centers behind the move for Jurgens.", source_label: "Ravens center trade report · Oct. 7", source_url: "https://www.baltimoreravens.com/news/ravens-trade-cam-jurgens-center-pro-bowl-injuries-2026" }
-  - { player: "Jovaughn Gwyn", position: "C", status: "Injured Reserve", injury: "Ankle", importance: "Starter", expected_availability: "On IR since October 3 after the long-term injury in Dallas.", impact: "Unavailable as the Ravens rebuild their center depth.", source_label: "Ravens center trade report · Oct. 7", source_url: "https://www.baltimoreravens.com/news/ravens-trade-cam-jurgens-center-pro-bowl-injuries-2026" }
-  - { player: "Ethan Pocic", position: "C", status: "Injured Reserve", injury: "Knee", importance: "Rotation", expected_availability: "On IR since October 3 after the injury in Dallas.", impact: "The veteran remains unavailable behind Ioane and Jurgens.", source_label: "Ravens center trade report · Oct. 7", source_url: "https://www.baltimoreravens.com/news/ravens-trade-cam-jurgens-center-pro-bowl-injuries-2026" }
-  - { player: "T.J. Tampa", position: "CB", status: "Injured Reserve", injury: "Knee", importance: "Depth", expected_availability: "Still listed on injured reserve; no activation announced.", impact: "Outside-corner depth remains reduced while Humphrey is sidelined in practice.", source_label: "Ravens roster · checked Oct. 9", source_url: "https://www.baltimoreravens.com/team/players-roster/" }
-  - { player: "Ja'Kobi Lane", position: "WR", status: "Injured Reserve", injury: "Wrist", importance: "Depth", expected_availability: "Still listed on injured reserve after wrist surgery; no activation announced.", impact: "The receiver room remains thinner while Flowers is limited.", source_label: "Ravens roster · checked Oct. 9", source_url: "https://www.baltimoreravens.com/team/players-roster/" }
+  - { player: "Jovaughn Gwyn", position: "C", status: "Injured Reserve", injury: "Ankle", importance: "Starter", expected_availability: "Placed on IR October 3; no activation transaction has been announced.", impact: "Unavailable as the Ravens rebuild their center depth.", source_label: "Ravens transactions · checked Oct. 12", source_url: "https://www.baltimoreravens.com/team/transactions/" }
+  - { player: "Ethan Pocic", position: "C", status: "Injured Reserve", injury: "Knee", importance: "Rotation", expected_availability: "Placed on IR October 3; no activation transaction has been announced.", impact: "The veteran remains unavailable behind Ioane and Jurgens.", source_label: "Ravens transactions · checked Oct. 12", source_url: "https://www.baltimoreravens.com/team/transactions/" }
+  - { player: "T.J. Tampa", position: "CB", status: "Injured Reserve", injury: "Knee", importance: "Depth", expected_availability: "Still listed on injured reserve; no activation announced.", impact: "Outside-corner and special-teams depth remain reduced.", source_label: "Ravens roster · checked Oct. 12", source_url: "https://www.baltimoreravens.com/team/players-roster/" }
+  - { player: "Ja'Kobi Lane", position: "WR", status: "Injured Reserve", injury: "Wrist", importance: "Depth", expected_availability: "Still listed on injured reserve after wrist surgery; no activation announced.", impact: "The receiver group remains without the rookie.", source_label: "Ravens roster · checked Oct. 12", source_url: "https://www.baltimoreravens.com/team/players-roster/" }
 
 sources:
   - { name: "nflverse schedules and play-by-play", role: "Automated regular-season results, EPA, success, explosive plays, red-zone drives and NFL ranks", url: "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html", cadence: "Schedules update about every five minutes; play-by-play is refreshed nightly after game days.", license: "CC BY 4.0" }
@@ -303,7 +303,8 @@ sources:
   - { name: "Baltimore Ravens official news and roster reports", role: "Availability, roster status and dated team context", url: "https://www.baltimoreravens.com/news/", cadence: "Reviewed for each dashboard update" }
 
 methodology_notes:
-  - "The Dual Eights efficiency index is the equal-weight average of four league percentiles: offensive EPA/play, offensive success rate, defensive EPA allowed/play and opponent success rate. It is a transparent, non-opponent-adjusted team index."
+  - "The current Dual Eights Efficiency Index uses the published v2.1 formula: 45% opponent/venue-adjusted offense, 45% adjusted defense and 10% context-adjusted special teams. Dropbacks and designed runs are fitted separately, with reduced fourth-quarter weight in extreme game states and a fixed 2025 calibration. The display transform is 50 + 50 × tanh(composite / 2); it is not a percentile or a win probability."
+  - "The raw EPA, success, explosive-play and red-zone scorecard statistics remain unweighted. Archived Week 1–3 index snapshots retain the original percentile formula; Week 4's published v2.1 value supplies the same-scale comparison for Week 5. Archived article text is unchanged."
   - "Only regular-season plays count toward the ranked scorecard. Kneels, spikes, two-point attempts, deleted plays and aborted plays are excluded."
   - "Explosive plays are runs of 10+ yards or passes of 20+ yards, divided by eligible run/pass plays."
   - "Red-zone rates are drive-level: a drive qualifies once it reaches the opponent 20-yard line."
@@ -318,6 +319,7 @@ methodology_notes:
   - "Filmstudy ranks compare Ravens linemen only. Dual Eights converts each explicitly published adjusted game letter grade to a standard grade-point scale, weights it by that game's scored snaps and rounds the average to the nearest letter grade. Players need at least 20 graded snaps; ungraded appearances do not enter the average. Delayed scoring published inside a later report is assigned to the actual game week and counted once."
 
 related_articles:
+  - "/ravens/first-and-five-falcons-week-five-2026/"
   - "/ravens/first-and-five-titans-week-four-2026/"
   - "/ravens/first-and-five-cowboys-week-three-2026/"
   - "/ravens/first-and-five-colts-week-one-2026/"
