@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+<title id="title">Ravens Falcons Week 5 at a glance</title>
+<desc id="desc">The Ravens beat the Falcons 30 to 23 in overtime and improve to 4 and 1. The Ravens rush for 208 yards. Tyler Huntley accounts for three touchdowns. Tyler Loop makes three field goals. Kyle Hamilton seals the win with an overtime interception.</desc>
+<rect width="1200" height="650" fill="#09080c"/>
+<rect width="1200" height="8" fill="#7c4dc4"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="55" y="58" fill="#bda4e5" font-size="22" font-weight="800" letter-spacing="2">DUAL EIGHTS · FIRST AND FIVE</text>
+<text x="1145" y="58" text-anchor="end" fill="#cfc8d5" font-size="22" font-weight="700">WEEK 5 · OCTOBER 11, 2026</text>
+<rect x="55" y="88" width="1090" height="188" rx="18" fill="#1d1427" stroke="#49315f" stroke-width="2"/>
+<text x="85" y="135" fill="#e8bc55" font-size="26" font-weight="800">FINAL / OT · ATLANTA</text>
+<text x="85" y="211" fill="#f7f4fb" font-size="51" font-weight="800">RAVENS 30 — FALCONS 23</text>
+<text x="85" y="250" fill="#cfc8d5" font-size="23" font-weight="600">An eight-point fourth-quarter comeback</text>
+<text x="1115" y="208" text-anchor="end" fill="#e8bc55" font-size="56" font-weight="800">4–1</text>
+<text x="1115" y="250" text-anchor="end" fill="#cfc8d5" font-size="23" font-weight="600">Ravens record</text>
+<rect x="55" y="315" width="530" height="125" rx="16" fill="#17131d" stroke="#49315f"/>
+<text x="80" y="378" fill="#e8bc55" font-size="46" font-weight="800">208</text>
+<text x="230" y="364" fill="#f7f4fb" font-size="26" font-weight="800">Ravens rushing yards</text>
+<text x="230" y="404" fill="#cfc8d5" font-size="21" font-weight="600">Henry 102 · Hill 73</text>
+<rect x="615" y="315" width="530" height="125" rx="16" fill="#17131d" stroke="#49315f"/>
+<text x="640" y="378" fill="#e8bc55" font-size="46" font-weight="800">3</text>
+<text x="790" y="364" fill="#f7f4fb" font-size="26" font-weight="800">Huntley touchdowns</text>
+<text x="790" y="404" fill="#cfc8d5" font-size="21" font-weight="600">2 passing · 1 rushing</text>
+<rect x="55" y="465" width="530" height="125" rx="16" fill="#17131d" stroke="#49315f"/>
+<text x="80" y="528" fill="#e8bc55" font-size="46" font-weight="800">3/3</text>
+<text x="230" y="514" fill="#f7f4fb" font-size="26" font-weight="800">Loop field goals</text>
+<text x="230" y="554" fill="#cfc8d5" font-size="21" font-weight="600">Two makes from 51 yards</text>
+<rect x="615" y="465" width="530" height="125" rx="16" fill="#17131d" stroke="#49315f"/>
+<text x="640" y="528" fill="#e8bc55" font-size="46" font-weight="800">1</text>
+<text x="790" y="514" fill="#f7f4fb" font-size="26" font-weight="800">Hamilton interception</text>
+<text x="790" y="554" fill="#cfc8d5" font-size="21" font-weight="600">Sealed the win in overtime</text>
+<text x="55" y="628" fill="#cfc8d5" font-size="17" font-weight="600">SOURCE: BALTIMORERAVENS.COM GAME RECAP · GAME STATISTICS · DUALEIGHTS.COM</text>
+</g>
+</svg>
