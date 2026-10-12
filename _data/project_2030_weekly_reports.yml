@@ -1,4 +1,302 @@
 reports:
+  - id: "2026-10-11"
+    group: prospects
+    group_label: Prospects
+    published: "October 12, 2026"
+    window: "October 5-11, 2026"
+    week_ending: "October 11, 2026"
+    source_note: "Official club, league, federation and verified match records were prioritized, followed by original local club-specific coverage in the relevant language. Club press releases republished by OurSports Central retain their official origin; secondary match logs fill only specific gaps. Julian Hall's research aliases were searched and reconciled. Recaps state verified facts and attributed local observations; development reads are scouting interpretation. Minutes use regulation time unless stoppage-time substitutions require a qualified total. This report covers the completed Monday-Sunday window and excludes October 12 fixtures."
+    summary:
+      biggest_risers: "Justin Ellis supplied the USA's winner against Canada, Cavan Sullivan created both Union goals, and Julian Hall scored again for the Red Bulls. Paxten Aaronson and Frankie Westfield added assists, while Mathis Albert's first senior start, Cole Campbell's first senior cap and Luca Bombino's longer Championship opportunity were smaller positive steps."
+      issues_to_monitor: "Wiley, Pukstas, Tsakiris and Paredes missed action with documented injuries. Gozo and Ferree had no verified competitive minutes; Cremaschi was unused and Downs received only a stoppage-time cameo. Watch injury clearances, the young attackers' access to club minutes, Kochen's response after five conceded, and Brady's decision-making rather than save totals alone."
+      best_story: "Club football resumed after the USA's 1-0 win over Canada. The strongest evidence was specific: Ellis's finish, Sullivan's two scoring combinations, Hall's first-time goal and Aaronson's dead-ball delivery. Next week, watch whether Campbell and Albert turn international trust into club opportunities and whether Bombino's longer outing becomes a sustained role."
+    players:
+      - profile: caleb-wiley
+        name: "Caleb Wiley"
+        club: "Preston North End"
+        trend: "✚"
+        direction: "insufficient"
+        direction_label: "Injured"
+        context: "0 appearances; Championship"
+        recap: "Wiley missed Preston's 0-1 home defeat to Millwall on October 10. Post-match reporting includes him among the injured absentees, rather than an unused tactical option. No trustworthy new return date was published in the coverage checked."
+        development_read: "No performance evaluation this week. Availability, not selection form, is the immediate obstacle; returning to training and sustaining Championship minutes remain the priorities."
+        sources:
+          - { label: "Alexander's injury update (Hayters, original reporting)", url: "https://hayters.com/alexander-gives-updates-on-preston-north-ends-injury-nightmare-after-millwall-loss/" }
+      - profile: damion-downs
+        name: "Damion Downs"
+        club: "St. Louis CITY SC"
+        trend: "↓"
+        direction: "falling"
+        direction_label: "Minutes remain limited"
+        context: "1 MLS substitute appearance, stoppage time only"
+        recap: "Downs was unused against Canada, then entered St. Louis's 6-2 win over LA Galaxy on October 11 at 90+1. He had no goal or assist. The club box score establishes a stoppage-time cameo, not a full regulation-minute appearance; an exact elapsed total is not given."
+        development_read: "Even a six-goal club win yielded only a late cameo. The concern is the restricted striker role, not a poor performance in a sample too short to grade."
+        sources:
+          - { label: "USA-Canada match and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-canada-match-recap-highlights-st-paul-minnesota" }
+          - { label: "CITY-Galaxy recap and substitutions (official club)", url: "https://www.stlcitysc.com/news/match-report-st-louis-city-sc-wins-6-2-against-la-galaxy-at-energizer-park-on-sunday-night-soccer" }
+      - profile: zavier-gozo
+        name: "Zavier Gozo"
+        club: "Crystal Palace"
+        trend: "↓"
+        direction: "falling"
+        direction_label: "Senior opportunities narrowing"
+        context: "0 verified competitive appearances"
+        recap: "Gozo was unused against Canada and was absent from Palace's senior matchday squad in the 3-1 win over Nottingham Forest on October 11. The completed match squad corroborates that absence; no verified reserve appearance or current explanation for exclusion was located."
+        development_read: "Another week without senior minutes weakens the near-term pathway after his transfer. This is a role assessment, not evidence that his ability has declined or that he is injured."
+        sources:
+          - { label: "USA-Canada match and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-canada-match-recap-highlights-st-paul-minnesota" }
+          - { label: "Palace-Forest completed squad (secondary match record)", url: "https://www.footballwebpages.co.uk/match/2026-2027/premier-league/crystal-palace/nottingham-forest/590994" }
+      - profile: julian-hall
+        name: "Julian Hall"
+        club: "New York Red Bulls"
+        trend: "↑"
+        direction: "rising"
+        direction_label: "Scoring continues"
+        context: "2 appearances, 1 start, 135 regulation minutes, 1 goal"
+        recap: "Hall played the second half against Canada, then completed 90 minutes at center forward in the Red Bulls' 4-1 win over San Diego on October 10. He opened the scoring at 15 minutes, meeting Jorge Ruvalcaba's cross with a first-time finish. No assist was credited."
+        development_read: "His senior-international exposure is now being reinforced by club output. The timing and first-time execution of the finish strengthen his penalty-box profile without needing to extrapolate from one goal."
+        sources:
+          - { label: "USA-Canada match and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-canada-match-recap-highlights-st-paul-minnesota" }
+          - { label: "Red Bulls-San Diego box score (official SDFC release, republished)", url: "https://www.oursportscentral.com/services/releases/san-diego-fc-falls-4-1-to-new-york-red-bulls-in-first-ever-meeting/n-6420511" }
+      - profile: justin-ellis
+        name: "Justin Ellis"
+        club: "Orlando City"
+        trend: "↑"
+        direction: "rising"
+        direction_label: "USMNT match winner"
+        context: "2 appearances, 1 start, 52 regulation minutes, 1 goal"
+        recap: "Ellis started against Canada, scored the 29th-minute winner from Alex Freeman's delivery, and left at halftime. He subsequently entered Orlando's 3-2 win over Columbus on October 10 at 83 minutes, with no club goal or assist."
+        development_read: "The decisive international finish strengthens his case for further senior opportunities. Orlando still used him late off the bench, so the next step is converting that international impact into a larger club role."
+        sources:
+          - { label: "USA-Canada match and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-canada-match-recap-highlights-st-paul-minnesota" }
+          - { label: "Orlando-Columbus substitutions (official club release, republished)", url: "https://www.oursportscentral.com/services/releases/orlando-city-earns-3-2-home-win-over-columbus-crew/n-6420460" }
+      - profile: adri-mehmeti
+        name: "Adri Mehmeti"
+        club: "New York Red Bulls"
+        trend: "↑"
+        direction: "rising"
+        direction_label: "Full-game midfield contribution"
+        context: "2 appearances, 1 start, 106 regulation minutes, 1 MLS assist"
+        recap: "Mehmeti entered the Canada match at 74 minutes and completed the Red Bulls' 4-1 win over San Diego. His pass to Ronald Donkor began the combination for Ruvalcaba's 27th-minute goal, earning an MLS secondary assist. His club role remained central midfield."
+        development_read: "The full match and productive forward combination are useful evidence of trust and attacking connection. His contribution deserves credit as an MLS assist, while distinguishing it from the final pass."
+        sources:
+          - { label: "USA-Canada match and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-canada-match-recap-highlights-st-paul-minnesota" }
+          - { label: "Red Bulls-San Diego box score (official SDFC release, republished)", url: "https://www.oursportscentral.com/services/releases/san-diego-fc-falls-4-1-to-new-york-red-bulls-in-first-ever-meeting/n-6420511" }
+      - profile: neil-pierre
+        name: "Neil Pierre"
+        club: "Philadelphia Union"
+        trend: "→"
+        direction: "steady"
+        direction_label: "Senior and club defensive minutes"
+        context: "2 appearances, 1 start, 106 regulation minutes"
+        recap: "Pierre entered against Canada at 74 minutes, then completed the Union's 2-1 win over Real Salt Lake at center back. Philadelphia held its two-goal advantage until conceding at 90+6; Pierre had no goal or assist."
+        development_read: "The return to a full club start sustains the positive pathway established by his first international start. This week's reporting does not isolate enough defensive actions to claim a further performance breakthrough or assign him individual blame for the late goal."
+        sources:
+          - { label: "USA-Canada match and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-canada-match-recap-highlights-st-paul-minnesota" }
+          - { label: "Union-RSL box score (official club release, republished)", url: "https://www.oursportscentral.com/services/releases/philadelphia-union-top-real-salt-lake-2-1/n-6420451" }
+      - profile: chris-brady
+        name: "Chris Brady"
+        club: "Chicago Fire"
+        trend: "→"
+        direction: "steady"
+        direction_label: "Club return steadies week"
+        context: "1 start, 90 minutes, 4 saves, 1 conceded"
+        recap: "Brady was unused against Canada and missed Chicago's October 6 win over Vancouver while on international duty. He returned to start the 2-1 win over NYCFC on October 10, making four saves. Chicago played with ten men from the 43rd minute. Local coverage traces NYCFC's goal to a midfield giveaway."
+        development_read: "A useful club response after last week's uneven international start, but four saves and a win alone do not prove that his decision-making issues have disappeared. Holding the match with ten men is positive context; keep the individual grade measured."
+        sources:
+          - { label: "Chicago-NYCFC box score (official Fire release, republished)", url: "https://www.oursportscentral.com/services/releases/shorthanded-chicago-fire-fc-rallies-for-2-1-comeback-win-against-new-york-city-fc/n-6420334" }
+          - { label: "Swiss Delight match report (local MIR97)", url: "https://www.meninred97.com/swiss-delight-chicago-fire-2-new-york-city-fc-1/" }
+          - { label: "USA-Canada match and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-canada-match-recap-highlights-st-paul-minnesota" }
+      - profile: rokas-pukstas
+        name: "Rokas Pukstas"
+        club: "Middlesbrough"
+        trend: "✚"
+        direction: "insufficient"
+        direction_label: "Injured"
+        context: "0 appearances; Championship"
+        recap: "Pukstas missed Middlesbrough's 1-0 win over Wolves on October 10. Kim Hellberg confirmed that he injured himself during the international break; local reporting says he is expected to miss a number of weeks. A precise diagnosis and return date were not verified."
+        development_read: "No performance evaluation this week. The injury interrupts his effort to establish a larger role after joining Boro, but the absence should not be presented as a tactical rejection."
+        sources:
+          - { label: "Hellberg injury confirmation (Hayters original reporting, syndicated)", url: "https://www.livescore.com/en/news/football/england-championship/hellberg-reveals-middlesbrough-injury-blow-after-win-over-wolves-hayters/" }
+          - { label: "Pukstas injury report (local Northern Echo, syndicated)", url: "https://uk.sports.yahoo.com/news/middlesbrough-injury-setback-revealed-wake-070000977.html" }
+      - profile: cavan-sullivan
+        name: "Cavan Sullivan"
+        club: "Philadelphia Union"
+        trend: "↑"
+        direction: "rising"
+        direction_label: "Two-assist club return"
+        context: "1 start, 90-plus minutes, 2 MLS assists"
+        recap: "Sullivan was unused against Canada, then started the Union's 2-1 win over RSL in attacking midfield. He helped build Damiani's 31st-minute goal with Westfield and supplied the assist for Iloski at 82 minutes. Philadelphia's box score lists his replacement at 90+1; the local recap gives 90+2, so the elapsed total is reported as 90-plus minutes."
+        development_read: "Two scoring sequences in a close win provide stronger evidence than the team result alone. His combinations with the right side and continued involvement late in the match reinforce the creative role that has driven his rise."
+        sources:
+          - { label: "Union-RSL box score (official club release, republished)", url: "https://www.oursportscentral.com/services/releases/philadelphia-union-top-real-salt-lake-2-1/n-6420451" }
+          - { label: "Union-RSL match report (local Philly Soccer Page)", url: "https://phillysoccerpage.net/2026/10/10/match-report-philadelphia-union-2-1-real-salt-lake/comment-page-1/" }
+      - profile: niko-tsakiris
+        name: "Niko Tsakiris"
+        club: "San Jose Earthquakes"
+        trend: "✚"
+        direction: "insufficient"
+        direction_label: "Injured"
+        context: "0 appearances; MLS"
+        recap: "Tsakiris missed San Jose's 1-1 draw at Colorado on October 10 with an upper-body injury, explicitly identified in the club's post-match notes. No new confirmed return timetable was located."
+        development_read: "No performance evaluation this week. His absence has a documented injury explanation; the next meaningful development is medical clearance and a return to his creative midfield role."
+        sources:
+          - { label: "Colorado-San Jose box score and availability (official Quakes release, republished)", url: "https://www.oursportscentral.com/services/releases/earl-edwards-jr-s-nine-saves-dave-romneys-second-half-goal-preserve-point-and-extend-unbeaten-streak-to-seve/n-6420515" }
+      - profile: paxten-aaronson
+        name: "Paxten Aaronson"
+        club: "Colorado Rapids"
+        trend: "↑"
+        direction: "rising"
+        direction_label: "Set-piece creation"
+        context: "1 start, 90 minutes, 1 assist"
+        recap: "Aaronson completed Colorado's 1-1 draw with San Jose, operating in the attacking group. His corner supplied Donavan Phillip's 27th-minute header. Another late corner produced Wayne Frederick's header against the post. The club notes six goal contributions across Aaronson's last five MLS appearances, including this match."
+        development_read: "Repeatable dead-ball quality supplied both a goal and a late chance to win. The productive recent run strengthens his attacking-midfield case, even though Colorado could not turn its pressure into three points."
+        sources:
+          - { label: "Rapids-San Jose recap (official Colorado)", url: "https://www.coloradorapids.com/news/recap-rapids-split-points-with-san-jose-to-extend-home-unbeaten-streak" }
+          - { label: "Colorado-San Jose box score and availability (official Quakes release, republished)", url: "https://www.oursportscentral.com/services/releases/earl-edwards-jr-s-nine-saves-dave-romneys-second-half-goal-preserve-point-and-extend-unbeaten-streak-to-seve/n-6420515" }
+      - profile: mathis-albert
+        name: "Mathis Albert"
+        club: "Borussia Dortmund"
+        trend: "↑"
+        direction: "rising"
+        direction_label: "First senior international start"
+        context: "1 start, 61 minutes; no club minutes"
+        recap: "Albert made his first USMNT start against Canada, playing 61 minutes on the left of the attacking line with no goal or assist. He then remained an unused substitute in Dortmund's 2-2 Bundesliga draw with Werder Bremen on October 9."
+        development_read: "The senior start at 17 is a meaningful responsibility marker. Dortmund's unused-bench role remains the limiting factor; this is a modest rise in experience and trust, not proof of a club breakthrough."
+        sources:
+          - { label: "USA-Canada match and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-canada-match-recap-highlights-st-paul-minnesota" }
+          - { label: "Dortmund-Bremen lineup (official BVB)", url: "https://www.bvb.de/de/de/aktuelles/news/news.html/2026/10/9/BVB-kassiert-Last-Minute-Ausgleich-gegen-Werder-Bremen.html" }
+      - profile: diego-kochen
+        name: "Diego Kochen"
+        club: "FC Barcelona / Lyngby"
+        trend: "→"
+        direction: "steady"
+        direction_label: "Difficult club return"
+        context: "1 start, 90 minutes, 5 conceded; saves unverified"
+        recap: "Kochen was unused against Canada, then completed Lyngby's 2-5 defeat at Brondby on October 11 in the Danish Superliga. Lyngby trailed 0-3 at halftime and 0-4 after 51 minutes. The official club recap and verified Danish match record establish the result and start, but do not supply a trustworthy save total or specific goalkeeper-error assessment."
+        development_read: "Five conceded make the next outing important, but a team defensive collapse is not sufficient evidence to blame the goalkeeper. This week's individual grade stays neutral rather than claiming either excellent shot-stopping or a proven regression."
+        sources:
+          - { label: "Brondby-Lyngby recap (official club, Danish)", url: "https://lyngby-boldklub.dk/2026/10/11/149547/" }
+          - { label: "Verified match lineup (DBU official statisticians)", url: "https://www.danskfodbold.com/kamp.php?ID=74195" }
+          - { label: "USA-Canada match and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-canada-match-recap-highlights-st-paul-minnesota" }
+      - profile: benjamin-cremaschi
+        name: "Benjamin Cremaschi"
+        club: "Parma"
+        trend: "↓"
+        direction: "falling"
+        direction_label: "Still outside playing rotation"
+        context: "0 appearances; unused Serie A substitute"
+        recap: "Cremaschi was on Parma's bench but did not enter the 0-3 defeat at Inter on October 10. Alberto Gilardino used five substitutes, including midfield and attacking changes, without calling on him. No verified injury explanation was identified."
+        development_read: "Remaining unused despite multiple changes and a three-goal deficit is a negative role signal. The concern is access to meaningful Serie A minutes, not responsibility for a defeat he did not play in."
+        sources:
+          - { label: "Inter-Parma report and bench (official Parma, Italian)", url: "https://www.parmacalcio1913.com/news/seria-a-enilive-inter-parma-3-0/" }
+      - profile: kevin-paredes
+        name: "Kevin Paredes"
+        club: "FC Utrecht"
+        trend: "✚"
+        direction: "insufficient"
+        direction_label: "Injured"
+        context: "0 appearances; Eredivisie"
+        recap: "Paredes remained unavailable as Utrecht beat Willem II 3-1 on October 11. Utrecht's direct medical announcement identifies the long-term injury sustained in August as an ankle injury. Secondary availability pages label it a knee issue; no newer official diagnosis was found, so the club's ankle description takes precedence. No verified return date is reported."
+        development_read: "No performance evaluation this week. Recovery and sustained availability remain the developmental priorities; an aggregator's projected return should not be treated as medical clearance."
+        sources:
+          - { label: "Paredes medical announcement (official Utrecht, Dutch)", url: "https://www.fcutrecht.nl/nieuws/2026/augustus/kevin-paredes-enkele-maanden-niet-inzetbaar/" }
+          - { label: "October 11 squad status (secondary Dutch availability record)", url: "https://opstellingvandaag.nl/spelers/kevin-paredes/" }
+      - profile: peyton-miller
+        name: "Peyton Miller"
+        club: "New England Revolution"
+        trend: "→"
+        direction: "steady"
+        direction_label: "Threat without finishing"
+        context: "1 start, 85 minutes, 5 shots / 4 on target"
+        recap: "Miller was unused against Canada, then started in New England's front three in the 0-3 loss to Seattle on October 10. He matched his career highs with five shots and four on target, including a back-post chance saved before halftime. Griffin Yow replaced him at 85 minutes. He had no goal or assist."
+        development_read: "The winger role continues to produce genuine attacking involvement. The volume is encouraging, but failing to convert and the heavy team defeat keep the overall weekly trend even; this is not a wingback-only evaluation."
+        sources:
+          - { label: "Revs-Seattle recap and lineup (official club)", url: "https://www.revolutionsoccer.net/news/recap-revs-begin-busy-week-3-0-loss-to-sounders" }
+          - { label: "USA-Canada match and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-canada-match-recap-highlights-st-paul-minnesota" }
+      - profile: cooper-sanchez
+        name: "Cooper Sanchez"
+        club: "Atlanta United"
+        trend: "→"
+        direction: "steady"
+        direction_label: "Late midfield cameo"
+        context: "1 substitute appearance, 4 regulation minutes plus stoppage time"
+        recap: "Sanchez replaced Tristan Muyumba in the 86th minute of Atlanta's 1-3 loss to Cincinnati on October 10, with no goal or assist. Local club-specific coverage credits him with stabilizing the midfield and helping progress possession, but notes his introduction came too late to shape the match."
+        development_read: "The local assessment supplies a small positive beyond simply appearing. The limited sample and unchanged substitute role are not enough for a major upward reassessment."
+        sources:
+          - { label: "Atlanta-Cincinnati recap (official club)", url: "https://www.atlutd.com/news/match-recap-fc-cincinnati-second-half-surge-october-10-2026" }
+          - { label: "Sanchez player impressions (local VIPs of Atlanta Soccer)", url: "https://vipsofatlantasoccer.com/2026/10/10/atlutd-vs-cincinnati-player-impressions/" }
+      - profile: beau-leroux
+        name: "Beau Leroux"
+        club: "San Jose Earthquakes"
+        trend: "→"
+        direction: "steady"
+        direction_label: "Full midfield workload"
+        context: "1 start, 90-plus minutes; 0 goals / assists"
+        recap: "Leroux started in midfield in San Jose's 1-1 draw at Colorado and remained until 90+4. His late combination with Bouda ended in an apparent winner that was ruled offside, so it does not count as an assist. Colorado's ten shots on target and San Jose goalkeeper Earl Edwards Jr.'s nine saves show how much defensive pressure the visitors absorbed."
+        development_read: "The late attacking connection and sustained role are useful, but the goal was disallowed and the team relied heavily on its goalkeeper. A neutral read captures both the contribution and that defensive context."
+        sources:
+          - { label: "Colorado-San Jose box score and availability (official Quakes release, republished)", url: "https://www.oursportscentral.com/services/releases/earl-edwards-jr-s-nine-saves-dave-romneys-second-half-goal-preserve-point-and-extend-unbeaten-streak-to-seve/n-6420515" }
+      - profile: francis-westfield
+        name: "Francis Westfield"
+        club: "Philadelphia Union"
+        trend: "↑"
+        direction: "rising"
+        direction_label: "Right-back assist"
+        context: "1 start, 90 minutes, 1 assist, 1 yellow card"
+        recap: "Westfield was not dressed against Canada, then completed Philadelphia's 2-1 win over RSL at right back. He delivered the primary assist on Damiani's 31st-minute goal after combining with Cavan Sullivan and was booked at 23 minutes. The match notes credit his tenth MLS assist of the season."
+        development_read: "The productive right-side partnership offers concrete club evidence after his mixed first international start. This week's rise rests on his attacking contribution and full-game role, not a rewrite of last week's defensive shortcomings."
+        sources:
+          - { label: "Union-RSL box score (official club release, republished)", url: "https://www.oursportscentral.com/services/releases/philadelphia-union-top-real-salt-lake-2-1/n-6420451" }
+          - { label: "USA-Canada dressed squad (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt/starting-xi-lineup-notes-vs-canada-st-paul-minnesota" }
+      - profile: cole-campbell
+        name: "Cole Campbell"
+        club: "SV Elversberg"
+        trend: "↑"
+        direction: "rising"
+        direction_label: "Senior debut and club threat"
+        context: "2 substitute appearances, 50 regulation minutes"
+        recap: "Campbell made his senior USA debut against Canada at 61 minutes. He then played 21 minutes off Elversberg's bench in the 0-1 defeat at Union Berlin on October 10; the club recap describes his late long-range effort saved by Frederik Rønnow. No goal or assist was recorded. The club minutes are corroborated by the secondary match log."
+        development_read: "A first senior cap is a modest positive, and the saved effort adds an actual club attacking moment. The club role was still substitute-based, so the week advances exposure more than established first-team standing."
+        sources:
+          - { label: "USA-Canada match and lineups (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/10/usmnt-vs-canada-match-recap-highlights-st-paul-minnesota" }
+          - { label: "Union-Elversberg recap (official SVE, German)", url: "https://sv07elversberg.de/sve-verliert-nach-spaetem-gegentor-in-berlin/" }
+          - { label: "Campbell Bundesliga match log (secondary FBref)", url: "https://fbref.com/en/players/fbb270b2/matchlogs/2026-2027/c20/summary/Cole-Campbell-Match-Logs" }
+      - profile: luca-bombino
+        name: "Luca Bombino"
+        club: "Stoke City"
+        trend: "↑"
+        direction: "rising"
+        direction_label: "Longer Championship opportunity"
+        context: "1 substitute appearance, 45 minutes"
+        recap: "Bombino replaced Justin Devenny at halftime in Stoke's 2-1 win at Bolton on October 10, playing the second half with Stoke down to ten men following Talovierov's 20th-minute red card. He had no goal or assist. Local Bolton reporting says Bazunu blocked his rebound effort, a good opportunity he could not convert. The exact positional assignment after the reshuffle was not verified."
+        development_read: "A full half in a difficult numerical situation is a stronger trust marker than his recent short cameos. Missing the rebound tempers the attacking read, but the increased responsibility is a mild positive for his adjustment to England."
+        sources:
+          - { label: "Bolton-Stoke recap (Sky match coverage)", url: "https://www.skysports.com/football/bolton-wanderers-vs-stoke-city/report/560595" }
+          - { label: "Bolton-Stoke report (local Bolton News, syndicated)", url: "https://uk.sports.yahoo.com/news/full-time-wanderers-beaten-10-155759185.html" }
+          - { label: "Bombino match log (secondary FBref)", url: "https://fbref.com/en/players/1b78973a/matchlogs/2026-2027/c10/Luca-Bombino-Match-Logs" }
+      - profile: jackson-hopkins
+        name: "Jackson Hopkins"
+        club: "D.C. United"
+        trend: "→"
+        direction: "steady"
+        direction_label: "Another start, limited end product"
+        context: "1 start, 56 minutes; 0 goals / assists"
+        recap: "Hopkins started in D.C.'s attacking group in the 0-4 defeat at Inter Miami on October 10 and was replaced by Nathan Ordaz at 56 minutes. He had no goal or assist. The official club report describes early D.C. chances but does not attribute a standout attacking action or an individual defensive error to Hopkins."
+        development_read: "The start maintains access to first-team football, while the early withdrawal and lack of end product leave the attacking case unresolved. A heavy team loss does not by itself justify a negative individual performance claim."
+        sources:
+          - { label: "Miami-D.C. facts and lineup (official D.C. United)", url: "https://www.dcunited.com/news/post-match-facts-mcfvdc-x3263" }
+      - profile: duran-ferree
+        name: "Duran Ferree"
+        club: "San Diego FC"
+        trend: "↓"
+        direction: "falling"
+        direction_label: "No MLS opportunity"
+        context: "0 verified appearances; outside MLS matchday squad"
+        recap: "Ferree was absent from San Diego's matchday roster for the 1-4 defeat at the Red Bulls on October 10. CJ Dos Santos started and Pablo Sisniega was the unused goalkeeper. No verified reserve appearance or current availability explanation was located; the four conceded were not Ferree's."
+        development_read: "The continued lack of a senior opportunity is a downward role signal, not a grade on another goalkeeper's performance. Re-entering the matchday group and earning starts are the next meaningful tests."
+        sources:
+          - { label: "Red Bulls-San Diego box score (official SDFC release, republished)", url: "https://www.oursportscentral.com/services/releases/san-diego-fc-falls-4-1-to-new-york-red-bulls-in-first-ever-meeting/n-6420511" }
   - id: "2026-10-04"
     group: prospects
     group_label: Prospects
