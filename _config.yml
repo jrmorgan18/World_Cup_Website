@@ -42,3 +42,4 @@ exclude:
   - .claude
   - _site-preview
   - _site-validation
+  - .nfl-cache

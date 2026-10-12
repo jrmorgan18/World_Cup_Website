@@ -1,0 +1,19 @@
+---
+layout: default
+title: "NFL Model Results — 2026"
+description: "2026 NFL prediction results, with saved pregame forecasts separated from retrospective model replays and compared with closing lines."
+permalink: /nfl/results/
+section_theme: nfl
+nfl_page: true
+nfl_view: results
+---
+{% include nfl-header.html heading="2026 <em>results.</em>" %}
+<article class="nfl-shell" data-nfl-view="results">
+  <div class="nfl-notice"><strong>Two distinct records.</strong> Saved forecasts were recorded before kickoff, initially as unpublished research. Earlier games are retrospective replays using only prior-week performance; the formula was selected later. When the expected QB did not start, the displayed spread uses the actual starter’s pregame QB estimate. The original forecast remains shown beneath it. Market comparisons use closing lines.</div>
+  <section><div class="nfl-section-heading"><div><p class="de-kicker">2026 game log</p><h2>Forecast vs. final</h2></div><a href="{{ '/assets/data/nfl-results.csv' | relative_url }}" download class="nfl-text-link">Download results CSV ↓</a></div>
+  <div class="nfl-controls"><div><label for="nfl-results-week">Week</label><select id="nfl-results-week"><option value="all">All weeks</option>{% for week in (1..site.data.nfl_dashboard.projection_week) %}<option value="{{ week }}">Week {{ week }}</option>{% endfor %}</select></div><div><label for="nfl-results-kind">Forecast type</label><select id="nfl-results-kind"><option value="all">All results</option><option value="saved">Saved before kickoff</option><option value="retrospective">Retrospective replay</option></select></div><div><label for="nfl-results-search">Find a team</label><input id="nfl-results-search" type="search" placeholder="Team name or abbreviation"></div></div>
+  <p id="nfl-results-status" class="nfl-small" role="status"></p>
+  <div class="nfl-table-scroll" tabindex="0" aria-label="2026 results table"><table class="nfl-table"><caption class="sr-only">2026 completed NFL games, predictions and actual margins</caption><thead><tr><th scope="col">Week</th><th scope="col" class="nfl-team-cell">Game</th><th scope="col">Final</th><th scope="col">Model spread</th><th scope="col">Actual margin</th><th scope="col">Error (pts)</th><th scope="col">Closing line</th><th scope="col" class="nfl-team-cell">Forecast record</th></tr></thead><tbody id="nfl-result-rows">{% assign recent_games = site.data.nfl_dashboard.games | reverse %}{% for game in recent_games %}{% if game.status == 'Final' %}<tr><td>{{ game.week }}</td><th scope="row" class="nfl-team-cell">{{ game.away }} at {{ game.home }}</th><td>{{ game.away_score }}–{{ game.home_score }}</td><td>{{ game.display_home_margin | round: 1 }} home pts{% if game.lineup_changed %}<small>QB adjusted · original {{ game.forecast_home_margin | round: 1 }} home pts</small>{% endif %}</td><td>{{ game.actual_home_margin }} home pts</td><td>{{ game.display_home_margin | minus: game.actual_home_margin | abs | round: 1 }}</td><td>{{ game.market_home_margin }} home pts</td><td class="nfl-team-cell">{% if game.forecast_kind == 'saved' %}Saved before kickoff{% else %}Retrospective replay{% endif %}</td></tr>{% endif %}{% endfor %}</tbody></table></div>
+  <p class="nfl-small nfl-table-note">Error is the absolute difference between projected and actual home margin. Closing-line and home-only comparisons use the same games. Actual-starter adjustments are retrospective lineup corrections; interactive QB scenarios do not change these results.</p></section>
+</article>
+{% include nfl-data.html %}

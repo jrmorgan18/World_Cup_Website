@@ -2035,8 +2035,7 @@ details[open] > summary .gc-toggle::after { transform:rotate(0); }
   .theme-soccer .article-body>h3 { margin-top:40px; }
 }
 
-/* ============================================================
-   Betting desk
+/* =====================================================   Betting desk
    Accent palette validated for dark surfaces: mark #2f9e6b sits
    inside the OKLCH dark band with >=3:1 contrast on #15121a.
    ============================================================ */
@@ -2830,8 +2829,7 @@ details[open] > summary .gc-toggle::after { transform:rotate(0); }
   .ravens-latest .de-story-card,.ravens-latest .de-story-image img { transition:none; }
 }
 
-/* ==========================================================================
-   Barcelona season dashboard
+/* ===================================================================   Barcelona season dashboard
    ========================================================================== */
 .barca-dashboard { max-width:var(--de-wide); margin:0 auto; padding:0 32px 96px; }
 .barca-hero { position:relative; margin:0 -32px 0; padding:56px 32px 44px; border-bottom:1px solid var(--color-border); background:linear-gradient(135deg,#0a1a33 0%,#0d1a2d 45%,#1b0a20 100%); }
@@ -3135,6 +3133,10 @@ details[open] > summary .gc-toggle::after { transform:rotate(0); }
   .barca-result-xg { grid-column:2 / -1; }
 }
 
+/* NFL league desk */
+.nav-link--nfl::after { background: #e7bd71; }
+.nfl-desk-bridge { max-width:1320px; margin:24px auto; padding:0 32px; color:var(--color-text-muted); }
+.nfl-desk-bridge a { color:var(--color-accent); }
 /* Big Board companion article and roster selector */
 .board-story-links { display:flex; flex-wrap:wrap; gap:12px 24px; margin:24px 0; padding:20px 0; border-top:1px solid rgba(128,128,128,.3); border-bottom:1px solid rgba(128,128,128,.3); }
 .board-story-links a { font-weight:700; text-decoration:underline; text-underline-offset:4px; }

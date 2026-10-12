@@ -1,0 +1,25 @@
+<div class="nfl-table-scroll" tabindex="0" aria-label="Team rankings table; scroll horizontally for all columns">
+  <table class="nfl-table" id="nfl-rankings-table">
+    <caption class="sr-only">2026 NFL Team Strength Index and Efficiency Index through Week {{ site.data.nfl_dashboard.rating_week }}</caption>
+    <thead><tr>
+      <th scope="col" aria-sort="ascending"><button type="button" data-sort="rank">TSI rank <span aria-hidden="true">↑</span></button></th>
+      <th scope="col" class="nfl-team-cell"><button type="button" data-sort="name">Team</button></th>
+      <th scope="col"><button type="button" data-sort="record">Record</button></th>
+      <th scope="col"><button type="button" data-sort="strength">TSI pts</button></th>
+      <th scope="col"><button type="button" data-sort="weekly_rank_change">Move</button></th>
+      <th scope="col"><button type="button" data-sort="efficiency">Efficiency</button></th>
+      <th scope="col"><button type="button" data-sort="efficiency_rank">EI rank</button></th>
+      {% unless include.compact %}
+      <th scope="col"><button type="button" data-sort="offense_points">Offense</button></th>
+      <th scope="col"><button type="button" data-sort="defense_points">Defense</button></th>
+      <th scope="col"><button type="button" data-sort="st_points">ST</button></th>
+      <th scope="col"><button type="button" data-sort="qb_points">Lineup adj.</button></th>
+      {% endunless %}
+    </tr></thead>
+    <tbody id="nfl-ranking-rows">
+      {% for team in site.data.nfl_dashboard.teams %}{% if include.compact and forloop.index > 8 %}{% break %}{% endif %}
+      <tr><td>{{ team.rank }}</td><th scope="row" class="nfl-team-cell"><a href="{{ '/nfl/rankings/' | relative_url }}?team={{ team.abbr }}#team-detail"><span class="nfl-team-code">{{ team.abbr }}</span>{{ team.name }}</a></th><td>{{ team.record }}</td><td class="nfl-tsi">{{ team.strength | round: 1 }}</td><td>{% if team.weekly_rank_change > 0 %}↑ {{ team.weekly_rank_change }}{% elsif team.weekly_rank_change < 0 %}↓ {{ team.weekly_rank_change | abs }}{% else %}—{% endif %}</td><td>{{ team.efficiency | round: 1 }}</td><td>{{ team.efficiency_rank }}</td>{% unless include.compact %}<td>{{ team.offense_points | round: 1 }}</td><td>{{ team.defense_points | round: 1 }}</td><td>{{ team.st_points | round: 1 }}</td><td>{{ team.qb_points | round: 1 }}</td>{% endunless %}</tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

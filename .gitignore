@@ -12,3 +12,6 @@ Thumbs.db
 
 # Source PDFs for the U8 grassroots reference (third-party, not ours to redistribute)
 grassroots_coaching/
+
+# Private NFL input cache
+.nfl-cache/

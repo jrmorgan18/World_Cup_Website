@@ -1,0 +1,109 @@
+{
+  "experiment": {
+    "key": "lower_history",
+    "label": "Combined \u00b7 10% less history",
+    "qb": true,
+    "stable": true,
+    "offense_prior": 175.0,
+    "defense_prior": 75.0,
+    "offense_carry": 0.8,
+    "defense_carry": 0.4,
+    "half_life": 8.0,
+    "history_share": 0.9,
+    "margin_penalty": 120.0,
+    "tuning_mae": 9.879662443842617
+  },
+  "coefficients": {
+    "pass_offense": 11.474780950116275,
+    "pass_defense": 10.779640739345094,
+    "run_offense": 9.718856410626593,
+    "run_defense": 17.287082378628583,
+    "st": 0.9112369987617808,
+    "qb_epa_delta": 18.959105807753335,
+    "qb_cpoe_delta": 0.0,
+    "qb_rush_delta": 42.09423156446981,
+    "pass_success_offense": 33.28927199393345,
+    "pass_success_defense": 8.384593608134034,
+    "run_success_offense": 42.61163581238703,
+    "run_success_defense": 0.0,
+    "home_advantage": 1.5657941587125686
+  },
+  "validation": {
+    "training": "2019-2021",
+    "parameter_selection": "2022-2023",
+    "final_fit": "2019-2023",
+    "note": "2024-25 are retrospective comparisons. Conditional lineup assumes recorded starting identity; prior-week player performance only. No archived injury forecasts.",
+    "selected": {
+      "key": "lower_history",
+      "label": "Combined \u00b7 10% less history",
+      "qb": true,
+      "stable": true,
+      "offense_prior": 175.0,
+      "defense_prior": 75.0,
+      "offense_carry": 0.8,
+      "defense_carry": 0.4,
+      "half_life": 8.0,
+      "history_share": 0.9,
+      "margin_penalty": 120.0,
+      "tuning_mae": 9.879662443842617
+    },
+    "seasons": {
+      "2024": {
+        "beta": {
+          "games": 272,
+          "mae": 10.023673001242214,
+          "rmse": 12.90873380307573
+        },
+        "conditional_lineup": {
+          "games": 272,
+          "mae": 9.984425537090084,
+          "rmse": 12.793973327253557
+        },
+        "starter_changes_conditional": {
+          "games": 59,
+          "mae": 10.627880333798617,
+          "rmse": 13.432301601865179
+        },
+        "starter_changes_previous_qb": {
+          "games": 59,
+          "mae": 10.808817795652493,
+          "rmse": 13.929290554614596
+        },
+        "week_4_onward": {
+          "games": 224,
+          "mae": 9.81000176165048,
+          "rmse": 12.65378319509508
+        }
+      },
+      "2025": {
+        "beta": {
+          "games": 272,
+          "mae": 10.143357111914744,
+          "rmse": 12.980818417225349
+        },
+        "conditional_lineup": {
+          "games": 272,
+          "mae": 10.10669645575596,
+          "rmse": 12.82462383166434
+        },
+        "starter_changes_conditional": {
+          "games": 64,
+          "mae": 11.767048253718517,
+          "rmse": 14.856803324141492
+        },
+        "starter_changes_previous_qb": {
+          "games": 64,
+          "mae": 11.922856042393356,
+          "rmse": 15.422546937217538
+        },
+        "week_4_onward": {
+          "games": 224,
+          "mae": 10.313950961545657,
+          "rmse": 12.943514595009141
+        }
+      }
+    }
+  },
+  "coefficient_fit_through": 2023,
+  "historical_mae": 10.083515056578479
+}

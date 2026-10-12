@@ -41,6 +41,10 @@ jobs:
         if: steps.validate-barcelona-dashboard.outcome == 'failure'
         run: >-
           echo "::warning title=Barcelona dashboard data needs attention::The data check failed, but site validation continued. Review the Validate Barcelona dashboard data log for details."
+      - name: Validate NFL dashboard data
+        run: python scripts/check_nfl_dashboard.py
+      - name: Check NFL JavaScript syntax
+        run: node --check assets/js/nfl-dashboard.js
       - name: Build launch version
         run: >-
           bundle exec jekyll build --trace

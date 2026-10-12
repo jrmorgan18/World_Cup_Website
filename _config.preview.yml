@@ -12,3 +12,4 @@ exclude:
   - worker
   - scripts
   - _site-preview
+  - .nfl-cache
