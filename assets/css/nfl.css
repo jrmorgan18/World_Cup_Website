@@ -37,3 +37,5 @@
 .nfl-interim-note{padding-top:0;padding-bottom:0}.nfl-interim-note .nfl-notice{margin-bottom:0}
 
 .nfl-spreads-table .nfl-team-cell .nfl-team-scenario-link{display:inline;color:#e7bd71;text-decoration:underline;text-underline-offset:3px}
+
+.nfl-beta-inline{font:400 .65em var(--font-body);color:#e7bd71;white-space:nowrap;vertical-align:middle}
