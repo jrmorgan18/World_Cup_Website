@@ -60,3 +60,10 @@ Manual interim updates: pass `--ratings-week 5 --allow-partial-week` to include
 only final games from Week 5. All earlier weeks must be complete. Coverage
 is checked against PBP, pending matchups are exposed on the UI, and the
 scheduled default still requires a fully completed week.
+
+Completed QB reconciliation: use the first recorded dropback by a known QB
+from current-season PBP, with full names from archived depth charts. Correct
+current-season schedule identities before observed-starter features and
+actual-starter adjustments. Trick-play passers, later relief QBs and future
+games do not replace the recorded starter. Without PBP, retain the schedule
+fallback. Expose mismatches in `completed_qb_corrections` for audit.

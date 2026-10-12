@@ -134,6 +134,31 @@ def number(value):
     return float(value) if pd.notna(value) and np.isfinite(float(value)) else None
 
 
+def reconcile_completed_qbs(schedule, pbp, quarterback_names):
+    """Use the first recorded QB dropback when a final game's schedule identity disagrees.
+
+    This avoids counting a backup who relieved the starter later as the starter.
+    Only known quarterbacks qualify, so trick-play passers cannot replace a QB.
+    Games without a recorded QB dropback retain their schedule assumption.
+    """
+    output=schedule.copy()
+    plays=pbp[pbp.qb_dropback.eq(1)&pbp.passer_player_id.isin(quarterback_names)&pbp.posteam.notna()]
+    first=plays.sort_values(['game_id','play_id']).drop_duplicates(['game_id','posteam'])
+    recorded={(r.game_id,r.posteam):r.passer_player_id for r in first.itertuples()}
+    changes=[]
+    for index,game in output.iterrows():
+        if pd.isna(game.home_score) or pd.isna(game.away_score):continue
+        for side in ['home','away']:
+            qb=recorded.get((game.game_id,game[side+'_team']))
+            if not qb:continue
+            if qb!=game[side+'_qb_id']:
+                changes.append({'game_id':game.game_id,'team':game[side+'_team'],
+                    'schedule_qb':game[side+'_qb_name'],'recorded_qb':quarterback_names[qb]})
+            output.loc[index,side+'_qb_id']=qb
+            output.loc[index,side+'_qb_name']=quarterback_names[qb]
+    return output,changes
+
+
 def actual_starter_adjustment(game, assumed, snapshot, features, coefficients):
     """Replace assumed QB skill with actual starter skill, using the pregame cutoff only."""
     adjustment = 0.
@@ -158,19 +183,28 @@ def build(cache, season, requested, audit=False, allow_partial=False):
     seed = json.loads((ROOT/'scripts/nfl_model_seed.json').read_text())
     schedule = pd.read_csv(cache/'games.csv')
     cutoff, completed = completed_cutoff(schedule,season,requested,allow_partial)
-    pbp_coverage=pd.read_parquet(cache/f'pbp-{season}.parquet',columns=['game_id'])
-    missing=set(completed.game_id)-set(pbp_coverage.game_id)
+    current_pbp=pd.read_parquet(cache/f'pbp-{season}.parquet')
+    missing=set(completed.game_id)-set(current_pbp.game_id)
     if missing:raise ValueError('Missing play-by-play for completed games: '+', '.join(sorted(missing)))
     rating_schedule=schedule[(schedule.season==season)&(schedule.game_type=='REG')&(schedule.week==cutoff)]
     pending=rating_schedule[rating_schedule.home_score.isna()|rating_schedule.away_score.isna()]
     builder = RefinedBuilder(cache,season,cutoff)
+    qb_depth=builder.depth_all[(builder.depth_all.pos_abb=='QB')&builder.depth_all.gsis_id.notna()].sort_values('dt').drop_duplicates('gsis_id',keep='last')
+    qb_names=dict(zip(qb_depth.gsis_id,qb_depth.player_name))
+    current_schedule=builder.all_schedule[builder.all_schedule.season==season]
+    for side in ['home','away']:
+        for q,n in zip(current_schedule[side+'_qb_id'],current_schedule[side+'_qb_name']):
+            if pd.notna(q) and pd.notna(n):qb_names.setdefault(q,n)
+    corrected,qb_corrections=reconcile_completed_qbs(current_schedule,current_pbp,qb_names)
+    builder.all_schedule.loc[corrected.index,['home_qb_id','home_qb_name','away_qb_id','away_qb_name']]=corrected[['home_qb_id','home_qb_name','away_qb_id','away_qb_name']]
+    builder.games[season]=corrected[corrected.game_type.eq('REG')&corrected.home_score.notna()&corrected.away_score.notna()&corrected.week.le(cutoff)].copy()
+    if qb_corrections:print('QB schedule/PBP corrections: '+json.dumps(qb_corrections),flush=True)
     parameters = {k:v for k,v in config['experiment'].items() if k in Experiment.__dataclass_fields__}
     exp = Experiment(**parameters)
     coef = np.array([config['coefficients'][k] for k in exp.features+['home_advantage']])
     # Historical year-end snapshots initialize identical priors. Only 2026 is replayed.
     rows,details = builder.generate_refined(exp,evaluate_from=season)
     model = model_payload(builder,exp,details,coef,config['validation'],seed)
-    current_pbp = pd.read_parquet(cache/f'pbp-{season}.parquet')
     records,efficiency = compute_league_metrics(completed,current_pbp)
     _,previous_efficiency = compute_league_metrics(completed[completed.week<cutoff],current_pbp)
     efficiency_ranks = efficiency.overall_efficiency.rank(method='min',ascending=False)
@@ -256,6 +290,8 @@ def build(cache, season, requested, audit=False, allow_partial=False):
         'generated_at':generated_at,'data_through':str(completed.gameday.max()),
         'rating_week_complete':pending.empty,'rating_week_completed_games':int((completed.week==cutoff).sum()),
         'rating_week_scheduled_games':len(rating_schedule),
+        'completed_qb_corrections':qb_corrections,
+        'actual_qb_policy':'First recorded known-quarterback dropback in completed-game play-by-play; schedule fallback if unavailable',
         'rating_pending_games':[{'away':g.away_team,'home':g.home_team,'date':str(g.gameday),'time_et':str(g.gametime)} for g in pending.itertuples()],
         'depth_chart_as_of':str(builder.depth_all.dt.max()),'home_advantage':model['home_advantage'],
         'teams':teams,'games':games_out,'results_summary':{'saved':summary('saved'),'retrospective':summary('retrospective')},

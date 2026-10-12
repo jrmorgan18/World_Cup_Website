@@ -2,7 +2,7 @@
 import unittest
 from copy import deepcopy
 import pandas as pd
-from update_nfl_dashboard import add_forecasts, completed_cutoff, archived_before_game, actual_starter_adjustment
+from update_nfl_dashboard import add_forecasts, completed_cutoff, archived_before_game, actual_starter_adjustment, reconcile_completed_qbs
 
 
 class NFLDashboardTests(unittest.TestCase):
@@ -46,6 +46,20 @@ class NFLDashboardTests(unittest.TestCase):
         self.assertEqual(before,frozen);self.assertEqual(after[0],frozen[0]);self.assertEqual(len(after),2)
         repeated=add_forecasts(after,games,teams,1.5,4,'2026-10-07T13:00:00+00:00')
         self.assertEqual(repeated,after)
+
+    def test_completed_qb_is_verified_against_pbp_without_picking_later_relief_qb(self):
+        games=pd.DataFrame([{'game_id':'g','home_team':'SEA','away_team':'SF','home_score':29,'away_score':32,
+            'home_qb_id':'lock','home_qb_name':'Drew Lock','away_qb_id':'purdy','away_qb_name':'Brock Purdy'}])
+        plays=pd.DataFrame([{'game_id':'g','posteam':'SEA','qb_dropback':1,'passer_player_id':q,'play_id':n}
+            for q,n in [('receiver',1),('darnold',2),('lock',3),('lock',4)]])
+        corrected,changes=reconcile_completed_qbs(games,plays,{'lock':'Drew Lock','darnold':'Sam Darnold','purdy':'Brock Purdy'})
+        self.assertEqual(corrected.iloc[0].home_qb_id,'darnold')
+        self.assertEqual(corrected.iloc[0].home_qb_name,'Sam Darnold')
+        self.assertEqual(len(changes),1);self.assertEqual(games.iloc[0].home_qb_id,'lock')
+        self.assertEqual(actual_starter_adjustment(next(corrected.itertuples()),{'SEA':{'id':'darnold'},'SF':{'id':'purdy'}},{'skills':pd.DataFrame(),'priors':{}},['qb_epa_delta'],[10.]),(0.,False))
+        games.loc[0,'home_score']=None
+        unchanged,changes=reconcile_completed_qbs(games,plays,{'lock':'Drew Lock','darnold':'Sam Darnold'})
+        self.assertEqual(unchanged.iloc[0].home_qb_id,'lock');self.assertFalse(changes)
 
     def test_actual_starter_replacement_uses_cutoff_skills_and_home_away_signs(self):
         from types import SimpleNamespace
