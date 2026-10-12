@@ -10,7 +10,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from team_strength_beta import (Builder, TEAMS, TEAM_NAMES, normalize, decay, fit_margin,
+from .team_strength_beta import (Builder, TEAMS, TEAM_NAMES, normalize, decay, fit_margin,
                                fit_st, qb_rows, qb_skills, observed_starters, legacy_scores, metrics)
 
 BASE_FEATURES = ['pass_offense', 'pass_defense', 'run_offense', 'run_defense', 'st',

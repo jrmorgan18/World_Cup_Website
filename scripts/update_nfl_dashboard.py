@@ -22,11 +22,11 @@ import numpy as np
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / 'scripts' / 'strength_beta_lab'))
-from fetch_strength_beta_inputs import fetch, COLUMNS
-from fetch_refinement_inputs import EXTRAS
-from refine_strength_beta import (RefinedBuilder, Experiment, model_payload, correct_venues, metrics, skill_for)
-from update_ravens_dashboard import compute_league_metrics
+from strength_beta_lab.fetch_strength_beta_inputs import fetch, COLUMNS
+from strength_beta_lab.fetch_refinement_inputs import EXTRAS
+from strength_beta_lab.refine_strength_beta import (RefinedBuilder, Experiment, model_payload, correct_venues, metrics, skill_for)
+from update_ravens_dashboard import compute_league_metrics, eligible_scrimmage_plays
+from efficiency_dashboard import apply_model, calibration
 
 BASE = 'https://github.com/nflverse/nflverse-data/releases/download/'
 
@@ -206,7 +206,11 @@ def build(cache, season, requested, audit=False, allow_partial=False):
     rows,details = builder.generate_refined(exp,evaluate_from=season)
     model = model_payload(builder,exp,details,coef,config['validation'],seed)
     records,efficiency = compute_league_metrics(completed,current_pbp)
-    _,previous_efficiency = compute_league_metrics(completed[completed.week<cutoff],current_pbp)
+    anchors=calibration(season)
+    efficiency=apply_model(efficiency,current_pbp,completed,eligible_scrimmage_plays,anchors)
+    previous_games=completed[completed.week<cutoff]
+    _,previous_efficiency = compute_league_metrics(previous_games,current_pbp)
+    previous_efficiency=apply_model(previous_efficiency,current_pbp,previous_games,eligible_scrimmage_plays,anchors)
     efficiency_ranks = efficiency.overall_efficiency.rank(method='min',ascending=False)
     previous_efficiency_ranks = previous_efficiency.overall_efficiency.rank(method='min',ascending=False)
     teams=[]
@@ -296,6 +300,7 @@ def build(cache, season, requested, audit=False, allow_partial=False):
         'depth_chart_as_of':str(builder.depth_all.dt.max()),'home_advantage':model['home_advantage'],
         'teams':teams,'games':games_out,'results_summary':{'saved':summary('saved'),'retrospective':summary('retrospective')},
         'sources':[{'file':s['file'],'url':s.get('url'),'retrieved_at':s.get('fetched_at'),'last_modified':s.get('http_last_modified')} for s in sources if s['file'] in [f'pbp-{season}.parquet','games.csv','depth_charts.parquet','injuries.parquet']],
+        'efficiency_model':'Published opponent/venue-adjusted Efficiency Index: 45% offense, 45% defense, 10% special teams',
         'methodology':{'offense_carry':exp.offense_carry,'defense_carry':exp.defense_carry,'history_share':exp.history_share,
             'half_life':exp.half_life,'coach_multiplier':.65,'new_qb_multiplier':.60}}
     from check_nfl_dashboard import validate

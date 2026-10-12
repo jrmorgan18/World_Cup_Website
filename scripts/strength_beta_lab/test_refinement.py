@@ -1,10 +1,13 @@
 """Behavioral checks for causal cutoffs, unit continuity, recovery luck and QB priors."""
 import unittest
+import sys
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import numpy as np
 import pandas as pd
-from refine_strength_beta import (TEAMS, Experiment, correct_venues, continuity,
+from strength_beta_lab.refine_strength_beta import (TEAMS, Experiment, correct_venues, continuity,
                                  fit_phase, stabilize, refined_qb_skills, skill_for, add_qbs)
-from refine_strength_beta import history_penalty
+from strength_beta_lab.refine_strength_beta import history_penalty
 
 
 class RefinementTests(unittest.TestCase):

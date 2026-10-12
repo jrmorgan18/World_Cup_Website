@@ -4,7 +4,7 @@ import tempfile
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
-from fetch_strength_beta_inputs import fetch
+from .fetch_strength_beta_inputs import fetch
 
 EXTRAS = ['game_id', 'play_id', 'epa', 'fumble', 'fumbled_1_team',
           'fumbled_2_team', 'fumble_lost', 'qb_epa']

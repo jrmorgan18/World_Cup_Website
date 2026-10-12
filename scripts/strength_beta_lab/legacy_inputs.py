@@ -1,8 +1,8 @@
 """Frozen eligibility rules and team labels used by beta 0.1; production is unchanged."""
 
 import pandas as pd
-from efficiency_model import EXTRA_COLUMNS
-from special_teams import EXTRA_COLUMNS as ST_COLUMNS
+from .efficiency_model import EXTRA_COLUMNS
+from .special_teams import EXTRA_COLUMNS as ST_COLUMNS
 
 PBP_COLUMNS = [
     "game_id",

@@ -12,7 +12,7 @@ from urllib.request import urlopen
 import pandas as pd
 import pyarrow.parquet as pq
 
-from legacy_inputs import PBP_COLUMNS
+from .legacy_inputs import PBP_COLUMNS
 
 BASE = "https://github.com/nflverse/nflverse-data/releases/download/"
 COLUMNS = list(dict.fromkeys(PBP_COLUMNS + [

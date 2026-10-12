@@ -15,9 +15,9 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from efficiency_model import prepare_plays
-from special_teams import expected_values, make_baseline, prepare_special_teams
-from legacy_inputs import TEAM_NAMES, eligible_scrimmage_plays
+from .efficiency_model import prepare_plays
+from .special_teams import expected_values, make_baseline, prepare_special_teams
+from .legacy_inputs import TEAM_NAMES, eligible_scrimmage_plays
 
 VERSION = "0.1-beta"
 TEAMS = sorted(TEAM_NAMES)

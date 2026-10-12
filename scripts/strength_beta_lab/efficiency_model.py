@@ -7,7 +7,7 @@ dashboard statistics are untouched. Constants and calibration are published.
 import numpy as np
 import pandas as pd
 
-from special_teams import SHRINK_GAMES, BUCKET_WIDTHS, BANDWIDTHS
+from .special_teams import SHRINK_GAMES, BUCKET_WIDTHS, BANDWIDTHS
 
 VERSION = "2.1"
 RIDGE_PLAYS = 100.0
