@@ -29,10 +29,30 @@ description: A four-year scouting report tracking the USMNT player pool, checkpo
 {% assign foundation_part1 = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina" | first %}
 {% assign foundation_part2 = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina-part-2" | first %}
 
+{% if usmnt_weekly_story %}
+<section class="project-latest" aria-labelledby="project-weekly-heading">
+  <div class="de-section-heading de-section-heading--light">
+    <div><p class="de-kicker">Main piece</p><h2 id="project-weekly-heading">USMNT Weekly</h2></div>
+    <p>{{ usmnt_weekly_story.subtitle }}</p>
+  </div>
+  <a class="project-story-card project-story-card--visual" href="{{ usmnt_weekly_story.url | relative_url }}">
+    <figure>
+      <img src="{{ usmnt_weekly_story.hero_image | relative_url }}" alt="{{ usmnt_weekly_story.hero_alt | escape }}" loading="eager">
+    </figure>
+    <div>
+      <span>Project 2030 / {% if usmnt_weekly_story.reporting_window %}{{ usmnt_weekly_story.reporting_window }}{% else %}{{ usmnt_weekly_story.date | date: "%B %-d, %Y" }}{% endif %}</span>
+      <h3>{{ usmnt_weekly_story.title }}</h3>
+      <p>{{ usmnt_weekly_story.excerpt }}</p>
+      <strong>Read the weekly report <span aria-hidden="true">&rarr;</span></strong>
+    </div>
+  </a>
+</section>
+{% endif %}
+
 {% if usmnt_window_story %}
 <section class="project-latest" aria-labelledby="project-window-heading">
   <div class="de-section-heading de-section-heading--light">
-    <div><p class="de-kicker">Main piece</p><h2 id="project-window-heading">The kids are alright</h2></div>
+    <div><p class="de-kicker">Previous window recap</p><h2 id="project-window-heading">The kids are alright</h2></div>
     <p>Four wins, a new generation and a much more competitive USMNT.</p>
   </div>
   <a class="project-story-card project-story-card--visual" href="{{ usmnt_window_story.url | relative_url }}">
@@ -129,25 +149,7 @@ description: A four-year scouting report tracking the USMNT player pool, checkpo
 
 
 
-{% if usmnt_weekly_story %}
-<section class="project-latest" aria-labelledby="project-weekly-heading">
-  <div class="de-section-heading de-section-heading--light">
-    <div><p class="de-kicker">Latest weekly report</p><h2 id="project-weekly-heading">USMNT Weekly</h2></div>
-    <p>The latest club-form read of the Project 2030 cycle, with spotlight video from four key players.</p>
-  </div>
-  <a class="project-story-card project-story-card--visual" href="{{ usmnt_weekly_story.url | relative_url }}">
-    <figure>
-      <img src="{{ usmnt_weekly_story.hero_image | relative_url }}" alt="" loading="eager">
-    </figure>
-    <div>
-      <span>Project 2030 / {% if usmnt_weekly_story.reporting_window %}{{ usmnt_weekly_story.reporting_window }}{% else %}{{ usmnt_weekly_story.date | date: "%B %-d, %Y" }}{% endif %}</span>
-      <h3>{{ usmnt_weekly_story.title }}</h3>
-      <p>{{ usmnt_weekly_story.excerpt }}</p>
-      <strong>Read the weekly report <span aria-hidden="true">&rarr;</span></strong>
-    </div>
-  </a>
-</section>
-{% endif %}
+
 
 {% if sullivan_miami_story %}
 <section class="project-latest" aria-labelledby="project-scouting-heading">
