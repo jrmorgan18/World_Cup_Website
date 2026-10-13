@@ -6,15 +6,15 @@
 meta:
   season: 2026
   season_label: "2026 Season"
-  last_updated: "2026-10-12"
-  update_context: "Through available Week 5 games · Cleveland next"
+  last_updated: "2026-10-13"
+  update_context: "Through complete Week 5 games · Cleveland next"
   data_status: "through-week-5"
   data_notice: >-
     Five games are still an early sample, so league ranks and rate statistics are
     directional rather than predictive. The scorecard uses 2026 regular-season
     play-by-play and keeps the 2025 final values as a labeled comparison baseline.
-    League ranks include completed games only and may change as remaining Week 5
-    results arrive. ESPN trench rates and Filmstudy scoring carry their own reporting weeks.
+    All Week 5 games are included; subsequent statistical corrections may revise
+    ranks and rates. ESPN trench rates and Filmstudy scoring carry their own reporting weeks.
 
 metric_definitions:
   - id: "overall_efficiency"
@@ -148,20 +148,20 @@ editorial:
       missed the Falcons game; their Cleveland availability awaits this week's
       reports. Flowers and Humphrey played and their old questionable labels have
       been removed. Broderick Washington's newly reported ankle issue is being monitored.
-    biggest_strength: "The offense remains second in success rate, third in explosive-play rate and fifth in red-zone touchdown rate after finding a way to win without Jackson."
+    biggest_strength: "The offense remains second in success rate, third in explosive-play rate and sixth in red-zone touchdown rate after finding a way to win without Jackson."
     biggest_concern: "Jackson's ankle and the absences of Hendrickson, Jurgens and Vorhees remain unresolved. Cleveland game designations have not been issued."
     changed_this_week: "A third straight win moved the Ravens to 4-1. Huntley finished the comeback, the run game produced 208 yards, and Hamilton sealed overtime."
 
   metric_assessments:
-    overall_efficiency: { status: "Good", interpretation: "The Ravens are fifth at 62.5 in the published v2.1 index after Atlanta, up from sixth at 60.5 through Week 4. The model adjusts for opponent and venue and blends offense, defense and special teams; this five-game sample is not a forecast, and remaining Week 5 games may change league ranks." }
+    overall_efficiency: { status: "Good", interpretation: "The Ravens are fifth at 62.5 in the published v2.1 index through the complete Week 5 slate, up from sixth at 60.5 through Week 4. The model adjusts for opponent and venue and blends offense, defense and special teams; this five-game sample is not a forecast." }
     point_differential: { status: "Good", interpretation: "The seven-point overtime win lifts the season margin to +27, sixth among completed league results." }
     turnover_differential: { status: "Good", interpretation: "The season remains +3, ninth in the league. Andrews' lost fumble and Hamilton's game-sealing interception left the Falcons game at one giveaway and one takeaway." }
     offensive_epa_per_play: { status: "Good", interpretation: "The offense is sixth at 0.15 EPA/play for the season. The Atlanta game produced 0.04 per eligible play as Huntley led the late comeback." }
     offensive_success_rate: { status: "Elite", interpretation: "The 50.7% season success rate ranks second. The Ravens succeeded on 47.1% of eligible plays against Atlanta." }
     explosive_play_rate: { status: "Elite", interpretation: "The season explosive-play rate is 13.2%, third in the league. Hill's 47-yard run supplied Atlanta's standout rushing gain." }
-    red_zone_td_rate: { status: "Good", interpretation: "The Ravens have converted 73.7% of qualifying red-zone drives into touchdowns, fifth in the league. The late regulation and overtime scores made the difference in Atlanta." }
+    red_zone_td_rate: { status: "Good", interpretation: "The Ravens have converted 73.7% of qualifying red-zone drives into touchdowns, sixth in the league. The late regulation and overtime scores made the difference in Atlanta." }
     defensive_epa_per_play: { status: "Average", interpretation: "Season EPA allowed is -0.02, 15th. Atlanta was also held to -0.02 per eligible play; the defense conceded only one offensive touchdown, but third-down conversions extended too many drives." }
-    defensive_success_rate: { status: "Good", interpretation: "Opponent success improves to 40.9%, seventh in the league, after Atlanta succeeded on 34.4% of eligible plays." }
+    defensive_success_rate: { status: "Good", interpretation: "Opponent success improves to 40.9%, sixth in the league, after Atlanta succeeded on 34.4% of eligible plays." }
     explosive_play_rate_allowed: { status: "Average", interpretation: "The season rate is 9.4%, 17th. Limiting long gains remains important even as the defense wins more individual downs." }
     opponent_red_zone_td_rate: { status: "Good", interpretation: "Opponents have scored touchdowns on 55.6% of qualifying red-zone drives, 12th. Atlanta's offense managed one touchdown despite repeated third-down conversions." }
 
@@ -182,9 +182,9 @@ editorial:
       assessment: >-
         Atlanta's offense scored 16 points, with the other seven coming from a fumble
         return. Hamilton ended overtime with an interception, while the front made
-        important late plays. Opponent success is seventh for the season, but Atlanta's
+        important late plays. Opponent success is sixth for the season, but Atlanta's
         9-of-17 third-down conversion rate shows the situational work still required.
-      trend_summary: "Opponent success improves to seventh; third-down defense remains the clearest correction after Atlanta."
+      trend_summary: "Opponent success improves to sixth; third-down defense remains the clearest correction after Atlanta."
       metric_ids: ["defensive_epa_per_play", "defensive_success_rate", "explosive_play_rate_allowed"]
       links:
         - { label: "Five questions defining the Ravens' season", url: "/ravens/five-questions-that-will-define-the-season/" }
