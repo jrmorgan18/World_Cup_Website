@@ -1,4 +1,4 @@
-"""Independent, local-only Dual Eights Team Strength Index beta.
+"""Independent, local-only Dual Eights Power Index beta.
 
 Run fetch_strength_beta_inputs.py first. Never writes dashboard or post files.
 All historical forecast features are cut off before the games being forecast.

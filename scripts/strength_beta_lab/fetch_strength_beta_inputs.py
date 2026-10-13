@@ -1,4 +1,4 @@
-"""Fetch public, keyless inputs for the local Team Strength Index beta."""
+"""Fetch public, keyless inputs for the local Dual Eights Power Index beta."""
 import argparse
 import hashlib
 import io

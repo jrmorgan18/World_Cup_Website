@@ -5,33 +5,33 @@ Prepared October 13, 2026. Research notes for an article, not a finished article
 ## Coverage and comparison rules
 
 - All **15 of 15 Week 5 games** are final and included. The current-season sample is **79 games** through Monday, October 12. Kansas City and Carolina had Week 5 byes; Week 6 plays are excluded from ratings.
-- Efficiency is the published **v2.1** formula. TSI uses the existing frozen production coefficients. Neither formula was changed for this refresh.
+- Efficiency is the published **v2.1** formula. DEPI uses the existing frozen production coefficients. Neither formula was changed for this refresh.
 - All movement below compares **the complete Week 5 cutoff with the Week 4 cutoff**, recomputed from the same current source revision. It is not movement from Monday's partial Week 5 board. This avoids treating the final Monday game as an entire week's movement.
-- Historical TSI comparisons are a same-model replay with archived prior-week QB/depth-chart context, not a claim that these rankings were publicly issued before Week 5. Current TSI assumes the listed default quarterback; a depth-chart listing does not confirm game-day availability.
+- Historical DEPI comparisons are a same-model replay with archived prior-week QB/depth-chart context, not a claim that these rankings were publicly issued before Week 5. Current DEPI assumes the listed default quarterback; a depth-chart listing does not confirm game-day availability.
 - Ranks use unrounded scores. Display rounding can hide small differences; a team can improve its score and still fall in rank if other teams improve more.
 
 ## Quick story angles
 
-1. **The 49ers lead both boards.** San Francisco is first in Efficiency at 68.7 and first in TSI at +9.86 points, after a 32–29 win in Seattle.
-2. **Buffalo's Monday-night win changes the top of the forecast.** The Bills climb from fourth to second in TSI and from 15th to 10th in Efficiency.
+1. **The 49ers lead both boards.** San Francisco is first in Efficiency at 68.7 and first in DEPI at +9.86 points, after a 32–29 win in Seattle.
+2. **Buffalo's Monday-night win changes the top of the forecast.** The Bills climb from fourth to second in DEPI and from 15th to 10th in Efficiency.
 3. **Tampa Bay is the week's biggest Efficiency rank riser despite being 1–4.** The Buccaneers move 17th → ninth; their record is not a substitute for how they have played.
-4. **New England makes the strongest combined leap.** The Patriots move 18th → 11th in Efficiency and 13th → eighth in TSI after beating the Raiders 45–17.
-5. **Minnesota is the useful disagreement case.** A 5–0 team ranks sixth in Efficiency but 18th in TSI. Its defensive/special-teams dominance is real in the descriptive model; its offensive profile and historical context still constrain the forward-looking model.
-6. **The Ravens' strength ranking needs a quarterback footnote.** Fourth in default TSI means Lamar is assumed. Huntley changes the projection materially; see the dedicated note below.
+4. **New England makes the strongest combined leap.** The Patriots move 18th → 11th in Efficiency and 13th → eighth in DEPI after beating the Raiders 45–17.
+5. **Minnesota is the useful disagreement case.** A 5–0 team ranks sixth in Efficiency but 18th in DEPI. Its defensive/special-teams dominance is real in the descriptive model; its offensive profile and historical context still constrain the forward-looking model.
+6. **The Ravens' strength ranking needs a quarterback footnote.** Fourth in default DEPI means Lamar is assumed. Huntley changes the projection materially; see the dedicated note below.
 
-## Brief TSI introduction — usable draft copy
+## Brief DEPI introduction — usable draft copy
 
-> The Dual Eights Efficiency Index asks how well a team has played this season. The Team Strength Index, or TSI, asks a different question: how strong should that team be going forward? TSI combines opponent-adjusted passing and rushing efficiency, success rates, special teams, historical performance and the expected starting quarterback into a rating expressed in scoring-margin points above or below an average team on a neutral field.
+> The Dual Eights Efficiency Index asks how well a team has played this season. The Dual Eights Power Index, or DEPI, asks a different question: how strong should that team be going forward? DEPI combines opponent-adjusted passing and rushing efficiency, success rates, special teams, historical performance and the expected starting quarterback into a rating expressed in scoring-margin points above or below an average team on a neutral field.
 >
-> A +5 team is estimated to be five points better than average on neutral ground. Compare two teams' ratings and add the model's home-field allowance to estimate a matchup margin. The point scale makes TSI useful alongside Efficiency, but it is still a beta estimate—not a win probability, a certainty or a betting guarantee.
+> A +5 team is estimated to be five points better than average on neutral ground. Compare two teams' ratings and add the model's home-field allowance to estimate a matchup margin. The point scale makes DEPI useful alongside Efficiency, but it is still a beta estimate—not a win probability, a certainty or a betting guarantee.
 
 ### Background to support that introduction
 
-- **Performance versus projected strength:** Efficiency uses this season's observed plays. TSI adds prior-season team information, recency weighting and expected-QB adjustments; it is not another name for the same 0–100 index.
-- **Inputs:** opponent/venue-adjusted passing and designed-rushing EPA and success rates; context-adjusted special teams; and pooled quarterback estimates. CPOE is considered in the feature framework but its frozen production margin coefficient is zero, so it is not a separate active contributor to the current TSI score.
+- **Performance versus projected strength:** Efficiency uses this season's observed plays. DEPI adds prior-season team information, recency weighting and expected-QB adjustments; it is not another name for the same 0–100 index.
+- **Inputs:** opponent/venue-adjusted passing and designed-rushing EPA and success rates; context-adjusted special teams; and pooled quarterback estimates. CPOE is considered in the feature framework but its frozen production margin coefficient is zero, so it is not a separate active contributor to the current DEPI score.
 - **Historical weighting:** offense carries more prior information than defense (80% versus 40% before current evidence competes with the priors). Current-season plays decay with an eight-week half-life. Coach/primary-QB transitions reduce carryover. These are modeling assumptions, not subjective team-specific bonuses.
 - **Stabilization:** the model reduces the influence of fortunate fumble recoveries and pools small quarterback samples toward historical role/draft cohorts rather than treating every early-season highlight as established talent.
-- **Additive scale:** offense + defense + special teams + lineup adjustment = TSI. The lineup term replaces the quarterback contribution already embedded in offense; it is not a standalone QB grade or a second full count of QB value.
+- **Additive scale:** offense + defense + special teams + lineup adjustment = DEPI. The lineup term replaces the quarterback contribution already embedded in offense; it is not a standalone QB grade or a second full count of QB value.
 - **Home field:** the fitted allowance is **1.57 points**. International/neutral-site games receive no home-field allowance.
 - **Validation caveat:** frozen margin coefficients were fitted using seasons through 2023. Previously inspected 2024/2025 retrospective mean absolute errors were 10.02/10.14 points per game. Those are limitations to disclose, not evidence of guaranteed predictive superiority or a live betting record.
 - **What is missing:** explicit weather/rest adjustments and non-QB injury/player-matchup effects. Default quarterbacks may be unavailable. Early-season priors and small QB samples remain important sources of uncertainty.
@@ -77,7 +77,7 @@ Positive movement means places gained. Index change is Week 5 minus Week 4 on th
 
 ### The top 10: unit profiles
 
-These are **adjusted unit ranks from the Efficiency model**, not raw EPA/play ranks or TSI contribution ranks.
+These are **adjusted unit ranks from the Efficiency model**, not raw EPA/play ranks or DEPI contribution ranks.
 
 | Team | Index rank | Adjusted offense | Adjusted defense | Special teams |
 | --- | --- | --- | --- | --- |
@@ -118,7 +118,7 @@ The unbeaten Vikings move from seventh to sixth after beating New Orleans 23–1
 
 ### 7. Cincinnati Bengals — 59.1 (3-2)
 
-Cincinnati rises four spots after a 31–24 win at Miami. Eighth-ranked adjusted offense leads a more middle-of-the-pack defense (14th) and special-teams unit (13th). The Bengals are sixth in TSI as well, so the two measures agree relatively closely.
+Cincinnati rises four spots after a 31–24 win at Miami. Eighth-ranked adjusted offense leads a more middle-of-the-pack defense (14th) and special-teams unit (13th). The Bengals are sixth in DEPI as well, so the two measures agree relatively closely.
 
 ### 8. Carolina Panthers — 56.8 (2-2)
 
@@ -126,11 +126,11 @@ Carolina remains eighth through its bye. Its score falls from 58.0 to 56.8 as th
 
 ### 9. Tampa Bay Buccaneers — 56.7 (1-4)
 
-Tampa Bay jumps eight places after a 24–16 win at Dallas. At 1–4, the Buccaneers rank ninth in Efficiency and 12th in TSI: the clearest example this week of why performance ratings and the standings are different things. Adjusted defense is seventh and special teams sixth.
+Tampa Bay jumps eight places after a 24–16 win at Dallas. At 1–4, the Buccaneers rank ninth in Efficiency and 12th in DEPI: the clearest example this week of why performance ratings and the standings are different things. Adjusted defense is seventh and special teams sixth.
 
 ### 10. Buffalo Bills — 56.6 (4-1)
 
-Monday night's 37–34 win at the Rams completes the week and pushes Buffalo from 15th to 10th. The Bills have the second-ranked adjusted offense and fourth-ranked special teams, but the defense is 29th. They are second in TSI, a more optimistic forecast than their current-season Efficiency rank.
+Monday night's 37–34 win at the Rams completes the week and pushes Buffalo from 15th to 10th. The Bills have the second-ranked adjusted offense and fourth-ranked special teams, but the defense is 29th. They are second in DEPI, a more optimistic forecast than their current-season Efficiency rank.
 
 ## Efficiency: biggest risers
 
@@ -159,11 +159,11 @@ Include Buffalo, Detroit and Houston if listing the five-place tier: all three g
 
 Chicago, the Rams, the Raiders and the Giants all lose seven places. The Raiders have the largest index-point decline. The Giants' 27–27 tie is worth highlighting: a non-loss can still worsen their efficiency profile and rank. The Rams' 37–34 loss and Chicago's 31–7 loss produce the same rank drop, but that does not mean identical game performance.
 
-## TSI: full league standings
+## DEPI: full league standings
 
-TSI points are relative to an average team on a neutral field. The QB column is a modeling assumption, not an availability report.
+DEPI points are relative to an average team on a neutral field. The QB column is a modeling assumption, not an availability report.
 
-| W5 rank | Team | Record | TSI pts | W4 rank | Rank move | Point change | Assumed QB |
+| W5 rank | Team | Record | DEPI pts | W4 rank | Rank move | Point change | Assumed QB |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | San Francisco 49ers | 5-0 | +9.86 | 1 | — | +0.51 | Brock Purdy |
 | 2 | Buffalo Bills | 4-1 | +7.22 | 4 | ↑ 2 | +1.68 | Josh Allen |
@@ -198,11 +198,11 @@ TSI points are relative to an average team on a neutral field. The QB column is 
 | 31 | Miami Dolphins | 0-5 | −7.41 | 31 | — | −0.32 | Malik Willis |
 | 32 | Tennessee Titans | 0-5 | −9.15 | 32 | — | −0.51 | Cam Ward |
 
-### TSI top 10: where the rating comes from
+### DEPI top 10: where the rating comes from
 
 Positive defense points indicate better defense. Figures are rounded independently, so displayed contributions can differ from the displayed total by 0.01–0.02.
 
-| Team | TSI | Offense | Defense | ST | QB lineup adj. |
+| Team | DEPI | Offense | Defense | ST | QB lineup adj. |
 | --- | --- | --- | --- | --- | --- |
 | San Francisco 49ers | +9.86 | +8.06 | +1.18 | +0.05 | +0.57 |
 | Buffalo Bills | +7.22 | +8.05 | −2.26 | +0.91 | +0.53 |
@@ -215,9 +215,9 @@ Positive defense points indicate better defense. Figures are rounded independent
 | Kansas City Chiefs | +2.71 | +1.60 | +0.37 | +0.25 | +0.48 |
 | Seattle Seahawks | +2.69 | −2.43 | +3.83 | +1.37 | −0.07 |
 
-## TSI: biggest risers
+## DEPI: biggest risers
 
-| Team | W4 → W5 rank | Places gained | TSI W4 → W5 | Point change |
+| Team | W4 → W5 rank | Places gained | DEPI W4 → W5 | Point change |
 | --- | --- | --- | --- | --- |
 | New England Patriots | 13 → 8 | +5 | +0.75 → +3.01 | +2.26 |
 | Tampa Bay Buccaneers | 17 → 12 | +5 | −0.60 → +1.31 | +1.91 |
@@ -228,19 +228,19 @@ Positive defense points indicate better defense. Figures are rounded independent
 
 ### Main drivers — model contribution changes, not box-score attribution
 
-- **New England:** +2.26 TSI points overall, led by +1.64 offense, +0.21 defense and +0.35 special teams. The 45–17 win at home against the Raiders makes this the largest TSI point gain as well as a five-place climb.
+- **New England:** +2.26 DEPI points overall, led by +1.64 offense, +0.21 defense and +0.35 special teams. The 45–17 win at home against the Raiders makes this the largest DEPI point gain as well as a five-place climb.
 - **Tampa Bay:** +1.91 overall; offense adds +1.35 and defense +0.51. Its move from slightly below average to +1.31 is meaningful even though the record remains 1–4.
 - **Green Bay:** +1.98 overall, with +1.13 offense and +1.08 defense after beating Chicago 31–7; special teams decline by 0.35. The Packers rise four places to 14th.
-- **Houston:** +1.66 overall, split between offense (+0.71) and defense (+0.73), after the 26–3 win at Tennessee. Houston's 1–4 record and 21st-place TSI still limit any sweeping turnaround claim.
+- **Houston:** +1.66 overall, split between offense (+0.71) and defense (+0.73), after the 26–3 win at Tennessee. Houston's 1–4 record and 21st-place DEPI still limit any sweeping turnaround claim.
 - **Pittsburgh:** +1.21 overall, principally offense (+0.94) and special teams (+0.41), after beating Indianapolis 34–22; its defensive contribution slips by 0.20.
 - **Jets:** +1.35 overall, largely defense (+0.85) and special teams (+0.54), after the 17–12 win over Cleveland. The offensive contribution is essentially unchanged.
 - **Buffalo:** a two-place climb to second is less dramatic by rank than those six movers, but its +1.68-point gain is among the week's largest. Nearly all of that gain is in offense (+1.49).
 
 Because these are jointly adjusted, league-centered fits, contribution changes also reflect new opponent context, recency/history weighting and QB estimates. They are not a causal allocation of one game's scoring margin.
 
-## TSI: biggest fallers
+## DEPI: biggest fallers
 
-| Team | W4 → W5 rank | Places lost | TSI W4 → W5 | Point change |
+| Team | W4 → W5 rank | Places lost | DEPI W4 → W5 | Point change |
 | --- | --- | --- | --- | --- |
 | Indianapolis Colts | 11 → 17 | 6 | +1.04 → −0.10 | −1.13 |
 | Arizona Cardinals | 19 → 25 | 6 | −1.71 → −3.35 | −1.64 |
@@ -251,51 +251,45 @@ Because these are jointly adjusted, league-centered fits, contribution changes a
 | Cleveland Browns | 26 → 29 | 3 | −3.13 → −5.02 | −1.89 |
 
 - **Indianapolis:** falls six places, 11th → 17th, despite only a 1.13-point decline. Its defensive contribution falls 0.95; the crowded middle amplifies the rank change.
-- **Arizona:** also loses six places, 19th → 25th. The 45–21 loss to Detroit coincides with −1.64 TSI points, including −0.94 defense and −0.40 special teams.
+- **Arizona:** also loses six places, 19th → 25th. The 45–21 loss to Detroit coincides with −1.64 DEPI points, including −0.94 defense and −0.40 special teams.
 - **Dallas:** 16th → 20th, −1.09 points; offense (−0.48) and defense (−0.57) both deteriorate after the loss to Tampa Bay.
-- **Rams:** remain fifth in TSI even while slipping two places. Their −1.20-point change is largely defense (−1.19), reinforcing the difference between a strong offensive forecast and their 17th-place current Efficiency profile.
+- **Rams:** remain fifth in DEPI even while slipping two places. Their −1.20-point change is largely defense (−1.19), reinforcing the difference between a strong offensive forecast and their 17th-place current Efficiency profile.
 - **Seattle:** seventh → 10th, −1.46 points. The offensive contribution declines 2.26, partly offset by defense (+0.52) and special teams (+0.48).
 - **Raiders:** 22nd → 26th, a four-place fall. Their −2.01 points are driven chiefly by defense (−1.63), then special teams (−0.37). Use the actual table baseline when writing.
 - **Cleveland:** 26th → 29th, −1.89 points, primarily offense (−1.75). The 17–12 loss to the Jets sets up the next Ravens matchup.
-- **Chicago deserves a separate point-change mention:** fifth → seventh is only two places, but −2.02 points is the largest TSI decline. Defense (−1.04), offense (−0.78) and special teams (−0.43) all fall.
+- **Chicago deserves a separate point-change mention:** fifth → seventh is only two places, but −2.02 points is the largest DEPI decline. Defense (−1.04), offense (−0.78) and special teams (−0.43) all fall.
 
-## Where Efficiency and TSI disagree
+## Where Efficiency and DEPI disagree
 
-| Team | Efficiency rank | TSI rank | Useful interpretation |
+| Team | Efficiency rank | DEPI rank | Useful interpretation |
 | --- | --- | --- | --- |
-| Minnesota Vikings | 6 | 18 | Defense/ST lead observed performance; TSI offense is −5.28 points despite 5–0. |
+| Minnesota Vikings | 6 | 18 | Defense/ST lead observed performance; DEPI offense is −5.28 points despite 5–0. |
 | Los Angeles Rams | 17 | 5 | Historical/forward-looking strength stays high; current season performance has slipped. |
 | Buffalo Bills | 10 | 2 | Strong offensive projection; current adjusted defense is only 29th. |
-| Seattle Seahawks | 3 | 10 | Observed defense/ST are excellent; TSI is less bullish on total strength. |
+| Seattle Seahawks | 3 | 10 | Observed defense/ST are excellent; DEPI is less bullish on total strength. |
 | Green Bay Packers | 23 | 14 | Recent improvement and historical/QB context exceed the season-to-date Efficiency rank. |
-| Carolina Panthers | 8 | 16 | Solid four-game Efficiency profile; TSI is approximately average. |
+| Carolina Panthers | 8 | 16 | Solid four-game Efficiency profile; DEPI is approximately average. |
 
 Do not force one ranking to validate the other. The gap is often the article's most useful question: are this season's results showing a durable change, or does the forecast still have reasons to be skeptical?
 
 ## The Ravens: the quarterback footnote you should include
 
 - **Efficiency:** fifth at **62.5**, up one place from Week 4's 60.5.
-- **Default TSI:** fourth at **+5.72**, up two places and +0.66 points. It assumes **Lamar Jackson**.
-- **Huntley scenario:** choosing Tyler Huntley lowers the model rating by **4.02 points**, to **+1.69**, which would rank **11th** if the other teams retain their default QBs.
-- This does not erase the Atlanta win or replace Huntley's actual plays in Efficiency. It changes the expected future quarterback contribution in TSI.
+- **Default DEPI:** fourth at **+5.72**, up two places and +0.66 points. It assumes **Lamar Jackson**.
+- **Huntley scenario:** before league re-centering, replacing Jackson with Huntley lowers the rating by **4.02 points**, to **+1.69**, ranking **11th** if other QB assumptions remain unchanged. Applying the scenario to the rankings UI re-centers all 32 teams around zero, so its displayed Ravens rating is **+1.82**; relative rankings and matchup margins are unaffected by that common shift.
+- This does not erase the Atlanta win or replace Huntley's actual plays in Efficiency. It changes the expected future quarterback contribution in DEPI.
 - For Week 6 at Cleveland, the current model margin is **Ravens by 9.17 with Lamar** or approximately **Ravens by 5.14 with Huntley**, keeping Cleveland's default Deshaun Watson assumption. These are conditional model margins, not picks or confirmed lineups.
 - Missing Week 6 injury designations do not establish that Jackson, or any other default QB, will play.
 
 ## Optional Week 6 matchup angle
 
-**Seattle at Denver, Thursday, October 15:** Seattle ranks third in Efficiency and 10th in TSI; Denver ranks 15th in both. The default model is tight at Seattle by 1.07 after Denver's home-field allowance. It offers an early test of Seattle's defense/ST-led profile rather than a top-two TSI showdown.
+**Seattle at Denver, Thursday, October 15:** Seattle ranks third in Efficiency and 10th in DEPI; Denver ranks 15th in both. The default model is tight at Seattle by 1.07 after Denver's home-field allowance. It offers an early test of Seattle's defense/ST-led profile rather than a top-two DEPI showdown.
 
-For a balanced matchup, **Chicago at Atlanta** has the highest combined default TSI (+4.08) among pairings with a model margin within three points, and the forecast is close (Chicago by 1.00). **Washington at San Francisco** actually has the highest combined TSI overall (+8.03), but San Francisco is favored by 13.25 model points. **Houston at Jacksonville** has the highest combined Efficiency score (120.22), but Jacksonville is a much clearer default-model favorite. If selecting a 'best matchup,' specify whether that means combined team quality, balance or analytical interest; no Week 6 fixture pairs two top-10 TSI teams.
+For a balanced matchup, **Chicago at Atlanta** has the highest combined default DEPI (+4.08) among pairings with a model margin within three points, and the forecast is close (Chicago by 1.00). **Washington at San Francisco** actually has the highest combined DEPI overall (+8.03), but San Francisco is favored by 13.25 model points. **Houston at Jacksonville** has the highest combined Efficiency score (120.22), but Jacksonville is a much clearer default-model favorite. If selecting a 'best matchup,' specify whether that means combined team quality, balance or analytical interest; no Week 6 fixture pairs two top-10 DEPI teams.
 
-## Five alternative names for TSI
+## Selected Power Index branding
 
-1. **Dual Eights Power Index (DEPI)** — recommended; a clear, brand-owned contrast with the descriptive Efficiency Index.
-2. **Neutral-Field Rating (NFR)** — emphasizes exactly what the points represent.
-3. **Projected Strength Rating (PSR)** — makes the forward-looking purpose explicit.
-4. **Gridiron Power Index (GPI)** — short, football-specific and easy to introduce.
-5. **Contender Strength Rating (CSR)** — a fan-facing name focused on team quality, without presenting the score as a championship probability.
-
-These are naming ideas, not a change to the model or a claim of trademark/domain availability.
+Use **Dual Eights Power Index (DEPI)** on first mention and **DEPI** thereafter. This is a name-only rebrand of the existing model: the formula, point scale, rankings, quarterback scenarios and historical forecasts are unchanged. Keep **Dual Eights Efficiency Index** for the separate descriptive performance measure.
 
 ## Sources, reproducibility and writing guardrails
 
@@ -304,7 +298,7 @@ These are naming ideas, not a change to the model or a claim of trademark/domain
 - [Published Efficiency v2.1 explanation](https://dualeights.com/ravens/dual-eights-efficiency-index-week-four-2026/). Its formula is unchanged: 45% offense, 45% defense and 10% special teams, standardized against the frozen 2025 calibration and displayed as `50 + 50 × tanh(composite / 2)`.
 - [nflverse availability/correction policy](https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html): Wednesday/Thursday statistical corrections can revise the descriptive ratings. This is a dated October 13 snapshot, not a permanent unchangeable Week 5 score.
 - Production refresh commands: `python scripts/update_nfl_dashboard.py --season 2026 --ratings-week 5` and `python scripts/update_ravens_dashboard.py --season 2026 --as-of 2026-10-13`. Shared-current-PBP cutoff comparisons use the same fixed coefficients and calibration, without refitting or importing Week 6 plays.
-- Use **index points** for Efficiency and **scoring-margin points above/below average** for TSI. Neither is a percentile or win probability.
+- Use **index points** for Efficiency and **scoring-margin points above/below average** for DEPI. Neither is a percentile or win probability.
 - A positive rank move is old rank minus new rank; a positive rating-point change is new score minus old score.
 - Avoid calling retrospective replays saved pregame predictions. Do not conflate adjusted unit ranks with raw EPA ranks, or QB assumptions with availability confirmation.
 

@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import posixpath
+import re
 import sys
 from html.parser import HTMLParser
 from pathlib import Path
@@ -116,6 +117,12 @@ def validate(site_dir: Path) -> list[str]:
     for html_file in html_files:
         source_url = page_url(html_file, site_dir)
         content = html_file.read_text(encoding="utf-8")
+
+        if source_url.startswith("/nfl/"):
+            if "Dual Eights Power Index" not in content:
+                errors.append(f"Power Index branding is missing in {source_url}")
+            if re.search(r"\bTSI\b|Team Strength Index", content, re.IGNORECASE):
+                errors.append(f"Retired power-index branding remains in {source_url}")
 
         for prohibited in PROHIBITED_HTML_TEXT:
             if prohibited in content:

@@ -1,7 +1,7 @@
 {% assign nfl = site.data.nfl_dashboard %}
 <header class="nfl-hero">
   <div class="nfl-hero-inner">
-    <div><p class="de-eyebrow"><span></span> The NFL desk</p>
+    <div><p class="de-eyebrow"><span></span> Dual Eights Power Index</p>
       <h1>{{ include.heading | default: 'NFL <em>rankings.</em>' }}</h1>
     </div>
     <div class="nfl-cutoff"><span>{{ nfl.season }} season</span><strong>Through Week {{ nfl.rating_week }}{% if nfl.rating_week_complete == false %} · partial{% endif %}</strong><small>Ratings data through {{ nfl.data_through | date: "%B %-d" }}<br>Refreshed {{ nfl.generated_at | date: "%B %-d, %Y" }}</small></div>

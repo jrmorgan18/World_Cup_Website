@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the NFL hub with the reviewed, frozen TSI formula and production Efficiency.
+"""Build the NFL hub with the reviewed, frozen DEPI formula and production Efficiency.
 
 No subjective rankings or market lines enter the model. Public data is written
 only after coverage, temporal and numerical checks succeed. Existing forecasts

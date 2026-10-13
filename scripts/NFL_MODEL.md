@@ -1,11 +1,11 @@
-# NFL beta publishing and operation
+# Dual Eights Power Index: NFL publishing and operation
 
-The public hub has one reviewed TSI formula. Coefficients are frozen in
+The public hub has one reviewed DEPI formula. Coefficients are frozen in
 `nfl_model_config.json`; public pages show only “Beta.” Production Efficiency
 uses `compute_league_metrics` followed by the existing production
 `efficiency_dashboard.apply_model` and frozen calibration. The NFL pipeline
-does not change that formula or the Ravens dataset. Frozen TSI helpers use
-relative package imports so future Efficiency module updates cannot alter TSI.
+does not change that formula or the Ravens dataset. Frozen DEPI helpers use
+relative package imports so future Efficiency module updates cannot alter DEPI.
 
 Run `python scripts/update_nfl_dashboard.py --season 2026 --ratings-week 4`
 for the launch cutoff. Omit `--ratings-week` in subsequent scheduled runs to
