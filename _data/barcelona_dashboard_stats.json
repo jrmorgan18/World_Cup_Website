@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-12T16:10:35Z",
-  "as_of": "2026-10-12",
+  "generated_at": "2026-10-13T14:37:06Z",
+  "as_of": "2026-10-13",
   "season": 2026,
   "season_label": "2026-27",
   "team": {
@@ -835,14 +835,14 @@
           "abbreviation": "SEV",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png",
           "rank": 5,
-          "played": 7,
+          "played": 8,
           "wins": 4,
-          "draws": 1,
+          "draws": 2,
           "losses": 2,
-          "goals_for": 10,
-          "goals_against": 9,
+          "goals_for": 13,
+          "goals_against": 12,
           "goal_difference": 1,
-          "points": 13
+          "points": 14
         },
         {
           "team_id": "89",
@@ -1021,12 +1021,28 @@
           "points": 8
         },
         {
+          "team_id": "1538",
+          "name": "Levante",
+          "short_name": "Levante",
+          "abbreviation": "LEV",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png",
+          "rank": 17,
+          "played": 7,
+          "wins": 1,
+          "draws": 3,
+          "losses": 3,
+          "goals_for": 11,
+          "goals_against": 15,
+          "goal_difference": -4,
+          "points": 6
+        },
+        {
           "team_id": "3751",
           "name": "Elche",
           "short_name": "Elche",
           "abbreviation": "ELC",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png",
-          "rank": 17,
+          "rank": 18,
           "played": 8,
           "wins": 1,
           "draws": 3,
@@ -1035,22 +1051,6 @@
           "goals_against": 17,
           "goal_difference": -6,
           "points": 6
-        },
-        {
-          "team_id": "1538",
-          "name": "Levante",
-          "short_name": "Levante",
-          "abbreviation": "LEV",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png",
-          "rank": 18,
-          "played": 6,
-          "wins": 1,
-          "draws": 2,
-          "losses": 3,
-          "goals_for": 8,
-          "goals_against": 12,
-          "goal_difference": -4,
-          "points": 5
         },
         {
           "team_id": "94",
@@ -4125,8 +4125,8 @@
   "injuries": [],
   "rotation": {
     "window_days": 21,
-    "window_start": "2026-09-21",
-    "window_end": "2026-10-12",
+    "window_start": "2026-09-22",
+    "window_end": "2026-10-13",
     "matches_in_window": 1,
     "available_minutes": 90,
     "players": [
