@@ -139,9 +139,8 @@ section_theme: ravens
   </section>
 
   <section class="ravens-dashboard-section" id="units" role="tabpanel" aria-labelledby="dashboard-tab-units" tabindex="0">
-    <div class="ravens-section-heading ravens-section-heading--split">
+    <div class="ravens-section-heading">
       <div><p class="de-kicker">Film and role evaluation</p><h2 id="units-title">Unit Report Card</h2></div>
-      <p>{{ dashboard.unit_grade_context.note }}</p>
     </div>
     <div class="ravens-unit-grid">
       {% for unit in dashboard.editorial.units %}
