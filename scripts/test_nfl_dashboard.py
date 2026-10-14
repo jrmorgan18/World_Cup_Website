@@ -80,8 +80,13 @@ class NFLDashboardTests(unittest.TestCase):
         preserve_previous_published_ranks(teams,previous,2026,6)
         self.assertEqual(teams[0]['previous_week_beta_rank'],10)
         self.assertEqual(teams[0]['weekly_rank_change'],3)
+        previous={'season':2026,'rating_week':6,'teams':deepcopy(teams)}
+        teams[0].update(rank=6,previous_week_beta_rank=8,weekly_rank_change=2)
+        preserve_previous_published_ranks(teams,previous,2026,6)
+        self.assertEqual(teams[0]['previous_week_beta_rank'],10)
+        self.assertEqual(teams[0]['weekly_rank_change'],4)
         unchanged=deepcopy(teams)
-        preserve_previous_published_ranks(teams,previous,2026,7)
+        preserve_previous_published_ranks(teams,previous,2026,8)
         self.assertEqual(teams,unchanged)
 
     def schedule(self):

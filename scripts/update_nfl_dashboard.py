@@ -209,9 +209,16 @@ def publication_is_frozen(config, season, rating_week, week_complete):
 
 def preserve_previous_published_ranks(teams, previous, season, rating_week):
     """Compare new ranks with the actual published preceding week across the change."""
-    if previous.get('season') != season or previous.get('rating_week') != rating_week - 1:
+    if previous.get('season') != season:
         return
-    ranks = {t['abbr']: t['rank'] for t in previous['teams']}
+    if previous.get('rating_week') == rating_week - 1:
+        field = 'rank'
+    elif previous.get('rating_week') == rating_week:
+        # A daily refresh must not replace the published comparison with a refit replay.
+        field = 'previous_week_beta_rank'
+    else:
+        return
+    ranks = {t['abbr']: t[field] for t in previous['teams']}
     for team in teams:
         team['previous_week_beta_rank'] = ranks[team['abbr']]
         team['weekly_rank_change'] = ranks[team['abbr']] - team['rank']
