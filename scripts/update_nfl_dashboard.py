@@ -178,16 +178,62 @@ def actual_starter_adjustment(game, assumed, snapshot, features, coefficients):
     return float(adjustment), changed
 
 
+def model_for_rating(config, season, rating_week):
+    """Use the formula effective at a forecast's rating cutoff, not today's formula."""
+    activation = config.get('activation')
+    if activation and (season, rating_week) < (activation['season'], activation['rating_week']):
+        return config['previous_model']
+    return config
+
+
+def model_for_forecast(config, forecast, season, rating_week):
+    """Older archive records lack an ID; their rating cutoff identifies the formula."""
+    model_id = forecast.get('model_id') if forecast else None
+    if model_id:
+        for candidate in [config, config.get('previous_model', {})]:
+            if candidate.get('model_id') == model_id:
+                return candidate
+        raise ValueError('Unknown archived forecast model: ' + model_id)
+    return model_for_rating(config, season, rating_week)
+
+
+def publication_is_frozen(config, season, rating_week, week_complete):
+    """Hold the article's published snapshot until the activation week is complete."""
+    activation = config.get('activation', {})
+    if not activation.get('preserve_published_until_complete'):
+        return False
+    cutoff = (season, rating_week)
+    target = (activation['season'], activation['rating_week'])
+    return cutoff < target or (cutoff == target and not week_complete)
+
+
+def preserve_previous_published_ranks(teams, previous, season, rating_week):
+    """Compare new ranks with the actual published preceding week across the change."""
+    if previous.get('season') != season or previous.get('rating_week') != rating_week - 1:
+        return
+    ranks = {t['abbr']: t['rank'] for t in previous['teams']}
+    for team in teams:
+        team['previous_week_beta_rank'] = ranks[team['abbr']]
+        team['weekly_rank_change'] = ranks[team['abbr']] - team['rank']
+
+
 def build(cache, season, requested, audit=False, allow_partial=False):
-    config = json.loads((ROOT/'scripts/nfl_model_config.json').read_text())
-    seed = json.loads((ROOT/'scripts/nfl_model_seed.json').read_text())
+    model_config = json.loads((ROOT/'scripts/nfl_model_config.json').read_text())
     schedule = pd.read_csv(cache/'games.csv')
     cutoff, completed = completed_cutoff(schedule,season,requested,allow_partial)
+    rating_schedule=schedule[(schedule.season==season)&(schedule.game_type=='REG')&(schedule.week==cutoff)]
+    pending=rating_schedule[rating_schedule.home_score.isna()|rating_schedule.away_score.isna()]
+    if publication_is_frozen(model_config, season, cutoff, pending.empty):
+        activation = model_config['activation']
+        print(f"NFL publication preserved: awaiting completed {activation['season']} Week {activation['rating_week']}; no public data or forecasts written.", flush=True)
+        return
+    config = model_for_rating(model_config, season, cutoff)
+    seed = json.loads((ROOT/'scripts/nfl_model_seed.json').read_text())
+    published_path = ROOT/'_data/nfl_dashboard.json'
+    previous_published = json.loads(published_path.read_text()) if published_path.exists() else {}
     current_pbp=pd.read_parquet(cache/f'pbp-{season}.parquet')
     missing=set(completed.game_id)-set(current_pbp.game_id)
     if missing:raise ValueError('Missing play-by-play for completed games: '+', '.join(sorted(missing)))
-    rating_schedule=schedule[(schedule.season==season)&(schedule.game_type=='REG')&(schedule.week==cutoff)]
-    pending=rating_schedule[rating_schedule.home_score.isna()|rating_schedule.away_score.isna()]
     builder = RefinedBuilder(cache,season,cutoff)
     qb_depth=builder.depth_all[(builder.depth_all.pos_abb=='QB')&builder.depth_all.gsis_id.notna()].sort_values('dt').drop_duplicates('gsis_id',keep='last')
     qb_names=dict(zip(qb_depth.gsis_id,qb_depth.player_name))
@@ -205,6 +251,7 @@ def build(cache, season, requested, audit=False, allow_partial=False):
     # Historical year-end snapshots initialize identical priors. Only 2026 is replayed.
     rows,details = builder.generate_refined(exp,evaluate_from=season)
     model = model_payload(builder,exp,details,coef,config['validation'],seed)
+    preserve_previous_published_ranks(model['teams'], previous_published, season, cutoff)
     records,efficiency = compute_league_metrics(completed,current_pbp)
     anchors=calibration(season)
     efficiency=apply_model(efficiency,current_pbp,completed,eligible_scrimmage_plays,anchors)
@@ -239,10 +286,9 @@ def build(cache, season, requested, audit=False, allow_partial=False):
     archive_path=ROOT/'_data/nfl_forecast_archive.json'
     archive=json.loads(archive_path.read_text()).get('forecasts',[]) if archive_path.exists() else []
     by_team={t['abbr']:t for t in teams}
-    archive=add_forecasts(archive,upcoming,by_team,model['home_advantage'],cutoff,generated_at,{'rating_week_complete':pending.empty,'rating_games':len(completed)})
+    archive=add_forecasts(archive,upcoming,by_team,model['home_advantage'],cutoff,generated_at,{'rating_week_complete':pending.empty,'rating_games':len(completed),'model_id':config['model_id']})
     saved={f['game_id']:f for f in sorted(archive,key=lambda f:f['generated_at']) if f['season']==season}
     historical_rows={r.game_id:r for r in rows.itertuples() if r.season==season}
-    replay_coef=coef.copy()
     # Efficiency-only margin benchmark is calibrated solely on prior historical training.
     # The constant 3.125 percentiles are displayed as an index, never treated as spread points.
     games_out=[]
@@ -253,6 +299,9 @@ def build(cache, season, requested, audit=False, allow_partial=False):
         forecast=saved.get(g.game_id)
         if forecast and not archived_before_game(forecast,g): raise ValueError('Post-kickoff forecast in saved archive')
         replay=historical_rows.get(g.game_id)
+        forecast_rating_week=forecast['rating_week'] if forecast else int(g.week)-1
+        forecast_config=model_for_forecast(model_config,forecast,season,forecast_rating_week)
+        replay_coef=np.array([forecast_config['coefficients'][k] for k in exp.features+['home_advantage']])
         prediction=forecast['home_margin'] if forecast else float(np.array(replay.features)@replay_coef) if replay else None
         kind='saved' if forecast else 'retrospective' if replay else 'unavailable'
         snapshot=details.get(forecast['rating_week'] if forecast else int(g.week)-1,{})
@@ -260,7 +309,7 @@ def build(cache, season, requested, audit=False, allow_partial=False):
         if forecast:
             assumed[g.home_team]={'id':forecast['home_qb_id'],'name':forecast['home_qb']}
             assumed[g.away_team]={'id':forecast['away_qb_id'],'name':forecast['away_qb']}
-        adjustment,changed=actual_starter_adjustment(g,assumed,snapshot,exp.features,coef) if final and snapshot and prediction is not None else (0.,False)
+        adjustment,changed=actual_starter_adjustment(g,assumed,snapshot,exp.features,replay_coef) if final and snapshot and prediction is not None else (0.,False)
         games_out.append({'game_id':g.game_id,'week':int(g.week),'date':str(g.gameday),'time_et':str(g.gametime),
             'kickoff_utc':kickoff_utc(g).isoformat(),'home':g.home_team,'away':g.away_team,'neutral':g.location=='Neutral',
             'stadium':str(g.stadium),'status':'Final' if final else 'Upcoming',
@@ -271,6 +320,7 @@ def build(cache, season, requested, audit=False, allow_partial=False):
             'lineup_adjustment':adjustment,'lineup_changed':changed,
             'forecast_generated_at':forecast['generated_at'] if forecast else generated_at,
             'forecast_rating_week':forecast['rating_week'] if forecast else int(g.week)-1,
+            'forecast_model_id':forecast_config['model_id'],
             'home_qb':forecast['home_qb'] if forecast else assumed.get(g.home_team,{}).get('name'),
             'away_qb':forecast['away_qb'] if forecast else assumed.get(g.away_team,{}).get('name'),
             'home_qb_id':assumed.get(g.home_team,{}).get('id'),'away_qb_id':assumed.get(g.away_team,{}).get('id'),
@@ -278,7 +328,7 @@ def build(cache, season, requested, audit=False, allow_partial=False):
             'market_retrieved_at':next(s['fetched_at'] for s in json.loads((cache/'manifest.json').read_text()) if s['file']=='games.csv'),
             'actual_home_qb':str(g.home_qb_name) if final and pd.notna(g.home_qb_name) else None,
             'actual_away_qb':str(g.away_qb_name) if final and pd.notna(g.away_qb_name) else None,
-            'home_field':model['home_advantage'] if g.location=='Home' else 0.})
+            'home_field':float(replay_coef[-1]) if g.location=='Home' else 0.})
     def summary(kind):
         sample=[g for g in games_out if g['status']=='Final' and g['forecast_kind']==kind and g['forecast_home_margin'] is not None]
         if not sample:return {'games':0,'mae':None,'market_mae':None,'home_baseline_mae':None}
@@ -301,7 +351,8 @@ def build(cache, season, requested, audit=False, allow_partial=False):
         'teams':teams,'games':games_out,'results_summary':{'saved':summary('saved'),'retrospective':summary('retrospective')},
         'sources':[{'file':s['file'],'url':s.get('url'),'retrieved_at':s.get('fetched_at'),'last_modified':s.get('http_last_modified')} for s in sources if s['file'] in [f'pbp-{season}.parquet','games.csv','depth_charts.parquet','injuries.parquet']],
         'efficiency_model':'Published opponent/venue-adjusted Efficiency Index: 45% offense, 45% defense, 10% special teams',
-        'methodology':{'offense_carry':exp.offense_carry,'defense_carry':exp.defense_carry,'history_share':exp.history_share,
+        'methodology':{'model_id':config['model_id'],'margin_penalty':config['experiment']['margin_penalty'],
+            'point_multiplier':config.get('point_multiplier',1.),'offense_carry':exp.offense_carry,'defense_carry':exp.defense_carry,'history_share':exp.history_share,
             'half_life':exp.half_life,'coach_multiplier':.65,'new_qb_multiplier':.60}}
     from check_nfl_dashboard import validate
     validate(payload)

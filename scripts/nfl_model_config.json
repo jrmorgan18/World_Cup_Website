@@ -1,7 +1,7 @@
 {
   "experiment": {
-    "key": "lower_history",
-    "label": "Combined \u00b7 10% less history",
+    "key": "refit",
+    "label": "Original features, refitted point scale",
     "qb": true,
     "stable": true,
     "offense_prior": 175.0,
@@ -10,30 +10,202 @@
     "defense_carry": 0.4,
     "half_life": 8.0,
     "history_share": 0.9,
-    "margin_penalty": 120.0,
-    "tuning_mae": 9.879662443842617
+    "margin_penalty": 360.0,
+    "tuning_mae": 9.842102610482014,
+    "point_multiplier": 0.85
   },
   "coefficients": {
-    "pass_offense": 11.474780950116275,
-    "pass_defense": 10.779640739345094,
-    "run_offense": 9.718856410626593,
-    "run_defense": 17.287082378628583,
-    "st": 0.9112369987617808,
-    "qb_epa_delta": 18.959105807753335,
-    "qb_cpoe_delta": 0.0,
-    "qb_rush_delta": 42.09423156446981,
-    "pass_success_offense": 33.28927199393345,
-    "pass_success_defense": 8.384593608134034,
-    "run_success_offense": 42.61163581238703,
+    "pass_offense": 9.329939176995405,
+    "pass_defense": 7.591973666027702,
+    "run_offense": 10.182613368820315,
+    "run_defense": 12.680967608427725,
+    "st": 0.671564585543643,
+    "qb_epa_delta": 13.411262258758518,
+    "qb_cpoe_delta": 0.06130749789981889,
+    "qb_rush_delta": 31.983955110262613,
+    "pass_success_offense": 26.540020225646824,
+    "pass_success_defense": 10.445858848260219,
+    "run_success_offense": 30.246627432677553,
     "run_success_defense": 0.0,
-    "home_advantage": 1.5657941587125686
+    "home_advantage": 1.536670083607406
   },
   "validation": {
     "training": "2019-2021",
     "parameter_selection": "2022-2023",
     "final_fit": "2019-2023",
-    "note": "2024-25 are retrospective comparisons. Conditional lineup assumes recorded starting identity; prior-week player performance only. No archived injury forecasts.",
+    "note": "2024-2026 were previously inspected and are retrospective diagnostics. Coefficients use seasons through 2023; scale selection uses rolling 2022-2023 forecasts. Conditional lineup assumes recorded starting identity with prior-week skill. Original features and historical priors are unchanged.",
     "selected": {
+      "key": "refit",
+      "label": "Original features, refitted point scale",
+      "qb": true,
+      "stable": true,
+      "offense_prior": 175.0,
+      "defense_prior": 75.0,
+      "offense_carry": 0.8,
+      "defense_carry": 0.4,
+      "half_life": 8.0,
+      "history_share": 0.9,
+      "margin_penalty": 360.0,
+      "tuning_mae": 9.842102610482014,
+      "point_multiplier": 0.85
+    },
+    "seasons": {
+      "2024": {
+        "beta": {
+          "games": 272,
+          "mae": 10.05734459879503,
+          "rmse": 13.034267353022068,
+          "slope": 1.393946474213376,
+          "mean_error": -0.39204731294033185,
+          "predicted_std": 4.608531667409282,
+          "tails": {
+            "7": {
+              "games": 45,
+              "mae": 12.067896480821338,
+              "rmse": 14.771787858962435
+            },
+            "10": {
+              "games": 11,
+              "mae": 13.538344588188155,
+              "rmse": 16.232716153051772
+            },
+            "14": null
+          }
+        },
+        "conditional_lineup": {
+          "games": 272,
+          "mae": 10.036471616978755,
+          "rmse": 12.95520320957358,
+          "slope": 1.47750623511279,
+          "mean_error": -0.4090176040858826,
+          "predicted_std": 4.509740796682235,
+          "tails": {
+            "7": {
+              "games": 43,
+              "mae": 11.4873141888708,
+              "rmse": 14.431648262185004
+            },
+            "10": {
+              "games": 10,
+              "mae": 12.515716898464563,
+              "rmse": 15.984752492938123
+            },
+            "14": {
+              "games": 1,
+              "mae": 10.566343363276628,
+              "rmse": 10.566343363276628
+            }
+          }
+        }
+      },
+      "2025": {
+        "beta": {
+          "games": 272,
+          "mae": 10.142436022947336,
+          "rmse": 12.999280560041617,
+          "slope": 1.1841947304173017,
+          "mean_error": -0.7881630859333809,
+          "predicted_std": 4.933903209386357,
+          "tails": {
+            "7": {
+              "games": 48,
+              "mae": 12.161621092315803,
+              "rmse": 14.877391212640237
+            },
+            "10": {
+              "games": 15,
+              "mae": 8.294080505454623,
+              "rmse": 9.646636968698752
+            },
+            "14": {
+              "games": 1,
+              "mae": 9.629812070009939,
+              "rmse": 9.629812070009939
+            }
+          }
+        },
+        "conditional_lineup": {
+          "games": 272,
+          "mae": 10.120350484112706,
+          "rmse": 12.874443631707795,
+          "slope": 1.2598325863010023,
+          "mean_error": -0.8088404689866587,
+          "predicted_std": 4.892304444333779,
+          "tails": {
+            "7": {
+              "games": 45,
+              "mae": 11.944034672037507,
+              "rmse": 14.298529370482896
+            },
+            "10": {
+              "games": 13,
+              "mae": 7.322474633006978,
+              "rmse": 8.48557435245397
+            },
+            "14": {
+              "games": 1,
+              "mae": 9.629812070009939,
+              "rmse": 9.629812070009939
+            }
+          }
+        }
+      },
+      "2026": {
+        "beta": {
+          "games": 79,
+          "mae": 9.842483218370733,
+          "rmse": 12.69692961190602,
+          "slope": 0.7278134474153278,
+          "mean_error": 1.0749945092925748,
+          "predicted_std": 4.151326526261067,
+          "tails": {
+            "7": {
+              "games": 11,
+              "mae": 8.555593832061469,
+              "rmse": 12.047908887342853
+            },
+            "10": {
+              "games": 3,
+              "mae": 7.306068432435073,
+              "rmse": 7.980773726711968
+            },
+            "14": null
+          }
+        },
+        "conditional_lineup": {
+          "games": 79,
+          "mae": 9.969402152391316,
+          "rmse": 12.801804578481415,
+          "slope": 0.6635851903546071,
+          "mean_error": 1.0132228706081483,
+          "predicted_std": 4.087649561799111,
+          "tails": {
+            "7": {
+              "games": 10,
+              "mae": 6.521873547019821,
+              "rmse": 8.643323600645118
+            },
+            "10": {
+              "games": 3,
+              "mae": 7.306068432435073,
+              "rmse": 7.980773726711968
+            },
+            "14": null
+          }
+        }
+      }
+    }
+  },
+  "coefficient_fit_through": 2023,
+  "historical_mae": 10.099890310871183,
+  "model_id": "depi-refit-2026-week6",
+  "activation": {
+    "season": 2026,
+    "rating_week": 6,
+    "preserve_published_until_complete": true
+  },
+  "previous_model": {
+    "experiment": {
       "key": "lower_history",
       "label": "Combined \u00b7 10% less history",
       "qb": true,
@@ -47,63 +219,139 @@
       "margin_penalty": 120.0,
       "tuning_mae": 9.879662443842617
     },
-    "seasons": {
-      "2024": {
-        "beta": {
-          "games": 272,
-          "mae": 10.023673001242214,
-          "rmse": 12.90873380307573
-        },
-        "conditional_lineup": {
-          "games": 272,
-          "mae": 9.984425537090084,
-          "rmse": 12.793973327253557
-        },
-        "starter_changes_conditional": {
-          "games": 59,
-          "mae": 10.627880333798617,
-          "rmse": 13.432301601865179
-        },
-        "starter_changes_previous_qb": {
-          "games": 59,
-          "mae": 10.808817795652493,
-          "rmse": 13.929290554614596
-        },
-        "week_4_onward": {
-          "games": 224,
-          "mae": 9.81000176165048,
-          "rmse": 12.65378319509508
-        }
+    "coefficients": {
+      "pass_offense": 11.474780950116275,
+      "pass_defense": 10.779640739345094,
+      "run_offense": 9.718856410626593,
+      "run_defense": 17.287082378628583,
+      "st": 0.9112369987617808,
+      "qb_epa_delta": 18.959105807753335,
+      "qb_cpoe_delta": 0.0,
+      "qb_rush_delta": 42.09423156446981,
+      "pass_success_offense": 33.28927199393345,
+      "pass_success_defense": 8.384593608134034,
+      "run_success_offense": 42.61163581238703,
+      "run_success_defense": 0.0,
+      "home_advantage": 1.5657941587125686
+    },
+    "validation": {
+      "training": "2019-2021",
+      "parameter_selection": "2022-2023",
+      "final_fit": "2019-2023",
+      "note": "2024-25 are retrospective comparisons. Conditional lineup assumes recorded starting identity; prior-week player performance only. No archived injury forecasts.",
+      "selected": {
+        "key": "lower_history",
+        "label": "Combined \u00b7 10% less history",
+        "qb": true,
+        "stable": true,
+        "offense_prior": 175.0,
+        "defense_prior": 75.0,
+        "offense_carry": 0.8,
+        "defense_carry": 0.4,
+        "half_life": 8.0,
+        "history_share": 0.9,
+        "margin_penalty": 120.0,
+        "tuning_mae": 9.879662443842617
       },
-      "2025": {
-        "beta": {
-          "games": 272,
-          "mae": 10.143357111914744,
-          "rmse": 12.980818417225349
+      "seasons": {
+        "2024": {
+          "beta": {
+            "games": 272,
+            "mae": 10.023673001242214,
+            "rmse": 12.90873380307573
+          },
+          "conditional_lineup": {
+            "games": 272,
+            "mae": 9.984425537090084,
+            "rmse": 12.793973327253557
+          },
+          "starter_changes_conditional": {
+            "games": 59,
+            "mae": 10.627880333798617,
+            "rmse": 13.432301601865179
+          },
+          "starter_changes_previous_qb": {
+            "games": 59,
+            "mae": 10.808817795652493,
+            "rmse": 13.929290554614596
+          },
+          "week_4_onward": {
+            "games": 224,
+            "mae": 9.81000176165048,
+            "rmse": 12.65378319509508
+          }
         },
-        "conditional_lineup": {
-          "games": 272,
-          "mae": 10.10669645575596,
-          "rmse": 12.82462383166434
-        },
-        "starter_changes_conditional": {
-          "games": 64,
-          "mae": 11.767048253718517,
-          "rmse": 14.856803324141492
-        },
-        "starter_changes_previous_qb": {
-          "games": 64,
-          "mae": 11.922856042393356,
-          "rmse": 15.422546937217538
-        },
-        "week_4_onward": {
-          "games": 224,
-          "mae": 10.313950961545657,
-          "rmse": 12.943514595009141
+        "2025": {
+          "beta": {
+            "games": 272,
+            "mae": 10.143357111914744,
+            "rmse": 12.980818417225349
+          },
+          "conditional_lineup": {
+            "games": 272,
+            "mae": 10.10669645575596,
+            "rmse": 12.82462383166434
+          },
+          "starter_changes_conditional": {
+            "games": 64,
+            "mae": 11.767048253718517,
+            "rmse": 14.856803324141492
+          },
+          "starter_changes_previous_qb": {
+            "games": 64,
+            "mae": 11.922856042393356,
+            "rmse": 15.422546937217538
+          },
+          "week_4_onward": {
+            "games": 224,
+            "mae": 10.313950961545657,
+            "rmse": 12.943514595009141
+          }
         }
       }
-    }
+    },
+    "coefficient_fit_through": 2023,
+    "historical_mae": 10.083515056578479,
+    "model_id": "depi-original-2026"
   },
-  "coefficient_fit_through": 2023,
-  "historical_mae": 10.083515056578479
+  "point_multiplier": 0.85,
+  "fit": {
+    "penalty": 360.0,
+    "tuning_mae": 9.842102610482014,
+    "scale": 0.85,
+    "scale_selection": "Rolling 2022/2023 predictions; HFA unchanged",
+    "scale_oof_mae_before": 9.823787957371547,
+    "scale_oof_mae_after": 9.785235453940196,
+    "raw_coefficients": {
+      "pass_offense": 10.9763990317593,
+      "pass_defense": 8.931733724738473,
+      "run_offense": 11.979545139788605,
+      "run_defense": 14.918785421679678,
+      "st": 0.7900759829925211,
+      "qb_epa_delta": 15.777955598539434,
+      "qb_cpoe_delta": 0.07212646811743399,
+      "qb_rush_delta": 37.6281824826619,
+      "pass_success_offense": 31.223553206643324,
+      "pass_success_defense": 12.289245703835553,
+      "run_success_offense": 35.584267567855946,
+      "run_success_defense": 0.0,
+      "home_advantage": 1.536670083607406
+    },
+    "coefficients": {
+      "pass_offense": 9.329939176995405,
+      "pass_defense": 7.591973666027702,
+      "run_offense": 10.182613368820315,
+      "run_defense": 12.680967608427725,
+      "st": 0.671564585543643,
+      "qb_epa_delta": 13.411262258758518,
+      "qb_cpoe_delta": 0.06130749789981889,
+      "qb_rush_delta": 31.983955110262613,
+      "pass_success_offense": 26.540020225646824,
+      "pass_success_defense": 10.445858848260219,
+      "run_success_offense": 30.246627432677553,
+      "run_success_defense": 0.0,
+      "home_advantage": 1.536670083607406
+    },
+    "research_snapshot_sha256": "8849d0f08827f6888eb21678e1484097eaffa546c4b8f3f738af8d1adec7c3e0"
+  }
 }
