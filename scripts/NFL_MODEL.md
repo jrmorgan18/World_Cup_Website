@@ -7,8 +7,7 @@ uses `compute_league_metrics` followed by the existing production
 does not change that formula or the Ravens dataset. Frozen DEPI helpers use
 relative package imports so future Efficiency module updates cannot alter DEPI.
 
-Run `python scripts/update_nfl_dashboard.py --season 2026 --ratings-week 4`
-for the launch cutoff. Omit `--ratings-week` in subsequent scheduled runs to
+Omit `--ratings-week` in subsequent scheduled runs to
 advance only after every game in the next week is final. Scores/market data
 may include newer games than the rating cutoff. The cache is excluded from
 Jekyll output and Git. Download current PBP once for both trimmed datasets;
@@ -42,6 +41,38 @@ coach/QB carry reductions while retaining frozen coefficients. Default
 advantage. Miami and Tennessee retain ranks 31/32; no formula change was
 made from this audit.
 
+## Refit activation after completed Week 6
+
+The backend default is the reviewed **refit-only** formula: original features,
+ridge penalty 360 (previously 120), and a 0.85 multiplier on fitted team-strength
+coefficients. The multiplier is already embedded in the stored coefficients;
+never multiply the dashboard outputs again. Fitted home advantage is unchanged
+by that multiplier (1.536670 points). No drive, penalty or new QB/context features
+enter. Historical priors and the production Efficiency Index are unchanged.
+
+`nfl_model_config.json` freezes the new coefficients, original coefficients in
+`previous_model`, and an activation cutoff of **2026 rating Week 6**. While the
+latest complete cutoff is Week 5 or earlier, the updater exits before model
+generation or any public-data/archive write. An explicit partial Week 6 update
+also exits. Thus the published Week 5 rankings, Week 6 spreads, results and
+accompanying article remain unchanged until all Week 6 games are final. Input
+downloads may still refresh during this hold; they do not publish anything.
+
+The next complete-week refresh automatically uses the refit for rankings through
+Week 6 and projections for Week 7. Weekly rank movement compares with the actual
+published Week 5 table. New forecast records identify their formula with
+`model_id`. Existing archived forecasts remain untouched; older records without
+an ID use the formula effective at their rating cutoff. Historical replay and
+actual-starter adjustments also use that historical formula, so the new QB
+coefficients do not rewrite old spreads. New helper logic depends on unchanged
+feature generation across these two formulas; a future feature change needs
+versioned feature snapshots as well.
+
+The frozen refit was trained through 2023; scale selection used rolling
+2022–2023 forecasts. Retrospective MAE is 10.0999 across 2024–2025 and 9.8425
+through completed 2026 Week 5. Those inspected seasons did not select its
+coefficients or scale, and do not establish a prospective accuracy gain.
+
 Daily refreshes and a Thursday correction-window refresh are defined in
 `update-nfl-dashboard.yml`. Market lines are dated snapshots from nflverse,
 not live book quotes. Missing current-week injury context never confirms QB
@@ -58,8 +89,8 @@ bundle exec jekyll build --destination _site-validation
 python scripts/check_site.py _site-validation
 ```
 
-Manual interim updates: pass `--ratings-week 5 --allow-partial-week` to include
-only final games from Week 5. All earlier weeks must be complete. Coverage
+After activation, manual interim updates can pass an explicit `--ratings-week`
+with `--allow-partial-week` to include only final games. All earlier weeks must be complete. Coverage
 is checked against PBP, pending matchups are exposed on the UI, and the
 scheduled default still requires a fully completed week.
 
