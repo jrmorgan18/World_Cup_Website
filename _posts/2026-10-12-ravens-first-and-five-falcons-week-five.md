@@ -17,8 +17,10 @@ hero_wide: true
 hero_alt: "Tyler Huntley smiles while greeting a teammate after the Ravens' overtime win in Atlanta"
 hero_credit: "Shawn Hubbard / Baltimore Ravens Photos"
 hero_credit_url: "https://www.baltimoreravens.com/photos/top-shots-from-the-ravens-overtime-win-over-falcons"
-home_feature: true
-home_recent: false
+home_feature: false
+home_recent: true
+home_recent_front: true
+home_recent_label: "First and Five"
 ravens_feature: true
 ravens_feature_image: true
 feature_label: "Week 5 takeaways"
