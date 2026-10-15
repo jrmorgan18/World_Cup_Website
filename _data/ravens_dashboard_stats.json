@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-14T15:49:13Z",
-  "as_of": "2026-10-14",
+  "generated_at": "2026-10-15T15:35:24Z",
+  "as_of": "2026-10-15",
   "season": 2026,
   "benchmark_season": 2025,
   "efficiency_model": {
@@ -775,7 +775,7 @@
     }
   },
   "league_efficiency_rankings": {
-    "label": "Games through October 14",
+    "label": "Games through October 15",
     "sample_note": "Completed regular-season games; early-season sample",
     "teams": [
       {
@@ -1317,38 +1317,38 @@
         "minimum_routes": 50,
         "qualification": "10 routes per completed team game",
         "qualification_games": {
-          "SF": 5,
-          "JAX": 5,
-          "SEA": 5,
-          "KC": 4,
-          "BAL": 5,
-          "MIN": 5,
-          "CIN": 5,
-          "CAR": 4,
-          "TB": 5,
-          "BUF": 5,
-          "NE": 5,
-          "CHI": 5,
-          "ATL": 5,
-          "DET": 5,
-          "DEN": 5,
-          "HOU": 5,
-          "LA": 5,
-          "IND": 5,
-          "NYJ": 5,
-          "NYG": 5,
           "ARI": 5,
-          "PIT": 5,
-          "GB": 5,
+          "ATL": 5,
+          "BAL": 5,
+          "BUF": 5,
+          "CAR": 4,
+          "CHI": 5,
+          "CIN": 5,
           "CLE": 5,
-          "PHI": 5,
-          "WAS": 5,
-          "LV": 5,
           "DAL": 5,
-          "NO": 5,
+          "DEN": 5,
+          "DET": 5,
+          "GB": 5,
+          "HOU": 5,
+          "IND": 5,
+          "JAX": 5,
+          "KC": 4,
+          "LA": 5,
           "LAC": 5,
+          "LV": 5,
+          "MIA": 5,
+          "MIN": 5,
+          "NE": 5,
+          "NO": 5,
+          "NYG": 5,
+          "NYJ": 5,
+          "PHI": 5,
+          "PIT": 5,
+          "SEA": 5,
+          "SF": 5,
+          "TB": 5,
           "TEN": 5,
-          "MIA": 5
+          "WAS": 5
         },
         "sample_note": "91 routes · Min. 50 for BAL (10/team game)"
       },
@@ -1706,6 +1706,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-10-14T15:49:13Z"
+    "retrieved_at": "2026-10-15T15:35:24Z"
   }
 }
