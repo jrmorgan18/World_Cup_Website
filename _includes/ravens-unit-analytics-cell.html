@@ -4,4 +4,5 @@
     <b>{{ include.metric.label }}</b>
     <span>{{ include.metric.value }} <small class="ravens-rank-pill{% if include.metric.rank <= 8 %} ravens-rank-pill--strong{% elsif include.metric.rank >= 25 %} ravens-rank-pill--weak{% endif %}">No. {{ include.metric.rank }}{% if include.metric.rank_group %} {{ include.metric.rank_group }}{% endif %}</small></span>
   </dd>
+  {% if include.metric.sample_note %}<dd class="ravens-unit-analytics-note">{{ include.metric.sample_note | escape }}</dd>{% endif %}
 </div>

@@ -132,6 +132,15 @@ validate_analytics = lambda do |unit_name, metrics|
     rank_group = metric["rank_group"].to_s
     assert(metric["rank"].is_a?(Integer) && metric["rank"] >= 1, "#{unit_name} has an invalid analytics rank", errors)
     assert(rank_group != "NFL" || metric["rank"] <= 32, "#{unit_name} has an invalid NFL analytics rank", errors)
+    if metric["label"] == "Flowers YPRR"
+      routes = metric["routes"].to_i
+      minimum = metric["minimum_routes"].to_i
+      assert(metric["source_label"] == "SumerSports" && metric["season"] == stats["season"], "WR YPRR needs the correct source and season", errors)
+      assert(routes > 0 && minimum > 0 && routes >= minimum, "WR YPRR must meet its published route minimum", errors)
+      assert(metric["rank"] <= metric["qualified_receivers"].to_i, "WR YPRR rank exceeds its qualified sample", errors)
+      assert(routes > 0 && (metric["value"].to_f - metric["receiving_yards"].to_f / routes).abs < 0.006, "WR YPRR must match yards divided by routes", errors)
+      assert(!metric["sample_note"].to_s.empty? && !metric["source_updated_at"].to_s.empty?, "WR YPRR needs a dated source and route sample", errors)
+    end
   end
 end
 

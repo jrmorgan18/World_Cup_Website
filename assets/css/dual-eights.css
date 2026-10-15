@@ -2634,6 +2634,7 @@ details[open] > summary .gc-toggle::after { transform:rotate(0); }
 .ravens-unit-analytics dd { display:grid; gap:7px; font-size:.76rem; line-height:1.2; }
 .ravens-unit-analytics dd b { color:#fff; font-size:.64rem; letter-spacing:.45px; text-transform:uppercase; }
 .ravens-unit-analytics dd > span { display:flex; align-items:center; justify-content:space-between; gap:6px; color:#f1e8f7; }
+.ravens-unit-analytics dd.ravens-unit-analytics-note { display:block; margin-top:7px; color:#d3c6de; font-size:.68rem; line-height:1.5; }
 .ravens-rank-pill { flex:0 0 auto; padding:3px 5px; color:#d8cedf; border:1px solid #554b5d; font-size:.52rem; line-height:1; letter-spacing:.2px; text-transform:uppercase; }
 .ravens-rank-pill--strong { color:#c8e6d1; border-color:#477257; background:rgba(71,114,87,.18); }
 .ravens-rank-pill--weak { color:#edc7cb; border-color:#804d54; background:rgba(128,77,84,.18); }

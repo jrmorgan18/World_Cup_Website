@@ -1302,6 +1302,57 @@
     ],
     "Wide receivers": [
       {
+        "source_label": "SumerSports",
+        "source_url": "https://sumersports.com/players/wide-receiver/",
+        "period_label": "Updated Oct. 15, 2026",
+        "label": "Flowers YPRR",
+        "value": "4.45",
+        "rank": 1,
+        "rank_group": "WR",
+        "season": 2026,
+        "source_updated_at": "2026-10-15T08:36:41.030000+00:00",
+        "routes": 91,
+        "receiving_yards": 405,
+        "qualified_receivers": 117,
+        "minimum_routes": 50,
+        "qualification": "10 routes per completed team game",
+        "qualification_games": {
+          "SF": 5,
+          "JAX": 5,
+          "SEA": 5,
+          "KC": 4,
+          "BAL": 5,
+          "MIN": 5,
+          "CIN": 5,
+          "CAR": 4,
+          "TB": 5,
+          "BUF": 5,
+          "NE": 5,
+          "CHI": 5,
+          "ATL": 5,
+          "DET": 5,
+          "DEN": 5,
+          "HOU": 5,
+          "LA": 5,
+          "IND": 5,
+          "NYJ": 5,
+          "NYG": 5,
+          "ARI": 5,
+          "PIT": 5,
+          "GB": 5,
+          "CLE": 5,
+          "PHI": 5,
+          "WAS": 5,
+          "LV": 5,
+          "DAL": 5,
+          "NO": 5,
+          "LAC": 5,
+          "TEN": 5,
+          "MIA": 5
+        },
+        "sample_note": "91 routes · Min. 50 for BAL (10/team game)"
+      },
+      {
         "source_label": "NFL NGS",
         "source_url": "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html",
         "period_label": "Through Week 5",
@@ -1633,6 +1684,10 @@
     "next_gen_stats": {
       "label": "NFL Next Gen Stats via nflverse",
       "url": "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html"
+    },
+    "sumer_receiving": {
+      "label": "SumerSports public receiver table",
+      "url": "https://sumersports.com/players/wide-receiver/"
     },
     "espn_qbr": {
       "label": "ESPN Total QBR",

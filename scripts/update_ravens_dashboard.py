@@ -2,7 +2,8 @@
 """Build the Ravens dashboard's objective weekly snapshot.
 
 The script uses free, keyless nflverse schedule, play-by-play and Next Gen Stats
-releases plus ESPN's Total QBR, win-rate pages and Filmstudy's written OL scoring.
+releases plus ESPN's Total QBR, win-rate pages, SumerSports' public receiver table
+and Filmstudy's written OL scoring.
 It keeps prior weekly snapshots in the
 generated JSON so the Jekyll dashboard can show real week-over-week movement.
 Availability and editorial assessments stay in _data/ravens_dashboard.yml so
@@ -32,6 +33,7 @@ from urllib.request import Request, urlopen
 import pandas as pd
 import efficiency_model as efficiency
 import special_teams
+from ravens_receiving import SOURCE_URL as SUMER_RECEIVERS_URL, refresh_yprr
 from efficiency_dashboard import (
     SOURCE as EFFICIENCY_SOURCE, apply_model, calibration,
     preserve_published_history, sidebar_payload,
@@ -528,7 +530,7 @@ def secondary_cpoe_metric(pbp, valid_game_ids, week):
     }
 
 
-def unit_analytics_payload(season, week, current_games, current_pbp, ngs_data, qbr_metric=None, trench_metrics=None):
+def unit_analytics_payload(season, week, current_games, current_pbp, ngs_data, qbr_metric=None, trench_metrics=None, receiving_metric=None):
     analytics = {}
     specs = [
         ("Quarterback", "passing", "QB", "attempts", "completion_percentage_above_expectation", "CPOE", 1, "%"),
@@ -543,6 +545,9 @@ def unit_analytics_payload(season, week, current_games, current_pbp, ngs_data, q
 
     if qbr_metric:
         analytics.setdefault("Quarterback", []).append(qbr_metric)
+
+    if receiving_metric:
+        analytics.setdefault("Wide receivers", []).insert(0, receiving_metric)
 
     analytics.update(trench_metrics or {})
 
@@ -969,6 +974,7 @@ def main():
         recent_margin = sum(game["ravens_score"] - game["opponent_score"] for game in recent_games)
         qbr_metric = None
         trench_metrics = {}
+        receiving_metric = None
         if current["week"] > 0:
             try:
                 qbr_metric = espn_qbr_metric(fetch_espn_qbr(args.season), args.season, current["week"])
@@ -980,6 +986,10 @@ def main():
             except Exception as error:
                 print(f"ESPN win rates unavailable; keeping the last good values: {error}", file=sys.stderr)
             trench_metrics = trench_metrics or existing_espn_win_rates(existing)
+            games_by_team = current_games["home_team"].value_counts().add(
+                current_games["away_team"].value_counts(), fill_value=0
+            ).astype(int).to_dict()
+            receiving_metric = refresh_yprr(existing, args.season, games_by_team)
         unit_analytics = (
             unit_analytics_payload(
                 args.season,
@@ -989,6 +999,7 @@ def main():
                 ngs_data,
                 qbr_metric,
                 trench_metrics,
+                receiving_metric,
             )
             if current["week"] > 0 else {}
         )
@@ -1028,6 +1039,7 @@ def main():
                 "schedule": {"label": "nflverse schedules", "url": SCHEDULE_URL},
                 "play_by_play": {"label": "nflverse play-by-play", "url": PBP_URL.format(season=args.season)},
                 "next_gen_stats": {"label": "NFL Next Gen Stats via nflverse", "url": NGS_DOCS_URL},
+                "sumer_receiving": {"label": "SumerSports public receiver table", "url": SUMER_RECEIVERS_URL},
                 "espn_qbr": {"label": "ESPN Total QBR", "url": ESPN_QBR_PAGE_URL.format(season=args.season)},
                 "espn_win_rates": {"label": "ESPN Analytics Win Rate Rankings", "url": ESPN_WIN_RATE_PAGE_URL},
                 "filmstudy": {"label": "Filmstudy offensive line scoring", "url": FILMSTUDY_URL},
