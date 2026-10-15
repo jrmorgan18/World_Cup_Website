@@ -554,7 +554,52 @@ def d_numbers_game(c):
     dribble(c, 182, 160, 218, 62)
 
 
+def d_world_cup(c):
+    """Several country pairs share one ball and one goal, then leave to qualify."""
+    c.add('<text x="220" y="23" text-anchor="middle" fill="%s" '
+          'font-size="16" %s>Score → qualify → leave the field.</text>' % (INK, FONT))
+    pitch(c, 20, 52, 270, 190, stripes=4)
+    goal(c, 155, 52, "n", 64)
+    for x, y in ((20, 52), (290, 52), (20, 146), (290, 146), (20, 242), (290, 242)):
+        cone(c, x, y)
+
+    def country_pair(label, color, positions):
+        for x, y in positions:
+            c.add('<circle cx="%g" cy="%g" r="18" fill="%s" '
+                  'stroke="#fff" stroke-width="2"/>' % (x, y, color))
+            c.add('<text x="%g" y="%g" text-anchor="middle" fill="#fff" '
+                  'font-size="13" %s>%s</text>' % (x, y + 4.5, FONT, label))
+
+    country_pair("USA", INK, ((80, 192), (70, 126)))
+    country_pair("BRA", "#624d06", ((142, 161), (120, 219)))
+    country_pair("ARG", "#165775", ((230, 205), (248, 128)))
+    country_pair("FRA", "#8e273a", ((211, 113), (185, 219)))
+    attacker(c, 155, 78, "GK")
+    ball(c, 163, 154)
+    dribble(c, 162, 135, 156, 102, amp=3)
+    run_arrow(c, 75, 104, 111, 81)
+
+    c.add('<rect x="316" y="52" width="114" height="190" rx="6" '
+          'fill="#e4edf5" stroke="#b8c3d0" stroke-width="2" stroke-dasharray="5 5"/>')
+    for y, label in ((78, "Qualified"), (99, "teams")):
+        c.add('<text x="373" y="%g" text-anchor="middle" fill="%s" '
+              'font-size="16" %s>%s</text>' % (y, INK, FONT, label))
+    country_pair("ESP", "#754421", ((343, 164), (402, 164)))
+    run_arrow(c, 266, 187, 313, 187)
+    c.add('<text x="373" y="216" text-anchor="middle" fill="%s" '
+          'font-size="14" %s>Off the field</text>' % (INK, FONT))
+
+    coach(c, 40, 269)
+    for x in (62, 76, 90):
+        ball(c, x, 269)
+    c.add('<text x="108" y="274" fill="%s" font-size="14" %s>'
+          'Coach + spare balls</text>' % (INK, FONT))
+    c.add('<text x="220" y="296" text-anchor="middle" fill="%s" '
+          'font-size="13" %s>Country label = teammates · GK optional</text>' % (INK, FONT))
+
+
 DIAGRAMS = {
+    "world-cup": d_world_cup,
     "arrival-game": d_arrival_game,
     "the-game": d_the_game,
     "partner-bandits": d_partner_bandits,

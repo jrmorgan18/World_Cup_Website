@@ -58,11 +58,14 @@ section_theme: project
 
     <div class="gc-drills" data-gc-drills>
       {% for act in gr.activities %}
-      <details class="gc-drill" id="drill-{{ act.id }}" data-focus="{{ act.focus }}" data-search="{{ act.name | append: ' ' | append: act.subtitle | append: ' ' | append: act.focus | append: ' ' | append: act.format | append: ' ' | append: act.objective | append: ' ' | append: act.setup | append: ' ' | append: act.key_words | append: ' ' | append: act.week_label | strip_html | downcase }}">
+      {% assign categories = act.categories %}
+      {% unless categories %}{% assign categories = act.focus | split: '|' %}{% endunless %}
+      {% assign category_search = categories | join: ' ' | replace: 'Small-sided game', 'Small-sided game Just Play' %}
+      <details class="gc-drill" id="drill-{{ act.id }}" data-focus="{{ act.focus }}"{% if act.categories %} data-categories="{{ act.categories | jsonify | escape }}"{% endif %} data-search="{{ act.name | append: ' ' | append: act.subtitle | append: ' ' | append: category_search | append: ' ' | append: act.format | append: ' ' | append: act.objective | append: ' ' | append: act.setup | append: ' ' | append: act.key_words | append: ' ' | append: act.week_label | strip_html | downcase | escape }}">
         <summary>
           <span class="gc-drill-head">
             <span class="gc-drill-tags">
-              <small class="gc-chip gc-chip--{{ act.focus | downcase | replace: ' ', '-' }}">{{ act.focus }}</small>
+              {% for category in categories %}<small class="gc-chip gc-chip--{{ category | downcase | replace: ' ', '-' }}">{% if act.categories and category == 'Small-sided game' %}Just Play{% else %}{{ category }}{% endif %}</small>{% endfor %}
               <small class="gc-chip gc-chip--plain">{{ act.format }}</small>
               <small class="gc-chip gc-chip--plain">{{ act.week_label }}</small>
             </span>
@@ -88,6 +91,7 @@ section_theme: project
               {% else %}
               <figure class="gc-diagram">
                 <img src="{{ diagram_base | append: act.id | append: '.svg' | relative_url }}" alt="{{ act.diagram_alt }}" width="440" height="300" loading="lazy" decoding="async">
+                {% if act.diagram_key %}<figcaption class="gc-diagram-key">{{ act.diagram_key }}</figcaption>{% endif %}
               </figure>
               {% endif %}
             {% endif %}
@@ -111,6 +115,10 @@ section_theme: project
             <h4>How it works</h4>
             <ul>{% for rule in act.rules %}<li>{{ rule }}</li>{% endfor %}</ul>
           </div>
+          {% endif %}
+
+          {% if act.example %}
+          <div class="gc-drill-section"><h4>Example: 12 outfield players</h4><p>{{ act.example.intro }}</p><ul>{% for round in act.example.rounds %}<li>{{ round }}</li>{% endfor %}</ul><p>{{ act.example.note }}</p></div>
           {% endif %}
 
           {% if act.games %}
@@ -158,6 +166,7 @@ section_theme: project
           {% endif %}
 
           {% if act.note %}<p class="gc-drill-note"><b>Tip</b> {{ act.note }}</p>{% endif %}
+          {% if act.attribution %}<p class="gc-drill-note">{{ act.attribution }}</p>{% endif %}
           {% if act.week %}<p class="gc-block-more"><a href="#week-{{ act.week }}" data-gc-week="{{ act.week }}">See the whole Week {{ act.week }} practice <span aria-hidden="true">&rarr;</span></a></p>{% endif %}
         </div>
       </details>
@@ -188,6 +197,7 @@ section_theme: project
     <section class="gc-sources">
       <p class="de-kicker">Where this came from</p>
       <p>The practices are adapted from the Massachusetts Youth Soccer session plans and their guide for new volunteer coaches, which is what U.S. Soccer points beginners toward. The diagrams here are our own. Anything to do with match day - how many players, whether there's a keeper, what happens when the ball goes out - comes from your own league, so check with them.</p>
+      {% if gr.extra_game_note %}<p>{{ gr.extra_game_note }}</p>{% endif %}
       <ul>
         {% for source in gr.sources %}
         <li><a href="{{ source.url }}" target="_blank" rel="noopener">{{ source.label }} <b aria-hidden="true">&nearr;</b></a></li>

@@ -53,7 +53,11 @@
     var shown = 0;
 
     drills.forEach(function (drill) {
-      var matchesFocus = activeFilter === "all" || drill.getAttribute("data-focus") === activeFilter;
+      // New cards can belong to several categories; older cards keep their focus.
+      var categories = drill.hasAttribute("data-categories")
+        ? JSON.parse(drill.getAttribute("data-categories"))
+        : [drill.getAttribute("data-focus")];
+      var matchesFocus = activeFilter === "all" || categories.indexOf(activeFilter) !== -1;
       var matchesTerm = !term || (drill.getAttribute("data-search") || "").indexOf(term) !== -1;
       var visible = matchesFocus && matchesTerm;
       drill.hidden = !visible;
