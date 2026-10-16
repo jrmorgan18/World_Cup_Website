@@ -29,34 +29,44 @@ python -m unittest discover -s scripts -p test_nfl_injury_watchlist.py -v
 node --test scripts/test_nfl_injuries.cjs
 ```
 
-The CLI refreshes injuries and public player IDs, while prior-game snaps and
-timestamped depth charts come from the model cache. It cannot confirm complete
-IR/PUP or replacement-chain coverage. GSIS/PFR IDs are joined explicitly;
-unmatched players are counted for review, not assigned invented participation.
-It uses the median of the largest three prior-game snap shares to retain healthy
-roles after injury, with two substantial prior games or a depth-chart starter
-designation. Missing reports are unknown. Practice limitations are uncertain,
-and disappearance of an Out label is only a possible return, never clearance.
-Recorded LB/edge roles require manual verification. Detailed current-season
-eleven-player participation is not assumed to be available.
+The CLI refreshes the latest injury statuses and public player IDs; prior-game
+snaps and timestamped depth charts come from the model cache. GSIS/PFR IDs are
+joined explicitly; unmatched players are counted, never assigned invented roles.
+Healthy-role proxy: median of the three largest prior-game snap shares, with two
+substantial prior games or a current depth-chart starter designation.
 
-On-demand research agents should update `scripts/nfl_injury_reviews.json` with
-sourced cards, including standing IR/PUP cases and return verification. Each card
-requires season, week, team, group, state, summary, players, confidence, sources
-(title/url) and observed_at (timezone-aware ISO timestamp). These cards replace
-the screening card for that team/group; they still do not change points. The
-agent must compare current availability with participation already in DEPI and
-report uncertainty. Empty or unavailable reports cannot resolve a cluster.
+Strict screening requires **two meaningful players in the same position group**,
+each meeting at least one condition:
 
-Example review card (illustrative; do not publish without real evidence):
+- Explicit **Out** game designation (Doubtful/Questionable do not suffice).
+- Sourced, currently confirmed **IR**, without a later activation.
+- Two consecutive **injury-related DNP** daily reports in the current game week.
 
-```json
-{"season":2026,"week":6,"team":"BAL","group":"OL","state":"Improving",
- "summary":"Two regular roles may return; verify workload.","players":[],
- "confidence":"Availability uncertain; point impact uncalibrated",
- "sources":[{"title":"Official club report","url":"https://www.baltimoreravens.com/team/injury-report/"}],
- "observed_at":"2026-10-16T12:00:00Z"}
-```
+A later LP/FP clears the practice trigger. OUT or IR still qualifies independently;
+returning to practice alone does not activate someone from IR. Non-injury rest or
+personal absences do not count toward a DNP streak. Missing reports are unknown.
+Speculative returns, single DNPs and routine limited practice no longer populate
+the watchlist. Positive return scenarios remain available manually in the UI.
+
+The latest-status parquet has no daily report dates/history. Never infer a second
+DNP from fetch times, duplicate polls, prior weeks or a missing report. Research
+agents can add official dated team reports and verified IR/activation records to
+`scripts/nfl_injury_evidence.json`; its instructions define both schemas. Include
+LP/FP rows so recovery clears the trigger. Reports are deduplicated by team/day,
+using the latest observed revision; omitted players break a streak. Two dated DNPs
+must be on adjacent days: unverified calendar gaps are not filled. Evidence must
+match the target season/week, be observed by the build time, and have an HTTPS
+source. Practice dates are checked against the scheduled game week. IR evidence
+is reverified for each target week, not carried forward as an unverified assumption.
+An empty evidence ledger means **OUT-only feed screening**, not complete injury
+coverage; the page displays daily-history coverage explicitly.
+
+`scripts/nfl_injury_reviews.json` can add sourced, timestamped commentary to a
+qualifying team/group. Reviews require season, week, team, group, summary,
+confidence, sources (title/url) and observed_at (timezone-aware ISO timestamp).
+They cannot change eligibility, substitute player lists or reinstate cleared cases.
+Verify replacement quality, normal workloads and effects already reflected in
+DEPI before choosing points. Neither flags nor reviews apply adjustments.
 
 After the Week 5 publication hold ends, the normal complete-week updater also
 refreshes watchlist candidates for its projection week. While the hold is active,

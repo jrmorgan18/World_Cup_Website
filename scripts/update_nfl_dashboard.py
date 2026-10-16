@@ -372,7 +372,8 @@ def build(cache, season, requested, audit=False, allow_partial=False):
         pd.read_parquet(cache/'players.parquet') if (cache/'players.parquet').exists() else pd.DataFrame(columns=['pfr_id','gsis_id']),schedule,builder.depth_all,season,current_week,generated_at,
         json.loads((ROOT/'scripts/nfl_injury_baselines.json').read_text()),
         json.loads((ROOT/'scripts/nfl_injury_reviews.json').read_text())['reviews'],
-        json.loads((cache/'injuries.parquet.source.json').read_text()) if (cache/'injuries.parquet.source.json').exists() else {'url':'https://github.com/nflverse/nflverse-data/releases/tag/injuries','fetched_at':None})
+        json.loads((cache/'injuries.parquet.source.json').read_text()) if (cache/'injuries.parquet.source.json').exists() else {'url':'https://github.com/nflverse/nflverse-data/releases/tag/injuries','fetched_at':None},
+        json.loads((ROOT/'scripts/nfl_injury_evidence.json').read_text()))
     if audit:
         alternate=Experiment(**{**parameters,'key':'continuity_audit','label':'Continuity audit','continuity_adjustment':False})
         alt_rows,alt_details=builder.generate_refined(alternate,evaluate_from=2024)
