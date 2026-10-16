@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-15T12:10:09Z",
-  "as_of": "2026-10-15",
+  "generated_at": "2026-10-16T11:56:15Z",
+  "as_of": "2026-10-16",
   "season": 2026,
   "season_label": "2026-27",
   "team": {
@@ -1401,9 +1401,9 @@
       "next_match": {
         "event_id": "401882846",
         "competition": "laliga",
-        "date": "2026-10-17T16:30Z",
+        "date": "2026-10-17T16:00Z",
         "completed": false,
-        "status_detail": "10/17 - 12:30 PM EDT",
+        "status_detail": "10/17 - 12:00 PM EDT",
         "location": "away",
         "venue": "Estadio La Cartuja",
         "opponent": "Real Betis",
@@ -1419,9 +1419,9 @@
         {
           "event_id": "401882846",
           "competition": "laliga",
-          "date": "2026-10-17T16:30Z",
+          "date": "2026-10-17T16:00Z",
           "completed": false,
-          "status_detail": "10/17 - 12:30 PM EDT",
+          "status_detail": "10/17 - 12:00 PM EDT",
           "location": "away",
           "venue": "Estadio La Cartuja",
           "opponent": "Real Betis",
@@ -4024,10 +4024,10 @@
       "name": "Iker Rodríguez",
       "short_name": "I. Rodríguez",
       "jersey": "35",
-      "position": "Goalkeeper",
-      "position_abbr": "G",
-      "citizenship": "Spain",
-      "age": 18,
+      "position": "Forward",
+      "position_abbr": "F",
+      "citizenship": "Cuba",
+      "age": 17,
       "headshot": null,
       "competitions": {
         "laliga": {
@@ -4251,8 +4251,8 @@
   "injuries": [],
   "rotation": {
     "window_days": 21,
-    "window_start": "2026-09-24",
-    "window_end": "2026-10-15",
+    "window_start": "2026-09-25",
+    "window_end": "2026-10-16",
     "matches_in_window": 2,
     "available_minutes": 180,
     "players": [
@@ -4444,7 +4444,7 @@
     ],
     "upcoming": [
       {
-        "date": "2026-10-17T16:30Z",
+        "date": "2026-10-17T16:00Z",
         "competition": "laliga",
         "opponent": "Betis",
         "location": "away"
@@ -4532,9 +4532,9 @@
     "next_match": {
       "event_id": "401882846",
       "competition": "laliga",
-      "date": "2026-10-17T16:30Z",
+      "date": "2026-10-17T16:00Z",
       "completed": false,
-      "status_detail": "10/17 - 12:30 PM EDT",
+      "status_detail": "10/17 - 12:00 PM EDT",
       "location": "away",
       "venue": "Estadio La Cartuja",
       "opponent": "Real Betis",
@@ -4550,9 +4550,9 @@
       {
         "event_id": "401882846",
         "competition": "laliga",
-        "date": "2026-10-17T16:30Z",
+        "date": "2026-10-17T16:00Z",
         "completed": false,
-        "status_detail": "10/17 - 12:30 PM EDT",
+        "status_detail": "10/17 - 12:00 PM EDT",
         "location": "away",
         "venue": "Estadio La Cartuja",
         "opponent": "Real Betis",
