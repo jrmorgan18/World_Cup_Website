@@ -1,5 +1,69 @@
 # Dual Eights Power Index: NFL publishing and operation
 
+## Injury watchlist and manual scenarios
+
+`/nfl/injuries/` shows non-QB position-group candidates and all-team feed coverage.
+Flags never apply points. Team-row links and the QB & injury scenarios launcher
+open signed manual group adjustments. Those are personal browser-session scenarios,
+not editorial publication settings: they affect only games whose kickoff is still
+in the future, and affect rankings only when explicitly selected. Completed games,
+archives and Efficiency remain unchanged. Changes expire with the base data revision.
+Lineup columns include QB and injury ranking effects and remain league-centered.
+
+`scripts/nfl_injury_baselines.json` defines conservative **editorial**, unvalidated
+starting group effects. Meaningful/severe: OL 1/2; receivers 1/2; secondary .75/1.5;
+front .75/1.25; off-ball linebackers .5/.75; backs .25/.75 points. These are total
+group effects relative to healthy, not per player. No public research found in this
+review establishes these exact weekly cluster values. Position-weighted burden
+research supports differentiated screening; it does not calibrate these presets.
+The low magnitudes and quarter-point steps are deliberate starting judgments.
+Use the calculator: net = upcoming impairment minus impairment already embedded.
+For full recovery from an embedded -1, upcoming effect 0 gives net +1. Do not
+apply the refit's .85 multiplier again or duplicate supporting-cast/QB effects.
+
+Refresh the watchlist without recomputing or rewriting rankings:
+
+```
+python scripts/update_nfl_injury_watchlist.py --cache-dir .nfl-cache --season 2026 --week 6 --refresh
+python -m unittest discover -s scripts -p test_nfl_injury_watchlist.py -v
+node --test scripts/test_nfl_injuries.cjs
+```
+
+The CLI refreshes injuries and public player IDs, while prior-game snaps and
+timestamped depth charts come from the model cache. It cannot confirm complete
+IR/PUP or replacement-chain coverage. GSIS/PFR IDs are joined explicitly;
+unmatched players are counted for review, not assigned invented participation.
+It uses the median of the largest three prior-game snap shares to retain healthy
+roles after injury, with two substantial prior games or a depth-chart starter
+designation. Missing reports are unknown. Practice limitations are uncertain,
+and disappearance of an Out label is only a possible return, never clearance.
+Recorded LB/edge roles require manual verification. Detailed current-season
+eleven-player participation is not assumed to be available.
+
+On-demand research agents should update `scripts/nfl_injury_reviews.json` with
+sourced cards, including standing IR/PUP cases and return verification. Each card
+requires season, week, team, group, state, summary, players, confidence, sources
+(title/url) and observed_at (timezone-aware ISO timestamp). These cards replace
+the screening card for that team/group; they still do not change points. The
+agent must compare current availability with participation already in DEPI and
+report uncertainty. Empty or unavailable reports cannot resolve a cluster.
+
+Example review card (illustrative; do not publish without real evidence):
+
+```json
+{"season":2026,"week":6,"team":"BAL","group":"OL","state":"Improving",
+ "summary":"Two regular roles may return; verify workload.","players":[],
+ "confidence":"Availability uncertain; point impact uncalibrated",
+ "sources":[{"title":"Official club report","url":"https://www.baltimoreravens.com/team/injury-report/"}],
+ "observed_at":"2026-10-16T12:00:00Z"}
+```
+
+After the Week 5 publication hold ends, the normal complete-week updater also
+refreshes watchlist candidates for its projection week. While the hold is active,
+use the standalone CLI; the existing updater still writes nothing. No periodic
+agent or new automation was created. Research design and validation requirements
+are in the local October 15 injury-cluster proposal.
+
 The public hub has one reviewed DEPI formula. Coefficients are frozen in
 `nfl_model_config.json`; public pages show only “Beta.” Production Efficiency
 uses `compute_league_metrics` followed by the existing production

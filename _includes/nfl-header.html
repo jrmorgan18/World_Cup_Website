@@ -13,11 +13,12 @@
     <a href="{{ '/nfl/rankings/' | relative_url }}" {% if page.nfl_view == 'rankings' %}aria-current="page"{% endif %}>Rankings</a>
     <a href="{{ '/nfl/spreads/' | relative_url }}" {% if page.nfl_view == 'spreads' %}aria-current="page"{% endif %}>Week {{ nfl.projection_week }} spreads</a>
     <a href="{{ '/nfl/results/' | relative_url }}" {% if page.nfl_view == 'results' %}aria-current="page"{% endif %}>2026 results</a>
+    <a href="{{ '/nfl/injuries/' | relative_url }}" {% if page.nfl_view == 'injuries' %}aria-current="page"{% endif %}>Injury watchlist</a>
     <a href="{{ '/nfl/methodology/' | relative_url }}" {% if page.nfl_view == 'methodology' %}aria-current="page"{% endif %}>How it works</a>
   </div>
 </nav>
-{% if page.nfl_view == 'overview' or page.nfl_view == 'rankings' or page.nfl_view == 'spreads' %}
-<button type="button" class="nfl-button nfl-scenario-launcher" id="nfl-open-scenarios" aria-haspopup="dialog" aria-controls="team-detail">QB scenarios</button>
+{% if page.nfl_view == 'overview' or page.nfl_view == 'rankings' or page.nfl_view == 'spreads' or page.nfl_view == 'injuries' %}
+<button type="button" class="nfl-button nfl-scenario-launcher" id="nfl-open-scenarios" aria-haspopup="dialog" aria-controls="team-detail">QB &amp; injury scenarios</button>
 {% endif %}
 {% if nfl.rating_week_complete == false %}
 <div class="nfl-shell nfl-interim-note"><p class="nfl-notice">Interim Week {{ nfl.rating_week }} update: {{ nfl.rating_week_completed_games }} of {{ nfl.rating_week_scheduled_games }} games completed. {% for game in nfl.rating_pending_games %}{{ game.away }} at {{ game.home }} is pending and excluded.{% endfor %} Week {{ nfl.projection_week }} spreads are early projections.</p></div>
