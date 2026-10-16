@@ -31,6 +31,7 @@
   {% endif %}
 {% endfor %}
 {% assign home_recent_front = home_recent | where: "home_recent_front", true | first %}
+{% assign home_recent_first = home_recent | where: "home_recent_position", 0 | first %}
 {% assign home_recent_priority = home_recent | where: "home_recent_priority", true | first %}
 {% assign home_recent_board = home_recent | where: "home_recent_board", true | first %}
 {% assign home_recent_lead = home_recent | where: "home_recent_lead", true | first %}
@@ -72,6 +73,10 @@
       </div>
       <ol class="de-recent-list">
         {% assign home_recent_count = 0 %}
+        {% if home_recent_first %}
+          {% assign home_recent_count = home_recent_count | plus: 1 %}
+          {% include home-recent-item.html post=home_recent_first index=home_recent_count %}
+        {% endif %}
         {% if home_recent_front %}
           {% assign home_recent_count = home_recent_count | plus: 1 %}
           {% include home-recent-item.html post=home_recent_front index=home_recent_count %}

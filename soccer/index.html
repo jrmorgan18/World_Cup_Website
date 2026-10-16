@@ -35,8 +35,8 @@ section_theme: soccer
 {% assign champions_league_recap_story = site.posts | where: "champions_league_recap_feature", true | first %}
 {% assign usmnt_weekly_story = site.posts | where: "usmnt_weekly_feature", true | first %}
 {% assign usmnt_camp_story = site.posts | where: "usmnt_camp_feature", true | first %}
-{% assign team_of_week_story = euro_team_of_week_story | default: champions_league_recap_story %}
-{% assign soccer_feature = usmnt_weekly_story | default: usmnt_camp_story | default: champions_league_recap_story | default: euro_team_of_week_story | default: power_rankings_story | default: premier_league_preview_story | default: longform_feature %}
+{% assign team_of_week_story = champions_league_recap_story | default: euro_team_of_week_story %}
+{% assign soccer_feature = champions_league_recap_story | default: usmnt_weekly_story | default: usmnt_camp_story | default: euro_team_of_week_story | default: power_rankings_story | default: premier_league_preview_story | default: longform_feature %}
 {% assign power_rankings_edition = site.data.european_club_power_rankings.editions | first %}
 {% if soccer_feature %}
 <section class="soccer-editorial-shell">
@@ -78,7 +78,7 @@ section_theme: soccer
       </div>
       <a class="soccer-feature-story" href="{{ soccer_feature.url | relative_url }}">
         <figure>
-          <img src="{{ soccer_feature.hero_image | relative_url }}" alt="{{ soccer_feature.hero_alt | escape }}" loading="eager">
+          <img src="{{ soccer_feature.hero_image | relative_url }}" alt="{{ soccer_feature.hero_alt | escape }}"{% if soccer_feature.feature_image_position %} style="object-position:{{ soccer_feature.feature_image_position | escape }}"{% endif %} loading="eager">
           <span>{{ soccer_feature.feature_badge | default: soccer_feature.part }}</span>
         </figure>
         <div class="soccer-feature-copy">
