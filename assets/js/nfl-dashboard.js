@@ -105,7 +105,7 @@
     $('nfl-cluster-ranks').checked=e?.applyRanks||false;$('nfl-cluster-direction').value=e?.direction||'loss';
     $('nfl-cluster-current').value=0;$('nfl-cluster-embedded').value=0;$('nfl-cluster-status').textContent='';baselineHint();
     const coverage=watch.teams.find(t=>t.team===abbr),cards=watch.cards.filter(c=>c.team===abbr);
-    $('nfl-team-watchlist').textContent=`Watchlist: ${coverage?.coverage||'No report available'} · ${cards.length} flagged groups. No automatic point changes.`;
+    $('nfl-team-watchlist').textContent=`${team(abbr).name} · Watchlist: ${coverage?.coverage||'No report available'} · ${cards.length} flagged groups. No automatic point changes.`;
     activeClusters();
   }
   function baselineHint(){
