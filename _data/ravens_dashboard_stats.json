@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-16T15:22:06Z",
-  "as_of": "2026-10-16",
+  "generated_at": "2026-10-17T14:11:26Z",
+  "as_of": "2026-10-17",
   "season": 2026,
   "benchmark_season": 2025,
   "efficiency_model": {
@@ -841,7 +841,7 @@
     }
   },
   "league_efficiency_rankings": {
-    "label": "Games through October 16",
+    "label": "Games through October 17",
     "sample_note": "Completed regular-season games; early-season sample",
     "teams": [
       {
@@ -1031,7 +1031,7 @@
         "full_name": "Houston Texans",
         "record": "1-4",
         "value": 52.1,
-        "unrounded_value": 52.0913160981019,
+        "unrounded_value": 52.09131609810189,
         "offense_rank": 22,
         "defense_rank": 6,
         "special_teams_rank": 17
@@ -1370,13 +1370,13 @@
       {
         "source_label": "SumerSports",
         "source_url": "https://sumersports.com/players/wide-receiver/",
-        "period_label": "Updated Oct. 16, 2026",
+        "period_label": "Updated Oct. 17, 2026",
         "label": "Flowers YPRR",
         "value": "4.45",
         "rank": 1,
         "rank_group": "WR",
         "season": 2026,
-        "source_updated_at": "2026-10-16T11:07:21.416000+00:00",
+        "source_updated_at": "2026-10-17T08:42:38.597000+00:00",
         "routes": 91,
         "receiving_yards": 405,
         "qualified_receivers": 117,
@@ -1772,6 +1772,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-10-16T15:22:06Z"
+    "retrieved_at": "2026-10-17T14:11:26Z"
   }
 }

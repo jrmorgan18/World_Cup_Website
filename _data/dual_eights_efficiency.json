@@ -2,7 +2,7 @@
   "season": 2026,
   "through_week": 6,
   "model_version": "2.1",
-  "as_of": "2026-10-16",
+  "as_of": "2026-10-17",
   "label": "Through available Week 6 games · v2.1",
   "sample_note": "Completed games only · 45% offense / 45% defense / 10% special teams",
   "article_url": "/ravens/dual-eights-efficiency-index-week-four-2026/",
@@ -195,7 +195,7 @@
       "full_name": "Houston Texans",
       "record": "1-4",
       "value": 52.1,
-      "unrounded_value": 52.0913160981019,
+      "unrounded_value": 52.09131609810189,
       "offense_rank": 22,
       "defense_rank": 6,
       "special_teams_rank": 17
