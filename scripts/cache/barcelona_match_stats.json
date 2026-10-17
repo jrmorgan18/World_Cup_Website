@@ -1,5 +1,194 @@
 {
   "matches": {
+    "401882837": {
+      "away_score": 0,
+      "away_team": "3751",
+      "competition": "laliga",
+      "date": "2026-10-17T14:15Z",
+      "event_id": "401882837",
+      "home_score": 0,
+      "home_team": "102",
+      "stats": {
+        "102": {
+          "accuratePasses": 458.0,
+          "attemptsConcededIbox": 1.0,
+          "ballRecovery": 53.0,
+          "bigChanceCreated": 3.0,
+          "defensiveActions": 39.0,
+          "expectedGoals": 2.151,
+          "expectedGoalsConceded": 0.257,
+          "finalThirdEntries": 69.0,
+          "foulsCommitted": 12.0,
+          "goalsPrevented": 0.246,
+          "interceptions": 10.0,
+          "offsideProvoked": 0.0,
+          "penAreaEntries": 36.0,
+          "possWonAtt3rd": 5.0,
+          "possessionPct": 57.6,
+          "ppda": 8.9,
+          "redCards": 0.0,
+          "saves": 1.0,
+          "shotsOnTarget": 7.0,
+          "totalPasses": 528.0,
+          "totalShots": 20.0,
+          "totalTackles": 11.0,
+          "touchesInOppBox": 47.0,
+          "yellowCards": 2.0
+        },
+        "3751": {
+          "accuratePasses": 310.0,
+          "attemptsConcededIbox": 16.0,
+          "ballRecovery": 43.0,
+          "bigChanceCreated": 0.0,
+          "defensiveActions": 20.0,
+          "expectedGoals": 0.257,
+          "expectedGoalsConceded": 2.151,
+          "finalThirdEntries": 31.0,
+          "foulsCommitted": 7.0,
+          "goalsPrevented": 1.088,
+          "interceptions": 8.0,
+          "offsideProvoked": 0.0,
+          "penAreaEntries": 16.0,
+          "possWonAtt3rd": 0.0,
+          "possessionPct": 42.4,
+          "ppda": 18.1,
+          "redCards": 0.0,
+          "saves": 6.0,
+          "shotsOnTarget": 1.0,
+          "totalPasses": 390.0,
+          "totalShots": 7.0,
+          "totalTackles": 15.0,
+          "touchesInOppBox": 11.0,
+          "yellowCards": 4.0
+        }
+      }
+    },
+    "401882838": {
+      "away_score": 0,
+      "away_team": "93",
+      "competition": "laliga",
+      "date": "2026-10-17T19:00Z",
+      "event_id": "401882838",
+      "home_score": 0,
+      "home_team": "94",
+      "stats": {
+        "93": {
+          "accuratePasses": 483.0,
+          "attemptsConcededIbox": 13.0,
+          "ballRecovery": 58.0,
+          "bigChanceCreated": 0.0,
+          "defensiveActions": 26.0,
+          "expectedGoals": 0.589,
+          "expectedGoalsConceded": 1.412,
+          "finalThirdEntries": 84.0,
+          "foulsCommitted": 13.0,
+          "goalsPrevented": 0.554,
+          "interceptions": 7.0,
+          "offsideProvoked": 0.0,
+          "penAreaEntries": 34.0,
+          "possWonAtt3rd": 3.0,
+          "possessionPct": 63.2,
+          "ppda": 10.2,
+          "redCards": 0.0,
+          "saves": 3.0,
+          "shotsOnTarget": 2.0,
+          "totalPasses": 568.0,
+          "totalShots": 9.0,
+          "totalTackles": 14.0,
+          "touchesInOppBox": 30.0,
+          "yellowCards": 3.0
+        },
+        "94": {
+          "accuratePasses": 267.0,
+          "attemptsConcededIbox": 7.0,
+          "ballRecovery": 58.0,
+          "bigChanceCreated": 4.0,
+          "defensiveActions": 19.0,
+          "expectedGoals": 1.412,
+          "expectedGoalsConceded": 0.589,
+          "finalThirdEntries": 39.0,
+          "foulsCommitted": 14.0,
+          "goalsPrevented": 0.103,
+          "interceptions": 16.0,
+          "offsideProvoked": 0.0,
+          "penAreaEntries": 28.0,
+          "possWonAtt3rd": 4.0,
+          "possessionPct": 36.8,
+          "ppda": 19.6,
+          "redCards": 0.0,
+          "saves": 1.0,
+          "shotsOnTarget": 3.0,
+          "totalPasses": 334.0,
+          "totalShots": 16.0,
+          "totalTackles": 17.0,
+          "touchesInOppBox": 19.0,
+          "yellowCards": 3.0
+        }
+      }
+    },
+    "401882843": {
+      "away_score": 1,
+      "away_team": "1068",
+      "competition": "laliga",
+      "date": "2026-10-17T12:00Z",
+      "event_id": "401882843",
+      "home_score": 0,
+      "home_team": "88",
+      "stats": {
+        "1068": {
+          "accuratePasses": 600.0,
+          "attemptsConcededIbox": 6.0,
+          "ballRecovery": 52.0,
+          "bigChanceCreated": 2.0,
+          "defensiveActions": 27.0,
+          "expectedGoals": 1.344,
+          "expectedGoalsConceded": 0.53,
+          "finalThirdEntries": 74.0,
+          "foulsCommitted": 9.0,
+          "goalsPrevented": 0.702,
+          "interceptions": 12.0,
+          "offsideProvoked": 0.0,
+          "penAreaEntries": 39.0,
+          "possWonAtt3rd": 3.0,
+          "possessionPct": 70.6,
+          "ppda": 8.3,
+          "redCards": 0.0,
+          "saves": 2.0,
+          "shotsOnTarget": 6.0,
+          "totalPasses": 672.0,
+          "totalShots": 19.0,
+          "totalTackles": 11.0,
+          "touchesInOppBox": 25.0,
+          "yellowCards": 5.0
+        },
+        "88": {
+          "accuratePasses": 196.0,
+          "attemptsConcededIbox": 10.0,
+          "ballRecovery": 45.0,
+          "bigChanceCreated": 0.0,
+          "defensiveActions": 20.0,
+          "expectedGoals": 0.53,
+          "expectedGoalsConceded": 1.344,
+          "finalThirdEntries": 36.0,
+          "foulsCommitted": 10.0,
+          "goalsPrevented": 0.7,
+          "interceptions": 11.0,
+          "offsideProvoked": 0.0,
+          "penAreaEntries": 22.0,
+          "possWonAtt3rd": 2.0,
+          "possessionPct": 29.4,
+          "ppda": 22.1,
+          "redCards": 0.0,
+          "saves": 5.0,
+          "shotsOnTarget": 2.0,
+          "totalPasses": 271.0,
+          "totalShots": 10.0,
+          "totalTackles": 11.0,
+          "touchesInOppBox": 11.0,
+          "yellowCards": 2.0
+        }
+      }
+    },
     "401882844": {
       "away_score": 1,
       "away_team": "1538",
@@ -59,6 +248,421 @@
           "totalShots": 13.0,
           "totalTackles": 8.0,
           "touchesInOppBox": 15.0,
+          "yellowCards": 2.0
+        }
+      }
+    },
+    "401882846": {
+      "away_score": 5,
+      "away_team": "83",
+      "barcelona_minutes": [
+        {
+          "minutes": 90,
+          "played": true,
+          "player_id": "297362",
+          "starter": true
+        },
+        {
+          "minutes": 45,
+          "played": true,
+          "player_id": "312015",
+          "starter": true
+        },
+        {
+          "minutes": 90,
+          "played": true,
+          "player_id": "368992",
+          "starter": true
+        },
+        {
+          "minutes": 90,
+          "played": true,
+          "player_id": "403582",
+          "starter": true
+        },
+        {
+          "minutes": 90,
+          "played": true,
+          "player_id": "231692",
+          "starter": true
+        },
+        {
+          "minutes": 61,
+          "played": true,
+          "player_id": "354334",
+          "starter": true
+        },
+        {
+          "minutes": 90,
+          "played": true,
+          "player_id": "250465",
+          "starter": true
+        },
+        {
+          "minutes": 90,
+          "played": true,
+          "player_id": "231828",
+          "starter": true
+        },
+        {
+          "minutes": 79,
+          "played": true,
+          "player_id": "217289",
+          "starter": true
+        },
+        {
+          "minutes": 61,
+          "played": true,
+          "player_id": "274913",
+          "starter": true
+        },
+        {
+          "minutes": 69,
+          "played": true,
+          "player_id": "362150",
+          "starter": true
+        },
+        {
+          "minutes": 0,
+          "played": false,
+          "player_id": "376423",
+          "starter": false
+        },
+        {
+          "minutes": 0,
+          "played": false,
+          "player_id": "176399",
+          "starter": false
+        },
+        {
+          "minutes": 29,
+          "played": true,
+          "player_id": "227765",
+          "starter": false
+        },
+        {
+          "minutes": 0,
+          "played": false,
+          "player_id": "219022",
+          "starter": false
+        },
+        {
+          "minutes": 45,
+          "played": true,
+          "player_id": "128714",
+          "starter": false
+        },
+        {
+          "minutes": 0,
+          "played": false,
+          "player_id": "131634",
+          "starter": false
+        },
+        {
+          "minutes": 0,
+          "played": false,
+          "player_id": "323703",
+          "starter": false
+        },
+        {
+          "minutes": 21,
+          "played": true,
+          "player_id": "231050",
+          "starter": false
+        },
+        {
+          "minutes": 29,
+          "played": true,
+          "player_id": "268782",
+          "starter": false
+        },
+        {
+          "minutes": 11,
+          "played": true,
+          "player_id": "323702",
+          "starter": false
+        },
+        {
+          "minutes": 0,
+          "played": false,
+          "player_id": "187946",
+          "starter": false
+        },
+        {
+          "minutes": 0,
+          "played": false,
+          "player_id": "403575",
+          "starter": false
+        }
+      ],
+      "barcelona_player_stats": {
+        "128714": {
+          "assists": 0,
+          "goals": 1,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "131634": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "176399": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "187946": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "217289": {
+          "assists": 0,
+          "goals": 1,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 3,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "219022": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "227765": {
+          "assists": 0,
+          "goals": 1,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 2,
+          "yellow_cards": 0
+        },
+        "231050": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "231692": {
+          "assists": 1,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "231828": {
+          "assists": 0,
+          "goals": 1,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "250465": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "268782": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 3,
+          "shots_on_target": 2,
+          "yellow_cards": 0
+        },
+        "274913": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "297362": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "saves": 3,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "312015": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "323702": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "323703": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "354334": {
+          "assists": 1,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 1,
+          "yellow_cards": 1
+        },
+        "362150": {
+          "assists": 1,
+          "goals": 1,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 4,
+          "shots_on_target": 2,
+          "yellow_cards": 1
+        },
+        "368992": {
+          "assists": 2,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "376423": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "403575": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "403582": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        }
+      },
+      "competition": "laliga",
+      "date": "2026-10-17T16:30Z",
+      "event_id": "401882846",
+      "home_score": 2,
+      "home_team": "244",
+      "stats": {
+        "244": {
+          "accuratePasses": 256.0,
+          "attemptsConcededIbox": 8.0,
+          "ballRecovery": 40.0,
+          "bigChanceCreated": 3.0,
+          "defensiveActions": 15.0,
+          "expectedGoals": 0.977,
+          "expectedGoalsConceded": 3.035,
+          "finalThirdEntries": 35.0,
+          "foulsCommitted": 10.0,
+          "goalsPrevented": -0.306,
+          "interceptions": 14.0,
+          "offsideProvoked": 0.0,
+          "penAreaEntries": 10.0,
+          "possWonAtt3rd": 2.0,
+          "possessionPct": 30.7,
+          "ppda": 33.2,
+          "redCards": 1.0,
+          "saves": 5.0,
+          "shotsOnTarget": 5.0,
+          "totalPasses": 324.0,
+          "totalShots": 6.0,
+          "totalTackles": 17.0,
+          "touchesInOppBox": 11.0,
+          "yellowCards": 3.0
+        },
+        "83": {
+          "accuratePasses": 693.0,
+          "attemptsConcededIbox": 3.0,
+          "ballRecovery": 42.0,
+          "bigChanceCreated": 4.0,
+          "defensiveActions": 34.0,
+          "expectedGoals": 3.035,
+          "expectedGoalsConceded": 0.977,
+          "finalThirdEntries": 73.0,
+          "foulsCommitted": 11.0,
+          "goalsPrevented": -0.652,
+          "interceptions": 6.0,
+          "offsideProvoked": 0.0,
+          "penAreaEntries": 26.0,
+          "possWonAtt3rd": 7.0,
+          "possessionPct": 69.3,
+          "ppda": 8.4,
+          "redCards": 0.0,
+          "saves": 3.0,
+          "shotsOnTarget": 10.0,
+          "totalPasses": 751.0,
+          "totalShots": 18.0,
+          "totalTackles": 14.0,
+          "touchesInOppBox": 31.0,
           "yellowCards": 2.0
         }
       }
@@ -515,6 +1119,209 @@
           "starter": false
         }
       ],
+      "barcelona_player_stats": {
+        "128714": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "131634": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "176399": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "187946": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "217289": {
+          "assists": 0,
+          "goals": 1,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "227765": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 1,
+          "yellow_cards": 1
+        },
+        "231692": {
+          "assists": 0,
+          "goals": 1,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 2,
+          "yellow_cards": 0
+        },
+        "231828": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "250465": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "268782": {
+          "assists": 0,
+          "goals": 1,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 3,
+          "shots_on_target": 2,
+          "yellow_cards": 0
+        },
+        "274913": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "297362": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 1,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "312015": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "323702": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "323703": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "354334": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 0,
+          "yellow_cards": 1
+        },
+        "362150": {
+          "assists": 1,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 6,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "368992": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "376423": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "399200": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "403575": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "403582": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        }
+      },
       "competition": "laliga",
       "date": "2026-10-10T16:30Z",
       "event_id": "401882853",
@@ -1033,6 +1840,218 @@
           "starter": false
         }
       ],
+      "barcelona_player_stats": {
+        "128714": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "131634": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "176399": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "186430": {
+          "assists": 1,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "187946": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "saves": 2,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "217289": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "227765": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "231050": {
+          "assists": 0,
+          "goals": 3,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 4,
+          "shots_on_target": 3,
+          "yellow_cards": 0
+        },
+        "231692": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "231828": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "250465": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "268782": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 3,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "274913": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "312015": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "323702": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "323703": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "354334": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "362150": {
+          "assists": 2,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 5,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "368992": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "376423": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "399200": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "403576": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "403582": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        }
+      },
       "competition": "laliga",
       "date": "2026-09-19T19:00Z",
       "event_id": "401882859",
@@ -1866,6 +2885,218 @@
           "starter": false
         }
       ],
+      "barcelona_player_stats": {
+        "128714": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "131634": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "saves": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "176399": {
+          "assists": 0,
+          "goals": 1,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 3,
+          "shots_on_target": 1,
+          "yellow_cards": 1
+        },
+        "186430": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "187946": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "217289": {
+          "assists": 0,
+          "goals": 1,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "227765": {
+          "assists": 1,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "231050": {
+          "assists": 0,
+          "goals": 3,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 6,
+          "shots_on_target": 4,
+          "yellow_cards": 0
+        },
+        "231692": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "231828": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "250465": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "268782": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "274913": {
+          "assists": 1,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 8,
+          "shots_on_target": 1,
+          "yellow_cards": 1
+        },
+        "297362": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "saves": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "312015": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "323702": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "323703": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "354334": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "362150": {
+          "assists": 2,
+          "goals": 1,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 7,
+          "shots_on_target": 2,
+          "yellow_cards": 1
+        },
+        "368992": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "376423": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "399200": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "403582": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        }
+      },
       "competition": "laliga",
       "date": "2026-09-16T19:30Z",
       "event_id": "401882871",
@@ -2762,6 +3993,218 @@
           "starter": false
         }
       ],
+      "barcelona_player_stats": {
+        "128714": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "131634": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "176399": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "186430": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "187946": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "217289": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "227765": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "231050": {
+          "assists": 2,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "231692": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "231828": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "250465": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "268782": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "274913": {
+          "assists": 0,
+          "goals": 1,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 4,
+          "shots_on_target": 2,
+          "yellow_cards": 0
+        },
+        "297362": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "saves": 4,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "312015": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 1
+        },
+        "323702": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "323703": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "354334": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "362150": {
+          "assists": 0,
+          "goals": 2,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 3,
+          "shots_on_target": 2,
+          "yellow_cards": 0
+        },
+        "368992": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "376423": {
+          "assists": 1,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "399200": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "403582": {
+          "assists": 0,
+          "goals": 1,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        }
+      },
       "competition": "laliga",
       "date": "2026-09-13T14:15Z",
       "event_id": "401882883",
@@ -3217,6 +4660,218 @@
           "starter": false
         }
       ],
+      "barcelona_player_stats": {
+        "128714": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "131634": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "176399": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "186430": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "187946": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "217289": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "227765": {
+          "assists": 2,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "231050": {
+          "assists": 0,
+          "goals": 1,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 3,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "231692": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "231828": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 0,
+          "yellow_cards": 1
+        },
+        "250465": {
+          "assists": 0,
+          "goals": 1,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "268782": {
+          "assists": 1,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "274913": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "297362": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 2,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "312015": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "323702": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "323703": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "354334": {
+          "assists": 2,
+          "goals": 1,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 4,
+          "shots_on_target": 3,
+          "yellow_cards": 1
+        },
+        "362150": {
+          "assists": 0,
+          "goals": 2,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 8,
+          "shots_on_target": 4,
+          "yellow_cards": 0
+        },
+        "368992": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 1
+        },
+        "376423": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "399200": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "403582": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        }
+      },
       "competition": "laliga",
       "date": "2026-09-06T14:15Z",
       "event_id": "401882888",
@@ -4281,6 +5936,209 @@
           "starter": false
         }
       ],
+      "barcelona_player_stats": {
+        "128714": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "131634": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "176399": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "186430": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "227765": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "231050": {
+          "assists": 0,
+          "goals": 2,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 4,
+          "shots_on_target": 3,
+          "yellow_cards": 0
+        },
+        "231692": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "231828": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "250465": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "268782": {
+          "assists": 1,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 4,
+          "shots_on_target": 2,
+          "yellow_cards": 0
+        },
+        "274913": {
+          "assists": 1,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "297362": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "saves": 3,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "312015": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "323703": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "354334": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "362150": {
+          "assists": 0,
+          "goals": 2,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 6,
+          "shots_on_target": 2,
+          "yellow_cards": 0
+        },
+        "368992": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "376423": {
+          "assists": 1,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "399200": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "403575": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "403582": {
+          "assists": 1,
+          "goals": 0,
+          "goals_conceded": 2,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "403587": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        }
+      },
       "competition": "laliga",
       "date": "2026-08-31T19:30Z",
       "event_id": "401882903",
@@ -5024,6 +6882,218 @@
           "starter": false
         }
       ],
+      "barcelona_player_stats": {
+        "128714": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "131634": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "176399": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "186430": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "227765": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "231050": {
+          "assists": 1,
+          "goals": 2,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 3,
+          "shots_on_target": 3,
+          "yellow_cards": 0
+        },
+        "231692": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "250465": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "268782": {
+          "assists": 2,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "274913": {
+          "assists": 0,
+          "goals": 1,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "297362": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 2,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "300377": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "312015": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "323702": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "354334": {
+          "assists": 0,
+          "goals": 2,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 2,
+          "yellow_cards": 0
+        },
+        "362150": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "368992": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "376423": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "399200": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "403575": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "403582": {
+          "assists": 1,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "403587": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "416511": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        }
+      },
       "competition": "laliga",
       "date": "2026-08-23T19:30Z",
       "event_id": "401882913",
@@ -5644,6 +7714,209 @@
           "starter": false
         }
       ],
+      "barcelona_player_stats": {
+        "128714": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "131634": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "176399": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "186430": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "227765": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "231050": {
+          "assists": 0,
+          "goals": 1,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 3,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "231692": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "231828": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "250465": {
+          "assists": 1,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "268782": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "274913": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "297362": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "312015": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "323703": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "354334": {
+          "assists": 0,
+          "goals": 1,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 3,
+          "shots_on_target": 3,
+          "yellow_cards": 0
+        },
+        "362150": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 7,
+          "shots_on_target": 3,
+          "yellow_cards": 0
+        },
+        "368992": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "376423": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "399200": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "403575": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "403582": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 1,
+          "yellow_cards": 1
+        },
+        "403587": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        }
+      },
       "competition": "laliga",
       "date": "2026-08-27T19:00Z",
       "event_id": "401882921",
@@ -7212,6 +9485,218 @@
           "starter": false
         }
       ],
+      "barcelona_player_stats": {
+        "131634": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "176399": {
+          "assists": 1,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "186430": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "187946": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "217289": {
+          "assists": 0,
+          "goals": 1,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "227765": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 5,
+          "shots_on_target": 2,
+          "yellow_cards": 1
+        },
+        "231050": {
+          "assists": 0,
+          "goals": 2,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 3,
+          "shots_on_target": 2,
+          "yellow_cards": 0
+        },
+        "231692": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "231828": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "250465": {
+          "assists": 1,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "268782": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "274913": {
+          "assists": 0,
+          "goals": 1,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "297362": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "saves": 1,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "312015": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "323702": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "323703": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "354334": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "362150": {
+          "assists": 2,
+          "goals": 1,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 4,
+          "shots_on_target": 2,
+          "yellow_cards": 0
+        },
+        "368992": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "376423": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "399200": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "403575": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "403582": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        }
+      },
       "competition": "ucl",
       "date": "2026-09-09T16:45Z",
       "event_id": "401915424",
@@ -7598,6 +10083,209 @@
           "starter": false
         }
       ],
+      "barcelona_player_stats": {
+        "128714": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "131634": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "176399": {
+          "assists": 0,
+          "goals": 1,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 2,
+          "yellow_cards": 0
+        },
+        "187946": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "217289": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "227765": {
+          "assists": 1,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "231692": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "231828": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "250465": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "268782": {
+          "assists": 0,
+          "goals": 1,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 5,
+          "shots_on_target": 4,
+          "yellow_cards": 0
+        },
+        "274913": {
+          "assists": 0,
+          "goals": 1,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 4,
+          "shots_on_target": 2,
+          "yellow_cards": 0
+        },
+        "297362": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "saves": 2,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "312015": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "323702": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "323703": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "354334": {
+          "assists": 0,
+          "goals": 1,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "362150": {
+          "assists": 2,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 5,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "368992": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "376423": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "399200": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "403575": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "403582": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        }
+      },
       "competition": "ucl",
       "date": "2026-10-13T19:00Z",
       "event_id": "401915435",

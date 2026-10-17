@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T11:12:13Z",
+  "generated_at": "2026-10-17T22:42:06Z",
   "as_of": "2026-10-17",
   "season": 2026,
   "season_label": "2026-27",
@@ -16,7 +16,7 @@
       "table_label": "La Liga table",
       "slug": "esp.1",
       "teams_ranked": 20,
-      "current_snapshot": "laliga-md-08",
+      "current_snapshot": "laliga-md-09",
       "snapshots": [
         {
           "id": "laliga-md-01",
@@ -761,6 +761,99 @@
               "source": "ESPN match statistics"
             }
           }
+        },
+        {
+          "id": "laliga-md-09",
+          "matchday": 9,
+          "label": "Matchday 9",
+          "previous_snapshot": "laliga-md-08",
+          "date": "2026-10-17T16:30Z",
+          "sample_note": "9 La Liga matches played",
+          "record": "9-0-0",
+          "points": 27,
+          "teams_ranked": 20,
+          "metrics": {
+            "blaugrana_index": {
+              "value": 94.7,
+              "rank": 1,
+              "source": "Dual Eights index from ESPN match statistics"
+            },
+            "points_per_match": {
+              "value": 3.0,
+              "rank": 1,
+              "source": "ESPN competition results"
+            },
+            "goal_difference": {
+              "value": 30.0,
+              "rank": 1,
+              "source": "ESPN competition results"
+            },
+            "xg_difference_per_match": {
+              "value": 2.65,
+              "rank": 1,
+              "source": "ESPN match statistics"
+            },
+            "goals_per_match": {
+              "value": 4.33,
+              "rank": 1,
+              "source": "ESPN match statistics"
+            },
+            "xg_per_match": {
+              "value": 3.6,
+              "rank": 1,
+              "source": "ESPN match statistics"
+            },
+            "big_chances_per_match": {
+              "value": 5.1,
+              "rank": 1,
+              "source": "ESPN match statistics"
+            },
+            "shot_conversion": {
+              "value": 20.4,
+              "rank": 1,
+              "source": "ESPN match statistics"
+            },
+            "goals_conceded_per_match": {
+              "value": 1.0,
+              "rank": 4,
+              "source": "ESPN match statistics"
+            },
+            "xga_per_match": {
+              "value": 0.95,
+              "rank": 1,
+              "source": "ESPN match statistics"
+            },
+            "clean_sheet_rate": {
+              "value": 44.4,
+              "rank": 3,
+              "source": "ESPN match statistics"
+            },
+            "box_shots_conceded_per_match": {
+              "value": 4.4,
+              "rank": 1,
+              "source": "ESPN match statistics"
+            },
+            "possession_pct": {
+              "value": 70.3,
+              "rank": 1,
+              "source": "ESPN match statistics"
+            },
+            "pass_accuracy": {
+              "value": 90.8,
+              "rank": 1,
+              "source": "ESPN match statistics"
+            },
+            "ppda": {
+              "value": 8.3,
+              "rank": 1,
+              "source": "ESPN match statistics"
+            },
+            "final_third_entries_per_match": {
+              "value": 77.2,
+              "rank": 1,
+              "source": "ESPN match statistics"
+            }
+          }
         }
       ],
       "table": [
@@ -771,14 +864,14 @@
           "abbreviation": "BAR",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
           "rank": 1,
-          "played": 8,
-          "wins": 8,
+          "played": 9,
+          "wins": 9,
           "draws": 0,
           "losses": 0,
-          "goals_for": 34,
-          "goals_against": 7,
-          "goal_difference": 27,
-          "points": 24
+          "goals_for": 39,
+          "goals_against": 9,
+          "goal_difference": 30,
+          "points": 27
         },
         {
           "team_id": "1068",
@@ -787,14 +880,14 @@
           "abbreviation": "ATM",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
           "rank": 2,
-          "played": 8,
-          "wins": 6,
+          "played": 9,
+          "wins": 7,
           "draws": 1,
           "losses": 1,
-          "goals_for": 18,
+          "goals_for": 19,
           "goals_against": 8,
-          "goal_difference": 10,
-          "points": 19
+          "goal_difference": 11,
+          "points": 22
         },
         {
           "team_id": "244",
@@ -803,13 +896,13 @@
           "abbreviation": "BET",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png",
           "rank": 3,
-          "played": 8,
+          "played": 9,
           "wins": 6,
           "draws": 1,
-          "losses": 1,
-          "goals_for": 14,
-          "goals_against": 9,
-          "goal_difference": 5,
+          "losses": 2,
+          "goals_for": 16,
+          "goals_against": 14,
+          "goal_difference": 2,
           "points": 19
         },
         {
@@ -893,12 +986,44 @@
           "points": 11
         },
         {
+          "team_id": "93",
+          "name": "Athletic Club",
+          "short_name": "Athletic",
+          "abbreviation": "ATH",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png",
+          "rank": 9,
+          "played": 7,
+          "wins": 2,
+          "draws": 3,
+          "losses": 2,
+          "goals_for": 7,
+          "goals_against": 6,
+          "goal_difference": 1,
+          "points": 9
+        },
+        {
+          "team_id": "102",
+          "name": "Villarreal",
+          "short_name": "Villarreal",
+          "abbreviation": "VIL",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
+          "rank": 10,
+          "played": 9,
+          "wins": 2,
+          "draws": 3,
+          "losses": 4,
+          "goals_for": 13,
+          "goals_against": 13,
+          "goal_difference": 0,
+          "points": 9
+        },
+        {
           "team_id": "85",
           "name": "Celta Vigo",
           "short_name": "Celta Vigo",
           "abbreviation": "CEL",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png",
-          "rank": 9,
+          "rank": 11,
           "played": 8,
           "wins": 1,
           "draws": 5,
@@ -909,51 +1034,19 @@
           "points": 8
         },
         {
-          "team_id": "93",
-          "name": "Athletic Club",
-          "short_name": "Athletic",
-          "abbreviation": "ATH",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png",
-          "rank": 10,
-          "played": 6,
-          "wins": 2,
-          "draws": 2,
-          "losses": 2,
-          "goals_for": 7,
-          "goals_against": 6,
-          "goal_difference": 1,
-          "points": 8
-        },
-        {
-          "team_id": "102",
-          "name": "Villarreal",
-          "short_name": "Villarreal",
-          "abbreviation": "VIL",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
-          "rank": 11,
-          "played": 8,
-          "wins": 2,
-          "draws": 2,
-          "losses": 4,
-          "goals_for": 13,
-          "goals_against": 13,
-          "goal_difference": 0,
-          "points": 8
-        },
-        {
           "team_id": "88",
           "name": "Espanyol",
           "short_name": "Espanyol",
           "abbreviation": "ESP",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png",
           "rank": 12,
-          "played": 8,
+          "played": 9,
           "wins": 2,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals_for": 11,
-          "goals_against": 11,
-          "goal_difference": 0,
+          "goals_against": 12,
+          "goal_difference": -1,
           "points": 8
         },
         {
@@ -1043,14 +1136,14 @@
           "abbreviation": "ELC",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png",
           "rank": 18,
-          "played": 8,
+          "played": 9,
           "wins": 1,
-          "draws": 3,
+          "draws": 4,
           "losses": 4,
           "goals_for": 11,
           "goals_against": 17,
           "goal_difference": -6,
-          "points": 6
+          "points": 7
         },
         {
           "team_id": "94",
@@ -1059,14 +1152,14 @@
           "abbreviation": "VAL",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png",
           "rank": 19,
-          "played": 8,
+          "played": 9,
           "wins": 1,
-          "draws": 2,
+          "draws": 3,
           "losses": 5,
           "goals_for": 6,
           "goals_against": 15,
           "goal_difference": -9,
-          "points": 5
+          "points": 6
         },
         {
           "team_id": "99",
@@ -1092,14 +1185,14 @@
         "abbreviation": "BAR",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
         "rank": 1,
-        "played": 8,
-        "wins": 8,
+        "played": 9,
+        "wins": 9,
         "draws": 0,
         "losses": 0,
-        "goals_for": 34,
-        "goals_against": 7,
-        "goal_difference": 27,
-        "points": 24
+        "goals_for": 39,
+        "goals_against": 9,
+        "goal_difference": 30,
+        "points": 27
       },
       "form": [
         "W",
@@ -1109,6 +1202,38 @@
         "W"
       ],
       "matches": [
+        {
+          "event_id": "401882846",
+          "competition": "laliga",
+          "date": "2026-10-17T16:30Z",
+          "completed": true,
+          "status_detail": "FT",
+          "location": "away",
+          "venue": "Estadio La Cartuja",
+          "opponent": "Real Betis",
+          "opponent_short": "Betis",
+          "opponent_abbr": "BET",
+          "opponent_id": "244",
+          "opponent_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png",
+          "goals_for": 5,
+          "goals_against": 2,
+          "result": "W",
+          "detail": {
+            "xg": 3.04,
+            "xga": 0.98,
+            "possession": 69.3,
+            "shots": 18,
+            "shots_on_target": 10,
+            "big_chances": 4,
+            "ppda": 8.4,
+            "final_third_entries": 73,
+            "touches_in_box": 31,
+            "high_turnovers": 7,
+            "opponent_xg": 0.98,
+            "opponent_shots": 6,
+            "opponent_possession": 30.7
+          }
+        },
         {
           "event_id": "401882853",
           "competition": "laliga",
@@ -1367,43 +1492,11 @@
         }
       ],
       "last_match": {
-        "event_id": "401882853",
-        "competition": "laliga",
-        "date": "2026-10-10T16:30Z",
-        "completed": true,
-        "status_detail": "FT",
-        "location": "home",
-        "venue": "Spotify Camp Nou",
-        "opponent": "Getafe",
-        "opponent_short": "Getafe",
-        "opponent_abbr": "GET",
-        "opponent_id": "2922",
-        "opponent_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png",
-        "goals_for": 3,
-        "goals_against": 0,
-        "result": "W",
-        "detail": {
-          "xg": 1.93,
-          "xga": 0.12,
-          "possession": 82.9,
-          "shots": 23,
-          "shots_on_target": 8,
-          "big_chances": 6,
-          "ppda": 4.5,
-          "final_third_entries": 114,
-          "touches_in_box": 31,
-          "high_turnovers": 9,
-          "opponent_xg": 0.12,
-          "opponent_shots": 4,
-          "opponent_possession": 17.1
-        }
-      },
-      "next_match": {
         "event_id": "401882846",
         "competition": "laliga",
-        "date": "2026-10-17T16:00Z",
-        "completed": false,
-        "status_detail": "10/17 - 12:00 PM EDT",
+        "date": "2026-10-17T16:30Z",
+        "completed": true,
+        "status_detail": "FT",
         "location": "away",
         "venue": "Estadio La Cartuja",
         "opponent": "Real Betis",
@@ -1411,28 +1504,43 @@
         "opponent_abbr": "BET",
         "opponent_id": "244",
         "opponent_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png",
+        "goals_for": 5,
+        "goals_against": 2,
+        "result": "W",
+        "detail": {
+          "xg": 3.04,
+          "xga": 0.98,
+          "possession": 69.3,
+          "shots": 18,
+          "shots_on_target": 10,
+          "big_chances": 4,
+          "ppda": 8.4,
+          "final_third_entries": 73,
+          "touches_in_box": 31,
+          "high_turnovers": 7,
+          "opponent_xg": 0.98,
+          "opponent_shots": 6,
+          "opponent_possession": 30.7
+        }
+      },
+      "next_match": {
+        "event_id": "401882832",
+        "competition": "laliga",
+        "date": "2026-10-25T20:00Z",
+        "completed": false,
+        "status_detail": "10/25 - 4:00 PM EDT",
+        "location": "home",
+        "venue": "Spotify Camp Nou",
+        "opponent": "Real Madrid",
+        "opponent_short": "Real Madrid",
+        "opponent_abbr": "RMA",
+        "opponent_id": "86",
+        "opponent_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png",
         "goals_for": null,
         "goals_against": null,
         "result": null
       },
       "fixtures": [
-        {
-          "event_id": "401882846",
-          "competition": "laliga",
-          "date": "2026-10-17T16:00Z",
-          "completed": false,
-          "status_detail": "10/17 - 12:00 PM EDT",
-          "location": "away",
-          "venue": "Estadio La Cartuja",
-          "opponent": "Real Betis",
-          "opponent_short": "Betis",
-          "opponent_abbr": "BET",
-          "opponent_id": "244",
-          "opponent_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png",
-          "goals_for": null,
-          "goals_against": null,
-          "result": null
-        },
         {
           "event_id": "401882832",
           "competition": "laliga",
@@ -1514,6 +1622,23 @@
           "opponent_abbr": "DEP",
           "opponent_id": "90",
           "opponent_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png",
+          "goals_for": null,
+          "goals_against": null,
+          "result": null
+        },
+        {
+          "event_id": "401882783",
+          "competition": "laliga",
+          "date": "2026-12-06T20:00Z",
+          "completed": false,
+          "status_detail": "TBD",
+          "location": "home",
+          "venue": "Spotify Camp Nou",
+          "opponent": "Celta Vigo",
+          "opponent_short": "Celta Vigo",
+          "opponent_abbr": "CEL",
+          "opponent_id": "85",
+          "opponent_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png",
           "goals_for": null,
           "goals_against": null,
           "result": null
@@ -2549,18 +2674,18 @@
       "headshot": null,
       "competitions": {
         "laliga": {
-          "appearances": 8,
-          "goals": 7,
-          "assists": 5,
-          "shots": 44,
-          "shots_on_target": 14,
-          "yellow_cards": 1,
+          "appearances": 9,
+          "goals": 8,
+          "assists": 6,
+          "shots": 48,
+          "shots_on_target": 16,
+          "yellow_cards": 2,
           "red_cards": 0,
           "saves": 0,
-          "goals_conceded": 5,
+          "goals_conceded": 7,
           "clean_sheets": null,
-          "minutes": 670,
-          "starts": 8
+          "minutes": 739,
+          "starts": 9
         },
         "ucl": {
           "appearances": 2,
@@ -2577,21 +2702,21 @@
           "starts": 2
         }
       },
-      "minutes_total": 850,
-      "starts_total": 10,
-      "appearances_total": 10,
+      "minutes_total": 919,
+      "starts_total": 11,
+      "appearances_total": 11,
       "totals": {
-        "appearances": 10,
-        "goals": 8,
-        "assists": 9,
-        "shots": 53,
-        "yellow_cards": 1,
+        "appearances": 11,
+        "goals": 9,
+        "assists": 10,
+        "shots": 57,
+        "yellow_cards": 2,
         "red_cards": 0,
         "saves": 0,
-        "minutes": 850,
-        "starts": 10,
-        "goal_contributions": 17,
-        "minutes_per_contribution": 50
+        "minutes": 919,
+        "starts": 11,
+        "goal_contributions": 19,
+        "minutes_per_contribution": 48
       }
     },
     {
@@ -2606,18 +2731,18 @@
       "headshot": null,
       "competitions": {
         "laliga": {
-          "appearances": 7,
+          "appearances": 8,
           "goals": 0,
           "assists": 0,
           "shots": 0,
           "shots_on_target": 0,
           "yellow_cards": 0,
           "red_cards": 0,
-          "saves": 12,
-          "goals_conceded": 5,
+          "saves": 15,
+          "goals_conceded": 7,
           "clean_sheets": null,
-          "minutes": 585,
-          "starts": 7
+          "minutes": 675,
+          "starts": 8
         },
         "ucl": {
           "appearances": 2,
@@ -2634,19 +2759,19 @@
           "starts": 2
         }
       },
-      "minutes_total": 765,
-      "starts_total": 9,
-      "appearances_total": 9,
+      "minutes_total": 855,
+      "starts_total": 10,
+      "appearances_total": 10,
       "totals": {
-        "appearances": 9,
+        "appearances": 10,
         "goals": 0,
         "assists": 0,
         "shots": 0,
         "yellow_cards": 0,
         "red_cards": 0,
-        "saves": 15,
-        "minutes": 765,
-        "starts": 9,
+        "saves": 18,
+        "minutes": 855,
+        "starts": 10,
         "goal_contributions": 0,
         "minutes_per_contribution": null
       }
@@ -2663,7 +2788,7 @@
       "headshot": null,
       "competitions": {
         "laliga": {
-          "appearances": 8,
+          "appearances": 9,
           "goals": 1,
           "assists": 1,
           "shots": 7,
@@ -2671,10 +2796,10 @@
           "yellow_cards": 0,
           "red_cards": 0,
           "saves": 0,
-          "goals_conceded": 4,
+          "goals_conceded": 6,
           "clean_sheets": null,
-          "minutes": 528,
-          "starts": 6
+          "minutes": 618,
+          "starts": 7
         },
         "ucl": {
           "appearances": 2,
@@ -2691,21 +2816,135 @@
           "starts": 2
         }
       },
-      "minutes_total": 664,
-      "starts_total": 8,
-      "appearances_total": 10,
+      "minutes_total": 754,
+      "starts_total": 9,
+      "appearances_total": 11,
       "totals": {
-        "appearances": 10,
+        "appearances": 11,
         "goals": 1,
         "assists": 2,
         "shots": 7,
         "yellow_cards": 0,
         "red_cards": 0,
         "saves": 0,
-        "minutes": 664,
-        "starts": 8,
+        "minutes": 754,
+        "starts": 9,
         "goal_contributions": 3,
-        "minutes_per_contribution": 221
+        "minutes_per_contribution": 251
+      }
+    },
+    {
+      "player_id": "368992",
+      "name": "Pau Cubarsí",
+      "short_name": "P. Cubarsí",
+      "jersey": "5",
+      "position": "Defender",
+      "position_abbr": "D",
+      "citizenship": "Spain",
+      "age": 19,
+      "headshot": null,
+      "competitions": {
+        "laliga": {
+          "appearances": 6,
+          "goals": 0,
+          "assists": 2,
+          "shots": 3,
+          "shots_on_target": 0,
+          "yellow_cards": 1,
+          "red_cards": 0,
+          "saves": 0,
+          "goals_conceded": 7,
+          "clean_sheets": null,
+          "minutes": 512,
+          "starts": 6
+        },
+        "ucl": {
+          "appearances": 2,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "goals_conceded": 2,
+          "clean_sheets": null,
+          "minutes": 180,
+          "starts": 2
+        }
+      },
+      "minutes_total": 692,
+      "starts_total": 8,
+      "appearances_total": 8,
+      "totals": {
+        "appearances": 8,
+        "goals": 0,
+        "assists": 2,
+        "shots": 3,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "saves": 0,
+        "minutes": 692,
+        "starts": 8,
+        "goal_contributions": 2,
+        "minutes_per_contribution": 346
+      }
+    },
+    {
+      "player_id": "231828",
+      "name": "Rodri",
+      "short_name": "Rodri",
+      "jersey": "16",
+      "position": "Midfielder",
+      "position_abbr": "M",
+      "citizenship": "Spain",
+      "age": 30,
+      "headshot": null,
+      "competitions": {
+        "laliga": {
+          "appearances": 8,
+          "goals": 1,
+          "assists": 0,
+          "shots": 5,
+          "shots_on_target": 1,
+          "yellow_cards": 1,
+          "red_cards": 0,
+          "saves": 0,
+          "goals_conceded": 6,
+          "clean_sheets": null,
+          "minutes": 519,
+          "starts": 6
+        },
+        "ucl": {
+          "appearances": 2,
+          "goals": 0,
+          "assists": 0,
+          "shots": 1,
+          "shots_on_target": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "goals_conceded": 2,
+          "clean_sheets": null,
+          "minutes": 172,
+          "starts": 2
+        }
+      },
+      "minutes_total": 691,
+      "starts_total": 8,
+      "appearances_total": 10,
+      "totals": {
+        "appearances": 10,
+        "goals": 1,
+        "assists": 0,
+        "shots": 6,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "saves": 0,
+        "minutes": 691,
+        "starts": 8,
+        "goal_contributions": 1,
+        "minutes_per_contribution": 691
       }
     },
     {
@@ -2720,17 +2959,17 @@
       "headshot": null,
       "competitions": {
         "laliga": {
-          "appearances": 7,
-          "goals": 0,
+          "appearances": 8,
+          "goals": 1,
           "assists": 0,
-          "shots": 5,
-          "shots_on_target": 1,
+          "shots": 6,
+          "shots_on_target": 2,
           "yellow_cards": 0,
           "red_cards": 0,
           "saves": 0,
-          "goals_conceded": 5,
+          "goals_conceded": 6,
           "clean_sheets": null,
-          "minutes": 557,
+          "minutes": 602,
           "starts": 7
         },
         "ucl": {
@@ -2748,18 +2987,75 @@
           "starts": 1
         }
       },
-      "minutes_total": 630,
+      "minutes_total": 675,
       "starts_total": 8,
-      "appearances_total": 8,
+      "appearances_total": 9,
       "totals": {
-        "appearances": 8,
-        "goals": 0,
+        "appearances": 9,
+        "goals": 1,
         "assists": 0,
-        "shots": 5,
+        "shots": 6,
         "yellow_cards": 0,
         "red_cards": 0,
         "saves": 0,
-        "minutes": 630,
+        "minutes": 675,
+        "starts": 8,
+        "goal_contributions": 1,
+        "minutes_per_contribution": 675
+      }
+    },
+    {
+      "player_id": "312015",
+      "name": "Gerard Martín",
+      "short_name": "G. Martín",
+      "jersey": "18",
+      "position": "Defender",
+      "position_abbr": "D",
+      "citizenship": "Spain",
+      "age": 24,
+      "headshot": null,
+      "competitions": {
+        "laliga": {
+          "appearances": 8,
+          "goals": 0,
+          "assists": 0,
+          "shots": 1,
+          "shots_on_target": 0,
+          "yellow_cards": 1,
+          "red_cards": 0,
+          "saves": 0,
+          "goals_conceded": 3,
+          "clean_sheets": null,
+          "minutes": 571,
+          "starts": 7
+        },
+        "ucl": {
+          "appearances": 1,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "goals_conceded": 1,
+          "clean_sheets": null,
+          "minutes": 90,
+          "starts": 1
+        }
+      },
+      "minutes_total": 661,
+      "starts_total": 8,
+      "appearances_total": 9,
+      "totals": {
+        "appearances": 9,
+        "goals": 0,
+        "assists": 0,
+        "shots": 1,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "saves": 0,
+        "minutes": 661,
         "starts": 8,
         "goal_contributions": 0,
         "minutes_per_contribution": null
@@ -2777,17 +3073,17 @@
       "headshot": null,
       "competitions": {
         "laliga": {
-          "appearances": 7,
+          "appearances": 8,
           "goals": 12,
           "assists": 3,
-          "shots": 25,
+          "shots": 26,
           "shots_on_target": 16,
           "yellow_cards": 0,
           "red_cards": 0,
           "saves": 0,
           "goals_conceded": 7,
           "clean_sheets": null,
-          "minutes": 551,
+          "minutes": 572,
           "starts": 7
         },
         "ucl": {
@@ -2805,192 +3101,21 @@
           "starts": 1
         }
       },
-      "minutes_total": 622,
+      "minutes_total": 643,
       "starts_total": 8,
-      "appearances_total": 8,
-      "totals": {
-        "appearances": 8,
-        "goals": 14,
-        "assists": 3,
-        "shots": 28,
-        "yellow_cards": 0,
-        "red_cards": 0,
-        "saves": 0,
-        "minutes": 622,
-        "starts": 8,
-        "goal_contributions": 17,
-        "minutes_per_contribution": 37
-      }
-    },
-    {
-      "player_id": "312015",
-      "name": "Gerard Martín",
-      "short_name": "G. Martín",
-      "jersey": "18",
-      "position": "Defender",
-      "position_abbr": "D",
-      "citizenship": "Spain",
-      "age": 24,
-      "headshot": null,
-      "competitions": {
-        "laliga": {
-          "appearances": 7,
-          "goals": 0,
-          "assists": 0,
-          "shots": 1,
-          "shots_on_target": 0,
-          "yellow_cards": 1,
-          "red_cards": 0,
-          "saves": 0,
-          "goals_conceded": 2,
-          "clean_sheets": null,
-          "minutes": 526,
-          "starts": 6
-        },
-        "ucl": {
-          "appearances": 1,
-          "goals": 0,
-          "assists": 0,
-          "shots": 0,
-          "shots_on_target": 0,
-          "yellow_cards": 0,
-          "red_cards": 0,
-          "saves": 0,
-          "goals_conceded": 1,
-          "clean_sheets": null,
-          "minutes": 90,
-          "starts": 1
-        }
-      },
-      "minutes_total": 616,
-      "starts_total": 7,
-      "appearances_total": 8,
-      "totals": {
-        "appearances": 8,
-        "goals": 0,
-        "assists": 0,
-        "shots": 1,
-        "yellow_cards": 1,
-        "red_cards": 0,
-        "saves": 0,
-        "minutes": 616,
-        "starts": 7,
-        "goal_contributions": 0,
-        "minutes_per_contribution": null
-      }
-    },
-    {
-      "player_id": "368992",
-      "name": "Pau Cubarsí",
-      "short_name": "P. Cubarsí",
-      "jersey": "5",
-      "position": "Defender",
-      "position_abbr": "D",
-      "citizenship": "Spain",
-      "age": 19,
-      "headshot": null,
-      "competitions": {
-        "laliga": {
-          "appearances": 5,
-          "goals": 0,
-          "assists": 0,
-          "shots": 3,
-          "shots_on_target": 0,
-          "yellow_cards": 1,
-          "red_cards": 0,
-          "saves": 0,
-          "goals_conceded": 5,
-          "clean_sheets": null,
-          "minutes": 422,
-          "starts": 5
-        },
-        "ucl": {
-          "appearances": 2,
-          "goals": 0,
-          "assists": 0,
-          "shots": 0,
-          "shots_on_target": 0,
-          "yellow_cards": 0,
-          "red_cards": 0,
-          "saves": 0,
-          "goals_conceded": 2,
-          "clean_sheets": null,
-          "minutes": 180,
-          "starts": 2
-        }
-      },
-      "minutes_total": 602,
-      "starts_total": 7,
-      "appearances_total": 7,
-      "totals": {
-        "appearances": 7,
-        "goals": 0,
-        "assists": 0,
-        "shots": 3,
-        "yellow_cards": 1,
-        "red_cards": 0,
-        "saves": 0,
-        "minutes": 602,
-        "starts": 7,
-        "goal_contributions": 0,
-        "minutes_per_contribution": null
-      }
-    },
-    {
-      "player_id": "231828",
-      "name": "Rodri",
-      "short_name": "Rodri",
-      "jersey": "16",
-      "position": "Midfielder",
-      "position_abbr": "M",
-      "citizenship": "Spain",
-      "age": 30,
-      "headshot": null,
-      "competitions": {
-        "laliga": {
-          "appearances": 7,
-          "goals": 0,
-          "assists": 0,
-          "shots": 4,
-          "shots_on_target": 0,
-          "yellow_cards": 1,
-          "red_cards": 0,
-          "saves": 0,
-          "goals_conceded": 4,
-          "clean_sheets": null,
-          "minutes": 429,
-          "starts": 5
-        },
-        "ucl": {
-          "appearances": 2,
-          "goals": 0,
-          "assists": 0,
-          "shots": 1,
-          "shots_on_target": 0,
-          "yellow_cards": 0,
-          "red_cards": 0,
-          "saves": 0,
-          "goals_conceded": 2,
-          "clean_sheets": null,
-          "minutes": 172,
-          "starts": 2
-        }
-      },
-      "minutes_total": 601,
-      "starts_total": 7,
       "appearances_total": 9,
       "totals": {
         "appearances": 9,
-        "goals": 0,
-        "assists": 0,
-        "shots": 5,
-        "yellow_cards": 1,
+        "goals": 14,
+        "assists": 3,
+        "shots": 29,
+        "yellow_cards": 0,
         "red_cards": 0,
         "saves": 0,
-        "minutes": 601,
-        "starts": 7,
-        "goal_contributions": 0,
-        "minutes_per_contribution": null
+        "minutes": 643,
+        "starts": 8,
+        "goal_contributions": 17,
+        "minutes_per_contribution": 38
       }
     },
     {
@@ -3005,18 +3130,18 @@
       "headshot": null,
       "competitions": {
         "laliga": {
-          "appearances": 7,
+          "appearances": 8,
           "goals": 4,
-          "assists": 2,
-          "shots": 13,
-          "shots_on_target": 8,
-          "yellow_cards": 2,
+          "assists": 3,
+          "shots": 14,
+          "shots_on_target": 9,
+          "yellow_cards": 3,
           "red_cards": 0,
           "saves": 0,
-          "goals_conceded": 3,
+          "goals_conceded": 5,
           "clean_sheets": null,
-          "minutes": 478,
-          "starts": 5
+          "minutes": 539,
+          "starts": 6
         },
         "ucl": {
           "appearances": 2,
@@ -3033,21 +3158,78 @@
           "starts": 1
         }
       },
-      "minutes_total": 578,
-      "starts_total": 6,
-      "appearances_total": 9,
+      "minutes_total": 639,
+      "starts_total": 7,
+      "appearances_total": 10,
       "totals": {
-        "appearances": 9,
+        "appearances": 10,
         "goals": 5,
-        "assists": 2,
-        "shots": 17,
-        "yellow_cards": 2,
+        "assists": 3,
+        "shots": 18,
+        "yellow_cards": 3,
         "red_cards": 0,
         "saves": 0,
-        "minutes": 578,
-        "starts": 6,
-        "goal_contributions": 7,
-        "minutes_per_contribution": 83
+        "minutes": 639,
+        "starts": 7,
+        "goal_contributions": 8,
+        "minutes_per_contribution": 80
+      }
+    },
+    {
+      "player_id": "403582",
+      "name": "Xavi Espart",
+      "short_name": "X. Espart",
+      "jersey": "12",
+      "position": "Defender",
+      "position_abbr": "D",
+      "citizenship": "Spain",
+      "age": 19,
+      "headshot": null,
+      "competitions": {
+        "laliga": {
+          "appearances": 7,
+          "goals": 1,
+          "assists": 2,
+          "shots": 8,
+          "shots_on_target": 2,
+          "yellow_cards": 1,
+          "red_cards": 0,
+          "saves": 0,
+          "goals_conceded": 5,
+          "clean_sheets": null,
+          "minutes": 619,
+          "starts": 7
+        },
+        "ucl": {
+          "appearances": 0,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "goals_conceded": 0,
+          "clean_sheets": null,
+          "minutes": 0,
+          "starts": 0
+        }
+      },
+      "minutes_total": 619,
+      "starts_total": 7,
+      "appearances_total": 7,
+      "totals": {
+        "appearances": 7,
+        "goals": 1,
+        "assists": 2,
+        "shots": 8,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "saves": 0,
+        "minutes": 619,
+        "starts": 7,
+        "goal_contributions": 3,
+        "minutes_per_contribution": 206
       }
     },
     {
@@ -3062,17 +3244,17 @@
       "headshot": null,
       "competitions": {
         "laliga": {
-          "appearances": 7,
+          "appearances": 8,
           "goals": 1,
           "assists": 4,
-          "shots": 15,
-          "shots_on_target": 6,
+          "shots": 18,
+          "shots_on_target": 8,
           "yellow_cards": 0,
           "red_cards": 0,
           "saves": 0,
           "goals_conceded": 3,
           "clean_sheets": null,
-          "minutes": 465,
+          "minutes": 494,
           "starts": 6
         },
         "ucl": {
@@ -3090,78 +3272,21 @@
           "starts": 1
         }
       },
-      "minutes_total": 550,
+      "minutes_total": 579,
       "starts_total": 7,
-      "appearances_total": 9,
+      "appearances_total": 10,
       "totals": {
-        "appearances": 9,
+        "appearances": 10,
         "goals": 2,
         "assists": 4,
-        "shots": 21,
+        "shots": 24,
         "yellow_cards": 0,
         "red_cards": 0,
         "saves": 0,
-        "minutes": 550,
+        "minutes": 579,
         "starts": 7,
         "goal_contributions": 6,
-        "minutes_per_contribution": 92
-      }
-    },
-    {
-      "player_id": "403582",
-      "name": "Xavi Espart",
-      "short_name": "X. Espart",
-      "jersey": "12",
-      "position": "Defender",
-      "position_abbr": "D",
-      "citizenship": "Spain",
-      "age": 19,
-      "headshot": null,
-      "competitions": {
-        "laliga": {
-          "appearances": 6,
-          "goals": 1,
-          "assists": 2,
-          "shots": 6,
-          "shots_on_target": 2,
-          "yellow_cards": 1,
-          "red_cards": 0,
-          "saves": 0,
-          "goals_conceded": 3,
-          "clean_sheets": null,
-          "minutes": 529,
-          "starts": 6
-        },
-        "ucl": {
-          "appearances": 0,
-          "goals": 0,
-          "assists": 0,
-          "shots": 0,
-          "shots_on_target": 0,
-          "yellow_cards": 0,
-          "red_cards": 0,
-          "saves": 0,
-          "goals_conceded": 0,
-          "clean_sheets": null,
-          "minutes": 0,
-          "starts": 0
-        }
-      },
-      "minutes_total": 529,
-      "starts_total": 6,
-      "appearances_total": 6,
-      "totals": {
-        "appearances": 6,
-        "goals": 1,
-        "assists": 2,
-        "shots": 6,
-        "yellow_cards": 1,
-        "red_cards": 0,
-        "saves": 0,
-        "minutes": 529,
-        "starts": 6,
-        "goal_contributions": 3,
-        "minutes_per_contribution": 176
+        "minutes_per_contribution": 96
       }
     },
     {
@@ -3233,17 +3358,17 @@
       "headshot": null,
       "competitions": {
         "laliga": {
-          "appearances": 8,
-          "goals": 0,
+          "appearances": 9,
+          "goals": 1,
           "assists": 3,
-          "shots": 12,
-          "shots_on_target": 3,
+          "shots": 14,
+          "shots_on_target": 5,
           "yellow_cards": 1,
           "red_cards": 0,
           "saves": 0,
           "goals_conceded": 6,
           "clean_sheets": null,
-          "minutes": 320,
+          "minutes": 349,
           "starts": 3
         },
         "ucl": {
@@ -3261,21 +3386,135 @@
           "starts": 2
         }
       },
-      "minutes_total": 460,
+      "minutes_total": 489,
       "starts_total": 5,
-      "appearances_total": 10,
+      "appearances_total": 11,
       "totals": {
-        "appearances": 10,
-        "goals": 0,
+        "appearances": 11,
+        "goals": 1,
         "assists": 4,
-        "shots": 19,
+        "shots": 21,
         "yellow_cards": 2,
         "red_cards": 0,
         "saves": 0,
-        "minutes": 460,
+        "minutes": 489,
         "starts": 5,
-        "goal_contributions": 4,
-        "minutes_per_contribution": 115
+        "goal_contributions": 5,
+        "minutes_per_contribution": 98
+      }
+    },
+    {
+      "player_id": "231692",
+      "name": "Jules Koundé",
+      "short_name": "J. Koundé",
+      "jersey": "23",
+      "position": "Defender",
+      "position_abbr": "D",
+      "citizenship": "France",
+      "age": 27,
+      "headshot": null,
+      "competitions": {
+        "laliga": {
+          "appearances": 6,
+          "goals": 1,
+          "assists": 1,
+          "shots": 2,
+          "shots_on_target": 2,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "goals_conceded": 4,
+          "clean_sheets": null,
+          "minutes": 353,
+          "starts": 3
+        },
+        "ucl": {
+          "appearances": 2,
+          "goals": 0,
+          "assists": 0,
+          "shots": 2,
+          "shots_on_target": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "goals_conceded": 1,
+          "clean_sheets": null,
+          "minutes": 107,
+          "starts": 1
+        }
+      },
+      "minutes_total": 460,
+      "starts_total": 4,
+      "appearances_total": 8,
+      "totals": {
+        "appearances": 8,
+        "goals": 1,
+        "assists": 1,
+        "shots": 4,
+        "yellow_cards": 0,
+        "red_cards": 0,
+        "saves": 0,
+        "minutes": 460,
+        "starts": 4,
+        "goal_contributions": 2,
+        "minutes_per_contribution": 230
+      }
+    },
+    {
+      "player_id": "274913",
+      "name": "Karim Adeyemi",
+      "short_name": "K. Adeyemi",
+      "jersey": "14",
+      "position": "Forward",
+      "position_abbr": "F",
+      "citizenship": "Germany",
+      "age": 24,
+      "headshot": null,
+      "competitions": {
+        "laliga": {
+          "appearances": 9,
+          "goals": 2,
+          "assists": 2,
+          "shots": 16,
+          "shots_on_target": 7,
+          "yellow_cards": 1,
+          "red_cards": 0,
+          "saves": 0,
+          "goals_conceded": 6,
+          "clean_sheets": null,
+          "minutes": 325,
+          "starts": 3
+        },
+        "ucl": {
+          "appearances": 2,
+          "goals": 2,
+          "assists": 0,
+          "shots": 6,
+          "shots_on_target": 3,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "goals_conceded": 0,
+          "clean_sheets": null,
+          "minutes": 95,
+          "starts": 1
+        }
+      },
+      "minutes_total": 420,
+      "starts_total": 4,
+      "appearances_total": 11,
+      "totals": {
+        "appearances": 11,
+        "goals": 4,
+        "assists": 2,
+        "shots": 22,
+        "yellow_cards": 1,
+        "red_cards": 0,
+        "saves": 0,
+        "minutes": 420,
+        "starts": 4,
+        "goal_contributions": 6,
+        "minutes_per_contribution": 70
       }
     },
     {
@@ -3333,120 +3572,6 @@
         "starts": 4,
         "goal_contributions": 3,
         "minutes_per_contribution": 129
-      }
-    },
-    {
-      "player_id": "231692",
-      "name": "Jules Koundé",
-      "short_name": "J. Koundé",
-      "jersey": "23",
-      "position": "Defender",
-      "position_abbr": "D",
-      "citizenship": "France",
-      "age": 27,
-      "headshot": null,
-      "competitions": {
-        "laliga": {
-          "appearances": 5,
-          "goals": 1,
-          "assists": 0,
-          "shots": 2,
-          "shots_on_target": 2,
-          "yellow_cards": 0,
-          "red_cards": 0,
-          "saves": 0,
-          "goals_conceded": 2,
-          "clean_sheets": null,
-          "minutes": 263,
-          "starts": 2
-        },
-        "ucl": {
-          "appearances": 2,
-          "goals": 0,
-          "assists": 0,
-          "shots": 2,
-          "shots_on_target": 0,
-          "yellow_cards": 0,
-          "red_cards": 0,
-          "saves": 0,
-          "goals_conceded": 1,
-          "clean_sheets": null,
-          "minutes": 107,
-          "starts": 1
-        }
-      },
-      "minutes_total": 370,
-      "starts_total": 3,
-      "appearances_total": 7,
-      "totals": {
-        "appearances": 7,
-        "goals": 1,
-        "assists": 0,
-        "shots": 4,
-        "yellow_cards": 0,
-        "red_cards": 0,
-        "saves": 0,
-        "minutes": 370,
-        "starts": 3,
-        "goal_contributions": 1,
-        "minutes_per_contribution": 370
-      }
-    },
-    {
-      "player_id": "274913",
-      "name": "Karim Adeyemi",
-      "short_name": "K. Adeyemi",
-      "jersey": "14",
-      "position": "Forward",
-      "position_abbr": "F",
-      "citizenship": "Germany",
-      "age": 24,
-      "headshot": null,
-      "competitions": {
-        "laliga": {
-          "appearances": 8,
-          "goals": 2,
-          "assists": 2,
-          "shots": 16,
-          "shots_on_target": 7,
-          "yellow_cards": 1,
-          "red_cards": 0,
-          "saves": 0,
-          "goals_conceded": 4,
-          "clean_sheets": null,
-          "minutes": 264,
-          "starts": 2
-        },
-        "ucl": {
-          "appearances": 2,
-          "goals": 2,
-          "assists": 0,
-          "shots": 6,
-          "shots_on_target": 3,
-          "yellow_cards": 0,
-          "red_cards": 0,
-          "saves": 0,
-          "goals_conceded": 0,
-          "clean_sheets": null,
-          "minutes": 95,
-          "starts": 1
-        }
-      },
-      "minutes_total": 359,
-      "starts_total": 3,
-      "appearances_total": 10,
-      "totals": {
-        "appearances": 10,
-        "goals": 4,
-        "assists": 2,
-        "shots": 22,
-        "yellow_cards": 1,
-        "red_cards": 0,
-        "saves": 0,
-        "minutes": 359,
-        "starts": 3,
-        "goal_contributions": 6,
-        "minutes_per_contribution": 60
       }
     },
     {
@@ -3518,18 +3643,18 @@
       "headshot": null,
       "competitions": {
         "laliga": {
-          "appearances": 4,
-          "goals": 2,
+          "appearances": 5,
+          "goals": 3,
           "assists": 0,
-          "shots": 5,
-          "shots_on_target": 2,
+          "shots": 8,
+          "shots_on_target": 3,
           "yellow_cards": 0,
           "red_cards": 0,
           "saves": 0,
-          "goals_conceded": 0,
+          "goals_conceded": 2,
           "clean_sheets": null,
-          "minutes": 118,
-          "starts": 1
+          "minutes": 197,
+          "starts": 2
         },
         "ucl": {
           "appearances": 2,
@@ -3546,21 +3671,21 @@
           "starts": 0
         }
       },
-      "minutes_total": 158,
-      "starts_total": 1,
-      "appearances_total": 6,
+      "minutes_total": 237,
+      "starts_total": 2,
+      "appearances_total": 7,
       "totals": {
-        "appearances": 6,
-        "goals": 3,
+        "appearances": 7,
+        "goals": 4,
         "assists": 0,
-        "shots": 8,
+        "shots": 11,
         "yellow_cards": 0,
         "red_cards": 0,
         "saves": 0,
-        "minutes": 158,
-        "starts": 1,
-        "goal_contributions": 3,
-        "minutes_per_contribution": 53
+        "minutes": 237,
+        "starts": 2,
+        "goal_contributions": 4,
+        "minutes_per_contribution": 59
       }
     },
     {
@@ -3575,7 +3700,7 @@
       "headshot": null,
       "competitions": {
         "laliga": {
-          "appearances": 3,
+          "appearances": 4,
           "goals": 0,
           "assists": 0,
           "shots": 2,
@@ -3585,7 +3710,7 @@
           "saves": 0,
           "goals_conceded": 1,
           "clean_sheets": null,
-          "minutes": 134,
+          "minutes": 145,
           "starts": 2
         },
         "ucl": {
@@ -3603,18 +3728,18 @@
           "starts": 0
         }
       },
-      "minutes_total": 151,
+      "minutes_total": 162,
       "starts_total": 2,
-      "appearances_total": 5,
+      "appearances_total": 6,
       "totals": {
-        "appearances": 5,
+        "appearances": 6,
         "goals": 0,
         "assists": 0,
         "shots": 2,
         "yellow_cards": 0,
         "red_cards": 0,
         "saves": 0,
-        "minutes": 151,
+        "minutes": 162,
         "starts": 2,
         "goal_contributions": 0,
         "minutes_per_contribution": null
@@ -3931,15 +4056,15 @@
           "starts": 0
         },
         "ucl": {
-          "appearances": null,
-          "goals": null,
-          "assists": null,
-          "shots": null,
-          "shots_on_target": null,
-          "yellow_cards": null,
-          "red_cards": null,
-          "saves": null,
-          "goals_conceded": null,
+          "appearances": 0,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "goals_conceded": 0,
           "clean_sheets": null,
           "minutes": 0,
           "starts": 0
@@ -3974,29 +4099,29 @@
       "headshot": null,
       "competitions": {
         "laliga": {
-          "appearances": null,
-          "goals": null,
-          "assists": null,
-          "shots": null,
-          "shots_on_target": null,
-          "yellow_cards": null,
-          "red_cards": null,
-          "saves": null,
-          "goals_conceded": null,
+          "appearances": 0,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "goals_conceded": 0,
           "clean_sheets": null,
           "minutes": 0,
           "starts": 0
         },
         "ucl": {
-          "appearances": null,
-          "goals": null,
-          "assists": null,
-          "shots": null,
-          "shots_on_target": null,
-          "yellow_cards": null,
-          "red_cards": null,
-          "saves": null,
-          "goals_conceded": null,
+          "appearances": 0,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "goals_conceded": 0,
           "clean_sheets": null,
           "minutes": 0,
           "starts": 0
@@ -4024,10 +4149,10 @@
       "name": "Iker Rodríguez",
       "short_name": "I. Rodríguez",
       "jersey": "35",
-      "position": "Forward",
-      "position_abbr": "F",
-      "citizenship": "Cuba",
-      "age": 17,
+      "position": "Goalkeeper",
+      "position_abbr": "G",
+      "citizenship": "Spain",
+      "age": 18,
       "headshot": null,
       "competitions": {
         "laliga": {
@@ -4045,15 +4170,15 @@
           "starts": 0
         },
         "ucl": {
-          "appearances": null,
-          "goals": null,
-          "assists": null,
-          "shots": null,
-          "shots_on_target": null,
-          "yellow_cards": null,
-          "red_cards": null,
-          "saves": null,
-          "goals_conceded": null,
+          "appearances": 0,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "goals_conceded": 0,
           "clean_sheets": null,
           "minutes": 0,
           "starts": 0
@@ -4088,29 +4213,29 @@
       "headshot": null,
       "competitions": {
         "laliga": {
-          "appearances": null,
-          "goals": null,
-          "assists": null,
-          "shots": null,
-          "shots_on_target": null,
-          "yellow_cards": null,
-          "red_cards": null,
-          "saves": null,
-          "goals_conceded": null,
+          "appearances": 0,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "goals_conceded": 0,
           "clean_sheets": null,
           "minutes": 0,
           "starts": 0
         },
         "ucl": {
-          "appearances": null,
-          "goals": null,
-          "assists": null,
-          "shots": null,
-          "shots_on_target": null,
-          "yellow_cards": null,
-          "red_cards": null,
-          "saves": null,
-          "goals_conceded": null,
+          "appearances": 0,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "goals_conceded": 0,
           "clean_sheets": null,
           "minutes": 0,
           "starts": 0
@@ -4159,15 +4284,15 @@
           "starts": 0
         },
         "ucl": {
-          "appearances": null,
-          "goals": null,
-          "assists": null,
-          "shots": null,
-          "shots_on_target": null,
-          "yellow_cards": null,
-          "red_cards": null,
-          "saves": null,
-          "goals_conceded": null,
+          "appearances": 0,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "goals_conceded": 0,
           "clean_sheets": null,
           "minutes": 0,
           "starts": 0
@@ -4202,29 +4327,29 @@
       "headshot": null,
       "competitions": {
         "laliga": {
-          "appearances": null,
-          "goals": null,
-          "assists": null,
-          "shots": null,
-          "shots_on_target": null,
-          "yellow_cards": null,
-          "red_cards": null,
-          "saves": null,
-          "goals_conceded": null,
+          "appearances": 0,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "goals_conceded": 0,
           "clean_sheets": null,
           "minutes": 0,
           "starts": 0
         },
         "ucl": {
-          "appearances": null,
-          "goals": null,
-          "assists": null,
-          "shots": null,
-          "shots_on_target": null,
-          "yellow_cards": null,
-          "red_cards": null,
-          "saves": null,
-          "goals_conceded": null,
+          "appearances": 0,
+          "goals": 0,
+          "assists": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "goals_conceded": 0,
           "clean_sheets": null,
           "minutes": 0,
           "starts": 0
@@ -4248,130 +4373,146 @@
       }
     }
   ],
+  "squad_data_status": {
+    "complete_match_box_scores": {
+      "laliga": true,
+      "ucl": true
+    },
+    "note": "Appearances, starts and minutes come from match team sheets. Goals, assists and saves are summed from completed-match box scores."
+  },
   "injuries": [],
   "rotation": {
     "window_days": 21,
     "window_start": "2026-09-26",
     "window_end": "2026-10-17",
-    "matches_in_window": 2,
-    "available_minutes": 180,
+    "matches_in_window": 3,
+    "available_minutes": 270,
     "players": [
       {
         "player_id": "297362",
         "name": "Joan García",
         "position_abbr": "G",
-        "minutes": 180,
-        "starts": 2,
-        "matches": 2,
+        "minutes": 270,
+        "starts": 3,
+        "matches": 3,
         "share": 100.0
-      },
-      {
-        "player_id": "312015",
-        "name": "Gerard Martín",
-        "position_abbr": "D",
-        "minutes": 180,
-        "starts": 2,
-        "matches": 2,
-        "share": 100.0
-      },
-      {
-        "player_id": "362150",
-        "name": "Lamine Yamal",
-        "position_abbr": "F",
-        "minutes": 180,
-        "starts": 2,
-        "matches": 2,
-        "share": 100.0
-      },
-      {
-        "player_id": "128714",
-        "name": "Eric García",
-        "position_abbr": "D",
-        "minutes": 163,
-        "starts": 2,
-        "matches": 2,
-        "share": 90.6
       },
       {
         "player_id": "231828",
         "name": "Rodri",
         "position_abbr": "M",
-        "minutes": 161,
-        "starts": 2,
-        "matches": 2,
-        "share": 89.4
+        "minutes": 251,
+        "starts": 3,
+        "matches": 3,
+        "share": 93.0
       },
       {
-        "player_id": "268782",
-        "name": "Anthony Gordon",
+        "player_id": "362150",
+        "name": "Lamine Yamal",
         "position_abbr": "F",
-        "minutes": 129,
+        "minutes": 249,
+        "starts": 3,
+        "matches": 3,
+        "share": 92.2
+      },
+      {
+        "player_id": "312015",
+        "name": "Gerard Martín",
+        "position_abbr": "D",
+        "minutes": 225,
+        "starts": 3,
+        "matches": 3,
+        "share": 83.3
+      },
+      {
+        "player_id": "128714",
+        "name": "Eric García",
+        "position_abbr": "D",
+        "minutes": 208,
         "starts": 2,
-        "matches": 2,
-        "share": 71.7
-      },
-      {
-        "player_id": "227765",
-        "name": "Dani Olmo",
-        "position_abbr": "M",
-        "minutes": 118,
-        "starts": 2,
-        "matches": 2,
-        "share": 65.6
-      },
-      {
-        "player_id": "217289",
-        "name": "Gabriel Jesus",
-        "position_abbr": "F",
-        "minutes": 113,
-        "starts": 1,
-        "matches": 2,
-        "share": 62.8
-      },
-      {
-        "player_id": "354334",
-        "name": "Fermín López",
-        "position_abbr": "M",
-        "minutes": 111,
-        "starts": 1,
-        "matches": 2,
-        "share": 61.7
+        "matches": 3,
+        "share": 77.0
       },
       {
         "player_id": "231692",
         "name": "Jules Koundé",
         "position_abbr": "D",
-        "minutes": 107,
-        "starts": 1,
-        "matches": 2,
-        "share": 59.4
+        "minutes": 197,
+        "starts": 2,
+        "matches": 3,
+        "share": 73.0
       },
       {
         "player_id": "250465",
         "name": "Pedri",
         "position_abbr": "M",
-        "minutes": 103,
-        "starts": 1,
-        "matches": 2,
-        "share": 57.2
+        "minutes": 193,
+        "starts": 2,
+        "matches": 3,
+        "share": 71.5
+      },
+      {
+        "player_id": "217289",
+        "name": "Gabriel Jesus",
+        "position_abbr": "F",
+        "minutes": 192,
+        "starts": 2,
+        "matches": 3,
+        "share": 71.1
       },
       {
         "player_id": "403582",
         "name": "Xavi Espart",
         "position_abbr": "D",
-        "minutes": 90,
-        "starts": 1,
-        "matches": 1,
-        "share": 50.0
+        "minutes": 180,
+        "starts": 2,
+        "matches": 2,
+        "share": 66.7
       },
       {
         "player_id": "368992",
         "name": "Pau Cubarsí",
         "position_abbr": "D",
-        "minutes": 90,
+        "minutes": 180,
+        "starts": 2,
+        "matches": 2,
+        "share": 66.7
+      },
+      {
+        "player_id": "354334",
+        "name": "Fermín López",
+        "position_abbr": "M",
+        "minutes": 172,
+        "starts": 2,
+        "matches": 3,
+        "share": 63.7
+      },
+      {
+        "player_id": "268782",
+        "name": "Anthony Gordon",
+        "position_abbr": "F",
+        "minutes": 158,
+        "starts": 2,
+        "matches": 3,
+        "share": 58.5
+      },
+      {
+        "player_id": "227765",
+        "name": "Dani Olmo",
+        "position_abbr": "M",
+        "minutes": 147,
+        "starts": 2,
+        "matches": 3,
+        "share": 54.4
+      },
+      {
+        "player_id": "274913",
+        "name": "Karim Adeyemi",
+        "position_abbr": "F",
+        "minutes": 112,
         "starts": 1,
-        "matches": 1,
-        "share": 50.0
+        "matches": 3,
+        "share": 41.5
       },
       {
         "player_id": "176399",
@@ -4380,25 +4521,16 @@
         "minutes": 90,
         "starts": 1,
         "matches": 1,
-        "share": 50.0
+        "share": 33.3
       },
       {
         "player_id": "323702",
         "name": "Gavi",
         "position_abbr": "M",
-        "minutes": 69,
+        "minutes": 80,
         "starts": 1,
-        "matches": 2,
-        "share": 38.3
-      },
-      {
-        "player_id": "274913",
-        "name": "Karim Adeyemi",
-        "position_abbr": "F",
-        "minutes": 51,
-        "starts": 0,
-        "matches": 2,
-        "share": 28.3
+        "matches": 3,
+        "share": 29.6
       },
       {
         "player_id": "376423",
@@ -4407,7 +4539,16 @@
         "minutes": 36,
         "starts": 0,
         "matches": 2,
-        "share": 20.0
+        "share": 13.3
+      },
+      {
+        "player_id": "231050",
+        "name": "Raphinha",
+        "position_abbr": "F",
+        "minutes": 21,
+        "starts": 0,
+        "matches": 1,
+        "share": 7.8
       },
       {
         "player_id": "399200",
@@ -4416,19 +4557,19 @@
         "minutes": 9,
         "starts": 0,
         "matches": 1,
-        "share": 5.0
+        "share": 3.3
       }
     ]
   },
   "congestion": {
     "window_days": 21,
-    "matches_last_window": 2,
-    "matches_per_week": 0.67,
+    "matches_last_window": 3,
+    "matches_per_week": 1.0,
     "load_level": "Light",
     "shortest_rest_recent": 3,
-    "average_rest_recent": 3.0,
-    "matches_next_14_days": 4,
-    "matches_next_30_days": 6,
+    "average_rest_recent": 3.5,
+    "matches_next_14_days": 3,
+    "matches_next_30_days": 5,
     "shortest_rest_upcoming": 3,
     "recent": [
       {
@@ -4440,15 +4581,14 @@
         "date": "2026-10-13T19:00Z",
         "competition": "ucl",
         "opponent": "Galatasaray"
+      },
+      {
+        "date": "2026-10-17T16:30Z",
+        "competition": "laliga",
+        "opponent": "Betis"
       }
     ],
     "upcoming": [
-      {
-        "date": "2026-10-17T16:00Z",
-        "competition": "laliga",
-        "opponent": "Betis",
-        "location": "away"
-      },
       {
         "date": "2026-10-20T19:00Z",
         "competition": "ucl",
@@ -4482,13 +4622,13 @@
     ]
   },
   "all_competitions": {
-    "record": "10-0-0",
-    "wins": 10,
+    "record": "11-0-0",
+    "wins": 11,
     "draws": 0,
     "losses": 0,
-    "goals_for": 43,
-    "goals_against": 9,
-    "matches_played": 10,
+    "goals_for": 48,
+    "goals_against": 11,
+    "matches_played": 11,
     "form": [
       "W",
       "W",
@@ -4498,43 +4638,11 @@
       "W"
     ],
     "last_match": {
-      "event_id": "401915435",
-      "competition": "ucl",
-      "date": "2026-10-13T19:00Z",
-      "completed": true,
-      "status_detail": "FT",
-      "location": "away",
-      "venue": "RAMS Park",
-      "opponent": "Galatasaray",
-      "opponent_short": "Galatasaray",
-      "opponent_abbr": "GAL",
-      "opponent_id": "432",
-      "opponent_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/432.png",
-      "goals_for": 4,
-      "goals_against": 1,
-      "result": "W",
-      "detail": {
-        "xg": 2.83,
-        "xga": 0.43,
-        "possession": 71.0,
-        "shots": 22,
-        "shots_on_target": 11,
-        "big_chances": 5,
-        "ppda": 7.9,
-        "final_third_entries": 61,
-        "touches_in_box": 35,
-        "high_turnovers": 1,
-        "opponent_xg": 0.43,
-        "opponent_shots": 5,
-        "opponent_possession": 29.0
-      }
-    },
-    "next_match": {
       "event_id": "401882846",
       "competition": "laliga",
-      "date": "2026-10-17T16:00Z",
-      "completed": false,
-      "status_detail": "10/17 - 12:00 PM EDT",
+      "date": "2026-10-17T16:30Z",
+      "completed": true,
+      "status_detail": "FT",
       "location": "away",
       "venue": "Estadio La Cartuja",
       "opponent": "Real Betis",
@@ -4542,28 +4650,43 @@
       "opponent_abbr": "BET",
       "opponent_id": "244",
       "opponent_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png",
+      "goals_for": 5,
+      "goals_against": 2,
+      "result": "W",
+      "detail": {
+        "xg": 3.04,
+        "xga": 0.98,
+        "possession": 69.3,
+        "shots": 18,
+        "shots_on_target": 10,
+        "big_chances": 4,
+        "ppda": 8.4,
+        "final_third_entries": 73,
+        "touches_in_box": 31,
+        "high_turnovers": 7,
+        "opponent_xg": 0.98,
+        "opponent_shots": 6,
+        "opponent_possession": 30.7
+      }
+    },
+    "next_match": {
+      "event_id": "401915399",
+      "competition": "ucl",
+      "date": "2026-10-20T19:00Z",
+      "completed": false,
+      "status_detail": "10/20 - 3:00 PM EDT",
+      "location": "away",
+      "venue": "Parc des Princes",
+      "opponent": "Paris Saint-Germain",
+      "opponent_short": "PSG",
+      "opponent_abbr": "PSG",
+      "opponent_id": "160",
+      "opponent_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
       "goals_for": null,
       "goals_against": null,
       "result": null
     },
     "fixtures": [
-      {
-        "event_id": "401882846",
-        "competition": "laliga",
-        "date": "2026-10-17T16:00Z",
-        "completed": false,
-        "status_detail": "10/17 - 12:00 PM EDT",
-        "location": "away",
-        "venue": "Estadio La Cartuja",
-        "opponent": "Real Betis",
-        "opponent_short": "Betis",
-        "opponent_abbr": "BET",
-        "opponent_id": "244",
-        "opponent_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png",
-        "goals_for": null,
-        "goals_against": null,
-        "result": null
-      },
       {
         "event_id": "401915399",
         "competition": "ucl",
@@ -4682,9 +4805,58 @@
         "goals_for": null,
         "goals_against": null,
         "result": null
+      },
+      {
+        "event_id": "401882794",
+        "competition": "laliga",
+        "date": "2026-11-29T20:00Z",
+        "completed": false,
+        "status_detail": "TBD",
+        "location": "away",
+        "venue": "Riazor",
+        "opponent": "Deportivo",
+        "opponent_short": "Deportivo",
+        "opponent_abbr": "DEP",
+        "opponent_id": "90",
+        "opponent_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png",
+        "goals_for": null,
+        "goals_against": null,
+        "result": null
       }
     ],
     "results": [
+      {
+        "event_id": "401882846",
+        "competition": "laliga",
+        "date": "2026-10-17T16:30Z",
+        "completed": true,
+        "status_detail": "FT",
+        "location": "away",
+        "venue": "Estadio La Cartuja",
+        "opponent": "Real Betis",
+        "opponent_short": "Betis",
+        "opponent_abbr": "BET",
+        "opponent_id": "244",
+        "opponent_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png",
+        "goals_for": 5,
+        "goals_against": 2,
+        "result": "W",
+        "detail": {
+          "xg": 3.04,
+          "xga": 0.98,
+          "possession": 69.3,
+          "shots": 18,
+          "shots_on_target": 10,
+          "big_chances": 4,
+          "ppda": 8.4,
+          "final_third_entries": 73,
+          "touches_in_box": 31,
+          "high_turnovers": 7,
+          "opponent_xg": 0.98,
+          "opponent_shots": 6,
+          "opponent_possession": 30.7
+        }
+      },
       {
         "event_id": "401915435",
         "competition": "ucl",
@@ -4971,38 +5143,6 @@
           "opponent_xg": 0.25,
           "opponent_shots": 5,
           "opponent_possession": 29.8
-        }
-      },
-      {
-        "event_id": "401882913",
-        "competition": "laliga",
-        "date": "2026-08-23T19:30Z",
-        "completed": true,
-        "status_detail": "FT",
-        "location": "away",
-        "venue": "Estadio Martínez Valero",
-        "opponent": "Elche",
-        "opponent_short": "Elche",
-        "opponent_abbr": "ELC",
-        "opponent_id": "3751",
-        "opponent_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png",
-        "goals_for": 5,
-        "goals_against": 0,
-        "result": "W",
-        "detail": {
-          "xg": 4.13,
-          "xga": 0.72,
-          "possession": 54.4,
-          "shots": 11,
-          "shots_on_target": 7,
-          "big_chances": 8,
-          "ppda": 9.7,
-          "final_third_entries": 48,
-          "touches_in_box": 21,
-          "high_turnovers": 4,
-          "opponent_xg": 0.72,
-          "opponent_shots": 7,
-          "opponent_possession": 45.6
         }
       }
     ]

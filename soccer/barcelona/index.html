@@ -18,6 +18,8 @@ section_theme: barcelona
 {% assign laliga_previous = laliga.snapshots | where: "id", laliga_current.previous_snapshot | first %}
 {% assign ucl_current = ucl.snapshots | last %}
 {% assign ucl_previous = ucl.snapshots | where: "id", ucl_current.previous_snapshot | first %}
+{% assign dashboard_data_date = stats.as_of | default: dashboard.meta.last_updated %}
+{% assign latest_editorial_event = overall.last_match.event_id %}
 
 <script type="application/ld+json">
 {
@@ -26,7 +28,7 @@ section_theme: barcelona
   "name": "Barcelona Season Dashboard",
   "description": {{ page.description | jsonify }},
   "url": {{ page.url | absolute_url | jsonify }},
-  "dateModified": {{ dashboard.meta.last_updated | jsonify }},
+  "dateModified": {{ stats.generated_at | default: dashboard.meta.last_updated | jsonify }},
   "isPartOf": {"@type": "WebSite", "name": "Dual Eights", "url": {{ site.url | jsonify }}}
 }
 </script>
@@ -41,7 +43,7 @@ section_theme: barcelona
         <div class="barca-hero-copy">
           <p class="de-eyebrow"><span></span> Living season tracker</p>
           <h1>Barcelona<br><em>Season Dashboard</em></h1>
-          <p class="barca-hero-update">{{ dashboard.meta.season_label }} · Updated {{ dashboard.meta.last_updated | date: "%B %-d, %Y" }} · {{ dashboard.meta.update_context }}</p>
+          <p class="barca-hero-update">{{ dashboard.meta.season_label }} · Stats updated {{ dashboard_data_date | date: "%B %-d, %Y" }} · La Liga {{ laliga_current.label }} · Champions League {{ ucl_current.label }}<br>Commentary reviewed {{ dashboard.meta.last_updated | date: "%B %-d, %Y" }}</p>
         </div>
         <div class="barca-hero-status" aria-label="Current Barcelona status">
           <div class="barca-hero-record">
@@ -89,7 +91,7 @@ section_theme: barcelona
     <section class="barca-section" id="matches" role="tabpanel" aria-labelledby="barca-tab-matches" tabindex="0">
       <div class="barca-section-heading barca-section-heading--split">
         <div><p class="de-kicker">The fixtures that frame the week</p><h2>Match Center</h2></div>
-        <p>{{ dashboard.editorial.state.changed_this_week }}</p>
+        <p>{% if latest_editorial_event == dashboard.meta.reviewed_event_id %}{{ dashboard.editorial.state.changed_this_week }}{% else %}Latest result: {{ overall.last_match.goals_for }}–{{ overall.last_match.goals_against }} {% if overall.last_match.location == "away" %}at{% else %}vs.{% endif %} {{ overall.last_match.opponent }}. Barcelona is {{ overall.record }} across both competitions, with {{ overall.goals_for }} scored and {{ overall.goals_against }} conceded.{% endif %}</p>
       </div>
 
       <div class="barca-match-grid">
@@ -167,9 +169,12 @@ section_theme: barcelona
       <div class="barca-chase">
         <div class="barca-section-heading"><p class="de-kicker">{{ dashboard.title_race.note }}</p><h3>{{ dashboard.title_race.label }}</h3></div>
         <ul class="barca-chase-list">
-          {% for item in dashboard.title_race.watch %}
-          <li><strong>{{ item.title }}</strong><span>{{ item.text }}</span></li>
-          {% endfor %}
+          {% if laliga.standing %}
+          {% assign nearest_chaser = laliga.table | where_exp: "club", "club.team_id != stats.team.id" | first %}
+          <li><strong>The league table</strong><span>Barcelona is No. {{ laliga.standing.rank }} with {{ laliga.standing.points }} points from {{ laliga.standing.played }} matches.{% if nearest_chaser %} {{ nearest_chaser.name }} has {{ nearest_chaser.points }} from {{ nearest_chaser.played }}.{% endif %} Clubs may have games in hand.</span></li>
+          {% endif %}
+          {% if ucl.standing %}<li><strong>The European baseline</strong><span>{{ ucl.standing.points }} points from {{ ucl.standing.played }} matches and No. {{ ucl.standing.rank }} in the league phase. The top eight advance directly to the round of 16.</span></li>{% endif %}
+          <li><strong>The next tests</strong><span>{% for fixture in overall.fixtures limit: 2 %}{% unless forloop.first %} Then {% endunless %}{% if fixture.location == "away" %}Away at{% else %}Home to{% endif %} {{ fixture.opponent }} on {{ fixture.date | date: "%B %-d" }}.{% endfor %}</span></li>
         </ul>
       </div>
     </section>
@@ -177,7 +182,7 @@ section_theme: barcelona
     <section class="barca-section" id="scorecard" role="tabpanel" aria-labelledby="barca-tab-scorecard" tabindex="0">
       <div class="barca-section-heading barca-section-heading--split">
         <div><p class="de-kicker">Numbers with context</p><h2>Core Scorecard</h2></div>
-        <p>{{ dashboard.meta.data_notice }}</p>
+        <p>{{ laliga_current.sample_note }}; {{ ucl_current.sample_note }}. {{ dashboard.meta.data_notice }} Interpretations reviewed {{ dashboard.meta.last_updated | date: "%B %-d, %Y" }}.</p>
       </div>
 
       <div class="barca-competition-switch" role="tablist" aria-label="Competition">
@@ -200,6 +205,7 @@ section_theme: barcelona
           {% assign competition_previous = ucl_previous %}
         {% endif %}
         {% assign competition_assessments = dashboard.editorial.metric_assessments[competition_key] %}
+        {% assign assessment_snapshot = dashboard.editorial.reviewed_snapshots[competition_key] %}
         <div class="barca-scorecard-panel" id="scorecard-{{ competition_key }}" role="tabpanel" aria-labelledby="switch-{{ competition_key }}" data-competition-panel{% unless competition_key == "laliga" %} hidden{% endunless %}>
           <p class="barca-scorecard-context">
             <strong>{{ competition.label }}:</strong> {{ competition_current.record }} (W-D-L) from {{ competition_current.sample_note }}, ranked against {{ competition_current.teams_ranked }} clubs.
@@ -214,6 +220,7 @@ section_theme: barcelona
                    metric_id=metric_id
                    definitions=dashboard.metric_definitions
                    assessments=competition_assessments
+                   assessment_snapshot=assessment_snapshot
                    current=competition_current
                    previous=competition_previous
                    league_size=competition_current.teams_ranked
@@ -231,7 +238,7 @@ section_theme: barcelona
     <section class="barca-section" id="squad" role="tabpanel" aria-labelledby="barca-tab-squad" tabindex="0">
       <div class="barca-section-heading barca-section-heading--split">
         <div><p class="de-kicker">Every player, both competitions</p><h2>Squad Report</h2></div>
-        <p>Season output with the La Liga and Champions League splits kept separate. Minutes are calculated from match team sheets; scouting notes are editorial.</p>
+        <p>La Liga and Champions League splits stay separate. {{ stats.squad_data_status.note }} Scouting notes reviewed {{ dashboard.meta.last_updated | date: "%B %-d, %Y" }}.</p>
       </div>
 
       {% for group in dashboard.editorial.squad_groups %}
@@ -325,13 +332,13 @@ section_theme: barcelona
 
     <section class="barca-section" id="rotation" role="tabpanel" aria-labelledby="barca-tab-rotation" tabindex="0">
       <div class="barca-section-heading barca-section-heading--split">
-        <div><p class="de-kicker">Two matches a week, one squad</p><h2>Rotation &amp; Congestion Load</h2></div>
+        <div><p class="de-kicker">Club minutes and fixture spacing</p><h2>Rotation &amp; Congestion Load</h2></div>
         <p>{{ dashboard.editorial.rotation_context.note }}</p>
       </div>
 
       <div class="barca-load-summary">
         <div class="barca-load-headline barca-load-headline--{{ congestion.load_level | downcase }}">
-          <p>Current load</p>
+          <p>Recent club load</p>
           <strong>{{ congestion.load_level }}</strong>
           <span>{{ congestion.matches_last_window }} {% if congestion.matches_last_window == 1 %}match{% else %}matches{% endif %} in {{ congestion.window_days }} days</span>
         </div>
@@ -368,7 +375,8 @@ section_theme: barcelona
           <h3>{{ dashboard.editorial.rotation_context.label }} watch</h3>
           <ul>
             {% for item in dashboard.editorial.rotation_context.watch %}
-            <li><strong>{{ item.player }}</strong><span>{{ item.text }}</span></li>
+            {% assign watched_player = rotation.players | where: "player_id", item.player_id | first %}
+            <li><strong>{{ item.player }}</strong><span>{{ watched_player.minutes | default: 0 }} of {{ rotation.available_minutes }} available club minutes{% if watched_player %} ({{ watched_player.share }}%){% endif %} in this window. {{ item.text }}</span></li>
             {% endfor %}
           </ul>
           <div class="barca-schedule-strip">
@@ -462,7 +470,7 @@ section_theme: barcelona
     </section>
 
     <section class="barca-section" id="availability" role="tabpanel" aria-labelledby="barca-tab-availability" tabindex="0">
-      <div class="barca-section-heading"><p class="de-kicker">Material absences only</p><h2>Availability</h2></div>
+      <div class="barca-section-heading"><p class="de-kicker">Squad status and confirmed returns</p><h2>Availability</h2></div>
       <p class="barca-availability-note">{{ dashboard.availability.note }}</p>
 
       {% if stats.injuries.size > 0 %}

@@ -23,6 +23,15 @@ Parameters:
 {% assign current_metric = include.current.metrics[metric_id] %}
 {% assign benchmark_metric = include.benchmark.metrics[metric_id] %}
 {% assign editorial_metric = include.assessments[metric_id] %}
+{% comment %}A daily refresh must not leave a reviewed numeric interpretation beside a different value or rank.{% endcomment %}
+{% if include.assessment_snapshot and include.assessment_snapshot != include.current.id %}
+  {% assign editorial_metric = nil %}
+{% endif %}
+{% if editorial_metric.reviewed_value != nil %}
+  {% if editorial_metric.reviewed_value != current_metric.value or editorial_metric.reviewed_rank != current_metric.rank %}
+    {% assign editorial_metric = nil %}
+  {% endif %}
+{% endif %}
 {% assign rank_metric = current_metric %}
 {% assign rank_caption = rank_context %}
 {% if current_metric.value == nil %}
@@ -93,7 +102,7 @@ Parameters:
     <p><span>{{ rank_caption }}</span><strong>No. {{ rank_metric.rank }}</strong></p>
   </div>
   {% endif %}
-  {% if editorial_metric.interpretation %}<p class="{{ prefix }}-metric-interpretation">{{ editorial_metric.interpretation }}</p>{% endif %}
+  {% if editorial_metric.interpretation %}<p class="{{ prefix }}-metric-interpretation"{% if editorial_metric.reviewed_value != nil %} data-reviewed-value="{{ editorial_metric.reviewed_value }}" data-reviewed-rank="{{ editorial_metric.reviewed_rank }}"{% endif %}>{{ editorial_metric.interpretation }}</p>{% endif %}
   <details class="{{ prefix }}-metric-definition">
     <summary>What this measures</summary>
     <p>{{ definition.description }} {% if definition.direction == "higher" %}Higher is better.{% else %}Lower is better.{% endif %}</p>
