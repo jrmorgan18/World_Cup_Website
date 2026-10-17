@@ -18,8 +18,10 @@ hero_wide: true
 hero_alt: "Brock Purdy throws during San Francisco’s Week 5 win in Seattle"
 hero_credit: "Kym Fortino / San Francisco 49ers"
 hero_credit_url: "https://www.49ers.com/photos/game-photos-49ers-vs-seahawks-week-5"
-home_feature: true
-home_recent: false
+home_feature: false
+home_recent: true
+home_recent_front: true
+home_recent_label: "Efficiency & Power"
 feature_label: "Week 5 efficiency & power"
 ---
 
