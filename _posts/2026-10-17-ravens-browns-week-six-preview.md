@@ -12,12 +12,12 @@ excerpt: "With Lamar Jackson out again, Derrick Henry faces Cleveland’s vulner
 read_time: 15
 suppress_article_prompts: true
 source_docx: "articles/Week 6_ Ravens-Browns Preview.docx"
-hero_image: /assets/images/ravens/week-five-falcons-2026/tyler-huntley-postgame-falcons.jpg
-thumbnail: /assets/images/ravens/week-five-falcons-2026/tyler-huntley-postgame-falcons.jpg
+hero_image: /assets/images/ravens/week-one-colts-2026/kyle-hamilton-colts-week-one.jpg
+thumbnail: /assets/images/ravens/week-one-colts-2026/kyle-hamilton-colts-week-one.jpg
 hero_wide: true
-hero_alt: "Tyler Huntley greets a teammate after the Ravens’ Week 5 overtime win in Atlanta"
+hero_alt: "Kyle Hamilton tackles Colts receiver Josh Downs during the Ravens’ Week 1 win in Indianapolis"
 hero_credit: "Shawn Hubbard / Baltimore Ravens Photos"
-hero_credit_url: "https://www.baltimoreravens.com/photos/top-shots-from-the-ravens-overtime-win-over-falcons"
+hero_credit_url: "https://www.baltimoreravens.com/photos/game-action-gallery-ravens-at-colts-week-1"
 home_feature: true
 home_recent: false
 ravens_feature: true
