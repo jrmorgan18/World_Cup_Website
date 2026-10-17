@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-16T11:56:15Z",
-  "as_of": "2026-10-16",
+  "generated_at": "2026-10-17T11:12:13Z",
+  "as_of": "2026-10-17",
   "season": 2026,
   "season_label": "2026-27",
   "team": {
@@ -883,14 +883,14 @@
           "abbreviation": "DEP",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png",
           "rank": 8,
-          "played": 8,
+          "played": 9,
           "wins": 2,
-          "draws": 4,
+          "draws": 5,
           "losses": 2,
-          "goals_for": 12,
-          "goals_against": 11,
+          "goals_for": 13,
+          "goals_against": 12,
           "goal_difference": 1,
-          "points": 10
+          "points": 11
         },
         {
           "team_id": "85",
@@ -1027,14 +1027,14 @@
           "abbreviation": "LEV",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png",
           "rank": 17,
-          "played": 7,
+          "played": 8,
           "wins": 1,
-          "draws": 3,
+          "draws": 4,
           "losses": 3,
-          "goals_for": 11,
-          "goals_against": 15,
+          "goals_for": 12,
+          "goals_against": 16,
           "goal_difference": -4,
-          "points": 6
+          "points": 7
         },
         {
           "team_id": "3751",
@@ -4251,8 +4251,8 @@
   "injuries": [],
   "rotation": {
     "window_days": 21,
-    "window_start": "2026-09-25",
-    "window_end": "2026-10-16",
+    "window_start": "2026-09-26",
+    "window_end": "2026-10-17",
     "matches_in_window": 2,
     "available_minutes": 180,
     "players": [
@@ -4427,7 +4427,7 @@
     "load_level": "Light",
     "shortest_rest_recent": 3,
     "average_rest_recent": 3.0,
-    "matches_next_14_days": 3,
+    "matches_next_14_days": 4,
     "matches_next_30_days": 6,
     "shortest_rest_upcoming": 3,
     "recent": [
