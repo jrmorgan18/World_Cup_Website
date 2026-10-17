@@ -2,6 +2,15 @@
   "season": 2026,
   "through_week": 5,
   "matchup_week": 6,
+  "ranking_snapshot": {
+    "source_file": "_data/nfl_dashboard.json",
+    "source_url": "/nfl/rankings/",
+    "rating_week": 5,
+    "rating_week_complete": true,
+    "data_through": "2026-10-12",
+    "generated_at": "2026-10-13T18:50:23.217151-04:00",
+    "note": "Completed Week 5 team rankings, matching the preview's statistical window. DEPI is the team ranking, not the quarterback-adjusted Week 6 matchup projection."
+  },
   "sources": {
     "game": "https://www.clevelandbrowns.com/game-day/2026/reg-week6/browns-vs-ravens/",
     "overview": "https://www.sharpfootballanalysis.com/fantasy/ravens-browns-week-6-fantasy-football-preview-nfl-worksheet-rich-hribar-2026/",
@@ -13,12 +22,16 @@
     "BAL": {
       "record": "4–1",
       "ppg": 29.2,
-      "ypp": 6.4
+      "ypp": 6.4,
+      "efficiency_rank": 5,
+      "depi_rank": 4
     },
     "CLE": {
       "record": "3–2",
       "ppg": 18.6,
-      "ypp": 4.7
+      "ypp": 4.7,
+      "efficiency_rank": 24,
+      "depi_rank": 29
     }
   },
   "article_reported": {

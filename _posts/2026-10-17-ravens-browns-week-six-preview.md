@@ -12,10 +12,10 @@ excerpt: "With Lamar Jackson out again, Derrick Henry faces Cleveland’s vulner
 read_time: 15
 suppress_article_prompts: true
 source_docx: "articles/Week 6_ Ravens-Browns Preview.docx"
-hero_image: /assets/images/ravens/week-five-falcons-2026/derrick-henry-falcons-week-five.jpg
-thumbnail: /assets/images/ravens/week-five-falcons-2026/derrick-henry-falcons-week-five.jpg
+hero_image: /assets/images/ravens/week-five-falcons-2026/tyler-huntley-postgame-falcons.jpg
+thumbnail: /assets/images/ravens/week-five-falcons-2026/tyler-huntley-postgame-falcons.jpg
 hero_wide: true
-hero_alt: "Derrick Henry carries through a Falcons tackle during the Ravens’ Week 5 win in Atlanta"
+hero_alt: "Tyler Huntley greets a teammate after the Ravens’ Week 5 overtime win in Atlanta"
 hero_credit: "Shawn Hubbard / Baltimore Ravens Photos"
 hero_credit_url: "https://www.baltimoreravens.com/photos/top-shots-from-the-ravens-overtime-win-over-falcons"
 home_feature: true
@@ -47,8 +47,8 @@ ravens_feature_mark_detail: "Preview"
 <p data-source-paragraph="8">Meanwhile, Cleveland&#x27;s offense has struggled to protect Deshaun Watson and generate anything resembling a consistent running game. That should create opportunities for a Ravens defense looking to build upon its performance in Atlanta.</p>
 
 <figure class="ravens-article-figure ravens-article-figure--graphic">
-  <a href="{{ '/assets/images/ravens/browns-week-six-2026/ravens-browns-at-a-glance.svg' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size Ravens–Browns Week 6 at a glance"><img src="{{ '/assets/images/ravens/browns-week-six-2026/ravens-browns-at-a-glance.svg' | relative_url }}" alt="Ravens–Browns Week 6 at a glance" loading="lazy" decoding="async"></a>
-  <figcaption>Through Week 5. Scoring and yards per play: <a href="https://www.sharpfootballanalysis.com/fantasy/ravens-browns-week-6-fantasy-football-preview-nfl-worksheet-rich-hribar-2026/">Sharp Football Analysis</a>. Player totals and matchup context are reported in this preview. <a href="https://www.clevelandbrowns.com/game-day/2026/reg-week6/browns-vs-ravens/">Official game information</a>. <a href="{{ '/assets/images/ravens/browns-week-six-2026/ravens-browns-at-a-glance.svg' | relative_url }}" target="_blank" rel="noopener">View full-size graphic</a>.</figcaption>
+  <a href="{{ '/assets/images/ravens/browns-week-six-2026/ravens-browns-at-a-glance.svg?v=20261017-ranks' | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size Ravens–Browns Week 6 at a glance"><img src="{{ '/assets/images/ravens/browns-week-six-2026/ravens-browns-at-a-glance.svg?v=20261017-ranks' | relative_url }}" alt="Ravens–Browns Week 6 at a glance, including both teams’ Efficiency Index and DEPI ranks through Week 5" loading="lazy" decoding="async"></a>
+  <figcaption>Through Week 5. Scoring and yards per play: <a href="https://www.sharpfootballanalysis.com/fantasy/ravens-browns-week-6-fantasy-football-preview-nfl-worksheet-rich-hribar-2026/">Sharp Football Analysis</a>. Efficiency Index and DEPI team ranks: <a href="{{ '/nfl/rankings/' | relative_url }}">Dual Eights rankings</a>, through completed Week 5. Player totals and matchup context are reported in this preview. <a href="https://www.clevelandbrowns.com/game-day/2026/reg-week6/browns-vs-ravens/">Official game information</a>. <a href="{{ '/assets/images/ravens/browns-week-six-2026/ravens-browns-at-a-glance.svg?v=20261017-ranks' | relative_url }}" target="_blank" rel="noopener">View full-size graphic</a>.</figcaption>
 </figure>
 
 <h2 data-source-paragraph="9"><strong>1. Can the Ravens exploit Cleveland&#x27;s explosive run problem?</strong></h2>
@@ -66,6 +66,11 @@ ravens_feature_mark_detail: "Preview"
 <p data-source-paragraph="15">The Ravens ran for 208 yards against Atlanta last Sunday, including 102 from Henry and 73 from Justice Hill. Hill&#x27;s 47-yard run was particularly important because it demonstrated that Baltimore can still create an explosive rushing play without requiring the defense to worry about Jackson keeping the ball.</p>
 
 <p data-source-paragraph="16">Henry has 476 yards on 113 carries this season, averaging 4.2 per attempt. He has been productive, although his individual efficiency has not been quite as impressive as the team&#x27;s rushing numbers. Much of the Ravens overall rushing advantage has been created through a combination of quarterback runs, secondary backs and explosive gains rather than Henry consistently overwhelming every opponent.</p>
+
+<figure class="ravens-article-figure">
+  <img src="{{ '/assets/images/ravens/week-five-falcons-2026/derrick-henry-falcons-week-five.jpg' | relative_url }}" alt="Derrick Henry carries through a Falcons tackle during the Ravens’ Week 5 win in Atlanta" loading="lazy" decoding="async">
+  <figcaption>Henry ran for 102 yards in Atlanta. Cleveland’s vulnerability to explosive runs puts the Ravens’ ground game at the center of this week’s matchup. Photo: <a href="https://www.baltimoreravens.com/photos/top-shots-from-the-ravens-overtime-win-over-falcons">Shawn Hubbard / Baltimore Ravens Photos</a>.</figcaption>
+</figure>
 
 <p data-source-paragraph="17">Against Cleveland, Doyle should have opportunities to create those gains deliberately.</p>
 

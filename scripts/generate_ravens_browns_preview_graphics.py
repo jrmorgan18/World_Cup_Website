@@ -25,23 +25,28 @@ def overview(data):
     body = ""
     for x, team, label in [(50,"BAL","THE RAVENS"), (615,"CLE","BROWNS")]:
         row = data["overview"][team]
-        body += card(x,160,535,235) + text(x+25,204,label,27,GOLD,800)
+        body += card(x,160,535,350) + text(x+25,204,label,27,GOLD,800)
         body += text(x+510,204,row["record"],30,WHITE,800,"end")
         for dx, key, label in [(25,"ppg","Points / game"),(285,"ypp","Yards / play")]:
             body += text(x+dx,277,f'{row[key]:.1f}',46,WHITE,800)
             body += text(x+dx,318,label,23,WHITE,700)
-        body += text(x+25,365,"OFFENSE · FIRST FIVE GAMES",18,PURPLE,800)
+        body += f'<path d="M{x+25} 348 H{x+510}" stroke="#493555"/>'
+        for dx, key, label, color in [(25,"efficiency_rank","Efficiency Index",PURPLE),
+                                      (285,"depi_rank","DEPI",GOLD)]:
+            body += text(x+dx,412,f'#{row[key]}',43,color,800)
+            body += text(x+dx,450,label,23,WHITE,800)
+        body += text(x+25,484,"LEAGUE RANKS · THROUGH WEEK 5",18,MUTED,700)
     for i,(number,label,line1,line2) in enumerate([
         ("2nd","Huntley start in a row","Lamar Jackson ruled out","Backup won in Atlanta"),
         ("476","Henry rushing yards","113 carries · 4.2 per carry","A different run-defense test"),
         ("19","Cleveland sacks allowed","Eight against the Jets","An opening for Hendrickson")
     ]):
         x=50+i*375
-        body += card(x,430,350,200)+text(x+25,485,number,43,GOLD,800)
-        body += text(x+25,525,label,23,WHITE,800)+text(x+25,568,line1,20,MUTED)+text(x+25,602,line2,20,MUTED)
+        body += card(x,545,350,200)+text(x+25,600,number,43,GOLD,800)
+        body += text(x+25,640,label,23,WHITE,800)+text(x+25,683,line1,20,MUTED)+text(x+25,717,line2,20,MUTED)
     return frame("RAVENS at BROWNS","Sunday, October 18 · 1 PM ET · Huntington Bank Field · FOX",body,
-                 "The Ravens are 4-1 and score 29.2 points per game with 6.4 yards per play. Cleveland is 3-2 with 18.6 points per game and 4.7 yards per play. Huntley starts again with Jackson out.",
-                 "SOURCES: SHARP FOOTBALL · AUTHOR’S PREVIEW · OFFICIAL GAME INFORMATION")
+                 f'The Ravens are 4-1, score 29.2 points per game with 6.4 yards per play, and rank No. {data["overview"]["BAL"]["efficiency_rank"]} in the Efficiency Index and No. {data["overview"]["BAL"]["depi_rank"]} in DEPI. Cleveland is 3-2, scores 18.6 points per game with 4.7 yards per play, and ranks No. {data["overview"]["CLE"]["efficiency_rank"]} in Efficiency and No. {data["overview"]["CLE"]["depi_rank"]} in DEPI. Team ranks are through completed Week 5. Huntley starts again with Jackson out.',
+                 "SOURCES: DUAL EIGHTS RANKINGS · SHARP FOOTBALL · AUTHOR’S PREVIEW · OFFICIAL GAME INFO",850)
 
 
 def ground(data):
@@ -108,6 +113,8 @@ def injuries():
 def main():
     data=json.loads((OUT/"preview-stat-sources.json").read_text(encoding="utf-8"))
     assert data["season"]==2026 and data["through_week"]==5
+    assert data["ranking_snapshot"]["rating_week"] == data["through_week"]
+    assert data["ranking_snapshot"]["rating_week_complete"] is True
     for name,svg in [("at-a-glance",overview(data)),("ground-game",ground(data)),
                      ("pressure",pressure(data)),("injuries",injuries())]:
         (OUT/f"ravens-browns-{name}.svg").write_text(svg,encoding="utf-8")
