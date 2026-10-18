@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-17T22:42:06Z",
-  "as_of": "2026-10-17",
+  "generated_at": "2026-10-18T11:45:34Z",
+  "as_of": "2026-10-18",
   "season": 2026,
   "season_label": "2026-27",
   "team": {
@@ -3924,7 +3924,7 @@
       "position": "Defender",
       "position_abbr": "D",
       "citizenship": "Spain",
-      "age": 22,
+      "age": 23,
       "headshot": null,
       "competitions": {
         "laliga": {
@@ -4383,8 +4383,8 @@
   "injuries": [],
   "rotation": {
     "window_days": 21,
-    "window_start": "2026-09-26",
-    "window_end": "2026-10-17",
+    "window_start": "2026-09-27",
+    "window_end": "2026-10-18",
     "matches_in_window": 3,
     "available_minutes": 270,
     "players": [
