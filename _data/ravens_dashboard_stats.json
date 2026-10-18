@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-17T14:11:26Z",
-  "as_of": "2026-10-17",
+  "generated_at": "2026-10-18T14:33:26Z",
+  "as_of": "2026-10-18",
   "season": 2026,
   "benchmark_season": 2025,
   "efficiency_model": {
@@ -841,7 +841,7 @@
     }
   },
   "league_efficiency_rankings": {
-    "label": "Games through October 17",
+    "label": "Games through October 18",
     "sample_note": "Completed regular-season games; early-season sample",
     "teams": [
       {
@@ -1370,13 +1370,13 @@
       {
         "source_label": "SumerSports",
         "source_url": "https://sumersports.com/players/wide-receiver/",
-        "period_label": "Updated Oct. 17, 2026",
+        "period_label": "Updated Oct. 18, 2026",
         "label": "Flowers YPRR",
         "value": "4.45",
         "rank": 1,
         "rank_group": "WR",
         "season": 2026,
-        "source_updated_at": "2026-10-17T08:42:38.597000+00:00",
+        "source_updated_at": "2026-10-18T08:37:05.741000+00:00",
         "routes": 91,
         "receiving_yards": 405,
         "qualified_receivers": 117,
@@ -1772,6 +1772,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-10-17T14:11:26Z"
+    "retrieved_at": "2026-10-18T14:33:26Z"
   }
 }
