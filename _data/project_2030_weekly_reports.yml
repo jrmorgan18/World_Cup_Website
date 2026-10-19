@@ -1,4 +1,324 @@
 reports:
+  - id: "2026-10-18"
+    group: "prospects"
+    group_label: "Prospects"
+    published: "October 19, 2026"
+    window: "October 12-18, 2026"
+    week_ending: "October 18, 2026"
+    source_note: "Official club, league and federation records lead this report, followed by original local coverage in the relevant language. Club releases republished by another outlet retain their official origin; secondary records fill identified gaps only. Every current prospect and research alias was checked. Recaps separate verified records and attributed observations from the interpretation in development reads. Minutes are regulation-time totals derived from the cited substitution convention, excluding added time; meaningful conflicts are disclosed in the relevant entry. MLS secondary assists are distinguished from final-pass assists. The cutoff is Sunday, October 18, in the site's Eastern time zone; Monday fixtures are excluded."
+    summary:
+      biggest_risers: "Peyton Miller leads with two primary assists and a secondary MLS assist across two starts. Cavan Sullivan paired a Chicago assist with an influential Charlotte performance, Frankie Westfield added two-way contributions, Diego Kochen rescued a point with a last-gasp penalty save, Justin Ellis returned with an assist, Luca Bombino gained a longer Championship opportunity, and Mathis Albert earned Bundesliga first-team minutes."
+      issues_to_monitor: "Mehmeti conceded a penalty and had two shortened starts; Ferree remained outside San Diego's goalkeeper rotation. Wiley, Pukstas, Tsakiris, Paredes and Campbell had no action amid injury absences. Cremaschi had no senior fixture inside the window. Gozo did play: a full Palace U21 start on Sunday, not another empty week."
+      best_story: "Miller's varied chance creation is the week's clearest development signal. Next week, watch whether Bombino's longer outing becomes a start, whether Gozo and Albert earn further senior opportunities, Downs's role around the Open Cup final, and the injured players' verified training returns. Keeper evaluations should focus on decisions and identifiable interventions, not saves or scorelines alone."
+    players:
+      - profile: "caleb-wiley"
+        name: "Caleb Wiley"
+        club: "Preston North End"
+        trend: "✚"
+        direction: "insufficient"
+        direction_label: "Injured"
+        context: "0 appearances; Championship"
+        recap: "Wiley remained unavailable for Preston's 4-0 loss at Birmingham on October 13 and 4-1 loss at Wrexham on October 17. Current secondary availability records continue to list an injury; no official new clearance or reliable revised return date was located. Those team results are not performance evidence against an absent player."
+        development_read: "No performance evaluation this week. Getting healthy and back into Championship training remains the relevant development milestone, not Preston's goals conceded without him."
+        sources:
+          - { label: "Wrexham match report and team (official Preston)", url: "https://www.pnefc.net/news/2026/october/17/match-report---wrexham-x-x-preston-north-end/" }
+          - { label: "Birmingham-Preston availability (secondary FotMob)", url: "https://www.fotmob.com/matches/preston-north-end-vs-birmingham-city/2eqp3x" }
+          - { label: "Alexander's injury update (local/original Hayters reporting)", url: "https://hayters.com/alexander-gives-updates-on-preston-north-ends-injury-nightmare-after-millwall-loss/" }
+      - profile: "damion-downs"
+        name: "Damion Downs"
+        club: "St. Louis CITY SC"
+        trend: "→"
+        direction: "steady"
+        direction_label: "Longer substitute opportunity"
+        context: "1 MLS appearance, 0 starts, 20 regulation minutes; 0 goals/assists"
+        recap: "Downs was unused in Wednesday's 0-0 draw with Vancouver, then replaced Simon Becher against Minnesota in Saturday's 3-2 defeat. CITY's box lists the change at 70 minutes, giving 20 regulation minutes; Sky's event feed records 69, a one-minute discrepancy. The secondary feed credits him with setting up Navarro's saved effort at 75 minutes and having a shot blocked at 84. No goal or assist was credited."
+        development_read: "A meaningful improvement on last week's stoppage-time cameo, with some attacking involvement, but still a substitute role rather than evidence of a starting breakthrough. Keep the outlook even while watching whether this longer opportunity carries into the Open Cup final."
+        sources:
+          - { label: "Vancouver draw and unused substitutes (official CITY)", url: "https://www.stlcitysc.com/news/match-report-st-louis-city-sc-clinches-mls-cup-playoff-spot-sets-unbeaten-streak-record-with-0-0-draw-against-vancouver-whitecaps-fc" }
+          - { label: "Minnesota report and substitutions (official CITY)", url: "https://www.stlcitysc.com/news/match-report-st-louis-city-sc-falls-3-2-to-minnesota-united-fc-at-allianz-field" }
+          - { label: "Minnesota event detail (secondary Sky Sports)", url: "https://www.skysports.com/football/minnesota-united-fc-vs-st-louis-city-sc/7475943758635589232" }
+      - profile: "zavier-gozo"
+        name: "Zavier Gozo"
+        club: "Crystal Palace"
+        trend: "→"
+        direction: "steady"
+        direction_label: "U21 minutes after international break"
+        context: "1 verified U21 start, 90 regulation minutes; 0 goals"
+        recap: "Gozo was an unused substitute in Palace U21s' 4-1 International Cup loss to Anderlecht on October 14, then started the 4-1 Premier League 2 win at Leeds on October 18 and was replaced at 90 minutes. Leeds' official report also records his booking. He did not score; a trustworthy individual assist total was not available. Palace's Anderlecht introduction calls him a starter, but its detailed team and unused-substitute list say otherwise; the full teamsheet is used here."
+        development_read: "Sunday's substantial U21 outing matters: this was not a week without competitive football. It is a useful reintegration step after the international break, while senior selection remains the bigger test. The week does not materially change his 2030 outlook."
+        sources:
+          - { label: "Anderlecht report and full team list (official Palace)", url: "https://www.cpfc.co.uk/news/match-reports/u21s-report-palace-suffer-defeat-to-anderlecht-in-international-cup/" }
+          - { label: "Leeds-Palace U21 report and substitutions (official Leeds)", url: "https://www.leedsunited.com/en/news/u21s-beaten-by-crystal-palace-in-premier-league-2-clash" }
+      - profile: "julian-hall"
+        name: "Julian Hall"
+        club: "New York Red Bulls"
+        trend: "→"
+        direction: "steady"
+        direction_label: "Chances without a finish"
+        context: "2 MLS starts, 180 minutes at center forward; 0 goals/assists"
+        recap: "Hall completed both the 2-1 defeat at D.C. United on October 14 and 2-0 home loss to Toronto on October 17. D.C. local coverage describes a saved close-range effort and his lofted pass creating a good Forsberg chance. Against Toronto he forced a save, headed wide and had a late finish ruled out for an earlier offside. New York could not equalize at D.C. despite playing against ten men from the 68th minute."
+        development_read: "There was attacking involvement but no scoring return, and the team struggled to turn promising moments into goals. Two full starts retain developmental value; this is an even week rather than evidence that one goalless spell has undone his progress."
+        sources:
+          - { label: "D.C.-Red Bulls facts and lineup (official D.C.)", url: "https://www.dcunited.com/news/post-match-facts-dcvrbny-x9258" }
+          - { label: "D.C. match observations (local District Press)", url: "https://thedistrictpress.com/2026/10/14/dc-united-captures-atlantic-cup-with-important-win-over-new-york-red-bulls/" }
+          - { label: "Toronto match observations (local Front Row Soccer)", url: "https://www.frontrowsoccer.com/2026/10/17/a-night-to-forget/" }
+          - { label: "Toronto box score (official Red Bulls release, republished)", url: "https://www.oursportscentral.com/services/releases/red-bulls-suffer-2-0-defeat-to-toronto-fc-at-sports-illustrated-stadium/n-6422477" }
+      - profile: "justin-ellis"
+        name: "Justin Ellis"
+        club: "Orlando City"
+        trend: "↑"
+        direction: "rising"
+        direction_label: "Productive return from illness"
+        context: "1 MLS substitute appearance, 20 regulation minutes; 1 primary assist"
+        recap: "Ellis missed Wednesday's 3-3 draw at Toronto through illness, according to local reporting. He returned for Saturday's 4-1 win over D.C., replacing Daryl Dike at 70 minutes. Orlando credits him with the primary assist on Marco Pasalic's 90+5 finish after his through ball released the scorer; Brekalo received the secondary assist. Ellis did not score."
+        development_read: "Returning promptly and making a decisive attacking contribution is a mild positive. The assist is better evidence than simply being available again, though twenty regulation minutes do not establish a larger starting role."
+        sources:
+          - { label: "Toronto recap and illness explanation (local The Mane Land)", url: "https://themaneland.com/2026/10/14/orlando-city-vs-toronto-fc-final-score-3-3-as-road-defense-again-an-issue-for-ocsc/" }
+          - { label: "D.C. win, substitutions and scoring credits (official Orlando)", url: "https://www.orlandocitysc.com/news/match-report-orlando-city-sc-dominates-in-4-1-win-over-d-c-united-x3543" }
+      - profile: "adri-mehmeti"
+        name: "Adri Mehmeti"
+        club: "New York Red Bulls"
+        trend: "↓"
+        direction: "falling"
+        direction_label: "Penalty concession and shorter outings"
+        context: "2 MLS midfield starts, 102 regulation minutes; 0 goals/assists"
+        recap: "Mehmeti started both losses, leaving at 57 minutes in the 2-1 defeat at D.C. and at halftime in the 2-0 defeat to Toronto. D.C.'s official record and local recap identify his foul on Tai Baribo as the incident that produced the early penalty. He had no credited goal or assist. The total follows the Red Bulls' published substitution times; some event feeds differ by one minute."
+        development_read: "The penalty concession is a specific negative decision, and two early withdrawals limit the positive evidence from this week. This is a short-term downward assessment, not a judgment based solely on the two team defeats or a reason to discard his earlier strong midfield performances."
+        sources:
+          - { label: "D.C. match facts (official D.C.)", url: "https://www.dcunited.com/news/post-match-facts-dcvrbny-x9258" }
+          - { label: "Penalty and match context (local District Press)", url: "https://thedistrictpress.com/2026/10/14/dc-united-captures-atlantic-cup-with-important-win-over-new-york-red-bulls/" }
+          - { label: "D.C. substitutions (official Red Bulls release, republished)", url: "https://www.oursportscentral.com/services/releases/red-bulls-suffers-2-1-loss-to-d-c-united-at-audi-field/n-6421371" }
+          - { label: "Toronto substitutions (official Red Bulls release, republished)", url: "https://www.oursportscentral.com/services/releases/red-bulls-suffer-2-0-defeat-to-toronto-fc-at-sports-illustrated-stadium/n-6422477" }
+      - profile: "neil-pierre"
+        name: "Neil Pierre"
+        club: "Philadelphia Union"
+        trend: "→"
+        direction: "steady"
+        direction_label: "Two more full center-back starts"
+        context: "2 MLS starts, 180 minutes at center back; 0 goals/assists"
+        recap: "Pierre completed Wednesday's 3-1 win at Chicago and Saturday's 2-2 draw with Charlotte. Chicago played the second half with ten men after Jack Elliott's dismissal. Philly Soccer Page praised Pierre's work disrupting Chicago's combinations but noted late fouls; the official box records a stoppage-time booking. He had no goal or assist, and Philadelphia kept no clean sheet in either match."
+        development_read: "Another full two-game workload at center back is useful trust and experience at his age. The disruptive defending is encouraging, while late discipline and four points against very different game states make this a consolidation week rather than a major new rise."
+        sources:
+          - { label: "Chicago box score (official Union)", url: "https://www.philadelphiaunion.com/news/box-score-philadelphia-union-3-chicago-fire-fc-1" }
+          - { label: "Chicago individual analysis (local Philly Soccer Page)", url: "https://phillysoccerpage.net/2026/10/15/player-ratings-chicago-fire-fc-1-3-philadelphia-union/" }
+          - { label: "Charlotte report and team (official Union)", url: "https://www.philadelphiaunion.com/news/box-score-philadelphia-union-2-charlotte-fc-2-x6476" }
+      - profile: "chris-brady"
+        name: "Chris Brady"
+        club: "Chicago Fire"
+        trend: "→"
+        direction: "steady"
+        direction_label: "Mixed results, measured keeper assessment"
+        context: "2 MLS starts, 180 minutes; 7 club-published saves, 4 conceded, 0 clean sheets"
+        recap: "Brady played all of the 3-1 home loss to Philadelphia and 1-0 defeat at New England. Chicago's official boxes publish four saves against the Union and three against the Revolution. The Fire were reduced to ten men before halftime on Wednesday. Saturday included a near-post denial of Peyton Miller; Matt Polster scored the game's only goal. No reliable new evidence of an individual error causing either result was identified in the local reports checked."
+        development_read: "Neither the save count nor the four goals conceded is a complete performance grade. The numerical disadvantage matters, and this week's reporting does not justify repeating last week's specific decision-making criticism without fresh evidence. Keep the outlook even while continuing to watch command of the box and proactive choices."
+        sources:
+          - { label: "Philadelphia recap and save total (official Chicago)", url: "https://www.chicagofirefc.com/news/match-recap-chicago-fire-fc-drops-last-match-of-homestand-against-philadelphia-union" }
+          - { label: "New England recap and save total (official Chicago)", url: "https://www.chicagofirefc.com/news/match-recap-chicago-fire-fc-clinches-2026-mls-cup-playoffs-berth-following-road-loss-to-the-new-england-revolution" }
+          - { label: "New England match analysis (local MIR97)", url: "https://www.meninred97.com/pyrrhic-clinch-new-england-revolution-1-chicago-fire-0/" }
+      - profile: "rokas-pukstas"
+        name: "Rokas Pukstas"
+        club: "Middlesbrough"
+        trend: "✚"
+        direction: "insufficient"
+        direction_label: "Hamstring injury"
+        context: "0 appearances; Championship"
+        recap: "Pukstas remained out of Middlesbrough's matches against Stoke and Cardiff with a hamstring injury. Manager Kim Hellberg's update, reported by Hayters and corroborated by secondary U.S. coverage, indicated he was unlikely to return during October. That is a manager's expectation, not a confirmed November comeback date."
+        development_read: "No performance evaluation this week. The hamstring setback interrupts his opportunity to establish himself in England; training clearance and a controlled return matter more than any weekly form marker."
+        sources:
+          - { label: "Hellberg injury update (original Hayters reporting, republished)", url: "https://sports.yahoo.com/articles/hellberg-gives-latest-injury-updates-135900084.html" }
+          - { label: "Hamstring absence and manager comments (secondary SBI)", url: "https://sbisoccer.com/2026/10/rokas-pukstas-sidelined-with-hamstring-injury-set-to-miss-rest-of-october" }
+      - profile: "cavan-sullivan"
+        name: "Cavan Sullivan"
+        club: "Philadelphia Union"
+        trend: "↑"
+        direction: "rising"
+        direction_label: "Creative contribution and teenage milestone"
+        context: "2 MLS starts, 170 regulation minutes; 0 goals, 1 primary assist"
+        recap: "Sullivan started both matches: 80 minutes in the 3-1 win at Chicago and all 90 in the 2-2 Charlotte draw. His backheel set up Bruno Damiani's go-ahead goal in Chicago, with the club recording his 14th MLS assist and a teenage single-season goal-contribution record. Chicago were down to ten for the second half. Against Charlotte he scored a fine goal that was called back for being just a hair offside, created two chances, and led the match in shots (five) and touches in the opposition box (10). He also had a late close-range effort saved, finishing without an official goal or assist despite his attacking influence. The Charlotte page's scoring table mistakenly repeats an earlier match; its narrative and local reporting establish Saturday's actual scoring."
+        development_read: "Another strong attacking week, not just a Chicago assist followed by an empty Charlotte appearance. The narrowly disallowed finish, two chances created and match-leading box involvement show how consistently he threatened Charlotte even without an official goal contribution. His quick creative execution and sustained starting responsibility strengthen his case; Chicago's second-half man advantage still tempers that game's evidence."
+        sources:
+          - { label: "Chicago assist, minutes and milestone (official Union)", url: "https://www.philadelphiaunion.com/news/box-score-philadelphia-union-3-chicago-fire-fc-1" }
+          - { label: "Chicago performance analysis (local Philly Soccer Page)", url: "https://phillysoccerpage.net/2026/10/15/player-ratings-chicago-fire-fc-1-3-philadelphia-union/" }
+          - { label: "Charlotte narrative and lineup (official Union)", url: "https://www.philadelphiaunion.com/news/box-score-philadelphia-union-2-charlotte-fc-2-x6476" }
+          - { label: "Charlotte scoring and chances cross-check (local Philly Soccer Page)", url: "https://phillysoccerpage.net/2026/10/17/match-report-philadelphia-union-2-2-charlotte-fc/" }
+          - { label: "Charlotte narrow offside and Iloski chance (local Philadelphia Inquirer)", url: "https://www.inquirer.com/soccer/philadelphia-union-charlotte-fc-score-bruno-damiani-20261017.html" }
+          - { label: "Charlotte shots and opposition-box touches (secondary Sports Illustrated)", url: "https://www.si.com/soccer/cavan-sullivan-record-union-survive-charlotte/app/" }
+      - profile: "niko-tsakiris"
+        name: "Niko Tsakiris"
+        club: "San Jose Earthquakes"
+        trend: "✚"
+        direction: "insufficient"
+        direction_label: "Injury absence continues"
+        context: "0 appearances; MLS"
+        recap: "Tsakiris was absent from the teamsheets for the 1-1 draw at Real Salt Lake and 1-1 draw with Nashville. Secondary availability records continue to list him injured and suggest early November, but no new club-confirmed return timetable was found. The report therefore does not turn that aggregator estimate into a firm medical forecast or infer a fresh diagnosis."
+        development_read: "No performance evaluation this week. His injury absence is not evidence of a selection demotion; the next meaningful update is a verified training return and availability clearance."
+        sources:
+          - { label: "Salt Lake lineup (official RSL release, republished)", url: "https://www.oursportscentral.com/services/releases/rsl-suffer-heartbreak-at-the-death-in-1-1-draw-with-san-jose/n-6421408" }
+          - { label: "Nashville team and recap (official San Jose)", url: "https://www.sjearthquakes.com/news/match-recap-earthquakes-1-nashville-sc-1-x7762" }
+          - { label: "Current availability estimate (secondary FotMob)", url: "https://www.fotmob.com/de/matches/san-jose-earthquakes-vs-real-salt-lake/1fy443" }
+      - profile: "paxten-aaronson"
+        name: "Paxten Aaronson"
+        club: "Colorado Rapids"
+        trend: "→"
+        direction: "steady"
+        direction_label: "Assist amid changing minutes"
+        context: "2 MLS appearances, 1 start, 88 regulation minutes; 1 MLS secondary assist"
+        recap: "Aaronson started the 2-2 draw with Minnesota on October 14 and left at 60 minutes. He helped create Darren Yapi's first-half stoppage-time goal, turning and moving the ball wide to Keegan Rosenberry, who supplied the final delivery; Colorado credits Aaronson with the secondary MLS assist. He then entered at 62 minutes in Saturday's 0-0 draw at Portland. He had no goal or further assist."
+        development_read: "The goal-building involvement is a positive piece of attacking-midfield evidence, but the second match brought a bench role and little team attacking output. The week is even overall: useful contribution, without a clear expansion of responsibility."
+        sources:
+          - { label: "Minnesota recap and scoring sequence (official Colorado)", url: "https://www.coloradorapids.com/news/recap-yapi-minoungou-score-as-rapids-split-points-with-minnesota-united-fc" }
+          - { label: "Minnesota substitutions (official Colorado release, republished)", url: "https://vcpsoccer.com/2026/10/15/rapids-stretch-home-unbeaten-run-to-nine-in-draw-with-minnesota/" }
+          - { label: "Portland completed box and substitutions (official Timbers)", url: "https://www.timbers.com/news/recap-portland-timbers-colorado-rapids-play-to" }
+      - profile: "mathis-albert"
+        name: "Mathis Albert"
+        club: "Borussia Dortmund"
+        trend: "↑"
+        direction: "rising"
+        direction_label: "First-team minutes are a positive step"
+        context: "1 Bundesliga appearance, 0 starts, 20 regulation minutes; 0 goals/assists"
+        recap: "Albert was unused in Dortmund's 1-0 Champions League defeat at Bodo/Glimt on October 14. He replaced the injured Konstantinos Karetsas at 70 minutes in the 0-0 Bundesliga draw at Union Berlin on October 17. The league's German report notes a late Albert chance that went wide. He had no goal or assist."
+        development_read: "Getting twenty Bundesliga first-team minutes is a positive development step and deserves an upward arrow. Even though the opening came through an injury, he received a meaningful senior opportunity and got into a position to threaten goal. The next test is turning this outing into repeat opportunities and a more regular attacking role."
+        sources:
+          - { label: "Bodo/Glimt-Dortmund lineup and substitutions (official DFB)", url: "https://datencenter.dfb.de/datencenter/champions-league/2026-2027/2/fk-bodoe-glimt-borussia-dortmund-2429622" }
+          - { label: "Union-Dortmund report and Albert chance (official Bundesliga, German)", url: "https://www.bundesliga.com/de/bundesliga/news/1-fc-union-berlin-borussia-dortmund-spieltag-6-spielbericht-highlights-39600" }
+          - { label: "Substitution timing (secondary Sky Germany)", url: "https://sport.sky.de/fussball/union-berlin-vs-dortmund/spielfilm/563354" }
+      - profile: "diego-kochen"
+        name: "Diego Kochen"
+        club: "FC Barcelona / Lyngby"
+        trend: "↑"
+        direction: "rising"
+        direction_label: "Last-gasp penalty save preserves point"
+        context: "1 Superliga start, 90 minutes; 3 conceded, 0 clean sheets, 1 penalty saved"
+        recap: "Kochen played Lyngby's 3-3 draw with Nordsjaelland on October 18. Lyngby led 3-0 before conceding three in a short second-half spell. In the final seconds Kochen saved Nicklas Rojkjaer's penalty to prevent defeat, confirmed by the club and Danish reporting. The completed lineup supplies the 90-minute start; a trustworthy total-save figure was not established."
+        development_read: "The late penalty stop is strong, specific positive performance evidence and a good pressure response after the defensive collapse. It supports a modest upward read, without pretending three concessions do not need review or automatically assigning every goal to the goalkeeper."
+        sources:
+          - { label: "Derby report and decisive penalty save (official Lyngby, Danish)", url: "https://lyngby-boldklub.dk/2026/10/18/pointdeling-mod-fc-nordsjaelland/" }
+          - { label: "Comeback and penalty taker (local-language Danish Campo)", url: "https://campo.dk/2026/10/18/superliga-vanvid-nordsjaelland-leverer-vildt-comeback/" }
+          - { label: "Completed lineup (secondary match record)", url: "https://mylineups.app/da/matches/superliga/lyngby-vs-nordsjaelland-2026-10-18/" }
+      - profile: "benjamin-cremaschi"
+        name: "Benjamin Cremaschi"
+        club: "Parma"
+        trend: "→"
+        direction: "steady"
+        direction_label: "No first-team fixture in window"
+        context: "0 senior competitive appearances; Serie A"
+        recap: "Parma's next Serie A match is Torino on Monday, October 19, outside this October 12-18 window. There was no completed senior league fixture to grade for Cremaschi this week, and no other trustworthy competitive appearance was located. This is not an unused-substitute report for the Torino match, which had not taken place by cutoff."
+        development_read: "No new performance evidence; keep the outlook even. His selection and midfield role against Torino belong to next week's assessment rather than an invented absence this week."
+        sources:
+          - { label: "Parma-Torino date and kickoff (official Parma)", url: "https://www.parmacalcio1913.com/news/serie-a-enilive-parma-torino-info-prevendita-biglietti-2/" }
+      - profile: "kevin-paredes"
+        name: "Kevin Paredes"
+        club: "FC Utrecht"
+        trend: "✚"
+        direction: "insufficient"
+        direction_label: "Ankle rehabilitation"
+        context: "0 appearances; Eredivisie"
+        recap: "Paredes remained out as Utrecht won 2-1 at Twente on October 18. Utrecht's medical announcement identified an ankle injury and an absence of several months; no new club-confirmed clearance or revised return date was found. Conflicting secondary injury labels are not used to replace the club's diagnosis."
+        development_read: "No performance evaluation this week. Rehabilitation and a verified return to team training remain the immediate priorities; Utrecht's away win without him does not change the injury-based assessment."
+        sources:
+          - { label: "Ankle injury announcement (official Utrecht, Dutch)", url: "https://www.fcutrecht.nl/nieuws/2026/augustus/kevin-paredes-enkele-maanden-niet-inzetbaar/" }
+          - { label: "Twente win and team (official Utrecht, Dutch)", url: "https://www.fcutrecht.nl/nieuws/2026/oktober/heerlijke-overwinning-in-enschede/" }
+      - profile: "peyton-miller"
+        name: "Peyton Miller"
+        club: "New England Revolution"
+        trend: "↑"
+        direction: "rising"
+        direction_label: "Three-assist week from attacking role"
+        context: "2 MLS starts, 179 regulation minutes; 3 MLS assists (2 primary, 1 secondary)"
+        recap: "Playing in New England's attacking line, Miller supplied both Dor Turgeman goals in Wednesday's 3-2 win at Cincinnati: a right-sided cross and a later infield carry followed by a threaded pass. He left at 89 minutes. He then played all of Saturday's 1-0 win over Chicago, receiving the secondary MLS assist as Carles Gil set up Matt Polster's winner. The club also records three shots, two on target, against Chicago, including a near-post effort saved by Brady."
+        development_read: "The strongest upward week on the board: repeat chance creation across two starts, with different delivery types and a sustained advanced role. The Chicago credit is a secondary assist, not a third final pass, but the two primary assists already provide substantial evidence for his attacking development."
+        sources:
+          - { label: "Cincinnati assists, actions and substitution (official Revolution)", url: "https://www.revolutionsoccer.net/news/recap-revolution-clinch-playoff-berth-with-3-2-win-at-fc-cincinnati" }
+          - { label: "Chicago assist, minutes and shots (official Revolution)", url: "https://www.revolutionsoccer.net/news/recap-revs-secure-10th-home-win-in-front-of-season-high-34-506-fans" }
+      - profile: "cooper-sanchez"
+        name: "Cooper Sanchez"
+        club: "Atlanta United"
+        trend: "→"
+        direction: "steady"
+        direction_label: "Two short closing appearances"
+        context: "2 MLS substitute appearances, 24 regulation minutes; 0 goals/assists"
+        recap: "Sanchez replaced Giuliano Galoppo at 75 minutes in Atlanta's 3-0 win at Montreal, then again at 81 minutes in the 3-1 home defeat to Miami, following Atlanta's published timing. Opposing and secondary feeds differ by a minute for the latter change. Local Atlanta analysis noted one useful block interrupting a Messi attack but little time to shape a match Atlanta were already losing by three."
+        development_read: "Two first-team midfield cameos provide continuity, not enough evidence for a substantial rise or fall. Credit the defensive intervention without assigning him responsibility for goals scored before he entered."
+        sources:
+          - { label: "Montreal win (official Atlanta)", url: "https://www.atlutd.com/news/match-recap-efficient-win-cf-montreal-embolo-almiron-miranchuk-october-14-2026" }
+          - { label: "Montreal 75-minute entry (secondary match record)", url: "https://mylineups.app/matches/mls/cf-montreal-vs-atlanta-united-2026-10-14/" }
+          - { label: "Miami substitution timing (official Atlanta release, republished)", url: "https://www.oursportscentral.com/services/releases/atlanta-united-falls-3-1-to-inter-miami-cf/n-6422469" }
+          - { label: "Miami individual observations (local Vips of Atlanta Soccer)", url: "https://vipsofatlantasoccer.com/2026/10/17/atlutd-vs-miami-player-impressions/" }
+      - profile: "beau-leroux"
+        name: "Beau Leroux"
+        club: "San Jose Earthquakes"
+        trend: "→"
+        direction: "steady"
+        direction_label: "Regular midfield workload"
+        context: "2 MLS starts, 149 regulation minutes; 0 goals/assists"
+        recap: "Leroux started both 1-1 draws, playing 59 minutes at Real Salt Lake and all 90 against Nashville. Saturday's club box records a 39th-minute booking. Neither equalizer was credited to him: Jasinski scored at Salt Lake, while Judd finished Lowen's delivery against Nashville as San Jose secured a playoff berth. Reliable reporting did not establish another standout individual attacking or defensive moment."
+        development_read: "Two starts and a substantial midfield workload sustain his first-team case. The week is about consolidation rather than fresh end product; do not manufacture an individual breakthrough from San Jose's playoff-clinching result."
+        sources:
+          - { label: "Salt Lake lineup and substitutions (official RSL release, republished)", url: "https://www.oursportscentral.com/services/releases/rsl-suffer-heartbreak-at-the-death-in-1-1-draw-with-san-jose/n-6421408" }
+          - { label: "Nashville recap and complete team (official San Jose)", url: "https://www.sjearthquakes.com/news/match-recap-earthquakes-1-nashville-sc-1-x7762" }
+      - profile: "francis-westfield"
+        name: "Francis Westfield"
+        club: "Philadelphia Union"
+        trend: "↑"
+        direction: "rising"
+        direction_label: "Attacking contribution and defensive praise"
+        context: "2 MLS starts, 180 minutes at right back; 1 MLS assist"
+        recap: "Westfield completed both the 3-1 Chicago win and 2-2 Charlotte draw. He received an MLS assist on Milan Iloski's Chicago equalizer, keeping the move alive before the finish. Philly Soccer Page highlighted his attacking energy and an important defensive block, then praised his work limiting Allan Saint-Maximin against Charlotte. The Chicago comeback came with a man advantage for the second half. He had no Saturday goal or assist; the official Charlotte scoring table repeats an earlier match and is superseded here by the narrative and local recap."
+        development_read: "This week's upward read rests on both sides of the position: a scoring contribution plus specific defensive work, not simply two team results. The numerical advantage tempers the Chicago evidence, but the separate Charlotte matchup adds weight to a positive right-back week."
+        sources:
+          - { label: "Chicago box score and assist (official Union)", url: "https://www.philadelphiaunion.com/news/box-score-philadelphia-union-3-chicago-fire-fc-1" }
+          - { label: "Chicago individual assessment (local Philly Soccer Page)", url: "https://phillysoccerpage.net/2026/10/15/player-ratings-chicago-fire-fc-1-3-philadelphia-union/" }
+          - { label: "Charlotte matchup observations and scoring (local Philly Soccer Page)", url: "https://phillysoccerpage.net/2026/10/17/match-report-philadelphia-union-2-2-charlotte-fc/" }
+      - profile: "cole-campbell"
+        name: "Cole Campbell"
+        club: "SV Elversberg"
+        trend: "✚"
+        direction: "insufficient"
+        direction_label: "Short injury setback"
+        context: "0 appearances; Bundesliga"
+        recap: "Campbell missed Elversberg's 4-3 win over Augsburg on October 17. The club's German-language preview says he had to leave Tuesday's training early; coach Vincent Wagner described a minor problem and anticipated roughly one to two weeks out, with caution after travel. No specific diagnosis or firm return day was confirmed."
+        development_read: "No performance evaluation this week. A short interruption is frustrating, but the club's measured prognosis does not warrant a form downgrade or an assumption of a long-term setback."
+        sources:
+          - { label: "Campbell training setback and coach's prognosis (official Elversberg, German)", url: "https://sv07elversberg.de/zurueck-an-der-kaiserlinde-sve-empfaengt-den-fc-augsburg/" }
+          - { label: "Augsburg result (official Bundesliga)", url: "https://www.bundesliga.com/en/bundesliga/news/elversberg-augsburg-match-report-highlights-matchday-6-39608" }
+      - profile: "luca-bombino"
+        name: "Luca Bombino"
+        club: "Stoke City"
+        trend: "↑"
+        direction: "rising"
+        direction_label: "Longer Championship involvement"
+        context: "2 substitute appearances, 63 regulation minutes at left back/wingback; 0 goals/assists"
+        recap: "Bombino replaced Eric Bocat at 79 minutes in Tuesday's 3-2 loss to Middlesbrough, then at 38 minutes in Saturday's 1-0 win at Derby. That gives 11 plus 52 regulation minutes. Derby's official report establishes the result, while completed secondary event records supply the substitution times. He helped finish a clean-sheet team win but did not play the full match; no goal or assist was credited."
+        development_read: "A modest positive in his English transition: the second appearance required a much longer defensive shift in a narrow away win. It is an opportunity gain rather than proof he has displaced Bocat permanently; the next question is whether sustained minutes or a start follow."
+        sources:
+          - { label: "Derby-Stoke result and team (official Derby)", url: "https://www.dcfc.co.uk/news/2026/10/report-derby-county-vs-stoke-city" }
+          - { label: "Derby substitution and events (secondary Sky Sports)", url: "https://www.skysports.com/football/derby-county-vs-stoke-city/live/560621" }
+          - { label: "Middlesbrough substitution (secondary Voetbal International)", url: "https://www.vi.nl/wedstrijden/2026-10-13/stoke-city-vs-middlesbrough-fc" }
+      - profile: "jackson-hopkins"
+        name: "Jackson Hopkins"
+        club: "D.C. United"
+        trend: "→"
+        direction: "steady"
+        direction_label: "Mixed week in midfield rotation"
+        context: "2 MLS appearances, 1 start, 101 regulation minutes; 0 goals/assists"
+        recap: "Hopkins started the 2-1 win over New York and left at 56 minutes according to D.C.'s own box. He then replaced Jared Stroud at halftime in the 4-1 loss at Orlando. D.C. records a booking in each match. He had no credited goal or assist; the one-minute difference in opponents' Wednesday substitution reporting is resolved in favor of his own club's record."
+        development_read: "The start and full second half keep him involved in the attacking-midfield rotation, but there is no clear new production breakthrough. Discipline is worth watching, without treating either the win or heavy defeat as an individual performance grade by itself."
+        sources:
+          - { label: "Red Bulls facts, lineup and cautions (official D.C.)", url: "https://www.dcunited.com/news/post-match-facts-dcvrbny-x9258" }
+          - { label: "Orlando facts, substitutions and cautions (official D.C.)", url: "https://www.dcunited.com/news/post-match-facts-orlvdc-x4036" }
+      - profile: "duran-ferree"
+        name: "Duran Ferree"
+        club: "San Diego FC"
+        trend: "↓"
+        direction: "falling"
+        direction_label: "Still outside first-team goalkeeper rotation"
+        context: "0 verified competitive appearances; MLS goalkeeper"
+        recap: "Ferree was not in San Diego's matchday goalkeeper group for either the 3-3 draw with Houston or 2-2 draw at LA Galaxy. CJ dos Santos started the former with Pablo Sisniega on the bench; Sisniega started the latter with dos Santos unused. No trustworthy reserve appearance or new injury explanation was located, so no playing statistics are inferred."
+        development_read: "The concern remains access to starts: a change of starting goalkeeper still did not create an opening for him. This is a downward role assessment, not criticism of a performance he did not give or responsibility for goals conceded by other keepers."
+        sources:
+          - { label: "Houston recap and full teams (local Bayou City Soccer)", url: "https://www.bayoucitysoccer.net/dynamo/houston-dynamo-at-san-diego-fc-highlights-stats-and-quotes-1" }
+          - { label: "San Diego match report (official SDFC)", url: "https://www.sandiegofc.com/news/match-recap-san-diego-fc-battles-back-to-earn-3-3-draw-against-houston-dynamo" }
+          - { label: "Galaxy match report and goalkeeper selection (official Galaxy)", url: "https://www.lagalaxy.com/news/match-report-galaxy-take-point-in-2-2-draw-at-dignity-health-sports-park" }
   - id: "2026-10-11"
     group: prospects
     group_label: Prospects
