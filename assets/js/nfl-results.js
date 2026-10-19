@@ -13,5 +13,15 @@
       label:Math.abs(cover)<1e-9?'Push':cover>0?'Winner':'Loser',
       team:home?game.home:game.away,line:home?-market:market};
   }
-  return {grade};
+  function weeklyRecords(games){
+    const weeks=new Map();
+    for(const game of games){
+      if(game.status!=='Final'||!Number.isInteger(game.week)||game.week<1)continue;
+      if(!weeks.has(game.week))weeks.set(game.week,{week:game.week,wins:0,losses:0,pushes:0,excluded:0});
+      const record=weeks.get(game.week),key=grade(game).key;
+      if(key==='win')record.wins++;else if(key==='loss')record.losses++;else if(key==='push')record.pushes++;else record.excluded++;
+    }
+    return [...weeks.values()].sort((a,b)=>b.week-a.week);
+  }
+  return {grade,weeklyRecords};
 });

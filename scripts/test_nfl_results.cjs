@@ -1,6 +1,6 @@
 const {test}=require('node:test');
 const assert=require('node:assert/strict');
-const {grade}=require('../assets/js/nfl-results.js');
+const {grade,weeklyRecords}=require('../assets/js/nfl-results.js');
 const game=(model,market,actual,extra={})=>({status:'Final',home:'HOME',away:'AWAY',forecast_home_margin:model,market_home_margin:market,actual_home_margin:actual,...extra});
 
 test('a stronger favorite recommendation wins, loses or pushes at the closing line',()=>{
@@ -33,4 +33,23 @@ test('missing inputs and games without a final score never manufacture a result'
     for(const value of [null,undefined,NaN,Infinity])assert.equal(grade({...game(9,7,9),[field]:value}).key,'unavailable');
   }
   assert.equal(grade(game(9,7,9,{status:'Upcoming'})).key,'pending');
+});
+
+test('weekly records count every matching game before pagination and keep pushes separate',()=>{
+  const games=Array.from({length:25},(_,i)=>game(9,7,i<21?9:i<24?6:7,{week:6}));
+  games.push(game(5,7,6,{week:5}));
+  assert.deepEqual(weeklyRecords(games),[
+    {week:6,wins:21,losses:3,pushes:1,excluded:0},
+    {week:5,wins:1,losses:0,pushes:0,excluded:0}
+  ]);
+});
+test('weekly records exclude missing lines and no-edge games, omit pending weeks, and honor filtered input',()=>{
+  const games=[game(9,7,9,{week:6,forecast_kind:'saved'}),game(5,7,8,{week:6,forecast_kind:'retrospective'}),
+    game(7,7,9,{week:6}),game(9,null,9,{week:6}),game(9,7,9,{week:7,status:'Upcoming'})];
+  assert.deepEqual(weeklyRecords(games),[{week:6,wins:1,losses:1,pushes:0,excluded:2}]);
+  assert.deepEqual(weeklyRecords(games.filter(g=>g.forecast_kind==='saved')),[{week:6,wins:1,losses:0,pushes:0,excluded:0}]);
+  assert.deepEqual(weeklyRecords([]),[]);
+});
+test('weekly records use the same actual-starter correction as individual ATS results',()=>{
+  assert.deepEqual(weeklyRecords([game(9,7,6,{week:6,display_home_margin:5})]),[{week:6,wins:1,losses:0,pushes:0,excluded:0}]);
 });
