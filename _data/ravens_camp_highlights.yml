@@ -1,72 +1,48 @@
-date: 2026-10-14
-edition: "October 14, 2026"
+date: 2026-10-19
+edition: "October 19, 2026"
 kicker: "Week 6 · Cleveland"
 heading: "Ravens Daily"
-intro: "Lamar Jackson remains day-to-day, while Trey Hendrickson and Ja’Kobi Lane took important steps toward Sunday’s AFC North matchup in Cleveland."
+intro: "The Ravens left Cleveland with a costly loss, a three-way tie atop the AFC North and new questions about the receiving corps."
 highlights:
-  - title: "Lamar Jackson missed Wednesday’s practice, but ESPN’s Adam Schefter reports he has a realistic chance to return against Cleveland."
+  - title: "The Ravens squandered a 10-point lead in Cleveland, falling 13-10 on a last-second field goal and surrendering their outright AFC North lead."
     text: >-
-      Jesse Minter continues to describe Jackson’s ankle injury as day-to-day and emphasized that the quarterback is doing everything possible to get back on the field. Jackson has not practiced since October 4, leaving Tyler Huntley preparing for another potential start while the Ravens wait for a clearer indication of their franchise quarterback’s availability.
-    sources:
-      - "ESPN / Adam Schefter"
-      - "BaltimoreRavens.com"
-    source_links:
-      - label: "Ravens · Jackson reportedly has a realistic chance to face Cleveland"
-        url: "https://www.baltimoreravens.com/news/lamar-jackson-injury-report-ravens-browns-realistic-chance"
-      - label: "Ravens · Jackson and teammates injury updates"
-        url: "https://www.baltimoreravens.com/news/news-notes-injury-updates-lamar-jackson-cam-jurgens-trey-hendrickson-jakobi-lane-mike-green-vega-ioane"
-  - title: "Trey Hendrickson returned to full practice Wednesday, a significant step toward getting the Ravens’ top edge rusher back on the field."
-    text: >-
-      Hendrickson has missed two games following surgery on a broken finger, but participated with his hand wrapped and appears on track to face Cleveland. His return would give Jesse Minter another proven pass rusher alongside the improving Mike Green, potentially reducing the defense’s reliance on manufactured pressure.
-    sources:
-      - "Ravens official injury report"
-      - "The Baltimore Banner"
-    source_links:
-      - label: "Ravens · Official injury report"
-        url: "https://www.baltimoreravens.com/team/injury-report/"
-      - label: "Ravens · October 14 press conference transcript"
-        url: "https://www.baltimoreravens.com/news/transcript-press-conferences-10-14-26"
-  - title: "Ja’Kobi Lane was activated from injured reserve and returned to full practice, putting the rookie receiver in position for a possible Sunday debut."
-    text: >-
-      Lane underwent wrist surgery after the season opener and missed four games. Baltimore activated him from injured reserve Wednesday, and he practiced fully. His 6-foot-4 frame could give Declan Doyle another red-zone option, particularly valuable with Durham Smythe out for the season and the tight end rotation increasingly thin.
+      Baltimore scored on its first two possessions but was shut out over its final nine drives, with Derrick Henry's fourth-quarter fumble and a missed Tyler Loop field goal proving costly. The Ravens, Browns and Steelers are now tied at 4-2, with Cleveland holding the early head-to-head advantage over Baltimore.
     sources:
       - "BaltimoreRavens.com"
-      - "NFL Network / Mike Garafolo"
+      - "Reuters"
     source_links:
-      - label: "Ravens · Lane activated and returns to practice"
-        url: "https://www.baltimoreravens.com/news/injury-report-jakobi-lane-cam-jurgens-ravens-browns-returns-practice-injured-reserve"
-      - label: "Ravens · Official injury report"
-        url: "https://www.baltimoreravens.com/team/injury-report/"
-  - title: "Cam Jurgens practiced for the first time since arriving from Philadelphia, but remains in concussion protocol."
+      - label: "Baltimore Ravens"
+        url: "https://www.baltimoreravens.com/news/game-recap-ravens-lose-fourth-quarter-lead-in-cleveland?utm_source=chatgpt.com"
+      - label: "Reuters"
+        url: "https://www.reuters.com/sports/nfl/browns-get-walk-off-winner-catch-ravens-afc-north--flm-2026-10-18/?utm_source=chatgpt.com"
+  - title: "Rashod Bateman aggravated his shoulder injury and was ruled out during Sunday's loss, creating another concern for Baltimore's passing game."
     text: >-
-      The newly acquired center was a limited participant Wednesday and wore a red non-contact jersey, leaving his availability for Cleveland uncertain. Getting Jurgens cleared would allow the Ravens to move Vega Ioane back to guard and begin assembling something closer to the intended offensive line.
+      Bateman had been limited during the week but entered Sunday without an injury designation before exiting in the second quarter. Ronnie Stanley also appeared to suffer an injury late in the game, although its severity remains unclear; both situations bear watching ahead of next Sunday's matchup with Cincinnati.
+    sources:
+      - "WMAR-2 News"
+      - "Ravens Wire"
+      - "RotoBaller"
+    source_links:
+      - label: "WMAR-2 News"
+        url: "https://www.wmar2news.com/ravens/ravens-squander-10-point-lead-fall-to-browns-oct-18-2026?utm_source=chatgpt.com"
+      - label: "RotoBaller"
+        url: "https://www.rotoballer.com/player-news/rashod-bateman-ruled-out-with-shoulder-injury/1969634?utm_source=chatgpt.com"
+  - title: "Baltimore's pass rush delivered its strongest performance of the season, recording five sacks with Trey Hendrickson back in the lineup."
+    text: >-
+      Hendrickson recorded a sack in his return from finger surgery, while Nnamdi Madubuike registered his first sack in more than a year following his neck injury. The defense held Cleveland to 237 total yards, but critical third-down conversions on the Browns' final three scoring drives prevented an otherwise dominant effort from producing a victory.
     sources:
       - "BaltimoreRavens.com"
-      - "ESPN / Jamison Hensley"
     source_links:
-      - label: "Ravens · Jurgens makes his practice debut"
-        url: "https://www.baltimoreravens.com/news/injury-report-jakobi-lane-cam-jurgens-ravens-browns-returns-practice-injured-reserve"
-      - label: "Ravens · Official injury report"
-        url: "https://www.baltimoreravens.com/team/injury-report/"
-  - title: "The Ravens listed 19 players on Wednesday’s injury report, including several new concerns following the Atlanta game."
+      - label: "Baltimore Ravens"
+        url: "https://www.baltimoreravens.com/news/game-recap-ravens-lose-fourth-quarter-lead-in-cleveland?utm_source=chatgpt.com"
+  - title: "Rookie receiver Ja'Kobi Lane made an encouraging return from injured reserve, catching four passes for 40 yards in his first action since Week 1."
     text: >-
-      Matthew Hibner missed practice with a hand injury, while Roger Rosengarten (knee), Emery Jones Jr. (knee), Trenton Simpson (hamstring) and Teddye Buchanan (groin) were among the limited participants. Kyle Hamilton (stinger) and Mark Andrews (hand) practiced fully. The number of players on the report could complicate personnel decisions on both sides of the ball.
+      Lane's immediate involvement gives Baltimore another legitimate receiving option, particularly important with Bateman's status uncertain and Lamar Jackson still recovering from his ankle injury. Fellow rookie Josh Cuevas also continued his emergence at tight end, catching four passes for 44 yards and his first NFL touchdown.
     sources:
-      - "Ravens official injury report"
-      - "Baltimore Beatdown"
+      - "BaltimoreRavens.com"
+      - "New York Post"
     source_links:
-      - label: "Ravens · Official injury report"
-        url: "https://www.baltimoreravens.com/team/injury-report/"
-      - label: "Baltimore Beatdown · 19 players on Week 6 injury report"
-        url: "https://www.baltimorebeatdown.com/baltimore-ravens-injuries/86464/ravens-list-19-players-on-first-injury-report-of-week-6"
-  - title: "Cleveland opened Ravens week with significant injury problems of its own, particularly along the defensive front."
-    text: >-
-      Defensive tackles Maliek Collins, Mason Graham and Mike Hall Jr. all missed Wednesday’s practice, while linebacker Carson Schwesinger and running back Quinshon Judkins remained sidelined with ankle injuries. Rookie receiver KC Concepcion returned to limited practice while progressing through concussion protocol, but Cleveland’s availability picture remains unsettled ahead of a game with first place in the AFC North at stake.
-    sources:
-      - "Cleveland Browns official injury report"
-      - "BrownsZone / Scott Petrak"
-    source_links:
-      - label: "Browns · Official injury report"
-        url: "https://www.clevelandbrowns.com/team/injury-report/"
-      - label: "BrownsZone · Concepcion practices, several starters sit out"
-        url: "https://www.brownszone.com/2026/10/14/kc-concepcion-practices-3-days-after-concussion-but-several-starters-sit-out/"
+      - label: "Baltimore Ravens"
+        url: "https://www.baltimoreravens.com/news/game-recap-ravens-lose-fourth-quarter-lead-in-cleveland?utm_source=chatgpt.com"
+      - label: "New York Post"
+        url: "https://nypost.com/2026/10/18/sports/ravens-use-some-wild-trickery-tob-fool-browns-before-crushing-defeat/?utm_source=chatgpt.com"

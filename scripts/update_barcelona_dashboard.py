@@ -120,6 +120,11 @@ MATCH_STAT_KEYS = (
 
 ROTATION_WINDOW_DAYS = 21
 REQUEST_DELAY_SECONDS = 0.12
+PLAYER_STAT_KEYS = {
+    "goals": "totalGoals", "assists": "goalAssists", "shots": "totalShots",
+    "shots_on_target": "shotsOnTarget", "yellow_cards": "yellowCards",
+    "red_cards": "redCards", "saves": "saves", "goals_conceded": "goalsConceded",
+}
 
 # ESPN's edge rejects custom User-Agent strings with a 403, so requests go out
 # with urllib's default agent and identify themselves through Accept only.
@@ -394,6 +399,8 @@ def ensure_match_cached(cache: dict, event: dict, slug: str, refresh: bool) -> b
     if home_stats is None or away_stats is None:
         return record is not None
 
+    previous_player_stats = (record or {}).get("barcelona_player_stats")
+    previous_minutes = (record or {}).get("barcelona_minutes")
     record = {
         "event_id": event_id,
         "competition": event["competition"],
@@ -406,12 +413,35 @@ def ensure_match_cached(cache: dict, event: dict, slug: str, refresh: bool) -> b
     }
 
     if TEAM_ID in (home_id, away_id):
-        minutes = fetch_match_minutes(slug, event_id, TEAM_ID)
+        if previous_player_stats is not None:
+            record["barcelona_player_stats"] = previous_player_stats
+        minutes = fetch_match_minutes(slug, event_id, TEAM_ID) or previous_minutes
         if minutes:
             record["barcelona_minutes"] = minutes
 
     cache["matches"][event_id] = record
     return True
+
+
+def fetch_match_player_stats(slug: str, event_id: str) -> dict | None:
+    """Use completed-match box scores, not the sometimes-lagging season roster."""
+    payload = fetch_json(f"{SITE_API}/{slug}/summary?event={event_id}", optional=True)
+    if not payload:
+        return None
+    for team in payload.get("rosters", []) or []:
+        if str((team.get("team") or {}).get("id")) != TEAM_ID:
+            continue
+        result = {}
+        for entry in team.get("roster", []) or []:
+            player_id = str((entry.get("athlete") or {}).get("id") or "")
+            stats = {s.get("name"): number(s.get("value")) for s in entry.get("stats", [])}
+            if player_id and "totalGoals" in stats:
+                result[player_id] = {
+                    key: as_int(stats[source]) for key, source in PLAYER_STAT_KEYS.items()
+                    if stats.get(source) is not None
+                }
+        return result or None
+    return None
 
 
 def blank_totals() -> dict:
@@ -684,6 +714,11 @@ def build_squad(slug_by_competition: dict[str, str], cache: dict, our_events: li
     """Per-player season output, availability and rolling minutes load."""
     players: dict[str, dict] = {}
     injuries = []
+    complete_player_stats = {
+        key: all(cache["matches"].get(e["event_id"], {}).get("barcelona_player_stats")
+                 for e in our_events if e["competition"] == key)
+        for key in slug_by_competition
+    }
 
     for competition_key, slug in slug_by_competition.items():
         payload = fetch_json(f"{SITE_API}/{slug}/teams/{TEAM_ID}/roster", optional=True)
@@ -712,7 +747,7 @@ def build_squad(slug_by_competition: dict[str, str], cache: dict, our_events: li
                 player["headshot"] = athlete["headshot"]["href"]
 
             player["competitions"][competition_key] = {
-                "appearances": as_int(values.get("appearances")),
+                "appearances": 0,
                 "goals": as_int(values.get("totalGoals")),
                 "assists": as_int(values.get("goalAssists")),
                 "shots": as_int(values.get("totalShots")),
@@ -725,6 +760,9 @@ def build_squad(slug_by_competition: dict[str, str], cache: dict, our_events: li
                 "minutes": 0,
                 "starts": 0,
             }
+            if complete_player_stats[competition_key]:
+                for key in PLAYER_STAT_KEYS:
+                    player["competitions"][competition_key][key] = 0
 
             for injury in athlete.get("injuries", []) or []:
                 detail = injury.get("details") or {}
@@ -763,6 +801,12 @@ def build_squad(slug_by_competition: dict[str, str], cache: dict, our_events: li
                 competition["minutes"] = competition.get("minutes", 0) + minutes
                 if appearance.get("starter"):
                     competition["starts"] = competition.get("starts", 0) + 1
+                if appearance.get("played"):
+                    competition["appearances"] = competition.get("appearances", 0) + 1
+                if complete_player_stats[event["competition"]]:
+                    match_stats = record["barcelona_player_stats"].get(player_id, {})
+                    for key in PLAYER_STAT_KEYS:
+                        competition[key] = competition.get(key, 0) + (match_stats.get(key) or 0)
                 player["minutes_total"] += minutes
                 if appearance.get("starter"):
                     player["starts_total"] += 1
@@ -815,6 +859,12 @@ def build_squad(slug_by_competition: dict[str, str], cache: dict, our_events: li
     return {
         "players": squad,
         "injuries": injuries,
+        "data_status": {
+            "complete_match_box_scores": complete_player_stats,
+            "note": "Appearances, starts and minutes come from match team sheets. Goals, assists and saves are summed from completed-match box scores."
+                    if all(complete_player_stats.values()) else
+                    "Appearances, starts and minutes are current from match team sheets. Some scoring totals still use ESPN's season roster while match box scores are pending.",
+        },
         "rotation": {
             "window_days": ROTATION_WINDOW_DAYS,
             "window_start": window_start.isoformat(),
@@ -923,6 +973,12 @@ def build(as_of: date, competitions: list[str], refresh_recent: int) -> dict:
             event for event in ordered_events
             if TEAM_ID in (event["home"]["team_id"], event["away"]["team_id"])
         ]
+        for event in our_events:
+            record = cache["matches"].get(event["event_id"])
+            if record is not None and (not record.get("barcelona_player_stats") or event["event_id"] in recent_ids):
+                player_stats = fetch_match_player_stats(slug, event["event_id"])
+                if player_stats is not None:
+                    record["barcelona_player_stats"] = player_stats
         all_our_events.extend(our_events)
 
         upcoming_raw = [
@@ -965,6 +1021,7 @@ def build(as_of: date, competitions: list[str], refresh_recent: int) -> dict:
     print("[squad] rosters, minutes and availability")
     squad = build_squad(slug_by_competition, cache, sorted(all_our_events, key=lambda e: e["date"]), as_of)
     output["squad"] = squad["players"]
+    output["squad_data_status"] = squad["data_status"]
     output["injuries"] = squad["injuries"]
     output["rotation"] = squad["rotation"]
     output["congestion"] = build_congestion(all_our_events, all_upcoming, as_of)

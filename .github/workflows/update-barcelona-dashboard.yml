@@ -3,7 +3,9 @@ name: Update Barcelona season dashboard
 # Refreshes the objective Barcelona snapshot from ESPN's free, keyless soccer
 # feeds for both La Liga and the Champions League. Finished matches are cached in
 # the repository, so a daily run only downloads new fixtures and re-checks the
-# four most recent for corrections. The updater writes only when the football
+# four most recent for corrections. Match-level player totals avoid season-feed
+# lag; editorial numeric interpretations are hidden if their value/rank changes.
+# The updater writes only when the football
 # data changes, so daily checks do not create noise.
 
 on:
@@ -29,6 +31,8 @@ jobs:
           python-version: "3.12"
       - name: Update Barcelona dashboard
         run: python scripts/update_barcelona_dashboard.py
+      - name: Test player-stat reconciliation
+        run: python -m unittest discover -s scripts -p test_barcelona_dashboard.py
       - name: Validate dashboard data
         run: ruby scripts/check_barcelona_dashboard.rb
       - name: Commit changes

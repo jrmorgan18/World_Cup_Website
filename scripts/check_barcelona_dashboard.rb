@@ -166,7 +166,10 @@ squad.each do |player|
     "#{name} has an implausible minutes total: #{totals['minutes']}",
     errors
   )
+  assert(totals["appearances"].to_i >= totals["starts"].to_i, "#{name} has more starts than appearances", errors)
   player.fetch("competitions", {}).each do |competition_key, split|
+    assert(split["appearances"].to_i >= split["starts"].to_i, "#{name}.#{competition_key} has more starts than appearances", errors)
+    assert(split["minutes"].to_i <= 90 * split["appearances"].to_i, "#{name}.#{competition_key} minutes exceed recorded appearances", errors)
     assert(
       COMPETITIONS.include?(competition_key),
       "#{name} has an unexpected competition split: #{competition_key}",
@@ -177,6 +180,20 @@ squad.each do |player|
       "#{name} has negative minutes in #{competition_key}",
       errors
     )
+  end
+end
+
+assessments.each do |competition_key, entries|
+  current = competitions.dig(competition_key, "snapshots")&.last
+  next unless current
+  entries.each do |metric_id, assessment|
+    next unless assessment.key?("reviewed_value")
+    assert(assessment["reviewed_value"].is_a?(Numeric), "#{competition_key}.#{metric_id} reviewed value must be numeric", errors)
+    assert(assessment["reviewed_rank"].is_a?(Integer) && assessment["reviewed_rank"].between?(1, current["teams_ranked"]), "#{competition_key}.#{metric_id} reviewed rank is invalid", errors)
+    metric = current.fetch("metrics").fetch(metric_id)
+    if assessment["reviewed_value"] != metric["value"] || assessment["reviewed_rank"] != metric["rank"]
+      puts "  Editorial review pending: #{competition_key}.#{metric_id}; the old interpretation will be hidden."
+    end
   end
 end
 
