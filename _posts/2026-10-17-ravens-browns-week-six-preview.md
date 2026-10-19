@@ -18,9 +18,9 @@ hero_wide: true
 hero_alt: "Kyle Hamilton tackles Colts receiver Josh Downs during the Ravens’ Week 1 win in Indianapolis"
 hero_credit: "Shawn Hubbard / Baltimore Ravens Photos"
 hero_credit_url: "https://www.baltimoreravens.com/photos/game-action-gallery-ravens-at-colts-week-1"
-home_feature: true
-home_recent: false
-ravens_feature: true
+home_feature: false
+home_recent: true
+ravens_feature: false
 ravens_feature_image: true
 feature_label: "Week 6 preview"
 ravens_feature_mark: "6"
