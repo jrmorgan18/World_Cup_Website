@@ -1,0 +1,15 @@
+{% assign rec_model = include.game.display_home_margin | default: include.game.forecast_home_margin %}
+{% assign rec_market = include.game.market_home_margin %}
+{% assign rec_actual = include.game.actual_home_margin %}
+{% assign rec_label = 'Unavailable' %}{% assign rec_color = '' %}{% assign rec_team = nil %}
+{% if rec_model != nil and rec_market != nil and rec_actual != nil %}
+  {% assign rec_edge = rec_model | minus: rec_market %}{% assign rec_edge_size = rec_edge | abs %}
+  {% if rec_edge_size <= 0.000000001 %}
+    {% assign rec_label = 'No edge' %}
+  {% else %}
+    {% assign rec_cover = rec_actual | minus: rec_market %}
+    {% if rec_edge > 0 %}{% assign rec_team = include.game.home %}{% assign rec_line = rec_market | times: -1 %}{% else %}{% assign rec_team = include.game.away %}{% assign rec_line = rec_market %}{% assign rec_cover = rec_cover | times: -1 %}{% endif %}
+    {% if rec_cover == 0 %}{% assign rec_label = 'Push' %}{% elsif rec_cover > 0 %}{% assign rec_label = 'Winner' %}{% assign rec_color = 'nfl-up' %}{% else %}{% assign rec_label = 'Loser' %}{% assign rec_color = 'nfl-down' %}{% endif %}
+  {% endif %}
+{% endif %}
+<span class="nfl-status-pill {{ rec_color }}">{{ rec_label }}</span>{% if rec_team %}<small>{{ rec_team }} {% if rec_line == 0 %}PK{% elsif rec_line < 0 %}−{{ rec_line | abs | round: 1 }}{% else %}+{{ rec_line | round: 1 }}{% endif %}</small>{% endif %}

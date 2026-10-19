@@ -45,6 +45,8 @@ jobs:
         run: python scripts/check_nfl_dashboard.py
       - name: Check NFL JavaScript syntax
         run: node --check assets/js/nfl-dashboard.js
+      - name: Check recommendation ATS grading
+        run: node --test scripts/test_nfl_results.cjs
       - name: Build launch version
         run: >-
           bundle exec jekyll build --trace
