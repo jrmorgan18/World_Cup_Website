@@ -1,5 +1,79 @@
 # Dual Eights Power Index: NFL publishing and operation
 
+## Injury watchlist and manual scenarios
+
+`/nfl/injuries/` shows non-QB position-group candidates and all-team feed coverage.
+Flags never apply points. Team-row links and the QB & injury scenarios launcher
+open signed manual group adjustments. Those are personal browser-session scenarios,
+not editorial publication settings: they affect only games whose kickoff is still
+in the future, and affect rankings only when explicitly selected. Completed games,
+archives and Efficiency remain unchanged. Changes expire with the base data revision.
+Lineup columns include QB and injury ranking effects and remain league-centered.
+
+`scripts/nfl_injury_baselines.json` defines conservative **editorial**, unvalidated
+starting group effects. Meaningful/severe: OL 1/2; receivers 1/2; secondary .75/1.5;
+front .75/1.25; off-ball linebackers .5/.75; backs .25/.75 points. These are total
+group effects relative to healthy, not per player. No public research found in this
+review establishes these exact weekly cluster values. Position-weighted burden
+research supports differentiated screening; it does not calibrate these presets.
+The low magnitudes and quarter-point steps are deliberate starting judgments.
+Use the calculator: net = upcoming impairment minus impairment already embedded.
+For full recovery from an embedded -1, upcoming effect 0 gives net +1. Do not
+apply the refit's .85 multiplier again or duplicate supporting-cast/QB effects.
+
+Refresh the watchlist without recomputing or rewriting rankings:
+
+```
+python scripts/update_nfl_injury_watchlist.py --cache-dir .nfl-cache --season 2026 --week 6 --refresh
+python -m unittest discover -s scripts -p test_nfl_injury_watchlist.py -v
+node --test scripts/test_nfl_injuries.cjs
+```
+
+The CLI refreshes the latest injury statuses and public player IDs; prior-game
+snaps and timestamped depth charts come from the model cache. GSIS/PFR IDs are
+joined explicitly; unmatched players are counted, never assigned invented roles.
+Healthy-role proxy: median of the three largest prior-game snap shares, with two
+substantial prior games or a current depth-chart starter designation.
+
+Strict screening requires **two meaningful players in the same position group**,
+each meeting at least one condition:
+
+- Explicit **Out** game designation (Doubtful/Questionable do not suffice).
+- Sourced, currently confirmed **IR**, without a later activation.
+- Two consecutive **injury-related DNP** daily reports in the current game week.
+
+A later LP/FP clears the practice trigger. OUT or IR still qualifies independently;
+returning to practice alone does not activate someone from IR. Non-injury rest or
+personal absences do not count toward a DNP streak. Missing reports are unknown.
+Speculative returns, single DNPs and routine limited practice no longer populate
+the watchlist. Positive return scenarios remain available manually in the UI.
+
+The latest-status parquet has no daily report dates/history. Never infer a second
+DNP from fetch times, duplicate polls, prior weeks or a missing report. Research
+agents can add official dated team reports and verified IR/activation records to
+`scripts/nfl_injury_evidence.json`; its instructions define both schemas. Include
+LP/FP rows so recovery clears the trigger. Reports are deduplicated by team/day,
+using the latest observed revision; omitted players break a streak. Two dated DNPs
+must be on adjacent days: unverified calendar gaps are not filled. Evidence must
+match the target season/week, be observed by the build time, and have an HTTPS
+source. Practice dates are checked against the scheduled game week. IR evidence
+is reverified for each target week, not carried forward as an unverified assumption.
+An empty evidence ledger means **OUT-only feed screening**, not complete injury
+coverage; the page displays daily-history coverage explicitly.
+
+`scripts/nfl_injury_reviews.json` can add sourced, timestamped commentary to a
+qualifying team/group. Reviews require season, week, team, group, summary,
+confidence, sources (title/url) and observed_at (timezone-aware ISO timestamp).
+They cannot change eligibility, substitute player lists or reinstate cleared cases.
+Verify replacement quality, normal workloads and effects already reflected in
+DEPI before choosing points. Neither flags nor reviews apply adjustments.
+
+After the Week 5 publication hold ends, the normal complete-week updater also
+refreshes watchlist candidates for its projection week. While the hold is active,
+use the standalone CLI; the existing updater still writes nothing. No periodic
+agent or new automation was created. Research design and validation requirements
+are in the local October 15 injury-cluster proposal.
+
 The public hub has one reviewed DEPI formula. Coefficients are frozen in
 `nfl_model_config.json`; public pages show only “Beta.” Production Efficiency
 uses `compute_league_metrics` followed by the existing production

@@ -1,10 +1,27 @@
 <dialog class="nfl-scenarios" id="team-detail" aria-labelledby="nfl-scenario-heading">
   <div class="nfl-panel">
-  <div class="nfl-section-heading"><div><p class="de-kicker">Explore a lineup</p><h2 id="nfl-scenario-heading">Quarterback scenarios</h2></div><button type="button" id="nfl-close-scenarios" class="nfl-button nfl-button-secondary" aria-label="Close quarterback scenarios">Close</button></div>
+  <div class="nfl-section-heading"><div><p class="de-kicker">Explore a lineup</p><h2 id="nfl-scenario-heading">QB &amp; injury scenarios</h2></div><button type="button" id="nfl-close-scenarios" class="nfl-button nfl-button-secondary" aria-label="Close lineup scenarios">Close</button></div>
   <button type="button" id="nfl-reset" class="nfl-button nfl-button-secondary">Reset scenarios</button>
   <p class="nfl-small">Try a different QB for this week. Weekly choices adjust upcoming spreads. Apply a choice to the rankings when exploring a longer absence.</p>
   <div class="nfl-controls"><div><label for="nfl-team-select">Team</label><select id="nfl-team-select">{% assign alphabetical = site.data.nfl_dashboard.teams | sort: 'name' %}{% for team in alphabetical %}<option value="{{ team.abbr }}">{{ team.name }}</option>{% endfor %}</select></div><div><label for="nfl-qb-select">Quarterback</label><select id="nfl-qb-select"></select></div></div>
   <div class="nfl-checks"><label><input type="checkbox" id="nfl-backup"> Use the first backup this week</label><label><input type="checkbox" id="nfl-apply-ranks"> Apply this QB choice to rankings</label></div>
+  <section class="nfl-cluster-panel" aria-labelledby="nfl-cluster-heading">
+    <h3 id="nfl-cluster-heading">Injury clusters &amp; returns</h3>
+    <p class="nfl-small">Your scenarios affect upcoming spreads in this browser session. Rankings change only when selected below. Saved forecasts, completed games and Efficiency stay unchanged.</p>
+    <div id="nfl-team-watchlist" class="nfl-small"></div>
+    <div class="nfl-controls"><div><label for="nfl-cluster-group">Position group</label><select id="nfl-cluster-group"></select></div><div><label for="nfl-cluster-direction">Availability change</label><select id="nfl-cluster-direction"><option value="loss">New / worsening losses</option><option value="return">Returning / improving</option></select></div></div>
+    <div class="nfl-controls"><div><label for="nfl-cluster-severity">Starting baseline</label><select id="nfl-cluster-severity"><option value="moderate">Meaningful cluster</option><option value="severe">Severe depletion</option></select></div><button type="button" class="nfl-button nfl-button-secondary" id="nfl-cluster-preset">Use starting value</button></div>
+    <p class="nfl-small" id="nfl-cluster-baseline"></p>
+    <div class="nfl-controls"><div><label for="nfl-cluster-points">Net team adjustment (points)</label><input type="number" id="nfl-cluster-points" value="0" min="-6" max="6" step="0.25" aria-describedby="nfl-cluster-help"></div></div>
+    <p class="nfl-small" id="nfl-cluster-help">Negative weakens the team; positive strengthens it. Enter only the change beyond what DEPI already reflects. Starting values are editorial estimates, not fitted injury coefficients.</p>
+    <details class="nfl-cluster-calculator"><summary>Account for an effect already in DEPI</summary><p class="nfl-small">Net = upcoming effect versus healthy − effect already in base DEPI. For a full return, the upcoming effect is 0; an embedded −1 means a +1 adjustment.</p><div class="nfl-controls"><div><label for="nfl-cluster-current">Upcoming effect versus healthy</label><input type="number" id="nfl-cluster-current" min="-6" max="0" step="0.25" value="0"></div><div><label for="nfl-cluster-embedded">Effect already in base DEPI</label><input type="number" id="nfl-cluster-embedded" min="-6" max="0" step="0.25" value="0"></div><button type="button" id="nfl-cluster-calculate" class="nfl-button nfl-button-secondary">Calculate net points</button></div></details>
+    <label class="nfl-cluster-label" for="nfl-cluster-note">Players / reason (optional)</label><textarea id="nfl-cluster-note" rows="2" maxlength="1000"></textarea>
+    <label class="nfl-cluster-label" for="nfl-cluster-source">Source link (optional)</label><input type="url" id="nfl-cluster-source" placeholder="https://…">
+    <div class="nfl-checks"><label><input type="checkbox" id="nfl-cluster-ranks"> Also apply this group adjustment to rankings</label></div>
+    <div class="nfl-cluster-actions"><button type="button" id="nfl-cluster-save" class="nfl-button">Apply group adjustment</button><button type="button" id="nfl-cluster-remove" class="nfl-button nfl-button-secondary">Clear this group</button></div>
+    <p id="nfl-cluster-status" class="nfl-small" role="status" aria-live="polite"></p>
+    <div id="nfl-cluster-active"></div>
+  </section>
   <div id="nfl-team-detail" aria-live="polite"></div>
   <p class="nfl-small nfl-data-note">Depth chart: <time datetime="{{ site.data.nfl_dashboard.depth_chart_as_of }}">{{ site.data.nfl_dashboard.depth_chart_as_of | date: "%B %-d, %Y · %-I:%M %p UTC" }}</time>. Depth order is a lineup assumption; current-week injury context appears when available.</p>
   </div>

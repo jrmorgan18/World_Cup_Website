@@ -1,0 +1,23 @@
+---
+layout: default
+title: "NFL Injury Cluster Watchlist"
+description: "Review confirmed absences and repeated DNP injury clusters, with manual DEPI lineup scenarios."
+permalink: /nfl/injuries/
+section_theme: nfl
+nfl_page: true
+nfl_view: injuries
+---
+{% include nfl-header.html heading="Injury <em>watchlist.</em>" %}
+<article class="nfl-shell" data-nfl-view="injuries">
+  <p class="nfl-notice"><strong>Research flags, not automatic downgrades.</strong> Review players, replacements and returns, then use <strong>Review / adjust</strong> to enter a positive or negative team adjustment. It affects upcoming spreads; rankings change only when you select that option. Your scenarios stay in this browser session.</p>
+  <p class="nfl-small"><strong>Who qualifies:</strong> at least two meaningful players in the same group must be confirmed <strong>OUT / IR</strong>, or have <strong>two consecutive injury-related DNP reports in the game week</strong>. A later limited or full practice removes the DNP flag. Questionable, doubtful, a single DNP and routine limited practice do not qualify on their own. Returning to practice does not clear an OUT designation or activate a player from IR.</p>
+  <p id="nfl-watchlist-history" class="nfl-small"></p>
+  <p id="nfl-watchlist-summary" class="nfl-small" role="status"></p>
+  <div class="nfl-controls"><div class="nfl-search-control"><label for="nfl-watch-search">Find a team, player or group</label><input type="search" id="nfl-watch-search" placeholder="Team, player, OL, DB…"></div></div>
+  <div id="nfl-watchlist-cards" class="nfl-watch-grid"></div>
+  <details class="nfl-watch-details"><summary>All-team report coverage</summary><p class="nfl-small">The latest-status feed does not establish daily DNP history or complete IR coverage. Consecutive DNPs and IR require dated, sourced evidence. Returning players can still be evaluated with a positive manual scenario. Missing reports and unmatched player IDs require review. LB/edge classification uses recorded snap positions and needs role verification.</p><div class="nfl-table-scroll"><table class="nfl-table"><thead><tr><th>Team</th><th>Coverage</th><th>Flags</th><th>Unmatched role IDs</th></tr></thead><tbody id="nfl-watchlist-coverage"></tbody></table></div></details>
+  <section class="nfl-section"><h2>Starting point values</h2><p class="nfl-small">Editorial starting estimates, not fitted or validated cluster coefficients. Values are the <strong>total group effect relative to healthy</strong>, not an amount per player. Subtract effects already reflected in DEPI. A return uses only the recovery not already in the statistical rating. Neither flags nor presets apply points automatically.</p><div class="nfl-table-scroll"><table class="nfl-table"><thead><tr><th>Group</th><th>Meaningful cluster</th><th>Severe depletion</th><th class="nfl-team-cell">Review context</th></tr></thead><tbody id="nfl-baseline-rows"></tbody></table></div><p class="nfl-small">The same magnitudes can guide returns only when the impairment was embedded and normal workload is expected. Verify replacement quality and avoid overlap with QB effects. These values have not demonstrated an accuracy improvement. <a class="nfl-text-link" href="https://journals.sagepub.com/doi/10.1177/22150218241304941" target="_blank" rel="noopener noreferrer">Research on position-weighted injury burden ↗</a></p></section>
+  {% include nfl-qb-scenarios.html %}
+  <noscript><p class="nfl-notice">Enable JavaScript to explore the watchlist and manual lineup adjustments.</p></noscript>
+</article>
+{% include nfl-data.html %}

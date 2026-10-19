@@ -1,0 +1,16 @@
+{
+  "status": "Editorial starting presets; not statistically fitted or validated",
+  "description": "Total group effects relative to a healthy unit, not per-player values. Review replacements, normal workload and impact already in DEPI. Presets never apply automatically.",
+  "groups": [
+    {"id":"OL","label":"Offensive line","moderate":1.0,"severe":2.0,"trigger":"Two regular starters; severe: three starters, both tackles or deeper replacement losses."},
+    {"id":"REC","label":"Receivers / receiving TEs","moderate":1.0,"severe":2.0,"trigger":"Two substantial receiving roles; severe: primary targets and their usable alternatives depleted."},
+    {"id":"DB","label":"Secondary","moderate":0.75,"severe":1.5,"trigger":"Two regular coverage roles; severe: outside/slot/safety depth also depleted."},
+    {"id":"FRONT","label":"Defensive front","moderate":0.75,"severe":1.25,"trigger":"Multiple important edge/interior rotation players; severe: replacements also unavailable."},
+    {"id":"LB","label":"Off-ball linebackers","moderate":0.5,"severe":0.75,"trigger":"Multiple substantial off-ball roles; check coverage duties and actual replacements."},
+    {"id":"RB","label":"Running backs","moderate":0.25,"severe":0.75,"trigger":"Backfield depth depleted; severe: rushing, receiving and protection alternatives all affected."}
+  ],
+  "sources": [
+    {"title":"Position-weighted injury burden research","url":"https://journals.sagepub.com/doi/10.1177/22150218241304941","supports":"Weighting injury burden by position; does not estimate these cluster presets."},
+    {"title":"PFF player valuation methodology","url":"https://www.pff.com/news/nfl-defensive-most-valuable-player-pff-plus-minus-2021-nfl-season-los-angeles-rams-aaron-donald","supports":"Role/participation context and noisy on/off comparisons; does not supply these preset values."}
+  ]
+}

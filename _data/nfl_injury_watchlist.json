@@ -1,0 +1,343 @@
+{
+  "season": 2026,
+  "week": 7,
+  "as_of": "2026-10-19T04:44:39.569034+00:00",
+  "source": {
+    "file": "injuries.parquet",
+    "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet",
+    "fetched_at": "2026-10-19T04:43:33.033315+00:00",
+    "http_last_modified": "Sun, 18 Oct 2026 12:02:07 GMT",
+    "source_sha256": "3c8e74e8070093fc9d6490605bff412c251c178a7c3e952ab3d4d2705bcf83cf",
+    "cache_sha256": "3c8e74e8070093fc9d6490605bff412c251c178a7c3e952ab3d4d2705bcf83cf"
+  },
+  "source_max_week": 6,
+  "policy": "Only confirmed OUT/IR or two consecutive injury-related DNP daily reports in the game week qualify. Later LP/FP clears the DNP trigger. At least two meaningful players in a group are required. No automatic adjustments; returns remain manual scenarios.",
+  "practice_history": {
+    "team_daily_reports": 0,
+    "teams": 0,
+    "note": "The latest-status feed cannot establish consecutive DNPs. Dated source reports are required; missing days, players and repeated retrievals never count as DNPs."
+  },
+  "baseline_policy": {
+    "status": "Editorial starting presets; not statistically fitted or validated",
+    "description": "Total group effects relative to a healthy unit, not per-player values. Review replacements, normal workload and impact already in DEPI. Presets never apply automatically.",
+    "groups": [
+      {
+        "id": "OL",
+        "label": "Offensive line",
+        "moderate": 1.0,
+        "severe": 2.0,
+        "trigger": "Two regular starters; severe: three starters, both tackles or deeper replacement losses."
+      },
+      {
+        "id": "REC",
+        "label": "Receivers / receiving TEs",
+        "moderate": 1.0,
+        "severe": 2.0,
+        "trigger": "Two substantial receiving roles; severe: primary targets and their usable alternatives depleted."
+      },
+      {
+        "id": "DB",
+        "label": "Secondary",
+        "moderate": 0.75,
+        "severe": 1.5,
+        "trigger": "Two regular coverage roles; severe: outside/slot/safety depth also depleted."
+      },
+      {
+        "id": "FRONT",
+        "label": "Defensive front",
+        "moderate": 0.75,
+        "severe": 1.25,
+        "trigger": "Multiple important edge/interior rotation players; severe: replacements also unavailable."
+      },
+      {
+        "id": "LB",
+        "label": "Off-ball linebackers",
+        "moderate": 0.5,
+        "severe": 0.75,
+        "trigger": "Multiple substantial off-ball roles; check coverage duties and actual replacements."
+      },
+      {
+        "id": "RB",
+        "label": "Running backs",
+        "moderate": 0.25,
+        "severe": 0.75,
+        "trigger": "Backfield depth depleted; severe: rushing, receiving and protection alternatives all affected."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Position-weighted injury burden research",
+        "url": "https://journals.sagepub.com/doi/10.1177/22150218241304941",
+        "supports": "Weighting injury burden by position; does not estimate these cluster presets."
+      },
+      {
+        "title": "PFF player valuation methodology",
+        "url": "https://www.pff.com/news/nfl-defensive-most-valuable-player-pff-plus-minus-2021-nfl-season-los-angeles-rams-aaron-donald",
+        "supports": "Role/participation context and noisy on/off comparisons; does not supply these preset values."
+      }
+    ]
+  },
+  "teams": [
+    {
+      "team": "ARI",
+      "name": "Arizona Cardinals",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "ATL",
+      "name": "Atlanta Falcons",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "BAL",
+      "name": "Baltimore Ravens",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "BUF",
+      "name": "Buffalo Bills",
+      "coverage": "Bye",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "CAR",
+      "name": "Carolina Panthers",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "CHI",
+      "name": "Chicago Bears",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "CIN",
+      "name": "Cincinnati Bengals",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "CLE",
+      "name": "Cleveland Browns",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "DAL",
+      "name": "Dallas Cowboys",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "DEN",
+      "name": "Denver Broncos",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "DET",
+      "name": "Detroit Lions",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "GB",
+      "name": "Green Bay Packers",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "HOU",
+      "name": "Houston Texans",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "IND",
+      "name": "Indianapolis Colts",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "JAX",
+      "name": "Jacksonville Jaguars",
+      "coverage": "Bye",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "KC",
+      "name": "Kansas City Chiefs",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "LA",
+      "name": "Los Angeles Rams",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "LAC",
+      "name": "Los Angeles Chargers",
+      "coverage": "Bye",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "LV",
+      "name": "Las Vegas Raiders",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "MIA",
+      "name": "Miami Dolphins",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "MIN",
+      "name": "Minnesota Vikings",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "NE",
+      "name": "New England Patriots",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "NO",
+      "name": "New Orleans Saints",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "NYG",
+      "name": "New York Giants",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "NYJ",
+      "name": "New York Jets",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "PHI",
+      "name": "Philadelphia Eagles",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "PIT",
+      "name": "Pittsburgh Steelers",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "SEA",
+      "name": "Seattle Seahawks",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "SF",
+      "name": "San Francisco 49ers",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "TB",
+      "name": "Tampa Bay Buccaneers",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "TEN",
+      "name": "Tennessee Titans",
+      "coverage": "No current-week report",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    },
+    {
+      "team": "WAS",
+      "name": "Washington Commanders",
+      "coverage": "Bye",
+      "report_players": 0,
+      "unresolved_participation_ids": 0,
+      "cards": 0
+    }
+  ],
+  "cards": [],
+  "mapping_coverage": {
+    "snap_rows": 7463,
+    "unmapped_snap_rows": 14
+  }
+}

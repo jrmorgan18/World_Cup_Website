@@ -66,6 +66,10 @@ def refresh_inputs(cache, season):
                            ('snap_counts.parquet',f'snap_counts/snap_counts_{season}.parquet')]:
         core.append(fetch(cache, name, relative, refresh=True))
     try:
+        core.append(fetch(cache,'players.parquet','players/players.parquet',refresh=True))
+    except Exception as error:
+        print(f'Optional watchlist player-ID refresh unavailable: {error}',flush=True)
+    try:
         core.append(fetch(cache, 'injuries.parquet', f'injuries/injuries_{season}.parquet', refresh=True))
     except Exception as error:
         # Injury context is optional; it never supplies team EPA or changes model coefficients.
@@ -363,6 +367,13 @@ def build(cache, season, requested, audit=False, allow_partial=False):
             'half_life':exp.half_life,'coach_multiplier':.65,'new_qb_multiplier':.60}}
     from check_nfl_dashboard import validate
     validate(payload)
+    from update_nfl_injury_watchlist import build as injury_watchlist
+    watchlist=injury_watchlist(pd.read_parquet(cache/'injuries.parquet'),pd.read_parquet(cache/'snap_counts.parquet'),
+        pd.read_parquet(cache/'players.parquet') if (cache/'players.parquet').exists() else pd.DataFrame(columns=['pfr_id','gsis_id']),schedule,builder.depth_all,season,current_week,generated_at,
+        json.loads((ROOT/'scripts/nfl_injury_baselines.json').read_text()),
+        json.loads((ROOT/'scripts/nfl_injury_reviews.json').read_text())['reviews'],
+        json.loads((cache/'injuries.parquet.source.json').read_text()) if (cache/'injuries.parquet.source.json').exists() else {'url':'https://github.com/nflverse/nflverse-data/releases/tag/injuries','fetched_at':None},
+        json.loads((ROOT/'scripts/nfl_injury_evidence.json').read_text()))
     if audit:
         alternate=Experiment(**{**parameters,'key':'continuity_audit','label':'Continuity audit','continuity_adjustment':False})
         alt_rows,alt_details=builder.generate_refined(alternate,evaluate_from=2024)
@@ -375,6 +386,7 @@ def build(cache, season, requested, audit=False, allow_partial=False):
             'default_validation':{y:config['validation']['seasons'][y]['beta'] for y in ['2024','2025']}}
         atomic_json(ROOT/'scripts/nfl_continuity_audit.json',result)
     atomic_json(archive_path,{'forecasts':archive})
+    atomic_json(ROOT/'_data/nfl_injury_watchlist.json',watchlist)
     atomic_json(ROOT/'_data/nfl_dashboard.json',payload)
     atomic_json(ROOT/'assets/data/nfl-dashboard.json',payload)
     pd.DataFrame([{k:v for k,v in t.items() if not isinstance(v,(dict,list))} for t in teams]).to_csv(ROOT/'assets/data/nfl-rankings.csv',index=False)

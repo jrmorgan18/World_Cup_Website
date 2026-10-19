@@ -1,0 +1,5 @@
+{
+  "instructions": "Add sourced, explicitly dated official team practice reports and confirmed IR/activation records for the target game week. Never use retrieval dates as practice dates. A team practice_reports entry contains season, week, team, report_date (YYYY-MM-DD), observed_at (timezone-aware), source_url, and players [{id (GSIS), name, position, practice_status (DNP/LP/FP), practice_primary_injury}]. Include all practice report rows, including LP/FP; omitted players are unknown and break a DNP streak. Two DNPs must be on adjacent dated reports without a missing day. Re-fetching one report never creates another practice day. A roster_status entry contains season, week, team, id (GSIS), name, position, status (IR or Active), effective_at, observed_at, and source_url. Carry IR forward only after verifying it remains current; activation clears IR. Returning to practice alone does not activate a player. Reviews cannot bypass this screening policy. Positive return scenarios remain available manually.",
+  "practice_reports": [],
+  "roster_status": []
+}

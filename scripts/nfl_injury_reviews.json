@@ -1,0 +1,4 @@
+{
+  "instructions": "Maintain sourced, timestamped research cards here. Cards do not change ratings. Add dated daily practice reports and IR/activation evidence to nfl_injury_evidence.json first. Reviews annotate qualifying groups only and cannot bypass eligibility or add players. An agent must verify returns for manual positive scenarios and never infer health from missing rows.",
+  "reviews": []
+}
