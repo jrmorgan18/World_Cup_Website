@@ -1,0 +1,10 @@
+{% assign ats_weeks = site.data.nfl_dashboard.games | map: 'week' | uniq | sort | reverse %}
+{% for ats_week in ats_weeks %}
+  {% assign ats_wins = 0 %}{% assign ats_losses = 0 %}{% assign ats_pushes = 0 %}{% assign ats_excluded = 0 %}{% assign ats_games = 0 %}
+  {% for ats_game in site.data.nfl_dashboard.games %}{% if ats_game.week == ats_week and ats_game.status == 'Final' %}
+    {% assign ats_games = ats_games | plus: 1 %}
+    {% capture ats_grade %}{% include nfl-rec-result.html game=ats_game %}{% endcapture %}
+    {% case rec_label %}{% when 'Winner' %}{% assign ats_wins = ats_wins | plus: 1 %}{% when 'Loser' %}{% assign ats_losses = ats_losses | plus: 1 %}{% when 'Push' %}{% assign ats_pushes = ats_pushes | plus: 1 %}{% else %}{% assign ats_excluded = ats_excluded | plus: 1 %}{% endcase %}
+  {% endif %}{% endfor %}
+  {% if ats_games > 0 %}<li data-ats-week="{{ ats_week }}"><span>Week {{ ats_week }}</span><strong>{{ ats_wins }}–{{ ats_losses }}–{{ ats_pushes }}</strong>{% if ats_excluded > 0 %}<small>{{ ats_excluded }} ungraded</small>{% endif %}</li>{% endif %}
+{% endfor %}
