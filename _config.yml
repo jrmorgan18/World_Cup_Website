@@ -19,6 +19,10 @@ markdown: kramdown
 highlighter: rouge
 future: true
 
+# Article clips expire on the first build after they are more than two weeks old.
+# Source videos and original article files remain archived, not deleted.
+video_retention_days: 14
+
 defaults:
   - scope:
       path: "soccer/project-2030"
@@ -31,6 +35,7 @@ defaults:
       layout: "post"
 
 exclude:
+  - VIDEO_RETENTION.md
   - README.md
   - DUAL_EIGHTS_ROLLBACK.md
   - Gemfile
