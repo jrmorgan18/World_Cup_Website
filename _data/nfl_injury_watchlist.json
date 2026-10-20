@@ -1,14 +1,14 @@
 {
   "season": 2026,
   "week": 7,
-  "as_of": "2026-10-19T04:44:39.569034+00:00",
+  "as_of": "2026-10-20T15:52:06.354987+00:00",
   "source": {
     "file": "injuries.parquet",
     "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet",
-    "fetched_at": "2026-10-19T04:43:33.033315+00:00",
-    "http_last_modified": "Sun, 18 Oct 2026 12:02:07 GMT",
-    "source_sha256": "3c8e74e8070093fc9d6490605bff412c251c178a7c3e952ab3d4d2705bcf83cf",
-    "cache_sha256": "3c8e74e8070093fc9d6490605bff412c251c178a7c3e952ab3d4d2705bcf83cf"
+    "fetched_at": "2026-10-20T15:51:48.912330+00:00",
+    "http_last_modified": "Tue, 20 Oct 2026 12:41:12 GMT",
+    "source_sha256": "b5e3aca2e95e9444997c5950b63000cbefc93f854db788f19f9ab74751e87e3a",
+    "cache_sha256": "b5e3aca2e95e9444997c5950b63000cbefc93f854db788f19f9ab74751e87e3a"
   },
   "source_max_week": 6,
   "policy": "Only confirmed OUT/IR or two consecutive injury-related DNP daily reports in the game week qualify. Later LP/FP clears the DNP trigger. At least two meaningful players in a group are required. No automatic adjustments; returns remain manual scenarios.",
@@ -337,7 +337,7 @@
   ],
   "cards": [],
   "mapping_coverage": {
-    "snap_rows": 7463,
-    "unmapped_snap_rows": 14
+    "snap_rows": 8671,
+    "unmapped_snap_rows": 16
   }
 }
