@@ -187,16 +187,16 @@ editorial:
         - { label: "Five questions defining the Ravens' season", url: "/ravens/five-questions-that-will-define-the-season/" }
 
   units:
-    - { name: "Quarterback", assessment: "Elite", trend: "down", season_grade: "A-", season_grade_points: 3.734, last_game_grade: "B-", explanation: "Week 5: Huntley completed 24 of 32 passes for 201 yards, two touchdowns and no interceptions, then scored the overtime winner. Jackson's season QBR and CPOE are separate analytics, not grades for Huntley's performance.", link: "/ravens/first-and-five-falcons-week-five-2026/" }
-    - { name: "Running backs", assessment: "Solid", trend: "up", season_grade: "B+", season_grade_points: 3.464, last_game_grade: "A", explanation: "Week 5: Henry ran for 102 yards and added a receiving touchdown; Hill contributed 73 rushing yards. Their production led a 208-yard team rushing night." }
-    - { name: "Wide receivers", assessment: "Strength", trend: "stable", season_grade: "A-", season_grade_points: 3.736, last_game_grade: "A", explanation: "Week 5: Flowers returned to action, Bateman supplied key completions and Walker caught the late touchdown. Flowers' season yards per route run and YAC over expectation provide additional receiving context." }
-    - { name: "Tight ends", assessment: "Solid", trend: "down", season_grade: "B-", season_grade_points: 2.6, last_game_grade: "D", explanation: "Week 5: Andrews' lost fumble was returned for a touchdown, though he helped on the overtime drive. Vannett joined the blocking rotation with Smythe on IR." }
-    - { name: "Offensive line", assessment: "Mixed", trend: "up", season_grade: "C+", season_grade_points: 2.464, last_game_grade: "B", explanation: "Week 5 grade: Ioane's second start at center and Jones replacing Vorhees helped produce 208 rushing yards. The separate analytics now use ESPN's Week 6 rates and Filmstudy's published reports through Week 5.", link: "/ravens/first-and-five-falcons-week-five-2026/" }
-    - { name: "Defensive line", assessment: "Strength", trend: "up", season_grade: "B+", season_grade_points: 3.464, last_game_grade: "A", explanation: "Week 5 grade: Campbell anchored the front and Madubuike's workload rose to 53 snaps. The separate ESPN run-stop and player rush metrics now include Week 6." }
-    - { name: "Edge rushers", assessment: "Solid", trend: "up", season_grade: "B", season_grade_points: 3.066, last_game_grade: "B+", explanation: "Week 5 grade: Green's sack and Robinson's late strip-sack helped the Atlanta win. Hendrickson returned in Week 6; the separate ESPN rush metrics include that game." }
-    - { name: "Linebackers", assessment: "Solid", trend: "up", season_grade: "B", season_grade_points: 3.0, last_game_grade: "B", explanation: "Week 5: Atlanta converted 9 of 17 third downs, keeping underneath coverage and situational execution on the correction list. No defensible free league-wide linebacker metric is added." }
-    - { name: "Secondary", assessment: "Mixed", trend: "up", season_grade: "B-", season_grade_points: 2.736, last_game_grade: "B", explanation: "Week 5: London had a big day, but Hamilton's interception sealed the game and Starks had a big game, leading the team with 10 tackles. Humphrey played all 64 defensive snaps. Opponent CPOE is a separate season metric." }
-    - { name: "Specialists", assessment: "Strength", trend: "up", season_grade: "B+", season_grade_points: 3.398, last_game_grade: "A-", explanation: "Week 5: The kicking was good, but the punting was mediocre. Loop made all three field-goal attempts, including two from 51 yards, plus the overtime extra point." }
+    - { name: "Quarterback", assessment: "Strength", trend: "down", season_grade: "B+", season_grade_points: 3.278, last_game_grade: "D", explanation: "Week 6: Huntley completed 19 of 31 passes for 165 yards and a touchdown without an interception, but only two completions gained 12 or more yards and the offense failed to score after its first two drives. Jackson's season QBR and CPOE are separate analytics, not grades for Huntley's performance.", link: "/ravens/first-and-five-browns-week-six-2026/" }
+    - { name: "Running backs", assessment: "Solid", trend: "down", season_grade: "B", season_grade_points: 3.053, last_game_grade: "D", explanation: "Week 6: Henry managed 58 yards on 17 carries, and his fourth-quarter fumble set up Cleveland's tying touchdown. The Ravens averaged -0.56 EPA per designed run." }
+    - { name: "Wide receivers", assessment: "Strength", trend: "down", season_grade: "A-", season_grade_points: 3.613, last_game_grade: "B", explanation: "Week 6: Flowers caught six passes for 66 yards and Lane returned with four for 40. Bateman left in the second quarter with a shoulder injury. Flowers' season yards per route run and YAC over expectation provide additional receiving context." }
+    - { name: "Tight ends", assessment: "Solid", trend: "down", season_grade: "B-", season_grade_points: 2.5, last_game_grade: "C", explanation: "Week 6: Cuevas caught four passes for 44 yards and his first NFL touchdown, including a 29-yard gain from a guard-like alignment, but the blocking did not sustain the run game after the opening drives." }
+    - { name: "Offensive line", assessment: "Mixed", trend: "down", season_grade: "C+", season_grade_points: 2.332, last_game_grade: "C-", explanation: "Week 6 grade: Cleveland's aggressive upfield front held the Ravens to 87 rushing yards at 3.8 per carry. Jones struggled and Ioane had more snap issues in his third straight start at center. The separate analytics use ESPN's Week 6 rates and Filmstudy's published reports through Week 5.", link: "/ravens/first-and-five-browns-week-six-2026/" }
+    - { name: "Defensive line", assessment: "Strength", trend: "up", season_grade: "A-", season_grade_points: 3.553, last_game_grade: "A", explanation: "Week 6 grade: Madubuike recorded his first sack in more than a year and Campbell added another, while Cleveland ran 29 times for 93 yards. The separate ESPN run-stop and player rush metrics include Week 6." }
+    - { name: "Edge rushers", assessment: "Solid", trend: "stable", season_grade: "B", season_grade_points: 3.055, last_game_grade: "B", explanation: "Week 6 grade: Hendrickson returned from a finger procedure with a sack and multiple pressures as the Ravens sacked Watson five times. The separate ESPN rush metrics include that game." }
+    - { name: "Linebackers", assessment: "Solid", trend: "down", season_grade: "B", season_grade_points: 2.888, last_game_grade: "C+", explanation: "Week 6: Cleveland converted one of its first 10 third downs, then four of its final six, including the 33-yard completion that set up the winning field goal. No defensible free league-wide linebacker metric is added." }
+    - { name: "Secondary", assessment: "Solid", trend: "up", season_grade: "B", season_grade_points: 2.835, last_game_grade: "B+", explanation: "Week 6: Hamilton made three tackles for loss and Martin added a sack and several strong coverage snaps, though his late pass interference and offside penalties extended Cleveland drives. Watson threw for 164 yards. Opponent CPOE is a separate season metric." }
+    - { name: "Specialists", assessment: "Solid", trend: "down", season_grade: "B", season_grade_points: 2.998, last_game_grade: "D", explanation: "Week 6: Loop missed a 49-yard field goal that would have restored a 10-point fourth-quarter lead, after making a 34-yarder on the second drive." }
 
   weekly_changes:
     - { direction: "down", title: "The offense went quiet", text: "The first two drives produced 10 points; the final nine produced none. The Ravens finished with 235 yards and a 33.9% success rate." }
@@ -220,15 +220,15 @@ preseason_form:
   points_against: 13
 
 unit_grade_context:
-  season_label: "Season through Week 5"
-  last_game_label: "Week 5 vs. Atlanta"
+  season_label: "Season through Week 6"
+  last_game_label: "Week 6 at Cleveland"
   analytics_as_of: "Each league-wide metric carries its latest published week"
   # Week 4's rounded editorial season ratings are the baseline, not a reconstructed
   # average of four individual game grades. Retain the new point averages so later
   # updates use (season_grade_points * graded_games + new_game_points) / new_count
   # instead of repeatedly averaging rounded display letters.
-  graded_games: 5
-  rollup_method: "Equal game weight; four parts existing Week 4 season rating plus one part Week 5 grade, rounded to the nearest letter band."
+  graded_games: 6
+  rollup_method: "Equal game weight; five parts existing Week 5 season rating plus one part Week 6 grade, rounded to the nearest letter band."
   grade_points: { "A+": 4.33, "A": 4.0, "A-": 3.67, "B+": 3.33, "B": 3.0, "B-": 2.67, "C+": 2.33, "C": 2.0, "C-": 1.67, "D+": 1.33, "D": 1.0, "D-": 0.67, "F": 0.0 }
 
 preseason_last_game:
