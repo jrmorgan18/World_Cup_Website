@@ -87,7 +87,7 @@
       "full_name": "Cincinnati Bengals",
       "record": "3-2",
       "value": 59.1,
-      "unrounded_value": 59.05248824932392,
+      "unrounded_value": 59.052488249323915,
       "offense_rank": 7,
       "defense_rank": 12,
       "special_teams_rank": 12
@@ -147,7 +147,7 @@
       "full_name": "Tampa Bay Buccaneers",
       "record": "1-5",
       "value": 55.1,
-      "unrounded_value": 55.117538606790774,
+      "unrounded_value": 55.11753860679078,
       "offense_rank": 27,
       "defense_rank": 4,
       "special_teams_rank": 3
@@ -195,7 +195,7 @@
       "full_name": "Los Angeles Rams",
       "record": "2-4",
       "value": 50.9,
-      "unrounded_value": 50.94993797627708,
+      "unrounded_value": 50.94993797627707,
       "offense_rank": 10,
       "defense_rank": 16,
       "special_teams_rank": 32
@@ -243,7 +243,7 @@
       "full_name": "Cleveland Browns",
       "record": "4-2",
       "value": 47.0,
-      "unrounded_value": 47.03375431089146,
+      "unrounded_value": 47.03375431089145,
       "offense_rank": 24,
       "defense_rank": 9,
       "special_teams_rank": 21
@@ -303,7 +303,7 @@
       "full_name": "Philadelphia Eagles",
       "record": "2-4",
       "value": 41.0,
-      "unrounded_value": 41.044317659827286,
+      "unrounded_value": 41.04431765982729,
       "offense_rank": 30,
       "defense_rank": 20,
       "special_teams_rank": 7
@@ -387,7 +387,7 @@
       "full_name": "Miami Dolphins",
       "record": "0-5",
       "value": 26.5,
-      "unrounded_value": 26.49897664555437,
+      "unrounded_value": 26.49897664555438,
       "offense_rank": 25,
       "defense_rank": 31,
       "special_teams_rank": 30
