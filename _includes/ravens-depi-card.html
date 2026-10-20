@@ -1,0 +1,50 @@
+{%- comment -%}
+Dual Eights Power Index card for the Ravens scorecard, shown beside the Efficiency
+Index. It reads the NFL hub data directly so the card always matches /nfl/rankings/
+and never needs a second model run in the Ravens updater.
+
+Parameters:
+  team        - team abbreviation (default "BAL")
+  league_size - number of ranked teams (default 32)
+{%- endcomment -%}
+{% assign nfl = site.data.nfl_dashboard %}
+{% assign depi_abbr = include.team | default: "BAL" %}
+{% assign league_size = include.league_size | default: 32 %}
+{% assign depi_team = nfl.teams | where: "abbr", depi_abbr | first %}
+{% if depi_team and depi_team.strength != nil %}
+{% assign rank_inverse = league_size | minus: depi_team.rank %}
+{% assign rank_divisor = league_size | minus: 1 %}
+{% assign rank_percent = rank_inverse | times: 100 | divided_by: rank_divisor %}
+{% assign rank_change = depi_team.weekly_rank_change | default: 0 %}
+{% assign rank_change_abs = rank_change | abs %}
+<article class="ravens-metric-card ravens-metric-card--depi" id="metric-depi">
+  <header>
+    <p>Team</p>
+    <span class="ravens-status">Beta</span>
+  </header>
+  <h3>Dual Eights Power Index</h3>
+  <div class="ravens-metric-reading">
+    <strong class="ravens-metric-value">{% if depi_team.strength > 0 %}+{% endif %}{{ depi_team.strength | round: 1 }}</strong>
+    <span>NFL rank {{ depi_team.rank }}</span>
+  </div>
+  {% if depi_team.previous_week_beta_rank %}
+  <p class="ravens-trend ravens-trend--{% if rank_change > 0 %}improved{% elsif rank_change < 0 %}declined{% else %}stable{% endif %}">
+    <span aria-hidden="true">{% if rank_change > 0 %}↑{% elsif rank_change < 0 %}↓{% else %}→{% endif %}</span>
+    {% if rank_change > 0 %}Up {{ rank_change_abs }}{% elsif rank_change < 0 %}Down {{ rank_change_abs }}{% else %}Unchanged{% endif %} from No. {{ depi_team.previous_week_beta_rank }} last week
+  </p>
+  {% else %}
+  <p class="ravens-trend ravens-trend--new">No previous weekly table</p>
+  {% endif %}
+  <div class="ravens-rank-visual" aria-label="Current DEPI rank: number {{ depi_team.rank }} of {{ league_size }}">
+    <div class="ravens-rank-track" aria-hidden="true"><span>{{ league_size }}</span><i style="--rank-percent:{{ rank_percent }}%"></i><span>1</span></div>
+    <p><span>Current DEPI rank</span><strong>No. {{ depi_team.rank }}</strong></p>
+  </div>
+  <p class="ravens-metric-interpretation">Points relative to an average team on a neutral field: offense {% if depi_team.offense_points > 0 %}+{% endif %}{{ depi_team.offense_points | round: 1 }}, defense {% if depi_team.defense_points > 0 %}+{% endif %}{{ depi_team.defense_points | round: 1 }}, special teams {% if depi_team.st_points > 0 %}+{% endif %}{{ depi_team.st_points | round: 1 }} and quarterback {% if depi_team.qb_points > 0 %}+{% endif %}{{ depi_team.qb_points | round: 1 }}. On observed play-by-play efficiency alone, the Efficiency Index has them No. {{ depi_team.efficiency_rank }}.</p>
+  <details class="ravens-metric-definition">
+    <summary>What this measures</summary>
+    <p>DEPI is the Dual Eights predictive power rating, expressed in points relative to an average NFL team. It blends opponent-adjusted offense, defense and special teams with the expected quarterback and carries a share of prior-season strength. The difference between two teams' ratings, plus home field ({{ nfl.home_advantage | round: 1 }} points), is the model's projected margin. Unlike the Efficiency Index, it is built to forecast games rather than describe them. Higher is better. <a href="{{ '/nfl/rankings/' | relative_url }}?team={{ depi_abbr }}#team-detail">All 32 teams &rarr;</a></p>
+  </details>
+  <p class="ravens-metric-source">Source: Dual Eights Power Index (beta) through Week {{ nfl.rating_week }} from nflverse play-by-play</p>
+  <span class="sr-only">Dual Eights Power Index: {{ depi_team.strength | round: 1 }} points, ranked {{ depi_team.rank }} of {{ league_size }}.</span>
+</article>
+{% endif %}

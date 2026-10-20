@@ -132,6 +132,7 @@ section_theme: ravens
       <div class="ravens-metric-grid">
         {% for metric_id in group.metric_ids %}
           {% include club-dashboard-metric-card.html metric_id=metric_id definitions=dashboard.metric_definitions assessments=dashboard.editorial.metric_assessments current=current_snapshot previous=previous_snapshot benchmark=stats.benchmark_snapshot league_size=32 rank_label="NFL rank" rank_context="Current NFL position" prefix="ravens" %}
+          {% if metric_id == "overall_efficiency" %}{% include ravens-depi-card.html team="BAL" league_size=32 %}{% endif %}
         {% endfor %}
       </div>
     </div>
