@@ -17,8 +17,10 @@ hero_wide: true
 hero_alt: "Tyler Huntley throws from the pocket against the Browns in Week 6"
 hero_credit: "Shawn Hubbard / Baltimore Ravens Photos"
 hero_credit_url: "https://www.baltimoreravens.com/photos/game-action-gallery-ravens-at-browns-week-6"
-home_feature: true
-home_recent: false
+home_feature: false
+home_recent: true
+home_recent_front: true
+home_recent_label: "First and Five"
 ravens_feature: true
 ravens_feature_image: true
 feature_label: "Week 6 takeaways"
