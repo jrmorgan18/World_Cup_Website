@@ -22,6 +22,7 @@ source_docx: "articles/European Power Rankings 10_20.docx"
 home_feature: false
 home_recent: true
 home_recent_after_front: true
+home_recent_after_front_order: 1
 home_recent_label: "European Power Rankings"
 home_recent_theme: "soccer"
 feature_label: "European Power Rankings"
