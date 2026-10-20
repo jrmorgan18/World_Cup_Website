@@ -330,7 +330,7 @@ body { overflow-x: hidden; }
 .power-rankings-tier-card { --tier-accent:#d4a843; display:grid; grid-template-columns:minmax(178px,.72fr) minmax(0,1.8fr); overflow:hidden; border:1px solid rgba(255,255,255,.14); background:#ded9cf; box-shadow:0 14px 30px rgba(0,0,0,.18); }
 .power-rankings-tier-card--2 { --tier-accent:#aebbd0; }
 .power-rankings-tier-card--3 { --tier-accent:#7f91ab; }
-.power-rankings-tier-card--4 { --tier-accent:#63728a; }
+.power-rankings-tier-card--4,.power-rankings-tier-card--5,.power-rankings-tier-card--6 { --tier-accent:#63728a; }
 .power-rankings-tier-card>header { margin:0; padding:22px 20px; display:flex; flex-direction:column; justify-content:center; border-top:4px solid var(--tier-accent); background:linear-gradient(150deg,#17243a,#0b111d); }
 .power-rankings-tier-card>header p { color:var(--tier-accent); font-family:var(--font-display); font-size:.62rem; font-weight:700; letter-spacing:1.4px; text-transform:uppercase; }
 .article-body .power-rankings-tier-card>header h2 { margin:8px 0 13px; padding:0; color:#fff; border:0; font-size:1.05rem; line-height:1.08; letter-spacing:.1px; }
