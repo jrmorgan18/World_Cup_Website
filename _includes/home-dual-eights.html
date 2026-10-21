@@ -17,30 +17,9 @@
 
 {% assign main_feature = site.posts | where: "home_feature", true | sort: "date" | reverse | first %}
 {% comment %}
-  The homepage rail keeps the last week of articles relative to the feature's
-  publication day. The previous feature can lead the rail with home_recent_front.
+  The homepage rail is explicitly curated in _data/homepage.yml so its order
+  does not change with publication dates or legacy post placement flags.
 {% endcomment %}
-{% assign home_recent_cutoff = main_feature.date | date: "%Y-%m-%d" | date: "%s" | minus: 604800 %}
-{% assign home_recent_candidates = site.posts | where: "home_recent", true | sort: "date" | reverse %}
-{% assign home_recent = "" | split: "," %}
-{% for post in home_recent_candidates %}
-  {% assign post_timestamp = post.date | date: "%s" | plus: 0 %}
-  {% if post_timestamp >= home_recent_cutoff and post.url != main_feature.url %}
-    {% assign recent_match = home_recent_candidates | where: "url", post.url %}
-    {% assign home_recent = home_recent | concat: recent_match %}
-  {% endif %}
-{% endfor %}
-{% assign home_recent_front = home_recent | where: "home_recent_front", true | first %}
-{% assign home_recent_after_front = home_recent | where: "home_recent_after_front", true | sort: "home_recent_after_front_order" %}
-{% assign home_recent_first = home_recent | where: "home_recent_position", 0 | first %}
-{% assign home_recent_priority = home_recent | where: "home_recent_priority", true | first %}
-{% assign home_recent_board = home_recent | where: "home_recent_board", true | first %}
-{% assign home_recent_lead = home_recent | where: "home_recent_lead", true | first %}
-{% assign home_recent_top = home_recent | where: "home_recent_position", 1 | first %}
-{% assign home_recent_second = home_recent | where: "home_recent_position", 2 | first %}
-{% assign home_recent_third = home_recent | where: "home_recent_position", 3 | first %}
-{% assign home_recent_fourth = home_recent | where: "home_recent_position", 4 | first %}
-{% assign home_recent_limit = 8 %}
 {% if main_feature %}
 <section class="de-home-editorial">
   <div class="de-home-content-grid">
@@ -74,61 +53,12 @@
       </div>
       <ol class="de-recent-list">
         {% assign home_recent_count = 0 %}
-        {% if home_recent_front %}
-          {% assign home_recent_count = home_recent_count | plus: 1 %}
-          {% include home-recent-item.html post=home_recent_front index=home_recent_count %}
-        {% endif %}
-        {% for pinned_post in home_recent_after_front %}
-          {% assign home_recent_count = home_recent_count | plus: 1 %}
-          {% include home-recent-item.html post=pinned_post index=home_recent_count %}
-        {% endfor %}
-        {% if home_recent_first %}
-          {% assign home_recent_count = home_recent_count | plus: 1 %}
-          {% include home-recent-item.html post=home_recent_first index=home_recent_count %}
-        {% endif %}
-        {% if home_recent_priority %}
-          {% assign home_recent_count = home_recent_count | plus: 1 %}
-          {% include home-recent-item.html post=home_recent_priority index=home_recent_count %}
-        {% endif %}
-        {% if home_recent_lead %}
-          {% assign home_recent_count = home_recent_count | plus: 1 %}
-          {% include home-recent-item.html post=home_recent_lead index=home_recent_count %}
-        {% endif %}
-        {% if home_recent_board %}
-          {% assign home_recent_count = home_recent_count | plus: 1 %}
-          {% include home-recent-item.html post=home_recent_board index=home_recent_count %}
-        {% endif %}
-        {% if home_recent_top %}
-          {% assign home_recent_count = home_recent_count | plus: 1 %}
-          {% include home-recent-item.html post=home_recent_top index=home_recent_count %}
-        {% endif %}
-        {% if home_recent_second %}
-          {% assign home_recent_count = home_recent_count | plus: 1 %}
-          {% include home-recent-item.html post=home_recent_second index=home_recent_count %}
-        {% endif %}
-        {% if home_recent_third %}
-          {% assign home_recent_count = home_recent_count | plus: 1 %}
-          {% include home-recent-item.html post=home_recent_third index=home_recent_count %}
-        {% endif %}
-        {% if home_recent_fourth %}
-          {% assign home_recent_count = home_recent_count | plus: 1 %}
-          {% include home-recent-item.html post=home_recent_fourth index=home_recent_count %}
-        {% endif %}
-        {% for post in home_recent %}
-          {% unless post.home_recent_after or post.home_recent_position or post.home_recent_after_front or post.url == home_recent_front.url or post.url == home_recent_priority.url or post.url == home_recent_lead.url or post.url == home_recent_board.url %}
-            {% if home_recent_count < home_recent_limit %}
-              {% assign home_recent_count = home_recent_count | plus: 1 %}
-              {% include home-recent-item.html post=post index=home_recent_count %}
-            {% endif %}
-            {% for inserted_post in home_recent %}
-              {% unless inserted_post.home_recent_position %}
-                {% if inserted_post.home_recent_after == post.slug and home_recent_count < home_recent_limit %}
-                  {% assign home_recent_count = home_recent_count | plus: 1 %}
-                  {% include home-recent-item.html post=inserted_post index=home_recent_count %}
-                {% endif %}
-              {% endunless %}
-            {% endfor %}
-          {% endunless %}
+        {% for article_url in site.data.homepage.recent_articles %}
+          {% assign sidebar_post = site.posts | where: "url", article_url | first %}
+          {% if sidebar_post %}
+            {% assign home_recent_count = home_recent_count | plus: 1 %}
+            {% include home-recent-item.html post=sidebar_post index=home_recent_count %}
+          {% endif %}
         {% endfor %}
       </ol>
     </aside>
