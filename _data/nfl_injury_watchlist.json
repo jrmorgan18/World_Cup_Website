@@ -1,16 +1,16 @@
 {
   "season": 2026,
   "week": 7,
-  "as_of": "2026-10-20T15:52:06.354987+00:00",
+  "as_of": "2026-10-21T16:09:51.951346+00:00",
   "source": {
     "file": "injuries.parquet",
     "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet",
-    "fetched_at": "2026-10-20T15:51:48.912330+00:00",
-    "http_last_modified": "Tue, 20 Oct 2026 12:41:12 GMT",
-    "source_sha256": "b5e3aca2e95e9444997c5950b63000cbefc93f854db788f19f9ab74751e87e3a",
-    "cache_sha256": "b5e3aca2e95e9444997c5950b63000cbefc93f854db788f19f9ab74751e87e3a"
+    "fetched_at": "2026-10-21T16:09:40.454760+00:00",
+    "http_last_modified": "Wed, 21 Oct 2026 12:53:02 GMT",
+    "source_sha256": "7618aa4b7601e012df61febc67ad8d3aa1c515b20075c688b2104e19378e79c7",
+    "cache_sha256": "7618aa4b7601e012df61febc67ad8d3aa1c515b20075c688b2104e19378e79c7"
   },
-  "source_max_week": 6,
+  "source_max_week": 7,
   "policy": "Only confirmed OUT/IR or two consecutive injury-related DNP daily reports in the game week qualify. Later LP/FP clears the DNP trigger. At least two meaningful players in a group are required. No automatic adjustments; returns remain manual scenarios.",
   "practice_history": {
     "team_daily_reports": 0,
@@ -121,8 +121,8 @@
     {
       "team": "CHI",
       "name": "Chicago Bears",
-      "coverage": "No current-week report",
-      "report_players": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 6,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
@@ -249,9 +249,9 @@
     {
       "team": "NE",
       "name": "New England Patriots",
-      "coverage": "No current-week report",
-      "report_players": 0,
-      "unresolved_participation_ids": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 17,
+      "unresolved_participation_ids": 1,
       "cards": 0
     },
     {
