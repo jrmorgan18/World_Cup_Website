@@ -20,7 +20,7 @@ hero_credit_url: "https://www.bundesliga.com/de/bundesliga/news/fc-bayern-muench
 home_feature: false
 home_recent: true
 home_recent_after_front: true
-home_recent_after_front_order: 2
+home_recent_after_front_order: 3
 home_recent_label: "European Team of the Week"
 home_recent_theme: "soccer"
 euro_team_of_week_feature: true
