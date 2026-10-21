@@ -77,6 +77,11 @@ barcelona_breaking_feature: true
 
 <p data-draft-paragraph="20">They certainly weren&#x27;t flawless, as Barcelona&#x27;s two goals demonstrated. But when possessions became scrambled, PSG usually looked better prepared to recover.</p>
 
+<figure class="soccer-article-figure soccer-article-figure--uncropped soccer-article-figure--portrait">
+  <img src="{{ '/assets/images/barcelona-psg-clasico-2026-10-21/joan-garcia-psg.webp' | relative_url }}" alt="Joan García in goal during Barcelona’s Champions League match against PSG" loading="lazy">
+  <figcaption>Joan García’s saves kept Barcelona in the contest in Paris. <a href="https://www.fcbarcelona.com/en/football/first-team/photos/4596290/photos-from-psg-v-barca-in-the-champions-league" target="_blank" rel="noopener">Photo: FC Barcelona</a>.</figcaption>
+</figure>
+
 <h2 id="pedri-and-espart-lead-barcelona-s-response" data-draft-paragraph="21"><strong>Pedri and Espart Lead Barcelona&#x27;s Response</strong></h2>
 
 <p data-draft-paragraph="22">Despite PSG&#x27;s advantage, Barcelona was hardly without opportunities.</p>
@@ -90,11 +95,6 @@ barcelona_breaking_feature: true
 <p data-draft-paragraph="26">It was a tremendous piece of soccer from Pedri that deserved an assist, and an opportunity Barcelona could not afford to waste..</p>
 
 <p data-draft-paragraph="27">What continues to distinguish Pedri is his ability to recognize the next attacking action before anyone else. He doesn&#x27;t need to beat three defenders on the dribble or play a spectacular 40-yard pass to change a possession. Often, a slight adjustment of his body position and one quick pass are enough to eliminate multiple opponents.</p>
-
-<figure class="soccer-article-figure soccer-article-figure--uncropped">
-  <img src="{{ '/assets/images/barcelona-psg-clasico-2026-10-21/pedri-psg.webp' | relative_url }}" alt="Pedri plays the ball under pressure from PSG" loading="lazy">
-  <figcaption>Pedri’s ability to escape pressure and find the next pass stood out in Paris. <a href="https://www.fcbarcelona.com/en/football/first-team/photos/4596290/photos-from-psg-v-barca-in-the-champions-league" target="_blank" rel="noopener">Photo: FC Barcelona</a>.</figcaption>
-</figure>
 
 <p data-draft-paragraph="28">Barcelona began the second half looking considerably more comfortable, with its midfield finally finding better passing angles and the team spending longer stretches in PSG&#x27;s end.</p>
 
