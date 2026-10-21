@@ -36,6 +36,7 @@ section_theme: ravens
 <section class="club-section club-section--ravens-feature">
   {% assign ravens_feature = site.posts | where: "ravens_feature", true | sort: "date" | reverse | first %}
   {% assign efficiency_rankings = site.data.dual_eights_efficiency | default: ravens_stats.league_efficiency_rankings %}
+  {% assign efficiency_article = site.posts | where: "series", "Dual Eights Efficiency Index" | sort: "date" | reverse | first %}
   <div class="ravens-feature-layout">
     {% if efficiency_rankings.teams.size > 0 %}
     <aside class="ravens-efficiency-rankings" aria-labelledby="ravens-efficiency-rankings-heading">
@@ -54,7 +55,9 @@ section_theme: ravens
         </li>
         {% endfor %}
       </ol>
-      {% if efficiency_rankings.article_url %}
+      {% if efficiency_article %}
+      <a href="{{ efficiency_article.url | relative_url }}"><span>Read the latest{% if efficiency_article.efficiency_week %} Week {{ efficiency_article.efficiency_week }}{% endif %} rankings</span><span aria-hidden="true">&rarr;</span></a>
+      {% elsif efficiency_rankings.article_url %}
       <a href="{{ efficiency_rankings.article_url | relative_url }}"><span>{{ efficiency_rankings.article_link_label | default: "Read the rankings &amp; method" }}</span><span aria-hidden="true">&rarr;</span></a>
       {% else %}
       <a href="{{ '/ravens/dashboard/' | relative_url }}#scorecard"><span>Explore the Ravens model</span><span aria-hidden="true">&rarr;</span></a>

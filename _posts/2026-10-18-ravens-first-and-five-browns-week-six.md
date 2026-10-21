@@ -19,7 +19,7 @@ hero_credit: "Shawn Hubbard / Baltimore Ravens Photos"
 hero_credit_url: "https://www.baltimoreravens.com/photos/game-action-gallery-ravens-at-browns-week-6"
 home_feature: false
 home_recent: true
-home_recent_front: true
+home_recent_front: false
 home_recent_label: "First and Five"
 ravens_feature: true
 ravens_feature_image: true

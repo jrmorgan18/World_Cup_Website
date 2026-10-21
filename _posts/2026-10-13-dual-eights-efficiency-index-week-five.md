@@ -20,7 +20,7 @@ hero_credit: "Kym Fortino / San Francisco 49ers"
 hero_credit_url: "https://www.49ers.com/photos/game-photos-49ers-vs-seahawks-week-5"
 home_feature: false
 home_recent: true
-home_recent_front: true
+home_recent_front: false
 home_recent_label: "Efficiency & Power"
 feature_label: "Week 5 efficiency & power"
 ---

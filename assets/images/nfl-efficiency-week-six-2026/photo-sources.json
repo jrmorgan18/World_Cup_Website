@@ -1,0 +1,33 @@
+[
+  {
+    "file": "bears-falcons-header.jpg",
+    "credit": "Chicago Bears",
+    "source_page": "https://www.chicagobears.com/photos/gameday-gallery-bears-at-falcons-2026-week-6",
+    "gallery_image": "gd-26-101826",
+    "download_url": "https://static.clubs.nfl.com/image/upload/f_jpg,q_90,w_1800,c_limit/bears/lm4xhpaf0rkgigh6utyv.jpg"
+  },
+  {
+    "file": "brock-purdy-commanders.jpg",
+    "credit": "Kym Fortino / San Francisco 49ers",
+    "source_page": "https://www.49ers.com/photos/game-photos-commanders-vs-49ers-week-6",
+    "download_url": "https://static.clubs.nfl.com/image/upload/f_jpg,q_90,w_1600,c_limit/49ers/h8fmp3ghbxigr4e9vceh.jpg"
+  },
+  {
+    "file": "mahomes-walker-chargers.jpg",
+    "credit": "Steve Sanders / Kansas City Chiefs",
+    "source_page": "https://www.chiefs.com/photos/photos-top-shots-from-regular-season-week-6-chargers-vs-chiefs",
+    "download_url": "https://static.clubs.nfl.com/image/upload/f_jpg,q_90,w_1600,c_limit/chiefs/z7uesxtc6mrdi9tm30ii.jpg"
+  },
+  {
+    "file": "../nfl-efficiency-week-five-2026/bills-rams-week-five.jpg",
+    "credit": "Katie Albertson / Buffalo Bills",
+    "source_page": "https://www.buffalobills.com/photos/game-frames-bills-at-rams-week-5",
+    "note": "Existing credited Week 5 photo; caption explicitly identifies that game."
+  },
+  {
+    "file": "../ravens/week-six-browns-2026/tyler-huntley-passing-browns.jpg",
+    "credit": "Shawn Hubbard / Baltimore Ravens Photos",
+    "source_page": "https://www.baltimoreravens.com/photos/game-action-gallery-ravens-at-browns-week-6",
+    "note": "Existing credited photo from the Week 6 First and Five recap."
+  }
+]
