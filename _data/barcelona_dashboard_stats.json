@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-22T12:30:59Z",
-  "as_of": "2026-10-22",
+  "generated_at": "2026-10-23T12:11:22Z",
+  "as_of": "2026-10-23",
   "season": 2026,
   "season_label": "2026-27",
   "team": {
@@ -4549,8 +4549,8 @@
   "injuries": [],
   "rotation": {
     "window_days": 21,
-    "window_start": "2026-10-01",
-    "window_end": "2026-10-22",
+    "window_start": "2026-10-02",
+    "window_end": "2026-10-23",
     "matches_in_window": 4,
     "available_minutes": 360,
     "players": [
@@ -4744,7 +4744,7 @@
     "shortest_rest_recent": 3,
     "average_rest_recent": 3.3,
     "matches_next_14_days": 3,
-    "matches_next_30_days": 4,
+    "matches_next_30_days": 5,
     "shortest_rest_upcoming": 3,
     "recent": [
       {
@@ -4792,6 +4792,12 @@
         "competition": "laliga",
         "opponent": "Atlético",
         "location": "away"
+      },
+      {
+        "date": "2026-11-22T13:00Z",
+        "competition": "laliga",
+        "opponent": "Villarreal",
+        "location": "home"
       }
     ]
   },
