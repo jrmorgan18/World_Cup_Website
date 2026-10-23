@@ -32,6 +32,23 @@ class ReceiverFeedTests(unittest.TestCase):
         metric = yprr_metric(fixture([("Narrow lead", "SEA", 1000, 4451)]), 2026, self.counts)
         self.assertEqual(metric["rank"], 2)
 
+    def test_missing_team_can_be_ranked_when_qualification_is_certain(self):
+        self.counts["CAR"] = 4
+        page = fixture([("No team", "FA", 100, 500)])
+        metric = yprr_metric(page, 2026, self.counts)
+        self.assertEqual(metric["rank"], 2)
+        page = fixture([("No team", "FA", 39, 390)])
+        self.assertEqual(yprr_metric(page, 2026, self.counts)["rank"], 1)
+
+    def test_missing_team_between_bye_thresholds_keeps_last_good_metric(self):
+        self.counts["CAR"] = 4
+        previous = yprr_metric(fixture(), 2026, self.counts)
+        existing = {"unit_analytics": {"Wide receivers": [previous]}}
+        page = fixture([("No team", "FA", 45, 450)])
+        with self.assertRaisesRegex(ValueError, "ambiguous route qualification"):
+            yprr_metric(page, 2026, self.counts)
+        self.assertEqual(refresh_yprr(existing, 2026, self.counts, fetch=lambda: page), previous)
+
     def test_wrong_season_and_incomplete_league_fail_closed(self):
         with self.assertRaises(ValueError):
             parse_receivers(fixture(season=2025), 2026)

@@ -46,7 +46,7 @@ def parse_receivers(page, season):
             names = text(identity).split()
             aliases = TEAMS | set(TEAM_ALIASES)
             team = next((TEAM_ALIASES.get(token, token) for token in names if token in aliases), None)
-            if not name or team not in TEAMS:
+            if not name:
                 raise ValueError("Receiver table player identity changed")
             routes_text = text(cells[headers.index("Routes Run")]).replace(",", "")
             yards_text = text(cells[headers.index("Rec. Yards")]).replace(",", "")
@@ -59,7 +59,7 @@ def parse_receivers(page, season):
             if abs(float(text(cells[headers.index("YPRR")])) - rate) > 0.015:
                 raise ValueError("Published YPRR does not match the displayed yards and routes")
             players.append({"name": html.unescape(name[1]), "team": team, "routes": routes, "yards": yards})
-        if len(players) < 32 or {p["team"] for p in players} != TEAMS:
+        if len(players) < 32 or {p["team"] for p in players if p["team"] is not None} != TEAMS:
             raise ValueError("Receiver table does not cover all 32 teams")
         keys = [(p["name"], p["team"]) for p in players]
         if len(set(keys)) != len(keys):
@@ -72,7 +72,22 @@ def yprr_metric(page, season, games_by_team):
     updated, players = parse_receivers(page, season)
     if set(games_by_team) != TEAMS or any(n < 1 for n in games_by_team.values()):
         raise ValueError("Qualification requires a completed game count for every team")
-    qualified = [p for p in players if p["routes"] >= 10 * games_by_team[p["team"]]]
+    qualified = []
+    smallest_minimum = 10 * min(games_by_team.values())
+    largest_minimum = 10 * max(games_by_team.values())
+    for player in players:
+        if player["team"] is not None:
+            eligible = player["routes"] >= 10 * games_by_team[player["team"]]
+        elif player["routes"] >= largest_minimum:
+            # Some public rows omit a team badge. This player qualifies under
+            # every team's threshold, so no team assignment needs to be guessed.
+            eligible = True
+        elif player["routes"] < smallest_minimum:
+            eligible = False
+        else:
+            raise ValueError("Receiver without a team has ambiguous route qualification")
+        if eligible:
+            qualified.append(player)
     player = next((p for p in qualified if p["name"] == "Zay Flowers" and p["team"] == "BAL"), None)
     if player is None:
         return None
