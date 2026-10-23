@@ -19,8 +19,9 @@ hero_wide: true
 hero_alt: "Chicago Bears players during their Week 6 win over the Atlanta Falcons"
 hero_credit: "Chicago Bears"
 hero_credit_url: "https://www.chicagobears.com/photos/gameday-gallery-bears-at-falcons-2026-week-6"
-home_feature: true
-home_recent: false
+home_feature: false
+home_recent: true
+home_recent_label: "DE Efficiency Index"
 feature_label: "Week 6 efficiency & power"
 ---
 
