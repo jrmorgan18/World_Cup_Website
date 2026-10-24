@@ -1,14 +1,14 @@
 {
   "season": 2026,
   "week": 7,
-  "as_of": "2026-10-23T15:57:12.151037+00:00",
+  "as_of": "2026-10-24T14:55:25.219028+00:00",
   "source": {
     "file": "injuries.parquet",
     "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet",
-    "fetched_at": "2026-10-23T15:57:00.403906+00:00",
-    "http_last_modified": "Fri, 23 Oct 2026 12:34:19 GMT",
-    "source_sha256": "0b64da7702e88d98623f192f636c1dd42a49206741dc26fab5a8088566af7fa3",
-    "cache_sha256": "0b64da7702e88d98623f192f636c1dd42a49206741dc26fab5a8088566af7fa3"
+    "fetched_at": "2026-10-24T14:55:14.360586+00:00",
+    "http_last_modified": "Sat, 24 Oct 2026 11:57:45 GMT",
+    "source_sha256": "baf178ff460619881d5bb1cc877b37e08b993a85dae6fe3e7fc4b9681b68981c",
+    "cache_sha256": "baf178ff460619881d5bb1cc877b37e08b993a85dae6fe3e7fc4b9681b68981c"
   },
   "source_max_week": 7,
   "policy": "Only confirmed OUT/IR or two consecutive injury-related DNP daily reports in the game week qualify. Later LP/FP clears the DNP trigger. At least two meaningful players in a group are required. No automatic adjustments; returns remain manual scenarios.",
@@ -82,7 +82,7 @@
       "team": "ARI",
       "name": "Arizona Cardinals",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 13,
+      "report_players": 14,
       "unresolved_participation_ids": 1,
       "cards": 0
     },
@@ -90,7 +90,7 @@
       "team": "ATL",
       "name": "Atlanta Falcons",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 16,
+      "report_players": 17,
       "unresolved_participation_ids": 2,
       "cards": 0
     },
@@ -130,7 +130,7 @@
       "team": "CIN",
       "name": "Cincinnati Bengals",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 3,
+      "report_players": 4,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
@@ -138,7 +138,7 @@
       "team": "CLE",
       "name": "Cleveland Browns",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 17,
+      "report_players": 18,
       "unresolved_participation_ids": 3,
       "cards": 0
     },
@@ -146,7 +146,7 @@
       "team": "DAL",
       "name": "Dallas Cowboys",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 12,
+      "report_players": 14,
       "unresolved_participation_ids": 1,
       "cards": 0
     },
@@ -180,15 +180,15 @@
       "coverage": "Latest report present; daily history / IR may be incomplete",
       "report_players": 15,
       "unresolved_participation_ids": 1,
-      "cards": 0
+      "cards": 1
     },
     {
       "team": "IND",
       "name": "Indianapolis Colts",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 18,
+      "report_players": 19,
       "unresolved_participation_ids": 0,
-      "cards": 0
+      "cards": 1
     },
     {
       "team": "JAX",
@@ -210,7 +210,7 @@
       "team": "LA",
       "name": "Los Angeles Rams",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 5,
+      "report_players": 8,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
@@ -242,7 +242,7 @@
       "team": "MIN",
       "name": "Minnesota Vikings",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 8,
+      "report_players": 9,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
@@ -258,7 +258,7 @@
       "team": "NO",
       "name": "New Orleans Saints",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 11,
+      "report_players": 12,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
@@ -282,7 +282,7 @@
       "team": "PHI",
       "name": "Philadelphia Eagles",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 24,
+      "report_players": 25,
       "unresolved_participation_ids": 3,
       "cards": 0
     },
@@ -298,7 +298,7 @@
       "team": "SEA",
       "name": "Seattle Seahawks",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 12,
+      "report_players": 13,
       "unresolved_participation_ids": 1,
       "cards": 0
     },
@@ -308,7 +308,7 @@
       "coverage": "Latest report present; daily history / IR may be incomplete",
       "report_players": 14,
       "unresolved_participation_ids": 1,
-      "cards": 0
+      "cards": 1
     },
     {
       "team": "TB",
@@ -337,36 +337,36 @@
   ],
   "cards": [
     {
-      "id": "2026-7-NE-OL",
-      "team": "NE",
-      "group": "OL",
+      "id": "2026-7-HOU-DB",
+      "team": "HOU",
+      "group": "DB",
       "state": "Availability risk",
       "players": [
         {
-          "id": "00-0036979",
-          "name": "Alijah Vera-Tucker",
-          "position": "G",
-          "healthy_share": 1.0,
+          "id": "00-0037130",
+          "name": "Reed Blankenship",
+          "position": "S",
+          "healthy_share": 0.97,
           "status": "Confirmed OUT",
           "return_candidate": false,
           "report_status": "Out",
           "practice_status": "Did Not Participate In Practice",
-          "observed_at": "2026-10-23T15:57:00.403906+00:00",
+          "observed_at": "2026-10-24T14:55:14.360586+00:00",
           "practice_dates": [],
           "source_urls": [
             "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
           ]
         },
         {
-          "id": "00-0037413",
-          "name": "Ben Brown",
-          "position": "C",
+          "id": "00-0037246",
+          "name": "Jalen Pitre",
+          "position": "S",
           "healthy_share": 1.0,
           "status": "Confirmed OUT",
           "return_candidate": false,
           "report_status": "Out",
           "practice_status": "Did Not Participate In Practice",
-          "observed_at": "2026-10-23T15:57:00.403906+00:00",
+          "observed_at": "2026-10-24T14:55:14.360586+00:00",
           "practice_dates": [],
           "source_urls": [
             "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
@@ -381,7 +381,151 @@
           "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
         }
       ],
-      "observed_at": "2026-10-23T15:57:00.403906+00:00",
+      "observed_at": "2026-10-24T14:55:14.360586+00:00",
+      "reviewed": false
+    },
+    {
+      "id": "2026-7-IND-REC",
+      "team": "IND",
+      "group": "REC",
+      "state": "Availability risk",
+      "players": [
+        {
+          "id": "00-0039816",
+          "name": "Anthony Gould",
+          "position": "WR",
+          "healthy_share": 0.0,
+          "status": "Confirmed OUT",
+          "return_candidate": false,
+          "report_status": "Out",
+          "practice_status": "Did Not Participate In Practice",
+          "observed_at": "2026-10-24T14:55:14.360586+00:00",
+          "practice_dates": [],
+          "source_urls": [
+            "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
+          ]
+        },
+        {
+          "id": "00-0040128",
+          "name": "Tyler Warren",
+          "position": "TE",
+          "healthy_share": 0.94,
+          "status": "Confirmed OUT",
+          "return_candidate": false,
+          "report_status": "Out",
+          "practice_status": "Did Not Participate In Practice",
+          "observed_at": "2026-10-24T14:55:14.360586+00:00",
+          "practice_dates": [],
+          "source_urls": [
+            "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
+          ]
+        }
+      ],
+      "confidence": "Feed screening only; replacements and game status need review",
+      "summary": "Multiple meaningful roles flagged. No automatic point adjustment.",
+      "sources": [
+        {
+          "title": "Availability evidence",
+          "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
+        }
+      ],
+      "observed_at": "2026-10-24T14:55:14.360586+00:00",
+      "reviewed": false
+    },
+    {
+      "id": "2026-7-NE-OL",
+      "team": "NE",
+      "group": "OL",
+      "state": "Availability risk",
+      "players": [
+        {
+          "id": "00-0036979",
+          "name": "Alijah Vera-Tucker",
+          "position": "G",
+          "healthy_share": 1.0,
+          "status": "Confirmed OUT",
+          "return_candidate": false,
+          "report_status": "Out",
+          "practice_status": "Did Not Participate In Practice",
+          "observed_at": "2026-10-24T14:55:14.360586+00:00",
+          "practice_dates": [],
+          "source_urls": [
+            "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
+          ]
+        },
+        {
+          "id": "00-0037413",
+          "name": "Ben Brown",
+          "position": "C",
+          "healthy_share": 1.0,
+          "status": "Confirmed OUT",
+          "return_candidate": false,
+          "report_status": "Out",
+          "practice_status": "Did Not Participate In Practice",
+          "observed_at": "2026-10-24T14:55:14.360586+00:00",
+          "practice_dates": [],
+          "source_urls": [
+            "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
+          ]
+        }
+      ],
+      "confidence": "Feed screening only; replacements and game status need review",
+      "summary": "Multiple meaningful roles flagged. No automatic point adjustment.",
+      "sources": [
+        {
+          "title": "Availability evidence",
+          "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
+        }
+      ],
+      "observed_at": "2026-10-24T14:55:14.360586+00:00",
+      "reviewed": false
+    },
+    {
+      "id": "2026-7-SF-REC",
+      "team": "SF",
+      "group": "REC",
+      "state": "Availability risk",
+      "players": [
+        {
+          "id": "00-0031408",
+          "name": "Mike Evans",
+          "position": "WR",
+          "healthy_share": 0.63,
+          "status": "Confirmed OUT",
+          "return_candidate": false,
+          "report_status": "Out",
+          "practice_status": "Did Not Participate In Practice",
+          "observed_at": "2026-10-24T14:55:14.360586+00:00",
+          "practice_dates": [],
+          "source_urls": [
+            "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
+          ]
+        },
+        {
+          "id": "00-0035719",
+          "name": "Deebo Samuel Sr.",
+          "position": "WR",
+          "healthy_share": 0.67,
+          "status": "Confirmed OUT",
+          "return_candidate": false,
+          "report_status": "Out",
+          "practice_status": "Did Not Participate In Practice",
+          "observed_at": "2026-10-24T14:55:14.360586+00:00",
+          "practice_dates": [],
+          "source_urls": [
+            "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
+          ]
+        }
+      ],
+      "confidence": "Feed screening only; replacements and game status need review",
+      "summary": "Multiple meaningful roles flagged. No automatic point adjustment.",
+      "sources": [
+        {
+          "title": "Availability evidence",
+          "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
+        }
+      ],
+      "observed_at": "2026-10-24T14:55:14.360586+00:00",
       "reviewed": false
     }
   ],
