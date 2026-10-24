@@ -2,7 +2,7 @@
   "season": 2026,
   "through_week": 7,
   "model_version": "2.1",
-  "as_of": "2026-10-23",
+  "as_of": "2026-10-24",
   "label": "Through available Week 7 games · v2.1",
   "sample_note": "Completed games only · 45% offense / 45% defense / 10% special teams",
   "article_url": "/ravens/dual-eights-efficiency-index-week-four-2026/",
@@ -111,7 +111,7 @@
       "full_name": "Buffalo Bills",
       "record": "5-1",
       "value": 56.9,
-      "unrounded_value": 56.85640515555594,
+      "unrounded_value": 56.85640515555593,
       "offense_rank": 2,
       "defense_rank": 30,
       "special_teams_rank": 2
@@ -387,7 +387,7 @@
       "full_name": "Miami Dolphins",
       "record": "0-5",
       "value": 26.5,
-      "unrounded_value": 26.514735685539048,
+      "unrounded_value": 26.514735685539044,
       "offense_rank": 25,
       "defense_rank": 31,
       "special_teams_rank": 30
