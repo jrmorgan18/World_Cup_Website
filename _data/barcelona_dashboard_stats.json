@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-23T12:11:22Z",
-  "as_of": "2026-10-23",
+  "generated_at": "2026-10-24T11:40:16Z",
+  "as_of": "2026-10-24",
   "season": 2026,
   "season_label": "2026-27",
   "team": {
@@ -960,14 +960,14 @@
           "abbreviation": "ALA",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png",
           "rank": 7,
-          "played": 9,
+          "played": 10,
           "wins": 3,
-          "draws": 2,
+          "draws": 3,
           "losses": 4,
-          "goals_for": 13,
-          "goals_against": 10,
+          "goals_for": 14,
+          "goals_against": 11,
           "goal_difference": 3,
-          "points": 11
+          "points": 12
         },
         {
           "team_id": "85",
@@ -1168,14 +1168,14 @@
           "abbreviation": "MCF",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png",
           "rank": 20,
-          "played": 9,
+          "played": 10,
           "wins": 0,
-          "draws": 4,
+          "draws": 5,
           "losses": 5,
-          "goals_for": 6,
-          "goals_against": 18,
+          "goals_for": 7,
+          "goals_against": 19,
           "goal_difference": -12,
-          "points": 4
+          "points": 5
         }
       ],
       "standing": {
@@ -4549,8 +4549,8 @@
   "injuries": [],
   "rotation": {
     "window_days": 21,
-    "window_start": "2026-10-02",
-    "window_end": "2026-10-23",
+    "window_start": "2026-10-03",
+    "window_end": "2026-10-24",
     "matches_in_window": 4,
     "available_minutes": 360,
     "players": [
