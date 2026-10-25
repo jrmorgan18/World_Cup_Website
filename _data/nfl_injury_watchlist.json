@@ -1,14 +1,14 @@
 {
   "season": 2026,
   "week": 7,
-  "as_of": "2026-10-24T14:55:25.219028+00:00",
+  "as_of": "2026-10-25T15:04:53.013426+00:00",
   "source": {
     "file": "injuries.parquet",
     "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet",
-    "fetched_at": "2026-10-24T14:55:14.360586+00:00",
-    "http_last_modified": "Sat, 24 Oct 2026 11:57:45 GMT",
-    "source_sha256": "baf178ff460619881d5bb1cc877b37e08b993a85dae6fe3e7fc4b9681b68981c",
-    "cache_sha256": "baf178ff460619881d5bb1cc877b37e08b993a85dae6fe3e7fc4b9681b68981c"
+    "fetched_at": "2026-10-25T15:04:32.935391+00:00",
+    "http_last_modified": "Sun, 25 Oct 2026 12:30:27 GMT",
+    "source_sha256": "4526a40a9b9c24b84844d3dd440528e67d8c8e04d9c445d958319f2bc2269546",
+    "cache_sha256": "4526a40a9b9c24b84844d3dd440528e67d8c8e04d9c445d958319f2bc2269546"
   },
   "source_max_week": 7,
   "policy": "Only confirmed OUT/IR or two consecutive injury-related DNP daily reports in the game week qualify. Later LP/FP clears the DNP trigger. At least two meaningful players in a group are required. No automatic adjustments; returns remain manual scenarios.",
@@ -250,7 +250,7 @@
       "team": "NE",
       "name": "New England Patriots",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 17,
+      "report_players": 18,
       "unresolved_participation_ids": 1,
       "cards": 1
     },
@@ -268,7 +268,7 @@
       "coverage": "Latest report present; daily history / IR may be incomplete",
       "report_players": 16,
       "unresolved_participation_ids": 0,
-      "cards": 0
+      "cards": 1
     },
     {
       "team": "NYJ",
@@ -284,7 +284,7 @@
       "coverage": "Latest report present; daily history / IR may be incomplete",
       "report_players": 25,
       "unresolved_participation_ids": 3,
-      "cards": 0
+      "cards": 1
     },
     {
       "team": "PIT",
@@ -351,7 +351,7 @@
           "return_candidate": false,
           "report_status": "Out",
           "practice_status": "Did Not Participate In Practice",
-          "observed_at": "2026-10-24T14:55:14.360586+00:00",
+          "observed_at": "2026-10-25T15:04:32.935391+00:00",
           "practice_dates": [],
           "source_urls": [
             "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
@@ -366,7 +366,7 @@
           "return_candidate": false,
           "report_status": "Out",
           "practice_status": "Did Not Participate In Practice",
-          "observed_at": "2026-10-24T14:55:14.360586+00:00",
+          "observed_at": "2026-10-25T15:04:32.935391+00:00",
           "practice_dates": [],
           "source_urls": [
             "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
@@ -381,7 +381,7 @@
           "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
         }
       ],
-      "observed_at": "2026-10-24T14:55:14.360586+00:00",
+      "observed_at": "2026-10-25T15:04:32.935391+00:00",
       "reviewed": false
     },
     {
@@ -399,7 +399,7 @@
           "return_candidate": false,
           "report_status": "Out",
           "practice_status": "Did Not Participate In Practice",
-          "observed_at": "2026-10-24T14:55:14.360586+00:00",
+          "observed_at": "2026-10-25T15:04:32.935391+00:00",
           "practice_dates": [],
           "source_urls": [
             "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
@@ -414,7 +414,7 @@
           "return_candidate": false,
           "report_status": "Out",
           "practice_status": "Did Not Participate In Practice",
-          "observed_at": "2026-10-24T14:55:14.360586+00:00",
+          "observed_at": "2026-10-25T15:04:32.935391+00:00",
           "practice_dates": [],
           "source_urls": [
             "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
@@ -429,7 +429,7 @@
           "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
         }
       ],
-      "observed_at": "2026-10-24T14:55:14.360586+00:00",
+      "observed_at": "2026-10-25T15:04:32.935391+00:00",
       "reviewed": false
     },
     {
@@ -447,7 +447,7 @@
           "return_candidate": false,
           "report_status": "Out",
           "practice_status": "Did Not Participate In Practice",
-          "observed_at": "2026-10-24T14:55:14.360586+00:00",
+          "observed_at": "2026-10-25T15:04:32.935391+00:00",
           "practice_dates": [],
           "source_urls": [
             "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
@@ -462,7 +462,7 @@
           "return_candidate": false,
           "report_status": "Out",
           "practice_status": "Did Not Participate In Practice",
-          "observed_at": "2026-10-24T14:55:14.360586+00:00",
+          "observed_at": "2026-10-25T15:04:32.935391+00:00",
           "practice_dates": [],
           "source_urls": [
             "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
@@ -477,7 +477,103 @@
           "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
         }
       ],
-      "observed_at": "2026-10-24T14:55:14.360586+00:00",
+      "observed_at": "2026-10-25T15:04:32.935391+00:00",
+      "reviewed": false
+    },
+    {
+      "id": "2026-7-NYG-DB",
+      "team": "NYG",
+      "group": "DB",
+      "state": "Availability risk",
+      "players": [
+        {
+          "id": "00-0036996",
+          "name": "Greg Newsome II",
+          "position": "CB",
+          "healthy_share": 1.0,
+          "status": "Confirmed OUT",
+          "return_candidate": false,
+          "report_status": "Out",
+          "practice_status": "Did Not Participate In Practice",
+          "observed_at": "2026-10-25T15:04:32.935391+00:00",
+          "practice_dates": [],
+          "source_urls": [
+            "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
+          ]
+        },
+        {
+          "id": "00-0036998",
+          "name": "Jevon Holland",
+          "position": "S",
+          "healthy_share": 1.0,
+          "status": "Confirmed OUT",
+          "return_candidate": false,
+          "report_status": "Out",
+          "practice_status": "Limited Participation in Practice",
+          "observed_at": "2026-10-25T15:04:32.935391+00:00",
+          "practice_dates": [],
+          "source_urls": [
+            "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
+          ]
+        }
+      ],
+      "confidence": "Feed screening only; replacements and game status need review",
+      "summary": "Multiple meaningful roles flagged. No automatic point adjustment.",
+      "sources": [
+        {
+          "title": "Availability evidence",
+          "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
+        }
+      ],
+      "observed_at": "2026-10-25T15:04:32.935391+00:00",
+      "reviewed": false
+    },
+    {
+      "id": "2026-7-PHI-REC",
+      "team": "PHI",
+      "group": "REC",
+      "state": "Availability risk",
+      "players": [
+        {
+          "id": "00-0036912",
+          "name": "DeVonta Smith",
+          "position": "WR",
+          "healthy_share": 0.95,
+          "status": "Confirmed OUT",
+          "return_candidate": false,
+          "report_status": "Out",
+          "practice_status": "Did Not Participate In Practice",
+          "observed_at": "2026-10-25T15:04:32.935391+00:00",
+          "practice_dates": [],
+          "source_urls": [
+            "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
+          ]
+        },
+        {
+          "id": "00-0038393",
+          "name": "Dontayvion Wicks",
+          "position": "WR",
+          "healthy_share": 0.91,
+          "status": "Confirmed OUT",
+          "return_candidate": false,
+          "report_status": "Out",
+          "practice_status": "Did Not Participate In Practice",
+          "observed_at": "2026-10-25T15:04:32.935391+00:00",
+          "practice_dates": [],
+          "source_urls": [
+            "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
+          ]
+        }
+      ],
+      "confidence": "Feed screening only; replacements and game status need review",
+      "summary": "Multiple meaningful roles flagged. No automatic point adjustment.",
+      "sources": [
+        {
+          "title": "Availability evidence",
+          "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
+        }
+      ],
+      "observed_at": "2026-10-25T15:04:32.935391+00:00",
       "reviewed": false
     },
     {
@@ -495,7 +591,7 @@
           "return_candidate": false,
           "report_status": "Out",
           "practice_status": "Did Not Participate In Practice",
-          "observed_at": "2026-10-24T14:55:14.360586+00:00",
+          "observed_at": "2026-10-25T15:04:32.935391+00:00",
           "practice_dates": [],
           "source_urls": [
             "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
@@ -510,7 +606,7 @@
           "return_candidate": false,
           "report_status": "Out",
           "practice_status": "Did Not Participate In Practice",
-          "observed_at": "2026-10-24T14:55:14.360586+00:00",
+          "observed_at": "2026-10-25T15:04:32.935391+00:00",
           "practice_dates": [],
           "source_urls": [
             "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
@@ -525,7 +621,7 @@
           "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
         }
       ],
-      "observed_at": "2026-10-24T14:55:14.360586+00:00",
+      "observed_at": "2026-10-25T15:04:32.935391+00:00",
       "reviewed": false
     }
   ],
