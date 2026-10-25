@@ -1,0 +1,43 @@
+{
+  "published": "2026-10-24",
+  "article_source": "articles/Week 7_ Ravens-Bengals Preview.docx",
+  "rankings": {
+    "period": "Complete Week 6; not the partial Week 7 slate",
+    "file": "_data/nfl_dashboard.json",
+    "model_generated_at": "2026-10-24T14:55:25.219028+00:00",
+    "BAL": {"efficiency_rank": 11, "depi_rank": 6, "offense_epa_per_play": 0.1165331073958283},
+    "CIN": {"efficiency_rank": 7, "depi_rank": 7, "offense_epa_per_play": 0.07213610702249273},
+    "note": "DEPI is the published baseline ranking, not a Huntley-specific game forecast."
+  },
+  "quarterbacks": {
+    "source": "Author's preview; season entering Week 7",
+    "jackson_yards_per_attempt": 10.1,
+    "huntley_yards_per_attempt": 6.0,
+    "completion_percentage_both": 70.8
+  },
+  "bengals_run_defense": {
+    "period": "First five games of 2026",
+    "source_url": "https://www.si.com/nfl/bengals/onsi/film-breakdown-reveals-why-the-bengals-struggle-to-stop-this-type-of-run-01m5bg9c114n",
+    "all_runs": {"yards_per_carry": 4.5, "epa_per_rush": -0.04},
+    "perimeter_runs": {"yards_per_carry": 6.4, "epa_per_rush": 0.17},
+    "run_stuff_rate": {"2026": 23.0, "2025": 10.2},
+    "run_stuff_source_url": "https://www.baltimoreravens.com/news/ravens-bengals-game-preview-joe-burrow-lamar-jackson-week-7-2026"
+  },
+  "pressure_visual": {
+    "source": "Author's preview; season entering Week 7",
+    "pressure_percentage_of_opponent_dropbacks": 40.4,
+    "blitz_percentage_of_defensive_snaps": 18.2,
+    "burrow_completion_percentage": 71.4,
+    "burrow_passing_yards": 1361,
+    "burrow_touchdowns": 11,
+    "burrow_interceptions": 3,
+    "third_down_conversion_percentage": 50.0,
+    "third_down_conversion_rank": 2
+  },
+  "availability": {
+    "friday_report": "https://www.bengals.com/news/bengals-ravens-week-7-2026-injury-report",
+    "saturday_qb_update": "https://www.baltimoreravens.com/news/lamar-jackson-out-against-bengals-week-7-tyler-huntley-third-straight-start",
+    "robinson_season_ending": "https://www.baltimoreravens.com/news/tavius-robinson-out-for-2026-season-zion-young-jaylinn-hawkins-jesse-minter",
+    "note": "Final Sunday inactive list is separate from Friday game designations and Saturday's QB update."
+  }
+}

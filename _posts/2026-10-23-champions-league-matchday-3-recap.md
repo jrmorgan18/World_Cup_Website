@@ -17,8 +17,8 @@ hero_wide: true
 hero_alt: "Harry Kane celebrates his penalty for Bayern Munich against Arsenal in the Champions League on October 21, 2026"
 hero_credit: "Alex Grimm / Getty Images / Bundesliga"
 hero_credit_url: "https://www.bundesliga.com/en/bundesliga/news/bayern-munich-arsenal-fc-match-report-highlights-matchday-3-39675"
-home_feature: true
-home_recent: false
+home_feature: false
+home_recent: true
 home_recent_label: "Champions League"
 home_recent_theme: "soccer"
 champions_league_recap_feature: true
