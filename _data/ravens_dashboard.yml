@@ -6,8 +6,8 @@
 meta:
   season: 2026
   season_label: "2026 Season"
-  last_updated: "2026-10-22"
-  update_context: "Through complete Week 6 games · Cincinnati next"
+  last_updated: "2026-10-24"
+  update_context: "Cincinnati next · Availability reviewed October 24"
   data_status: "through-week-6"
   data_notice: >-
     Six games are still an early sample, so league ranks and rate statistics are
@@ -143,12 +143,12 @@ editorial:
       Browns and Steelers in the AFC North. Ten points on the opening two drives
       were followed by nine scoreless possessions. The defense recorded five sacks
       and allowed 237 yards, but late third-down breakdowns proved costly. Cincinnati
-      comes next. Jackson has practiced twice at limited capacity, while Jurgens
-      has cleared concussion protocol and practiced fully twice. Bateman, Stanley
-      and Vorhees were full participants Thursday. Robinson's pectoral injury and
-      Hawkins' knee are the main new defensive availability concerns.
+      comes next with Huntley making his third straight start after Jackson was
+      ruled out Saturday. Jurgens has no game designation and is expected to debut;
+      Hergel joins the 53-man roster. Robinson is on season-ending IR, Hawkins is
+      out, and Isaac has been elevated to reinforce the edge rotation.
     biggest_strength: "A five-sack game lifted the pass rush, while season explosive-play rate remains third and offensive success rate fifth."
-    biggest_concern: "Jackson is progressing but has not been confirmed as Sunday's starter. Robinson missed both practices and Hawkins was downgraded Thursday ahead of the Burrow matchup."
+    biggest_concern: "Jackson is out for a third straight game. Robinson's season-ending injury and Hawkins' absence reduce the defense's options against Burrow, Chase and Higgins."
     changed_this_week: "The Ravens fell to 4-2. Hendrickson returned, Lane came off IR, and Cuevas scored his first touchdown; Cleveland's late rally ended the three-game winning streak."
 
   metric_assessments:
@@ -205,14 +205,14 @@ editorial:
     - { direction: "up", title: "The rush returned", text: "Hendrickson's return helped produce five sacks. The Ravens held Cleveland to 237 yards, while ESPN's season team pass rush win rate rose to 53%, 10th." }
     - { direction: "up", title: "Two rookies supplied answers", text: "Lane returned with four catches for 40 yards. Cuevas added four for 44 and his first NFL touchdown." }
     - { direction: "down", title: "Late mistakes decided it", text: "Henry's fumble, Loop's missed 49-yarder and late defensive third-down breakdowns erased the 10-point lead." }
-    - { direction: "stable", title: "Practice brings mixed injury news", text: "Jackson was limited for a second day, while Jurgens and several offensive starters practiced fully. Robinson missed both sessions and Hawkins went from limited to DNP. Friday's game designations are pending." }
+    - { direction: "down", title: "Saturday roster decisions", text: "Jackson is out and Huntley starts again. Robinson went to IR, Isaac was elevated and Hergel joined the 53-man roster. Jurgens has no game designation ahead of his expected debut." }
 
   championship_check:
-    - { category: "Quarterback play", status: "Unclear", explanation: "Jackson's 81.9 Total QBR ranks second. He practiced at limited capacity Wednesday and Thursday, but the Ravens have not confirmed Sunday's starter." }
-    - { category: "Pass protection", status: "Unclear", explanation: "Team pass block win rate is 47%, 20th through Week 6. Jurgens has cleared protocol and logged two full practices; Stanley, Vorhees and Ioane were also full Thursday." }
+    - { category: "Quarterback play", status: "Unclear", explanation: "Jackson's 81.9 Total QBR ranks second, but he is out against Cincinnati. Huntley makes his third straight start after the offense scored only 10 points in Cleveland." }
+    - { category: "Pass protection", status: "Unclear", explanation: "Team pass block win rate is 47%, 20th through Week 6. Jurgens practiced fully all week and has no game designation, allowing an expected return to guard for Ioane. Hergel is now on the 53-man roster." }
     - { category: "Explosive offense", status: "Ready", explanation: "The Ravens remain third in season explosive-play rate at 12.8%, but Cleveland showed how fragile the offense becomes when the run game stalls." }
-    - { category: "Four-man pass rush", status: "Trending Right", explanation: "Hendrickson is practicing fully and team pass rush win rate is 53%, 10th through Week 6. Robinson's consecutive absences could reduce the rotation; Friday's status is pending." }
-    - { category: "Health", status: "Concern", explanation: "The offense is getting healthier, but Jackson remains limited. Robinson and Hawkins missed Thursday, Washington remains limited, and Tampa still needs activation from IR." }
+    - { category: "Four-man pass rush", status: "Trending Right", explanation: "Team pass rush win rate is 53%, 10th through Week 6. Hendrickson has no game designation, but Robinson is on season-ending IR. Isaac's elevation adds depth behind Hendrickson, Green and Young." }
+    - { category: "Health", status: "Concern", explanation: "Jackson and Hawkins are out, Robinson is on IR, Washington is questionable and Tampa is doubtful while still on IR. Jurgens and the other returning offensive starters have no game designations." }
 
 preseason_form:
   sequence: ["W", "W", "W"]
@@ -254,26 +254,31 @@ preseason_last_game:
 
 matchup_focus:
   team: "CIN"
-  label: "Bengals matchup lens"
+  label: "Bengals matchup lens · Week 7"
   items:
-    - title: "Keep the offense on schedule"
-      text: "The Ravens are seventh in offensive EPA/play, against Cincinnati's 15th-ranked defense. Jackson's availability and the line's health frame the offensive plan."
-      source_url: "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
-    - title: "Test Cincinnati's big-play defense"
-      text: "The Ravens are third in explosive-play rate; Cincinnati ranks 32nd in explosive gains allowed at 12.8%. Sustaining drives will create more chances to exploit that opening."
-      source_url: "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
-    - title: "Finish third downs"
-      text: "Cincinnati's offense ranks ninth in EPA/play against the Ravens' 10th-ranked EPA defense. The rush needs coverage help to finish drives after Cleveland's late conversions."
-      source_url: "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
+    - title: "Build around Huntley's third start"
+      text: "Jackson is out. Jurgens has no game designation and is expected to debut at center, allowing Ioane to return to guard; Hergel is now on the 53-man roster."
+      source_url: "https://www.baltimoreravens.com/news/lamar-jackson-out-against-bengals-week-7-tyler-huntley-third-straight-start"
+    - title: "Attack the perimeter"
+      text: "Cincinnati's improved interior front makes the edges important for Henry and Hill. The Week 7 preview examines the Bengals' 6.4 yards per carry allowed on perimeter runs."
+      source_url: "https://dualeights.com/ravens/ravens-bengals-week-seven-preview-2026/"
+    - title: "Protect a thinner defensive rotation"
+      text: "Robinson is on season-ending IR and Hawkins is out. Isaac adds edge depth, but the Ravens still need pressure without exposing the secondary to Burrow, Chase and Higgins."
+      source_url: "https://dualeights.com/ravens/ravens-bengals-week-seven-preview-2026/"
 
 opponent_availability:
   team: "CIN"
-  label: "Bengals availability watch"
-  note: "Reviewed Thursday, October 22. Dugger upgraded to full practice. The other two listed players are on veteran rest; Young and Howell are no longer listed. Final game designations are pending. The remaining cards show verified IR absences."
+  label: "Bengals availability · Final Week 7 report"
+  note: "Reviewed October 24. Cincinnati has no final game injury designations. Dugger practiced fully Thursday and Friday; Allen, Hill and Lawrence had veteran-rest entries, not game absence designations. The IR list below is separate from the healthy active roster."
+  source_label: "Official final Week 7 injury report · Oct. 23"
+  source_url: "https://www.bengals.com/news/bengals-ravens-week-7-2026-injury-report"
   items:
-    - { player: "Tanner Hudson", position: "TE", status: "Injured Reserve", detail: "Placed on IR October 19 with a pectoral injury, removing a receiving option from the tight end rotation.", source_label: "Bengals roster announcement · Oct. 19", source_url: "https://www.bengals.com/news/tanner-hudson-reserve-injured-list-2026-roster-update" }
-    - { player: "Swayze Bozeman", position: "LB", status: "Injured Reserve", detail: "Placed on IR October 12. Cincinnati claimed Jack Kiser as part of the same roster move.", source_label: "Bengals transactions · checked Oct. 22", source_url: "https://www.bengals.com/team/transactions/" }
-    - { player: "Andrei Iosivas", position: "WR", status: "Injured Reserve", detail: "Remains on IR following the September 26 transaction, reducing the depth behind Cincinnati's starting receivers.", source_label: "Bengals transactions · checked Oct. 22", source_url: "https://www.bengals.com/team/transactions/" }
+    - { player: "Tanner Hudson", position: "TE", status: "Injured Reserve", detail: "Placed on IR October 19 with a pectoral injury; remains on Cincinnati's reserve list.", source_label: "Bengals roster / transactions · checked Oct. 24", source_url: "https://www.bengals.com/team/players-roster/" }
+    - { player: "Swayze Bozeman", position: "LB", status: "Injured Reserve", detail: "Remains on IR after the October 12 transaction.", source_label: "Bengals roster / transactions · checked Oct. 24", source_url: "https://www.bengals.com/team/players-roster/" }
+    - { player: "Andrei Iosivas", position: "WR", status: "Injured Reserve", detail: "Remains on IR after the September 26 transaction.", source_label: "Bengals roster / transactions · checked Oct. 24", source_url: "https://www.bengals.com/team/players-roster/" }
+    - { player: "Jalen Davis", position: "CB", status: "Injured Reserve", detail: "Remains on IR after the September 29 transaction.", source_label: "Bengals roster / transactions · checked Oct. 24", source_url: "https://www.bengals.com/team/players-roster/" }
+    - { player: "Brian Parker II", position: "G", status: "Injured Reserve", detail: "On the official reserve list after his August 30 IR placement; no activation announced.", source_label: "Bengals roster / transactions · checked Oct. 24", source_url: "https://www.bengals.com/team/players-roster/" }
+    - { player: "Ja'Sir Taylor", position: "CB", status: "Injured Reserve", detail: "On the official reserve list after his August 30 IR placement; no activation announced.", source_label: "Bengals roster / transactions · checked Oct. 24", source_url: "https://www.bengals.com/team/players-roster/" }
 
 preseason_games:
   - { week: "Preseason 3", date: "2026-08-28", location: "home", opponent: "Washington Commanders", result: "W", ravens_score: 41, opponent_score: 3, takeaway: "The Ravens closed an unbeaten preseason with their largest margin, while the defense again kept the opponent out of the end zone.", recap_url: "https://www.baltimoreravens.com/news/ravens-dominate-commanders-2026-nfl-preseason-undefeated" }
@@ -281,21 +286,23 @@ preseason_games:
   - { week: "Preseason 1", date: "2026-08-15", location: "home", opponent: "Philadelphia Eagles", result: "W", ravens_score: 24, opponent_score: 7, takeaway: "The Ravens opened with a balanced win and allowed only one touchdown.", recap_url: "https://www.baltimoreravens.com/news/ravens-take-care-of-eagles-preseason-opener-ravens-2026" }
 
 injury_report_context:
-  label: "Week 7 vs. Cincinnati · Thursday, October 22"
-  note: "Practice participation, not final game designations. Jurgens is out of concussion protocol and practiced fully twice. Bateman, Stanley, Vorhees, Ioane and Hibner were full Thursday; their old absence flags are removed. Robinson and Hawkins missed Thursday. Tampa remains on IR pending activation."
+  label: "Week 7 vs. Cincinnati · Reviewed Saturday, October 24"
+  note: "Jackson and Hawkins are out; Robinson is on season-ending IR. Washington is questionable and Tampa is doubtful while still on IR. Jurgens, Bateman, Stanley, Vorhees, Ioane and Hibner have no game designations. Isaac was elevated and Hergel signed to the 53-man roster Saturday. Sunday's final inactive list is separate."
 
 injuries:
-  - { player: "Lamar Jackson", position: "QB", status: "Limited", injury: "Ankle", importance: "Critical", expected_availability: "Limited Wednesday and Thursday. No starter or final game designation announced.", impact: "Both Jackson and Huntley are preparing with the first team.", source_label: "Ravens official Thursday injury report · Oct. 22", source_url: "https://www.bengals.com/news/bengals-ravens-week-7-2026-injury-report" }
-  - { player: "Tavius Robinson", position: "EDGE", status: "Monitoring", injury: "Pectoral", importance: "Starter", expected_availability: "DNP Wednesday and Thursday. Friday's designation is pending; not yet ruled out.", impact: "His absence would reduce the edge rotation alongside Hendrickson.", source_label: "Ravens official Thursday injury report · Oct. 22", source_url: "https://www.bengals.com/news/bengals-ravens-week-7-2026-injury-report" }
-  - { player: "Jaylinn Hawkins", position: "S", status: "Monitoring", injury: "Knee", importance: "Rotation", expected_availability: "Limited Wednesday, DNP Thursday. Friday's designation is pending.", impact: "The safety rotation may need to adjust against Cincinnati's passing attack.", source_label: "Ravens official Thursday injury report · Oct. 22", source_url: "https://www.bengals.com/news/bengals-ravens-week-7-2026-injury-report" }
-  - { player: "Broderick Washington", position: "DL", status: "Limited", injury: "Ankle", importance: "Rotation", expected_availability: "Limited in both practices after missing Week 6. No final Cincinnati designation yet.", impact: "Interior depth remains an availability watch.", source_label: "Ravens official Thursday injury report · Oct. 22", source_url: "https://www.bengals.com/news/bengals-ravens-week-7-2026-injury-report" }
-  - { player: "T.J. Tampa", position: "CB", status: "Returning", injury: "Knee", importance: "Depth", expected_availability: "Return-to-practice window opened October 21; limited Wednesday and Thursday. Remains on IR and must be activated before playing.", impact: "Could restore outside-corner and special-teams depth.", source_label: "Ravens return-to-practice announcement / Thursday report", source_url: "https://www.baltimoreravens.com/news/lamar-jackson-ravens-injury-report-cam-jurgens-tj-tampa-returns-practice-injured-reserve" }
+  - { player: "Lamar Jackson", position: "QB", status: "Out", injury: "High ankle sprain", importance: "Critical", expected_availability: "Ruled out Saturday for Week 7 after three limited practices. Will miss his third consecutive game.", impact: "Tyler Huntley makes his third consecutive start against Cincinnati.", source_label: "Ravens Saturday update · Oct. 24", source_url: "https://www.baltimoreravens.com/news/lamar-jackson-out-against-bengals-week-7-tyler-huntley-third-straight-start" }
+  - { player: "Tavius Robinson", position: "EDGE", status: "Injured Reserve", injury: "Pectoral", importance: "Starter", expected_availability: "Placed on IR Saturday. Minter confirmed the injury is season-ending.", impact: "Isaac was elevated for depth behind Hendrickson, Green and Young.", source_label: "Ravens Saturday roster moves · Oct. 24", source_url: "https://www.baltimoreravens.com/news/lamar-jackson-out-against-bengals-week-7-tyler-huntley-third-straight-start" }
+  - { player: "Jaylinn Hawkins", position: "S", status: "Out", injury: "Knee", importance: "Starter", expected_availability: "Ruled out for Cincinnati after missing Thursday and Friday practice.", impact: "The Ravens must adjust the safety rotation while preserving Hamilton's flexibility.", source_label: "Official final Week 7 injury report · Oct. 23", source_url: "https://www.bengals.com/news/bengals-ravens-week-7-2026-injury-report" }
+  - { player: "Broderick Washington", position: "DL", status: "Questionable", injury: "Ankle", importance: "Rotation", expected_availability: "Questionable after limited participation all three days. Sunday availability is not confirmed.", impact: "Interior defensive-line depth remains an availability watch.", source_label: "Official final Week 7 injury report · Oct. 23", source_url: "https://www.bengals.com/news/bengals-ravens-week-7-2026-injury-report" }
+  - { player: "T.J. Tampa", position: "CB", status: "Doubtful", injury: "Knee", importance: "Depth", expected_availability: "Doubtful after three limited practices in his return window. Still on IR; activation is required before he can play.", impact: "Outside-corner and special-teams depth remain reduced.", source_label: "Official final Week 7 injury report · Oct. 23", source_url: "https://www.bengals.com/news/bengals-ravens-week-7-2026-injury-report" }
   - { player: "Durham Smythe", position: "TE", status: "Injured Reserve", injury: "Torn Achilles", importance: "Rotation", expected_availability: "Placed on IR October 7 and out for the remainder of the season.", impact: "Vannett joined the active roster; Hibner and Cuevas may also take larger blocking roles.", source_label: "Ravens roster announcement · Oct. 7", source_url: "https://www.baltimoreravens.com/news/nick-vannett-tight-end-ravens-roster-durham-smythe-injury-2026" }
   - { player: "Danny Pinter", position: "C", status: "Injured Reserve", injury: "Knee", importance: "Starter", expected_availability: "Remains on IR after his preseason knee injury.", impact: "One of three injured centers behind the move for Jurgens.", source_label: "Ravens center trade report · Oct. 7", source_url: "https://www.baltimoreravens.com/news/ravens-trade-cam-jurgens-center-pro-bowl-injuries-2026" }
-  - { player: "Jovaughn Gwyn", position: "C", status: "Injured Reserve", injury: "Ankle", importance: "Starter", expected_availability: "Remains on the official IR roster after the October 3 transaction.", impact: "Unavailable as the Ravens rebuild their center depth.", source_label: "Ravens roster · checked Oct. 22", source_url: "https://www.baltimoreravens.com/team/players-roster/" }
-  - { player: "Ethan Pocic", position: "C", status: "Injured Reserve", injury: "Knee", importance: "Rotation", expected_availability: "Remains on the official IR roster after the October 3 transaction.", impact: "The veteran remains unavailable behind Ioane and Jurgens.", source_label: "Ravens roster · checked Oct. 22", source_url: "https://www.baltimoreravens.com/team/players-roster/" }
-  - { player: "Bilhal Kone", position: "CB", status: "Injured Reserve", injury: "Preseason injury", importance: "Depth", expected_availability: "Listed as Reserve/Injured; Designated for Return. That roster category does not confirm activation or a new practice window.", impact: "Not yet available as additional cornerback depth.", source_label: "Ravens roster · checked Oct. 22", source_url: "https://www.baltimoreravens.com/team/players-roster/" }
-  - { player: "Adam Randall", position: "RB", status: "Injured Reserve", injury: "Preseason injury", importance: "Depth", expected_availability: "Listed as Reserve/Injured; Designated for Return. No activation has been announced.", impact: "The rookie remains outside the available backfield rotation.", source_label: "Ravens roster · checked Oct. 22", source_url: "https://www.baltimoreravens.com/team/players-roster/" }
+  - { player: "Jovaughn Gwyn", position: "C", status: "Injured Reserve", injury: "Ankle", importance: "Starter", expected_availability: "Remains on the official IR roster after the October 3 transaction.", impact: "Unavailable as the Ravens rebuild their center depth.", source_label: "Ravens roster · checked Oct. 24", source_url: "https://www.baltimoreravens.com/team/players-roster/" }
+  - { player: "Ethan Pocic", position: "C", status: "Injured Reserve", injury: "Knee", importance: "Rotation", expected_availability: "Remains on the official IR roster after the October 3 transaction.", impact: "The veteran remains unavailable behind Ioane and Jurgens.", source_label: "Ravens roster · checked Oct. 24", source_url: "https://www.baltimoreravens.com/team/players-roster/" }
+  - { player: "Bilhal Kone", position: "CB", status: "Injured Reserve", injury: "Preseason injury", importance: "Depth", expected_availability: "Listed as Reserve/Injured; Designated for Return. That roster category does not confirm activation or a new practice window.", impact: "Not yet available as additional cornerback depth.", source_label: "Ravens roster · checked Oct. 24", source_url: "https://www.baltimoreravens.com/team/players-roster/" }
+  - { player: "Adam Randall", position: "RB", status: "Injured Reserve", injury: "Preseason injury", importance: "Depth", expected_availability: "Listed as Reserve/Injured; Designated for Return. No activation has been announced.", impact: "The rookie remains outside the available backfield rotation.", source_label: "Ravens roster · checked Oct. 24", source_url: "https://www.baltimoreravens.com/team/players-roster/" }
+  - { player: "Jahquez Robinson", position: "S", status: "Injured Reserve", injury: "Not specified on roster", importance: "Depth", expected_availability: "Remains on the official IR roster; no activation announced.", impact: "Unavailable as additional safety and special-teams depth.", source_label: "Ravens roster · checked Oct. 24", source_url: "https://www.baltimoreravens.com/team/players-roster/" }
+  - { player: "Skylar Thompson", position: "QB", status: "Injured Reserve", injury: "Not specified on roster", importance: "Depth", expected_availability: "Remains on the official IR roster; no activation announced.", impact: "Not available as a reserve quarterback behind Huntley.", source_label: "Ravens roster · checked Oct. 24", source_url: "https://www.baltimoreravens.com/team/players-roster/" }
 
 sources:
   - { name: "nflverse schedules and play-by-play", role: "Automated regular-season results, EPA, success, explosive plays, red-zone drives and NFL ranks", url: "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html", cadence: "Schedules update about every five minutes; play-by-play is refreshed nightly after game days.", license: "CC BY 4.0" }
@@ -324,6 +331,7 @@ methodology_notes:
   - "Filmstudy ranks compare Ravens linemen only. Dual Eights converts each explicitly published adjusted game letter grade to a standard grade-point scale, weights it by that game's scored snaps and rounds the average to the nearest letter grade. Players need at least 20 graded snaps; ungraded appearances do not enter the average. Delayed scoring published inside a later report is assigned to the actual game week and counted once."
 
 related_articles:
+  - "/ravens/ravens-bengals-week-seven-preview-2026/"
   - "/ravens/dual-eights-efficiency-index-week-six-2026/"
   - "/ravens/first-and-five-browns-week-six-2026/"
   - "/ravens/first-and-five-falcons-week-five-2026/"

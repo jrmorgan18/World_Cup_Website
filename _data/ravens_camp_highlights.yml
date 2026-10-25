@@ -1,59 +1,34 @@
-date: "2026-10-22"
-edition: "October 22, 2026"
+date: "2026-10-24"
+edition: "October 24, 2026"
 kicker: "Week 7 · Cincinnati"
 heading: "Ravens Daily"
-intro: "Jackson's second practice and Jurgens' progress lift the offense, while Robinson and Hawkins are the new defensive injury concerns."
+intro: "Huntley starts again, Robinson moves to IR, and the Ravens reinforce the edge rotation and interior offensive line."
 highlights:
-  - title: "Lamar Jackson practiced for the second consecutive day, increasing optimism that he could return Sunday against Cincinnati."
+  - title: "Lamar Jackson has been ruled out for Sunday's AFC North matchup with Cincinnati, leaving Tyler Huntley to make his third consecutive start."
     text: >-
-      Jackson remained officially limited with his ankle injury, but ESPN's Jamison Hensley observed him participating in every drill during the media-access portion of Thursday's practice. Offensive coordinator Declan Doyle expressed optimism about his progress, although Baltimore has not committed to a starter and both Jackson and Tyler Huntley are receiving first-team preparation.
+      Jackson returned to practice this week but continues experiencing significant pain when running on his high ankle sprain, and Baltimore decided Saturday that he isn't ready. The Ravens scored just 10 points against Cleveland last week, making another game without their franchise quarterback a major challenge against a fully healthy Bengals team.
     sources:
-      - "ESPN/Jamison Hensley"
+      - "BaltimoreRavens.com"
       - "Reuters"
-      - "Ravens injury report"
     source_links:
-      - label: "Reuters"
-        url: "https://www.reuters.com/sports/lamar-jackson-hits-practice-field-ravens-like-chances-return--flm-2026-10-22/?utm_source=chatgpt.com"
-  - title: "Cam Jurgens practiced fully again, putting Baltimore's newly acquired center in strong position to make his Ravens debut."
+      - label: "Baltimore Ravens"
+        url: "https://www.baltimoreravens.com/news/lamar-jackson-out-against-bengals-week-7-tyler-huntley-third-straight-start"
+  - title: "Baltimore placed Tavius Robinson on injured reserve and elevated Adisa Isaac from the practice squad to reinforce its depleted edge rotation."
     text: >-
-      Jurgens has now completed two consecutive full practices after missing two games following his trade from Philadelphia. His potential insertion at center would allow rookie Vega Ioane, who also upgraded to full participation Thursday, to return to guard and give Baltimore a substantially healthier interior offensive line.
+      Robinson's season-ending pectoral injury removes the team's sack leader, while Isaac provides immediate depth behind Trey Hendrickson, Mike Green and rookie Zion Young. The move puts additional pressure on Baltimore's young pass rushers to generate pressure against Joe Burrow without sacrificing run defense.
     sources:
-      - "Ravens official injury report"
       - "BaltimoreRavens.com"
     source_links:
-      - label: "Cincinnati Bengals"
-        url: "https://www.bengals.com/news/bengals-ravens-week-7-2026-injury-report"
-  - title: "Tavius Robinson missed his second consecutive practice with a pectoral injury, threatening Baltimore's improving edge rotation."
+      - label: "Baltimore Ravens"
+        url: "https://www.baltimoreravens.com/news/lamar-jackson-out-against-bengals-week-7-tyler-huntley-third-straight-start"
+  - title: "The Ravens signed Kyle Hergel to the 53-man roster, securing additional interior offensive line depth ahead of Cam Jurgens' expected debut."
     text: >-
-      Robinson leads the Ravens with 3.5 sacks and has been one of their most reliable run defenders, making his availability particularly important against Cincinnati's passing attack. Trey Hendrickson practiced fully again, but losing Robinson would reduce the defense's flexibility in deploying its edge rushers.
+      Hergel had exhausted his three permitted practice-squad elevations, requiring Baltimore to promote him to keep him available Sunday. Jurgens completed the week without an injury designation, positioning the Ravens to move Vega Ioane back to guard while retaining Hergel as insurance at center.
     sources:
-      - "Ravens official injury report"
       - "BaltimoreRavens.com"
+      - "The Baltimore Banner"
     source_links:
-      - label: "Cincinnati Bengals"
-        url: "https://www.bengals.com/news/bengals-ravens-week-7-2026-injury-report"
-  - title: "Safety Jaylinn Hawkins was downgraded from limited participation Wednesday to missing Thursday's practice entirely."
-    text: >-
-      Hawkins' knee injury creates another potential complication for Baltimore's secondary ahead of a matchup with Joe Burrow, Ja'Marr Chase and Tee Higgins. His status remains uncertain, with Friday's final injury designations providing the next indication of whether Baltimore will need to adjust its safety rotation.
-    sources:
-      - "Ravens official injury report"
-    source_links:
-      - label: "Cincinnati Bengals"
-        url: "https://www.bengals.com/news/bengals-ravens-week-7-2026-injury-report"
-  - title: "Rashod Bateman returned to full practice, providing encouraging news after aggravating his shoulder injury in Cleveland."
-    text: >-
-      Bateman was limited Wednesday but upgraded Thursday, joining Mark Andrews and Matt Hibner among Baltimore's fully participating receiving options. Ronnie Stanley, John Simpson and Andrew Vorhees also practiced fully, leaving the Ravens considerably healthier on offense than they were earlier in the week.
-    sources:
-      - "Ravens official injury report"
-    source_links:
-      - label: "Cincinnati Bengals"
-        url: "https://www.bengals.com/news/bengals-ravens-week-7-2026-injury-report"
-  - title: "Cincinnati's secondary is approaching full strength, with Kyle Dugger upgrading to full practice Thursday."
-    text: >-
-      Dugger has been sidelined since Week 3 with a quadriceps injury, while fellow safety Bryan Cook is also healthy following the Bengals' bye week. Cincinnati listed only three players on Thursday's injury report, two for veteran rest, giving the Bengals a substantial availability advantage over Baltimore heading into Sunday's divisional matchup.
-    sources:
-      - "Bengals official injury report"
-      - "Cincy Jungle"
-    source_links:
-      - label: "Cincinnati Bengals"
-        url: "https://www.bengals.com/news/bengals-ravens-week-7-2026-injury-report"
+      - label: "Baltimore Ravens"
+        url: "https://www.baltimoreravens.com/news/lamar-jackson-out-against-bengals-week-7-tyler-huntley-third-straight-start"
+      - label: "The Baltimore Banner"
+        url: "https://www.thebanner.com/sports/ravens-nfl/lamar-jackson-injury-bengals-high-ankle-sprain-tyler-huntley-WT2NXMIILJDE7OHM7DMFCRAKP4/?utm_source=chatgpt.com"

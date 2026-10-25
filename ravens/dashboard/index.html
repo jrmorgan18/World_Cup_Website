@@ -114,7 +114,7 @@ section_theme: ravens
             <li><p><strong>{{ item.player }} <span>{{ item.position }}</span></strong><em>{{ item.status }}</em></p><span>{{ item.detail }} <a href="{{ item.source_url }}">Source</a></span></li>
             {% endfor %}
           </ul>
-          <small>{{ dashboard.opponent_availability.note }}</small>
+          <small>{{ dashboard.opponent_availability.note }}{% if dashboard.opponent_availability.source_url %} <a href="{{ dashboard.opponent_availability.source_url }}">{{ dashboard.opponent_availability.source_label | default: "Official injury report" }}</a>.{% endif %}</small>
         </div>
         {% endif %}
       </article>
