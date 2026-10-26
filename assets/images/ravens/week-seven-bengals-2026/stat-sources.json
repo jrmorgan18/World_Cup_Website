@@ -1,0 +1,24 @@
+{
+  "article_source": "articles/First and Five_ Week 7.docx",
+  "game_date": "2026-10-25",
+  "official_recap": "https://www.baltimoreravens.com/news/game-recap-second-half-woes-ravens-bengals-week-7",
+  "at_a_glance": {
+    "final": {"BAL": 13, "CIN": 35},
+    "first_half": {"BAL": 13, "CIN": 0},
+    "second_half": {"BAL": 0, "CIN": 35},
+    "first_half_yards": {"BAL": 258, "CIN": 59},
+    "huntley_passing_yards": 298,
+    "huntley_first_half_passing_yards": 215,
+    "flowers": {"receptions": 8, "receiving_yards": 137, "touchdown_yards": 48},
+    "henry": {"rushes": 17, "rushing_yards": 45, "yards_per_carry": 2.6},
+    "penalties": {"count": 10, "yards": 57, "first_half_pre_snap": 5}
+  },
+  "season_halftime_graphic": {
+    "source": "Author's supplied season scoring totals, paragraphs 68-70",
+    "through_games": 7,
+    "first_half": {"ravens_points": 118, "opponent_points": 53, "margin": 65},
+    "after_halftime": {"ravens_points": 51, "opponent_points": 114, "margin": -63},
+    "note": "After-halftime totals include overtime in Atlanta.",
+    "last_two_second_halves": {"ravens_points": 0, "opponent_points": 48}
+  }
+}
