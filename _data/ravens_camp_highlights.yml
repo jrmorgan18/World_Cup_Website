@@ -1,34 +1,47 @@
-date: "2026-10-24"
-edition: "October 24, 2026"
-kicker: "Week 7 · Cincinnati"
+date: "2026-10-26"
+edition: "October 26, 2026"
+kicker: "Week 7 aftermath · Buffalo next"
 heading: "Ravens Daily"
-intro: "Huntley starts again, Robinson moves to IR, and the Ravens reinforce the edge rotation and interior offensive line."
+intro: "Another second-half collapse, a new offensive-line injury, and reports pointing toward Lamar Jackson's return against Buffalo."
 highlights:
-  - title: "Lamar Jackson has been ruled out for Sunday's AFC North matchup with Cincinnati, leaving Tyler Huntley to make his third consecutive start."
+  - title: "The Ravens suffered another stunning second-half collapse, surrendering 35 unanswered points in a 35-13 loss to Cincinnati."
     text: >-
-      Jackson returned to practice this week but continues experiencing significant pain when running on his high ankle sprain, and Baltimore decided Saturday that he isn't ready. The Ravens scored just 10 points against Cleveland last week, making another game without their franchise quarterback a major challenge against a fully healthy Bengals team.
+      Baltimore dominated the first half but allowed touchdowns on five consecutive Bengals possessions after halftime, falling to 4-3 overall and 0-2 in the AFC North. The Ravens have now been outscored 48-0 in the second halves of their last two games, raising serious questions about their ability to make adjustments and finish games.
     sources:
       - "BaltimoreRavens.com"
-      - "Reuters"
+      - "The Baltimore Sun"
     source_links:
       - label: "Baltimore Ravens"
-        url: "https://www.baltimoreravens.com/news/lamar-jackson-out-against-bengals-week-7-tyler-huntley-third-straight-start"
-  - title: "Baltimore placed Tavius Robinson on injured reserve and elevated Adisa Isaac from the practice squad to reinforce its depleted edge rotation."
+        url: "https://www.baltimoreravens.com/news/game-recap-second-half-woes-ravens-bengals-week-7?utm_source=chatgpt.com"
+      - label: "The Baltimore Sun"
+        url: "https://sports.yahoo.com/articles/ravens-collapse-again-allow-35-211000985.html?utm_source=chatgpt.com"
+  - title: "Rookie guard Vega Ioane suffered a knee injury and was ruled out, immediately disrupting Baltimore's newly assembled offensive line."
     text: >-
-      Robinson's season-ending pectoral injury removes the team's sack leader, while Isaac provides immediate depth behind Trey Hendrickson, Mike Green and rookie Zion Young. The move puts additional pressure on Baltimore's young pass rushers to generate pressure against Joe Burrow without sacrificing run defense.
+      Cam Jurgens made his anticipated Ravens debut at center, allowing Ioane to return to right guard, but the first-round pick exited before the end of the opening quarter. Emery Jones Jr. replaced him, and the severity of Ioane's injury remains unknown ahead of next Sunday's trip to Buffalo.
     sources:
       - "BaltimoreRavens.com"
     source_links:
       - label: "Baltimore Ravens"
-        url: "https://www.baltimoreravens.com/news/lamar-jackson-out-against-bengals-week-7-tyler-huntley-third-straight-start"
-  - title: "The Ravens signed Kyle Hergel to the 53-man roster, securing additional interior offensive line depth ahead of Cam Jurgens' expected debut."
+        url: "https://www.baltimoreravens.com/news/vega-ioane-knee-injury-ruled-out-ravens-bengals-2026?utm_source=chatgpt.com"
+  - title: "Lamar Jackson is expected to return against Buffalo next Sunday, according to NFL Network's Ian Rapoport and CBS sideline reporter Tracy Wolfson."
     text: >-
-      Hergel had exhausted his three permitted practice-squad elevations, requiring Baltimore to promote him to keep him available Sunday. Jurgens completed the week without an injury designation, positioning the Ravens to move Vega Ioane back to guard while retaining Hergel as insurance at center.
+      Wolfson reported that Jesse Minter indicated Jackson would play in Week 8 after the coaching staff reviewed practice footage and determined his mobility wasn't sufficiently recovered for Cincinnati. Jackson has missed three consecutive games with a high ankle sprain, and while his return has not been formally confirmed, the reports represent the clearest indication yet of his timetable.
+    sources:
+      - "NFL Network via NBC Sports"
+      - "CBS/Tracy Wolfson"
+    source_links:
+      - label: "NFL Network via NBC Sports"
+        url: "https://www.nbcsports.com/fantasy/football/player-news/2026-10-25/lamar-ankle-likely-to-return-in-week-8-vs-bills?utm_source=chatgpt.com"
+      - label: "CBS/Tracy Wolfson"
+        url: "https://www.nbcsports.com/fantasy/football/player-news/2026-10-25/wolfson-lamar-jackson-will-play-week-8-vs-bills?utm_source=chatgpt.com"
+  - title: "Jesse Minter acknowledged that Baltimore has become too dependent on momentum, while the offense's inability to finish drives remains a major concern."
+    text: >-
+      The Ravens produced just six points on three possessions inside Cincinnati's 15-yard line, including a failed fourth-and-2 attempt while trailing 14-13. Minter said the team needs greater consistency rather than allowing negative plays to snowball, an especially troubling admission after consecutive divisional losses featuring nearly identical second-half failures.
     sources:
       - "BaltimoreRavens.com"
-      - "The Baltimore Banner"
+      - "Cincinnati Enquirer"
     source_links:
       - label: "Baltimore Ravens"
-        url: "https://www.baltimoreravens.com/news/lamar-jackson-out-against-bengals-week-7-tyler-huntley-third-straight-start"
-      - label: "The Baltimore Banner"
-        url: "https://www.thebanner.com/sports/ravens-nfl/lamar-jackson-injury-bengals-high-ankle-sprain-tyler-huntley-WT2NXMIILJDE7OHM7DMFCRAKP4/?utm_source=chatgpt.com"
+        url: "https://www.baltimoreravens.com/news/game-recap-second-half-woes-ravens-bengals-week-7?utm_source=chatgpt.com"
+      - label: "Cincinnati Enquirer"
+        url: "https://sports.yahoo.com/articles/jesse-minter-says-ravens-too-212309943.html?utm_source=chatgpt.com"
