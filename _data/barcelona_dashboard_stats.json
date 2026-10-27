@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T13:37:16Z",
+  "generated_at": "2026-10-27T03:21:02Z",
   "as_of": "2026-10-26",
   "season": 2026,
   "season_label": "2026-27",
@@ -1037,14 +1037,14 @@
           "abbreviation": "SEV",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png",
           "rank": 6,
-          "played": 9,
-          "wins": 4,
+          "played": 10,
+          "wins": 5,
           "draws": 2,
           "losses": 3,
-          "goals_for": 14,
+          "goals_for": 16,
           "goals_against": 16,
-          "goal_difference": -2,
-          "points": 14
+          "goal_difference": 0,
+          "points": 17
         },
         {
           "team_id": "96",
@@ -1133,13 +1133,13 @@
           "abbreviation": "OSA",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png",
           "rank": 12,
-          "played": 9,
+          "played": 10,
           "wins": 3,
           "draws": 2,
-          "losses": 4,
+          "losses": 5,
           "goals_for": 10,
-          "goals_against": 18,
-          "goal_difference": -8,
+          "goals_against": 20,
+          "goal_difference": -10,
           "points": 11
         },
         {

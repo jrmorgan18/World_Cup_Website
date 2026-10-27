@@ -8,10 +8,10 @@
 meta:
   season: 2026
   season_label: "2026-27 Season"
-  last_updated: "2026-10-17"
-  reviewed_event_id: "401882846"
-  update_context: "Through La Liga Matchday 9 · Champions League Matchday 2"
-  data_status: "through-laliga-matchday-9"
+  last_updated: "2026-10-26"
+  reviewed_event_id: "401882832"
+  update_context: "Through La Liga Matchday 10 · Champions League Matchday 3"
+  data_status: "through-laliga-matchday-10"
   data_notice: >-
     Ranks reflect completed matches in the current feed; clubs may have played
     different numbers of games. The European sample remains small. Ranks use
@@ -192,56 +192,48 @@ scorecard_groups:
     metric_ids: ["possession_pct", "pass_accuracy", "ppda", "final_third_entries_per_match"]
 
 editorial:
-  reviewed_snapshots: { laliga: "laliga-md-09", ucl: "ucl-md-02" }
+  reviewed_snapshots: { laliga: "laliga-md-10", ucl: "ucl-md-03" }
   state:
-    summary: >-
-      Barcelona is 11-0-0 across both competitions, with 48 goals scored and 11
-      conceded after the 5-2 win at Betis. Nine league wins have produced 27 points
-      and a plus-30 goal difference. The attack leads La Liga in scoring and chance
-      creation, while expected goals conceded has improved to a league-best 0.95
-      per match. That does not mean the defense is flawless: actual goals conceded
-      ranks fourth and Barcelona has four clean sheets in nine league matches.
-      PSG away and El Clásico will test whether the chance control travels against
-      stronger attacks.
-    biggest_strength: "La Liga's leading attack: 39 goals, 3.60 expected goals and 5.1 big chances per match. Actual scoring of 4.33 per match is ahead of the chance-quality baseline, so some finishing regression remains possible."
-    biggest_concern: "Two goals conceded at Betis moved the league average back to 1.00, fourth in the field. The improved 0.95 xGA is encouraging, but the high line still leaves moments that elite opponents can punish."
-    changed_this_week: "A 5-2 win at Betis extended the perfect start to 11 victories and 48 goals across both competitions. Barcelona is nine-for-nine in La Liga; the next tests are PSG away and Real Madrid at home."
+    summary: "Barcelona is 11-0-2 across both competitions, with 51 goals scored and 17 conceded. The 4-2 defeat at PSG and 2-1 Clásico loss ended the perfect start. Barcelona still leads La Liga with 27 points from ten games, two ahead of Atlético and three ahead of Madrid. Its league attack remains outstanding, but the two losses exposed problems defending transitions and protecting second-half recoveries."
+    biggest_strength: "La Liga’s leading attack: 40 goals, 3.36 xG and 4.8 big chances per match. Pedri helped create Raphinha’s Clásico equalizer, and Barcelona still leads the league in expected goal difference per match."
+    biggest_concern: "Six goals conceded across the PSG and Madrid defeats. European xGA has risen to 1.56 per match, ranked 18th; league xGA is 1.05, ranked second. Espart’s ankle injury further reduces the defensive options."
+    changed_this_week: "Two defeats in five days turned the perfect start into a tighter title race. Raphinha scored again, De Jong returned for 16 regulation-time minutes, and Espart suffered an ankle injury. Next: Alavés at home on October 31, then Aston Villa at home on November 3."
 
   metric_assessments:
     laliga:
-      blaugrana_index: { reviewed_value: 94.7, reviewed_rank: 1, status: "Elite", interpretation: "94.7 leads La Liga, although it fell from 98.7 after Betis as the goals-conceded and clean-sheet components softened. This percentile composite is not opponent-adjusted." }
-      points_per_match: { reviewed_value: 3.00, reviewed_rank: 1, status: "Elite", interpretation: "Nine wins, 27 points and a perfect 3.00 per match. No dropped points through Matchday 9." }
-      goal_difference: { reviewed_value: 30, reviewed_rank: 1, status: "Elite", interpretation: "Plus-30 leads La Liga: 39 scored and nine conceded. The five-goal display at Betis added another three to the margin." }
-      xg_difference_per_match: { reviewed_value: 2.65, reviewed_rank: 1, status: "Elite", interpretation: "Plus-2.65 per match leads La Liga. The chance-quality advantage is substantial even though actual goal difference is running ahead of it." }
-      goals_per_match: { reviewed_value: 4.33, reviewed_rank: 1, status: "Elite", interpretation: "39 goals in nine league matches means a league-leading 4.33 per match. The output is spread across an increasingly flexible attack." }
-      xg_per_match: { reviewed_value: 3.60, reviewed_rank: 1, status: "Elite", interpretation: "3.60 xG per match leads La Liga. Chance creation is excellent, but actual scoring of 4.33 is higher; this is not evidence that the finishing pace must persist." }
-      big_chances_per_match: { reviewed_value: 5.1, reviewed_rank: 1, status: "Elite", interpretation: "5.1 big chances per match leads the league. Barcelona is repeatedly reaching high-value situations rather than depending only on difficult shots." }
-      shot_conversion: { reviewed_value: 20.4, reviewed_rank: 1, status: "Elite", interpretation: "20.4% leads La Liga, up from 19.7% before Betis. The finishing is exceptional, but conversion alone cannot establish sustainability." }
-      goals_conceded_per_match: { reviewed_value: 1.00, reviewed_rank: 4, status: "Good", interpretation: "Nine conceded in nine matches ranks fourth, not first. Betis scored twice, lifting the average from 0.88 to 1.00 despite strong underlying chance control." }
-      xga_per_match: { reviewed_value: 0.95, reviewed_rank: 1, status: "Elite", interpretation: "0.95 xGA per match now leads La Liga, a clear improvement on September's 1.18. Betis generated 0.98 xG, leaving the rounded season average unchanged." }
-      clean_sheet_rate: { reviewed_value: 44.4, reviewed_rank: 3, status: "Good", interpretation: "Four clean sheets in nine matches is 44.4%, third in La Liga. It fell from 50.0% when Betis scored twice." }
-      box_shots_conceded_per_match: { reviewed_value: 4.4, reviewed_rank: 1, status: "Elite", interpretation: "4.4 box shots conceded per match is the league's lowest. That supports the improved xGA picture without implying the high line is never exposed." }
-      possession_pct: { reviewed_value: 70.3, reviewed_rank: 1, status: "Elite", interpretation: "70.3% possession leads La Liga. Control has remained strong through rotation and the difficult trips to Sevilla and Betis." }
-      pass_accuracy: { reviewed_value: 90.8, reviewed_rank: 1, status: "Elite", interpretation: "90.8% ranks first, up from 90.6% before Betis. The passing platform is helping sustain Barcelona's territorial advantage." }
-      ppda: { reviewed_value: 8.3, reviewed_rank: 1, status: "Elite", interpretation: "8.3 PPDA is the lowest in La Liga. It describes an aggressive press, not a guarantee that every attack is stopped once the first line is beaten." }
-      final_third_entries_per_match: { reviewed_value: 77.2, reviewed_rank: 1, status: "Elite", interpretation: "77.2 final-third entries per match leads La Liga. The slight decline from 77.8 before Betis does not change the territorial picture." }
+      blaugrana_index: {"reviewed_value": 92.8, "reviewed_rank": 2, "status": "Elite", "interpretation": "92.8 ranks second, down from 94.7 after the Clásico. The equal-weight competition-percentile index remains strong; it is not opponent-adjusted."}
+      points_per_match: {"reviewed_value": 2.7, "reviewed_rank": 1, "status": "Elite", "interpretation": "Nine wins and one defeat give Barcelona 27 points and 2.70 per match, still the best rate in La Liga. The perfect start ended against Madrid."}
+      goal_difference: {"reviewed_value": 29.0, "reviewed_rank": 1, "status": "Elite", "interpretation": "40 goals scored and 11 conceded leave a league-leading plus-29. The 2-1 defeat reduced the margin by one."}
+      xg_difference_per_match: {"reviewed_value": 2.31, "reviewed_rank": 1, "status": "Elite", "interpretation": "Plus-2.31 per match still leads La Liga, down from plus-2.65. Madrid generated more xG in the Clásico despite Barcelona taking more shots."}
+      goals_per_match: {"reviewed_value": 4.0, "reviewed_rank": 1, "status": "Elite", "interpretation": "40 goals in ten matches is a league-leading 4.00 per match. Raphinha scored the only Barcelona goal against Madrid."}
+      xg_per_match: {"reviewed_value": 3.36, "reviewed_rank": 1, "status": "Elite", "interpretation": "3.36 xG per match leads La Liga, down from 3.60. Barcelona generated 1.19 against Madrid; actual season scoring still exceeds the chance-quality baseline."}
+      big_chances_per_match: {"reviewed_value": 4.8, "reviewed_rank": 1, "status": "Elite", "interpretation": "4.8 big chances per match leads La Liga. Two against Madrid reduced the season average from 5.1."}
+      shot_conversion: {"reviewed_value": 19.1, "reviewed_rank": 1, "status": "Elite", "interpretation": "19.1% conversion remains the best rate in La Liga, down from 20.4%. One goal from 18 shots against Madrid pulled the exceptional finishing rate lower."}
+      goals_conceded_per_match: {"reviewed_value": 1.1, "reviewed_rank": 5, "status": "Good", "interpretation": "11 conceded in ten matches is 1.10 per match, fifth in the league. Two conceded against Madrid worsened both the average and the rank."}
+      xga_per_match: {"reviewed_value": 1.05, "reviewed_rank": 2, "status": "Elite", "interpretation": "1.05 xGA per match ranks second, up from 0.95. Madrid generated 1.95 xG, exposing the difference between season-long chance control and the demands of an elite opponent."}
+      clean_sheet_rate: {"reviewed_value": 40.0, "reviewed_rank": 5, "status": "Good", "interpretation": "Four clean sheets in ten matches is 40.0%, fifth in La Liga. Barcelona has conceded in each of its last two league games."}
+      box_shots_conceded_per_match: {"reviewed_value": 4.6, "reviewed_rank": 1, "status": "Elite", "interpretation": "4.6 box shots conceded per match remains the lowest average in La Liga. That strong volume control did not prevent Madrid from creating the better chances."}
+      possession_pct: {"reviewed_value": 69.5, "reviewed_rank": 1, "status": "Elite", "interpretation": "69.5% possession leads La Liga, down from 70.3%. Barcelona had 62.2% in the Clásico, but possession did not translate into the better xG total."}
+      pass_accuracy: {"reviewed_value": 90.6, "reviewed_rank": 1, "status": "Elite", "interpretation": "90.6% pass accuracy leads La Liga. Reliable circulation remains a strength, although the Madrid game showed how passing volume can coexist with disrupted attacking connections."}
+      ppda: {"reviewed_value": 8.4, "reviewed_rank": 1, "status": "Elite", "interpretation": "8.4 PPDA is the lowest average in La Liga, indicating an aggressive press. Madrid still created decisive openings after escaping that first pressure."}
+      final_third_entries_per_match: {"reviewed_value": 75.0, "reviewed_rank": 1, "status": "Elite", "interpretation": "75.0 final-third entries per match leads La Liga, down from 77.2. Barcelona recorded 55 against Madrid as central connections became harder to find."}
     ucl:
-      blaugrana_index: { reviewed_value: 86.4, reviewed_rank: 3, status: "Elite", interpretation: "86.4 ranks third after two matches, up from 75.7 after the opener. This is encouraging evidence, not a settled European ranking." }
-      points_per_match: { reviewed_value: 3.00, reviewed_rank: 1, status: "Elite", interpretation: "Six points from two wins is a perfect 3.00 per match, tied for the best rate. Barcelona sits second in the league-phase table." }
-      goal_difference: { reviewed_value: 7, reviewed_rank: 1, status: "Elite", interpretation: "Nine scored and two conceded gives a plus-seven difference, tied for the competition lead. PSG away is a much stronger test than this two-game sample." }
-      xg_difference_per_match: { reviewed_value: 1.76, reviewed_rank: 3, status: "Elite", interpretation: "Plus-1.76 xGD per match ranks third. Galatasaray improved the underlying balance as well as adding another convincing result." }
-      goals_per_match: { reviewed_value: 4.50, reviewed_rank: 2, status: "Elite", interpretation: "4.50 goals per match ranks second. Nine goals from two matches is excellent output but substantially ahead of the 2.23 xG average." }
-      xg_per_match: { reviewed_value: 2.23, reviewed_rank: 11, status: "Good", interpretation: "2.23 xG per match ranks 11th, up from 1.63 after Feyenoord. Finishing has still outrun the chance-quality baseline by a considerable margin." }
-      big_chances_per_match: { reviewed_value: 4.0, reviewed_rank: 4, status: "Good", interpretation: "Four big chances per match ranks fourth. The five created at Galatasaray strengthened a promising but small sample." }
-      shot_conversion: { reviewed_value: 19.6, reviewed_rank: 10, status: "Good", interpretation: "19.6% conversion ranks tenth. It is strong finishing, not the competition's best rate, and two games are too few for a lasting judgment." }
-      goals_conceded_per_match: { reviewed_value: 1.00, reviewed_rank: 4, status: "Good", interpretation: "One goal conceded in each game produces a 1.00 average, tied fourth. The results remain less dominant than the 0.47 xGA average." }
-      xga_per_match: { reviewed_value: 0.47, reviewed_rank: 3, status: "Elite", interpretation: "0.47 xGA per match ranks third. Feyenoord and Galatasaray created little overall; PSG will provide a more demanding test of the defensive structure." }
-      clean_sheet_rate: { reviewed_value: 0.0, reviewed_rank: 13, status: "Average", interpretation: "No clean sheet in two games, tied 13th. The low xGA is more encouraging than this result-only measure, but neither sample is large." }
-      box_shots_conceded_per_match: { reviewed_value: 3.0, reviewed_rank: 2, status: "Elite", interpretation: "Three box shots conceded per match ranks second. Barcelona has limited access to dangerous shooting positions in both European games." }
-      possession_pct: { reviewed_value: 71.3, reviewed_rank: 1, status: "Elite", interpretation: "71.3% possession leads the league phase. The control has travelled into Europe, though against only two opponents so far." }
-      pass_accuracy: { reviewed_value: 92.6, reviewed_rank: 1, status: "Elite", interpretation: "92.6% pass accuracy leads the competition. The drop from 94.2% after the opener has not displaced Barcelona from first." }
-      ppda: { reviewed_value: 8.3, reviewed_rank: 1, status: "Elite", interpretation: "8.3 PPDA leads the league phase after two rounds. Galatasaray's 7.9 lowered the average from 8.7 and supports the pressing-intensity read." }
-      final_third_entries_per_match: { reviewed_value: 72.5, reviewed_rank: 3, status: "Elite", interpretation: "72.5 final-third entries per match ranks third. The average fell from 84.0 after Feyenoord, but the attack created better chances in Istanbul." }
+      blaugrana_index: {"reviewed_value": 66.1, "reviewed_rank": 14, "status": "Average", "interpretation": "66.1 ranks 14th after three matches, down from 86.4 and third. PSG exposed weaknesses that the first two opponents had not; this remains a small, unadjusted sample."}
+      points_per_match: {"reviewed_value": 2.0, "reviewed_rank": 8, "status": "Good", "interpretation": "Two wins and one defeat mean six points and 2.00 per match, ranked eighth. Barcelona is also eighth in the league-phase table."}
+      goal_difference: {"reviewed_value": 5.0, "reviewed_rank": 3, "status": "Elite", "interpretation": "11 scored and six conceded leave plus-five, ranked third. The 4-2 defeat in Paris cut the previous plus-seven margin."}
+      xg_difference_per_match: {"reviewed_value": 0.66, "reviewed_rank": 14, "status": "Average", "interpretation": "Plus-0.66 xGD per match ranks 14th, down from plus-1.76. PSG generated 3.73 xG to Barcelona’s 2.19, sharply reducing the early advantage."}
+      goals_per_match: {"reviewed_value": 3.67, "reviewed_rank": 4, "status": "Elite", "interpretation": "3.67 goals per match ranks fourth. Barcelona scored twice in Paris but could not protect either recovery to level terms."}
+      xg_per_match: {"reviewed_value": 2.22, "reviewed_rank": 11, "status": "Good", "interpretation": "2.22 xG per match ranks 11th. The 2.19 generated against PSG kept creation near its earlier average, while actual scoring remains substantially higher."}
+      big_chances_per_match: {"reviewed_value": 3.7, "reviewed_rank": 6, "status": "Good", "interpretation": "3.7 big chances per match ranks sixth. Barcelona created three in Paris, enough to compete offensively without controlling the match."}
+      shot_conversion: {"reviewed_value": 17.2, "reviewed_rank": 12, "status": "Good", "interpretation": "17.2% conversion ranks 12th, down from 19.6%. Strong finishing in the opening wins still shapes this three-match sample."}
+      goals_conceded_per_match: {"reviewed_value": 2.0, "reviewed_rank": 16, "status": "Concern", "interpretation": "Six conceded in three matches is 2.00 per match, ranked 16th. The four in Paris doubled the earlier season average."}
+      xga_per_match: {"reviewed_value": 1.56, "reviewed_rank": 18, "status": "Concern", "interpretation": "1.56 xGA per match ranks 18th, up from 0.47. PSG’s 3.73 xG substantially changes the early defensive picture."}
+      clean_sheet_rate: {"reviewed_value": 0.0, "reviewed_rank": 18, "status": "Concern", "interpretation": "No clean sheets in three matches, tied 18th. Barcelona has conceded in every European game, including four times against PSG."}
+      box_shots_conceded_per_match: {"reviewed_value": 6.3, "reviewed_rank": 4, "status": "Good", "interpretation": "6.3 box shots conceded per match ranks fourth, up from 3.0. The strong overall rank should be read alongside the much worse xGA and goals-conceded figures."}
+      possession_pct: {"reviewed_value": 65.2, "reviewed_rank": 1, "status": "Elite", "interpretation": "65.2% possession leads the league phase, down from 71.3%. Barcelona had only 52.9% in Paris and struggled against PSG’s pressure."}
+      pass_accuracy: {"reviewed_value": 91.3, "reviewed_rank": 1, "status": "Elite", "interpretation": "91.3% pass accuracy leads the league phase, down from 92.6%. The overall completion rate did not prevent damaging turnovers in Paris."}
+      ppda: {"reviewed_value": 9.8, "reviewed_rank": 1, "status": "Elite", "interpretation": "9.8 PPDA remains the lowest in the league phase, up from 8.3. The 12.7 recorded against PSG indicates a less intense press than in the opening two games."}
+      final_third_entries_per_match: {"reviewed_value": 64.0, "reviewed_rank": 5, "status": "Good", "interpretation": "64.0 final-third entries per match ranks fifth, down from 72.5. Barcelona recorded 47 in Paris as PSG repeatedly disrupted progression."}
 
   squad_groups:
     - { id: "G", name: "Goalkeepers" }
@@ -249,95 +241,90 @@ editorial:
     - { id: "M", name: "Midfielders" }
     - { id: "F", name: "Forwards" }
 
-  # Scouting notes keyed by ESPN player id. Players without a note still render
-  # with their automated season line.
   player_notes:
     "362150":
-      role: "Untouchable starter"
-      note: "The primary creator and a major scoring threat. His repeated starts make recovery opportunities worth monitoring, even with more attacking options around him."
+      role: "Primary creator"
+      note: "Ten goals and ten assists in 13 appearances remain exceptional. Cucurella and Madrid’s supporting defenders restricted his usual routes in the Clásico; a difficult night does not erase his season’s output."
     "231050":
       role: "Leading scorer"
-      note: "Still the leading scorer, often operating centrally rather than only from the left. His return against Betis restores another option after the attack kept producing without him."
+      note: "15 goals across both competitions, including 13 in La Liga. Back in the starting side after his earlier absence, he scored the equalizer against Madrid and remains the team’s leading finisher."
     "297362":
       role: "First-choice goalkeeper"
-      note: "The first-choice goalkeeper, not the only goalkeeper used this season. A high defensive line can leave him with difficult individual interventions even when overall chance volume is low."
+      note: "31 saves in 12 appearances. His interventions kept Barcelona competitive in Paris, but the six goals conceded across the two defeats underline the difficult situations developing ahead of him."
     "250465":
       role: "Rhythm setter"
-      note: "The rhythm setter alongside Rodri. Their receiving and passing support the possession numbers, while the Getafe rotation showed Flick can give him time out of the starting lineup."
+      note: "Outstanding in Barcelona’s second-half response to Madrid and the creator of Raphinha’s equalizer. His ability to receive, turn and progress possession remains central when opponents disrupt the usual combinations."
     "231828":
-      role: "The new anchor"
-      note: "The midfield anchor, now on the scoresheet after Betis. Improved chance prevention supports the structural case for his role, although it does not isolate his individual effect."
+      role: "Midfield anchor"
+      note: "The anchor returned to the starting side for the Clásico after being rested against PSG. Madrid still escaped the pressure for the winner; tracking runners and protecting the back line remain collective responsibilities."
     "368992":
       role: "Line leader"
-      note: "Central to Flick's high line. The team xGA picture has improved, but defending space behind the press remains a demanding assignment against faster attacks."
+      note: "Much of his Clásico defending was strong, but the angle of his challenge allowed Camavinga through for the winner. The high line places a premium on decisions in large spaces."
     "354334":
-      role: "Breakout contributor"
-      note: "An attacking midfielder whose runs into the box complement Yamal's passing. The headed goal at Galatasaray and another assist at Betis show the value of those movements."
+      role: "Attacking midfielder"
+      note: "Five goals and four assists across 12 appearances. His advanced positioning can provide a goal threat, but the Clásico also showed the need for better spacing between the midfield and Raphinha."
     "376423":
       role: "Rotation midfielder"
-      note: "A genuine rotation option in a crowded midfield. The next step is turning substitute opportunities into a larger share of starts."
+      note: "Started in Paris with Rodri rested and remains a genuine option in the midfield rotation. De Jong’s return increases the competition for minutes."
     "403582":
-      role: "Emerging starter"
-      note: "A meaningful defensive rotation option rather than an occasional academy cameo. His role adds flexibility when Flick changes the back line."
+      role: "Injured breakout contributor"
+      note: "Scored in Paris and competed well early in the Clásico before leaving injured. The club confirmed a right-ankle syndesmosis injury and expects an absence of around seven weeks."
     "274913":
       role: "Rotation forward"
-      note: "A direct runner who gives the attack depth and a different transition threat. Useful both as a starter and as an attacking change from the bench."
+      note: "Has appeared in all 13 matches, with four goals and two assists. His direct running remains an alternative when Barcelona needs more depth behind an organized defense."
     "217289":
       role: "Squad forward"
-      note: "Goals against Getafe and Betis strengthen his case for a bigger role. His pressing and combination play give Flick an alternative to a false nine."
+      note: "Four goals in eight appearances support his role as an alternative central forward. His lost possession preceded Madrid’s winning transition, an example of the cost of an attacking turnover."
     "186430":
       role: "Senior centre-back"
-      note: "A senior central-defensive option in a back line that has rotated regularly. Match participation is the evidence of his role, not an assumption that every non-selection is injury-related."
+      note: "Seven appearances and five starts remain his season contribution. He was absent from the latest Clásico squad; selection alone does not establish a medical diagnosis or return date."
+    "312015":
+      role: "Starting centre-back"
+      note: "An excellent recovery intervention and a header saved by Lunin contrasted with the failed clearance for Madrid’s opener. His performance illustrates both the promise and the narrow margin for error in this defense."
+    "176399":
+      role: "Flexible fullback"
+      note: "Moved from left to right after Espart’s injury and remains an important option in a depleted back line. Defensive tracking and combinations on the flank will matter during Espart’s absence."
+    "219022":
+      role: "Returning midfielder"
+      note: "Made his first appearance of the season against Madrid, replacing Fermín in the 74th minute. The minutes model records 16 regulation-time minutes; match action is now confirmed rather than just a place in the squad."
+    "227765":
+      role: "Injured creator"
+      note: "The club confirmed a left-adductor injury following the PSG match and estimated around one month out. His absence reduces the attacking-midfield options while De Jong returns."
+    "231692":
+      role: "Defensive option absent from squad"
+      note: "Eight appearances and four starts this season. He was absent from the Clásico squad, leaving fewer established defensive options; no new return date is assumed here."
+    "323703":
+      role: "Fullback cover"
+      note: "Entered after Espart’s injury as Cancelo switched sides. His three substitute appearances total 89 minutes, and the new defensive absences may create a larger role."
+    "268782":
+      role: "Wide attacking option"
+      note: "Two goals and four assists in 12 appearances. His running gives Barcelona width, but Madrid’s organized block prevented the attack from finding its usual fluency."
 
   rotation_context:
     label: "Minutes load"
-    note: >-
-      Minutes are calculated from ESPN's per-match team sheets across both
-      competitions, using substitution clocks rather than reported appearances.
-      Share is a player's minutes as a percentage of all minutes available to him
-      in the window. The load label describes recent club fixtures, not the
-      upcoming schedule, and does not include international-team minutes.
+    note: "Minutes use ESPN team sheets across both competitions and exclude stoppage time and international duty. The rolling 21-day window now contains five club matches and 450 available minutes. Load describes recent fixtures; it is separate from medical availability."
     watch:
-      - { player: "Lamine Yamal", player_id: "362150", text: "His repeated starts make recovery and rotation opportunities worth monitoring." }
-      - { player: "Rodri", player_id: "231828", text: "The midfield anchor's workload matters when short gaps between fixtures return." }
-      - { player: "Raphinha", player_id: "231050", text: "Track the minutes used in his reintegration; a low recent total is not evidence of his current medical status." }
+      - {"player": "Lamine Yamal", "player_id": "362150", "text": "Has started all 13 matches. Monitor opportunities to recover after the two demanding defeats."}
+      - {"player": "Pedri", "player_id": "250465", "text": "His influence on progression makes sensible rotation valuable as the next league and European fixtures approach."}
+      - {"player": "Raphinha", "player_id": "231050", "text": "Returned to the starting side and scored against Madrid. Recent minutes describe his reintegration, not a medical prognosis."}
 
 availability:
-  note: >-
-    Availability reviewed October 17. ESPN returns no structured injuries, which
-    is not treated as a medical all-clear. The club confirmed Raphinha and Frenkie
-    de Jong were available for Betis; minutes and squad selection are distinguished
-    from medical status below.
+  note: "Reviewed October 26 after the Clásico. Club-confirmed injuries and returns are listed below. ESPN provides no structured injury entries; that is not treated as a medical all-clear."
   items:
-    - player: "Frenkie de Jong"
-      position: "M"
-      status: "Available; returned to squad"
-      detail: "The club confirmed his return after a knee injury and named him in the Betis squad. He remained an unused substitute; no season minutes are recorded yet."
-      impact: "He is an available midfield option, not an assumed ongoing injury absence. A place on the bench is separate from a return to match action."
-      source_label: "FC Barcelona squad announcement, October 16; ESPN Betis team sheet"
-      source_url: "https://www.fcbarcelona.com/en/football/first-team/news/4592779/the-squad-for-betis-v-fc-barcelona"
-    - player: "Raphinha"
-      position: "F"
-      status: "Returned to match action"
-      detail: "Back in the squad after the international-break absence and used for 21 regulation-time minutes as a substitute at Betis."
-      impact: "The attack regains its leading scorer, but a substitute appearance should not be read as a promise of an immediate full-match workload."
-      source_label: "FC Barcelona squad announcement; ESPN Betis team sheet, October 17"
-      source_url: "https://www.espn.com/soccer/match/_/gameId/401882846/barcelona-real-betis"
-    - player: "Roony Bardghji"
-      position: "F"
-      status: "No minutes recorded"
-      detail: "Named in the squad list with no recorded minutes in either competition."
-      impact: "No injury explanation is inferred. First-team selection and match involvement remain separate questions."
-      source_label: "Dual Eights minutes model from ESPN team sheets"
-      source_url: "https://www.espn.com/soccer/team/squad/_/id/83/barcelona"
+    - {"player": "Xavi Espart", "position": "D", "status": "Injured; around seven weeks", "detail": "The club confirmed a syndesmosis injury in his right ankle after a collision in the Clásico.", "impact": "His absence reduces the fullback options and increases the importance of Cancelo and Balde.", "source_label": "FC Barcelona medical update, October 26", "source_url": "https://www.fcbarcelona.com/en/football/first-team/news/4599042/xavi-espart-injury-news"}
+    - {"player": "Dani Olmo", "position": "M", "status": "Injured; around one month", "detail": "The club confirmed a left-adductor injury after the PSG game.", "impact": "An attacking-midfield option is unavailable; recovery is an estimate rather than a guaranteed return date.", "source_label": "FC Barcelona medical update, October 21", "source_url": "https://www.fcbarcelona.com/en/football/first-team/news/4596701/dani-olmo-injury-news"}
+    - {"player": "Frenkie de Jong", "position": "M", "status": "Returned to match action", "detail": "Replaced Fermín in the 74th minute against Madrid; 16 regulation-time minutes are recorded.", "impact": "Barcelona regains an experienced midfield passer after his knee-injury absence.", "source_label": "FC Barcelona return report, October 25; ESPN match team sheet", "source_url": "https://www.fcbarcelona.com/en/football/first-team/news/4598695/frenkie-de-jong-returns"}
+    - {"player": "Raphinha", "position": "F", "status": "Back in the starting lineup", "detail": "Started against PSG and Madrid and scored Barcelona’s Clásico equalizer.", "impact": "His return restores the team’s leading scorer; no restriction is inferred from earlier low minutes.", "source_label": "FC Barcelona Clásico report; ESPN team sheets", "source_url": "https://www.fcbarcelona.com/en/football/first-team/news/4598231/the-squad-for-the-clasico"}
+    - {"player": "Jules Koundé, Eric García and Andreas Christensen", "position": "D", "status": "Absent from the latest squad", "detail": "All three were absent from the club’s named Clásico squad.", "impact": "Defensive depth is limited. Their omission does not establish a fresh diagnosis or a confirmed return date.", "source_label": "FC Barcelona Clásico squad announcement, October 24", "source_url": "https://www.fcbarcelona.com/en/football/first-team/news/4598231/the-squad-for-the-clasico"}
+    - {"player": "Roony Bardghji", "position": "F", "status": "No minutes recorded", "detail": "No minutes in either competition and absent from the latest Clásico squad.", "impact": "No medical explanation is inferred solely from selection or a lack of minutes.", "source_label": "FC Barcelona Clásico squad; ESPN season team sheets", "source_url": "https://www.fcbarcelona.com/en/football/first-team/news/4598231/the-squad-for-the-clasico"}
 
 title_race:
   label: "The chase"
-  note: "La Liga positions and points come from ESPN's standings feed; the Champions League row is the 36-team league phase."
+  note: "La Liga standings and the 36-team Champions League table come from the current ESPN feed. Competition samples and points are kept separate."
   watch:
-    - { title: "The margin", text: "27 points from nine wins, five ahead of Atlético Madrid. Real Madrid has 18 points with a game in hand; the table is a live snapshot, not a level-games comparison." }
-    - { title: "The European baseline", text: "Two wins, six points and second place in the league phase. The top eight qualify directly for the round of 16, but only two of eight matches have been played." }
-    - { title: "The next tests", text: "PSG away on October 20, then Real Madrid at home on October 25. Neither the perfect record nor the early chance-control figures settle those tougher assignments." }
+    - {"title": "The margin", "text": "Barcelona leads on 27 points from ten games; Atlético has 25 and Madrid 24. The Clásico reduced Madrid’s deficit from six points to three."}
+    - {"title": "The European baseline", "text": "Six points from three matches puts Barcelona eighth in the league phase after the loss in Paris. The top eight qualify directly, with five league-phase games still to play."}
+    - {"title": "The next tests", "text": "Alavés at home on October 31, then Aston Villa at home on November 3. Barcelona must turn its strong season averages into better control of decisive moments."}
 
 sources:
   - name: "ESPN per-match team statistics"
@@ -357,9 +344,9 @@ sources:
     url: "https://www.espn.com/soccer/team/squad/_/id/83/barcelona"
     cadence: "Collected once per match and cached; recent box scores are re-checked for corrections"
   - name: "FC Barcelona team news"
-    role: "Club-confirmed returns to the squad; no injury is inferred from a lack of minutes"
-    url: "https://www.fcbarcelona.com/en/football/first-team/news/4592779/the-squad-for-betis-v-fc-barcelona"
-    cadence: "Editorial review on October 17"
+    role: "Club-confirmed injuries and returns; no diagnosis is inferred from a lack of minutes"
+    url: "https://www.fcbarcelona.com/en/football/first-team/news/4599042/xavi-espart-injury-news"
+    cadence: "Editorial review on October 26"
 
 methodology_notes:
   - "La Liga and Champions League figures are never combined. Each competition is ranked within its own field: 20 clubs in La Liga, 36 in the Champions League league phase."
@@ -377,6 +364,7 @@ methodology_notes:
   - "Squad notes, metric statuses and availability entries are editorial and are kept separate from the calculated metrics."
 
 related_articles:
+  - "/soccer/barcelona/clasico-recap-october-26-2026/"
   - "/soccer/barcelona/psg-recap-clasico-preview-october-21-2026/"
   - "/soccer/barcelona/barcelona-week-review-october-15-2026/"
   - "/soccer/barcelona/barcelona-breaking-la-liga-raphinha-2026/"
