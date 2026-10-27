@@ -27,6 +27,7 @@ from strength_beta_lab.fetch_refinement_inputs import EXTRAS
 from strength_beta_lab.refine_strength_beta import (RefinedBuilder, Experiment, model_payload, correct_venues, metrics, skill_for)
 from update_ravens_dashboard import compute_league_metrics, eligible_scrimmage_plays
 from efficiency_dashboard import apply_model, calibration
+from nfl_market_history import observations_from_dashboard, merge_observations, attach_market_history
 
 BASE = 'https://github.com/nflverse/nflverse-data/releases/download/'
 
@@ -370,6 +371,10 @@ def build(cache, season, requested, audit=False, allow_partial=False):
         'methodology':{'model_id':config['model_id'],'margin_penalty':config['experiment']['margin_penalty'],
             'point_multiplier':config.get('point_multiplier',1.),'offense_carry':exp.offense_carry,'defense_carry':exp.defense_carry,'history_share':exp.history_share,
             'half_life':exp.half_life,'coach_multiplier':.65,'new_qb_multiplier':.60}}
+    market_archive_path=ROOT/'_data/nfl_market_archive.json'
+    market_observations=json.loads(market_archive_path.read_text())['observations'] if market_archive_path.exists() else []
+    market_observations=merge_observations(market_observations,observations_from_dashboard(payload))
+    attach_market_history(payload,market_observations)
     from check_nfl_dashboard import validate
     validate(payload)
     from update_nfl_injury_watchlist import build as injury_watchlist
@@ -391,11 +396,12 @@ def build(cache, season, requested, audit=False, allow_partial=False):
             'default_validation':{y:config['validation']['seasons'][y]['beta'] for y in ['2024','2025']}}
         atomic_json(ROOT/'scripts/nfl_continuity_audit.json',result)
     atomic_json(archive_path,{'forecasts':archive})
+    atomic_json(market_archive_path,{'observations':market_observations})
     atomic_json(ROOT/'_data/nfl_injury_watchlist.json',watchlist)
     atomic_json(ROOT/'_data/nfl_dashboard.json',payload)
     atomic_json(ROOT/'assets/data/nfl-dashboard.json',payload)
     pd.DataFrame([{k:v for k,v in t.items() if not isinstance(v,(dict,list))} for t in teams]).to_csv(ROOT/'assets/data/nfl-rankings.csv',index=False)
-    pd.DataFrame([g for g in games_out if g['status']=='Final']).to_csv(ROOT/'assets/data/nfl-results.csv',index=False)
+    pd.DataFrame([{k:v for k,v in g.items() if k!='market_history'} for g in games_out if g['status']=='Final']).to_csv(ROOT/'assets/data/nfl-results.csv',index=False)
     print(f'NFL ready: {len(teams)} teams, {len(completed)} rating games, {len(games_out)} scheduled/results games.',flush=True)
 
 
