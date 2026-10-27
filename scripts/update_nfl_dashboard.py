@@ -238,10 +238,15 @@ def build(cache, season, requested, audit=False, allow_partial=False):
         activation = model_config['activation']
         print(f"NFL publication preserved: awaiting completed {activation['season']} Week {activation['rating_week']}; no public data or forecasts written.", flush=True)
         return
-    config = model_for_rating(model_config, season, cutoff)
-    seed = json.loads((ROOT/'scripts/nfl_model_seed.json').read_text())
     published_path = ROOT/'_data/nfl_dashboard.json'
     previous_published = json.loads(published_path.read_text()) if published_path.exists() else {}
+    # A scheduled complete-week refresh must not roll back a reviewed interim update.
+    # Explicit cutoffs remain available for intentional manual rebuilds.
+    if requested is None and previous_published.get('season') == season and previous_published.get('rating_week', 0) > cutoff:
+        print(f"NFL publication preserved: published Week {previous_published['rating_week']} is newer than completed Week {cutoff}; no public data or forecasts written.", flush=True)
+        return
+    config = model_for_rating(model_config, season, cutoff)
+    seed = json.loads((ROOT/'scripts/nfl_model_seed.json').read_text())
     current_pbp=pd.read_parquet(cache/f'pbp-{season}.parquet')
     missing=set(completed.game_id)-set(current_pbp.game_id)
     if missing:raise ValueError('Missing play-by-play for completed games: '+', '.join(sorted(missing)))

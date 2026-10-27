@@ -55,6 +55,25 @@ class NFLDashboardTests(unittest.TestCase):
             for name in paths:
                 self.assertEqual((root/name).read_bytes(),b'published Week 5 bytes\n')
 
+    def test_automatic_refresh_cannot_roll_back_a_newer_published_week(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory);cache=root/'cache';cache.mkdir()
+            (root/'scripts').mkdir();(root/'_data').mkdir()
+            (root/'scripts/nfl_model_config.json').write_text(json.dumps(self.production_config()))
+            games=pd.DataFrame([{'season':2026,'game_type':'REG','week':week,
+                'home_score':10.,'away_score':3.} for week in range(1,7)])
+            games.to_csv(cache/'games.csv',index=False)
+            archive=root/'_data/nfl_forecast_archive.json';archive.write_bytes(b'preserved forecasts')
+            for complete in [False,True]:
+                published=root/'_data/nfl_dashboard.json'
+                published.write_text(json.dumps({'season':2026,'rating_week':7,'rating_week_complete':complete}))
+                before=published.read_bytes()
+                with patch.object(dashboard,'ROOT',root), patch.object(dashboard,'RefinedBuilder') as builder, patch.object(dashboard,'atomic_json') as writer, patch.object(dashboard.pd,'read_parquet') as pbp:
+                    dashboard.build(cache,2026,None)
+                    builder.assert_not_called();writer.assert_not_called();pbp.assert_not_called()
+                self.assertEqual(published.read_bytes(),before)
+                self.assertEqual(archive.read_bytes(),b'preserved forecasts')
+
     def test_refit_scale_is_applied_once_and_home_advantage_is_not_compressed(self):
         config=self.production_config()
         self.assertEqual(config['experiment']['margin_penalty'],360.)
