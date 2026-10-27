@@ -6,14 +6,14 @@
 meta:
   season: 2026
   season_label: "2026 Season"
-  last_updated: "2026-10-24"
-  update_context: "Cincinnati next · Availability reviewed October 24"
-  data_status: "through-week-6"
+  last_updated: "2026-10-27"
+  update_context: "Bengals recap · Buffalo next · Week 7 editorial grades"
+  data_status: "through-week-7"
   data_notice: >-
-    Six games are still an early sample, so league ranks and rate statistics are
+    Seven games are still an early sample, so league ranks and rate statistics are
     directional rather than predictive. The scorecard uses 2026 regular-season
     play-by-play and keeps the 2025 final values as a labeled comparison baseline.
-    All Week 6 games are included; subsequent statistical corrections may revise
+    All Week 7 games are included; subsequent statistical corrections may revise
     ranks and rates. ESPN trench rates and Filmstudy scoring carry their own reporting weeks.
 
 metric_definitions:
@@ -139,80 +139,77 @@ scorecard_groups:
 editorial:
   state:
     summary: >-
-      The Ravens are 4-2 after a 13-10 loss in Cleveland left them tied with the
-      Browns and Steelers in the AFC North. Ten points on the opening two drives
-      were followed by nine scoreless possessions. The defense recorded five sacks
-      and allowed 237 yards, but late third-down breakdowns proved costly. Cincinnati
-      comes next with Huntley making his third straight start after Jackson was
-      ruled out Saturday. Jurgens has no game designation and is expected to debut;
-      Hergel joins the 53-man roster. Robinson is on season-ending IR, Hawkins is
-      out, and Isaac has been elevated to reinforce the edge rotation.
-    biggest_strength: "A five-sack game lifted the pass rush, while season explosive-play rate remains third and offensive success rate fifth."
-    biggest_concern: "Jackson is out for a third straight game. Robinson's season-ending injury and Hawkins' absence reduce the defense's options against Burrow, Chase and Higgins."
-    changed_this_week: "The Ravens fell to 4-2. Hendrickson returned, Lane came off IR, and Cuevas scored his first touchdown; Cleveland's late rally ended the three-game winning streak."
+      The Ravens are 4-3 and 0-2 in the AFC North after a 13-0 halftime lead became
+      a 35-13 loss to Cincinnati. They have been outscored 48-0 after halftime over
+      the past two games. Flowers supplied eight catches for 137 yards, but the run
+      game stalled and the defense allowed five consecutive touchdown drives.
+      Jurgens made his debut at center before Ioane left with a knee injury.
+      Buffalo is next, on the road November 1. Reports point toward Jackson's return,
+      but his availability has not been formally confirmed.
+    biggest_strength: "Flowers continues to create explosive plays; the Ravens rank fourth in season explosive-play rate through Week 7."
+    biggest_concern: "Back-to-back second-half shutouts and Cincinnati's five straight touchdown drives expose problems with adjustments and finishing games."
+    changed_this_week: "The Ravens fell to 4-3. Jurgens debuted, Ioane suffered a knee injury, and the Bengals erased a 13-point halftime deficit. Buffalo comes next."
 
   metric_assessments:
-    overall_efficiency: { status: "Good", interpretation: "The Ravens are 11th at 56.3 in the published v2.1 index through the complete Week 6 slate, down from fifth at 62.5 through Week 5. The model combines opponent-adjusted offense, defense and special teams; it measures observed efficiency rather than predicting the next game." }
-    point_differential: { status: "Good", interpretation: "The three-point loss reduces the season margin to +24, eighth in the league." }
-    turnover_differential: { status: "Average", interpretation: "The Ravens are +2, 13th. Henry's fourth-quarter fumble was the only turnover in Cleveland." }
-    offensive_epa_per_play: { status: "Good", interpretation: "The offense is seventh at 0.12 EPA/play through six games. Cleveland held the Ravens to -0.07 per eligible play." }
-    offensive_success_rate: { status: "Good", interpretation: "The season success rate is 48.0%, fifth. Only 33.9% of eligible Ravens plays succeeded in Cleveland." }
-    explosive_play_rate: { status: "Elite", interpretation: "The Ravens remain third in explosive-play rate at 12.8%, despite the offense's stalled possessions in Week 6." }
-    red_zone_td_rate: { status: "Good", interpretation: "The Ravens have scored touchdowns on 71.4% of qualifying red-zone drives, seventh. Cuevas supplied the only touchdown in Cleveland." }
-    defensive_epa_per_play: { status: "Good", interpretation: "Season EPA allowed improves to -0.04, 10th. The Browns finished at -0.12 per eligible play despite winning the game." }
-    defensive_success_rate: { status: "Good", interpretation: "Opponent success is 41.3%, seventh. Cleveland succeeded on 43.3% of eligible plays, with late third-down conversions making the difference." }
-    explosive_play_rate_allowed: { status: "Good", interpretation: "The season rate improves to 8.2%, 10th. Jeudy's late 33-yard catch nevertheless set up the winning field goal." }
-    opponent_red_zone_td_rate: { status: "Average", interpretation: "Opponents have converted 57.9% of qualifying red-zone drives into touchdowns, 14th. Cleveland's short-field touchdown followed Henry's fumble." }
+    overall_efficiency: { status: "Average", interpretation: "The Ravens are 14th at 53.7 in the v2.1 index through Week 7, down from 11th at 56.3 through Week 6. The index measures observed efficiency rather than predicting the next game." }
+    point_differential: { status: "Average", interpretation: "The 22-point loss to Cincinnati reduces the season margin to +2, 16th in the league." }
+    turnover_differential: { status: "Average", interpretation: "The Ravens are +1, 14th, after losing the Week 7 turnover battle 1-0." }
+    offensive_epa_per_play: { status: "Good", interpretation: "The offense is eighth at 0.08 EPA/play through seven games. The Ravens finished at -0.09 per eligible play against Cincinnati." }
+    offensive_success_rate: { status: "Good", interpretation: "Season success rate is 47.0%, ninth. The Ravens succeeded on 41.5% of eligible plays against the Bengals." }
+    explosive_play_rate: { status: "Elite", interpretation: "The Ravens rank fourth in season explosive-play rate at 11.3%. Flowers' 48-yard touchdown was a Week 7 highlight." }
+    red_zone_td_rate: { status: "Average", interpretation: "The Ravens have scored touchdowns on 62.5% of qualifying red-zone drives, 14th. Finishing scoring opportunities remains a concern." }
+    defensive_epa_per_play: { status: "Average", interpretation: "Season EPA allowed is 0.01, 17th. Cincinnati produced 0.33 EPA per eligible play in Week 7." }
+    defensive_success_rate: { status: "Average", interpretation: "Opponent success is 43.2%, 15th. Cincinnati succeeded on 56.9% of eligible plays in Week 7." }
+    explosive_play_rate_allowed: { status: "Good", interpretation: "The Ravens allow explosive gains on 8.1% of eligible plays, 11th through Week 7." }
+    opponent_red_zone_td_rate: { status: "Concern", interpretation: "Opponents have converted 66.7% of qualifying red-zone drives into touchdowns, 20th through Week 7." }
 
   overviews:
     offense:
       status: "Good"
       assessment: >-
-        The Ravens rank fifth in success rate, third in explosive-play rate and seventh
-        in EPA per play through six games. Cleveland limited them to 235 yards and
-        no points after the first two drives. Lane and Cuevas offered receiving
-        encouragement, but the offense needs more sustained production.
-      trend_summary: "The Cleveland shutdown lowers season efficiency; Jackson's ankle and the protection plan frame Cincinnati week."
+        The Ravens rank ninth in success rate, fourth in explosive-play rate and eighth
+        in EPA per play through seven games. Huntley's 298 passing yards and Flowers'
+        production could not prevent a second consecutive second-half shutout.
+      trend_summary: "The run game and scoring efficiency need answers before the trip to Buffalo."
       metric_ids: ["offensive_epa_per_play", "explosive_play_rate", "red_zone_td_rate"]
       links:
         - { label: "How Declan Doyle could change the offense", url: "/ravens/what-will-declan-doyle-change/" }
     defense:
-      status: "Good"
+      status: "Average"
       assessment: >-
-        Five sacks and 237 yards allowed gave the Ravens a strong overall defensive
-        outing in Cleveland. Season EPA allowed is 10th and opponent success seventh.
-        The Browns' late third-down conversions still exposed the situational gap
-        between winning individual snaps and closing a game.
-      trend_summary: "Hendrickson's return lifts the rush; late third-down coverage remains the clearest correction."
+        Cincinnati turned 59 first-half yards into a 35-point second half. Season
+        EPA allowed is 17th and opponent success 15th. Buffalo's league-leading
+        offensive EPA per play presents another difficult test.
+      trend_summary: "Coverage, tackling and second-half adjustments must improve against the Bills."
       metric_ids: ["defensive_epa_per_play", "defensive_success_rate", "explosive_play_rate_allowed"]
       links:
         - { label: "Five questions defining the Ravens' season", url: "/ravens/five-questions-that-will-define-the-season/" }
 
   units:
-    - { name: "Quarterback", assessment: "Strength", trend: "down", season_grade: "B+", season_grade_points: 3.278, last_game_grade: "D", explanation: "Week 6: Huntley completed 19 of 31 passes for 165 yards and a touchdown without an interception, but only two completions gained 12 or more yards and the offense failed to score after its first two drives. Jackson's season QBR and CPOE are separate analytics, not grades for Huntley's performance.", link: "/ravens/first-and-five-browns-week-six-2026/" }
-    - { name: "Running backs", assessment: "Solid", trend: "down", season_grade: "B", season_grade_points: 3.053, last_game_grade: "D", explanation: "Week 6: Henry managed 58 yards on 17 carries, and his fourth-quarter fumble set up Cleveland's tying touchdown. The Ravens averaged -0.56 EPA per designed run." }
-    - { name: "Wide receivers", assessment: "Strength", trend: "down", season_grade: "A-", season_grade_points: 3.613, last_game_grade: "B", explanation: "Week 6: Flowers caught six passes for 66 yards and Lane returned with four for 40. Bateman left in the second quarter with a shoulder injury. Flowers' season yards per route run and YAC over expectation provide additional receiving context." }
-    - { name: "Tight ends", assessment: "Solid", trend: "down", season_grade: "B-", season_grade_points: 2.5, last_game_grade: "C", explanation: "Week 6: Cuevas caught four passes for 44 yards and his first NFL touchdown, including a 29-yard gain from a guard-like alignment, but the blocking did not sustain the run game after the opening drives." }
-    - { name: "Offensive line", assessment: "Mixed", trend: "down", season_grade: "C+", season_grade_points: 2.332, last_game_grade: "C-", explanation: "Week 6 grade: Cleveland's aggressive upfield front held the Ravens to 87 rushing yards at 3.8 per carry. Jones struggled and Ioane had more snap issues in his third straight start at center. The separate analytics use ESPN's Week 6 rates and Filmstudy's published reports through Week 6.", link: "/ravens/first-and-five-browns-week-six-2026/" }
-    - { name: "Defensive line", assessment: "Strength", trend: "up", season_grade: "A-", season_grade_points: 3.553, last_game_grade: "A", explanation: "Week 6 grade: Madubuike recorded his first sack in more than a year and Campbell added another, while Cleveland ran 29 times for 93 yards. The separate ESPN run-stop and player rush metrics include Week 6." }
-    - { name: "Edge rushers", assessment: "Solid", trend: "stable", season_grade: "B", season_grade_points: 3.055, last_game_grade: "B", explanation: "Week 6 grade: Hendrickson returned from a finger procedure with a sack and multiple pressures as the Ravens sacked Watson five times. The separate ESPN rush metrics include that game." }
-    - { name: "Linebackers", assessment: "Solid", trend: "down", season_grade: "B", season_grade_points: 2.888, last_game_grade: "C+", explanation: "Week 6: Cleveland converted one of its first 10 third downs, then four of its final six, including the 33-yard completion that set up the winning field goal. No defensible free league-wide linebacker metric is added." }
-    - { name: "Secondary", assessment: "Solid", trend: "up", season_grade: "B", season_grade_points: 2.835, last_game_grade: "B+", explanation: "Week 6: Hamilton made three tackles for loss and Martin added a sack and several strong coverage snaps, though his late pass interference and offside penalties extended Cleveland drives. Watson threw for 164 yards. Opponent CPOE is a separate season metric." }
-    - { name: "Specialists", assessment: "Solid", trend: "down", season_grade: "B", season_grade_points: 2.998, last_game_grade: "D", explanation: "Week 6: Loop missed a 49-yard field goal that would have restored a 10-point fourth-quarter lead, after making a 34-yarder on the second drive." }
+    - { name: "Quarterback", assessment: "Solid", trend: "down", season_grade: "B", season_grade_points: 3.048, last_game_grade: "C-", explanation: "Week 7: Huntley threw for a career-high 298 yards, including 215 before halftime, but the offense was shut out after the break. Jackson's QBR remains a separate season metric.", link: "/ravens/first-and-five-bengals-week-seven-2026/" }
+    - { name: "Running backs", assessment: "Solid", trend: "down", season_grade: "B", season_grade_points: 2.903, last_game_grade: "C", explanation: "Week 7: Henry managed 45 yards on 17 carries, averaging 2.6 yards per attempt as the running game struggled against Cincinnati." }
+    - { name: "Wide receivers", assessment: "Strength", trend: "down", season_grade: "A-", season_grade_points: 3.573, last_game_grade: "B+", explanation: "Week 7: Flowers caught eight passes for 137 yards and a 48-yard touchdown. His season yards per route run and YAC over expectation remain separate receiving metrics." }
+    - { name: "Tight ends", assessment: "Mixed", trend: "down", season_grade: "C+", season_grade_points: 2.286, last_game_grade: "D", explanation: "Week 7: The tight ends receive a D. Huntley's fourth-and-2 pass toward Cuevas fell incomplete on a pivotal second-half possession." }
+    - { name: "Offensive line", assessment: "Mixed", trend: "down", season_grade: "C", season_grade_points: 2.142, last_game_grade: "D", explanation: "Week 7: Jurgens debuted at center, but Ioane left with a knee injury and Jones replaced him at guard. Huntley was sacked four times and Henry averaged 2.6 yards per carry. ESPN rates and Filmstudy grades retain their own published reporting periods.", link: "/ravens/first-and-five-bengals-week-seven-2026/" }
+    - { name: "Defensive line", assessment: "Strength", trend: "down", season_grade: "B+", season_grade_points: 3.474, last_game_grade: "B", explanation: "Week 7: The interior receives a B. The defense held Cincinnati to 59 first-half yards before the Bengals reversed the game after halftime. ESPN win rates are separate published metrics." }
+    - { name: "Edge rushers", assessment: "Solid", trend: "down", season_grade: "B", season_grade_points: 2.857, last_game_grade: "C-", explanation: "Week 7: The edge group receives a C-. The rush could not disrupt Burrow consistently during Cincinnati's second-half turnaround, with Robinson unavailable." }
+    - { name: "Linebackers", assessment: "Solid", trend: "down", season_grade: "B-", season_grade_points: 2.618, last_game_grade: "D", explanation: "Week 7: The linebackers receive a D as tackling and second-half execution broke down during five consecutive Cincinnati touchdown drives." }
+    - { name: "Secondary", assessment: "Solid", trend: "down", season_grade: "B-", season_grade_points: 2.573, last_game_grade: "D", explanation: "Week 7: Higgins caught six passes for 148 yards and a touchdown, while Chase added five for 62 and a score. Burrow threw four touchdowns after halftime." }
+    - { name: "Specialists", assessment: "Solid", trend: "down", season_grade: "B", season_grade_points: 2.855, last_game_grade: "C", explanation: "Week 7: The specialists receive a C. Loop's two field goals contributed to the 13-0 halftime lead, but special teams did not change the second-half momentum." }
 
   weekly_changes:
-    - { direction: "down", title: "The offense went quiet", text: "The first two drives produced 10 points; the final nine produced none. The Ravens finished with 235 yards and a 33.9% success rate." }
-    - { direction: "up", title: "The rush returned", text: "Hendrickson's return helped produce five sacks. The Ravens held Cleveland to 237 yards, while ESPN's season team pass rush win rate rose to 53%, 10th." }
-    - { direction: "up", title: "Two rookies supplied answers", text: "Lane returned with four catches for 40 yards. Cuevas added four for 44 and his first NFL touchdown." }
-    - { direction: "down", title: "Late mistakes decided it", text: "Henry's fumble, Loop's missed 49-yarder and late defensive third-down breakdowns erased the 10-point lead." }
-    - { direction: "down", title: "Saturday roster decisions", text: "Jackson is out and Huntley starts again. Robinson went to IR, Isaac was elevated and Hergel joined the 53-man roster. Jurgens has no game designation ahead of his expected debut." }
+    - { direction: "down", title: "Another lead disappeared", text: "A 13-0 halftime advantage became a 35-13 loss. The Ravens are 4-3 and 0-2 in the division." }
+    - { direction: "down", title: "No second-half answers", text: "The Ravens have been outscored 48-0 after halftime over their last two games." }
+    - { direction: "up", title: "Flowers kept producing", text: "Eight catches for 137 yards and a 48-yard touchdown supplied the offensive highlight against Cincinnati." }
+    - { direction: "down", title: "Another line injury", text: "Jurgens debuted at center, but Ioane left with a knee injury and Jones replaced him at guard." }
+    - { direction: "down", title: "Buffalo is next", text: "The Bills lead the league in offensive EPA per play through Week 7. Jackson's return has been reported but not formally confirmed." }
 
   championship_check:
-    - { category: "Quarterback play", status: "Unclear", explanation: "Jackson's 81.9 Total QBR ranks second, but he is out against Cincinnati. Huntley makes his third straight start after the offense scored only 10 points in Cleveland." }
-    - { category: "Pass protection", status: "Unclear", explanation: "Team pass block win rate is 47%, 20th through Week 6. Jurgens practiced fully all week and has no game designation, allowing an expected return to guard for Ioane. Hergel is now on the 53-man roster." }
-    - { category: "Explosive offense", status: "Ready", explanation: "The Ravens remain third in season explosive-play rate at 12.8%, but Cleveland showed how fragile the offense becomes when the run game stalls." }
-    - { category: "Four-man pass rush", status: "Trending Right", explanation: "Team pass rush win rate is 53%, 10th through Week 6. Hendrickson has no game designation, but Robinson is on season-ending IR. Isaac's elevation adds depth behind Hendrickson, Green and Young." }
-    - { category: "Health", status: "Concern", explanation: "Jackson and Hawkins are out, Robinson is on IR, Washington is questionable and Tampa is doubtful while still on IR. Jurgens and the other returning offensive starters have no game designations." }
+    - { category: "Quarterback play", status: "Unclear", explanation: "Huntley threw for 298 yards against Cincinnati, but the offense was shut out after halftime again. Reports point toward Jackson returning against Buffalo; his availability is not formally confirmed." }
+    - { category: "Pass protection", status: "Concern", explanation: "Jurgens debuted at center, but Ioane left with a knee injury. Huntley was sacked four times against Cincinnati." }
+    - { category: "Explosive offense", status: "Ready", explanation: "The Ravens rank fourth in explosive-play rate at 11.3% through Week 7. Flowers remains the clearest source of big plays." }
+    - { category: "Four-man pass rush", status: "Concern", explanation: "The edge unit receives a C- against Cincinnati. Disrupting Buffalo's passing game without Robinson will be a major test." }
+    - { category: "Health", status: "Concern", explanation: "Ioane's knee injury adds a new offensive-line concern. Jackson's availability remains a Week 8 watch, while Robinson is on season-ending IR." }
 
 preseason_form:
   sequence: ["W", "W", "W"]
@@ -222,15 +219,15 @@ preseason_form:
   points_against: 13
 
 unit_grade_context:
-  season_label: "Season through Week 6"
-  last_game_label: "Week 6 at Cleveland"
+  season_label: "Season through Week 7"
+  last_game_label: "Week 7 vs. Cincinnati"
   analytics_as_of: "Each league-wide metric carries its latest published week"
   # Week 4's rounded editorial season ratings are the baseline, not a reconstructed
   # average of four individual game grades. Retain the new point averages so later
   # updates use (season_grade_points * graded_games + new_game_points) / new_count
   # instead of repeatedly averaging rounded display letters.
-  graded_games: 6
-  rollup_method: "Equal game weight; five parts existing Week 5 season rating plus one part Week 6 grade, rounded to the nearest letter band."
+  graded_games: 7
+  rollup_method: "Equal game weight; six parts existing Week 6 season points plus one part Week 7 editorial grade, rounded to the nearest letter band."
   grade_points: { "A+": 4.33, "A": 4.0, "A-": 3.67, "B+": 3.33, "B": 3.0, "B-": 2.67, "C+": 2.33, "C": 2.0, "C-": 1.67, "D+": 1.33, "D": 1.0, "D-": 0.67, "F": 0.0 }
 
 preseason_last_game:
@@ -253,18 +250,18 @@ preseason_last_game:
   source_url: "https://www.baltimoreravens.com/news/ravens-dominate-commanders-2026-nfl-preseason-undefeated"
 
 matchup_focus:
-  team: "CIN"
-  label: "Bengals matchup lens · Week 7"
+  team: "BUF"
+  label: "Bills matchup lens · Week 8"
   items:
-    - title: "Build around Huntley's third start"
-      text: "Jackson is out. Jurgens has no game designation and is expected to debut at center, allowing Ioane to return to guard; Hergel is now on the 53-man roster."
-      source_url: "https://www.baltimoreravens.com/news/lamar-jackson-out-against-bengals-week-7-tyler-huntley-third-straight-start"
-    - title: "Attack the perimeter"
-      text: "Cincinnati's improved interior front makes the edges important for Henry and Hill. The Week 7 preview examines the Bengals' 6.4 yards per carry allowed on perimeter runs."
-      source_url: "https://dualeights.com/ravens/ravens-bengals-week-seven-preview-2026/"
-    - title: "Protect a thinner defensive rotation"
-      text: "Robinson is on season-ending IR and Hawkins is out. Isaac adds edge depth, but the Ravens still need pressure without exposing the secondary to Burrow, Chase and Higgins."
-      source_url: "https://dualeights.com/ravens/ravens-bengals-week-seven-preview-2026/"
+    - title: "Test Buffalo's defense"
+      text: "Through Week 7, the Bills rank 30th in EPA allowed per play and 26th in explosive-play rate allowed. The Ravens must turn those opportunities into sustained scoring."
+      source_url: "https://github.com/nflverse/nflverse-data/releases/tag/pbp"
+    - title: "Slow the league's most efficient offense"
+      text: "Buffalo leads the league at 0.21 offensive EPA per play. The Ravens enter 17th in EPA allowed after Cincinnati's second-half turnaround."
+      source_url: "https://github.com/nflverse/nflverse-data/releases/tag/pbp"
+    - title: "Finish at both ends"
+      text: "The Bills score touchdowns on 72.0% of red-zone drives, fourth in the league. The Ravens allow touchdowns on 66.7%, 20th. All matchup rates are through Week 7."
+      source_url: "https://github.com/nflverse/nflverse-data/releases/tag/pbp"
 
 opponent_availability:
   team: "CIN"
