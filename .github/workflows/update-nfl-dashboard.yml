@@ -51,12 +51,14 @@ jobs:
         run: |
           python scripts/check_nfl_dashboard.py
           python -m unittest discover -s scripts -p test_nfl_dashboard.py -v
+          python -m unittest discover -s scripts -p test_nfl_market_history.py -v
           python -m unittest discover -s scripts -p test_nfl_injury_watchlist.py -v
           node --test scripts/test_nfl_injuries.cjs
+          node --test scripts/test_nfl_results.cjs
       - name: Commit data changes
         id: commit
         run: |
-          paths=(_data/nfl_dashboard.json _data/nfl_forecast_archive.json _data/nfl_injury_watchlist.json assets/data/nfl-dashboard.json assets/data/nfl-rankings.csv assets/data/nfl-results.csv)
+          paths=(_data/nfl_dashboard.json _data/nfl_forecast_archive.json _data/nfl_market_archive.json _data/nfl_injury_watchlist.json assets/data/nfl-dashboard.json assets/data/nfl-rankings.csv assets/data/nfl-results.csv)
           if [[ -n "$(git status --porcelain -- "${paths[@]}")" ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"

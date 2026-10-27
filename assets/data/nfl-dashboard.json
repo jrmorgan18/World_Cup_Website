@@ -2562,7 +2562,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Sam Darnold",
       "actual_away_qb": "Drake Maye",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_01_SF_LA",
@@ -2595,7 +2596,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Matthew Stafford",
       "actual_away_qb": "Brock Purdy",
-      "home_field": 0.0
+      "home_field": 0.0,
+      "market_history": []
     },
     {
       "game_id": "2026_01_CHI_CAR",
@@ -2628,7 +2630,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Bryce Young",
       "actual_away_qb": "Caleb Williams",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_01_TB_CIN",
@@ -2661,7 +2664,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Joe Burrow",
       "actual_away_qb": "Baker Mayfield",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_01_NO_DET",
@@ -2694,7 +2698,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Jared Goff",
       "actual_away_qb": "Tyler Shough",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_01_BUF_HOU",
@@ -2727,7 +2732,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "C.J. Stroud",
       "actual_away_qb": "Josh Allen",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_01_BAL_IND",
@@ -2760,7 +2766,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Daniel Jones",
       "actual_away_qb": "Lamar Jackson",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_01_CLE_JAX",
@@ -2793,7 +2800,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Trevor Lawrence",
       "actual_away_qb": "Deshaun Watson",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_01_ATL_PIT",
@@ -2826,7 +2834,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Aaron Rodgers",
       "actual_away_qb": "Cooper Rush",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_01_NYJ_TEN",
@@ -2859,7 +2868,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Cam Ward",
       "actual_away_qb": "Geno Smith",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_01_ARI_LAC",
@@ -2892,7 +2902,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Justin Herbert",
       "actual_away_qb": "Jacoby Brissett",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_01_MIA_LV",
@@ -2925,7 +2936,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Kirk Cousins",
       "actual_away_qb": "Malik Willis",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_01_GB_MIN",
@@ -2958,7 +2970,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Kyler Murray",
       "actual_away_qb": "Jordan Love",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_01_WAS_PHI",
@@ -2991,7 +3004,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Jalen Hurts",
       "actual_away_qb": "Jayden Daniels",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_01_DAL_NYG",
@@ -3024,7 +3038,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Jaxson Dart",
       "actual_away_qb": "Dak Prescott",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_01_DEN_KC",
@@ -3057,7 +3072,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Patrick Mahomes",
       "actual_away_qb": "Bo Nix",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_02_DET_BUF",
@@ -3090,7 +3106,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Josh Allen",
       "actual_away_qb": "Jared Goff",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_02_CAR_ATL",
@@ -3123,7 +3140,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Cooper Rush",
       "actual_away_qb": "Bryce Young",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_02_NO_BAL",
@@ -3156,7 +3174,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Lamar Jackson",
       "actual_away_qb": "Tyler Shough",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_02_MIN_CHI",
@@ -3189,7 +3208,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Caleb Williams",
       "actual_away_qb": "Carson Wentz",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_02_CIN_HOU",
@@ -3222,7 +3242,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "C.J. Stroud",
       "actual_away_qb": "Joe Burrow",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_02_PIT_NE",
@@ -3255,7 +3276,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Drake Maye",
       "actual_away_qb": "Aaron Rodgers",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_02_GB_NYJ",
@@ -3288,7 +3310,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Geno Smith",
       "actual_away_qb": "Jordan Love",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_02_CLE_TB",
@@ -3321,7 +3344,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Baker Mayfield",
       "actual_away_qb": "Deshaun Watson",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_02_PHI_TEN",
@@ -3354,7 +3378,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Cam Ward",
       "actual_away_qb": "Jalen Hurts",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_02_JAX_DEN",
@@ -3387,7 +3412,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Bo Nix",
       "actual_away_qb": "Trevor Lawrence",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_02_LV_LAC",
@@ -3420,7 +3446,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Justin Herbert",
       "actual_away_qb": "Kirk Cousins",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_02_SEA_ARI",
@@ -3453,7 +3480,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Jacoby Brissett",
       "actual_away_qb": "Drew Lock",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_02_WAS_DAL",
@@ -3486,7 +3514,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Dak Prescott",
       "actual_away_qb": "Jayden Daniels",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_02_MIA_SF",
@@ -3519,7 +3548,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Brock Purdy",
       "actual_away_qb": "Malik Willis",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_02_IND_KC",
@@ -3552,7 +3582,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Patrick Mahomes",
       "actual_away_qb": "Daniel Jones",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_02_NYG_LA",
@@ -3585,7 +3616,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Matthew Stafford",
       "actual_away_qb": "Jaxson Dart",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_03_ATL_GB",
@@ -3618,7 +3650,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Jordan Love",
       "actual_away_qb": "Michael Penix Jr.",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_03_LAC_BUF",
@@ -3651,7 +3684,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Josh Allen",
       "actual_away_qb": "Justin Herbert",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_03_CAR_CLE",
@@ -3684,7 +3718,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Deshaun Watson",
       "actual_away_qb": "Bryce Young",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_03_NYJ_DET",
@@ -3717,7 +3752,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Jared Goff",
       "actual_away_qb": "Geno Smith",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_03_HOU_IND",
@@ -3750,7 +3786,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Daniel Jones",
       "actual_away_qb": "C.J. Stroud",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_03_NE_JAX",
@@ -3783,7 +3820,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Trevor Lawrence",
       "actual_away_qb": "Drake Maye",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_03_KC_MIA",
@@ -3816,7 +3854,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Malik Willis",
       "actual_away_qb": "Patrick Mahomes",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_03_TEN_NYG",
@@ -3849,7 +3888,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Jameis Winston",
       "actual_away_qb": "Cam Ward",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_03_CIN_PIT",
@@ -3882,7 +3922,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Aaron Rodgers",
       "actual_away_qb": "Joe Burrow",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_03_SEA_WAS",
@@ -3915,7 +3956,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Marcus Mariota",
       "actual_away_qb": "Sam Darnold",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_03_ARI_SF",
@@ -3948,7 +3990,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Brock Purdy",
       "actual_away_qb": "Jacoby Brissett",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_03_MIN_TB",
@@ -3981,7 +4024,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Baker Mayfield",
       "actual_away_qb": "Kyler Murray",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_03_BAL_DAL",
@@ -4014,7 +4058,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Dak Prescott",
       "actual_away_qb": "Lamar Jackson",
-      "home_field": 0.0
+      "home_field": 0.0,
+      "market_history": []
     },
     {
       "game_id": "2026_03_LV_NO",
@@ -4047,7 +4092,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Tyler Shough",
       "actual_away_qb": "Kirk Cousins",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_03_LA_DEN",
@@ -4080,7 +4126,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Bo Nix",
       "actual_away_qb": "Matthew Stafford",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_03_PHI_CHI",
@@ -4113,7 +4160,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Case Keenum",
       "actual_away_qb": "Jalen Hurts",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_04_PIT_CLE",
@@ -4146,7 +4194,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Deshaun Watson",
       "actual_away_qb": "Aaron Rodgers",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_04_IND_WAS",
@@ -4179,7 +4228,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Marcus Mariota",
       "actual_away_qb": "Daniel Jones",
-      "home_field": 0.0
+      "home_field": 0.0,
+      "market_history": []
     },
     {
       "game_id": "2026_04_TEN_BAL",
@@ -4212,7 +4262,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Lamar Jackson",
       "actual_away_qb": "Cam Ward",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_04_NE_BUF",
@@ -4245,7 +4296,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Josh Allen",
       "actual_away_qb": "Drake Maye",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_04_NYJ_CHI",
@@ -4278,7 +4330,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Tyson Bagent",
       "actual_away_qb": "Geno Smith",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_04_JAX_CIN",
@@ -4311,7 +4364,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Joe Burrow",
       "actual_away_qb": "Trevor Lawrence",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_04_DAL_HOU",
@@ -4344,7 +4398,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "C.J. Stroud",
       "actual_away_qb": "Dak Prescott",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_04_ARI_NYG",
@@ -4377,7 +4432,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Jameis Winston",
       "actual_away_qb": "Jacoby Brissett",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_04_LA_PHI",
@@ -4410,7 +4466,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Jalen Hurts",
       "actual_away_qb": "Matthew Stafford",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_04_GB_TB",
@@ -4443,7 +4500,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Jalon Daniels",
       "actual_away_qb": "Jordan Love",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_04_MIA_MIN",
@@ -4476,7 +4534,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Kyler Murray",
       "actual_away_qb": "Malik Willis",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_04_KC_LV",
@@ -4509,7 +4568,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Kirk Cousins",
       "actual_away_qb": "Patrick Mahomes",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_04_LAC_SEA",
@@ -4542,7 +4602,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Sam Darnold",
       "actual_away_qb": "Justin Herbert",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_04_DEN_SF",
@@ -4575,7 +4636,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Brock Purdy",
       "actual_away_qb": "Bo Nix",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_04_DET_CAR",
@@ -4608,7 +4670,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Bryce Young",
       "actual_away_qb": "Jared Goff",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_04_ATL_NO",
@@ -4641,7 +4704,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Tyler Shough",
       "actual_away_qb": "Michael Penix Jr.",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_05_TB_DAL",
@@ -4674,7 +4738,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Dak Prescott",
       "actual_away_qb": "Jalon Daniels",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_05_PHI_JAX",
@@ -4707,7 +4772,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Trevor Lawrence",
       "actual_away_qb": "Jalen Hurts",
-      "home_field": 0.0
+      "home_field": 0.0,
+      "market_history": []
     },
     {
       "game_id": "2026_05_CHI_GB",
@@ -4740,7 +4806,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Jordan Love",
       "actual_away_qb": "Tyson Bagent",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_05_CIN_MIA",
@@ -4773,7 +4840,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Malik Willis",
       "actual_away_qb": "Joe Burrow",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_05_LV_NE",
@@ -4806,7 +4874,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Drake Maye",
       "actual_away_qb": "Kirk Cousins",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_05_MIN_NO",
@@ -4839,7 +4908,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Tyler Shough",
       "actual_away_qb": "Kyler Murray",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_05_CLE_NYJ",
@@ -4872,7 +4942,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Geno Smith",
       "actual_away_qb": "Deshaun Watson",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_05_IND_PIT",
@@ -4905,7 +4976,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Aaron Rodgers",
       "actual_away_qb": "Daniel Jones",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_05_HOU_TEN",
@@ -4938,7 +5010,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Cam Ward",
       "actual_away_qb": "C.J. Stroud",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_05_NYG_WAS",
@@ -4971,7 +5044,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Jayden Daniels",
       "actual_away_qb": "Jameis Winston",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_05_DEN_LAC",
@@ -5004,7 +5078,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Justin Herbert",
       "actual_away_qb": "Bo Nix",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_05_DET_ARI",
@@ -5037,7 +5112,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Jacoby Brissett",
       "actual_away_qb": "Jared Goff",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_05_SF_SEA",
@@ -5070,7 +5146,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Sam Darnold",
       "actual_away_qb": "Brock Purdy",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_05_BAL_ATL",
@@ -5103,7 +5180,8 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Michael Penix Jr.",
       "actual_away_qb": "Tyler Huntley",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": []
     },
     {
       "game_id": "2026_05_BUF_LA",
@@ -5136,7 +5214,19 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Matthew Stafford",
       "actual_away_qb": "Josh Allen",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": [
+        {
+          "game_id": "2026_05_BUF_LA",
+          "observed_at": "2026-10-12T14:13:39.043165+00:00",
+          "recorded_at": "2026-10-12T17:20:37-04:00",
+          "home_margin": 3.5,
+          "forecast_generated_at": "2026-10-06T20:03:34.008057+00:00",
+          "forecast_home_margin": 2.198246772593584,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "d02e0e5e8acf31b40c9cad376c1979761d8b58d4"
+        }
+      ]
     },
     {
       "game_id": "2026_06_SEA_DEN",
@@ -5169,7 +5259,39 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Bo Nix",
       "actual_away_qb": "Sam Darnold",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": [
+        {
+          "game_id": "2026_06_SEA_DEN",
+          "observed_at": "2026-10-13T18:32:40.613716+00:00",
+          "recorded_at": "2026-10-13T18:33:06Z",
+          "home_margin": -2.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": -1.0691983334642632,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f3fdc3d456e8ea16f3314c63471ce05b1923c7f3"
+        },
+        {
+          "game_id": "2026_06_SEA_DEN",
+          "observed_at": "2026-10-13T22:48:30.112409+00:00",
+          "recorded_at": "2026-10-13T19:00:49-04:00",
+          "home_margin": -2.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": -1.0691983334642632,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "49d7fd1c8e489055f9b7f8f844a0ce1db42cbe20"
+        },
+        {
+          "game_id": "2026_06_SEA_DEN",
+          "observed_at": "2026-10-14T15:59:10.691746+00:00",
+          "recorded_at": "2026-10-14T15:59:22Z",
+          "home_margin": -2.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": -1.0691983334642632,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f8e9883ba3a813df40d3a690c75ebfed73405c62"
+        }
+      ]
     },
     {
       "game_id": "2026_06_HOU_JAX",
@@ -5202,7 +5324,39 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Trevor Lawrence",
       "actual_away_qb": "C.J. Stroud",
-      "home_field": 0.0
+      "home_field": 0.0,
+      "market_history": [
+        {
+          "game_id": "2026_06_HOU_JAX",
+          "observed_at": "2026-10-13T18:32:40.613716+00:00",
+          "recorded_at": "2026-10-13T18:33:06Z",
+          "home_margin": 3.0,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 7.59340250762259,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f3fdc3d456e8ea16f3314c63471ce05b1923c7f3"
+        },
+        {
+          "game_id": "2026_06_HOU_JAX",
+          "observed_at": "2026-10-13T22:48:30.112409+00:00",
+          "recorded_at": "2026-10-13T19:00:49-04:00",
+          "home_margin": 3.0,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 7.59340250762259,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "49d7fd1c8e489055f9b7f8f844a0ce1db42cbe20"
+        },
+        {
+          "game_id": "2026_06_HOU_JAX",
+          "observed_at": "2026-10-14T15:59:10.691746+00:00",
+          "recorded_at": "2026-10-14T15:59:22Z",
+          "home_margin": 2.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 7.59340250762259,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f8e9883ba3a813df40d3a690c75ebfed73405c62"
+        }
+      ]
     },
     {
       "game_id": "2026_06_CHI_ATL",
@@ -5235,7 +5389,39 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Michael Penix Jr.",
       "actual_away_qb": "Caleb Williams",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": [
+        {
+          "game_id": "2026_06_CHI_ATL",
+          "observed_at": "2026-10-13T18:32:40.613716+00:00",
+          "recorded_at": "2026-10-13T18:33:06Z",
+          "home_margin": -3.0,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": -1.0034724774307302,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f3fdc3d456e8ea16f3314c63471ce05b1923c7f3"
+        },
+        {
+          "game_id": "2026_06_CHI_ATL",
+          "observed_at": "2026-10-13T22:48:30.112409+00:00",
+          "recorded_at": "2026-10-13T19:00:49-04:00",
+          "home_margin": -3.0,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": -1.0034724774307302,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "49d7fd1c8e489055f9b7f8f844a0ce1db42cbe20"
+        },
+        {
+          "game_id": "2026_06_CHI_ATL",
+          "observed_at": "2026-10-14T15:59:10.691746+00:00",
+          "recorded_at": "2026-10-14T15:59:22Z",
+          "home_margin": -2.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": -1.0034724774307302,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f8e9883ba3a813df40d3a690c75ebfed73405c62"
+        }
+      ]
     },
     {
       "game_id": "2026_06_BAL_CLE",
@@ -5268,7 +5454,39 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Deshaun Watson",
       "actual_away_qb": "Tyler Huntley",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": [
+        {
+          "game_id": "2026_06_BAL_CLE",
+          "observed_at": "2026-10-13T18:32:40.613716+00:00",
+          "recorded_at": "2026-10-13T18:33:06Z",
+          "home_margin": -4.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": -9.168691600613052,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f3fdc3d456e8ea16f3314c63471ce05b1923c7f3"
+        },
+        {
+          "game_id": "2026_06_BAL_CLE",
+          "observed_at": "2026-10-13T22:48:30.112409+00:00",
+          "recorded_at": "2026-10-13T19:00:49-04:00",
+          "home_margin": -4.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": -9.168691600613052,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "49d7fd1c8e489055f9b7f8f844a0ce1db42cbe20"
+        },
+        {
+          "game_id": "2026_06_BAL_CLE",
+          "observed_at": "2026-10-14T15:59:10.691746+00:00",
+          "recorded_at": "2026-10-14T15:59:22Z",
+          "home_margin": -5.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": -9.168691600613052,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f8e9883ba3a813df40d3a690c75ebfed73405c62"
+        }
+      ]
     },
     {
       "game_id": "2026_06_TEN_IND",
@@ -5301,7 +5519,39 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Daniel Jones",
       "actual_away_qb": "Cam Ward",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": [
+        {
+          "game_id": "2026_06_TEN_IND",
+          "observed_at": "2026-10-13T18:32:40.613716+00:00",
+          "recorded_at": "2026-10-13T18:33:06Z",
+          "home_margin": 7.0,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 10.618553516094332,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f3fdc3d456e8ea16f3314c63471ce05b1923c7f3"
+        },
+        {
+          "game_id": "2026_06_TEN_IND",
+          "observed_at": "2026-10-13T22:48:30.112409+00:00",
+          "recorded_at": "2026-10-13T19:00:49-04:00",
+          "home_margin": 7.0,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 10.618553516094332,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "49d7fd1c8e489055f9b7f8f844a0ce1db42cbe20"
+        },
+        {
+          "game_id": "2026_06_TEN_IND",
+          "observed_at": "2026-10-14T15:59:10.691746+00:00",
+          "recorded_at": "2026-10-14T15:59:22Z",
+          "home_margin": 7.0,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 10.618553516094332,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f8e9883ba3a813df40d3a690c75ebfed73405c62"
+        }
+      ]
     },
     {
       "game_id": "2026_06_NYJ_NE",
@@ -5334,7 +5584,39 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Drake Maye",
       "actual_away_qb": "Geno Smith",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": [
+        {
+          "game_id": "2026_06_NYJ_NE",
+          "observed_at": "2026-10-13T18:32:40.613716+00:00",
+          "recorded_at": "2026-10-13T18:33:06Z",
+          "home_margin": 7.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 6.659236763980001,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f3fdc3d456e8ea16f3314c63471ce05b1923c7f3"
+        },
+        {
+          "game_id": "2026_06_NYJ_NE",
+          "observed_at": "2026-10-13T22:48:30.112409+00:00",
+          "recorded_at": "2026-10-13T19:00:49-04:00",
+          "home_margin": 7.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 6.659236763980001,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "49d7fd1c8e489055f9b7f8f844a0ce1db42cbe20"
+        },
+        {
+          "game_id": "2026_06_NYJ_NE",
+          "observed_at": "2026-10-14T15:59:10.691746+00:00",
+          "recorded_at": "2026-10-14T15:59:22Z",
+          "home_margin": 7.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 6.659236763980001,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f8e9883ba3a813df40d3a690c75ebfed73405c62"
+        }
+      ]
     },
     {
       "game_id": "2026_06_NO_NYG",
@@ -5367,7 +5649,39 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Jameis Winston",
       "actual_away_qb": "Tyler Shough",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": [
+        {
+          "game_id": "2026_06_NO_NYG",
+          "observed_at": "2026-10-13T18:32:40.613716+00:00",
+          "recorded_at": "2026-10-13T18:33:06Z",
+          "home_margin": -1.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 2.465835808393239,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f3fdc3d456e8ea16f3314c63471ce05b1923c7f3"
+        },
+        {
+          "game_id": "2026_06_NO_NYG",
+          "observed_at": "2026-10-13T22:48:30.112409+00:00",
+          "recorded_at": "2026-10-13T19:00:49-04:00",
+          "home_margin": -1.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 2.465835808393239,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "49d7fd1c8e489055f9b7f8f844a0ce1db42cbe20"
+        },
+        {
+          "game_id": "2026_06_NO_NYG",
+          "observed_at": "2026-10-14T15:59:10.691746+00:00",
+          "recorded_at": "2026-10-14T15:59:22Z",
+          "home_margin": -1.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 2.465835808393239,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f8e9883ba3a813df40d3a690c75ebfed73405c62"
+        }
+      ]
     },
     {
       "game_id": "2026_06_CAR_PHI",
@@ -5400,7 +5714,39 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Tanner McKee",
       "actual_away_qb": "Bryce Young",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": [
+        {
+          "game_id": "2026_06_CAR_PHI",
+          "observed_at": "2026-10-13T18:32:40.613716+00:00",
+          "recorded_at": "2026-10-13T18:33:06Z",
+          "home_margin": 1.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": -1.3004265591125697,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f3fdc3d456e8ea16f3314c63471ce05b1923c7f3"
+        },
+        {
+          "game_id": "2026_06_CAR_PHI",
+          "observed_at": "2026-10-13T22:48:30.112409+00:00",
+          "recorded_at": "2026-10-13T19:00:49-04:00",
+          "home_margin": 1.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": -1.3004265591125697,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "49d7fd1c8e489055f9b7f8f844a0ce1db42cbe20"
+        },
+        {
+          "game_id": "2026_06_CAR_PHI",
+          "observed_at": "2026-10-14T15:59:10.691746+00:00",
+          "recorded_at": "2026-10-14T15:59:22Z",
+          "home_margin": -1.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": -1.3004265591125697,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f8e9883ba3a813df40d3a690c75ebfed73405c62"
+        }
+      ]
     },
     {
       "game_id": "2026_06_PIT_TB",
@@ -5433,7 +5779,39 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Jalon Daniels",
       "actual_away_qb": "Aaron Rodgers",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": [
+        {
+          "game_id": "2026_06_PIT_TB",
+          "observed_at": "2026-10-13T18:32:40.613716+00:00",
+          "recorded_at": "2026-10-13T18:33:06Z",
+          "home_margin": -2.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 3.9872240606009814,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f3fdc3d456e8ea16f3314c63471ce05b1923c7f3"
+        },
+        {
+          "game_id": "2026_06_PIT_TB",
+          "observed_at": "2026-10-13T22:48:30.112409+00:00",
+          "recorded_at": "2026-10-13T19:00:49-04:00",
+          "home_margin": -2.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 3.9872240606009814,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "49d7fd1c8e489055f9b7f8f844a0ce1db42cbe20"
+        },
+        {
+          "game_id": "2026_06_PIT_TB",
+          "observed_at": "2026-10-14T15:59:10.691746+00:00",
+          "recorded_at": "2026-10-14T15:59:22Z",
+          "home_margin": -2.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 3.9872240606009814,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f8e9883ba3a813df40d3a690c75ebfed73405c62"
+        }
+      ]
     },
     {
       "game_id": "2026_06_ARI_LA",
@@ -5466,7 +5844,39 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Matthew Stafford",
       "actual_away_qb": "Jacoby Brissett",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": [
+        {
+          "game_id": "2026_06_ARI_LA",
+          "observed_at": "2026-10-13T18:32:40.613716+00:00",
+          "recorded_at": "2026-10-13T18:33:06Z",
+          "home_margin": 12.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 9.892696230928964,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f3fdc3d456e8ea16f3314c63471ce05b1923c7f3"
+        },
+        {
+          "game_id": "2026_06_ARI_LA",
+          "observed_at": "2026-10-13T22:48:30.112409+00:00",
+          "recorded_at": "2026-10-13T19:00:49-04:00",
+          "home_margin": 12.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 9.892696230928964,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "49d7fd1c8e489055f9b7f8f844a0ce1db42cbe20"
+        },
+        {
+          "game_id": "2026_06_ARI_LA",
+          "observed_at": "2026-10-14T15:59:10.691746+00:00",
+          "recorded_at": "2026-10-14T15:59:22Z",
+          "home_margin": 12.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 9.892696230928964,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f8e9883ba3a813df40d3a690c75ebfed73405c62"
+        }
+      ]
     },
     {
       "game_id": "2026_06_LAC_KC",
@@ -5499,7 +5909,39 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Patrick Mahomes",
       "actual_away_qb": "Justin Herbert",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": [
+        {
+          "game_id": "2026_06_LAC_KC",
+          "observed_at": "2026-10-13T18:32:40.613716+00:00",
+          "recorded_at": "2026-10-13T18:33:06Z",
+          "home_margin": 8.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 8.963138680646859,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f3fdc3d456e8ea16f3314c63471ce05b1923c7f3"
+        },
+        {
+          "game_id": "2026_06_LAC_KC",
+          "observed_at": "2026-10-13T22:48:30.112409+00:00",
+          "recorded_at": "2026-10-13T19:00:49-04:00",
+          "home_margin": 8.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 8.963138680646859,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "49d7fd1c8e489055f9b7f8f844a0ce1db42cbe20"
+        },
+        {
+          "game_id": "2026_06_LAC_KC",
+          "observed_at": "2026-10-14T15:59:10.691746+00:00",
+          "recorded_at": "2026-10-14T15:59:22Z",
+          "home_margin": 8.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 8.963138680646859,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f8e9883ba3a813df40d3a690c75ebfed73405c62"
+        }
+      ]
     },
     {
       "game_id": "2026_06_BUF_LV",
@@ -5532,7 +5974,39 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Kirk Cousins",
       "actual_away_qb": "Josh Allen",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": [
+        {
+          "game_id": "2026_06_BUF_LV",
+          "observed_at": "2026-10-13T18:32:40.613716+00:00",
+          "recorded_at": "2026-10-13T18:33:06Z",
+          "home_margin": -4.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": -9.98282500285024,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f3fdc3d456e8ea16f3314c63471ce05b1923c7f3"
+        },
+        {
+          "game_id": "2026_06_BUF_LV",
+          "observed_at": "2026-10-13T22:48:30.112409+00:00",
+          "recorded_at": "2026-10-13T19:00:49-04:00",
+          "home_margin": -5.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": -9.98282500285024,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "49d7fd1c8e489055f9b7f8f844a0ce1db42cbe20"
+        },
+        {
+          "game_id": "2026_06_BUF_LV",
+          "observed_at": "2026-10-14T15:59:10.691746+00:00",
+          "recorded_at": "2026-10-14T15:59:22Z",
+          "home_margin": -5.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": -9.98282500285024,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f8e9883ba3a813df40d3a690c75ebfed73405c62"
+        }
+      ]
     },
     {
       "game_id": "2026_06_DAL_GB",
@@ -5565,7 +6039,39 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Jordan Love",
       "actual_away_qb": "Dak Prescott",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": [
+        {
+          "game_id": "2026_06_DAL_GB",
+          "observed_at": "2026-10-13T18:32:40.613716+00:00",
+          "recorded_at": "2026-10-13T18:33:06Z",
+          "home_margin": 1.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 3.5314183687574747,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f3fdc3d456e8ea16f3314c63471ce05b1923c7f3"
+        },
+        {
+          "game_id": "2026_06_DAL_GB",
+          "observed_at": "2026-10-13T22:48:30.112409+00:00",
+          "recorded_at": "2026-10-13T19:00:49-04:00",
+          "home_margin": 1.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 3.5314183687574747,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "49d7fd1c8e489055f9b7f8f844a0ce1db42cbe20"
+        },
+        {
+          "game_id": "2026_06_DAL_GB",
+          "observed_at": "2026-10-14T15:59:10.691746+00:00",
+          "recorded_at": "2026-10-14T15:59:22Z",
+          "home_margin": 1.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 3.5314183687574747,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f8e9883ba3a813df40d3a690c75ebfed73405c62"
+        }
+      ]
     },
     {
       "game_id": "2026_06_WAS_SF",
@@ -5598,7 +6104,49 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Brock Purdy",
       "actual_away_qb": "Jayden Daniels",
-      "home_field": 1.5657941587125686
+      "home_field": 1.5657941587125686,
+      "market_history": [
+        {
+          "game_id": "2026_06_WAS_SF",
+          "observed_at": "2026-10-13T18:32:40.613716+00:00",
+          "recorded_at": "2026-10-13T18:33:06Z",
+          "home_margin": 7.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 13.25464285632382,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f3fdc3d456e8ea16f3314c63471ce05b1923c7f3"
+        },
+        {
+          "game_id": "2026_06_WAS_SF",
+          "observed_at": "2026-10-13T22:48:30.112409+00:00",
+          "recorded_at": "2026-10-13T19:00:49-04:00",
+          "home_margin": 7.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 13.25464285632382,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "49d7fd1c8e489055f9b7f8f844a0ce1db42cbe20"
+        },
+        {
+          "game_id": "2026_06_WAS_SF",
+          "observed_at": "2026-10-14T15:59:10.691746+00:00",
+          "recorded_at": "2026-10-14T15:59:22Z",
+          "home_margin": 7.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 13.25464285632382,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "f8e9883ba3a813df40d3a690c75ebfed73405c62"
+        },
+        {
+          "game_id": "2026_06_WAS_SF",
+          "observed_at": "2026-10-19T04:43:31.891180+00:00",
+          "recorded_at": "2026-10-19T10:05:07-04:00",
+          "home_margin": 7.5,
+          "forecast_generated_at": "2026-10-13T18:33:03.243777+00:00",
+          "forecast_home_margin": 13.25464285632382,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "d9152040f9ecfbfd01ff5ba78844a997bdc5d8d7"
+        }
+      ]
     },
     {
       "game_id": "2026_07_NE_CHI",
@@ -5631,7 +6179,29 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Caleb Williams",
       "actual_away_qb": "Drake Maye",
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_07_NE_CHI",
+          "observed_at": "2026-10-22T16:04:30.230311+00:00",
+          "recorded_at": "2026-10-22T16:04:51Z",
+          "home_margin": 3.0,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 3.4012372822619685,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "c5081deffb8604912a246e2cbfbfec8a8569b937"
+        },
+        {
+          "game_id": "2026_07_NE_CHI",
+          "observed_at": "2026-10-22T19:06:12.015204+00:00",
+          "recorded_at": "2026-10-22T19:06:33Z",
+          "home_margin": 3.0,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 3.4012372822619685,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "df7cdf04b361e335ccab9c4cceac84ea4ffc54db"
+        }
+      ]
     },
     {
       "game_id": "2026_07_PIT_NO",
@@ -5664,7 +6234,49 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Tyler Shough",
       "actual_away_qb": "Aaron Rodgers",
-      "home_field": 0.0
+      "home_field": 0.0,
+      "market_history": [
+        {
+          "game_id": "2026_07_PIT_NO",
+          "observed_at": "2026-10-22T16:04:30.230311+00:00",
+          "recorded_at": "2026-10-22T16:04:51Z",
+          "home_margin": -3.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": -3.150699384976527,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "c5081deffb8604912a246e2cbfbfec8a8569b937"
+        },
+        {
+          "game_id": "2026_07_PIT_NO",
+          "observed_at": "2026-10-22T19:06:12.015204+00:00",
+          "recorded_at": "2026-10-22T19:06:33Z",
+          "home_margin": -3.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": -3.150699384976527,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "df7cdf04b361e335ccab9c4cceac84ea4ffc54db"
+        },
+        {
+          "game_id": "2026_07_PIT_NO",
+          "observed_at": "2026-10-23T15:56:59.206154+00:00",
+          "recorded_at": "2026-10-23T15:57:18Z",
+          "home_margin": -3.0,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": -3.150699384976527,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "a63d7a5269933a36cba92c6ea6e36b9545ca37bf"
+        },
+        {
+          "game_id": "2026_07_PIT_NO",
+          "observed_at": "2026-10-24T14:55:13.172095+00:00",
+          "recorded_at": "2026-10-24T14:55:28Z",
+          "home_margin": -3.0,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": -3.150699384976527,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "08a55c154ab5ecae48888029979840bd2656272a"
+        }
+      ]
     },
     {
       "game_id": "2026_07_SF_ATL",
@@ -5697,7 +6309,59 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Michael Penix Jr.",
       "actual_away_qb": "Brock Purdy",
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_07_SF_ATL",
+          "observed_at": "2026-10-22T16:04:30.230311+00:00",
+          "recorded_at": "2026-10-22T16:04:51Z",
+          "home_margin": -2.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": -8.187504328719406,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "c5081deffb8604912a246e2cbfbfec8a8569b937"
+        },
+        {
+          "game_id": "2026_07_SF_ATL",
+          "observed_at": "2026-10-22T19:06:12.015204+00:00",
+          "recorded_at": "2026-10-22T19:06:33Z",
+          "home_margin": -2.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": -8.187504328719406,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "df7cdf04b361e335ccab9c4cceac84ea4ffc54db"
+        },
+        {
+          "game_id": "2026_07_SF_ATL",
+          "observed_at": "2026-10-23T15:56:59.206154+00:00",
+          "recorded_at": "2026-10-23T15:57:18Z",
+          "home_margin": -2.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": -8.187504328719406,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "a63d7a5269933a36cba92c6ea6e36b9545ca37bf"
+        },
+        {
+          "game_id": "2026_07_SF_ATL",
+          "observed_at": "2026-10-24T14:55:13.172095+00:00",
+          "recorded_at": "2026-10-24T14:55:28Z",
+          "home_margin": -2.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": -8.187504328719406,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "08a55c154ab5ecae48888029979840bd2656272a"
+        },
+        {
+          "game_id": "2026_07_SF_ATL",
+          "observed_at": "2026-10-25T15:04:32.091644+00:00",
+          "recorded_at": "2026-10-25T15:04:58Z",
+          "home_margin": -2.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": -8.187504328719406,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "3bb400fe2106fd9c764dab4290a5d722c76423f9"
+        }
+      ]
     },
     {
       "game_id": "2026_07_CIN_BAL",
@@ -5730,7 +6394,59 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Tyler Huntley",
       "actual_away_qb": "Joe Burrow",
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_07_CIN_BAL",
+          "observed_at": "2026-10-22T16:04:30.230311+00:00",
+          "recorded_at": "2026-10-22T16:04:51Z",
+          "home_margin": -1.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 1.652799796397933,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "c5081deffb8604912a246e2cbfbfec8a8569b937"
+        },
+        {
+          "game_id": "2026_07_CIN_BAL",
+          "observed_at": "2026-10-22T19:06:12.015204+00:00",
+          "recorded_at": "2026-10-22T19:06:33Z",
+          "home_margin": 1.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 1.652799796397933,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "df7cdf04b361e335ccab9c4cceac84ea4ffc54db"
+        },
+        {
+          "game_id": "2026_07_CIN_BAL",
+          "observed_at": "2026-10-23T15:56:59.206154+00:00",
+          "recorded_at": "2026-10-23T15:57:18Z",
+          "home_margin": 1.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 1.652799796397933,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "a63d7a5269933a36cba92c6ea6e36b9545ca37bf"
+        },
+        {
+          "game_id": "2026_07_CIN_BAL",
+          "observed_at": "2026-10-24T14:55:13.172095+00:00",
+          "recorded_at": "2026-10-24T14:55:28Z",
+          "home_margin": -1.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 1.652799796397933,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "08a55c154ab5ecae48888029979840bd2656272a"
+        },
+        {
+          "game_id": "2026_07_CIN_BAL",
+          "observed_at": "2026-10-25T15:04:32.091644+00:00",
+          "recorded_at": "2026-10-25T15:04:58Z",
+          "home_margin": -3.0,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 1.652799796397933,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "3bb400fe2106fd9c764dab4290a5d722c76423f9"
+        }
+      ]
     },
     {
       "game_id": "2026_07_TB_CAR",
@@ -5763,7 +6479,59 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Bryce Young",
       "actual_away_qb": "Baker Mayfield",
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_07_TB_CAR",
+          "observed_at": "2026-10-22T16:04:30.230311+00:00",
+          "recorded_at": "2026-10-22T16:04:51Z",
+          "home_margin": 3.0,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 1.3806508683767522,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "c5081deffb8604912a246e2cbfbfec8a8569b937"
+        },
+        {
+          "game_id": "2026_07_TB_CAR",
+          "observed_at": "2026-10-22T19:06:12.015204+00:00",
+          "recorded_at": "2026-10-22T19:06:33Z",
+          "home_margin": 3.0,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 1.3806508683767522,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "df7cdf04b361e335ccab9c4cceac84ea4ffc54db"
+        },
+        {
+          "game_id": "2026_07_TB_CAR",
+          "observed_at": "2026-10-23T15:56:59.206154+00:00",
+          "recorded_at": "2026-10-23T15:57:18Z",
+          "home_margin": 3.0,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 1.3806508683767522,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "a63d7a5269933a36cba92c6ea6e36b9545ca37bf"
+        },
+        {
+          "game_id": "2026_07_TB_CAR",
+          "observed_at": "2026-10-24T14:55:13.172095+00:00",
+          "recorded_at": "2026-10-24T14:55:28Z",
+          "home_margin": 3.0,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 1.3806508683767522,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "08a55c154ab5ecae48888029979840bd2656272a"
+        },
+        {
+          "game_id": "2026_07_TB_CAR",
+          "observed_at": "2026-10-25T15:04:32.091644+00:00",
+          "recorded_at": "2026-10-25T15:04:58Z",
+          "home_margin": 3.0,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 1.3806508683767522,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "3bb400fe2106fd9c764dab4290a5d722c76423f9"
+        }
+      ]
     },
     {
       "game_id": "2026_07_NYG_HOU",
@@ -5796,7 +6564,59 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "C.J. Stroud",
       "actual_away_qb": "J.J. McCarthy",
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_07_NYG_HOU",
+          "observed_at": "2026-10-22T16:04:30.230311+00:00",
+          "recorded_at": "2026-10-22T16:04:51Z",
+          "home_margin": 10.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 5.473627608566373,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "c5081deffb8604912a246e2cbfbfec8a8569b937"
+        },
+        {
+          "game_id": "2026_07_NYG_HOU",
+          "observed_at": "2026-10-22T19:06:12.015204+00:00",
+          "recorded_at": "2026-10-22T19:06:33Z",
+          "home_margin": 10.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 5.473627608566373,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "df7cdf04b361e335ccab9c4cceac84ea4ffc54db"
+        },
+        {
+          "game_id": "2026_07_NYG_HOU",
+          "observed_at": "2026-10-23T15:56:59.206154+00:00",
+          "recorded_at": "2026-10-23T15:57:18Z",
+          "home_margin": 10.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 5.473627608566373,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "a63d7a5269933a36cba92c6ea6e36b9545ca37bf"
+        },
+        {
+          "game_id": "2026_07_NYG_HOU",
+          "observed_at": "2026-10-24T14:55:13.172095+00:00",
+          "recorded_at": "2026-10-24T14:55:28Z",
+          "home_margin": 10.0,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 5.473627608566373,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "08a55c154ab5ecae48888029979840bd2656272a"
+        },
+        {
+          "game_id": "2026_07_NYG_HOU",
+          "observed_at": "2026-10-25T15:04:32.091644+00:00",
+          "recorded_at": "2026-10-25T15:04:58Z",
+          "home_margin": 10.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 5.473627608566373,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "3bb400fe2106fd9c764dab4290a5d722c76423f9"
+        }
+      ]
     },
     {
       "game_id": "2026_07_IND_MIN",
@@ -5829,7 +6649,59 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Kyler Murray",
       "actual_away_qb": "Daniel Jones",
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_07_IND_MIN",
+          "observed_at": "2026-10-22T16:04:30.230311+00:00",
+          "recorded_at": "2026-10-22T16:04:51Z",
+          "home_margin": 6.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 1.851385730150568,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "c5081deffb8604912a246e2cbfbfec8a8569b937"
+        },
+        {
+          "game_id": "2026_07_IND_MIN",
+          "observed_at": "2026-10-22T19:06:12.015204+00:00",
+          "recorded_at": "2026-10-22T19:06:33Z",
+          "home_margin": 6.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 1.851385730150568,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "df7cdf04b361e335ccab9c4cceac84ea4ffc54db"
+        },
+        {
+          "game_id": "2026_07_IND_MIN",
+          "observed_at": "2026-10-23T15:56:59.206154+00:00",
+          "recorded_at": "2026-10-23T15:57:18Z",
+          "home_margin": 6.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 1.851385730150568,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "a63d7a5269933a36cba92c6ea6e36b9545ca37bf"
+        },
+        {
+          "game_id": "2026_07_IND_MIN",
+          "observed_at": "2026-10-24T14:55:13.172095+00:00",
+          "recorded_at": "2026-10-24T14:55:28Z",
+          "home_margin": 6.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 1.851385730150568,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "08a55c154ab5ecae48888029979840bd2656272a"
+        },
+        {
+          "game_id": "2026_07_IND_MIN",
+          "observed_at": "2026-10-25T15:04:32.091644+00:00",
+          "recorded_at": "2026-10-25T15:04:58Z",
+          "home_margin": 7.0,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 1.851385730150568,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "3bb400fe2106fd9c764dab4290a5d722c76423f9"
+        }
+      ]
     },
     {
       "game_id": "2026_07_MIA_NYJ",
@@ -5862,7 +6734,59 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Geno Smith",
       "actual_away_qb": "Malik Willis",
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_07_MIA_NYJ",
+          "observed_at": "2026-10-22T16:04:30.230311+00:00",
+          "recorded_at": "2026-10-22T16:04:51Z",
+          "home_margin": 4.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 5.7487675640586495,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "c5081deffb8604912a246e2cbfbfec8a8569b937"
+        },
+        {
+          "game_id": "2026_07_MIA_NYJ",
+          "observed_at": "2026-10-22T19:06:12.015204+00:00",
+          "recorded_at": "2026-10-22T19:06:33Z",
+          "home_margin": 4.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 5.7487675640586495,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "df7cdf04b361e335ccab9c4cceac84ea4ffc54db"
+        },
+        {
+          "game_id": "2026_07_MIA_NYJ",
+          "observed_at": "2026-10-23T15:56:59.206154+00:00",
+          "recorded_at": "2026-10-23T15:57:18Z",
+          "home_margin": 4.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 5.7487675640586495,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "a63d7a5269933a36cba92c6ea6e36b9545ca37bf"
+        },
+        {
+          "game_id": "2026_07_MIA_NYJ",
+          "observed_at": "2026-10-24T14:55:13.172095+00:00",
+          "recorded_at": "2026-10-24T14:55:28Z",
+          "home_margin": 4.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 5.7487675640586495,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "08a55c154ab5ecae48888029979840bd2656272a"
+        },
+        {
+          "game_id": "2026_07_MIA_NYJ",
+          "observed_at": "2026-10-25T15:04:32.091644+00:00",
+          "recorded_at": "2026-10-25T15:04:58Z",
+          "home_margin": 3.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 5.7487675640586495,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "3bb400fe2106fd9c764dab4290a5d722c76423f9"
+        }
+      ]
     },
     {
       "game_id": "2026_07_CLE_TEN",
@@ -5895,7 +6819,59 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Cam Ward",
       "actual_away_qb": "Deshaun Watson",
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_07_CLE_TEN",
+          "observed_at": "2026-10-22T16:04:30.230311+00:00",
+          "recorded_at": "2026-10-22T16:04:51Z",
+          "home_margin": -1.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": -2.417537720758017,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "c5081deffb8604912a246e2cbfbfec8a8569b937"
+        },
+        {
+          "game_id": "2026_07_CLE_TEN",
+          "observed_at": "2026-10-22T19:06:12.015204+00:00",
+          "recorded_at": "2026-10-22T19:06:33Z",
+          "home_margin": -1.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": -2.417537720758017,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "df7cdf04b361e335ccab9c4cceac84ea4ffc54db"
+        },
+        {
+          "game_id": "2026_07_CLE_TEN",
+          "observed_at": "2026-10-23T15:56:59.206154+00:00",
+          "recorded_at": "2026-10-23T15:57:18Z",
+          "home_margin": -1.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": -2.417537720758017,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "a63d7a5269933a36cba92c6ea6e36b9545ca37bf"
+        },
+        {
+          "game_id": "2026_07_CLE_TEN",
+          "observed_at": "2026-10-24T14:55:13.172095+00:00",
+          "recorded_at": "2026-10-24T14:55:28Z",
+          "home_margin": -2.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": -2.417537720758017,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "08a55c154ab5ecae48888029979840bd2656272a"
+        },
+        {
+          "game_id": "2026_07_CLE_TEN",
+          "observed_at": "2026-10-25T15:04:32.091644+00:00",
+          "recorded_at": "2026-10-25T15:04:58Z",
+          "home_margin": -2.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": -2.417537720758017,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "3bb400fe2106fd9c764dab4290a5d722c76423f9"
+        }
+      ]
     },
     {
       "game_id": "2026_07_DEN_ARI",
@@ -5928,7 +6904,59 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Jacoby Brissett",
       "actual_away_qb": "Bo Nix",
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_07_DEN_ARI",
+          "observed_at": "2026-10-22T16:04:30.230311+00:00",
+          "recorded_at": "2026-10-22T16:04:51Z",
+          "home_margin": -4.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 0.32136479314218525,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "c5081deffb8604912a246e2cbfbfec8a8569b937"
+        },
+        {
+          "game_id": "2026_07_DEN_ARI",
+          "observed_at": "2026-10-22T19:06:12.015204+00:00",
+          "recorded_at": "2026-10-22T19:06:33Z",
+          "home_margin": -4.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 0.32136479314218525,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "df7cdf04b361e335ccab9c4cceac84ea4ffc54db"
+        },
+        {
+          "game_id": "2026_07_DEN_ARI",
+          "observed_at": "2026-10-23T15:56:59.206154+00:00",
+          "recorded_at": "2026-10-23T15:57:18Z",
+          "home_margin": -4.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 0.32136479314218525,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "a63d7a5269933a36cba92c6ea6e36b9545ca37bf"
+        },
+        {
+          "game_id": "2026_07_DEN_ARI",
+          "observed_at": "2026-10-24T14:55:13.172095+00:00",
+          "recorded_at": "2026-10-24T14:55:28Z",
+          "home_margin": -4.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 0.32136479314218525,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "08a55c154ab5ecae48888029979840bd2656272a"
+        },
+        {
+          "game_id": "2026_07_DEN_ARI",
+          "observed_at": "2026-10-25T15:04:32.091644+00:00",
+          "recorded_at": "2026-10-25T15:04:58Z",
+          "home_margin": -4.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 0.32136479314218525,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "3bb400fe2106fd9c764dab4290a5d722c76423f9"
+        }
+      ]
     },
     {
       "game_id": "2026_07_GB_DET",
@@ -5961,7 +6989,59 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Jared Goff",
       "actual_away_qb": "Jordan Love",
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_07_GB_DET",
+          "observed_at": "2026-10-22T16:04:30.230311+00:00",
+          "recorded_at": "2026-10-22T16:04:51Z",
+          "home_margin": 3.0,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 3.665630461860812,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "c5081deffb8604912a246e2cbfbfec8a8569b937"
+        },
+        {
+          "game_id": "2026_07_GB_DET",
+          "observed_at": "2026-10-22T19:06:12.015204+00:00",
+          "recorded_at": "2026-10-22T19:06:33Z",
+          "home_margin": 3.0,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 3.665630461860812,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "df7cdf04b361e335ccab9c4cceac84ea4ffc54db"
+        },
+        {
+          "game_id": "2026_07_GB_DET",
+          "observed_at": "2026-10-23T15:56:59.206154+00:00",
+          "recorded_at": "2026-10-23T15:57:18Z",
+          "home_margin": 3.0,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 3.665630461860812,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "a63d7a5269933a36cba92c6ea6e36b9545ca37bf"
+        },
+        {
+          "game_id": "2026_07_GB_DET",
+          "observed_at": "2026-10-24T14:55:13.172095+00:00",
+          "recorded_at": "2026-10-24T14:55:28Z",
+          "home_margin": 3.0,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 3.665630461860812,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "08a55c154ab5ecae48888029979840bd2656272a"
+        },
+        {
+          "game_id": "2026_07_GB_DET",
+          "observed_at": "2026-10-25T15:04:32.091644+00:00",
+          "recorded_at": "2026-10-25T15:04:58Z",
+          "home_margin": 3.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 3.665630461860812,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "3bb400fe2106fd9c764dab4290a5d722c76423f9"
+        }
+      ]
     },
     {
       "game_id": "2026_07_LA_LV",
@@ -5994,7 +7074,59 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Kirk Cousins",
       "actual_away_qb": "Matthew Stafford",
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_07_LA_LV",
+          "observed_at": "2026-10-22T16:04:30.230311+00:00",
+          "recorded_at": "2026-10-22T16:04:51Z",
+          "home_margin": -3.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": -5.467089641429149,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "c5081deffb8604912a246e2cbfbfec8a8569b937"
+        },
+        {
+          "game_id": "2026_07_LA_LV",
+          "observed_at": "2026-10-22T19:06:12.015204+00:00",
+          "recorded_at": "2026-10-22T19:06:33Z",
+          "home_margin": -3.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": -5.467089641429149,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "df7cdf04b361e335ccab9c4cceac84ea4ffc54db"
+        },
+        {
+          "game_id": "2026_07_LA_LV",
+          "observed_at": "2026-10-23T15:56:59.206154+00:00",
+          "recorded_at": "2026-10-23T15:57:18Z",
+          "home_margin": -3.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": -5.467089641429149,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "a63d7a5269933a36cba92c6ea6e36b9545ca37bf"
+        },
+        {
+          "game_id": "2026_07_LA_LV",
+          "observed_at": "2026-10-24T14:55:13.172095+00:00",
+          "recorded_at": "2026-10-24T14:55:28Z",
+          "home_margin": -3.0,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": -5.467089641429149,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "08a55c154ab5ecae48888029979840bd2656272a"
+        },
+        {
+          "game_id": "2026_07_LA_LV",
+          "observed_at": "2026-10-25T15:04:32.091644+00:00",
+          "recorded_at": "2026-10-25T15:04:58Z",
+          "home_margin": -3.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": -5.467089641429149,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "3bb400fe2106fd9c764dab4290a5d722c76423f9"
+        }
+      ]
     },
     {
       "game_id": "2026_07_KC_SEA",
@@ -6027,7 +7159,59 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Sam Darnold",
       "actual_away_qb": "Patrick Mahomes",
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_07_KC_SEA",
+          "observed_at": "2026-10-22T16:04:30.230311+00:00",
+          "recorded_at": "2026-10-22T16:04:51Z",
+          "home_margin": 3.0,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 0.5017105259907171,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "c5081deffb8604912a246e2cbfbfec8a8569b937"
+        },
+        {
+          "game_id": "2026_07_KC_SEA",
+          "observed_at": "2026-10-22T19:06:12.015204+00:00",
+          "recorded_at": "2026-10-22T19:06:33Z",
+          "home_margin": 3.0,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 0.5017105259907171,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "df7cdf04b361e335ccab9c4cceac84ea4ffc54db"
+        },
+        {
+          "game_id": "2026_07_KC_SEA",
+          "observed_at": "2026-10-23T15:56:59.206154+00:00",
+          "recorded_at": "2026-10-23T15:57:18Z",
+          "home_margin": 3.0,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 0.5017105259907171,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "a63d7a5269933a36cba92c6ea6e36b9545ca37bf"
+        },
+        {
+          "game_id": "2026_07_KC_SEA",
+          "observed_at": "2026-10-24T14:55:13.172095+00:00",
+          "recorded_at": "2026-10-24T14:55:28Z",
+          "home_margin": 3.0,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 0.5017105259907171,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "08a55c154ab5ecae48888029979840bd2656272a"
+        },
+        {
+          "game_id": "2026_07_KC_SEA",
+          "observed_at": "2026-10-25T15:04:32.091644+00:00",
+          "recorded_at": "2026-10-25T15:04:58Z",
+          "home_margin": 3.0,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": 0.5017105259907171,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "3bb400fe2106fd9c764dab4290a5d722c76423f9"
+        }
+      ]
     },
     {
       "game_id": "2026_07_DAL_PHI",
@@ -6060,7 +7244,79 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": "Tanner McKee",
       "actual_away_qb": "Dak Prescott",
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_07_DAL_PHI",
+          "observed_at": "2026-10-22T16:04:30.230311+00:00",
+          "recorded_at": "2026-10-22T16:04:51Z",
+          "home_margin": -4.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": -2.502669424575334,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "c5081deffb8604912a246e2cbfbfec8a8569b937"
+        },
+        {
+          "game_id": "2026_07_DAL_PHI",
+          "observed_at": "2026-10-22T19:06:12.015204+00:00",
+          "recorded_at": "2026-10-22T19:06:33Z",
+          "home_margin": -4.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": -2.502669424575334,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "df7cdf04b361e335ccab9c4cceac84ea4ffc54db"
+        },
+        {
+          "game_id": "2026_07_DAL_PHI",
+          "observed_at": "2026-10-23T15:56:59.206154+00:00",
+          "recorded_at": "2026-10-23T15:57:18Z",
+          "home_margin": -4.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": -2.502669424575334,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "a63d7a5269933a36cba92c6ea6e36b9545ca37bf"
+        },
+        {
+          "game_id": "2026_07_DAL_PHI",
+          "observed_at": "2026-10-24T14:55:13.172095+00:00",
+          "recorded_at": "2026-10-24T14:55:28Z",
+          "home_margin": -4.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": -2.502669424575334,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "08a55c154ab5ecae48888029979840bd2656272a"
+        },
+        {
+          "game_id": "2026_07_DAL_PHI",
+          "observed_at": "2026-10-25T15:04:32.091644+00:00",
+          "recorded_at": "2026-10-25T15:04:58Z",
+          "home_margin": -4.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": -2.502669424575334,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "3bb400fe2106fd9c764dab4290a5d722c76423f9"
+        },
+        {
+          "game_id": "2026_07_DAL_PHI",
+          "observed_at": "2026-10-26T15:14:36.669662+00:00",
+          "recorded_at": "2026-10-26T11:21:17-04:00",
+          "home_margin": -4.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": -2.502669424575334,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "c06adf00e13185a0c457438458152b690f328fa9"
+        },
+        {
+          "game_id": "2026_07_DAL_PHI",
+          "observed_at": "2026-10-26T17:40:47.635506+00:00",
+          "recorded_at": "2026-10-26T17:41:13Z",
+          "home_margin": -4.5,
+          "forecast_generated_at": "2026-10-22T16:04:46.466126+00:00",
+          "forecast_home_margin": -2.502669424575334,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "8562c94ab0b2cc07f04f7b5544613fdacc27a080"
+        }
+      ]
     },
     {
       "game_id": "2026_08_CAR_GB",
@@ -6093,7 +7349,19 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": null,
       "actual_away_qb": null,
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_08_CAR_GB",
+          "observed_at": "2026-10-27T13:26:19.708700+00:00",
+          "recorded_at": "2026-10-27T09:30:26-04:00",
+          "home_margin": 3.5,
+          "forecast_generated_at": "2026-10-27T13:26:36.311590+00:00",
+          "forecast_home_margin": 1.0739539266914349,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "0bd61d5009550f7bafa3a178dc59640c3d326f66"
+        }
+      ]
     },
     {
       "game_id": "2026_08_BAL_BUF",
@@ -6126,7 +7394,19 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": null,
       "actual_away_qb": null,
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_08_BAL_BUF",
+          "observed_at": "2026-10-27T13:26:19.708700+00:00",
+          "recorded_at": "2026-10-27T09:30:26-04:00",
+          "home_margin": 3.5,
+          "forecast_generated_at": "2026-10-27T13:26:36.311590+00:00",
+          "forecast_home_margin": 3.708815930796672,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "0bd61d5009550f7bafa3a178dc59640c3d326f66"
+        }
+      ]
     },
     {
       "game_id": "2026_08_TEN_CIN",
@@ -6159,7 +7439,19 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": null,
       "actual_away_qb": null,
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_08_TEN_CIN",
+          "observed_at": "2026-10-27T13:26:19.708700+00:00",
+          "recorded_at": "2026-10-27T09:30:26-04:00",
+          "home_margin": 10.0,
+          "forecast_generated_at": "2026-10-27T13:26:36.311590+00:00",
+          "forecast_home_margin": 11.899181686294803,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "0bd61d5009550f7bafa3a178dc59640c3d326f66"
+        }
+      ]
     },
     {
       "game_id": "2026_08_ARI_DAL",
@@ -6192,7 +7484,19 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": null,
       "actual_away_qb": null,
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_08_ARI_DAL",
+          "observed_at": "2026-10-27T13:26:19.708700+00:00",
+          "recorded_at": "2026-10-27T09:30:26-04:00",
+          "home_margin": 6.0,
+          "forecast_generated_at": "2026-10-27T13:26:36.311590+00:00",
+          "forecast_home_margin": 3.157619795684762,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "0bd61d5009550f7bafa3a178dc59640c3d326f66"
+        }
+      ]
     },
     {
       "game_id": "2026_08_MIN_DET",
@@ -6225,7 +7529,19 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": null,
       "actual_away_qb": null,
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_08_MIN_DET",
+          "observed_at": "2026-10-27T13:26:19.708700+00:00",
+          "recorded_at": "2026-10-27T09:30:26-04:00",
+          "home_margin": 3.0,
+          "forecast_generated_at": "2026-10-27T13:26:36.311590+00:00",
+          "forecast_home_margin": 4.810794178631996,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "0bd61d5009550f7bafa3a178dc59640c3d326f66"
+        }
+      ]
     },
     {
       "game_id": "2026_08_IND_JAX",
@@ -6258,7 +7574,19 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": null,
       "actual_away_qb": null,
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_08_IND_JAX",
+          "observed_at": "2026-10-27T13:26:19.708700+00:00",
+          "recorded_at": "2026-10-27T09:30:26-04:00",
+          "home_margin": 7.5,
+          "forecast_generated_at": "2026-10-27T13:26:36.311590+00:00",
+          "forecast_home_margin": 5.927557837959938,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "0bd61d5009550f7bafa3a178dc59640c3d326f66"
+        }
+      ]
     },
     {
       "game_id": "2026_08_LV_NYJ",
@@ -6291,7 +7619,19 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": null,
       "actual_away_qb": null,
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_08_LV_NYJ",
+          "observed_at": "2026-10-27T13:26:19.708700+00:00",
+          "recorded_at": "2026-10-27T09:30:26-04:00",
+          "home_margin": -1.5,
+          "forecast_generated_at": "2026-10-27T13:26:36.311590+00:00",
+          "forecast_home_margin": 4.731673667357758,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "0bd61d5009550f7bafa3a178dc59640c3d326f66"
+        }
+      ]
     },
     {
       "game_id": "2026_08_CLE_PIT",
@@ -6324,7 +7664,19 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": null,
       "actual_away_qb": null,
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_08_CLE_PIT",
+          "observed_at": "2026-10-27T13:26:19.708700+00:00",
+          "recorded_at": "2026-10-27T09:30:26-04:00",
+          "home_margin": 3.5,
+          "forecast_generated_at": "2026-10-27T13:26:36.311590+00:00",
+          "forecast_home_margin": 3.987781577254487,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "0bd61d5009550f7bafa3a178dc59640c3d326f66"
+        }
+      ]
     },
     {
       "game_id": "2026_08_ATL_TB",
@@ -6357,7 +7709,19 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": null,
       "actual_away_qb": null,
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_08_ATL_TB",
+          "observed_at": "2026-10-27T13:26:19.708700+00:00",
+          "recorded_at": "2026-10-27T09:30:26-04:00",
+          "home_margin": 2.5,
+          "forecast_generated_at": "2026-10-27T13:26:36.311590+00:00",
+          "forecast_home_margin": 3.897294466996162,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "0bd61d5009550f7bafa3a178dc59640c3d326f66"
+        }
+      ]
     },
     {
       "game_id": "2026_08_LAC_LA",
@@ -6390,7 +7754,19 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": null,
       "actual_away_qb": null,
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_08_LAC_LA",
+          "observed_at": "2026-10-27T13:26:19.708700+00:00",
+          "recorded_at": "2026-10-27T09:30:26-04:00",
+          "home_margin": 6.5,
+          "forecast_generated_at": "2026-10-27T13:26:36.311590+00:00",
+          "forecast_home_margin": 10.830902123178273,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "0bd61d5009550f7bafa3a178dc59640c3d326f66"
+        }
+      ]
     },
     {
       "game_id": "2026_08_KC_DEN",
@@ -6423,7 +7799,19 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": null,
       "actual_away_qb": null,
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_08_KC_DEN",
+          "observed_at": "2026-10-27T13:26:19.708700+00:00",
+          "recorded_at": "2026-10-27T09:30:26-04:00",
+          "home_margin": -1.5,
+          "forecast_generated_at": "2026-10-27T13:26:36.311590+00:00",
+          "forecast_home_margin": 0.40972322764821834,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "0bd61d5009550f7bafa3a178dc59640c3d326f66"
+        }
+      ]
     },
     {
       "game_id": "2026_08_NE_MIA",
@@ -6456,7 +7844,19 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": null,
       "actual_away_qb": null,
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_08_NE_MIA",
+          "observed_at": "2026-10-27T13:26:19.708700+00:00",
+          "recorded_at": "2026-10-27T09:30:26-04:00",
+          "home_margin": -7.5,
+          "forecast_generated_at": "2026-10-27T13:26:36.311590+00:00",
+          "forecast_home_margin": -5.09834807957221,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "0bd61d5009550f7bafa3a178dc59640c3d326f66"
+        }
+      ]
     },
     {
       "game_id": "2026_08_PHI_WAS",
@@ -6489,7 +7889,19 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": null,
       "actual_away_qb": null,
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_08_PHI_WAS",
+          "observed_at": "2026-10-27T13:26:19.708700+00:00",
+          "recorded_at": "2026-10-27T09:30:26-04:00",
+          "home_margin": 4.5,
+          "forecast_generated_at": "2026-10-27T13:26:36.311590+00:00",
+          "forecast_home_margin": 5.610345653413298,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "0bd61d5009550f7bafa3a178dc59640c3d326f66"
+        }
+      ]
     },
     {
       "game_id": "2026_08_CHI_SEA",
@@ -6522,7 +7934,19 @@
       "market_retrieved_at": "2026-10-27T13:26:19.708700+00:00",
       "actual_home_qb": null,
       "actual_away_qb": null,
-      "home_field": 1.536670083607406
+      "home_field": 1.536670083607406,
+      "market_history": [
+        {
+          "game_id": "2026_08_CHI_SEA",
+          "observed_at": "2026-10-27T13:26:19.708700+00:00",
+          "recorded_at": "2026-10-27T09:30:26-04:00",
+          "home_margin": 3.5,
+          "forecast_generated_at": "2026-10-27T13:26:36.311590+00:00",
+          "forecast_home_margin": -0.30536058540646516,
+          "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+          "recovered_from_revision": "0bd61d5009550f7bafa3a178dc59640c3d326f66"
+        }
+      ]
     }
   ],
   "results_summary": {
@@ -6584,5 +8008,12 @@
     "half_life": 8.0,
     "coach_multiplier": 0.65,
     "new_qb_multiplier": 0.6
+  },
+  "market_history_policy": {
+    "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
+    "coverage": "Snapshots captured by Dual Eights, not every bookmaker or every price during the week.",
+    "forecast": "First/best recorded lines use the original saved forecast, without retrospective QB corrections.",
+    "best": "Largest absolute gap to the frozen saved model; ties use the earliest recording. No final scores enter selection.",
+    "timing": "Only quotes recorded before kickoff while the same saved forecast was available qualify."
   }
 }

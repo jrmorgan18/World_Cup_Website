@@ -1,6 +1,6 @@
 const {test}=require('node:test');
 const assert=require('node:assert/strict');
-const {grade,weeklyRecords}=require('../assets/js/nfl-results.js');
+const {comparison,grade,weeklyRecords}=require('../assets/js/nfl-results.js');
 const game=(model,market,actual,extra={})=>({status:'Final',home:'HOME',away:'AWAY',forecast_home_margin:model,market_home_margin:market,actual_home_margin:actual,...extra});
 
 test('a stronger favorite recommendation wins, loses or pushes at the closing line',()=>{
@@ -52,4 +52,50 @@ test('weekly records exclude missing lines and no-edge games, omit pending weeks
 });
 test('weekly records use the same actual-starter correction as individual ATS results',()=>{
   assert.deepEqual(weeklyRecords([game(9,7,6,{week:6,display_home_margin:5})]),[{week:6,wins:1,losses:0,pushes:0,excluded:0}]);
+});
+
+const timedGame=(model,quotes,extra={})=>{
+  const g=game(model,7,7,{game_id:'2026_07_A_B',week:7,forecast_kind:'saved',
+    forecast_generated_at:'2026-10-20T12:00:00Z',kickoff_utc:'2026-10-25T17:00:00Z',...extra});
+  g.market_history=quotes.map((home_margin,i)=>({game_id:g.game_id,home_margin,forecast_home_margin:model,
+    forecast_generated_at:g.forecast_generated_at,observed_at:`2026-10-${20+i}T12:00:00Z`,recorded_at:`2026-10-${20+i}T12:01:00Z`}));
+  return g;
+};
+
+test('first/best recorded and closing can fairly produce different ATS results',()=>{
+  const g=timedGame(9,[7.5,6.5,7]);
+  assert.equal(comparison(g,'first').market,7.5);
+  assert.equal(comparison(g,'best').market,6.5);
+  assert.equal(grade(g,'first').key,'loss');
+  assert.equal(grade(g,'best').key,'win');
+  assert.equal(grade(g,'closing').key,'push');
+  assert.deepEqual(weeklyRecords([g],'best'),[{week:7,wins:1,losses:0,pushes:0,excluded:0}]);
+});
+
+test('best quote is selected by gap to the saved model, without looking at the result',()=>{
+  const g=timedGame(5,[3,8,7]);
+  assert.equal(comparison(g,'best').market,8);
+  assert.equal(grade(g,'best').team,'AWAY');
+  assert.equal(comparison({...g,actual_home_margin:100},'best').market,8);
+  assert.equal(comparison({...g,actual_home_margin:-100},'best').market,8);
+  const tied=timedGame(5,[3,7]);
+  assert.equal(comparison(tied,'best').market,3);
+});
+
+test('early-price evaluation cannot use retrospective QB knowledge or borrow another forecast revision',()=>{
+  const g=timedGame(9,[7],{display_home_margin:5,lineup_changed:true});
+  assert.equal(grade(g,'closing').team,'AWAY');
+  assert.equal(grade(g,'first').team,'HOME');
+  assert.equal(comparison({...g,forecast_generated_at:'2026-10-21T12:00:00Z'},'best').market,null);
+  assert.equal(comparison({...g,forecast_home_margin:10},'best').market,null);
+});
+
+test('missing or late history stays unavailable rather than silently substituting closing',()=>{
+  const g=timedGame(9,[]);
+  assert.equal(grade(g,'best').key,'unavailable');
+  assert.equal(grade({...g,forecast_kind:'retrospective'},'first').key,'unavailable');
+  const late=timedGame(9,[1]);late.market_history[0].recorded_at=late.kickoff_utc;
+  assert.equal(grade(late,'best').key,'unavailable');
+  assert.deepEqual(weeklyRecords([g],'first'),[{week:7,wins:0,losses:0,pushes:0,excluded:1}]);
+  assert.equal(grade({...g,status:'Upcoming'},'best').key,'pending');
 });

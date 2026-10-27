@@ -3,6 +3,7 @@ import json
 import math
 from datetime import datetime
 from pathlib import Path
+from nfl_market_history import eligible_observations
 
 
 def validate(data):
@@ -32,6 +33,8 @@ def validate(data):
             assert abs(g['display_home_margin']-g['forecast_home_margin']-g['lineup_adjustment'])<1e-7
             if g['status']!='Final':assert not g['lineup_changed'] and g['lineup_adjustment']==0
         if g['status']=='Final':assert g['actual_home_margin']==g['home_score']-g['away_score']
+        if 'market_history' in g:
+            assert g['market_history']==eligible_observations(g,g['market_history'])
     public=json.dumps(data)
     assert '0.3-beta' not in public and 'beta 0.3' not in public.lower()
 
