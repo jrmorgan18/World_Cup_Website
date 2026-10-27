@@ -17,8 +17,8 @@ hero_wide: true
 hero_alt: "Trey Hendrickson rushes Joe Burrow during the Ravens’ Week 7 game against the Cincinnati Bengals"
 hero_credit: "Shawn Hubbard/Baltimore Ravens Photos"
 hero_credit_url: "https://www.baltimoreravens.com/photos/game-action-gallery-ravens-vs-bengals-week-7"
-home_feature: true
-home_recent: false
+home_feature: false
+home_recent: true
 home_recent_label: "First and Five"
 ravens_feature: true
 ravens_feature_image: true
