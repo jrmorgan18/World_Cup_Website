@@ -78,7 +78,7 @@ barcelona_breaking_feature: true
 
 <p data-draft-paragraph="25">With Madrid dropping into a more compact defensive shape, Pedri increasingly found opportunities to move possession into the attacking third instead of simply circulating the ball in front of the defense.</p>
 
-<figure class="soccer-article-figure soccer-article-figure--uncropped"><img src="{{ '/assets/images/barcelona-clasico-2026-10-26/pedri-midfield.webp' | relative_url }}" alt="Pedri on the ball against Real Madrid" loading="lazy"><figcaption>Pedri helped Barcelona regain its attacking rhythm after halftime. <a href="https://www.fcbarcelona.com/en/football/first-team/photos/4598658/photos-from-barca-v-real-madrid" target="_blank" rel="noopener">Photo: FC Barcelona</a>.</figcaption></figure>
+<figure class="soccer-article-figure soccer-article-figure--uncropped"><img src="{{ '/assets/images/barcelona-clasico-2026-10-26/pedri-midfield.webp' | relative_url }}" alt="Barcelona moves possession through midfield against Real Madrid" loading="lazy"><figcaption>Barcelona worked to regain its attacking rhythm after halftime. <a href="https://www.fcbarcelona.com/en/football/first-team/photos/4598658/photos-from-barca-v-real-madrid" target="_blank" rel="noopener">Photo: FC Barcelona</a>.</figcaption></figure>
 
 <p data-draft-paragraph="26">He also created Barcelona&#x27;s equalizer in the 61st minute.</p>
 
@@ -124,7 +124,7 @@ barcelona_breaking_feature: true
 
 <p data-draft-paragraph="46">That is the risk associated with Barcelona&#x27;s approach. It is not necessarily a reason to abandon the high line, which has been integral to their success under Flick, but it does raise questions about whether they need to be more selective with their pressure against the best teams.</p>
 
-<figure class="soccer-article-figure soccer-article-figure--uncropped soccer-article-figure--portrait"><img src="{{ '/assets/images/barcelona-clasico-2026-10-26/cubarsi-clasico.webp' | relative_url }}" alt="Pau Cubarsí playing the ball during the Clásico" loading="lazy"><figcaption>Cubarsí and the reshuffled back line faced demanding decisions when Madrid broke through the press. <a href="https://www.fcbarcelona.com/en/football/first-team/photos/4598658/photos-from-barca-v-real-madrid" target="_blank" rel="noopener">Photo: FC Barcelona</a>.</figcaption></figure>
+<figure class="soccer-article-figure soccer-article-figure--uncropped soccer-article-figure--portrait"><img src="{{ '/assets/images/barcelona-clasico-2026-10-26/cubarsi-clasico.webp' | relative_url }}" alt="Barcelona plays the ball with Real Madrid applying pressure" loading="lazy"><figcaption>Barcelona’s reshuffled back line faced demanding decisions when Madrid broke through the press. <a href="https://www.fcbarcelona.com/en/football/first-team/photos/4598658/photos-from-barca-v-real-madrid" target="_blank" rel="noopener">Photo: FC Barcelona</a>.</figcaption></figure>
 
 <p data-draft-paragraph="47">Barcelona finished with 62% possession and outshot Madrid 18-10. However, Madrid generated the better overall quality of chances, according to the expected-goals numbers.</p>
 
