@@ -1,0 +1,73 @@
+[
+  {
+    "team": "sf",
+    "number": 36,
+    "source_page": "https://www.49ers.com/photos/game-photos-49ers-vs-falcons-week-7",
+    "alt": "Brock Purdy throws during the 49ers Week 7 game at Atlanta",
+    "id": "vjemylibpvvxoxqcs8dx.jpg",
+    "credit": "Kym Fortino / San Francisco 49ers",
+    "download_url": "https://static.clubs.nfl.com/image/upload/f_jpg,q_85,w_1600,c_limit/49ers/vjemylibpvvxoxqcs8dx.jpg",
+    "file": "brock-purdy-falcons-header.jpg",
+    "after": "hero"
+  },
+  {
+    "team": "sea",
+    "number": 22,
+    "source_page": "https://www.seahawks.com/photos/photos-must-see-game-action-shots-from-seahawks-vs-chiefs-in-week-7",
+    "alt": "Seahawks defenders bring down Patrick Mahomes during their Week 7 win over Kansas City",
+    "id": "vpni2px9bon64cpktzyy.jpg",
+    "credit": "Seattle Seahawks",
+    "download_url": "https://static.clubs.nfl.com/image/upload/f_jpg,q_85,w_1600,c_limit/seahawks/vpni2px9bon64cpktzyy.jpg",
+    "file": "seahawks-pressure-mahomes.jpg",
+    "after": 43
+  },
+  {
+    "team": "tb",
+    "number": 7,
+    "source_page": "https://www.buccaneers.com/photos/best-photos-of-bucs-vs-panthers-game-action-2026",
+    "alt": "Baker Mayfield throws during Tampa Bay’s Week 7 game at Carolina",
+    "id": "htooh1xfipecyxq1tmva.jpg",
+    "credit": "Douglas DeFelice / Tampa Bay Buccaneers",
+    "download_url": "https://static.clubs.nfl.com/image/upload/f_jpg,q_85,w_1600,c_limit/buccaneers/htooh1xfipecyxq1tmva.jpg",
+    "file": "baker-mayfield-panthers.jpg",
+    "after": 72
+  },
+  {
+    "team": "sea",
+    "number": 60,
+    "source_page": "https://www.seahawks.com/photos/photos-must-see-game-action-shots-from-seahawks-vs-chiefs-in-week-7",
+    "alt": "A Seahawks pass rusher closes on Patrick Mahomes during the Week 7 game at Lumen Field",
+    "id": "lalbblrbubegl9x05kpc.jpg",
+    "credit": "Seattle Seahawks",
+    "download_url": "https://static.clubs.nfl.com/image/upload/f_jpg,q_85,w_1600,c_limit/seahawks/lalbblrbubegl9x05kpc.jpg",
+    "file": "mahomes-seahawks-rush.jpg",
+    "after": 165
+  },
+  {
+    "team": "sea",
+    "number": 50,
+    "source_page": "https://www.seahawks.com/photos/photos-must-see-game-action-shots-from-seahawks-vs-chiefs-in-week-7",
+    "alt": "Seattle receiver Jaxon Smith-Njigba carries the ball against Kansas City in Week 7",
+    "id": "at9ilmu3rao9ddyhvaxh.jpg",
+    "credit": "Seattle Seahawks",
+    "download_url": "https://static.clubs.nfl.com/image/upload/f_jpg,q_85,w_1600,c_limit/seahawks/at9ilmu3rao9ddyhvaxh.jpg",
+    "file": "seahawks-receiving-chiefs.jpg",
+    "after": 210
+  },
+  {
+    "file": "../nfl-efficiency-week-five-2026/bills-rams-week-five.jpg",
+    "credit": "Katie Albertson / Buffalo Bills",
+    "source_page": "https://www.buffalobills.com/photos/game-frames-bills-at-rams-week-5",
+    "alt": "Buffalo Bills players huddle during their Week 5 game against the Los Angeles Rams",
+    "after": 125,
+    "caption": "Buffalo remains second in DEPI after its Week 7 bye. Photo from the Bills’ Week 5 game against the Rams."
+  },
+  {
+    "file": "../ravens/week-seven-bengals-2026/tyler-huntley-bengals.jpg",
+    "credit": "Shawn Hubbard / Baltimore Ravens Photos",
+    "source_page": "https://www.baltimoreravens.com/photos/game-action-gallery-ravens-vs-bengals-week-7",
+    "alt": "Tyler Huntley throws against the Bengals in Week 7",
+    "after": 140,
+    "caption": "The Ravens fall to 14th in observed Efficiency after their Week 7 loss. Their DEPI rating assumes Jackson at quarterback."
+  }
+]
