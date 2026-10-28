@@ -43,7 +43,7 @@ section_theme: soccer
 {% if soccer_feature %}
 <section class="soccer-editorial-shell">
   <div class="soccer-editorial-grid">
-    {% if best_xi_image or power_rankings_story and power_rankings_edition %}
+    {% if best_xi_image or power_rankings_edition %}
     <div class="soccer-left-rail">
       {% if best_xi_image %}
       <div class="soccer-euro-totw-promo">
@@ -51,7 +51,7 @@ section_theme: soccer
         <span>European Team of the Week &middot; Best XI</span>
       </div>
       {% endif %}
-      {% if power_rankings_story and power_rankings_edition %}
+      {% if power_rankings_edition %}
       <aside class="soccer-power-rankings" aria-labelledby="soccer-power-rankings-heading">
       <div class="soccer-power-rankings-head">
         <p>European clubs</p>
@@ -68,7 +68,6 @@ section_theme: soccer
         </li>
         {% endfor %}
       </ol>
-      <a href="{{ power_rankings_story.url | relative_url }}">View the full Top 20 <span aria-hidden="true">&rarr;</span></a>
       </aside>
       {% endif %}
     </div>

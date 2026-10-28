@@ -1,4 +1,29 @@
 editions:
+  - id: "2026-27-october-28"
+    label: "October 28 update"
+    season: "2026-27"
+    published: "October 28, 2026"
+    rankings:
+      - { rank: 1, team: "PSG", previous: 2 }
+      - { rank: 2, team: "Barcelona", previous: 1 }
+      - { rank: 3, team: "Bayern", previous: 3 }
+      - { rank: 4, team: "Real Madrid", previous: 6 }
+      - { rank: 5, team: "Arsenal", previous: 4 }
+      - { rank: 6, team: "Man City", previous: 5 }
+      - { rank: 7, team: "Inter Milan", previous: 7 }
+      - { rank: 8, team: "Atletico Madrid", previous: 9 }
+      - { rank: 9, team: "Liverpool", previous: 10 }
+      - { rank: 10, team: "Roma", previous: 11 }
+      - { rank: 11, team: "Dortmund", previous: 13 }
+      - { rank: 12, team: "Chelsea", previous: 8 }
+      - { rank: 13, team: "Napoli", previous: 15 }
+      - { rank: 14, team: "Brighton", previous: 12 }
+      - { rank: 15, team: "Brentford", previous: 14 }
+      - { rank: 16, team: "Lazio", previous: 17 }
+      - { rank: 17, team: "Aston Villa", previous: 18 }
+      - { rank: 18, team: "Bournemouth", previous: 19 }
+      - { rank: 19, team: "Como", previous: null }
+      - { rank: 20, team: "Man U", previous: 16 }
   - id: "2026-27-october-20"
     label: "October 20 update"
     season: "2026-27"
