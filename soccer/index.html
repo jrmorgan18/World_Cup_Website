@@ -37,19 +37,19 @@ section_theme: soccer
 {% assign usmnt_weekly_story = site.posts | where: "usmnt_weekly_feature", true | first %}
 {% assign previous_usmnt_weekly_story = site.posts | where: "usmnt_weekly_feature", true | where_exp: "post", "post.url != usmnt_weekly_story.url" | first %}
 {% assign usmnt_camp_story = site.posts | where: "usmnt_camp_feature", true | first %}
-{% assign team_of_week_story = site.posts | where_exp: "post", "post.euro_team_of_week_feature or post.champions_league_recap_feature" | first %}
+{% assign best_xi_image = '/assets/images/european-team-of-week-2026-10-26.png' %}
 {% assign soccer_feature = usmnt_weekly_story | default: champions_league_recap_story | default: power_rankings_story | default: usmnt_camp_story | default: euro_team_of_week_story | default: premier_league_preview_story | default: longform_feature %}
 {% assign power_rankings_edition = site.data.european_club_power_rankings.editions | first %}
 {% if soccer_feature %}
 <section class="soccer-editorial-shell">
   <div class="soccer-editorial-grid">
-    {% if team_of_week_story or power_rankings_story and power_rankings_edition %}
+    {% if best_xi_image or power_rankings_story and power_rankings_edition %}
     <div class="soccer-left-rail">
-      {% if team_of_week_story %}
-      <a class="soccer-euro-totw-promo" href="{{ team_of_week_story.url | relative_url }}">
-        <img src="{{ team_of_week_story.soccer_promo_image | relative_url }}" alt="{{ team_of_week_story.soccer_promo_alt | escape }}" loading="eager">
-        <span>{{ team_of_week_story.soccer_promo_label | default: "European Team of the Week" }} <b>{{ team_of_week_story.soccer_promo_cta | default: "Read the Best XI" }} &rarr;</b></span>
-      </a>
+      {% if best_xi_image %}
+      <div class="soccer-euro-totw-promo">
+        <img src="{{ best_xi_image | relative_url }}" alt="European Team of the Week Best XI, featuring Kylian Mbappé as Player of the Week" loading="eager">
+        <span>European Team of the Week &middot; Best XI</span>
+      </div>
       {% endif %}
       {% if power_rankings_story and power_rankings_edition %}
       <aside class="soccer-power-rankings" aria-labelledby="soccer-power-rankings-heading">
