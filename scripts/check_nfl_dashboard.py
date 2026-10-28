@@ -33,6 +33,10 @@ def validate(data):
             assert abs(g['display_home_margin']-g['forecast_home_margin']-g['lineup_adjustment'])<1e-7
             if g['status']!='Final':assert not g['lineup_changed'] and g['lineup_adjustment']==0
         if g['status']=='Final':assert g['actual_home_margin']==g['home_score']-g['away_score']
+        if 'strength_scale' in g:
+            assert math.isfinite(g['strength_scale']) and 0<g['strength_scale']<=2
+            assert g['rest_risk']==(g['week']==18)
+            assert all(d['team'] in (g['home'],g['away']) for d in g['rest_decisions'])
         if 'market_history' in g:
             assert g['market_history']==eligible_observations(g,g['market_history'])
     public=json.dumps(data)

@@ -116,22 +116,74 @@ def archived_before_game(archive, game):
     return stamp < kickoff_utc(game) and archive['rating_week'] < int(game.week)
 
 
-def add_forecasts(archive, upcoming, teams, home_advantage, rating_week, generated_at, cutoff_context=None):
+def strength_scale(config, season, rating_week, week):
+    """Late-season projection stretch; rankings and home advantage are never scaled."""
+    projection = config.get('projection_calibration')
+    if not projection or (season, rating_week) < (projection['activation']['season'], projection['activation']['rating_week']):
+        return 1.
+    for band in projection['strength_scale_by_week']:
+        if band['first_week'] <= week <= band['last_week']:
+            return float(band['scale'])
+    return float(projection['default_scale'])
+
+
+def load_rest_decisions(document, season, week, teams, generated_at):
+    """Reviewed, sourced decisions that a team will rest starters in one game.
+
+    A decision changes only that game's assumed QB, never rankings. Without a
+    decision, Week 18 projections stay on the depth-chart starter and are flagged.
+    """
+    decisions = {}
+    built = datetime.fromisoformat(generated_at)
+    for item in document.get('decisions', []):
+        if item['season'] != season or item['week'] != week:
+            continue
+        team = teams.get(item['team'])
+        if team is None:
+            raise ValueError('Rest decision for unknown team: ' + item['team'])
+        if item['team'] in decisions:
+            raise ValueError('Duplicate rest decision: ' + item['team'])
+        observed = datetime.fromisoformat(item['observed_at'])
+        if observed.tzinfo is None or observed > built:
+            raise ValueError('Rest decision needs a timezone-aware observation before the build: ' + item['team'])
+        if not item.get('summary') or not item.get('sources') or not all(s.get('title') and str(s.get('url', '')).startswith('https://') for s in item['sources']):
+            raise ValueError('Rest decision needs a summary and HTTPS sources: ' + item['team'])
+        options = sorted(team['qb_options'], key=lambda q: q['depth_rank'])
+        qb_id = item.get('qb_id') or next((q['id'] for q in options if q['id'] != team['expected_qb']['id']), None)
+        option = next((q for q in options if q['id'] == qb_id), None)
+        if option is None or qb_id == team['expected_qb']['id']:
+            raise ValueError('Rest decision QB must be a listed non-default option: ' + item['team'])
+        decisions[item['team']] = {'qb_id': option['id'], 'qb': option['name'], 'points_change': float(option['points_change']),
+                                   'summary': item['summary'], 'sources': item['sources'], 'observed_at': item['observed_at']}
+    return decisions
+
+
+def add_forecasts(archive, upcoming, teams, home_advantage, rating_week, generated_at, cutoff_context=None, scale_for=lambda week: 1., rest=None):
     preserved = list(archive)
     existing = {f['game_id']:f for f in sorted(archive,key=lambda f:f['generated_at'])}
     now = datetime.fromisoformat(generated_at)
+    rest = rest or {}
     for game in upcoming.itertuples():
         if now >= kickoff_utc(game): continue
         h,a = teams[game.home_team], teams[game.away_team]
-        margin=h['strength']-a['strength']+(home_advantage if game.location=='Home' else 0.)
+        hr,ar = rest.get(game.home_team), rest.get(game.away_team)
+        home_qb = {'id':hr['qb_id'],'name':hr['qb']} if hr else h['expected_qb']
+        away_qb = {'id':ar['qb_id'],'name':ar['qb']} if ar else a['expected_qb']
+        scale = scale_for(int(game.week))
+        difference = h['strength']+(hr['points_change'] if hr else 0.)-a['strength']-(ar['points_change'] if ar else 0.)
+        margin=scale*difference+(home_advantage if game.location=='Home' else 0.)
         old=existing.get(game.game_id)
-        if old and abs(old['home_margin']-margin)<1e-9 and old['home_qb_id']==h['expected_qb']['id'] and old['away_qb_id']==a['expected_qb']['id']:continue
-        preserved.append({'game_id':game.game_id,'season':int(game.season),'week':int(game.week),
+        if old and abs(old['home_margin']-margin)<1e-9 and old['home_qb_id']==home_qb['id'] and old['away_qb_id']==away_qb['id']:continue
+        record={'game_id':game.game_id,'season':int(game.season),'week':int(game.week),
             'generated_at':generated_at,'rating_week':rating_week,
             'home_margin':margin,
-            'home_qb':h['expected_qb']['name'],'away_qb':a['expected_qb']['name'],
-            'home_qb_id':h['expected_qb']['id'],'away_qb_id':a['expected_qb']['id'],
-            'provenance':'Saved research forecast','published_before_kickoff':False,**(cutoff_context or {})})
+            'home_qb':home_qb['name'],'away_qb':away_qb['name'],
+            'home_qb_id':home_qb['id'],'away_qb_id':away_qb['id'],
+            'provenance':'Saved research forecast','published_before_kickoff':False,**(cutoff_context or {})}
+        if scale != 1.: record['strength_scale'] = scale
+        rested = [side for side, decision in [(game.home_team, hr), (game.away_team, ar)] if decision]
+        if rested: record['rest_decision_teams'] = rested
+        preserved.append(record)
     return preserved
 
 
@@ -303,7 +355,12 @@ def build(cache, season, requested, audit=False, allow_partial=False):
     archive_path=ROOT/'_data/nfl_forecast_archive.json'
     archive=json.loads(archive_path.read_text()).get('forecasts',[]) if archive_path.exists() else []
     by_team={t['abbr']:t for t in teams}
-    archive=add_forecasts(archive,upcoming,by_team,model['home_advantage'],cutoff,generated_at,{'rating_week_complete':pending.empty,'rating_games':len(completed),'model_id':config['model_id']})
+    rest=load_rest_decisions(json.loads((ROOT/'scripts/nfl_rest_decisions.json').read_text()),season,current_week,by_team,generated_at)
+    projection=model_config.get('projection_calibration')
+    context={'rating_week_complete':pending.empty,'rating_games':len(completed),'model_id':config['model_id']}
+    if projection and (season,cutoff)>=(projection['activation']['season'],projection['activation']['rating_week']):context['projection_id']=projection['id']
+    archive=add_forecasts(archive,upcoming,by_team,model['home_advantage'],cutoff,generated_at,context,
+        lambda week:strength_scale(model_config,season,cutoff,week),rest)
     saved={f['game_id']:f for f in sorted(archive,key=lambda f:f['generated_at']) if f['season']==season}
     historical_rows={r.game_id:r for r in rows.itertuples() if r.season==season}
     # Efficiency-only margin benchmark is calibrated solely on prior historical training.
@@ -319,7 +376,9 @@ def build(cache, season, requested, audit=False, allow_partial=False):
         forecast_rating_week=forecast['rating_week'] if forecast else int(g.week)-1
         forecast_config=model_for_forecast(model_config,forecast,season,forecast_rating_week)
         replay_coef=np.array([forecast_config['coefficients'][k] for k in exp.features+['home_advantage']])
-        prediction=forecast['home_margin'] if forecast else float(np.array(replay.features)@replay_coef) if replay else None
+        # Saved records carry their own scale; replays use the scale effective at their rating cutoff.
+        scale=forecast.get('strength_scale',1.) if forecast else strength_scale(model_config,season,forecast_rating_week,int(g.week))
+        prediction=forecast['home_margin'] if forecast else float(scale*(np.array(replay.features[:-1])@replay_coef[:-1])+replay.features[-1]*replay_coef[-1]) if replay else None
         kind='saved' if forecast else 'retrospective' if replay else 'unavailable'
         snapshot=details.get(forecast['rating_week'] if forecast else int(g.week)-1,{})
         assumed=dict(snapshot.get('starters',{}))
@@ -327,6 +386,8 @@ def build(cache, season, requested, audit=False, allow_partial=False):
             assumed[g.home_team]={'id':forecast['home_qb_id'],'name':forecast['home_qb']}
             assumed[g.away_team]={'id':forecast['away_qb_id'],'name':forecast['away_qb']}
         adjustment,changed=actual_starter_adjustment(g,assumed,snapshot,exp.features,replay_coef) if final and snapshot and prediction is not None else (0.,False)
+        adjustment*=scale
+        rested=forecast.get('rest_decision_teams',[]) if forecast else []
         games_out.append({'game_id':g.game_id,'week':int(g.week),'date':str(g.gameday),'time_et':str(g.gametime),
             'kickoff_utc':kickoff_utc(g).isoformat(),'home':g.home_team,'away':g.away_team,'neutral':g.location=='Neutral',
             'stadium':str(g.stadium),'status':'Final' if final else 'Upcoming',
@@ -345,7 +406,9 @@ def build(cache, season, requested, audit=False, allow_partial=False):
             'market_retrieved_at':next(s['fetched_at'] for s in json.loads((cache/'manifest.json').read_text()) if s['file']=='games.csv'),
             'actual_home_qb':str(g.home_qb_name) if final and pd.notna(g.home_qb_name) else None,
             'actual_away_qb':str(g.away_qb_name) if final and pd.notna(g.away_qb_name) else None,
-            'home_field':float(replay_coef[-1]) if g.location=='Home' else 0.})
+            'home_field':float(replay_coef[-1]) if g.location=='Home' else 0.,
+            'strength_scale':float(scale),'rest_risk':int(g.week)==18,
+            'rest_decisions':[{'team':abbr,**rest.get(abbr,{})} for abbr in rested]})
     def summary(kind):
         sample=[g for g in games_out if g['status']=='Final' and g['forecast_kind']==kind and g['forecast_home_margin'] is not None]
         if not sample:return {'games':0,'mae':None,'market_mae':None,'home_baseline_mae':None}
@@ -370,7 +433,9 @@ def build(cache, season, requested, audit=False, allow_partial=False):
         'efficiency_model':'Published opponent/venue-adjusted Efficiency Index: 45% offense, 45% defense, 10% special teams',
         'methodology':{'model_id':config['model_id'],'margin_penalty':config['experiment']['margin_penalty'],
             'point_multiplier':config.get('point_multiplier',1.),'offense_carry':exp.offense_carry,'defense_carry':exp.defense_carry,'history_share':exp.history_share,
-            'half_life':exp.half_life,'coach_multiplier':.65,'new_qb_multiplier':.60}}
+            'half_life':exp.half_life,'coach_multiplier':.65,'new_qb_multiplier':.60,
+            'projection_id':projection['id'] if projection else None,
+            'strength_scale_by_week':projection['strength_scale_by_week'] if projection else []}}
     market_archive_path=ROOT/'_data/nfl_market_archive.json'
     market_observations=json.loads(market_archive_path.read_text())['observations'] if market_archive_path.exists() else []
     market_observations=merge_observations(market_observations,observations_from_dashboard(payload))

@@ -174,3 +174,35 @@ current-season schedule identities before observed-starter features and
 actual-starter adjustments. Trick-play passers, later relief QBs and future
 games do not replace the recorded starter. Without PBP, retain the schedule
 fallback. Expose mismatches in `completed_qb_corrections` for audit.
+
+## Late-season projection calibration and Week 18 rest decisions
+
+`projection_calibration` in `nfl_model_config.json` (id `late-season-v1`) changes
+**projected spreads only**. Rankings, DEPI points, components and home advantage
+are unchanged. For forecasts made from rating Week 8 onward, the strength gap in
+Weeks 14–17 is multiplied by **1.48**; all other weeks use 1.0. Saved forecasts
+record `strength_scale`, actual-starter corrections use the same scale, and the
+spreads page scales QB scenario deltas (editorial injury-cluster points are
+margin points and are not scaled).
+
+Selection: `python -m strength_beta_lab.calibrate_projection --records PATH --write`
+grid-searches MAE on 2019–2023 Weeks 14–17 rolling pregame features (Week 18
+excluded). On those seasons it lowers MAE 10.66 → 10.49. On previously inspected
+2024–2026 games it lowers MAE 10.53 → 10.17 (market 10.22), improving five of
+seven seasons; 2022 and 2023 got slightly worse. Earlier-week scales (1.22 for
+Weeks 1–8, 1.04 for Weeks 9–13) did not improve 2024–2026 and were not adopted;
+that choice used inspected seasons, so treat it as retrospective.
+
+Week 18: replays show MAE 11.0 vs 8.7 for the market in 2024–25, mostly from
+resting starters. Knowing the actual starter recovers about 0.4 points, so the
+remedy is lineup information, not a formula change. Every Week 18 game is
+flagged `rest_risk`. A rest decision in `nfl_rest_decisions.json` (sourced,
+timestamped, HTTPS, observed before the build) makes that one game's saved
+forecast assume the named or first listed backup QB. It never changes rankings.
+Do not infer rest from playoff math alone. An empty ledger means no reviewed
+decisions, not that every starter will play.
+
+A QB-change multiplier was also tested and rejected: calibrated on 2019–2023
+starter-change games (k = 1.25), it worsened 2024–2026 (11.29 → 11.33) and no
+directional variant helped. The model's QB-change sizes are not the source of
+the gap in those games.

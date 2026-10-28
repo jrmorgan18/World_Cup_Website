@@ -353,5 +353,92 @@
       "home_advantage": 1.536670083607406
     },
     "research_snapshot_sha256": "8849d0f08827f6888eb21678e1484097eaffa546c4b8f3f738af8d1adec7c3e0"
+  },
+  "projection_calibration": {
+    "id": "late-season-v1",
+    "model_id": "depi-refit-2026-week6",
+    "activation": {
+      "season": 2026,
+      "rating_week": 8
+    },
+    "default_scale": 1.0,
+    "strength_scale_by_week": [
+      {
+        "first_week": 14,
+        "last_week": 17,
+        "scale": 1.48
+      }
+    ],
+    "selection": "Grid-searched MAE on 2019-2023 Weeks 14-17 rolling pregame features; home advantage unscaled; Week 18 excluded.",
+    "note": "Weeks 1-13 stay at 1.0. A Weeks 1-8 scale selected on 2019-2023 (1.22) and a Weeks 9-13 scale (1.04) did not improve the previously inspected 2024-2026 seasons, so neither was adopted.",
+    "late_season": {
+      "2019": {
+        "games": 64,
+        "mae_before": 10.598944837205778,
+        "mae_after": 10.224305976936385,
+        "market_mae": 10.1875
+      },
+      "2020": {
+        "games": 64,
+        "mae_before": 11.307253860150832,
+        "mae_after": 10.871206158154425,
+        "market_mae": 10.671875
+      },
+      "2021": {
+        "games": 62,
+        "mae_before": 11.041699634576535,
+        "mae_after": 10.544824721814319,
+        "market_mae": 9.790322580645162
+      },
+      "2022": {
+        "games": 60,
+        "mae_before": 9.423440716856993,
+        "mae_after": 9.681790069947795,
+        "market_mae": 9.541666666666666
+      },
+      "2023": {
+        "games": 63,
+        "mae_before": 10.85726013550771,
+        "mae_after": 11.065365782406376,
+        "market_mae": 10.96031746031746
+      },
+      "2024": {
+        "games": 61,
+        "mae_before": 9.934462261431594,
+        "mae_after": 9.246060910482914,
+        "market_mae": 9.581967213114755
+      },
+      "2025": {
+        "games": 62,
+        "mae_before": 11.120834373363143,
+        "mae_after": 11.077782097257487,
+        "market_mae": 10.838709677419354
+      },
+      "2019-2023": {
+        "games": 313,
+        "mae_before": 10.658133947357742,
+        "mae_after": 10.485358970884247,
+        "market_mae": 10.23961661341853
+      },
+      "2024-2026": {
+        "games": 123,
+        "mae_before": 10.532470968258881,
+        "mae_after": 10.169367524954652,
+        "market_mae": 10.215447154471544
+      }
+    },
+    "week_18": {
+      "2019-2023": {
+        "games": 48,
+        "model_mae": 10.212356533640593,
+        "market_mae": 8.96875
+      },
+      "2024-2026": {
+        "games": 32,
+        "model_mae": 11.024667187497178,
+        "market_mae": 8.71875
+      }
+    },
+    "research_snapshot_sha256": "147e92b86e7bdef1a7e6422a320009d1b6e56f78f8a3136ef0cc05a60a2e5a75"
   }
 }
