@@ -1,16 +1,16 @@
 {
   "season": 2026,
   "week": 8,
-  "as_of": "2026-10-27T16:54:35.235192+00:00",
+  "as_of": "2026-10-28T17:35:16.492502+00:00",
   "source": {
     "file": "injuries.parquet",
     "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet",
-    "fetched_at": "2026-10-27T16:54:11.269346+00:00",
-    "http_last_modified": "Tue, 27 Oct 2026 13:08:39 GMT",
-    "source_sha256": "2adbdd6b4fee93eb14525959e858d1bea78072af84c71726fc37aaca1452871a",
-    "cache_sha256": "2adbdd6b4fee93eb14525959e858d1bea78072af84c71726fc37aaca1452871a"
+    "fetched_at": "2026-10-28T17:34:55.539041+00:00",
+    "http_last_modified": "Wed, 28 Oct 2026 13:57:55 GMT",
+    "source_sha256": "2d9ae1129e9cd3249b6f1334557679dee5de465f0728aeeaaabd68f8a89b9539",
+    "cache_sha256": "2d9ae1129e9cd3249b6f1334557679dee5de465f0728aeeaaabd68f8a89b9539"
   },
-  "source_max_week": 7,
+  "source_max_week": 8,
   "policy": "Only confirmed OUT/IR or two consecutive injury-related DNP daily reports in the game week qualify. Later LP/FP clears the DNP trigger. At least two meaningful players in a group are required. No automatic adjustments; returns remain manual scenarios.",
   "practice_history": {
     "team_daily_reports": 0,
@@ -113,8 +113,8 @@
     {
       "team": "CAR",
       "name": "Carolina Panthers",
-      "coverage": "No current-week report",
-      "report_players": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 7,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
@@ -169,8 +169,8 @@
     {
       "team": "GB",
       "name": "Green Bay Packers",
-      "coverage": "No current-week report",
-      "report_players": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 9,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
