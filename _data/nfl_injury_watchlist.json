@@ -1,14 +1,14 @@
 {
   "season": 2026,
   "week": 8,
-  "as_of": "2026-10-28T17:35:16.492502+00:00",
+  "as_of": "2026-10-29T17:35:43.428077+00:00",
   "source": {
     "file": "injuries.parquet",
     "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet",
-    "fetched_at": "2026-10-28T17:34:55.539041+00:00",
-    "http_last_modified": "Wed, 28 Oct 2026 13:57:55 GMT",
-    "source_sha256": "2d9ae1129e9cd3249b6f1334557679dee5de465f0728aeeaaabd68f8a89b9539",
-    "cache_sha256": "2d9ae1129e9cd3249b6f1334557679dee5de465f0728aeeaaabd68f8a89b9539"
+    "fetched_at": "2026-10-29T17:35:31.338180+00:00",
+    "http_last_modified": "Thu, 29 Oct 2026 14:07:07 GMT",
+    "source_sha256": "e91c85230eb290b017c64c5c3261483200ed8851a86d0942adf30fd3edfb0424",
+    "cache_sha256": "e91c85230eb290b017c64c5c3261483200ed8851a86d0942adf30fd3edfb0424"
   },
   "source_max_week": 8,
   "policy": "Only confirmed OUT/IR or two consecutive injury-related DNP daily reports in the game week qualify. Later LP/FP clears the DNP trigger. At least two meaningful players in a group are required. No automatic adjustments; returns remain manual scenarios.",
@@ -81,40 +81,40 @@
     {
       "team": "ARI",
       "name": "Arizona Cardinals",
-      "coverage": "No current-week report",
-      "report_players": 0,
-      "unresolved_participation_ids": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 15,
+      "unresolved_participation_ids": 1,
       "cards": 0
     },
     {
       "team": "ATL",
       "name": "Atlanta Falcons",
-      "coverage": "No current-week report",
-      "report_players": 0,
-      "unresolved_participation_ids": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 12,
+      "unresolved_participation_ids": 2,
       "cards": 0
     },
     {
       "team": "BAL",
       "name": "Baltimore Ravens",
-      "coverage": "No current-week report",
-      "report_players": 0,
-      "unresolved_participation_ids": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 15,
+      "unresolved_participation_ids": 1,
       "cards": 0
     },
     {
       "team": "BUF",
       "name": "Buffalo Bills",
-      "coverage": "No current-week report",
-      "report_players": 0,
-      "unresolved_participation_ids": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 10,
+      "unresolved_participation_ids": 2,
       "cards": 0
     },
     {
       "team": "CAR",
       "name": "Carolina Panthers",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 7,
+      "report_players": 8,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
@@ -129,41 +129,41 @@
     {
       "team": "CIN",
       "name": "Cincinnati Bengals",
-      "coverage": "No current-week report",
-      "report_players": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 5,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
     {
       "team": "CLE",
       "name": "Cleveland Browns",
-      "coverage": "No current-week report",
-      "report_players": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 10,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
     {
       "team": "DAL",
       "name": "Dallas Cowboys",
-      "coverage": "No current-week report",
-      "report_players": 0,
-      "unresolved_participation_ids": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 8,
+      "unresolved_participation_ids": 1,
       "cards": 0
     },
     {
       "team": "DEN",
       "name": "Denver Broncos",
-      "coverage": "No current-week report",
-      "report_players": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 8,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
     {
       "team": "DET",
       "name": "Detroit Lions",
-      "coverage": "No current-week report",
-      "report_players": 0,
-      "unresolved_participation_ids": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 10,
+      "unresolved_participation_ids": 1,
       "cards": 0
     },
     {
@@ -172,7 +172,7 @@
       "coverage": "Latest report present; daily history / IR may be incomplete",
       "report_players": 9,
       "unresolved_participation_ids": 0,
-      "cards": 0
+      "cards": 1
     },
     {
       "team": "HOU",
@@ -185,73 +185,73 @@
     {
       "team": "IND",
       "name": "Indianapolis Colts",
-      "coverage": "No current-week report",
-      "report_players": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 11,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
     {
       "team": "JAX",
       "name": "Jacksonville Jaguars",
-      "coverage": "No current-week report",
-      "report_players": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 7,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
     {
       "team": "KC",
       "name": "Kansas City Chiefs",
-      "coverage": "No current-week report",
-      "report_players": 0,
-      "unresolved_participation_ids": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 10,
+      "unresolved_participation_ids": 1,
       "cards": 0
     },
     {
       "team": "LA",
       "name": "Los Angeles Rams",
-      "coverage": "No current-week report",
-      "report_players": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 6,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
     {
       "team": "LAC",
       "name": "Los Angeles Chargers",
-      "coverage": "No current-week report",
-      "report_players": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 9,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
     {
       "team": "LV",
       "name": "Las Vegas Raiders",
-      "coverage": "No current-week report",
-      "report_players": 0,
-      "unresolved_participation_ids": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 9,
+      "unresolved_participation_ids": 1,
       "cards": 0
     },
     {
       "team": "MIA",
       "name": "Miami Dolphins",
-      "coverage": "No current-week report",
-      "report_players": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 13,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
     {
       "team": "MIN",
       "name": "Minnesota Vikings",
-      "coverage": "No current-week report",
-      "report_players": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 3,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
     {
       "team": "NE",
       "name": "New England Patriots",
-      "coverage": "No current-week report",
-      "report_players": 0,
-      "unresolved_participation_ids": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 12,
+      "unresolved_participation_ids": 1,
       "cards": 0
     },
     {
@@ -273,24 +273,24 @@
     {
       "team": "NYJ",
       "name": "New York Jets",
-      "coverage": "No current-week report",
-      "report_players": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 9,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
     {
       "team": "PHI",
       "name": "Philadelphia Eagles",
-      "coverage": "No current-week report",
-      "report_players": 0,
-      "unresolved_participation_ids": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 19,
+      "unresolved_participation_ids": 1,
       "cards": 0
     },
     {
       "team": "PIT",
       "name": "Pittsburgh Steelers",
-      "coverage": "No current-week report",
-      "report_players": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 8,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
@@ -313,29 +313,78 @@
     {
       "team": "TB",
       "name": "Tampa Bay Buccaneers",
-      "coverage": "No current-week report",
-      "report_players": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 7,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
     {
       "team": "TEN",
       "name": "Tennessee Titans",
-      "coverage": "No current-week report",
-      "report_players": 0,
-      "unresolved_participation_ids": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 6,
+      "unresolved_participation_ids": 1,
       "cards": 0
     },
     {
       "team": "WAS",
       "name": "Washington Commanders",
-      "coverage": "No current-week report",
-      "report_players": 0,
-      "unresolved_participation_ids": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 10,
+      "unresolved_participation_ids": 1,
       "cards": 0
     }
   ],
-  "cards": [],
+  "cards": [
+    {
+      "id": "2026-8-GB-OL",
+      "team": "GB",
+      "group": "OL",
+      "state": "Availability risk",
+      "players": [
+        {
+          "id": "00-0037076",
+          "name": "Sean Rhyan",
+          "position": "C",
+          "healthy_share": 1.0,
+          "status": "Confirmed OUT",
+          "return_candidate": false,
+          "report_status": "Out",
+          "practice_status": "Did Not Participate In Practice",
+          "observed_at": "2026-10-29T17:35:31.338180+00:00",
+          "practice_dates": [],
+          "source_urls": [
+            "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
+          ]
+        },
+        {
+          "id": "00-0039819",
+          "name": "Travis Glover",
+          "position": "G",
+          "healthy_share": 1.0,
+          "status": "Confirmed OUT",
+          "return_candidate": false,
+          "report_status": "Out",
+          "practice_status": "Did Not Participate In Practice",
+          "observed_at": "2026-10-29T17:35:31.338180+00:00",
+          "practice_dates": [],
+          "source_urls": [
+            "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
+          ]
+        }
+      ],
+      "confidence": "Feed screening only; replacements and game status need review",
+      "summary": "Multiple meaningful roles flagged. No automatic point adjustment.",
+      "sources": [
+        {
+          "title": "Availability evidence",
+          "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
+        }
+      ],
+      "observed_at": "2026-10-29T17:35:31.338180+00:00",
+      "reviewed": false
+    }
+  ],
   "mapping_coverage": {
     "snap_rows": 9981,
     "unmapped_snap_rows": 18
