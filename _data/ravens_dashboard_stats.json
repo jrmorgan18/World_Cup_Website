@@ -843,7 +843,7 @@
       "id": "2026-week-08",
       "model_version": "2.1",
       "week": 8,
-      "label": "Through Week 8",
+      "label": "Through available Week 8 games",
       "previous_snapshot": "2026-week-07",
       "sample_note": "7 regular-season games",
       "record": "4-3",
@@ -1376,7 +1376,7 @@
       "venue": "Highmark Stadium",
       "source": "nflverse schedules",
       "matchup": {
-        "label": "2026 through Week 8",
+        "label": "2026 through available Week 8 games",
         "items": [
           {
             "title": "When the Ravens have the ball",
@@ -1471,7 +1471,7 @@
       {
         "source_label": "NFL NGS",
         "source_url": "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html",
-        "period_label": "Through Week 8",
+        "period_label": "Through available Week 8 games",
         "label": "Huntley CPOE",
         "value": "-2.7%",
         "rank": 31,
@@ -1491,7 +1491,7 @@
       {
         "source_label": "NFL NGS",
         "source_url": "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html",
-        "period_label": "Through Week 8",
+        "period_label": "Through available Week 8 games",
         "label": "Henry RYOE/att",
         "value": "+0.05",
         "rank": 21,
@@ -1553,7 +1553,7 @@
       {
         "source_label": "NFL NGS",
         "source_url": "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html",
-        "period_label": "Through Week 8",
+        "period_label": "Through available Week 8 games",
         "label": "Flowers YACOE",
         "value": "+3.18",
         "rank": 1,
@@ -1564,7 +1564,7 @@
       {
         "source_label": "NFL NGS",
         "source_url": "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html",
-        "period_label": "Through Week 8",
+        "period_label": "Through available Week 8 games",
         "label": "Andrews YACOE",
         "value": "-0.09",
         "rank": 23,
@@ -1635,7 +1635,7 @@
       {
         "source_label": "nflverse",
         "source_url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html",
-        "period_label": "Through Week 8",
+        "period_label": "Through available Week 8 games",
         "label": "Opp. CPOE",
         "value": "+2.6%",
         "rank": 22,

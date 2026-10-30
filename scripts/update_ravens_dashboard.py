@@ -493,7 +493,7 @@ def ngs_player_metric(data, season, position, volume_column, metric_column, labe
     return {
         "source_label": "NFL NGS",
         "source_url": NGS_DOCS_URL,
-        "period_label": f"Through Week {int(data.loc[data['season'] == season, 'week'].max())}",
+        "period_label": f"Through available Week {int(data.loc[data['season'] == season, 'week'].max())} games",
         "label": f"{last_name} {label}",
         "value": signed_text(player[metric_column], digits, suffix),
         "rank": int(player["metric_rank"]),
@@ -522,7 +522,7 @@ def secondary_cpoe_metric(pbp, valid_game_ids, week):
     return {
         "source_label": "nflverse",
         "source_url": PBP_DOCS_URL,
-        "period_label": f"Through Week {week}",
+        "period_label": f"Through available Week {week} games",
         "label": "Opp. CPOE",
         "value": signed_text(values.loc[TEAM], 1, "%"),
         "rank": int(ranks.loc[TEAM]),
@@ -891,7 +891,7 @@ def build_snapshot(season, records, table):
         "id": snapshot_id,
         "model_version": table.attrs.get("model_version", "1"),
         "week": week,
-        "label": f"Through Week {week}" if games_played else f"{season} preseason",
+        "label": f"Through available Week {week} games" if games_played else f"{season} preseason",
         "previous_snapshot": None,
         "sample_note": f"{games_played} regular-season game{'s' if games_played != 1 else ''}" if games_played else "No 2026 regular-season games yet",
         "record": record_text(records, TEAM),
@@ -965,7 +965,7 @@ def main():
         if next_game:
             if current["week"] > 0:
                 matchup_table = current_table
-                matchup_label = f"{args.season} through Week {current['week']}"
+                matchup_label = f"{args.season} through available Week {current['week']} games"
             else:
                 matchup_table = benchmark_table
                 matchup_label = f"{benchmark_season} regular-season baseline"
