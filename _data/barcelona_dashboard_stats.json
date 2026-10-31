@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-30T13:38:52Z",
-  "as_of": "2026-10-30",
+  "generated_at": "2026-10-31T13:07:44Z",
+  "as_of": "2026-10-31",
   "season": 2026,
   "season_label": "2026-27",
   "team": {
@@ -867,7 +867,7 @@
           "teams_ranked": 20,
           "metrics": {
             "blaugrana_index": {
-              "value": 92.8,
+              "value": 91.4,
               "rank": 2,
               "source": "Dual Eights index from ESPN match statistics"
             },
@@ -913,7 +913,7 @@
             },
             "xga_per_match": {
               "value": 1.05,
-              "rank": 2,
+              "rank": 3,
               "source": "ESPN match statistics"
             },
             "clean_sheet_rate": {
@@ -1101,13 +1101,13 @@
           "abbreviation": "VIL",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
           "rank": 10,
-          "played": 10,
+          "played": 11,
           "wins": 3,
           "draws": 3,
-          "losses": 4,
+          "losses": 5,
           "goals_for": 15,
-          "goals_against": 14,
-          "goal_difference": 1,
+          "goals_against": 15,
+          "goal_difference": 0,
           "points": 12
         },
         {
@@ -1127,12 +1127,28 @@
           "points": 11
         },
         {
+          "team_id": "88",
+          "name": "Espanyol",
+          "short_name": "Espanyol",
+          "abbreviation": "ESP",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png",
+          "rank": 12,
+          "played": 11,
+          "wins": 3,
+          "draws": 2,
+          "losses": 6,
+          "goals_for": 13,
+          "goals_against": 14,
+          "goal_difference": -1,
+          "points": 11
+        },
+        {
           "team_id": "97",
           "name": "Osasuna",
           "short_name": "Osasuna",
           "abbreviation": "OSA",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png",
-          "rank": 12,
+          "rank": 13,
           "played": 10,
           "wins": 3,
           "draws": 2,
@@ -1148,7 +1164,7 @@
           "short_name": "Racing",
           "abbreviation": "RAC",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png",
-          "rank": 13,
+          "rank": 14,
           "played": 10,
           "wins": 3,
           "draws": 2,
@@ -1164,7 +1180,7 @@
           "short_name": "Levante",
           "abbreviation": "LEV",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png",
-          "rank": 14,
+          "rank": 15,
           "played": 10,
           "wins": 2,
           "draws": 4,
@@ -1180,7 +1196,7 @@
           "short_name": "Elche",
           "abbreviation": "ELC",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png",
-          "rank": 15,
+          "rank": 16,
           "played": 10,
           "wins": 2,
           "draws": 4,
@@ -1196,7 +1212,7 @@
           "short_name": "Rayo",
           "abbreviation": "RAY",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png",
-          "rank": 16,
+          "rank": 17,
           "played": 9,
           "wins": 2,
           "draws": 3,
@@ -1212,7 +1228,7 @@
           "short_name": "Getafe",
           "abbreviation": "GET",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png",
-          "rank": 17,
+          "rank": 18,
           "played": 10,
           "wins": 2,
           "draws": 3,
@@ -1221,22 +1237,6 @@
           "goals_against": 15,
           "goal_difference": -10,
           "points": 9
-        },
-        {
-          "team_id": "88",
-          "name": "Espanyol",
-          "short_name": "Espanyol",
-          "abbreviation": "ESP",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png",
-          "rank": 18,
-          "played": 10,
-          "wins": 2,
-          "draws": 2,
-          "losses": 6,
-          "goals_for": 12,
-          "goals_against": 14,
-          "goal_difference": -2,
-          "points": 8
         },
         {
           "team_id": "94",
@@ -4731,8 +4731,8 @@
   "injuries": [],
   "rotation": {
     "window_days": 21,
-    "window_start": "2026-10-09",
-    "window_end": "2026-10-30",
+    "window_start": "2026-10-10",
+    "window_end": "2026-10-31",
     "matches_in_window": 5,
     "available_minutes": 450,
     "players": [
