@@ -1,0 +1,70 @@
+[
+  {
+    "number": 1,
+    "alt": "Lamar Jackson prepares to throw during Ravens practice",
+    "source_page": "https://www.baltimoreravens.com/news/lamar-jackson-ravens-bills-set-to-play-2026",
+    "download_url": "https://static.clubs.nfl.com/image/upload/f_jpg,q_85,w_1600,c_limit/ravens/lsv1vqhycygpczomxg78.png",
+    "credit": "Shawn Hubbard / Baltimore Ravens Photos",
+    "group": "lamar-news",
+    "qa_file": ".tmp/bills-preview-photo-lamar-news-1.jpg",
+    "file": "lamar-jackson-bills-preview.jpg",
+    "after": "hero",
+    "caption": "Jackson has been cleared to return against Buffalo after missing three games."
+  },
+  {
+    "number": 38,
+    "alt": "Josh Allen throws during Buffalo practice on October 30, 2026",
+    "credit": "Grace Urbanski/Buffalo Bills",
+    "source_page": "https://www.buffalobills.com/photos/in-the-lab-buffalo-bills-week-8-practice-october-30-2026",
+    "download_url": "https://static.clubs.nfl.com/image/upload/f_jpg,q_85,w_1600,c_limit/bills/adhhfnvwmv69cdu9ljtq.jpg",
+    "group": "bills",
+    "qa_file": ".tmp/bills-preview-photo-bills-38.jpg",
+    "file": "josh-allen-bills-week.jpg",
+    "after": 60,
+    "caption": "Allen works at the Bills’ October 30 practice before facing the Ravens."
+  },
+  {
+    "number": 52,
+    "alt": "Khalil Shakir runs during Bills practice on October 30, 2026",
+    "credit": "Grace Urbanski/Buffalo Bills",
+    "source_page": "https://www.buffalobills.com/photos/in-the-lab-buffalo-bills-week-8-practice-october-30-2026",
+    "download_url": "https://static.clubs.nfl.com/image/upload/f_jpg,q_85,w_1600,c_limit/bills/i9kmc82zrfmh0pkar3t9.jpg",
+    "group": "bills",
+    "qa_file": ".tmp/bills-preview-photo-bills-52.jpg",
+    "file": "khalil-shakir-bills-week.jpg",
+    "after": 84,
+    "caption": "Shakir prepares for the Ravens at Buffalo’s October 30 practice."
+  },
+  {
+    "number": 41,
+    "alt": "Zay Flowers carries the football during Ravens practice on October 21, 2026",
+    "credit": "Shawn Hubbard/Baltimore Ravens Photos",
+    "source_page": "https://www.baltimoreravens.com/photos/top-shots-10-21-26",
+    "download_url": "https://static.clubs.nfl.com/image/upload/f_jpg,q_85,w_1600,c_limit/ravens/t5czodjnyvvfhqrjtueo.jpg",
+    "group": "ravens",
+    "qa_file": ".tmp/bills-preview-photo-ravens-41.jpg",
+    "file": "zay-flowers-practice.jpg",
+    "after": 112,
+    "caption": "Flowers at the Ravens’ October 21 practice. His efficiency gives the offense a favorable matchup against Buffalo."
+  },
+  {
+    "number": 44,
+    "alt": "Derrick Henry runs behind his blockers at Ravens practice on October 21, 2026",
+    "credit": "Shawn Hubbard/Baltimore Ravens Photos",
+    "source_page": "https://www.baltimoreravens.com/photos/top-shots-10-21-26",
+    "download_url": "https://static.clubs.nfl.com/image/upload/f_jpg,q_85,w_1600,c_limit/ravens/lethhz73ajhsio6qdi0m.jpg",
+    "group": "ravens",
+    "qa_file": ".tmp/bills-preview-photo-ravens-44.jpg",
+    "file": "derrick-henry-running-game.jpg",
+    "after": 133,
+    "caption": "Henry follows his blockers at the Ravens’ October 21 practice. Jackson’s return changes the responsibilities facing Buffalo’s run defense."
+  },
+  {
+    "file": "../week-seven-bengals-2026/kyle-hamilton-bengals.jpg",
+    "after": 154,
+    "alt": "Kyle Hamilton on the field against Cincinnati in Week 7",
+    "caption": "Hamilton and the Ravens’ defense face another difficult quarterback test in Buffalo. Photo from the Week 7 game against Cincinnati.",
+    "credit": "Shawn Hubbard / Baltimore Ravens Photos",
+    "source_page": "https://www.baltimoreravens.com/photos/game-action-gallery-ravens-vs-bengals-week-7"
+  }
+]

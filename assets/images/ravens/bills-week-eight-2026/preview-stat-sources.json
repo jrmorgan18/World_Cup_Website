@@ -1,0 +1,20 @@
+{
+  "source_docx": "articles/Week 8_ Ravens-Bills Preview.docx",
+  "rankings": "_data/nfl_dashboard.json through complete Week 7; BAL EI 14 / DEPI 8, BUF EI 10 / DEPI 2",
+  "epa_note": "The author’s original table uses rbsdm EPA ranks; these are preserved separately from Dual Eights adjusted model ranks.",
+  "figures": [
+    "ravens-bills-allen-pressure.svg",
+    "ravens-bills-at-a-glance.svg",
+    "ravens-bills-availability.svg",
+    "ravens-bills-flowers-matchup.svg",
+    "ravens-bills-ground-game.svg"
+  ],
+  "derived_stats": {
+    "henry_last_two_yards_per_carry": 3.0
+  },
+  "injury_sources": [
+    "https://www.baltimoreravens.com/news/lamar-jackson-ravens-bills-set-to-play-2026",
+    "https://www.baltimoreravens.com/news/ravens-activate-tj-tampa-chuma-edoga-adisa-isaac-elevations-bills",
+    "https://www.buffalobills.com/news/buffalo-bills-injury-report-vs-ravens-week-8"
+  ]
+}

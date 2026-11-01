@@ -33,7 +33,7 @@
       {% else %}
       <a class="de-lead-story" href="{{ main_feature.url | relative_url }}">
         <figure>
-          <img src="{{ main_feature.hero_image | relative_url }}" alt="" loading="eager">
+          <img src="{{ main_feature.hero_image | relative_url }}" alt="" loading="eager"{% if main_feature.home_image_position %} style="object-position: {{ main_feature.home_image_position | escape }};"{% endif %}>
           <span>{{ main_feature.part | default: main_feature.series }}</span>
         </figure>
         <div class="de-lead-story-copy">
