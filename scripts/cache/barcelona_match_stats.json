@@ -63,6 +63,610 @@
         }
       }
     },
+    "401882818": {
+      "away_score": 0,
+      "away_team": "85",
+      "competition": "laliga",
+      "date": "2026-10-31T15:15Z",
+      "event_id": "401882818",
+      "home_score": 3,
+      "home_team": "101",
+      "stats": {
+        "101": {
+          "accuratePasses": 435.0,
+          "attemptsConcededIbox": 8.0,
+          "ballRecovery": 48.0,
+          "bigChanceCreated": 1.0,
+          "defensiveActions": 26.0,
+          "expectedGoals": 1.097,
+          "expectedGoalsConceded": 1.239,
+          "finalThirdEntries": 60.0,
+          "foulsCommitted": 11.0,
+          "goalsPrevented": 0.0,
+          "interceptions": 9.0,
+          "offsideProvoked": 0.0,
+          "penAreaEntries": 24.0,
+          "possWonAtt3rd": 1.0,
+          "possessionPct": 52.6,
+          "ppda": 13.7,
+          "redCards": 0.0,
+          "saves": 0.0,
+          "shotsOnTarget": 8.0,
+          "totalPasses": 516.0,
+          "totalShots": 14.0,
+          "totalTackles": 12.0,
+          "touchesInOppBox": 20.0,
+          "yellowCards": 2.0
+        },
+        "85": {
+          "accuratePasses": 382.0,
+          "attemptsConcededIbox": 6.0,
+          "ballRecovery": 47.0,
+          "bigChanceCreated": 1.0,
+          "defensiveActions": 33.0,
+          "expectedGoals": 1.239,
+          "expectedGoalsConceded": 1.097,
+          "finalThirdEntries": 56.0,
+          "foulsCommitted": 16.0,
+          "goalsPrevented": -0.714,
+          "interceptions": 10.0,
+          "offsideProvoked": 0.0,
+          "penAreaEntries": 26.0,
+          "possWonAtt3rd": 2.0,
+          "possessionPct": 47.4,
+          "ppda": 11.8,
+          "redCards": 0.0,
+          "saves": 6.0,
+          "shotsOnTarget": 0.0,
+          "totalPasses": 457.0,
+          "totalShots": 11.0,
+          "totalTackles": 6.0,
+          "touchesInOppBox": 20.0,
+          "yellowCards": 1.0
+        }
+      }
+    },
+    "401882820": {
+      "away_score": 2,
+      "away_team": "1068",
+      "competition": "laliga",
+      "date": "2026-10-31T13:00Z",
+      "event_id": "401882820",
+      "home_score": 0,
+      "home_team": "1538",
+      "stats": {
+        "1068": {
+          "accuratePasses": 496.0,
+          "attemptsConcededIbox": 14.0,
+          "ballRecovery": 59.0,
+          "bigChanceCreated": 1.0,
+          "defensiveActions": 22.0,
+          "expectedGoals": 0.579,
+          "expectedGoalsConceded": 1.252,
+          "finalThirdEntries": 61.0,
+          "foulsCommitted": 7.0,
+          "goalsPrevented": 0.331,
+          "interceptions": 5.0,
+          "offsideProvoked": 0.0,
+          "penAreaEntries": 22.0,
+          "possWonAtt3rd": 4.0,
+          "possessionPct": 54.0,
+          "ppda": 15.1,
+          "redCards": 0.0,
+          "saves": 4.0,
+          "shotsOnTarget": 5.0,
+          "totalPasses": 563.0,
+          "totalShots": 11.0,
+          "totalTackles": 14.0,
+          "touchesInOppBox": 15.0,
+          "yellowCards": 0.0
+        },
+        "1538": {
+          "accuratePasses": 387.0,
+          "attemptsConcededIbox": 3.0,
+          "ballRecovery": 53.0,
+          "bigChanceCreated": 1.0,
+          "defensiveActions": 22.0,
+          "expectedGoals": 1.252,
+          "expectedGoalsConceded": 0.579,
+          "finalThirdEntries": 70.0,
+          "foulsCommitted": 7.0,
+          "goalsPrevented": -0.671,
+          "interceptions": 7.0,
+          "offsideProvoked": 0.0,
+          "penAreaEntries": 32.0,
+          "possWonAtt3rd": 3.0,
+          "possessionPct": 46.0,
+          "ppda": 18.7,
+          "redCards": 0.0,
+          "saves": 3.0,
+          "shotsOnTarget": 4.0,
+          "totalPasses": 449.0,
+          "totalShots": 20.0,
+          "totalTackles": 16.0,
+          "touchesInOppBox": 30.0,
+          "yellowCards": 0.0
+        }
+      }
+    },
+    "401882822": {
+      "away_score": 1,
+      "away_team": "96",
+      "barcelona_minutes": [
+        {
+          "minutes": 90,
+          "played": true,
+          "player_id": "297362",
+          "starter": true
+        },
+        {
+          "minutes": 82,
+          "played": true,
+          "player_id": "219022",
+          "starter": true
+        },
+        {
+          "minutes": 90,
+          "played": true,
+          "player_id": "368992",
+          "starter": true
+        },
+        {
+          "minutes": 61,
+          "played": true,
+          "player_id": "176399",
+          "starter": true
+        },
+        {
+          "minutes": 90,
+          "played": true,
+          "player_id": "403575",
+          "starter": true
+        },
+        {
+          "minutes": 90,
+          "played": true,
+          "player_id": "231828",
+          "starter": true
+        },
+        {
+          "minutes": 45,
+          "played": true,
+          "player_id": "250465",
+          "starter": true
+        },
+        {
+          "minutes": 90,
+          "played": true,
+          "player_id": "354334",
+          "starter": true
+        },
+        {
+          "minutes": 62,
+          "played": true,
+          "player_id": "231050",
+          "starter": true
+        },
+        {
+          "minutes": 90,
+          "played": true,
+          "player_id": "274913",
+          "starter": true
+        },
+        {
+          "minutes": 73,
+          "played": true,
+          "player_id": "362150",
+          "starter": true
+        },
+        {
+          "minutes": 0,
+          "played": false,
+          "player_id": "94947",
+          "starter": false
+        },
+        {
+          "minutes": 0,
+          "played": false,
+          "player_id": "403583",
+          "starter": false
+        },
+        {
+          "minutes": 0,
+          "played": false,
+          "player_id": "399200",
+          "starter": false
+        },
+        {
+          "minutes": 8,
+          "played": true,
+          "player_id": "312015",
+          "starter": false
+        },
+        {
+          "minutes": 17,
+          "played": true,
+          "player_id": "268782",
+          "starter": false
+        },
+        {
+          "minutes": 45,
+          "played": true,
+          "player_id": "376423",
+          "starter": false
+        },
+        {
+          "minutes": 29,
+          "played": true,
+          "player_id": "323703",
+          "starter": false
+        },
+        {
+          "minutes": 0,
+          "played": false,
+          "player_id": "131634",
+          "starter": false
+        },
+        {
+          "minutes": 0,
+          "played": false,
+          "player_id": "416502",
+          "starter": false
+        },
+        {
+          "minutes": 0,
+          "played": false,
+          "player_id": "323702",
+          "starter": false
+        },
+        {
+          "minutes": 0,
+          "played": false,
+          "player_id": "187946",
+          "starter": false
+        },
+        {
+          "minutes": 28,
+          "played": true,
+          "player_id": "217289",
+          "starter": false
+        }
+      ],
+      "barcelona_player_stats": {
+        "131634": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "176399": {
+          "assists": 1,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 1
+        },
+        "187946": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "saves": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "217289": {
+          "assists": 1,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "219022": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "231050": {
+          "assists": 0,
+          "goals": 2,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 3,
+          "shots_on_target": 2,
+          "yellow_cards": 0
+        },
+        "231828": {
+          "assists": 1,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "250465": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 1
+        },
+        "268782": {
+          "assists": 0,
+          "goals": 1,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "274913": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 1,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "297362": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "saves": 2,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "312015": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "323702": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "323703": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "354334": {
+          "assists": 2,
+          "goals": 1,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 2,
+          "shots_on_target": 1,
+          "yellow_cards": 0
+        },
+        "362150": {
+          "assists": 1,
+          "goals": 2,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 6,
+          "shots_on_target": 3,
+          "yellow_cards": 0
+        },
+        "368992": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "376423": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "399200": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "403575": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 1,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "403583": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "416502": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        },
+        "94947": {
+          "assists": 0,
+          "goals": 0,
+          "goals_conceded": 0,
+          "red_cards": 0,
+          "shots": 0,
+          "shots_on_target": 0,
+          "yellow_cards": 0
+        }
+      },
+      "competition": "laliga",
+      "date": "2026-10-31T20:00Z",
+      "event_id": "401882822",
+      "home_score": 6,
+      "home_team": "83",
+      "stats": {
+        "83": {
+          "accuratePasses": 771.0,
+          "attemptsConcededIbox": 6.0,
+          "ballRecovery": 42.0,
+          "bigChanceCreated": 7.0,
+          "defensiveActions": 33.0,
+          "expectedGoals": 3.191,
+          "expectedGoalsConceded": 0.618,
+          "finalThirdEntries": 59.0,
+          "foulsCommitted": 14.0,
+          "goalsPrevented": 0.05,
+          "interceptions": 7.0,
+          "offsideProvoked": 0.0,
+          "penAreaEntries": 26.0,
+          "possWonAtt3rd": 5.0,
+          "possessionPct": 77.1,
+          "ppda": 7.1,
+          "redCards": 0.0,
+          "saves": 2.0,
+          "shotsOnTarget": 7.0,
+          "totalPasses": 833.0,
+          "totalShots": 13.0,
+          "totalTackles": 16.0,
+          "touchesInOppBox": 32.0,
+          "yellowCards": 2.0
+        },
+        "96": {
+          "accuratePasses": 182.0,
+          "attemptsConcededIbox": 10.0,
+          "ballRecovery": 44.0,
+          "bigChanceCreated": 1.0,
+          "defensiveActions": 18.0,
+          "expectedGoals": 0.618,
+          "expectedGoalsConceded": 3.191,
+          "finalThirdEntries": 23.0,
+          "foulsCommitted": 11.0,
+          "goalsPrevented": -2.402,
+          "interceptions": 9.0,
+          "offsideProvoked": 0.0,
+          "penAreaEntries": 14.0,
+          "possWonAtt3rd": 1.0,
+          "possessionPct": 22.9,
+          "ppda": 32.8,
+          "redCards": 0.0,
+          "saves": 1.0,
+          "shotsOnTarget": 3.0,
+          "totalPasses": 242.0,
+          "totalShots": 7.0,
+          "totalTackles": 10.0,
+          "touchesInOppBox": 12.0,
+          "yellowCards": 3.0
+        }
+      }
+    },
+    "401882825": {
+      "away_score": 1,
+      "away_team": "99",
+      "competition": "laliga",
+      "date": "2026-10-31T17:30Z",
+      "event_id": "401882825",
+      "home_score": 2,
+      "home_team": "244",
+      "stats": {
+        "244": {
+          "accuratePasses": 549.0,
+          "attemptsConcededIbox": 6.0,
+          "ballRecovery": 56.0,
+          "bigChanceCreated": 1.0,
+          "defensiveActions": 29.0,
+          "expectedGoals": 1.413,
+          "expectedGoalsConceded": 1.182,
+          "finalThirdEntries": 62.0,
+          "foulsCommitted": 10.0,
+          "goalsPrevented": 0.174,
+          "interceptions": 5.0,
+          "offsideProvoked": 0.0,
+          "penAreaEntries": 34.0,
+          "possWonAtt3rd": 7.0,
+          "possessionPct": 58.7,
+          "ppda": 12.2,
+          "redCards": 0.0,
+          "saves": 3.0,
+          "shotsOnTarget": 6.0,
+          "totalPasses": 616.0,
+          "totalShots": 23.0,
+          "totalTackles": 24.0,
+          "touchesInOppBox": 39.0,
+          "yellowCards": 2.0
+        },
+        "99": {
+          "accuratePasses": 380.0,
+          "attemptsConcededIbox": 14.0,
+          "ballRecovery": 47.0,
+          "bigChanceCreated": 1.0,
+          "defensiveActions": 24.0,
+          "expectedGoals": 1.182,
+          "expectedGoalsConceded": 1.413,
+          "finalThirdEntries": 31.0,
+          "foulsCommitted": 15.0,
+          "goalsPrevented": -1.358,
+          "interceptions": 12.0,
+          "offsideProvoked": 0.0,
+          "penAreaEntries": 21.0,
+          "possWonAtt3rd": 1.0,
+          "possessionPct": 41.3,
+          "ppda": 16.5,
+          "redCards": 0.0,
+          "saves": 3.0,
+          "shotsOnTarget": 4.0,
+          "totalPasses": 435.0,
+          "totalShots": 10.0,
+          "totalTackles": 16.0,
+          "touchesInOppBox": 19.0,
+          "yellowCards": 2.0
+        }
+      }
+    },
     "401882827": {
       "away_score": 2,
       "away_team": "102",
