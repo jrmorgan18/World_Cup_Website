@@ -41,7 +41,7 @@ ravens_feature_mark_detail: "Preview"
 
 <p><strong>Week 8 | Sunday, November 1, 2026 | 1 p.m. ET | CBS | Highmark Stadium</strong></p>
 
-<p class="ravens-dashboard-inline" data-source-paragraph="2">Get ready for the game with the<a href="https://dualeights.com/ravens/dashboard/"> </a>Ravens Dashboard: https://dualeights.com/ravens/dashboard/</p>
+<p class="ravens-dashboard-inline" data-source-paragraph="2">Get ready for the game with the <a href="{{ '/ravens/dashboard/' | relative_url }}">Ravens Season Dashboard</a>.</p>
 
 <p data-source-paragraph="4">The Ravens are finally (maybe) getting Lamar Jackson back. At least, that&#x27;s what all the signs coming out of practice this week suggest.</p>
 
