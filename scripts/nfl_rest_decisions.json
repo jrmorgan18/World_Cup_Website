@@ -1,0 +1,4 @@
+{
+  "instructions": "Reviewed decisions that a team will rest its starters in one game, normally Week 18. Each decision needs season, week, team, summary, sources [{title, url (HTTPS)}] and observed_at (timezone-aware ISO time, before the build). qb_id is optional; without it the first listed non-default depth-chart QB is assumed. A decision changes only that game's saved forecast and assumed QB, never rankings. Do not infer rest from playoff math alone: record a coach statement, team announcement or reliable report. Without a decision, Week 18 forecasts keep the depth-chart starter and are flagged as rest risk.",
+  "decisions": []
+}

@@ -9,7 +9,8 @@ import pandas as pd
 import update_nfl_dashboard as dashboard
 from update_nfl_dashboard import (add_forecasts, completed_cutoff, archived_before_game,
     actual_starter_adjustment, reconcile_completed_qbs, model_for_rating,
-    model_for_forecast, publication_is_frozen, preserve_previous_published_ranks)
+    model_for_forecast, publication_is_frozen, preserve_previous_published_ranks,
+    strength_scale, load_rest_decisions)
 
 
 class NFLDashboardTests(unittest.TestCase):
@@ -116,6 +117,55 @@ class NFLDashboardTests(unittest.TestCase):
     def teams(self):
         return {'DAL':{'strength':0.,'expected_qb':{'id':'dak','name':'Dak'}},
                 'TB':{'strength':-1.,'expected_qb':{'id':'baker','name':'Baker'}}}
+
+    def test_late_season_scale_stretches_only_weeks_14_to_17_after_activation(self):
+        config=self.production_config()
+        self.assertEqual(strength_scale(config,2026,7,15),1.)
+        self.assertEqual(strength_scale(config,2026,8,13),1.)
+        self.assertEqual(strength_scale(config,2026,13,14),1.48)
+        self.assertEqual(strength_scale(config,2026,16,17),1.48)
+        self.assertEqual(strength_scale(config,2026,17,18),1.)
+        self.assertEqual(strength_scale({},2026,13,14),1.)
+        games=self.schedule().assign(week=15,game_id='2026_15_TB_DAL',gameday='2026-12-20')
+        saved=add_forecasts([],games,self.teams(),1.5,14,'2026-12-15T12:00:00+00:00',scale_for=lambda week:1.48)
+        self.assertAlmostEqual(saved[0]['home_margin'],1.48*1.+1.5)
+        self.assertEqual(saved[0]['strength_scale'],1.48)
+        normal=add_forecasts([],self.schedule(),self.teams(),1.5,4,'2026-10-06T12:00:00+00:00')
+        self.assertNotIn('strength_scale',normal[0])
+
+    def rest_teams(self):
+        teams=self.teams()
+        teams['DAL']['qb_options']=[{'id':'dak','name':'Dak','depth_rank':1,'points_change':0.},
+                                    {'id':'rush','name':'Rush','depth_rank':2,'points_change':-4.}]
+        teams['TB']['qb_options']=[{'id':'baker','name':'Baker','depth_rank':1,'points_change':0.}]
+        return teams
+
+    def rest_document(self,**changes):
+        item={'season':2026,'week':18,'team':'DAL','summary':'Coach confirmed starters sit.',
+              'sources':[{'title':'Team report','url':'https://example.com/report'}],
+              'observed_at':'2027-01-08T15:00:00+00:00',**changes}
+        return {'decisions':[item]}
+
+    def test_reviewed_rest_decision_assumes_backup_for_that_game_only(self):
+        teams=self.rest_teams()
+        rest=load_rest_decisions(self.rest_document(),2026,18,teams,'2027-01-08T16:00:00+00:00')
+        self.assertEqual(rest['DAL']['qb_id'],'rush')
+        games=self.schedule().assign(week=18,game_id='2026_18_TB_DAL',gameday='2027-01-10')
+        saved=add_forecasts([],games,teams,1.5,17,'2027-01-08T16:00:00+00:00',rest=rest)
+        self.assertAlmostEqual(saved[0]['home_margin'],0.-4.+1.+1.5)
+        self.assertEqual((saved[0]['home_qb_id'],saved[0]['rest_decision_teams']),('rush',['DAL']))
+        self.assertEqual(teams['DAL']['strength'],0.)
+        self.assertEqual(load_rest_decisions(self.rest_document(),2026,17,teams,'2027-01-08T16:00:00+00:00'),{})
+
+    def test_rest_decisions_require_sources_timing_and_a_listed_backup(self):
+        teams=self.rest_teams(); built='2027-01-08T16:00:00+00:00'
+        for bad in [{'sources':[]},{'sources':[{'title':'x','url':'http://example.com'}]},{'summary':''},
+                    {'observed_at':'2027-01-08T15:00:00'},{'observed_at':'2027-01-09T15:00:00+00:00'},
+                    {'qb_id':'dak'},{'qb_id':'nobody'},{'team':'TB'},{'team':'XYZ'}]:
+            with self.assertRaises(ValueError,msg=str(bad)):
+                load_rest_decisions(self.rest_document(**bad),2026,18,teams,built)
+        doubled=self.rest_document(); doubled['decisions']*=2
+        with self.assertRaises(ValueError):load_rest_decisions(doubled,2026,18,teams,built)
 
     def test_partial_week_does_not_advance_rating_cutoff(self):
         games=pd.DataFrame({'season':[2026]*4,'game_type':['REG']*4,'week':[1,1,2,2],

@@ -3,7 +3,7 @@
   "rating_week": 8,
   "projection_week": 9,
   "rating_games": 120,
-  "generated_at": "2026-11-02T17:11:44.193942+00:00",
+  "generated_at": "2026-11-02T18:30:18.171595+00:00",
   "data_through": "2026-11-01",
   "rating_week_complete": false,
   "rating_week_completed_games": 13,
@@ -2557,7 +2557,7 @@
       "display_home_margin": 0.3569004235528688,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 0,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Sam Darnold",
@@ -2570,6 +2570,9 @@
       "actual_home_qb": "Sam Darnold",
       "actual_away_qb": "Drake Maye",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -2591,7 +2594,7 @@
       "display_home_margin": 2.3374821809513815,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 0,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Matthew Stafford",
@@ -2604,6 +2607,9 @@
       "actual_home_qb": "Matthew Stafford",
       "actual_away_qb": "Brock Purdy",
       "home_field": 0.0,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -2625,7 +2631,7 @@
       "display_home_margin": -2.60095982867304,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 0,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Bryce Young",
@@ -2638,6 +2644,9 @@
       "actual_home_qb": "Bryce Young",
       "actual_away_qb": "Caleb Williams",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -2659,7 +2668,7 @@
       "display_home_margin": 6.132392225682452,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 0,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Joe Burrow",
@@ -2672,6 +2681,9 @@
       "actual_home_qb": "Joe Burrow",
       "actual_away_qb": "Baker Mayfield",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -2693,7 +2705,7 @@
       "display_home_margin": 7.3346857448904315,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 0,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Jared Goff",
@@ -2706,6 +2718,9 @@
       "actual_home_qb": "Jared Goff",
       "actual_away_qb": "Tyler Shough",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -2727,7 +2742,7 @@
       "display_home_margin": -4.48548232766292,
       "lineup_adjustment": -5.285545382370371,
       "lineup_changed": true,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 0,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "C.J. Stroud",
@@ -2740,6 +2755,9 @@
       "actual_home_qb": "C.J. Stroud",
       "actual_away_qb": "Josh Allen",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -2761,7 +2779,7 @@
       "display_home_margin": -1.1376152696234318,
       "lineup_adjustment": 2.9330482572334087,
       "lineup_changed": true,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 0,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Riley Leonard",
@@ -2774,6 +2792,9 @@
       "actual_home_qb": "Daniel Jones",
       "actual_away_qb": "Lamar Jackson",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -2795,7 +2816,7 @@
       "display_home_margin": 9.948228180536693,
       "lineup_adjustment": -0.6682440822158554,
       "lineup_changed": true,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 0,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Trevor Lawrence",
@@ -2808,6 +2829,9 @@
       "actual_home_qb": "Trevor Lawrence",
       "actual_away_qb": "Deshaun Watson",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -2829,7 +2853,7 @@
       "display_home_margin": 4.5044741394828804,
       "lineup_adjustment": 2.196293748276437,
       "lineup_changed": true,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 0,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Aaron Rodgers",
@@ -2842,6 +2866,9 @@
       "actual_home_qb": "Aaron Rodgers",
       "actual_away_qb": "Cooper Rush",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -2863,7 +2890,7 @@
       "display_home_margin": 1.470431602771982,
       "lineup_adjustment": -1.8062481058471997,
       "lineup_changed": true,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 0,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Cam Ward",
@@ -2876,6 +2903,9 @@
       "actual_home_qb": "Cam Ward",
       "actual_away_qb": "Geno Smith",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -2897,7 +2927,7 @@
       "display_home_margin": 4.007446698851325,
       "lineup_adjustment": 4.69035760892048,
       "lineup_changed": true,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 0,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Trey Lance",
@@ -2910,6 +2940,9 @@
       "actual_home_qb": "Justin Herbert",
       "actual_away_qb": "Jacoby Brissett",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -2931,7 +2964,7 @@
       "display_home_margin": -2.9510110370839753,
       "lineup_adjustment": -1.0840744118954802,
       "lineup_changed": true,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 0,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Kenny Pickett",
@@ -2944,6 +2977,9 @@
       "actual_home_qb": "Kirk Cousins",
       "actual_away_qb": "Malik Willis",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -2965,7 +3001,7 @@
       "display_home_margin": -1.852087321153859,
       "lineup_adjustment": -4.8528429893418945,
       "lineup_changed": true,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 0,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "J.J. McCarthy",
@@ -2978,6 +3014,9 @@
       "actual_home_qb": "Kyler Murray",
       "actual_away_qb": "Jordan Love",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -2999,7 +3038,7 @@
       "display_home_margin": 1.699208293928937,
       "lineup_adjustment": 1.3895635183095094,
       "lineup_changed": true,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 0,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Tanner McKee",
@@ -3012,6 +3051,9 @@
       "actual_home_qb": "Jalen Hurts",
       "actual_away_qb": "Jayden Daniels",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3033,7 +3075,7 @@
       "display_home_margin": -1.183995911544278,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 0,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Jaxson Dart",
@@ -3046,6 +3088,9 @@
       "actual_home_qb": "Jaxson Dart",
       "actual_away_qb": "Dak Prescott",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3067,7 +3112,7 @@
       "display_home_margin": 0.584806018432654,
       "lineup_adjustment": 5.6993675746101395,
       "lineup_changed": true,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 0,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Chris Oladokun",
@@ -3080,6 +3125,9 @@
       "actual_home_qb": "Patrick Mahomes",
       "actual_away_qb": "Bo Nix",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3101,7 +3149,7 @@
       "display_home_margin": 2.2678035683550064,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 1,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Josh Allen",
@@ -3114,6 +3162,9 @@
       "actual_home_qb": "Josh Allen",
       "actual_away_qb": "Jared Goff",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3135,7 +3186,7 @@
       "display_home_margin": 3.155098392604138,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 1,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Cooper Rush",
@@ -3148,6 +3199,9 @@
       "actual_home_qb": "Cooper Rush",
       "actual_away_qb": "Bryce Young",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3169,7 +3223,7 @@
       "display_home_margin": 11.391920134177756,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 1,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Lamar Jackson",
@@ -3182,6 +3236,9 @@
       "actual_home_qb": "Lamar Jackson",
       "actual_away_qb": "Tyler Shough",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3203,7 +3260,7 @@
       "display_home_margin": 4.617821260394333,
       "lineup_adjustment": 0.9481487724411088,
       "lineup_changed": true,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 1,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Caleb Williams",
@@ -3216,6 +3273,9 @@
       "actual_home_qb": "Caleb Williams",
       "actual_away_qb": "Carson Wentz",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3237,7 +3297,7 @@
       "display_home_margin": -1.4065367394172232,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 1,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "C.J. Stroud",
@@ -3250,6 +3310,9 @@
       "actual_home_qb": "C.J. Stroud",
       "actual_away_qb": "Joe Burrow",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3271,7 +3334,7 @@
       "display_home_margin": 2.879701370188153,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 1,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Drake Maye",
@@ -3284,6 +3347,9 @@
       "actual_home_qb": "Drake Maye",
       "actual_away_qb": "Aaron Rodgers",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3305,7 +3371,7 @@
       "display_home_margin": -0.5172495858310608,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 1,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Geno Smith",
@@ -3318,6 +3384,9 @@
       "actual_home_qb": "Geno Smith",
       "actual_away_qb": "Jordan Love",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3339,7 +3408,7 @@
       "display_home_margin": 7.696388206597172,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 1,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Baker Mayfield",
@@ -3352,6 +3421,9 @@
       "actual_home_qb": "Baker Mayfield",
       "actual_away_qb": "Deshaun Watson",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3373,7 +3445,7 @@
       "display_home_margin": -6.731676657615285,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 1,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Cam Ward",
@@ -3386,6 +3458,9 @@
       "actual_home_qb": "Cam Ward",
       "actual_away_qb": "Jalen Hurts",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3407,7 +3482,7 @@
       "display_home_margin": -6.250224121760076,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 1,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Bo Nix",
@@ -3420,6 +3495,9 @@
       "actual_home_qb": "Bo Nix",
       "actual_away_qb": "Trevor Lawrence",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3441,7 +3519,7 @@
       "display_home_margin": -1.8231216978533744,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 1,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Justin Herbert",
@@ -3454,6 +3532,9 @@
       "actual_home_qb": "Justin Herbert",
       "actual_away_qb": "Kirk Cousins",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3475,7 +3556,7 @@
       "display_home_margin": 0.14617488247897192,
       "lineup_adjustment": 3.0110903960397692,
       "lineup_changed": true,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 1,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Jacoby Brissett",
@@ -3488,6 +3569,9 @@
       "actual_home_qb": "Jacoby Brissett",
       "actual_away_qb": "Drew Lock",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3509,7 +3593,7 @@
       "display_home_margin": -0.32169895263756043,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 1,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Dak Prescott",
@@ -3522,6 +3606,9 @@
       "actual_home_qb": "Dak Prescott",
       "actual_away_qb": "Jayden Daniels",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3543,7 +3630,7 @@
       "display_home_margin": 12.476099785067204,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 1,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Brock Purdy",
@@ -3556,6 +3643,9 @@
       "actual_home_qb": "Brock Purdy",
       "actual_away_qb": "Malik Willis",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3577,7 +3667,7 @@
       "display_home_margin": 4.877557729345924,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 1,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Patrick Mahomes",
@@ -3590,6 +3680,9 @@
       "actual_home_qb": "Patrick Mahomes",
       "actual_away_qb": "Daniel Jones",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3611,7 +3704,7 @@
       "display_home_margin": 3.001096812796332,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 1,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Matthew Stafford",
@@ -3624,6 +3717,9 @@
       "actual_home_qb": "Matthew Stafford",
       "actual_away_qb": "Jaxson Dart",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3645,7 +3741,7 @@
       "display_home_margin": 6.868831054897873,
       "lineup_adjustment": -3.6588687426429263,
       "lineup_changed": true,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 2,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Jordan Love",
@@ -3658,6 +3754,9 @@
       "actual_home_qb": "Jordan Love",
       "actual_away_qb": "Michael Penix Jr.",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3679,7 +3778,7 @@
       "display_home_margin": 10.692258868439763,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 2,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Josh Allen",
@@ -3692,6 +3791,9 @@
       "actual_home_qb": "Josh Allen",
       "actual_away_qb": "Justin Herbert",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3713,7 +3815,7 @@
       "display_home_margin": -3.942463038035622,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 2,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Deshaun Watson",
@@ -3726,6 +3828,9 @@
       "actual_home_qb": "Deshaun Watson",
       "actual_away_qb": "Bryce Young",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3747,7 +3852,7 @@
       "display_home_margin": 0.34831164512114876,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 2,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Jared Goff",
@@ -3760,6 +3865,9 @@
       "actual_home_qb": "Jared Goff",
       "actual_away_qb": "Geno Smith",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3781,7 +3889,7 @@
       "display_home_margin": 2.1936236834371723,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 2,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Daniel Jones",
@@ -3794,6 +3902,9 @@
       "actual_home_qb": "Daniel Jones",
       "actual_away_qb": "C.J. Stroud",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3815,7 +3926,7 @@
       "display_home_margin": 1.256253967874592,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 2,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Trevor Lawrence",
@@ -3828,6 +3939,9 @@
       "actual_home_qb": "Trevor Lawrence",
       "actual_away_qb": "Drake Maye",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3849,7 +3963,7 @@
       "display_home_margin": -5.580517443566152,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 2,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Malik Willis",
@@ -3862,6 +3976,9 @@
       "actual_home_qb": "Malik Willis",
       "actual_away_qb": "Patrick Mahomes",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3883,7 +4000,7 @@
       "display_home_margin": 1.7059851665292634,
       "lineup_adjustment": -4.427955119930388,
       "lineup_changed": true,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 2,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Jaxson Dart",
@@ -3896,6 +4013,9 @@
       "actual_home_qb": "Jameis Winston",
       "actual_away_qb": "Cam Ward",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3917,7 +4037,7 @@
       "display_home_margin": -5.931498221798813,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 2,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Aaron Rodgers",
@@ -3930,6 +4050,9 @@
       "actual_home_qb": "Aaron Rodgers",
       "actual_away_qb": "Joe Burrow",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3951,7 +4074,7 @@
       "display_home_margin": -7.8985968521419725,
       "lineup_adjustment": -3.652264486841821,
       "lineup_changed": true,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 2,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Jayden Daniels",
@@ -3964,6 +4087,9 @@
       "actual_home_qb": "Marcus Mariota",
       "actual_away_qb": "Sam Darnold",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -3985,7 +4111,7 @@
       "display_home_margin": 13.33041957974658,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 2,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Brock Purdy",
@@ -3998,6 +4124,9 @@
       "actual_home_qb": "Brock Purdy",
       "actual_away_qb": "Jacoby Brissett",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4019,7 +4148,7 @@
       "display_home_margin": -1.5255554696896763,
       "lineup_adjustment": -0.7423884890894418,
       "lineup_changed": true,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 2,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Baker Mayfield",
@@ -4032,6 +4161,9 @@
       "actual_home_qb": "Baker Mayfield",
       "actual_away_qb": "Kyler Murray",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4053,7 +4185,7 @@
       "display_home_margin": -5.7101363546049235,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 2,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Dak Prescott",
@@ -4066,6 +4198,9 @@
       "actual_home_qb": "Dak Prescott",
       "actual_away_qb": "Lamar Jackson",
       "home_field": 0.0,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4087,7 +4222,7 @@
       "display_home_margin": 0.10143270213169653,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 2,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Tyler Shough",
@@ -4100,6 +4235,9 @@
       "actual_home_qb": "Tyler Shough",
       "actual_away_qb": "Kirk Cousins",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4121,7 +4259,7 @@
       "display_home_margin": -4.956091176446375,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 2,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Bo Nix",
@@ -4134,6 +4272,9 @@
       "actual_home_qb": "Bo Nix",
       "actual_away_qb": "Matthew Stafford",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4155,7 +4296,7 @@
       "display_home_margin": 2.447528220641946,
       "lineup_adjustment": -3.6527387698070455,
       "lineup_changed": true,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 2,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Caleb Williams",
@@ -4168,6 +4309,9 @@
       "actual_home_qb": "Case Keenum",
       "actual_away_qb": "Jalen Hurts",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4189,7 +4333,7 @@
       "display_home_margin": 0.27753141967812556,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 3,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Deshaun Watson",
@@ -4202,6 +4346,9 @@
       "actual_home_qb": "Deshaun Watson",
       "actual_away_qb": "Aaron Rodgers",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4223,7 +4370,7 @@
       "display_home_margin": -0.8804628694838041,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 3,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Marcus Mariota",
@@ -4236,6 +4383,9 @@
       "actual_home_qb": "Marcus Mariota",
       "actual_away_qb": "Daniel Jones",
       "home_field": 0.0,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4257,7 +4407,7 @@
       "display_home_margin": 13.77379631159827,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 3,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Lamar Jackson",
@@ -4270,6 +4420,9 @@
       "actual_home_qb": "Lamar Jackson",
       "actual_away_qb": "Cam Ward",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4291,7 +4444,7 @@
       "display_home_margin": 6.89800957700167,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 3,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Josh Allen",
@@ -4304,6 +4457,9 @@
       "actual_home_qb": "Josh Allen",
       "actual_away_qb": "Drake Maye",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4325,7 +4481,7 @@
       "display_home_margin": 3.9037138832568776,
       "lineup_adjustment": -0.7471049866390991,
       "lineup_changed": true,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 3,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Case Keenum",
@@ -4338,6 +4494,9 @@
       "actual_home_qb": "Tyson Bagent",
       "actual_away_qb": "Geno Smith",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4359,7 +4518,7 @@
       "display_home_margin": -0.27362383902294796,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 3,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Joe Burrow",
@@ -4372,6 +4531,9 @@
       "actual_home_qb": "Joe Burrow",
       "actual_away_qb": "Trevor Lawrence",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4393,7 +4555,7 @@
       "display_home_margin": -1.3612825416509569,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 3,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "C.J. Stroud",
@@ -4406,6 +4568,9 @@
       "actual_home_qb": "C.J. Stroud",
       "actual_away_qb": "Dak Prescott",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4427,7 +4592,7 @@
       "display_home_margin": -1.6786501839081234,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 3,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Jameis Winston",
@@ -4440,6 +4605,9 @@
       "actual_home_qb": "Jameis Winston",
       "actual_away_qb": "Jacoby Brissett",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4461,7 +4629,7 @@
       "display_home_margin": -6.200594545635505,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 3,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Jalen Hurts",
@@ -4474,6 +4642,9 @@
       "actual_home_qb": "Jalen Hurts",
       "actual_away_qb": "Matthew Stafford",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4495,7 +4666,7 @@
       "display_home_margin": -0.10123042099767243,
       "lineup_adjustment": -2.572745284644738,
       "lineup_changed": true,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 3,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Baker Mayfield",
@@ -4508,6 +4679,9 @@
       "actual_home_qb": "Jalon Daniels",
       "actual_away_qb": "Jordan Love",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4529,7 +4703,7 @@
       "display_home_margin": 8.303706394516714,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 3,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Kyler Murray",
@@ -4542,6 +4716,9 @@
       "actual_home_qb": "Kyler Murray",
       "actual_away_qb": "Malik Willis",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4563,7 +4740,7 @@
       "display_home_margin": -2.6783153260499954,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 3,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Kirk Cousins",
@@ -4576,6 +4753,9 @@
       "actual_home_qb": "Kirk Cousins",
       "actual_away_qb": "Patrick Mahomes",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4597,7 +4777,7 @@
       "display_home_margin": 9.84237198803635,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 3,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Sam Darnold",
@@ -4610,6 +4790,9 @@
       "actual_home_qb": "Sam Darnold",
       "actual_away_qb": "Justin Herbert",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4631,7 +4814,7 @@
       "display_home_margin": 10.125191743848765,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 3,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Brock Purdy",
@@ -4644,6 +4827,9 @@
       "actual_home_qb": "Brock Purdy",
       "actual_away_qb": "Bo Nix",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4665,7 +4851,7 @@
       "display_home_margin": -2.422549203656014,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 3,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Bryce Young",
@@ -4678,6 +4864,9 @@
       "actual_home_qb": "Bryce Young",
       "actual_away_qb": "Jared Goff",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4699,7 +4888,7 @@
       "display_home_margin": -1.5171875338507215,
       "lineup_adjustment": 0.0,
       "lineup_changed": false,
-      "forecast_generated_at": "2026-11-02T17:11:44.193942+00:00",
+      "forecast_generated_at": "2026-11-02T18:30:18.171595+00:00",
       "forecast_rating_week": 3,
       "forecast_model_id": "depi-original-2026",
       "home_qb": "Tyler Shough",
@@ -4712,6 +4901,9 @@
       "actual_home_qb": "Tyler Shough",
       "actual_away_qb": "Michael Penix Jr.",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4746,6 +4938,9 @@
       "actual_home_qb": "Dak Prescott",
       "actual_away_qb": "Jalon Daniels",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4780,6 +4975,9 @@
       "actual_home_qb": "Trevor Lawrence",
       "actual_away_qb": "Jalen Hurts",
       "home_field": 0.0,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4814,6 +5012,9 @@
       "actual_home_qb": "Jordan Love",
       "actual_away_qb": "Tyson Bagent",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4848,6 +5049,9 @@
       "actual_home_qb": "Malik Willis",
       "actual_away_qb": "Joe Burrow",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4882,6 +5086,9 @@
       "actual_home_qb": "Drake Maye",
       "actual_away_qb": "Kirk Cousins",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4916,6 +5123,9 @@
       "actual_home_qb": "Tyler Shough",
       "actual_away_qb": "Kyler Murray",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4950,6 +5160,9 @@
       "actual_home_qb": "Geno Smith",
       "actual_away_qb": "Deshaun Watson",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -4984,6 +5197,9 @@
       "actual_home_qb": "Aaron Rodgers",
       "actual_away_qb": "Daniel Jones",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -5018,6 +5234,9 @@
       "actual_home_qb": "Cam Ward",
       "actual_away_qb": "C.J. Stroud",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -5052,6 +5271,9 @@
       "actual_home_qb": "Jayden Daniels",
       "actual_away_qb": "Jameis Winston",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -5086,6 +5308,9 @@
       "actual_home_qb": "Justin Herbert",
       "actual_away_qb": "Bo Nix",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -5120,6 +5345,9 @@
       "actual_home_qb": "Jacoby Brissett",
       "actual_away_qb": "Jared Goff",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -5154,6 +5382,9 @@
       "actual_home_qb": "Sam Darnold",
       "actual_away_qb": "Brock Purdy",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -5188,6 +5419,9 @@
       "actual_home_qb": "Michael Penix Jr.",
       "actual_away_qb": "Tyler Huntley",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": []
     },
     {
@@ -5222,6 +5456,9 @@
       "actual_home_qb": "Matthew Stafford",
       "actual_away_qb": "Josh Allen",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_05_BUF_LA",
@@ -5267,6 +5504,9 @@
       "actual_home_qb": "Bo Nix",
       "actual_away_qb": "Sam Darnold",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_06_SEA_DEN",
@@ -5332,6 +5572,9 @@
       "actual_home_qb": "Trevor Lawrence",
       "actual_away_qb": "C.J. Stroud",
       "home_field": 0.0,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_06_HOU_JAX",
@@ -5397,6 +5640,9 @@
       "actual_home_qb": "Michael Penix Jr.",
       "actual_away_qb": "Caleb Williams",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_06_CHI_ATL",
@@ -5462,6 +5708,9 @@
       "actual_home_qb": "Deshaun Watson",
       "actual_away_qb": "Tyler Huntley",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_06_BAL_CLE",
@@ -5527,6 +5776,9 @@
       "actual_home_qb": "Daniel Jones",
       "actual_away_qb": "Cam Ward",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_06_TEN_IND",
@@ -5592,6 +5844,9 @@
       "actual_home_qb": "Drake Maye",
       "actual_away_qb": "Geno Smith",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_06_NYJ_NE",
@@ -5657,6 +5912,9 @@
       "actual_home_qb": "Jameis Winston",
       "actual_away_qb": "Tyler Shough",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_06_NO_NYG",
@@ -5722,6 +5980,9 @@
       "actual_home_qb": "Tanner McKee",
       "actual_away_qb": "Bryce Young",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_06_CAR_PHI",
@@ -5787,6 +6048,9 @@
       "actual_home_qb": "Jalon Daniels",
       "actual_away_qb": "Aaron Rodgers",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_06_PIT_TB",
@@ -5852,6 +6116,9 @@
       "actual_home_qb": "Matthew Stafford",
       "actual_away_qb": "Jacoby Brissett",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_06_ARI_LA",
@@ -5917,6 +6184,9 @@
       "actual_home_qb": "Patrick Mahomes",
       "actual_away_qb": "Justin Herbert",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_06_LAC_KC",
@@ -5982,6 +6252,9 @@
       "actual_home_qb": "Kirk Cousins",
       "actual_away_qb": "Josh Allen",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_06_BUF_LV",
@@ -6047,6 +6320,9 @@
       "actual_home_qb": "Jordan Love",
       "actual_away_qb": "Dak Prescott",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_06_DAL_GB",
@@ -6112,6 +6388,9 @@
       "actual_home_qb": "Brock Purdy",
       "actual_away_qb": "Jayden Daniels",
       "home_field": 1.5657941587125686,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_06_WAS_SF",
@@ -6187,6 +6466,9 @@
       "actual_home_qb": "Caleb Williams",
       "actual_away_qb": "Drake Maye",
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_07_NE_CHI",
@@ -6242,6 +6524,9 @@
       "actual_home_qb": "Tyler Shough",
       "actual_away_qb": "Aaron Rodgers",
       "home_field": 0.0,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_07_PIT_NO",
@@ -6317,6 +6602,9 @@
       "actual_home_qb": "Michael Penix Jr.",
       "actual_away_qb": "Brock Purdy",
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_07_SF_ATL",
@@ -6402,6 +6690,9 @@
       "actual_home_qb": "Tyler Huntley",
       "actual_away_qb": "Joe Burrow",
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_07_CIN_BAL",
@@ -6487,6 +6778,9 @@
       "actual_home_qb": "Bryce Young",
       "actual_away_qb": "Baker Mayfield",
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_07_TB_CAR",
@@ -6572,6 +6866,9 @@
       "actual_home_qb": "C.J. Stroud",
       "actual_away_qb": "J.J. McCarthy",
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_07_NYG_HOU",
@@ -6657,6 +6954,9 @@
       "actual_home_qb": "Kyler Murray",
       "actual_away_qb": "Daniel Jones",
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_07_IND_MIN",
@@ -6742,6 +7042,9 @@
       "actual_home_qb": "Geno Smith",
       "actual_away_qb": "Malik Willis",
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_07_MIA_NYJ",
@@ -6827,6 +7130,9 @@
       "actual_home_qb": "Cam Ward",
       "actual_away_qb": "Deshaun Watson",
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_07_CLE_TEN",
@@ -6912,6 +7218,9 @@
       "actual_home_qb": "Jacoby Brissett",
       "actual_away_qb": "Bo Nix",
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_07_DEN_ARI",
@@ -6997,6 +7306,9 @@
       "actual_home_qb": "Jared Goff",
       "actual_away_qb": "Jordan Love",
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_07_GB_DET",
@@ -7082,6 +7394,9 @@
       "actual_home_qb": "Kirk Cousins",
       "actual_away_qb": "Matthew Stafford",
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_07_LA_LV",
@@ -7167,6 +7482,9 @@
       "actual_home_qb": "Sam Darnold",
       "actual_away_qb": "Patrick Mahomes",
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_07_KC_SEA",
@@ -7252,6 +7570,9 @@
       "actual_home_qb": "Tanner McKee",
       "actual_away_qb": "Dak Prescott",
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_07_DAL_PHI",
@@ -7357,6 +7678,9 @@
       "actual_home_qb": "Jordan Love",
       "actual_away_qb": "Bryce Young",
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_08_CAR_GB",
@@ -7419,6 +7743,9 @@
       "actual_home_qb": "Josh Allen",
       "actual_away_qb": "Lamar Jackson",
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_08_BAL_BUF",
@@ -7508,6 +7835,9 @@
       "actual_home_qb": "Joe Burrow",
       "actual_away_qb": "Cam Ward",
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_08_TEN_CIN",
@@ -7597,6 +7927,9 @@
       "actual_home_qb": "Dak Prescott",
       "actual_away_qb": "Jacoby Brissett",
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_08_ARI_DAL",
@@ -7686,6 +8019,9 @@
       "actual_home_qb": "Jared Goff",
       "actual_away_qb": "Kyler Murray",
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_08_MIN_DET",
@@ -7775,6 +8111,9 @@
       "actual_home_qb": "Trevor Lawrence",
       "actual_away_qb": "Daniel Jones",
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_08_IND_JAX",
@@ -7864,6 +8203,9 @@
       "actual_home_qb": "Geno Smith",
       "actual_away_qb": "Kirk Cousins",
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_08_LV_NYJ",
@@ -7953,6 +8295,9 @@
       "actual_home_qb": "Aaron Rodgers",
       "actual_away_qb": "Deshaun Watson",
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_08_CLE_PIT",
@@ -8042,6 +8387,9 @@
       "actual_home_qb": "Baker Mayfield",
       "actual_away_qb": "Michael Penix Jr.",
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_08_ATL_TB",
@@ -8131,6 +8479,9 @@
       "actual_home_qb": "Matthew Stafford",
       "actual_away_qb": "Justin Herbert",
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_08_LAC_LA",
@@ -8220,6 +8571,9 @@
       "actual_home_qb": "Bo Nix",
       "actual_away_qb": "Patrick Mahomes",
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_08_KC_DEN",
@@ -8309,6 +8663,9 @@
       "actual_home_qb": "Malik Willis",
       "actual_away_qb": "Drake Maye",
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_08_NE_MIA",
@@ -8398,6 +8755,9 @@
       "actual_home_qb": "Jayden Daniels",
       "actual_away_qb": "Tanner McKee",
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_08_PHI_WAS",
@@ -8487,6 +8847,9 @@
       "actual_home_qb": null,
       "actual_away_qb": null,
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_08_CHI_SEA",
@@ -8585,6 +8948,9 @@
       "actual_home_qb": null,
       "actual_away_qb": null,
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_09_JAX_BAL",
@@ -8629,6 +8995,9 @@
       "actual_home_qb": null,
       "actual_away_qb": null,
       "home_field": 0.0,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_09_CIN_ATL",
@@ -8673,6 +9042,9 @@
       "actual_home_qb": null,
       "actual_away_qb": null,
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_09_DEN_CAR",
@@ -8717,6 +9089,9 @@
       "actual_home_qb": null,
       "actual_away_qb": null,
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_09_DAL_IND",
@@ -8761,6 +9136,9 @@
       "actual_home_qb": null,
       "actual_away_qb": null,
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_09_NYJ_KC",
@@ -8805,6 +9183,9 @@
       "actual_home_qb": null,
       "actual_away_qb": null,
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_09_DET_MIA",
@@ -8849,6 +9230,9 @@
       "actual_home_qb": null,
       "actual_away_qb": null,
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_09_CLE_NO",
@@ -8893,6 +9277,9 @@
       "actual_home_qb": null,
       "actual_away_qb": null,
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_09_NYG_PHI",
@@ -8937,6 +9324,9 @@
       "actual_home_qb": null,
       "actual_away_qb": null,
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_09_LA_WAS",
@@ -8981,6 +9371,9 @@
       "actual_home_qb": null,
       "actual_away_qb": null,
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_09_HOU_LAC",
@@ -9025,6 +9418,9 @@
       "actual_home_qb": null,
       "actual_away_qb": null,
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_09_LV_SF",
@@ -9069,6 +9465,9 @@
       "actual_home_qb": null,
       "actual_away_qb": null,
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_09_GB_NE",
@@ -9113,6 +9512,9 @@
       "actual_home_qb": null,
       "actual_away_qb": null,
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_09_ARI_SEA",
@@ -9157,6 +9559,9 @@
       "actual_home_qb": null,
       "actual_away_qb": null,
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_09_TB_CHI",
@@ -9201,6 +9606,9 @@
       "actual_home_qb": null,
       "actual_away_qb": null,
       "home_field": 1.536670083607406,
+      "strength_scale": 1.0,
+      "rest_risk": false,
+      "rest_decisions": [],
       "market_history": [
         {
           "game_id": "2026_09_BUF_MIN",
@@ -9272,7 +9680,15 @@
     "history_share": 0.9,
     "half_life": 8.0,
     "coach_multiplier": 0.65,
-    "new_qb_multiplier": 0.6
+    "new_qb_multiplier": 0.6,
+    "projection_id": "late-season-v1",
+    "strength_scale_by_week": [
+      {
+        "first_week": 14,
+        "last_week": 17,
+        "scale": 1.48
+      }
+    ]
   },
   "market_history_policy": {
     "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv",
