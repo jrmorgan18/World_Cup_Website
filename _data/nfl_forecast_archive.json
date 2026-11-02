@@ -2340,6 +2340,27 @@
       "rating_week_complete": false,
       "rating_games": 120,
       "model_id": "depi-refit-2026-week6"
+    },
+    {
+      "game_id": "2026_09_BUF_MIN",
+      "season": 2026,
+      "week": 9,
+      "generated_at": "2026-11-02T18:49:17.089314+00:00",
+      "rating_week": 8,
+      "home_margin": -4.918981898844382,
+      "home_qb": "Kyler Murray",
+      "away_qb": "Josh Allen",
+      "home_qb_id": "00-0035228",
+      "away_qb_id": "00-0034857",
+      "provenance": "Saved research forecast",
+      "published_before_kickoff": false,
+      "rating_week_complete": false,
+      "rating_games": 120,
+      "model_id": "depi-refit-2026-week6",
+      "projection_id": "late-season-v1",
+      "rating_review_adjustments": {
+        "BUF": -0.5
+      }
     }
   ]
 }

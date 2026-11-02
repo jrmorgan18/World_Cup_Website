@@ -49,6 +49,8 @@ jobs:
         run: node --test scripts/test_nfl_results.cjs
       - name: Check pregame market history timing
         run: python -m unittest discover -s scripts -p test_nfl_market_history.py -v
+      - name: Check isolated editorial rating reviews
+        run: python -m unittest discover -s scripts -p test_nfl_rating_reviews.py -v
       - name: Test article video retention
         run: bundle exec ruby scripts/test_video_retention.rb
       - name: Build launch version

@@ -2843,6 +2843,15 @@
       "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv"
     },
     {
+      "game_id": "2026_09_BUF_MIN",
+      "observed_at": "2026-11-02T17:10:45.149374+00:00",
+      "recorded_at": "2026-11-02T18:49:17.089314+00:00",
+      "home_margin": -2.5,
+      "forecast_generated_at": "2026-11-02T18:49:17.089314+00:00",
+      "forecast_home_margin": -4.918981898844382,
+      "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv"
+    },
+    {
       "game_id": "2026_09_CIN_ATL",
       "observed_at": "2026-11-02T17:10:45.149374+00:00",
       "recorded_at": "2026-11-02T17:11:44.193942+00:00",

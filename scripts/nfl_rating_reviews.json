@@ -1,0 +1,27 @@
+{
+  "policy": "Editorial defense corrections for reviewed games. Only the named team's DEPI and defensive contribution change. The raw model, other teams' points, Efficiency and prior forecasts remain unchanged. Corrections dilute as new defensive plays enter the model, using its eight-week recency half-life. No automatic adjustments for unreviewed games.",
+  "reviews": [
+    {
+      "id": "buf-2026-week8-opponent-qbs",
+      "season": 2026,
+      "reference_week": 8,
+      "game_id": "2026_08_BAL_BUF",
+      "team": "BUF",
+      "component": "defense",
+      "points": -0.5,
+      "half_life_weeks": 8,
+      "observed_at": "2026-11-02T18:44:36+00:00",
+      "summary": "Week 8 opponent-QB review: Lamar Jackson played one dropback; Tyler Huntley had five and Joe Fagnano 25, including scrambles. Apply a conservative -0.50 DEPI-point editorial correction to Buffalo's defense, partially offsetting its 0.91-point weekly defensive gain. This is a judgment, not a fitted counterfactual. Baltimore's aggregate offensive quality is already opponent-adjusted, so the full starter-to-backup game-level gap is not subtracted from Buffalo's season rating.",
+      "display_note": "Week 8 vs Baltimore: Lamar Jackson played one dropback; Huntley and Fagnano handled the rest. This editorial correction accounts for the QBs Buffalo faced and dilutes as new defensive plays enter the model.",
+      "evidence": {
+        "qb_dropbacks": {"Lamar Jackson": 1, "Tyler Huntley": 5, "Joe Fagnano": 25},
+        "pregame_qb_points_vs_lamar": {"Tyler Huntley": -2.9111785654413813, "Joe Fagnano": -4.877928937025782},
+        "unreviewed_week8_defense_gain": 0.9107562450078675
+      },
+      "sources": [
+        {"title": "Ravens: Lamar Jackson injured on his first play", "url": "https://www.baltimoreravens.com/news/lamar-jackson-thumb-injured-ravens-bills-2026"},
+        {"title": "nflverse 2026 play-by-play; QB dropbacks verified November 2", "url": "https://github.com/nflverse/nflverse-data/releases/download/pbp/play_by_play_2026.parquet"}
+      ]
+    }
+  ]
+}
