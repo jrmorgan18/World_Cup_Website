@@ -601,6 +601,26 @@ def team_records(games):
     return pd.DataFrame(rows).groupby("team", as_index=True).sum()
 
 
+def last_fully_covered_week(games, pbp):
+    """Return the latest consecutive completed week with eligible plays for both teams in every game."""
+    if games.empty:
+        return 0
+    plays = eligible_scrimmage_plays(pbp, set(games["game_id"]))
+    actual = set(zip(plays["game_id"], plays["posteam"]))
+    last_week = 0
+    for week in sorted(games["week"].dropna().astype(int).unique()):
+        week_games = games[games["week"].astype(int) == week]
+        expected = {
+            (game.game_id, team)
+            for game in week_games.itertuples()
+            for team in (game.home_team, game.away_team)
+        }
+        if not expected.issubset(actual):
+            break
+        last_week = int(week)
+    return last_week
+
+
 def eligible_scrimmage_plays(pbp, valid_game_ids):
     valid = pbp[
         (pbp["season_type"] == "REG")
@@ -847,11 +867,21 @@ def last_game_payload(recent_games, pbp):
     game = dict(recent_games[0])
     game_rows = pbp[pbp["game_id"] == game["game_id"]]
     plays = eligible_scrimmage_plays(game_rows, {game["game_id"]})
+    yardage_rows = game_rows[
+        game_rows["posteam"].notna()
+        & game_rows["play_type"].isin(["run", "pass"])
+        & (game_rows["play_deleted"].fillna(0) != 1)
+        & (game_rows["two_point_attempt"].fillna(0) != 1)
+        & (game_rows["aborted_play"].fillna(0) != 1)
+    ].copy()
     opponent = game_rows.loc[game_rows["posteam"].notna() & (game_rows["posteam"] != TEAM), "posteam"]
     opponent_abbr = opponent.mode().iloc[0] if not opponent.empty else None
 
     def side_rows(team):
         return plays[plays["posteam"] == team]
+
+    def yardage_side_rows(team):
+        return yardage_rows[yardage_rows["posteam"] == team]
 
     def turnovers(team):
         rows = game_rows[(game_rows["posteam"] == team) & (game_rows["play_deleted"].fillna(0) != 1)]
@@ -859,10 +889,12 @@ def last_game_payload(recent_games, pbp):
 
     ravens_plays = side_rows(TEAM)
     opponent_plays = side_rows(opponent_abbr)
+    ravens_yardage = yardage_side_rows(TEAM)
+    opponent_yardage = yardage_side_rows(opponent_abbr)
     game["type_label"] = "Regular season"
     game["opponent_abbr"] = opponent_abbr
     game["key_stats"] = [
-        {"label": "Scrimmage yards", "value": f"{int(ravens_plays['yards_gained'].sum())}–{int(opponent_plays['yards_gained'].sum())}", "detail": "Ravens–opponent"},
+        {"label": "Scrimmage yards", "value": f"{int(ravens_yardage['yards_gained'].fillna(0).sum())}–{int(opponent_yardage['yards_gained'].fillna(0).sum())}", "detail": "Ravens–opponent"},
         {"label": "EPA / play", "value": f"{ravens_plays['epa'].mean():.2f} / {opponent_plays['epa'].mean():.2f}", "detail": "Ravens / opponent"},
         {"label": "Success rate", "value": f"{ravens_plays['success'].mean() * 100:.1f}% / {opponent_plays['success'].mean() * 100:.1f}%", "detail": "Ravens / opponent"},
         {"label": "Turnovers", "value": f"{turnovers(TEAM)}–{turnovers(opponent_abbr)}", "detail": "Ravens–opponent"},
@@ -911,12 +943,126 @@ def merge_snapshots(existing, current):
     return sorted(snapshots, key=lambda s: (s.get("week", -1), s.get("id", "")))
 
 
+def schedule_only_payload(existing, current_games, recent_games, next_game, last_game, args):
+    """Merge schedule-backed postgame fields while preserving all published stats."""
+    if not existing:
+        raise ValueError("Schedule-only refresh needs an existing validated dashboard")
+    if not recent_games:
+        raise ValueError("No completed Ravens game is available for schedule-only refresh")
+    sequence = [game["result"] for game in reversed(recent_games)]
+    recent_margin = sum(game["ravens_score"] - game["opponent_score"] for game in recent_games)
+    updated = json.loads(json.dumps(existing))
+    updated["as_of"] = args.as_of.isoformat()
+    updated["generated_at"] = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    updated["header"]["record"] = record_text(team_records(current_games), TEAM)
+    updated["header"]["division_standing"] = "AFC North"
+    updated["header"]["streak"] = streak_text(recent_games)
+    updated["header"]["next_game"] = next_game
+    updated["recent_games"] = recent_games
+    updated["recent_form"] = {
+        "sequence": sequence,
+        "record": None if not sequence else f"{sequence.count('W')}-{sequence.count('L')}",
+        "point_differential": recent_margin if sequence else None,
+    }
+    updated["last_game"] = last_game
+    current_snapshot = next(
+        (snapshot for snapshot in updated.get("snapshots", [])
+         if snapshot.get("id") == updated.get("current_snapshot")),
+        {},
+    )
+    recent_week = recent_games[0]["week"]
+    updated["schedule_update"] = {
+        "source": "nflverse schedules",
+        "period_label": f"{recent_week} final · {args.as_of.isoformat()}",
+        "metrics_period": (
+            f"{current_snapshot.get('label', 'Previously published metrics')} "
+            f"({current_snapshot.get('sample_note', 'published sample')})"
+        ),
+        "note": "Schedule-backed results refreshed while the current-season play-by-play release is incomplete; published efficiency snapshots and unit analytics are preserved.",
+    }
+    return updated
+
+
+def schedule_only_postgame_refresh(args, error):
+    """Refresh schedule-backed fields without publishing partial league metrics.
+
+    This opt-in fallback is for a completed Ravens game whose schedule score is
+    final while nflverse play-by-play is still missing one or more other games.
+    Published efficiency snapshots, league rankings, and unit analytics remain
+    untouched; the next-game comparison uses the latest fully covered 2026 week.
+    """
+    output = args.output.resolve()
+    existing = read_existing(output)
+    if not existing:
+        raise ValueError("Schedule-only refresh needs an existing validated dashboard")
+
+    schedule = pd.read_csv(SCHEDULE_URL)
+    current_games = completed_games(schedule, args.season, args.as_of)
+    ravens_games = current_games[
+        (current_games["home_team"] == TEAM) | (current_games["away_team"] == TEAM)
+    ]
+    if ravens_games.empty:
+        raise ValueError("No completed Ravens game is available for schedule-only refresh")
+
+    current_pbp = pd.read_parquet(PBP_URL.format(season=args.season), columns=PBP_COLUMNS)
+    complete_week = last_fully_covered_week(current_games, current_pbp)
+    if complete_week < 1:
+        raise ValueError("No fully covered 2026 week is available for a current-season matchup baseline")
+    metrics_games = current_games[current_games["week"].astype(int) <= complete_week]
+    _, metrics_table = compute_league_metrics(metrics_games, current_pbp)
+    if len(metrics_table.index) != 32:
+        raise ValueError(
+            f"Week {complete_week} matchup baseline contains {len(metrics_table.index)} teams, not 32"
+        )
+
+    recent_games = recent_games_payload(current_games)
+    next_game = format_next_game(schedule, args.season, args.as_of)
+    if next_game:
+        latest_schedule_week = int(current_games["week"].max())
+        next_game["matchup"] = matchup_payload(
+            metrics_table,
+            next_game["opponent_abbr"],
+            f"{args.season} through Week {complete_week} · Week {latest_schedule_week} update pending",
+        )
+
+    # The last game's detailed play-by-play is optional here; the final score is
+    # still useful when that team's rows have not landed in the release yet.
+    last_game = dict(recent_games[0])
+    last_game.update({"type_label": "Regular season", "source": "nflverse schedules"})
+    try:
+        last_game = last_game_payload(recent_games, current_pbp)
+    except Exception as detail_error:
+        print(f"Last-game play-by-play unavailable; showing the final score only: {detail_error}", file=sys.stderr)
+
+    updated = schedule_only_payload(existing, current_games, recent_games, next_game, last_game, args)
+
+    if comparable_payload(existing) == comparable_payload(updated):
+        print("No postgame football-data changes; keeping the published dashboard unchanged.")
+        return 0
+
+    temporary = output.with_suffix(output.suffix + ".tmp")
+    with temporary.open("w", encoding="utf-8") as handle:
+        json.dump(updated, handle, indent=2, ensure_ascii=False, allow_nan=False)
+        handle.write("\n")
+    os.replace(temporary, output)
+    print(
+        f"Updated schedule-backed Ravens postgame fields: {updated['header']['record']}; "
+        f"preserved {updated['current_snapshot']} pending complete play-by-play. Original updater error: {error}"
+    )
+    return 0
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--season", type=int, default=date.today().year)
     parser.add_argument("--benchmark-season", type=int, default=None)
     parser.add_argument("--as-of", type=date.fromisoformat, default=date.today())
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument(
+        "--allow-schedule-only-postgame",
+        action="store_true",
+        help="On incomplete play-by-play, refresh schedule-backed postgame fields and preserve published metrics.",
+    )
     args = parser.parse_args()
     benchmark_season = args.benchmark_season or args.season - 1
 
@@ -1070,6 +1216,12 @@ def main():
         print(f"Updated {output.relative_to(ROOT)}: {current['label']} ({current['record']}); benchmark {benchmark_season} loaded.")
         return 0
     except Exception as error:
+        if args.allow_schedule_only_postgame and "Missing eligible play-by-play" in str(error):
+            try:
+                return schedule_only_postgame_refresh(args, error)
+            except Exception as fallback_error:
+                print(f"Schedule-only Ravens dashboard refresh failed: {fallback_error}", file=sys.stderr)
+                return 1
         print(f"Ravens dashboard update failed: {error}", file=sys.stderr)
         return 1
 

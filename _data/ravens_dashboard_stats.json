@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T17:06:42Z",
+  "generated_at": "2026-11-02T05:00:10Z",
   "as_of": "2026-11-01",
   "season": 2026,
   "benchmark_season": 2025,
@@ -1363,20 +1363,20 @@
     ]
   },
   "header": {
-    "record": "4-3",
+    "record": "4-4",
     "division_standing": "AFC North",
-    "streak": "L2",
+    "streak": "L3",
     "next_game": {
-      "week": 8,
-      "opponent": "Buffalo Bills",
-      "opponent_abbr": "BUF",
-      "location": "away",
-      "date": "2026-11-01",
-      "display": "at Buffalo Bills · Nov 1 · 1:00 PM ET",
-      "venue": "Highmark Stadium",
+      "week": 9,
+      "opponent": "Jacksonville Jaguars",
+      "opponent_abbr": "JAX",
+      "location": "home",
+      "date": "2026-11-05",
+      "display": "vs. Jacksonville Jaguars · Nov 5 · 8:15 PM ET",
+      "venue": "M&T Bank Stadium",
       "source": "nflverse schedules",
       "matchup": {
-        "label": "2026 through available Week 8 games",
+        "label": "2026 through Week 7 · Week 8 update pending",
         "items": [
           {
             "title": "When the Ravens have the ball",
@@ -1386,8 +1386,8 @@
               "rank": 8
             },
             "opponent": {
-              "value": 0.13,
-              "rank": 30
+              "value": -0.03,
+              "rank": 12
             }
           },
           {
@@ -1398,8 +1398,8 @@
               "rank": 4
             },
             "opponent": {
-              "value": 10.8,
-              "rank": 26
+              "value": 7.9,
+              "rank": 7
             }
           },
           {
@@ -1410,8 +1410,8 @@
               "rank": 17
             },
             "opponent": {
-              "value": 0.21,
-              "rank": 1
+              "value": 0.16,
+              "rank": 4
             }
           },
           {
@@ -1422,8 +1422,8 @@
               "rank": 20
             },
             "opponent": {
-              "value": 72.0,
-              "rank": 4
+              "value": 66.7,
+              "rank": 9
             }
           }
         ]
@@ -1431,36 +1431,36 @@
     }
   },
   "last_game": {
-    "game_id": "2026_07_CIN_BAL",
-    "week": "Week 7",
-    "date": "2026-10-25",
-    "location": "home",
-    "opponent": "Cincinnati Bengals",
+    "game_id": "2026_08_BAL_BUF",
+    "week": "Week 8",
+    "date": "2026-11-01",
+    "location": "away",
+    "opponent": "Buffalo Bills",
     "result": "L",
-    "ravens_score": 13,
-    "opponent_score": 35,
-    "takeaway": "The Ravens lost to the Cincinnati Bengals 13–35.",
+    "ravens_score": 10,
+    "opponent_score": 36,
+    "takeaway": "The Ravens lost to the Buffalo Bills 10–36.",
     "type_label": "Regular season",
-    "opponent_abbr": "CIN",
+    "opponent_abbr": "BUF",
     "key_stats": [
       {
         "label": "Scrimmage yards",
-        "value": "359–357",
+        "value": "145–428",
         "detail": "Ravens–opponent"
       },
       {
         "label": "EPA / play",
-        "value": "-0.09 / 0.33",
+        "value": "-0.43 / 0.04",
         "detail": "Ravens / opponent"
       },
       {
         "label": "Success rate",
-        "value": "41.5% / 56.9%",
+        "value": "34.0% / 50.0%",
         "detail": "Ravens / opponent"
       },
       {
         "label": "Turnovers",
-        "value": "1–0",
+        "value": "3–2",
         "detail": "Ravens–opponent"
       }
     ],
@@ -1848,14 +1848,25 @@
     "sequence": [
       "W",
       "W",
-      "W",
+      "L",
       "L",
       "L"
     ],
-    "record": "3-2",
-    "point_differential": -9
+    "record": "2-3",
+    "point_differential": -38
   },
   "recent_games": [
+    {
+      "game_id": "2026_08_BAL_BUF",
+      "week": "Week 8",
+      "date": "2026-11-01",
+      "location": "away",
+      "opponent": "Buffalo Bills",
+      "result": "L",
+      "ravens_score": 10,
+      "opponent_score": 36,
+      "takeaway": "The Ravens lost to the Buffalo Bills 10–36."
+    },
     {
       "game_id": "2026_07_CIN_BAL",
       "week": "Week 7",
@@ -1899,17 +1910,6 @@
       "ravens_score": 24,
       "opponent_score": 18,
       "takeaway": "The Ravens defeated the Tennessee Titans 24–18."
-    },
-    {
-      "game_id": "2026_03_BAL_DAL",
-      "week": "Week 3",
-      "date": "2026-09-27",
-      "location": "away",
-      "opponent": "Dallas Cowboys",
-      "result": "W",
-      "ravens_score": 34,
-      "opponent_score": 31,
-      "takeaway": "The Ravens defeated the Dallas Cowboys 34–31."
     }
   ],
   "sources": {
@@ -1947,5 +1947,11 @@
     },
     "license": "CC BY 4.0",
     "retrieved_at": "2026-11-01T17:06:42Z"
+  },
+  "schedule_update": {
+    "source": "nflverse schedules",
+    "period_label": "Week 8 final · 2026-11-01",
+    "metrics_period": "Through available Week 8 games (7 regular-season games)",
+    "note": "Schedule-backed results refreshed while the current-season play-by-play release is incomplete; published efficiency snapshots and unit analytics are preserved."
   }
 }

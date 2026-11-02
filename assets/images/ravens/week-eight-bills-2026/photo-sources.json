@@ -1,0 +1,61 @@
+{
+  "new_photos": [
+    {
+      "file": "lamar-jackson-bills-header.jpg",
+      "id": "yupu72ipwauhvwwrcgus",
+      "host": "https://static.www.nfl.com/image/upload/f_jpg,q_88,w_1600,c_limit/league/",
+      "credit": "NFL.com",
+      "source_page": "https://www.nfl.com/news/ravens-qb-lamar-jackson-suffers-right-thumb-injury-bills",
+      "alt": "Lamar Jackson prepares to throw",
+      "caption": "Lamar Jackson’s return lasted one offensive snap before a right-thumb injury ended his afternoon.",
+      "download_url": "https://static.www.nfl.com/image/upload/f_jpg,q_88,w_1600,c_limit/league/yupu72ipwauhvwwrcgus"
+    },
+    {
+      "file": "lamar-jackson-cam-jurgens-bills.jpg",
+      "id": "yzzztampnyct8jevv77p",
+      "alt": "Lamar Jackson lines up behind center Cam Jurgens against the Bills",
+      "caption": "Jackson lines up behind Cam Jurgens in Buffalo. Minter said afterward that Jackson needs thumb surgery and will go on injured reserve.",
+      "host": "https://static.clubs.nfl.com/image/upload/f_jpg,q_88,w_1600,c_limit/ravens/",
+      "credit": "Shawn Hubbard/Baltimore Ravens Photos",
+      "source_page": "https://www.baltimoreravens.com/photos/game-action-gallery-ravens-at-bills-week-8",
+      "download_url": "https://static.clubs.nfl.com/image/upload/f_jpg,q_88,w_1600,c_limit/ravens/yzzztampnyct8jevv77p"
+    },
+    {
+      "file": "joe-fagnano-passing-bills.jpg",
+      "id": "rqymsvieu4f53dwecua6",
+      "alt": "Joe Fagnano throws from the pocket against Buffalo",
+      "caption": "Fagnano made his NFL debut after Jackson and Tyler Huntley both left injured. He finished 10-of-21 for 91 yards.",
+      "host": "https://static.clubs.nfl.com/image/upload/f_jpg,q_88,w_1600,c_limit/ravens/",
+      "credit": "Shawn Hubbard/Baltimore Ravens Photos",
+      "source_page": "https://www.baltimoreravens.com/photos/game-action-gallery-ravens-at-bills-week-8",
+      "download_url": "https://static.clubs.nfl.com/image/upload/f_jpg,q_88,w_1600,c_limit/ravens/rqymsvieu4f53dwecua6"
+    },
+    {
+      "file": "kyle-hamilton-tackle-bills.jpg",
+      "id": "goqddx8afm2ixlvbl5zv",
+      "alt": "Kyle Hamilton tackles a Bills ball carrier",
+      "caption": "Hamilton and the defense kept the Ravens close early, but Buffalo eventually pulled away.",
+      "host": "https://static.clubs.nfl.com/image/upload/f_jpg,q_88,w_1600,c_limit/ravens/",
+      "credit": "Shawn Hubbard/Baltimore Ravens Photos",
+      "source_page": "https://www.baltimoreravens.com/photos/game-action-gallery-ravens-at-bills-week-8",
+      "download_url": "https://static.clubs.nfl.com/image/upload/f_jpg,q_88,w_1600,c_limit/ravens/goqddx8afm2ixlvbl5zv"
+    },
+    {
+      "file": "derrick-henry-running-bills.jpg",
+      "id": "gkksqz6yslsn7krevrcr",
+      "alt": "Derrick Henry carries the ball against the Bills",
+      "caption": "Henry scored the Ravens’ only touchdown, a two-yard run after Broderick Washington’s interception.",
+      "host": "https://static.clubs.nfl.com/image/upload/f_jpg,q_88,w_1600,c_limit/ravens/",
+      "credit": "Shawn Hubbard/Baltimore Ravens Photos",
+      "source_page": "https://www.baltimoreravens.com/photos/game-action-gallery-ravens-at-bills-week-8",
+      "download_url": "https://static.clubs.nfl.com/image/upload/f_jpg,q_88,w_1600,c_limit/ravens/gkksqz6yslsn7krevrcr"
+    }
+  ],
+  "reused_archival_photo": {
+    "file": "/assets/images/ravens/week-four-titans-2026/tyler-loop-titans-week-four.jpg",
+    "credit": "Shawn Hubbard / Baltimore Ravens Photos",
+    "source_page": "https://www.baltimoreravens.com/news/tyler-loop-history-longest-field-goal-mt-bank-stadium-64-yards-ravens-titans",
+    "alt": "Tyler Loop kicks with Ryan Eckley holding against Tennessee in Week 4",
+    "caption": "Loop kicking against Tennessee in Week 4. His range has produced memorable moments; the missed 34-yarder in Buffalo renewed concerns about consistency."
+  }
+}

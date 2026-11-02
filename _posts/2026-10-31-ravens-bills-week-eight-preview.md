@@ -19,9 +19,10 @@ home_image_position: "75% center"
 hero_alt: "Lamar Jackson prepares to throw during Ravens practice"
 hero_credit: "Shawn Hubbard / Baltimore Ravens Photos"
 hero_credit_url: "https://www.baltimoreravens.com/news/lamar-jackson-ravens-bills-set-to-play-2026"
-home_feature: true
-home_recent: false
-ravens_feature: true
+home_feature: false
+home_recent: true
+home_recent_label: "Week 8 preview"
+ravens_feature: false
 ravens_feature_image: true
 feature_label: "Week 8 preview"
 ravens_feature_mark: "8"

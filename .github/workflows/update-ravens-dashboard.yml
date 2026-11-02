@@ -36,6 +36,8 @@ jobs:
         run: python scripts/test_ravens_receiving.py
       - name: Test published efficiency model
         run: python scripts/test_efficiency_dashboard.py
+      - name: Test postgame refresh with delayed play-by-play
+        run: python scripts/test_ravens_dashboard_schedule_fallback.py
       - name: Update Ravens dashboard
         run: python scripts/update_ravens_dashboard.py
       - name: Validate dashboard data
