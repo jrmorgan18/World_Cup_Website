@@ -28,6 +28,7 @@ from strength_beta_lab.refine_strength_beta import (RefinedBuilder, Experiment, 
 from update_ravens_dashboard import compute_league_metrics, eligible_scrimmage_plays
 from efficiency_dashboard import apply_model, calibration
 from nfl_market_history import observations_from_dashboard, merge_observations, attach_market_history
+from nfl_rating_reviews import apply_rating_reviews
 
 BASE = 'https://github.com/nflverse/nflverse-data/releases/download/'
 
@@ -183,6 +184,8 @@ def add_forecasts(archive, upcoming, teams, home_advantage, rating_week, generat
         if scale != 1.: record['strength_scale'] = scale
         rested = [side for side, decision in [(game.home_team, hr), (game.away_team, ar)] if decision]
         if rested: record['rest_decision_teams'] = rested
+        reviewed={t['abbr']:t['rating_review_points'] for t in [h,a] if t.get('rating_review_points')}
+        if reviewed: record['rating_review_adjustments']=reviewed
         preserved.append(record)
     return preserved
 
@@ -321,6 +324,10 @@ def build(cache, season, requested, audit=False, allow_partial=False):
     rows,details = builder.generate_refined(exp,evaluate_from=season)
     model = model_payload(builder,exp,details,coef,config['validation'],seed)
     preserve_previous_published_ranks(model['teams'], previous_published, season, cutoff)
+    generated_at=datetime.now(timezone.utc).isoformat()
+    review_document=json.loads((ROOT/'scripts/nfl_rating_reviews.json').read_text())
+    defensive_exposure=builder.rows[season].groupby(['defteam','week']).weight.sum().to_dict()
+    apply_rating_reviews(model['teams'],review_document,season,cutoff,set(completed.game_id),defensive_exposure,generated_at)
     records,efficiency = compute_league_metrics(completed,current_pbp)
     anchors=calibration(season)
     efficiency=apply_model(efficiency,current_pbp,completed,eligible_scrimmage_plays,anchors)
@@ -349,7 +356,8 @@ def build(cache, season, requested, audit=False, allow_partial=False):
             'defense_epa':float(efficiency.loc[abbr,'defensive_epa_per_play']),
             'offense_success':float(efficiency.loc[abbr,'offensive_success_rate']),
             'defense_success':float(efficiency.loc[abbr,'defensive_success_rate'])})
-    generated_at=datetime.now(timezone.utc).isoformat()
+        for key in ['unreviewed_strength','rating_review_points','rating_reviews']:
+            if key in t: teams[-1][key]=t[key]
     current_week=cutoff+1
     upcoming=builder.all_schedule[(builder.all_schedule.season==season)&(builder.all_schedule.week==current_week)&(builder.all_schedule.game_type=='REG')]
     archive_path=ROOT/'_data/nfl_forecast_archive.json'
@@ -437,6 +445,7 @@ def build(cache, season, requested, audit=False, allow_partial=False):
             'projection_id':projection['id'] if projection else None,
             'strength_scale_by_week':projection['strength_scale_by_week'] if projection else []}}
     market_archive_path=ROOT/'_data/nfl_market_archive.json'
+    payload['rating_review_policy']=review_document['policy']
     market_observations=json.loads(market_archive_path.read_text())['observations'] if market_archive_path.exists() else []
     market_observations=merge_observations(market_observations,observations_from_dashboard(payload))
     attach_market_history(payload,market_observations)

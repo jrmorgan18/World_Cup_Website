@@ -206,3 +206,27 @@ A QB-change multiplier was also tested and rejected: calibrated on 2019–2023
 starter-change games (k = 1.25), it worsened 2024–2026 (11.29 → 11.33) and no
 directional variant helped. The model's QB-change sizes are not the source of
 the gap in those games.
+
+
+## Reviewed opponent-QB context
+
+`nfl_rating_reviews.json` is an explicit editorial ledger. The initial entry is a
+−0.50-point defensive correction for BUF vs BAL in 2026 Week 8, when Lamar played
+one dropback, Huntley five and Fagnano 25 (including scrambles). It partially
+offsets BUF's 0.91-point defensive gain and is a judgment, not a fitted estimate.
+The normal team-opponent adjustment already captures Baltimore's aggregate
+offense; do not subtract the entire game-level starter/backup gap from a season
+rating. Pre-game QB estimates and the verified participation are saved as evidence.
+
+Only the named team's strength and defense contribution change. Its original
+strength, effective correction and sources are public; the row and team panel
+identify the review. The raw model remains centered. Do not re-center other teams
+to absorb a review, and do not change Efficiency or archived forecasts.
+
+For rating week w, correction = original points × decay(reference_week, w) ×
+reference defensive exposure / current defensive exposure. Exposure sums eligible
+game-state-weighted defensive plays with the model's eight-week recency half-life.
+Thus a bye does not erase the correction and new defensive evidence dilutes it.
+No future plays or other seasons qualify. Re-running the updater applies the
+review once, not cumulatively. Reviewed upcoming forecasts append normally and
+save their team-specific `rating_review_adjustments`; earlier records stay intact.

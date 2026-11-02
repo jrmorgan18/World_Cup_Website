@@ -10,12 +10,19 @@ def validate(data):
     assert data['season']==2026
     assert len(data['teams'])==32 and len({t['abbr'] for t in data['teams']})==32
     assert sorted(t['rank'] for t in data['teams'])==list(range(1,33))
-    assert abs(sum(t['strength'] for t in data['teams']))<1e-7
+    # Raw model stays centered; editorial reviews do not move unrelated teams.
+    assert abs(sum(t['strength']-t.get('rating_review_points',0.) for t in data['teams']))<1e-7
     for t in data['teams']:
         assert math.isfinite(t['strength']) and 0<=t['efficiency']<=100
         assert abs(t['strength']-sum(t[k] for k in ['offense_points','defense_points','st_points','qb_points']))<1e-7
         assert 1<=t['efficiency_rank']<=32
         assert any(q['id']==t['expected_qb']['id'] for q in t['qb_options'])
+        if 'rating_review_points' in t:
+            assert math.isfinite(t['rating_review_points']) and t['rating_reviews']
+            assert abs(t['strength']-t['unreviewed_strength']-t['rating_review_points'])<1e-7
+            assert abs(sum(r['effective_points'] for r in t['rating_reviews'])-t['rating_review_points'])<1e-7
+            assert abs(t['components']['review_defense']-t['rating_review_points'])<1e-7
+            assert all(r['team']==t['abbr'] and r['game_id'] in {g['game_id'] for g in data['games'] if g['status']=='Final'} for r in t['rating_reviews'])
     if 'rating_week_complete' in data:
         assert data['rating_week_completed_games']<=data['rating_week_scheduled_games']
         assert data['rating_week_complete']==(data['rating_week_completed_games']==data['rating_week_scheduled_games'])

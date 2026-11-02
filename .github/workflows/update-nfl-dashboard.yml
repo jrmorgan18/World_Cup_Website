@@ -52,6 +52,7 @@ jobs:
           python scripts/check_nfl_dashboard.py
           python -m unittest discover -s scripts -p test_nfl_dashboard.py -v
           python -m unittest discover -s scripts -p test_nfl_market_history.py -v
+          python -m unittest discover -s scripts -p test_nfl_rating_reviews.py -v
           python -m unittest discover -s scripts -p test_nfl_injury_watchlist.py -v
           node --test scripts/test_nfl_injuries.cjs
           node --test scripts/test_nfl_results.cjs
