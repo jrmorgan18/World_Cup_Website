@@ -1,6 +1,6 @@
 """Guard the optional public WR feed, qualification, ranking, and stale fallback."""
 import unittest
-from ravens_receiving import TEAMS, parse_receivers, refresh_yprr, yprr_metric
+from ravens_receiving import TEAMS, parse_receivers, profile_team, refresh_yprr, yprr_metric
 
 
 def fixture(extra=(), routes=91, season=2026, stamp="2026-10-15T08:36:41Z"):
@@ -48,6 +48,28 @@ class ReceiverFeedTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "ambiguous route qualification"):
             yprr_metric(page, 2026, self.counts)
         self.assertEqual(refresh_yprr(existing, 2026, self.counts, fetch=lambda: page), previous)
+
+    def test_missing_badge_uses_verified_profile_before_qualification(self):
+        self.counts["CAR"] = 4
+        page = fixture([("No team", "FA", 45, 450)])
+        metric = yprr_metric(page, 2026, self.counts, team_resolver=lambda player, season: "CAR")
+        self.assertEqual(metric["rank"], 2)
+        metric = yprr_metric(page, 2026, self.counts, team_resolver=lambda player, season: "ATL")
+        self.assertEqual(metric["rank"], 1)
+
+    def test_profile_requires_identity_season_and_matching_totals(self):
+        player = {"name": "Jared Wayne", "routes": 73, "yards": 65}
+        profile = ('<h1>JARED WAYNE</h1><table><tr><th>SEASON</th><th>TEAM</th>'
+                   '<th>ROUTES RUN</th><th>REC. YARDS</th></tr><tr><td>2026</td>'
+                   '<td><img src="https://cdn.sumersports.com/assets/pro/logos/transparent/MIA.svg"></td>'
+                   '<td>73</td><td>65</td></tr></table>')
+        self.assertEqual(profile_team(profile, player, 2026), "MIA")
+        for invalid in [profile.replace('JARED WAYNE', 'OTHER PLAYER'),
+                        profile.replace('<td>2026</td>', '<td>2025</td>'),
+                        profile.replace('<td>73</td>', '<td>72</td>'),
+                        profile.replace('<td>65</td>', '<td>66</td>')]:
+            with self.assertRaises(ValueError):
+                profile_team(invalid, player, 2026)
 
     def test_wrong_season_and_incomplete_league_fail_closed(self):
         with self.assertRaises(ValueError):

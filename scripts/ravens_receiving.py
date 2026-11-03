@@ -58,7 +58,9 @@ def parse_receivers(page, season):
             rate = yards / routes
             if abs(float(text(cells[headers.index("YPRR")])) - rate) > 0.015:
                 raise ValueError("Published YPRR does not match the displayed yards and routes")
-            players.append({"name": html.unescape(name[1]), "team": team, "routes": routes, "yards": yards})
+            profile = re.search(r'href="(/players/[a-zA-Z0-9]+/[a-z0-9-]+/)"', identity)
+            players.append({"name": html.unescape(name[1]), "team": team, "routes": routes, "yards": yards,
+                            "profile_url": "https://sumersports.com" + profile[1] if profile else None})
         if len(players) < 32 or {p["team"] for p in players if p["team"] is not None} != TEAMS:
             raise ValueError("Receiver table does not cover all 32 teams")
         keys = [(p["name"], p["team"]) for p in players]
@@ -68,14 +70,59 @@ def parse_receivers(page, season):
     raise ValueError("Public receiver table was not found")
 
 
-def yprr_metric(page, season, games_by_team):
+def profile_team(page, player, season):
+    """Resolve a missing badge only from a matching public season-breakdown row."""
+    heading = re.search(r"<h1\b[^>]*>(.*?)</h1>", page, re.I | re.S)
+    if not heading or text(heading[1]).casefold() != player["name"].casefold():
+        raise ValueError("Receiver profile identity does not match the table")
+    teams = set()
+    for table in re.findall(r"<table\b[^>]*>(.*?)</table>", page, re.I | re.S):
+        headers = [text(cell).casefold() for cell in re.findall(r"<th\b[^>]*>(.*?)</th>", table, re.I | re.S)]
+        if not all(label in headers for label in ("season", "team", "routes run", "rec. yards")):
+            continue
+        for row in re.findall(r"<tr\b[^>]*>(.*?)</tr>", table, re.I | re.S):
+            cells = re.findall(r"<td\b[^>]*>(.*?)</td>", row, re.I | re.S)
+            if len(cells) != len(headers) or text(cells[headers.index("season")]) != str(season):
+                continue
+            if (text(cells[headers.index("routes run")]).replace(",", "") != str(player["routes"])
+                    or text(cells[headers.index("rec. yards")]).replace(",", "") != str(player["yards"])):
+                continue
+            badge = re.search(r'/logos/transparent/([A-Z]{2,3})\.svg', cells[headers.index("team")])
+            if badge:
+                team = TEAM_ALIASES.get(badge[1], badge[1])
+                if team in TEAMS:
+                    teams.add(team)
+    if len(teams) != 1:
+        raise ValueError("Receiver profile does not uniquely match the current season totals")
+    return teams.pop()
+
+
+def resolve_profile_team(player, season):
+    url = player.get("profile_url")
+    if not url or not re.fullmatch(r"https://sumersports\.com/players/[a-zA-Z0-9]+/[a-z0-9-]+/", url):
+        return None
+    request = Request(url, headers={"User-Agent": "DualEights-RavensDashboard/1.0"})
+    with urlopen(request, timeout=30) as response:
+        return profile_team(response.read().decode("utf-8"), player, season)
+
+
+def yprr_metric(page, season, games_by_team, team_resolver=None):
     updated, players = parse_receivers(page, season)
     if set(games_by_team) != TEAMS or any(n < 1 for n in games_by_team.values()):
         raise ValueError("Qualification requires a completed game count for every team")
     qualified = []
     smallest_minimum = 10 * min(games_by_team.values())
     largest_minimum = 10 * max(games_by_team.values())
+    resolutions = []
     for player in players:
+        if (player["team"] is None and smallest_minimum <= player["routes"] < largest_minimum
+                and team_resolver is not None):
+            resolved = team_resolver(player, season)
+            if resolved is not None:
+                if resolved not in TEAMS:
+                    raise ValueError("Resolved receiver team is invalid")
+                player["team"] = resolved
+                resolutions.append({"player": player["name"], "team": resolved, "source_url": player["profile_url"]})
         if player["team"] is not None:
             eligible = player["routes"] >= 10 * games_by_team[player["team"]]
         elif player["routes"] >= largest_minimum:
@@ -103,6 +150,7 @@ def yprr_metric(page, season, games_by_team):
         "qualified_receivers": len(qualified), "minimum_routes": minimum,
         "qualification": "10 routes per completed team game",
         "qualification_games": games_by_team,
+        "qualification_team_sources": resolutions,
         "sample_note": f"{player['routes']} routes · Min. {minimum} for BAL (10/team game)",
     }
 
@@ -118,7 +166,7 @@ def refresh_yprr(existing, season, games_by_team, fetch=fetch_page):
                    if m.get("label") == "Flowers YPRR" and m.get("source_label") == "SumerSports"
                    and m.get("season") == season), None)
     try:
-        fresh = yprr_metric(fetch(), season, games_by_team)
+        fresh = yprr_metric(fetch(), season, games_by_team, team_resolver=resolve_profile_team)
         if stored and fresh and fresh["source_updated_at"] < stored.get("source_updated_at", ""):
             return stored
         # A successfully parsed current table with Flowers below the minimum is

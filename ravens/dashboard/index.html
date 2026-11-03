@@ -124,7 +124,7 @@ section_theme: ravens
   <section class="ravens-dashboard-section ravens-scorecard" id="scorecard" role="tabpanel" aria-labelledby="dashboard-tab-scorecard" tabindex="0">
     <div class="ravens-section-heading ravens-section-heading--split">
       <div><p class="de-kicker">Numbers with context</p><h2 id="scorecard-title">Core Scorecard</h2></div>
-      <p>{% if stats.schedule_update %}Team metrics: {{ current_snapshot.sample_note }}. The latest result is newer; complete league comparisons are pending.{% else %}{{ current_snapshot.sample_note }}. Statuses are editorial judgments and can override the statistical rank.{% endif %}</p>
+      <p>{% if stats.schedule_update %}Team metrics: {{ current_snapshot.sample_note }}. The latest result is newer; complete league comparisons are pending.{% else %}{{ current_snapshot.sample_note }} · {{ current_snapshot.label }}.{% endif %}</p>
     </div>
     {% for group in dashboard.scorecard_groups %}
     <div class="ravens-scorecard-group">

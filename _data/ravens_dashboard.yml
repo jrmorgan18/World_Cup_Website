@@ -6,15 +6,16 @@
 meta:
   season: 2026
   season_label: "2026 Season"
-  last_updated: "2026-11-01"
-  update_context: "Bills final · Jaguars next · Postgame availability reviewed"
-  data_status: "postgame-week-8"
+  last_updated: "2026-11-03"
+  update_context: "All Week 8 games complete · Jaguars next · Availability through Monday"
+  data_status: "through-week-8"
   data_notice: >-
-    Buffalo is final: the Ravens are 4-4 and host Jacksonville Thursday.
-    Team scorecard metrics retain the previously verified seven-game sample;
-    full Week 8 league comparisons await complete play-by-play. Next-matchup
-    comparisons are explicitly through Week 7. Third-party analytics carry their
-    own reporting dates, and editorial unit grades remain through Week 7.
+    The scorecard, league Efficiency Index and next-matchup comparisons include
+    all 14 completed Week 8 games, including Chicago-Seattle on Monday night.
+    The Ravens are 4-4 after eight games. Availability is reviewed through the
+    Monday, November 2 walkthrough reports; final Week 9 designations are pending.
+    Third-party metrics retain their own published periods. Editorial unit
+    grades remain through Week 7 until new game grades are supplied.
 
 metric_definitions:
   - id: "overall_efficiency"
@@ -139,29 +140,30 @@ scorecard_groups:
 editorial:
   state:
     summary: >-
-      The Ravens are 4-4 after a 36-10 loss in Buffalo, their third straight defeat.
-      Jackson's return lasted one offensive snap before a right-thumb injury;
-      Minter announced surgery and an upcoming move to injured reserve.
-      Huntley also left with a toe injury, leaving Fagnano to make his NFL debut.
-      The Ravens produced 144 total yards while Buffalo gained 426. Jacksonville
-      visits Thursday, with the quarterback plan and several injury evaluations
-      still unresolved.
-    biggest_strength: "The defense forced two takeaways and helped keep the Ravens within six early in the third quarter."
-    biggest_concern: "Jackson needs surgery, Huntley's status is uncertain and protection yielded four sacks and 12 quarterback hits."
-    changed_this_week: "The Ravens fell to 4-4. Jackson and Huntley left injured; Wiggins was evaluated for a concussion. Tampa returned and recovered a fumble."
+      The Ravens are 4-4 after three straight losses and host Jacksonville Thursday.
+      All Week 8 games are now included: the Ravens rank 16th in Efficiency and
+      21st in DEPI. Jackson needs thumb surgery and is headed to injured reserve;
+      Huntley missed Monday's walkthrough with a toe injury. Fagnano was limited
+      with an ankle injury but has a chance to play, and Austin Reed has joined
+      the practice squad. Moody will kick Thursday with Loop sidelined by a groin
+      injury. Ioane hopes to return, while Jacksonville has lost DaVon Hamilton
+      and Eric Murray for the season.
+    biggest_strength: "Flowers remains third among qualifying receivers at 3.15 yards per route run. The Ravens are seventh in offensive explosive-play rate through Week 8."
+    biggest_concern: "Quarterback availability and protection: Jackson needs surgery, Huntley is injured and Buffalo recorded four sacks and 12 quarterback hits."
+    changed_this_week: "The complete Week 8 rankings put the Ravens 16th in Efficiency and 21st in DEPI. Monday's update adds Loop's injury and Moody's Thursday role; Wiggins returned to full estimated participation."
 
   metric_assessments:
-    overall_efficiency: { status: "Average", reviewed_value: 53.7, reviewed_rank: 14, interpretation: "Before the Buffalo game: The Ravens are 14th at 53.7 in the v2.1 index through Week 7, down from 11th at 56.3 through Week 6. The index measures observed efficiency rather than predicting the next game." }
-    point_differential: { status: "Average", reviewed_value: 2, reviewed_rank: 17, interpretation: "Before the Buffalo game: The season margin is +2, 17th among teams through the latest completed games, including Thursday of Week 8." }
-    turnover_differential: { status: "Average", reviewed_value: 1, reviewed_rank: 14, interpretation: "Before the Buffalo game: The Ravens are +1, 14th, after losing the Week 7 turnover battle 1-0." }
-    offensive_epa_per_play: { status: "Good", reviewed_value: 0.08, reviewed_rank: 8, interpretation: "Before the Buffalo game: The offense is eighth at 0.08 EPA/play through seven games. The Ravens finished at -0.09 per eligible play against Cincinnati." }
-    offensive_success_rate: { status: "Good", reviewed_value: 47.0, reviewed_rank: 9, interpretation: "Before the Buffalo game: Season success rate is 47.0%, ninth. The Ravens succeeded on 41.5% of eligible plays against the Bengals." }
-    explosive_play_rate: { status: "Elite", reviewed_value: 11.3, reviewed_rank: 4, interpretation: "Before the Buffalo game: The Ravens rank fourth in season explosive-play rate at 11.3%. Flowers' 48-yard touchdown was a Week 7 highlight." }
-    red_zone_td_rate: { status: "Average", reviewed_value: 62.5, reviewed_rank: 14, interpretation: "Before the Buffalo game: The Ravens have scored touchdowns on 62.5% of qualifying red-zone drives, 14th. Finishing scoring opportunities remains a concern." }
-    defensive_epa_per_play: { status: "Average", reviewed_value: 0.01, reviewed_rank: 17, interpretation: "Before the Buffalo game: Season EPA allowed is 0.01, 17th. Cincinnati produced 0.33 EPA per eligible play in Week 7." }
-    defensive_success_rate: { status: "Average", reviewed_value: 43.2, reviewed_rank: 15, interpretation: "Before the Buffalo game: Opponent success is 43.2%, 15th. Cincinnati succeeded on 56.9% of eligible plays in Week 7." }
-    explosive_play_rate_allowed: { status: "Good", reviewed_value: 8.1, reviewed_rank: 11, interpretation: "Before the Buffalo game: The Ravens allow explosive gains on 8.1% of eligible plays, 11th through Week 7." }
-    opponent_red_zone_td_rate: { status: "Concern", reviewed_value: 66.7, reviewed_rank: 20, interpretation: "Before the Buffalo game: Opponents have converted 66.7% of qualifying red-zone drives into touchdowns, 20th through Week 7." }
+    overall_efficiency: {"status": "Average", "reviewed_value": 48.8, "reviewed_rank": 16, "interpretation": "The Ravens are 16th at 48.8 through all Week 8 games, down from 14th after Week 7. This index measures observed efficiency."}
+    point_differential: {"status": "Concern", "reviewed_value": -24, "reviewed_rank": 24, "interpretation": "The season margin is -24 through eight games, 24th in the league after the 36-10 loss in Buffalo."}
+    turnover_differential: {"status": "Average", "reviewed_value": 0, "reviewed_rank": 15, "interpretation": "The Ravens are even on turnovers, 15th in the league. They forced two takeaways and committed three giveaways against Buffalo."}
+    offensive_epa_per_play: {"status": "Average", "reviewed_value": 0.03, "reviewed_rank": 13, "interpretation": "The offense ranks 13th at 0.03 EPA per play through Week 8. Its eligible-play average against Buffalo was -0.43."}
+    offensive_success_rate: {"status": "Good", "reviewed_value": 45.7, "reviewed_rank": 12, "interpretation": "The Ravens succeed on 45.7% of eligible offensive plays, 12th. Success against Buffalo was 34.0%."}
+    explosive_play_rate: {"status": "Good", "reviewed_value": 10.6, "reviewed_rank": 7, "interpretation": "The offense creates explosive gains on 10.6% of eligible plays, seventh through Week 8."}
+    red_zone_td_rate: {"status": "Average", "reviewed_value": 59.3, "reviewed_rank": 14, "interpretation": "The Ravens have scored touchdowns on 59.3% of qualifying red-zone drives, 14th in the league."}
+    defensive_epa_per_play: {"status": "Average", "reviewed_value": 0.01, "reviewed_rank": 17, "interpretation": "The defense allows 0.01 EPA per eligible play, 17th through Week 8. Buffalo averaged 0.04 in the eligible-play sample."}
+    defensive_success_rate: {"status": "Concern", "reviewed_value": 44.2, "reviewed_rank": 21, "interpretation": "Opponents succeed on 44.2% of eligible plays, 21st. Buffalo succeeded on 50.0% against the Ravens."}
+    explosive_play_rate_allowed: {"status": "Good", "reviewed_value": 8.3, "reviewed_rank": 10, "interpretation": "The defense allows explosive gains on 8.3% of eligible plays, 10th through Week 8."}
+    opponent_red_zone_td_rate: {"status": "Concern", "reviewed_value": 67.9, "reviewed_rank": 23, "interpretation": "Opponents score touchdowns on 67.9% of qualifying red-zone drives, 23rd in the league."}
 
   overviews:
     offense:
@@ -192,18 +194,18 @@ editorial:
     - { name: "Specialists", assessment: "Solid", trend: "down", season_grade: "B", season_grade_points: 2.855, last_game_grade: "C", explanation: "Week 7: The specialists receive a C. Loop's two field goals contributed to the 13-0 halftime lead, but special teams did not change the second-half momentum." }
 
   weekly_changes:
-    - {"direction": "down", "title": "Three straight defeats", "text": "The 36-10 loss in Buffalo leaves the Ravens 4-4."}
-    - {"direction": "down", "title": "Jackson needs thumb surgery", "text": "Minter announced surgery and an upcoming injured-reserve move. A season-ending absence is possible, but has not been confirmed."}
-    - {"direction": "down", "title": "The quarterback room took more hits", "text": "Huntley left with a toe injury. Fagnano made his NFL debut and later said he expects to be ready Thursday after taking a lower-leg hit."}
-    - {"direction": "up", "title": "Two defensive takeaways", "text": "Washington intercepted Allen; Smith forced a Moore fumble that Tampa recovered in his return."}
-    - {"direction": "down", "title": "A short turnaround", "text": "Jacksonville comes to M&T Bank Stadium Thursday. Ioane and Hawkins missed Buffalo; Wiggins needs follow-up after a concussion evaluation."}
+    - {"direction": "down", "title": "The complete Week 8 picture", "text": "The Ravens are 4-4, 16th in Efficiency and 21st in DEPI after all 14 games, including Monday night."}
+    - {"direction": "down", "title": "Quarterback uncertainty continues", "text": "Jackson needs surgery, Huntley missed Monday with a toe injury and Fagnano was limited with an ankle injury. Reed signed to the practice squad."}
+    - {"direction": "down", "title": "Moody takes over Thursday", "text": "Minter says Moody will kick against Jacksonville. Loop missed Monday with a right-groin injury; an IR move is possible, not confirmed."}
+    - {"direction": "up", "title": "Wiggins returns to full participation", "text": "After leaving Buffalo for an evaluation, Wiggins was full in Monday's estimated walkthrough report with a stinger."}
+    - {"direction": "up", "title": "Ioane hopes to return", "text": "The rookie guard was limited Monday with a knee injury. His Thursday availability remains undecided."}
 
   championship_check:
-    - {"category": "Quarterback play", "status": "Concern", "explanation": "Jackson needs right-thumb surgery and is headed to IR. Huntley's toe injury leaves the Thursday starter unsettled."}
-    - {"category": "Pass protection", "status": "Concern", "explanation": "Buffalo recorded four sacks and 12 quarterback hits. Ioane missed the game with a knee injury."}
-    - {"category": "Explosive offense", "status": "Concern", "explanation": "Flowers finished without a reception and the Ravens gained 144 total yards in Buffalo."}
-    - {"category": "Four-man pass rush", "status": "Unclear", "explanation": "The defense forced two takeaways but Buffalo gained 426 yards and converted four of five fourth downs. Robinson remains on season-ending IR."}
-    - {"category": "Health", "status": "Concern", "explanation": "The quarterbacks require follow-up, Wiggins was evaluated for a concussion, and Jacksonville visits Thursday."}
+    - {"category": "Quarterback play", "status": "Concern", "explanation": "Jackson is headed to IR. Huntley missed Monday with a toe injury; Fagnano was limited and has a chance to play. No Thursday starter has been announced."}
+    - {"category": "Pass protection", "status": "Concern", "explanation": "Buffalo generated four sacks and 12 quarterback hits. Ioane hopes to return, but both tackles and Simpson were limited Monday."}
+    - {"category": "Explosive offense", "status": "Unclear", "explanation": "Seventh in explosive-play rate through Week 8, but Flowers had no catches in Buffalo and the quarterback plan is unsettled."}
+    - {"category": "Four-man pass rush", "status": "Unclear", "explanation": "Robinson remains on season-ending IR. Hendrickson was limited Monday with finger/rib injuries. ESPN trench metrics retain their published Week 7 period."}
+    - {"category": "Health", "status": "Concern", "explanation": "Jackson, Huntley, Loop and Hawkins missed Monday. Fagnano was limited; Wiggins was full. These are estimated walkthrough statuses, not final game designations."}
 
 preseason_form:
   sequence: ["W", "W", "W"]
@@ -247,22 +249,27 @@ matchup_focus:
   team: "JAX"
   label: "Jaguars matchup lens · Week 9"
   items:
-    - {"title": "Protect the available quarterback", "text": "Jackson will miss time after thumb surgery, Huntley's status is uncertain and Fagnano has limited preparation time. Buffalo generated four sacks and 12 quarterback hits.", "source_url": "https://www.baltimoreravens.com/news/transcript-press-conferences-11-1-26"}
-    - {"title": "Track Jacksonville's defensive injuries", "text": "DaVon Hamilton left with a knee injury and Eric Murray with an elbow injury. Their Thursday availability has not been decided.", "source_url": "https://www.jaguars.com/news/top-storylines-from-jaguars-dominant-week-8-win-over-colts-run-to-win"}
-    - {"title": "Contain a balanced Jaguars offense", "text": "Jacksonville beat Indianapolis 42-7. Bhayshul Tuten rushed for 104 yards as the Jaguars gained 183 on the ground.", "source_url": "https://www.jaguars.com/news/top-storylines-from-jaguars-dominant-week-8-win-over-colts-run-to-win"}
+    - {"title": "Prepare the available quarterback", "text": "Fagnano was limited Monday but has a chance to play. Huntley's status is unresolved; Reed has joined the practice squad.", "source_url": "https://www.baltimoreravens.com/news/lamar-jackson-surgery-joe-fagnano-tyler-huntley-ravens-quarterback-injuries"}
+    - {"title": "Jacksonville loses two defensive leaders", "text": "Coen confirmed season-ending injuries for DaVon Hamilton (quadriceps) and Eric Murray (elbow). The replacements face Henry and the Ravens' receivers.", "source_url": "https://www.jaguars.com/news/day-after-week-8-win-over-colts-hamilton-murray-out-rest-of-season"}
+    - {"title": "Monitor the short-week backfields", "text": "Tuten missed Jacksonville's Monday walkthrough with ankle/foot injuries, while Rodriguez was limited with a hand injury. Final game statuses are pending.", "source_url": "https://www.jaguars.com/news/day-after-week-8-win-over-colts-hamilton-murray-out-rest-of-season"}
 
 opponent_availability:
   team: "JAX"
-  label: "Jaguars availability · Postgame, November 1"
-  note: "Postgame concerns from the Colts game; no Week 9 practice report or final game designations yet. Resolved Week 8 statuses are omitted."
-  source_label: "Official Jaguars postgame report"
-  source_url: "https://www.jaguars.com/news/top-storylines-from-jaguars-dominant-week-8-win-over-colts-run-to-win"
+  label: "Jaguars availability · Monday, November 2"
+  note: "Hamilton and Murray are out for the season. Other practice entries are estimates from Monday's walkthrough; Thursday game designations are pending."
+  source_label: "Official Jaguars Monday update"
+  source_url: "https://www.jaguars.com/news/day-after-week-8-win-over-colts-hamilton-murray-out-rest-of-season"
   items:
-    - {"player": "DaVon Hamilton", "position": "DT", "status": "Monitoring", "detail": "Knee injury against Indianapolis; carted off and ruled out of that game. Week 9 status pending evaluation.", "source_url": "https://www.jaguars.com/news/top-storylines-from-jaguars-dominant-week-8-win-over-colts-run-to-win", "source_label": "Jaguars postgame / roster · Nov. 1"}
-    - {"player": "Eric Murray", "position": "S", "status": "Monitoring", "detail": "Left the Colts game with an elbow injury. Week 9 status has not been announced.", "source_url": "https://www.jaguars.com/news/top-storylines-from-jaguars-dominant-week-8-win-over-colts-run-to-win", "source_label": "Jaguars postgame / roster · Nov. 1"}
-    - {"player": "Ezra Cleveland", "position": "G", "status": "Monitoring", "detail": "Ankle injury against Indianapolis. Thursday availability awaits the short-week injury reports.", "source_url": "https://www.jaguars.com/news/quick-thoughts-after-jaguars-week-8-win-methodical-impressive-necessary", "source_label": "Jaguars postgame / roster · Nov. 1"}
-    - {"player": "Travon Walker", "position": "EDGE", "status": "Monitoring", "detail": "Left the Colts game with a rib injury, per the team's game update. No final Ravens-week designation.", "source_url": "https://sports.yahoo.com/articles/jaguars-travon-walker-exits-colts-201652337.html", "source_label": "Jaguars postgame / roster · Nov. 1"}
-    - {"player": "Antonio Johnson", "position": "S", "status": "Monitoring", "detail": "Inactive against Indianapolis with an ankle injury; do not treat that Week 8 Out designation as a Week 9 ruling.", "source_url": "https://www.jaguars.com/team/injury-report/", "source_label": "Jaguars postgame / roster · Nov. 1"}
+    - {"player": "DaVon Hamilton", "position": "DT", "status": "Out", "detail": "Quadriceps injury; Coen confirmed Monday that he will miss the rest of the season.", "source_label": "Official Jaguars Monday report · Nov. 2", "source_url": "https://www.jaguars.com/news/day-after-week-8-win-over-colts-hamilton-murray-out-rest-of-season"}
+    - {"player": "Eric Murray", "position": "S", "status": "Out", "detail": "Elbow injury; Coen confirmed Monday that he will miss the rest of the season.", "source_label": "Official Jaguars Monday report · Nov. 2", "source_url": "https://www.jaguars.com/news/day-after-week-8-win-over-colts-hamilton-murray-out-rest-of-season"}
+    - {"player": "Bhayshul Tuten", "position": "RB", "status": "Did not practice", "detail": "Ankle/foot; estimated DNP Monday. No final Thursday designation.", "source_label": "Official Jaguars Monday report · Nov. 2", "source_url": "https://www.jaguars.com/news/day-after-week-8-win-over-colts-hamilton-murray-out-rest-of-season"}
+    - {"player": "Travon Walker", "position": "EDGE", "status": "Did not practice", "detail": "Rib; estimated DNP Monday. No final Thursday designation.", "source_label": "Official Jaguars Monday report · Nov. 2", "source_url": "https://www.jaguars.com/news/day-after-week-8-win-over-colts-hamilton-murray-out-rest-of-season"}
+    - {"player": "Antonio Johnson", "position": "S", "status": "Limited practice", "detail": "Ankle; estimated limited Monday after missing the Colts game. Thursday status pending.", "source_label": "Official Jaguars Monday report · Nov. 2", "source_url": "https://www.jaguars.com/news/day-after-week-8-win-over-colts-hamilton-murray-out-rest-of-season"}
+    - {"player": "Ezra Cleveland", "position": "G", "status": "Limited practice", "detail": "Knee/ankle; estimated limited Monday. Thursday status pending.", "source_label": "Official Jaguars Monday report · Nov. 2", "source_url": "https://www.jaguars.com/news/day-after-week-8-win-over-colts-hamilton-murray-out-rest-of-season"}
+    - {"player": "Jakobi Meyers", "position": "WR", "status": "Limited practice", "detail": "Hamstring/ankle; estimated limited Monday. Thursday status pending.", "source_label": "Official Jaguars Monday report · Nov. 2", "source_url": "https://www.jaguars.com/news/day-after-week-8-win-over-colts-hamilton-murray-out-rest-of-season"}
+    - {"player": "Chris Rodriguez Jr.", "position": "RB", "status": "Limited practice", "detail": "Hand; estimated limited Monday. Thursday status pending.", "source_label": "Official Jaguars Monday report · Nov. 2", "source_url": "https://www.jaguars.com/news/day-after-week-8-win-over-colts-hamilton-murray-out-rest-of-season"}
+    - {"player": "Branson Combs", "position": "LB", "status": "Limited practice", "detail": "Shoulder; estimated limited Monday. Thursday status pending.", "source_label": "Official Jaguars Monday report · Nov. 2", "source_url": "https://www.jaguars.com/news/day-after-week-8-win-over-colts-hamilton-murray-out-rest-of-season"}
+    - {"player": "Jarrian Jones", "position": "CB", "status": "Limited practice", "detail": "Ankle; estimated limited Monday. Thursday status pending.", "source_label": "Official Jaguars Monday report · Nov. 2", "source_url": "https://www.jaguars.com/news/day-after-week-8-win-over-colts-hamilton-murray-out-rest-of-season"}
     - {"player": "Anton Harrison", "position": "OT", "status": "Injured Reserve", "detail": "Remains on the official reserve/injured roster.", "source_url": "https://www.jaguars.com/team/players-roster/", "source_label": "Jaguars postgame / roster · Nov. 1"}
     - {"player": "Patrick Mekari", "position": "OL", "status": "IR / return window", "detail": "Listed Reserve/Injured; Designated for Return. Activation is still required.", "source_url": "https://www.jaguars.com/team/players-roster/", "source_label": "Jaguars postgame / roster · Nov. 1"}
 
@@ -272,16 +279,23 @@ preseason_games:
   - { week: "Preseason 1", date: "2026-08-15", location: "home", opponent: "Philadelphia Eagles", result: "W", ravens_score: 24, opponent_score: 7, takeaway: "The Ravens opened with a balanced win and allowed only one touchdown.", recap_url: "https://www.baltimoreravens.com/news/ravens-take-care-of-eagles-preseason-opener-ravens-2026" }
 
 injury_report_context:
-  label: "Postgame at Buffalo · November 1"
-  note: "Jackson needs surgery and is headed to IR; the roster transaction is pending. Huntley, Fagnano and Wiggins require follow-up. Week 9 designations are not yet available. Cleared players and Tampa, who returned and played, are omitted."
+  label: "Week 9 vs. Jacksonville · Monday walkthrough, November 2"
+  note: "Reviewed November 3. Monday participation is estimated. Jackson needs surgery; Moody will replace injured Loop Thursday. Fagnano was limited, Huntley and Hawkins were DNP. Wiggins was full with a stinger and is omitted from this material-concerns card. Final game designations are pending."
 
 injuries:
-  - {"player": "Lamar Jackson", "position": "QB", "status": "Out", "injury": "Right thumb", "importance": "Critical", "expected_availability": "Minter announced surgery and an upcoming IR move. The transaction is not yet confirmed on the roster; a return date is unknown.", "impact": "Will miss at least four games once placed on IR. A season-ending absence is possible, not confirmed.", "source_label": "Official Ravens postgame · Nov. 1", "source_url": "https://www.baltimoreravens.com/news/transcript-press-conferences-11-1-26"}
-  - {"player": "Tyler Huntley", "position": "QB", "status": "Monitoring", "injury": "Toe", "importance": "Critical", "expected_availability": "Left Buffalo injured; Minter said his status going forward is not yet known. No Week 9 designation.", "impact": "The Thursday quarterback plan remains unsettled.", "source_label": "Official Ravens postgame · Nov. 1", "source_url": "https://www.baltimoreravens.com/news/transcript-press-conferences-11-1-26"}
-  - {"player": "Joe Fagnano", "position": "QB", "status": "Monitoring", "injury": "Ankle / lower leg", "importance": "Critical", "expected_availability": "Took a lower-leg hit but finished the game. Said afterward that he thinks he will be ready Thursday; no formal clearance or designation yet.", "impact": "The rookie may need to start if Huntley cannot return.", "source_label": "Official Ravens postgame · Nov. 1", "source_url": "https://www.baltimoreravens.com/news/transcript-press-conferences-11-1-26"}
-  - {"player": "Nate Wiggins", "position": "CB", "status": "Monitoring", "injury": "Concussion evaluation", "importance": "Starter", "expected_availability": "Left in the fourth quarter for a concussion evaluation. No subsequent clearance confirmed in the postgame report.", "impact": "Cornerback availability needs follow-up before Thursday.", "source_label": "Official Ravens postgame · Nov. 1", "source_url": "https://www.baltimoreravens.com/news/lamar-jackson-ravens-injury-ravens-bills-breakdown-injured-reserve"}
-  - {"player": "Vega Ioane", "position": "G", "status": "Monitoring", "injury": "Knee / reported MCL sprain", "importance": "Starter", "expected_availability": "Inactive against Buffalo after being ruled out Friday. Jacksonville-week status has not been announced.", "impact": "Vorhees started at right guard; the interior remains unsettled.", "source_label": "Official Ravens postgame · Nov. 1", "source_url": "https://www.baltimoreravens.com/news/ravens-bills-inactives-andrew-vorhees--start-right-guard-week-8"}
-  - {"player": "Jaylinn Hawkins", "position": "S", "status": "Monitoring", "injury": "Knee", "importance": "Starter", "expected_availability": "Inactive against Buffalo. No Jacksonville-week designation yet.", "impact": "Safety depth remains reduced pending his return.", "source_label": "Official Ravens postgame · Nov. 1", "source_url": "https://www.baltimoreravens.com/news/ravens-bills-inactives-andrew-vorhees--start-right-guard-week-8"}
+  - {"player": "Lamar Jackson", "position": "QB", "status": "Out", "injury": "Right thumb", "importance": "Critical", "expected_availability": "Surgery and an IR move are planned. Monday's update said he had not had surgery yet; no return date or formal roster move confirmed.", "impact": "Will miss at least four games once placed on IR; a season-ending absence remains possible.", "source_label": "Official Monday walkthrough update · Nov. 2", "source_url": "https://www.baltimoreravens.com/news/lamar-jackson-surgery-joe-fagnano-tyler-huntley-ravens-quarterback-injuries"}
+  - {"player": "Tyler Huntley", "position": "QB", "status": "Monitoring", "injury": "Toe", "importance": "Critical", "expected_availability": "Did not participate in Monday's walkthrough. Minter has not provided a recovery timetable or final Thursday designation.", "impact": "The quarterback plan remains unsettled.", "source_label": "Official Monday walkthrough update · Nov. 2", "source_url": "https://www.baltimoreravens.com/news/lamar-jackson-surgery-joe-fagnano-tyler-huntley-ravens-quarterback-injuries"}
+  - {"player": "Joe Fagnano", "position": "QB", "status": "Limited", "injury": "Ankle", "importance": "Critical", "expected_availability": "Estimated limited Monday. Minter expects him to have a chance to play Thursday; the starter has not been announced.", "impact": "The rookie may start; Reed provides practice-squad depth.", "source_label": "Official Monday walkthrough update · Nov. 2", "source_url": "https://www.baltimoreravens.com/news/lamar-jackson-surgery-joe-fagnano-tyler-huntley-ravens-quarterback-injuries"}
+  - {"player": "Tyler Loop", "position": "K", "status": "Out", "injury": "Right groin", "importance": "Starter", "expected_availability": "Minter announced Moody will kick Thursday. An IR move for Loop is possible but not yet confirmed.", "impact": "Moody will handle the kicking role against Jacksonville.", "source_label": "Official Monday walkthrough update · Nov. 2", "source_url": "https://www.baltimoreravens.com/news/tyler-loop-injury-moves-jake-moody-into-kicker-role-week-9-jacksonville-jaguars-vega-ioane-hopes-to-return"}
+  - {"player": "Jaylinn Hawkins", "position": "S", "status": "Monitoring", "injury": "Knee", "importance": "Starter", "expected_availability": "Estimated DNP Monday after missing Buffalo. No final Thursday designation.", "impact": "Safety depth remains reduced pending his return.", "source_label": "Official Monday walkthrough update · Nov. 2", "source_url": "https://www.baltimoreravens.com/news/lamar-jackson-surgery-joe-fagnano-tyler-huntley-ravens-quarterback-injuries"}
+  - {"player": "Vega Ioane", "position": "G", "status": "Limited", "injury": "Knee", "importance": "Starter", "expected_availability": "Estimated limited Monday. Says he hopes to play Thursday; final availability is undecided.", "impact": "A return would help stabilize the interior beside Jurgens.", "source_label": "Official Monday walkthrough update · Nov. 2", "source_url": "https://www.baltimoreravens.com/news/tyler-loop-injury-moves-jake-moody-into-kicker-role-week-9-jacksonville-jaguars-vega-ioane-hopes-to-return"}
+  - {"player": "Trey Hendrickson", "position": "EDGE", "status": "Limited", "injury": "Finger / ribs", "importance": "Starter", "expected_availability": "Estimated limited Monday. No final Thursday game designation.", "impact": "Monitor the starting edge rusher on a short week.", "source_label": "Official Monday walkthrough update · Nov. 2", "source_url": "https://www.baltimoreravens.com/news/lamar-jackson-surgery-joe-fagnano-tyler-huntley-ravens-quarterback-injuries"}
+  - {"player": "Justice Hill", "position": "RB", "status": "Limited", "injury": "Groin", "importance": "Starter", "expected_availability": "Estimated limited Monday. No final Thursday game designation.", "impact": "Passing-down and special-teams availability needs monitoring.", "source_label": "Official Monday walkthrough update · Nov. 2", "source_url": "https://www.baltimoreravens.com/news/lamar-jackson-surgery-joe-fagnano-tyler-huntley-ravens-quarterback-injuries"}
+  - {"player": "John Jenkins", "position": "NT", "status": "Limited", "injury": "Knee", "importance": "Starter", "expected_availability": "Estimated limited Monday. No final Thursday game designation.", "impact": "Interior defensive-line depth needs monitoring.", "source_label": "Official Monday walkthrough update · Nov. 2", "source_url": "https://www.baltimoreravens.com/news/lamar-jackson-surgery-joe-fagnano-tyler-huntley-ravens-quarterback-injuries"}
+  - {"player": "Roger Rosengarten", "position": "T", "status": "Limited", "injury": "Ankle", "importance": "Starter", "expected_availability": "Estimated limited Monday. No final Thursday game designation.", "impact": "Starting right tackle status matters after protection struggled in Buffalo.", "source_label": "Official Monday walkthrough update · Nov. 2", "source_url": "https://www.baltimoreravens.com/news/lamar-jackson-surgery-joe-fagnano-tyler-huntley-ravens-quarterback-injuries"}
+  - {"player": "John Simpson", "position": "G", "status": "Limited", "injury": "Back", "importance": "Starter", "expected_availability": "Estimated limited Monday. No final Thursday game designation.", "impact": "Another interior-line concern ahead of Thursday.", "source_label": "Official Monday walkthrough update · Nov. 2", "source_url": "https://www.baltimoreravens.com/news/lamar-jackson-surgery-joe-fagnano-tyler-huntley-ravens-quarterback-injuries"}
+  - {"player": "Roquan Smith", "position": "LB", "status": "Limited", "injury": "Foot", "importance": "Starter", "expected_availability": "Estimated limited Monday. No final Thursday game designation.", "impact": "The defensive signal-caller is limited after his 11-tackle game.", "source_label": "Official Monday walkthrough update · Nov. 2", "source_url": "https://www.baltimoreravens.com/news/lamar-jackson-surgery-joe-fagnano-tyler-huntley-ravens-quarterback-injuries"}
+  - {"player": "Ronnie Stanley", "position": "T", "status": "Limited", "injury": "Toe / ankle / rest", "importance": "Starter", "expected_availability": "Estimated limited Monday. No final Thursday game designation.", "impact": "Starting left tackle continues managing his workload.", "source_label": "Official Monday walkthrough update · Nov. 2", "source_url": "https://www.baltimoreravens.com/news/lamar-jackson-surgery-joe-fagnano-tyler-huntley-ravens-quarterback-injuries"}
   - {"player": "Tavius Robinson", "position": "EDGE", "status": "Injured Reserve", "injury": "Pectoral", "importance": "Starter", "expected_availability": "Remains on the official IR roster.", "impact": "Season-ending absence reduces the edge rotation.", "source_label": "Official roster · checked Nov. 1", "source_url": "https://www.baltimoreravens.com/team/players-roster/"}
   - {"player": "Durham Smythe", "position": "TE", "status": "Injured Reserve", "injury": "Torn Achilles", "importance": "Rotation", "expected_availability": "Remains on the official IR roster.", "impact": "Season-ending absence reduces blocking depth.", "source_label": "Official roster · checked Nov. 1", "source_url": "https://www.baltimoreravens.com/team/players-roster/"}
   - {"player": "Danny Pinter", "position": "C", "status": "Injured Reserve", "injury": "Knee", "importance": "Starter", "expected_availability": "Remains on the official IR roster.", "impact": "Unavailable at center behind Jurgens.", "source_label": "Official roster · checked Nov. 1", "source_url": "https://www.baltimoreravens.com/team/players-roster/"}
