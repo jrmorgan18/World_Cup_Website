@@ -87,7 +87,7 @@
       "full_name": "Cincinnati Bengals",
       "record": "5-2",
       "value": 60.6,
-      "unrounded_value": 60.6476795677666,
+      "unrounded_value": 60.647679567766595,
       "offense_rank": 7,
       "defense_rank": 18,
       "special_teams_rank": 7
@@ -99,7 +99,7 @@
       "full_name": "Detroit Lions",
       "record": "5-2",
       "value": 60.0,
-      "unrounded_value": 60.022922138521814,
+      "unrounded_value": 60.02292213852181,
       "offense_rank": 4,
       "defense_rank": 26,
       "special_teams_rank": 3
@@ -159,7 +159,7 @@
       "full_name": "Denver Broncos",
       "record": "6-2",
       "value": 55.4,
-      "unrounded_value": 55.43432732670725,
+      "unrounded_value": 55.43432732670724,
       "offense_rank": 22,
       "defense_rank": 4,
       "special_teams_rank": 9
@@ -267,7 +267,7 @@
       "full_name": "Arizona Cardinals",
       "record": "3-5",
       "value": 44.7,
-      "unrounded_value": 44.65038516577216,
+      "unrounded_value": 44.65038516577215,
       "offense_rank": 15,
       "defense_rank": 20,
       "special_teams_rank": 27
@@ -291,7 +291,7 @@
       "full_name": "Indianapolis Colts",
       "record": "2-6",
       "value": 43.2,
-      "unrounded_value": 43.23966679995764,
+      "unrounded_value": 43.23966679995763,
       "offense_rank": 17,
       "defense_rank": 24,
       "special_teams_rank": 14
@@ -303,7 +303,7 @@
       "full_name": "Cleveland Browns",
       "record": "5-3",
       "value": 42.7,
-      "unrounded_value": 42.71386240672708,
+      "unrounded_value": 42.713862406727074,
       "offense_rank": 21,
       "defense_rank": 17,
       "special_teams_rank": 26
@@ -327,7 +327,7 @@
       "full_name": "New Orleans Saints",
       "record": "2-5",
       "value": 36.3,
-      "unrounded_value": 36.261815761261076,
+      "unrounded_value": 36.26181576126107,
       "offense_rank": 19,
       "defense_rank": 28,
       "special_teams_rank": 13
@@ -363,7 +363,7 @@
       "full_name": "Los Angeles Chargers",
       "record": "0-7",
       "value": 30.0,
-      "unrounded_value": 29.978544878013803,
+      "unrounded_value": 29.9785448780138,
       "offense_rank": 32,
       "defense_rank": 13,
       "special_teams_rank": 29
@@ -375,7 +375,7 @@
       "full_name": "Tennessee Titans",
       "record": "1-7",
       "value": 29.7,
-      "unrounded_value": 29.714548201794337,
+      "unrounded_value": 29.71454820179433,
       "offense_rank": 29,
       "defense_rank": 29,
       "special_teams_rank": 23
