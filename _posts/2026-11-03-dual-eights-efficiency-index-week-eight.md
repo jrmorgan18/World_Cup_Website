@@ -16,7 +16,7 @@ efficiency_week: 8
 hero_image: "/assets/images/nfl-efficiency-week-eight-2026/jaguars-colts-header.jpg"
 thumbnail: "/assets/images/nfl-efficiency-week-eight-2026/jaguars-colts-header.jpg"
 hero_wide: true
-hero_alt: "Jacksonville ball carrier finds space against the Colts in Week 8"
+hero_alt: "Jaguars players celebrate on the field against the Colts in Week 8"
 hero_credit: "Chris Kim / Jacksonville Jaguars"
 hero_credit_url: "https://www.jaguars.com/photos/game-action-colts-vs-jaguars-2026-season-week-8"
 home_feature: false
