@@ -21,7 +21,7 @@ hero_credit_url: "https://www.nfl.com/news/ravens-qb-lamar-jackson-suffers-right
 home_feature: false
 home_recent: true
 home_recent_label: "First and Five"
-ravens_feature: true
+ravens_feature: false
 ravens_feature_image: true
 feature_label: "Week 8 takeaways"
 ravens_feature_mark: "5"
