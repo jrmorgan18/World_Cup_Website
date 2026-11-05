@@ -40,6 +40,12 @@ Parameters:
     <p><span>Current DEPI rank</span><strong>No. {{ depi_team.rank }}</strong></p>
   </div>
   <p class="ravens-metric-interpretation">Points relative to an average team on a neutral field: offense {% if depi_team.offense_points > 0 %}+{% endif %}{{ depi_team.offense_points | round: 1 }}, defense {% if depi_team.defense_points > 0 %}+{% endif %}{{ depi_team.defense_points | round: 1 }}, special teams {% if depi_team.st_points > 0 %}+{% endif %}{{ depi_team.st_points | round: 1 }} and quarterback {% if depi_team.qb_points > 0 %}+{% endif %}{{ depi_team.qb_points | round: 1 }}. On observed play-by-play efficiency alone, the Efficiency Index has them No. {{ depi_team.efficiency_rank }}.</p>
+  {% assign confirmed_qb = site.data.ravens_dashboard.confirmed_quarterback %}
+  {% assign upcoming_game = site.data.ravens_dashboard_stats.header.next_game %}
+  {% if depi_abbr == "BAL" and confirmed_qb.name and confirmed_qb.week == upcoming_game.week and confirmed_qb.opponent == upcoming_game.opponent_abbr and depi_team.expected_qb.name and confirmed_qb.name != depi_team.expected_qb.name %}
+    {% assign confirmed_option = depi_team.qb_options | where: "name", confirmed_qb.name | first %}
+    <p class="ravens-metric-interpretation">The published Week {{ nfl.rating_week }} rank assumes {{ depi_team.expected_qb.name }}. <a href="{{ confirmed_qb.source_url }}">{{ confirmed_qb.name }} is confirmed to start in Week {{ confirmed_qb.week }}</a>.{% if confirmed_option.points_change != nil %} His quarterback scenario puts the Ravens at {{ depi_team.strength | plus: confirmed_option.points_change | round: 1 }} points on a neutral field.{% endif %}</p>
+  {% endif %}
   <details class="ravens-metric-definition">
     <summary>What this measures</summary>
     <p>DEPI is the Dual Eights predictive power rating, expressed in points relative to an average NFL team. It blends opponent-adjusted offense, defense and special teams with the expected quarterback and carries a share of prior-season strength. The difference between two teams' ratings, plus home field ({{ nfl.home_advantage | round: 1 }} points), is the model's projected margin. Unlike the Efficiency Index, it is built to forecast games rather than describe them. Higher is better. <a href="{{ '/nfl/rankings/' | relative_url }}?team={{ depi_abbr }}#team-detail">All 32 teams &rarr;</a></p>

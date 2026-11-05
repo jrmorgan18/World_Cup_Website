@@ -130,8 +130,10 @@ validate_analytics = lambda do |unit_name, metrics|
     assert(!metric["label"].to_s.empty?, "#{unit_name} has an unlabeled analytics metric", errors)
     assert(!metric["value"].to_s.empty?, "#{unit_name} has an empty analytics value", errors)
     rank_group = metric["rank_group"].to_s
-    assert(metric["rank"].is_a?(Integer) && metric["rank"] >= 1, "#{unit_name} has an invalid analytics rank", errors)
-    assert(rank_group != "NFL" || metric["rank"] <= 32, "#{unit_name} has an invalid NFL analytics rank", errors)
+    rank = metric["rank"]
+    unqualified_qbr = metric["label"] == "Jackson QBR" && rank.nil? && !metric["sample_note"].to_s.empty?
+    assert(unqualified_qbr || (rank.is_a?(Integer) && rank >= 1), "#{unit_name} has an invalid analytics rank", errors)
+    assert(unqualified_qbr || rank_group != "NFL" || (rank.is_a?(Integer) && rank <= 32), "#{unit_name} has an invalid NFL analytics rank", errors)
     if metric["label"] == "Flowers YPRR"
       routes = metric["routes"].to_i
       minimum = metric["minimum_routes"].to_i

@@ -295,14 +295,15 @@ def signed_text(value, digits, suffix=""):
     return f"{number:+.{digits}f}{suffix}"
 
 
-def fetch_espn_qbr(season):
-    """Fetch ESPN's qualified, league-wide regular-season Total QBR table."""
+def fetch_espn_qbr(season, qualified=True):
+    """Fetch ESPN's regular-season Total QBR table."""
     query = urlencode({
         "region": "us",
         "lang": "en",
         "qbrType": "seasons",
         "seasontype": 2,
-        "isqualified": "true",
+        "isqualified": "true" if qualified else "false",
+        **({} if qualified else {"limit": 200}),
         "sort": "schedAdjQBR:desc",
         "season": season,
     })
@@ -317,8 +318,8 @@ def fetch_espn_qbr(season):
         return json.load(response)
 
 
-def espn_qbr_metric(data, season, completed_week=None):
-    """Return Lamar Jackson's qualified Total QBR and league rank."""
+def espn_qbr_metric(data, season, completed_week=None, qualified=True):
+    """Return Lamar Jackson's Total QBR and rank when he qualifies."""
     categories = data.get("categories") or []
     if not categories:
         return None
@@ -339,11 +340,11 @@ def espn_qbr_metric(data, season, completed_week=None):
         return None
     totals = player["categories"][0].get("totals") or []
     ranks = player["categories"][0].get("ranks") or []
-    if qbr_index >= len(totals) or qbr_index >= len(ranks):
+    if qbr_index >= len(totals) or (qualified and qbr_index >= len(ranks)):
         return None
     try:
         value = float(totals[qbr_index])
-        rank = int(float(ranks[qbr_index]))
+        rank = int(float(ranks[qbr_index])) if qualified else None
     except (TypeError, ValueError):
         return None
 
@@ -351,7 +352,7 @@ def espn_qbr_metric(data, season, completed_week=None):
     if week and completed_week:
         week = min(int(week), int(completed_week))
     period_label = f"Through Week {int(week)}" if week else f"{season} regular season"
-    return {
+    metric = {
         "source_label": "ESPN",
         "source_url": ESPN_QBR_PAGE_URL.format(season=season),
         "period_label": period_label,
@@ -360,6 +361,9 @@ def espn_qbr_metric(data, season, completed_week=None):
         "rank": rank,
         "rank_group": "NFL",
     }
+    if not qualified:
+        metric["sample_note"] = "Below ESPN's qualification minimum."
+    return metric
 
 
 def existing_qbr_metric(existing):
@@ -1123,7 +1127,16 @@ def main():
         receiving_metric = None
         if current["week"] > 0:
             try:
-                qbr_metric = espn_qbr_metric(fetch_espn_qbr(args.season), args.season, current["week"])
+                qualified_qbr = fetch_espn_qbr(args.season)
+                qbr_metric = espn_qbr_metric(qualified_qbr, args.season, current["week"])
+                qualified_players = qualified_qbr.get("athletes") or []
+                jackson_qualified = any(
+                    str(row.get("athlete", {}).get("id")) == LAMAR_ESPN_ID for row in qualified_players
+                )
+                if qualified_players and not jackson_qualified:
+                    qbr_metric = espn_qbr_metric(
+                        fetch_espn_qbr(args.season, qualified=False), args.season, current["week"], qualified=False
+                    )
             except Exception as error:
                 print(f"ESPN QBR unavailable; keeping the last good value: {error}", file=sys.stderr)
             qbr_metric = qbr_metric or existing_qbr_metric(existing)

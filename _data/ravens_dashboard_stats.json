@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T18:38:15Z",
+  "generated_at": "2026-11-05T04:32:36Z",
   "as_of": "2026-11-04",
   "season": 2026,
   "benchmark_season": 2025,
@@ -1480,11 +1480,12 @@
       {
         "source_label": "ESPN",
         "source_url": "https://www.espn.com/nfl/qbr/_/season/2026/seasontype/2",
-        "period_label": "Through Week 7",
+        "period_label": "Through Week 8",
         "label": "Jackson QBR",
-        "value": "81.9",
-        "rank": 2,
-        "rank_group": "NFL"
+        "value": "82.4",
+        "rank": null,
+        "rank_group": "NFL",
+        "sample_note": "Below ESPN's qualification minimum."
       }
     ],
     "Running backs": [
@@ -1508,7 +1509,7 @@
         "rank": 3,
         "rank_group": "WR",
         "season": 2026,
-        "source_updated_at": "2026-11-04T13:00:39.257000+00:00",
+        "source_updated_at": "2026-11-05T03:26:51.439000+00:00",
         "routes": 193,
         "receiving_yards": 608,
         "qualified_receivers": 118,
@@ -1582,19 +1583,19 @@
       {
         "source_label": "ESPN",
         "source_url": "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking",
-        "period_label": "Through Week 7",
+        "period_label": "Through Week 8",
         "label": "Team PBWR",
-        "value": "48%",
-        "rank": 20,
+        "value": "47%",
+        "rank": 21,
         "rank_group": "NFL"
       },
       {
         "source_label": "ESPN",
         "source_url": "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking",
-        "period_label": "Through Week 7",
+        "period_label": "Through Week 8",
         "label": "Team RBWR",
-        "value": "72%",
-        "rank": 21,
+        "value": "73%",
+        "rank": 19,
         "rank_group": "NFL"
       }
     ],
@@ -1602,39 +1603,30 @@
       {
         "source_label": "ESPN",
         "source_url": "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking",
-        "period_label": "Through Week 7",
+        "period_label": "Through Week 8",
         "label": "Team RSWR",
-        "value": "31%",
-        "rank": 8,
+        "value": "30%",
+        "rank": 12,
         "rank_group": "NFL"
-      },
-      {
-        "source_label": "ESPN",
-        "source_url": "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking",
-        "period_label": "Through Week 7",
-        "label": "Campbell PRWR",
-        "value": "16%",
-        "rank": 20,
-        "rank_group": "DT"
       }
     ],
     "Edge rushers": [
       {
         "source_label": "ESPN",
         "source_url": "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking",
-        "period_label": "Through Week 7",
+        "period_label": "Through Week 8",
         "label": "Team PRWR",
-        "value": "54%",
-        "rank": 7,
+        "value": "52%",
+        "rank": 13,
         "rank_group": "NFL"
       },
       {
         "source_label": "ESPN",
         "source_url": "https://www.espn.com/nfl/story/_/id/49742016/2026-win-rates-team-player-rankings-pass-rush-run-stop-blocking",
-        "period_label": "Through Week 7",
+        "period_label": "Through Week 8",
         "label": "Hendrickson PRWR",
-        "value": "30%",
-        "rank": 3,
+        "value": "27%",
+        "rank": 4,
         "rank_group": "EDGE"
       }
     ],
@@ -1953,6 +1945,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-11-04T18:38:15Z"
+    "retrieved_at": "2026-11-05T04:32:36Z"
   }
 }
