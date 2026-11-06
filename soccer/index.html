@@ -38,7 +38,7 @@ section_theme: soccer
 {% assign previous_usmnt_weekly_story = site.posts | where: "usmnt_weekly_feature", true | where_exp: "post", "post.url != usmnt_weekly_story.url" | first %}
 {% assign usmnt_camp_story = site.posts | where: "usmnt_camp_feature", true | first %}
 {% assign previous_euro_team_of_week_story = site.posts | where: "euro_team_of_week_feature", true | where_exp: "post", "post.url != euro_team_of_week_story.url" | first %}
-{% assign best_xi_image = euro_team_of_week_story.soccer_promo_image %}
+{% assign best_xi_image = '/assets/images/champions-league-best-xi-matchday-4-2026.png' %}
 {% assign soccer_feature = euro_team_of_week_story | default: usmnt_weekly_story | default: champions_league_recap_story | default: power_rankings_story | default: usmnt_camp_story | default: premier_league_preview_story | default: longform_feature %}
 {% assign power_rankings_edition = site.data.european_club_power_rankings.editions | first %}
 {% if soccer_feature %}
@@ -47,10 +47,10 @@ section_theme: soccer
     {% if best_xi_image or power_rankings_edition %}
     <div class="soccer-left-rail">
       {% if best_xi_image %}
-      <a class="soccer-euro-totw-promo" href="{{ euro_team_of_week_story.url | relative_url }}">
-        <img src="{{ best_xi_image | relative_url }}" alt="{{ euro_team_of_week_story.soccer_promo_alt | escape }}" loading="eager">
-        <span>{{ euro_team_of_week_story.soccer_promo_label }} &middot; Best XI</span>
-      </a>
+      <div class="soccer-euro-totw-promo">
+        <img src="{{ best_xi_image | relative_url }}" alt="Champions League Matchday 4 Best XI, with Tasos Douvikas of Como as Player of the Round" width="1122" height="1402" loading="eager">
+        <span>Champions League &middot; Matchday 4 Best XI</span>
+      </div>
       {% endif %}
       {% if power_rankings_edition %}
       <aside class="soccer-power-rankings" aria-labelledby="soccer-power-rankings-heading">
