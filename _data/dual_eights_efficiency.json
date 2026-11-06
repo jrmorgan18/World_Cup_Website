@@ -1,9 +1,9 @@
 {
   "season": 2026,
-  "through_week": 8,
+  "through_week": 9,
   "model_version": "2.1",
-  "as_of": "2026-11-04",
-  "label": "Through available Week 8 games · v2.1",
+  "as_of": "2026-11-06",
+  "label": "Through available Week 9 games · v2.1",
   "sample_note": "Completed games only · 45% offense / 45% defense / 10% special teams",
   "article_url": "/ravens/dual-eights-efficiency-index-week-four-2026/",
   "article_link_label": "Read the v2.1 methodology",
@@ -13,12 +13,12 @@
       "abbr": "JAX",
       "name": "Jaguars",
       "full_name": "Jacksonville Jaguars",
-      "record": "5-2",
-      "value": 70.0,
-      "unrounded_value": 69.95493025952925,
-      "offense_rank": 2,
-      "defense_rank": 6,
-      "special_teams_rank": 11
+      "record": "6-2",
+      "value": 71.3,
+      "unrounded_value": 71.33905592292902,
+      "offense_rank": 4,
+      "defense_rank": 4,
+      "special_teams_rank": 8
     },
     {
       "rank": 2,
@@ -27,7 +27,7 @@
       "full_name": "Chicago Bears",
       "record": "6-2",
       "value": 67.6,
-      "unrounded_value": 67.63597555364939,
+      "unrounded_value": 67.62169928834055,
       "offense_rank": 5,
       "defense_rank": 10,
       "special_teams_rank": 4
@@ -39,7 +39,7 @@
       "full_name": "San Francisco 49ers",
       "record": "6-1",
       "value": 67.3,
-      "unrounded_value": 67.26539596804537,
+      "unrounded_value": 67.2945851217916,
       "offense_rank": 1,
       "defense_rank": 19,
       "special_teams_rank": 22
@@ -51,7 +51,7 @@
       "full_name": "Tampa Bay Buccaneers",
       "record": "3-5",
       "value": 64.2,
-      "unrounded_value": 64.17188603832362,
+      "unrounded_value": 64.17638344779127,
       "offense_rank": 27,
       "defense_rank": 2,
       "special_teams_rank": 1
@@ -63,8 +63,8 @@
       "full_name": "Buffalo Bills",
       "record": "6-1",
       "value": 61.2,
-      "unrounded_value": 61.2205276490893,
-      "offense_rank": 3,
+      "unrounded_value": 61.162745815846,
+      "offense_rank": 2,
       "defense_rank": 27,
       "special_teams_rank": 2
     },
@@ -74,10 +74,10 @@
       "name": "Rams",
       "full_name": "Los Angeles Rams",
       "record": "4-4",
-      "value": 60.9,
-      "unrounded_value": 60.947160375054956,
+      "value": 61.0,
+      "unrounded_value": 60.96406935599231,
       "offense_rank": 9,
-      "defense_rank": 5,
+      "defense_rank": 6,
       "special_teams_rank": 30
     },
     {
@@ -86,8 +86,8 @@
       "name": "Bengals",
       "full_name": "Cincinnati Bengals",
       "record": "5-2",
-      "value": 60.6,
-      "unrounded_value": 60.647679567766595,
+      "value": 60.7,
+      "unrounded_value": 60.678500377120855,
       "offense_rank": 7,
       "defense_rank": 18,
       "special_teams_rank": 7
@@ -99,8 +99,8 @@
       "full_name": "Detroit Lions",
       "record": "5-2",
       "value": 60.0,
-      "unrounded_value": 60.02292213852181,
-      "offense_rank": 4,
+      "unrounded_value": 59.98173876176066,
+      "offense_rank": 3,
       "defense_rank": 26,
       "special_teams_rank": 3
     },
@@ -111,7 +111,7 @@
       "full_name": "Seattle Seahawks",
       "record": "4-4",
       "value": 59.6,
-      "unrounded_value": 59.59190363713816,
+      "unrounded_value": 59.625484095115105,
       "offense_rank": 28,
       "defense_rank": 3,
       "special_teams_rank": 5
@@ -123,7 +123,7 @@
       "full_name": "Kansas City Chiefs",
       "record": "5-2",
       "value": 58.4,
-      "unrounded_value": 58.357156768412935,
+      "unrounded_value": 58.36799443986027,
       "offense_rank": 6,
       "defense_rank": 15,
       "special_teams_rank": 25
@@ -134,8 +134,8 @@
       "name": "Patriots",
       "full_name": "New England Patriots",
       "record": "5-3",
-      "value": 57.5,
-      "unrounded_value": 57.534179461344,
+      "value": 57.6,
+      "unrounded_value": 57.57307952226898,
       "offense_rank": 10,
       "defense_rank": 8,
       "special_teams_rank": 21
@@ -146,8 +146,8 @@
       "name": "Vikings",
       "full_name": "Minnesota Vikings",
       "record": "6-1",
-      "value": 56.0,
-      "unrounded_value": 55.97065664891295,
+      "value": 55.9,
+      "unrounded_value": 55.91798274714749,
       "offense_rank": 31,
       "defense_rank": 1,
       "special_teams_rank": 6
@@ -158,11 +158,11 @@
       "name": "Broncos",
       "full_name": "Denver Broncos",
       "record": "6-2",
-      "value": 55.4,
-      "unrounded_value": 55.43432732670724,
+      "value": 55.5,
+      "unrounded_value": 55.53253269036008,
       "offense_rank": 22,
-      "defense_rank": 4,
-      "special_teams_rank": 9
+      "defense_rank": 5,
+      "special_teams_rank": 10
     },
     {
       "rank": 14,
@@ -171,7 +171,7 @@
       "full_name": "Pittsburgh Steelers",
       "record": "6-2",
       "value": 54.9,
-      "unrounded_value": 54.889004372433696,
+      "unrounded_value": 54.86104574827115,
       "offense_rank": 12,
       "defense_rank": 9,
       "special_teams_rank": 16
@@ -182,8 +182,8 @@
       "name": "Texans",
       "full_name": "Houston Texans",
       "record": "2-5",
-      "value": 50.7,
-      "unrounded_value": 50.653044774282996,
+      "value": 50.8,
+      "unrounded_value": 50.77551653630127,
       "offense_rank": 16,
       "defense_rank": 12,
       "special_teams_rank": 12
@@ -193,11 +193,11 @@
       "abbr": "BAL",
       "name": "Ravens",
       "full_name": "Baltimore Ravens",
-      "record": "4-4",
-      "value": 48.8,
-      "unrounded_value": 48.78201650181663,
-      "offense_rank": 13,
-      "defense_rank": 14,
+      "record": "4-5",
+      "value": 48.2,
+      "unrounded_value": 48.19971031011485,
+      "offense_rank": 14,
+      "defense_rank": 13,
       "special_teams_rank": 24
     },
     {
@@ -207,8 +207,8 @@
       "full_name": "Carolina Panthers",
       "record": "3-4",
       "value": 47.7,
-      "unrounded_value": 47.73234424228496,
-      "offense_rank": 14,
+      "unrounded_value": 47.69269892422371,
+      "offense_rank": 13,
       "defense_rank": 22,
       "special_teams_rank": 15
     },
@@ -219,7 +219,7 @@
       "full_name": "New York Jets",
       "record": "2-6",
       "value": 47.0,
-      "unrounded_value": 47.021112683029344,
+      "unrounded_value": 47.00221996967267,
       "offense_rank": 11,
       "defense_rank": 23,
       "special_teams_rank": 19
@@ -230,8 +230,8 @@
       "name": "Falcons",
       "full_name": "Atlanta Falcons",
       "record": "3-5",
-      "value": 46.0,
-      "unrounded_value": 45.95130848182965,
+      "value": 45.8,
+      "unrounded_value": 45.806821855357946,
       "offense_rank": 23,
       "defense_rank": 7,
       "special_teams_rank": 31
@@ -243,10 +243,10 @@
       "full_name": "Dallas Cowboys",
       "record": "3-5",
       "value": 45.5,
-      "unrounded_value": 45.462399228276226,
+      "unrounded_value": 45.46196273794664,
       "offense_rank": 8,
       "defense_rank": 31,
-      "special_teams_rank": 8
+      "special_teams_rank": 9
     },
     {
       "rank": 21,
@@ -255,7 +255,7 @@
       "full_name": "New York Giants",
       "record": "4-2-1",
       "value": 45.3,
-      "unrounded_value": 45.26190787480213,
+      "unrounded_value": 45.25445376638444,
       "offense_rank": 24,
       "defense_rank": 16,
       "special_teams_rank": 18
@@ -267,7 +267,7 @@
       "full_name": "Arizona Cardinals",
       "record": "3-5",
       "value": 44.7,
-      "unrounded_value": 44.65038516577215,
+      "unrounded_value": 44.650184343250295,
       "offense_rank": 15,
       "defense_rank": 20,
       "special_teams_rank": 27
@@ -279,7 +279,7 @@
       "full_name": "Green Bay Packers",
       "record": "5-3",
       "value": 44.5,
-      "unrounded_value": 44.49129606032896,
+      "unrounded_value": 44.45591670070924,
       "offense_rank": 20,
       "defense_rank": 11,
       "special_teams_rank": 28
@@ -291,9 +291,9 @@
       "full_name": "Indianapolis Colts",
       "record": "2-6",
       "value": 43.2,
-      "unrounded_value": 43.23966679995763,
+      "unrounded_value": 43.18811330463001,
       "offense_rank": 17,
-      "defense_rank": 24,
+      "defense_rank": 25,
       "special_teams_rank": 14
     },
     {
@@ -302,8 +302,8 @@
       "name": "Browns",
       "full_name": "Cleveland Browns",
       "record": "5-3",
-      "value": 42.7,
-      "unrounded_value": 42.713862406727074,
+      "value": 42.6,
+      "unrounded_value": 42.5742640727235,
       "offense_rank": 21,
       "defense_rank": 17,
       "special_teams_rank": 26
@@ -315,34 +315,34 @@
       "full_name": "Washington Commanders",
       "record": "2-4-1",
       "value": 39.7,
-      "unrounded_value": 39.677200433775354,
+      "unrounded_value": 39.725937368711016,
       "offense_rank": 25,
-      "defense_rank": 25,
+      "defense_rank": 24,
       "special_teams_rank": 20
     },
     {
       "rank": 27,
-      "abbr": "NO",
-      "name": "Saints",
-      "full_name": "New Orleans Saints",
-      "record": "2-5",
-      "value": 36.3,
-      "unrounded_value": 36.26181576126107,
-      "offense_rank": 19,
-      "defense_rank": 28,
-      "special_teams_rank": 13
-    },
-    {
-      "rank": 28,
       "abbr": "PHI",
       "name": "Eagles",
       "full_name": "Philadelphia Eagles",
       "record": "2-6",
-      "value": 36.0,
-      "unrounded_value": 35.968913389104955,
+      "value": 36.1,
+      "unrounded_value": 36.13745660849221,
       "offense_rank": 30,
       "defense_rank": 21,
-      "special_teams_rank": 10
+      "special_teams_rank": 11
+    },
+    {
+      "rank": 28,
+      "abbr": "NO",
+      "name": "Saints",
+      "full_name": "New Orleans Saints",
+      "record": "2-5",
+      "value": 36.1,
+      "unrounded_value": 36.072333139279806,
+      "offense_rank": 19,
+      "defense_rank": 28,
+      "special_teams_rank": 13
     },
     {
       "rank": 29,
@@ -351,7 +351,7 @@
       "full_name": "Las Vegas Raiders",
       "record": "4-4",
       "value": 33.8,
-      "unrounded_value": 33.848588259488906,
+      "unrounded_value": 33.84132164185512,
       "offense_rank": 18,
       "defense_rank": 30,
       "special_teams_rank": 17
@@ -363,9 +363,9 @@
       "full_name": "Los Angeles Chargers",
       "record": "0-7",
       "value": 30.0,
-      "unrounded_value": 29.9785448780138,
+      "unrounded_value": 29.97988221056449,
       "offense_rank": 32,
-      "defense_rank": 13,
+      "defense_rank": 14,
       "special_teams_rank": 29
     },
     {
@@ -375,7 +375,7 @@
       "full_name": "Tennessee Titans",
       "record": "1-7",
       "value": 29.7,
-      "unrounded_value": 29.71454820179433,
+      "unrounded_value": 29.653617420208153,
       "offense_rank": 29,
       "defense_rank": 29,
       "special_teams_rank": 23
@@ -387,7 +387,7 @@
       "full_name": "Miami Dolphins",
       "record": "1-6",
       "value": 25.3,
-      "unrounded_value": 25.29639732300256,
+      "unrounded_value": 25.300450915353018,
       "offense_rank": 26,
       "defense_rank": 32,
       "special_teams_rank": 32
