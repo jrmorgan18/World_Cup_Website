@@ -34,12 +34,13 @@ section_theme: soccer
 {% assign premier_league_weekly_recap_story = site.posts | where: "premier_league_weekly_recap_feature", true | first %}
 {% assign euro_team_of_week_story = site.posts | where: "euro_team_of_week_feature", true | first %}
 {% assign champions_league_recap_story = site.posts | where: "champions_league_recap_feature", true | first %}
+{% assign previous_champions_league_recap_story = site.posts | where: "champions_league_recap_feature", true | where_exp: "post", "post.url != champions_league_recap_story.url" | first %}
 {% assign usmnt_weekly_story = site.posts | where: "usmnt_weekly_feature", true | first %}
 {% assign previous_usmnt_weekly_story = site.posts | where: "usmnt_weekly_feature", true | where_exp: "post", "post.url != usmnt_weekly_story.url" | first %}
 {% assign usmnt_camp_story = site.posts | where: "usmnt_camp_feature", true | first %}
 {% assign previous_euro_team_of_week_story = site.posts | where: "euro_team_of_week_feature", true | where_exp: "post", "post.url != euro_team_of_week_story.url" | first %}
 {% assign best_xi_image = '/assets/images/champions-league-best-xi-matchday-4-2026.png' %}
-{% assign soccer_feature = euro_team_of_week_story | default: usmnt_weekly_story | default: champions_league_recap_story | default: power_rankings_story | default: usmnt_camp_story | default: premier_league_preview_story | default: longform_feature %}
+{% assign soccer_feature = champions_league_recap_story | default: euro_team_of_week_story | default: usmnt_weekly_story | default: power_rankings_story | default: usmnt_camp_story | default: premier_league_preview_story | default: longform_feature %}
 {% assign power_rankings_edition = site.data.european_club_power_rankings.editions | first %}
 {% if soccer_feature %}
 <section class="soccer-editorial-shell">
@@ -47,10 +48,10 @@ section_theme: soccer
     {% if best_xi_image or power_rankings_edition %}
     <div class="soccer-left-rail">
       {% if best_xi_image %}
-      <div class="soccer-euro-totw-promo">
+      <a class="soccer-euro-totw-promo" href="{{ champions_league_recap_story.url | relative_url }}">
         <img src="{{ best_xi_image | relative_url }}" alt="Champions League Matchday 4 Best XI, with Tasos Douvikas of Como as Player of the Round" width="1122" height="1402" loading="eager">
         <span>Champions League &middot; Matchday 4 Best XI</span>
-      </div>
+      </a>
       {% endif %}
       {% if power_rankings_edition %}
       <aside class="soccer-power-rankings" aria-labelledby="soccer-power-rankings-heading">
@@ -100,14 +101,15 @@ section_theme: soccer
       </div>
       <ol class="soccer-sidebar-list">
         {% if usmnt_weekly_story and usmnt_weekly_story.url != soccer_feature.url %}<li><span class="soccer-sidebar-number">01</span><a href="{{ usmnt_weekly_story.url | relative_url }}"><small>USMNT Weekly</small><h3>{{ usmnt_weekly_story.title }}</h3><p>{{ usmnt_weekly_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-        {% if barcelona_breaking_story %}<li><span class="soccer-sidebar-number">02</span><a href="{{ barcelona_breaking_story.url | relative_url }}"><small>Barcelona</small><h3>{{ barcelona_breaking_story.title }}</h3><p>{{ barcelona_breaking_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-        {% if champions_league_recap_story %}<li><span class="soccer-sidebar-number">03</span><a href="{{ champions_league_recap_story.url | relative_url }}"><small>Champions League</small><h3>{{ champions_league_recap_story.title }}</h3><p>{{ champions_league_recap_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-        {% if power_rankings_story %}<li><span class="soccer-sidebar-number">04</span><a href="{{ power_rankings_story.url | relative_url }}"><small>European Power Rankings</small><h3>{{ power_rankings_story.title }}</h3><p>{{ power_rankings_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-        {% if previous_barcelona_story %}<li><span class="soccer-sidebar-number">05</span><a href="{{ previous_barcelona_story.url | relative_url }}"><small>Barcelona</small><h3>{{ previous_barcelona_story.title }}</h3><p>{{ previous_barcelona_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-        {% if previous_usmnt_weekly_story %}<li><span class="soccer-sidebar-number">06</span><a href="{{ previous_usmnt_weekly_story.url | relative_url }}"><small>USMNT Weekly</small><h3>{{ previous_usmnt_weekly_story.title }}</h3><p>{{ previous_usmnt_weekly_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-        {% if previous_euro_team_of_week_story %}<li><span class="soccer-sidebar-number">07</span><a href="{{ previous_euro_team_of_week_story.url | relative_url }}"><small>European Team of the Week</small><h3>{{ previous_euro_team_of_week_story.title }}</h3><p>{{ previous_euro_team_of_week_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-        {% if premier_league_weekly_recap_story %}<li><span class="soccer-sidebar-number">08</span><a href="{{ premier_league_weekly_recap_story.url | relative_url }}"><small>Premier League</small><h3>{{ premier_league_weekly_recap_story.title }}</h3><p>{{ premier_league_weekly_recap_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-        {% if rodri_barcelona_story %}<li><span class="soccer-sidebar-number">09</span><a href="{{ rodri_barcelona_story.url | relative_url }}"><small>Barcelona</small><h3>{{ rodri_barcelona_story.title }}</h3><p>{{ rodri_barcelona_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if euro_team_of_week_story %}<li><span class="soccer-sidebar-number">02</span><a href="{{ euro_team_of_week_story.url | relative_url }}"><small>European Team of the Week</small><h3>{{ euro_team_of_week_story.title }}</h3><p>{{ euro_team_of_week_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if barcelona_breaking_story %}<li><span class="soccer-sidebar-number">03</span><a href="{{ barcelona_breaking_story.url | relative_url }}"><small>Barcelona</small><h3>{{ barcelona_breaking_story.title }}</h3><p>{{ barcelona_breaking_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if previous_champions_league_recap_story %}<li><span class="soccer-sidebar-number">04</span><a href="{{ previous_champions_league_recap_story.url | relative_url }}"><small>Champions League</small><h3>{{ previous_champions_league_recap_story.title }}</h3><p>{{ previous_champions_league_recap_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if power_rankings_story %}<li><span class="soccer-sidebar-number">05</span><a href="{{ power_rankings_story.url | relative_url }}"><small>European Power Rankings</small><h3>{{ power_rankings_story.title }}</h3><p>{{ power_rankings_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if previous_barcelona_story %}<li><span class="soccer-sidebar-number">06</span><a href="{{ previous_barcelona_story.url | relative_url }}"><small>Barcelona</small><h3>{{ previous_barcelona_story.title }}</h3><p>{{ previous_barcelona_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if previous_usmnt_weekly_story %}<li><span class="soccer-sidebar-number">07</span><a href="{{ previous_usmnt_weekly_story.url | relative_url }}"><small>USMNT Weekly</small><h3>{{ previous_usmnt_weekly_story.title }}</h3><p>{{ previous_usmnt_weekly_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if previous_euro_team_of_week_story %}<li><span class="soccer-sidebar-number">08</span><a href="{{ previous_euro_team_of_week_story.url | relative_url }}"><small>European Team of the Week</small><h3>{{ previous_euro_team_of_week_story.title }}</h3><p>{{ previous_euro_team_of_week_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if premier_league_weekly_recap_story %}<li><span class="soccer-sidebar-number">09</span><a href="{{ premier_league_weekly_recap_story.url | relative_url }}"><small>Premier League</small><h3>{{ premier_league_weekly_recap_story.title }}</h3><p>{{ premier_league_weekly_recap_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if rodri_barcelona_story %}<li><span class="soccer-sidebar-number">10</span><a href="{{ rodri_barcelona_story.url | relative_url }}"><small>Barcelona</small><h3>{{ rodri_barcelona_story.title }}</h3><p>{{ rodri_barcelona_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
       </ol>
     </aside>
   </div>
