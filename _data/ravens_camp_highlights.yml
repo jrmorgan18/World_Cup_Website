@@ -1,68 +1,61 @@
-date: "2026-10-30"
-edition: "October 30, 2026"
-kicker: "Week 8 · Buffalo"
+date: "2026-11-06"
+edition: "November 6, 2026"
+kicker: "Week 9 · Jacksonville"
 heading: "Ravens Daily"
-intro: "Thursday's practice brought progress for Jackson, Ioane and the defensive leaders as the Ravens prepare for Buffalo."
+intro: "The Ravens turn to Jacoby Brissett after their fourth straight loss, with Kyle Hamilton's status uncertain."
 highlights:
-  - title: "Rookie guard Vega Ioane returned to practice just four days after suffering a reported MCL sprain, raising the possibility he could play Sunday against Buffalo."
+  - title: "Jacoby Brissett is expected to take over at quarterback after Arizona made the trade official Friday."
     text: >-
-      Ioane was limited Thursday after missing Wednesday's session, and CBS Sports' Matt Zenitz reports he is pushing to play despite initial expectations that he would miss time. His availability would be a significant boost to an offensive line that has struggled with injuries and inconsistent run blocking.
+      Baltimore placed Lamar Jackson (thumb) and Tyler Huntley (toe) on injured reserve Thursday, guaranteeing both will miss at least four games. Brissett is in position to start November 16 against the Chargers. ESPN's Jeremy Fowler reports there is still hope Jackson could return late in the season, although no timetable has been confirmed.
     sources:
+      - "Arizona Cardinals"
       - "BaltimoreRavens.com"
-      - "CBS Sports/Matt Zenitz"
+      - "ESPN"
+      - "NFL Network"
+      - "The Baltimore Banner"
     source_links:
-      - label: "Baltimore Ravens"
-        url: "https://www.baltimoreravens.com/news/ravens-injury-report-vega-ioane-kyle-hamilton-roquan-smith-ravens-practice-return-2026"
-  - title: "Lamar Jackson practiced fully for the second consecutive day, putting him firmly on track to return against the Bills after missing three games with a high ankle sprain."
+      - label: "Cardinals trade announcement"
+        url: "https://www.azcardinals.com/news/jacoby-brissett-trade-to-ravens-becomes-official"
+      - label: "Ravens injured reserve announcement"
+        url: "https://www.baltimoreravens.com/news/lamar-jackson-tyler-huntley-injured-reserve-austin-reed-adisa-isaac-jake-moody"
+      - label: "NFL Network"
+        url: "https://www.nfl.com/news/jacoby-brissett-trade-ravens-cardinals"
+  - title: "Kyle Hamilton suffered a hip injury against Jacksonville, adding another major concern to Baltimore's depleted secondary."
     text: >-
-      Offensive coordinator Declan Doyle acknowledged the challenge of getting Jackson back into game rhythm, saying Baltimore is emphasizing realistic game-speed repetitions in practice. Jackson has not officially been cleared for Sunday, but his participation represents a substantial improvement over last week's limited practices.
-    sources:
-      - "BaltimoreRavens.com"
-      - "NBC Sports"
-    source_links:
-      - label: "Baltimore Ravens"
-        url: "https://www.baltimoreravens.com/news/ravens-injury-report-vega-ioane-kyle-hamilton-roquan-smith-ravens-practice-return-2026"
-  - title: "Defensive leaders Kyle Hamilton and Roquan Smith both returned to limited practice after missing Wednesday with knee injuries."
-    text: >-
-      Jesse Minter had characterized their absences as routine postgame issues, and Thursday's participation suggests both have a reasonable chance to face Josh Allen. Starting safety Jaylinn Hawkins remained sidelined for a second consecutive day, however, leaving Baltimore's secondary potentially shorthanded again.
-    sources:
-      - "BaltimoreRavens.com"
-      - "ESPN/Jamison Hensley"
-    source_links:
-      - label: "Baltimore Ravens"
-        url: "https://www.baltimoreravens.com/news/ravens-injury-report-vega-ioane-kyle-hamilton-roquan-smith-ravens-practice-return-2026"
-  - title: "Doyle acknowledged that Baltimore's second-half offensive failures may partly reflect his own play-calling adjustments."
-    text: >-
-      The Ravens are averaging 16.8 first-half points compared with just 7.2 after halftime, and Doyle admitted he has sometimes abandoned his scripted second-half plays too quickly. Baltimore has gone two consecutive games without a second-half touchdown, making Doyle's willingness to reconsider his approach particularly significant heading into Buffalo.
+      Hamilton left during the third quarter and was ruled out, with Jesse Minter unable to provide a diagnosis or recovery timetable afterward. With Jaylinn Hawkins already sidelined and Nate Wiggins missing Thursday's game because of illness, the Ravens can hardly afford another extended absence in their defensive backfield.
     sources:
       - "BaltimoreRavens.com"
     source_links:
-      - label: "Baltimore Ravens"
-        url: "https://www.baltimoreravens.com/news/declan-doyle-second-half-adjustments--script-run-game-legends-kyle-hamilton-scars"
-  - title: "Baltimore's offensive coordinator identified communication breakdowns as a significant contributor to the Ravens' deteriorating rushing attack."
+      - label: "Ravens injury report"
+        url: "https://www.baltimoreravens.com/news/kyle-hamilton-hip-injury-ravens-ruled-out"
+  - title: "The Ravens' fourth consecutive defeat exposed a historically ineffective offense."
     text: >-
-      Doyle praised Cam Jurgens' debut at center but acknowledged that assignments are not consistently being communicated across the offensive line, leaving defenders unblocked. Derrick Henry managed just 45 yards on 17 carries against Cincinnati, and fixing those protection and blocking assignments is essential regardless of whether Jackson returns Sunday.
+      Thursday's 33-10 loss to Jacksonville dropped Baltimore to 4-5, marking the first time in franchise history it has lost three consecutive games by at least 20 points or scored fewer than 14 points in four straight games. Rookie Joe Fagnano completed just 10 passes for 60 yards with two interceptions, while Baltimore resorted to 10 direct snaps to Derrick Henry in the Wildcat. The arrival of Brissett should restore some offensive flexibility, but it won't automatically solve everything else.
     sources:
       - "BaltimoreRavens.com"
+      - "The Baltimore Sun"
     source_links:
-      - label: "Baltimore Ravens"
-        url: "https://www.baltimoreravens.com/news/declan-doyle-second-half-adjustments--script-run-game-legends-kyle-hamilton-scars"
-  - title: "Baltimore's defensive front is getting healthier, with John Jenkins and Broderick Washington upgrading to full participation Thursday."
+      - label: "Ravens postgame breakdown"
+        url: "https://www.baltimoreravens.com/news/ravens-jaguars-historic-low-breakdown-presnap-jesse-minter-week-9-2026"
+  - title: "Minter acknowledged that Baltimore's secondary continues allowing unacceptable explosive plays."
     text: >-
-      Ronnie Stanley also returned to full practice, while cornerback T.J. Tampa participated fully as he continues working toward activation from injured reserve. Tampa has not yet been added to the active roster, but the improved participation across both lines provides encouraging depth news ahead of Sunday's matchup.
+      Jacksonville produced completions of 52 and 50 yards, including Parker Washington's touchdown against Malaki Starks just before halftime. The Ravens also failed to sack Trevor Lawrence, and Minter conceded that his defense has fallen well short of expectations, particularly in coverage. Those failures cannot be explained away by injuries at quarterback.
     sources:
-      - "Baltimore Beatdown injury report"
+      - "BaltimoreRavens.com"
+      - "The Baltimore Banner"
     source_links:
-      - label: "Baltimore Beatdown"
-        url: "https://www.baltimorebeatdown.com/baltimore-ravens-injuries/87183/ravens-injury-report-vega-ioane-returns-lamar-jackson-full-again"
-  - title: "Buffalo's injury concerns intensified Thursday, with starting right tackle Spencer Brown missing his second consecutive practice because of a back injury."
+      - label: "Ravens game recap"
+        url: "https://www.baltimoreravens.com/news/ravens-jaguars-game-recap-routed-week-9-2026"
+      - label: "Postgame press conference"
+        url: "https://www.baltimoreravens.com/news/transcript-press-conferences-11-5-26"
+  - title: "Baltimore's pre-snap penalty problem has reached 24 false starts, the most in the NFL."
     text: >-
-      Cornerback Dee Alford was downgraded to a nonparticipant, while defensive tackle Ed Oliver returned to full participation. Brown's potential absence would be particularly significant for Baltimore's pass rush, which is trying to replace Tavius Robinson's production while preparing to contain Josh Allen.
+      Four more came against Jacksonville, including consecutive penalties by Ronnie Stanley and Mark Andrews that turned second-and-5 into second-and-15. Minter called the continued mistakes unacceptable nine games into the season, making clear that both coaches and players share responsibility for a recurring problem that keeps sabotaging possessions.
     sources:
-      - "Buffalo Rumblings"
-      - "Baltimore Beatdown"
+      - "BaltimoreRavens.com"
+      - "Jesse Minter postgame press conference"
     source_links:
-      - label: "Buffalo Rumblings"
-        url: "https://www.buffalorumblings.com/buffalo-bills-injuries/143943/bills-injury-report-ed-oliver-returns-dee-alford-sits?utm_source=chatgpt.com"
-      - label: "Baltimore Beatdown"
-        url: "https://www.baltimorebeatdown.com/baltimore-ravens-injuries/87183/ravens-injury-report-vega-ioane-returns-lamar-jackson-full-again"
+      - label: "Ravens postgame breakdown"
+        url: "https://www.baltimoreravens.com/news/ravens-jaguars-historic-low-breakdown-presnap-jesse-minter-week-9-2026"
+      - label: "Postgame press conference"
+        url: "https://www.baltimoreravens.com/news/transcript-press-conferences-11-5-26"
