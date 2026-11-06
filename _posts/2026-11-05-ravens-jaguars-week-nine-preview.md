@@ -19,10 +19,10 @@ home_image_position: "50% 35%"
 hero_alt: "Joe Fagnano throws from the pocket against Buffalo in Week 8"
 hero_credit: "Shawn Hubbard / Baltimore Ravens Photos"
 hero_credit_url: "https://www.baltimoreravens.com/photos/game-action-gallery-ravens-at-bills-week-8"
-home_feature: true
+home_feature: false
 home_recent: false
 home_recent_label: "Week 9 preview"
-ravens_feature: true
+ravens_feature: false
 ravens_feature_image: true
 feature_label: "Week 9 preview"
 ravens_feature_mark: "9"
