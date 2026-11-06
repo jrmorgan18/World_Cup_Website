@@ -1,14 +1,14 @@
 {
   "season": 2026,
   "week": 9,
-  "as_of": "2026-11-05T21:24:58.741243+00:00",
+  "as_of": "2026-11-06T18:32:33.147342+00:00",
   "source": {
     "file": "injuries.parquet",
     "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet",
-    "fetched_at": "2026-11-05T21:24:39.488841+00:00",
-    "http_last_modified": "Thu, 05 Nov 2026 15:22:25 GMT",
-    "source_sha256": "c31fc7a6f385e6eade51daa9c447cdeda75355d05b9dbe33d8e1e396760b0b85",
-    "cache_sha256": "c31fc7a6f385e6eade51daa9c447cdeda75355d05b9dbe33d8e1e396760b0b85"
+    "fetched_at": "2026-11-06T18:32:21.605036+00:00",
+    "http_last_modified": "Fri, 06 Nov 2026 14:57:21 GMT",
+    "source_sha256": "8157e6b2902fdad1ab55961b618cf97e8ab2e6a8734ba492eeb69bb0697506e3",
+    "cache_sha256": "8157e6b2902fdad1ab55961b618cf97e8ab2e6a8734ba492eeb69bb0697506e3"
   },
   "source_max_week": 9,
   "policy": "Only confirmed OUT/IR or two consecutive injury-related DNP daily reports in the game week qualify. Later LP/FP clears the DNP trigger. At least two meaningful players in a group are required. No automatic adjustments; returns remain manual scenarios.",
@@ -82,7 +82,7 @@
       "team": "ARI",
       "name": "Arizona Cardinals",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 12,
+      "report_players": 13,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
@@ -105,24 +105,24 @@
     {
       "team": "BUF",
       "name": "Buffalo Bills",
-      "coverage": "No current-week report",
-      "report_players": 0,
-      "unresolved_participation_ids": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 18,
+      "unresolved_participation_ids": 3,
       "cards": 0
     },
     {
       "team": "CAR",
       "name": "Carolina Panthers",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 9,
+      "report_players": 10,
       "unresolved_participation_ids": 1,
       "cards": 0
     },
     {
       "team": "CHI",
       "name": "Chicago Bears",
-      "coverage": "No current-week report",
-      "report_players": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 8,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
@@ -130,7 +130,7 @@
       "team": "CIN",
       "name": "Cincinnati Bengals",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 5,
+      "report_players": 6,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
@@ -138,7 +138,7 @@
       "team": "CLE",
       "name": "Cleveland Browns",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 9,
+      "report_players": 11,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
@@ -146,7 +146,7 @@
       "team": "DAL",
       "name": "Dallas Cowboys",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 16,
+      "report_players": 17,
       "unresolved_participation_ids": 1,
       "cards": 0
     },
@@ -170,7 +170,7 @@
       "team": "GB",
       "name": "Green Bay Packers",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 9,
+      "report_players": 10,
       "unresolved_participation_ids": 1,
       "cards": 0
     },
@@ -186,7 +186,7 @@
       "team": "IND",
       "name": "Indianapolis Colts",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 9,
+      "report_players": 10,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
@@ -226,8 +226,8 @@
       "team": "LV",
       "name": "Las Vegas Raiders",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 4,
-      "unresolved_participation_ids": 0,
+      "report_players": 5,
+      "unresolved_participation_ids": 1,
       "cards": 0
     },
     {
@@ -241,8 +241,8 @@
     {
       "team": "MIN",
       "name": "Minnesota Vikings",
-      "coverage": "No current-week report",
-      "report_players": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 9,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
@@ -250,7 +250,7 @@
       "team": "NE",
       "name": "New England Patriots",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 12,
+      "report_players": 14,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
@@ -258,7 +258,7 @@
       "team": "NO",
       "name": "New Orleans Saints",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 9,
+      "report_players": 10,
       "unresolved_participation_ids": 1,
       "cards": 0
     },
@@ -266,7 +266,7 @@
       "team": "NYG",
       "name": "New York Giants",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 10,
+      "report_players": 15,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
@@ -282,7 +282,7 @@
       "team": "PHI",
       "name": "Philadelphia Eagles",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 18,
+      "report_players": 19,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
@@ -297,8 +297,8 @@
     {
       "team": "SEA",
       "name": "Seattle Seahawks",
-      "coverage": "No current-week report",
-      "report_players": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 15,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
@@ -314,7 +314,7 @@
       "team": "TB",
       "name": "Tampa Bay Buccaneers",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 8,
+      "report_players": 12,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
@@ -330,7 +330,7 @@
       "team": "WAS",
       "name": "Washington Commanders",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 8,
+      "report_players": 10,
       "unresolved_participation_ids": 1,
       "cards": 0
     }
