@@ -48,6 +48,15 @@ layout: default
   {% include ravens-season-preview-nav.html %}
   {% endif %}
   {% if page.article_stats %}{% include article-stats.html stats=page.article_stats card_id="article-stat-title-mobile" class="article-stat-card--mobile" %}{% endif %}
+  {% comment %}Add 3–5 concise tldr bullets in front matter when publishing new articles.{% endcomment %}
+  {% if page.tldr and page.tldr.size > 0 %}
+  <section class="article-tldr" aria-labelledby="article-tldr-title">
+    <h2 id="article-tldr-title">TLDR</h2>
+    <ul>
+      {% for point in page.tldr %}<li>{{ point | escape }}</li>{% endfor %}
+    </ul>
+  </section>
+  {% endif %}
   <div class="article-body">
     {{ content }}
   </div>
