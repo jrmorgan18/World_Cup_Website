@@ -1916,6 +1916,36 @@ body.survey-prompt-open { overflow: hidden; }
 .article-tldr li + li { margin-top: 9px; }
 .article-tldr li::marker { color: var(--color-accent); }
 
+.article-tldr--expandable > summary {
+  cursor: pointer;
+  color: var(--color-accent);
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  line-height: 1.5;
+}
+
+.article-tldr--expandable > summary:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 6px;
+}
+
+.article-tldr-toggle {
+  float: right;
+  margin-left: 16px;
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.article-tldr-collapse,
+.article-tldr--expandable[open] .article-tldr-expand { display: none; }
+.article-tldr--expandable[open] .article-tldr-collapse { display: inline; }
+.article-tldr--expandable[open] > summary { margin-bottom: 14px; }
+
 @media (max-width: 600px) {
   .article-tldr { padding: 17px 18px; }
 }

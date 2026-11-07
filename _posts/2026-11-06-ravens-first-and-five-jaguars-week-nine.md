@@ -14,6 +14,11 @@ tldr:
   - "Fagnano threw for just 60 yards. Creative formations couldn’t rescue the offense."
   - "Penalties and coverage breakdowns continued. The Ravens gave up two huge completions and never sacked Trevor Lawrence."
   - "Brissett could help the offense, but Minter still has to fix discipline, coverage and second-half adjustments."
+tldr_comparison:
+  - "The Ravens lost 33–10 to Jacksonville and fell to 4–5 after their fourth straight defeat. They’ve been outscored 84–10 after halftime during the skid."
+  - "Fagnano threw for 60 yards and two interceptions. Doyle used 10 direct snaps to Henry, but the limited passing threat let Jacksonville crowd the line."
+  - "Seven penalties disrupted drives. The defense held Jacksonville to 2.6 yards per carry, yet allowed completions of 52 and 50 yards and never sacked Lawrence."
+  - "Brissett could make the offense functional. Minter still needs answers for discipline, coverage and second-half adjustments, while Hamilton’s hip injury adds another concern."
 suppress_article_prompts: true
 source_docx: "articles/First and Five_ Week 9.docx"
 hero_image: "/assets/images/ravens/week-nine-jaguars-2026/ravens-defense-jaguars-header.jpg"

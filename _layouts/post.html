@@ -51,11 +51,19 @@ layout: default
   {% comment %}Add 3–5 concise tldr bullets in front matter when publishing new articles.{% endcomment %}
   {% if page.tldr and page.tldr.size > 0 %}
   <section class="article-tldr" aria-labelledby="article-tldr-title">
-    <h2 id="article-tldr-title">TLDR</h2>
+    <h2 id="article-tldr-title">TLDR{% if page.tldr_comparison and page.tldr_comparison.size > 0 %} · Version 1{% endif %}</h2>
     <ul>
       {% for point in page.tldr %}<li>{{ point | escape }}</li>{% endfor %}
     </ul>
   </section>
+  {% endif %}
+  {% if page.tldr_comparison and page.tldr_comparison.size > 0 %}
+  <details class="article-tldr article-tldr--expandable">
+    <summary id="article-tldr-comparison-title"><span>TLDR · Version 2</span><span class="article-tldr-toggle"><span class="article-tldr-expand">Click to expand</span><span class="article-tldr-collapse">Click to collapse</span></span></summary>
+    <ul>
+      {% for point in page.tldr_comparison %}<li>{{ point | escape }}</li>{% endfor %}
+    </ul>
+  </details>
   {% endif %}
   <div class="article-body">
     {{ content }}
