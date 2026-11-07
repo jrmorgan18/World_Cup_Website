@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-06T14:38:50Z",
-  "as_of": "2026-11-06",
+  "generated_at": "2026-11-07T13:36:24Z",
+  "as_of": "2026-11-07",
   "season": 2026,
   "season_label": "2026-27",
   "team": {
@@ -1130,14 +1130,14 @@
           "abbreviation": "SEV",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png",
           "rank": 6,
-          "played": 11,
+          "played": 12,
           "wins": 5,
-          "draws": 2,
+          "draws": 3,
           "losses": 4,
           "goals_for": 17,
           "goals_against": 19,
           "goal_difference": -2,
-          "points": 17
+          "points": 18
         },
         {
           "team_id": "93",
@@ -1172,12 +1172,28 @@
           "points": 14
         },
         {
+          "team_id": "96",
+          "name": "Alavés",
+          "short_name": "Alavés",
+          "abbreviation": "ALA",
+          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png",
+          "rank": 9,
+          "played": 12,
+          "wins": 3,
+          "draws": 4,
+          "losses": 5,
+          "goals_for": 15,
+          "goals_against": 17,
+          "goal_difference": -2,
+          "points": 13
+        },
+        {
           "team_id": "102",
           "name": "Villarreal",
           "short_name": "Villarreal",
           "abbreviation": "VIL",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
-          "rank": 9,
+          "rank": 10,
           "played": 11,
           "wins": 3,
           "draws": 3,
@@ -1193,7 +1209,7 @@
           "short_name": "Celta Vigo",
           "abbreviation": "CEL",
           "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png",
-          "rank": 10,
+          "rank": 11,
           "played": 11,
           "wins": 2,
           "draws": 6,
@@ -1201,22 +1217,6 @@
           "goals_for": 10,
           "goals_against": 10,
           "goal_difference": 0,
-          "points": 12
-        },
-        {
-          "team_id": "96",
-          "name": "Alavés",
-          "short_name": "Alavés",
-          "abbreviation": "ALA",
-          "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png",
-          "rank": 11,
-          "played": 11,
-          "wins": 3,
-          "draws": 3,
-          "losses": 5,
-          "goals_for": 15,
-          "goals_against": 17,
-          "goal_difference": -2,
           "points": 12
         },
         {
@@ -1828,9 +1828,9 @@
         {
           "event_id": "401882794",
           "competition": "laliga",
-          "date": "2026-11-29T20:00Z",
+          "date": "2026-11-29T15:15Z",
           "completed": false,
-          "status_detail": "TBD",
+          "status_detail": "11/29 - 10:15 AM EST",
           "location": "away",
           "venue": "Riazor",
           "opponent": "Deportivo",
@@ -1838,6 +1838,23 @@
           "opponent_abbr": "DEP",
           "opponent_id": "90",
           "opponent_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png",
+          "goals_for": null,
+          "goals_against": null,
+          "result": null
+        },
+        {
+          "event_id": "401882700",
+          "competition": "laliga",
+          "date": "2026-12-02T20:30Z",
+          "completed": false,
+          "status_detail": "12/2 - 3:30 PM EST",
+          "location": "home",
+          "venue": "Spotify Camp Nou",
+          "opponent": "Atlético Madrid",
+          "opponent_short": "Atlético",
+          "opponent_abbr": "ATM",
+          "opponent_id": "1068",
+          "opponent_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
           "goals_for": null,
           "goals_against": null,
           "result": null
@@ -1872,23 +1889,6 @@
           "opponent_abbr": "MCF",
           "opponent_id": "99",
           "opponent_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png",
-          "goals_for": null,
-          "goals_against": null,
-          "result": null
-        },
-        {
-          "event_id": "401882762",
-          "competition": "laliga",
-          "date": "2026-12-20T20:00Z",
-          "completed": false,
-          "status_detail": "TBD",
-          "location": "home",
-          "venue": "Spotify Camp Nou",
-          "opponent": "Real Sociedad",
-          "opponent_short": "Real Sociedad",
-          "opponent_abbr": "RSO",
-          "opponent_id": "89",
-          "opponent_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png",
           "goals_for": null,
           "goals_against": null,
           "result": null
@@ -5079,8 +5079,8 @@
   "injuries": [],
   "rotation": {
     "window_days": 21,
-    "window_start": "2026-10-16",
-    "window_end": "2026-11-06",
+    "window_start": "2026-10-17",
+    "window_end": "2026-11-07",
     "matches_in_window": 5,
     "available_minutes": 450,
     "players": [
@@ -5283,7 +5283,7 @@
     "shortest_rest_recent": 3,
     "average_rest_recent": 4.2,
     "matches_next_14_days": 1,
-    "matches_next_30_days": 5,
+    "matches_next_30_days": 6,
     "shortest_rest_upcoming": 3,
     "recent": [
       {
@@ -5332,10 +5332,16 @@
         "location": "away"
       },
       {
-        "date": "2026-11-29T20:00Z",
+        "date": "2026-11-29T15:15Z",
         "competition": "laliga",
         "opponent": "Deportivo",
         "location": "away"
+      },
+      {
+        "date": "2026-12-02T20:30Z",
+        "competition": "laliga",
+        "opponent": "Atlético",
+        "location": "home"
       },
       {
         "date": "2026-12-06T20:00Z",
@@ -5465,9 +5471,9 @@
       {
         "event_id": "401882794",
         "competition": "laliga",
-        "date": "2026-11-29T20:00Z",
+        "date": "2026-11-29T15:15Z",
         "completed": false,
-        "status_detail": "TBD",
+        "status_detail": "11/29 - 10:15 AM EST",
         "location": "away",
         "venue": "Riazor",
         "opponent": "Deportivo",
@@ -5475,6 +5481,23 @@
         "opponent_abbr": "DEP",
         "opponent_id": "90",
         "opponent_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png",
+        "goals_for": null,
+        "goals_against": null,
+        "result": null
+      },
+      {
+        "event_id": "401882700",
+        "competition": "laliga",
+        "date": "2026-12-02T20:30Z",
+        "completed": false,
+        "status_detail": "12/2 - 3:30 PM EST",
+        "location": "home",
+        "venue": "Spotify Camp Nou",
+        "opponent": "Atlético Madrid",
+        "opponent_short": "Atlético",
+        "opponent_abbr": "ATM",
+        "opponent_id": "1068",
+        "opponent_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
         "goals_for": null,
         "goals_against": null,
         "result": null
@@ -5526,23 +5549,6 @@
         "opponent_abbr": "MCF",
         "opponent_id": "99",
         "opponent_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png",
-        "goals_for": null,
-        "goals_against": null,
-        "result": null
-      },
-      {
-        "event_id": "401882762",
-        "competition": "laliga",
-        "date": "2026-12-20T20:00Z",
-        "completed": false,
-        "status_detail": "TBD",
-        "location": "home",
-        "venue": "Spotify Camp Nou",
-        "opponent": "Real Sociedad",
-        "opponent_short": "Real Sociedad",
-        "opponent_abbr": "RSO",
-        "opponent_id": "89",
-        "opponent_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png",
         "goals_for": null,
         "goals_against": null,
         "result": null
