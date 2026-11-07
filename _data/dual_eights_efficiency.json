@@ -2,7 +2,7 @@
   "season": 2026,
   "through_week": 9,
   "model_version": "2.1",
-  "as_of": "2026-11-06",
+  "as_of": "2026-11-07",
   "label": "Through available Week 9 games · v2.1",
   "sample_note": "Completed games only · 45% offense / 45% defense / 10% special teams",
   "article_url": "/ravens/dual-eights-efficiency-index-week-four-2026/",
@@ -387,7 +387,7 @@
       "full_name": "Miami Dolphins",
       "record": "1-6",
       "value": 25.3,
-      "unrounded_value": 25.300450915353018,
+      "unrounded_value": 25.30045091535302,
       "offense_rank": 26,
       "defense_rank": 32,
       "special_teams_rank": 32

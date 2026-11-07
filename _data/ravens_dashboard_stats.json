@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-06T17:57:03Z",
-  "as_of": "2026-11-06",
+  "generated_at": "2026-11-07T16:50:31Z",
+  "as_of": "2026-11-07",
   "season": 2026,
   "benchmark_season": 2025,
   "efficiency_model": {
@@ -1039,7 +1039,7 @@
     }
   },
   "league_efficiency_rankings": {
-    "label": "Games through November 6",
+    "label": "Games through November 7",
     "sample_note": "Completed regular-season games; early-season sample",
     "teams": [
       {
@@ -1421,7 +1421,7 @@
         "full_name": "Miami Dolphins",
         "record": "1-6",
         "value": 25.3,
-        "unrounded_value": 25.300450915353018,
+        "unrounded_value": 25.30045091535302,
         "offense_rank": 26,
         "defense_rank": 32,
         "special_teams_rank": 32
@@ -1538,9 +1538,9 @@
         "source_label": "NFL NGS",
         "source_url": "https://nflreadr.nflverse.com/reference/load_nextgen_stats.html",
         "period_label": "Through available Week 9 games",
-        "label": "Huntley CPOE",
-        "value": "-3.8%",
-        "rank": 31,
+        "label": "Brissett CPOE",
+        "value": "+4.5%",
+        "rank": 6,
         "rank_group": "QB"
       },
       {
@@ -1569,13 +1569,13 @@
       {
         "source_label": "SumerSports",
         "source_url": "https://sumersports.com/players/wide-receiver/",
-        "period_label": "Updated Nov. 06, 2026",
+        "period_label": "Updated Nov. 07, 2026",
         "label": "Flowers YPRR",
         "value": "2.90",
         "rank": 3,
         "rank_group": "WR",
         "season": 2026,
-        "source_updated_at": "2026-11-06T15:47:23.178000+00:00",
+        "source_updated_at": "2026-11-07T09:19:40.719000+00:00",
         "routes": 212,
         "receiving_yards": 614,
         "qualified_receivers": 118,
@@ -2011,6 +2011,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-11-06T17:57:03Z"
+    "retrieved_at": "2026-11-07T16:50:31Z"
   }
 }
