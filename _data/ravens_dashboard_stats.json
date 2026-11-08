@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-07T16:50:31Z",
-  "as_of": "2026-11-07",
+  "generated_at": "2026-11-08T17:02:31Z",
+  "as_of": "2026-11-08",
   "season": 2026,
   "benchmark_season": 2025,
   "efficiency_model": {
@@ -1039,7 +1039,7 @@
     }
   },
   "league_efficiency_rankings": {
-    "label": "Games through November 7",
+    "label": "Games through November 8",
     "sample_note": "Completed regular-season games; early-season sample",
     "teams": [
       {
@@ -1569,13 +1569,13 @@
       {
         "source_label": "SumerSports",
         "source_url": "https://sumersports.com/players/wide-receiver/",
-        "period_label": "Updated Nov. 07, 2026",
+        "period_label": "Updated Nov. 08, 2026",
         "label": "Flowers YPRR",
         "value": "2.90",
         "rank": 3,
         "rank_group": "WR",
         "season": 2026,
-        "source_updated_at": "2026-11-07T09:19:40.719000+00:00",
+        "source_updated_at": "2026-11-08T15:21:26.402000+00:00",
         "routes": 212,
         "receiving_yards": 614,
         "qualified_receivers": 118,
@@ -1710,11 +1710,11 @@
   },
   "offensive_line_filmstudy": {
     "source_label": "Filmstudy · Ken McKusick",
-    "source_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w7/",
+    "source_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w9/",
     "season": 2026,
-    "week": 7,
-    "published": "2026-10-27",
-    "period_label": "Written reports through Week 7",
+    "week": 9,
+    "published": "2026-11-07",
+    "period_label": "Written reports through Week 9",
     "methodology": "Dual Eights aggregation: each published Filmstudy adjusted game letter grade is converted to a standard grade-point scale, weighted by the player's scored snaps, then rounded to the nearest letter grade. Ranks compare Ravens linemen only, with at least 20 graded snaps. Only explicitly published grades count; missing appearances are not estimated.",
     "players": [
       {
@@ -1733,8 +1733,8 @@
       },
       {
         "player": "Vega Ioane",
-        "scored_snaps": 375,
-        "graded_snaps": 359,
+        "scored_snaps": 429,
+        "graded_snaps": 413,
         "weeks": [
           1,
           2,
@@ -1742,18 +1742,19 @@
           4,
           5,
           6,
-          7
+          7,
+          9
         ],
-        "latest_week": 7,
-        "latest_grade": null,
-        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w7/",
+        "latest_week": 9,
+        "latest_grade": "C",
+        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w9/",
         "rank": 2,
         "aggregate_grade": "C+"
       },
       {
         "player": "Roger Rosengarten",
-        "scored_snaps": 422,
-        "graded_snaps": 422,
+        "scored_snaps": 524,
+        "graded_snaps": 524,
         "weeks": [
           1,
           2,
@@ -1761,31 +1762,40 @@
           4,
           5,
           6,
-          7
+          7,
+          8,
+          9
         ],
-        "latest_week": 7,
-        "latest_grade": "C",
-        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w7/",
+        "latest_week": 9,
+        "latest_grade": "B",
+        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w9/",
         "rank": 3,
         "aggregate_grade": "C+"
       },
       {
-        "player": "Jurgens",
-        "scored_snaps": 65,
-        "graded_snaps": 65,
+        "player": "Ronnie Stanley",
+        "scored_snaps": 447,
+        "graded_snaps": 447,
         "weeks": [
-          7
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
         ],
-        "latest_week": 7,
-        "latest_grade": "C",
-        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w7/",
+        "latest_week": 9,
+        "latest_grade": "B-",
+        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w9/",
         "rank": 4,
-        "aggregate_grade": "C"
+        "aggregate_grade": "C-"
       },
       {
         "player": "John Simpson",
-        "scored_snaps": 424,
-        "graded_snaps": 424,
+        "scored_snaps": 526,
+        "graded_snaps": 526,
         "weeks": [
           1,
           2,
@@ -1793,30 +1803,14 @@
           4,
           5,
           6,
-          7
+          7,
+          8,
+          9
         ],
-        "latest_week": 7,
-        "latest_grade": "C",
-        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w7/",
+        "latest_week": 9,
+        "latest_grade": "F",
+        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w9/",
         "rank": 5,
-        "aggregate_grade": "C"
-      },
-      {
-        "player": "Ronnie Stanley",
-        "scored_snaps": 354,
-        "graded_snaps": 354,
-        "weeks": [
-          1,
-          2,
-          4,
-          5,
-          6,
-          7
-        ],
-        "latest_week": 7,
-        "latest_grade": "B-",
-        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w7/",
-        "rank": 6,
         "aggregate_grade": "C-"
       },
       {
@@ -1832,7 +1826,7 @@
         "latest_week": 7,
         "latest_grade": "B",
         "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w7/",
-        "rank": 7,
+        "rank": 6,
         "aggregate_grade": "C-"
       },
       {
@@ -1847,20 +1841,36 @@
         "latest_week": 3,
         "latest_grade": "F",
         "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w4/",
-        "rank": 8,
+        "rank": 7,
         "aggregate_grade": "D+"
       },
       {
+        "player": "Jurgens",
+        "scored_snaps": 167,
+        "graded_snaps": 167,
+        "weeks": [
+          7,
+          8,
+          9
+        ],
+        "latest_week": 9,
+        "latest_grade": "D",
+        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w9/",
+        "rank": 8,
+        "aggregate_grade": "D"
+      },
+      {
         "player": "Andrew Vorhees",
-        "scored_snaps": 35,
-        "graded_snaps": 28,
+        "scored_snaps": 77,
+        "graded_snaps": 70,
         "weeks": [
           3,
-          4
+          4,
+          8
         ],
-        "latest_week": 4,
+        "latest_week": 8,
         "latest_grade": "F",
-        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w4/",
+        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w9/",
         "rank": 9,
         "aggregate_grade": "F"
       }
@@ -1906,6 +1916,16 @@
         "week": 7,
         "url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w7/",
         "published": "2026-10-27"
+      },
+      {
+        "week": 8,
+        "url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w9/",
+        "published": "2026-11-07"
+      },
+      {
+        "week": 9,
+        "url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w9/",
+        "published": "2026-11-07"
       }
     ]
   },
@@ -2011,6 +2031,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-11-07T16:50:31Z"
+    "retrieved_at": "2026-11-08T17:02:31Z"
   }
 }
