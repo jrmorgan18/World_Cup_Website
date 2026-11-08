@@ -10,11 +10,6 @@ series: "First and Five"
 excerpt: "The Ravens lost 33–10 to Jacksonville. Five takeaways on Joe Fagnano’s first start, the penalties, the defensive breakdowns and what the skid says about Jesse Minter’s team."
 read_time: 17
 tldr:
-  - "The Ravens lost 33–10 to Jacksonville and fell to 4–5 after their fourth straight defeat."
-  - "Fagnano threw for just 60 yards. Creative formations couldn’t rescue the offense."
-  - "Penalties and coverage breakdowns continued. The Ravens gave up two huge completions and never sacked Trevor Lawrence."
-  - "Brissett could help the offense, but Minter still has to fix discipline, coverage and second-half adjustments."
-tldr_comparison:
   - "The Ravens lost 33–10 to Jacksonville and fell to 4–5 after their fourth straight defeat. They’ve been outscored 84–10 after halftime during the skid."
   - "Fagnano threw for 60 yards and two interceptions. Doyle used 10 direct snaps to Henry, but the limited passing threat let Jacksonville crowd the line."
   - "Seven penalties disrupted drives. The defense held Jacksonville to 2.6 yards per carry, yet allowed completions of 52 and 50 yards and never sacked Lawrence."
