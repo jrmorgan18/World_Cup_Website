@@ -1,61 +1,62 @@
-date: "2026-11-06"
-edition: "November 6, 2026"
-kicker: "Week 9 · Jacksonville"
+date: "2026-11-08"
+edition: "November 8, 2026"
+kicker: "Week 9 · Looking Ahead"
 heading: "Ravens Daily"
-intro: "The Ravens turn to Jacoby Brissett after their fourth straight loss, with Kyle Hamilton's status uncertain."
+intro: "Baltimore enters an extended break at 4-5, with Jacoby Brissett expected to make his Ravens debut against the Chargers and Lamar Jackson hoping to return later this season."
 highlights:
-  - title: "Jacoby Brissett is expected to take over at quarterback after Arizona made the trade official Friday."
+  - title: "The Ravens are not expected to trade Derrick Henry before Tuesday's deadline."
     text: >-
-      Baltimore placed Lamar Jackson (thumb) and Tyler Huntley (toe) on injured reserve Thursday, guaranteeing both will miss at least four games. Brissett is in position to start November 16 against the Chargers. ESPN's Jeremy Fowler reports there is still hope Jackson could return late in the season, although no timetable has been confirmed.
+      ESPN's Adam Schefter reported that Baltimore told Henry it has no intention of moving him and never seriously considered a deal. The Ravens are keeping the veteran back as they try to stay in the playoff race after four straight losses.
     sources:
-      - "Arizona Cardinals"
-      - "BaltimoreRavens.com"
-      - "ESPN"
-      - "NFL Network"
-      - "The Baltimore Banner"
+      - "ESPN/Adam Schefter"
+      - "NFL.com"
     source_links:
+      - label: "ESPN report"
+        url: "https://www.espn.com/nfl/story/_/id/50400748/sources-ravens-not-expected-trade-star-rb-derrick-henry"
+      - label: "NFL.com report"
+        url: "https://www.nfl.com/news/report-ravens-not-expected-to-trade-rb-derrick-henry-before-nov-10-deadline"
+  - title: "The Giants have inquired about Justice Hill ahead of the trade deadline."
+    text: >-
+      ESPN's reporting identifies Hill, not Henry, as the Ravens running back New York called about. No deal has been reported, and Baltimore's willingness to move Hill remains unknown. John Harbaugh coached Hill throughout his Ravens career, making the connection an understandable one to watch.
+    sources:
+      - "ESPN/Adam Schefter"
+      - "BaltimoreRavens.com"
+    source_links:
+      - label: "Ravens trade-deadline roundup"
+        url: "https://www.baltimoreravens.com/news/ravens-trade-deadline-buyers-sellers-derrick-henry-justice-hill-jacoby-brissett-playoff-chances"
+      - label: "Giants Wire report"
+        url: "https://staging-aws.sports.yahoo.com/articles/report-york-giants-inquired-ravens-132524070.html"
+  - title: "The Ravens waived Austin Reed to make room for Jacoby Brissett on the 53-man roster."
+    text: >-
+      Reed backed up Joe Fagnano against Jacksonville but did not play. Brissett is expected to make his Baltimore debut against the Chargers on November 16, while Fagnano and Kedon Slovis remain on the roster.
+    sources:
+      - "BaltimoreRavens.com/Ryan Mink"
+    source_links:
+      - label: "Ravens roster move"
+        url: "https://www.baltimoreravens.com/news/ravens-austin-reed-jacoby-brissett-waive-quarterback"
+  - title: "The extended break gives Brissett time to prepare for his expected first start with Baltimore."
+    text: >-
+      After Thursday's 33-10 loss, the Ravens' next game is Monday night, November 16, against the Chargers. The 11-day gap gives Brissett time to learn Declan Doyle's offense, but how much of the playbook he can absorb before his debut remains an open question.
+    sources:
+      - "BaltimoreRavens.com"
+    source_links:
+      - label: "Ravens roster move"
+        url: "https://www.baltimoreravens.com/news/ravens-austin-reed-jacoby-brissett-waive-quarterback"
       - label: "Cardinals trade announcement"
         url: "https://www.azcardinals.com/news/jacoby-brissett-trade-to-ravens-becomes-official"
-      - label: "Ravens injured reserve announcement"
-        url: "https://www.baltimoreravens.com/news/lamar-jackson-tyler-huntley-injured-reserve-austin-reed-adisa-isaac-jake-moody"
-      - label: "NFL Network"
-        url: "https://www.nfl.com/news/jacoby-brissett-trade-ravens-cardinals"
-  - title: "Kyle Hamilton suffered a hip injury against Jacksonville, adding another major concern to Baltimore's depleted secondary."
+  - title: "Lamar Jackson intends to return this season while recovering from a fractured, dislocated thumb."
     text: >-
-      Hamilton left during the third quarter and was ruled out, with Jesse Minter unable to provide a diagnosis or recovery timetable afterward. With Jaylinn Hawkins already sidelined and Nate Wiggins missing Thursday's game because of illness, the Ravens can hardly afford another extended absence in their defensive backfield.
+      NFL Network's Ian Rapoport reported a six-to-nine-week recovery estimate and said Jackson told teammates he plans to return. That range could put him back as early as the December 20 game in Pittsburgh or as late as the Week 18 game on January 9 or 10; his return depends on recovery and medical clearance. Baltimore did not play Sunday, and Jackson's report was the only new confirmed team development that day.
     sources:
+      - "NFL Network/Ian Rapoport"
       - "BaltimoreRavens.com"
+      - "NBC Sports"
     source_links:
-      - label: "Ravens injury report"
-        url: "https://www.baltimoreravens.com/news/kyle-hamilton-hip-injury-ravens-ruled-out"
-  - title: "The Ravens' fourth consecutive defeat exposed a historically ineffective offense."
-    text: >-
-      Thursday's 33-10 loss to Jacksonville dropped Baltimore to 4-5, marking the first time in franchise history it has lost three consecutive games by at least 20 points or scored fewer than 14 points in four straight games. Rookie Joe Fagnano completed just 10 passes for 60 yards with two interceptions, while Baltimore resorted to 10 direct snaps to Derrick Henry in the Wildcat. The arrival of Brissett should restore some offensive flexibility, but it won't automatically solve everything else.
-    sources:
-      - "BaltimoreRavens.com"
-      - "The Baltimore Sun"
-    source_links:
-      - label: "Ravens postgame breakdown"
-        url: "https://www.baltimoreravens.com/news/ravens-jaguars-historic-low-breakdown-presnap-jesse-minter-week-9-2026"
-  - title: "Minter acknowledged that Baltimore's secondary continues allowing unacceptable explosive plays."
-    text: >-
-      Jacksonville produced completions of 52 and 50 yards, including Parker Washington's touchdown against Malaki Starks just before halftime. The Ravens also failed to sack Trevor Lawrence, and Minter conceded that his defense has fallen well short of expectations, particularly in coverage. Those failures cannot be explained away by injuries at quarterback.
-    sources:
-      - "BaltimoreRavens.com"
-      - "The Baltimore Banner"
-    source_links:
-      - label: "Ravens game recap"
-        url: "https://www.baltimoreravens.com/news/ravens-jaguars-game-recap-routed-week-9-2026"
-      - label: "Postgame press conference"
-        url: "https://www.baltimoreravens.com/news/transcript-press-conferences-11-5-26"
-  - title: "Baltimore's pre-snap penalty problem has reached 24 false starts, the most in the NFL."
-    text: >-
-      Four more came against Jacksonville, including consecutive penalties by Ronnie Stanley and Mark Andrews that turned second-and-5 into second-and-15. Minter called the continued mistakes unacceptable nine games into the season, making clear that both coaches and players share responsibility for a recurring problem that keeps sabotaging possessions.
-    sources:
-      - "BaltimoreRavens.com"
-      - "Jesse Minter postgame press conference"
-    source_links:
-      - label: "Ravens postgame breakdown"
-        url: "https://www.baltimoreravens.com/news/ravens-jaguars-historic-low-breakdown-presnap-jesse-minter-week-9-2026"
-      - label: "Postgame press conference"
-        url: "https://www.baltimoreravens.com/news/transcript-press-conferences-11-5-26"
+      - label: "Ravens report on Jackson"
+        url: "https://www.baltimoreravens.com/news/lamar-jackson-return-this-season-told-teammates-ravens-just-stay-alive-thumb-injury"
+      - label: "NFL Network report"
+        url: "https://www.nfl.com/news/ravens-lamar-jackson-right-thumb-out-6-9-weeks-expects-to-return-this-season"
+      - label: "Ravens schedule"
+        url: "https://www.baltimoreravens.com/news/baltimore-ravens-2026-schedule"
+      - label: "NBC Sports report"
+        url: "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/lamar-jacksons-message-to-teammates-stay-alive-and-ill-be-back"
