@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T18:40:52Z",
+  "generated_at": "2026-11-10T21:25:19Z",
   "as_of": "2026-11-10",
   "season": 2026,
   "benchmark_season": 2025,
@@ -1575,7 +1575,7 @@
         "rank": 5,
         "rank_group": "WR",
         "season": 2026,
-        "source_updated_at": "2026-11-10T17:44:08.170000+00:00",
+        "source_updated_at": "2026-11-10T19:23:13.214000+00:00",
         "routes": 212,
         "receiving_yards": 614,
         "qualified_receivers": 116,
@@ -2025,6 +2025,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-11-10T18:40:52Z"
+    "retrieved_at": "2026-11-10T21:25:19Z"
   }
 }
