@@ -23,8 +23,8 @@ home_image_position: "50% 40%"
 hero_alt: "Travis Jones, Mike Green and Kyle Hamilton on the field against Jacksonville in Week 9"
 hero_credit: "Shawn Hubbard / Baltimore Ravens Photos"
 hero_credit_url: "https://www.baltimoreravens.com/photos/game-action-gallery-ravens-vs-jaguars-week-9"
-home_feature: true
-home_recent: false
+home_feature: false
+home_recent: true
 home_recent_label: "First and Five"
 ravens_feature: true
 ravens_feature_image: true
