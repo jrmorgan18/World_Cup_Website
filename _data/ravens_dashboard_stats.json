@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T15:09:03Z",
+  "generated_at": "2026-11-10T18:40:52Z",
   "as_of": "2026-11-10",
   "season": 2026,
   "benchmark_season": 2025,
@@ -1241,7 +1241,7 @@
         "full_name": "Baltimore Ravens",
         "record": "4-5",
         "value": 48.1,
-        "unrounded_value": 48.12054926247113,
+        "unrounded_value": 48.12054926247112,
         "offense_rank": 16,
         "defense_rank": 14,
         "special_teams_rank": 24
@@ -1575,7 +1575,7 @@
         "rank": 5,
         "rank_group": "WR",
         "season": 2026,
-        "source_updated_at": "2026-11-10T09:20:17.146000+00:00",
+        "source_updated_at": "2026-11-10T17:44:08.170000+00:00",
         "routes": 212,
         "receiving_yards": 614,
         "qualified_receivers": 116,
@@ -2025,6 +2025,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-11-10T15:09:03Z"
+    "retrieved_at": "2026-11-10T18:40:52Z"
   }
 }
