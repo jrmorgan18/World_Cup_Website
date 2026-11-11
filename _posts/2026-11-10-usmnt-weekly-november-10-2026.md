@@ -12,7 +12,7 @@ section_theme: "project"
 series: "USMNT Weekly"
 reporting_window: "November 2–8, 2026"
 usmnt_weekly_feature: true
-home_feature: true
+home_feature: false
 home_recent: false
 feature_label: "USMNT Weekly"
 feature_kicker: "Project 2030"

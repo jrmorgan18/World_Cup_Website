@@ -26,7 +26,7 @@ hero_credit_url: "https://www.baltimoreravens.com/photos/game-action-gallery-rav
 home_feature: false
 home_recent: true
 home_recent_label: "First and Five"
-ravens_feature: true
+ravens_feature: false
 ravens_feature_image: true
 feature_label: "Week 9 takeaways"
 ravens_feature_mark: "5"
