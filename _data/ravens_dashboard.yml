@@ -180,7 +180,7 @@ editorial:
     - {"name": "Running backs", "assessment": "Solid", "trend": "up", "season_grade": "B-", "season_grade_points": 2.739, "last_game_grade": "C+", "explanation": "Week 9: Justice Hill broke a 65-yard touchdown run. Hill and Derrick Henry combined for 77 yards on their other 25 carries.", "link": "/ravens/first-and-five-jaguars-week-nine-2026/"}
     - {"name": "Wide receivers", "assessment": "Solid", "trend": "down", "season_grade": "B", "season_grade_points": 3.0756666666666668, "last_game_grade": "D", "explanation": "Week 9: Zay Flowers, Rashod Bateman and LaJohntay Wester combined for five catches and 26 yards.", "link": "/ravens/first-and-five-jaguars-week-nine-2026/"}
     - {"name": "Tight ends", "assessment": "Mixed", "trend": "up", "season_grade": "C", "season_grade_points": 2.036888888888889, "last_game_grade": "D+", "explanation": "Week 9: Mark Andrews and Matt Hibner combined for three catches and 24 yards.", "link": "/ravens/first-and-five-jaguars-week-nine-2026/"}
-    - {"name": "Offensive line", "assessment": "Mixed", "trend": "up", "season_grade": "C", "season_grade_points": 1.8515555555555556, "last_game_grade": "C-", "explanation": "Week 9: Jacksonville recorded two sacks, and four false starts put the offense behind schedule.", "link": "/ravens/first-and-five-jaguars-week-nine-2026/"}
+    - {"name": "Offensive line", "assessment": "Mixed", "trend": "up", "season_grade": "C", "season_grade_points": 1.8515555555555556, "last_game_grade": "C-", "explanation": "Week 9: Jacksonville recorded one sack, and four false starts put the offense behind schedule.", "link": "/ravens/first-and-five-jaguars-week-nine-2026/"}
     - {"name": "Defensive line", "assessment": "Strength", "trend": "up", "season_grade": "B+", "season_grade_points": 3.332, "last_game_grade": "B", "explanation": "Week 9: Jacksonville finished with 77 yards on 30 rushing attempts, just 2.6 yards per carry.", "link": "/ravens/first-and-five-jaguars-week-nine-2026/"}
     - {"name": "Edge rushers", "assessment": "Mixed", "trend": "down", "season_grade": "C+", "season_grade_points": 2.481, "last_game_grade": "F", "explanation": "Week 9: The pass rush finished without a sack on Trevor Lawrence.", "link": "/ravens/first-and-five-jaguars-week-nine-2026/"}
     - {"name": "Linebackers", "assessment": "Solid", "trend": "down", "season_grade": "B-", "season_grade_points": 2.6662222222222223, "last_game_grade": "B-", "explanation": "Week 9: The linebackers helped limit Jacksonville to 2.6 yards per carry.", "link": "/ravens/first-and-five-jaguars-week-nine-2026/"}
@@ -195,9 +195,9 @@ editorial:
 
   championship_check:
     - {"category": "Quarterback play", "status": "Concern", "explanation": "The Ravens turn to Brissett after the offense produced 55 net passing yards against Jacksonville."}
-    - {"category": "Pass protection", "status": "Concern", "explanation": "Jacksonville recorded two sacks. Four false starts pushed the Ravens' season total to 24."}
+    - {"category": "Pass protection", "status": "Concern", "explanation": "Jacksonville recorded one sack. Four false starts pushed the Ravens' season total to 24."}
     - {"category": "Explosive offense", "status": "Unclear", "explanation": "Hill broke a 65-yard run. The Ravens gained 162 total yards on all their other plays combined."}
-    - {"category": "Four-man pass rush", "status": "Concern", "explanation": "The Ravens recorded no sacks against Jacksonville. ESPN's latest team pass-rush win rate still covers Week 8."}
+    - {"category": "Four-man pass rush", "status": "Concern", "explanation": "The Ravens recorded no sacks against Jacksonville. ESPN ranks the team's pass-rush win rate 13th through Week 9."}
     - {"category": "Health", "status": "Concern", "explanation": "Jackson, Huntley and Loop are on injured reserve. Hamilton, Hawkins and Wiggins are being monitored ahead of the Chargers game."}
 
 preseason_form:
