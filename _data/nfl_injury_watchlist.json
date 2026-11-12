@@ -1,11 +1,11 @@
 {
   "season": 2026,
   "week": 10,
-  "as_of": "2026-11-12T19:11:53.395594+00:00",
+  "as_of": "2026-11-12T21:47:56.401070+00:00",
   "source": {
     "file": "injuries.parquet",
     "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet",
-    "fetched_at": "2026-11-12T19:11:36.383810+00:00",
+    "fetched_at": "2026-11-12T21:47:32.072418+00:00",
     "http_last_modified": "Thu, 12 Nov 2026 15:56:22 GMT",
     "source_sha256": "a72cc1afc7224baf6cafdc81950d807fd603ee9c02e7348b38151fcc1af8fa36",
     "cache_sha256": "a72cc1afc7224baf6cafdc81950d807fd603ee9c02e7348b38151fcc1af8fa36"
