@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-11T22:32:52Z",
-  "as_of": "2026-11-11",
+  "generated_at": "2026-11-12T18:54:08Z",
+  "as_of": "2026-11-12",
   "season": 2026,
   "benchmark_season": 2025,
   "efficiency_model": {
@@ -1039,7 +1039,7 @@
     }
   },
   "league_efficiency_rankings": {
-    "label": "Games through November 11",
+    "label": "Games through November 12",
     "sample_note": "Completed regular-season games; early-season sample",
     "teams": [
       {
@@ -1540,7 +1540,7 @@
         "period_label": "Through available Week 9 games",
         "label": "Brissett CPOE",
         "value": "+4.5%",
-        "rank": 6,
+        "rank": 5,
         "rank_group": "QB"
       },
       {
@@ -1561,7 +1561,7 @@
         "period_label": "Through available Week 9 games",
         "label": "Henry RYOE/att",
         "value": "+0.12",
-        "rank": 23,
+        "rank": 22,
         "rank_group": "RB"
       }
     ],
@@ -1569,13 +1569,13 @@
       {
         "source_label": "SumerSports",
         "source_url": "https://sumersports.com/players/wide-receiver/",
-        "period_label": "Updated Nov. 11, 2026",
+        "period_label": "Updated Nov. 12, 2026",
         "label": "Flowers YPRR",
         "value": "2.90",
         "rank": 5,
         "rank_group": "WR",
         "season": 2026,
-        "source_updated_at": "2026-11-11T09:23:50.425000+00:00",
+        "source_updated_at": "2026-11-12T09:19:12.871000+00:00",
         "routes": 212,
         "receiving_yards": 614,
         "qualified_receivers": 116,
@@ -1635,7 +1635,7 @@
         "period_label": "Through available Week 9 games",
         "label": "Andrews YACOE",
         "value": "-0.15",
-        "rank": 28,
+        "rank": 27,
         "rank_group": "TE"
       }
     ],
@@ -2025,6 +2025,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-11-11T22:32:52Z"
+    "retrieved_at": "2026-11-12T18:54:08Z"
   }
 }
