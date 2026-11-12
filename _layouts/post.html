@@ -57,6 +57,9 @@ layout: default
     </ul>
   </details>
   {% endif %}
+  {% if page.ravens_report_card %}
+  {% include ravens-report-card.html card=page.ravens_report_card %}
+  {% endif %}
   <div class="article-body">
     {{ content }}
   </div>

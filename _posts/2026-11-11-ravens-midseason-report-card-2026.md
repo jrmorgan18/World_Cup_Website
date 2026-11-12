@@ -28,6 +28,28 @@ ravens_feature_image: true
 feature_label: "Midseason report card"
 home_recent: false
 suppress_article_prompts: true
+ravens_report_card:
+  term: "2026 · Weeks 1–9"
+  record: "4–5"
+  units:
+    - name: "Offense"
+      grades:
+        - { subject: "Quarterbacks", grade: "B−", anchor: "quarterbacks" }
+        - { subject: "Running backs", grade: "B−", anchor: "running-backs" }
+        - { subject: "Wide receivers", grade: "B", anchor: "wide-receivers" }
+        - { subject: "Tight ends", grade: "C", anchor: "tight-ends" }
+        - { subject: "Offensive line", grade: "C", anchor: "offensive-line" }
+    - name: "Defense and special teams"
+      grades:
+        - { subject: "Defensive line", grade: "B+", anchor: "defensive-line" }
+        - { subject: "Edge rushers", grade: "C+", anchor: "edge-rushers" }
+        - { subject: "Linebackers", grade: "B−", anchor: "linebackers" }
+        - { subject: "Secondary", grade: "C+", anchor: "secondary" }
+        - { subject: "Special teams", grade: "B−", anchor: "special-teams" }
+  coaches:
+    - { subject: "Head coach", name: "Jesse Minter", grade: "C+", anchor: "head-coach" }
+    - { subject: "Defensive leadership", name: "Jesse Minter / Anthony Weaver", grade: "D+", anchor: "defensive-leadership" }
+    - { subject: "Offensive coordinator", name: "Declan Doyle", grade: "B+", anchor: "offensive-coordinator" }
 ---
 
 <p data-source-paragraph="2"><em>The Ravens have gone from 4–1 and looking like contenders to 4–5 and desperately trying to survive until a possible Lamar Jackson return. Nine games into the Jesse Minter era, we’re handing out grades to every position group and the coaching staff.</em></p>
@@ -60,7 +82,7 @@ suppress_article_prompts: true
 
 <h2 data-source-paragraph="16">Offense</h2>
 
-<h3 data-source-paragraph="17">Quarterbacks: B−</h3>
+<h3 id="quarterbacks" data-source-paragraph="17">Quarterbacks: B−</h3>
 
 <p data-source-paragraph="18">This is really two grades merged together.</p>
 
@@ -95,7 +117,7 @@ suppress_article_prompts: true
 
 <p data-source-paragraph="31">If Brissett can provide a solid C-level performance, the Ravens might have enough talent around him to survive if Lamar can make a miraculous December return as he reportedly intends to. Brissett’s job is to make sure there are still meaningful games to play if that happens.</p>
 
-<h3 data-source-paragraph="32">Running Backs: B−</h3>
+<h3 id="running-backs" data-source-paragraph="32">Running Backs: B−</h3>
 
 <p data-source-paragraph="33">Derrick Henry has eight rushing touchdowns and 689 yards through nine games. Those aren’t terrible numbers for a 32-year-old running back. However, anyone watching the Ravens over the past month knows the running game has been in decline during the losing streak.</p>
 
@@ -118,7 +140,7 @@ suppress_article_prompts: true
 
 <p data-source-paragraph="40">Doyle needs to find better ways to use the talent at his disposal, particularly with Brissett taking over and defenses likely to continue crowding the running lanes.</p>
 
-<h3 data-source-paragraph="41">Wide Receivers: B</h3>
+<h3 id="wide-receivers" data-source-paragraph="41">Wide Receivers: B</h3>
 
 <p data-source-paragraph="42">Zay Flowers has been one of the clearest bright spots of the Ravens season.</p>
 
@@ -153,7 +175,7 @@ suppress_article_prompts: true
 
 <p data-source-paragraph="55">Brissett should at least give Doyle a chance to restore some of the passing offense that made Flowers so dangerous early in the season.</p>
 
-<h3 data-source-paragraph="56">Tight Ends: C</h3>
+<h3 id="tight-ends" data-source-paragraph="56">Tight Ends: C</h3>
 
 <p data-source-paragraph="57">There may be key details behind the scenes that we’ll never know as to why the Ravens chose to sign Mark Andrews over Isaiah Likely, but purely from a football standpoint it has looked like a horrible decision.</p>
 
@@ -180,7 +202,7 @@ suppress_article_prompts: true
 
 <p data-source-paragraph="66">Andrews doesn’t necessarily need to disappear from the offense, but his role should reflect what he currently provides rather than what he accomplished several seasons ago.</p>
 
-<h3 data-source-paragraph="67">Offensive Line: C</h3>
+<h3 id="offensive-line" data-source-paragraph="67">Offensive Line: C</h3>
 
 <p data-source-paragraph="68">I’m not sure there’s a unit on the roster that’s had more legitimate excuses than the offensive line.</p>
 
@@ -213,7 +235,7 @@ suppress_article_prompts: true
 
 <h2 data-source-paragraph="81">Defense</h2>
 
-<h3 data-source-paragraph="82">Defensive Line: B+</h3>
+<h3 id="defensive-line" data-source-paragraph="82">Defensive Line: B+</h3>
 
 <p data-source-paragraph="83">The defensive line has probably been the Ravens most consistently effective position group.</p>
 
@@ -234,7 +256,7 @@ suppress_article_prompts: true
 
 <p data-source-paragraph="89">That deserves recognition, even on a defense that has otherwise disappointed.</p>
 
-<h3 data-source-paragraph="90">Edge Rushers: C+</h3>
+<h3 id="edge-rushers" data-source-paragraph="90">Edge Rushers: C+</h3>
 
 <p data-source-paragraph="91">The Ravens added Trey Hendrickson because they wanted a pass rusher capable of consistently winning individual matchups without requiring the defensive coordinator to manufacture pressure through elaborate designs.</p>
 
@@ -257,7 +279,7 @@ suppress_article_prompts: true
 
 <p data-source-paragraph="98">That hasn’t happened consistently enough.</p>
 
-<h3 data-source-paragraph="99">Linebackers: B−</h3>
+<h3 id="linebackers" data-source-paragraph="99">Linebackers: B−</h3>
 
 <p data-source-paragraph="100">Roquan Smith leads the Ravens with 74 tackles, two sacks, two forced fumbles and an interception.</p>
 
@@ -282,7 +304,7 @@ suppress_article_prompts: true
 
 <p data-source-paragraph="108">The collective performance simply hasn’t been exceptional.</p>
 
-<h3 data-source-paragraph="109">Secondary: C+</h3>
+<h3 id="secondary" data-source-paragraph="109">Secondary: C+</h3>
 
 <p data-source-paragraph="110">This is the most disappointing position group relative to expectations.</p>
 
@@ -317,7 +339,7 @@ suppress_article_prompts: true
 
 <p data-source-paragraph="123">Instead, it’s become one of the reasons opponents have been able to dismantle the defense after halftime.</p>
 
-<h2 data-source-paragraph="125">Special Teams: B−</h2>
+<h2 id="special-teams" data-source-paragraph="125">Special Teams: B−</h2>
 
 <p data-source-paragraph="126">I was probably as concerned as anyone about Tyler Loop entering the season. After his missed field goal ended the Ravens’ 2025 season, I wasn’t convinced the team could trust him in another important situation.</p>
 
@@ -346,7 +368,7 @@ suppress_article_prompts: true
 
 <h2 data-source-paragraph="136">Coaching Staff</h2>
 
-<h3 data-source-paragraph="137">Jesse Minter, Head Coach: C+</h3>
+<h3 id="head-coach" data-source-paragraph="137">Jesse Minter, Head Coach: C+</h3>
 
 <p data-source-paragraph="138">Nine games isn’t enough to reach a definitive conclusion about Jesse Minter as an NFL head coach. However, most of what we have seen so far has been mildly disappointing at best.</p>
 
@@ -382,7 +404,7 @@ suppress_article_prompts: true
 
 <p data-source-paragraph="154">At 4–5, with the team coming off three consecutive blowout losses, a C+ feels appropriate.</p>
 
-<h3 data-source-paragraph="155">Jesse Minter / Anthony Weaver, Defensive Leadership: D+</h3>
+<h3 id="defensive-leadership" data-source-paragraph="155">Jesse Minter / Anthony Weaver, Defensive Leadership: D+</h3>
 
 <p data-source-paragraph="156">This is where my evaluation of Minter becomes considerably harsher.</p>
 
@@ -428,7 +450,7 @@ suppress_article_prompts: true
 
 <p data-source-paragraph="177">Nine games in, he hasn’t.</p>
 
-<h3 data-source-paragraph="178">Declan Doyle, Offensive Coordinator: B+</h3>
+<h3 id="offensive-coordinator" data-source-paragraph="178">Declan Doyle, Offensive Coordinator: B+</h3>
 
 <p data-source-paragraph="179">Of the three major coaching evaluations, Doyle gets the strongest grade.</p>
 

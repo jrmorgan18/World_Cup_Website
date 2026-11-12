@@ -1,0 +1,41 @@
+<section class="ravens-report-card" id="midseason-grades" aria-labelledby="ravens-report-card-title">
+  <header class="ravens-report-card-header">
+    <img src="{{ '/assets/images/nfl-logos/bal.png' | relative_url }}" alt="" width="64" height="64">
+    <div>
+      <p>Baltimore Ravens</p>
+      <h2 id="ravens-report-card-title">Midseason Report Card</h2>
+    </div>
+  </header>
+  <div class="ravens-report-card-paper">
+    <dl class="ravens-report-card-term">
+      <div><dt>Term</dt><dd>{{ include.card.term | escape }}</dd></div>
+      <div><dt>Record</dt><dd>{{ include.card.record | escape }}</dd></div>
+    </dl>
+    <div class="ravens-report-card-units">
+      {% for group in include.card.units %}
+      <div class="ravens-report-card-group">
+        <h3>{{ group.name | escape }} <span>Grade</span></h3>
+        <dl>
+          {% for entry in group.grades %}
+          <div>
+            <dt><a href="#{{ entry.anchor | escape }}">{{ entry.subject | escape }}</a></dt>
+            <dd>{{ entry.grade | escape }}</dd>
+          </div>
+          {% endfor %}
+        </dl>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="ravens-report-card-group ravens-report-card-coaches">
+      <h3>Coaching staff <span>Grade</span></h3>
+      <dl>
+        {% for entry in include.card.coaches %}
+        <div>
+          <dt><a href="#{{ entry.anchor | escape }}">{{ entry.subject | escape }}</a><small>{{ entry.name | escape }}</small></dt>
+          <dd>{{ entry.grade | escape }}</dd>
+        </div>
+        {% endfor %}
+      </dl>
+    </div>
+  </div>
+</section>
