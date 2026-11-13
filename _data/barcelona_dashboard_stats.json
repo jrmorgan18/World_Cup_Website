@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-12T15:38:33Z",
-  "as_of": "2026-11-12",
+  "generated_at": "2026-11-13T14:57:00Z",
+  "as_of": "2026-11-13",
   "season": 2026,
   "season_label": "2026-27",
   "team": {
@@ -5204,8 +5204,8 @@
   "injuries": [],
   "rotation": {
     "window_days": 21,
-    "window_start": "2026-10-22",
-    "window_end": "2026-11-12",
+    "window_start": "2026-10-23",
+    "window_end": "2026-11-13",
     "matches_in_window": 4,
     "available_minutes": 360,
     "players": [
@@ -5399,7 +5399,7 @@
     "shortest_rest_recent": 3,
     "average_rest_recent": 4.7,
     "matches_next_14_days": 2,
-    "matches_next_30_days": 6,
+    "matches_next_30_days": 7,
     "shortest_rest_upcoming": 2,
     "recent": [
       {
@@ -5459,6 +5459,12 @@
         "competition": "ucl",
         "opponent": "Man City",
         "location": "home"
+      },
+      {
+        "date": "2026-12-13T20:00Z",
+        "competition": "laliga",
+        "opponent": "Málaga",
+        "location": "away"
       }
     ]
   },
