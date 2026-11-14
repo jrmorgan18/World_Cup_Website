@@ -24,26 +24,28 @@ description: A four-year scouting report tracking the USMNT player pool, checkpo
 {% assign big_board_explainer = site.posts | where: "big_board_explainer", true | first %}
 {% assign sullivan_miami_story = site.posts | where: "sullivan_miami_feature", true | first %}
 {% assign usmnt_weekly_story = site.posts | where: "usmnt_weekly_feature", true | first %}
+{% assign usmnt_coaching_search_story = site.posts | where: "usmnt_coaching_search_feature", true | first %}
+{% assign project_lead = usmnt_coaching_search_story | default: usmnt_weekly_story %}
 {% assign usmnt_camp_story = site.posts | where: "usmnt_camp_feature", true | first %}
 {% assign usmnt_window_story = site.posts | where: "usmnt_window_feature", true | first %}
 {% assign foundation_part1 = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina" | first %}
 {% assign foundation_part2 = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina-part-2" | first %}
 
-{% if usmnt_weekly_story %}
-<section class="project-latest" aria-labelledby="project-weekly-heading">
+{% if project_lead %}
+<section class="project-latest" aria-labelledby="project-lead-heading">
   <div class="de-section-heading de-section-heading--light">
-    <div><p class="de-kicker">Main piece</p><h2 id="project-weekly-heading">USMNT Weekly</h2></div>
-    <p>{{ usmnt_weekly_story.subtitle }}</p>
+    <div><p class="de-kicker">Main piece</p><h2 id="project-lead-heading">{{ project_lead.feature_label | default: "USMNT Weekly" }}</h2></div>
+    {% if project_lead.subtitle %}<p>{{ project_lead.subtitle }}</p>{% endif %}
   </div>
-  <a class="project-story-card project-story-card--visual" href="{{ usmnt_weekly_story.url | relative_url }}">
+  <a class="project-story-card project-story-card--visual" href="{{ project_lead.url | relative_url }}">
     <figure>
-      <img src="{{ usmnt_weekly_story.hero_image | relative_url }}" alt="{{ usmnt_weekly_story.hero_alt | escape }}" loading="eager">
+      <img src="{{ project_lead.hero_image | relative_url }}" alt="{{ project_lead.hero_alt | escape }}" loading="eager">
     </figure>
     <div>
-      <span>Project 2030 / {% if usmnt_weekly_story.reporting_window %}{{ usmnt_weekly_story.reporting_window }}{% else %}{{ usmnt_weekly_story.date | date: "%B %-d, %Y" }}{% endif %}</span>
-      <h3>{{ usmnt_weekly_story.title }}</h3>
-      <p>{{ usmnt_weekly_story.excerpt }}</p>
-      <strong>Read the weekly report <span aria-hidden="true">&rarr;</span></strong>
+      <span>Project 2030 / {% if project_lead.reporting_window %}{{ project_lead.reporting_window }}{% else %}{{ project_lead.date | date: "%B %-d, %Y" }}{% endif %}</span>
+      <h3>{{ project_lead.title }}</h3>
+      <p>{{ project_lead.excerpt }}</p>
+      <strong>{% if project_lead.url == usmnt_weekly_story.url %}Read the weekly report{% else %}Read the analysis{% endif %} <span aria-hidden="true">&rarr;</span></strong>
     </div>
   </a>
 </section>
