@@ -2,7 +2,7 @@
   "season": 2026,
   "through_week": 10,
   "model_version": "2.1",
-  "as_of": "2026-11-13",
+  "as_of": "2026-11-14",
   "label": "Through available Week 10 games · v2.1",
   "sample_note": "Completed games only · 45% offense / 45% defense / 10% special teams",
   "article_url": "/ravens/dual-eights-efficiency-index-week-four-2026/",
@@ -315,7 +315,7 @@
       "full_name": "Cleveland Browns",
       "record": "5-4",
       "value": 39.3,
-      "unrounded_value": 39.254954977467825,
+      "unrounded_value": 39.25495497746782,
       "offense_rank": 27,
       "defense_rank": 18,
       "special_teams_rank": 26
@@ -327,7 +327,7 @@
       "full_name": "New Orleans Saints",
       "record": "3-5",
       "value": 39.2,
-      "unrounded_value": 39.212310008784456,
+      "unrounded_value": 39.21231000878445,
       "offense_rank": 20,
       "defense_rank": 28,
       "special_teams_rank": 14

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-13T18:30:54Z",
-  "as_of": "2026-11-13",
+  "generated_at": "2026-11-14T17:02:47Z",
+  "as_of": "2026-11-14",
   "season": 2026,
   "benchmark_season": 2025,
   "efficiency_model": {
@@ -1105,7 +1105,7 @@
     }
   },
   "league_efficiency_rankings": {
-    "label": "Games through November 13",
+    "label": "Games through November 14",
     "sample_note": "Completed regular-season games; early-season sample",
     "teams": [
       {
@@ -1415,7 +1415,7 @@
         "full_name": "Cleveland Browns",
         "record": "5-4",
         "value": 39.3,
-        "unrounded_value": 39.254954977467825,
+        "unrounded_value": 39.25495497746782,
         "offense_rank": 27,
         "defense_rank": 18,
         "special_teams_rank": 26
@@ -1427,7 +1427,7 @@
         "full_name": "New Orleans Saints",
         "record": "3-5",
         "value": 39.2,
-        "unrounded_value": 39.212310008784456,
+        "unrounded_value": 39.21231000878445,
         "offense_rank": 20,
         "defense_rank": 28,
         "special_teams_rank": 14
@@ -1635,13 +1635,13 @@
       {
         "source_label": "SumerSports",
         "source_url": "https://sumersports.com/players/wide-receiver/",
-        "period_label": "Updated Nov. 13, 2026",
+        "period_label": "Updated Nov. 14, 2026",
         "label": "Flowers YPRR",
         "value": "2.90",
         "rank": 5,
         "rank_group": "WR",
         "season": 2026,
-        "source_updated_at": "2026-11-13T17:24:10.714000+00:00",
+        "source_updated_at": "2026-11-14T10:47:01.185000+00:00",
         "routes": 212,
         "receiving_yards": 614,
         "qualified_receivers": 116,
@@ -2091,6 +2091,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-11-13T18:30:54Z"
+    "retrieved_at": "2026-11-14T17:02:47Z"
   }
 }
