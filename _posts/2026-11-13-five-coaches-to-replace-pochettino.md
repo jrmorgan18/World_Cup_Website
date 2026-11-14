@@ -7,6 +7,11 @@ section_theme: "project"
 permalink: "/soccer/project-2030/five-coaches-to-replace-pochettino-2026/"
 author: "Randy Morgan"
 excerpt: "With Mauricio Pochettino headed to Manchester United, five candidates for the USMNT job and what it would take to land each of them."
+tldr:
+  - "Mauricio Pochettino is leaving for Manchester United, giving U.S. Soccer a full World Cup cycle to build on the more aggressive style he brought to the team."
+  - "Pep Guardiola should get the first call. Julian Nagelsmann is next because he can tailor his approach to very different opponents."
+  - "Pellegrino Matarazzo is the top American-born option. He won the Copa del Rey with Real Sociedad and could build on the USMNT’s pressing game."
+  - "Steve Cherundolo offers continuity from inside the federation. B.J. Callaghan knows the senior player pool and has shown at Nashville that he can build a proactive team."
 series: "Project 2030"
 read_time: 17
 source_docx: "articles/Five Coaches to Replace Pochettino.docx"
