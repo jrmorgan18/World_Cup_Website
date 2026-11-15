@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-14T13:49:43Z",
-  "as_of": "2026-11-14",
+  "generated_at": "2026-11-15T14:21:12Z",
+  "as_of": "2026-11-15",
   "season": 2026,
   "season_label": "2026-27",
   "team": {
@@ -5087,7 +5087,7 @@
       "position": "Forward",
       "position_abbr": "F",
       "citizenship": "Sweden",
-      "age": 20,
+      "age": 21,
       "headshot": null,
       "competitions": {
         "laliga": {
@@ -5204,8 +5204,8 @@
   "injuries": [],
   "rotation": {
     "window_days": 21,
-    "window_start": "2026-10-24",
-    "window_end": "2026-11-14",
+    "window_start": "2026-10-25",
+    "window_end": "2026-11-15",
     "matches_in_window": 4,
     "available_minutes": 360,
     "players": [
@@ -5398,7 +5398,7 @@
     "load_level": "Light",
     "shortest_rest_recent": 3,
     "average_rest_recent": 4.7,
-    "matches_next_14_days": 2,
+    "matches_next_14_days": 3,
     "matches_next_30_days": 7,
     "shortest_rest_upcoming": 2,
     "recent": [
