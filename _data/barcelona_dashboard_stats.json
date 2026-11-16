@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-15T14:21:12Z",
-  "as_of": "2026-11-15",
+  "generated_at": "2026-11-16T16:30:07Z",
+  "as_of": "2026-11-16",
   "season": 2026,
   "season_label": "2026-27",
   "team": {
@@ -1970,9 +1970,9 @@
         {
           "event_id": "401882783",
           "competition": "laliga",
-          "date": "2026-12-06T20:00Z",
+          "date": "2026-12-05T20:00Z",
           "completed": false,
-          "status_detail": "TBD",
+          "status_detail": "12/5 - 3:00 PM EST",
           "location": "home",
           "venue": "Spotify Camp Nou",
           "opponent": "Celta Vigo",
@@ -5204,100 +5204,55 @@
   "injuries": [],
   "rotation": {
     "window_days": 21,
-    "window_start": "2026-10-25",
-    "window_end": "2026-11-15",
-    "matches_in_window": 4,
-    "available_minutes": 360,
+    "window_start": "2026-10-26",
+    "window_end": "2026-11-16",
+    "matches_in_window": 3,
+    "available_minutes": 270,
     "players": [
       {
         "player_id": "297362",
         "name": "Joan García",
         "position_abbr": "G",
-        "minutes": 360,
-        "starts": 4,
-        "matches": 4,
+        "minutes": 270,
+        "starts": 3,
+        "matches": 3,
         "share": 100.0
       },
       {
         "player_id": "368992",
         "name": "Pau Cubarsí",
         "position_abbr": "D",
-        "minutes": 360,
-        "starts": 4,
-        "matches": 4,
+        "minutes": 270,
+        "starts": 3,
+        "matches": 3,
         "share": 100.0
       },
       {
         "player_id": "362150",
         "name": "Lamine Yamal",
         "position_abbr": "F",
-        "minutes": 343,
-        "starts": 4,
-        "matches": 4,
-        "share": 95.3
+        "minutes": 253,
+        "starts": 3,
+        "matches": 3,
+        "share": 93.7
       },
       {
         "player_id": "354334",
         "name": "Fermín López",
         "position_abbr": "M",
-        "minutes": 306,
-        "starts": 4,
-        "matches": 4,
-        "share": 85.0
+        "minutes": 232,
+        "starts": 3,
+        "matches": 3,
+        "share": 85.9
       },
       {
         "player_id": "231050",
         "name": "Raphinha",
         "position_abbr": "F",
-        "minutes": 306,
-        "starts": 4,
-        "matches": 4,
-        "share": 85.0
-      },
-      {
-        "player_id": "176399",
-        "name": "João Cancelo",
-        "position_abbr": "D",
-        "minutes": 301,
-        "starts": 4,
-        "matches": 4,
-        "share": 83.6
-      },
-      {
-        "player_id": "250465",
-        "name": "Pedri",
-        "position_abbr": "M",
-        "minutes": 294,
-        "starts": 4,
-        "matches": 4,
-        "share": 81.7
-      },
-      {
-        "player_id": "312015",
-        "name": "Gerard Martín",
-        "position_abbr": "D",
-        "minutes": 278,
-        "starts": 3,
-        "matches": 4,
-        "share": 77.2
-      },
-      {
-        "player_id": "268782",
-        "name": "Anthony Gordon",
-        "position_abbr": "F",
-        "minutes": 277,
-        "starts": 3,
-        "matches": 4,
-        "share": 76.9
-      },
-      {
-        "player_id": "231828",
-        "name": "Rodri",
-        "position_abbr": "M",
-        "minutes": 225,
+        "minutes": 221,
         "starts": 3,
         "matches": 3,
-        "share": 62.5
+        "share": 81.9
       },
       {
         "player_id": "403575",
@@ -5306,16 +5261,43 @@
         "minutes": 217,
         "starts": 3,
         "matches": 3,
-        "share": 60.3
+        "share": 80.4
       },
       {
-        "player_id": "219022",
-        "name": "Frenkie de Jong",
+        "player_id": "176399",
+        "name": "João Cancelo",
+        "position_abbr": "D",
+        "minutes": 211,
+        "starts": 3,
+        "matches": 3,
+        "share": 78.1
+      },
+      {
+        "player_id": "250465",
+        "name": "Pedri",
         "position_abbr": "M",
-        "minutes": 164,
-        "starts": 1,
-        "matches": 4,
-        "share": 45.6
+        "minutes": 204,
+        "starts": 3,
+        "matches": 3,
+        "share": 75.6
+      },
+      {
+        "player_id": "268782",
+        "name": "Anthony Gordon",
+        "position_abbr": "F",
+        "minutes": 192,
+        "starts": 2,
+        "matches": 3,
+        "share": 71.1
+      },
+      {
+        "player_id": "312015",
+        "name": "Gerard Martín",
+        "position_abbr": "D",
+        "minutes": 188,
+        "starts": 2,
+        "matches": 3,
+        "share": 69.6
       },
       {
         "player_id": "376423",
@@ -5324,34 +5306,43 @@
         "minutes": 163,
         "starts": 1,
         "matches": 3,
-        "share": 45.3
+        "share": 60.4
+      },
+      {
+        "player_id": "219022",
+        "name": "Frenkie de Jong",
+        "position_abbr": "M",
+        "minutes": 148,
+        "starts": 1,
+        "matches": 3,
+        "share": 54.8
+      },
+      {
+        "player_id": "231828",
+        "name": "Rodri",
+        "position_abbr": "M",
+        "minutes": 135,
+        "starts": 2,
+        "matches": 2,
+        "share": 50.0
       },
       {
         "player_id": "274913",
         "name": "Karim Adeyemi",
         "position_abbr": "F",
-        "minutes": 100,
+        "minutes": 95,
         "starts": 1,
-        "matches": 3,
-        "share": 27.8
-      },
-      {
-        "player_id": "323703",
-        "name": "Alejandro Balde",
-        "position_abbr": "D",
-        "minutes": 97,
-        "starts": 0,
-        "matches": 3,
-        "share": 26.9
+        "matches": 2,
+        "share": 35.2
       },
       {
         "player_id": "217289",
         "name": "Gabriel Jesus",
         "position_abbr": "F",
-        "minutes": 54,
+        "minutes": 49,
         "starts": 0,
-        "matches": 3,
-        "share": 15.0
+        "matches": 2,
+        "share": 18.1
       },
       {
         "player_id": "323702",
@@ -5360,16 +5351,16 @@
         "minutes": 38,
         "starts": 0,
         "matches": 2,
-        "share": 10.6
+        "share": 14.1
       },
       {
-        "player_id": "403582",
-        "name": "Xavi Espart",
+        "player_id": "323703",
+        "name": "Alejandro Balde",
         "position_abbr": "D",
-        "minutes": 30,
-        "starts": 1,
-        "matches": 1,
-        "share": 8.3
+        "minutes": 37,
+        "starts": 0,
+        "matches": 2,
+        "share": 13.7
       },
       {
         "player_id": "186430",
@@ -5378,7 +5369,7 @@
         "minutes": 30,
         "starts": 0,
         "matches": 1,
-        "share": 8.3
+        "share": 11.1
       },
       {
         "player_id": "128714",
@@ -5387,26 +5378,21 @@
         "minutes": 17,
         "starts": 0,
         "matches": 1,
-        "share": 4.7
+        "share": 6.3
       }
     ]
   },
   "congestion": {
     "window_days": 21,
-    "matches_last_window": 4,
-    "matches_per_week": 1.33,
+    "matches_last_window": 3,
+    "matches_per_week": 1.0,
     "load_level": "Light",
     "shortest_rest_recent": 3,
-    "average_rest_recent": 4.7,
+    "average_rest_recent": 4.0,
     "matches_next_14_days": 3,
     "matches_next_30_days": 7,
-    "shortest_rest_upcoming": 2,
+    "shortest_rest_upcoming": 3,
     "recent": [
-      {
-        "date": "2026-10-25T20:00Z",
-        "competition": "laliga",
-        "opponent": "Real Madrid"
-      },
       {
         "date": "2026-10-31T20:00Z",
         "competition": "laliga",
@@ -5449,7 +5435,7 @@
         "location": "home"
       },
       {
-        "date": "2026-12-06T20:00Z",
+        "date": "2026-12-05T20:00Z",
         "competition": "laliga",
         "opponent": "Celta Vigo",
         "location": "home"
@@ -5605,9 +5591,9 @@
       {
         "event_id": "401882783",
         "competition": "laliga",
-        "date": "2026-12-06T20:00Z",
+        "date": "2026-12-05T20:00Z",
         "completed": false,
-        "status_detail": "TBD",
+        "status_detail": "12/5 - 3:00 PM EST",
         "location": "home",
         "venue": "Spotify Camp Nou",
         "opponent": "Celta Vigo",
