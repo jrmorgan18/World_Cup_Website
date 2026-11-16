@@ -22,8 +22,8 @@ home_image_position: "75% 42%"
 hero_alt: "Ravens head coach Jesse Minter wearing a headset on the sideline"
 hero_credit: "Shawn Hubbard / Baltimore Ravens Photos"
 hero_credit_url: "https://www.baltimoreravens.com/news/jesse-minter-ravens-defense-shake-up-marlon-humphrey-fourth-quarter-woes-explosive-plays-jaguars"
-home_feature: true
-ravens_feature: true
+home_feature: false
+ravens_feature: false
 ravens_feature_image: true
 feature_label: "Midseason report card"
 home_recent: false

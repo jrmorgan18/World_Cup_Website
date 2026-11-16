@@ -6,13 +6,13 @@
 meta:
   season: 2026
   season_label: "2026 Season"
-  last_updated: "2026-11-10"
-  update_context: "Week 9 complete · Jacksonville grades · Chargers matchup and availability"
-  data_status: "through-week-9"
+  last_updated: "2026-11-15"
+  update_context: "Jacksonville grades · Chargers matchup and Nov. 15 availability"
+  data_status: "week-10-in-progress"
   data_notice: >-
-    Team metrics include the completed Week 9 schedule. The Ravens are 4-5
-    after nine games. The unit grades include Jacksonville, and outside
-    analytics carry their own reporting periods.
+    The league snapshot includes available Week 10 games. The Ravens are
+    4-5 ahead of Monday night. Unit grades include Jacksonville, and
+    third-party metrics carry their own reporting periods.
 
 metric_definitions:
   - id: "overall_efficiency"
@@ -138,39 +138,39 @@ editorial:
   state:
     summary: >-
       The Ravens fell to 4-5 after a 33-10 loss to Jacksonville, their fourth
-      straight defeat. Jesse Minter expects Jacoby Brissett to start Monday
-      night against the Chargers after his trade from Arizona. Lamar Jackson
-      and Tyler Huntley are on injured reserve. Minter was encouraged by Kyle
-      Hamilton's initial outlook after the safety injured his hip against the Jaguars.
+      straight defeat. Jacoby Brissett makes his Ravens debut Monday night
+      against the Chargers, with Lamar Jackson and Tyler Huntley on injured
+      reserve. Kyle Hamilton and Nate Wiggins have no injury designation.
+      Jaylinn Hawkins is out, and Riley Patterson takes over at kicker.
     biggest_strength: "Zay Flowers is fifth among qualifying wide receivers at 2.90 yards per route run and third at +2.85 yards after catch over expectation."
     biggest_concern: "The Ravens have scored fewer than 14 points in four straight games and allowed 30 or more in three straight. Jacksonville hit passes of 52 and 50 yards."
-    changed_this_week: "Brissett joined the active roster, Austin Reed was waived, and the Ravens turn to a veteran quarterback against the Chargers."
+    changed_this_week: "Brissett takes over at quarterback, Patterson replaces Jake Moody, and trade acquisition Ryan Neuzil adds depth behind Cam Jurgens."
 
   metric_assessments:
-    overall_efficiency: {"status": "Average", "reviewed_value": 48.1, "reviewed_rank": 17, "interpretation": "The Ravens are 17th through Week 9, down from 16th after Week 8."}
-    point_differential: {"status": "Concern", "reviewed_value": -47, "reviewed_rank": 26, "interpretation": "The 23-point loss to Jacksonville moved the season margin to -47."}
-    turnover_differential: {"status": "Average", "reviewed_value": -2, "reviewed_rank": 21, "interpretation": "Two interceptions and a lost kickoff-return fumble against Jacksonville moved the Ravens from even to minus two on the season."}
-    offensive_epa_per_play: {"status": "Average", "reviewed_value": 0.0, "reviewed_rank": 16, "interpretation": "The offense was near league average on the season after averaging -0.28 EPA per eligible play against Jacksonville."}
+    overall_efficiency: {"status": "Average", "reviewed_value": 47.9, "reviewed_rank": 17, "interpretation": "The Ravens sit 17th in the league ahead of Monday night."}
+    point_differential: {"status": "Concern", "reviewed_value": -47, "reviewed_rank": 24, "interpretation": "The 23-point loss to Jacksonville moved the season margin to -47."}
+    turnover_differential: {"status": "Average", "reviewed_value": -2, "reviewed_rank": 20, "interpretation": "Two interceptions and a lost kickoff-return fumble against Jacksonville moved the Ravens from even to minus two on the season."}
+    offensive_epa_per_play: {"status": "Average", "reviewed_value": 0.0, "reviewed_rank": 15, "interpretation": "The offense was near league average on the season after averaging -0.28 EPA per eligible play against Jacksonville."}
     offensive_success_rate: {"status": "Average", "reviewed_value": 44.4, "reviewed_rank": 12, "interpretation": "The offense succeeded on just 32.7% of eligible plays against Jacksonville, below its 44.4% season rate."}
     explosive_play_rate: {"status": "Good", "reviewed_value": 9.8, "reviewed_rank": 11, "interpretation": "The offense is still 11th through Week 9. Justice Hill's 65-yard touchdown was the longest Ravens gain against Jacksonville."}
-    red_zone_td_rate: {"status": "Average", "reviewed_value": 59.3, "reviewed_rank": 15, "interpretation": "The Ravens have scored touchdowns on 59.3% of their qualifying red-zone drives."}
+    red_zone_td_rate: {"status": "Average", "reviewed_value": 59.3, "reviewed_rank": 16, "interpretation": "The Ravens have scored touchdowns on 59.3% of their qualifying red-zone drives."}
     defensive_epa_per_play: {"status": "Average", "reviewed_value": 0.02, "reviewed_rank": 19, "interpretation": "The defense allowed Jacksonville 0.05 EPA per eligible play, above its 0.02 season average."}
-    defensive_success_rate: {"status": "Concern", "reviewed_value": 44.3, "reviewed_rank": 22, "interpretation": "Jacksonville succeeded on 45.5% of eligible plays against a defense allowing 44.3% on the season."}
-    explosive_play_rate_allowed: {"status": "Good", "reviewed_value": 7.8, "reviewed_rank": 9, "interpretation": "The season rate ranks ninth. Jacksonville still completed two passes of at least 50 yards."}
+    defensive_success_rate: {"status": "Concern", "reviewed_value": 44.3, "reviewed_rank": 21, "interpretation": "Jacksonville succeeded on 45.5% of eligible plays against a defense allowing 44.3% on the season."}
+    explosive_play_rate_allowed: {"status": "Good", "reviewed_value": 7.8, "reviewed_rank": 8, "interpretation": "The season rate ranks eighth. Jacksonville still completed two passes of at least 50 yards."}
     opponent_red_zone_td_rate: {"status": "Concern", "reviewed_value": 65.6, "reviewed_rank": 20, "interpretation": "Opponents have scored touchdowns on 65.6% of qualifying red-zone drives."}
 
   overviews:
     offense:
       status: "Problem"
       assessment: "The Ravens finished with 227 net yards. Joe Fagnano threw for 60 yards with two interceptions, and Justice Hill scored the only Ravens touchdown on a 65-yard run."
-      trend_summary: "Brissett is expected to start against the Chargers."
+      trend_summary: "Brissett makes his Ravens debut against the Chargers."
       metric_ids: ["offensive_epa_per_play", "explosive_play_rate", "red_zone_td_rate"]
       links:
         - { label: "Five takeaways from Jacksonville", url: "/ravens/first-and-five-jaguars-week-nine-2026/" }
     defense:
       status: "Concern"
       assessment: "The front held Jacksonville to 77 rushing yards. The Jaguars still gained 319 net yards and hit passes of 52 and 50 yards."
-      trend_summary: "The Ravens went without a sack and have allowed at least 30 points in three straight games."
+      trend_summary: "The Ravens went without a sack against Jacksonville. Justin Herbert has taken 31 sacks in eight games."
       metric_ids: ["defensive_epa_per_play", "defensive_success_rate", "explosive_play_rate_allowed"]
       links:
         - { label: "Five takeaways from Jacksonville", url: "/ravens/first-and-five-jaguars-week-nine-2026/" }
@@ -189,16 +189,16 @@ editorial:
 
   weekly_changes:
     - {"direction": "down", "title": "Fourth straight loss", "text": "Jacksonville won 33-10. The Ravens are 4-5, 17th in Efficiency and 22nd in the Power Index through Week 9."}
-    - {"direction": "up", "title": "Brissett in line to start", "text": "The Ravens finalized the trade with Arizona on November 6. Minter expects Brissett to start against the Chargers."}
+    - {"direction": "up", "title": "Brissett makes Ravens debut", "text": "Brissett gets his first Ravens start Monday night. Riley Patterson also debuts at kicker after Jake Moody joined Atlanta."}
     - {"direction": "down", "title": "Jackson and Huntley on injured reserve", "text": "Both went on injured reserve November 5. Jackson reportedly intends to return this season, with his timetable still uncertain."}
-    - {"direction": "up", "title": "Encouraging news in the secondary", "text": "Minter sounded optimistic about Hamilton, Wiggins and Hawkins on November 9. Week 10 game designations are pending."}
+    - {"direction": "up", "title": "Hamilton and Wiggins available", "text": "Both practiced fully all week and have no game designation. Hawkins will miss his fourth straight game with a knee injury."}
 
   championship_check:
     - {"category": "Quarterback play", "status": "Concern", "explanation": "The Ravens turn to Brissett after the offense produced 55 net passing yards against Jacksonville."}
     - {"category": "Pass protection", "status": "Concern", "explanation": "Jacksonville recorded one sack. Four false starts pushed the Ravens' season total to 24."}
     - {"category": "Explosive offense", "status": "Unclear", "explanation": "Hill broke a 65-yard run. The Ravens gained 162 total yards on all their other plays combined."}
     - {"category": "Four-man pass rush", "status": "Concern", "explanation": "The Ravens recorded no sacks against Jacksonville. ESPN ranks the team's pass-rush win rate 13th through Week 9."}
-    - {"category": "Health", "status": "Concern", "explanation": "Jackson, Huntley and Loop are on injured reserve. Hamilton, Hawkins and Wiggins are being monitored ahead of the Chargers game."}
+    - {"category": "Health", "status": "Concern", "explanation": "Jackson, Huntley and Loop are on injured reserve. Hawkins is out against the Chargers. Hamilton and Wiggins are available."}
 
 preseason_form:
   sequence: ["W", "W", "W"]
@@ -242,32 +242,37 @@ matchup_focus:
   team: "LAC"
   label: "Chargers matchup lens · Week 10"
   items:
-    - {"title": "Brissett takes over", "text": "Minter expects Brissett to start against the Chargers after spending the extended break learning the offense.", "source_url": "https://www.baltimoreravens.com/news/transcript-press-conference-11-9-26"}
-    - {"title": "Herbert expected to play", "text": "Jim Harbaugh said the X-rays on Herbert's left hand were negative. The Chargers rank 32nd in offensive EPA per play through Week 9.", "source_url": "https://www.chargers.com/news/justin-herbert-ladd-mcconkey-update-jim-harbaugh-trade-deadline"}
-    - {"title": "Watch the Ravens secondary", "text": "Hamilton injured his hip against Jacksonville. Minter also gave encouraging updates on Wiggins and Hawkins ahead of the Monday night game.", "source_url": "https://www.baltimoreravens.com/news/kyle-hamilton-injury-update-jacoby-brissett-starting-against-chargers-monday-night-minter-lamar-jackson-injury-conversations-private"}
+    - {"title": "Brissett makes his Ravens debut", "text": "Brissett starts Monday night after his first full week of practice with the Ravens. Riley Patterson takes over at kicker.", "source_url": "https://www.baltimoreravens.com/news/jacoby-brissett-impresses-jesse-minter-ravens-rejuvenated-for-chargers-riley-patterson-strong-practice-week"}
+    - {"title": "Herbert plays without McConkey", "text": "The Chargers ruled out Ladd McConkey on Sunday. Herbert has no injury designation after taking eight sacks against Houston.", "source_url": "https://www.chargers.com/news/chargers-vs-ravens-injury-report-ladd-mcconkey-daiyan-henley-2026"}
+    - {"title": "Hamilton and Wiggins available", "text": "Both practiced fully all week. Jaylinn Hawkins remains out with a knee injury.", "source_url": "https://www.baltimoreravens.com/news/injury-report-ravens-chargers-jaylinn-hawkins-2026"}
+    - {"title": "Read the Week 10 preview", "text": "Brissett’s intermediate passing, Derrick Henry’s running lanes and how the Ravens can attack the Chargers’ protection.", "source_url": "/ravens/ravens-chargers-week-ten-preview-2026/"}
 
 confirmed_quarterback:
   week: 10
   opponent: "LAC"
   name: "Jacoby Brissett"
-  source_url: "https://www.baltimoreravens.com/news/transcript-press-conference-11-9-26"
+  source_url: "https://www.baltimoreravens.com/news/jacoby-brissett-impresses-jesse-minter-ravens-rejuvenated-for-chargers-riley-patterson-strong-practice-week"
 
 opponent_availability:
   team: "LAC"
-  label: "Chargers availability · November 10 check"
-  note: "Based on the November 9 team update and the official roster. Week 10 game designations are pending."
-  source_label: "Chargers health update"
-  source_url: "https://www.chargers.com/news/justin-herbert-ladd-mcconkey-update-jim-harbaugh-trade-deadline"
+  label: "Chargers availability · November 15"
+  note: "Sunday’s official report lists Ladd McConkey and Brenen Thompson out. Justin Herbert has no game designation."
+  source_label: "Official Chargers injury report"
+  source_url: "https://www.chargers.com/team/injury-report/"
   items:
-    - {"player": "Justin Herbert", "position": "QB", "status": "Expected to play", "detail": "Left hand. X-rays were negative and Jim Harbaugh expects him to be available.", "source_url": "https://www.chargers.com/news/justin-herbert-ladd-mcconkey-update-jim-harbaugh-trade-deadline"}
-    - {"player": "Ladd McConkey", "position": "WR", "status": "Day to day", "detail": "Back spasms kept him out of the Houston game after he was active.", "source_url": "https://www.chargers.com/news/justin-herbert-ladd-mcconkey-update-jim-harbaugh-trade-deadline"}
-    - {"player": "Cam Hart", "position": "CB", "status": "Monitoring", "detail": "Injured his ankle against Houston. His Week 10 status is pending.", "source_url": "https://www.chargers.com/news/justin-herbert-ladd-mcconkey-update-jim-harbaugh-trade-deadline"}
-    - {"player": "Isas Waxter", "position": "CB", "status": "Monitoring", "detail": "Injured his ankle against Houston. His Week 10 status is pending.", "source_url": "https://www.chargers.com/news/justin-herbert-ladd-mcconkey-update-jim-harbaugh-trade-deadline"}
-    - {"player": "Justin Eboigbe", "position": "DL", "status": "Monitoring", "detail": "Injured his ankle against Houston. His Week 10 status is pending.", "source_url": "https://www.chargers.com/news/justin-herbert-ladd-mcconkey-update-jim-harbaugh-trade-deadline"}
+    - {"player": "Ladd McConkey", "position": "WR", "status": "Out", "detail": "Back. Downgraded Sunday and did not travel to Baltimore.", "source_url": "https://www.chargers.com/team/injury-report/"}
+    - {"player": "Brenen Thompson", "position": "WR", "status": "Out", "detail": "Hamstring. The official injury table now lists him out.", "source_url": "https://www.chargers.com/team/injury-report/"}
+    - {"player": "Branson Taylor", "position": "G", "status": "Out", "detail": "Ankle. Missed all three practices.", "source_url": "https://www.chargers.com/team/injury-report/"}
+    - {"player": "Isas Waxter", "position": "CB", "status": "Out", "detail": "Ankle. Missed all three practices.", "source_url": "https://www.chargers.com/team/injury-report/"}
+    - {"player": "Kendall Williamson", "position": "S", "status": "Out", "detail": "Calf. Missed all three practices.", "source_url": "https://www.chargers.com/team/injury-report/"}
+    - {"player": "Kayode Awosika", "position": "G", "status": "Questionable", "detail": "Fibula. Practiced fully Saturday after two limited sessions.", "source_url": "https://www.chargers.com/team/injury-report/"}
+    - {"player": "Trey Pipkins III", "position": "OT", "status": "Questionable", "detail": "Personal/knee. Limited Saturday and still requires activation from injured reserve.", "source_url": "https://www.chargers.com/team/injury-report/"}
+    - {"player": "David Njoku", "position": "TE", "status": "Questionable", "detail": "Fibula. Full Saturday practice in his injured reserve return window. Activation is still required.", "source_url": "https://www.chargers.com/team/injury-report/"}
+    - {"player": "Denzel Perryman", "position": "LB", "status": "Questionable", "detail": "Pectoral. Full Friday and Saturday practices. Activation from injured reserve is still required.", "source_url": "https://www.chargers.com/team/injury-report/"}
+    - {"player": "Justin Eboigbe", "position": "DL", "status": "Questionable", "detail": "Ankle. Limited Friday and Saturday.", "source_url": "https://www.chargers.com/team/injury-report/"}
     - {"player": "Derwin James Jr.", "position": "S", "status": "Injured Reserve", "detail": "Listed on the official reserve/injured roster.", "source_url": "https://www.chargers.com/team/players-roster/"}
     - {"player": "Tyler Biadasz", "position": "C", "status": "Injured Reserve", "detail": "Listed on the official reserve/injured roster.", "source_url": "https://www.chargers.com/team/players-roster/"}
-    - {"player": "David Njoku", "position": "TE", "status": "IR / return window", "detail": "Practiced on a limited basis last week and still requires activation.", "source_url": "https://www.chargers.com/news/justin-herbert-ladd-mcconkey-update-jim-harbaugh-trade-deadline"}
-    - {"player": "Denzel Perryman", "position": "LB", "status": "IR / return window", "detail": "Practiced on a limited basis last week and still requires activation.", "source_url": "https://www.chargers.com/news/justin-herbert-ladd-mcconkey-update-jim-harbaugh-trade-deadline"}
+    - {"player": "Rashawn Slater", "position": "OT", "status": "Injured Reserve", "detail": "Listed on the official reserve/injured roster.", "source_url": "https://www.chargers.com/team/players-roster/"}
 
 preseason_games:
   - { week: "Preseason 3", date: "2026-08-28", location: "home", opponent: "Washington Commanders", result: "W", ravens_score: 41, opponent_score: 3, takeaway: "The Ravens closed an unbeaten preseason with their largest margin, while the defense again kept the opponent out of the end zone.", recap_url: "https://www.baltimoreravens.com/news/ravens-dominate-commanders-2026-nfl-preseason-undefeated" }
@@ -275,25 +280,23 @@ preseason_games:
   - { week: "Preseason 1", date: "2026-08-15", location: "home", opponent: "Philadelphia Eagles", result: "W", ravens_score: 24, opponent_score: 7, takeaway: "The Ravens opened with a balanced win and allowed only one touchdown.", recap_url: "https://www.baltimoreravens.com/news/ravens-take-care-of-eagles-preseason-opener-ravens-2026" }
 
 injury_report_context:
-  label: "Week 10 vs. Los Angeles Chargers · November 10 check"
-  note: "The latest team update is from November 9. The first official Week 10 injury report and game designations are pending."
+  label: "Week 10 vs. Los Angeles Chargers · November 15"
+  note: "Saturday game designations and the current reserve roster. Players without game designations are omitted."
 
 injuries:
-  - {"player": "Lamar Jackson", "position": "QB", "status": "Injured Reserve", "injury": "Fractured and dislocated right thumb", "importance": "Critical", "expected_availability": "Placed on injured reserve November 5. Ian Rapoport reported a six-to-nine-week recovery estimate. Return depends on clearance.", "impact": "Brissett is expected to start against the Chargers.", "source_label": "Ravens report · Nov. 8", "source_url": "https://www.baltimoreravens.com/news/lamar-jackson-return-this-season-told-teammates-ravens-just-stay-alive-thumb-injury"}
+  - {"player": "Lamar Jackson", "position": "QB", "status": "Injured Reserve", "injury": "Fractured and dislocated right thumb", "importance": "Critical", "expected_availability": "Placed on injured reserve November 5. Ian Rapoport reported a six-to-nine-week recovery estimate. Return depends on clearance.", "impact": "Brissett starts against the Chargers.", "source_label": "Ravens report · Nov. 8", "source_url": "https://www.baltimoreravens.com/news/lamar-jackson-return-this-season-told-teammates-ravens-just-stay-alive-thumb-injury"}
   - {"player": "Tyler Huntley", "position": "QB", "status": "Injured Reserve", "injury": "Turf toe", "importance": "Critical", "expected_availability": "Placed on injured reserve November 5. The injury is reported to be season-ending.", "impact": "Joe Fagnano and Kedon Slovis are on the active roster behind Brissett.", "source_label": "Official IR announcement · Nov. 5", "source_url": "https://www.baltimoreravens.com/news/lamar-jackson-tyler-huntley-injured-reserve-austin-reed-adisa-isaac-jake-moody"}
-  - {"player": "Kyle Hamilton", "position": "S", "status": "Monitoring", "injury": "Hip", "importance": "Starter", "expected_availability": "Left the Jaguars game. Minter was optimistic on Monday that he could avoid missing time.", "impact": "His Week 10 status is pending.", "source_label": "Ravens health update · Nov. 9", "source_url": "https://www.baltimoreravens.com/news/kyle-hamilton-injury-update-jacoby-brissett-starting-against-chargers-monday-night-minter-lamar-jackson-injury-conversations-private"}
-  - {"player": "Jaylinn Hawkins", "position": "S", "status": "Monitoring", "injury": "Knee", "importance": "Starter", "expected_availability": "Missed three straight games. Minter was optimistic about a return to practice this week.", "impact": "A return would give the safety rotation more depth.", "source_label": "Ravens health update · Nov. 9", "source_url": "https://www.baltimoreravens.com/news/kyle-hamilton-injury-update-jacoby-brissett-starting-against-chargers-monday-night-minter-lamar-jackson-injury-conversations-private"}
-  - {"player": "Nate Wiggins", "position": "CB", "status": "Monitoring", "injury": "Illness", "importance": "Starter", "expected_availability": "Inactive against Jacksonville. Minter expects him to be okay.", "impact": "His Week 10 status is pending.", "source_label": "Ravens health update · Nov. 9", "source_url": "https://www.baltimoreravens.com/news/kyle-hamilton-injury-update-jacoby-brissett-starting-against-chargers-monday-night-minter-lamar-jackson-injury-conversations-private"}
-  - {"player": "Adam Randall", "position": "RB", "status": "Returning", "injury": "Neck", "importance": "Depth", "expected_availability": "Practicing in his injured reserve return window. Activation is still required.", "impact": "Minter said the Ravens will reassess him this week.", "source_label": "Minter press conference · Nov. 9", "source_url": "https://www.baltimoreravens.com/news/transcript-press-conference-11-9-26"}
-  - {"player": "Tyler Loop", "position": "K", "status": "Injured Reserve", "injury": "Right groin", "importance": "Starter", "expected_availability": "Placed on injured reserve November 3.", "impact": "Jake Moody handled kicking duties against Jacksonville.", "source_label": "Official transaction · Nov. 3", "source_url": "https://www.baltimoreravens.com/team/transactions/"}
-  - {"player": "Tavius Robinson", "position": "EDGE", "status": "Injured Reserve", "injury": "Pectoral", "importance": "Starter", "expected_availability": "Remains on the official IR roster.", "impact": "Season-ending absence reduces the edge rotation.", "source_label": "Official roster · checked Nov. 10", "source_url": "https://www.baltimoreravens.com/team/players-roster/"}
-  - {"player": "Durham Smythe", "position": "TE", "status": "Injured Reserve", "injury": "Torn Achilles", "importance": "Rotation", "expected_availability": "Remains on the official IR roster.", "impact": "Season-ending absence reduces blocking depth.", "source_label": "Official roster · checked Nov. 10", "source_url": "https://www.baltimoreravens.com/team/players-roster/"}
-  - {"player": "Danny Pinter", "position": "C", "status": "Injured Reserve", "injury": "Knee", "importance": "Starter", "expected_availability": "Remains on the official IR roster.", "impact": "Unavailable at center behind Jurgens.", "source_label": "Official roster · checked Nov. 10", "source_url": "https://www.baltimoreravens.com/team/players-roster/"}
-  - {"player": "Jovaughn Gwyn", "position": "C", "status": "Injured Reserve", "injury": "Ankle", "importance": "Starter", "expected_availability": "Remains on the official IR roster.", "impact": "Center depth remains reduced.", "source_label": "Official roster · checked Nov. 10", "source_url": "https://www.baltimoreravens.com/team/players-roster/"}
-  - {"player": "Ethan Pocic", "position": "C", "status": "Injured Reserve", "injury": "Knee", "importance": "Rotation", "expected_availability": "Remains on the official IR roster.", "impact": "Unavailable as veteran center depth.", "source_label": "Official roster · checked Nov. 10", "source_url": "https://www.baltimoreravens.com/team/players-roster/"}
-  - {"player": "Bilhal Kone", "position": "CB", "status": "Returning", "injury": "Preseason injury", "importance": "Depth", "expected_availability": "Listed on injured reserve as designated for return. Still requires activation.", "impact": "Potential cornerback depth once activated.", "source_label": "Official roster · checked Nov. 10", "source_url": "https://www.baltimoreravens.com/team/players-roster/"}
-  - {"player": "Jahquez Robinson", "position": "S", "status": "Injured Reserve", "injury": "Not specified on roster", "importance": "Depth", "expected_availability": "Remains on the official IR roster.", "impact": "Unavailable as safety depth.", "source_label": "Official roster · checked Nov. 10", "source_url": "https://www.baltimoreravens.com/team/players-roster/"}
-  - {"player": "Skylar Thompson", "position": "QB", "status": "Injured Reserve", "injury": "Not specified on roster", "importance": "Depth", "expected_availability": "Remains on the official IR roster.", "impact": "Unavailable as reserve quarterback depth.", "source_label": "Official roster · checked Nov. 10", "source_url": "https://www.baltimoreravens.com/team/players-roster/"}
+  - {"player": "Jaylinn Hawkins", "position": "S", "status": "Out", "injury": "Knee", "importance": "Starter", "expected_availability": "Limited all three sessions. This will be his fourth straight missed game.", "impact": "Kyle Hamilton and Nate Wiggins are available in the secondary.", "source_label": "Ravens game designations · Nov. 14", "source_url": "https://www.baltimoreravens.com/news/injury-report-ravens-chargers-jaylinn-hawkins-2026"}
+  - {"player": "Adam Randall", "position": "RB", "status": "Questionable", "injury": "Neck/hamstring", "importance": "Depth", "expected_availability": "Full practice all week during his injured reserve return window.", "impact": "The Ravens must activate him before he can make his regular-season debut.", "source_label": "Ravens game designations · Nov. 14", "source_url": "https://www.baltimoreravens.com/news/injury-report-ravens-chargers-jaylinn-hawkins-2026"}
+  - {"player": "Tyler Loop", "position": "K", "status": "Injured Reserve", "injury": "Right groin", "importance": "Starter", "expected_availability": "Placed on injured reserve November 3. Out for at least three more games after Jacksonville.", "impact": "Riley Patterson takes over after Jake Moody signed with Atlanta.", "source_label": "Ravens kicker update · Nov. 11", "source_url": "https://www.baltimoreravens.com/news/ravens-sign-kicker-riley-patterson-jake-moody-tyler-loop-2026"}
+  - {"player": "Tavius Robinson", "position": "EDGE", "status": "Injured Reserve", "injury": "Pectoral", "importance": "Starter", "expected_availability": "Remains on the official IR roster.", "impact": "Season-ending absence reduces the edge rotation.", "source_label": "Official roster · checked Nov. 15", "source_url": "https://www.baltimoreravens.com/team/players-roster/"}
+  - {"player": "Durham Smythe", "position": "TE", "status": "Injured Reserve", "injury": "Torn Achilles", "importance": "Rotation", "expected_availability": "Remains on the official IR roster.", "impact": "Season-ending absence reduces blocking depth.", "source_label": "Official roster · checked Nov. 15", "source_url": "https://www.baltimoreravens.com/team/players-roster/"}
+  - {"player": "Danny Pinter", "position": "C", "status": "Injured Reserve", "injury": "Knee", "importance": "Starter", "expected_availability": "Remains on the official IR roster.", "impact": "Unavailable at center behind Jurgens.", "source_label": "Official roster · checked Nov. 15", "source_url": "https://www.baltimoreravens.com/team/players-roster/"}
+  - {"player": "Jovaughn Gwyn", "position": "C", "status": "Injured Reserve", "injury": "Ankle", "importance": "Starter", "expected_availability": "Remains on the official IR roster.", "impact": "Center depth remains reduced.", "source_label": "Official roster · checked Nov. 15", "source_url": "https://www.baltimoreravens.com/team/players-roster/"}
+  - {"player": "Ethan Pocic", "position": "C", "status": "Injured Reserve", "injury": "Knee", "importance": "Rotation", "expected_availability": "Remains on the official IR roster.", "impact": "Unavailable as veteran center depth.", "source_label": "Official roster · checked Nov. 15", "source_url": "https://www.baltimoreravens.com/team/players-roster/"}
+  - {"player": "Bilhal Kone", "position": "CB", "status": "Returning", "injury": "Preseason injury", "importance": "Depth", "expected_availability": "Listed on injured reserve as designated for return. Still requires activation.", "impact": "Potential cornerback depth once activated.", "source_label": "Official roster · checked Nov. 15", "source_url": "https://www.baltimoreravens.com/team/players-roster/"}
+  - {"player": "Jahquez Robinson", "position": "S", "status": "Injured Reserve", "injury": "Not specified on roster", "importance": "Depth", "expected_availability": "Remains on the official IR roster.", "impact": "Unavailable as safety depth.", "source_label": "Official roster · checked Nov. 15", "source_url": "https://www.baltimoreravens.com/team/players-roster/"}
+  - {"player": "Skylar Thompson", "position": "QB", "status": "Injured Reserve", "injury": "Not specified on roster", "importance": "Depth", "expected_availability": "Remains on the official IR roster.", "impact": "Unavailable as reserve quarterback depth.", "source_label": "Official roster · checked Nov. 15", "source_url": "https://www.baltimoreravens.com/team/players-roster/"}
 
 sources:
   - { name: "nflverse schedules and play-by-play", role: "Automated regular-season results, EPA, success, explosive plays, red-zone drives and NFL ranks", url: "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html", cadence: "Schedules update about every five minutes; play-by-play is refreshed nightly after game days.", license: "CC BY 4.0" }
@@ -322,6 +325,7 @@ methodology_notes:
   - "Filmstudy ranks compare Ravens linemen only. Dual Eights converts each explicitly published adjusted game letter grade to a standard grade-point scale, weights it by that game's scored snaps and rounds the average to the nearest letter grade. Players need at least 20 graded snaps; ungraded appearances do not enter the average. Delayed scoring published inside a later report is assigned to the actual game week and counted once."
 
 related_articles:
+  - "/ravens/ravens-chargers-week-ten-preview-2026/"
   - "/ravens/first-and-five-jaguars-week-nine-2026/"
   - "/ravens/ravens-jaguars-week-nine-preview-2026/"
   - "/ravens/first-and-five-bills-week-eight-2026/"
