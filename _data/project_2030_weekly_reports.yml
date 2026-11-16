@@ -1,4 +1,335 @@
 reports:
+  - id: "2026-11-15"
+    group: "prospects"
+    group_label: "Prospects"
+    published: "November 16, 2026"
+    window: "November 9-15, 2026"
+    week_ending: "November 15, 2026"
+    source_note: "Official club, competition and federation records lead, then original local coverage in the relevant language. Secondary completed records fill identified lineup gaps. All configured research aliases were searched and reconciled to the same profile. Senior minutes use the federation's substitution clock, excluding stoppage time. U23 friendlies are separate from competitive senior matches. The Scotland report confirms result and scorers but does not give a complete U.S. substitution log; a listed substitute is not evidence of an appearance, and exact minutes are not assumed. No new club change was confirmed. The window runs November 9-15, Eastern time."
+    summary:
+      biggest_risers: "Julian Hall scored in his first senior competitive start, and Diego Kochen made two saves, including a stop at 1-0, in the 6-0 win over Haiti. Frankie Westfield scored from right back in the U23 draw with Scotland. Adri Mehmeti advanced the ball into the sixth U.S. goal and earned a competitive cap alongside Mathis Albert and Justin Ellis. Cooper Sanchez's move from U20 to U23 camp was a selection positive, not a match grade."
+      issues_to_monitor: "Only Hall, Kochen, Mehmeti, Albert and Ellis had verified competitive minutes this week. Westfield, Niko Tsakiris, Benjamin Cremaschi and Damion Downs started the U23 friendly, not a competitive match. For Sanchez, Luca Bombino and Duran Ferree, the public U23 teamsheet confirms bench places but not appearances. No match action was verified for Wiley, Gozo, Pierre, Brady, Pukstas, Sullivan, Aaronson, Paredes, Miller, Leroux, Campbell or Hopkins. Campbell withdrew from U23 camp without a confirmed reason; multiple injury situations still lack new clarity."
+      best_story: "Hall's fourth goal in five U.S. matches came in his competitive debut. U.S. Soccer also confirmed Mauricio Pochettino will leave after the Haiti series. Next week, watch the November 17 second leg and U23 friendly against Ukraine, then the MLS Wild Card on November 19 and Round One, especially Sullivan's and Miller's availability for Philadelphia-New England."
+    players:
+      - profile: "caleb-wiley"
+        name: "Caleb Wiley"
+        club: "Preston North End"
+        trend: "→"
+        direction: "steady"
+        direction_label: "International break after his return to match action"
+        context: "0 verified appearances or minutes; left-sided defender, Championship"
+        recap: "Preston had no Championship match during the break and next travel to West Ham on November 21. No reserve or international appearance or new availability issue was verified. His two league cameos belong to last week's report."
+        development_read: "A scheduled break is not a selection setback. The next signal is whether he builds on last week's minutes by getting a longer outing or a start."
+        sources:
+          - { label: "Next league fixture (official Preston)", url: "https://www.pnefc.net/news/2026/october/20/tickets---west-ham-united--a-/" }
+          - { label: "Club schedule (official Preston)", url: "https://www.pnefc.net/" }
+      - profile: "damion-downs"
+        name: "Damion Downs"
+        club: "St. Louis CITY SC"
+        trend: "→"
+        direction: "steady"
+        direction_label: "U23 start; club role still unresolved"
+        context: "0 MLS appearances; 1 U.S. U23 friendly start, exact minutes unverified; striker, no verified goal contribution"
+        recap: "The Scotland match lineup lists Downs as the U.S. U23 striker in Sunday's 1-1 friendly. No goal or individual standout action is verified, and the available records do not establish his exact substitution time or assist involvement. St. Louis had no playoff match during the international break; he remains on loan from Southampton."
+        development_read: "The age-group start adds useful playing time, but it doesn't resolve the concern about his MLS role. Neutral this week because CITY had no match, rather than because his club minutes improved."
+        sources:
+          - { label: "Scotland friendly and scoring sequences (official Scottish FA)", url: "https://www.scottishfa.co.uk/en/news/21s-battle-to-share-spoils-with-usa" }
+          - { label: "U.S. starting lineup and listed substitutes (secondary BeSoccer)", url: "https://www.besoccer.com/match/escocia-sub-21/estados-unidos-sub23/2026358109/lineups" }
+          - { label: "Loan and call-up (official CITY)", url: "https://www.stlcitysc.com/news/st-louis-city-sc-forward-damion-downs-called-up-to-us-u23-mens-national-team-for-november-matches-in-san-pedro-del-pinatar-spain" }
+          - { label: "International break and playoff dates (official MLS)", url: "https://www.mlssoccer.com/playoffs/2026/news/audi-2026-mls-cup-playoffs-round-one-wild-card-matchups" }
+      - profile: "zavier-gozo"
+        name: "Zavier Gozo"
+        club: "Crystal Palace"
+        trend: "→"
+        direction: "steady"
+        direction_label: "No verified match during the break"
+        context: "0 verified appearances or minutes; Palace senior/U21 winger"
+        recap: "Palace's first team had no league fixture between Liverpool on November 8 and Coventry on November 21, and no Palace U21 or international appearance was verified in this window. The Newport EFL Trophy start was last week. No new injury or club move was verified."
+        development_read: "A week without a verified fixture is not another selection loss. The unresolved question is whether the Newport minutes lead to a sustained run at either level."
+        sources:
+          - { label: "First-team fixture schedule (official Palace)", url: "https://www.cpfc.co.uk/matches/all/2026-27/" }
+          - { label: "U21 fixtures (official Palace)", url: "https://www.cpfc.co.uk/matches/under-21/all/2026-27/" }
+          - { label: "Palace player profile (official)", url: "https://www.cpfc.co.uk/teams/first-team/midfielder/zavier-gozo/" }
+      - profile: "julian-hall"
+        name: "Julian Hall"
+        club: "New York Red Bulls"
+        trend: "↑"
+        direction: "rising"
+        direction_label: "Scored in his senior competitive debut"
+        context: "1 start, 66 minutes; senior U.S. striker, Nations League; 1 goal, 0 assists; no club appearance"
+        recap: "Hall started the 6-0 win over Haiti and scored at 52 minutes, arriving centrally to control Antonee Robinson's cross and finish low with his left. It was his fourth goal in five senior caps and his first in competition. He came off at 66 and did not play in New York's club friendly that night. U.S. Soccer confirmed he is cap-tied."
+        development_read: "The timed run, control and finish stand out beyond the scoreline. Scoring in his first competitive senior start strengthens his case for a continuing role at striker."
+        sources:
+          - { label: "Haiti match report and substitutions (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/11/usmnt-vs-haiti-match-recap-highlights-concacaf-nations-league-miami-florida" }
+          - { label: "Haiti first-leg report (official Concacaf)", url: "https://www.concacaf.com/competitions/nations-league/news/usa-defeats-haiti-6-0-in-nations-league-quarterfinal-opener" }
+          - { label: "Club friendly context (The Guardian reporting)", url: "https://www.theguardian.com/football/2026/nov/15/red-bulls-club-america-brawl-friendly" }
+          - { label: "Hall's competitive milestone and embedded Red Bulls commentary (official MLS)", url: "https://www.mlssoccer.com/news/copy-of-usmnt-rout-haiti-in-concacaf-nations-league-opener" }
+      - profile: "justin-ellis"
+        name: "Justin Ellis"
+        club: "Orlando City"
+        trend: "↑"
+        direction: "rising"
+        direction_label: "First competitive senior cap"
+        context: "1 senior U.S. substitute appearance, 4 regulation minutes; attacking role, Nations League; 0 goals/assists; no club minutes"
+        recap: "Ellis replaced Malik Tillman at 86 minutes with the U.S. already 6-0 up against Haiti. He did not score or assist. U.S. Soccer confirmed the competitive appearance cap-tied him. Orlando's Wild Card match falls outside this window."
+        development_read: "The cap is a positive milestone for his international outlook. Four regulation minutes in a decided game are not enough to upgrade the on-field evaluation or establish a club role."
+        sources:
+          - { label: "Haiti match report and substitutions (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/11/usmnt-vs-haiti-match-recap-highlights-concacaf-nations-league-miami-florida" }
+          - { label: "Haiti match hub and positions (official U.S. Soccer)", url: "https://www.ussoccer.com/competitions/concacaf-nations-league-2026/matches/united-states-vs-haiti-11-14-26-tickets-live-score-match-hub-lineups-highlights" }
+          - { label: "International break and playoff dates (official MLS)", url: "https://www.mlssoccer.com/playoffs/2026/news/audi-2026-mls-cup-playoffs-round-one-wild-card-matchups" }
+      - profile: "adri-mehmeti"
+        name: "Adri Mehmeti"
+        club: "New York Red Bulls"
+        trend: "↑"
+        direction: "rising"
+        direction_label: "Competitive cap and a role in the sixth goal"
+        context: "1 senior U.S. substitute appearance, 9 regulation minutes; midfield, Nations League; 0 goals/assists; no club minutes"
+        recap: "Mehmeti replaced Weston McKennie at 81 minutes against Haiti. His first involvement advanced the ball into the move for Folarin Balogun's goal a minute later; Malik Tillman supplied the official assist. U.S. Soccer confirmed he is cap-tied. New York's November 9 Team of the Matchday announcement honored his Atlanta display from the previous reporting window."
+        development_read: "Progressing the ball into a scoring move straight off the bench is a useful detail, even though the game was settled. A longer competitive shift would say more about his senior midfield role."
+        sources:
+          - { label: "Haiti match report and substitutions (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/11/usmnt-vs-haiti-match-recap-highlights-concacaf-nations-league-miami-florida" }
+          - { label: "Haiti match hub and positions (official U.S. Soccer)", url: "https://www.ussoccer.com/competitions/concacaf-nations-league-2026/matches/united-states-vs-haiti-11-14-26-tickets-live-score-match-hub-lineups-highlights" }
+          - { label: "Matchday 35 honor (official Red Bulls)", url: "https://www.newyorkredbulls.com/news/red-bull-new-york-midfielder-adri-mehmeti-and-defender-jahkeele-marshall-rutty-named-to-mls-team-of-the-matchday-for-matchday-35" }
+          - { label: "Club friendly context (The Guardian reporting)", url: "https://www.theguardian.com/football/2026/nov/15/red-bulls-club-america-brawl-friendly" }
+      - profile: "neil-pierre"
+        name: "Neil Pierre"
+        club: "Philadelphia Union"
+        trend: "→"
+        direction: "steady"
+        direction_label: "Dressed for Haiti; no match minutes"
+        context: "0 appearances or minutes; Philadelphia center back, MLS; unused for senior U.S."
+        recap: "Philadelphia did not play during the MLS break. Pierre was on the U.S. bench for the 6-0 Nations League win over Haiti and did not come on, so he recorded no competitive cap this week."
+        development_read: "Making the squad is encouraging, but this provides no fresh center-back performance to grade. Watch the second leg and Philadelphia's playoff opener."
+        sources:
+          - { label: "Haiti match report and substitutions (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/11/usmnt-vs-haiti-match-recap-highlights-concacaf-nations-league-miami-florida" }
+          - { label: "International break and playoff dates (official MLS)", url: "https://www.mlssoccer.com/playoffs/2026/news/audi-2026-mls-cup-playoffs-round-one-wild-card-matchups" }
+          - { label: "Philadelphia playoff context (local Philly Soccer Page)", url: "https://phillysoccerpage.net/2026/11/15/philadelphia-union-playoffs-and-regular-season-stats/" }
+      - profile: "chris-brady"
+        name: "Chris Brady"
+        club: "Chicago Fire"
+        trend: "→"
+        direction: "steady"
+        direction_label: "Playoff bye; no new match performance"
+        context: "0 verified appearances or minutes; goalkeeper, MLS"
+        recap: "Chicago did not play this week. Brady was not on the senior U.S. roster for this window and had no verified other appearance. Chicago's first-round series against Charlotte starts after the break. Chicago's social post highlighted his prior save against Nashville as a Save of the Year nominee; that was recognition of an earlier match, not new minutes."
+        development_read: "There is no new performance to move the grade or erase last week's concerns. His response in the playoff opener is the next meaningful test."
+        sources:
+          - { label: "International break and playoff dates (official MLS)", url: "https://www.mlssoccer.com/playoffs/2026/news/audi-2026-mls-cup-playoffs-round-one-wild-card-matchups" }
+          - { label: "Senior U.S. roster (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/11/usmnt/nations-league-roster-vs-haiti-miami-cincinnati" }
+          - { label: "Club announcement mirrored from official Chicago Instagram", url: "https://picmany.com/chicagofire" }
+          - { label: "Save of the Year voting dates (official MLS)", url: "https://www.mlssoccer.com/news/vote-for-the-2026-mls-save-of-the-year" }
+      - profile: "rokas-pukstas"
+        name: "Rokas Pukstas"
+        club: "Middlesbrough"
+        trend: "✚"
+        direction: "insufficient"
+        direction_label: "Hamstring recovery; no verified return"
+        context: "0 verified appearances or minutes; midfielder, Championship"
+        recap: "Boro had no senior league match this week. No competitive return or new clearance was verified, including in the available academy coverage. The last substantive update remains Kim Hellberg's November 3 estimate of roughly another month before contention for selection."
+        development_read: "No performance evaluation. Selection or a confirmed return to full training is a better signal than counting down to the earlier estimate."
+        sources:
+          - { label: "Manager's hamstring update (local Northern Echo via Yahoo)", url: "https://uk.sports.yahoo.com/news/rokas-pukstas-injury-latest-kim-142526142.html" }
+          - { label: "Senior fixtures and academy coverage (official Boro)", url: "https://www.mfc.co.uk/?site=desktop" }
+          - { label: "Derby U21 fixture (official Boro)", url: "https://www.mfc.co.uk/news/2026/november/09/u21s-set-to-host-derby/" }
+      - profile: "cavan-sullivan"
+        name: "Cavan Sullivan"
+        club: "Philadelphia Union"
+        trend: "→"
+        direction: "steady"
+        direction_label: "Two MLS award shortlists; unused for the U.S."
+        context: "0 appearances or minutes; Philadelphia attacking midfielder, MLS; unused for senior U.S."
+        recap: "Sullivan dressed but stayed on the bench against Haiti after leaving Philadelphia's previous match following a late knock. No fresh diagnosis was verified; the bench place does not establish full match readiness. MLS named him Player of the Matchday for his prior-week brace and a finalist for league MVP and Young Player of the Year."
+        development_read: "The awards recognize an exceptional season, but there was no new match performance this week. The next signal is whether he gets minutes in the second leg or playoffs."
+        sources:
+          - { label: "Haiti match report and substitutions (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/11/usmnt-vs-haiti-match-recap-highlights-concacaf-nations-league-miami-florida" }
+          - { label: "Award nominations (official Philadelphia)", url: "https://www.philadelphiaunion.com/news/philadelphia-union-homegrown-cavan-sullivan-named-finalist-for-landon-donovan-mls-mvp-and-mls-young-player-of-the-year" }
+          - { label: "Decision Day award (official MLS)", url: "https://www.mlssoccer.com/news/philadelphia-union-midfielder-cavan-sullivan-voted-mls-player-of-the-matchday-for-matchday-35" }
+          - { label: "Prior-week knock (local Philadelphia Inquirer)", url: "https://www.inquirer.com/soccer/cavan-sullivan-goal-philadelphia-union-toronto-fc-score-20261107.html" }
+      - profile: "niko-tsakiris"
+        name: "Niko Tsakiris"
+        club: "San Jose Earthquakes"
+        trend: "→"
+        direction: "steady"
+        direction_label: "Started Cherundolo's first U23 match"
+        context: "0 MLS appearances; 1 U.S. U23 friendly start, exact minutes unverified; attacking midfield"
+        recap: "San Jose confirmed Tsakiris was in the Olympic-cycle camp, and the Scotland lineup lists him in the U.S. starting midfield for the 1-1 draw. Publicly posted clip coverage credits him with the pass for Westfield's goal, but the federation report doesn't name an assister, so the credit is provisional. No goal or exact minutes were verified."
+        development_read: "A start and possible final ball in the first match of the Olympic cycle are encouraging. With incomplete event data, there isn't enough to call it a performance breakthrough."
+        sources:
+          - { label: "Camp participation (official Earthquakes)", url: "https://www.sjearthquakes.com/news/san-jose-earthquakes-niko-tsakiris-dan-degeer-called-to-u-s-u-23-men-s-national-team-for-international-duty" }
+          - { label: "Scotland friendly and scoring sequences (official Scottish FA)", url: "https://www.scottishfa.co.uk/en/news/21s-battle-to-share-spoils-with-usa" }
+          - { label: "U.S. starting lineup and listed substitutes (secondary BeSoccer)", url: "https://www.besoccer.com/match/escocia-sub-21/estados-unidos-sub23/2026358109/lineups" }
+          - { label: "Posted match clip and pass attribution (secondary social coverage)", url: "https://www.sotwe.com/hashtag/DOOP?lang=en" }
+      - profile: "paxten-aaronson"
+        name: "Paxten Aaronson"
+        club: "Colorado Rapids"
+        trend: "→"
+        direction: "steady"
+        direction_label: "Offseason begins; no new injury update"
+        context: "0 verified appearances or minutes; attacking midfielder, MLS"
+        recap: "Colorado's season ended at Dallas on November 7, outside the reporting window. Aaronson came off after an injury stoppage in that finale. No match, new diagnosis or dependable return timetable was verified this week."
+        development_read: "No new play to grade, and the offseason lack of fixtures is not a selection setback. Monitor confirmed recovery information rather than assigning a prognosis."
+        sources:
+          - { label: "Season finale and substitution (official Colorado)", url: "https://www.coloradorapids.com/news/recap-rapids-fall-to-fc-dallas-in-1-3-decision-day-result" }
+          - { label: "Injury stoppage in Dallas (secondary Sky Sports)", url: "https://www.skysports.com/football/fc-dallas-vs-colorado-rapids/live/550719" }
+      - profile: "mathis-albert"
+        name: "Mathis Albert"
+        club: "Borussia Dortmund"
+        trend: "↑"
+        direction: "rising"
+        direction_label: "Competitive senior debut off the bench"
+        context: "1 senior U.S. substitute appearance, 9 regulation minutes; attacking midfield, Nations League; 0 goals/assists; no club minutes"
+        recap: "Albert replaced Christian Pulisic at 81 minutes with the U.S. 5-0 up on Haiti. Dortmund also reported the appearance. He did not score or assist, and U.S. Soccer confirmed he is now cap-tied. No Borussia Dortmund competitive appearance was verified during the break."
+        development_read: "The competitive cap is a positive step beyond recent Dortmund bench places. The short, low-pressure cameo doesn't tell us much about whether he can earn regular first-team club time."
+        sources:
+          - { label: "Haiti match report and substitutions (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/11/usmnt-vs-haiti-match-recap-highlights-concacaf-nations-league-miami-florida" }
+          - { label: "Haiti match hub and positions (official U.S. Soccer)", url: "https://www.ussoccer.com/competitions/concacaf-nations-league-2026/matches/united-states-vs-haiti-11-14-26-tickets-live-score-match-hub-lineups-highlights" }
+          - { label: "Haiti outing (official Dortmund)", url: "https://www.bvb.de/de/en/news/news-overview/news.html/2026/11/15/Svensson-scores-first-goal-for-Sweden-Bensebaini-scores-for-Algeria.html" }
+      - profile: "diego-kochen"
+        name: "Diego Kochen"
+        club: "FC Barcelona / Lyngby"
+        trend: "↑"
+        direction: "rising"
+        direction_label: "Two saves and a clean sheet in competitive debut"
+        context: "1 senior U.S. start, 90 minutes; goalkeeper, Nations League; 2 saves, 0 conceded, 1 clean sheet; no club minutes"
+        recap: "Kochen started the 6-0 win over Haiti. He stopped Danley Jean Jacques from close range at 1-0, his first of two saves. Haiti later put the ball in the net after Kochen came off his line, but VAR ruled the move offside. The federation's narrative and completed match record support two saves; its shots-on-goal table appears transposed."
+        development_read: "Stopping a real equalizing chance makes the shutout more meaningful than the final score alone. The disallowed sequence still gives him a decision to review on when to come out."
+        sources:
+          - { label: "Haiti match report and substitutions (official U.S. Soccer)", url: "https://www.ussoccer.com/stories/2026/11/usmnt-vs-haiti-match-recap-highlights-concacaf-nations-league-miami-florida" }
+          - { label: "Haiti first-leg report (official Concacaf)", url: "https://www.concacaf.com/competitions/nations-league/news/usa-defeats-haiti-6-0-in-nations-league-quarterfinal-opener" }
+          - { label: "Completed goalkeeper log (secondary Soccerway)", url: "https://us.soccerway.com/player/kochen-diego/8vu9Yb2n/" }
+      - profile: "benjamin-cremaschi"
+        name: "Benjamin Cremaschi"
+        club: "Parma"
+        trend: "→"
+        direction: "steady"
+        direction_label: "Started in midfield and hit the bar"
+        context: "0 verified club minutes; 1 U.S. U23 friendly start, exact minutes unverified; central midfield"
+        recap: "Parma confirmed his U23 assignment. Cremaschi started against Scotland U21s and hit the crossbar with a free kick shortly before halftime in the 1-1 draw. No goal or assist was verified, and the available records do not establish his exact minutes. No appearance was verified in Parma's friendly against Cesena."
+        development_read: "The central midfield start and dangerous free kick are encouraging. Keep the outlook neutral until the international run translates into longer and more regular Serie A outings."
+        sources:
+          - { label: "Call-up (official Parma)", url: "https://www.parmacalcio1913.com/news/nazionali-i-convocati-gialloblu-4/" }
+          - { label: "Scotland friendly and scoring sequences (official Scottish FA)", url: "https://www.scottishfa.co.uk/en/news/21s-battle-to-share-spoils-with-usa" }
+          - { label: "U.S. starting lineup and listed substitutes (secondary BeSoccer)", url: "https://www.besoccer.com/match/escocia-sub-21/estados-unidos-sub23/2026358109/lineups" }
+          - { label: "Scotland outing (Parma-local ParmaLive)", url: "https://www.parmalive.com/ultim-ora/parma-crociati-nazionale-cremaschi-torna-nazionale-ferma-scozia-u21-256657" }
+          - { label: "Cesena friendly result (official Parma)", url: "https://www.parmacalcio1913.com/en/main-news/amichevole-parma-cesena-0-2/" }
+      - profile: "kevin-paredes"
+        name: "Kevin Paredes"
+        club: "FC Utrecht"
+        trend: "✚"
+        direction: "insufficient"
+        direction_label: "No verified return from ankle injury"
+        context: "0 verified appearances or minutes; winger, Eredivisie"
+        recap: "Utrecht had no Eredivisie game during the break. No competitive return or fresh clearance was verified. The club's established diagnosis is an ankle injury; secondary listings calling it a knee injury do not supersede that."
+        development_read: "No performance evaluation. A training or squad return would be a more reliable recovery milestone than a projected date."
+        sources:
+          - { label: "Ankle diagnosis (official FC Utrecht)", url: "https://www.fcutrecht.nl/nieuws/2026/augustus/kevin-paredes-enkele-maanden-niet-inzetbaar/" }
+          - { label: "First-team results (official FC Utrecht)", url: "https://www.fcutrecht.nl/teams/selectie/uitslagen" }
+      - profile: "peyton-miller"
+        name: "Peyton Miller"
+        club: "New England Revolution"
+        trend: "→"
+        direction: "steady"
+        direction_label: "No fixture or fresh fitness confirmation"
+        context: "0 verified appearances or minutes; winger/fullback, MLS"
+        recap: "New England had no club match and Miller had no verified international outing. He missed the November 7 finale after being listed questionable with a lower-body issue. No fresh clearance or current injury ruling was verified during this week's break."
+        development_read: "Without a match or a new status report, there is no basis to infer a fresh injury setback or a selection drop. Check the Philadelphia playoff teamsheet for actual availability."
+        sources:
+          - { label: "November 7 player status (official MLS; prior week)", url: "https://www.mlssoccer.com/news/mls-player-status-report-matchday-35-saturday-november-7" }
+          - { label: "International break and playoff dates (official MLS)", url: "https://www.mlssoccer.com/playoffs/2026/news/audi-2026-mls-cup-playoffs-round-one-wild-card-matchups" }
+          - { label: "Orlando finale lineup (official Revolution; prior week)", url: "https://www.revolutionsoccer.net/news/recap-revolution-finish-third-in-east-after-decision-day-defeat-at-orlando-city" }
+      - profile: "cooper-sanchez"
+        name: "Cooper Sanchez"
+        club: "Atlanta United"
+        trend: "↑"
+        direction: "rising"
+        direction_label: "Promoted from U20 to U23 camp"
+        context: "0 MLS appearances; listed as U23 substitute, appearance and exact minutes unverified; central midfielder"
+        recap: "The federation's November 10 roster update moved Sanchez from the U20 squad into Steve Cherundolo's U23 camp. He was listed on the bench against Scotland. The published U.S. substitution record is incomplete, so no appearance, minutes or goal contribution can be verified. Atlanta had no club fixture."
+        development_read: "The age-group promotion is a positive selection signal, not evidence of a performance or a restored MLS role. Ukraine is another chance to earn a documented outing."
+        sources:
+          - { label: "November 10 federation roster update embedded in local SixOneFive Soccer coverage", url: "https://www.sixonefivesoccer.com/matthew-corcoran-withdraws-from-united-states-u23-squad/" }
+          - { label: "Scotland friendly and scoring sequences (official Scottish FA)", url: "https://www.scottishfa.co.uk/en/news/21s-battle-to-share-spoils-with-usa" }
+          - { label: "U.S. starting lineup and listed substitutes (secondary BeSoccer)", url: "https://www.besoccer.com/match/escocia-sub-21/estados-unidos-sub23/2026358109/lineups" }
+          - { label: "Updated international call-ups (official MLS)", url: "https://bracket.mlssoccer.com/news/every-mls-call-up-november-2026-international-window" }
+      - profile: "beau-leroux"
+        name: "Beau Leroux"
+        club: "San Jose Earthquakes"
+        trend: "→"
+        direction: "steady"
+        direction_label: "No match before the playoff opener"
+        context: "0 verified appearances or minutes; central midfielder, MLS"
+        recap: "San Jose was between Decision Day and its Round One opener during the international break. No reserve or international appearance or new availability issue was verified."
+        development_read: "No new performance evidence. The next question is whether he starts or remains a midfield option off the bench in Round One."
+        sources:
+          - { label: "International break and playoff dates (official MLS)", url: "https://www.mlssoccer.com/playoffs/2026/news/audi-2026-mls-cup-playoffs-round-one-wild-card-matchups" }
+          - { label: "San Jose playoff context (official Earthquakes)", url: "https://www.sjearthquakes.com/news/san-jose-earthquakes-announce-2026-audi-mls-cup-playoff-tickets-on-sale-starting-thursday-nov-5" }
+      - profile: "francis-westfield"
+        name: "Francis “Frankie” Westfield"
+        club: "Philadelphia Union"
+        trend: "↑"
+        direction: "rising"
+        direction_label: "Scored from right back in the U23 opener"
+        context: "0 MLS appearances; 1 U.S. U23 friendly start, exact minutes unverified; right back; 1 goal, no verified assist"
+        recap: "Westfield started against Scotland U21s and scored the U.S. opener at 14 minutes, driving in from the right and finishing across Rory Mahady. Scotland equalized from the penalty spot at 85. The available records confirm his start and goal but not his full minutes."
+        development_read: "A decisive run and composed finish show attacking initiative from fullback. It is positive youth-international evidence, not proof by itself of sustained senior production."
+        sources:
+          - { label: "Scotland friendly and scoring sequences (official Scottish FA)", url: "https://www.scottishfa.co.uk/en/news/21s-battle-to-share-spoils-with-usa" }
+          - { label: "Draw and opposition context (local The Scotsman)", url: "https://www.scotsman.com/sport/football/international/encouraging-signs-scotland-under-21s-spanish-training-camp-ends-in-draw-against-experienced-usa-side-9352222" }
+          - { label: "U.S. starting lineup and listed substitutes (secondary BeSoccer)", url: "https://www.besoccer.com/match/escocia-sub-21/estados-unidos-sub23/2026358109/lineups" }
+          - { label: "U23 selection (official Philadelphia)", url: "https://www.philadelphiaunion.com/news/frankie-westfield-and-andrew-rick-selected-for-u-23-training-camp-in-spain" }
+      - profile: "cole-campbell"
+        name: "Cole Campbell"
+        club: "SV Elversberg"
+        trend: "→"
+        direction: "steady"
+        direction_label: "Withdrew from the U23 camp"
+        context: "0 verified appearances or minutes; attacking midfielder/winger, Bundesliga"
+        recap: "Originally named to the U23 roster, Campbell withdrew before the Scotland match, per the federation's November 10 update. Neither the update nor subsequent reporting confirmed a reason. Elversberg had no Bundesliga fixture in the window, and no other appearance or club move was verified."
+        development_read: "The withdrawal cost an opportunity, but there is no evidence to attribute it to a new injury or to downgrade his play. Watch for his next club squad."
+        sources:
+          - { label: "November 10 federation roster update embedded in local SixOneFive Soccer coverage", url: "https://www.sixonefivesoccer.com/matthew-corcoran-withdraws-from-united-states-u23-squad/" }
+          - { label: "Updated U23 roster and withdrawal context (secondary Soccer America)", url: "https://www.socceramerica.com/u-s-youth-national-teams-olympic-preparations-begin-u-20s-take-shape-and-u-17s-head-to-world-cup/" }
+          - { label: "Last pre-break club appearance (official Elversberg)", url: "https://sv07elversberg.de/knappe-niederlage-trotz-starkem-auswaertsauftritt-in-dortmund/" }
+      - profile: "luca-bombino"
+        name: "Luca Bombino"
+        club: "Stoke City"
+        trend: "→"
+        direction: "steady"
+        direction_label: "First U23 call-up; minutes not verified"
+        context: "0 Championship appearances; listed as U23 substitute, appearance and exact minutes unverified; wingback"
+        recap: "Stoke confirmed Bombino's first U23 selection. The public lineup lists him among the U.S. substitutes for the Scotland draw but does not establish if or when he entered. Stoke did not play a Championship match this week."
+        development_read: "The call-up is a useful step, but there is no verified new performance to grade. The next tests are a documented youth outing and continued involvement at Stoke."
+        sources:
+          - { label: "First U23 selection (official Stoke)", url: "https://www.stokecityfc.com/news/2026/november/11/eleven-potters-picked-for-their-countries" }
+          - { label: "Scotland friendly and scoring sequences (official Scottish FA)", url: "https://www.scottishfa.co.uk/en/news/21s-battle-to-share-spoils-with-usa" }
+          - { label: "U.S. starting lineup and listed substitutes (secondary BeSoccer)", url: "https://www.besoccer.com/match/escocia-sub-21/estados-unidos-sub23/2026358109/lineups" }
+      - profile: "jackson-hopkins"
+        name: "Jackson Hopkins"
+        club: "D.C. United"
+        trend: "✚"
+        direction: "insufficient"
+        direction_label: "Offseason begins after lower-leg absence"
+        context: "0 verified appearances or minutes; midfielder, MLS"
+        recap: "D.C. United's season ended on November 7, when the league listed Hopkins out with a lower-leg issue. In-week District Press reporting noted that his injury affected D.C.'s run-in. No fresh recovery timetable or competitive action was verified. D.C. appointed Óscar Pareja as head coach on November 14."
+        development_read: "No performance evaluation. Confirmed recovery comes first; how the new staff uses him will be the next club-role test."
+        sources:
+          - { label: "November 7 player status (official MLS; prior week)", url: "https://www.mlssoccer.com/news/mls-player-status-report-matchday-35-saturday-november-7" }
+          - { label: "Season-end injury context (local The District Press)", url: "https://thedistrictpress.com/2026/11/09/erkut-sogut-lucas-bartlett-reflect-on-difficult-dc-united-season/" }
+          - { label: "D.C. finale (official club)", url: "https://www.dcunited.com/news/post-match-facts-dcvnyc-x6342" }
+          - { label: "Pareja appointment (official D.C.)", url: "https://www.dcunited.com/news/d-c-united-names-oscar-pareja-head-coach" }
+      - profile: "duran-ferree"
+        name: "Duran Ferree"
+        club: "San Diego FC"
+        trend: "→"
+        direction: "steady"
+        direction_label: "U23 squad place; no verified playing time"
+        context: "0 MLS appearances; listed as U23 reserve goalkeeper, appearance and exact minutes unverified"
+        recap: "Ferree joined the U23 camp after San Diego's season ended. The Scotland teamsheet lists Julian Eyestone as the starter and Ferree among the reserves. The available report does not establish whether the U.S. changed goalkeepers, so no appearance, saves or clean sheet is credited."
+        development_read: "No new evidence changes the assessment. The lack of sustained club minutes remains a concern, while the U23 camp offers a possible opening."
+        sources:
+          - { label: "U23 call-up (official San Diego)", url: "https://www.sandiegofc.com/news/match-preview-presented-by-ticketmaster-san-diego-fc-hosts-sporting-kansas-city-in-2026-mls-regular-season-finale" }
+          - { label: "Scotland friendly and scoring sequences (official Scottish FA)", url: "https://www.scottishfa.co.uk/en/news/21s-battle-to-share-spoils-with-usa" }
+          - { label: "U.S. starting lineup and listed substitutes (secondary BeSoccer)", url: "https://www.besoccer.com/match/escocia-sub-21/estados-unidos-sub23/2026358109/lineups" }
   - id: "2026-11-08"
     group: "prospects"
     group_label: "Prospects"
