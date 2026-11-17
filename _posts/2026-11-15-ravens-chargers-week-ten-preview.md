@@ -19,10 +19,10 @@ home_image_position: "28% 32%"
 hero_alt: "Jacoby Brissett prepares to throw during practice ahead of his Ravens debut"
 hero_credit: "Shawn Hubbard / Baltimore Ravens Photos"
 hero_credit_url: "https://www.baltimoreravens.com/news/jacoby-brissett-crash-course-ravens-offense-declan-doyle-teammates-zay-flowers-calais-campbell"
-home_feature: true
+home_feature: false
 home_recent: false
 home_recent_label: "Week 10 preview"
-ravens_feature: true
+ravens_feature: false
 ravens_feature_image: true
 feature_label: "Week 10 preview"
 ravens_feature_mark: "10"
