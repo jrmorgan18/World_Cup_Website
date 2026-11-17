@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-16T16:30:07Z",
-  "as_of": "2026-11-16",
+  "generated_at": "2026-11-17T16:31:32Z",
+  "as_of": "2026-11-17",
   "season": 2026,
   "season_label": "2026-27",
   "team": {
@@ -5204,8 +5204,8 @@
   "injuries": [],
   "rotation": {
     "window_days": 21,
-    "window_start": "2026-10-26",
-    "window_end": "2026-11-16",
+    "window_start": "2026-10-27",
+    "window_end": "2026-11-17",
     "matches_in_window": 3,
     "available_minutes": 270,
     "players": [
