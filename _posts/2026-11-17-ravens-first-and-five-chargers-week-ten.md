@@ -28,10 +28,11 @@ ravens_feature_mark: "5"
 ravens_feature_mark_label: "First"
 ravens_feature_mark_detail: "Takeaways"
 tldr:
-  - "The Ravens fell 23–20 to the previously winless Chargers. Their fifth straight loss dropped them to 4–6. Zay Flowers’ late fumble ended their chance to tie or take the lead."
-  - "Jacoby Brissett threw for 340 yards and Mark Andrews caught eight passes for 82. The Ravens ran for just 16 yards on 15 carries."
-  - "Justin Herbert ran for 51 yards and a touchdown, and the Chargers finished with 160 rushing yards. Mike Green gave the Ravens two sacks and three quarterback hits."
-  - "With seven games left, the Ravens likely need six wins to have a realistic playoff shot."
+  - "Without Lamar Jackson, the run game has collapsed. A 16-yard night exposed blocking problems well beyond center."
+  - "Jacoby Brissett reopened the middle of the field. Mark Andrews caught all eight of his targets, a sign the passing game can function with Brissett."
+  - "Lamar’s injury has bought Jesse Minter patience. Recurring breakdowns in tackling, assignments and quarterback containment raise questions about how his defense is coached."
+  - "Mike Green’s two sacks showed why he could anchor the pass rush. The Ravens need more from veterans like Trey Hendrickson."
+  - "At 4–6, the Ravens should evaluate younger players, give Lamar time to recover and prioritize draft position. A playoff push likely takes a 6–1 finish."
 ---
 
 <style>
