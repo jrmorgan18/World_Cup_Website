@@ -1,16 +1,16 @@
 {
   "season": 2026,
   "week": 11,
-  "as_of": "2026-11-17T20:04:56.833444+00:00",
+  "as_of": "2026-11-18T19:39:38.641132+00:00",
   "source": {
     "file": "injuries.parquet",
     "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet",
-    "fetched_at": "2026-11-17T20:04:38.232646+00:00",
-    "http_last_modified": "Tue, 17 Nov 2026 16:50:46 GMT",
-    "source_sha256": "33d3b85359fe41db9aa652d6a385b31e92186e143af6cdca6fab4ace981ea1d9",
-    "cache_sha256": "33d3b85359fe41db9aa652d6a385b31e92186e143af6cdca6fab4ace981ea1d9"
+    "fetched_at": "2026-11-18T19:39:22.239093+00:00",
+    "http_last_modified": "Wed, 18 Nov 2026 16:38:43 GMT",
+    "source_sha256": "e60d23abf053b5fcba3b83e8bcc617cda66218126f703ccdc8396c82fea1316e",
+    "cache_sha256": "e60d23abf053b5fcba3b83e8bcc617cda66218126f703ccdc8396c82fea1316e"
   },
-  "source_max_week": 10,
+  "source_max_week": 11,
   "policy": "Only confirmed OUT/IR or two consecutive injury-related DNP daily reports in the game week qualify. Later LP/FP clears the DNP trigger. At least two meaningful players in a group are required. No automatic adjustments; returns remain manual scenarios.",
   "practice_history": {
     "team_daily_reports": 0,
@@ -177,17 +177,17 @@
     {
       "team": "HOU",
       "name": "Houston Texans",
-      "coverage": "No current-week report",
-      "report_players": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 15,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
     {
       "team": "IND",
       "name": "Indianapolis Colts",
-      "coverage": "No current-week report",
-      "report_players": 0,
-      "unresolved_participation_ids": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 11,
+      "unresolved_participation_ids": 1,
       "cards": 0
     },
     {
