@@ -101,6 +101,16 @@
   function renderResults(){
     if(!$('nfl-result-rows'))return;
     const mode=lineMode(),basis=mode==='first'?'First recorded line':mode==='best'?'Best recorded line':'Closing line';
+    const seasonGames=data.games.filter(g=>g.status==='Final');
+    $('nfl-season-ats-basis').textContent=basis;
+    $('nfl-season-ats').innerHTML=[['all','All results'],['saved','Saved before kickoff'],['retrospective','Retrospective replays']].map(([kind,label])=>{
+      const sample=kind==='all'?seasonGames:seasonGames.filter(g=>g.forecast_kind===kind);
+      const record={wins:0,losses:0,pushes:0,excluded:0};
+      for(const week of window.NFLResults.weeklyRecords(sample,mode)){
+        record.wins+=week.wins;record.losses+=week.losses;record.pushes+=week.pushes;record.excluded+=week.excluded;
+      }
+      return `<li data-ats-season="${kind}"><span>${label}</span><strong>${record.wins}–${record.losses}–${record.pushes}</strong>${record.excluded?`<small>${record.excluded} ungraded</small>`:''}</li>`;
+    }).join('');
     const week=$('nfl-results-week').value,kind=$('nfl-results-kind').value,query=$('nfl-results-search').value.toLowerCase();
     const games=data.games.filter(g=>g.status==='Final'&&(week==='all'||g.week===Number(week))&&(kind==='all'||g.forecast_kind===kind)&&`${g.home} ${g.away} ${team(g.home).name} ${team(g.away).name} ${g.home==='LA'||g.away==='LA'?'LAR':''}`.toLowerCase().includes(query)).sort((a,b)=>b.kickoff_utc.localeCompare(a.kickoff_utc));
     $('nfl-weekly-ats').innerHTML=window.NFLResults.weeklyRecords(games,mode).map(r=>`<li data-ats-week="${r.week}"><span>Week ${r.week}</span><strong>${r.wins}–${r.losses}–${r.pushes}</strong>${r.excluded?`<small>${r.excluded} ungraded</small>`:''}</li>`).join('')||'<li>No completed games match these filters.</li>';
