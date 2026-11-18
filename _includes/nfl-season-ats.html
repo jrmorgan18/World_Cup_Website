@@ -1,0 +1,10 @@
+{% assign season_ats_groups = 'all,saved,retrospective' | split: ',' %}
+{% for season_ats_group in season_ats_groups %}
+  {% assign season_ats_wins = 0 %}{% assign season_ats_losses = 0 %}{% assign season_ats_pushes = 0 %}{% assign season_ats_excluded = 0 %}
+  {% case season_ats_group %}{% when 'all' %}{% assign season_ats_label = 'All results' %}{% when 'saved' %}{% assign season_ats_label = 'Saved before kickoff' %}{% else %}{% assign season_ats_label = 'Retrospective replays' %}{% endcase %}
+  {% for season_ats_game in site.data.nfl_dashboard.games %}{% if season_ats_game.status == 'Final' %}{% if season_ats_group == 'all' or season_ats_game.forecast_kind == season_ats_group %}
+    {% capture season_ats_grade %}{% include nfl-rec-result.html game=season_ats_game %}{% endcapture %}
+    {% case rec_label %}{% when 'Winner' %}{% assign season_ats_wins = season_ats_wins | plus: 1 %}{% when 'Loser' %}{% assign season_ats_losses = season_ats_losses | plus: 1 %}{% when 'Push' %}{% assign season_ats_pushes = season_ats_pushes | plus: 1 %}{% else %}{% assign season_ats_excluded = season_ats_excluded | plus: 1 %}{% endcase %}
+  {% endif %}{% endif %}{% endfor %}
+  <li data-ats-season="{{ season_ats_group }}"><span>{{ season_ats_label }}</span><strong>{{ season_ats_wins }}–{{ season_ats_losses }}–{{ season_ats_pushes }}</strong>{% if season_ats_excluded > 0 %}<small>{{ season_ats_excluded }} ungraded</small>{% endif %}</li>
+{% endfor %}
