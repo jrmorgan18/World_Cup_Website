@@ -20,7 +20,7 @@ hero_alt: "Trevor Lawrence and the Jaguars on the field against the Ravens in Ba
 hero_credit: "Kam Nedd / Jacksonville Jaguars"
 hero_credit_url: "https://www.jaguars.com/photos/frames-of-the-game-photos-week-9-jaguars-vs-ravens"
 home_feature: false
-home_recent: true
+home_recent: false
 home_recent_label: "DE Efficiency Index"
 ravens_feature: false
 feature_label: "Week 9 efficiency & power"
