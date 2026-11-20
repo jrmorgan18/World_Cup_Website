@@ -39,7 +39,8 @@ section_theme: soccer
 {% assign usmnt_coaching_search_story = site.posts | where: "usmnt_coaching_search_feature", true | first %}
 {% assign usmnt_camp_story = site.posts | where: "usmnt_camp_feature", true | first %}
 {% assign best_xi_image = '/assets/images/euro-team-of-week-2026-11-10.png' %}
-{% assign soccer_feature = usmnt_coaching_search_story | default: usmnt_weekly_story | default: champions_league_recap_story | default: euro_team_of_week_story | default: power_rankings_story | default: usmnt_camp_story | default: premier_league_preview_story | default: longform_feature %}
+{% assign usmnt_match_recap_story = site.posts | where: "usmnt_match_recap_feature", true | first %}
+{% assign soccer_feature = usmnt_match_recap_story | default: usmnt_coaching_search_story | default: usmnt_weekly_story | default: champions_league_recap_story | default: euro_team_of_week_story | default: power_rankings_story | default: usmnt_camp_story | default: premier_league_preview_story | default: longform_feature %}
 {% assign power_rankings_edition = site.data.european_club_power_rankings.editions | first %}
 {% if soccer_feature %}
 <section class="soccer-editorial-shell">

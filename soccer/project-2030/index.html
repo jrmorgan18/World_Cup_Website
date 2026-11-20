@@ -25,7 +25,8 @@ description: A four-year scouting report tracking the USMNT player pool, checkpo
 {% assign sullivan_miami_story = site.posts | where: "sullivan_miami_feature", true | first %}
 {% assign usmnt_weekly_story = site.posts | where: "usmnt_weekly_feature", true | first %}
 {% assign usmnt_coaching_search_story = site.posts | where: "usmnt_coaching_search_feature", true | first %}
-{% assign project_lead = usmnt_coaching_search_story | default: usmnt_weekly_story %}
+{% assign usmnt_match_recap_story = site.posts | where: "usmnt_match_recap_feature", true | first %}
+{% assign project_lead = usmnt_match_recap_story | default: usmnt_coaching_search_story | default: usmnt_weekly_story %}
 {% assign usmnt_camp_story = site.posts | where: "usmnt_camp_feature", true | first %}
 {% assign usmnt_window_story = site.posts | where: "usmnt_window_feature", true | first %}
 {% assign foundation_part1 = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina" | first %}
