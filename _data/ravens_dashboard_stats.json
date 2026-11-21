@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T16:17:13Z",
+  "generated_at": "2026-11-21T17:57:57Z",
   "as_of": "2026-11-21",
   "season": 2026,
   "benchmark_season": 2025,
@@ -1193,7 +1193,7 @@
         "full_name": "San Francisco 49ers",
         "record": "8-1",
         "value": 66.4,
-        "unrounded_value": 66.40173688028945,
+        "unrounded_value": 66.40173688028946,
         "offense_rank": 1,
         "defense_rank": 12,
         "special_teams_rank": 20
@@ -1253,7 +1253,7 @@
         "full_name": "Kansas City Chiefs",
         "record": "7-2",
         "value": 59.0,
-        "unrounded_value": 59.01034076817978,
+        "unrounded_value": 59.01034076817977,
         "offense_rank": 6,
         "defense_rank": 8,
         "special_teams_rank": 30
@@ -1325,7 +1325,7 @@
         "full_name": "Houston Texans",
         "record": "4-6",
         "value": 51.4,
-        "unrounded_value": 51.3879861610686,
+        "unrounded_value": 51.38798616106861,
         "offense_rank": 15,
         "defense_rank": 7,
         "special_teams_rank": 11
@@ -1469,7 +1469,7 @@
         "full_name": "Washington Commanders",
         "record": "3-5-1",
         "value": 39.5,
-        "unrounded_value": 39.50065685341588,
+        "unrounded_value": 39.50065685341589,
         "offense_rank": 18,
         "defense_rank": 27,
         "special_teams_rank": 17
@@ -1701,13 +1701,13 @@
       {
         "source_label": "SumerSports",
         "source_url": "https://sumersports.com/players/wide-receiver/",
-        "period_label": "Updated Nov. 20, 2026",
+        "period_label": "Updated Nov. 21, 2026",
         "label": "Flowers YPRR",
         "value": "2.66",
         "rank": 9,
         "rank_group": "WR",
         "season": 2026,
-        "source_updated_at": "2026-11-20T17:25:22.810000+00:00",
+        "source_updated_at": "2026-11-21T17:19:05.985000+00:00",
         "routes": 259,
         "receiving_yards": 688,
         "qualified_receivers": 118,
@@ -2180,6 +2180,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-11-21T16:17:13Z"
+    "retrieved_at": "2026-11-21T17:57:57Z"
   }
 }
