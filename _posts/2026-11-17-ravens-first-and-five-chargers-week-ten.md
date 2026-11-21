@@ -18,10 +18,10 @@ home_image_position: "37% 48%"
 hero_alt: "Jacoby Brissett throws from the pocket in his Ravens debut against the Chargers"
 hero_credit: "Shawn Hubbard / Baltimore Ravens Photos"
 hero_credit_url: "https://www.baltimoreravens.com/photos/game-action-gallery-ravens-vs-chargers-week-10"
-home_feature: true
+home_feature: false
 home_recent: false
 home_recent_label: "First and Five"
-ravens_feature: true
+ravens_feature: false
 ravens_feature_image: true
 feature_label: "Week 10 takeaways"
 ravens_feature_mark: "5"

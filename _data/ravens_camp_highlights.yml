@@ -1,62 +1,62 @@
-date: "2026-11-08"
-edition: "November 8, 2026"
-kicker: "Week 9 · Looking Ahead"
-heading: "Ravens Daily"
-intro: "Baltimore enters an extended break at 4-5, with Jacoby Brissett expected to make his Ravens debut against the Chargers and Lamar Jackson hoping to return later this season."
+date: '2026-11-20'
+edition: November 20, 2026
+kicker: Week 11 · Panthers preparation
+heading: Ravens Daily
+intro: The Ravens prepare for Carolina with three defensive starters unavailable and Vega Ioane cleared to play.
 highlights:
-  - title: "The Ravens are not expected to trade Derrick Henry before Tuesday's deadline."
-    text: >-
-      ESPN's Adam Schefter reported that Baltimore told Henry it has no intention of moving him and never seriously considered a deal. The Ravens are keeping the veteran back as they try to stay in the playoff race after four straight losses.
-    sources:
-      - "ESPN/Adam Schefter"
-      - "NFL.com"
-    source_links:
-      - label: "ESPN report"
-        url: "https://www.espn.com/nfl/story/_/id/50400748/sources-ravens-not-expected-trade-star-rb-derrick-henry"
-      - label: "NFL.com report"
-        url: "https://www.nfl.com/news/report-ravens-not-expected-to-trade-rb-derrick-henry-before-nov-10-deadline"
-  - title: "The Giants have inquired about Justice Hill ahead of the trade deadline."
-    text: >-
-      ESPN's reporting identifies Hill, not Henry, as the Ravens running back New York called about. No deal has been reported, and Baltimore's willingness to move Hill remains unknown. John Harbaugh coached Hill throughout his Ravens career, making the connection an understandable one to watch.
-    sources:
-      - "ESPN/Adam Schefter"
-      - "BaltimoreRavens.com"
-    source_links:
-      - label: "Ravens trade-deadline roundup"
-        url: "https://www.baltimoreravens.com/news/ravens-trade-deadline-buyers-sellers-derrick-henry-justice-hill-jacoby-brissett-playoff-chances"
-      - label: "Giants Wire report"
-        url: "https://staging-aws.sports.yahoo.com/articles/report-york-giants-inquired-ravens-132524070.html"
-  - title: "The Ravens waived Austin Reed to make room for Jacoby Brissett on the 53-man roster."
-    text: >-
-      Reed backed up Joe Fagnano against Jacksonville but did not play. Brissett is expected to make his Baltimore debut against the Chargers on November 16, while Fagnano and Kedon Slovis remain on the roster.
-    sources:
-      - "BaltimoreRavens.com/Ryan Mink"
-    source_links:
-      - label: "Ravens roster move"
-        url: "https://www.baltimoreravens.com/news/ravens-austin-reed-jacoby-brissett-waive-quarterback"
-  - title: "The extended break gives Brissett time to prepare for his expected first start with Baltimore."
-    text: >-
-      After Thursday's 33-10 loss, the Ravens' next game is Monday night, November 16, against the Chargers. The 11-day gap gives Brissett time to learn Declan Doyle's offense, but how much of the playbook he can absorb before his debut remains an open question.
-    sources:
-      - "BaltimoreRavens.com"
-    source_links:
-      - label: "Ravens roster move"
-        url: "https://www.baltimoreravens.com/news/ravens-austin-reed-jacoby-brissett-waive-quarterback"
-      - label: "Cardinals trade announcement"
-        url: "https://www.azcardinals.com/news/jacoby-brissett-trade-to-ravens-becomes-official"
-  - title: "Lamar Jackson intends to return this season while recovering from a fractured, dislocated thumb."
-    text: >-
-      NFL Network's Ian Rapoport reported a six-to-nine-week recovery estimate and said Jackson told teammates he plans to return. That range could put him back as early as the December 20 game in Pittsburgh or as late as the Week 18 game on January 9 or 10; his return depends on recovery and medical clearance. Baltimore did not play Sunday, and Jackson's report was the only new confirmed team development that day.
-    sources:
-      - "NFL Network/Ian Rapoport"
-      - "BaltimoreRavens.com"
-      - "NBC Sports"
-    source_links:
-      - label: "Ravens report on Jackson"
-        url: "https://www.baltimoreravens.com/news/lamar-jackson-return-this-season-told-teammates-ravens-just-stay-alive-thumb-injury"
-      - label: "NFL Network report"
-        url: "https://www.nfl.com/news/ravens-lamar-jackson-right-thumb-out-6-9-weeks-expects-to-return-this-season"
-      - label: "Ravens schedule"
-        url: "https://www.baltimoreravens.com/news/baltimore-ravens-2026-schedule"
-      - label: "NBC Sports report"
-        url: "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/lamar-jacksons-message-to-teammates-stay-alive-and-ill-be-back"
+- title: Nnamdi Madubuike has been ruled out against Carolina, removing Baltimore's most disruptive interior defensive lineman.
+  text: Madubuike missed all three practices after suffering a hamstring injury against the Chargers and leads Ravens defensive
+    linemen with 26 pressures, according to PFF. His absence puts more responsibility on Travis Jones and the remaining defensive
+    front to contain Carolina's rushing attack.
+  sources:
+  - The Baltimore Banner/Jonas Shaffer
+  - BaltimoreRavens.com
+  source_links:
+  - label: Ravens injury report
+    url: https://www.baltimoreravens.com/news/injury-report-ravens-panthers-nnamdi-madubuike-jaylinn-hawkins-practice-week-11
+- title: Baltimore will also be without Jaylinn Hawkins and Marlon Humphrey, forcing significant changes to the secondary.
+  text: Hawkins was ruled out after missing Friday's practice with his lingering knee injury, while Humphrey will serve a
+    one-game deactivation following his derogatory comments about Baltimore. Chidobe Awuzie and T.J. Tampa are expected to
+    absorb Humphrey's responsibilities, and Jesse Minter said Friday that he expects the veteran cornerback back at the facility
+    Monday.
+  sources:
+  - BaltimoreRavens.com
+  - Jesse Minter press conference
+  source_links:
+  - label: Ravens injury report
+    url: https://www.baltimoreravens.com/news/injury-report-ravens-panthers-nnamdi-madubuike-jaylinn-hawkins-practice-week-11
+  - label: Minter’s Friday press conference
+    url: https://www.baltimoreravens.com/news/transcript-press-conference-11-20-26
+- title: Vega Ioane is cleared to play Sunday, providing an important boost to Baltimore's struggling offensive line.
+  text: The first-round guard practiced fully Thursday and Friday despite knee and shoulder concerns and carries no injury
+    designation. John Simpson was added to Friday's report with a shoulder issue but is also cleared, giving the Ravens their
+    expected starting interior combination as they try to revive a rushing attack that managed just 16 yards against the Chargers.
+  sources:
+  - Ravens official injury report
+  - BaltimoreRavens.com
+  source_links:
+  - label: Official Week 11 injury report
+    url: https://www.baltimoreravens.com/team/injury-report/week/REG-11
+- title: Carolina will be missing starting linebacker Bobby Okereke, although several important offensive contributors could
+    return.
+  text: Okereke is out with a foot injury, while tight ends Darren Waller and Tommy Tremble remain questionable with knee
+    injuries. Starting cornerback Mike Jackson practiced fully throughout the week and could return from injured reserve,
+    potentially strengthening Carolina's coverage against Jacoby Brissett.
+  sources:
+  - Carolina Panthers official injury report
+  - BaltimoreRavens.com
+  source_links:
+  - label: Panthers final injury report
+    url: https://www.panthers.com/news/week-11-friday-injury-report-two-ruled-out-for-ravens-game-bobby-okereke-isaiah-simmons
+- title: Minter and Anthony Weaver are emphasizing defensive run-fit discipline after another poor performance against the
+    ground game.
+  text: Minter said Friday that Weaver used film during the defensive meeting to contrast successful snaps with plays where
+    one defender's incorrect assignment compromised the entire structure. The Ravens surrendered 160 rushing yards against
+    Los Angeles, and Minter acknowledged the difficulty of correcting physical and technical mistakes during a shortened practice
+    week.
+  sources:
+  - BaltimoreRavens.com
+  - Jesse Minter press conference
+  source_links:
+  - label: Minter’s Friday press conference
+    url: https://www.baltimoreravens.com/news/transcript-press-conference-11-20-26

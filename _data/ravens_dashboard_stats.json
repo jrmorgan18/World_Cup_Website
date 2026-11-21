@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-20T19:06:16Z",
-  "as_of": "2026-11-20",
+  "generated_at": "2026-11-21T16:17:13Z",
+  "as_of": "2026-11-21",
   "season": 2026,
   "benchmark_season": 2025,
   "efficiency_model": {
@@ -1171,7 +1171,7 @@
     }
   },
   "league_efficiency_rankings": {
-    "label": "Games through November 20",
+    "label": "Games through November 21",
     "sample_note": "Completed regular-season games; early-season sample",
     "teams": [
       {
@@ -1181,7 +1181,7 @@
         "full_name": "Jacksonville Jaguars",
         "record": "7-2",
         "value": 67.7,
-        "unrounded_value": 67.7008147483345,
+        "unrounded_value": 67.70081474833448,
         "offense_rank": 4,
         "defense_rank": 5,
         "special_teams_rank": 5
@@ -1193,7 +1193,7 @@
         "full_name": "San Francisco 49ers",
         "record": "8-1",
         "value": 66.4,
-        "unrounded_value": 66.40173688028946,
+        "unrounded_value": 66.40173688028945,
         "offense_rank": 1,
         "defense_rank": 12,
         "special_teams_rank": 20
@@ -1205,7 +1205,7 @@
         "full_name": "Los Angeles Rams",
         "record": "6-4",
         "value": 63.3,
-        "unrounded_value": 63.28997768368812,
+        "unrounded_value": 63.28997768368811,
         "offense_rank": 8,
         "defense_rank": 4,
         "special_teams_rank": 29
@@ -1229,7 +1229,7 @@
         "full_name": "Cincinnati Bengals",
         "record": "7-2",
         "value": 61.5,
-        "unrounded_value": 61.54262874406058,
+        "unrounded_value": 61.542628744060565,
         "offense_rank": 2,
         "defense_rank": 20,
         "special_teams_rank": 8
@@ -1241,7 +1241,7 @@
         "full_name": "Detroit Lions",
         "record": "7-2",
         "value": 59.7,
-        "unrounded_value": 59.744316365184524,
+        "unrounded_value": 59.74431636518452,
         "offense_rank": 3,
         "defense_rank": 24,
         "special_teams_rank": 4
@@ -1253,7 +1253,7 @@
         "full_name": "Kansas City Chiefs",
         "record": "7-2",
         "value": 59.0,
-        "unrounded_value": 59.01034076817979,
+        "unrounded_value": 59.01034076817978,
         "offense_rank": 6,
         "defense_rank": 8,
         "special_teams_rank": 30
@@ -1265,7 +1265,7 @@
         "full_name": "Buffalo Bills",
         "record": "8-1",
         "value": 58.3,
-        "unrounded_value": 58.34188168580563,
+        "unrounded_value": 58.341881685805625,
         "offense_rank": 5,
         "defense_rank": 23,
         "special_teams_rank": 7
@@ -1277,7 +1277,7 @@
         "full_name": "Seattle Seahawks",
         "record": "6-4",
         "value": 58.2,
-        "unrounded_value": 58.180317027856816,
+        "unrounded_value": 58.1803170278568,
         "offense_rank": 22,
         "defense_rank": 1,
         "special_teams_rank": 9
@@ -1289,7 +1289,7 @@
         "full_name": "Tampa Bay Buccaneers",
         "record": "3-6",
         "value": 57.6,
-        "unrounded_value": 57.62949271651467,
+        "unrounded_value": 57.62949271651466,
         "offense_rank": 27,
         "defense_rank": 2,
         "special_teams_rank": 2
@@ -1301,7 +1301,7 @@
         "full_name": "Denver Broncos",
         "record": "7-2",
         "value": 53.8,
-        "unrounded_value": 53.75979960673556,
+        "unrounded_value": 53.75979960673555,
         "offense_rank": 19,
         "defense_rank": 6,
         "special_teams_rank": 10
@@ -1313,7 +1313,7 @@
         "full_name": "Minnesota Vikings",
         "record": "7-2",
         "value": 52.4,
-        "unrounded_value": 52.363577679005104,
+        "unrounded_value": 52.36357767900509,
         "offense_rank": 30,
         "defense_rank": 3,
         "special_teams_rank": 3
@@ -1325,7 +1325,7 @@
         "full_name": "Houston Texans",
         "record": "4-6",
         "value": 51.4,
-        "unrounded_value": 51.387986161068625,
+        "unrounded_value": 51.3879861610686,
         "offense_rank": 15,
         "defense_rank": 7,
         "special_teams_rank": 11
@@ -1337,7 +1337,7 @@
         "full_name": "New England Patriots",
         "record": "5-5",
         "value": 48.5,
-        "unrounded_value": 48.5046437150637,
+        "unrounded_value": 48.50464371506369,
         "offense_rank": 10,
         "defense_rank": 21,
         "special_teams_rank": 15
@@ -1349,7 +1349,7 @@
         "full_name": "Pittsburgh Steelers",
         "record": "6-3",
         "value": 47.3,
-        "unrounded_value": 47.31214808523223,
+        "unrounded_value": 47.31214808523222,
         "offense_rank": 13,
         "defense_rank": 15,
         "special_teams_rank": 16
@@ -1421,7 +1421,7 @@
         "full_name": "Green Bay Packers",
         "record": "6-4",
         "value": 41.6,
-        "unrounded_value": 41.625663272296656,
+        "unrounded_value": 41.62566327229665,
         "offense_rank": 17,
         "defense_rank": 13,
         "special_teams_rank": 31
@@ -1433,7 +1433,7 @@
         "full_name": "Cleveland Browns",
         "record": "6-4",
         "value": 41.0,
-        "unrounded_value": 41.018796276813475,
+        "unrounded_value": 41.01879627681349,
         "offense_rank": 24,
         "defense_rank": 11,
         "special_teams_rank": 24
@@ -1445,7 +1445,7 @@
         "full_name": "Arizona Cardinals",
         "record": "3-7",
         "value": 40.0,
-        "unrounded_value": 39.95284225386284,
+        "unrounded_value": 39.952842253862826,
         "offense_rank": 16,
         "defense_rank": 25,
         "special_teams_rank": 27
@@ -1457,7 +1457,7 @@
         "full_name": "Indianapolis Colts",
         "record": "3-8",
         "value": 39.8,
-        "unrounded_value": 39.75371054905835,
+        "unrounded_value": 39.75371054905834,
         "offense_rank": 25,
         "defense_rank": 22,
         "special_teams_rank": 19
@@ -1469,7 +1469,7 @@
         "full_name": "Washington Commanders",
         "record": "3-5-1",
         "value": 39.5,
-        "unrounded_value": 39.50065685341589,
+        "unrounded_value": 39.50065685341588,
         "offense_rank": 18,
         "defense_rank": 27,
         "special_teams_rank": 17
@@ -1481,7 +1481,7 @@
         "full_name": "New York Jets",
         "record": "2-8",
         "value": 39.4,
-        "unrounded_value": 39.4131908087693,
+        "unrounded_value": 39.41319080876929,
         "offense_rank": 11,
         "defense_rank": 28,
         "special_teams_rank": 22
@@ -1493,7 +1493,7 @@
         "full_name": "New Orleans Saints",
         "record": "3-6",
         "value": 37.4,
-        "unrounded_value": 37.39476761994098,
+        "unrounded_value": 37.39476761994096,
         "offense_rank": 26,
         "defense_rank": 26,
         "special_teams_rank": 12
@@ -1517,7 +1517,7 @@
         "full_name": "Las Vegas Raiders",
         "record": "4-6",
         "value": 31.4,
-        "unrounded_value": 31.44841355164701,
+        "unrounded_value": 31.44841355164702,
         "offense_rank": 20,
         "defense_rank": 32,
         "special_teams_rank": 13
@@ -1541,7 +1541,7 @@
         "full_name": "Tennessee Titans",
         "record": "1-8",
         "value": 30.0,
-        "unrounded_value": 30.02823827519433,
+        "unrounded_value": 30.02823827519434,
         "offense_rank": 28,
         "defense_rank": 30,
         "special_teams_rank": 21
@@ -1836,11 +1836,11 @@
   },
   "offensive_line_filmstudy": {
     "source_label": "Filmstudy · Ken McKusick",
-    "source_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w9/",
+    "source_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w10/",
     "season": 2026,
-    "week": 9,
-    "published": "2026-11-07",
-    "period_label": "Written reports through Week 9",
+    "week": 10,
+    "published": "2026-11-20",
+    "period_label": "Written reports through Week 10",
     "methodology": "Dual Eights aggregation: each published Filmstudy adjusted game letter grade is converted to a standard grade-point scale, weighted by the player's scored snaps, then rounded to the nearest letter grade. Ranks compare Ravens linemen only, with at least 20 graded snaps. Only explicitly published grades count; missing appearances are not estimated.",
     "players": [
       {
@@ -1859,8 +1859,8 @@
       },
       {
         "player": "Vega Ioane",
-        "scored_snaps": 429,
-        "graded_snaps": 413,
+        "scored_snaps": 461,
+        "graded_snaps": 445,
         "weeks": [
           1,
           2,
@@ -1869,18 +1869,19 @@
           5,
           6,
           7,
-          9
+          9,
+          10
         ],
-        "latest_week": 9,
-        "latest_grade": "C",
-        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w9/",
+        "latest_week": 10,
+        "latest_grade": "F",
+        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w10/",
         "rank": 2,
         "aggregate_grade": "C+"
       },
       {
         "player": "Roger Rosengarten",
-        "scored_snaps": 524,
-        "graded_snaps": 524,
+        "scored_snaps": 589,
+        "graded_snaps": 589,
         "weeks": [
           1,
           2,
@@ -1890,38 +1891,19 @@
           6,
           7,
           8,
-          9
+          9,
+          10
         ],
-        "latest_week": 9,
-        "latest_grade": "B",
-        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w9/",
+        "latest_week": 10,
+        "latest_grade": "F",
+        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w10/",
         "rank": 3,
-        "aggregate_grade": "C+"
-      },
-      {
-        "player": "Ronnie Stanley",
-        "scored_snaps": 447,
-        "graded_snaps": 447,
-        "weeks": [
-          1,
-          2,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9
-        ],
-        "latest_week": 9,
-        "latest_grade": "B-",
-        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w9/",
-        "rank": 4,
-        "aggregate_grade": "C-"
+        "aggregate_grade": "C"
       },
       {
         "player": "John Simpson",
-        "scored_snaps": 526,
-        "graded_snaps": 526,
+        "scored_snaps": 591,
+        "graded_snaps": 591,
         "weeks": [
           1,
           2,
@@ -1931,12 +1913,13 @@
           6,
           7,
           8,
-          9
+          9,
+          10
         ],
-        "latest_week": 9,
-        "latest_grade": "F",
-        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w9/",
-        "rank": 5,
+        "latest_week": 10,
+        "latest_grade": "C",
+        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w10/",
+        "rank": 4,
         "aggregate_grade": "C-"
       },
       {
@@ -1952,8 +1935,45 @@
         "latest_week": 7,
         "latest_grade": "B",
         "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w7/",
+        "rank": 5,
+        "aggregate_grade": "C-"
+      },
+      {
+        "player": "Ronnie Stanley",
+        "scored_snaps": 512,
+        "graded_snaps": 512,
+        "weeks": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "latest_week": 10,
+        "latest_grade": "F",
+        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w10/",
         "rank": 6,
         "aggregate_grade": "C-"
+      },
+      {
+        "player": "Jurgens",
+        "scored_snaps": 232,
+        "graded_snaps": 232,
+        "weeks": [
+          7,
+          8,
+          9,
+          10
+        ],
+        "latest_week": 10,
+        "latest_grade": "C",
+        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w10/",
+        "rank": 7,
+        "aggregate_grade": "D+"
       },
       {
         "player": "Jovaughn Gwyn",
@@ -1967,22 +1987,20 @@
         "latest_week": 3,
         "latest_grade": "F",
         "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w4/",
-        "rank": 7,
+        "rank": 8,
         "aggregate_grade": "D+"
       },
       {
-        "player": "Jurgens",
-        "scored_snaps": 167,
-        "graded_snaps": 167,
+        "player": "Edoga",
+        "scored_snaps": 33,
+        "graded_snaps": 33,
         "weeks": [
-          7,
-          8,
-          9
+          10
         ],
-        "latest_week": 9,
+        "latest_week": 10,
         "latest_grade": "D",
-        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w9/",
-        "rank": 8,
+        "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w10/",
+        "rank": 9,
         "aggregate_grade": "D"
       },
       {
@@ -1997,7 +2015,7 @@
         "latest_week": 8,
         "latest_grade": "F",
         "latest_url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w9/",
-        "rank": 9,
+        "rank": 10,
         "aggregate_grade": "F"
       }
     ],
@@ -2052,6 +2070,11 @@
         "week": 9,
         "url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w9/",
         "published": "2026-11-07"
+      },
+      {
+        "week": 10,
+        "url": "https://www.filmstudybaltimore.com/offensiveline-notes-2026-w10/",
+        "published": "2026-11-20"
       }
     ]
   },
@@ -2157,6 +2180,6 @@
       "url": "https://nflreadr.nflverse.com/articles/nflverse_data_schedule.html"
     },
     "license": "CC BY 4.0",
-    "retrieved_at": "2026-11-20T19:06:16Z"
+    "retrieved_at": "2026-11-21T16:17:13Z"
   }
 }
