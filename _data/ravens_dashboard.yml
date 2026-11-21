@@ -10,7 +10,7 @@ meta:
   update_context: Chargers results · Panthers matchup and Nov. 20 game designations
   data_status: week-11-in-progress
   data_notice: Team stats include ten Ravens games and the league’s available Week 11 results. Outside analytics retain
-    their source reporting periods. Editorial unit grades cover the nine games graded through Jacksonville.
+    their source reporting periods. Editorial unit grades include all ten games through the Chargers.
 
 metric_definitions:
   - id: "overall_efficiency"
@@ -227,87 +227,87 @@ editorial:
   units:
   - name: Quarterback
     assessment: Solid
-    trend: down
-    season_grade: B-
-    season_grade_points: 2.667333333333333
-    last_game_grade: D
-    explanation: 'Week 9: Joe Fagnano went 10-of-18 for 60 yards with two interceptions in his first NFL start.'
-    link: /ravens/first-and-five-jaguars-week-nine-2026/
-  - name: Running backs
-    assessment: Solid
     trend: up
     season_grade: B-
-    season_grade_points: 2.739
-    last_game_grade: C+
-    explanation: 'Week 9: Justice Hill broke a 65-yard touchdown run. Hill and Derrick Henry combined for 77 yards on
-      their other 25 carries.'
-    link: /ravens/first-and-five-jaguars-week-nine-2026/
-  - name: Wide receivers
+    season_grade_points: 2.7336
+    last_game_grade: B+
+    explanation: 'Week 10: Brissett completed 33 of 49 passes for 340 yards and an interception in his Ravens debut.'
+    link: /ravens/first-and-five-chargers-week-ten-2026/
+  - name: Running backs
     assessment: Solid
     trend: down
-    season_grade: B
-    season_grade_points: 3.0756666666666668
+    season_grade: B-
+    season_grade_points: 2.5651
     last_game_grade: D
-    explanation: 'Week 9: Zay Flowers, Rashod Bateman and LaJohntay Wester combined for five catches and 26 yards.'
-    link: /ravens/first-and-five-jaguars-week-nine-2026/
+    explanation: 'Week 10: Henry ran for 10 yards on 10 carries. The Ravens finished with just 16 rushing yards.'
+    link: /ravens/first-and-five-chargers-week-ten-2026/
+  - name: Wide receivers
+    assessment: Solid
+    trend: up
+    season_grade: B
+    season_grade_points: 3.0351
+    last_game_grade: B-
+    explanation: 'Week 10: The passing game reopened with Brissett. Flowers’ late fumble ended the final comeback
+      opportunity.'
+    link: /ravens/first-and-five-chargers-week-ten-2026/
   - name: Tight ends
     assessment: Mixed
     trend: up
-    season_grade: C
-    season_grade_points: 2.036888888888889
-    last_game_grade: D+
-    explanation: 'Week 9: Mark Andrews and Matt Hibner combined for three catches and 24 yards.'
-    link: /ravens/first-and-five-jaguars-week-nine-2026/
+    season_grade: C+
+    season_grade_points: 2.2332
+    last_game_grade: A
+    explanation: 'Week 10: Andrews caught all eight of his targets for 82 yards.'
+    link: /ravens/first-and-five-chargers-week-ten-2026/
   - name: Offensive line
     assessment: Mixed
-    trend: up
-    season_grade: C
-    season_grade_points: 1.8515555555555556
-    last_game_grade: C-
-    explanation: 'Week 9: Jacksonville recorded one sack, and four false starts put the offense behind schedule.'
-    link: /ravens/first-and-five-jaguars-week-nine-2026/
+    trend: down
+    season_grade: C-
+    season_grade_points: 1.7334000000000003
+    last_game_grade: D-
+    explanation: 'Week 10: The run game produced 16 yards on 15 carries. The Chargers also recorded two sacks.'
+    link: /ravens/first-and-five-chargers-week-ten-2026/
   - name: Defensive line
     assessment: Strength
-    trend: up
+    trend: down
     season_grade: B+
-    season_grade_points: 3.332
-    last_game_grade: B
-    explanation: 'Week 9: Jacksonville finished with 77 yards on 30 rushing attempts, just 2.6 yards per carry.'
-    link: /ravens/first-and-five-jaguars-week-nine-2026/
+    season_grade_points: 3.1658
+    last_game_grade: C-
+    explanation: 'Week 10: The Chargers ran for 160 yards, including 105 by Hampton.'
+    link: /ravens/first-and-five-chargers-week-ten-2026/
   - name: Edge rushers
     assessment: Mixed
-    trend: down
+    trend: up
     season_grade: C+
-    season_grade_points: 2.481
-    last_game_grade: F
-    explanation: 'Week 9: The pass rush finished without a sack on Trevor Lawrence.'
-    link: /ravens/first-and-five-jaguars-week-nine-2026/
+    season_grade_points: 2.4659
+    last_game_grade: C+
+    explanation: 'Week 10: Green was good, with two sacks and three quarterback hits. The other edge rushers were
+      poor.'
+    link: /ravens/first-and-five-chargers-week-ten-2026/
   - name: Linebackers
     assessment: Solid
     trend: down
     season_grade: B-
-    season_grade_points: 2.6662222222222223
-    last_game_grade: B-
-    explanation: 'Week 9: The linebackers helped limit Jacksonville to 2.6 yards per carry.'
-    link: /ravens/first-and-five-jaguars-week-nine-2026/
+    season_grade_points: 2.5326
+    last_game_grade: D+
+    explanation: 'Week 10: Run fits and quarterback containment broke down as Herbert ran for 51 yards and a touchdown.'
+    link: /ravens/first-and-five-chargers-week-ten-2026/
   - name: Secondary
     assessment: Mixed
-    trend: down
+    trend: up
     season_grade: C+
-    season_grade_points: 2.297888888888889
-    last_game_grade: D
-    explanation: 'Week 9: Jacksonville hit a 52-yard completion to Nate Boerkircher and a 50-yard touchdown to Parker
-      Washington.'
-    link: /ravens/first-and-five-jaguars-week-nine-2026/
+    season_grade_points: 2.2681
+    last_game_grade: C
+    explanation: 'Week 10: The defense allowed 129 passing yards but finished without a takeaway.'
+    link: /ravens/first-and-five-chargers-week-ten-2026/
   - name: Specialists
     assessment: Solid
-    trend: up
+    trend: down
     season_grade: B-
-    season_grade_points: 2.7394444444444446
-    last_game_grade: B
-    explanation: 'Week 9: Jake Moody made his field goal and extra point. LaJohntay Wester lost a kickoff-return fumble
-      that set up a Jacksonville touchdown.'
-    link: /ravens/first-and-five-jaguars-week-nine-2026/
+    season_grade_points: 2.6325000000000003
+    last_game_grade: C-
+    explanation: 'Week 10: Patterson made both field goals and both extra points. The overall specialists grade is
+      C-.'
+    link: /ravens/first-and-five-chargers-week-ten-2026/
   weekly_changes:
   - direction: down
     title: Fifth straight defeat
@@ -347,12 +347,12 @@ preseason_form:
   points_against: 13
 
 unit_grade_context:
-  season_label: Season through Week 9
-  last_game_label: Latest graded game · Week 9 vs. Jacksonville
+  season_label: Season through Week 10
+  last_game_label: Week 10 vs. Chargers
   analytics_as_of: Each league-wide metric carries its latest published week
-  graded_games: 9
-  rollup_method: Equal game weight; eight parts existing Week 8 season points plus one part Week 9 editorial grade, rounded
-    to the nearest letter band.
+  graded_games: 10
+  rollup_method: Equal game weight. Nine parts existing Week 9 season points plus one part Week 10 editorial grade,
+    rounded to the nearest letter band.
   grade_points:
     A+: 4.33
     A: 4.0
