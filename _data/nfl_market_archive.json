@@ -5255,6 +5255,15 @@
       "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv"
     },
     {
+      "game_id": "2026_11_CIN_WAS",
+      "observed_at": "2026-11-22T18:40:21.059916+00:00",
+      "recorded_at": "2026-11-22T18:40:39.338247+00:00",
+      "home_margin": -6.0,
+      "forecast_generated_at": "2026-11-22T18:40:39.338247+00:00",
+      "forecast_home_margin": -3.8928476340006846,
+      "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv"
+    },
+    {
       "game_id": "2026_11_IND_HOU",
       "observed_at": "2026-11-16T13:58:51.156574+00:00",
       "recorded_at": "2026-11-16T13:59:21.406472+00:00",
@@ -5363,6 +5372,15 @@
       "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv"
     },
     {
+      "game_id": "2026_11_JAX_NYG",
+      "observed_at": "2026-11-22T18:40:21.059916+00:00",
+      "recorded_at": "2026-11-22T18:40:39.338247+00:00",
+      "home_margin": -6.0,
+      "forecast_generated_at": "2026-11-22T18:40:39.338247+00:00",
+      "forecast_home_margin": -5.287688107747979,
+      "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv"
+    },
+    {
       "game_id": "2026_11_LV_DEN",
       "observed_at": "2026-11-16T13:58:51.156574+00:00",
       "recorded_at": "2026-11-16T13:59:21.406472+00:00",
@@ -5423,6 +5441,15 @@
       "home_margin": 10.5,
       "forecast_generated_at": "2026-11-21T18:16:51.083683+00:00",
       "forecast_home_margin": 6.3240464395557225,
+      "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv"
+    },
+    {
+      "game_id": "2026_11_LV_DEN",
+      "observed_at": "2026-11-22T18:40:21.059916+00:00",
+      "recorded_at": "2026-11-22T18:40:39.338247+00:00",
+      "home_margin": 10.5,
+      "forecast_generated_at": "2026-11-22T18:40:39.338247+00:00",
+      "forecast_home_margin": 6.3538193908277085,
       "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv"
     },
     {
@@ -5552,6 +5579,15 @@
       "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv"
     },
     {
+      "game_id": "2026_11_MIN_SF",
+      "observed_at": "2026-11-22T18:40:21.059916+00:00",
+      "recorded_at": "2026-11-22T18:40:39.338247+00:00",
+      "home_margin": 3.5,
+      "forecast_generated_at": "2026-11-22T18:40:39.338247+00:00",
+      "forecast_home_margin": 6.1893322423544195,
+      "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv"
+    },
+    {
       "game_id": "2026_11_NO_CHI",
       "observed_at": "2026-11-16T13:58:51.156574+00:00",
       "recorded_at": "2026-11-16T13:59:21.406472+00:00",
@@ -5675,6 +5711,15 @@
       "home_margin": 3.0,
       "forecast_generated_at": "2026-11-21T18:16:51.083683+00:00",
       "forecast_home_margin": -1.1999367559919427,
+      "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv"
+    },
+    {
+      "game_id": "2026_11_NYJ_LAC",
+      "observed_at": "2026-11-22T18:40:21.059916+00:00",
+      "recorded_at": "2026-11-22T18:40:39.338247+00:00",
+      "home_margin": 3.0,
+      "forecast_generated_at": "2026-11-22T18:40:39.338247+00:00",
+      "forecast_home_margin": -1.1606605311618445,
       "source": "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.csv"
     },
     {

@@ -1,14 +1,14 @@
 {
   "season": 2026,
   "week": 11,
-  "as_of": "2026-11-21T18:16:51.083683+00:00",
+  "as_of": "2026-11-22T18:40:39.338247+00:00",
   "source": {
     "file": "injuries.parquet",
     "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet",
-    "fetched_at": "2026-11-21T18:16:24.491719+00:00",
-    "http_last_modified": "Sat, 21 Nov 2026 15:16:44 GMT",
-    "source_sha256": "f31c61c6b233af3cd14eba10e3f4466f01853bc2413ee24dccf8435e8726a482",
-    "cache_sha256": "f31c61c6b233af3cd14eba10e3f4466f01853bc2413ee24dccf8435e8726a482"
+    "fetched_at": "2026-11-22T18:40:21.551652+00:00",
+    "http_last_modified": "Sun, 22 Nov 2026 15:13:18 GMT",
+    "source_sha256": "cbe8fc920c64ce6e6039986528cb8190564f0b1f1053b6abeec4befe28fac546",
+    "cache_sha256": "cbe8fc920c64ce6e6039986528cb8190564f0b1f1053b6abeec4befe28fac546"
   },
   "source_max_week": 11,
   "policy": "Only confirmed OUT/IR or two consecutive injury-related DNP daily reports in the game week qualify. Later LP/FP clears the DNP trigger. At least two meaningful players in a group are required. No automatic adjustments; returns remain manual scenarios.",
@@ -130,7 +130,7 @@
       "team": "CIN",
       "name": "Cincinnati Bengals",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 15,
+      "report_players": 16,
       "unresolved_participation_ids": 2,
       "cards": 0
     },
@@ -330,7 +330,7 @@
       "team": "WAS",
       "name": "Washington Commanders",
       "coverage": "Latest report present; daily history / IR may be incomplete",
-      "report_players": 13,
+      "report_players": 15,
       "unresolved_participation_ids": 0,
       "cards": 0
     }
@@ -351,7 +351,7 @@
           "return_candidate": false,
           "report_status": "Out",
           "practice_status": "Did Not Participate In Practice",
-          "observed_at": "2026-11-21T18:16:24.491719+00:00",
+          "observed_at": "2026-11-22T18:40:21.551652+00:00",
           "practice_dates": [],
           "source_urls": [
             "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
@@ -366,7 +366,7 @@
           "return_candidate": false,
           "report_status": "Out",
           "practice_status": "Did Not Participate In Practice",
-          "observed_at": "2026-11-21T18:16:24.491719+00:00",
+          "observed_at": "2026-11-22T18:40:21.551652+00:00",
           "practice_dates": [],
           "source_urls": [
             "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
@@ -381,7 +381,7 @@
           "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
         }
       ],
-      "observed_at": "2026-11-21T18:16:24.491719+00:00",
+      "observed_at": "2026-11-22T18:40:21.551652+00:00",
       "reviewed": false
     },
     {
@@ -399,7 +399,7 @@
           "return_candidate": false,
           "report_status": "Out",
           "practice_status": "Did Not Participate In Practice",
-          "observed_at": "2026-11-21T18:16:24.491719+00:00",
+          "observed_at": "2026-11-22T18:40:21.551652+00:00",
           "practice_dates": [],
           "source_urls": [
             "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
@@ -414,7 +414,7 @@
           "return_candidate": false,
           "report_status": "Out",
           "practice_status": "Did Not Participate In Practice",
-          "observed_at": "2026-11-21T18:16:24.491719+00:00",
+          "observed_at": "2026-11-22T18:40:21.551652+00:00",
           "practice_dates": [],
           "source_urls": [
             "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
@@ -429,7 +429,7 @@
           "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
         }
       ],
-      "observed_at": "2026-11-21T18:16:24.491719+00:00",
+      "observed_at": "2026-11-22T18:40:21.551652+00:00",
       "reviewed": false
     },
     {
@@ -447,7 +447,7 @@
           "return_candidate": false,
           "report_status": "Out",
           "practice_status": "Did Not Participate In Practice",
-          "observed_at": "2026-11-21T18:16:24.491719+00:00",
+          "observed_at": "2026-11-22T18:40:21.551652+00:00",
           "practice_dates": [],
           "source_urls": [
             "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
@@ -462,7 +462,7 @@
           "return_candidate": false,
           "report_status": "Out",
           "practice_status": "Did Not Participate In Practice",
-          "observed_at": "2026-11-21T18:16:24.491719+00:00",
+          "observed_at": "2026-11-22T18:40:21.551652+00:00",
           "practice_dates": [],
           "source_urls": [
             "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
@@ -477,7 +477,7 @@
           "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
         }
       ],
-      "observed_at": "2026-11-21T18:16:24.491719+00:00",
+      "observed_at": "2026-11-22T18:40:21.551652+00:00",
       "reviewed": false
     },
     {
@@ -495,7 +495,7 @@
           "return_candidate": false,
           "report_status": "Out",
           "practice_status": "Did Not Participate In Practice",
-          "observed_at": "2026-11-21T18:16:24.491719+00:00",
+          "observed_at": "2026-11-22T18:40:21.551652+00:00",
           "practice_dates": [],
           "source_urls": [
             "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
@@ -510,7 +510,7 @@
           "return_candidate": false,
           "report_status": "Out",
           "practice_status": "Did Not Participate In Practice",
-          "observed_at": "2026-11-21T18:16:24.491719+00:00",
+          "observed_at": "2026-11-22T18:40:21.551652+00:00",
           "practice_dates": [],
           "source_urls": [
             "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
@@ -525,7 +525,7 @@
           "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
         }
       ],
-      "observed_at": "2026-11-21T18:16:24.491719+00:00",
+      "observed_at": "2026-11-22T18:40:21.551652+00:00",
       "reviewed": false
     },
     {
@@ -543,7 +543,7 @@
           "return_candidate": false,
           "report_status": "Out",
           "practice_status": "Did Not Participate In Practice",
-          "observed_at": "2026-11-21T18:16:24.491719+00:00",
+          "observed_at": "2026-11-22T18:40:21.551652+00:00",
           "practice_dates": [],
           "source_urls": [
             "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
@@ -558,7 +558,7 @@
           "return_candidate": false,
           "report_status": "Out",
           "practice_status": "Did Not Participate In Practice",
-          "observed_at": "2026-11-21T18:16:24.491719+00:00",
+          "observed_at": "2026-11-22T18:40:21.551652+00:00",
           "practice_dates": [],
           "source_urls": [
             "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
@@ -573,7 +573,7 @@
           "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
         }
       ],
-      "observed_at": "2026-11-21T18:16:24.491719+00:00",
+      "observed_at": "2026-11-22T18:40:21.551652+00:00",
       "reviewed": false
     },
     {
@@ -591,7 +591,7 @@
           "return_candidate": false,
           "report_status": "Out",
           "practice_status": "Did Not Participate In Practice",
-          "observed_at": "2026-11-21T18:16:24.491719+00:00",
+          "observed_at": "2026-11-22T18:40:21.551652+00:00",
           "practice_dates": [],
           "source_urls": [
             "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
@@ -606,7 +606,7 @@
           "return_candidate": false,
           "report_status": "Out",
           "practice_status": "Did Not Participate In Practice",
-          "observed_at": "2026-11-21T18:16:24.491719+00:00",
+          "observed_at": "2026-11-22T18:40:21.551652+00:00",
           "practice_dates": [],
           "source_urls": [
             "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
@@ -621,7 +621,7 @@
           "return_candidate": false,
           "report_status": "Out",
           "practice_status": "Did Not Participate In Practice",
-          "observed_at": "2026-11-21T18:16:24.491719+00:00",
+          "observed_at": "2026-11-22T18:40:21.551652+00:00",
           "practice_dates": [],
           "source_urls": [
             "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
@@ -636,7 +636,7 @@
           "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
         }
       ],
-      "observed_at": "2026-11-21T18:16:24.491719+00:00",
+      "observed_at": "2026-11-22T18:40:21.551652+00:00",
       "reviewed": false
     },
     {
@@ -654,7 +654,7 @@
           "return_candidate": false,
           "report_status": "Out",
           "practice_status": "Did Not Participate In Practice",
-          "observed_at": "2026-11-21T18:16:24.491719+00:00",
+          "observed_at": "2026-11-22T18:40:21.551652+00:00",
           "practice_dates": [],
           "source_urls": [
             "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
@@ -669,7 +669,7 @@
           "return_candidate": false,
           "report_status": "Out",
           "practice_status": "Did Not Participate In Practice",
-          "observed_at": "2026-11-21T18:16:24.491719+00:00",
+          "observed_at": "2026-11-22T18:40:21.551652+00:00",
           "practice_dates": [],
           "source_urls": [
             "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
@@ -684,7 +684,7 @@
           "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
         }
       ],
-      "observed_at": "2026-11-21T18:16:24.491719+00:00",
+      "observed_at": "2026-11-22T18:40:21.551652+00:00",
       "reviewed": false
     }
   ],
