@@ -19,10 +19,10 @@ home_image_position: "50% 42%"
 hero_alt: "Vega Ioane works on blocking during Ravens practice ahead of the Panthers game"
 hero_credit: "Shawn Hubbard / Baltimore Ravens Photos"
 hero_credit_url: "https://www.baltimoreravens.com/photos/top-shots-from-ravens-thursday-practice-ahead-of-panthers-game"
-home_feature: true
+home_feature: false
 home_recent: false
 home_recent_label: "Week 11 preview"
-ravens_feature: true
+ravens_feature: false
 ravens_feature_image: true
 feature_label: "Week 11 preview"
 ravens_feature_mark: "11"

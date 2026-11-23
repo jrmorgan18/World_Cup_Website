@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="535" viewBox="0 0 1200 535" role="img" aria-labelledby="title desc">
+<title id="title">THE OFFENSE AFTER HALFTIME</title><desc id="desc">The Ravens gained 338 yards before halftime and just 83 after halftime, finishing with 421 total yards.</desc>
+<g font-family="Arial, Helvetica, sans-serif">
+<rect width="1200" height="535" fill="#09080c"/><rect width="1200" height="139" fill="#1d1427"/>
+<rect width="1200" height="8" fill="#7c4dc4"/>
+<text x="48" y="43" fill="#a982e7" font-size="20" font-weight="700">DUAL EIGHTS · FIRST AND FIVE</text>
+<text x="48" y="90" fill="#f7f4fb" font-size="42" font-weight="700">THE OFFENSE AFTER HALFTIME</text>
+<text x="48" y="123" fill="#d0c8d9" font-size="23" font-weight="700">The Ravens gained 80.3% of their total yardage before the break.</text>
+<rect x="48" y="163" width="1104" height="310" rx="16" fill="#17131d" stroke="#49315f" stroke-width="2"/>
+<text x="76" y="212" fill="#e5bb59" font-size="25" font-weight="700">FIRST HALF</text>
+<rect x="76" y="235" width="880" height="58" rx="6" fill="#e5bb59"/>
+<text x="981" y="280" fill="#f7f4fb" font-size="43" font-weight="700">338</text>
+<text x="76" y="357" fill="#a982e7" font-size="25" font-weight="700">SECOND HALF</text>
+<rect x="76" y="380" width="216" height="58" rx="6" fill="#a982e7"/>
+<text x="316" y="425" fill="#f7f4fb" font-size="43" font-weight="700">83</text>
+<text x="48" y="510" fill="#d0c8d9" font-size="18" font-weight="700">YARDS GAINED · FIRST HALF 338 · SECOND HALF 83 · TOTAL 421</text>
+</g></svg>
