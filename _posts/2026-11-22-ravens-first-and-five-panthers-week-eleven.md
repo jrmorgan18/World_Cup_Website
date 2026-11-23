@@ -231,8 +231,8 @@ Once again on Sunday, it wasn&#x27;t one catastrophic failure that cost them the
 <p data-source-paragraph="83">There&#x27;s still plenty of development ahead, but Green is beginning to look like a legitimate long-term solution at one of the most important positions on the defense.</p>
 
 <figure class="ravens-article-figure ravens-article-figure--uncropped">
-  <img src="{{ '/assets/images/ravens/week-eleven-panthers-2026/mike-green-panthers.jpg' | relative_url }}" alt="Mike Green pressures Bryce Young during the Panthers game" loading="lazy" decoding="async">
-  <figcaption>Green finished with two sacks, including an early safety. Photo by <a href="https://www.panthers.com/photos/game-action-gallery-panthers-vs-ravens-november-22-2026" rel="noopener">Andrew Stein / Carolina Panthers</a>.</figcaption>
+  <img src="{{ '/assets/images/ravens/week-eleven-panthers-2026/mike-green-safety-highlight.jpg' | relative_url }}" alt="Mike Green, number 15, signals a safety after sacking Bryce Young in the end zone" loading="lazy" decoding="async">
+  <figcaption>Green signals a safety after sacking Young in the end zone. Image from the <a href="https://www.baltimoreravens.com/video/mike-green-safety-bryce-young-ravens-panthers-week-11-highlights" rel="noopener">official FOX / NFL highlight</a>.</figcaption>
 </figure>
 
 <p data-source-paragraph="84">T.J. Tampa also deserves credit, playing an increased role with the dismissal of Marlon Humphrey this week. With Carolina threatening to extend its lead in the third quarter, the Panthers reached the Ravens&#x27; 4-yard line.</p>
@@ -244,8 +244,8 @@ Once again on Sunday, it wasn&#x27;t one catastrophic failure that cost them the
 <p data-source-paragraph="87">Tampa hasn&#x27;t had many opportunities to establish himself as a consistent contributor. Sunday was an encouraging indication that he deserves a closer look.</p>
 
 <figure class="ravens-article-figure ravens-article-figure--uncropped">
-  <img src="{{ '/assets/images/ravens/week-eleven-panthers-2026/tj-tampa-panthers.jpg' | relative_url }}" alt="T.J. Tampa in coverage against Carolina" loading="lazy" decoding="async">
-  <figcaption>Tampa’s increased role included an interception in the end zone. Photo by <a href="https://www.panthers.com/photos/game-action-gallery-panthers-vs-ravens-november-22-2026" rel="noopener">Lester Barnes / Carolina Panthers</a>.</figcaption>
+  <img src="{{ '/assets/images/ravens/week-eleven-panthers-2026/tj-tampa-interception-highlight.jpg' | relative_url }}" alt="T.J. Tampa, number 27, catches his third-quarter interception in the end zone" loading="lazy" decoding="async">
+  <figcaption>Tampa intercepts Young in the end zone in the third quarter. Image from the <a href="https://www.nfl.com/videos/t-j-tampa-burns-carolina-with-end-zone-interception-against-bryce-young" rel="noopener">official FOX / NFL highlight</a>.</figcaption>
 </figure>
 
 <p data-source-paragraph="88">One performance doesn&#x27;t prove he&#x27;s ready for a major starting role, and the Ravens will need to evaluate his coverage responsibilities beyond the interception. But with the season rapidly slipping away, developing young players should become a priority.</p>
