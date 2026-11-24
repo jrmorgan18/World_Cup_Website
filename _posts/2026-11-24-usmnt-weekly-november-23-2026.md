@@ -22,7 +22,7 @@ source_docx: "articles/USMNT Weekly - 11_23_26.docx"
 hero_image: "/assets/images/usmnt-weekly-2026-11-24/peyton-miller-playoff-celebration.jpg"
 thumbnail: "/assets/images/usmnt-weekly-2026-11-24/peyton-miller-playoff-celebration.jpg"
 hero_wide: true
-home_image_position: "center 35%"
+home_image_position: "25% 35%"
 hero_alt: "Peyton Miller celebrates with teammates after scoring against Philadelphia in the MLS playoffs"
 hero_credit: "New England Revolution"
 hero_credit_url: "https://www.revolutionsoccer.net/news/recap-revs-shut-out-union-2-0-game-one-round-one"
