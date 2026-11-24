@@ -18,10 +18,10 @@ hero_alt: "Fermín López celebrates for Barcelona at the Metropolitano"
 hero_credit: "FC Barcelona"
 hero_credit_url: "https://www.fcbarcelona.com/en/football/first-team/news/4606581/100-league-games-and-a-brace-for-fermn"
 home_feature: false
-home_recent: true
+home_recent: false
 home_recent_label: "European Team of the Week"
 home_recent_theme: "soccer"
-euro_team_of_week_feature: true
+euro_team_of_week_feature: false
 soccer_promo_image: "/assets/images/euro-team-of-week-2026-11-10.png"
 soccer_promo_alt: "European Weekend Team of the Week Best XI, with Fermín López of Barcelona as Player of the Week"
 soccer_promo_label: "European Team of the Week"
