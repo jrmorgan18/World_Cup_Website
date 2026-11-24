@@ -11,7 +11,7 @@ read_time: 32
 section_theme: "project"
 series: "USMNT Weekly"
 reporting_window: "November 2–8, 2026"
-usmnt_weekly_feature: true
+usmnt_weekly_feature: false
 home_feature: false
 home_recent: false
 feature_label: "USMNT Weekly"

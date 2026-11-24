@@ -26,7 +26,7 @@ description: A four-year scouting report tracking the USMNT player pool, checkpo
 {% assign usmnt_weekly_story = site.posts | where: "usmnt_weekly_feature", true | first %}
 {% assign usmnt_coaching_search_story = site.posts | where: "usmnt_coaching_search_feature", true | first %}
 {% assign usmnt_match_recap_story = site.posts | where: "usmnt_match_recap_feature", true | first %}
-{% assign project_lead = usmnt_match_recap_story | default: usmnt_coaching_search_story | default: usmnt_weekly_story %}
+{% assign project_lead = usmnt_weekly_story | default: usmnt_match_recap_story | default: usmnt_coaching_search_story %}
 {% assign usmnt_camp_story = site.posts | where: "usmnt_camp_feature", true | first %}
 {% assign usmnt_window_story = site.posts | where: "usmnt_window_feature", true | first %}
 {% assign foundation_part1 = site.posts | where: "slug", "why-the-usmnt-will-never-be-argentina" | first %}
@@ -85,7 +85,7 @@ description: A four-year scouting report tracking the USMNT player pool, checkpo
     <ol class="de-recent-list">
       {% if board_update_story %}<li><span class="de-recent-number">01</span><a href="{{ board_update_story.url | relative_url }}"><small class="de-recent-tag">Big Board update</small><h3>{{ board_update_story.title }}</h3><p>{{ board_update_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
       {% if usmnt_camp_story %}<li><span class="de-recent-number">02</span><a href="{{ usmnt_camp_story.url | relative_url }}"><small class="de-recent-tag">Camp preview</small><h3>{{ usmnt_camp_story.title }}</h3><p>{{ usmnt_camp_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-      {% if usmnt_weekly_story %}<li><span class="de-recent-number">03</span><a href="{{ usmnt_weekly_story.url | relative_url }}"><small class="de-recent-tag">USMNT Weekly</small><h3>{{ usmnt_weekly_story.title }}</h3><p>{{ usmnt_weekly_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+      {% if usmnt_match_recap_story and usmnt_match_recap_story.url != project_lead.url %}<li><span class="de-recent-number">03</span><a href="{{ usmnt_match_recap_story.url | relative_url }}"><small class="de-recent-tag">USMNT Match Recap</small><h3>{{ usmnt_match_recap_story.title }}</h3><p>{{ usmnt_match_recap_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
       {% if sullivan_miami_story %}<li><span class="de-recent-number">04</span><a href="{{ sullivan_miami_story.url | relative_url }}"><small class="de-recent-tag">Scouting tape</small><h3>{{ sullivan_miami_story.title }}</h3><p>{{ sullivan_miami_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
       {% if big_board_explainer %}<li><span class="de-recent-number">05</span><a href="{{ big_board_explainer.url | relative_url }}"><small class="de-recent-tag">Big Board guide</small><h3>{{ big_board_explainer.title }}</h3><p>{{ big_board_explainer.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
       {% if pochettino_story %}<li><span class="de-recent-number">06</span><a href="{{ pochettino_story.url | relative_url }}"><small class="de-recent-tag">The next cycle</small><h3>{{ pochettino_story.title }}</h3><p>{{ pochettino_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}

@@ -18,7 +18,7 @@ home_image_position: "46% 38%"
 hero_alt: "Jacoby Brissett prepares to throw against the Carolina Panthers"
 hero_credit: "Shawn Hubbard / Baltimore Ravens Photos"
 hero_credit_url: "https://www.baltimoreravens.com/photos/game-action-gallery-ravens-at-panthers-week-11"
-home_feature: true
+home_feature: false
 home_recent: false
 home_recent_label: "First and Five"
 ravens_feature: true
