@@ -1,4 +1,44 @@
 editions:
+  - id: "2026-27-november-24"
+    label: "November 24 update"
+    season: "2026-27"
+    published: "November 24, 2026"
+    image: "/assets/images/european-power-rankings-2026-11-24-top-20.png"
+    article_url: "/soccer/european-power-rankings-november-24-2026/"
+    tiers:
+      - id: 1
+        label: "The Favorites"
+        range: "Ranks 1–4"
+      - id: 2
+        label: "The Challengers"
+        range: "Ranks 5–12"
+      - id: 3
+        label: "The Emerging Contenders"
+        range: "Ranks 13–17"
+      - id: 4
+        label: "Teams on the Rise"
+        range: "Ranks 18–20"
+    rankings:
+      - { rank: 1, team: "PSG", previous: 1, tier: 1, logo: "/assets/images/club-logos/psg.png" }
+      - { rank: 2, team: "Barcelona", previous: 2, tier: 1, logo: "/assets/images/club-logos/barcelona.png" }
+      - { rank: 3, team: "Real Madrid", previous: 4, tier: 1, logo: "/assets/images/club-logos/real-madrid.png" }
+      - { rank: 4, team: "Arsenal", previous: 5, tier: 1, logo: "/assets/images/club-logos/arsenal.png" }
+      - { rank: 5, team: "Bayern Munich", previous: 3, tier: 2, logo: "/assets/images/club-logos/bayern-munich.png" }
+      - { rank: 6, team: "Manchester City", previous: 6, tier: 2, logo: "/assets/images/club-logos/manchester-city.png" }
+      - { rank: 7, team: "Inter Milan", previous: 7, tier: 2, logo: "/assets/images/club-logos/inter-milan.png" }
+      - { rank: 8, team: "Borussia Dortmund", previous: 11, tier: 2, logo: "/assets/images/club-logos/borussia-dortmund.png" }
+      - { rank: 9, team: "Roma", previous: 10, tier: 2, logo: "/assets/images/club-logos/roma.png" }
+      - { rank: 10, team: "Lazio", previous: 16, tier: 2, logo: "/assets/images/club-logos/lazio.png" }
+      - { rank: 11, team: "Atlético Madrid", previous: 8, tier: 2, logo: "/assets/images/club-logos/atletico-madrid.png" }
+      - { rank: 12, team: "Liverpool", previous: 9, tier: 2, logo: "/assets/images/club-logos/liverpool.png" }
+      - { rank: 13, team: "AC Milan", previous: 23, tier: 3, logo: "/assets/images/club-logos/ac-milan.png" }
+      - { rank: 14, team: "Como", previous: 19, tier: 3, logo: "/assets/images/club-logos/como.png" }
+      - { rank: 15, team: "Brighton", previous: 14, tier: 3, logo: "/assets/images/club-logos/brighton.png" }
+      - { rank: 16, team: "Bournemouth", previous: 18, tier: 3, logo: "/assets/images/club-logos/bournemouth.png" }
+      - { rank: 17, team: "Brentford", previous: 15, tier: 3, logo: "/assets/images/club-logos/brentford.png" }
+      - { rank: 18, team: "Porto", previous: 26, tier: 4, logo: "/assets/images/club-logos/porto.png" }
+      - { rank: 19, team: "Juventus", previous: 21, tier: 4, logo: "/assets/images/club-logos/juventus.png" }
+      - { rank: 20, team: "RB Leipzig", previous: 33, tier: 4, logo: "/assets/images/club-logos/rb-leipzig.png" }
   - id: "2026-27-october-28"
     label: "October 28 update"
     season: "2026-27"

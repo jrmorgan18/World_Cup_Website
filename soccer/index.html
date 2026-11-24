@@ -68,16 +68,15 @@ section_theme: soccer
         <h2 id="soccer-power-rankings-heading">Power Rankings</h2>
         <span>{{ power_rankings_edition.label }} / {{ power_rankings_edition.season }}</span>
       </div>
-      <div class="soccer-power-rankings-columns" aria-hidden="true"><span>Rank</span><span>Club</span><span>Prev.</span></div>
-      <ol class="soccer-power-rankings-list">
+      {% if power_rankings_edition.image %}
+      <a class="soccer-power-rankings-visual-link" href="{{ power_rankings_edition.article_url | relative_url }}"><img src="{{ power_rankings_edition.image | relative_url }}" alt="European Power Rankings Top 20 for {{ power_rankings_edition.published }}" width="640" height="1770" loading="lazy"></a>
+      {% else %}<div class="soccer-power-rankings-columns" aria-hidden="true"><span>Rank</span><span>Club</span><span>Prev.</span></div>{% endif %}
+      <ol class="soccer-power-rankings-list{% if power_rankings_edition.image %} sr-only{% endif %}" aria-label="Top 20 clubs and their previous rankings">
         {% for ranked_team in power_rankings_edition.rankings limit: 20 %}
-        <li>
-          <b>{{ ranked_team.rank }}</b>
-          <span>{{ ranked_team.team }}</span>
-          <small>{% if ranked_team.previous %}{{ ranked_team.previous }}{% else %}&mdash;{% endif %}</small>
-        </li>
+        <li><b>{{ ranked_team.rank }}</b><span>{{ ranked_team.team }}</span><small>{% if power_rankings_edition.image %}<span class="sr-only">Previous rank: </span>{% endif %}{% if ranked_team.previous %}{{ ranked_team.previous }}{% else %}&mdash;{% endif %}</small></li>
         {% endfor %}
       </ol>
+      {% if power_rankings_edition.article_url %}<a href="{{ power_rankings_edition.article_url | relative_url }}">Read the full rankings <span aria-hidden="true">&rarr;</span></a>{% endif %}
       </aside>
       {% endif %}
     </div>
@@ -109,11 +108,11 @@ section_theme: soccer
       </div>
       <ol class="soccer-sidebar-list">
         {% if euro_team_of_week_story and euro_team_of_week_story.url != soccer_feature.url %}<li><span class="soccer-sidebar-number">01</span><a href="{{ euro_team_of_week_story.url | relative_url }}"><small>European Team of the Week</small><h3>{{ euro_team_of_week_story.title }}</h3><p>{{ euro_team_of_week_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-        {% if usmnt_match_recap_story and usmnt_match_recap_story.url != soccer_feature.url %}<li><span class="soccer-sidebar-number">02</span><a href="{{ usmnt_match_recap_story.url | relative_url }}"><small>USMNT Match Recap</small><h3>{{ usmnt_match_recap_story.title }}</h3><p>{{ usmnt_match_recap_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-        {% if champions_league_recap_story and champions_league_recap_story.url != soccer_feature.url %}<li><span class="soccer-sidebar-number">03</span><a href="{{ champions_league_recap_story.url | relative_url }}"><small>Champions League</small><h3>{{ champions_league_recap_story.title }}</h3><p>{{ champions_league_recap_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-        {% if barcelona_breaking_story %}<li><span class="soccer-sidebar-number">04</span><a href="{{ barcelona_breaking_story.url | relative_url }}"><small>Barcelona</small><h3>{{ barcelona_breaking_story.title }}</h3><p>{{ barcelona_breaking_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-        {% if previous_champions_league_recap_story %}<li><span class="soccer-sidebar-number">05</span><a href="{{ previous_champions_league_recap_story.url | relative_url }}"><small>Champions League</small><h3>{{ previous_champions_league_recap_story.title }}</h3><p>{{ previous_champions_league_recap_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
-        {% if power_rankings_story %}<li><span class="soccer-sidebar-number">06</span><a href="{{ power_rankings_story.url | relative_url }}"><small>European Power Rankings</small><h3>{{ power_rankings_story.title }}</h3><p>{{ power_rankings_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if power_rankings_story %}<li><span class="soccer-sidebar-number">02</span><a href="{{ power_rankings_story.url | relative_url }}"><small>European Power Rankings</small><h3>{{ power_rankings_story.title }}</h3><p>{{ power_rankings_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if usmnt_match_recap_story and usmnt_match_recap_story.url != soccer_feature.url %}<li><span class="soccer-sidebar-number">03</span><a href="{{ usmnt_match_recap_story.url | relative_url }}"><small>USMNT Match Recap</small><h3>{{ usmnt_match_recap_story.title }}</h3><p>{{ usmnt_match_recap_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if champions_league_recap_story and champions_league_recap_story.url != soccer_feature.url %}<li><span class="soccer-sidebar-number">04</span><a href="{{ champions_league_recap_story.url | relative_url }}"><small>Champions League</small><h3>{{ champions_league_recap_story.title }}</h3><p>{{ champions_league_recap_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if barcelona_breaking_story %}<li><span class="soccer-sidebar-number">05</span><a href="{{ barcelona_breaking_story.url | relative_url }}"><small>Barcelona</small><h3>{{ barcelona_breaking_story.title }}</h3><p>{{ barcelona_breaking_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
+        {% if previous_champions_league_recap_story %}<li><span class="soccer-sidebar-number">06</span><a href="{{ previous_champions_league_recap_story.url | relative_url }}"><small>Champions League</small><h3>{{ previous_champions_league_recap_story.title }}</h3><p>{{ previous_champions_league_recap_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
         {% if previous_barcelona_story %}<li><span class="soccer-sidebar-number">07</span><a href="{{ previous_barcelona_story.url | relative_url }}"><small>Barcelona</small><h3>{{ previous_barcelona_story.title }}</h3><p>{{ previous_barcelona_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
         {% if premier_league_weekly_recap_story %}<li><span class="soccer-sidebar-number">08</span><a href="{{ premier_league_weekly_recap_story.url | relative_url }}"><small>Premier League</small><h3>{{ premier_league_weekly_recap_story.title }}</h3><p>{{ premier_league_weekly_recap_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
         {% if rodri_barcelona_story %}<li><span class="soccer-sidebar-number">09</span><a href="{{ rodri_barcelona_story.url | relative_url }}"><small>Barcelona</small><h3>{{ rodri_barcelona_story.title }}</h3><p>{{ rodri_barcelona_story.date | date: "%B %-d, %Y" }}</p></a></li>{% endif %}
