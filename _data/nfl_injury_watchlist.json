@@ -1,16 +1,16 @@
 {
   "season": 2026,
   "week": 12,
-  "as_of": "2026-11-24T22:51:24.211422+00:00",
+  "as_of": "2026-11-25T20:42:15.075203+00:00",
   "source": {
     "file": "injuries.parquet",
     "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet",
-    "fetched_at": "2026-11-24T22:50:34.127351+00:00",
-    "http_last_modified": "Tue, 24 Nov 2026 18:49:37 GMT",
-    "source_sha256": "46e0f80ab820779aa6c8caf364cafe5bbbbf27885378d7f28af08c004b892387",
-    "cache_sha256": "46e0f80ab820779aa6c8caf364cafe5bbbbf27885378d7f28af08c004b892387"
+    "fetched_at": "2026-11-25T20:42:01.292215+00:00",
+    "http_last_modified": "Wed, 25 Nov 2026 17:59:53 GMT",
+    "source_sha256": "81755632255218a133478f3abddb26264fa2d67f287a405d8743b718bc828ed1",
+    "cache_sha256": "81755632255218a133478f3abddb26264fa2d67f287a405d8743b718bc828ed1"
   },
-  "source_max_week": 11,
+  "source_max_week": 12,
   "policy": "Only confirmed OUT/IR or two consecutive injury-related DNP daily reports in the game week qualify. Later LP/FP clears the DNP trigger. At least two meaningful players in a group are required. No automatic adjustments; returns remain manual scenarios.",
   "practice_history": {
     "team_daily_reports": 0,
@@ -105,8 +105,8 @@
     {
       "team": "BUF",
       "name": "Buffalo Bills",
-      "coverage": "No current-week report",
-      "report_players": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 14,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
@@ -121,8 +121,8 @@
     {
       "team": "CHI",
       "name": "Chicago Bears",
-      "coverage": "No current-week report",
-      "report_players": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 5,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
@@ -145,33 +145,33 @@
     {
       "team": "DAL",
       "name": "Dallas Cowboys",
-      "coverage": "No current-week report",
-      "report_players": 0,
-      "unresolved_participation_ids": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 13,
+      "unresolved_participation_ids": 1,
       "cards": 0
     },
     {
       "team": "DEN",
       "name": "Denver Broncos",
-      "coverage": "No current-week report",
-      "report_players": 0,
-      "unresolved_participation_ids": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 8,
+      "unresolved_participation_ids": 1,
       "cards": 0
     },
     {
       "team": "DET",
       "name": "Detroit Lions",
-      "coverage": "No current-week report",
-      "report_players": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 7,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
     {
       "team": "GB",
       "name": "Green Bay Packers",
-      "coverage": "No current-week report",
-      "report_players": 0,
-      "unresolved_participation_ids": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 11,
+      "unresolved_participation_ids": 1,
       "cards": 0
     },
     {
@@ -201,18 +201,18 @@
     {
       "team": "KC",
       "name": "Kansas City Chiefs",
-      "coverage": "No current-week report",
-      "report_players": 0,
-      "unresolved_participation_ids": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 10,
+      "unresolved_participation_ids": 2,
       "cards": 0
     },
     {
       "team": "LA",
       "name": "Los Angeles Rams",
-      "coverage": "No current-week report",
-      "report_players": 0,
-      "unresolved_participation_ids": 0,
-      "cards": 0
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 17,
+      "unresolved_participation_ids": 1,
+      "cards": 1
     },
     {
       "team": "LAC",
@@ -281,17 +281,17 @@
     {
       "team": "PHI",
       "name": "Philadelphia Eagles",
-      "coverage": "No current-week report",
-      "report_players": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 14,
       "unresolved_participation_ids": 0,
       "cards": 0
     },
     {
       "team": "PIT",
       "name": "Pittsburgh Steelers",
-      "coverage": "No current-week report",
-      "report_players": 0,
-      "unresolved_participation_ids": 0,
+      "coverage": "Latest report present; daily history / IR may be incomplete",
+      "report_players": 5,
+      "unresolved_participation_ids": 1,
       "cards": 0
     },
     {
@@ -335,7 +335,56 @@
       "cards": 0
     }
   ],
-  "cards": [],
+  "cards": [
+    {
+      "id": "2026-12-LA-OL",
+      "team": "LA",
+      "group": "OL",
+      "state": "Availability risk",
+      "players": [
+        {
+          "id": "00-0034114",
+          "name": "Coleman Shelton",
+          "position": "OL",
+          "healthy_share": 1.0,
+          "status": "Confirmed OUT",
+          "return_candidate": false,
+          "report_status": "Out",
+          "practice_status": "Did Not Participate In Practice",
+          "observed_at": "2026-11-25T20:42:01.292215+00:00",
+          "practice_dates": [],
+          "source_urls": [
+            "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
+          ]
+        },
+        {
+          "id": "00-0039058",
+          "name": "Steve Avila",
+          "position": "OL",
+          "healthy_share": 1.0,
+          "status": "Confirmed OUT",
+          "return_candidate": false,
+          "report_status": "Out",
+          "practice_status": "Did Not Participate In Practice",
+          "observed_at": "2026-11-25T20:42:01.292215+00:00",
+          "practice_dates": [],
+          "source_urls": [
+            "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
+          ]
+        }
+      ],
+      "confidence": "Feed screening only; replacements and game status need review",
+      "summary": "Multiple meaningful roles flagged. No automatic point adjustment.",
+      "sources": [
+        {
+          "title": "Availability evidence",
+          "url": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2026.parquet"
+        }
+      ],
+      "observed_at": "2026-11-25T20:42:01.292215+00:00",
+      "reviewed": false
+    }
+  ],
   "mapping_coverage": {
     "snap_rows": 15217,
     "unmapped_snap_rows": 30
