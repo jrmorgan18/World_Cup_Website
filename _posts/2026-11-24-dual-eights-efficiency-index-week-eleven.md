@@ -32,6 +32,16 @@ tldr:
   - "The model makes Detroit a little less than a field-goal favorite after applying home-field advantage. The market makes Chicago a little less than a field-goal favorite on the road."
 ---
 
+<style>
+@media (max-width:680px) {
+ .article-body table[data-source-table="162"] th,
+ .article-body table[data-source-table="162"] td { padding:10px 8px; }
+ .article-body table[data-source-table="162"] th:first-child { width:44%; white-space:normal; }
+ .article-body table[data-source-table="162"] th:nth-child(2) { min-width:0; }
+ .article-body table[data-source-table="162"] tbody th { font-size:.9rem; }
+}
+</style>
+
 <nav class="article-section-nav" aria-label="Jump to rankings section">
 <span>Jump to</span><a href="#efficiency-top-10">Efficiency Top 10</a><a href="#risers">Biggest Risers</a><a href="#fallers">Biggest Fallers</a><a href="#power-index">DEPI Top 10</a><a href="#week-12-spreads">Week 12 Spreads</a><a href="#matchup-to-watch">Game of the Week</a>
 </nav>
