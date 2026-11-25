@@ -20,7 +20,7 @@ hero_credit_url: "https://www.mlb.com/video/christian-encarnacion-strand-homers-
 home_recent: false
 home_recent_theme: orioles
 home_recent_label: "Orioles"
-orioles_feature: true
+orioles_feature: false
 feature_kicker: "Weekly recap"
 feature_snapshot_label: "August 31-September 6 snapshot"
 feature_stats:

@@ -1,0 +1,22 @@
+{
+  "peralta": {
+    "page": "https://www.mlb.com/rays/news/freddy-peralta-wins-2026-alcs-mvp",
+    "image": "https://img.mlbstatic.com/mlb-images/image/upload/t_2x1/t_w1536/mlb/mo4y9zdpxux3nzxwkc7h.jpg",
+    "caption": "Freddy Peralta celebrates during his ALCS MVP run with Tampa Bay in October 2026."
+  },
+  "rogers": {
+    "page": "https://www.mlb.com/news/trevor-rogers-keys-to-success-in-2027",
+    "image": "https://img.mlbstatic.com/mlb-images/image/upload/t_2x1/t_w1536/mlb/zskzt72o0qmpsdq5b7wn.jpg",
+    "caption": "Trevor Rogers pitching for the Orioles."
+  },
+  "baz": {
+    "page": "https://www.mlb.com/news/shane-baz-strikes-out-10-in-orioles-loss-to-yankees",
+    "image": "https://img.mlbstatic.com/mlb-images/image/upload/t_2x1/t_w1536/v1787101681/mlb/f7omu8pwzfqvlnf3mw5w.jpg",
+    "caption": "Shane Baz pitching against the Yankees in August 2026."
+  },
+  "imanaga": {
+    "page": "https://www.mlb.com/news/shota-imanaga-one-run-cubs-win-over-marlins",
+    "image": "https://img.mlbstatic.com/mlb-images/image/upload/t_2x1/t_w1536/mlb/wwuryeqfmracnuivpuuj.jpg",
+    "caption": "Shota Imanaga pitching for the Cubs in September 2026."
+  }
+}

@@ -1,0 +1,35 @@
+{% assign visual = site.data.orioles_peralta_visuals[include.id] %}
+<figure class="pitching-visual" id="pitching-{{ include.id }}" aria-labelledby="pitching-title-{{ include.id }}">
+  <figcaption class="pitching-heading">
+    <span class="pitching-kicker">Dual Eights · Rotation analysis</span>
+    <h3 id="pitching-title-{{ include.id }}">{{ visual.title }}</h3>
+    {% if visual.subtitle %}<p>{{ visual.subtitle }}</p>{% endif %}
+  </figcaption>
+  {% if visual.kind == 'cards' %}
+  <div class="pitching-cards">
+    <section><h4>Top Four Starters</h4><strong>3.96 <small>ERA</small></strong><p>118 starts · 661 innings</p></section>
+    <section><h4>All Other Starts</h4><strong>5.16 <small>ERA</small></strong><p>43 starts · 202⅓ innings</p></section>
+  </div>
+  <div class="pitching-share" role="img" aria-label="Top four starters: 73.3% of starts. All other pitchers: 26.7%."><span>73.3%</span><span>26.7%</span></div>
+  <p class="pitching-share-label">Share of starts: top four / all other pitchers</p>
+  {% elsif visual.kind == 'depth' %}
+  <div class="pitching-depth">
+    <section><h4>Current projected rotation</h4><ol><li>Freddy Peralta <span>RHP</span></li><li>Kyle Bradish <span>RHP</span></li><li>Shane Baz <span>RHP</span></li><li>Brandon Young <span>RHP</span></li><li>Internal competition</li></ol></section>
+    <section><h4>Hypothetical: add Imanaga</h4><ol><li>Freddy Peralta <span>RHP</span></li><li class="pitching-acquisition">Shota Imanaga <span>LHP · Added</span></li><li>Kyle Bradish <span>RHP</span></li><li>Shane Baz <span>RHP</span></li><li>Brandon Young <span>RHP</span></li></ol><p>Depth: internal competition</p></section>
+  </div>
+  {% else %}
+  <div class="pitching-canvas" data-pitching-chart="{{ include.id }}"></div>
+  <script type="application/json" class="pitching-config">{{ visual | jsonify }}</script>
+  <p class="pitching-chart-help" hidden>Hover, tap or focus a mark for exact values.</p>
+  {% endif %}
+  {% if visual.note %}<p class="pitching-note">{{ visual.note }}</p>{% endif %}
+  <p class="pitching-source">Source: {% for source in visual.sources %}<a href="{{ source.url }}">{{ source.label }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
+  {% if visual.table.size > 0 %}
+  <details class="pitching-data"><summary>View data table</summary>
+    <div class="peralta-table"><table{% if visual.table_index %} data-source-table="{{ visual.table_index }}"{% endif %}>
+      <thead><tr>{% for cell in visual.table[0] %}<th scope="col">{{ cell }}</th>{% endfor %}</tr></thead>
+      <tbody>{% for row in visual.table offset:1 %}<tr>{% for cell in row %}{% if forloop.first %}<th scope="row">{{ cell }}</th>{% else %}<td>{{ cell }}</td>{% endif %}{% endfor %}</tr>{% endfor %}</tbody>
+    </table></div>
+  </details>
+  {% endif %}
+</figure>

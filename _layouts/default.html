@@ -12,5 +12,6 @@
   {% if site.site_mode == "legacy" %}{% include footer-legacy.html %}{% else %}{% include footer.html %}{% endif %}
   {% if page.show_survey_prompt %}{% include survey-prompt.html %}{% endif %}
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  {% if page.orioles_pitching_visuals %}<script src="{{ '/assets/js/orioles-pitching-visuals.js' | relative_url }}" defer></script>{% endif %}
 </body>
 </html>

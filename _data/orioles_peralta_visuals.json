@@ -1,0 +1,699 @@
+{
+  "career": {
+    "title": "Freddy Peralta vs. Trevor Rogers: Career ERA",
+    "kind": "line",
+    "subtitle": "Regular season ERA, 2021–2026",
+    "labels": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "series": [
+      {
+        "name": "Freddy Peralta",
+        "values": [
+          2.81,
+          3.58,
+          3.86,
+          3.68,
+          2.7,
+          4.42
+        ]
+      },
+      {
+        "name": "Trevor Rogers",
+        "values": [
+          2.64,
+          5.47,
+          4,
+          4.92,
+          1.81,
+          4.03
+        ]
+      }
+    ],
+    "unit": "ERA",
+    "max": 6,
+    "sources": [
+      {
+        "label": "MLB.com",
+        "url": "https://www.mlb.com/stats/pitching/2026"
+      },
+      {
+        "label": "Baseball Reference",
+        "url": "https://www.baseball-reference.com/teams/BAL/2026.shtml"
+      }
+    ],
+    "table": [
+      [
+        "Season",
+        "Peralta ERA",
+        "Rogers ERA"
+      ],
+      [
+        "2021",
+        "2.81",
+        "2.64"
+      ],
+      [
+        "2022",
+        "3.58",
+        "5.47"
+      ],
+      [
+        "2023",
+        "3.86",
+        "4.00"
+      ],
+      [
+        "2024",
+        "3.68",
+        "4.92"
+      ],
+      [
+        "2025",
+        "2.70",
+        "1.81"
+      ],
+      [
+        "2026",
+        "4.42",
+        "4.03"
+      ]
+    ],
+    "table_index": 1
+  },
+  "durability": {
+    "title": "Durability Matters",
+    "kind": "grouped",
+    "subtitle": "Major league innings pitched by season",
+    "labels": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "series": [
+      {
+        "name": "Freddy Peralta",
+        "values": [
+          144.333,
+          78,
+          165.667,
+          173.667,
+          176.667,
+          169
+        ],
+        "display": [
+          "144⅓",
+          "78",
+          "165⅔",
+          "173⅔",
+          "176⅔",
+          "169"
+        ]
+      },
+      {
+        "name": "Trevor Rogers",
+        "values": [
+          133,
+          107,
+          18,
+          124.667,
+          109.667,
+          169.667
+        ],
+        "display": [
+          "133",
+          "107",
+          "18",
+          "124⅔",
+          "109⅔",
+          "169⅔"
+        ]
+      }
+    ],
+    "unit": "innings",
+    "max": 200,
+    "sources": [
+      {
+        "label": "MLB.com",
+        "url": "https://www.mlb.com/stats/pitching/2026"
+      },
+      {
+        "label": "Baseball Reference",
+        "url": "https://www.baseball-reference.com/teams/BAL/2026.shtml"
+      }
+    ],
+    "table": [
+      [
+        "Season",
+        "Freddy Peralta",
+        "Trevor Rogers"
+      ],
+      [
+        "2021",
+        "144⅓",
+        "133"
+      ],
+      [
+        "2022",
+        "78",
+        "107"
+      ],
+      [
+        "2023",
+        "165⅔",
+        "18"
+      ],
+      [
+        "2024",
+        "173⅔",
+        "124⅔"
+      ],
+      [
+        "2025",
+        "176⅔",
+        "109⅔"
+      ],
+      [
+        "2026",
+        "169",
+        "169⅔"
+      ]
+    ]
+  },
+  "turnaround": {
+    "title": "The Three Versions of Freddy Peralta",
+    "kind": "horizontal",
+    "subtitle": "2026 ERA across four stretches",
+    "labels": [
+      "New York Mets",
+      "First four Tampa Bay starts",
+      "Final six regular season starts",
+      "ALDS and ALCS"
+    ],
+    "values": [
+      4.99,
+      7.17,
+      0.79,
+      1.08
+    ],
+    "secondary": [
+      "22 starts",
+      "4 starts",
+      "6 starts",
+      "4 appearances"
+    ],
+    "colors": [
+      "negative",
+      "negative",
+      "positive",
+      "positive"
+    ],
+    "unit": "ERA",
+    "max": 8,
+    "note": "Postseason figure excludes his World Series start: five runs allowed over 4⅔ innings.",
+    "sources": [
+      {
+        "label": "MLB.com: Peralta’s ALCS MVP run",
+        "url": "https://www.mlb.com/rays/news/freddy-peralta-wins-2026-alcs-mvp"
+      }
+    ],
+    "table": [
+      [
+        "Period / pitcher",
+        "ERA",
+        "Context"
+      ],
+      [
+        "New York Mets",
+        4.99,
+        "22 starts"
+      ],
+      [
+        "First four Tampa Bay starts",
+        7.17,
+        "4 starts"
+      ],
+      [
+        "Final six regular season starts",
+        0.79,
+        "6 starts"
+      ],
+      [
+        "ALDS and ALCS",
+        1.08,
+        "4 appearances"
+      ]
+    ]
+  },
+  "strikeouts": {
+    "title": "Where Have Peralta’s Strikeouts Gone?",
+    "kind": "line",
+    "labels": [
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "series": [
+      {
+        "name": "Strikeout rate",
+        "values": [
+          30.9,
+          27.6,
+          28.2,
+          21.4
+        ]
+      },
+      {
+        "name": "Walk rate",
+        "values": [
+          7.9,
+          9.4,
+          9.1,
+          8.6
+        ]
+      }
+    ],
+    "unit": "%",
+    "max": 35,
+    "sources": [
+      {
+        "label": "Baseball Savant",
+        "url": "https://baseballsavant.mlb.com/savant-player/freddy-peralta-642547?stats=statcast-r-pitching-mlb"
+      }
+    ],
+    "table": [
+      [
+        "Season",
+        "Strikeout Rate",
+        "Walk Rate",
+        "K-BB%"
+      ],
+      [
+        "2023",
+        "30.9%",
+        "7.9%",
+        "23.0%"
+      ],
+      [
+        "2024",
+        "27.6%",
+        "9.4%",
+        "18.2%"
+      ],
+      [
+        "2025",
+        "28.2%",
+        "9.1%",
+        "19.1%"
+      ],
+      [
+        "2026",
+        "21.4%",
+        "8.6%",
+        "12.8%"
+      ]
+    ],
+    "table_index": 2
+  },
+  "rogers": {
+    "title": "Trevor Rogers’ Breakout Was Real",
+    "kind": "grouped",
+    "labels": [
+      "2025",
+      "March–May 2026",
+      "June–September 2026"
+    ],
+    "series": [
+      {
+        "name": "ERA",
+        "values": [
+          1.81,
+          6.84,
+          2.9
+        ]
+      },
+      {
+        "name": "FIP",
+        "values": [
+          2.82,
+          4.85,
+          2.89
+        ]
+      }
+    ],
+    "annotations": [
+      "K-BB: 17.5%",
+      "K-BB: 9.1%",
+      "K-BB: 20.5%"
+    ],
+    "unit": "ERA / FIP",
+    "max": 8,
+    "sources": [
+      {
+        "label": "MLB.com: Trevor Rogers analysis, November 2026",
+        "url": "https://www.mlb.com/news/trevor-rogers-keys-to-success-in-2027"
+      }
+    ],
+    "table": [
+      [
+        "Period",
+        "Starts",
+        "ERA",
+        "FIP",
+        "K-BB%"
+      ],
+      [
+        "2025",
+        "18",
+        "1.81",
+        "2.82",
+        "17.5%"
+      ],
+      [
+        "March-May 2026",
+        "10",
+        "6.84",
+        "4.85",
+        "9.1%"
+      ],
+      [
+        "June-September 2026",
+        "20",
+        "2.90",
+        "2.89",
+        "20.5%"
+      ]
+    ],
+    "table_index": 6
+  },
+  "rotation": {
+    "title": "The Problem at the Back of the Rotation",
+    "kind": "cards",
+    "subtitle": "2026 Orioles starting pitchers",
+    "sources": [
+      {
+        "label": "MLB.com",
+        "url": "https://www.mlb.com/stats/pitching/2026"
+      }
+    ],
+    "note": "Original Dual Eights calculations. Overall rotation ERA: 4.24.",
+    "table": [
+      [
+        "Rotation Group",
+        "Starts",
+        "Innings",
+        "ERA"
+      ],
+      [
+        "Top Four Starters",
+        "118",
+        "661",
+        "3.96"
+      ],
+      [
+        "All Other Starts",
+        "43",
+        "202⅓",
+        "5.16"
+      ],
+      [
+        "Overall Rotation",
+        "161",
+        "863⅓",
+        "4.24"
+      ]
+    ],
+    "table_index": 8
+  },
+  "impact": {
+    "title": "What Another Starting Pitcher Could Mean for Baltimore",
+    "kind": "horizontal",
+    "subtitle": "Estimated wins added or lost relative to 2026",
+    "labels": [
+      "Peralta at 2026 performance",
+      "Peralta rebounds",
+      "Reasonable internal changes",
+      "Add a 4.00 ERA starter",
+      "Add a 3.50 ERA starter"
+    ],
+    "values": [
+      -0.7,
+      0.4,
+      0.1,
+      2.2,
+      3.1
+    ],
+    "secondary": [
+      "Rotation ERA: 4.32",
+      "Rotation ERA: 4.20",
+      "Rotation ERA: 4.23",
+      "Rotation ERA: 4.01",
+      "Rotation ERA: 3.92"
+    ],
+    "unit": "wins",
+    "min": -1,
+    "max": 4,
+    "note": "Illustrative scenarios, not formal forecasts. Assumes 160 innings from an added starter and approximately 10 runs per win.",
+    "sources": [
+      {
+        "label": "Original Dual Eights analysis",
+        "url": "#what-would-another-quality-starter-mean"
+      }
+    ],
+    "table": [
+      [
+        "Scenario",
+        "Rotation ERA",
+        "Estimated Wins Added"
+      ],
+      [
+        "Actual 2026 Rotation",
+        "4.24",
+        ""
+      ],
+      [
+        "Peralta Replaces Rogers at 2026 Performance Levels",
+        "4.32",
+        "-0.7"
+      ],
+      [
+        "Peralta Rebounds to a 3.80 ERA",
+        "4.20",
+        "+0.4"
+      ],
+      [
+        "Reasonable Performance Changes Across Current Rotation",
+        "4.23",
+        "+0.1"
+      ],
+      [
+        "Above Scenario Plus a 4.00 ERA Starter",
+        "4.01",
+        "+2.2"
+      ],
+      [
+        "Above Scenario Plus a 3.50 ERA Starter",
+        "3.92",
+        "+3.1"
+      ]
+    ],
+    "table_index": 9
+  },
+  "market": {
+    "title": "How Much Separates the Remaining Free Agent Starters?",
+    "kind": "horizontal",
+    "subtitle": "Projected 2027 WAR • availability as of November 24, 2026",
+    "labels": [
+      "Foster Griffin",
+      "Michael King",
+      "Shota Imanaga",
+      "Tyler Mahle",
+      "Hiromi Itoh",
+      "David Peterson",
+      "Casey Mize",
+      "Clay Holmes"
+    ],
+    "values": [
+      2.6,
+      2.5,
+      2.4,
+      2.1,
+      2.1,
+      2,
+      1.7,
+      1.6
+    ],
+    "highlight": [
+      "Shota Imanaga"
+    ],
+    "unit": "WAR",
+    "max": 3,
+    "note": "Steamer projections for MLB pitchers; ZiPS for Hiromi Itoh. Orange highlights Imanaga as a potential fit, not the highest projection.",
+    "sources": [
+      {
+        "label": "FanGraphs: 2027 Top 50 Free Agents",
+        "url": "https://blogs.fangraphs.com/2027-top-50-free-agents/"
+      }
+    ],
+    "table": [
+      [
+        "Period / pitcher",
+        "WAR",
+        "Context"
+      ],
+      [
+        "Foster Griffin",
+        2.6,
+        ""
+      ],
+      [
+        "Michael King",
+        2.5,
+        ""
+      ],
+      [
+        "Shota Imanaga",
+        2.4,
+        ""
+      ],
+      [
+        "Tyler Mahle",
+        2.1,
+        ""
+      ],
+      [
+        "Hiromi Itoh",
+        2.1,
+        ""
+      ],
+      [
+        "David Peterson",
+        2,
+        ""
+      ],
+      [
+        "Casey Mize",
+        1.7,
+        ""
+      ],
+      [
+        "Clay Holmes",
+        1.6,
+        ""
+      ]
+    ]
+  },
+  "value": {
+    "title": "Finding Value in the Remaining Pitching Market",
+    "kind": "scatter",
+    "subtitle": "Estimated annual salary ($M) vs. projected 2027 WAR",
+    "points": [
+      {
+        "name": "Michael King",
+        "x": 25,
+        "y": 2.5
+      },
+      {
+        "name": "Clay Holmes",
+        "x": 20,
+        "y": 1.6
+      },
+      {
+        "name": "Tyler Mahle",
+        "x": 15,
+        "y": 2.1
+      },
+      {
+        "name": "Shota Imanaga",
+        "x": 14,
+        "y": 2.4
+      },
+      {
+        "name": "Foster Griffin",
+        "x": 14,
+        "y": 2.6
+      },
+      {
+        "name": "David Peterson",
+        "x": 13,
+        "y": 2
+      },
+      {
+        "name": "Hiromi Itoh",
+        "x": 11,
+        "y": 2.1
+      }
+    ],
+    "note": "Upper left means more projected production at a lower estimated annual salary. Ben Clemens’ early contract estimates, not actual offers. Itoh’s estimate excludes posting fees.",
+    "sources": [
+      {
+        "label": "FanGraphs: 2027 Top 50 Free Agents",
+        "url": "https://blogs.fangraphs.com/2027-top-50-free-agents/"
+      }
+    ],
+    "table": [
+      [
+        "Pitcher",
+        "Estimated AAV ($M)",
+        "Projected WAR"
+      ],
+      [
+        "Michael King",
+        25,
+        2.5
+      ],
+      [
+        "Clay Holmes",
+        20,
+        1.6
+      ],
+      [
+        "Tyler Mahle",
+        15,
+        2.1
+      ],
+      [
+        "Shota Imanaga",
+        14,
+        2.4
+      ],
+      [
+        "Foster Griffin",
+        14,
+        2.6
+      ],
+      [
+        "David Peterson",
+        13,
+        2
+      ],
+      [
+        "Hiromi Itoh",
+        11,
+        2.1
+      ]
+    ]
+  },
+  "depth": {
+    "title": "Potential 2027 Orioles Rotation",
+    "kind": "depth",
+    "subtitle": "One possible addition • hypothetical, not a confirmed transaction",
+    "note": "Adding Imanaga at Ben Clemens’ early estimate would mean approximately $14 million in additional annual salary. Internal depth remains behind the five starters.",
+    "sources": [
+      {
+        "label": "FanGraphs: 2027 Top 50 Free Agents",
+        "url": "https://blogs.fangraphs.com/2027-top-50-free-agents/"
+      }
+    ],
+    "table": []
+  }
+}

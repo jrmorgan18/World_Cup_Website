@@ -1,0 +1,49 @@
+/* Article charts inherit the host theme, with a readable light-theme fallback. */
+.pitching-visual { --pv-ink:var(--color-text,#222); --pv-muted:var(--color-text-muted,#555); --pv-bg:var(--color-surface,#fff); --pv-rule:var(--color-border,#ddd); --pv-orange:#ff834f; --pv-neutral:#c2c9d2; --pv-negative:#e59b94; --pv-positive:#73c7a4; margin:32px 0; padding:22px; border:1px solid var(--pv-rule); border-top:3px solid var(--de-orange); background:var(--pv-bg); color:var(--pv-ink); font-family:var(--font-body); min-width:0; }
+.pitching-kicker { display:block; color:var(--pv-orange); font-size:11px; text-transform:uppercase; letter-spacing:1.2px; font-weight:700; }
+.article-body .pitching-heading h3 { margin:8px 0; font-family:var(--font-display); font-size:clamp(1.25rem,2.3vw,1.6rem); line-height:1.2; color:var(--pv-ink); }
+.article-body .pitching-heading p { font-size:14px; line-height:1.4; color:var(--pv-muted); margin:0 0 14px; }
+.peralta-chart-pair { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin:32px 0; }
+.peralta-chart-pair .pitching-visual { margin:0; padding:18px; }
+.pitching-canvas { position:relative; min-width:0; width:100%; }
+.pitching-canvas svg { display:block; width:100%; overflow:visible; font-family:var(--font-body); font-size:12px; }
+.pitching-canvas .pv-axis { fill:var(--pv-muted); }
+.pitching-canvas .pv-label { fill:var(--pv-ink); }
+.pitching-canvas .pv-grid { stroke:var(--pv-rule); stroke-width:1; }
+.pitching-canvas .pv-zero { stroke:var(--pv-ink); stroke-width:1.5; }
+.pitching-canvas .pv-mark { cursor:help; outline:none; }
+.pitching-canvas .pv-mark:focus { stroke:var(--pv-ink); stroke-width:3; }
+.pitching-tooltip { position:fixed; z-index:1000; max-width:min(290px,calc(100vw - 24px)); padding:9px 12px; border:1px solid var(--pv-orange); background:var(--pv-bg); color:var(--pv-ink); box-shadow:0 3px 18px #0005; font-size:14px; line-height:1.4; pointer-events:none; white-space:pre-line; }
+.pitching-legend { display:flex; flex-wrap:wrap; gap:6px 18px; font-size:13px; font-weight:600; margin-bottom:10px; }
+.pitching-legend i { display:inline-block; width:12px; height:4px; margin-right:6px; vertical-align:middle; }
+.article-body .pitching-note,.article-body .pitching-source,.article-body .pitching-chart-help,.article-body .pitching-share-label { font-size:13px; line-height:1.5; margin:12px 0 0; color:var(--pv-muted); }
+.pitching-source a,.peralta-photo a { text-decoration:underline; text-underline-offset:3px; }
+.article-body .pitching-source a { color:var(--pv-orange); }
+.pitching-data { font-size:14px; margin-top:12px; }
+.pitching-data summary { cursor:pointer; font-weight:600; padding:8px 0; color:var(--pv-ink); }
+.peralta-table { margin:20px 0; max-width:100%; }
+.article-body .peralta-table table { width:100%; border-collapse:collapse; font:14px/1.5 var(--font-body); background:var(--color-surface); color:var(--color-text); table-layout:fixed; }
+.article-body .peralta-table th,.article-body .peralta-table td { padding:10px 8px; border-bottom:1px solid var(--color-border); color:inherit; overflow-wrap:anywhere; vertical-align:top; text-align:left; }
+.article-body .peralta-table thead th { color:var(--de-orange-light); background:var(--color-surface-raised); }
+.article-body .peralta-table tr:nth-child(even) { background:var(--color-surface-raised); }
+.pitching-cards,.pitching-depth { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+.pitching-cards section,.pitching-depth section { padding:16px; background:var(--color-surface-raised,#eee); border:1px solid var(--pv-rule); min-width:0; }
+.pitching-cards h4,.pitching-depth h4 { margin:0 0 10px; font-size:16px; line-height:1.35; color:var(--pv-ink); }
+.pitching-cards strong { display:block; font-size:44px; line-height:1.2; color:var(--pv-orange); }
+.pitching-cards section+section strong { color:var(--pv-negative); }
+.pitching-cards small { font-size:14px; font-weight:600; }
+.article-body .pitching-cards p,.article-body .pitching-depth p { font-size:14px; line-height:1.5; margin:8px 0 0; }
+.pitching-share { display:flex; margin-top:18px; font-size:14px; font-weight:700; color:#171311; }
+.pitching-share span:first-child { width:73.3%; background:var(--pv-orange); padding:8px 12px; }
+.pitching-share span+span { width:26.7%; background:var(--pv-neutral); padding:8px; text-align:center; }
+.article-body .pitching-depth ol { margin:0; padding-left:22px; }
+.article-body .pitching-depth li { font-size:15px; padding:8px 0; border-bottom:1px solid var(--pv-rule); }
+.pitching-depth li span { display:block; font-size:12px; color:var(--pv-muted); }
+.pitching-acquisition { color:var(--pv-orange); font-weight:700; }
+.peralta-photo { margin:32px 0; }
+.peralta-photo img { width:100%; height:auto; }
+.peralta-photo figcaption { font:13px/1.5 var(--font-body); color:var(--color-text-muted); margin-top:8px; }
+@media(max-width:720px) { .peralta-chart-pair { grid-template-columns:1fr; } .pitching-visual,.peralta-chart-pair .pitching-visual { padding:16px; } }
+@media(max-width:450px) { .pitching-cards,.pitching-depth { grid-template-columns:1fr; } .article-body .peralta-table th,.article-body .peralta-table td { padding:8px 5px; font-size:12px; } }
+@media(max-width:360px) { .theme-orioles .newsletter-form { display:flex; flex-direction:column; width:100%; min-width:0; } .theme-orioles .newsletter-form input,.theme-orioles .newsletter-form button { min-width:0; width:100%; } }
+@media(prefers-color-scheme:light) { .pitching-visual { --pv-ink:#29231f; --pv-muted:#625950; --pv-bg:#fffaf5; --pv-rule:#d7c8bd; --pv-orange:#a83b0e; --pv-neutral:#667382; --pv-negative:#a6443b; --pv-positive:#257454; } .pitching-cards section,.pitching-depth section { background:#f2eae3; } .pitching-share { color:#fff; } .pitching-tooltip { background:var(--pv-bg); } }

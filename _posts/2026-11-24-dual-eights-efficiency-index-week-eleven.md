@@ -18,7 +18,7 @@ hero_wide: true
 hero_alt: "George Kittle scores against Minnesota during the 49ers’ Week 11 game in Mexico City"
 hero_credit: "Terrell Lloyd / San Francisco 49ers"
 hero_credit_url: "https://www.49ers.com/photos/game-photos-vikings-vs-49ers-week-11"
-home_feature: true
+home_feature: false
 home_recent: false
 home_recent_label: "DE Efficiency Index"
 ravens_feature: false
