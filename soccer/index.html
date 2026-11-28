@@ -38,7 +38,7 @@ section_theme: soccer
 {% assign usmnt_weekly_story = site.posts | where: "usmnt_weekly_feature", true | first %}
 {% assign usmnt_coaching_search_story = site.posts | where: "usmnt_coaching_search_feature", true | first %}
 {% assign usmnt_camp_story = site.posts | where: "usmnt_camp_feature", true | first %}
-{% assign best_xi_image = '/assets/images/euro-team-of-week-2026-11-24.png' %}
+{% assign best_xi_image = '/assets/images/champions-league-matchday-5-best-xi-2026.png' %}
 {% assign usmnt_match_recap_story = site.posts | where: "usmnt_match_recap_feature", true | first %}
 {% assign soccer_feature = usmnt_weekly_story | default: usmnt_match_recap_story | default: usmnt_coaching_search_story | default: champions_league_recap_story | default: euro_team_of_week_story | default: power_rankings_story | default: usmnt_camp_story | default: premier_league_preview_story | default: longform_feature %}
 {% assign power_rankings_edition = site.data.european_club_power_rankings.editions | first %}
@@ -53,8 +53,8 @@ section_theme: soccer
       {% else %}
       <div class="soccer-euro-totw-promo">
       {% endif %}
-        <img src="{{ best_xi_image | relative_url }}" alt="European Weekend Team of the Week Best XI, with Francesco Pio Esposito of Inter Milan as Player of the Week" width="1024" height="1536" loading="eager">
-        <span>European Team of the Week &middot; Best XI</span>
+        <img src="{{ best_xi_image | relative_url }}" alt="Champions League Matchday 5 Best XI, with Mario Hermoso of Roma as Player of the Round" width="1122" height="1402" loading="eager">
+        <span>Champions League &middot; Team of the Round</span>
       {% if euro_team_of_week_story.soccer_promo_image == best_xi_image %}
       </a>
       {% else %}
